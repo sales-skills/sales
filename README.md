@@ -10,10 +10,58 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill. Describe your sales objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. Think of it as the entry point — you don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 2 skills in this repo + 43 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
+```
+
+### How the workflow works
+
+1. **You invoke the router** with a plain-language request (or no arguments at all).
+
+2. **The router asks clarifying questions** — it always asks, even if you provided arguments. It needs to fully understand your situation: what you're trying to do, who the audience is, where you are in the process, and any constraints. Questions use multiple-choice options to make answering fast.
+
+3. **The router detects your installed skills** — it checks `~/.claude/skills/` to see what you already have, so it only shows install commands for skills you're missing.
+
+4. **The router matches and recommends** — it picks the best skill(s) and explains why. For complex objectives it recommends a full sequence of skills (no limit on how many).
+
+5. **The router generates verbose, ready-to-use prompts** — for every recommended skill, it outputs a detailed `/skill-name` invocation packed with all the context you provided. You can copy-paste-run each prompt directly and get a great result without re-explaining anything.
+
+### What it does NOT do
+
+- It does **not** solve the problem itself — it never writes copy, audits SEO, or designs pricing. It only routes.
+- It does **not** auto-invoke the target skill — you run the generated prompts yourself, so you stay in control.
+
+### Example session
+
+```
+> /sales-do I need to launch our new product
+
+Router asks:
+  What kind of product?
+  - A) SaaS / software
+  - B) Physical product
+  - C) Service / consulting
+
+  Who is the target buyer?
+  - A) SMB / startup founders
+  - B) Mid-market (VP/Director level)
+  - C) Enterprise (C-suite)
+  - D) Consumer / B2C
+
+  What assets do you already have?
+  - A) Nothing yet — starting from scratch
+  - B) We have positioning/messaging docs
+  - C) We have a landing page but need the launch plan
+  ...
+
+Router recommends a 5-skill sequence:
+  1. /product-marketing-context <verbose prompt with all your context>
+  2. /launch-strategy <verbose prompt referencing step 1 output>
+  3. /copywriting <verbose prompt for launch landing page>
+  4. /email-sequence <verbose prompt for launch email campaign>
+  5. /social-content <verbose prompt for launch social posts>
 ```
 
 ## Skills Catalog
@@ -47,17 +95,108 @@ npx skills add sales-skills/sales
 
 ### Marketing & GTM
 
-> From [`coreyhaines31/marketingskills`](https://skills.sh/coreyhaines31/marketingskills). Install with: `npx skills add coreyhaines31/marketingskills`
+> 33 marketing skills from [`coreyhaines31/marketingskills`](https://skills.sh/coreyhaines31/marketingskills).
+> Install all: `npx skills add coreyhaines31/marketingskills`
+> Install one: `npx skills add coreyhaines31/marketingskills --skills <skill-name>`
+
+#### SEO & Content
 
 | Skill | What it does | Status |
 |---|---|---|
-| `/seo-audit` | Comprehensive SEO auditing — crawlability, technical, on-page, content, authority | Available |
-| `/copywriting` | Conversion-focused marketing copy for web pages (homepages, landing, pricing) | Available |
-| `/copy-editing` | Systematic editing of existing marketing copy via "Seven Sweeps" framework | Available |
-| `/content-strategy` | Content planning — pillars, topic clusters, buyer journey mapping | Available |
-| `/marketing-ideas` | Brainstorm and prioritize marketing strategies (139 ideas across 17 categories) | Available |
-| `/marketing-psychology` | 50+ mental models and psychological principles for marketing decisions | Available |
-| `/pricing-strategy` | SaaS pricing design — packaging, metrics, price points, value-based pricing | Available |
+| `/ai-seo` | Optimize content for AI search engines and LLM citations | Available |
+| `/content-strategy` | Plan content strategy and identify topics to cover | Available |
+| `/copywriting` | Write marketing copy for homepages, landing pages, and sites | Available |
+| `/copy-editing` | Edit, review, and improve existing marketing copy | Available |
+| `/programmatic-seo` | Generate SEO pages at scale using templates | Available |
+| `/schema-markup` | Add and optimize structured data markup | Available |
+| `/seo-audit` | Audit and diagnose technical and on-page SEO issues | Available |
+| `/site-architecture` | Plan website hierarchy, navigation, and URL structure | Available |
+| `/social-content` | Create and schedule social media content | Available |
+
+#### Conversion & Growth
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/ab-test-setup` | Plan, design, and implement A/B tests and experiments | Available |
+| `/form-cro` | Optimize lead capture and contact forms | Available |
+| `/onboarding-cro` | Optimize post-signup activation and time-to-value | Available |
+| `/page-cro` | Increase conversions on marketing and landing pages | Available |
+| `/paywall-upgrade-cro` | Optimize in-app paywalls and upsell modals | Available |
+| `/popup-cro` | Create and optimize popups, modals, and overlays | Available |
+| `/signup-flow-cro` | Optimize signup, registration, and trial activation | Available |
+
+#### Acquisition & Campaigns
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/ad-creative` | Generate and scale ad headlines, descriptions, and full ads | Available |
+| `/cold-email` | Write B2B cold outreach and follow-up sequences | Available |
+| `/email-sequence` | Create automated email flows and drip campaigns | Available |
+| `/free-tool-strategy` | Plan and build free marketing tools for lead generation | Available |
+| `/lead-magnets` | Create and optimize lead magnets for email capture | Available |
+| `/paid-ads` | Manage Google, Meta, LinkedIn, and Twitter ad campaigns | Available |
+
+#### Strategy & Positioning
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/competitor-alternatives` | Create competitor comparison and alternative pages | Available |
+| `/launch-strategy` | Plan product launches and feature announcements | Available |
+| `/marketing-ideas` | Generate marketing inspiration and SaaS strategies | Available |
+| `/marketing-psychology` | Apply behavioral science and mental models to marketing | Available |
+| `/pricing-strategy` | Determine pricing, packaging, and monetization decisions | Available |
+| `/product-marketing-context` | Create foundational product marketing documentation | Available |
+
+#### Retention & Revenue
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/churn-prevention` | Reduce churn through cancellation flows and save offers | Available |
+| `/referral-program` | Build and optimize referral and affiliate programs | Available |
+| `/revops` | Manage lead lifecycle and marketing-to-sales handoff | Available |
+| `/sales-enablement` | Create pitch decks, one-pagers, and objection handling docs | Available |
+
+#### Analytics
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/analytics-tracking` | Set up and audit analytics measurement and event tracking | Available |
+
+### Research & Data
+
+> 10 skills from [`resciencelab/opc-skills`](https://skills.sh/resciencelab/opc-skills).
+> Install all: `npx skills add resciencelab/opc-skills`
+> Install one: `npx skills add resciencelab/opc-skills --skills <skill-name>`
+
+#### Research
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/producthunt` | Search and retrieve Product Hunt posts, topics, and collections | Available |
+| `/reddit` | Search and retrieve Reddit posts, comments, and subreddit info | Available |
+| `/requesthunt` | Collect and analyze user feedback from Reddit, X, and GitHub | Available |
+| `/twitter` | Search and retrieve tweets, user profiles, and trends from X | Available |
+
+#### Creative & Design
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/banner-creator` | Generate professional banners for GitHub, Twitter, and websites | Available |
+| `/logo-creator` | Generate professional logos with AI through iterative design | Available |
+| `/nanobanana` | Generate and edit images using AI (Gemini image model) | Available |
+
+#### SEO & Domains
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/seo-geo` | Optimize for AI search engines (GEO) and traditional search | Available |
+| `/domain-hunter` | Find domain names with availability checks and price comparison | Available |
+
+#### Utilities
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/archive` | Capture, index, and reuse project knowledge across sessions | Available |
 
 ### Router
 
