@@ -1,39 +1,67 @@
 # Sales Skills
 
-A collection of custom Claude Code skills for sales workflows.
+Claude Code skills for sales, marketing, and GTM workflows.
 
-## Installation
-
-Add this repository as a skill source in your Claude Code configuration:
+## Quick Start
 
 ```bash
-claude skills add /path/to/sales
+npx skills add sales-skills/sales
 ```
 
-## Usage
+## What is `sales-do`?
 
-Skills in this repo can be invoked as slash commands in Claude Code:
-
-```
-/skill-name [arguments]
-```
-
-## Structure
+`/sales-do` is a router skill. Describe your sales objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. Think of it as the entry point — you don't need to memorize which skill does what.
 
 ```
-sales/
-├── README.md
-├── .claude/
-│   └── skills/
-│       └── your-skill.md    # Skill definitions
-└── ...
+/sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
 ```
 
-## Creating a New Skill
+## Skills Catalog
 
-1. Add a new `.md` file under `.claude/skills/`
-2. Include frontmatter with the skill's name, description, and trigger conditions
-3. Write the skill instructions in the body
+### Prospecting & Pipeline
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-prospect` | ICP definition, target lists, lead identification | Coming soon |
+| `/sales-research` | Account/contact research, competitive intel, org charts | Coming soon |
+| `/sales-outreach` | Cold emails, LinkedIn messages, multi-touch sequences | Coming soon |
+| `/sales-pipeline` | Pipeline review, forecasting, deal prioritization | Coming soon |
+
+### Active Deals
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-discovery` | Discovery/qualification call prep, MEDDIC/BANT | Coming soon |
+| `/sales-demo` | Demo prep, pitch decks, presentation customization | Coming soon |
+| `/sales-proposal` | Proposals, pricing, SOWs, business cases, ROI | Coming soon |
+| `/sales-objection` | Objection handling, negotiation prep | Coming soon |
+| `/sales-follow-up` | Nurture, re-engagement, going-dark recovery | Coming soon |
+| `/sales-close` | Closing strategies, mutual action plans, urgency | Coming soon |
+
+### Strategy & Content
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-positioning` | Messaging, value props, competitive differentiation | Coming soon |
+| `/sales-content` | Case studies, one-pagers, battle cards, enablement | Coming soon |
+
+### Router
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-do` | Routes your objective to the right skill | Available |
+
+## Usage Examples
+
+```
+# Route automatically
+/sales-do prep for a discovery call with Acme Corp
+
+# Or use skills directly
+/sales-research Acme Corp
+/sales-outreach cold email for VP Engineering at Series B startups
+/sales-objection they say they already have a solution in place
+```
 
 ## License
 
