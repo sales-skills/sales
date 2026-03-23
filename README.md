@@ -45,6 +45,20 @@ npx skills add sales-skills/sales
 | `/sales-positioning` | Messaging, value props, competitive differentiation | Coming soon |
 | `/sales-content` | Case studies, one-pagers, battle cards, enablement | Coming soon |
 
+### Marketing & GTM
+
+> From [`coreyhaines31/marketingskills`](https://skills.sh/coreyhaines31/marketingskills). Install with: `npx skills add coreyhaines31/marketingskills`
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/seo-audit` | Comprehensive SEO auditing — crawlability, technical, on-page, content, authority | Available |
+| `/copywriting` | Conversion-focused marketing copy for web pages (homepages, landing, pricing) | Available |
+| `/copy-editing` | Systematic editing of existing marketing copy via "Seven Sweeps" framework | Available |
+| `/content-strategy` | Content planning — pillars, topic clusters, buyer journey mapping | Available |
+| `/marketing-ideas` | Brainstorm and prioritize marketing strategies (139 ideas across 17 categories) | Available |
+| `/marketing-psychology` | 50+ mental models and psychological principles for marketing decisions | Available |
+| `/pricing-strategy` | SaaS pricing design — packaging, metrics, price points, value-based pricing | Available |
+
 ### Router
 
 | Skill | What it does | Status |
