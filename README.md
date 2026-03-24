@@ -10,7 +10,7 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 3 skills in this repo + 43 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 8 skills in this repo + 43 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -85,6 +85,16 @@ Router recommends a 5-skill sequence:
 | `/sales-objection` | Objection handling, negotiation prep | Coming soon |
 | `/sales-follow-up` | Nurture, re-engagement, going-dark recovery | Coming soon |
 | `/sales-close` | Closing strategies, mutual action plans, urgency | Coming soon |
+
+### Qwilr & Proposals
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-proposal-page` | Write and structure a Qwilr proposal page with interactive quote blocks | Available |
+| `/sales-proposal-analytics` | Interpret Qwilr engagement signals and decide follow-up actions | Available |
+| `/sales-deal-room` | Design multi-stakeholder Qwilr deal rooms for complex B2B deals | Available |
+| `/sales-qwilr-automation` | Build automations connecting Qwilr to CRM via API, Zapier, or native integrations | Available |
+| `/sales-proposal-template` | Design reusable Qwilr proposal templates for your whole sales team | Available |
 
 ### Strategy & Content
 

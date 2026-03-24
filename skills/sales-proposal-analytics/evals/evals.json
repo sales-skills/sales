@@ -1,0 +1,36 @@
+{
+  "skill_name": "sales-proposal-analytics",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "My prospect viewed the Qwilr proposal 4 times in the last 2 days, spending most of the time on the pricing section, but hasn't responded. It's a $75k deal and they mentioned they're also talking to a competitor.",
+      "expected_output": "Interpretation of the view pattern (heavy pricing attention = price comparison with competitor), urgency assessment, concrete action plan focused on reinforcing value vs. the competitor, and 1-2 follow-up message drafts that address price sensitivity without discounting preemptively.",
+      "assertions": [
+        {"name": "has_signal_interpretation", "description": "Interprets the 4-view, pricing-focused pattern as price sensitivity or competitor comparison"},
+        {"name": "has_action_plan", "description": "Provides concrete next steps addressing the competitive situation"},
+        {"name": "has_follow_up_draft", "description": "Includes at least one drafted follow-up message"},
+        {"name": "no_creepy_tracking", "description": "Follow-up messages don't explicitly reveal that view tracking is being used"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "I sent a proposal 5 days ago and the prospect hasn't viewed it at all. The deal was looking good after our demo last week.",
+      "expected_output": "Diagnosis of likely causes (email delivery issue, lost priority, busy period), escalating action plan starting with delivery verification and ending with alternative contact methods, and draft messages for re-engagement.",
+      "assertions": [
+        {"name": "checks_delivery", "description": "First step is verifying the email actually landed (spam, correct address)"},
+        {"name": "has_escalation_plan", "description": "Provides escalating steps from gentle to more direct outreach"},
+        {"name": "has_alternative_channels", "description": "Suggests trying different contact methods beyond email"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Three different people at the prospect's company viewed my Qwilr proposal this week. I only sent it to my main contact, the Director of Ops.",
+      "expected_output": "Interpretation that the proposal is being circulated to a buying committee (positive signal), advice on identifying who the additional viewers might be, and strategy for supporting the champion with materials for the broader group.",
+      "assertions": [
+        {"name": "interprets_committee", "description": "Identifies multiple viewers as buying committee circulation — a positive signal"},
+        {"name": "has_champion_strategy", "description": "Advises on how to support the original contact who is championing internally"},
+        {"name": "suggests_stakeholder_content", "description": "Recommends creating stakeholder-specific materials for the additional viewers"}
+      ]
+    }
+  ]
+}

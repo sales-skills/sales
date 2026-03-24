@@ -1,0 +1,36 @@
+{
+  "skill_name": "sales-qwilr-automation",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I want to auto-generate Qwilr proposals whenever a deal hits Stage 3 in HubSpot. We sell a SaaS platform with per-seat pricing.",
+      "expected_output": "A complete automation guide covering the architecture choice (native HubSpot integration vs. API), step-by-step setup including API calls for page creation with token substitutions from HubSpot deal fields, webhook configuration for tracking engagement, and a testing checklist.",
+      "assertions": [
+        {"name": "has_architecture_recommendation", "description": "Recommends native integration vs. API with trade-offs for HubSpot specifically"},
+        {"name": "has_api_calls", "description": "Includes actual API call examples for POST /pages with token substitutions"},
+        {"name": "has_token_mapping", "description": "Maps HubSpot deal fields to Qwilr template tokens"},
+        {"name": "has_testing_checklist", "description": "Includes steps to verify the end-to-end automation works"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "Set up Qwilr webhooks so I get notified in Slack when someone views or accepts a proposal.",
+      "expected_output": "Webhook setup instructions with the specific POST /webhooks API call, which events to subscribe to (pageFirstViewed, pageViewed, pageAccepted), and how to connect to Slack (via Zapier or direct webhook-to-Slack integration).",
+      "assertions": [
+        {"name": "has_webhook_setup", "description": "Includes the POST /webhooks API call with correct event names"},
+        {"name": "has_slack_integration", "description": "Shows how to connect Qwilr webhook events to Slack notifications"},
+        {"name": "has_event_selection", "description": "Explains which webhook events to use and why"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I use Salesforce and want to connect it to Qwilr. What's the best approach — native integration, Zapier, or API?",
+      "expected_output": "A comparison of all three approaches for Salesforce specifically, with trade-offs around complexity, customization, and cost. Should include a recommendation based on common use cases and a setup guide for the recommended approach.",
+      "assertions": [
+        {"name": "has_comparison", "description": "Compares native Salesforce integration, Zapier, and direct API with pros/cons"},
+        {"name": "has_recommendation", "description": "Makes a clear recommendation based on the user's situation"},
+        {"name": "has_setup_steps", "description": "Provides actionable setup steps for at least the recommended approach"}
+      ]
+    }
+  ]
+}

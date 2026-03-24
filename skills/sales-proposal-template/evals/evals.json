@@ -1,0 +1,36 @@
+{
+  "skill_name": "sales-proposal-template",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "We sell a B2B SaaS platform to mid-market and enterprise companies. We have two main products and each has SMB and enterprise pricing. Our reps all build proposals from scratch and they're wildly inconsistent. Help me create a template system.",
+      "expected_output": "A template strategy recommending 3-4 templates (product x segment matrix, capped sensibly), with detailed blueprints for each including section structure, block types, fixed vs. variable sections, copy frameworks for variable sections, and a token design for CRM auto-population.",
+      "assertions": [
+        {"name": "has_template_strategy", "description": "Recommends how many templates to create and why, based on the 2-product x 2-segment matrix"},
+        {"name": "has_blueprints", "description": "Provides detailed section-by-section blueprints for each template"},
+        {"name": "has_copy_frameworks", "description": "Includes fill-in-the-blank frameworks for variable sections like executive summary"},
+        {"name": "has_token_design", "description": "Defines substitution tokens mapped to CRM fields"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "I need to create vertical-specific Qwilr templates for our sales team. We sell to healthcare, financial services, and retail. Each vertical has different compliance requirements and case studies.",
+      "expected_output": "A template design with a shared base structure and vertical-specific conditional sections for compliance, case studies, and industry-specific language. Should include token design for industry-specific fields and guidance on managing the case study library.",
+      "assertions": [
+        {"name": "has_shared_base", "description": "Designs a shared template base with conditional vertical-specific sections"},
+        {"name": "has_vertical_customization", "description": "Addresses specific needs per vertical (healthcare compliance, financial regulations, retail use cases)"},
+        {"name": "has_case_study_strategy", "description": "Recommends how to organize and select case studies per vertical"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Design tokens for our Qwilr templates so we can auto-generate proposals from Salesforce. We need company info, deal info, and rep info to auto-populate.",
+      "expected_output": "A complete token mapping from Salesforce fields to Qwilr template tokens, including standard tokens, custom tokens, guidelines for which tokens should be auto vs. manual, and fallback values for empty fields.",
+      "assertions": [
+        {"name": "has_salesforce_mapping", "description": "Maps specific Salesforce fields (Account, Opportunity, Contact, User) to Qwilr tokens"},
+        {"name": "has_auto_vs_manual", "description": "Distinguishes which tokens should auto-populate vs. require manual input"},
+        {"name": "has_fallback_guidance", "description": "Addresses what happens when CRM fields are empty"}
+      ]
+    }
+  ]
+}

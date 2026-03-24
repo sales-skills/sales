@@ -1,0 +1,36 @@
+{
+  "skill_name": "sales-proposal-page",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Write a Qwilr proposal for a $50k annual SaaS deal to a VP of Marketing at a mid-market ecommerce company. They saw a demo last week and want a formal proposal with interactive pricing.",
+      "expected_output": "A complete proposal page blueprint with section-by-section copy including executive summary, problem/solution framing, scope of work, an interactive quote block configuration with line items, and a clear CTA. Should include Qwilr-specific features like optional add-ons in the quote block.",
+      "assertions": [
+        {"name": "has_page_blueprint", "description": "Includes a section-by-section structure mapped to Qwilr block types"},
+        {"name": "has_actual_copy", "description": "Writes real proposal copy for each section, not just placeholders"},
+        {"name": "has_quote_block_config", "description": "Designs an interactive quote block with line items, pricing, and optional add-ons"},
+        {"name": "has_buyer_context", "description": "Copy references the buyer's role (VP Marketing), industry (ecommerce), and deal stage (post-demo)"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "I need to create a Qwilr pricing table for a consulting engagement with three tiers — basic audit, full implementation, and ongoing retainer. The client should be able to pick which ones they want.",
+      "expected_output": "A quote block configuration with three sections or optional line items representing the three tiers, each with descriptions, fixed costs, and isOptional settings. Should include guidance on how to structure tiers so the buyer can self-select.",
+      "assertions": [
+        {"name": "has_three_tiers", "description": "Includes three distinct pricing tiers (audit, implementation, retainer)"},
+        {"name": "has_optional_items", "description": "Uses isOptional or similar mechanism to let the buyer select which tiers they want"},
+        {"name": "has_pricing_details", "description": "Each tier has a name, description, and price configuration"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Build a Qwilr proposal page for a renewal deal. We've been working with this client for a year and want to expand the engagement with some new add-on services.",
+      "expected_output": "A renewal-focused proposal that leads with results achieved in year one, then presents the expansion scope and pricing. Structure should differ from a new-logo proposal — lighter on problem framing, heavier on proven value and expansion opportunity.",
+      "assertions": [
+        {"name": "renewal_structure", "description": "Leads with results/value delivered, not problem/solution framing"},
+        {"name": "has_expansion_pricing", "description": "Includes both renewal base and add-on expansion items in pricing"},
+        {"name": "uses_qwilr_features", "description": "Leverages Qwilr-specific features like optional add-ons for the expansion items"}
+      ]
+    }
+  ]
+}
