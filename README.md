@@ -10,7 +10,7 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 2 skills in this repo + 43 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 3 skills in this repo + 43 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -203,6 +203,7 @@ Router recommends a 5-skill sequence:
 | Skill | What it does | Status |
 |---|---|---|
 | `/sales-do` | Routes your objective to the right skill | Available |
+| `/sales-request-skill` | Build or request a skill that doesn't exist yet | Available |
 
 ## Usage Examples
 

@@ -1,5 +1,5 @@
 ---
-name: third-party-skills
+name: sales-third-party
 description: "Browse and install third-party marketing, research, and creative skills. Use when: 'install skills', 'available skills', 'third party skills', 'marketing skills', 'opc skills', 'what skills are available', 'list skills', 'browse skills', 'show me skills'."
 ---
 

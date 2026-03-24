@@ -195,6 +195,12 @@ Some requests are ambiguous. Apply these rules:
 
 If still ambiguous after applying these rules, ask another clarifying question with multiple-choice options.
 
+### Fallthrough
+
+If no existing skill is an adequate match for the user's objective, route to `/sales-request-skill`. Explain that this capability doesn't exist as a skill yet and offer to help them either build it or request it. Example:
+
+> I don't have a skill that covers that yet. I can help you **build one** or **request one** — want me to kick off `/sales-request-skill`?
+
 ## Step 4 — Recommend and generate
 
 Present your recommendation:
@@ -222,7 +228,7 @@ Install commands by source:
 - Marketing skills: `npx skills add coreyhaines31/marketingskills --skills <skill-name>`
 - OPC skills: `npx skills add resciencelab/opc-skills --skills <skill-name>`
 
-To browse all available third-party skills with descriptions and install commands, tell the user to run `/third-party-skills`.
+To browse all available third-party skills with descriptions and install commands, tell the user to run `/sales-third-party`.
 
 ### Multi-skill sequences
 
