@@ -1,0 +1,36 @@
+{
+  "skill_name": "sales-cadence",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Build a 21-day cold outbound cadence targeting VP of Engineering at Series B SaaS companies. Channels: email, phone, LinkedIn. Our product is a developer productivity platform.",
+      "expected_output": "A complete cadence architecture table with day-by-day steps across email, phone, and LinkedIn. Full content for each step including email copy with A/B subject lines, call scripts with voicemail, and LinkedIn messages. Should include personalization guidance and follow channel mixing best practices.",
+      "assertions": [
+        {"name": "has_cadence_table", "description": "Includes a day-by-day cadence architecture table with step number, channel, and action"},
+        {"name": "has_full_content", "description": "Writes actual email copy, call scripts, and LinkedIn messages — not just placeholders"},
+        {"name": "has_ab_variants", "description": "Provides A/B subject line variants for at least the first email"},
+        {"name": "follows_channel_mixing", "description": "Alternates channels rather than sending 3+ consecutive touches in the same channel"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "My cold email cadence has a 35% open rate but only 2% reply rate. Help me optimize it.",
+      "expected_output": "Diagnosis of the gap between open rate and reply rate with specific optimization recommendations. Should cover email body improvements, CTA changes, personalization level, and an A/B testing plan to systematically improve reply rate.",
+      "assertions": [
+        {"name": "diagnoses_gap", "description": "Identifies that 35% open rate with 2% reply rate indicates subject lines work but body/CTA needs improvement"},
+        {"name": "has_specific_fixes", "description": "Provides specific, actionable changes to email body, CTA, or personalization"},
+        {"name": "has_testing_plan", "description": "Includes an A/B testing plan to validate the recommended changes"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Design a trigger-based cadence for when a target account gets a new round of funding. We sell financial planning software to CFOs at mid-market companies.",
+      "expected_output": "A cadence specifically designed around the funding trigger event, with messaging that references the funding round and connects it to the need for financial planning software. Should leverage the timeliness of the trigger for urgency.",
+      "assertions": [
+        {"name": "leverages_trigger", "description": "Messaging explicitly references the funding event and connects it to the prospect's likely new needs"},
+        {"name": "has_cadence_structure", "description": "Includes a complete cadence table with timing and channels"},
+        {"name": "persona_appropriate", "description": "Content is tailored for CFO-level audience at mid-market companies"}
+      ]
+    }
+  ]
+}

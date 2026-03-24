@@ -1,6 +1,6 @@
 ---
 name: sales-do
-description: "Describe your sales, marketing, or GTM objective and get routed to the right skill. Use when: 'write a cold email', 'prep for a discovery call', 'handle this objection', 'build a prospecting list', 'help with my pitch', 'write a proposal', 'plan outreach', 'research this account', 'forecast pipeline', 'create GTM content', 'audit my SEO', 'write landing page copy', 'brainstorm marketing ideas', 'plan content strategy', 'design pricing page', 'edit marketing copy', 'apply marketing psychology', 'A/B test', 'ad creative', 'AI SEO', 'analytics', 'churn', 'cold email', 'competitor page', 'CRO', 'email sequence', 'lead magnets', 'launch', 'onboarding', 'paid ads', 'popups', 'programmatic SEO', 'referral', 'revops', 'sales enablement', 'schema markup', 'signup flow', 'site architecture', 'social media', 'GEO', 'generative engine optimization', 'Product Hunt', 'Reddit research', 'image generation', 'logo', 'banner', 'tweets', 'domain name', 'demand research', 'knowledge archive', 'Qwilr proposal', 'Qwilr quote', 'Qwilr deal room', 'Qwilr API', 'Qwilr webhook', 'Qwilr template', 'interactive proposal', 'proposal analytics', 'proposal engagement', 'digital sales room', 'connect Qwilr to CRM'."
+description: "Describe your sales, marketing, or GTM objective and get routed to the right skill. Use when: 'write a cold email', 'prep for a discovery call', 'handle this objection', 'build a prospecting list', 'help with my pitch', 'write a proposal', 'plan outreach', 'research this account', 'forecast pipeline', 'create GTM content', 'audit my SEO', 'write landing page copy', 'brainstorm marketing ideas', 'plan content strategy', 'design pricing page', 'edit marketing copy', 'apply marketing psychology', 'A/B test', 'ad creative', 'AI SEO', 'analytics', 'churn', 'cold email', 'competitor page', 'CRO', 'email sequence', 'lead magnets', 'launch', 'onboarding', 'paid ads', 'popups', 'programmatic SEO', 'referral', 'revops', 'sales enablement', 'schema markup', 'signup flow', 'site architecture', 'social media', 'GEO', 'generative engine optimization', 'Product Hunt', 'Reddit research', 'image generation', 'logo', 'banner', 'tweets', 'domain name', 'demand research', 'knowledge archive', 'Qwilr proposal', 'Qwilr quote', 'Qwilr deal room', 'Qwilr API', 'Qwilr webhook', 'Qwilr template', 'interactive proposal', 'proposal analytics', 'proposal engagement', 'digital sales room', 'connect Qwilr to CRM', 'Salesloft', 'cadence', 'sequence', 'call review', 'call coaching', 'call score', 'deal health', 'deal risk', 'deal review', 'MEDDPICC', 'forecast', 'pipeline coverage', 'Rhythm', 'Conversations', 'Drift'."
 ---
 
 You are a sales skills router. Your job is to understand the user's sales objective, match it to the right specialized skill, and generate a ready-to-use prompt. You do NOT solve the problem directly — you route to the skill that will.
@@ -75,6 +75,16 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 | `/sales-qwilr-automation` | Connecting Qwilr to CRM (HubSpot, Salesforce, Pipedrive), Qwilr API, Zapier, webhooks, auto-generating proposals |
 | `/sales-proposal-template` | Designing reusable Qwilr templates, standardizing proposals across reps, template libraries, vertical-specific templates |
 
+### Salesloft & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-salesloft` | General Salesloft questions — config, Rhythm, Analytics, Drift, integrations, admin, API |
+| `/sales-cadence` | Building/optimizing a multi-channel outbound cadence/sequence, touchpoint timing, A/B testing |
+| `/sales-call-review` | Reviewing a sales call, coaching feedback, call scoring, transcript analysis, extracting action items |
+| `/sales-deal-inspect` | Inspecting deal health, MEDDPICC assessment, stakeholder mapping, deal risk analysis, deal review prep |
+| `/sales-forecast` | Revenue forecasting, pipeline coverage, commit validation, gap analysis, forecast call prep |
+
 ### Strategy & Content
 
 | Skill | Route when... |
@@ -131,6 +141,7 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 | `/marketing-psychology` | Applying psychological principles to marketing — social proof, loss aversion, anchoring |
 | `/pricing-strategy` | Pricing page design, tier structure, pricing models, value-based pricing |
 | `/product-marketing-context` | Foundational product marketing docs — positioning, messaging, ICPs, personas |
+| `/competitive-landscape` | Competitive dynamics analysis — Porter's Five Forces, Blue Ocean Strategy, positioning maps |
 
 #### Retention & Revenue
 
@@ -147,6 +158,7 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 |---|---|
 | `/analytics-tracking` | Analytics measurement, event tracking, GA4 setup, tracking plans |
 | `/marketing-skills-collection` | Generate marketing deliverables across CRO, copywriting, SEO, analytics, and growth (23 sub-skills) |
+| `/marketing-automation` | Marketing automation with 23 sub-skills across CRO, copywriting, SEO, analytics, and growth |
 
 ### Research & Data (via resciencelab/opc-skills)
 
@@ -156,6 +168,7 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 | `/product-hunt-launch` | Optimizing Product Hunt launches — research, gallery strategy, timing, engagement guidance |
 | `/reddit` | Searching Reddit posts/comments, community sentiment, user feedback, market research |
 | `/requesthunt` | Demand research — collecting feature requests and complaints from Reddit, X, GitHub |
+| `/apify-lead-generation` | Multi-platform lead scraping from Google Maps, social media, websites, and search engines |
 | `/twitter` | Searching tweets, user profiles, trends, community discussions on X/Twitter |
 
 ### Creative & Design (via resciencelab/opc-skills)
@@ -173,6 +186,7 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 |---|---|
 | `/seo-geo` | Generative engine optimization (GEO) — optimizing for AI search engines (ChatGPT, Perplexity, Gemini) |
 | `/backlink-analyzer` | Backlink profile analysis, toxic link detection, competitor backlink benchmarking, link opportunity discovery |
+| `/build-links` | Link acquisition campaigns — prospect scoring, outreach strategy, link building at scale |
 | `/domain-hunter` | Finding domain names, availability checks, price comparison across registrars |
 
 ### Utilities (via resciencelab/opc-skills)
@@ -181,6 +195,7 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 |---|---|
 | `/archive` | Capturing and reusing project knowledge across sessions, documenting solutions |
 | `/skill-standardization` | Validating and standardizing SKILL.md files against the Agent Skills spec |
+| `/skill-creator` | Scaffolding new skills — validated directory structure, frontmatter, progressive disclosure |
 
 ### Disambiguation rules
 
@@ -192,6 +207,13 @@ Some requests are ambiguous. Apply these rules:
 - **"Qwilr"** → Ask what they need: writing a proposal page (`/sales-proposal-page`), tracking engagement (`/sales-proposal-analytics`), building a deal room (`/sales-deal-room`), automating with API/CRM (`/sales-qwilr-automation`), or designing templates (`/sales-proposal-template`).
 - **"Deal room" / "digital sales room"** → `/sales-deal-room`.
 - **"Qwilr API" / "Qwilr webhook" / "connect Qwilr"** → `/sales-qwilr-automation`.
+- **"Salesloft"** → Ask: platform help (`/sales-salesloft`), build a cadence (`/sales-cadence`), review a call (`/sales-call-review`), inspect a deal (`/sales-deal-inspect`), or forecast (`/sales-forecast`)?
+- **"cadence" / "sequence"** → `/sales-cadence` for building cadences in Salesloft, `/sales-outreach` for general outreach messages, `/cold-email` for marketing cold email, `/email-sequence` for automated flows.
+- **"call review" / "call coaching" / "call score"** → `/sales-call-review`.
+- **"deal review" / "deal health" / "deal risk"** → `/sales-deal-inspect` for individual deal analysis, `/sales-pipeline` for portfolio-level review.
+- **"forecast" / "what will we close"** → `/sales-forecast` for revenue forecasting, `/sales-pipeline` for general pipeline management.
+- **"pipeline"** → `/sales-pipeline` for portfolio management, `/sales-forecast` for forecasting/coverage, `/sales-deal-inspect` for individual deal deep-dives.
+- **"MEDDPICC" / "BANT" / "deal methodology"** → `/sales-deal-inspect` for assessing a deal, `/sales-discovery` for prepping discovery questions.
 - **"Research"** → If about a specific account or contact → `/sales-research`. If about market positioning or competitive landscape → `/sales-positioning`. If about what users are asking for → `/requesthunt`. If about what's trending → `/producthunt` or `/reddit`.
 - **"Help with my pitch"** → If preparing for a specific meeting → `/sales-demo`. If refining messaging in general → `/sales-positioning`.
 - **"Prep for a call"** → If it's a discovery/qualification call → `/sales-discovery`. If it's a demo or presentation → `/sales-demo`. If it's a negotiation → `/sales-objection`.
@@ -214,6 +236,9 @@ Some requests are ambiguous. Apply these rules:
 - **"backlinks"** → `/backlink-analyzer` for backlink profile analysis, toxic link detection, and competitor benchmarking.
 - **"slide deck" / "presentation"** → `/baoyu-slide-deck` for creating presentation slides, `/sales-demo` for demo prep and pitch delivery.
 - **"Product Hunt launch"** → `/product-hunt-launch` for launch optimization (timing, gallery, engagement), `/producthunt` for researching existing launches.
+- **"competitive landscape/analysis"** → `/competitive-landscape` for frameworks (Porter's Five Forces, Blue Ocean, positioning maps), `/sales-research` for account-level competitive intel.
+- **"lead generation"** → `/apify-lead-generation` for scraping leads from platforms (Google Maps, social, web), `/sales-prospect` for ICP definition and target list building, `/lead-magnets` for creating gated content to capture emails.
+- **"link building"** → `/build-links` for link acquisition campaigns and outreach strategy, `/backlink-analyzer` for analyzing existing backlink profiles.
 
 If still ambiguous after applying these rules, ask another clarifying question with multiple-choice options.
 
@@ -253,6 +278,10 @@ Install commands by source:
 - Presentations: `npx skills add jimliu/baoyu-skills --skills <skill-name>`
 - Supercent skills: `npx skills add supercent-io/skills-template --skills <skill-name>`
 - Inferen skills: `npx skills add inferen-sh/skills --skills <skill-name>`
+- Competitive analysis: `npx skills add wshobson/agents --skills <skill-name>`
+- Lead generation: `npx skills add apify/agent-skills --skills <skill-name>`
+- Link building: `npx skills add calm-north/seojuice-skills --skills <skill-name>`
+- Skill development: `npx skills add starchild-ai-agent/official-skills --skills <skill-name>`
 
 To browse all available third-party skills with descriptions and install commands, tell the user to run `/sales-third-party`.
 

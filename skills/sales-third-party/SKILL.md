@@ -173,10 +173,59 @@ npx skills add jimliu/baoyu-skills --skills baoyu-slide-deck
 | Skill | What it does |
 |---|---|
 | `/marketing-skills-collection` | Generate marketing deliverables across CRO, copywriting, SEO, analytics, and growth |
+| `/marketing-automation` | Marketing automation with 23 sub-skills across CRO, copywriting, SEO, analytics, and growth |
 | `/skill-standardization` | Validate and standardize SKILL.md files against the Agent Skills spec |
 
 ```bash
 npx skills add supercent-io/skills-template --skills <skill-name>
+```
+
+### Competitive Analysis
+
+> From [`wshobson/agents`](https://skills.sh/wshobson/agents)
+
+| Skill | What it does |
+|---|---|
+| `/competitive-landscape` | Analyze competitive dynamics with Porter's Five Forces, Blue Ocean Strategy, and positioning maps |
+
+```bash
+npx skills add wshobson/agents --skills competitive-landscape
+```
+
+### Link Building
+
+> From [`calm-north/seojuice-skills`](https://skills.sh/calm-north/seojuice-skills)
+
+| Skill | What it does |
+|---|---|
+| `/build-links` | Design link acquisition campaigns with prospect scoring and outreach strategy |
+
+```bash
+npx skills add calm-north/seojuice-skills --skills build-links
+```
+
+### Skill Development
+
+> From [`starchild-ai-agent/official-skills`](https://skills.sh/starchild-ai-agent/official-skills)
+
+| Skill | What it does |
+|---|---|
+| `/skill-creator` | Scaffold new skills with validated directory structure, frontmatter, and progressive disclosure |
+
+```bash
+npx skills add starchild-ai-agent/official-skills --skills skill-creator
+```
+
+### Lead Generation
+
+> From [`apify/agent-skills`](https://skills.sh/apify/agent-skills)
+
+| Skill | What it does |
+|---|---|
+| `/apify-lead-generation` | Multi-platform lead scraping from Google Maps, social media, websites, and search engines |
+
+```bash
+npx skills add apify/agent-skills --skills apify-lead-generation
 ```
 
 ### Launch & Growth

@@ -1,0 +1,36 @@
+{
+  "skill_name": "sales-call-review",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Review this discovery call: I'm an AE and just had a 30-minute discovery call with a Director of Operations at a logistics company. I talked for about 70% of the call. I asked about their current process and they described manual workflows. I showed them a quick demo when they asked. I ended with 'I'll send you some info and we can reconnect next week.' They said 'sounds good.'",
+      "expected_output": "A call scorecard identifying the high talk-to-listen ratio as a problem, weak discovery depth, and vague next steps as key issues. Should include specific coaching recommendations with practice drills and a better approach for closing the call with specific commitments.",
+      "assertions": [
+        {"name": "has_scorecard", "description": "Includes a call scorecard with dimension-by-dimension scoring"},
+        {"name": "flags_talk_ratio", "description": "Identifies the 70% talk ratio as too high for a discovery call (target 40-60%)"},
+        {"name": "flags_weak_next_steps", "description": "Calls out the vague next steps ('reconnect next week') as a problem and shows what better looks like"},
+        {"name": "has_coaching_recs", "description": "Provides specific coaching recommendations with practice drills"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "I'm a sales manager and need to score a rep's call using MEDDPICC. The call was a second meeting with a mid-market SaaS company. The rep confirmed the pain point and got the prospect to share metrics on lost productivity, but didn't ask about the decision process, budget, or who else is involved.",
+      "expected_output": "A MEDDPICC-specific scoring showing Metrics and Implicate the Pain as partially addressed, with Decision Process, Economic Buyer, Champion, and Competition as gaps. Should include a prioritized plan for the next call to fill these gaps.",
+      "assertions": [
+        {"name": "has_meddpicc_scoring", "description": "Includes a MEDDPICC element-by-element assessment showing what's known vs. missing"},
+        {"name": "identifies_gaps", "description": "Clearly identifies Decision Process, Economic Buyer, and other unaddressed elements as priorities"},
+        {"name": "has_next_call_plan", "description": "Provides specific questions or actions for the next call to fill MEDDPICC gaps"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Review my closing call. The prospect said they love the product but need to 'run it by their team' before signing. They wouldn't commit to a specific date for the next meeting. Deal is $85k annual.",
+      "expected_output": "Analysis identifying risk signals: lack of commitment to next steps, potential lack of champion strength or multi-threading, and the 'run it by the team' pattern. Should include coaching on commitment testing, stakeholder identification, and a follow-up email that advances the deal.",
+      "assertions": [
+        {"name": "identifies_risk_signals", "description": "Flags 'run it by the team' as a risk signal and the lack of specific date commitment as weak next steps"},
+        {"name": "has_key_moments", "description": "Analyzes the key moment (prospect deferring to team) and what should have been said instead"},
+        {"name": "has_follow_up_plan", "description": "Includes a draft follow-up email and/or specific actions to regain momentum"}
+      ]
+    }
+  ]
+}

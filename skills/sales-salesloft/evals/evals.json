@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-salesloft",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "How do I set up Rhythm signals in Salesloft to prioritize inbound leads over cold outbound tasks?",
+      "expected_output": "Step-by-step guidance on configuring Rhythm signal weighting in Salesloft, including where to find signal settings in the admin UI, how to adjust priority weights for inbound vs. outbound signals, and best practices for Rhythm configuration.",
+      "assertions": [
+        {"name": "covers_rhythm", "description": "Explains Rhythm signals, prioritization, and the focus zone concept"},
+        {"name": "has_config_steps", "description": "Provides step-by-step instructions with specific Salesloft UI navigation paths"},
+        {"name": "has_best_practices", "description": "Includes best practices or pitfalls for Rhythm signal configuration"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "I need to connect Salesloft to our Salesforce instance. What are the key sync settings I should configure and what are common pitfalls?",
+      "expected_output": "Guidance on Salesloft-Salesforce CRM sync configuration including field mapping, sync direction, conflict resolution settings, sync frequency, and common issues like duplicate records or sync conflicts.",
+      "assertions": [
+        {"name": "covers_crm_sync", "description": "Addresses Salesforce sync configuration including field mapping and sync direction"},
+        {"name": "has_pitfalls", "description": "Identifies common pitfalls like sync conflicts, duplicate handling, or field mapping errors"},
+        {"name": "has_actionable_steps", "description": "Provides specific configuration steps, not just general advice"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "We just bought Salesloft and I'm the admin. What should I set up first? We have 20 reps, use HubSpot as our CRM, and need call recording enabled.",
+      "expected_output": "A prioritized setup guide for a new Salesloft instance covering user management, CRM integration with HubSpot, call recording/Conversations configuration, team structure, and initial settings. Should address the specific context of 20 reps and HubSpot.",
+      "assertions": [
+        {"name": "has_setup_priority", "description": "Provides a prioritized order for initial Salesloft configuration"},
+        {"name": "covers_multiple_areas", "description": "Addresses user management, CRM sync, and Conversations/call recording setup"},
+        {"name": "context_specific", "description": "Tailors advice to the stated context (20 reps, HubSpot, call recording needs)"}
+      ]
+    }
+  ]
+}

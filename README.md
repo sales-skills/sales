@@ -10,7 +10,7 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 8 skills in this repo + 48 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 13 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -96,6 +96,16 @@ Router recommends a 5-skill sequence:
 | `/sales-qwilr-automation` | Build automations connecting Qwilr to CRM via API, Zapier, or native integrations | Available |
 | `/sales-proposal-template` | Design reusable Qwilr proposal templates for your whole sales team | Available |
 
+### Salesloft & Platform
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-salesloft` | Salesloft platform help — config, Rhythm, Conversations, Drift, integrations | Available |
+| `/sales-cadence` | Design multi-channel outbound cadences with timing, A/B testing, and content | Available |
+| `/sales-call-review` | Review sales calls, extract coaching insights, score against MEDDPICC/SPIN | Available |
+| `/sales-deal-inspect` | Inspect deal health, map stakeholders, identify risks, recommend next actions | Available |
+| `/sales-forecast` | Build and validate revenue forecasts with pipeline coverage and gap analysis | Available |
+
 ### Strategy & Content
 
 | Skill | What it does | Status |
@@ -156,6 +166,7 @@ Router recommends a 5-skill sequence:
 | `/marketing-psychology` | Apply behavioral science and mental models to marketing | Available |
 | `/pricing-strategy` | Determine pricing, packaging, and monetization decisions | Available |
 | `/product-marketing-context` | Create foundational product marketing documentation | Available |
+| `/competitive-landscape` | Analyze competitive dynamics with Porter's Five Forces, Blue Ocean Strategy, and positioning maps | Available |
 
 #### Retention & Revenue
 
@@ -172,6 +183,7 @@ Router recommends a 5-skill sequence:
 |---|---|---|
 | `/analytics-tracking` | Set up and audit analytics measurement and event tracking | Available |
 | `/marketing-skills-collection` | Generate marketing deliverables across CRO, copywriting, SEO, analytics, and growth | Available |
+| `/marketing-automation` | Marketing automation with 23 sub-skills across CRO, copywriting, SEO, analytics, and growth | Available |
 
 ### Research & Data
 
@@ -187,6 +199,7 @@ Router recommends a 5-skill sequence:
 | `/product-hunt-launch` | Optimize Product Hunt launches with research, gallery strategy, and timing | Available |
 | `/reddit` | Search and retrieve Reddit posts, comments, and subreddit info | Available |
 | `/requesthunt` | Collect and analyze user feedback from Reddit, X, and GitHub | Available |
+| `/apify-lead-generation` | Multi-platform lead scraping from Google Maps, social media, websites, and search engines | Available |
 | `/twitter` | Search and retrieve tweets, user profiles, and trends from X | Available |
 
 #### Creative & Design
@@ -204,6 +217,7 @@ Router recommends a 5-skill sequence:
 |---|---|---|
 | `/seo-geo` | Optimize for AI search engines (GEO) and traditional search | Available |
 | `/backlink-analyzer` | Analyze backlink profiles with toxic link detection and competitor benchmarking | Available |
+| `/build-links` | Design link acquisition campaigns with prospect scoring and outreach strategy | Available |
 | `/domain-hunter` | Find domain names with availability checks and price comparison | Available |
 
 #### Utilities
@@ -212,6 +226,7 @@ Router recommends a 5-skill sequence:
 |---|---|---|
 | `/archive` | Capture, index, and reuse project knowledge across sessions | Available |
 | `/skill-standardization` | Validate and standardize SKILL.md files against the Agent Skills spec | Available |
+| `/skill-creator` | Scaffold new skills with validated directory structure, frontmatter, and progressive disclosure | Available |
 
 ### Router
 
