@@ -10,7 +10,7 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 8 skills in this repo + 43 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 8 skills in this repo + 48 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -171,6 +171,7 @@ Router recommends a 5-skill sequence:
 | Skill | What it does | Status |
 |---|---|---|
 | `/analytics-tracking` | Set up and audit analytics measurement and event tracking | Available |
+| `/marketing-skills-collection` | Generate marketing deliverables across CRO, copywriting, SEO, analytics, and growth | Available |
 
 ### Research & Data
 
@@ -183,6 +184,7 @@ Router recommends a 5-skill sequence:
 | Skill | What it does | Status |
 |---|---|---|
 | `/producthunt` | Search and retrieve Product Hunt posts, topics, and collections | Available |
+| `/product-hunt-launch` | Optimize Product Hunt launches with research, gallery strategy, and timing | Available |
 | `/reddit` | Search and retrieve Reddit posts, comments, and subreddit info | Available |
 | `/requesthunt` | Collect and analyze user feedback from Reddit, X, and GitHub | Available |
 | `/twitter` | Search and retrieve tweets, user profiles, and trends from X | Available |
@@ -194,12 +196,14 @@ Router recommends a 5-skill sequence:
 | `/banner-creator` | Generate professional banners for GitHub, Twitter, and websites | Available |
 | `/logo-creator` | Generate professional logos with AI through iterative design | Available |
 | `/nanobanana` | Generate and edit images using AI (Gemini image model) | Available |
+| `/baoyu-slide-deck` | Transform content into professional presentation decks with customizable styles | Available |
 
 #### SEO & Domains
 
 | Skill | What it does | Status |
 |---|---|---|
 | `/seo-geo` | Optimize for AI search engines (GEO) and traditional search | Available |
+| `/backlink-analyzer` | Analyze backlink profiles with toxic link detection and competitor benchmarking | Available |
 | `/domain-hunter` | Find domain names with availability checks and price comparison | Available |
 
 #### Utilities
@@ -207,6 +211,7 @@ Router recommends a 5-skill sequence:
 | Skill | What it does | Status |
 |---|---|---|
 | `/archive` | Capture, index, and reuse project knowledge across sessions | Available |
+| `/skill-standardization` | Validate and standardize SKILL.md files against the Agent Skills spec | Available |
 
 ### Router
 

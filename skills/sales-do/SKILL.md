@@ -146,12 +146,14 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 | Skill | Route when... |
 |---|---|
 | `/analytics-tracking` | Analytics measurement, event tracking, GA4 setup, tracking plans |
+| `/marketing-skills-collection` | Generate marketing deliverables across CRO, copywriting, SEO, analytics, and growth (23 sub-skills) |
 
 ### Research & Data (via resciencelab/opc-skills)
 
 | Skill | Route when... |
 |---|---|
 | `/producthunt` | Researching Product Hunt launches, trending products, competitor launches |
+| `/product-hunt-launch` | Optimizing Product Hunt launches — research, gallery strategy, timing, engagement guidance |
 | `/reddit` | Searching Reddit posts/comments, community sentiment, user feedback, market research |
 | `/requesthunt` | Demand research — collecting feature requests and complaints from Reddit, X, GitHub |
 | `/twitter` | Searching tweets, user profiles, trends, community discussions on X/Twitter |
@@ -163,12 +165,14 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 | `/banner-creator` | Creating banners for GitHub, Twitter, websites, social media headers |
 | `/logo-creator` | Generating professional logos with AI, iterative logo design |
 | `/nanobanana` | AI image generation/editing — product mockups, marketing visuals, creative assets |
+| `/baoyu-slide-deck` | Transform content into presentation decks — slide outlines, images, audience targeting, style options |
 
 ### SEO & Domains (via resciencelab/opc-skills)
 
 | Skill | Route when... |
 |---|---|
 | `/seo-geo` | Generative engine optimization (GEO) — optimizing for AI search engines (ChatGPT, Perplexity, Gemini) |
+| `/backlink-analyzer` | Backlink profile analysis, toxic link detection, competitor backlink benchmarking, link opportunity discovery |
 | `/domain-hunter` | Finding domain names, availability checks, price comparison across registrars |
 
 ### Utilities (via resciencelab/opc-skills)
@@ -176,6 +180,7 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 | Skill | Route when... |
 |---|---|
 | `/archive` | Capturing and reusing project knowledge across sessions, documenting solutions |
+| `/skill-standardization` | Validating and standardizing SKILL.md files against the Agent Skills spec |
 
 ### Disambiguation rules
 
@@ -206,6 +211,9 @@ Some requests are ambiguous. Apply these rules:
 - **"Social media"** → `/social-content` for creating posts, `/twitter` for searching/retrieving tweets and trends, `/reddit` for Reddit research.
 - **"Logo" / "banner" / "image"** → `/logo-creator` for logos, `/banner-creator` for banners/headers, `/nanobanana` for general AI image generation.
 - **"Domain"** → `/domain-hunter` for finding and purchasing domain names.
+- **"backlinks"** → `/backlink-analyzer` for backlink profile analysis, toxic link detection, and competitor benchmarking.
+- **"slide deck" / "presentation"** → `/baoyu-slide-deck` for creating presentation slides, `/sales-demo` for demo prep and pitch delivery.
+- **"Product Hunt launch"** → `/product-hunt-launch` for launch optimization (timing, gallery, engagement), `/producthunt` for researching existing launches.
 
 If still ambiguous after applying these rules, ask another clarifying question with multiple-choice options.
 
@@ -241,6 +249,10 @@ Install commands by source:
 - Sales skills: `npx skills add sales-skills/sales --skills <skill-name>`
 - Marketing skills: `npx skills add coreyhaines31/marketingskills --skills <skill-name>`
 - OPC skills: `npx skills add resciencelab/opc-skills --skills <skill-name>`
+- SEO/Backlinks: `npx skills add aaron-he-zhu/seo-geo-claude-skills --skills <skill-name>`
+- Presentations: `npx skills add jimliu/baoyu-skills --skills <skill-name>`
+- Supercent skills: `npx skills add supercent-io/skills-template --skills <skill-name>`
+- Inferen skills: `npx skills add inferen-sh/skills --skills <skill-name>`
 
 To browse all available third-party skills with descriptions and install commands, tell the user to run `/sales-third-party`.
 

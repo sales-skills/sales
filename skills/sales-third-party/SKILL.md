@@ -137,3 +137,56 @@ npx skills add resciencelab/opc-skills --skills <skill-name>
 | Skill | What it does |
 |---|---|
 | `/archive` | Capture, index, and reuse project knowledge across sessions |
+
+---
+
+## More Third-Party Skills
+
+### SEO & Backlinks
+
+> From [`aaron-he-zhu/seo-geo-claude-skills`](https://skills.sh/aaron-he-zhu/seo-geo-claude-skills)
+
+| Skill | What it does |
+|---|---|
+| `/backlink-analyzer` | Analyze backlink profiles with toxic link detection and competitor benchmarking |
+
+```bash
+npx skills add aaron-he-zhu/seo-geo-claude-skills --skills backlink-analyzer
+```
+
+### Presentations
+
+> From [`jimliu/baoyu-skills`](https://skills.sh/jimliu/baoyu-skills)
+
+| Skill | What it does |
+|---|---|
+| `/baoyu-slide-deck` | Transform content into professional presentation decks with customizable styles |
+
+```bash
+npx skills add jimliu/baoyu-skills --skills baoyu-slide-deck
+```
+
+### Marketing & Standardization
+
+> From [`supercent-io/skills-template`](https://skills.sh/supercent-io/skills-template)
+
+| Skill | What it does |
+|---|---|
+| `/marketing-skills-collection` | Generate marketing deliverables across CRO, copywriting, SEO, analytics, and growth |
+| `/skill-standardization` | Validate and standardize SKILL.md files against the Agent Skills spec |
+
+```bash
+npx skills add supercent-io/skills-template --skills <skill-name>
+```
+
+### Launch & Growth
+
+> From [`inferen-sh/skills`](https://skills.sh/inferen-sh/skills)
+
+| Skill | What it does |
+|---|---|
+| `/product-hunt-launch` | Optimize Product Hunt launches with research, gallery strategy, and timing guidance |
+
+```bash
+npx skills add inferen-sh/skills --skills product-hunt-launch
+```
