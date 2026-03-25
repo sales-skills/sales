@@ -46,6 +46,8 @@ Ask the user:
    - C) Peer review / team coaching session
    - D) Preparing feedback for a 1:1
 
+**If the user's request already provides most of this context, skip directly to the relevant step.** Lead with your best-effort answer using reasonable assumptions (stated explicitly), then ask only the most critical 1-2 clarifying questions at the end — don't gate your response behind gathering complete context.
+
 ## Step 2 — Call scorecard
 
 Use this scorecard as a framework — adapt the dimensions based on call type and what the user asked to focus on. Not every dimension applies to every call (e.g., objection handling may not come up in a first discovery call).
@@ -175,6 +177,7 @@ If a follow-up call was booked, draft a proposed agenda:
 - `/sales-deal-inspect` — Assess overall deal health beyond just the call
 - `/sales-objection` — Deep-dive on objection handling strategies
 - `/sales-cadence` — Optimize outbound cadences based on call learnings
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Gotchas
 

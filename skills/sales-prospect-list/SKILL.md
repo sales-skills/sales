@@ -41,6 +41,8 @@ Ask the user:
 
 4. **How many prospects do you need?** (rough target — 100? 500? 5,000?)
 
+**If the user's request already provides most of this context, skip directly to the relevant step.** Lead with your best-effort answer using reasonable assumptions (stated explicitly), then ask only the most critical 1-2 clarifying questions at the end — don't gate your response behind gathering complete context.
+
 ## Step 2 — Define the ICP
 
 Build a structured ICP using four dimensions:
@@ -201,6 +203,7 @@ Before launching outreach, validate the list:
 - `/sales-cadence` — Design the outbound sequence for your list
 - `/sales-apollo` — Apollo.io platform help (search mechanics, saved searches, Chrome extension)
 - `/sales-apollo-sequences` — Set up and manage sequences in Apollo
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples
 

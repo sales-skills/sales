@@ -45,6 +45,8 @@ Ask the user:
    - E) Too many deals are slipping from commit to best case
    - F) Other — describe it
 
+**If the user's request already provides most of this context, skip directly to the relevant step.** Lead with your best-effort answer using reasonable assumptions (stated explicitly), then ask only the most critical 1-2 clarifying questions at the end — don't gate your response behind gathering complete context.
+
 ## Step 2 — Forecast model
 
 Build a forecast model table:
@@ -156,6 +158,7 @@ If there's a gap between the forecast and quota, build a plan to close it:
 - `/sales-pipeline` — Portfolio-level pipeline management and deal prioritization
 - `/sales-cadence` — Build outbound cadences for gap-plan pipeline generation
 - `/sales-close` — Closing strategies for commit deals
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Gotchas
 

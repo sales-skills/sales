@@ -35,6 +35,8 @@ Ask the user:
    - Is there a competitive situation?
    - What was the last conversation like before sending?
 
+**If the user's request already provides most of this context, skip directly to the relevant step.** Lead with your best-effort answer using reasonable assumptions (stated explicitly), then ask only the most critical 1-2 clarifying questions at the end — don't gate your response behind gathering complete context.
+
 ## Step 2 — Signal interpretation
 
 Interpret the engagement pattern using this framework:
@@ -143,3 +145,4 @@ For full automation setup (CRM sync, Slack notifications, etc.), use `/sales-qwi
 - `/sales-qwilr-automation` — Set up automated CRM sync and webhook workflows
 - `/sales-follow-up` — General follow-up strategies (non-Qwilr-specific)
 - `/sales-deal-room` — For complex deals that need a multi-page deal room
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

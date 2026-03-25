@@ -24,7 +24,7 @@
     },
     {
       "id": 2,
-      "prompt": "My pipeline coverage is 2x and I need 4x. I have 8 weeks to build pipeline for next quarter. What's my gap plan?",
+      "prompt": "My pipeline coverage is 2x and I need 4x. I have 8 weeks to build pipeline for next quarter. I'm a sales manager with a 5-rep team, $1.5M quarterly quota, and we currently have $3M in pipeline (hence 2x). We need $6M to hit 4x. Our ACV ranges from $30K-$80K, average deal is $50K, and our sales cycle is about 60 days. We're a mid-market SaaS company selling a DevOps platform to engineering leaders. We do a mix of inbound and outbound. What specific actions should my team take each week to close this pipeline gap?",
       "expected_output": "A gap plan with specific levers to double pipeline coverage in 8 weeks. Should include pull-in opportunities, outbound blitz planning, expansion plays, and partner sourcing with realistic timelines and contribution estimates for each lever.",
       "assertions": [
         {"name": "has_gap_plan_table", "description": "Includes a gap plan table with levers, potential value, specific actions, and timelines"},

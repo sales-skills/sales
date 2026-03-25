@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-intent",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I have 200 accounts in my territory. Apollo shows intent data on 40 of them. How do I prioritize?",
+      "expected_output": "Scoring matrix combining ICP fit and intent signal strength, with tiered prioritization and action recommendations",
+      "assertions": [
+        {"name": "scoring_matrix", "description": "Builds a prioritization framework combining ICP fit + signal strength"},
+        {"name": "tiered_output", "description": "Segments the 40 accounts into priority tiers with different actions per tier"},
+        {"name": "icp_gate", "description": "Emphasizes that intent alone doesn't override poor ICP fit"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "Three of my former champions just changed jobs. How do I reach out?",
+      "expected_output": "Job change outreach strategy with timing guidance, warm messaging templates, and relationship-first approach",
+      "assertions": [
+        {"name": "timing", "description": "Recommends waiting 30-60 days before pitching"},
+        {"name": "warm_approach", "description": "Leads with congratulations and relationship, not a pitch"},
+        {"name": "sequence_design", "description": "Designs a multi-touch approach (congrats → value → soft ask)"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "How do I set up intent tracking in Apollo?",
+      "expected_output": "Step-by-step Apollo intent configuration with topic selection guidance",
+      "assertions": [
+        {"name": "setup_steps", "description": "Walks through Settings > Intent topic configuration"},
+        {"name": "topic_selection", "description": "Advises on selecting relevant keywords and competitor names"},
+        {"name": "plan_requirement", "description": "Notes that intent data requires Professional or Organization plan"}
+      ]
+    }
+  ]
+}

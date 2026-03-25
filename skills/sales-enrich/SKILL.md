@@ -219,6 +219,7 @@ Credits reset monthly and do not roll over. Plan enrichment around your billing 
 - `/sales-cadence` — Design the outbound sequence for enriched contacts
 - `/sales-apollo` — Apollo.io platform help (enrichment settings, credit management)
 - `/sales-apollo-sequences` — Set up sequences in Apollo for enriched contacts
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples
 

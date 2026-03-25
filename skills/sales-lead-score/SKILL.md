@@ -44,6 +44,8 @@ Ask the user:
    - Current MQL → SQL conversion rate (if known)
    - Current SQL → closed-won rate (if known)
 
+**If the user's request already provides most of this context, skip directly to the relevant step.** Lead with your best-effort answer using reasonable assumptions (stated explicitly), then ask only the most critical 1-2 clarifying questions at the end — don't gate your response behind gathering complete context.
+
 ## Step 2 — Define scoring dimensions
 
 Build a scoring model across four dimensions. Default weights are a starting point — tune based on your sales motion.
@@ -266,6 +268,7 @@ Every quarter:
 - `/sales-enrich` — Enrich leads with the demographic/firmographic data you need to score
 - `/revops` — Design the broader marketing-to-sales handoff process around your scoring model
 - `/sales-apollo` — Set up Apollo's native scoring features
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples
 

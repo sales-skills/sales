@@ -3,7 +3,7 @@
   "evals": [
     {
       "id": 0,
-      "prompt": "I want to auto-generate Qwilr proposals whenever a deal hits Stage 3 in HubSpot. We sell a SaaS platform with per-seat pricing.",
+      "prompt": "I want to auto-generate Qwilr proposals whenever a deal hits Stage 3 (Proposal) in HubSpot. We sell a SaaS collaboration platform with per-seat pricing ($50-150/seat/year depending on tier). I need the proposal to pull company name, contact name, deal amount, seat count, and product tier from HubSpot. The proposal template should have an executive summary, a scope section, an interactive quote block with the seat pricing, and a case study. We have 8 reps doing about 30 proposals a month. Walk me through the full setup.",
       "expected_output": "A complete automation guide covering the architecture choice (native HubSpot integration vs. API), step-by-step setup including API calls for page creation with token substitutions from HubSpot deal fields, webhook configuration for tracking engagement, and a testing checklist.",
       "assertions": [
         {"name": "has_architecture_recommendation", "description": "Recommends native integration vs. API with trade-offs for HubSpot specifically"},
@@ -24,7 +24,7 @@
     },
     {
       "id": 2,
-      "prompt": "I use Salesforce and want to connect it to Qwilr. What's the best approach — native integration, Zapier, or API?",
+      "prompt": "I use Salesforce and want to connect it to Qwilr. We have a 15-person sales team generating about 40 proposals per month. We want to auto-create proposals from opportunity data (account name, contact, amount, product line, close date) and sync proposal view/acceptance status back to Salesforce. We also want reps to be able to manually trigger proposal creation from the opportunity record. What's the best approach — native integration, Zapier, or API? Walk me through the setup for whichever you recommend.",
       "expected_output": "A comparison of all three approaches for Salesforce specifically, with trade-offs around complexity, customization, and cost. Should include a recommendation based on common use cases and a setup guide for the recommended approach.",
       "assertions": [
         {"name": "has_comparison", "description": "Compares native Salesforce integration, Zapier, and direct API with pros/cons"},

@@ -24,7 +24,7 @@
     },
     {
       "id": 2,
-      "prompt": "Design a trigger-based cadence for when a target account gets a new round of funding. We sell financial planning software to CFOs at mid-market companies.",
+      "prompt": "Design a trigger-based cadence for when a target account gets a new round of funding. We sell FP&A software (financial planning and analysis) to CFOs at mid-market companies (200-1,500 employees). Our product helps finance teams build budgets, forecasts, and board-ready reports — $45K ACV. Channels available: email, phone, and LinkedIn. I want about 10-12 touches over 3 weeks, starting within a few days of the funding announcement. The hook is that post-funding companies need to level up their financial planning for investor reporting and burn rate management. Design the full cadence with actual content for each step.",
       "expected_output": "A cadence specifically designed around the funding trigger event, with messaging that references the funding round and connects it to the need for financial planning software. Should leverage the timeliness of the trigger for urgency.",
       "assertions": [
         {"name": "leverages_trigger", "description": "Messaging explicitly references the funding event and connects it to the prospect's likely new needs"},

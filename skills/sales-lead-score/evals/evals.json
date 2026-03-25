@@ -3,7 +3,7 @@
   "evals": [
     {
       "id": 0,
-      "prompt": "Help me build a lead scoring model for our B2B SaaS product. We're inbound-heavy with a $50K ACV.",
+      "prompt": "Help me build a lead scoring model for our B2B SaaS product. We sell a project management platform to engineering leaders at mid-market companies (200-2,000 employees), $50K ACV. We're inbound-heavy — about 70% of pipeline comes from content marketing, webinars, and organic search. We use HubSpot for CRM and MAP, Apollo for enrichment, and get about 800 leads/month. Current MQL-to-SQL conversion is around 15% and SQL-to-close is 20%. We're starting from scratch on scoring — no model exists yet. Help me design the full model with point values and thresholds.",
       "expected_output": "Full scoring model with 4 dimensions, weighted for inbound motion, calibrated thresholds, and implementation steps",
       "assertions": [
         {"name": "four_dimensions", "description": "Builds a model with demographic, firmographic, behavioral, and timing dimensions with specific point values"},
@@ -13,7 +13,7 @@
     },
     {
       "id": 1,
-      "prompt": "Our MQL-to-SQL conversion rate is 8%. Our scoring model isn't working. Help me fix it.",
+      "prompt": "Our MQL-to-SQL conversion rate is 8% and our scoring model isn't working. We sell a $40K ACV security compliance platform to mid-market companies. We use Marketo for scoring with Salesforce as our CRM. Current model weights 50% demographic (title, seniority), 30% firmographic (company size, industry), and only 20% behavioral. MQL threshold is 50 points, SQL is 75 points. We get about 500 MQLs/month but sales says most of them are garbage — right titles but no real engagement. No decay rules are set up, so points only go up. Help me diagnose what's broken and give me a specific fix with new weights and thresholds.",
       "expected_output": "Diagnosis framework, threshold recalibration, and weight adjustment recommendations",
       "assertions": [
         {"name": "diagnosis", "description": "Identifies likely causes of low conversion (threshold too low, demographic overweighting, missing decay)"},

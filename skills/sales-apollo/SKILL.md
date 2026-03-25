@@ -40,6 +40,8 @@ Ask the user:
 
 3. **What are you trying to accomplish?** (describe your specific goal or question)
 
+**If the user's request already provides most of this context, skip directly to the relevant step.** Lead with your best-effort answer using reasonable assumptions (stated explicitly), then ask only the most critical 1-2 clarifying questions at the end — don't gate your response behind gathering complete context.
+
 Note: If the user needs one of the specialized skills, route them there with a brief explanation of why that skill is a better fit.
 
 ## Step 2 — Route or answer directly
@@ -108,6 +110,8 @@ For detailed API documentation including all endpoints, authentication, rate lim
 
 **Quick reference**: Base URL `https://api.apollo.io/api/v1/`, API key auth (`x-api-key` header), rate limits vary by plan. Key capabilities: people search, enrichment, contact/account CRUD, sequence management, deal management.
 
+**Always reference `references/apollo-api-reference.md`** when answering API questions — point the user to it for the full endpoint catalog, request/response schemas, and rate limit details beyond what's covered inline here.
+
 ### Using MCP tools for direct Apollo access
 
 If you want Claude to interact with Apollo.io directly (search contacts, enrich records, manage sequences, update pipeline stages), you can install an MCP-based tool that gives Claude live API access.
@@ -144,6 +148,7 @@ Based on the user's specific question:
 2. **Configuration recommendations** — specific settings to change, with where to find them (Settings > [section] > [page])
 3. **Common pitfalls** — what can go wrong and how to avoid it
 4. **Verification** — how to confirm the change worked
+5. **For API questions** — always include a pointer: "For the full endpoint catalog, request/response schemas, and rate limits, see `references/apollo-api-reference.md`."
 
 ## Gotchas
 
@@ -161,6 +166,7 @@ Based on the user's specific question:
 - `/sales-apollo-sequences` — Create and manage sequences in Apollo
 - `/sales-cadence` — Design outbound cadence strategy (platform-agnostic)
 - `/sales-salesloft` — Salesloft platform help (if using Salesloft instead of Apollo)
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples
 

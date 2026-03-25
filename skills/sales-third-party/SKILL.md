@@ -239,3 +239,7 @@ npx skills add apify/agent-skills --skills apify-lead-generation
 ```bash
 npx skills add inferen-sh/skills --skills product-hunt-launch
 ```
+
+## Related skills
+
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

@@ -39,6 +39,8 @@ Ask the user:
    - B) Mid-market (200-2,000 employees) — expect 3-6 stakeholders
    - C) Enterprise (2,000+ employees) — expect 5-12+ stakeholders
 
+**If the user's request already provides most of this context, skip directly to the relevant step.** Lead with your best-effort answer using reasonable assumptions (stated explicitly), then ask only the most critical 1-2 clarifying questions at the end — don't gate your response behind gathering complete context.
+
 ## Step 2 — Identify the committee roles
 
 Map expected roles using this framework:
@@ -159,6 +161,7 @@ Each committee member needs a different message:
 - `/sales-deal-inspect` — Assess deal health once the committee is mapped
 - `/sales-enrich` — Enrich all committee members with verified contact info
 - `/sales-intent` — Check for buying signals at the account level
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ### Ongoing committee monitoring
 

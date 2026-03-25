@@ -161,6 +161,7 @@ Point to related skills based on what they asked about:
 - `/sales-forecast` — Build and validate revenue forecasts
 - `/sales-outreach` — General outreach message writing (not Salesloft-specific)
 - `/sales-pipeline` — Portfolio-level pipeline management and deal prioritization
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Gotchas
 

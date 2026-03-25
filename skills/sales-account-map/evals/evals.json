@@ -3,7 +3,7 @@
   "evals": [
     {
       "id": 0,
-      "prompt": "Map the buying committee at Acme Corp for our security product. They have about 5,000 employees.",
+      "prompt": "Map the buying committee at Acme Corp for our endpoint security platform. Acme is an enterprise financial services company with about 5,000 employees. We sell a $250K ACV endpoint detection and response product — buyers are typically the CISO org. I'm an AE and just started prospecting this account, so no contacts yet. I know they have a CISO, a VP of Security Operations, and a large IT team, but I haven't mapped anyone specifically. Help me figure out who the full committee is, where to start, and how to multi-thread.",
       "expected_output": "Role-based committee map with specific titles, recommended entry point, and multi-threading plan",
       "assertions": [
         {"name": "role_mapping", "description": "Maps committee roles (Economic Buyer, Champion, Technical Evaluator, etc.) with expected titles for a security product at an enterprise company"},
@@ -23,7 +23,7 @@
     },
     {
       "id": 2,
-      "prompt": "I have a champion at BigCo but the deal is stuck. Who else should I bring in?",
+      "prompt": "I have a champion at BigCo but the deal is stuck. BigCo is a 3,000-person enterprise software company. We sell a $180K ACV data integration platform — my champion is Sarah Chen, their Director of Data Engineering, who loves our product and ran a successful POC. But we've been in 'procurement review' for 6 weeks with no movement. I think the VP of Engineering hasn't bought in and may prefer building in-house. Sarah says she's tried to push but doesn't have budget authority. Who else should I bring in, and how do I use Sarah to get to them?",
       "expected_output": "Committee gap analysis, blocker identification, and expansion strategy using the Champion for warm introductions",
       "assertions": [
         {"name": "gap_analysis", "description": "Identifies which committee roles are missing and likely causing the stall"},

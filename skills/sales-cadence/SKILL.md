@@ -40,6 +40,8 @@ Ask the user:
    - Compliance requirements (GDPR, CAN-SPAM, industry-specific)
    - Any channels to avoid or emphasize
 
+**If the user's request already provides most of this context, skip directly to the relevant step.** Lead with your best-effort answer using reasonable assumptions (stated explicitly), then ask only the most critical 1-2 clarifying questions at the end — don't gate your response behind gathering complete context.
+
 ## Step 2 — Cadence architecture
 
 Design the cadence structure as a table:
@@ -149,6 +151,7 @@ Provide a benchmarks table:
 - `/sales-call-review` — Review calls from your cadence to improve scripts
 - `/cold-email` — Marketing-style cold email campaigns (not Salesloft cadences)
 - `/email-sequence` — Automated email flows and drip campaigns
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Gotchas
 

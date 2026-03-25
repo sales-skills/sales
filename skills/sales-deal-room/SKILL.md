@@ -51,6 +51,8 @@ Ask the user:
    - C) 3-6 month enterprise cycle
    - D) 6+ months
 
+**If the user's request already provides most of this context, skip directly to the relevant step.** Lead with your best-effort answer using reasonable assumptions (stated explicitly), then ask only the most critical 1-2 clarifying questions at the end — don't gate your response behind gathering complete context.
+
 ## Step 2 — Deal room architecture
 
 Design the page-by-page structure. A deal room is a collection of Qwilr pages organized as a hub with linked sub-pages. The hub page is the "front door" that each stakeholder visits.
@@ -181,3 +183,4 @@ For full webhook and CRM automation setup, use `/sales-qwilr-automation`.
 - `/sales-qwilr-automation` — Automate deal room creation and CRM sync
 - `/sales-proposal-template` — Create reusable deal room templates
 - `/sales-close` — Closing strategies and mutual action plan tactics
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

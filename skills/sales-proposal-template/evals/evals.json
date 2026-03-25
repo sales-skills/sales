@@ -3,7 +3,7 @@
   "evals": [
     {
       "id": 0,
-      "prompt": "We sell a B2B SaaS platform to mid-market and enterprise companies. We have two main products and each has SMB and enterprise pricing. Our reps all build proposals from scratch and they're wildly inconsistent. Help me create a template system.",
+      "prompt": "We sell a B2B SaaS platform — two products: DataSync (data integration, $20-80k deals) and DataVault (data warehousing, $40-150k deals). Each has SMB and enterprise tiers. We have 12 reps using HubSpot, and right now everyone builds proposals from scratch in Google Docs — they're wildly inconsistent, take 2-3 hours each, and pricing is presented differently every time. We want to move to Qwilr templates that auto-populate from HubSpot with company name, contact info, deal amount, and product tier. Help me design the template system.",
       "expected_output": "A template strategy recommending 3-4 templates (product x segment matrix, capped sensibly), with detailed blueprints for each including section structure, block types, fixed vs. variable sections, copy frameworks for variable sections, and a token design for CRM auto-population.",
       "assertions": [
         {"name": "has_template_strategy", "description": "Recommends how many templates to create and why, based on the 2-product x 2-segment matrix"},
@@ -14,11 +14,11 @@
     },
     {
       "id": 1,
-      "prompt": "I need to create vertical-specific Qwilr templates for our sales team. We sell to healthcare, financial services, and retail. Each vertical has different compliance requirements and case studies.",
+      "prompt": "I need to create vertical-specific Qwilr templates for our sales team. We sell an enterprise compliance automation platform ($50-200k deals) to healthcare, financial services, and education. We have 8 reps and currently use one generic template that nobody likes. Healthcare needs HIPAA language and we have 3 healthcare case studies. Financial services needs SOC 2 and PCI-DSS sections and we have 2 finserv case studies. Education needs FERPA compliance and budget-friendly pricing tiers — we have 1 education case study and are working on a second. Each vertical also has different ROI metrics — healthcare focuses on audit time savings, finserv on risk reduction, education on enrollment compliance rates. Help me design templates with a shared base, vertical-specific sections, and a case study strategy for all three verticals.",
       "expected_output": "A template design with a shared base structure and vertical-specific conditional sections for compliance, case studies, and industry-specific language. Should include token design for industry-specific fields and guidance on managing the case study library.",
       "assertions": [
         {"name": "has_shared_base", "description": "Designs a shared template base with conditional vertical-specific sections"},
-        {"name": "has_vertical_customization", "description": "Addresses specific needs per vertical (healthcare compliance, financial regulations, retail use cases)"},
+        {"name": "has_vertical_customization", "description": "Addresses specific needs per vertical (healthcare/HIPAA, financial services/SOC 2/PCI-DSS, education/FERPA)"},
         {"name": "has_case_study_strategy", "description": "Recommends how to organize and select case studies per vertical"}
       ]
     },

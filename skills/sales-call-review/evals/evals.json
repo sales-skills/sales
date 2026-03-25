@@ -24,7 +24,7 @@
     },
     {
       "id": 2,
-      "prompt": "Review my closing call. The prospect said they love the product but need to 'run it by their team' before signing. They wouldn't commit to a specific date for the next meeting. Deal is $85k annual.",
+      "prompt": "Review my closing call. I'm an AE selling our data integration platform to Nextera, an $85k annual deal. The call was with their VP of Data Engineering, Sarah Chen. We've been in cycle for about 6 weeks. She said she loves the product and wants to move forward, but needs to 'run it by the team' before signing — I think she means their CTO and maybe procurement. When I asked about timeline, she said 'hopefully in the next couple weeks' but wouldn't commit to a specific date for a follow-up meeting. I tried to suggest a call with the CTO but she said she'd 'handle it internally.' The vibe was positive overall but I felt like I lost momentum at the end. No other objections came up — pricing was fine, they liked the demo, but this 'run it by the team' thing feels like a stall.",
       "expected_output": "Analysis identifying risk signals: lack of commitment to next steps, potential lack of champion strength or multi-threading, and the 'run it by the team' pattern. Should include coaching on commitment testing, stakeholder identification, and a follow-up email that advances the deal.",
       "assertions": [
         {"name": "identifies_risk_signals", "description": "Flags 'run it by the team' as a risk signal and the lack of specific date commitment as weak next steps"},

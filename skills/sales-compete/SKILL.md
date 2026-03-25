@@ -39,6 +39,8 @@ Ask the user:
 
 4. **What's your ICP?** (Overlay on top of the competitor's installed base — not every competitor customer is a good fit for you)
 
+**If the user's request already provides most of this context, skip directly to the relevant step.** Lead with your best-effort answer using reasonable assumptions (stated explicitly), then ask only the most critical 1-2 clarifying questions at the end — don't gate your response behind gathering complete context.
+
 ## Step 2 — Identify the installed base
 
 Use technographic filters to find companies using the competitor's product:
@@ -166,6 +168,7 @@ Design signal-specific outreach strategies:
 - `/sales-objection` — Handle "we're happy with [competitor]" and loyalty objections
 - `/sales-intent` — Interpret buying signals beyond competitive displacement
 - `/sales-positioning` — Develop competitive messaging frameworks
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Gotchas
 

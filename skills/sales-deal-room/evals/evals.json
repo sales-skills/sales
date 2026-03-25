@@ -3,7 +3,7 @@
   "evals": [
     {
       "id": 0,
-      "prompt": "I'm working a $200k enterprise deal with a Fortune 500 company. There's an executive sponsor (CIO), a technical team evaluating our platform, and procurement is involved. I need to set up a deal room in Qwilr to organize everything.",
+      "prompt": "I'm working a $200k enterprise deal selling our cloud data platform to Meridian Financial (Fortune 500 insurance company). The CIO is our executive sponsor, there's a 3-person engineering team doing a technical evaluation, and procurement has already asked for security docs. We're in the proposal stage with a 3-month timeline to close. I've got a pitch deck, two case studies (one in financial services), and a draft pricing proposal. Set up a deal room in Qwilr to organize everything and keep all stakeholders aligned.",
       "expected_output": "A complete deal room architecture with hub page and sub-pages tailored to the three stakeholder groups (executive, technical, procurement). Should include hub page copy, content briefs for each sub-page, a mutual action plan with enterprise-appropriate milestones, and an analytics strategy for tracking each stakeholder's engagement.",
       "assertions": [
         {"name": "has_hub_page", "description": "Designs a hub page with navigation to sub-pages, welcome content, and key contacts"},
@@ -24,7 +24,7 @@
     },
     {
       "id": 2,
-      "prompt": "Set up a deal room for a partnership deal where we're co-selling with a channel partner. Both our teams need access to shared materials.",
+      "prompt": "Set up a deal room for a partnership deal. We sell an inventory management SaaS and we're co-selling with Deloitte (our channel partner) to land a $350k deal with Titan Manufacturing, a 2,000-person industrial company. Deloitte handles the implementation and change management, we provide the platform. I have a joint pitch deck, our standard proposal, and Deloitte has their own SOW. Both teams need access to shared materials, but we also need separate partner-facing pages with margin details that the customer shouldn't see.",
       "expected_output": "A partner-oriented deal room with pages for both the end customer and the channel partner. Should include partner-specific content like co-selling materials and margin details alongside customer-facing pages.",
       "assertions": [
         {"name": "has_partner_page", "description": "Includes partner-facing content with co-selling materials"},

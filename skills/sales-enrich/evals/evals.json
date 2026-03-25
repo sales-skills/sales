@@ -1,0 +1,26 @@
+{
+  "skill_name": "sales-enrich",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I have 500 contacts for a campaign but only 60% have emails. Enrich the rest.",
+      "expected_output": "Pre-enrichment checklist (dedup first), batch enrichment approach, credit estimation, and email verification recommendation",
+      "assertions": [
+        {"name": "dedup_first", "description": "Recommends deduplicating the list before enriching"},
+        {"name": "batch_approach", "description": "Recommends batch enrichment for the 200 contacts missing emails"},
+        {"name": "credit_estimate", "description": "Estimates the credit cost for the enrichment"},
+        {"name": "verification", "description": "Recommends email verification before launching the campaign"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "Our Salesforce has 50,000 contacts but half the data is stale. Help me clean it up.",
+      "expected_output": "Phased CRM hygiene plan with prioritization, dedup strategy, enrichment schedule, and credit budgeting",
+      "assertions": [
+        {"name": "phased_approach", "description": "Recommends a phased approach rather than enriching all 50k at once"},
+        {"name": "stale_data_checks", "description": "Identifies how to find stale records (bounced emails, outdated titles, missing fields)"},
+        {"name": "credit_budget", "description": "Calculates or discusses credit budget for the cleanup"}
+      ]
+    }
+  ]
+}

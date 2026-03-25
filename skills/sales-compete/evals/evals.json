@@ -3,7 +3,7 @@
   "evals": [
     {
       "id": 0,
-      "prompt": "Help me take customers away from Datadog. We sell an observability platform that's 60% cheaper and easier to set up.",
+      "prompt": "Help me take customers away from Datadog. We sell an observability platform called LightTrace that's 60% cheaper with a simpler setup — full-stack monitoring, APM, log management, and infrastructure metrics in one tool. Our ICP is mid-market SaaS companies (200-2,000 employees) with engineering teams of 20-100. We have Apollo with technographic and intent data, plus G2 comparison page data. Our main displacement angle is cost — Datadog's per-host pricing gets painful at scale, and we offer predictable flat-rate pricing. Help me build a displacement campaign targeting their install base.",
       "expected_output": "Technographic search for Datadog users, layered intent signals, tiered displacement list with messaging angles and battle card",
       "assertions": [
         {"name": "technographic_search", "description": "Builds a technographic search for Datadog users filtered to ICP"},
@@ -13,7 +13,7 @@
     },
     {
       "id": 1,
-      "prompt": "I know 50 companies use our competitor's product. Which ones should I target first?",
+      "prompt": "I know 50 companies use Zendesk for customer support and I want to win them over to our AI-first support platform. We sell to mid-market B2B SaaS companies (200-1,500 employees), targeting Heads of Support and CX leaders, with a $60K ACV. Our edge is AI ticket routing and auto-resolution that cuts support costs 40%. I have these 50 accounts in Apollo with technographic data, intent signals, and job change alerts. Which ones should I target first, and how should I tier and sequence my outreach?",
       "expected_output": "Prioritization framework with signal stacking, tiered output, and per-tier action recommendations",
       "assertions": [
         {"name": "signal_stacking", "description": "Scores accounts by combining multiple displacement signals, not just ICP fit"},

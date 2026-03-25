@@ -44,6 +44,8 @@ Ask the user:
 
 4. **What Qwilr plan are you on?** (affects API access and native integrations)
 
+**If the user's request already provides most of this context, skip directly to the relevant step.** Lead with your best-effort answer using reasonable assumptions (stated explicitly), then ask only the most critical 1-2 clarifying questions at the end — don't gate your response behind gathering complete context.
+
 ## Step 2 — Architecture recommendation
 
 Based on the user's answers, recommend the right approach with trade-offs:
@@ -117,3 +119,4 @@ Three common patterns (detailed implementation in `references/qwilr-api-referenc
 - `/sales-proposal-analytics` — Interpret engagement signals and decide follow-up actions
 - `/sales-proposal-template` — Design reusable templates for API auto-population
 - `/sales-deal-room` — For complex multi-page deal rooms
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

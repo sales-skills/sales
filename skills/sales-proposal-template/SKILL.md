@@ -34,6 +34,8 @@ Ask the user:
    - C) Both — auto-generated with manual customization
    - D) Not sure — what do you recommend?
 
+**If the user's request already provides most of this context, skip directly to the relevant step.** Lead with your best-effort answer using reasonable assumptions (stated explicitly), then ask only the most critical 1-2 clarifying questions at the end — don't gate your response behind gathering complete context.
+
 ## Step 2 — Template strategy
 
 Based on the context, design the template system:
@@ -186,3 +188,4 @@ Recommend supporting assets to create alongside templates:
 - `/sales-proposal-analytics` — Track which templates get the best engagement
 - `/sales-deal-room` — Design multi-page deal rooms (may need their own templates)
 - `/sales-content` — General sales enablement content creation
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

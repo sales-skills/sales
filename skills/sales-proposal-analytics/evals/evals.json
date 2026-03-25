@@ -14,7 +14,7 @@
     },
     {
       "id": 1,
-      "prompt": "I sent a proposal 5 days ago and the prospect hasn't viewed it at all. The deal was looking good after our demo last week.",
+      "prompt": "I sent a Qwilr proposal 5 days ago to Sarah Chen, VP of Operations at Pinnacle Logistics (a 300-person supply chain company). It's a $60k deal for our workflow automation platform. The demo last Tuesday went great — she said 'this is exactly what we need' and asked me to send pricing. I emailed the Qwilr link right after but she hasn't viewed it at all. I also sent a LinkedIn follow-up on day 3 with no response. What should I do?",
       "expected_output": "Diagnosis of likely causes (email delivery issue, lost priority, busy period), escalating action plan starting with delivery verification and ending with alternative contact methods, and draft messages for re-engagement.",
       "assertions": [
         {"name": "checks_delivery", "description": "First step is verifying the email actually landed (spam, correct address)"},
@@ -24,7 +24,7 @@
     },
     {
       "id": 2,
-      "prompt": "Three different people at the prospect's company viewed my Qwilr proposal this week. I only sent it to my main contact, the Director of Ops.",
+      "prompt": "Three different people at Cascade Corp viewed my Qwilr proposal this week — but I only sent it to my champion, Mike Torres, their Director of Operations. We're selling a $90k annual contract for our supply chain visibility platform and the deal is in the evaluation stage. Based on the email domains, the other two viewers look like they might be someone from finance and someone from IT. Mike hasn't told me he shared it. How should I handle this?",
       "expected_output": "Interpretation that the proposal is being circulated to a buying committee (positive signal), advice on identifying who the additional viewers might be, and strategy for supporting the champion with materials for the broader group.",
       "assertions": [
         {"name": "interprets_committee", "description": "Identifies multiple viewers as buying committee circulation — a positive signal"},

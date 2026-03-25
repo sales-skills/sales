@@ -208,3 +208,7 @@ Before submitting a new skill (via PR or skill-creator), verify:
 - [ ] README.md catalog table updated with new row
 - [ ] `evals/evals.json` generated with 2-3 realistic test cases matching the skill-creator schema
 - [ ] Points to related skills where relevant
+
+## Related skills
+
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

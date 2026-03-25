@@ -25,6 +25,8 @@ Ask the user:
    - C) Full deal room with multiple pages (route to `/sales-deal-room` instead)
    - D) Not sure — recommend what fits
 
+**If the user's request already provides most of this context, skip directly to the relevant step.** Lead with your best-effort answer using reasonable assumptions (stated explicitly), then ask only the most critical 1-2 clarifying questions at the end — don't gate your response behind gathering complete context.
+
 ## Step 2 — Generate page blueprint
 
 Design a section-by-section page structure mapped to Qwilr block types. A strong Qwilr proposal typically follows this flow:
@@ -140,3 +142,4 @@ Notes for the user:
 - `/sales-deal-room` — For complex multi-stakeholder deals that need multiple pages
 - `/sales-proposal-template` — Design reusable templates for your whole team
 - `/sales-proposal` — For general (non-Qwilr) proposal strategy and pricing
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
