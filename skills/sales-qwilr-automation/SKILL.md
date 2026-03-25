@@ -8,23 +8,13 @@ argument-hint: "[describe what you want to automate — e.g., 'auto-create propo
 
 Help the user build automations that connect Qwilr to their CRM and other tools — via the Qwilr REST API, Zapier, or native integrations.
 
-## Qwilr API Reference
+## Qwilr API overview
 
-Base URL: `https://api.qwilr.com/v1`
-Auth: `Authorization: Bearer <jwt-token>`
+The Qwilr REST API lets you create pages from saved blocks with token substitutions, manage quote sections with interactive pricing, and subscribe to webhooks for real-time engagement signals.
 
-| Endpoint | Method | What it does |
-|---|---|---|
-| `/pages` | POST | Create page from saved blocks/template, with substitutions, quote sections, metadata, tags |
-| `/pages/{id}` | GET | Get page details (expand: metadata, acceptance, previewAcceptance) |
-| `/pages/{id}` | PUT | Update published status |
-| `/blocks/saved` | GET | List saved blocks (id, name, type) |
-| `/webhooks` | GET | List webhook subscriptions |
-| `/webhooks` | POST | Create webhook subscription |
-| `/webhooks` | DELETE | Delete webhook subscription |
-| `/users` | GET | List account users (for ownerId) |
+**Quick reference**: Base URL `https://api.qwilr.com/v1`, JWT Bearer auth. Key endpoints: `POST /pages` (create), `GET /blocks/saved` (discover templates), `POST /webhooks` (subscribe to events).
 
-Webhook events: `pageAccepted`, `pagePartiallyAccepted`, `pagePreviewAccepted`, `pageViewed`, `pageFirstViewed`, `pageSetLive`, `pageRevivedLive`
+For the complete API reference — endpoints, curl examples, token mapping, quote block structure, and testing checklist — consult `references/qwilr-api-reference.md`.
 
 ## Step 1 — Gather context
 
@@ -75,141 +65,51 @@ Based on the user's answers, recommend the right approach with trade-offs:
 - **Approach**: Call Qwilr REST API directly from your backend, serverless functions, or scripts
 - **Limitation**: Requires development effort
 
-## Step 3 — Step-by-step build guide
+## Step 3 — Build the automation
+
+The build process follows four stages. For curl examples, JSON payloads, and token mapping details, consult `references/qwilr-api-reference.md`.
 
 ### 3a. Discover available blocks
+List saved blocks via `GET /blocks/saved` to find the `savedBlockId` values for page creation.
 
-First, list the saved blocks in the Qwilr account to find template blocks to use:
-
-```bash
-curl -X GET https://api.qwilr.com/v1/blocks/saved \
-  -H "Authorization: Bearer $QWILR_TOKEN" \
-  -H "Content-Type: application/json"
-```
-
-Response includes block `id`, `name`, and `type` — save the IDs you need for page creation.
-
-### 3b. Create a page from CRM data
-
-```bash
-curl -X POST https://api.qwilr.com/v1/pages \
-  -H "Authorization: Bearer $QWILR_TOKEN" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "name": "Proposal for Acme Corp",
-    "isPublished": false,
-    "tags": ["auto-generated", "hubspot"],
-    "blocks": [
-      {
-        "savedBlockId": "block_abc123",
-        "tokens": {
-          "company_name": "Acme Corp",
-          "contact_first_name": "Jane",
-          "contact_title": "VP Engineering",
-          "deal_amount": "$48,000"
-        }
-      }
-    ],
-    "quoteSections": [
-      {
-        "title": "Annual License",
-        "items": [
-          {
-            "title": "Platform License",
-            "description": "Full access — 25 seats",
-            "type": "fixedCost",
-            "fixedCost": { "amount": 48000, "currency": "USD" },
-            "isOptional": false,
-            "billing": { "type": "recurring", "frequency": "annual" }
-          },
-          {
-            "title": "Premium Support",
-            "description": "Dedicated CSM + priority SLA",
-            "type": "fixedCost",
-            "fixedCost": { "amount": 12000, "currency": "USD" },
-            "isOptional": true,
-            "billing": { "type": "recurring", "frequency": "annual" }
-          }
-        ]
-      }
-    ]
-  }'
-```
+### 3b. Create pages from CRM data
+Use `POST /pages` with saved block IDs, token substitutions (CRM fields → `{{token}}` values), and quote sections for interactive pricing.
 
 ### 3c. Subscribe to webhook events
-
-Set up real-time notifications for proposal engagement:
-
-```bash
-# Get notified when a prospect first views the proposal
-curl -X POST https://api.qwilr.com/v1/webhooks \
-  -H "Authorization: Bearer $QWILR_TOKEN" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "url": "https://your-server.com/webhooks/qwilr",
-    "events": ["pageFirstViewed", "pageViewed", "pageAccepted", "pagePartiallyAccepted"]
-  }'
-```
+Subscribe to `pageFirstViewed`, `pageViewed`, `pageAccepted`, and `pagePartiallyAccepted` events to get real-time engagement signals.
 
 ### 3d. Check page status
-
-Poll or retrieve page details after sending:
-
-```bash
-curl -X GET "https://api.qwilr.com/v1/pages/PAGE_ID?expand=acceptance,metadata" \
-  -H "Authorization: Bearer $QWILR_TOKEN"
-```
+Use `GET /pages/{id}?expand=acceptance,metadata` to poll page details and acceptance status.
 
 ## Step 4 — Token/substitution mapping
 
-Design the mapping between CRM fields and Qwilr template tokens:
+Design the mapping between CRM fields and Qwilr template tokens. Common tokens include `{{company_name}}`, `{{contact_first_name}}`, `{{deal_amount}}`, `{{rep_name}}`, etc. For the full token reference and guidelines, see `references/qwilr-api-reference.md`.
 
-| CRM Field | Qwilr Token | Example Value |
-|---|---|---|
-| Company Name | `{{company_name}}` | Acme Corp |
-| Contact First Name | `{{contact_first_name}}` | Jane |
-| Contact Last Name | `{{contact_last_name}}` | Smith |
-| Contact Title | `{{contact_title}}` | VP Engineering |
-| Deal Amount | `{{deal_amount}}` | $48,000 |
-| Close Date | `{{close_date}}` | March 30, 2026 |
-| Product/SKU | `{{product_name}}` | Enterprise Plan |
-| Rep Name | `{{rep_name}}` | Alex Johnson |
-| Rep Email | `{{rep_email}}` | alex@company.com |
-
-Customize this mapping based on the user's CRM fields and proposal template needs. Tokens should match exactly what's used in the Qwilr saved blocks.
+Key principles:
+- **Always auto-populate**: company_name, contact names, rep info, deal amount
+- **Semi-auto** (verify after population): industry, company_size, product
+- **Always manual**: executive summary, pain points, custom scope
+- **Set fallback values** for optional tokens so pages don't show raw `{{token}}` text
 
 ## Step 5 — Testing checklist
 
-Walk through this end-to-end before going live:
-
-- [ ] **Auth**: Verify API token works with `GET /blocks/saved`
-- [ ] **Block discovery**: Confirm saved block IDs match your template
-- [ ] **Token mapping**: Create a test page with all tokens populated — verify each substitution renders correctly
-- [ ] **Quote block**: Verify pricing, optional items, and billing types render as expected
-- [ ] **Webhook delivery**: Send a test event and confirm your endpoint receives it
-- [ ] **CRM sync**: If using native integration, create a test deal and verify the proposal auto-populates
-- [ ] **Error handling**: Test what happens when a required CRM field is empty
-- [ ] **Publish flow**: Verify `isPublished: false` creates a draft, then test publishing via `PUT /pages/{id}`
+Walk through end-to-end before going live: auth verification, block discovery, token rendering, quote block accuracy, webhook delivery, CRM sync, error handling, and publish flow. Full checklist in `references/qwilr-api-reference.md`.
 
 ## Common automation recipes
 
-### Recipe: Auto-create proposal when deal hits Stage 3
+Three common patterns (detailed implementation in `references/qwilr-api-reference.md`):
 
-**Trigger**: CRM deal moves to "Proposal" stage
-**Action**: `POST /pages` with deal data mapped to tokens
-**Then**: Update CRM deal with Qwilr page URL
+1. **Auto-create proposal when deal hits Stage 3**: CRM trigger → `POST /pages` → update CRM with Qwilr URL
+2. **Notify Slack when proposal is viewed**: `pageFirstViewed` webhook → Slack message → rep follows up
+3. **Update CRM when proposal is accepted**: `pageAccepted` webhook → update deal stage to Closed Won → trigger onboarding
 
-### Recipe: Notify Slack when proposal is viewed
+## Gotchas
 
-**Trigger**: Qwilr webhook `pageFirstViewed`
-**Action**: Post to Slack channel with prospect name, page title, and timestamp
-**Then**: Rep follows up within 24 hours
-
-### Recipe: Update CRM when proposal is accepted
-
-**Trigger**: Qwilr webhook `pageAccepted`
-**Action**: Update CRM deal stage to "Closed Won", record accepted amount
-**Then**: Trigger onboarding workflow
+- **Don't overcomplicate with custom API when Zapier works.** If the user's automation is a simple trigger-action (deal hits stage → create proposal), Zapier or the native integration is faster to set up and maintain. Reserve direct API work for custom logic, high volume, or complex conditional workflows.
+- **Don't forget webhook retry and deduplication.** Qwilr webhooks may retry on failure, sending the same event multiple times. Any webhook handler must be idempotent — check for duplicate event IDs before processing. Claude often generates webhook handlers without this.
+- **Don't assume CRM field names without checking.** Salesforce custom fields end in `__c`, HubSpot uses internal property names that differ from display names, and Pipedrive uses custom field keys. Always tell the user to verify their actual field names/IDs before building the mapping.
+- **Don't skip testing with sandbox/test data.** Claude tends to generate API code that goes straight to production. Always recommend creating test pages with `isPublished: false` first, using test deals in the CRM, and verifying token substitutions render correctly before going live.
+- **Don't hardcode API tokens in scripts.** Use environment variables (`$QWILR_TOKEN`) for authentication. Claude sometimes generates examples with placeholder tokens inline — make sure the user knows to use env vars or a secrets manager.
 
 ## Related skills
 

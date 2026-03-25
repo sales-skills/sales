@@ -1,7 +1,11 @@
 ---
 name: sales-forecast
-description: "Build and validate revenue forecasts with pipeline coverage and gap analysis. Use when forecasting revenue, validating a commit, analyzing pipeline coverage, preparing for a forecast call, doing gap analysis, calculating weighted pipeline, or reviewing deal confidence levels."
+description: "Build and validate revenue forecasts with pipeline coverage and gap analysis. Use when forecasting revenue, validating a commit, analyzing pipeline coverage, preparing for a forecast call, doing gap analysis, calculating weighted pipeline, or reviewing deal confidence levels. Do NOT use for individual deal analysis (use /sales-deal-inspect), portfolio pipeline management (use /sales-pipeline), or building outbound cadences (use /sales-cadence)."
 argument-hint: "[describe scope, time period, known numbers, and primary concern]"
+license: MIT
+metadata:
+  author: sales-skills
+  version: 1.0.0
 ---
 
 # Build a Revenue Forecast
@@ -54,7 +58,7 @@ Build a forecast model table:
 | Early Pipeline (Stage 1-2) | | | 5-10% | |
 | **Upside** (not in pipeline yet) | | | 2-5% | |
 
-*Win probabilities are defaults — adjust based on the user's historical data if available.*
+*These are typical probability ranges — adjust based on the team's historical conversion data if available. Teams with strong qualification tend toward the higher end; teams early in building pipeline discipline should use the lower end.*
 
 ### Forecast summary
 
@@ -152,3 +156,41 @@ If there's a gap between the forecast and quota, build a plan to close it:
 - `/sales-pipeline` — Portfolio-level pipeline management and deal prioritization
 - `/sales-cadence` — Build outbound cadences for gap-plan pipeline generation
 - `/sales-close` — Closing strategies for commit deals
+
+## Gotchas
+
+- **Don't use pipeline total without weighting by stage.** Claude will sometimes say "you have $2M in pipeline against a $1M quota, so you're covered." Raw pipeline total is meaningless — only weighted pipeline matters. Always apply stage-based win probabilities.
+- **Don't assume historical win rates apply to the current quarter.** Win rates shift based on deal mix, market conditions, new competitors, and team changes. If the user provides historical rates, use them as a starting point but flag that current-quarter dynamics may differ.
+- **Don't forget to account for slipped deals from last quarter.** Deals that pushed from last quarter inflate current-quarter pipeline but often have lower close probability (they already missed one deadline). Flag these and weight them more conservatively.
+- **Don't ignore seasonality.** Q4 and fiscal year-end typically see higher close rates due to budget pressure. Q1 often sees longer cycles as budgets reset. Ask about the company's fiscal year when it matters.
+- **Don't present a single forecast number without a range.** Always give worst/most likely/best case scenarios. A single number creates false precision and sets the user up for a bad forecast call.
+
+## Examples
+
+### Example 1: Quarterly forecast build
+**User says**: "Build my team's Q2 forecast. Quota is $2M, we've closed $800k, commit is $600k across 4 deals, best case is $400k, total pipeline is $1.8M, 6 weeks left."
+**Skill does**:
+1. Builds a forecast model with weighted values across all categories
+2. Calculates coverage ratio (1.5x — flags as thin)
+3. Presents worst/most likely/best case scenarios
+4. Creates a gap plan with specific levers to close the gap
+**Result**: Complete forecast ready for the leadership call, with a gap plan if needed
+
+### Example 2: Commit validation
+**User says**: "Validate my $500k commit — Deal A ($200k, negotiation, strong champion), Deal B ($150k, proposal, no EB meeting), Deal C ($150k, demo stage, verbal interest only)."
+**Skill does**:
+1. Inspects each deal against risk criteria
+2. Recommends keeping Deal A in commit, moving Deal B to best case, moving Deal C to pipeline
+3. Adjusts commit to $200-350k with reasoning
+**Result**: Defensible commit number the rep can present to their manager
+
+## Troubleshooting
+
+### Don't have all the numbers
+**Solution**: Start with what you know. The skill can build a useful forecast from just quota + closed-won + pipeline total. It will flag what's missing and estimate where possible. Even a rough forecast with assumptions stated is better than no forecast.
+
+### Forecast keeps missing — always too optimistic
+**Solution**: Apply stricter win probability weights. Most teams over-weight commit (use 85% not 95%) and best case (use 40% not 60%). Check for "commit creep" — deals that sit in commit for multiple forecast periods without closing. The deal-level inspection step catches these patterns.
+
+### Gap plan feels unrealistic
+**Solution**: Apply the 50% rule — at least half of gap plan value should come from pull-in and accelerate levers (fastest to materialize). New outbound takes 4-8 weeks to generate pipeline, so it won't help this quarter. Be conservative on each lever and plan for 1.5x the gap.

@@ -166,6 +166,14 @@ Use view data to:
 
 For full webhook and CRM automation setup, use `/sales-qwilr-automation`.
 
+## Gotchas
+
+- **Don't create too many pages for simple deals.** A deal room with 8 sub-pages for a $15k deal is overkill. Match complexity to deal size — small deals need 2-3 pages max (proposal + case study). Reserve the full structure for enterprise deals with multiple stakeholders.
+- **Don't use the same content for every stakeholder.** The whole point of a deal room is tailored content per role. An executive summary page full of technical specs fails the executive; a pricing page with no ROI context fails the CFO. Write for each audience.
+- **Don't skip the mutual action plan.** Claude often builds deal rooms with great content but no shared timeline. The MAP is what turns a deal room from a content dump into a collaboration tool. Always include one.
+- **Don't forget the executive summary page.** Even in a deal room with detailed sub-pages, the hub page needs a concise "why this matters" section. Executives won't click into sub-pages — they'll read the hub and decide if this is worth their time.
+- **Don't treat the deal room as "set and forget."** A good deal room is updated throughout the sales cycle — latest updates section, MAP status changes, new materials added. Mention this to the user.
+
 ## Related skills
 
 - `/sales-proposal-page` — Write a single proposal page (for simpler deals)

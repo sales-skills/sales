@@ -125,6 +125,14 @@ Notes for the user:
 - Auth: `Authorization: Bearer <your-jwt-token>`
 - Base URL: `https://api.qwilr.com/v1`
 
+## Gotchas
+
+- **Don't generate walls of text.** Qwilr is a visual, web-based platform — not a Word doc. Use Qwilr block types (Splash, Accordion, Quote blocks) to break up content. If a section runs longer than 3 paragraphs, restructure it into an Accordion or split it into sub-sections.
+- **Don't forget the interactive pricing/quote block.** Claude defaults to writing pricing as plain text. Qwilr's quote block is the product's key differentiator — use it for any proposal that includes pricing. Configure line items, optional add-ons, and quantity selectors.
+- **Don't skip the CTA.** Every proposal needs a clear call to action using Qwilr's Accept block. Don't end with "let us know your thoughts" — end with "Accept this proposal" or "Book your kickoff call."
+- **Don't make the proposal too long.** Web proposals are not PDFs. Buyers skim. A strong Qwilr proposal is 5-8 sections. If it's longer, consider moving detailed content to a deal room (`/sales-deal-room`) instead.
+- **Don't forget `{{token}}` placeholders.** If the proposal might be auto-generated via API later, use `{{company_name}}`, `{{contact_first_name}}`, etc. throughout — not hardcoded values.
+
 ## Related skills
 
 - `/sales-proposal-analytics` — Track engagement after sending (who viewed, which sections, when to follow up)

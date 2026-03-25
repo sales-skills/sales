@@ -1,7 +1,11 @@
 ---
 name: sales-call-review
-description: "Review sales calls, extract coaching insights, and score against MEDDPICC/SPIN/Challenger. Use when reviewing a sales call, coaching a rep, scoring a call, analyzing a call transcript, extracting action items from a call, preparing call feedback, or reviewing talk-to-listen ratio."
+description: "Review sales calls, extract coaching insights, and score against MEDDPICC/SPIN/Challenger. Use when reviewing a sales call, coaching a rep, scoring a call, analyzing a call transcript, extracting action items from a call, preparing call feedback, or reviewing talk-to-listen ratio. Do NOT use for prepping discovery questions (use /sales-discovery), general objection handling strategy (use /sales-objection), or deal-level risk analysis (use /sales-deal-inspect)."
 argument-hint: "[paste transcript or describe the call — type, participants, outcome]"
+license: MIT
+metadata:
+  author: sales-skills
+  version: 1.0.0
 ---
 
 # Review a Sales Call
@@ -44,7 +48,7 @@ Ask the user:
 
 ## Step 2 — Call scorecard
 
-Score the call on a 1-5 scale across these dimensions:
+Use this scorecard as a framework — adapt the dimensions based on call type and what the user asked to focus on. Not every dimension applies to every call (e.g., objection handling may not come up in a first discovery call).
 
 | Dimension | Score (1-5) | Evidence | Coaching note |
 |-----------|-------------|----------|---------------|
@@ -171,3 +175,41 @@ If a follow-up call was booked, draft a proposed agenda:
 - `/sales-deal-inspect` — Assess overall deal health beyond just the call
 - `/sales-objection` — Deep-dive on objection handling strategies
 - `/sales-cadence` — Optimize outbound cadences based on call learnings
+
+## Gotchas
+
+- **Don't score a call without a transcript or detailed description.** Claude will confidently generate scores from thin air if given only "it was a discovery call." Push back and ask for specifics — what was said, how it ended, what objections came up.
+- **Don't focus only on negatives.** Claude tends to generate long lists of improvements. Always lead with the best moment and what went well before coaching points. Reps shut down if feedback feels like a list of failures.
+- **Don't apply MEDDPICC scoring to a first discovery call.** MEDDPICC elements like Paper Process and Competition are rarely uncovered in a first meeting. Score only the elements that were reasonable to address at this deal stage.
+- **Don't ignore talk-to-listen ratio.** This is one of the most objective and actionable metrics. If the user provides a transcript, estimate the ratio. If they describe the call, ask about it directly.
+- **Don't treat the scorecard as a final verdict.** A single call is a snapshot. Frame scores as "on this call" not "this rep is a 2/5 at discovery." Context matters — a rough call with a hostile prospect is different from a rough call with a warm lead.
+
+## Examples
+
+### Example 1: Manager reviewing rep's discovery call
+**User says**: "Review this discovery call — I talked for 70% of it, asked about their process, showed a quick demo, and ended with 'I'll send you info and we can reconnect next week.'"
+**Skill does**:
+1. Scores the call on all 9 dimensions (flags high talk ratio, surface discovery, vague next steps)
+2. Identifies the missed opportunity to dig deeper when the prospect described their process
+3. Provides 3 coaching recommendations with practice drills
+4. Drafts a follow-up email and next call agenda
+**Result**: Structured coaching feedback the manager can use in their 1:1
+
+### Example 2: MEDDPICC scoring
+**User says**: "Score my rep's call using MEDDPICC — they confirmed pain and got metrics, but didn't ask about decision process or economic buyer."
+**Skill does**:
+1. Creates a MEDDPICC extraction table showing Metrics and Implicate the Pain as partially addressed
+2. Flags Decision Process, Economic Buyer, and Champion as critical gaps
+3. Provides specific questions for the next call to fill each gap
+**Result**: Clear MEDDPICC gap analysis with an actionable next-call plan
+
+## Troubleshooting
+
+### No transcript available
+**Solution**: Have the rep describe what happened in detail — key moments, objections raised, how the call ended, and what was agreed. The skill can still provide a useful review from a narrative description, though transcript-based reviews are more precise.
+
+### Rep is defensive about feedback
+**Solution**: Use the "best moment" analysis first to lead with what went well. Frame coaching points as "opportunities" not "mistakes." Focus on 1-2 highest-impact areas rather than listing every issue. The self-review mode (Step 1, option B) helps reps build self-awareness before receiving external feedback.
+
+### Scoring feels subjective
+**Solution**: Ground every score in specific evidence from the call. Use the methodology layers (MEDDPICC, SPIN, Challenger) for more objective, criteria-based assessment. Compare scores across multiple calls to calibrate — a single call review is a snapshot, not a verdict.

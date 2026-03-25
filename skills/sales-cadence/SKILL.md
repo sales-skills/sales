@@ -1,7 +1,11 @@
 ---
 name: sales-cadence
-description: "Design multi-channel outbound cadences with timing, A/B testing, and content. Use when building a Salesloft cadence, designing an outbound sequence, planning touchpoint timing, writing cadence emails, creating call scripts, A/B testing subject lines, optimizing sequence performance, or planning multi-channel outreach."
+description: "Design multi-channel outbound cadences with timing, A/B testing, and content. Use when building a Salesloft cadence, designing an outbound sequence, planning touchpoint timing, writing cadence emails, creating call scripts, A/B testing subject lines, optimizing sequence performance, or planning multi-channel outreach. Do NOT use for general outreach message writing (use /sales-outreach), marketing cold email (use /cold-email), automated email flows (use /email-sequence), or general Salesloft platform help (use /sales-salesloft)."
 argument-hint: "[describe campaign goal, target persona, channels, and constraints]"
+license: MIT
+metadata:
+  author: sales-skills
+  version: 1.0.0
 ---
 
 # Design a Multi-Channel Outbound Cadence
@@ -55,7 +59,7 @@ Design the cadence structure as a table:
   - Days 1-7: Higher intensity (touch every 1-2 days) — this is when engagement peaks
   - Days 8-14: Medium intensity (every 2-3 days)
   - Days 15+: Lower intensity (every 3-4 days) — don't burn the prospect
-- **Touch count by persona**:
+- **Touch count by persona** (typical ranges — adjust based on persona, sales cycle, and industry norms):
   - C-suite / VP: 8-12 touches over 21-28 days (less aggressive, more spaced)
   - Director / Manager: 12-16 touches over 21-30 days (standard)
   - Individual contributor / practitioner: 10-14 touches over 14-21 days (shorter cycle)
@@ -145,3 +149,43 @@ Provide a benchmarks table:
 - `/sales-call-review` — Review calls from your cadence to improve scripts
 - `/cold-email` — Marketing-style cold email campaigns (not Salesloft cadences)
 - `/email-sequence` — Automated email flows and drip campaigns
+
+## Gotchas
+
+- **Don't make all touches email-only.** Claude defaults to generating email-heavy cadences. A real cadence needs channel mixing — if the user has phone and LinkedIn available, use them from the start, not as afterthoughts.
+- **Don't space touches too close together.** Avoid scheduling touches less than 2 business days apart (except same-day email + LinkedIn on Day 1). Prospects need time to engage before you follow up.
+- **Don't write generic "just checking in" follow-ups.** Every touch must add new value or a new angle. If you catch yourself writing "I wanted to follow up on my last email," rewrite it with a new hook.
+- **Don't ignore timezone for call steps.** Phone calls placed outside business hours are wasted touches. If you know the prospect's timezone, note the best call windows (typically 8-10am and 4-6pm local time).
+- **Don't generate a cadence without confirming channel availability first.** If the user didn't specify channels, ask — don't assume they have LinkedIn Sales Navigator or a phone dialer.
+
+## Examples
+
+### Example 1: Cold outbound cadence
+**User says**: "Build a 21-day cold outbound cadence for VP Engineering at Series B SaaS companies. We have email, phone, and LinkedIn."
+**Skill does**:
+1. Designs a 14-step cadence architecture table with channel mixing
+2. Writes full email copy with A/B subject lines, call scripts with voicemail, LinkedIn messages
+3. Provides an A/B testing plan and benchmark metrics
+**Result**: Complete cadence ready to import into Salesloft with content for every step
+
+### Example 2: Cadence optimization
+**User says**: "My cadence has 35% open rate but only 2% reply rate. What's wrong?"
+**Skill does**:
+1. Diagnoses the gap (subject lines work, body/CTA needs fixing)
+2. Recommends specific changes to email body, personalization, and CTA
+3. Designs an A/B test plan to validate improvements
+**Result**: Prioritized optimization plan with testable hypotheses
+
+## Troubleshooting
+
+### Low open rates (<30%)
+**Cause**: Subject lines aren't compelling, or deliverability issues
+**Solution**: Test pain-focused vs. curiosity-based subject lines. Check domain reputation, SPF/DKIM records, and bounce rate. If bounce rate >3%, clean your list first.
+
+### High open rate but low reply rate
+**Cause**: Email body doesn't deliver on the subject line promise, CTA is weak or unclear, or personalization is too generic
+**Solution**: Ensure the first sentence connects to the prospect's world. Make the CTA specific ("15 minutes Thursday?") not vague ("let me know if interested"). Increase personalization to Level 3+.
+
+### Prospects engaging but not booking meetings
+**Cause**: Too many touchpoints before the ask, or the ask is buried
+**Solution**: Include a clear meeting CTA by Step 3. Use the phone step within 24 hours of an email open. Offer a specific time, not an open question.

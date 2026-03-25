@@ -1,7 +1,11 @@
 ---
 name: sales-deal-inspect
-description: "Inspect deal health, map stakeholders, identify risks, and recommend next actions. Use when reviewing a deal, assessing deal health, doing a MEDDPICC assessment, mapping stakeholders, analyzing deal risk, prepping for a deal review, inspecting pipeline deals, or evaluating champion strength."
+description: "Inspect deal health, map stakeholders, identify risks, and recommend next actions. Use when reviewing a deal, assessing deal health, doing a MEDDPICC assessment, mapping stakeholders, analyzing deal risk, prepping for a deal review, inspecting pipeline deals, or evaluating champion strength. Do NOT use for portfolio-level pipeline management (use /sales-pipeline), revenue forecasting (use /sales-forecast), or reviewing a specific sales call (use /sales-call-review)."
 argument-hint: "[describe the deal — company, size, stage, timeline, and biggest concern]"
+license: MIT
+metadata:
+  author: sales-skills
+  version: 1.0.0
 ---
 
 # Inspect a Deal
@@ -141,3 +145,41 @@ Actions should be specific, not generic. Instead of "build executive relationshi
 - `/sales-discovery` — Prep discovery questions to fill MEDDPICC gaps
 - `/sales-call-review` — Review the latest call on this deal for coaching insights
 - `/sales-close` — Closing strategies and mutual action plans
+
+## Gotchas
+
+- **Don't rate champion strength without evidence.** Claude tends to mark champion as "Yellow" or "Red" based on vague signals. Ask specifically: "Has your champion introduced you to other stakeholders? Have they shared internal docs or timeline info?" No evidence = unknown, not weak.
+- **Don't assume single-threaded is always bad.** For small deals (<$20k) with a single decision-maker, being single-threaded is normal and efficient. Multi-threading guidance applies primarily to complex, multi-stakeholder deals.
+- **Don't confuse decision criteria with decision process.** Criteria = *what* they're evaluating (features, price, integrations). Process = *how* they'll decide (who approves, what steps, what timeline). Claude often conflates these — keep them separate in the MEDDPICC extraction.
+- **Don't generate generic "follow up with the prospect" action items.** Every action must be specific: who, what, by when, and why. "Follow up" is not an action plan — "Ask Sarah to intro you to CFO by Friday so you can confirm budget before the board meeting" is.
+- **Don't catastrophize a deal based on one missing MEDDPICC element.** Not every deal needs all 8 elements fully addressed. Prioritize based on deal stage and size.
+
+## Examples
+
+### Example 1: Stalled deal diagnosis
+**User says**: "My $120k deal has been stuck at proposal stage for 3 weeks. I haven't met the CFO and Gong is competing."
+**Skill does**:
+1. Creates a health scorecard flagging Economic Buyer (Red) and Competition (Yellow)
+2. Identifies top risks: single-threaded without EB, competitor influence on criteria
+3. Builds a prioritized action plan: get champion to intro CFO this week, prepare competitive differentiation
+4. Maps known stakeholders and identifies who's missing
+**Result**: Clear diagnosis with specific actions to unstick the deal
+
+### Example 2: Deal review prep
+**User says**: "Help me prepare for a deal review with my manager. $250k Fortune 500, strong champion, CIO attended demo, in POC, but legal hasn't started and close date is 6 weeks out."
+**Skill does**:
+1. Scores deal health showing strengths (champion, EB engagement, POC) and risks (legal timeline)
+2. Creates MEDDPICC extraction showing Paper Process as the critical gap
+3. Recommends actions to accelerate legal/procurement
+**Result**: Deal review document the rep can present to their manager with clear next steps
+
+## Troubleshooting
+
+### Not enough deal information to assess
+**Solution**: Use the MEDDPICC extraction table to structure what's known vs. unknown. Even partial information reveals where the biggest gaps are. The skill can work with whatever the user provides and will flag what's missing.
+
+### Deal looks healthy but isn't progressing
+**Solution**: Check for "happy ears" — the prospect says positive things but doesn't take action. Apply the commitment test: ask for something concrete (access to the EB, internal data, a specific next meeting date). If they won't commit, the deal health score should be downgraded regardless of what they say verbally.
+
+### Too many risks identified — where to start
+**Solution**: Focus on the top risk by likelihood x impact. The action plan is prioritized for this reason. As a rule of thumb: fix Red items before Yellow, and address Champion/EB gaps before anything else — without a champion and economic buyer, no other action matters.

@@ -129,6 +129,14 @@ curl -X POST https://api.qwilr.com/v1/webhooks \
 
 For full automation setup (CRM sync, Slack notifications, etc.), use `/sales-qwilr-automation`.
 
+## Gotchas
+
+- **Don't over-interpret a single page view.** One view could be the prospect, their EA, or an automated CRM preview. A single brief view doesn't mean "they're interested" — it means "someone opened the link." Wait for patterns (repeat views, time spent, multiple viewers) before drawing conclusions.
+- **Don't treat all engagement signals equally.** Pricing section views are much higher signal than a quick skim of the cover page. Weight your interpretation toward the sections that indicate evaluation behavior (pricing, scope, case studies).
+- **Don't recommend aggressive follow-up on automated CRM views.** Some CRMs and email tools auto-preview links, generating false "viewed" signals. If a view happens within seconds of sending with zero time on page, it's likely automated.
+- **Don't tell the prospect you can see their views.** Saying "I noticed you looked at the pricing 3 times" is creepy and breaks trust. Reference engagement signals *indirectly* — "I wanted to see if you had questions about the pricing options."
+- **Don't ignore time-of-day context.** A prospect reviewing a proposal at 10pm on a Sunday suggests they're doing personal due diligence, possibly building a case. A 30-second view during business hours is likely a quick skim between meetings.
+
 ## Related skills
 
 - `/sales-proposal-page` — Write or restructure the proposal itself

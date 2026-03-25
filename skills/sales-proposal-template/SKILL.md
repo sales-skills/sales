@@ -171,6 +171,14 @@ Recommend supporting assets to create alongside templates:
 5. **Iterate**: Refine based on rep feedback and buyer engagement data (via `/sales-proposal-analytics`)
 6. **Automate**: Once templates are stable, connect to CRM for auto-generation (via `/sales-qwilr-automation`)
 
+## Gotchas
+
+- **Don't make templates too rigid.** Templates should give reps a strong starting point, not a straitjacket. If reps can't easily customize the executive summary, scope, and pricing for their specific deal, they'll stop using the template. Use fill-in-the-blank frameworks, not fixed copy.
+- **Don't forget variable placeholders.** Every template should use `{{token}}` syntax for fields that will be auto-populated (company name, contact info, rep info, deal amount). Claude sometimes writes templates with hardcoded example values instead of tokens.
+- **Don't design for one deal type when the team handles multiple.** Ask how many distinct deal types exist before building templates. A single template for "SMB SaaS" and "Enterprise Financial Services" will serve neither well. But also don't over-segment — most teams need 2-4 templates, not 15.
+- **Don't forget mobile responsiveness.** Qwilr pages are web-based and will be viewed on phones and tablets. Avoid designs that depend on side-by-side layouts or wide tables that break on small screens. Test the template on mobile before rolling out.
+- **Don't create templates without a rollout plan.** A great template that reps don't know about or don't know how to use is wasted effort. Always include guidance on when to use each template and how to customize the variable sections.
+
 ## Related skills
 
 - `/sales-proposal-page` — Write a single proposal from scratch (not from template)
