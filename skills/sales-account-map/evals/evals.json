@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-account-map",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Map the buying committee at Acme Corp for our security product. They have about 5,000 employees.",
+      "expected_output": "Role-based committee map with specific titles, recommended entry point, and multi-threading plan",
+      "assertions": [
+        {"name": "role_mapping", "description": "Maps committee roles (Economic Buyer, Champion, Technical Evaluator, etc.) with expected titles for a security product at an enterprise company"},
+        {"name": "entry_strategy", "description": "Recommends starting with the Champion or Coach, not going straight to the C-suite"},
+        {"name": "multi_threading", "description": "Provides a multi-threading plan with sequenced engagement across 3+ contacts at different org levels"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "I'm selling to a 100-person startup. Who do I need to talk to?",
+      "expected_output": "Scaled-down committee with 2-3 key contacts and SMB-appropriate buying dynamics",
+      "assertions": [
+        {"name": "size_scaling", "description": "Adapts the committee framework for SMB — 2-3 contacts, not a 7-person committee"},
+        {"name": "role_consolidation", "description": "Recognizes that at a small startup, one person often fills multiple roles (e.g., CEO is both Economic Buyer and Champion)"},
+        {"name": "practical_approach", "description": "Recommends a simpler engagement approach appropriate for SMB buying dynamics"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I have a champion at BigCo but the deal is stuck. Who else should I bring in?",
+      "expected_output": "Committee gap analysis, blocker identification, and expansion strategy using the Champion for warm introductions",
+      "assertions": [
+        {"name": "gap_analysis", "description": "Identifies which committee roles are missing and likely causing the stall"},
+        {"name": "blocker_identification", "description": "Explores potential blockers — missing Economic Buyer support, technical concerns, or internal politics"},
+        {"name": "expansion_via_champion", "description": "Uses the existing Champion as a bridge to warm-introduce other committee members"}
+      ]
+    }
+  ]
+}

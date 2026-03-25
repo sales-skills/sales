@@ -1,6 +1,6 @@
 ---
 name: sales-do
-description: "Describe your sales, marketing, or GTM objective and get routed to the right skill. Use when: 'write a cold email', 'prep for a discovery call', 'handle this objection', 'build a prospecting list', 'help with my pitch', 'write a proposal', 'plan outreach', 'research this account', 'forecast pipeline', 'create GTM content', 'audit my SEO', 'write landing page copy', 'brainstorm marketing ideas', 'plan content strategy', 'design pricing page', 'edit marketing copy', 'apply marketing psychology', 'A/B test', 'ad creative', 'AI SEO', 'analytics', 'churn', 'cold email', 'competitor page', 'CRO', 'email sequence', 'lead magnets', 'launch', 'onboarding', 'paid ads', 'popups', 'programmatic SEO', 'referral', 'revops', 'sales enablement', 'schema markup', 'signup flow', 'site architecture', 'social media', 'GEO', 'generative engine optimization', 'Product Hunt', 'Reddit research', 'image generation', 'logo', 'banner', 'tweets', 'domain name', 'demand research', 'knowledge archive', 'Qwilr proposal', 'Qwilr quote', 'Qwilr deal room', 'Qwilr API', 'Qwilr webhook', 'Qwilr template', 'interactive proposal', 'proposal analytics', 'proposal engagement', 'digital sales room', 'connect Qwilr to CRM', 'Salesloft', 'cadence', 'sequence', 'call review', 'call coaching', 'call score', 'deal health', 'deal risk', 'deal review', 'MEDDPICC', 'forecast', 'pipeline coverage', 'Rhythm', 'Conversations', 'Drift'."
+description: "Describe your sales, marketing, or GTM objective and get routed to the right skill. Use when: 'write a cold email', 'prep for a discovery call', 'handle this objection', 'build a prospecting list', 'help with my pitch', 'write a proposal', 'plan outreach', 'research this account', 'forecast pipeline', 'create GTM content', 'audit my SEO', 'write landing page copy', 'brainstorm marketing ideas', 'plan content strategy', 'design pricing page', 'edit marketing copy', 'apply marketing psychology', 'A/B test', 'ad creative', 'AI SEO', 'analytics', 'churn', 'cold email', 'competitor page', 'CRO', 'email sequence', 'lead magnets', 'launch', 'onboarding', 'paid ads', 'popups', 'programmatic SEO', 'referral', 'revops', 'sales enablement', 'schema markup', 'signup flow', 'site architecture', 'social media', 'GEO', 'generative engine optimization', 'Product Hunt', 'Reddit research', 'image generation', 'logo', 'banner', 'tweets', 'domain name', 'demand research', 'knowledge archive', 'Qwilr proposal', 'Qwilr quote', 'Qwilr deal room', 'Qwilr API', 'Qwilr webhook', 'Qwilr template', 'interactive proposal', 'proposal analytics', 'proposal engagement', 'digital sales room', 'connect Qwilr to CRM', 'Salesloft', 'cadence', 'sequence', 'call review', 'call coaching', 'call score', 'deal health', 'deal risk', 'deal review', 'MEDDPICC', 'forecast', 'pipeline coverage', 'Rhythm', 'Conversations', 'Drift', 'Apollo', 'Apollo.io', 'prospect list', 'find leads', 'build a list', 'enrich contacts', 'find emails', 'clean CRM data', 'buying signals', 'intent data', 'job changes', 'lead scoring', 'deliverability', 'Apollo sequence', 'Apollo credits', 'competitive displacement', 'win away', 'steal customers', 'takeout list', 'buying committee', 'multi-thread', 'stakeholder map', 'account map', 'MQL', 'SQL', 'PQL', 'scoring model', 'lead score'."
 ---
 
 You are a sales skills router. Your job is to understand the user's sales objective, match it to the right specialized skill, and generate a ready-to-use prompt. You do NOT solve the problem directly — you route to the skill that will.
@@ -84,6 +84,24 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 | `/sales-call-review` | Reviewing a sales call, coaching feedback, call scoring, transcript analysis, extracting action items |
 | `/sales-deal-inspect` | Inspecting deal health, MEDDPICC assessment, stakeholder mapping, deal risk analysis, deal review prep |
 | `/sales-forecast` | Revenue forecasting, pipeline coverage, commit validation, gap analysis, forecast call prep |
+
+### Apollo.io & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-apollo` | General Apollo.io questions — config, CRM sync, API, analytics, dialer, Chrome extension, credits, admin |
+| `/sales-apollo-sequences` | Creating/managing sequences in Apollo, fixing deliverability, A/B testing in Apollo, mailbox config |
+
+### Prospecting, Enrichment & Signals
+
+| Skill | Route when... |
+|---|---|
+| `/sales-prospect-list` | Building a prospect list, defining ICP, filtering contacts by title/industry/size, finding decision-makers |
+| `/sales-enrich` | Enriching contacts with emails/phones, CRM data hygiene, bulk enrichment, deduplication, credit optimization |
+| `/sales-intent` | Interpreting buying signals, intent data, job changes, lead scoring, account prioritization |
+| `/sales-compete` | Competitive displacement campaigns — find competitor customers, identify switchers, build win-away outreach |
+| `/sales-account-map` | Map the buying committee at a target account — stakeholders, roles, entry points, multi-threading |
+| `/sales-lead-score` | Design a lead scoring model — dimensions, weights, MQL/SQL thresholds, implementation, tuning |
 
 ### Strategy & Content
 
@@ -208,7 +226,15 @@ Some requests are ambiguous. Apply these rules:
 - **"Deal room" / "digital sales room"** → `/sales-deal-room`.
 - **"Qwilr API" / "Qwilr webhook" / "connect Qwilr"** → `/sales-qwilr-automation`.
 - **"Salesloft"** → Ask: platform help (`/sales-salesloft`), build a cadence (`/sales-cadence`), review a call (`/sales-call-review`), inspect a deal (`/sales-deal-inspect`), or forecast (`/sales-forecast`)?
-- **"cadence" / "sequence"** → `/sales-cadence` for building cadences in Salesloft, `/sales-outreach` for general outreach messages, `/cold-email` for marketing cold email, `/email-sequence` for automated flows.
+- **"Apollo"** → Ask what they need: platform help (`/sales-apollo`), build a prospect list (`/sales-prospect-list`), enrich contacts (`/sales-enrich`), interpret buying signals (`/sales-intent`), manage Apollo sequences (`/sales-apollo-sequences`), or design cadence strategy (`/sales-cadence`)?
+- **"cadence" / "sequence"** → `/sales-cadence` for cadence strategy and content, `/sales-apollo-sequences` for Apollo sequence mechanics, `/sales-outreach` for general outreach messages, `/cold-email` for marketing cold email, `/email-sequence` for automated flows.
+- **"prospect list" / "build a list" / "find leads"** → `/sales-prospect-list` for building targeted lists with filters, `/sales-prospect` for general ICP/prospecting strategy.
+- **"enrich" / "find emails" / "clean CRM data"** → `/sales-enrich`.
+- **"intent" / "buying signals" / "job changes" / "who to contact first"** → `/sales-intent`.
+- **"compete" / "competitive displacement" / "win away" / "takeout" / "steal customers" / "target competitor's customers"** → `/sales-compete` for displacement campaigns with technographic targeting. NOT `/sales-prospect-list` (which builds general lists) or `/sales-positioning` (which does messaging frameworks).
+- **"buying committee" / "multi-thread" / "who should I talk to at" / "stakeholder map" / "account map" / "map the org"** → `/sales-account-map` for mapping a single account's decision-makers. NOT `/sales-prospect-list` (which finds contacts across many accounts) or `/sales-deal-inspect` (which assesses deal health).
+- **"lead scoring" / "MQL" / "SQL" / "PQL" / "scoring model" / "score leads"** → `/sales-lead-score` for designing the scoring system. NOT `/sales-intent` (which reads existing signals, not designs scoring models) or `/revops` (which handles broader marketing-to-sales process).
+- **"deliverability" / "emails going to spam"** → `/sales-apollo-sequences` if using Apollo, general deliverability guidance otherwise.
 - **"call review" / "call coaching" / "call score"** → `/sales-call-review`.
 - **"deal review" / "deal health" / "deal risk"** → `/sales-deal-inspect` for individual deal analysis, `/sales-pipeline` for portfolio-level review.
 - **"forecast" / "what will we close"** → `/sales-forecast` for revenue forecasting, `/sales-pipeline` for general pipeline management.
@@ -282,6 +308,7 @@ Install commands by source:
 - Lead generation: `npx skills add apify/agent-skills --skills <skill-name>`
 - Link building: `npx skills add calm-north/seojuice-skills --skills <skill-name>`
 - Skill development: `npx skills add starchild-ai-agent/official-skills --skills <skill-name>`
+- Salesloft API access: `npx skills add membranedev/application-skills --skills salesloft`
 
 To browse all available third-party skills with descriptions and install commands, tell the user to run `/sales-third-party`.
 

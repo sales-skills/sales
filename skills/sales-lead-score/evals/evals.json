@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-lead-score",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Help me build a lead scoring model for our B2B SaaS product. We're inbound-heavy with a $50K ACV.",
+      "expected_output": "Full scoring model with 4 dimensions, weighted for inbound motion, calibrated thresholds, and implementation steps",
+      "assertions": [
+        {"name": "four_dimensions", "description": "Builds a model with demographic, firmographic, behavioral, and timing dimensions with specific point values"},
+        {"name": "inbound_weighting", "description": "Weights behavioral signals higher (35-50%) appropriate for an inbound-heavy motion"},
+        {"name": "threshold_calibration", "description": "Sets MQL and SQL thresholds with guidance on how to calibrate using conversion data"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "Our MQL-to-SQL conversion rate is 8%. Our scoring model isn't working. Help me fix it.",
+      "expected_output": "Diagnosis framework, threshold recalibration, and weight adjustment recommendations",
+      "assertions": [
+        {"name": "diagnosis", "description": "Identifies likely causes of low conversion (threshold too low, demographic overweighting, missing decay)"},
+        {"name": "recalibration", "description": "Recommends specific threshold and weight adjustments based on conversion data analysis"},
+        {"name": "measurement_plan", "description": "Provides specific metrics and a timeline for validating the fixes"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "We're a PLG company. How should product usage signals factor into lead scoring?",
+      "expected_output": "Behavioral-heavy model with product event scoring, PQL threshold, and sales handoff triggers",
+      "assertions": [
+        {"name": "product_signals", "description": "Includes specific product usage events as scoring signals (signups, feature adoption, usage thresholds, team invites)"},
+        {"name": "pql_definition", "description": "Defines PQL criteria separately from MQL/SQL with product-specific thresholds"},
+        {"name": "behavioral_heavy", "description": "Weights behavioral/product signals at 40-50% of total score, higher than demographic fit"}
+      ]
+    }
+  ]
+}

@@ -10,7 +10,7 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 13 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 21 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -105,6 +105,24 @@ Router recommends a 5-skill sequence:
 | `/sales-call-review` | Review sales calls, extract coaching insights, score against MEDDPICC/SPIN | Available |
 | `/sales-deal-inspect` | Inspect deal health, map stakeholders, identify risks, recommend next actions | Available |
 | `/sales-forecast` | Build and validate revenue forecasts with pipeline coverage and gap analysis | Available |
+
+### Apollo.io & Platform
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-apollo` | Apollo.io platform help — config, CRM sync, API, analytics, dialer, credits, admin | Available |
+| `/sales-apollo-sequences` | Create and manage Apollo sequences — deliverability, A/B testing, mailbox config | Available |
+
+### Prospecting, Enrichment & Signals
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-prospect-list` | Build targeted B2B prospect lists with ICP definition, filters, and segmentation | Available |
+| `/sales-enrich` | Enrich contacts with emails/phones, CRM data hygiene, dedup, bulk enrichment | Available |
+| `/sales-intent` | Interpret buying signals, intent data, job changes, lead scoring, account prioritization | Available |
+| `/sales-compete` | Run competitive displacement campaigns — find competitor customers ready to switch | Available |
+| `/sales-account-map` | Map the buying committee at a target account with multi-threading strategy | Available |
+| `/sales-lead-score` | Design, weight, and tune a lead scoring model with MQL/SQL thresholds | Available |
 
 ### Strategy & Content
 

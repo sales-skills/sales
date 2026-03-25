@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-compete",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Help me take customers away from Datadog. We sell an observability platform that's 60% cheaper and easier to set up.",
+      "expected_output": "Technographic search for Datadog users, layered intent signals, tiered displacement list with messaging angles and battle card",
+      "assertions": [
+        {"name": "technographic_search", "description": "Builds a technographic search for Datadog users filtered to ICP"},
+        {"name": "signal_layering", "description": "Layers displacement signals (intent, job changes, hiring) on top of the installed base"},
+        {"name": "displacement_messaging", "description": "Provides competitor-specific messaging angles (cost savings, simplicity) rather than generic outreach"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "I know 50 companies use our competitor's product. Which ones should I target first?",
+      "expected_output": "Prioritization framework with signal stacking, tiered output, and per-tier action recommendations",
+      "assertions": [
+        {"name": "signal_stacking", "description": "Scores accounts by combining multiple displacement signals, not just ICP fit"},
+        {"name": "prioritized_tiers", "description": "Segments the 50 accounts into priority tiers with different outreach approaches per tier"},
+        {"name": "actionable_next_steps", "description": "Provides specific 'start here' guidance for the top-priority accounts"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "A competitor's customer just hired a new CTO. How do I approach?",
+      "expected_output": "Job change displacement playbook with timing guidance, warm approach, and CTO-relevant messaging",
+      "assertions": [
+        {"name": "timing_guidance", "description": "Recommends waiting 30-60 days before making a pitch, letting the new leader get settled"},
+        {"name": "warm_first", "description": "Leads with congratulations and value, not an immediate competitive pitch"},
+        {"name": "anti_trash_talk", "description": "Explicitly warns against criticizing the competitor's product in outreach"}
+      ]
+    }
+  ]
+}
