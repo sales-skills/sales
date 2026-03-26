@@ -1,2 +1,4 @@
 evals-output/
 node_modules/
+drafts/
+.claude/
