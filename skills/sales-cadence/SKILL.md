@@ -1,6 +1,6 @@
 ---
 name: sales-cadence
-description: "Design multi-channel outbound cadences with timing, A/B testing, and content. Use when building a Salesloft cadence, building a Mailshake campaign, designing an outbound sequence, planning touchpoint timing, writing cadence emails, creating call scripts, A/B testing subject lines, optimizing sequence performance, or planning multi-channel outreach. Do NOT use for general outreach message writing (use /sales-outreach), marketing cold email (use /cold-email), automated email flows (use /email-sequence), or general Salesloft platform help (use /sales-salesloft)."
+description: "Design multi-channel outbound cadences with timing, A/B testing, and content. Use when building a Salesloft cadence, building a Mailshake campaign, building a Smartlead campaign, designing an outbound sequence, planning touchpoint timing, writing cadence emails, creating call scripts, A/B testing subject lines, optimizing sequence performance, or planning multi-channel outreach. Do NOT use for general outreach message writing (use /sales-outreach), marketing cold email (use /cold-email), automated email flows (use /email-sequence), or general Salesloft platform help (use /sales-salesloft)."
 argument-hint: "[describe campaign goal, target persona, channels, and constraints]"
 license: MIT
 metadata:
@@ -10,7 +10,7 @@ metadata:
 
 # Design a Multi-Channel Outbound Cadence
 
-Help the user design a complete outbound cadence for Salesloft or Mailshake — from architecture and timing through full content for every step, A/B testing, and optimization benchmarks.
+Help the user design a complete outbound cadence for Salesloft, Mailshake, or Smartlead — from architecture and timing through full content for every step, A/B testing, and optimization benchmarks.
 
 ## Step 1 — Gather context
 
@@ -105,6 +105,13 @@ For each call step:
 - A/B testing: available on higher plans — test subject lines and body content
 - Recipient management: add via CSV or API; only email is required
 
+### In Smartlead
+- Smartlead campaigns = sequences — a campaign has email steps with time delays between them
+- Email-only by default; phone steps require SmartDialer, LinkedIn touchpoints via external tools
+- A/B testing: built-in variant testing (up to 26 variants A-Z) for subject lines and email body
+- SmartAgents: AI-powered personalization at scale — research prospects and generate custom email content per lead. Best for Level 3-4 personalization when sending to 100+ prospects.
+- Lead management: leads tracked by interest status within campaigns (interested, not interested, not contacted, do not contact, wrong person, completed)
+
 ### Personalization framework
 - **Level 1 (Minimum)**: First name, company name, title — the bare minimum
 - **Level 2 (Standard)**: Industry reference, company-size-specific pain point
@@ -112,6 +119,8 @@ For each call step:
 - **Level 4 (Elite)**: Personal insight (their LinkedIn post, podcast appearance, conference talk, published article)
 
 Recommend Level 3+ for all touches in a cold outbound cadence. Level 2 is acceptable for re-engagement at scale.
+
+For Level 3+ at scale (100+ prospects), consider AI personalization: Smartlead SmartAgents, Clay, or custom GPT workflows to research each prospect and generate personalized snippets for {{custom_field}} merge variables. This automates the research step that makes Level 3-4 feasible at volume.
 
 ## Step 4 — A/B testing plan
 
@@ -160,6 +169,7 @@ Provide a benchmarks table:
 - `/email-sequence` — Automated email flows and drip campaigns
 - `/sales-deliverability` — Email deliverability — SPF/DKIM/DMARC, warmup, inbox placement
 - `/sales-mailshake` — Mailshake platform help (campaigns, Lead Catcher, settings)
+- `/sales-smartlead` — Smartlead platform help (campaigns, SmartSenders, SmartAgents, API)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Gotchas

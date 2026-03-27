@@ -1,6 +1,6 @@
 ---
 name: sales-deliverability
-description: "Email deliverability for outbound sales — domain authentication (SPF/DKIM/DMARC), mailbox warmup, sending limits, inbox placement, blacklist monitoring, sender reputation, custom tracking domains, and list hygiene. Use when setting up a new sending domain, warming up mailboxes, diagnosing spam/deliverability issues, recovering from blacklisting, scaling outbound volume, or switching email platforms. Do NOT use for cadence content and strategy (use /sales-cadence), Apollo sequence mechanics (use /sales-apollo-sequences), or Mailshake platform help (use /sales-mailshake)."
+description: "Email deliverability for outbound sales — domain authentication (SPF/DKIM/DMARC), mailbox warmup, sending limits, inbox placement, blacklist monitoring, sender reputation, custom tracking domains, and list hygiene. Use when setting up a new sending domain, warming up mailboxes, diagnosing spam/deliverability issues, recovering from blacklisting, scaling outbound volume, or switching email platforms. Do NOT use for cadence content and strategy (use /sales-cadence), Apollo sequence mechanics (use /sales-apollo-sequences), Mailshake platform help (use /sales-mailshake), or Smartlead platform help (use /sales-smartlead)."
 argument-hint: "[describe your deliverability situation — new domain, spam issues, warmup, scaling]"
 license: MIT
 metadata:
@@ -104,6 +104,7 @@ New mailboxes and domains must be warmed up before sending at volume. Skipping w
 **For new domains**: Add 2 extra weeks at the beginning (weeks 1-2 at 3-5 sends/day). New domains have zero reputation.
 
 ### Warmup tools
+- **Smartlead Ultra Premium Warmup** — AI-driven warmup built into the Smartlead platform with exclusive warmup network. Unlike standalone tools, it's fully integrated with sender management and campaign scheduling.
 - **Instantly** — automated warmup with real engagement (opens, replies, moves from spam)
 - **Warmbox** — AI-powered warmup network
 - **Lemwarm** — Lemlist's warmup tool (works with any SMTP)
@@ -139,9 +140,18 @@ These tools simulate real email conversations to build sender reputation. Run wa
 - **Sender management**: Cadence settings > Sender — assign specific senders per cadence
 - **Custom tracking domain**: Admin > Email > Custom Tracking Domain
 
+### In Smartlead
+- **SmartSenders**: Auto-provision mailboxes via Gmail/Outlook OAuth. Configure per-sender daily limits (recommend 30-50/day per mailbox for cold outbound).
+- **SmartInfra**: Dedicated IPs with auto DNS/DKIM/DMARC configuration for high-volume senders. Evaluate when sending 1,000+ emails/day or managing multiple clients.
+- **Ultra Premium Warmup**: Built-in warmup — enable per mailbox, minimum 2-3 weeks before campaign sends. Monitor warmup reputation score (target 80+ before activating).
+- **SmartDelivery**: Inbox placement testing — send test emails to seed accounts and measure inbox vs spam placement. Run before launching campaigns and periodically during active sends.
+- **Custom tracking domain**: Settings > Tracking Domain — add CNAME record for branded link tracking.
+
 ### Standalone tools (any platform)
 - **MXToolbox**: DNS lookup, blacklist check, SPF/DKIM/DMARC validation
 - **mail-tester.com**: Send a test email, get a deliverability score (aim for 9+/10)
+- **SmartDelivery** (Smartlead): Inbox placement testing by provider (Gmail, Outlook, Yahoo)
+- **GlockApps**: Inbox placement testing and spam filter analysis
 - **Google Postmaster Tools**: Monitor Gmail-specific reputation (if targeting Gmail recipients)
 - **Microsoft SNDS**: Monitor Outlook/Microsoft reputation
 
@@ -186,9 +196,11 @@ If your domain reputation is damaged:
 ## Related skills
 
 - `/sales-cadence` — Design outbound cadence strategy and content
+- `/sales-smartlead` — Smartlead platform help (SmartSenders, SmartInfra, SmartDelivery, campaigns)
 - `/sales-mailshake` — Mailshake platform help (campaigns, Lead Catcher, settings)
 - `/sales-apollo-sequences` — Apollo sequence mechanics and configuration
 - `/sales-salesloft` — Salesloft platform help
+- `/sales-agency-outbound` — Multi-client agency outbound — infrastructure, client isolation, warmup at scale
 - `/sales-enrich` — Verify and enrich contact emails before sending
 - `/sales-prospect-list` — Build prospect lists with verified contacts
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.

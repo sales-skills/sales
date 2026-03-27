@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -73,6 +73,9 @@ Before building anything custom, check if a native integration exists:
 | Apollo → HubSpot | Yes (bi-directional) | Full contact/account/deal sync |
 | Salesloft → Salesforce | Yes (bi-directional) | Contact/account/activity sync |
 | Salesloft → HubSpot | Yes | Activity sync |
+| Smartlead → HubSpot | Yes (native) | Push leads, sync activity |
+| Smartlead → Salesforce | Via OutboundSync (third-party) | Lead and activity sync |
+| Smartlead → Clay | Yes (native) | Enrichment pipeline |
 | Qwilr → Salesforce | Yes | Proposal/quote sync — see `/sales-qwilr-automation` |
 | Qwilr → HubSpot | Yes | Proposal/quote sync — see `/sales-qwilr-automation` |
 
@@ -156,6 +159,12 @@ Before building anything custom, check if a native integration exists:
 - **Events**: Person created/updated, cadence step completed, email bounced, call logged
 - **Note**: Salesloft also offers a robust REST API for building custom integrations
 
+### Smartlead webhooks
+- **Setup**: API endpoint `POST /webhooks` with `url` and `event_type`
+- **Events**: LEAD_REPLIED, LEAD_INTERESTED, LEAD_UNSUBSCRIBED, EMAIL_SENT, EMAIL_OPENED, EMAIL_CLICKED, EMAIL_BOUNCED
+- **Payload**: JSON with event_type, timestamp, and data object (lead_id, campaign_id, email, event-specific fields)
+- **Full reference**: See `/sales-smartlead` → `references/smartlead-api-reference.md`
+
 ### Qwilr webhooks
 - **Full reference**: See `/sales-qwilr-automation` for Qwilr-specific webhook events and CRM integrations
 
@@ -200,6 +209,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-qwilr-automation` — Qwilr-specific CRM integrations, API, and webhook events
 - `/sales-mailshake` — Mailshake platform help including API and webhook details
 - `/sales-apollo` — Apollo platform help including CRM sync and API
+- `/sales-smartlead` — Smartlead platform help including API and webhook details
 - `/sales-salesloft` — Salesloft platform help including integrations
 - `/sales-deliverability` — Email deliverability (relevant when integrating sending tools)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.

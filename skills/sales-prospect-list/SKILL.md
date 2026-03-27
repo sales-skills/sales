@@ -126,6 +126,12 @@ Save the search as a dynamic list — new matches will appear automatically.
 - Custom fields: additional CSV columns become custom merge fields
 - Pre-send: verify emails before import — Mailshake does not verify on upload. See `/sales-deliverability`
 
+### Importing into Smartlead
+- **CSV import**: Upload CSV with `email` as the only required column. Recommended fields: `first_name`, `last_name`, `company`, plus any custom fields for merge variables.
+- **API import**: `POST /api/v1/campaigns/{id}/leads` with a `lead_list` array containing lead objects. See `/sales-smartlead` → `references/smartlead-api-reference.md`.
+- **SmartProspect**: Alternative to external list building — Smartlead's built-in verified lead database with intent signals. 3x email verification (syntax, domain, mailbox). Pay per verified lead via credits.
+- **Pre-send**: Verify emails before import to keep bounce rate <3%. SmartProspect leads are pre-verified; external lists are not.
+
 ## Step 4 — Segment and prioritize
 
 Split the list into tiers for sequencing:
@@ -212,6 +218,7 @@ Before launching outreach, validate the list:
 - `/sales-apollo-sequences` — Set up and manage sequences in Apollo
 - `/sales-deliverability` — Verify email deliverability setup before sending to your list
 - `/sales-mailshake` — Mailshake platform help (import recipients, manage campaigns)
+- `/sales-smartlead` — Smartlead platform help (import leads, SmartProspect, campaigns)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

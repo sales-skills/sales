@@ -119,6 +119,12 @@ Router recommends a 5-skill sequence:
 |---|---|---|
 | `/sales-mailshake` | Mailshake platform help — campaigns, Lead Catcher, recipients, senders, API, webhooks | Available |
 
+### Smartlead & Platform
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-smartlead` | Smartlead platform help — campaigns, SmartSenders, SmartInfra, SmartAgents, SmartDialer, SmartDelivery, SmartProspect, API, agency/white-label | Available |
+
 ### Prospecting, Enrichment & Signals
 
 | Skill | What it does | Status |
@@ -135,6 +141,7 @@ Router recommends a 5-skill sequence:
 | Skill | What it does | Status |
 |---|---|---|
 | `/sales-deliverability` | Email deliverability — SPF/DKIM/DMARC, warmup, inbox placement, blacklists, sender reputation | Available |
+| `/sales-agency-outbound` | Multi-client outbound for agencies — infrastructure, client isolation, white-labeling, onboarding | Available |
 | `/sales-lead-routing` | Design lead routing and assignment rules — round-robin, territory, score-based, account-based | Available |
 | `/sales-integration` | Connect sales tools with webhooks, Zapier/Make, native integrations, and CRM sync | Available |
 
