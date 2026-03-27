@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-integration",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "When someone replies to my Mailshake campaign, I want to create a task in Salesforce and get a Slack notification.",
+      "expected_output": "Integration design using Mailshake reply event with Salesforce task creation and Slack notification",
+      "assertions": [
+        {"name": "webhook_or_zapier", "description": "Recommends webhook or Zapier approach using Mailshake's reply event"},
+        {"name": "mailshake_reply_event", "description": "References Mailshake's Reply webhook event or Zapier trigger"},
+        {"name": "multi_step", "description": "Designs a multi-step workflow that handles both Salesforce task creation and Slack notification"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "I need to sync all Salesloft activity to HubSpot so our marketing team can see sales touchpoints.",
+      "expected_output": "Activity sync design with direction, field mapping, and native integration recommendation",
+      "assertions": [
+        {"name": "native_check", "description": "Checks for native Salesloft-HubSpot integration before recommending custom solutions"},
+        {"name": "sync_direction", "description": "Defines clear sync direction (Salesloft → HubSpot, one-way for activity data)"},
+        {"name": "field_mapping", "description": "Addresses field mapping between Salesloft activities and HubSpot engagement properties"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "When a lead hits MQL status in HubSpot, I want to auto-enroll them in an Apollo sequence.",
+      "expected_output": "MQL-triggered enrollment workflow with trigger definition, API/Zapier implementation, and error handling",
+      "assertions": [
+        {"name": "trigger_definition", "description": "Defines the trigger: HubSpot lifecycle stage change to MQL"},
+        {"name": "implementation_options", "description": "Recommends Zapier or API-based approach for HubSpot → Apollo enrollment"},
+        {"name": "error_handling", "description": "Addresses error scenarios — duplicate contacts, sequence capacity, enrollment failures"}
+      ]
+    }
+  ]
+}

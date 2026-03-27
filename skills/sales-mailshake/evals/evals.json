@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-mailshake",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "How do I set up Lead Catcher in Mailshake?",
+      "expected_output": "Guide to enabling and configuring Lead Catcher with assignment rules and lead status workflow",
+      "assertions": [
+        {"name": "setup_steps", "description": "Provides steps to enable Lead Catcher and configure auto-assignment rules"},
+        {"name": "lead_statuses", "description": "Explains lead statuses: open, won/closed, ignored, lost"},
+        {"name": "crm_distinction", "description": "Clarifies that Lead Catcher is not a CRM replacement — leads should be pushed to CRM for pipeline management"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "I need to add 500 recipients via CSV to Mailshake. What format does the CSV need to be in?",
+      "expected_output": "CSV format requirements and import guidance including required fields, merge field mapping, and plan considerations",
+      "assertions": [
+        {"name": "required_fields", "description": "States that emailAddress (email) is the only required field"},
+        {"name": "csv_structure", "description": "Explains CSV structure — headers in first row, recommended columns (first, last, company, title), custom columns become merge fields"},
+        {"name": "verification_warning", "description": "Warns that Mailshake does not verify emails on upload and recommends pre-verification"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I want to use the Mailshake API to create a campaign and add recipients programmatically. We expect about 200 new leads per day.",
+      "expected_output": "API guidance for campaign creation and recipient management with rate limit awareness",
+      "assertions": [
+        {"name": "api_reference", "description": "Points to references/mailshake-api-reference.md for full API docs"},
+        {"name": "auth_method", "description": "Explains API key authentication (apiKey parameter)"},
+        {"name": "rate_limits", "description": "Warns about 100 requests/minute rate limit and recommends batching for 200 leads/day"}
+      ]
+    }
+  ]
+}

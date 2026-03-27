@@ -1,6 +1,6 @@
 ---
 name: sales-cadence
-description: "Design multi-channel outbound cadences with timing, A/B testing, and content. Use when building a Salesloft cadence, designing an outbound sequence, planning touchpoint timing, writing cadence emails, creating call scripts, A/B testing subject lines, optimizing sequence performance, or planning multi-channel outreach. Do NOT use for general outreach message writing (use /sales-outreach), marketing cold email (use /cold-email), automated email flows (use /email-sequence), or general Salesloft platform help (use /sales-salesloft)."
+description: "Design multi-channel outbound cadences with timing, A/B testing, and content. Use when building a Salesloft cadence, building a Mailshake campaign, designing an outbound sequence, planning touchpoint timing, writing cadence emails, creating call scripts, A/B testing subject lines, optimizing sequence performance, or planning multi-channel outreach. Do NOT use for general outreach message writing (use /sales-outreach), marketing cold email (use /cold-email), automated email flows (use /email-sequence), or general Salesloft platform help (use /sales-salesloft)."
 argument-hint: "[describe campaign goal, target persona, channels, and constraints]"
 license: MIT
 metadata:
@@ -10,7 +10,7 @@ metadata:
 
 # Design a Multi-Channel Outbound Cadence
 
-Help the user design a complete Salesloft cadence — from architecture and timing through full content for every step, A/B testing, and optimization benchmarks.
+Help the user design a complete outbound cadence for Salesloft or Mailshake — from architecture and timing through full content for every step, A/B testing, and optimization benchmarks.
 
 ## Step 1 — Gather context
 
@@ -98,6 +98,13 @@ For each call step:
 - Duration: 60-90 seconds max
 - Structure: Say their name, show you did research, one key insight, soft CTA
 
+### In Mailshake
+- Mailshake campaigns = cadences — a campaign has an initial message plus follow-ups
+- Follow-up types: time-based (drip), reply-based, click-based (on-click message)
+- Channel limitation: email-first; phone/LinkedIn steps tracked manually or via another tool
+- A/B testing: available on higher plans — test subject lines and body content
+- Recipient management: add via CSV or API; only email is required
+
 ### Personalization framework
 - **Level 1 (Minimum)**: First name, company name, title — the bare minimum
 - **Level 2 (Standard)**: Industry reference, company-size-specific pain point
@@ -151,6 +158,8 @@ Provide a benchmarks table:
 - `/sales-call-review` — Review calls from your cadence to improve scripts
 - `/cold-email` — Marketing-style cold email campaigns (not Salesloft cadences)
 - `/email-sequence` — Automated email flows and drip campaigns
+- `/sales-deliverability` — Email deliverability — SPF/DKIM/DMARC, warmup, inbox placement
+- `/sales-mailshake` — Mailshake platform help (campaigns, Lead Catcher, settings)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Gotchas

@@ -113,6 +113,12 @@ Router recommends a 5-skill sequence:
 | `/sales-apollo` | Apollo.io platform help — config, CRM sync, API, analytics, dialer, credits, admin | Available |
 | `/sales-apollo-sequences` | Create and manage Apollo sequences — deliverability, A/B testing, mailbox config | Available |
 
+### Mailshake & Platform
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-mailshake` | Mailshake platform help — campaigns, Lead Catcher, recipients, senders, API, webhooks | Available |
+
 ### Prospecting, Enrichment & Signals
 
 | Skill | What it does | Status |
@@ -123,6 +129,14 @@ Router recommends a 5-skill sequence:
 | `/sales-compete` | Run competitive displacement campaigns — find competitor customers ready to switch | Available |
 | `/sales-account-map` | Map the buying committee at a target account with multi-threading strategy | Available |
 | `/sales-lead-score` | Design, weight, and tune a lead scoring model with MQL/SQL thresholds | Available |
+
+### Cross-Platform
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-deliverability` | Email deliverability — SPF/DKIM/DMARC, warmup, inbox placement, blacklists, sender reputation | Available |
+| `/sales-lead-routing` | Design lead routing and assignment rules — round-robin, territory, score-based, account-based | Available |
+| `/sales-integration` | Connect sales tools with webhooks, Zapier/Make, native integrations, and CRM sync | Available |
 
 ### Strategy & Content
 

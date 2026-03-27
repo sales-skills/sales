@@ -119,6 +119,13 @@ Use Apollo's People Search with these filter categories:
 
 Save the search as a dynamic list — new matches will appear automatically.
 
+### Exporting for Mailshake
+- Export CSV with columns mapping to Mailshake recipient fields
+- Required: `email` (only mandatory column)
+- Recommended: `first`, `last`, `company`, `title` → merge fields {{first}}, {{last}}, {{company}}, {{title}}
+- Custom fields: additional CSV columns become custom merge fields
+- Pre-send: verify emails before import — Mailshake does not verify on upload. See `/sales-deliverability`
+
 ## Step 4 — Segment and prioritize
 
 Split the list into tiers for sequencing:
@@ -203,6 +210,8 @@ Before launching outreach, validate the list:
 - `/sales-cadence` — Design the outbound sequence for your list
 - `/sales-apollo` — Apollo.io platform help (search mechanics, saved searches, Chrome extension)
 - `/sales-apollo-sequences` — Set up and manage sequences in Apollo
+- `/sales-deliverability` — Verify email deliverability setup before sending to your list
+- `/sales-mailshake` — Mailshake platform help (import recipients, manage campaigns)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

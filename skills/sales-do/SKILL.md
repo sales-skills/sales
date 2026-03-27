@@ -1,6 +1,6 @@
 ---
 name: sales-do
-description: "Describe your sales, marketing, or GTM objective and get routed to the right skill. Use when: 'write a cold email', 'prep for a discovery call', 'handle this objection', 'build a prospecting list', 'help with my pitch', 'write a proposal', 'plan outreach', 'research this account', 'forecast pipeline', 'create GTM content', 'audit my SEO', 'write landing page copy', 'brainstorm marketing ideas', 'plan content strategy', 'design pricing page', 'edit marketing copy', 'apply marketing psychology', 'A/B test', 'ad creative', 'AI SEO', 'analytics', 'churn', 'cold email', 'competitor page', 'CRO', 'email sequence', 'lead magnets', 'launch', 'onboarding', 'paid ads', 'popups', 'programmatic SEO', 'referral', 'revops', 'sales enablement', 'schema markup', 'signup flow', 'site architecture', 'social media', 'GEO', 'generative engine optimization', 'Product Hunt', 'Reddit research', 'image generation', 'logo', 'banner', 'tweets', 'domain name', 'demand research', 'knowledge archive', 'Qwilr proposal', 'Qwilr quote', 'Qwilr deal room', 'Qwilr API', 'Qwilr webhook', 'Qwilr template', 'interactive proposal', 'proposal analytics', 'proposal engagement', 'digital sales room', 'connect Qwilr to CRM', 'Salesloft', 'cadence', 'sequence', 'call review', 'call coaching', 'call score', 'deal health', 'deal risk', 'deal review', 'MEDDPICC', 'forecast', 'pipeline coverage', 'Rhythm', 'Conversations', 'Drift', 'Apollo', 'Apollo.io', 'prospect list', 'find leads', 'build a list', 'enrich contacts', 'find emails', 'clean CRM data', 'buying signals', 'intent data', 'job changes', 'lead scoring', 'deliverability', 'Apollo sequence', 'Apollo credits', 'competitive displacement', 'win away', 'steal customers', 'takeout list', 'buying committee', 'multi-thread', 'stakeholder map', 'account map', 'MQL', 'SQL', 'PQL', 'scoring model', 'lead score'."
+description: "Describe your sales, marketing, or GTM objective and get routed to the right skill. Use when: 'write a cold email', 'prep for a discovery call', 'handle this objection', 'build a prospecting list', 'help with my pitch', 'write a proposal', 'plan outreach', 'research this account', 'forecast pipeline', 'create GTM content', 'audit my SEO', 'write landing page copy', 'brainstorm marketing ideas', 'plan content strategy', 'design pricing page', 'edit marketing copy', 'apply marketing psychology', 'A/B test', 'ad creative', 'AI SEO', 'analytics', 'churn', 'cold email', 'competitor page', 'CRO', 'email sequence', 'lead magnets', 'launch', 'onboarding', 'paid ads', 'popups', 'programmatic SEO', 'referral', 'revops', 'sales enablement', 'schema markup', 'signup flow', 'site architecture', 'social media', 'GEO', 'generative engine optimization', 'Product Hunt', 'Reddit research', 'image generation', 'logo', 'banner', 'tweets', 'domain name', 'demand research', 'knowledge archive', 'Qwilr proposal', 'Qwilr quote', 'Qwilr deal room', 'Qwilr API', 'Qwilr webhook', 'Qwilr template', 'interactive proposal', 'proposal analytics', 'proposal engagement', 'digital sales room', 'connect Qwilr to CRM', 'Salesloft', 'cadence', 'sequence', 'call review', 'call coaching', 'call score', 'deal health', 'deal risk', 'deal review', 'MEDDPICC', 'forecast', 'pipeline coverage', 'Rhythm', 'Conversations', 'Drift', 'Apollo', 'Apollo.io', 'prospect list', 'find leads', 'build a list', 'enrich contacts', 'find emails', 'clean CRM data', 'buying signals', 'intent data', 'job changes', 'lead scoring', 'deliverability', 'Apollo sequence', 'Apollo credits', 'competitive displacement', 'win away', 'steal customers', 'takeout list', 'buying committee', 'multi-thread', 'stakeholder map', 'account map', 'MQL', 'SQL', 'PQL', 'scoring model', 'lead score', 'Mailshake', 'Lead Catcher', 'email deliverability', 'warmup', 'SPF', 'DKIM', 'DMARC', 'lead routing', 'lead assignment', 'round-robin', 'territory routing', 'webhook', 'integration', 'Zapier', 'Make', 'data sync'."
 ---
 
 You are a sales skills router. Your job is to understand the user's sales objective, match it to the right specialized skill, and generate a ready-to-use prompt. You do NOT solve the problem directly — you route to the skill that will.
@@ -92,6 +92,12 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 | `/sales-apollo` | General Apollo.io questions — config, CRM sync, API, analytics, dialer, Chrome extension, credits, admin |
 | `/sales-apollo-sequences` | Creating/managing sequences in Apollo, fixing deliverability, A/B testing in Apollo, mailbox config |
 
+### Mailshake & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-mailshake` | General Mailshake questions — campaigns, Lead Catcher, recipients, senders, API, webhooks |
+
 ### Prospecting, Enrichment & Signals
 
 | Skill | Route when... |
@@ -102,6 +108,14 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 | `/sales-compete` | Competitive displacement campaigns — find competitor customers, identify switchers, build win-away outreach |
 | `/sales-account-map` | Map the buying committee at a target account — stakeholders, roles, entry points, multi-threading |
 | `/sales-lead-score` | Design a lead scoring model — dimensions, weights, MQL/SQL thresholds, implementation, tuning |
+
+### Cross-Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-deliverability` | Email deliverability — SPF/DKIM/DMARC, warmup, inbox placement, blacklists, sender reputation |
+| `/sales-lead-routing` | Lead routing and assignment — round-robin, territory, score-based, account-based |
+| `/sales-integration` | Connecting sales tools — webhooks, Zapier/Make, CRM sync, data pipelines |
 
 ### Strategy & Content
 
@@ -234,7 +248,7 @@ Some requests are ambiguous. Apply these rules:
 - **"compete" / "competitive displacement" / "win away" / "takeout" / "steal customers" / "target competitor's customers"** → `/sales-compete` for displacement campaigns with technographic targeting. NOT `/sales-prospect-list` (which builds general lists) or `/sales-positioning` (which does messaging frameworks).
 - **"buying committee" / "multi-thread" / "who should I talk to at" / "stakeholder map" / "account map" / "map the org"** → `/sales-account-map` for mapping a single account's decision-makers. NOT `/sales-prospect-list` (which finds contacts across many accounts) or `/sales-deal-inspect` (which assesses deal health).
 - **"lead scoring" / "MQL" / "SQL" / "PQL" / "scoring model" / "score leads"** → `/sales-lead-score` for designing the scoring system. NOT `/sales-intent` (which reads existing signals, not designs scoring models) or `/revops` (which handles broader marketing-to-sales process).
-- **"deliverability" / "emails going to spam"** → `/sales-apollo-sequences` if using Apollo, general deliverability guidance otherwise.
+- **"deliverability" / "emails going to spam" / "warmup" / "SPF" / "DKIM" / "DMARC" / "blacklist"** → `/sales-deliverability` for cross-platform deliverability. `/sales-apollo-sequences` only for Apollo-specific sequence mechanics.
 - **"call review" / "call coaching" / "call score"** → `/sales-call-review`.
 - **"deal review" / "deal health" / "deal risk"** → `/sales-deal-inspect` for individual deal analysis, `/sales-pipeline` for portfolio-level review.
 - **"forecast" / "what will we close"** → `/sales-forecast` for revenue forecasting, `/sales-pipeline` for general pipeline management.
@@ -265,6 +279,11 @@ Some requests are ambiguous. Apply these rules:
 - **"competitive landscape/analysis"** → `/competitive-landscape` for frameworks (Porter's Five Forces, Blue Ocean, positioning maps), `/sales-research` for account-level competitive intel.
 - **"lead generation"** → `/apify-lead-generation` for scraping leads from platforms (Google Maps, social, web), `/sales-prospect` for ICP definition and target list building, `/lead-magnets` for creating gated content to capture emails.
 - **"link building"** → `/build-links` for link acquisition campaigns and outreach strategy, `/backlink-analyzer` for analyzing existing backlink profiles.
+
+- **"Mailshake" / "Lead Catcher" / "Mailshake campaign"** → `/sales-mailshake` for platform help. `/sales-cadence` for cadence strategy. `/sales-deliverability` for deliverability.
+- **"lead routing" / "lead assignment" / "round-robin" / "territory routing"** → `/sales-lead-routing` for designing assignment rules. NOT `/sales-lead-score` (which designs scoring models) or `/revops` (which handles broader handoff process).
+- **"webhook" / "Zapier" / "Make" / "connect tools" / "sync data" / "integration"** → `/sales-integration` for connecting sales tools. NOT `/sales-qwilr-automation` (Qwilr-specific) or `/sales-apollo` (Apollo CRM sync config).
+- **"inbox placement" / "sender reputation" / "email warmup" / "custom tracking domain"** → `/sales-deliverability`.
 
 If still ambiguous after applying these rules, ask another clarifying question with multiple-choice options.
 
