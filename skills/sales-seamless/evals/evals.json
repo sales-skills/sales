@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-seamless",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "How do I find VP Sales contacts at mid-market SaaS companies using Seamless.AI?",
+      "expected_output": "Step-by-step guidance on using Seamless.AI Prospector with filters for title, industry, and company size, plus credit optimization tips",
+      "assertions": [
+        {"name": "uses_prospector", "description": "Response explains using the Prospector search with appropriate filters (title, industry, employee count/revenue)"},
+        {"name": "mentions_credits", "description": "Response addresses credit consumption — each reveal costs 1 credit, search/browse is free"},
+        {"name": "recommends_buyer_intent", "description": "Response suggests layering Buyer Intent signals to prioritize which contacts to reveal first"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "I want to set up Buyer Intent and Job Changes tracking in Seamless.AI to prioritize my outreach. How?",
+      "expected_output": "Configuration guidance for Buyer Intent topic selection and Job Changes monitoring with outreach timing recommendations",
+      "assertions": [
+        {"name": "intent_setup", "description": "Response explains selecting intent topics relevant to the user's product category and how scoring works"},
+        {"name": "job_changes_setup", "description": "Response explains Job Changes tracking and the 90-day window for new leader buying decisions"},
+        {"name": "plan_gating", "description": "Response mentions that Buyer Intent and Job Changes are Pro/Enterprise features — not available on Free or Basic plans"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "How do I use the Seamless.AI API to automatically enrich contacts from my CRM?",
+      "expected_output": "API integration guidance covering Contact Research endpoint, async polling pattern, webhook delivery, and rate limits",
+      "assertions": [
+        {"name": "api_endpoint", "description": "Response references the Contact Research endpoint (POST /contacts/research) and the poll endpoint (GET /contacts/research/poll)"},
+        {"name": "async_pattern", "description": "Response explains the async research/poll pattern — submit research request, get requestIds, poll for completion or receive via webhook"},
+        {"name": "rate_limits", "description": "Response mentions the ~100 requests per 60 seconds rate limit and recommends checking X-RateLimit headers"}
+      ]
+    }
+  ]
+}

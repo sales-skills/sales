@@ -166,6 +166,24 @@ Save the search as a dynamic list — new matches will appear automatically.
 - **Auto-verification**: Woodpecker automatically validates prospect emails via Bouncer when added — invalid emails are flagged before sending
 - **Limits**: Pricing based on "contacted prospects" per month — every new person added to a campaign counts against limit
 
+### Finding prospects with Mailmo
+- **Email Finder**: Enter a person's first name, last name, and company domain → Mailmo returns their verified email. Best for one-at-a-time lookups when you already know who you want to reach.
+- **LinkedIn Chrome Extension**: Browse LinkedIn or Sales Navigator profiles → click the Mailmo extension → verified email appears. Great for building prospect lists while browsing Sales Navigator search results.
+- **Catch-all advantage**: Mailmo's catch-all verification provides definitive results on domains where other finders return "risky" or "unknown."
+- **No bulk search**: Mailmo does not have a company/domain search like Hunter or Tomba — you need to know the person's name. For finding all emails at a company, use Hunter.io Domain Search or Tomba Domain Search instead.
+- **Export**: Download found emails as CSV for import into CRM or outbound tools.
+- **Pre-send**: Emails found via Mailmo are already verified — no separate verification step needed.
+
+### Finding prospects with Seamless.AI
+- **Prospector**: Search 1.8B+ contacts with filters — title, seniority, department, industry, company size, revenue, location, technologies, keywords, news mentions. Browse/search is free — only pay credits when you reveal contact info.
+- **Buyer Intent layer**: Combine Prospector search with Buyer Intent signals to prioritize accounts actively researching your category. Find the right people at accounts showing buying behavior.
+- **Job Changes**: Monitor target personas for role changes — new leaders buy in their first 90 days. Use job change signals as a prospecting trigger.
+- **Autopilot**: Set ICP criteria and Seamless.AI continuously builds lists in the background. "Set and forget" prospecting.
+- **Chrome Extension**: Find contacts while browsing LinkedIn, company websites, and news articles. One-click save to lists or CRM.
+- **Export**: Save to Seamless.AI lists, export CSV, or push directly to CRM (Salesforce, HubSpot) and engagement tools (Salesloft, Outreach, Mixmax).
+- **Credit costs**: 1 credit per contact reveal. Search is free. Pro plan: ~1,000 credits/day/user (expire daily). Set daily caps on Autopilot.
+- **Pre-send**: Seamless.AI verifies emails at point of reveal — no separate verification step needed for freshly revealed contacts.
+
 ### Finding prospects with Hunter.io
 - **Discover**: Search for companies by industry, employee count, location, and technology — find companies matching your ICP without consuming credits. Then use Domain Search to find contacts at each.
 - **TechLookup**: Find companies using specific technologies — great for competitive displacement (find companies using a competitor) or complementary targeting (find companies using tools adjacent to yours).
@@ -299,6 +317,8 @@ Before launching outreach, validate the list:
 - `/sales-tomba` — Tomba platform help (domain search, email finder, LinkedIn finder, bulk operations)
 - `/sales-prospeo` — Prospeo platform help (200M+ contact search, company search, enrichment, Chrome extension)
 - `/sales-hunter` — Hunter.io platform help (Domain Search, Email Finder, Discover, TechLookup, browser extension)
+- `/sales-mailmo` — Mailmo platform help (Email Finder with catch-all verification, LinkedIn Chrome extension)
+- `/sales-seamless` — Seamless.AI platform help (1.8B+ contacts, Buyer Intent, Job Changes, Autopilot, Chrome extension)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

@@ -75,7 +75,7 @@ Choose the right approach based on volume and frequency:
 - **How**: Try Provider A first → if no result, try Provider B → then Provider C
 - **Credit cost**: Only pay for successful enrichments at each level
 - **Best for**: Maximizing coverage when targeting niche personas or international contacts
-- **Tools**: Clay is purpose-built for this; Lemlist has built-in waterfall enrichment; Apollo's waterfall enrichment is in beta; Yesware Prospector provides 100M+ contacts as an additional source; Reply.io has a built-in B2B database with 1B+ contacts and data credits for email/phone reveals; Woodpecker Lead Finder provides a B2B database with 1B+ leads and data credits for email finding; Tomba provides 430M+ indexed emails with domain search, email finder, and bulk enrichment; Prospeo provides 280M+ leads with 5-step email verification, company enrichment (50+ fields), and bulk operations (50 records per API call); Hunter.io provides Domain Search (all emails at a company), Email Finder (name+domain → email), and Email Verifier with bulk operations for all three
+- **Tools**: Clay is purpose-built for this; Lemlist has built-in waterfall enrichment; Apollo's waterfall enrichment is in beta; Yesware Prospector provides 100M+ contacts as an additional source; Reply.io has a built-in B2B database with 1B+ contacts and data credits for email/phone reveals; Woodpecker Lead Finder provides a B2B database with 1B+ leads and data credits for email finding; Tomba provides 430M+ indexed emails with domain search, email finder, and bulk enrichment; Prospeo provides 280M+ leads with 5-step email verification, company enrichment (50+ fields), and bulk operations (50 records per API call); Hunter.io provides Domain Search (all emails at a company), Email Finder (name+domain → email), and Email Verifier with bulk operations for all three; Mailmo provides email finding with catch-all verification (up to 100% accuracy on catch-all domains) and bulk verification via CSV; Seamless.AI provides 1.8B+ verified emails and 414M+ mobile numbers with real-time verification at point of reveal, CRM Enrich for automated database cleanup, and Autopilot for continuous list building
 
 ## Step 3 — Execute the enrichment
 
@@ -135,6 +135,24 @@ Choose the right approach based on volume and frequency:
 
 **Credit economics**: Searches and verifications are separate quotas. Free plan: 25 searches + 50 verifications/month. Starter ($39/mo): 1,000 + 2,000. Phone data costs additional credits.
 
+### In Mailmo
+
+**Single enrichment**: Use the Email Finder — enter first name, last name, and company domain → Mailmo returns a verified email. Every result is verified in real-time including catch-all detection. You only pay for verified emails found — no charge for misses.
+
+**Bulk verification**:
+1. Upload a CSV of email addresses to Mailmo's Bulk Verification
+2. Mailmo processes the list with catch-all verification
+3. Download results with verification status per email
+4. Remove invalid addresses before importing into outbound tools
+
+**Catch-all advantage**: Mailmo's key differentiator is catch-all mailbox verification. Standard verifiers mark all catch-all addresses as "risky" — Mailmo attempts to verify the specific mailbox. For lists with many catch-all domains, Mailmo provides significantly more definitive results than competitors.
+
+**LinkedIn prospecting**: Use the Chrome extension on LinkedIn/Sales Navigator profiles to find verified emails with one click while browsing.
+
+**No API**: Mailmo does not have a public API. All operations are through the web UI or Chrome extension. Export via CSV for use in other tools.
+
+**Credit economics**: 1 credit per verified email found or verified. No charge for misses or duplicate searches. Credits roll over month-to-month. Free plan: 50/mo. Starter ($9/mo): 500. Professional ($39/mo): 2,500.
+
 ### In Hunter.io
 
 **Single enrichment**: Use Email Finder (first name + last name + domain → email with confidence score and verification status). Or use Domain Search to find all emails at a company, filtered by department and seniority.
@@ -188,6 +206,28 @@ Choose the right approach based on volume and frequency:
 - See `/sales-prospeo` for full platform reference
 
 **Credit economics**: 1 credit per matched person/company. 10 credits if mobile included. Free for no-match and lifetime dedup (re-enriching same record is free). Free plan: 75 credits/mo. Starter ($39/mo): 1,000.
+
+### In Seamless.AI
+
+**Single enrichment**: Search for a person in Seamless.AI's Prospector (1.8B+ emails, 414M+ mobile numbers) → reveal to get verified email, phone, title, and 100+ data points. Each reveal costs 1 credit. Search/browse is free — only pay when you reveal.
+
+**Bulk enrichment (CRM Enrich)**:
+1. Connect your CRM (Salesforce or HubSpot) via native integration
+2. CRM Enrich matches existing records against Seamless.AI's database
+3. Fills in missing/stale fields — emails, phones, titles, firmographics
+4. Run on segments (not the entire database) to conserve credits
+
+**Autopilot enrichment**: Set ICP criteria → Seamless.AI continuously finds and delivers new contacts matching your filters. Automated list building with enrichment built in.
+
+**API enrichment**:
+- `POST /contacts/research` to initiate contact enrichment (by search result IDs or direct contact data)
+- `GET /contacts/research/poll` to check enrichment status
+- `POST /companies/research` for company enrichment
+- Async pattern — results delivered via polling or webhook
+- Auth: `Token: API_KEY` header or `Authorization: Bearer` (OAuth 2.0)
+- See `/sales-seamless` for full platform reference
+
+**Credit economics**: 1 credit per contact reveal. Search/browse is free. Pro plan credits expire daily (~1,000/day/user). Free plan: 50 lifetime credits. Basic ($147/mo): 250/month.
 
 ### Compliance checklist
 
@@ -308,6 +348,8 @@ Credits reset monthly and do not roll over. Plan enrichment around your billing 
 - `/sales-tomba` — Tomba platform help (430M+ email database, domain search, email finder, verifier, enrichment, phone finder)
 - `/sales-prospeo` — Prospeo platform help (280M+ leads, 5-step email verification, company enrichment, bulk operations, Chrome extension)
 - `/sales-hunter` — Hunter.io platform help (Domain Search, Email Finder, Email Verifier, Campaigns, Discover, TechLookup, Signals)
+- `/sales-mailmo` — Mailmo platform help (Email Finder with catch-all verification, LinkedIn Chrome extension, bulk verification)
+- `/sales-seamless` — Seamless.AI platform help (1.8B+ contacts, Buyer Intent, CRM Enrich, Autopilot, AI Agents, API)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

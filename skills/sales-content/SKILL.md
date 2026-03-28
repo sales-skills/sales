@@ -130,6 +130,13 @@ Organize content along these dimensions:
 - **Shared Spaces**: Create buyer-facing content rooms similar to Seismic DSRs.
 - **Analytics**: Track content usage and engagement across the buyer journey.
 
+### In Seamless.AI (Pitch Intelligence)
+
+- **Pitch Intelligence**: AI-generated personalized talk tracks, email copy, and conversation starters based on prospect data, company news, and intent signals. Not a traditional content library — it's real-time AI-generated content.
+- **Use case**: Pre-call prep (generate talk tracks based on the prospect's profile and company data), email personalization (AI drafts personalized angles), and competitive positioning (Pitch Intelligence pulls relevant differentiation based on the prospect's tech stack).
+- **Limitation**: Pitch Intelligence generates individual prospect-level content, not reusable team-wide assets. For battle cards, playbooks, and shared content libraries, use Seismic, Highspot, or another enablement platform.
+- **Best practice**: Use Pitch Intelligence as a personalization layer on top of your content library. It doesn't replace battle cards or case studies — it helps reps apply them to specific prospects.
+
 ### In Guru
 
 - **Knowledge Cards**: Create bite-sized content cards for battle cards, objection handling, and product info.
@@ -183,6 +190,7 @@ Tie content usage to pipeline and revenue metrics:
 ## Related skills
 
 - `/sales-seismic` — Seismic platform help (for Seismic-specific content management setup)
+- `/sales-seamless` — Seamless.AI platform help (Pitch Intelligence for AI-generated prospect-level content)
 - `/sales-coaching` — Sales coaching and training (content for onboarding and enablement programs)
 - `/sales-compete` — Competitive displacement campaigns (battle cards and competitive content)
 - `/sales-proposal-page` — Proposal page design (Qwilr proposals)

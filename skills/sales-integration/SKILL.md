@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -128,6 +128,18 @@ Before building anything custom, check if a native integration exists:
 | Prospeo → Zapier | Native | Connect to 8,000+ apps for automated workflows |
 | Prospeo → Make | Native | Visual automation workflows with Prospeo actions |
 | Prospeo → n8n | Native (community node) | `@prospeo/n8n-nodes-prospeo` for self-hosted automation |
+| Seamless.AI → Salesforce | Native (bi-directional) | Push contacts, enrich CRM records, sync activity |
+| Seamless.AI → HubSpot | Native (bi-directional) | Push contacts, enrich CRM records, sync activity |
+| Seamless.AI → Microsoft Dynamics | Native | Push contacts and enriched data |
+| Seamless.AI → Zoho | Native | Push contacts |
+| Seamless.AI → Keap | Native | Push contacts |
+| Seamless.AI → Pipedrive | Native | Push contacts |
+| Seamless.AI → Salesloft | Native | Push contacts to cadences |
+| Seamless.AI → Outreach | Native | Push contacts to sequences |
+| Seamless.AI → Insightly | Native | Push contacts |
+| Seamless.AI → Greenhouse | Native | Push contacts (recruiting) |
+| Seamless.AI → Mixmax | Native | Push contacts |
+| Seamless.AI → Zapier | Native | Connect to 8,000+ apps |
 
 **Rule**: If a native integration covers your use case, use it. Native integrations handle auth, retry, and error handling automatically. Only go custom when native doesn't support your specific trigger or action.
 
@@ -278,6 +290,12 @@ Before building anything custom, check if a native integration exists:
 - **Plan requirement**: Webhooks require Pro plan or above
 - **Note**: Tomba's webhook model is callback-based (per-request), not event-subscription-based. You provide a URL on each API call rather than registering a persistent webhook endpoint.
 
+### Seamless.AI webhooks
+- **Setup**: Configure webhook URLs for async research result delivery
+- **Events**: Contact research completed, company research completed — results POSTed to your webhook URL when enrichment finishes
+- **Pattern**: Callback-based — Seamless.AI POSTs enriched data when research completes, rather than event-subscription-based
+- **API-first**: For custom pipelines, use the REST API with research/poll endpoints or webhook callbacks. See `/sales-seamless` for full API reference.
+
 ### Seismic webhooks
 - **Events**: Content views, LiveSend opens, DSR engagement, user provisioning (SCIM)
 - **Setup**: Configure via the developer portal (developer.seismic.com). OAuth 2.0 auth.
@@ -340,6 +358,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-tomba` — Tomba platform help including API, webhook callbacks, and CRM integrations
 - `/sales-prospeo` — Prospeo platform help including API, native CRM integrations, and MCP server
 - `/sales-hunter` — Hunter.io platform help including API, CRM integrations, webhooks, and MCP server
+- `/sales-seamless` — Seamless.AI platform help including API, CRM integrations, and webhooks
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
 ## Examples

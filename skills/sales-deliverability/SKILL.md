@@ -1,6 +1,6 @@
 ---
 name: sales-deliverability
-description: "Email deliverability for outbound sales — domain authentication (SPF/DKIM/DMARC), mailbox warmup, sending limits, inbox placement, blacklist monitoring, sender reputation, custom tracking domains, and list hygiene. Use when setting up a new sending domain, warming up mailboxes, diagnosing spam/deliverability issues, recovering from blacklisting, scaling outbound volume, or switching email platforms. Do NOT use for cadence content and strategy (use /sales-cadence), Apollo sequence mechanics (use /sales-apollo-sequences), Mailshake platform help (use /sales-mailshake), Smartlead platform help (use /sales-smartlead), Lemlist platform help (use /sales-lemlist), Yesware platform help (use /sales-yesware), Mixmax-specific config (use /sales-mixmax), Reply.io-specific config (use /sales-reply), Woodpecker-specific config (use /sales-woodpecker), Hunter.io-specific config (use /sales-hunter), Tomba-specific config (use /sales-tomba), or Prospeo-specific config (use /sales-prospeo)."
+description: "Email deliverability for outbound sales — domain authentication (SPF/DKIM/DMARC), mailbox warmup, sending limits, inbox placement, blacklist monitoring, sender reputation, custom tracking domains, and list hygiene. Use when setting up a new sending domain, warming up mailboxes, diagnosing spam/deliverability issues, recovering from blacklisting, scaling outbound volume, or switching email platforms. Do NOT use for cadence content and strategy (use /sales-cadence), Apollo sequence mechanics (use /sales-apollo-sequences), Mailshake platform help (use /sales-mailshake), Smartlead platform help (use /sales-smartlead), Lemlist platform help (use /sales-lemlist), Yesware platform help (use /sales-yesware), Mixmax-specific config (use /sales-mixmax), Reply.io-specific config (use /sales-reply), Woodpecker-specific config (use /sales-woodpecker), Hunter.io-specific config (use /sales-hunter), Mailmo-specific config (use /sales-mailmo), Tomba-specific config (use /sales-tomba), Prospeo-specific config (use /sales-prospeo), or Seamless.AI-specific config (use /sales-seamless)."
 argument-hint: "[describe your deliverability situation — new domain, spam issues, warmup, scaling]"
 license: MIT
 metadata:
@@ -10,7 +10,7 @@ metadata:
 
 # Email Deliverability for Outbound Sales
 
-Help the user set up, diagnose, and optimize email deliverability — from domain authentication and warmup through inbox placement, reputation monitoring, and platform-specific configuration. This skill is tool-agnostic and covers Apollo, Mailshake, Salesloft, Lemlist, Yesware, Mixmax, Reply.io, Woodpecker, Hunter.io, Tomba, Prospeo, and standalone tools.
+Help the user set up, diagnose, and optimize email deliverability — from domain authentication and warmup through inbox placement, reputation monitoring, and platform-specific configuration. This skill is tool-agnostic and covers Apollo, Mailshake, Salesloft, Lemlist, Yesware, Mixmax, Reply.io, Woodpecker, Hunter.io, Tomba, Prospeo, Seamless.AI, and standalone tools.
 
 ## Step 1 — Gather context
 
@@ -198,6 +198,13 @@ These tools simulate real email conversations to build sender reputation. Run wa
 - **Inbox rotation**: Distributes sends across multiple mailboxes to stay within per-account limits while maintaining volume. Unlimited email accounts on all plans.
 - **Best practice**: Woodpecker has the most comprehensive built-in deliverability toolkit of any cold email tool. Enable warmup + Bounce Shield + Adaptive Sending on every account. Run domain audit before first campaign. Use the spam checker on every new email template.
 
+### In Mailmo (verification focus)
+- **Email Verifier**: Real-time verification including format, domain, MX records, SMTP response, and catch-all detection.
+- **Catch-all detection**: Mailmo's key differentiator — proprietary catch-all verification claims up to 100% accuracy for identifying valid mailboxes on catch-all domains. Standard verifiers mark all catch-all addresses as "risky"; Mailmo verifies the specific mailbox.
+- **Bulk verification**: Upload CSV of emails for batch verification. Results downloadable with verification status per email.
+- **No sending capability**: Mailmo is a finder/verifier only — no campaigns, no sending. Use it upstream to verify lists before importing into outbound tools.
+- **Best practice**: Use Mailmo specifically for lists with high catch-all domain rates where other verifiers return inconclusive results. Its catch-all verification provides the most value on domains that other tools mark as "accept_all" or "risky."
+
 ### In Hunter.io (verification + campaigns)
 - **Email Verifier**: Real-time SMTP/MX validation — checks format, domain, MX records, SMTP response, catch-all status, webmail detection, and disposable domain detection. Statuses: valid (safe to send), invalid (don't send), accept_all (use with caution), webmail, disposable, unknown.
 - **Bulk verification**: Submit arrays of emails via `POST /email-verifier/bulk`. Async processing — check job status and retrieve results when complete.
@@ -206,6 +213,13 @@ These tools simulate real email conversations to build sender reputation. Run wa
 - **No built-in warmup**: Hunter does not have a warmup tool. Since it sends through your inbox, use a third-party warmup service (Lemwarm, Warmbox, Instantly) if needed for new accounts.
 - **Sending limits**: Subject to your email provider limits (Gmail ~500/day, Outlook ~1,000/day) plus Hunter plan sender limits (3/15/40/unlimited by plan).
 - **Best practice**: Verify all emails with Hunter's Email Verifier before adding to campaigns. Set up custom tracking domain. For high-volume outbound, use Hunter for finding/verifying and export to a dedicated sending tool.
+
+### In Seamless.AI (verification at reveal)
+- **Real-time verification**: Seamless.AI verifies emails and phones at the point of reveal — not pre-cached stale data. This means freshly revealed contacts are already verified.
+- **No standalone verification tool**: Seamless.AI does not offer a separate email verification service. Verification is built into the reveal process.
+- **CRM Enrich**: When enriching CRM records, Seamless.AI provides fresh verified data — stale records get updated with current, verified contact info.
+- **No sending infrastructure**: Seamless.AI's Engagement Hub sends emails but doesn't have dedicated deliverability tools (warmup, domain audit, bounce shield). For outbound at scale, export contacts to a dedicated tool with proper deliverability infrastructure.
+- **Best practice**: Use Seamless.AI for data (verified contacts) and a dedicated engagement tool (Salesloft, Outreach, Mailshake, etc.) for sending. The native integrations make this push seamless.
 
 ### In Prospeo (verification focus)
 - **5-Step Email Verification**: Built into every enrichment — syntax check, domain/MX check, SMTP verification, catch-all detection, and result validation. Statuses: VERIFIED (safe to send) or NOT_VERIFIED (use with caution).
@@ -285,6 +299,8 @@ If your domain reputation is damaged:
 - `/sales-tomba` — Tomba platform help (email verification, bulk verification, domain status checks)
 - `/sales-prospeo` — Prospeo platform help (5-step email verification built into enrichment)
 - `/sales-hunter` — Hunter.io platform help (Email Verifier, bulk verification, Campaigns with inbox-native sending)
+- `/sales-mailmo` — Mailmo platform help (Email Verifier with catch-all detection, bulk verification)
+- `/sales-seamless` — Seamless.AI platform help (real-time verified contacts, CRM Enrich, Engagement Hub)
 - `/sales-prospect-list` — Build prospect lists with verified contacts
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 

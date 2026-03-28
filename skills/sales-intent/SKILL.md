@@ -56,7 +56,7 @@ Ask the user:
 | **Funding event** | High | Company raised money — has budget for new tools | Series B announced last week |
 | **Hiring signal** | High | Company is hiring for roles your product supports | Posting for 5 SDRs (signal for sales tools) |
 | **Job change — new leader** | Medium-high | New executive in a role that buys your product | New CRO started 30 days ago |
-| **Technology change** | Medium | Adopted/removed a technology adjacent to yours | Installed Salesforce (could need sales tools) — use Hunter.io TechLookup, Tomba's Technology endpoint, or Prospeo's company enrichment tech stack field to detect |
+| **Technology change** | Medium | Adopted/removed a technology adjacent to yours | Installed Salesforce (could need sales tools) — use Hunter.io TechLookup, Tomba's Technology endpoint, Prospeo's company enrichment tech stack field, or Seamless.AI's technology filters to detect |
 | **Company growth** | Medium | Headcount growth, office expansion, new markets | Employee count grew 40% in 6 months |
 | **Content engagement** | Medium | Interacted with your content (webinar, whitepaper, blog) | Downloaded your ROI calculator |
 | **Website visit** | Low-medium | Visited your website (may be casual research) | Pricing page visit |
@@ -119,6 +119,15 @@ Assign point values to build a composite score:
 - 60-79 = Priority 2 — outreach this week
 - 40-59 = Priority 3 — queue for next cycle
 - <40 = Standard outbound or skip
+
+### In Seamless.AI
+
+Seamless.AI provides Buyer Intent and Job Changes as native features:
+1. **Buyer Intent**: Select intent topics relevant to your product → Seamless.AI scores accounts by research intensity across 12,000+ topics. Combine with Prospector filters to find contacts at high-intent accounts.
+2. **Job Changes**: Tracks role changes for contacts in your CRM and saved lists. New hires, promotions, and company changes within 90 days. High-value trigger events — new leaders buy in their first 90 days.
+3. **Pitch Intelligence**: AI-generated messaging based on prospect data, company news, and intent signals — use for signal-informed outreach angles.
+4. **Autopilot + Intent**: Set Autopilot to continuously build lists filtered by intent signals — automated signal-to-list workflow.
+5. **Credit note**: Buyer Intent and Job Changes are Pro/Enterprise features. Free/Basic plans don't include these.
 
 ### In Apollo.io
 
@@ -202,6 +211,7 @@ Use Apollo Workflows (Professional+ plan) to automate:
 - `/sales-tomba` — Tomba platform help (technology detection endpoint for technographic signals, similar domains for competitor mapping)
 - `/sales-prospeo` — Prospeo platform help (company enrichment with tech stack detection, job postings as hiring signals)
 - `/sales-hunter` — Hunter.io platform help (Signals for buying intent, TechLookup for technographic prospecting, Discover for company search)
+- `/sales-seamless` — Seamless.AI platform help (Buyer Intent, Job Changes, Pitch Intelligence, Autopilot)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

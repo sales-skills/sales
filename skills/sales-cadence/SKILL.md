@@ -1,6 +1,6 @@
 ---
 name: sales-cadence
-description: "Design multi-channel outbound cadences with timing, A/B testing, and content. Use when building a Salesloft cadence, building a Mailshake campaign, building a Smartlead campaign, building a Lemlist sequence, building a Yesware campaign, building a Mixmax sequence, building a Reply.io sequence, building a Woodpecker campaign, building a Hunter.io campaign, designing an outbound sequence, planning touchpoint timing, writing cadence emails, creating call scripts, A/B testing subject lines, optimizing sequence performance, or planning multi-channel outreach. Do NOT use for general outreach message writing (use /sales-outreach), marketing cold email (use /cold-email), automated email flows (use /email-sequence), or general Salesloft platform help (use /sales-salesloft)."
+description: "Design multi-channel outbound cadences with timing, A/B testing, and content. Use when building a Salesloft cadence, building a Mailshake campaign, building a Smartlead campaign, building a Lemlist sequence, building a Yesware campaign, building a Mixmax sequence, building a Reply.io sequence, building a Woodpecker campaign, building a Hunter.io campaign, building a Seamless.AI engagement sequence, designing an outbound sequence, planning touchpoint timing, writing cadence emails, creating call scripts, A/B testing subject lines, optimizing sequence performance, or planning multi-channel outreach. Do NOT use for general outreach message writing (use /sales-outreach), marketing cold email (use /cold-email), automated email flows (use /email-sequence), or general Salesloft platform help (use /sales-salesloft)."
 argument-hint: "[describe campaign goal, target persona, channels, and constraints]"
 license: MIT
 metadata:
@@ -170,6 +170,13 @@ For each call step:
 - **Sender limits**: Starter = 3 senders, Growth = 15, Scale = 40, Enterprise = unlimited
 - **Best practice**: Hunter Campaigns is best for simple email-only sequences (1-3 steps) at low-to-medium volume. Its strength is the tight integration with Hunter's email finding and verification — find, verify, and send all in one platform. For complex multi-channel cadences or high volume, export verified leads to a dedicated tool.
 
+### In Seamless.AI
+- **Where**: Engagement Hub within Seamless.AI dashboard
+- **Channel support**: Email (built-in), calling (Connect dialer with local presence), social selling (LinkedIn integration). Basic multi-channel capability.
+- **Pitch Intelligence**: AI-generated personalized talk tracks and email copy based on prospect data, company news, and intent signals. Use for Level 3-4 personalization at scale.
+- **Limitation**: Seamless.AI's Engagement Hub is basic compared to dedicated tools. For complex multi-step, multi-channel cadences with A/B testing and branching logic, export Seamless.AI contacts to Salesloft, Outreach, Mailshake, or another dedicated engagement tool.
+- **Best practice**: Use Seamless.AI as the data layer (find contacts, verify data, detect intent) and a dedicated engagement tool for execution. Push contacts directly via native Salesloft/Outreach/Mixmax integrations.
+
 ### In Woodpecker
 - **Where**: Campaigns tab in Woodpecker dashboard (app.woodpecker.co)
 - **Channel support**: Email (native), LinkedIn (add-on at €29/account — connection requests, messages, profile visits), manual tasks
@@ -248,6 +255,7 @@ Provide a benchmarks table:
 - `/sales-reply` — Reply.io platform help (for Reply.io-specific setup)
 - `/sales-woodpecker` — Woodpecker platform help (for Woodpecker-specific setup)
 - `/sales-hunter` — Hunter.io platform help (Campaigns, Domain Search, Email Finder, Email Verifier)
+- `/sales-seamless` — Seamless.AI platform help (Engagement Hub, Pitch Intelligence, contact data)
 - `/sales-email-tracking` — Email engagement tracking — open/click/attachment signals for follow-up timing
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
