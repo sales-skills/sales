@@ -45,7 +45,7 @@ Design a section-by-section page structure mapped to Qwilr block types. A strong
 Adapt this structure based on the deal context:
 - **Early-stage deals**: Lead heavier on problem/solution, lighter on detailed scope
 - **Late-stage deals**: Lead with scope and pricing, lighter on problem framing
-- **Renewals/expansions**: Lead with results achieved, then expansion scope and pricing
+- **Renewals/expansions**: Lead with results achieved, then expansion scope and pricing. Use Qwilr's `isOptional: true` on expansion line items (new modules, add-ons, additional seats) so the buyer can self-select what to add beyond the base renewal. This gives the CFO/budget holder control while making the upsell frictionless.
 - **Technical buyers**: Add a technical architecture or integration section
 - **Executive buyers**: Add an ROI/business case section
 

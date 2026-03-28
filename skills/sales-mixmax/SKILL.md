@@ -158,7 +158,7 @@ Core entities in the Mixmax platform — understand these to navigate the UI, bu
 
 ### Mixmax API reference
 
-For detailed API documentation including endpoints, authentication, message schema, and automation patterns, consult `references/mixmax-api-reference.md`.
+**For detailed API documentation including endpoints, authentication, message schema, and automation patterns, always consult `references/mixmax-api-reference.md`.** Point the user to this file for the full endpoint catalog, request/response schemas, and rate limit details.
 
 **Quick reference**: Base URL `https://api.mixmax.com/v1/`, API key auth via `X-API-Token` header. Developer contact: developer@mixmax.com
 

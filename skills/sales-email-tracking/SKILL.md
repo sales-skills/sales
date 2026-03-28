@@ -119,7 +119,8 @@ Security tools like Barracuda, Mimecast, Proofpoint, and Microsoft Defender pre-
 - **Tracking**: Built into Gmail/Outlook — auto-tracks opens, clicks, attachments on every email sent through the extension
 - **Notifications**: Real-time desktop notifications when prospects open or click. Configurable — set thresholds to avoid notification fatigue (e.g., only notify on 2nd+ open)
 - **Attachment tracking**: Attach files through Yesware to get view notifications and page-by-page analytics showing which slides prospects spent time on
-- **Reports**: Recipient engagement report shows per-contact engagement history. Team reports (Premium+) show aggregate tracking metrics across reps
+- **Recipient engagement reports**: Per-contact engagement history showing every open, click, and attachment view for a specific recipient — use this to identify hot prospects and time follow-ups
+- **Team reports** (Premium+ plans): Aggregate tracking metrics across reps — see team-wide open rates, click rates, reply rates, and template performance. Managers can compare rep performance and identify coaching opportunities. Export data for pipeline reviews.
 - **Limitation**: Sends from your inbox (good for deliverability, but no separate sending infrastructure)
 - **Limitation**: Doesn't report deliverability rate — you don't know how many emails actually reached the inbox vs. bounced or went to spam
 

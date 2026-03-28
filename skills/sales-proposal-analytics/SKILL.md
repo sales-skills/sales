@@ -76,7 +76,7 @@ Based on the signals, provide concrete next steps:
 ### If not viewed
 1. **Check delivery** — confirm the email landed (check spam, verify address)
 2. **Re-send with a different subject line** — the original email may not have cut through
-3. **Try a different channel** — LinkedIn message, text, or phone call
+3. **Try a different channel** — phone call (most direct), LinkedIn message (visible even if email is buried), text/SMS (if you have the number and the relationship supports it). Don't keep using the same channel that isn't working.
 4. **Reduce friction** — "Here's the one-page summary" with a link back to the full proposal
 
 ### If pricing section is getting heavy attention

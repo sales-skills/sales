@@ -61,7 +61,7 @@ Choose the model that fits the creator's goals, content velocity, and audience e
 
 Organize content for clarity and completion:
 
-- **Modules → Lessons → Steps**: Break the curriculum into 4–8 modules, each with 3–7 lessons. Keep individual lessons under 15 minutes for video.
+- **Modules → Lessons → Steps**: Break the curriculum into modules, each with 3–7 lessons. Keep individual lessons under 15 minutes for video. For a 12-week course, use 3–4 modules (each spanning 3–4 weeks) rather than 12 weekly modules — larger modules provide clearer thematic arcs and prevent the curriculum from feeling fragmented. For shorter courses (4–6 weeks), 4–6 modules work well.
 - **Drip vs. all-at-once**:
   - *Drip*: Releases content on a schedule (weekly). Prevents overwhelm, encourages consistent engagement, reduces refund requests. Best for memberships and cohort courses.
   - *All-at-once*: Full access immediately. Best for self-paced courses where students want to move fast. Higher completion if paired with accountability.
@@ -185,7 +185,7 @@ Each lesson should follow this structure:
 
 ### Drip Schedule Recommendations
 
-- **12-week course**: Release 1 module per week. Each module has 3–5 lessons available immediately within that module.
+- **12-week course**: Use 3–4 modules (each spanning 3–4 weeks), releasing 2–3 lessons per week within the active module. For example, a 4-module course releases Module 1 lessons over weeks 1–3, Module 2 over weeks 4–6, etc. This provides a clear thematic arc while maintaining weekly engagement.
 - **Monthly membership**: Drop new content weekly (e.g., Tuesday video, Thursday resource). One major monthly drop (masterclass, guest expert).
 - **Cohort-based**: All content for the current week available Monday. Live session midweek. Assignment due Friday.
 
@@ -251,7 +251,7 @@ Create a 5-email onboarding sequence for new members:
 
 **Approach**:
 - Model: One-time course with optional upsell to a monthly mastermind
-- Structure: 12 modules (1 per week), 3–4 lessons per module, drip weekly
+- Structure: 4 modules (each spanning 3 weeks), 3–4 lessons per module, drip 1–2 lessons per week
 - Pricing: $497 one-time (or 3 payments of $197)
 - Platform: Teachable or GrooveMember depending on existing stack
 - Key modules: Positioning, Portfolio, Outreach, Proposals, Closing, Delivery

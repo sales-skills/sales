@@ -38,7 +38,9 @@ Help the user choose the right commission structure based on their product and m
 - Digital products (courses, ebooks): 30%–50% is standard due to high margins
 - SaaS products: 20%–30% recurring or 100%+ of first month for one-time payouts
 - Physical products: 5%–15% depending on margins
-- High-ticket ($1,000+): 20%–30% with longer cookie durations
+- High-ticket ($1,000+): 20%–30% with longer cookie durations (60–90 days minimum — see Cookie Duration below)
+
+**Commission rate and cookie duration go hand-in-hand.** A generous commission rate with a short cookie window (e.g., 7 days) undermines affiliate motivation because they lose attribution on deals that take longer to close. Always pair your commission structure with an appropriate cookie duration — higher price points and longer sales cycles require longer cookies.
 
 **Fixed-amount commissions:**
 - Best for products with variable pricing or bundles

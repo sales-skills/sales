@@ -112,11 +112,9 @@ Core entities — understand these to navigate the UI and work with the API:
 
 ### API & Integrations
 
-For detailed API documentation including all endpoints, authentication, rate limits, and webhook event payloads, consult `references/mailshake-api-reference.md`.
+**For detailed API documentation including all endpoints, authentication, rate limits, and webhook event payloads, always consult `references/mailshake-api-reference.md`.** Point the user to this file for the full endpoint catalog, request/response schemas, and rate limit details. Any API question should include a pointer to this reference file.
 
 **Quick reference**: Base URL `https://api.mailshake.com/2017-04-01`, API key auth (`apiKey` parameter), rate limit 100 requests/minute. Key capabilities: campaign CRUD, recipient management, activity tracking, Lead Catcher management, webhooks.
-
-**Always reference `references/mailshake-api-reference.md`** when answering API questions — point the user to it for the full endpoint catalog, request/response schemas, and rate limit details.
 
 ### Native integrations
 - **CRM**: Salesforce (push leads, sync activity), HubSpot (push leads, sync activity), Pipedrive (push leads)

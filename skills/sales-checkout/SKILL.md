@@ -203,13 +203,16 @@ Recommended layout from top to bottom:
 
 ### A/B Testing Checkout Elements
 
-Test one element at a time. Highest-impact elements to test, in order:
+**Always be testing at least one checkout element.** Systematic A/B testing is the most reliable way to improve checkout conversion. Test one element at a time to isolate impact. Here are the highest-impact elements to test, in priority order:
 
 1. **Price point** — Test $97 vs. $127 vs. $67. You may find a higher price converts nearly as well, increasing revenue.
 2. **Payment plan options** — Test offering a payment plan vs. not, and test different split structures.
 3. **Order bump** — Test with bump vs. without, and test different bump offers.
 4. **Button text** — Test "Complete My Order" vs. "Get Instant Access" vs. "Yes, I Want This."
 5. **Checkout page length** — Test minimal (just form) vs. with testimonials and guarantee copy.
+6. **Trust elements** — Test with/without testimonials near the buy button, guarantee badge placement, payment method logos.
+
+Run each test until you hit at least 100 conversions per variant (or use a statistical significance calculator). Don't call a winner early — premature conclusions lead to wrong optimizations.
 
 ### Abandoned Cart Email Sequence
 
@@ -231,6 +234,7 @@ Body: Create urgency. Optionally add a small incentive (bonus or 10% discount). 
 - Send a "payment failed" email with a link to update payment info.
 - Revoke access to digital products only after all retry attempts fail (typically after 14 days).
 - For high-ticket offers ($1,000+), consider a deposit + balance structure instead of equal installments.
+- **Platform tip**: GrooveSell charges zero transaction fees on payment plans — you only pay your payment processor's fees (Stripe ~2.9% + $0.30). This makes multi-payment plans more cost-effective than platforms that charge per-transaction fees on each installment.
 
 ### Tax Handling
 

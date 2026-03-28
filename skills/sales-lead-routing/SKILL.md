@@ -74,6 +74,7 @@ Choose the right routing model based on team structure and lead characteristics.
 ### Score-based
 - **How it works**: High-score leads go to senior/experienced reps, lower-score leads go to SDRs for qualification
 - **Tiers**: Hot (80+ score → senior AE), warm (50-79 → standard AE), cold (30-49 → SDR), below 30 → nurture/discard
+- **Fallback rules**: Route unscored leads (missing data = no score) to SDRs for manual qualification. When a tier's rep pool is at capacity, overflow to the next tier down (e.g., hot leads overflow to standard AE pool if all senior AEs are maxed). Set per-rep capacity caps (e.g., max 30 leads/week) and auto-redistribute when a rep hits their cap.
 - **Best for**: Teams with lead scoring in place (see `/sales-lead-score`), tiered rep experience
 - **Limitation**: Requires a working scoring model; bad scores = bad routing
 

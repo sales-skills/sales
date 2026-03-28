@@ -125,14 +125,14 @@ Core entities — understand these to navigate the UI and work with the API:
 
 ### API & Integrations
 
-For detailed API documentation including all endpoints, authentication, rate limits, and webhook event payloads, consult `references/smartlead-api-reference.md`.
+**For detailed API documentation including all endpoints, authentication, rate limits, and webhook event payloads, always consult `references/smartlead-api-reference.md`.** Point the user to this file for the full endpoint catalog, request/response schemas, and rate limit details.
 
 **Quick reference**: Base URL `https://server.smartlead.ai/api/v1/`, API key auth (`api_key` query parameter). Key capabilities: campaign CRUD, lead management, sender account management, analytics, webhooks, client/workspace management (agency).
 
-**Always reference `references/smartlead-api-reference.md`** when answering API questions — point the user to it for the full endpoint catalog, request/response schemas, and rate limit details.
+For broader integration architecture help beyond Smartlead's native connectors (e.g., building multi-tool workflows, Zapier/Make recipes, or webhook pipelines), use `/sales-integration`.
 
 ### Native integrations
-- **CRM**: HubSpot (native — push leads, sync activity), Salesforce (via OutboundSync, third-party — lead and activity sync)
+- **CRM**: HubSpot (native — push leads, sync activity), Salesforce (via OutboundSync, a paid third-party connector — not native like HubSpot; alternatively use Zapier as a lighter-weight option). For broader integration architecture, see `/sales-integration`.
 - **Enrichment**: Clay (native — enrichment pipeline integration)
 - **Automation**: Zapier (triggers for replies, opens, bounces; actions for adding leads)
 - **Email**: Gmail OAuth, Outlook OAuth (direct mailbox connection)

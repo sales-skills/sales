@@ -38,6 +38,8 @@ Ask the user:
    - Professional (A/B testing, dialer, workflows)
    - Organization (advanced analytics, custom reports)
 
+**If the user's request already provides most of this context, skip directly to the relevant step.** Lead with your best-effort answer using reasonable assumptions (stated explicitly), then ask only the most critical 1-2 clarifying questions at the end — don't gate your response behind gathering complete context.
+
 ## Step 2 — Sequence setup in Apollo
 
 ### Creating a sequence

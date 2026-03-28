@@ -28,6 +28,17 @@ When a user asks about building a funnel, immediately provide the concrete step-
 3. **Thank-you / delivery page** — Deliver the asset (or confirm email delivery), set expectations for what happens next, optional tripwire offer ($7-$17) to offset ad costs →
 4. **Follow-up email sequence** (3-5 emails): deliver value → build trust → introduce offer → overcome objections → CTA
 
+**Lead magnet types** (choose based on audience and niche):
+- **PDF guide / ebook**: Most common. Works when the topic needs depth. Example: "The Complete Guide to [X]."
+- **Checklist / cheat sheet**: High conversion — low effort to consume. Example: "The 10-Point Launch Checklist."
+- **Template / swipe file**: Extremely compelling because it's immediately usable. Example: "5 Cold Email Templates That Book Meetings."
+- **Video training / mini-course**: Higher perceived value, builds more trust. Works for complex topics.
+- **Quiz / assessment**: Interactive, generates personalized results. Great for segmentation. Example: "What's Your Marketing Score?"
+- **Calculator / tool**: Solves a specific problem. Example: "ROI Calculator for [Your Product]."
+- **Free trial / demo**: Best for SaaS — let the product sell itself.
+
+The best lead magnets solve a specific, narrow problem quickly. "The Ultimate Guide to Marketing" converts poorly. "The 5-Minute Facebook Ad Audit Checklist" converts well. Specificity and speed-to-value beat comprehensiveness.
+
 **Webinar Funnel**:
 1. **Registration page** — Headline with specific promise, date/time, speaker credibility, registration form
 2. **Confirmation + reminder sequence** — Confirmation page with calendar add, 3-4 reminder emails leading up to the event
@@ -246,7 +257,15 @@ Test in this order (highest impact first):
 5. **Price presentation** — Test payment plans vs. one-time, or different anchoring.
 6. **Page length** — Test long-form vs. short-form (especially for cold vs. warm traffic).
 
-Run each test until you reach statistical significance (minimum 100 conversions per variation, or use a significance calculator). Do not call a winner early.
+### A/B Testing Methodology
+
+Follow this framework for every test:
+
+- **One variable at a time**: Change only one element per test. Testing headline AND CTA simultaneously gives you no idea which change caused the result.
+- **Minimum sample size**: Aim for at least 100 conversions per variant (not 100 visitors — 100 conversions). For pages with 5% conversion rate, that means ~2,000 visitors per variant. Use a significance calculator (ABTestGuide, Evan Miller, or Optimizely) if unsure.
+- **Statistical significance**: Wait for 95% confidence before declaring a winner. Do NOT call a test early because one variant "looks better" after a few days.
+- **Run for full business cycles**: Run tests for at least 7 days to capture weekday vs. weekend variation, even if you hit sample size sooner.
+- **Document and iterate**: Record every test result (variant, metric, sample size, winner, lift %). Build a testing backlog and always be running the next test.
 
 ### Analytics & Tracking
 
