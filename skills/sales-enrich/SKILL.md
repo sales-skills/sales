@@ -75,7 +75,7 @@ Choose the right approach based on volume and frequency:
 - **How**: Try Provider A first → if no result, try Provider B → then Provider C
 - **Credit cost**: Only pay for successful enrichments at each level
 - **Best for**: Maximizing coverage when targeting niche personas or international contacts
-- **Tools**: Clay is purpose-built for this; Lemlist has built-in waterfall enrichment; Apollo's waterfall enrichment is in beta
+- **Tools**: Clay is purpose-built for this; Lemlist has built-in waterfall enrichment; Apollo's waterfall enrichment is in beta; Yesware Prospector provides 100M+ contacts as an additional source
 
 ## Step 3 — Execute the enrichment
 
@@ -220,6 +220,7 @@ Credits reset monthly and do not roll over. Plan enrichment around your billing 
 - `/sales-apollo` — Apollo.io platform help (enrichment settings, credit management)
 - `/sales-apollo-sequences` — Set up sequences in Apollo for enriched contacts
 - `/sales-lemlist` — Lemlist platform help (built-in waterfall enrichment, People Database)
+- `/sales-yesware` — Yesware platform help (Prospector — 100M+ B2B contact database)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

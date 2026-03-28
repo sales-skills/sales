@@ -1,6 +1,6 @@
 ---
 name: sales-cadence
-description: "Design multi-channel outbound cadences with timing, A/B testing, and content. Use when building a Salesloft cadence, building a Mailshake campaign, building a Smartlead campaign, building a Lemlist sequence, designing an outbound sequence, planning touchpoint timing, writing cadence emails, creating call scripts, A/B testing subject lines, optimizing sequence performance, or planning multi-channel outreach. Do NOT use for general outreach message writing (use /sales-outreach), marketing cold email (use /cold-email), automated email flows (use /email-sequence), or general Salesloft platform help (use /sales-salesloft)."
+description: "Design multi-channel outbound cadences with timing, A/B testing, and content. Use when building a Salesloft cadence, building a Mailshake campaign, building a Smartlead campaign, building a Lemlist sequence, building a Yesware campaign, designing an outbound sequence, planning touchpoint timing, writing cadence emails, creating call scripts, A/B testing subject lines, optimizing sequence performance, or planning multi-channel outreach. Do NOT use for general outreach message writing (use /sales-outreach), marketing cold email (use /cold-email), automated email flows (use /email-sequence), or general Salesloft platform help (use /sales-salesloft)."
 argument-hint: "[describe campaign goal, target persona, channels, and constraints]"
 license: MIT
 metadata:
@@ -10,7 +10,7 @@ metadata:
 
 # Design a Multi-Channel Outbound Cadence
 
-Help the user design a complete outbound cadence for Salesloft, Mailshake, Smartlead, or Lemlist — from architecture and timing through full content for every step, A/B testing, and optimization benchmarks.
+Help the user design a complete outbound cadence for Salesloft, Mailshake, Smartlead, Lemlist, or Yesware — from architecture and timing through full content for every step, A/B testing, and optimization benchmarks.
 
 ## Step 1 — Gather context
 
@@ -114,6 +114,16 @@ For each call step:
 - LinkedIn safety: limit connection requests to 20-30/day, profile visits to 50-80/day to avoid account restrictions
 - Inbox rotation: connect multiple email accounts and Lemlist distributes sends (5 accounts per user on top plan, $9 per additional)
 
+### In Yesware
+- Yesware campaigns = multi-channel sequences — email, phone call reminders, LinkedIn InMail, and custom tasks on automated schedules
+- Sends from your inbox (Gmail/Outlook) — no third-party server, better deliverability
+- Personalization: dynamic fields (merge variables) for automated personalization, individual email customization
+- Recipient limits: 10/month (Free), 20/month (Pro), unlimited (Premium+)
+- A/B testing: not natively supported in campaigns — test manually by creating variant campaigns
+- Auto-removal: recipients who reply or book meetings are automatically removed from the campaign
+- Templates: shared team templates (Premium+) for consistent messaging across reps
+- Tracking: real-time open/click/attachment notifications to time follow-ups — see `/sales-email-tracking`
+
 ### In Smartlead
 - Smartlead campaigns = sequences — a campaign has email steps with time delays between them
 - Email-only by default; phone steps require SmartDialer, LinkedIn touchpoints via external tools
@@ -180,6 +190,8 @@ Provide a benchmarks table:
 - `/sales-mailshake` — Mailshake platform help (campaigns, Lead Catcher, settings)
 - `/sales-smartlead` — Smartlead platform help (campaigns, SmartSenders, SmartAgents, API)
 - `/sales-lemlist` — Lemlist platform help (sequences, Lemwarm, LinkedIn automation, enrichment, API)
+- `/sales-yesware` — Yesware platform help (campaigns, templates, Prospector, Meeting Scheduler)
+- `/sales-email-tracking` — Email engagement tracking — open/click/attachment signals for follow-up timing
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Gotchas

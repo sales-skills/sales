@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Groove.cm, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -79,6 +79,11 @@ Before building anything custom, check if a native integration exists:
 | Lemlist → HubSpot | Yes (native) | Push leads, sync activity |
 | Lemlist → Salesforce | Yes (native, 2-way) | Lead and activity sync |
 | Lemlist → Pipedrive | Yes (native) | Push leads |
+| Yesware → Salesforce | Yes (Enterprise plan, bi-directional) | Email/calendar/activity sync, inbox sidebar |
+| Yesware → Gmail | Yes (Chrome extension) | Email tracking, templates, campaigns |
+| Yesware → Outlook | Yes (add-in) | Email tracking, templates, campaigns |
+| Yesware → Zoom | Yes (native) | Auto-generate meeting links in scheduler |
+| Yesware → LinkedIn | Yes (native) | Prospect insights from inbox |
 | Qwilr → Salesforce | Yes | Proposal/quote sync — see `/sales-qwilr-automation` |
 | Qwilr → HubSpot | Yes | Proposal/quote sync — see `/sales-qwilr-automation` |
 
@@ -181,6 +186,13 @@ Before building anything custom, check if a native integration exists:
 - **Note**: Groove.cm has no public REST API. For integrations beyond webhooks, use Zapier (triggers/actions for GrooveMail and GrooveSell).
 - **Full reference**: See `/sales-groove`
 
+### Yesware integrations
+- **No public API**: Yesware does not offer a public REST API. No webhook endpoints, no developer docs.
+- **Integration methods**: Native connectors only — Salesforce (Enterprise plan), Gmail, Outlook, Zoom, LinkedIn, Clari, DocSend
+- **Zapier**: Limited Zapier support — check Zapier for available triggers/actions (may be community-built, not official)
+- **For custom integrations**: No programmatic access. If you need Yesware data in other tools, the Salesforce integration (Enterprise plan) is the best bridge — sync Yesware activity to Salesforce, then integrate Salesforce with other tools.
+- **Workaround**: For teams needing API access, consider Salesloft, Apollo, or Mailshake which all offer full REST APIs.
+
 ### Qwilr webhooks
 - **Full reference**: See `/sales-qwilr-automation` for Qwilr-specific webhook events and CRM integrations
 
@@ -229,6 +241,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-lemlist` — Lemlist platform help including API and webhook details
 - `/sales-salesloft` — Salesloft platform help including integrations
 - `/sales-groove` — Groove.cm platform help including GrooveSell webhooks and Zapier integration
+- `/sales-yesware` — Yesware platform help (native Salesforce integration, no API)
 - `/sales-deliverability` — Email deliverability (relevant when integrating sending tools)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 

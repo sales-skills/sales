@@ -133,6 +133,14 @@ Save the search as a dynamic list — new matches will appear automatically.
 - **CRM import**: Import leads directly from connected HubSpot, Salesforce, or Pipedrive via the CRM integration.
 - **Pre-send**: Enable Lemwarm on all email accounts and warm up 3-5 weeks before launching sequences. Verify emails before import to keep bounce rate <3%.
 
+### Importing into Yesware
+- **Individual add**: Add recipients one at a time within a campaign — enter name, email, and custom fields
+- **Bulk import**: Upload a CSV or import from Salesforce list views (Enterprise plan)
+- **Prospector**: Alternatively, use Yesware's built-in Prospector (100M+ B2B contacts) to find and add leads directly — search by title, industry, company size, and more
+- **Salesforce import**: Enterprise plan users can import leads/contacts directly from Salesforce list views into campaigns
+- **Pre-send**: Verify emails before import — Yesware does not verify on upload. Keep bounce rate <3%.
+- **Recipient limits**: Free plan = 10 recipients/month, Pro = 20/month, Premium+ = unlimited
+
 ### Importing into Smartlead
 - **CSV import**: Upload CSV with `email` as the only required column. Recommended fields: `first_name`, `last_name`, `company`, plus any custom fields for merge variables.
 - **API import**: `POST /api/v1/campaigns/{id}/leads` with a `lead_list` array containing lead objects. See `/sales-smartlead` → `references/smartlead-api-reference.md`.
@@ -227,6 +235,7 @@ Before launching outreach, validate the list:
 - `/sales-mailshake` — Mailshake platform help (import recipients, manage campaigns)
 - `/sales-smartlead` — Smartlead platform help (import leads, SmartProspect, campaigns)
 - `/sales-lemlist` — Lemlist platform help (import leads, People Database, sequences)
+- `/sales-yesware` — Yesware platform help (import recipients, Prospector, campaigns)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

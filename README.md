@@ -10,7 +10,7 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 28 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 31 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -131,6 +131,12 @@ Router recommends a 5-skill sequence:
 |---|---|---|
 | `/sales-smartlead` | Smartlead platform help — campaigns, SmartSenders, SmartInfra, SmartAgents, SmartDialer, SmartDelivery, SmartProspect, API, agency/white-label | Available |
 
+### Yesware & Platform
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-yesware` | Yesware platform help — email tracking, campaigns, templates, Prospector, Meeting Scheduler, Salesforce integration, reporting | Available |
+
 ### Groove.cm & Platform
 
 | Skill | What it does | Status |
@@ -147,6 +153,8 @@ Router recommends a 5-skill sequence:
 | `/sales-webinar` | Webinar-based selling — live and evergreen strategy, presentation, follow-up across GrooveWebinar, Demio, WebinarJam, and more | Available |
 | `/sales-membership` | Membership sites and online courses — structure, pricing, retention across GrooveMember, Kajabi, Teachable, and more | Available |
 | `/sales-checkout` | Checkout optimization — upsells, order bumps, payment plans, cart abandonment across GrooveSell, ThriveCart, SamCart, and more | Available |
+| `/sales-meeting-scheduler` | Schedule sales meetings — booking pages, round-robin, Calendly/Chili Piper, no-show reduction, meeting page conversion | Available |
+| `/sales-email-tracking` | Email engagement tracking — open/click/attachment tracking, follow-up timing, Apple MPP, tracking accuracy | Available |
 
 ### Prospecting, Enrichment & Signals
 

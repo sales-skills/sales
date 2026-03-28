@@ -1,6 +1,6 @@
 ---
 name: sales-deliverability
-description: "Email deliverability for outbound sales — domain authentication (SPF/DKIM/DMARC), mailbox warmup, sending limits, inbox placement, blacklist monitoring, sender reputation, custom tracking domains, and list hygiene. Use when setting up a new sending domain, warming up mailboxes, diagnosing spam/deliverability issues, recovering from blacklisting, scaling outbound volume, or switching email platforms. Do NOT use for cadence content and strategy (use /sales-cadence), Apollo sequence mechanics (use /sales-apollo-sequences), Mailshake platform help (use /sales-mailshake), Smartlead platform help (use /sales-smartlead), or Lemlist platform help (use /sales-lemlist)."
+description: "Email deliverability for outbound sales — domain authentication (SPF/DKIM/DMARC), mailbox warmup, sending limits, inbox placement, blacklist monitoring, sender reputation, custom tracking domains, and list hygiene. Use when setting up a new sending domain, warming up mailboxes, diagnosing spam/deliverability issues, recovering from blacklisting, scaling outbound volume, or switching email platforms. Do NOT use for cadence content and strategy (use /sales-cadence), Apollo sequence mechanics (use /sales-apollo-sequences), Mailshake platform help (use /sales-mailshake), Smartlead platform help (use /sales-smartlead), Lemlist platform help (use /sales-lemlist), or Yesware platform help (use /sales-yesware)."
 argument-hint: "[describe your deliverability situation — new domain, spam issues, warmup, scaling]"
 license: MIT
 metadata:
@@ -10,7 +10,7 @@ metadata:
 
 # Email Deliverability for Outbound Sales
 
-Help the user set up, diagnose, and optimize email deliverability — from domain authentication and warmup through inbox placement, reputation monitoring, and platform-specific configuration. This skill is tool-agnostic and covers Apollo, Mailshake, Salesloft, Lemlist, and standalone tools.
+Help the user set up, diagnose, and optimize email deliverability — from domain authentication and warmup through inbox placement, reputation monitoring, and platform-specific configuration. This skill is tool-agnostic and covers Apollo, Mailshake, Salesloft, Lemlist, Yesware, and standalone tools.
 
 ## Step 1 — Gather context
 
@@ -38,7 +38,8 @@ Ask the user:
    - B) Mailshake
    - C) Salesloft
    - D) Lemlist
-   - E) Instantly / Smartlead
+   - E) Yesware
+   - F) Instantly / Smartlead
    - F) HubSpot / Salesforce (direct sending)
    - G) Custom SMTP / other
    - H) Multiple tools — describe
@@ -147,6 +148,15 @@ These tools simulate real email conversations to build sender reputation. Run wa
 - **Domain auth**: Configure SPF/DKIM/DMARC and custom tracking domain before launching sequences. Lemlist Help Center has DNS configuration guides.
 - **Sending limits**: Configure per-account daily limits. Recommended 30-50 cold emails/day per mailbox.
 
+### In Yesware
+- **Sends from your inbox**: Yesware campaigns send directly from Gmail/Outlook — no third-party server. This improves deliverability because emails appear as genuine 1:1 messages, not bulk sends.
+- **No built-in warmup**: Since Yesware sends from your existing inbox, traditional warmup is less critical. However, if you're sending high-volume campaigns from a new email account, ramp up gradually (20/day → 50/day over 2-3 weeks).
+- **Domain auth**: SPF/DKIM/DMARC should still be configured for your domain. Yesware inherits your inbox's auth settings.
+- **Custom tracking domain**: Yesware uses its own tracking domain for open/click tracking. This is a shared domain — no custom tracking domain option.
+- **Sending limits**: Governed by your email provider (Gmail ~400-500/day, Outlook ~1,000/day) plus Yesware plan limits on campaign recipients.
+- **Key advantage**: Inbox-native sending means no separate IP reputation to manage and no relay server that could get blacklisted.
+- **Key limitation**: No deliverability dashboard — Yesware doesn't report inbox placement rate, so you won't know how many emails landed in spam vs inbox.
+
 ### In Smartlead
 - **SmartSenders**: Auto-provision mailboxes via Gmail/Outlook OAuth. Configure per-sender daily limits (recommend 30-50/day per mailbox for cold outbound).
 - **SmartInfra**: Dedicated IPs with auto DNS/DKIM/DMARC configuration for high-volume senders. Evaluate when sending 1,000+ emails/day or managing multiple clients.
@@ -209,6 +219,8 @@ If your domain reputation is damaged:
 - `/sales-apollo-sequences` — Apollo sequence mechanics and configuration
 - `/sales-salesloft` — Salesloft platform help
 - `/sales-agency-outbound` — Multi-client agency outbound — infrastructure, client isolation, warmup at scale
+- `/sales-yesware` — Yesware platform help (inbox-native sending, campaigns, tracking)
+- `/sales-email-tracking` — Email engagement tracking — understand open/click accuracy and privacy limitations
 - `/sales-enrich` — Verify and enrich contact emails before sending
 - `/sales-prospect-list` — Build prospect lists with verified contacts
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
