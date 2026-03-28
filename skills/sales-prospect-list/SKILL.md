@@ -166,6 +166,26 @@ Save the search as a dynamic list — new matches will appear automatically.
 - **Auto-verification**: Woodpecker automatically validates prospect emails via Bouncer when added — invalid emails are flagged before sending
 - **Limits**: Pricing based on "contacted prospects" per month — every new person added to a campaign counts against limit
 
+### Finding prospects with Hunter.io
+- **Discover**: Search for companies by industry, employee count, location, and technology — find companies matching your ICP without consuming credits. Then use Domain Search to find contacts at each.
+- **TechLookup**: Find companies using specific technologies — great for competitive displacement (find companies using a competitor) or complementary targeting (find companies using tools adjacent to yours).
+- **Domain Search**: Enter a target company's domain → Hunter returns all known emails with names, titles, departments, seniority, and confidence scores. Filter by department and seniority to narrow to decision-makers.
+- **Email Finder**: Have a specific person's name? Provide first name + last name + domain → Hunter returns their email with confidence score and verification status.
+- **Bulk operations**: Process hundreds of domains or name+domain pairs through bulk API endpoints. Async processing with job status polling.
+- **Browser Extension**: Chrome/Firefox extension finds emails on any website you visit — works on LinkedIn and company sites.
+- **Export**: Save results to Hunter Lead Lists, then export as CSV or push to CRM via HubSpot/Salesforce/Pipedrive integration.
+- **Pre-send**: Always verify found emails with Hunter's Email Verifier before importing into campaign tools. Hunter separates finding from verification — both consume credits.
+
+### Finding prospects with Prospeo
+- **Search Person**: Search 200M+ contacts with 30+ filters — industry, seniority, department, location, headcount, funding, tech stack, years of experience. Up to 25 results per page, 25,000 max.
+- **Search Company**: Search 30M+ companies — then use results to find people at target accounts.
+- **Company-targeted search**: Use `company.websites` filter with up to 500 target domains to find contacts at specific accounts. Combine with `person_seniority` and `person_department` to narrow to decision-makers.
+- **Search → Enrich workflow**: Search returns profiles but NOT emails/phones. Use Bulk Enrich Person (50 per call) on search results to get verified contact info.
+- **Chrome extension**: Extract contacts from LinkedIn Sales Navigator while browsing.
+- **Export**: Enriched data available via API response — push to CRM via native HubSpot/Salesforce integration, Zapier, Make, or n8n.
+- **Credit costs**: 1 credit per search request that returns results + 1 credit per person enriched. Budget for both steps.
+- **Pre-send**: Prospeo's 5-step verification is built into enrichment — use `only_verified_email: true` to get only deliverable addresses.
+
 ### Finding prospects with Tomba
 - **Domain Search**: Enter a target company's domain → Tomba returns all known emails with names, titles, departments, seniority, and confidence scores. Filter by department (sales, engineering, marketing) and seniority (executive, senior) to narrow to decision-makers.
 - **Email Finder**: Have a specific person's name? Provide name + domain → Tomba returns their email with a confidence score. Great for ABM when you know who you want to reach.
@@ -277,6 +297,8 @@ Before launching outreach, validate the list:
 - `/sales-reply` — Reply.io platform help (for Reply.io-specific setup)
 - `/sales-woodpecker` — Woodpecker platform help (for Woodpecker-specific setup)
 - `/sales-tomba` — Tomba platform help (domain search, email finder, LinkedIn finder, bulk operations)
+- `/sales-prospeo` — Prospeo platform help (200M+ contact search, company search, enrichment, Chrome extension)
+- `/sales-hunter` — Hunter.io platform help (Domain Search, Email Finder, Discover, TechLookup, browser extension)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

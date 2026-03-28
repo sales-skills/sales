@@ -10,7 +10,7 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 38 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 40 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -154,6 +154,18 @@ Router recommends a 5-skill sequence:
 | Skill | What it does | Status |
 |---|---|---|
 | `/sales-woodpecker` | Woodpecker platform help — cold email campaigns, condition-based sequences, email warmup, Bounce Shield, Adaptive Sending, email verification, inbox rotation, centralized inbox, LinkedIn automation, Lead Finder, agency panel, API & webhooks | Available |
+
+### Hunter.io & Platform
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-hunter` | Hunter.io platform help — Domain Search, Email Finder, Email Verifier, Campaigns, Discover, Signals, TechLookup, Leads, browser extension, MCP server, API & integrations | Available |
+
+### Prospeo & Platform
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-prospeo` | Prospeo platform help — person enrichment, company enrichment, person/company search, bulk operations, Chrome extension, LinkedIn Sales Navigator extraction, 5-step email verification, API & integrations | Available |
 
 ### Tomba & Platform
 

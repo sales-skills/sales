@@ -56,7 +56,7 @@ Ask the user:
 | **Funding event** | High | Company raised money — has budget for new tools | Series B announced last week |
 | **Hiring signal** | High | Company is hiring for roles your product supports | Posting for 5 SDRs (signal for sales tools) |
 | **Job change — new leader** | Medium-high | New executive in a role that buys your product | New CRO started 30 days ago |
-| **Technology change** | Medium | Adopted/removed a technology adjacent to yours | Installed Salesforce (could need sales tools) — use Tomba's Technology endpoint to detect |
+| **Technology change** | Medium | Adopted/removed a technology adjacent to yours | Installed Salesforce (could need sales tools) — use Hunter.io TechLookup, Tomba's Technology endpoint, or Prospeo's company enrichment tech stack field to detect |
 | **Company growth** | Medium | Headcount growth, office expansion, new markets | Employee count grew 40% in 6 months |
 | **Content engagement** | Medium | Interacted with your content (webinar, whitepaper, blog) | Downloaded your ROI calculator |
 | **Website visit** | Low-medium | Visited your website (may be casual research) | Pricing page visit |
@@ -200,6 +200,8 @@ Use Apollo Workflows (Professional+ plan) to automate:
 - `/sales-apollo` — Apollo intent configuration, topic setup, and workflow engine
 - `/sales-deal-inspect` — Use signals to inform deal health assessment
 - `/sales-tomba` — Tomba platform help (technology detection endpoint for technographic signals, similar domains for competitor mapping)
+- `/sales-prospeo` — Prospeo platform help (company enrichment with tech stack detection, job postings as hiring signals)
+- `/sales-hunter` — Hunter.io platform help (Signals for buying intent, TechLookup for technographic prospecting, Discover for company search)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

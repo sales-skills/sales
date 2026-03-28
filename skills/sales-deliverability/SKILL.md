@@ -1,6 +1,6 @@
 ---
 name: sales-deliverability
-description: "Email deliverability for outbound sales — domain authentication (SPF/DKIM/DMARC), mailbox warmup, sending limits, inbox placement, blacklist monitoring, sender reputation, custom tracking domains, and list hygiene. Use when setting up a new sending domain, warming up mailboxes, diagnosing spam/deliverability issues, recovering from blacklisting, scaling outbound volume, or switching email platforms. Do NOT use for cadence content and strategy (use /sales-cadence), Apollo sequence mechanics (use /sales-apollo-sequences), Mailshake platform help (use /sales-mailshake), Smartlead platform help (use /sales-smartlead), Lemlist platform help (use /sales-lemlist), Yesware platform help (use /sales-yesware), Mixmax-specific config (use /sales-mixmax), Reply.io-specific config (use /sales-reply), Woodpecker-specific config (use /sales-woodpecker), or Tomba-specific config (use /sales-tomba)."
+description: "Email deliverability for outbound sales — domain authentication (SPF/DKIM/DMARC), mailbox warmup, sending limits, inbox placement, blacklist monitoring, sender reputation, custom tracking domains, and list hygiene. Use when setting up a new sending domain, warming up mailboxes, diagnosing spam/deliverability issues, recovering from blacklisting, scaling outbound volume, or switching email platforms. Do NOT use for cadence content and strategy (use /sales-cadence), Apollo sequence mechanics (use /sales-apollo-sequences), Mailshake platform help (use /sales-mailshake), Smartlead platform help (use /sales-smartlead), Lemlist platform help (use /sales-lemlist), Yesware platform help (use /sales-yesware), Mixmax-specific config (use /sales-mixmax), Reply.io-specific config (use /sales-reply), Woodpecker-specific config (use /sales-woodpecker), Hunter.io-specific config (use /sales-hunter), Tomba-specific config (use /sales-tomba), or Prospeo-specific config (use /sales-prospeo)."
 argument-hint: "[describe your deliverability situation — new domain, spam issues, warmup, scaling]"
 license: MIT
 metadata:
@@ -10,7 +10,7 @@ metadata:
 
 # Email Deliverability for Outbound Sales
 
-Help the user set up, diagnose, and optimize email deliverability — from domain authentication and warmup through inbox placement, reputation monitoring, and platform-specific configuration. This skill is tool-agnostic and covers Apollo, Mailshake, Salesloft, Lemlist, Yesware, Mixmax, Reply.io, Woodpecker, Tomba, and standalone tools.
+Help the user set up, diagnose, and optimize email deliverability — from domain authentication and warmup through inbox placement, reputation monitoring, and platform-specific configuration. This skill is tool-agnostic and covers Apollo, Mailshake, Salesloft, Lemlist, Yesware, Mixmax, Reply.io, Woodpecker, Hunter.io, Tomba, Prospeo, and standalone tools.
 
 ## Step 1 — Gather context
 
@@ -198,6 +198,22 @@ These tools simulate real email conversations to build sender reputation. Run wa
 - **Inbox rotation**: Distributes sends across multiple mailboxes to stay within per-account limits while maintaining volume. Unlimited email accounts on all plans.
 - **Best practice**: Woodpecker has the most comprehensive built-in deliverability toolkit of any cold email tool. Enable warmup + Bounce Shield + Adaptive Sending on every account. Run domain audit before first campaign. Use the spam checker on every new email template.
 
+### In Hunter.io (verification + campaigns)
+- **Email Verifier**: Real-time SMTP/MX validation — checks format, domain, MX records, SMTP response, catch-all status, webmail detection, and disposable domain detection. Statuses: valid (safe to send), invalid (don't send), accept_all (use with caution), webmail, disposable, unknown.
+- **Bulk verification**: Submit arrays of emails via `POST /email-verifier/bulk`. Async processing — check job status and retrieve results when complete.
+- **Campaigns (inbox-native sending)**: Hunter Campaigns send from your connected Gmail/Outlook account — no third-party server. This improves deliverability since emails appear as genuine 1:1 messages.
+- **Custom tracking domain**: Available in Campaign settings for branded open/click tracking — reduces spam filtering on tracked links.
+- **No built-in warmup**: Hunter does not have a warmup tool. Since it sends through your inbox, use a third-party warmup service (Lemwarm, Warmbox, Instantly) if needed for new accounts.
+- **Sending limits**: Subject to your email provider limits (Gmail ~500/day, Outlook ~1,000/day) plus Hunter plan sender limits (3/15/40/unlimited by plan).
+- **Best practice**: Verify all emails with Hunter's Email Verifier before adding to campaigns. Set up custom tracking domain. For high-volume outbound, use Hunter for finding/verifying and export to a dedicated sending tool.
+
+### In Prospeo (verification focus)
+- **5-Step Email Verification**: Built into every enrichment — syntax check, domain/MX check, SMTP verification, catch-all detection, and result validation. Statuses: VERIFIED (safe to send) or NOT_VERIFIED (use with caution).
+- **Pre-send verification**: Use `only_verified_email: true` on enrichment calls to only get records with verified emails — effectively a built-in verification gate.
+- **Bulk verification**: Bulk Enrich Person (up to 50 per call) returns verification status on every email. Use to clean lists before importing into sending tools.
+- **No sending capability**: Prospeo is an enrichment/verification tool, not a sending tool. Use it upstream to ensure you're sending to verified addresses.
+- **Best practice**: Run your prospect list through Prospeo's Enrich Person with `only_verified_email: true` before importing into any outbound tool. Combine with Prospeo's company enrichment to validate that target companies are active and match your ICP.
+
 ### In Tomba (verification focus)
 - **Email Verifier**: Real-time SMTP/MX validation — validates whether an email is deliverable before sending. Checks format, MX records, SMTP response, catch-all status, and disposable domain detection.
 - **Bulk verification**: Verify up to 10,000 emails per batch. Async processing with webhook callbacks.
@@ -267,6 +283,8 @@ If your domain reputation is damaged:
 - `/sales-email-tracking` — Email engagement tracking — understand open/click accuracy and privacy limitations
 - `/sales-enrich` — Verify and enrich contact emails before sending
 - `/sales-tomba` — Tomba platform help (email verification, bulk verification, domain status checks)
+- `/sales-prospeo` — Prospeo platform help (5-step email verification built into enrichment)
+- `/sales-hunter` — Hunter.io platform help (Email Verifier, bulk verification, Campaigns with inbox-native sending)
 - `/sales-prospect-list` — Build prospect lists with verified contacts
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
@@ -285,19 +303,21 @@ If your domain reputation is damaged:
 **User says**: "My open rates dropped from 45% to 15%. I'm using 3 Apollo mailboxes at 50 emails/day each."
 **Skill does**:
 1. Identifies likely causes: reputation damage, blacklisting, or auth issues
-2. Provides a diagnosis checklist: check blacklists, verify SPF/DKIM/DMARC, review bounce rate
-3. Recommends volume reduction and mailbox-by-mailbox reputation check
-4. Creates a recovery plan with timeline
+2. Provides a diagnosis checklist: check blacklists via MXToolbox, verify SPF/DKIM/DMARC, review bounce rate, check sender reputation via Google Postmaster Tools (for Gmail recipients) and Microsoft SNDS (for Outlook recipients)
+3. Recommends checking each mailbox's reputation individually — one bad mailbox can drag down the others. Use Google Postmaster Tools to see domain-level reputation and per-IP data.
+4. Recommends volume reduction and re-warmup of affected mailboxes
+5. Creates a recovery plan with timeline
 **Result**: User has a diagnosis framework and recovery plan
 
 ### Example 3: Platform migration
 **User says**: "Switching from Apollo to Mailshake. What do I need to do for deliverability?"
 **Skill does**:
 1. Verifies domain auth is platform-independent (SPF/DKIM may need updating for Mailshake)
-2. Recommends adding Mailshake to SPF and configuring Mailshake-specific DKIM
-3. Advises warmup for new platform connection even if mailbox is established
-4. Compares sending limit configuration between platforms
-**Result**: User has a migration checklist covering auth, warmup, and platform config
+2. Recommends adding Mailshake to SPF (`include:mailshake.com`) and configuring Mailshake-specific DKIM
+3. **Recommends removing Apollo's SPF include and DKIM records** if you're fully migrating off Apollo — stale includes count toward SPF's 10-lookup limit and leaving them adds unnecessary DNS complexity
+4. Advises warmup for new platform connection even if mailbox is established
+5. Compares sending limit configuration between platforms
+**Result**: User has a migration checklist covering auth updates for both platforms, warmup, and platform config
 
 ## Troubleshooting
 

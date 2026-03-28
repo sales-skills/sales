@@ -1,6 +1,6 @@
 ---
 name: sales-cadence
-description: "Design multi-channel outbound cadences with timing, A/B testing, and content. Use when building a Salesloft cadence, building a Mailshake campaign, building a Smartlead campaign, building a Lemlist sequence, building a Yesware campaign, building a Mixmax sequence, building a Reply.io sequence, building a Woodpecker campaign, designing an outbound sequence, planning touchpoint timing, writing cadence emails, creating call scripts, A/B testing subject lines, optimizing sequence performance, or planning multi-channel outreach. Do NOT use for general outreach message writing (use /sales-outreach), marketing cold email (use /cold-email), automated email flows (use /email-sequence), or general Salesloft platform help (use /sales-salesloft)."
+description: "Design multi-channel outbound cadences with timing, A/B testing, and content. Use when building a Salesloft cadence, building a Mailshake campaign, building a Smartlead campaign, building a Lemlist sequence, building a Yesware campaign, building a Mixmax sequence, building a Reply.io sequence, building a Woodpecker campaign, building a Hunter.io campaign, designing an outbound sequence, planning touchpoint timing, writing cadence emails, creating call scripts, A/B testing subject lines, optimizing sequence performance, or planning multi-channel outreach. Do NOT use for general outreach message writing (use /sales-outreach), marketing cold email (use /cold-email), automated email flows (use /email-sequence), or general Salesloft platform help (use /sales-salesloft)."
 argument-hint: "[describe campaign goal, target persona, channels, and constraints]"
 license: MIT
 metadata:
@@ -10,7 +10,7 @@ metadata:
 
 # Design a Multi-Channel Outbound Cadence
 
-Help the user design a complete outbound cadence for Salesloft, Mailshake, Smartlead, Lemlist, or Yesware — from architecture and timing through full content for every step, A/B testing, and optimization benchmarks.
+Help the user design a complete outbound cadence for Salesloft, Mailshake, Smartlead, Lemlist, Yesware, or Hunter.io — from architecture and timing through full content for every step, A/B testing, and optimization benchmarks.
 
 ## Step 1 — Gather context
 
@@ -158,6 +158,18 @@ For each call step:
 - **Reporting**: Opens, clicks, replies, bounces per step and per contact; channel efficiency dashboard; team-level analytics
 - **Best practice**: Use conditional branching to create a single sequence that handles multiple scenarios (e.g., if prospect opens but doesn't reply → add LinkedIn step; if prospect clicks → fast-track to call step)
 
+### In Hunter.io
+- **Where**: Campaigns tab in Hunter.io dashboard (hunter.io/campaigns)
+- **Channel support**: Email only — no phone, LinkedIn, or task steps. For multi-channel cadences, use Hunter for email finding/verification and a dedicated tool for sending.
+- **Campaign flow**: Create campaign → add recipients (from lead lists, CSV, or Domain Search results) → write email steps with follow-ups → set schedule → launch
+- **Sending method**: Inbox-native — sends from connected Gmail/Outlook, not a third-party server
+- **Follow-ups**: Time-based automatic follow-ups that stop when the recipient replies
+- **A/B testing**: Basic variant testing available for subject lines and email body
+- **Review queue**: Preview and edit individual emails before send (Growth+ plans) — useful for personalizing at scale
+- **Tracking**: Open and click tracking with optional custom tracking domain
+- **Sender limits**: Starter = 3 senders, Growth = 15, Scale = 40, Enterprise = unlimited
+- **Best practice**: Hunter Campaigns is best for simple email-only sequences (1-3 steps) at low-to-medium volume. Its strength is the tight integration with Hunter's email finding and verification — find, verify, and send all in one platform. For complex multi-channel cadences or high volume, export verified leads to a dedicated tool.
+
 ### In Woodpecker
 - **Where**: Campaigns tab in Woodpecker dashboard (app.woodpecker.co)
 - **Channel support**: Email (native), LinkedIn (add-on at €29/account — connection requests, messages, profile visits), manual tasks
@@ -235,6 +247,7 @@ Provide a benchmarks table:
 - `/sales-mixmax` — Mixmax platform help (for Mixmax-specific setup)
 - `/sales-reply` — Reply.io platform help (for Reply.io-specific setup)
 - `/sales-woodpecker` — Woodpecker platform help (for Woodpecker-specific setup)
+- `/sales-hunter` — Hunter.io platform help (Campaigns, Domain Search, Email Finder, Email Verifier)
 - `/sales-email-tracking` — Email engagement tracking — open/click/attachment signals for follow-up timing
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 

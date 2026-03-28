@@ -75,7 +75,7 @@ Choose the right approach based on volume and frequency:
 - **How**: Try Provider A first → if no result, try Provider B → then Provider C
 - **Credit cost**: Only pay for successful enrichments at each level
 - **Best for**: Maximizing coverage when targeting niche personas or international contacts
-- **Tools**: Clay is purpose-built for this; Lemlist has built-in waterfall enrichment; Apollo's waterfall enrichment is in beta; Yesware Prospector provides 100M+ contacts as an additional source; Reply.io has a built-in B2B database with 1B+ contacts and data credits for email/phone reveals; Woodpecker Lead Finder provides a B2B database with 1B+ leads and data credits for email finding; Tomba provides 430M+ indexed emails with domain search, email finder, and bulk enrichment
+- **Tools**: Clay is purpose-built for this; Lemlist has built-in waterfall enrichment; Apollo's waterfall enrichment is in beta; Yesware Prospector provides 100M+ contacts as an additional source; Reply.io has a built-in B2B database with 1B+ contacts and data credits for email/phone reveals; Woodpecker Lead Finder provides a B2B database with 1B+ leads and data credits for email finding; Tomba provides 430M+ indexed emails with domain search, email finder, and bulk enrichment; Prospeo provides 280M+ leads with 5-step email verification, company enrichment (50+ fields), and bulk operations (50 records per API call); Hunter.io provides Domain Search (all emails at a company), Email Finder (name+domain → email), and Email Verifier with bulk operations for all three
 
 ## Step 3 — Execute the enrichment
 
@@ -134,6 +134,60 @@ Choose the right approach based on volume and frequency:
 - See `/sales-tomba` for full platform reference
 
 **Credit economics**: Searches and verifications are separate quotas. Free plan: 25 searches + 50 verifications/month. Starter ($39/mo): 1,000 + 2,000. Phone data costs additional credits.
+
+### In Hunter.io
+
+**Single enrichment**: Use Email Finder (first name + last name + domain → email with confidence score and verification status). Or use Domain Search to find all emails at a company, filtered by department and seniority.
+
+**Bulk enrichment**:
+1. Use the Bulk Email Finder API — submit an array of name+domain pairs
+2. Hunter processes asynchronously — check job status via `GET /email-finder/bulk/{id}`
+3. Verify found emails with Bulk Email Verifier before sending
+4. Export results or push to CRM via HubSpot/Salesforce/Pipedrive integration
+
+**Domain-wide enrichment**:
+1. Domain Search on the target company → get all known emails with names, titles, departments, seniority, and confidence scores
+2. Filter by department (executive, sales, engineering, etc.) and seniority to focus on decision-makers
+3. Hunter also returns the company's email pattern (e.g., `{first}@domain.com`) — use it to predict emails for people not in the database
+4. Verify results with Email Verifier before sending
+
+**Technographic prospecting**: Use TechLookup to find companies using a specific technology, then Domain Search each to find contacts. Use Discover to filter companies by industry, size, and location.
+
+**API enrichment**:
+- `GET /domain-search` for domain → all contacts
+- `GET /email-finder` for name+domain → email
+- `GET /email-verifier` for email → deliverability status
+- Bulk endpoints available for all three operations
+- Auth: `api_key` query parameter, `X-API-KEY` header, or `Authorization: Bearer` header
+- See `/sales-hunter` for full platform reference
+
+**Credit economics**: Domain Search (1 credit per 10 results), Email Finder (1 credit per find), Email Verifier (1 credit per verification). All share the same monthly pool. Free plan: 50 credits/mo. Starter (€34/mo): 2,000. Growth (€104/mo): 10,000. Failed lookups (no results) are free.
+
+### In Prospeo
+
+**Single enrichment**: Provide name + company (website, LinkedIn, or name) or a LinkedIn URL → Prospeo returns verified email, job title, full profile, and company data. Set `only_verified_email: true` to only pay for records with verified emails.
+
+**Bulk enrichment**:
+1. Use the Bulk Enrich Person API — up to 50 records per call
+2. Each record needs an `identifier` for tracking plus name+company or LinkedIn URL
+3. Response separates `matched`, `not_matched`, and `invalid_datapoints`
+4. Batch larger lists into groups of 50
+
+**Company enrichment**: Provide a domain or LinkedIn URL → 50+ data fields including industry, employee count, funding, tech stack, revenue range, job postings, SIC/NAICS codes.
+
+**Mobile enrichment**: Add `enrich_mobile: true` to any person enrichment — costs 10 credits instead of 1. Only enable for contacts you'll actually call.
+
+**Search-then-enrich workflow**: Use Search Person (200M+ contacts, 30+ filters) to find targets, then Bulk Enrich to get contact info. Search returns profiles but NOT emails — enrichment is a separate step.
+
+**API enrichment**:
+- `POST /enrich-person` for single person enrichment
+- `POST /bulk-enrich-person` for batch (up to 50 per call)
+- `POST /enrich-company` for company enrichment
+- `POST /bulk-enrich-company` for batch company enrichment
+- Auth: `X-KEY` header
+- See `/sales-prospeo` for full platform reference
+
+**Credit economics**: 1 credit per matched person/company. 10 credits if mobile included. Free for no-match and lifetime dedup (re-enriching same record is free). Free plan: 75 credits/mo. Starter ($39/mo): 1,000.
 
 ### Compliance checklist
 
@@ -252,6 +306,8 @@ Credits reset monthly and do not roll over. Plan enrichment around your billing 
 - `/sales-reply` — Reply.io platform help (B2B database with 1B+ contacts and data credits)
 - `/sales-woodpecker` — Woodpecker platform help (Lead Finder B2B database)
 - `/sales-tomba` — Tomba platform help (430M+ email database, domain search, email finder, verifier, enrichment, phone finder)
+- `/sales-prospeo` — Prospeo platform help (280M+ leads, 5-step email verification, company enrichment, bulk operations, Chrome extension)
+- `/sales-hunter` — Hunter.io platform help (Domain Search, Email Finder, Email Verifier, Campaigns, Discover, TechLookup, Signals)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-hunter",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "How do I find the email addresses of all the marketing people at HubSpot using Hunter?",
+      "expected_output": "Step-by-step guidance on using Hunter's Domain Search with department filter for marketing, including credit costs and verification.",
+      "assertions": [
+        {"name": "uses_domain_search", "description": "Response must recommend Domain Search on hubspot.com (not Email Finder) since the user wants all emails at a company"},
+        {"name": "department_filter", "description": "Response must mention filtering by department (marketing) to narrow results"},
+        {"name": "verification_step", "description": "Response must recommend verifying found emails before sending, since Domain Search results have varying confidence scores"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "I want to set up a cold email campaign in Hunter.io to 150 prospects. Walk me through the setup.",
+      "expected_output": "Campaign setup walkthrough including email steps, follow-ups, scheduling, tracking domain, and sender configuration.",
+      "assertions": [
+        {"name": "campaign_steps", "description": "Response must walk through creating a multi-step campaign with initial email and follow-ups"},
+        {"name": "tracking_domain", "description": "Response must recommend setting up a custom tracking domain for open/click tracking"},
+        {"name": "verify_before_send", "description": "Response must advise verifying all 150 prospect emails before adding them as campaign recipients"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I want to use the Hunter API to automate finding and verifying emails for a list of 300 company domains.",
+      "expected_output": "API guidance covering Domain Search and Email Verifier endpoints, authentication, rate limits, and credit planning.",
+      "assertions": [
+        {"name": "api_reference_pointer", "description": "Response must point the user to references/hunter-api-reference.md for the full endpoint catalog"},
+        {"name": "rate_limits", "description": "Response must mention rate limits (150-600 req/min depending on plan) and recommend batching or pacing"},
+        {"name": "credit_planning", "description": "Response must help the user estimate credit costs for 300 domain searches plus verification of found emails"}
+      ]
+    }
+  ]
+}

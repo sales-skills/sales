@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Seismic, Tomba, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -114,6 +114,20 @@ Before building anything custom, check if a native integration exists:
 | Tomba → Zapier | Native | 8,000+ app connections — trigger on domain search, email find, enrichment |
 | Tomba → Make | Native | Visual automation workflows with Tomba actions |
 | Tomba → n8n | Native | Self-hosted automation with Tomba nodes |
+| Hunter.io → HubSpot | Native | Push leads, sync activity |
+| Hunter.io → Salesforce | Native | Push leads, sync activity |
+| Hunter.io → Pipedrive | Native | Push leads |
+| Hunter.io → Google Sheets | Native (add-on) | Domain search, email finder, verifier in-spreadsheet |
+| Hunter.io → Zapier | Native | Triggers for new leads; actions for domain search, email finder, verifier |
+| Prospeo → HubSpot | Native | Enrich CRM contacts with verified emails, phones, firmographic data |
+| Prospeo → Salesforce | Native | Keep CRM data clean with enriched contacts and accounts |
+| Prospeo → Clay | Native | Automate data enrichment in Clay workflows |
+| Prospeo → Smartlead | Native | Push enriched leads to Smartlead campaigns |
+| Prospeo → Instantly | Native | Push enriched leads to Instantly campaigns |
+| Prospeo → Lemlist | Native | Push enriched leads to Lemlist sequences |
+| Prospeo → Zapier | Native | Connect to 8,000+ apps for automated workflows |
+| Prospeo → Make | Native | Visual automation workflows with Prospeo actions |
+| Prospeo → n8n | Native (community node) | `@prospeo/n8n-nodes-prospeo` for self-hosted automation |
 
 **Rule**: If a native integration covers your use case, use it. Native integrations handle auth, retry, and error handling automatically. Only go custom when native doesn't support your specific trigger or action.
 
@@ -243,6 +257,21 @@ Before building anything custom, check if a native integration exists:
 - **API**: `GET/POST /rules`, `PATCH/DELETE /rules/:id`, `POST/GET /rules/:id/actions`
 - **Note**: Mixmax rules are more of an automation engine than simple webhooks — they combine triggers and actions with conditional logic. For simple webhook forwarding, create a rule with a webhook action.
 
+### Hunter.io integrations
+- **Native CRM**: HubSpot, Salesforce, Pipedrive — push leads and sync activity directly from Hunter.
+- **Google Sheets**: Add-on for running Domain Search, Email Finder, and Email Verifier directly in spreadsheets.
+- **Zapier**: Triggers for new leads found; actions for domain search, email finder, and verifier.
+- **Campaigns webhooks**: Configure webhook URLs in campaign settings for email sent, opened, clicked, replied, and bounced events.
+- **MCP Server**: Official `hunter-mcp` Python package for AI agent integration via Model Context Protocol.
+- **API-first**: For custom pipelines, use the REST API — `api_key` query parameter, `X-API-KEY` header, or Bearer auth. See `/sales-hunter` for full API reference.
+
+### Prospeo integrations
+- **No webhook support**: Prospeo does not appear to support webhook event subscriptions. Integrations are push-based (native CRM connectors) or pull-based (API polling).
+- **Native CRM**: HubSpot and Salesforce native integrations handle enrichment sync automatically.
+- **Automation platforms**: Zapier, Make, and n8n have Prospeo actions for enrichment workflows.
+- **MCP Server**: Official `@prospeo/mcp-server` npm package for AI agent integration via Model Context Protocol.
+- **API-first**: For custom pipelines, use the REST API directly — all POST endpoints with `X-KEY` auth. See `/sales-prospeo` for full API reference.
+
 ### Tomba webhooks
 - **Setup**: Pass `webhook_url` parameter on supported API endpoints (domain search, email finder, enrichment, LinkedIn finder, author finder, bulk operations)
 - **Events**: Async result delivery — when a lookup or bulk job completes, Tomba POSTs results to your webhook URL
@@ -309,6 +338,8 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-deliverability` — Email deliverability (relevant when integrating sending tools)
 - `/sales-seismic` — Seismic platform help including integrations, LiveSend, and Digital Sales Rooms
 - `/sales-tomba` — Tomba platform help including API, webhook callbacks, and CRM integrations
+- `/sales-prospeo` — Prospeo platform help including API, native CRM integrations, and MCP server
+- `/sales-hunter` — Hunter.io platform help including API, CRM integrations, webhooks, and MCP server
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
 ## Examples
