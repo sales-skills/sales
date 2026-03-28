@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -89,6 +89,9 @@ Before building anything custom, check if a native integration exists:
 | Mixmax → Slack | Yes (native) | Real-time tracking notifications |
 | Mixmax → LinkedIn Sales Navigator | Yes (native) | InMail and connection requests in sequences |
 | Mixmax → Zoom | Yes (native) | Auto-generate meeting links |
+| Reply.io → Salesforce | Yes (native, bi-directional) | Contact/lead sync, email/call/task activity, status sync, custom workflows |
+| Reply.io → HubSpot | Yes (native, bi-directional) | Contact sync (auto-sync every 2h), email/call/task activity, status sync, field mappings |
+| Reply.io → Pipedrive | Yes (native) | Contact sync, activity logging |
 | Qwilr → Salesforce | Yes | Proposal/quote sync — see `/sales-qwilr-automation` |
 | Qwilr → HubSpot | Yes | Proposal/quote sync — see `/sales-qwilr-automation` |
 
@@ -198,6 +201,13 @@ Before building anything custom, check if a native integration exists:
 - **For custom integrations**: No programmatic access. If you need Yesware data in other tools, the Salesforce integration (Enterprise plan) is the best bridge — sync Yesware activity to Salesforce, then integrate Salesforce with other tools.
 - **Workaround**: For teams needing API access, consider Salesloft, Apollo, or Mailshake which all offer full REST APIs.
 
+### Reply.io webhooks
+- **Setup**: API endpoint `POST /webhooks` or via Settings > Integrations > Webhooks in dashboard
+- **Events**: Contact replied, email sent, email opened, email clicked, email bounced, contact status changed, task created (specific event types available via `GET /webhook-events`)
+- **Delivery management**: API endpoints for managing webhook delivery, retries, and failures
+- **API versions**: V3 (beta) has full webhook management; V1/V2 have basic webhook support
+- **Full reference**: See `/sales-reply` → `references/reply-api-reference.md`
+
 ### Mixmax rules (webhooks)
 - **Setup**: Dashboard at app.mixmax.com/dashboard/rules or API `POST /rules` with trigger and actions
 - **Trigger types**: IF/THEN rules on email events (open, click, reply), Salesforce object changes (new/updated opportunities, accounts, custom objects), date fields, lead owner changes
@@ -256,6 +266,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-groove` — Groove.cm platform help including GrooveSell webhooks and Zapier integration
 - `/sales-yesware` — Yesware platform help (native Salesforce integration, no API)
 - `/sales-mixmax` — Mixmax platform help including rules engine and integrations
+- `/sales-reply` — Reply.io platform help including webhooks and integrations
 - `/sales-deliverability` — Email deliverability (relevant when integrating sending tools)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 

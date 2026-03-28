@@ -1,6 +1,6 @@
 ---
 name: sales-email-tracking
-description: "Email engagement tracking for sales — open tracking, click tracking, attachment views, real-time notifications, follow-up timing, and engagement analytics. Use when setting up email tracking, interpreting open/click data, Mixmax tracking, timing follow-ups based on engagement, understanding tracking limitations (Apple MPP, pixel blocking), or choosing a tracking tool. For Yesware-specific help, use /sales-yesware. Do NOT use for email deliverability (use /sales-deliverability), cadence design (use /sales-cadence), or buying intent signals beyond email (use /sales-intent)."
+description: "Email engagement tracking for sales — open tracking, click tracking, attachment views, real-time notifications, follow-up timing, and engagement analytics. Use when setting up email tracking, interpreting open/click data, Mixmax tracking, timing follow-ups based on engagement, understanding tracking limitations (Apple MPP, pixel blocking), Reply.io tracking, or choosing a tracking tool. For Yesware-specific help, use /sales-yesware. Do NOT use for email deliverability (use /sales-deliverability), cadence design (use /sales-cadence), or buying intent signals beyond email (use /sales-intent)."
 argument-hint: "[describe your email tracking question or goal]"
 license: MIT
 metadata:
@@ -74,6 +74,8 @@ Rank engagement signals from strongest to weakest:
 4. **Multiple opens** (60-70% reliable) — repeated interest, follow up within 1-2 hours
 5. **Forward** (high reliability when detected) — internal discussion happening, multi-thread within 24 hours
 6. **Single open** (low reliability) — don't act on this alone
+
+**Critical caveat — always factor in tracking data inflation.** Apple MPP inflates open rates (pre-fetches pixels even when the email is never read), and bot clicks from corporate email security tools (Barracuda, Mimecast, Proofpoint, Microsoft Defender) inflate click-through rates by auto-clicking every link to scan for malware. Bot clicks happen within 1-2 seconds of delivery from data center IPs and hit all links simultaneously — human clicks are delayed and selective. Before acting on any open or click signal, consider whether it could be fake. The only truly reliable engagement signals are **replies** and **meetings booked**. See Step 3 for full details on identifying and filtering these false positives.
 
 ## Step 3 — Privacy and accuracy challenges
 
@@ -152,6 +154,18 @@ Security tools like Barracuda, Mimecast, Proofpoint, and Microsoft Defender pre-
 - **A/B testing**: Test subject lines and email body variants with tracking data to optimize
 - **Limitation**: No real-time push notifications for individual opens — engagement visible in dashboard but not pushed to desktop/mobile
 
+### In Reply.io
+- **Tracking types**: Opens (pixel), clicks (link wrapping), replies, bounces
+- **Real-time notifications**: Desktop and email alerts on opens/clicks/replies
+- **Branded links**: Custom tracking domains to reduce spam filtering — configure in Settings > Branded Links. Replaces Reply.io's default tracking domain with your own (e.g., track.yourdomain.com)
+- **Per-sequence tracking**: Track opens, clicks, replies, and bounces at the sequence level, step level, and individual contact level
+- **Channel efficiency dashboard**: Compare engagement across email, LinkedIn, calls, SMS — see which channels drive the most replies
+- **Statistics API**: Programmatic access to tracking data via `GET /statistics/email`, `GET /statistics/clicks`, etc.
+- **Unified inbox**: All replies from all channels appear in one inbox — no switching between tools to see responses
+- **Google Postmaster integration**: Monitor domain reputation and spam rates alongside tracking data
+- **Apple MPP impact**: Same as other platforms — Apple Mail recipients inflate open rates. Reply.io doesn't filter MPP opens separately. Weight clicks and replies over opens.
+- **Best practice**: Use branded links to improve click tracking accuracy and reduce spam filtering. Monitor the channel efficiency dashboard weekly to shift budget toward highest-performing channels.
+
 ### In Mixmax
 
 - **Tracking types**: Opens (pixel), clicks (link wrapping), file downloads (attachment tracking), RSVPs, poll responses
@@ -210,6 +224,7 @@ Design your follow-up cadence around tracking signals rather than fixed time del
 - `/sales-intent` — Broader buying signals beyond email (website visits, content downloads, intent data)
 - `/sales-deliverability` — Email deliverability (tracking requires emails to reach the inbox first)
 - `/sales-mixmax` — Mixmax platform help (for Mixmax-specific setup)
+- `/sales-reply` — Reply.io platform help (for Reply.io-specific setup)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
 ## Examples

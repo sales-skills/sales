@@ -156,6 +156,15 @@ Save the search as a dynamic list — new matches will appear automatically.
 - **SmartProspect**: Alternative to external list building — Smartlead's built-in verified lead database with intent signals. 3x email verification (syntax, domain, mailbox). Pay per verified lead via credits.
 - **Pre-send**: Verify emails before import to keep bounce rate <3%. SmartProspect leads are pre-verified; external lists are not.
 
+### Importing into Reply.io
+- **From B2B database**: Reply.io has a built-in database of 1B+ contacts — search by industry, company size, title, location, tech stack. Use data credits to reveal emails/phones.
+- **From CSV**: Upload CSV to add contacts to sequences (map email, first name, last name, company, custom fields)
+- **From Chrome extension**: Reply.io email finder extension finds emails while browsing LinkedIn or company websites
+- **From Salesforce/HubSpot**: Native 2-way sync imports CRM contacts directly into Reply.io
+- **Via API**: `POST /contacts` to create contacts, then add to sequences via Sequence Contacts endpoints
+- **Via Zapier/Make**: Connect any lead source to Reply.io contact creation
+- **Limits**: Unlimited contact storage on Multichannel plan; data credits required for B2B database reveals
+
 ## Step 4 — Segment and prioritize
 
 Split the list into tiers for sequencing:
@@ -246,6 +255,7 @@ Before launching outreach, validate the list:
 - `/sales-lemlist` — Lemlist platform help (import leads, People Database, sequences)
 - `/sales-yesware` — Yesware platform help (import recipients, Prospector, campaigns)
 - `/sales-mixmax` — Mixmax platform help (for Mixmax-specific setup)
+- `/sales-reply` — Reply.io platform help (for Reply.io-specific setup)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

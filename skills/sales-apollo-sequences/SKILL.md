@@ -46,6 +46,17 @@ Ask the user:
 2. **Name**: Use a descriptive name: `[Persona] - [Campaign type] - [Date]` (e.g., "VP Eng - Cold Outbound - Mar 2026")
 3. **Settings to configure**:
 
+**Key settings — configure these for every sequence (non-negotiable):**
+
+- **Stop on reply**: Always enable. Auto-pause the sequence when a prospect replies. There is zero reason to keep emailing someone who responded — it damages trust and wastes sends.
+- **Stop on meeting booked**: Always enable. Once the goal is achieved, stop the sequence.
+- **Business hours sending**: Always enable. Send during the recipient's business hours (typically 8am-6pm in their timezone). Emails arriving at 2am look automated and get buried.
+- **Daily send limits**: Start conservative — 50-100 emails/day per mailbox for warm, established mailboxes. For new mailboxes, start at 20-30/day and ramp up over 2-3 weeks. Exceeding safe limits tanks sender reputation fast.
+- **Delay between steps**: Use 2-3 business days between email steps. Shorter gaps feel aggressive; longer gaps lose momentum. Increase to 4-5 days after 3+ unreplied emails to avoid fatigue.
+- **Sequence type**: Use **Automatic** for email-only sequences (hands-off, sends on schedule). Use **Manual** for multi-channel sequences that include calls or LinkedIn steps — Auto mode skips non-email steps entirely.
+
+**Full settings reference:**
+
 | Setting | Recommended value | Why |
 |---|---|---|
 | **Sequence type** | Auto (for email-only) or Manual (if includes calls/LinkedIn) | Auto sends emails automatically; manual requires rep action per step |
@@ -81,6 +92,8 @@ Always enable **stop on reply** and **stop on meeting booked** — there is no s
 
 ### Step timing
 
+These are recommended defaults for Apollo step configuration. For full cadence strategy — including messaging arc, multi-channel touch patterns, and email copy — use `/sales-cadence`.
+
 | Between steps | Recommended gap | Apollo setting |
 |---|---|---|
 | Step 1 → Step 2 | 2-3 business days | Set "Wait" between steps |
@@ -104,16 +117,20 @@ If any of these are missing, emails will land in spam regardless of content qual
 
 New mailboxes (or mailboxes that haven't sent outbound before) must be warmed up before sequencing. Skipping warmup is the second most common deliverability killer after missing domain auth.
 
-1. **Week 1**: Send 10-20 emails/day — personal, conversational emails to real contacts (colleagues, partners, existing customers). Use a warmup tool (e.g., Instantly, Warmbox, or Mailreach) to generate positive engagement signals automatically.
-2. **Week 2**: Increase to 20-40 emails/day. Continue warmup tool usage. Monitor inbox placement rate — aim for >95% inbox (not spam).
-3. **Week 3**: Increase to 40-60 emails/day. Begin adding the mailbox to low-volume sequences (re-engagement or warm follow-up).
-4. **Week 4**: If inbox placement is healthy (>95%), ramp to full sending volume (50-75/day). Add to cold outbound sequences.
+1. **Week 1**: Send 10-20 emails/day — personal, conversational emails to real contacts (colleagues, partners, existing customers). Use a warmup tool (Lemwarm, Warmbox, or Apollo's built-in warmup if available on your plan) to generate positive engagement signals automatically.
+2. **Week 2**: Increase to 20-40 emails/day. Continue warmup tool usage. Monitor inbox placement rate — aim for >95% inbox (not spam). Monitor bounce rate and keep it under 3%. Track spam complaints — any spike means pause and investigate.
+3. **Week 3**: Increase to 40-60 emails/day. Begin adding the mailbox to low-volume sequences (re-engagement or warm follow-up). Only proceed if warmup metrics remain healthy.
+4. **Week 4**: If inbox placement is consistently >95%, ramp to full sending volume (50-75/day). Add to cold outbound sequences. **Do not start cold outbound sequences until warmup shows >95% inbox placement** — launching too early will burn the mailbox.
 
 **Warmup rules**:
-- Warm up for a minimum of 2 weeks before any cold outbound; 3-4 weeks is safer for brand-new domains
+- Warm up new mailboxes for a minimum of 2-4 weeks before any cold outbound; 3-4 weeks is safer for brand-new domains
+- Start with 10-20 emails/day, increase by 10-20/day each week
+- Use a warmup tool (Lemwarm, Warmbox, or Apollo's built-in warmup) — manual warmup alone is not sufficient for cold outbound volumes
 - Keep the warmup tool running even after you start sequencing — it maintains positive engagement signals
+- Monitor bounce rate throughout warmup (keep under 3%) and watch for spam complaints — these are early warning signs
 - If deliverability drops at any point, pause outbound and return to warmup-only for 1 week
 - Never skip warmup for a mailbox on a new sending domain — domain age and reputation start at zero
+- Don't start sequences until warmup shows >95% inbox placement consistently
 - Enable Apollo's **Inbox Ramp Up** feature (Settings > Email > Inbox Ramp Up) as an additional safeguard
 
 ### Mailbox management
@@ -167,6 +184,7 @@ New mailboxes (or mailboxes that haven't sent outbound before) must be warmed up
 - Primary metric: **positive reply rate** (not just opens — opens can be inflated by tracking pixels)
 - Roll the winner into the sequence and start the next test
 - Always be testing — messaging decays as prospects see similar patterns from other sellers
+- For deeper A/B testing frameworks, email copy strategy, and multi-channel cadence design beyond Apollo's built-in testing, use `/sales-cadence`
 
 ## Step 5 — Sequence analytics
 
@@ -204,7 +222,7 @@ New mailboxes (or mailboxes that haven't sent outbound before) must be warmed up
 
 ## Related skills
 
-- `/sales-cadence` — **Handoff: for email copy strategy and multi-channel cadence design.** Once your Apollo sequence is configured, use `/sales-cadence` to write the actual email copy, design the messaging arc across steps, and plan multi-channel touch patterns. This skill handles Apollo execution; `/sales-cadence` handles the content and strategy layer.
+- `/sales-cadence` — **Handoff: for email copy strategy, A/B testing frameworks, and multi-channel cadence design beyond Apollo.** Once your Apollo sequence is configured, use `/sales-cadence` to write the actual email copy, design the messaging arc across steps, plan multi-channel touch patterns, and build A/B testing strategies for content. This skill handles Apollo execution; `/sales-cadence` handles the content and strategy layer.
 - `/sales-apollo` — General Apollo platform help (CRM sync, credits, admin)
 - `/sales-prospect-list` — Build the prospect list to add to your sequences
 - `/sales-enrich` — Verify and enrich contact data before sequencing

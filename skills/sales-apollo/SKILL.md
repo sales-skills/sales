@@ -159,6 +159,7 @@ Based on the user's specific question:
 - **Don't recommend the Chrome extension for bulk LinkedIn prospecting.** LinkedIn aggressively rate-limits scraping. Prospecting too quickly via the extension can get the user's LinkedIn account restricted. Recommend Apollo's built-in search instead for bulk list building.
 - **Don't treat Apollo's CRM as a replacement for Salesforce/HubSpot.** Apollo has its own contact/account/deal objects, but most teams use it alongside a CRM, not instead of one. Sync configuration is critical — misconfigurations cause duplicates and data conflicts.
 - **Don't generate raw API code when a UI walkthrough would suffice.** Most Apollo users are salespeople, not developers. Default to UI instructions unless the user specifically asks for API/automation help.
+- **Always cite the API reference file for API questions.** When the user asks anything about the Apollo API — endpoints, authentication, rate limits, payloads, or integration code — you MUST include a pointer to `references/apollo-api-reference.md` in your response. Example: "For the complete API reference with all endpoints, authentication details, and request/response examples, see `references/apollo-api-reference.md`." Never answer an API question without this citation.
 
 ## Step 5 — Related skills
 

@@ -1,6 +1,6 @@
 ---
 name: sales-cadence
-description: "Design multi-channel outbound cadences with timing, A/B testing, and content. Use when building a Salesloft cadence, building a Mailshake campaign, building a Smartlead campaign, building a Lemlist sequence, building a Yesware campaign, building a Mixmax sequence, designing an outbound sequence, planning touchpoint timing, writing cadence emails, creating call scripts, A/B testing subject lines, optimizing sequence performance, or planning multi-channel outreach. Do NOT use for general outreach message writing (use /sales-outreach), marketing cold email (use /cold-email), automated email flows (use /email-sequence), or general Salesloft platform help (use /sales-salesloft)."
+description: "Design multi-channel outbound cadences with timing, A/B testing, and content. Use when building a Salesloft cadence, building a Mailshake campaign, building a Smartlead campaign, building a Lemlist sequence, building a Yesware campaign, building a Mixmax sequence, building a Reply.io sequence, designing an outbound sequence, planning touchpoint timing, writing cadence emails, creating call scripts, A/B testing subject lines, optimizing sequence performance, or planning multi-channel outreach. Do NOT use for general outreach message writing (use /sales-outreach), marketing cold email (use /cold-email), automated email flows (use /email-sequence), or general Salesloft platform help (use /sales-salesloft)."
 argument-hint: "[describe campaign goal, target persona, channels, and constraints]"
 license: MIT
 metadata:
@@ -145,6 +145,19 @@ For each call step:
 - **Reporting**: Opens, clicks, replies, bounces per stage and per recipient; team-level sequence analytics
 - **Best practice**: Use Mixmax rules engine to auto-enroll contacts in sequences based on Salesforce triggers (e.g., new lead assigned → auto-enroll in introductory sequence)
 
+### In Reply.io
+- **Where**: Sequences tab in Reply.io dashboard (app.reply.io)
+- **Channel support**: Email, LinkedIn (InMail, connection requests, profile views — $69/account add-on), calls ($29/account add-on), SMS ($29/account add-on), WhatsApp
+- **Conditional sequences**: Unique feature — set up branching logic based on prospect actions (opened, clicked, replied) or data (title, industry). Different prospects can follow different paths within the same sequence.
+- **AI sequence builder**: Jason AI can generate entire sequences based on your ICP and value prop
+- **A/B testing**: Test subject lines, body content, and step variations within sequences
+- **Stages**: Ordered steps with configurable delays; mix channels freely (e.g., email → LinkedIn → call → email)
+- **Contact management**: Add contacts individually, from CSV, from Reply.io B2B database (1B+ contacts), from Salesforce/HubSpot, or via API
+- **Exit rules**: Auto-pause on reply, meeting booked, or custom trigger; manual pause/resume per contact
+- **Sending limits**: Per-mailbox daily limits; 10 mailboxes per user on Multichannel plan; respects provider sending limits (Gmail/Outlook)
+- **Reporting**: Opens, clicks, replies, bounces per step and per contact; channel efficiency dashboard; team-level analytics
+- **Best practice**: Use conditional branching to create a single sequence that handles multiple scenarios (e.g., if prospect opens but doesn't reply → add LinkedIn step; if prospect clicks → fast-track to call step)
+
 ### Personalization framework
 - **Level 1 (Minimum)**: First name, company name, title — the bare minimum
 - **Level 2 (Standard)**: Industry reference, company-size-specific pain point
@@ -206,6 +219,7 @@ Provide a benchmarks table:
 - `/sales-lemlist` — Lemlist platform help (sequences, Lemwarm, LinkedIn automation, enrichment, API)
 - `/sales-yesware` — Yesware platform help (campaigns, templates, Prospector, Meeting Scheduler)
 - `/sales-mixmax` — Mixmax platform help (for Mixmax-specific setup)
+- `/sales-reply` — Reply.io platform help (for Reply.io-specific setup)
 - `/sales-email-tracking` — Email engagement tracking — open/click/attachment signals for follow-up timing
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 

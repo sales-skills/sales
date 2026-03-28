@@ -217,6 +217,13 @@ Track these internally to spot issues before clients notice:
 - **CRM integration**: Strong native CRM integration (Salesforce, HubSpot) — good if clients require direct CRM sync
 - **Limitation**: Plan-based mailbox limits make scaling expensive for agencies
 
+### In Reply.io
+- **Agency plan**: Dedicated Agency plan (~$166/mo) with unlimited clients and unlimited users
+- **Client isolation**: Each client gets isolated sequences and contact lists
+- **Unified dashboard**: Manage all clients from a single dashboard
+- **Built-in warmup**: Warmup for all client mailboxes included
+- **API access**: Programmatic client management — create seats, add mailboxes via Master API Key
+
 ### Cross-platform setup
 - Some agencies use different tools for different clients based on client needs (e.g., Smartlead for high-volume, Mailshake for CRM-heavy clients)
 - Standardize reporting across tools — use a shared dashboard (Google Sheets, Looker, or custom) that aggregates metrics from all platforms
@@ -237,6 +244,7 @@ Track these internally to spot issues before clients notice:
 - `/sales-prospect-list` — Build targeted prospect lists for client campaigns
 - `/sales-integration` — Connect outbound tools to CRM via webhooks, Zapier, or API
 - `/sales-mailshake` — Mailshake platform help
+- `/sales-reply` — Reply.io platform help (Agency plan with unlimited clients)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
 ## Examples

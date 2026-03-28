@@ -1,6 +1,6 @@
 ---
 name: sales-deliverability
-description: "Email deliverability for outbound sales — domain authentication (SPF/DKIM/DMARC), mailbox warmup, sending limits, inbox placement, blacklist monitoring, sender reputation, custom tracking domains, and list hygiene. Use when setting up a new sending domain, warming up mailboxes, diagnosing spam/deliverability issues, recovering from blacklisting, scaling outbound volume, or switching email platforms. Do NOT use for cadence content and strategy (use /sales-cadence), Apollo sequence mechanics (use /sales-apollo-sequences), Mailshake platform help (use /sales-mailshake), Smartlead platform help (use /sales-smartlead), Lemlist platform help (use /sales-lemlist), Yesware platform help (use /sales-yesware), or Mixmax-specific config (use /sales-mixmax)."
+description: "Email deliverability for outbound sales — domain authentication (SPF/DKIM/DMARC), mailbox warmup, sending limits, inbox placement, blacklist monitoring, sender reputation, custom tracking domains, and list hygiene. Use when setting up a new sending domain, warming up mailboxes, diagnosing spam/deliverability issues, recovering from blacklisting, scaling outbound volume, or switching email platforms. Do NOT use for cadence content and strategy (use /sales-cadence), Apollo sequence mechanics (use /sales-apollo-sequences), Mailshake platform help (use /sales-mailshake), Smartlead platform help (use /sales-smartlead), Lemlist platform help (use /sales-lemlist), Yesware platform help (use /sales-yesware), Mixmax-specific config (use /sales-mixmax), or Reply.io-specific config (use /sales-reply)."
 argument-hint: "[describe your deliverability situation — new domain, spam issues, warmup, scaling]"
 license: MIT
 metadata:
@@ -10,7 +10,7 @@ metadata:
 
 # Email Deliverability for Outbound Sales
 
-Help the user set up, diagnose, and optimize email deliverability — from domain authentication and warmup through inbox placement, reputation monitoring, and platform-specific configuration. This skill is tool-agnostic and covers Apollo, Mailshake, Salesloft, Lemlist, Yesware, Mixmax, and standalone tools.
+Help the user set up, diagnose, and optimize email deliverability — from domain authentication and warmup through inbox placement, reputation monitoring, and platform-specific configuration. This skill is tool-agnostic and covers Apollo, Mailshake, Salesloft, Lemlist, Yesware, Mixmax, Reply.io, and standalone tools.
 
 ## Step 1 — Gather context
 
@@ -41,9 +41,10 @@ Ask the user:
    - E) Yesware
    - F) Instantly / Smartlead
    - G) Mixmax
-   - H) HubSpot / Salesforce (direct sending)
-   - I) Custom SMTP / other
-   - J) Multiple tools — describe
+   - H) Reply.io
+   - I) HubSpot / Salesforce (direct sending)
+   - J) Custom SMTP / other
+   - K) Multiple tools — describe
 
 4. **Domain authentication status?**
    - A) SPF/DKIM/DMARC all configured
@@ -174,6 +175,16 @@ These tools simulate real email conversations to build sender reputation. Run wa
 - **No deliverability dashboard**: Mixmax doesn't have a dedicated deliverability dashboard. Monitor bounce rates in sequence reporting; check Google Postmaster Tools for domain reputation.
 - **Best practice**: Since Mixmax is Gmail-native, your Google Workspace domain health IS your Mixmax deliverability. Focus on Google Postmaster Tools, proper authentication, and keeping bounce rates under 2%.
 
+### In Reply.io
+- **Built-in warmup**: Peer-to-peer warmup service — uses real Reply.io user accounts (no free/temporary emails). The system opens, replies, marks as important, and removes from spam realistically. Enable in Settings > Email Accounts > Warmup.
+- **Warmup timeline**: 2-3 weeks for new domains/mailboxes. Leave warmup running even after starting sequences to maintain reputation.
+- **Domain health checker**: Dedicated tab in Reply.io that checks SPF, DKIM, DMARC, and MX records. Provides actionable fix suggestions for each issue.
+- **Google Postmaster integration**: Reply.io pulls spam rate data directly from Google Postmaster Tools — monitor your spam rate without leaving the platform.
+- **Branded links**: Custom tracking domains to replace Reply.io's default tracking domain — reduces spam filtering on tracked links. Configure in Settings > Branded Links.
+- **Sending limits**: Respects Gmail/Outlook provider limits; configure per-mailbox daily caps. Use multiple mailboxes (up to 10/user on Multichannel plan) to increase volume safely.
+- **Bounce handling**: Automatic bounce detection; bounced contacts are paused in sequences. Monitor bounce rate in sequence analytics — keep under 3%.
+- **Best practice**: Enable warmup on every new mailbox before adding it to sequences. Use the domain health checker weekly. If spam rate exceeds 0.3% in Google Postmaster, pause sequences and investigate.
+
 ### Standalone tools (any platform)
 - **MXToolbox**: DNS lookup, blacklist check, SPF/DKIM/DMARC validation
 - **mail-tester.com**: Send a test email, get a deliverability score (aim for 9+/10)
@@ -231,6 +242,7 @@ If your domain reputation is damaged:
 - `/sales-agency-outbound` — Multi-client agency outbound — infrastructure, client isolation, warmup at scale
 - `/sales-yesware` — Yesware platform help (inbox-native sending, campaigns, tracking)
 - `/sales-mixmax` — Mixmax platform help (for Mixmax-specific setup)
+- `/sales-reply` — Reply.io platform help (for Reply.io-specific setup)
 - `/sales-email-tracking` — Email engagement tracking — understand open/click accuracy and privacy limitations
 - `/sales-enrich` — Verify and enrich contact emails before sending
 - `/sales-prospect-list` — Build prospect lists with verified contacts

@@ -54,6 +54,18 @@ When a user asks about building a funnel, immediately provide the concrete step-
 3. **Booking page** — Calendar integration for scheduling a sales call
 4. **Sales call** — Discovery + pitch (supported by a follow-up sequence)
 
+**Sales Page Funnel**:
+1. **Long-form sales page** — Full PAS or AIDA sales letter with offer stack, testimonials, and guarantee →
+2. **Order / checkout page** — Simplified checkout with order bump offer →
+3. **Upsell page(s)** — 1-2 one-click upsell or downsell offers →
+4. **Thank-you / onboarding page** — Delivery confirmation, next steps, community invite
+
+**Free Trial / Demo Funnel (SaaS)**:
+1. **Landing page** — Problem-focused headline, product demo video or screenshots, CTA to start free trial →
+2. **Sign-up / trial activation** — Minimal-friction registration (email + password, or SSO), immediate access to product →
+3. **Onboarding sequence** — In-app guided tour + email sequence (5-7 emails over trial period: quick wins, key features, case studies) →
+4. **Upgrade prompt sequence** — Trial-expiring reminders, ROI recap, plan comparison, limited-time upgrade incentive
+
 ### Gathering Additional Context
 
 After providing the relevant funnel structure, refine your recommendations with these details as needed:
@@ -80,7 +92,9 @@ If the user skips details, make reasonable assumptions for a general B2B or B2C 
 | **Tripwire** | Converting leads to buyers fast | $7–$47 | Opt-in, sales page, OTO, thank-you |
 | **Webinar** | Courses, coaching, mid-to-high ticket | $297–$2,000 | Registration, confirmation, webinar, sales page, order |
 | **Product Launch (PLF)** | Big reveals, course launches | $197–$2,000+ | Squeeze page, PLC videos (3–4), cart page, order |
+| **Sales Page** | Direct product sales, info products | $47–$997 | Sales page, checkout, upsell, thank-you |
 | **High-Ticket Application** | Coaching, consulting, done-for-you | $3,000–$50,000+ | Landing page, application form, booking page, sales call |
+| **Free Trial / Demo (SaaS)** | SaaS, software, tools | $29–$299/mo | Landing page, sign-up, onboarding, upgrade prompts |
 | **VSL (Video Sales Letter)** | Direct-response offers | $47–$497 | VSL page, order form, OTO |
 | **Challenge** | Community-driven launches | $27–$497 (or free entry) | Registration, daily content pages, offer page |
 

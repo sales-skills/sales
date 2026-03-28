@@ -92,6 +92,8 @@ Recurring commissions are the most important structural decision for SaaS affili
 7. **Affiliate directories**: List your program on affiliate program directories
 8. **Social media**: Announce your program to your existing audience
 
+**Recruiting with recurring commissions (SaaS-specific):** For SaaS and subscription products, recurring commissions are your strongest recruitment differentiator. Unlike one-time payouts, recurring commissions mean the affiliate earns a percentage on every renewal or rebill — not just the first sale — creating a compounding passive income stream. Lead with this in your recruitment pitch: "Earn 20% of every monthly payment for the lifetime of each customer you refer" is far more compelling than "Earn $50 per signup." Experienced SaaS affiliates actively seek out programs offering lifetime recurring commissions because a single referred customer paying $99/month at 20% recurring generates $237/year in ongoing income. This attracts higher-quality affiliates who invest in long-form content, genuine reviews, and audience education rather than quick-hit promotions — resulting in referred customers who stay longer and churn less.
+
 ### Promotional Assets
 
 Provide affiliates with ready-to-use materials:
