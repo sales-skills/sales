@@ -126,6 +126,13 @@ Save the search as a dynamic list — new matches will appear automatically.
 - Custom fields: additional CSV columns become custom merge fields
 - Pre-send: verify emails before import — Mailshake does not verify on upload. See `/sales-deliverability`
 
+### Importing into Lemlist
+- **CSV import**: Upload CSV with `email` as the only required column. Recommended fields: `firstName`, `lastName`, `companyName`, plus any custom fields for personalization variables.
+- **API import**: `POST /api/campaigns/{id}/leads` with lead objects containing email and custom variables. See `/sales-lemlist` → `references/lemlist-api-reference.md`. Rate limit: 20 requests per 2 seconds.
+- **People Database**: Alternative to external list building — Lemlist's built-in 600M+ contact database with smart filtering (title, seniority, industry, company size, intent signals). Leads are pre-verified. Pay per lead via credits.
+- **CRM import**: Import leads directly from connected HubSpot, Salesforce, or Pipedrive via the CRM integration.
+- **Pre-send**: Enable Lemwarm on all email accounts and warm up 3-5 weeks before launching sequences. Verify emails before import to keep bounce rate <3%.
+
 ### Importing into Smartlead
 - **CSV import**: Upload CSV with `email` as the only required column. Recommended fields: `first_name`, `last_name`, `company`, plus any custom fields for merge variables.
 - **API import**: `POST /api/v1/campaigns/{id}/leads` with a `lead_list` array containing lead objects. See `/sales-smartlead` → `references/smartlead-api-reference.md`.
@@ -219,6 +226,7 @@ Before launching outreach, validate the list:
 - `/sales-deliverability` — Verify email deliverability setup before sending to your list
 - `/sales-mailshake` — Mailshake platform help (import recipients, manage campaigns)
 - `/sales-smartlead` — Smartlead platform help (import leads, SmartProspect, campaigns)
+- `/sales-lemlist` — Lemlist platform help (import leads, People Database, sequences)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

@@ -1,6 +1,6 @@
 ---
 name: sales-deliverability
-description: "Email deliverability for outbound sales — domain authentication (SPF/DKIM/DMARC), mailbox warmup, sending limits, inbox placement, blacklist monitoring, sender reputation, custom tracking domains, and list hygiene. Use when setting up a new sending domain, warming up mailboxes, diagnosing spam/deliverability issues, recovering from blacklisting, scaling outbound volume, or switching email platforms. Do NOT use for cadence content and strategy (use /sales-cadence), Apollo sequence mechanics (use /sales-apollo-sequences), Mailshake platform help (use /sales-mailshake), or Smartlead platform help (use /sales-smartlead)."
+description: "Email deliverability for outbound sales — domain authentication (SPF/DKIM/DMARC), mailbox warmup, sending limits, inbox placement, blacklist monitoring, sender reputation, custom tracking domains, and list hygiene. Use when setting up a new sending domain, warming up mailboxes, diagnosing spam/deliverability issues, recovering from blacklisting, scaling outbound volume, or switching email platforms. Do NOT use for cadence content and strategy (use /sales-cadence), Apollo sequence mechanics (use /sales-apollo-sequences), Mailshake platform help (use /sales-mailshake), Smartlead platform help (use /sales-smartlead), or Lemlist platform help (use /sales-lemlist)."
 argument-hint: "[describe your deliverability situation — new domain, spam issues, warmup, scaling]"
 license: MIT
 metadata:
@@ -10,7 +10,7 @@ metadata:
 
 # Email Deliverability for Outbound Sales
 
-Help the user set up, diagnose, and optimize email deliverability — from domain authentication and warmup through inbox placement, reputation monitoring, and platform-specific configuration. This skill is tool-agnostic and covers Apollo, Mailshake, Salesloft, and standalone tools.
+Help the user set up, diagnose, and optimize email deliverability — from domain authentication and warmup through inbox placement, reputation monitoring, and platform-specific configuration. This skill is tool-agnostic and covers Apollo, Mailshake, Salesloft, Lemlist, and standalone tools.
 
 ## Step 1 — Gather context
 
@@ -37,10 +37,11 @@ Ask the user:
    - A) Apollo.io
    - B) Mailshake
    - C) Salesloft
-   - D) Instantly / Smartlead / Lemlist
-   - E) HubSpot / Salesforce (direct sending)
-   - F) Custom SMTP / other
-   - G) Multiple tools — describe
+   - D) Lemlist
+   - E) Instantly / Smartlead
+   - F) HubSpot / Salesforce (direct sending)
+   - G) Custom SMTP / other
+   - H) Multiple tools — describe
 
 4. **Domain authentication status?**
    - A) SPF/DKIM/DMARC all configured
@@ -107,7 +108,7 @@ New mailboxes and domains must be warmed up before sending at volume. Skipping w
 - **Smartlead Ultra Premium Warmup** — AI-driven warmup built into the Smartlead platform with exclusive warmup network. Unlike standalone tools, it's fully integrated with sender management and campaign scheduling.
 - **Instantly** — automated warmup with real engagement (opens, replies, moves from spam)
 - **Warmbox** — AI-powered warmup network
-- **Lemwarm** — Lemlist's warmup tool (works with any SMTP)
+- **Lemwarm** — Lemlist's built-in warmup (included free with every seat, 10,000+ user network, deliverability scoring)
 - **Mailwarm** — Standalone warmup service
 
 These tools simulate real email conversations to build sender reputation. Run warmup for at least 2-3 weeks before adding cold outbound.
@@ -139,6 +140,12 @@ These tools simulate real email conversations to build sender reputation. Run wa
 - **Throttling**: Salesloft auto-throttles to prevent spikes. Configure max emails per hour.
 - **Sender management**: Cadence settings > Sender — assign specific senders per cadence
 - **Custom tracking domain**: Admin > Email > Custom Tracking Domain
+
+### In Lemlist
+- **Lemwarm**: Built-in warmup included with every seat at no extra cost. Enable per email account — set warmup to 30 emails/day for accounts <6 months, 40/day for older. Minimum 3-5 weeks before adding cold outbound. Monitor deliverability score (target 90+).
+- **Inbox rotation**: Connect multiple email accounts to a sequence — Lemlist rotates sends automatically. Each account limited to plan allowance (5 per user on Multichannel Expert, $9 per additional inbox).
+- **Domain auth**: Configure SPF/DKIM/DMARC and custom tracking domain before launching sequences. Lemlist Help Center has DNS configuration guides.
+- **Sending limits**: Configure per-account daily limits. Recommended 30-50 cold emails/day per mailbox.
 
 ### In Smartlead
 - **SmartSenders**: Auto-provision mailboxes via Gmail/Outlook OAuth. Configure per-sender daily limits (recommend 30-50/day per mailbox for cold outbound).
@@ -197,6 +204,7 @@ If your domain reputation is damaged:
 
 - `/sales-cadence` — Design outbound cadence strategy and content
 - `/sales-smartlead` — Smartlead platform help (SmartSenders, SmartInfra, SmartDelivery, campaigns)
+- `/sales-lemlist` — Lemlist platform help (sequences, Lemwarm, enrichment, LinkedIn automation)
 - `/sales-mailshake` — Mailshake platform help (campaigns, Lead Catcher, settings)
 - `/sales-apollo-sequences` — Apollo sequence mechanics and configuration
 - `/sales-salesloft` — Salesloft platform help

@@ -10,7 +10,7 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 21 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 28 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -119,11 +119,34 @@ Router recommends a 5-skill sequence:
 |---|---|---|
 | `/sales-mailshake` | Mailshake platform help — campaigns, Lead Catcher, recipients, senders, API, webhooks | Available |
 
+### Lemlist & Platform
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-lemlist` | Lemlist platform help — multichannel sequences, Lemwarm, People Database, enrichment, LinkedIn automation, calls, WhatsApp, API | Available |
+
 ### Smartlead & Platform
 
 | Skill | What it does | Status |
 |---|---|---|
 | `/sales-smartlead` | Smartlead platform help — campaigns, SmartSenders, SmartInfra, SmartAgents, SmartDialer, SmartDelivery, SmartProspect, API, agency/white-label | Available |
+
+### Groove.cm & Platform
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-groove` | Groove.cm platform help — GroovePages, GrooveFunnels, GrooveSell, GrooveMail, GrooveAffiliate, GrooveMember, GrooveVideo, GrooveWebinar, GrooveBlog, GrooveKart, GrooveProof | Available |
+
+### Funnels, Email Marketing & Digital Sales
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-funnel` | Build and optimize sales funnels — strategy, structure, conversion, A/B testing across ClickFunnels, GoHighLevel, Groove, and more | Available |
+| `/sales-email-marketing` | Opt-in email marketing — broadcasts, nurture sequences, automation, segmentation across GrooveMail, Mailchimp, ActiveCampaign, and more | Available |
+| `/sales-affiliate-program` | Design and manage affiliate programs — commissions, recruitment, tracking, payouts across GrooveAffiliate, PartnerStack, and more | Available |
+| `/sales-webinar` | Webinar-based selling — live and evergreen strategy, presentation, follow-up across GrooveWebinar, Demio, WebinarJam, and more | Available |
+| `/sales-membership` | Membership sites and online courses — structure, pricing, retention across GrooveMember, Kajabi, Teachable, and more | Available |
+| `/sales-checkout` | Checkout optimization — upsells, order bumps, payment plans, cart abandonment across GrooveSell, ThriveCart, SamCart, and more | Available |
 
 ### Prospecting, Enrichment & Signals
 

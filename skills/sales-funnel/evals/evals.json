@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-funnel",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "How do I build a lead magnet funnel?",
+      "expected_output": "Step-by-step guide for building a lead magnet funnel with opt-in page, delivery mechanism, and follow-up sequence.",
+      "assertions": [
+        {"name": "funnel_steps", "description": "Must outline the core funnel steps: opt-in page, thank-you/delivery page, and follow-up email sequence"},
+        {"name": "lead_magnet_advice", "description": "Must provide guidance on lead magnet types and what makes a compelling opt-in offer"},
+        {"name": "conversion_tips", "description": "Must include conversion optimization tips for the opt-in page (headline, CTA, social proof)"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "My sales page converts at 1.2% — how do I optimize it?",
+      "expected_output": "Diagnostic framework for low-converting sales pages with specific optimization recommendations.",
+      "assertions": [
+        {"name": "benchmark_context", "description": "Must contextualize 1.2% against typical sales page benchmarks (1-3% for cold traffic, 3-10% for warm)"},
+        {"name": "specific_fixes", "description": "Must recommend specific fixes like headline testing, social proof, objection handling, or CTA improvements"},
+        {"name": "ab_testing", "description": "Must suggest A/B testing methodology for systematically improving conversion"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Design a product launch funnel with a 4-video series leading to a cart open",
+      "expected_output": "Product Launch Formula-style funnel with pre-launch content sequence, cart open/close, and urgency mechanics.",
+      "assertions": [
+        {"name": "plf_structure", "description": "Must outline the 4-video pre-launch sequence with content themes for each video (opportunity, transformation, ownership, offer)"},
+        {"name": "cart_mechanics", "description": "Must describe cart open/close mechanics with urgency (deadline, bonuses, scarcity)"},
+        {"name": "email_integration", "description": "Must integrate email sequences for each phase (pre-launch nurture, cart open announcement, cart close urgency)"}
+      ]
+    }
+  ]
+}

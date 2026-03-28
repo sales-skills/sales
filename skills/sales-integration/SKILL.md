@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Groove.cm, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -76,6 +76,9 @@ Before building anything custom, check if a native integration exists:
 | Smartlead → HubSpot | Yes (native) | Push leads, sync activity |
 | Smartlead → Salesforce | Via OutboundSync (third-party) | Lead and activity sync |
 | Smartlead → Clay | Yes (native) | Enrichment pipeline |
+| Lemlist → HubSpot | Yes (native) | Push leads, sync activity |
+| Lemlist → Salesforce | Yes (native, 2-way) | Lead and activity sync |
+| Lemlist → Pipedrive | Yes (native) | Push leads |
 | Qwilr → Salesforce | Yes | Proposal/quote sync — see `/sales-qwilr-automation` |
 | Qwilr → HubSpot | Yes | Proposal/quote sync — see `/sales-qwilr-automation` |
 
@@ -165,6 +168,19 @@ Before building anything custom, check if a native integration exists:
 - **Payload**: JSON with event_type, timestamp, and data object (lead_id, campaign_id, email, event-specific fields)
 - **Full reference**: See `/sales-smartlead` → `references/smartlead-api-reference.md`
 
+### Lemlist webhooks
+- **Setup**: API endpoint `POST /api/webhooks` with `url` and event configuration
+- **Events**: Reply, open, click, bounce, unsubscribe, lead interested, lead not interested
+- **Rate limits**: 20 requests per 2 seconds on all API endpoints
+- **Full reference**: See `/sales-lemlist` → `references/lemlist-api-reference.md`
+
+### Groove.cm webhooks
+- **Setup**: GrooveSell product settings > Webhooks
+- **Events**: Sale, Refund, Failed Rebill, Cancellation
+- **Payload**: JSON with event type, product, customer, and transaction data
+- **Note**: Groove.cm has no public REST API. For integrations beyond webhooks, use Zapier (triggers/actions for GrooveMail and GrooveSell).
+- **Full reference**: See `/sales-groove`
+
 ### Qwilr webhooks
 - **Full reference**: See `/sales-qwilr-automation` for Qwilr-specific webhook events and CRM integrations
 
@@ -210,7 +226,9 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-mailshake` — Mailshake platform help including API and webhook details
 - `/sales-apollo` — Apollo platform help including CRM sync and API
 - `/sales-smartlead` — Smartlead platform help including API and webhook details
+- `/sales-lemlist` — Lemlist platform help including API and webhook details
 - `/sales-salesloft` — Salesloft platform help including integrations
+- `/sales-groove` — Groove.cm platform help including GrooveSell webhooks and Zapier integration
 - `/sales-deliverability` — Email deliverability (relevant when integrating sending tools)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 

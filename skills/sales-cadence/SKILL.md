@@ -1,6 +1,6 @@
 ---
 name: sales-cadence
-description: "Design multi-channel outbound cadences with timing, A/B testing, and content. Use when building a Salesloft cadence, building a Mailshake campaign, building a Smartlead campaign, designing an outbound sequence, planning touchpoint timing, writing cadence emails, creating call scripts, A/B testing subject lines, optimizing sequence performance, or planning multi-channel outreach. Do NOT use for general outreach message writing (use /sales-outreach), marketing cold email (use /cold-email), automated email flows (use /email-sequence), or general Salesloft platform help (use /sales-salesloft)."
+description: "Design multi-channel outbound cadences with timing, A/B testing, and content. Use when building a Salesloft cadence, building a Mailshake campaign, building a Smartlead campaign, building a Lemlist sequence, designing an outbound sequence, planning touchpoint timing, writing cadence emails, creating call scripts, A/B testing subject lines, optimizing sequence performance, or planning multi-channel outreach. Do NOT use for general outreach message writing (use /sales-outreach), marketing cold email (use /cold-email), automated email flows (use /email-sequence), or general Salesloft platform help (use /sales-salesloft)."
 argument-hint: "[describe campaign goal, target persona, channels, and constraints]"
 license: MIT
 metadata:
@@ -10,7 +10,7 @@ metadata:
 
 # Design a Multi-Channel Outbound Cadence
 
-Help the user design a complete outbound cadence for Salesloft, Mailshake, or Smartlead — from architecture and timing through full content for every step, A/B testing, and optimization benchmarks.
+Help the user design a complete outbound cadence for Salesloft, Mailshake, Smartlead, or Lemlist — from architecture and timing through full content for every step, A/B testing, and optimization benchmarks.
 
 ## Step 1 — Gather context
 
@@ -105,6 +105,15 @@ For each call step:
 - A/B testing: available on higher plans — test subject lines and body content
 - Recipient management: add via CSV or API; only email is required
 
+### In Lemlist
+- Lemlist sequences = multichannel campaigns — email, LinkedIn, phone, and WhatsApp steps on automated schedules
+- True multichannel: LinkedIn steps (profile visit, connection request, message), in-app calling, WhatsApp (paid add-on $20/seat/month)
+- LinkedIn steps require Multichannel Expert plan ($99/user/month) — Email Pro is email-only
+- A/B testing: test subject lines, email body, and entire step variants
+- AI personalization: AI-generated custom variables that research each lead (LinkedIn, website, news) for Level 3-4 personalization at scale
+- LinkedIn safety: limit connection requests to 20-30/day, profile visits to 50-80/day to avoid account restrictions
+- Inbox rotation: connect multiple email accounts and Lemlist distributes sends (5 accounts per user on top plan, $9 per additional)
+
 ### In Smartlead
 - Smartlead campaigns = sequences — a campaign has email steps with time delays between them
 - Email-only by default; phone steps require SmartDialer, LinkedIn touchpoints via external tools
@@ -170,6 +179,7 @@ Provide a benchmarks table:
 - `/sales-deliverability` — Email deliverability — SPF/DKIM/DMARC, warmup, inbox placement
 - `/sales-mailshake` — Mailshake platform help (campaigns, Lead Catcher, settings)
 - `/sales-smartlead` — Smartlead platform help (campaigns, SmartSenders, SmartAgents, API)
+- `/sales-lemlist` — Lemlist platform help (sequences, Lemwarm, LinkedIn automation, enrichment, API)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Gotchas

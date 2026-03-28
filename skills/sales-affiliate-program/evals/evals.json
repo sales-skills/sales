@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-affiliate-program",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I sell a $297 course. Should I offer 30% or 50% affiliate commissions?",
+      "expected_output": "Analysis of commission rate tradeoffs considering margins, competitive rates, and affiliate motivation, with a recommendation and supporting rationale.",
+      "assertions": [
+        {"name": "margin_analysis", "description": "Must discuss profit margins as a factor in choosing commission rates"},
+        {"name": "tiered_commissions", "description": "Must suggest tiered commissions or VIP rates for top performers"},
+        {"name": "cookie_duration", "description": "Must mention cookie duration as part of the commission strategy"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "How do I recruit affiliates for my SaaS product?",
+      "expected_output": "Multi-channel affiliate recruitment strategy covering existing customers, influencers, and affiliate networks, with SaaS-specific considerations like recurring commissions.",
+      "assertions": [
+        {"name": "existing_customers", "description": "Must recommend recruiting existing customers as affiliates"},
+        {"name": "recurring_commissions", "description": "Must discuss recurring commissions for SaaS subscription models"},
+        {"name": "platform_recommendation", "description": "Must recommend at least one SaaS-focused affiliate platform (PartnerStack, FirstPromoter, or Rewardful)"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Set up a two-tier affiliate program in Groove",
+      "expected_output": "Step-by-step guidance for configuring a two-tier affiliate program in GrooveAffiliate with commission rates for both tiers.",
+      "assertions": [
+        {"name": "grooveaffiliate_reference", "description": "Must reference GrooveAffiliate as the affiliate management tool in Groove"},
+        {"name": "tier2_explanation", "description": "Must explain how Tier 2 commissions work for sub-affiliates"},
+        {"name": "commission_rates", "description": "Must suggest specific commission rate ranges for both tiers"}
+      ]
+    }
+  ]
+}
