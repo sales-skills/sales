@@ -166,6 +166,15 @@ Save the search as a dynamic list — new matches will appear automatically.
 - **Auto-verification**: Woodpecker automatically validates prospect emails via Bouncer when added — invalid emails are flagged before sending
 - **Limits**: Pricing based on "contacted prospects" per month — every new person added to a campaign counts against limit
 
+### Finding prospects with Tomba
+- **Domain Search**: Enter a target company's domain → Tomba returns all known emails with names, titles, departments, seniority, and confidence scores. Filter by department (sales, engineering, marketing) and seniority (executive, senior) to narrow to decision-makers.
+- **Email Finder**: Have a specific person's name? Provide name + domain → Tomba returns their email with a confidence score. Great for ABM when you know who you want to reach.
+- **LinkedIn Finder**: Browse LinkedIn for prospects → use Tomba's LinkedIn Finder (or browser extension) to find their email from the profile URL.
+- **Email Format**: Check a company's email pattern first (`/v1/email-format`) — if you know it's `first.last@domain.com`, you can predict emails for people not yet in the database.
+- **Bulk operations**: Process thousands of name+domain pairs through bulk email finder. Async with webhook callbacks.
+- **Export**: Save results to Tomba lead lists, then export as CSV or sync to CRM via HubSpot/Salesforce/Pipedrive integration.
+- **Pre-send**: Always verify found emails with Tomba's Email Verifier before importing into campaign tools. Tomba separates search credits from verification credits.
+
 ### Importing into Reply.io
 - **From B2B database**: Reply.io has a built-in database of 1B+ contacts — search by industry, company size, title, location, tech stack. Use data credits to reveal emails/phones.
 - **From CSV**: Upload CSV to add contacts to sequences (map email, first name, last name, company, custom fields)
@@ -267,6 +276,7 @@ Before launching outreach, validate the list:
 - `/sales-mixmax` — Mixmax platform help (for Mixmax-specific setup)
 - `/sales-reply` — Reply.io platform help (for Reply.io-specific setup)
 - `/sales-woodpecker` — Woodpecker platform help (for Woodpecker-specific setup)
+- `/sales-tomba` — Tomba platform help (domain search, email finder, LinkedIn finder, bulk operations)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

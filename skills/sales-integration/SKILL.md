@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Seismic, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Seismic, Tomba, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -107,6 +107,13 @@ Before building anything custom, check if a native integration exists:
 | Seismic → Gong | Native | Call recordings access, conversation intelligence enrichment |
 | Seismic → Salesloft | Native | Content insertion in sequences, engagement data |
 | Seismic → Zoom | Native | Meeting recording, intelligence, content sharing |
+| Tomba → HubSpot | Native | Enrich CRM contacts with Tomba email/enrichment data |
+| Tomba → Salesforce | Via Zapier | Sync discovered contacts to Salesforce |
+| Tomba → Pipedrive | Native | Sync findings to Pipedrive contacts |
+| Tomba → Google Sheets | Native (add-on) | Domain search, email finder, verifier in-spreadsheet |
+| Tomba → Zapier | Native | 8,000+ app connections — trigger on domain search, email find, enrichment |
+| Tomba → Make | Native | Visual automation workflows with Tomba actions |
+| Tomba → n8n | Native | Self-hosted automation with Tomba nodes |
 
 **Rule**: If a native integration covers your use case, use it. Native integrations handle auth, retry, and error handling automatically. Only go custom when native doesn't support your specific trigger or action.
 
@@ -236,6 +243,12 @@ Before building anything custom, check if a native integration exists:
 - **API**: `GET/POST /rules`, `PATCH/DELETE /rules/:id`, `POST/GET /rules/:id/actions`
 - **Note**: Mixmax rules are more of an automation engine than simple webhooks — they combine triggers and actions with conditional logic. For simple webhook forwarding, create a rule with a webhook action.
 
+### Tomba webhooks
+- **Setup**: Pass `webhook_url` parameter on supported API endpoints (domain search, email finder, enrichment, LinkedIn finder, author finder, bulk operations)
+- **Events**: Async result delivery — when a lookup or bulk job completes, Tomba POSTs results to your webhook URL
+- **Plan requirement**: Webhooks require Pro plan or above
+- **Note**: Tomba's webhook model is callback-based (per-request), not event-subscription-based. You provide a URL on each API call rather than registering a persistent webhook endpoint.
+
 ### Seismic webhooks
 - **Events**: Content views, LiveSend opens, DSR engagement, user provisioning (SCIM)
 - **Setup**: Configure via the developer portal (developer.seismic.com). OAuth 2.0 auth.
@@ -295,6 +308,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-woodpecker` — Woodpecker platform help including API and webhook details
 - `/sales-deliverability` — Email deliverability (relevant when integrating sending tools)
 - `/sales-seismic` — Seismic platform help including integrations, LiveSend, and Digital Sales Rooms
+- `/sales-tomba` — Tomba platform help including API, webhook callbacks, and CRM integrations
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
 ## Examples

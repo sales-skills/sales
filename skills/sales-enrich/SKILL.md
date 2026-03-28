@@ -75,7 +75,7 @@ Choose the right approach based on volume and frequency:
 - **How**: Try Provider A first → if no result, try Provider B → then Provider C
 - **Credit cost**: Only pay for successful enrichments at each level
 - **Best for**: Maximizing coverage when targeting niche personas or international contacts
-- **Tools**: Clay is purpose-built for this; Lemlist has built-in waterfall enrichment; Apollo's waterfall enrichment is in beta; Yesware Prospector provides 100M+ contacts as an additional source; Reply.io has a built-in B2B database with 1B+ contacts and data credits for email/phone reveals; Woodpecker Lead Finder provides a B2B database with 1B+ leads and data credits for email finding
+- **Tools**: Clay is purpose-built for this; Lemlist has built-in waterfall enrichment; Apollo's waterfall enrichment is in beta; Yesware Prospector provides 100M+ contacts as an additional source; Reply.io has a built-in B2B database with 1B+ contacts and data credits for email/phone reveals; Woodpecker Lead Finder provides a B2B database with 1B+ leads and data credits for email finding; Tomba provides 430M+ indexed emails with domain search, email finder, and bulk enrichment
 
 ## Step 3 — Execute the enrichment
 
@@ -107,6 +107,33 @@ Choose the right approach based on volume and frequency:
 - `POST /people/bulk_match` for batch (up to 10 per call)
 - `GET /organizations/enrich` for company enrichment
 - See `/sales-apollo` for full API reference
+
+### In Tomba
+
+**Single enrichment**: Use the Email Finder (name + domain → email) or Email Enrichment (email → full profile with name, title, company, social handles, location).
+
+**Bulk enrichment**:
+1. Upload a list to Tomba's bulk operations (up to 10,000 records per batch)
+2. Choose the operation: bulk email finder, bulk verifier, bulk enrichment, bulk phone finder
+3. Use `webhook_url` parameter for async completion notification
+4. Export enriched results or sync to CRM via Zapier/HubSpot/Salesforce integration
+
+**Domain-wide enrichment**:
+1. Domain Search on the target company → get all known emails with names, titles, departments, seniority
+2. Filter by department and seniority to focus on decision-makers
+3. Verify results with Email Verifier before sending
+
+**Email pattern detection**: Use the Email Format endpoint (`/v1/email-format`) to discover what pattern a company uses (e.g., `first.last@` at 85%). This lets you validate found emails and predict patterns for people not in the database.
+
+**API enrichment**:
+- `GET /v1/email-finder` for name+domain → email
+- `GET /v1/enrich` for email → full profile
+- `GET /v1/domain-search` for domain → all contacts
+- `GET /v1/linkedin` for LinkedIn URL → email
+- Auth: `X-Tomba-Key` + `X-Tomba-Secret` headers
+- See `/sales-tomba` for full platform reference
+
+**Credit economics**: Searches and verifications are separate quotas. Free plan: 25 searches + 50 verifications/month. Starter ($39/mo): 1,000 + 2,000. Phone data costs additional credits.
 
 ### Compliance checklist
 
@@ -224,6 +251,7 @@ Credits reset monthly and do not roll over. Plan enrichment around your billing 
 - `/sales-mixmax` — Mixmax platform help (import enriched contacts into Mixmax sequences)
 - `/sales-reply` — Reply.io platform help (B2B database with 1B+ contacts and data credits)
 - `/sales-woodpecker` — Woodpecker platform help (Lead Finder B2B database)
+- `/sales-tomba` — Tomba platform help (430M+ email database, domain search, email finder, verifier, enrichment, phone finder)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples
