@@ -156,6 +156,16 @@ Save the search as a dynamic list — new matches will appear automatically.
 - **SmartProspect**: Alternative to external list building — Smartlead's built-in verified lead database with intent signals. 3x email verification (syntax, domain, mailbox). Pay per verified lead via credits.
 - **Pre-send**: Verify emails before import to keep bounce rate <3%. SmartProspect leads are pre-verified; external lists are not.
 
+### Importing into Woodpecker
+- **From Lead Finder**: Built-in B2B database with 1B+ leads — search by company, title, industry, location. Uses data credits (400 free, more from €28/2K credits). Export directly into campaigns.
+- **From CSV**: Upload CSV to add prospects to campaigns (map email, first name, last name, company, custom fields)
+- **From Google Sheets**: Native integration for ongoing prospect sync
+- **From HubSpot/Pipedrive**: Native CRM integrations sync contacts into Woodpecker
+- **Via API**: `POST /prospects` to create prospects, then add to campaigns via campaign endpoints
+- **Via Zapier/Clay**: Connect any lead source to Woodpecker prospect creation
+- **Auto-verification**: Woodpecker automatically validates prospect emails via Bouncer when added — invalid emails are flagged before sending
+- **Limits**: Pricing based on "contacted prospects" per month — every new person added to a campaign counts against limit
+
 ### Importing into Reply.io
 - **From B2B database**: Reply.io has a built-in database of 1B+ contacts — search by industry, company size, title, location, tech stack. Use data credits to reveal emails/phones.
 - **From CSV**: Upload CSV to add contacts to sequences (map email, first name, last name, company, custom fields)
@@ -256,6 +266,7 @@ Before launching outreach, validate the list:
 - `/sales-yesware` — Yesware platform help (import recipients, Prospector, campaigns)
 - `/sales-mixmax` — Mixmax platform help (for Mixmax-specific setup)
 - `/sales-reply` — Reply.io platform help (for Reply.io-specific setup)
+- `/sales-woodpecker` — Woodpecker platform help (for Woodpecker-specific setup)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

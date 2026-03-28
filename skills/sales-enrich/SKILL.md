@@ -75,7 +75,7 @@ Choose the right approach based on volume and frequency:
 - **How**: Try Provider A first → if no result, try Provider B → then Provider C
 - **Credit cost**: Only pay for successful enrichments at each level
 - **Best for**: Maximizing coverage when targeting niche personas or international contacts
-- **Tools**: Clay is purpose-built for this; Lemlist has built-in waterfall enrichment; Apollo's waterfall enrichment is in beta; Yesware Prospector provides 100M+ contacts as an additional source; Reply.io has a built-in B2B database with 1B+ contacts and data credits for email/phone reveals
+- **Tools**: Clay is purpose-built for this; Lemlist has built-in waterfall enrichment; Apollo's waterfall enrichment is in beta; Yesware Prospector provides 100M+ contacts as an additional source; Reply.io has a built-in B2B database with 1B+ contacts and data credits for email/phone reveals; Woodpecker Lead Finder provides a B2B database with 1B+ leads and data credits for email finding
 
 ## Step 3 — Execute the enrichment
 
@@ -223,6 +223,7 @@ Credits reset monthly and do not roll over. Plan enrichment around your billing 
 - `/sales-yesware` — Yesware platform help (Prospector — 100M+ B2B contact database)
 - `/sales-mixmax` — Mixmax platform help (import enriched contacts into Mixmax sequences)
 - `/sales-reply` — Reply.io platform help (B2B database with 1B+ contacts and data credits)
+- `/sales-woodpecker` — Woodpecker platform help (Lead Finder B2B database)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

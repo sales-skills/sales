@@ -1,6 +1,6 @@
 ---
 name: sales-email-tracking
-description: "Email engagement tracking for sales — open tracking, click tracking, attachment views, real-time notifications, follow-up timing, and engagement analytics. Use when setting up email tracking, interpreting open/click data, Mixmax tracking, timing follow-ups based on engagement, understanding tracking limitations (Apple MPP, pixel blocking), Reply.io tracking, or choosing a tracking tool. For Yesware-specific help, use /sales-yesware. Do NOT use for email deliverability (use /sales-deliverability), cadence design (use /sales-cadence), or buying intent signals beyond email (use /sales-intent)."
+description: "Email engagement tracking for sales — open tracking, click tracking, attachment views, real-time notifications, follow-up timing, and engagement analytics. Use when setting up email tracking, interpreting open/click data, Mixmax tracking, Woodpecker tracking, timing follow-ups based on engagement, understanding tracking limitations (Apple MPP, pixel blocking), Reply.io tracking, or choosing a tracking tool. For Yesware-specific help, use /sales-yesware. Do NOT use for email deliverability (use /sales-deliverability), cadence design (use /sales-cadence), or buying intent signals beyond email (use /sales-intent)."
 argument-hint: "[describe your email tracking question or goal]"
 license: MIT
 metadata:
@@ -166,6 +166,16 @@ Security tools like Barracuda, Mimecast, Proofpoint, and Microsoft Defender pre-
 - **Apple MPP impact**: Same as other platforms — Apple Mail recipients inflate open rates. Reply.io doesn't filter MPP opens separately. Weight clicks and replies over opens.
 - **Best practice**: Use branded links to improve click tracking accuracy and reduce spam filtering. Monitor the channel efficiency dashboard weekly to shift budget toward highest-performing channels.
 
+### In Woodpecker
+- **Tracking types**: Opens (pixel), clicks (link wrapping), replies (auto-detected), bounces
+- **Centralized inbox**: All replies from all connected mailboxes in one view — auto-categorized as interested, auto-replied, bounced, or out-of-office
+- **Per-campaign tracking**: Opens, clicks, replies, bounces, and "interested" rate per campaign step and per prospect
+- **A/B test tracking**: Compare performance across up to 5 variants per step — identify winning subject lines and body copy
+- **Adaptive Sending feedback**: Woodpecker uses tracking signals (bounces, spam complaints) to automatically throttle sending — tracking directly influences deliverability
+- **No custom tracking domains**: Woodpecker uses its own tracking domain. Dedicated servers add-on (€59/server) provides custom infrastructure but not custom tracking domains per se.
+- **Apple MPP impact**: Same as other platforms — Apple Mail recipients inflate open rates. Weight replies and clicks over opens.
+- **Best practice**: Focus on reply rate and "interested" categorization in the centralized inbox rather than open rate. Use A/B testing data to optimize subject lines and body copy over 2-3 campaign cycles.
+
 ### In Mixmax
 
 - **Tracking types**: Opens (pixel), clicks (link wrapping), file downloads (attachment tracking), RSVPs, poll responses
@@ -225,6 +235,7 @@ Design your follow-up cadence around tracking signals rather than fixed time del
 - `/sales-deliverability` — Email deliverability (tracking requires emails to reach the inbox first)
 - `/sales-mixmax` — Mixmax platform help (for Mixmax-specific setup)
 - `/sales-reply` — Reply.io platform help (for Reply.io-specific setup)
+- `/sales-woodpecker` — Woodpecker platform help (for Woodpecker-specific setup)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
 ## Examples

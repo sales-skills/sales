@@ -1,6 +1,6 @@
 ---
 name: sales-deliverability
-description: "Email deliverability for outbound sales — domain authentication (SPF/DKIM/DMARC), mailbox warmup, sending limits, inbox placement, blacklist monitoring, sender reputation, custom tracking domains, and list hygiene. Use when setting up a new sending domain, warming up mailboxes, diagnosing spam/deliverability issues, recovering from blacklisting, scaling outbound volume, or switching email platforms. Do NOT use for cadence content and strategy (use /sales-cadence), Apollo sequence mechanics (use /sales-apollo-sequences), Mailshake platform help (use /sales-mailshake), Smartlead platform help (use /sales-smartlead), Lemlist platform help (use /sales-lemlist), Yesware platform help (use /sales-yesware), Mixmax-specific config (use /sales-mixmax), or Reply.io-specific config (use /sales-reply)."
+description: "Email deliverability for outbound sales — domain authentication (SPF/DKIM/DMARC), mailbox warmup, sending limits, inbox placement, blacklist monitoring, sender reputation, custom tracking domains, and list hygiene. Use when setting up a new sending domain, warming up mailboxes, diagnosing spam/deliverability issues, recovering from blacklisting, scaling outbound volume, or switching email platforms. Do NOT use for cadence content and strategy (use /sales-cadence), Apollo sequence mechanics (use /sales-apollo-sequences), Mailshake platform help (use /sales-mailshake), Smartlead platform help (use /sales-smartlead), Lemlist platform help (use /sales-lemlist), Yesware platform help (use /sales-yesware), Mixmax-specific config (use /sales-mixmax), Reply.io-specific config (use /sales-reply), or Woodpecker-specific config (use /sales-woodpecker)."
 argument-hint: "[describe your deliverability situation — new domain, spam issues, warmup, scaling]"
 license: MIT
 metadata:
@@ -10,7 +10,7 @@ metadata:
 
 # Email Deliverability for Outbound Sales
 
-Help the user set up, diagnose, and optimize email deliverability — from domain authentication and warmup through inbox placement, reputation monitoring, and platform-specific configuration. This skill is tool-agnostic and covers Apollo, Mailshake, Salesloft, Lemlist, Yesware, Mixmax, Reply.io, and standalone tools.
+Help the user set up, diagnose, and optimize email deliverability — from domain authentication and warmup through inbox placement, reputation monitoring, and platform-specific configuration. This skill is tool-agnostic and covers Apollo, Mailshake, Salesloft, Lemlist, Yesware, Mixmax, Reply.io, Woodpecker, and standalone tools.
 
 ## Step 1 — Gather context
 
@@ -42,9 +42,10 @@ Ask the user:
    - F) Instantly / Smartlead
    - G) Mixmax
    - H) Reply.io
-   - I) HubSpot / Salesforce (direct sending)
-   - J) Custom SMTP / other
-   - K) Multiple tools — describe
+   - I) Woodpecker
+   - J) HubSpot / Salesforce (direct sending)
+   - K) Custom SMTP / other
+   - L) Multiple tools — describe
 
 4. **Domain authentication status?**
    - A) SPF/DKIM/DMARC all configured
@@ -185,6 +186,18 @@ These tools simulate real email conversations to build sender reputation. Run wa
 - **Bounce handling**: Automatic bounce detection; bounced contacts are paused in sequences. Monitor bounce rate in sequence analytics — keep under 3%.
 - **Best practice**: Enable warmup on every new mailbox before adding it to sequences. Use the domain health checker weekly. If spam rate exceeds 0.3% in Google Postmaster, pause sequences and investigate.
 
+### In Woodpecker
+- **Built-in warmup**: Free warmup powered by Mailivery — AI-driven interactions (opens, replies, marks as important, removes from spam). Starts with a few emails/day, ramps to max 50/day. Included in all plans (free plan: 4 warmup slots). Additional slots available at €5/account.
+- **Bounce Shield**: Proactive protection that prevents sending to risky or invalid addresses before they bounce. Reduces bounce rate and protects sender reputation automatically.
+- **Adaptive Sending**: Automatically adjusts sending volume and pace based on email provider limits and engagement signals. Prevents overloading mailboxes and triggering spam filters.
+- **ESP Matching**: Matches your sending patterns to what email service providers expect from legitimate senders — improves inbox placement.
+- **Email verification**: Free catch-all verification powered by Bouncer. Real-time list cleaning validates prospect emails when added to campaigns. Catches invalid addresses before sending.
+- **Domain audit**: In-app tool that checks SPF, DKIM, DMARC configuration with actionable fix suggestions. Run before launching any campaign.
+- **Spam checker**: Pre-send analysis that highlights spammy words, broken links, and authentication issues in your email content.
+- **Deliverability monitor**: Ongoing monitoring of inbox placement and sender reputation. Alerts when metrics degrade.
+- **Inbox rotation**: Distributes sends across multiple mailboxes to stay within per-account limits while maintaining volume. Unlimited email accounts on all plans.
+- **Best practice**: Woodpecker has the most comprehensive built-in deliverability toolkit of any cold email tool. Enable warmup + Bounce Shield + Adaptive Sending on every account. Run domain audit before first campaign. Use the spam checker on every new email template.
+
 ### Standalone tools (any platform)
 - **MXToolbox**: DNS lookup, blacklist check, SPF/DKIM/DMARC validation
 - **mail-tester.com**: Send a test email, get a deliverability score (aim for 9+/10)
@@ -243,6 +256,7 @@ If your domain reputation is damaged:
 - `/sales-yesware` — Yesware platform help (inbox-native sending, campaigns, tracking)
 - `/sales-mixmax` — Mixmax platform help (for Mixmax-specific setup)
 - `/sales-reply` — Reply.io platform help (for Reply.io-specific setup)
+- `/sales-woodpecker` — Woodpecker platform help (for Woodpecker-specific setup)
 - `/sales-email-tracking` — Email engagement tracking — understand open/click accuracy and privacy limitations
 - `/sales-enrich` — Verify and enrich contact emails before sending
 - `/sales-prospect-list` — Build prospect lists with verified contacts

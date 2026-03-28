@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -92,6 +92,11 @@ Before building anything custom, check if a native integration exists:
 | Reply.io → Salesforce | Yes (native, bi-directional) | Contact/lead sync, email/call/task activity, status sync, custom workflows |
 | Reply.io → HubSpot | Yes (native, bi-directional) | Contact sync (auto-sync every 2h), email/call/task activity, status sync, field mappings |
 | Reply.io → Pipedrive | Yes (native) | Contact sync, activity logging |
+| Woodpecker → HubSpot | Yes (native, with API add-on) | Contact sync, activity logging, deal stage triggers |
+| Woodpecker → Pipedrive | Yes (native) | Contact sync, activity logging |
+| Woodpecker → Salesforce | Via Zapier | Contact sync, activity logging |
+| Woodpecker → Clay | Yes (native) | Enrichment pipeline |
+| Woodpecker → Calendly | Yes (native) | Meeting booking from campaigns |
 | Qwilr → Salesforce | Yes | Proposal/quote sync — see `/sales-qwilr-automation` |
 | Qwilr → HubSpot | Yes | Proposal/quote sync — see `/sales-qwilr-automation` |
 
@@ -208,6 +213,13 @@ Before building anything custom, check if a native integration exists:
 - **API versions**: V3 (beta) has full webhook management; V1/V2 have basic webhook support
 - **Full reference**: See `/sales-reply` → `references/reply-api-reference.md`
 
+### Woodpecker webhooks
+- **Setup**: API endpoint or via Settings > Integrations > Webhooks in dashboard
+- **Events**: Prospect replied, email sent, email opened, email clicked, email bounced, prospect status changed, prospect interested (specific events via webhook management endpoints)
+- **API access**: Requires API & integrations add-on (€20/mo)
+- **Rate limits**: Same as main API — 1 concurrent request, queue of 6
+- **Full reference**: See `/sales-woodpecker` → `references/woodpecker-api-reference.md`
+
 ### Mixmax rules (webhooks)
 - **Setup**: Dashboard at app.mixmax.com/dashboard/rules or API `POST /rules` with trigger and actions
 - **Trigger types**: IF/THEN rules on email events (open, click, reply), Salesforce object changes (new/updated opportunities, accounts, custom objects), date fields, lead owner changes
@@ -267,6 +279,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-yesware` — Yesware platform help (native Salesforce integration, no API)
 - `/sales-mixmax` — Mixmax platform help including rules engine and integrations
 - `/sales-reply` — Reply.io platform help including webhooks and integrations
+- `/sales-woodpecker` — Woodpecker platform help including API and webhook details
 - `/sales-deliverability` — Email deliverability (relevant when integrating sending tools)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 

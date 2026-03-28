@@ -1,6 +1,6 @@
 ---
 name: sales-cadence
-description: "Design multi-channel outbound cadences with timing, A/B testing, and content. Use when building a Salesloft cadence, building a Mailshake campaign, building a Smartlead campaign, building a Lemlist sequence, building a Yesware campaign, building a Mixmax sequence, building a Reply.io sequence, designing an outbound sequence, planning touchpoint timing, writing cadence emails, creating call scripts, A/B testing subject lines, optimizing sequence performance, or planning multi-channel outreach. Do NOT use for general outreach message writing (use /sales-outreach), marketing cold email (use /cold-email), automated email flows (use /email-sequence), or general Salesloft platform help (use /sales-salesloft)."
+description: "Design multi-channel outbound cadences with timing, A/B testing, and content. Use when building a Salesloft cadence, building a Mailshake campaign, building a Smartlead campaign, building a Lemlist sequence, building a Yesware campaign, building a Mixmax sequence, building a Reply.io sequence, building a Woodpecker campaign, designing an outbound sequence, planning touchpoint timing, writing cadence emails, creating call scripts, A/B testing subject lines, optimizing sequence performance, or planning multi-channel outreach. Do NOT use for general outreach message writing (use /sales-outreach), marketing cold email (use /cold-email), automated email flows (use /email-sequence), or general Salesloft platform help (use /sales-salesloft)."
 argument-hint: "[describe campaign goal, target persona, channels, and constraints]"
 license: MIT
 metadata:
@@ -158,6 +158,20 @@ For each call step:
 - **Reporting**: Opens, clicks, replies, bounces per step and per contact; channel efficiency dashboard; team-level analytics
 - **Best practice**: Use conditional branching to create a single sequence that handles multiple scenarios (e.g., if prospect opens but doesn't reply → add LinkedIn step; if prospect clicks → fast-track to call step)
 
+### In Woodpecker
+- **Where**: Campaigns tab in Woodpecker dashboard (app.woodpecker.co)
+- **Channel support**: Email (native), LinkedIn (add-on at €29/account — connection requests, messages, profile visits), manual tasks
+- **Condition-based campaigns**: If/then branching based on prospect behavior (opened, clicked, replied) or data — different prospects follow different paths
+- **Campaign depth**: Up to 16 steps per campaign — significantly more than most competitors (typically 7-10)
+- **A/B testing**: Up to 5 variants per step — test subject lines, body copy, and send times simultaneously
+- **Personalization**: Custom fields, snippets, dynamic content based on prospect data
+- **Auto-stop**: Automatically stops sequence when prospect replies or is marked as interested
+- **Inbox rotation**: Distributes sending across multiple connected email accounts automatically — maintains per-account limits while increasing volume
+- **Adaptive Sending**: Automatically adjusts send pace based on provider limits and engagement signals
+- **Manual tasks**: Insert non-email tasks (calls, LinkedIn messages, research) as campaign steps
+- **Reporting**: Opens, clicks, replies, bounces, interested rate per step and per campaign
+- **Best practice**: Use condition-based branching to create a single campaign that handles multiple engagement scenarios. Leverage the 16-step depth for longer nurture sequences that most tools can't support.
+
 ### Personalization framework
 - **Level 1 (Minimum)**: First name, company name, title — the bare minimum
 - **Level 2 (Standard)**: Industry reference, company-size-specific pain point
@@ -220,6 +234,7 @@ Provide a benchmarks table:
 - `/sales-yesware` — Yesware platform help (campaigns, templates, Prospector, Meeting Scheduler)
 - `/sales-mixmax` — Mixmax platform help (for Mixmax-specific setup)
 - `/sales-reply` — Reply.io platform help (for Reply.io-specific setup)
+- `/sales-woodpecker` — Woodpecker platform help (for Woodpecker-specific setup)
 - `/sales-email-tracking` — Email engagement tracking — open/click/attachment signals for follow-up timing
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 

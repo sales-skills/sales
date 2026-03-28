@@ -224,6 +224,14 @@ Track these internally to spot issues before clients notice:
 - **Built-in warmup**: Warmup for all client mailboxes included
 - **API access**: Programmatic client management — create seats, add mailboxes via Master API Key
 
+### In Woodpecker
+- **Agency panel**: Add-on at €27/month per active client — manage all clients from a single dashboard
+- **Client isolation**: Each client gets separate campaigns, prospects, mailboxes, and deliverability settings
+- **Agency API**: HQ API key + `x-company-id` header to manage clients programmatically — create API keys per company, manage mailboxes and campaigns across clients
+- **Per-client warmup**: Each client's mailboxes get independent warmup slots — no cross-contamination of sender reputation
+- **Pricing model**: Scales per active client (€27/client) + per contacted prospects tier. Compare: Smartlead has flat agency pricing, Woodpecker scales linearly.
+- **White-labeling**: Not natively supported — agency panel is Woodpecker-branded
+
 ### Cross-platform setup
 - Some agencies use different tools for different clients based on client needs (e.g., Smartlead for high-volume, Mailshake for CRM-heavy clients)
 - Standardize reporting across tools — use a shared dashboard (Google Sheets, Looker, or custom) that aggregates metrics from all platforms
@@ -245,6 +253,7 @@ Track these internally to spot issues before clients notice:
 - `/sales-integration` — Connect outbound tools to CRM via webhooks, Zapier, or API
 - `/sales-mailshake` — Mailshake platform help
 - `/sales-reply` — Reply.io platform help (Agency plan with unlimited clients)
+- `/sales-woodpecker` — Woodpecker platform help (Agency panel with per-client management)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
 ## Examples
