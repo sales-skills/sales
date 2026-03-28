@@ -77,6 +77,8 @@ Rank engagement signals from strongest to weakest:
 
 ## Step 3 — Privacy and accuracy challenges
 
+**The two biggest accuracy threats to email tracking data are Apple Mail Privacy Protection (MPP) and bot clicks from security scanners.** MPP inflates open rates; bot clicks inflate click rates. Together they can make both of your primary engagement metrics unreliable. Always warn about both when interpreting tracking data, and default to reply rate as the most trustworthy signal.
+
 ### Apple Mail Privacy Protection (MPP)
 
 Launched with iOS 15 / macOS Monterey (September 2021):
@@ -85,11 +87,13 @@ Launched with iOS 15 / macOS Monterey (September 2021):
 - Prevalence: ~50-60% of consumer email opens, ~30-40% of B2B email opens
 - **Workaround**: Don't rely on open rate as a primary metric. Focus on click-through rate and reply rate instead. If your open rate is suspiciously high (above 80%), Apple MPP is almost certainly the cause.
 
-### Corporate email security
+### Bot clicks from corporate email security
 
-- Link scanning by Microsoft Defender, Proofpoint, Mimecast, and other security tools
-- Pre-clicks links to check for malware → inflates click data with false positives
-- **Workaround**: Look for repeated clicks from the same IP within <1 second — that's a bot. Human clicks have varied timing and come from different IPs than the initial batch. Most tracking tools now filter bot clicks automatically — check your tool's settings.
+Security tools like Barracuda, Mimecast, Proofpoint, and Microsoft Defender pre-scan every link in inbound emails to check for malware. This generates fake click events that inflate your click-through rates with false positives. The problem is especially severe when selling to enterprise or security-conscious organizations, where nearly 100% of emails pass through link scanners.
+
+- **How to spot them**: Bot clicks typically fire within 1-2 seconds of email delivery, come from the same IP block, and hit every link in the email simultaneously. Human clicks happen minutes to hours later with varied timing.
+- **Mitigation**: Enable bot click filtering in your tracking tool (most modern tools support this). Use delayed redirect tracking if available. Set a minimum time threshold (e.g., ignore clicks within 5 seconds of delivery). For enterprise prospects, weight replies over clicks as your primary engagement signal — replies cannot be faked by security scanners.
+- **Prevalence**: Bot clicks can inflate click rates by 10-50% depending on how many of your prospects use corporate email security. If your click rate seems suspiciously high for cold outbound (above 15-20%), bot clicks are likely the cause.
 
 ### Privacy-conscious users
 

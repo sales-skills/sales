@@ -54,6 +54,20 @@ Ask the user:
 | **Stop on meeting booked** | Yes | Same reason — stop once the goal is achieved |
 | **Business hours only** | Yes — match prospect timezone | Emails sent at 2am look automated |
 | **Exclude weekends** | Typically yes for B2B | Weekend sends have lower engagement in most B2B contexts |
+| **Sending window** | 9am-11am or 1pm-3pm prospect local time | Align with when prospects check email — avoid lunch hour and end-of-day |
+| **Throttle / max per day** | 50-75 emails/day per mailbox (mature); 20-30/day (new) | Exceeding these limits damages sender reputation |
+
+### Recommended settings by sequence type
+
+| Sequence type | Sequence mode | Stop on reply | Business hours | Sending window | Throttle |
+|---|---|---|---|---|---|
+| **Cold outbound (email-only)** | Auto | Yes | Yes — prospect timezone | 9am-11am | 50/day per mailbox |
+| **Warm follow-up / inbound** | Auto | Yes | Yes | 8am-12pm | 75/day per mailbox |
+| **Multi-channel (email + calls + LinkedIn)** | Manual | Yes | Yes | 9am-5pm | 30-50/day per mailbox |
+| **Event/conference follow-up** | Auto | Yes | No (time-sensitive) | 7am-7pm | 75/day per mailbox |
+| **Re-engagement (cold leads)** | Auto | Yes | Yes | 1pm-3pm | 30/day per mailbox |
+
+Always enable **stop on reply** and **stop on meeting booked** — there is no sequence type where you want to keep emailing someone who already responded. For throttling, start conservatively and increase only after 2+ weeks of clean sending (bounce rate <3%, spam complaints near zero).
 
 ### Adding steps
 
@@ -85,6 +99,22 @@ Ask the user:
 | **DMARC** | Tells receiving servers what to do with unauthenticated emails | Start with `p=none` for monitoring, move to `p=quarantine` after validation |
 
 If any of these are missing, emails will land in spam regardless of content quality.
+
+### Mailbox warmup checklist
+
+New mailboxes (or mailboxes that haven't sent outbound before) must be warmed up before sequencing. Skipping warmup is the second most common deliverability killer after missing domain auth.
+
+1. **Week 1**: Send 10-20 emails/day — personal, conversational emails to real contacts (colleagues, partners, existing customers). Use a warmup tool (e.g., Instantly, Warmbox, or Mailreach) to generate positive engagement signals automatically.
+2. **Week 2**: Increase to 20-40 emails/day. Continue warmup tool usage. Monitor inbox placement rate — aim for >95% inbox (not spam).
+3. **Week 3**: Increase to 40-60 emails/day. Begin adding the mailbox to low-volume sequences (re-engagement or warm follow-up).
+4. **Week 4**: If inbox placement is healthy (>95%), ramp to full sending volume (50-75/day). Add to cold outbound sequences.
+
+**Warmup rules**:
+- Warm up for a minimum of 2 weeks before any cold outbound; 3-4 weeks is safer for brand-new domains
+- Keep the warmup tool running even after you start sequencing — it maintains positive engagement signals
+- If deliverability drops at any point, pause outbound and return to warmup-only for 1 week
+- Never skip warmup for a mailbox on a new sending domain — domain age and reputation start at zero
+- Enable Apollo's **Inbox Ramp Up** feature (Settings > Email > Inbox Ramp Up) as an additional safeguard
 
 ### Mailbox management
 
@@ -174,7 +204,7 @@ If any of these are missing, emails will land in spam regardless of content qual
 
 ## Related skills
 
-- `/sales-cadence` — Design the cadence strategy and messaging content (platform-agnostic)
+- `/sales-cadence` — **Handoff: for email copy strategy and multi-channel cadence design.** Once your Apollo sequence is configured, use `/sales-cadence` to write the actual email copy, design the messaging arc across steps, and plan multi-channel touch patterns. This skill handles Apollo execution; `/sales-cadence` handles the content and strategy layer.
 - `/sales-apollo` — General Apollo platform help (CRM sync, credits, admin)
 - `/sales-prospect-list` — Build the prospect list to add to your sequences
 - `/sales-enrich` — Verify and enrich contact data before sequencing

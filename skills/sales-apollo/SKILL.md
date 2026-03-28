@@ -106,6 +106,8 @@ Core entities in Apollo — understand these to navigate the UI, build reports, 
 
 ### API & Integrations
 
+> **Full API reference**: See `references/apollo-api-reference.md` for complete endpoint documentation, authentication details, and request/response examples.
+
 For detailed API documentation including all endpoints, authentication, rate limits, credit consumption, and bulk operations, consult `references/apollo-api-reference.md`.
 
 **Quick reference**: Base URL `https://api.apollo.io/api/v1/`, API key auth (`x-api-key` header), rate limits vary by plan. Key capabilities: people search, enrichment, contact/account CRUD, sequence management, deal management.

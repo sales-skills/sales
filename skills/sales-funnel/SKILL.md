@@ -14,18 +14,57 @@ Build, structure, and optimize sales funnels across any platform. This skill cov
 
 ---
 
-## Step 1: Gather Context
+## Step 1: Lead with Structure, Then Refine
 
-Before recommending anything, collect these details from the user:
+**If the user's request already provides enough context to identify the funnel type, skip directly to the relevant funnel structure and start filling it in. Lead with your best-effort answer using reasonable assumptions (stated explicitly), then ask only the most critical 1-2 clarifying questions at the end.**
 
-1. **Funnel type** — What kind of funnel? (lead magnet, tripwire, webinar, product launch, high-ticket application, VSL, challenge, or something else)
-2. **Offer** — What are you selling, at what price point?
-3. **Audience** — Who is the target buyer? Where are they in the awareness spectrum (unaware, problem-aware, solution-aware, product-aware, most-aware)?
-4. **Traffic source** — Where will traffic come from? (paid ads, organic, email list, affiliates, social media)
-5. **Existing assets** — Do you already have landing pages, email sequences, lead magnets, videos, testimonials?
-6. **Platform / tool** — Which funnel builder are you using or considering? (ClickFunnels, GoHighLevel, Groove.cm, Kartra, Systeme.io, WordPress + Elementor, Unbounce, Leadpages, other)
-7. **Goal & timeline** — What does success look like? When do you need this live?
-8. **Current metrics** — If optimizing an existing funnel, what are your current conversion rates at each step?
+### Common Funnel Structures (Always Provide the Relevant Template)
+
+When a user asks about building a funnel, immediately provide the concrete step-by-step structure for the relevant funnel type. Do not wait for answers before outlining the structure.
+
+**Lead Magnet Funnel**:
+1. **Traffic source** (ad, blog post, social media, SEO) →
+2. **Opt-in / squeeze page** — Headline promising a specific outcome, 3-5 benefit bullets, email capture form, action-oriented CTA button →
+3. **Thank-you / delivery page** — Deliver the asset (or confirm email delivery), set expectations for what happens next, optional tripwire offer ($7-$17) to offset ad costs →
+4. **Follow-up email sequence** (3-5 emails): deliver value → build trust → introduce offer → overcome objections → CTA
+
+**Webinar Funnel**:
+1. **Registration page** — Headline with specific promise, date/time, speaker credibility, registration form
+2. **Confirmation + reminder sequence** — Confirmation page with calendar add, 3-4 reminder emails leading up to the event
+3. **Live / replay page** — Webinar embed, chat/Q&A, CTA overlay at pitch point
+4. **Follow-up sequence with offer** — Replay access, testimonials, objection handling, cart-close urgency
+
+**Product Launch Funnel (PLF)**:
+1. **Pre-launch content** — Squeeze page → PLC Video 1 (Opportunity) → Video 2 (Transformation) → Video 3 (Ownership) → Video 4 (The Offer)
+2. **Cart open page** — Full long-form sales page with offer stack, testimonials, bonuses, countdown timer
+3. **Sales page** — Price reveal, guarantee, FAQ, multiple CTAs
+4. **Checkout** — Simplified order form, order bump offer
+5. **Post-purchase upsell** — Complementary one-click upsell (1-2 OTOs max)
+
+**Tripwire Funnel**:
+1. **Opt-in page** — Free lead magnet offer
+2. **Sales page** — Low-ticket offer ($7-$47) presented immediately after opt-in
+3. **Order form + order bump** — Simple checkout with a complementary add-on
+4. **Upsell / OTO page** — One-click upgrade to a higher-tier offer
+5. **Thank-you page** — Delivery confirmation + next steps
+
+**High-Ticket Application Funnel**:
+1. **Landing page** — Outcome-driven headline, case studies, "Apply Now" CTA
+2. **Application form** — Qualifying questions to filter serious prospects
+3. **Booking page** — Calendar integration for scheduling a sales call
+4. **Sales call** — Discovery + pitch (supported by a follow-up sequence)
+
+### Gathering Additional Context
+
+After providing the relevant funnel structure, refine your recommendations with these details as needed:
+
+1. **Offer** — What are you selling, at what price point?
+2. **Audience** — Who is the target buyer? Where are they in the awareness spectrum?
+3. **Traffic source** — Where will traffic come from? (paid ads, organic, email list, affiliates, social media)
+4. **Existing assets** — Do you already have landing pages, email sequences, lead magnets, videos, testimonials?
+5. **Platform / tool** — Which funnel builder are you using or considering?
+6. **Goal & timeline** — What does success look like? When do you need this live?
+7. **Current metrics** — If optimizing an existing funnel, what are your current conversion rates at each step?
 
 If the user skips details, make reasonable assumptions for a general B2B or B2C info-product funnel and state them explicitly.
 

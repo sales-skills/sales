@@ -50,6 +50,18 @@ Help the user choose the right commission structure based on their product and m
 - Recurring: Smaller per-payment amount, attracts affiliates who build long-term audiences
 - Hybrid: One-time bonus on first sale + smaller recurring (best for SaaS)
 
+**Recurring commissions for SaaS and subscription products:**
+
+Recurring commissions are the most important structural decision for SaaS affiliate programs because they align affiliate incentives with customer retention — the metric that drives SaaS profitability.
+
+- **Typical SaaS recurring rates**: 15%–30% of each monthly or annual payment for the lifetime of the customer. 20% is the most common starting point. Rates above 30% are rare and usually reserved for high-margin products or early-stage companies aggressively seeking growth.
+- **Lifetime vs capped recurring**: "Lifetime" recurring pays the affiliate as long as the customer stays subscribed, creating a true passive income stream that motivates affiliates to refer high-quality, long-term customers. "Capped" recurring limits payouts to a fixed period (e.g., 12 or 24 months), which controls costs but reduces affiliate motivation over time. Lifetime recurring is strongly preferred when LTV supports it.
+- **Lifetime vs first-payment-only commissions**: First-payment-only commissions (e.g., 100% of the first month) attract affiliates who optimize for volume over quality. Lifetime recurring commissions attract affiliates who invest in educating their audience and referring customers who actually need the product — resulting in lower churn and higher LTV per referred customer.
+- **Churn impact on affiliate payouts**: When a referred customer cancels, the affiliate's recurring commission stops. This means high-churn products effectively pay lower total commissions per referral, which can make your program unattractive to experienced affiliates. If your monthly churn exceeds 8%–10%, consider a hybrid model (upfront bonus + recurring) to compensate, and invest in onboarding to reduce churn on affiliate-referred customers specifically.
+- **Cookie duration for subscription products**: SaaS purchase decisions often involve free trials, team discussions, and multiple touchpoints over weeks. Use 60–90 day cookies minimum (not the 30-day standard). For enterprise SaaS with longer sales cycles, 120+ day cookies prevent affiliates from losing attribution during the evaluation period.
+- **Upgrade and expansion revenue**: Decide upfront whether affiliates earn commissions on plan upgrades, seat expansions, and add-on purchases by referred customers. Including expansion revenue in affiliate commissions incentivizes affiliates to refer customers to the right plan tier and increases affiliate earnings without additional acquisition cost.
+- **Annual plan considerations**: When a referred customer switches from monthly to annual billing, the affiliate should earn the same percentage on the annual payment. Clarify this in your terms — ambiguity here creates disputes and erodes affiliate trust.
+
 **Tiered commissions:**
 - Reward top performers with escalating rates (e.g., 20% base, 30% after 10 sales/month, 40% after 25 sales/month)
 - Tiers motivate affiliates to increase volume
