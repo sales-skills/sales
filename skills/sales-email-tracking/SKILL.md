@@ -1,6 +1,6 @@
 ---
 name: sales-email-tracking
-description: "Email engagement tracking for sales — open tracking, click tracking, attachment views, real-time notifications, follow-up timing, and engagement analytics. Use when setting up email tracking, interpreting open/click data, timing follow-ups based on engagement, understanding tracking limitations (Apple MPP, pixel blocking), or choosing a tracking tool. For Yesware-specific help, use /sales-yesware. Do NOT use for email deliverability (use /sales-deliverability), cadence design (use /sales-cadence), or buying intent signals beyond email (use /sales-intent)."
+description: "Email engagement tracking for sales — open tracking, click tracking, attachment views, real-time notifications, follow-up timing, and engagement analytics. Use when setting up email tracking, interpreting open/click data, Mixmax tracking, timing follow-ups based on engagement, understanding tracking limitations (Apple MPP, pixel blocking), or choosing a tracking tool. For Yesware-specific help, use /sales-yesware. Do NOT use for email deliverability (use /sales-deliverability), cadence design (use /sales-cadence), or buying intent signals beyond email (use /sales-intent)."
 argument-hint: "[describe your email tracking question or goal]"
 license: MIT
 metadata:
@@ -150,11 +150,16 @@ Launched with iOS 15 / macOS Monterey (September 2021):
 
 ### In Mixmax
 
-- **Gmail-native**: Lives in Gmail sidebar — tracking data visible directly in your inbox
-- **Instant scheduling**: One-click scheduling links embedded in tracked emails — see who clicks to book
-- **Sidekick**: AI-powered follow-up suggestions based on engagement signals
-- **Live feed**: Real-time engagement feed showing opens, clicks, and downloads as they happen
-- **Limitation**: Gmail-only — no Outlook support
+- **Tracking types**: Opens (pixel), clicks (link wrapping), file downloads (attachment tracking), RSVPs, poll responses
+- **Real-time notifications**: Desktop, email, or Slack alerts on opens/clicks/replies — configurable per message or globally
+- **Live Feed**: Real-time stream of all tracking events across your team at app.mixmax.com/dashboard/livefeed; also available via API (`GET /livefeed/events`)
+- **Per-message controls**: Toggle `trackingEnabled`, `linkTrackingEnabled`, `fileTrackingEnabled`, `notificationsEnabled` individually per message
+- **Smart Send**: AI analyzes recipient engagement patterns to recommend optimal send times — increases open rates by sending when recipients are most active
+- **Tracking domains**: Custom tracking domains available for branded link tracking (reduces spam filtering on tracked links)
+- **Reporting**: Aggregate tracking data by template, sequence, recipient, team, or individual; export via Insights Reports API (`GET /insightsreports`)
+- **Salesforce sync**: Tracking events (opens, clicks, replies) auto-log to Salesforce contact/lead activity timeline (Growth+CRM plan)
+- **Apple MPP impact**: Mixmax is Gmail-native — Apple MPP primarily affects Apple Mail recipients. Same mitigation applies: weight clicks and replies over opens for Apple Mail contacts
+- **Gotcha**: Mixmax tracking is Gmail-only. If your team uses Outlook, Mixmax tracking won't work — consider Yesware or Salesloft instead
 
 ## Step 5 — Actionable guidance
 
@@ -200,6 +205,7 @@ Design your follow-up cadence around tracking signals rather than fixed time del
 - `/sales-cadence` — Design outbound cadences that leverage tracking signals for follow-up timing
 - `/sales-intent` — Broader buying signals beyond email (website visits, content downloads, intent data)
 - `/sales-deliverability` — Email deliverability (tracking requires emails to reach the inbox first)
+- `/sales-mixmax` — Mixmax platform help (for Mixmax-specific setup)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
 ## Examples

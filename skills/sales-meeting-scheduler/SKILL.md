@@ -1,6 +1,6 @@
 ---
 name: sales-meeting-scheduler
-description: "Schedule sales meetings efficiently — booking pages, round-robin routing, calendar integration, reminders, no-show recovery, and meeting page conversion. Use when setting up booking links, configuring round-robin scheduling, reducing no-shows, optimizing meeting pages, or choosing a scheduling tool. For Yesware-specific help, use /sales-yesware. Do NOT use for lead routing rules (use /sales-lead-routing), cadence design (use /sales-cadence), or calendar-based CRM automation (use /sales-integration)."
+description: "Schedule sales meetings efficiently — booking pages, round-robin routing, calendar integration, reminders, no-show recovery, and meeting page conversion. Use when setting up booking links, configuring round-robin scheduling, reducing no-shows, optimizing meeting pages, choosing a scheduling tool, Mixmax scheduling, or Mixmax meetings. For Yesware-specific help, use /sales-yesware. Do NOT use for lead routing rules (use /sales-lead-routing), cadence design (use /sales-cadence), or calendar-based CRM automation (use /sales-integration)."
 argument-hint: "[describe your meeting scheduling question or goal]"
 license: MIT
 metadata:
@@ -209,6 +209,18 @@ Use these to gauge how your scheduling is performing:
 - **Plans**: Free (self-hosted), Teams ($12/user/mo cloud), Enterprise (custom)
 - **Best for**: Teams that need data sovereignty, custom branding, or want to avoid per-seat pricing at scale
 
+### In Mixmax
+- **One-click meetings**: Embed available time slots directly in emails — recipients click a time to book without leaving the email
+- **Shared calendar scheduling**: Create meetings with multiple colleagues using combined availability; built-in double-booking prevention
+- **Round-robin**: Distribute meetings across team members; configurable weighting and availability rules
+- **Inbound lead routing**: Route inbound leads to book with the right rep automatically — instant handoff from form fill to calendar
+- **Meeting types**: Configure different meeting types (discovery, demo, check-in) with different durations, locations, and availability
+- **Appointment links**: Shareable scheduling pages; embeddable on websites; API access via `GET /appointmentlinks`
+- **Reminders**: Automated meeting reminder emails to reduce no-shows
+- **Integrations**: Google Calendar (native), Zoom (auto-generate meeting links), Salesforce (auto-log meetings)
+- **API access**: `GET /meetingtypes` to list meeting types, `GET /meetinginvites` to list invitations, `POST /meetings/summaries/search` for meeting summaries
+- **Gotcha**: Mixmax scheduling is Gmail/Google Calendar only — no Outlook/Microsoft 365 calendar support. If your team is on Microsoft, use Calendly or Chili Piper instead
+
 ### In SavvyCal
 
 - **Personalized scheduling** — recipients overlay their own calendar to find mutual availability
@@ -254,6 +266,7 @@ Based on the user's context, provide:
 - `/sales-cadence` — Design outbound cadences that drive meeting bookings
 - `/sales-lead-routing` — Lead routing rules (complementary to meeting round-robin)
 - `/sales-integration` — Connect scheduling tools to CRM and other sales tools
+- `/sales-mixmax` — Mixmax platform help (for Mixmax-specific setup)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
 ## Examples

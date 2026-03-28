@@ -221,6 +221,7 @@ Credits reset monthly and do not roll over. Plan enrichment around your billing 
 - `/sales-apollo-sequences` — Set up sequences in Apollo for enriched contacts
 - `/sales-lemlist` — Lemlist platform help (built-in waterfall enrichment, People Database)
 - `/sales-yesware` — Yesware platform help (Prospector — 100M+ B2B contact database)
+- `/sales-mixmax` — Mixmax platform help (import enriched contacts into Mixmax sequences)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

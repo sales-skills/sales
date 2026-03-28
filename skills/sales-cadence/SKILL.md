@@ -1,6 +1,6 @@
 ---
 name: sales-cadence
-description: "Design multi-channel outbound cadences with timing, A/B testing, and content. Use when building a Salesloft cadence, building a Mailshake campaign, building a Smartlead campaign, building a Lemlist sequence, building a Yesware campaign, designing an outbound sequence, planning touchpoint timing, writing cadence emails, creating call scripts, A/B testing subject lines, optimizing sequence performance, or planning multi-channel outreach. Do NOT use for general outreach message writing (use /sales-outreach), marketing cold email (use /cold-email), automated email flows (use /email-sequence), or general Salesloft platform help (use /sales-salesloft)."
+description: "Design multi-channel outbound cadences with timing, A/B testing, and content. Use when building a Salesloft cadence, building a Mailshake campaign, building a Smartlead campaign, building a Lemlist sequence, building a Yesware campaign, building a Mixmax sequence, designing an outbound sequence, planning touchpoint timing, writing cadence emails, creating call scripts, A/B testing subject lines, optimizing sequence performance, or planning multi-channel outreach. Do NOT use for general outreach message writing (use /sales-outreach), marketing cold email (use /cold-email), automated email flows (use /email-sequence), or general Salesloft platform help (use /sales-salesloft)."
 argument-hint: "[describe campaign goal, target persona, channels, and constraints]"
 license: MIT
 metadata:
@@ -131,6 +131,20 @@ For each call step:
 - SmartAgents: AI-powered personalization at scale — research prospects and generate custom email content per lead. Best for Level 3-4 personalization when sending to 100+ prospects.
 - Lead management: leads tracked by interest status within campaigns (interested, not interested, not contacted, do not contact, wrong person, completed)
 
+### In Mixmax
+- **Where**: Sequences tab in Gmail sidebar or app.mixmax.com/dashboard/sequences
+- **Channel support**: Email, phone (built-in dialer), LinkedIn (Sales Navigator InMail + connection requests), tasks
+- **AI builder**: AI Compose generates sequence emails and subject lines; Smart Send picks optimal delivery times per recipient
+- **Personalization**: Snippets (reusable templates), Salesforce/HubSpot dynamic fields, polls & surveys embedded in emails
+- **A/B testing**: Test subject lines, body content, and send times within sequences
+- **Stages**: Each sequence has ordered stages (email, call, LinkedIn, task); configure delay between stages
+- **Recipient management**: Add recipients individually, from CSV, from Salesforce/HubSpot lists, or via API (`POST /sequences/:id/recipients`)
+- **Delegated sending**: Send sequences on behalf of colleagues
+- **Exit rules**: Auto-exit on reply, meeting booked, or custom rule trigger
+- **Limits**: Recipient limits vary by plan; sequences are Gmail-native (subject to Gmail sending limits)
+- **Reporting**: Opens, clicks, replies, bounces per stage and per recipient; team-level sequence analytics
+- **Best practice**: Use Mixmax rules engine to auto-enroll contacts in sequences based on Salesforce triggers (e.g., new lead assigned → auto-enroll in introductory sequence)
+
 ### Personalization framework
 - **Level 1 (Minimum)**: First name, company name, title — the bare minimum
 - **Level 2 (Standard)**: Industry reference, company-size-specific pain point
@@ -191,6 +205,7 @@ Provide a benchmarks table:
 - `/sales-smartlead` — Smartlead platform help (campaigns, SmartSenders, SmartAgents, API)
 - `/sales-lemlist` — Lemlist platform help (sequences, Lemwarm, LinkedIn automation, enrichment, API)
 - `/sales-yesware` — Yesware platform help (campaigns, templates, Prospector, Meeting Scheduler)
+- `/sales-mixmax` — Mixmax platform help (for Mixmax-specific setup)
 - `/sales-email-tracking` — Email engagement tracking — open/click/attachment signals for follow-up timing
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 

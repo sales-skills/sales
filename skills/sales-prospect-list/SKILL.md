@@ -141,6 +141,15 @@ Save the search as a dynamic list — new matches will appear automatically.
 - **Pre-send**: Verify emails before import — Yesware does not verify on upload. Keep bounce rate <3%.
 - **Recipient limits**: Free plan = 10 recipients/month, Pro = 20/month, Premium+ = unlimited
 
+### Importing into Mixmax
+- **From Gmail**: Mixmax lives in Gmail — any contact you email is automatically available
+- **From CSV**: Upload CSV to add recipients to sequences (map email, first name, last name, custom fields)
+- **From Salesforce**: Import Salesforce leads/contacts directly into sequences (Growth+CRM plan); use Salesforce list views or reports as source
+- **From HubSpot**: Import HubSpot contact lists into Mixmax sequences (Growth plan)
+- **Via API**: `POST /sequences/:id/recipients` to programmatically add recipients to a sequence
+- **Via rules**: Auto-enroll contacts based on Salesforce triggers (e.g., new lead created → add to sequence)
+- **Limits**: Recipient limits per sequence vary by plan; check Mixmax plan details
+
 ### Importing into Smartlead
 - **CSV import**: Upload CSV with `email` as the only required column. Recommended fields: `first_name`, `last_name`, `company`, plus any custom fields for merge variables.
 - **API import**: `POST /api/v1/campaigns/{id}/leads` with a `lead_list` array containing lead objects. See `/sales-smartlead` → `references/smartlead-api-reference.md`.
@@ -236,6 +245,7 @@ Before launching outreach, validate the list:
 - `/sales-smartlead` — Smartlead platform help (import leads, SmartProspect, campaigns)
 - `/sales-lemlist` — Lemlist platform help (import leads, People Database, sequences)
 - `/sales-yesware` — Yesware platform help (import recipients, Prospector, campaigns)
+- `/sales-mixmax` — Mixmax platform help (for Mixmax-specific setup)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

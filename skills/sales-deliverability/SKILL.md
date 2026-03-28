@@ -1,6 +1,6 @@
 ---
 name: sales-deliverability
-description: "Email deliverability for outbound sales — domain authentication (SPF/DKIM/DMARC), mailbox warmup, sending limits, inbox placement, blacklist monitoring, sender reputation, custom tracking domains, and list hygiene. Use when setting up a new sending domain, warming up mailboxes, diagnosing spam/deliverability issues, recovering from blacklisting, scaling outbound volume, or switching email platforms. Do NOT use for cadence content and strategy (use /sales-cadence), Apollo sequence mechanics (use /sales-apollo-sequences), Mailshake platform help (use /sales-mailshake), Smartlead platform help (use /sales-smartlead), Lemlist platform help (use /sales-lemlist), or Yesware platform help (use /sales-yesware)."
+description: "Email deliverability for outbound sales — domain authentication (SPF/DKIM/DMARC), mailbox warmup, sending limits, inbox placement, blacklist monitoring, sender reputation, custom tracking domains, and list hygiene. Use when setting up a new sending domain, warming up mailboxes, diagnosing spam/deliverability issues, recovering from blacklisting, scaling outbound volume, or switching email platforms. Do NOT use for cadence content and strategy (use /sales-cadence), Apollo sequence mechanics (use /sales-apollo-sequences), Mailshake platform help (use /sales-mailshake), Smartlead platform help (use /sales-smartlead), Lemlist platform help (use /sales-lemlist), Yesware platform help (use /sales-yesware), or Mixmax-specific config (use /sales-mixmax)."
 argument-hint: "[describe your deliverability situation — new domain, spam issues, warmup, scaling]"
 license: MIT
 metadata:
@@ -10,7 +10,7 @@ metadata:
 
 # Email Deliverability for Outbound Sales
 
-Help the user set up, diagnose, and optimize email deliverability — from domain authentication and warmup through inbox placement, reputation monitoring, and platform-specific configuration. This skill is tool-agnostic and covers Apollo, Mailshake, Salesloft, Lemlist, Yesware, and standalone tools.
+Help the user set up, diagnose, and optimize email deliverability — from domain authentication and warmup through inbox placement, reputation monitoring, and platform-specific configuration. This skill is tool-agnostic and covers Apollo, Mailshake, Salesloft, Lemlist, Yesware, Mixmax, and standalone tools.
 
 ## Step 1 — Gather context
 
@@ -40,9 +40,10 @@ Ask the user:
    - D) Lemlist
    - E) Yesware
    - F) Instantly / Smartlead
-   - F) HubSpot / Salesforce (direct sending)
-   - G) Custom SMTP / other
-   - H) Multiple tools — describe
+   - G) Mixmax
+   - H) HubSpot / Salesforce (direct sending)
+   - I) Custom SMTP / other
+   - J) Multiple tools — describe
 
 4. **Domain authentication status?**
    - A) SPF/DKIM/DMARC all configured
@@ -164,6 +165,15 @@ These tools simulate real email conversations to build sender reputation. Run wa
 - **SmartDelivery**: Inbox placement testing — send test emails to seed accounts and measure inbox vs spam placement. Run before launching campaigns and periodically during active sends.
 - **Custom tracking domain**: Settings > Tracking Domain — add CNAME record for branded link tracking.
 
+### In Mixmax
+- **Sending method**: Gmail-native — emails send through the user's actual Gmail account (Google Workspace), not through Mixmax's servers. This means deliverability is tied to your Google Workspace domain reputation, not Mixmax's infrastructure.
+- **SPF/DKIM/DMARC**: Managed at the Google Workspace level, not in Mixmax. Ensure your domain has SPF, DKIM, and DMARC configured in Google Workspace Admin > Apps > Google Workspace > Gmail > Authentication.
+- **Custom tracking domains**: Available to reduce spam filtering on tracked links — configure in Mixmax settings. Uses CNAME record pointing to Mixmax's tracking servers.
+- **No built-in warmup**: Mixmax does not have a warmup tool. Since it sends through Gmail, use a third-party warmup service (Lemwarm, Warmbox, Instantly) connected to your Google Workspace account if needed.
+- **Sending limits**: Subject to Gmail/Google Workspace sending limits (2,000 emails/day for Workspace, 500/day for free Gmail). Mixmax sequences respect these limits automatically.
+- **No deliverability dashboard**: Mixmax doesn't have a dedicated deliverability dashboard. Monitor bounce rates in sequence reporting; check Google Postmaster Tools for domain reputation.
+- **Best practice**: Since Mixmax is Gmail-native, your Google Workspace domain health IS your Mixmax deliverability. Focus on Google Postmaster Tools, proper authentication, and keeping bounce rates under 2%.
+
 ### Standalone tools (any platform)
 - **MXToolbox**: DNS lookup, blacklist check, SPF/DKIM/DMARC validation
 - **mail-tester.com**: Send a test email, get a deliverability score (aim for 9+/10)
@@ -220,6 +230,7 @@ If your domain reputation is damaged:
 - `/sales-salesloft` — Salesloft platform help
 - `/sales-agency-outbound` — Multi-client agency outbound — infrastructure, client isolation, warmup at scale
 - `/sales-yesware` — Yesware platform help (inbox-native sending, campaigns, tracking)
+- `/sales-mixmax` — Mixmax platform help (for Mixmax-specific setup)
 - `/sales-email-tracking` — Email engagement tracking — understand open/click accuracy and privacy limitations
 - `/sales-enrich` — Verify and enrich contact emails before sending
 - `/sales-prospect-list` — Build prospect lists with verified contacts

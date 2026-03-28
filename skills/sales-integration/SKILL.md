@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -84,6 +84,11 @@ Before building anything custom, check if a native integration exists:
 | Yesware → Outlook | Yes (add-in) | Email tracking, templates, campaigns |
 | Yesware → Zoom | Yes (native) | Auto-generate meeting links in scheduler |
 | Yesware → LinkedIn | Yes (native) | Prospect insights from inbox |
+| Mixmax → Salesforce | Yes (Growth+CRM plan) | Inbox sidebar, auto-create leads, activity sync, advanced rules |
+| Mixmax → HubSpot | Yes (Growth plan) | Activity sync, list import, sidebar |
+| Mixmax → Slack | Yes (native) | Real-time tracking notifications |
+| Mixmax → LinkedIn Sales Navigator | Yes (native) | InMail and connection requests in sequences |
+| Mixmax → Zoom | Yes (native) | Auto-generate meeting links |
 | Qwilr → Salesforce | Yes | Proposal/quote sync — see `/sales-qwilr-automation` |
 | Qwilr → HubSpot | Yes | Proposal/quote sync — see `/sales-qwilr-automation` |
 
@@ -193,6 +198,14 @@ Before building anything custom, check if a native integration exists:
 - **For custom integrations**: No programmatic access. If you need Yesware data in other tools, the Salesforce integration (Enterprise plan) is the best bridge — sync Yesware activity to Salesforce, then integrate Salesforce with other tools.
 - **Workaround**: For teams needing API access, consider Salesloft, Apollo, or Mailshake which all offer full REST APIs.
 
+### Mixmax rules (webhooks)
+- **Setup**: Dashboard at app.mixmax.com/dashboard/rules or API `POST /rules` with trigger and actions
+- **Trigger types**: IF/THEN rules on email events (open, click, reply), Salesforce object changes (new/updated opportunities, accounts, custom objects), date fields, lead owner changes
+- **Action types**: Webhook call, Salesforce record update, sequence enrollment, task creation, Slack notification
+- **Advanced rules**: Growth+CRM plan — trigger on Salesforce objects, use complex logic (AND/OR conditions)
+- **API**: `GET/POST /rules`, `PATCH/DELETE /rules/:id`, `POST/GET /rules/:id/actions`
+- **Note**: Mixmax rules are more of an automation engine than simple webhooks — they combine triggers and actions with conditional logic. For simple webhook forwarding, create a rule with a webhook action.
+
 ### Qwilr webhooks
 - **Full reference**: See `/sales-qwilr-automation` for Qwilr-specific webhook events and CRM integrations
 
@@ -242,6 +255,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-salesloft` — Salesloft platform help including integrations
 - `/sales-groove` — Groove.cm platform help including GrooveSell webhooks and Zapier integration
 - `/sales-yesware` — Yesware platform help (native Salesforce integration, no API)
+- `/sales-mixmax` — Mixmax platform help including rules engine and integrations
 - `/sales-deliverability` — Email deliverability (relevant when integrating sending tools)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 

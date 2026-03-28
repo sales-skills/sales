@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-mixmax",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "How do I set up a multi-channel sequence in Mixmax with email, phone, and LinkedIn?",
+      "expected_output": "Step-by-step guide for creating a Mixmax sequence with email, phone, and LinkedIn Sales Navigator steps.",
+      "assertions": [
+        {"name": "sequence_setup", "description": "Must explain how to create a sequence with multiple channel types (email, phone, LinkedIn Sales Navigator steps)"},
+        {"name": "linkedin_requirement", "description": "Must note that LinkedIn Sales Navigator license is required separately for InMail and connection request steps"},
+        {"name": "best_practices", "description": "Must include practical guidance on stage timing and mixing automated vs manual steps"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "I want to automatically add prospects to a Mixmax sequence when an opportunity moves to a specific stage in Salesforce. How do I set that up?",
+      "expected_output": "Guide to configuring advanced Salesforce-triggered rules in Mixmax with plan requirements.",
+      "assertions": [
+        {"name": "plan_requirement", "description": "Must clearly state that Salesforce object-triggered rules require Growth+CRM plan (~$89/user/mo)"},
+        {"name": "rule_configuration", "description": "Must walk through creating an advanced rule with a Salesforce Opportunity trigger and sequence enrollment action"},
+        {"name": "testing_advice", "description": "Must recommend testing the rule with a single record before applying broadly"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I want to use the Mixmax API to programmatically add recipients to a sequence. How does the API work?",
+      "expected_output": "API guidance for adding sequence recipients with authentication and rate limit awareness.",
+      "assertions": [
+        {"name": "api_reference", "description": "Must point to references/mixmax-api-reference.md for full API documentation"},
+        {"name": "auth_method", "description": "Must explain API key authentication via the X-API-Token header"},
+        {"name": "rate_limit_warning", "description": "Must warn about undocumented rate limits and recommend conservative batching"}
+      ]
+    }
+  ]
+}
