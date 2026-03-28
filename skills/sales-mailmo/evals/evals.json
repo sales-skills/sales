@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-mailmo",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I need to find verified emails for 300 prospects. How do I do this in Mailmo and what will it cost?",
+      "expected_output": "Guidance on using Mailmo's Email Finder, credit cost estimation, plan recommendation, and export workflow.",
+      "assertions": [
+        {"name": "credit_model", "description": "Response must explain that Mailmo only charges for verified emails found — no charge for misses or duplicates"},
+        {"name": "plan_recommendation", "description": "Response must recommend an appropriate plan based on 300 prospects (Starter at 500 credits or Professional at 2,500)"},
+        {"name": "export_workflow", "description": "Response must mention CSV export as the way to get found emails into other tools, since Mailmo has no native CRM integrations"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "I have a list of 800 emails that need verification before my outbound campaign. Many are on catch-all domains. Can Mailmo help?",
+      "expected_output": "Guidance on bulk verification with emphasis on Mailmo's catch-all detection advantage.",
+      "assertions": [
+        {"name": "catch_all_advantage", "description": "Response must highlight Mailmo's catch-all verification as a key differentiator — standard verifiers mark catch-all as risky, Mailmo verifies the specific mailbox"},
+        {"name": "bulk_workflow", "description": "Response must walk through uploading a CSV for bulk verification"},
+        {"name": "not_a_sending_tool", "description": "Response must clarify that Mailmo verifies emails but does not send them — user needs a separate outbound tool for the actual campaign"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Does Mailmo have an API I can use to automate email finding?",
+      "expected_output": "Honest answer that no public API has been found, with alternatives that do offer APIs.",
+      "assertions": [
+        {"name": "no_api", "description": "Response must clearly state that Mailmo does not appear to have a public API — operations are through the web UI and Chrome extension only"},
+        {"name": "alternatives", "description": "Response must suggest alternative email finder tools that do offer APIs (e.g., Hunter.io, Tomba, Prospeo)"},
+        {"name": "workaround", "description": "Response must mention the CSV export as the current workaround for getting data out of Mailmo"}
+      ]
+    }
+  ]
+}
