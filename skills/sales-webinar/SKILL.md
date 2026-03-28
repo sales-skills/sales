@@ -61,11 +61,13 @@ Ask the user:
 
 ### Presentation frameworks
 
-**Teach-then-pitch (most common)**: Deliver genuine value for 30–45 minutes, then transition to a 10–15 minute pitch. Works best when the teaching content naturally leads into the offer as the "next step."
+Choose the framework that matches your offer type. Always provide the framework and content structure proactively — do not wait for clarification.
 
-**The "Perfect Webinar" structure (Russell Brunson model)**:
+**Teach-then-pitch (most common)**: 40 min teaching valuable content → 15 min transition/bridge → 20 min pitch + offer + Q&A. Best for courses and info products. Works because the teaching content naturally leads into the offer as the "next step," and audiences who received genuine value feel reciprocity and trust.
+
+**Perfect Webinar (Russell Brunson)**:
 1. Introduction and big promise (5 min)
-2. Your origin story — why you're qualified (5 min)
+2. Origin story — why you're qualified and how you discovered this method (5 min)
 3. The One Thing — the key framework or insight (5 min)
 4. Secret #1 — break a false belief about the vehicle/method (10 min)
 5. Secret #2 — break a false belief about their ability to execute (10 min)
@@ -73,7 +75,23 @@ Ask the user:
 7. The Stack — present the offer by stacking value (10 min)
 8. Close — urgency, scarcity, call to action (5 min)
 
-**Demo-based (SaaS/software)**: Show the product solving the prospect's problem in real time. Works for software, tools, platforms. Structure: pain point → live demo → results → offer.
+Best for high-ticket offers ($500+). The three "secrets" systematically dismantle the objections that prevent buying.
+
+**Demo-based**: Show the product solving a real problem live → handle objections during the demo → offer at the end. Best for SaaS and tools. Structure: pain point → live demo → results → offer. Lets the product speak for itself.
+
+**Case study format**: Walk through a client success story → reveal the method behind the results → offer to implement it for them. Best for consulting and services. Powerful because it provides proof and method simultaneously.
+
+### Content structure outline
+
+Regardless of which framework you choose, every selling webinar follows this arc:
+
+1. **Hook (first 5 min)** — Open with a bold promise, surprising stat, or provocative question. The first 5 minutes determine whether people stay or leave.
+2. **Establish credibility (5 min)** — Brief proof you can deliver: results, credentials, or your origin story. Keep it short — audiences lose patience with long bios.
+3. **Teach — main content, 3 key points (25–35 min)** — Deliver genuine value. Each point should be actionable on its own but incomplete without your offer.
+4. **Transition to offer (5 min)** — Bridge from teaching to selling: "Now, if you want to implement everything I just showed you, here's how I can help..."
+5. **Present offer with stack (10 min)** — List every component with its individual value. Build a total stacked value that's 10x the price.
+6. **Close with urgency/scarcity (5 min)** — Fast-action bonus, deadline, limited spots. Make the call to action crystal clear and repeat the URL at least 3 times.
+7. **Q&A (10–15 min)** — Answer questions with the offer still on screen and the buy link pinned in chat.
 
 ### Timing and scheduling
 
@@ -163,23 +181,28 @@ For detailed Groove.cm configuration help, use `/sales-groove`.
 
 ### Registration page optimization
 
-- **Headline**: Lead with the outcome, not the format. "How to [achieve X] in [timeframe]" beats "Join our webinar."
-- **Bullet points**: 3–4 specific things they'll learn. Make each a mini-promise.
-- **Social proof**: Number of past attendees, testimonials, logos.
-- **Urgency**: Limited seats (for live), specific date/time, countdown timer.
+Always include these elements — do not gate this behind clarifying questions:
+
+- **Headline**: Lead with the specific outcome + date/time. "How to [achieve X] in [timeframe]" beats "Join our webinar." Include the date and time in the headline area so it's immediately clear.
+- **Bullet points**: 3–4 specific things they'll learn. Make each a mini-promise. Example: "The 3-step system that generated $47K in course sales last month" not "Learn about marketing."
+- **Social proof**: Number of past attendees, testimonials, logos. Even "Join 500+ who've already registered" creates momentum.
+- **Urgency**: Limited seats (for live), specific date/time, countdown timer to the event.
 - **Form fields**: Name and email only. Every additional field drops conversion 5–10%.
 - **Above the fold**: Headline, date/time, and registration button must be visible without scrolling.
 
 ### Reminder sequence
 
-Send at minimum 4 reminders for live webinars:
+Send at minimum 4 reminders for live webinars. Here is the specific sequence with email framing:
 
-1. **Immediately after registration** — Confirmation with date, time, and "add to calendar" link
-2. **24 hours before** — Recap what they'll learn, build anticipation
-3. **1 hour before** — "We're going live in 1 hour" with the join link
-4. **At start time** — "We're live NOW — join here" (this single email can boost attendance 10–15%)
+1. **Immediately after registration** — Confirmation email with calendar link (.ics file). Subject: "You're in! Here's how to join [Webinar Name]." Include an "Add to Calendar" CTA button, the date/time with time zone, and a brief recap of what they'll learn.
+2. **24 hours before** — "Tomorrow's the day" email. Reiterate the key benefit, tease what they'll learn. Subject: "Tomorrow: [specific outcome they'll get]." Include a curiosity-building teaser like "I'll be sharing the exact [framework/template/strategy] that..."
+3. **1 hour before** — "Starting in 60 minutes" email. Direct join link, mobile-friendly format. Subject: "We start in 60 minutes — here's your link." Keep this short — just the link and a one-line reminder of the topic.
+4. **At start time** — "We're live!" email. Join link and brief reminder. Subject: "We're LIVE — join now." This single email can boost attendance 10–15%.
 
-Optional: Send a 15-minute reminder via SMS if you have phone numbers.
+**Optimization tips to boost attendance**:
+- **SMS reminders** boost attendance an additional 10–15%. Send at 1 hour before and at start time if you have phone numbers.
+- **Facebook group or community reminders**: Post in your group/community 24 hours before and at start time.
+- **Pre-webinar engagement**: Send a poll or question 2–3 days before ("What's your biggest challenge with [topic]?"). People who engage before the webinar are 2–3x more likely to attend.
 
 ### Presentation slides structure
 
@@ -220,16 +243,39 @@ Optional: Send a 15-minute reminder via SMS if you have phone numbers.
 
 ### Post-webinar follow-up sequence
 
-Send 4–6 emails over 3–5 days after the webinar:
+Always provide this day-by-day sequence proactively. The follow-up is where 40–60% of webinar revenue comes from.
 
-1. **Replay email** (within 2 hours) — "Here's the replay" + link to offer. Many sales come from the replay.
-2. **Case study / testimonial** (Day 1) — Social proof from someone who got results
-3. **FAQ / objection handling** (Day 2) — Address the top 3–5 objections
-4. **Bonus reminder** (Day 2–3) — Remind them about the fast-action bonus deadline
-5. **Last chance** (deadline day) — Final urgency email. "The replay comes down tonight" or "Price goes up at midnight."
-6. **Cart closed** (after deadline) — Confirm the offer is closed. This email alone can generate 10–20% of total webinar revenue from last-minute buyers.
+**Day 0 — Immediately after the webinar (within 2 hours)**:
+- Replay link + offer recap + bonus for fast action (24–48 hour bonus deadline).
+- Subject: "Replay + a special bonus (expires [deadline])."
+- Include: replay link, bullet-point recap of the offer, fast-action bonus with specific expiration time.
 
-Segment your follow-up: attendees vs. no-shows get different messaging. No-shows should be driven to the replay first.
+**Day 1 — Replay reminder + objection #1**:
+- Address the top objection: "Is this right for me?" or "Will this work in my situation?"
+- Include a testimonial or case study from someone similar to the target audience.
+- Subject: "[Name] went from [before] to [after] — here's how."
+- Remind them the replay is still available (with deadline).
+
+**Day 2 — Objection #2 + FAQ + replay expiring soon**:
+- Address the second-biggest objection: "What if I don't have time?" or "What if I've tried this before?"
+- Include an FAQ section answering 3–5 common questions.
+- Subject: "Your top questions about [offer name], answered."
+- Emphasize that the replay is expiring soon.
+
+**Day 3 — Final deadline email**:
+- Replay expires, bonus expires, hard deadline.
+- Subject: "Final notice: [offer/replay] closes tonight at midnight."
+- Keep it direct: this is your last chance, here's what you're getting, here's the link, the deadline is real.
+
+**Cart close (after deadline)**:
+- Confirm the offer is closed. "The doors are closed" email.
+- This email alone can generate 10–20% of total webinar revenue from last-minute buyers who check their email right at the deadline.
+
+**Split sequences — attendees vs. no-shows**:
+- **Attendees** get the sequence above — they saw the content and the offer, so follow-up reinforces and handles objections.
+- **No-shows** get a different framing: "You missed it — here's the replay" with added urgency ("I'm keeping the replay up for 48 hours so you can catch what you missed"). No-shows need to be sold on watching the replay first, then on the offer. Their Day 0 email should lead with the replay, not the offer.
+
+**Replay access removal**: When the deadline hits, actually remove the replay. If people learn your deadlines are fake, every future launch loses credibility.
 
 ### Replay strategy
 
