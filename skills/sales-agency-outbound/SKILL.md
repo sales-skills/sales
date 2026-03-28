@@ -241,49 +241,6 @@ Track these internally to spot issues before clients notice:
 
 ## Examples
 
-### Example 1: First 3 clients on Smartlead
-**User says**: "Starting a lead gen agency, first 3 clients, using Smartlead. How should I set up infrastructure?"
-**Skill does**:
-1. Recommends dedicated domains per client (2 domains each = 6 total)
-2. Provisions 3-5 mailboxes per domain via SmartSenders
-3. Creates client workspaces in Smartlead for isolation
-4. Designs a staggered warmup plan (start client 1 week 1, client 2 week 2, etc.)
-5. Provides the Phase 1-3 onboarding checklist for each client
-**Result**: Infrastructure plan with full client isolation, warmup timeline, and repeatable onboarding process
-
-### Example 2: Cross-contamination diagnosis
-**User says**: "One client got blacklisted and now other clients' open rates are dropping"
-**Skill does**:
-1. Diagnoses likely cause — shared sending domain or shared IP (SmartInfra)
-2. Checks for domain overlap — are any domains shared across clients?
-3. Recommends immediate isolation: pause affected client, check blacklists for all domains
-4. Provides remediation plan: new domains for affected client, re-warmup, SmartInfra dedicated IPs
-5. Designs prevention architecture: strict per-client domain isolation going forward
-**Result**: Root cause identified, affected clients isolated, prevention architecture in place
-
-### Example 3: Repeatable onboarding process
-**User says**: "Build a repeatable onboarding process for new agency clients"
-**Skill does**:
-1. Provides the full Phase 1-3 playbook with timeline (14-21 days)
-2. Creates a checklist template the agency can reuse for every client
-3. Identifies handoff points to other skills (ICP definition, cadence design, integration)
-4. Designs a client kickoff questionnaire to gather onboarding inputs
-5. Sets up milestone tracking (domain provisioned, warmup complete, first campaign live)
-**Result**: Documented, repeatable onboarding process with checklists, handoffs, and timelines
-
-## Troubleshooting
-
-### Client deliverability suddenly dropped
-**Symptom**: One client's open rates drop 50%+ overnight
-**Cause**: Blacklisted domain, exhausted mailbox reputation, or sudden volume spike
-**Solution**: Pause all campaigns for the affected client. Check blacklists (MXToolbox). Check warmup reputation on all mailboxes. If domain is blacklisted, provision a new domain and re-warmup. Verify this client's issues haven't spread to other clients (check shared IPs if using shared infrastructure).
-
-### Can't scale past 10 clients
-**Symptom**: Ops bottleneck — onboarding takes too long, quality drops with each new client
-**Cause**: Manual processes, no standardized onboarding, each client setup is bespoke
-**Solution**: Implement the Phase 1-3 playbook as a strict checklist. Automate domain provisioning and DNS setup where possible. Use Smartlead client workspaces (or equivalent) for one-click isolation. Hire or assign dedicated account managers at the 8-10 client mark.
-
-### Clients complaining about results
-**Symptom**: Clients say "this isn't working" despite normal metrics
-**Cause**: Misaligned expectations — client expects leads, you're reporting opens
-**Solution**: Reset expectations using the client-facing metrics framework (meetings booked, pipeline generated). Show the full funnel: sends → replies → interested → meetings → pipeline. Identify where the funnel breaks. If reply rate is good but meetings aren't booking, the issue is reply handling, not outbound. If reply rate is low, revisit ICP and messaging (→ `/sales-cadence`).
+- **"First 3 clients on Smartlead"** → Dedicated domains per client (2 each), 3-5 mailboxes per domain via SmartSenders, client workspaces for isolation, staggered warmup plan, Phase 1-3 onboarding checklist
+- **"Client blacklisted, other clients' rates dropping"** → Diagnose shared domain/IP as cross-contamination cause, pause affected client, check blacklists, provision new domains, re-warmup, design strict per-client isolation going forward
+- **"Build repeatable onboarding process"** → Phase 1-3 playbook (14-21 days), reusable checklist template, handoffs to `/sales-prospect-list`, `/sales-cadence`, `/sales-integration`, client kickoff questionnaire, milestone tracking

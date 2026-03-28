@@ -13,7 +13,7 @@
     },
     {
       "id": 1,
-      "prompt": "One client got blacklisted and now other clients' open rates are dropping",
+      "prompt": "I run a 5-client agency on Smartlead. One client got blacklisted and now other clients' open rates are dropping. We used shared sending domains across clients. What went wrong and how do I fix it?",
       "expected_output": "Cross-contamination diagnosis with isolation recommendations",
       "assertions": [
         {"name": "cross_contamination_diagnosis", "description": "Identifies shared domain or shared IP as the likely cause of cross-client impact"},
