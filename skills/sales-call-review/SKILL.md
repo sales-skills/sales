@@ -170,6 +170,14 @@ If a follow-up call was booked, draft a proposed agenda:
 3. [New topic to advance the deal]
 4. Confirm next steps and timeline
 
+### In Seismic
+
+- **Meeting Intelligence**: Seismic records and transcribes sales meetings with AI-generated summaries, key moment detection, and action items. Available for Zoom, Teams, and other video platforms.
+- **Coaching integration**: Meeting recordings tie directly into Seismic Learning — managers can create coaching moments from specific call segments and assign them as learning exercises.
+- **Content recommendations**: After a meeting, Seismic's AI suggests follow-up content (case studies, one-pagers, proposals) based on topics discussed in the call.
+- **Analytics**: Track talk ratio, question frequency, and topic coverage across the team. Identify coaching opportunities by comparing rep performance patterns.
+- **Note**: Seismic's Meeting Intelligence is a newer module — if your team already uses Gong or Chorus for conversation intelligence, Seismic's meeting features complement rather than replace them (Seismic has a native Gong integration).
+
 ## Related skills
 
 - `/sales-salesloft` — Salesloft Conversations settings, coaching playlists, recording configuration
@@ -177,6 +185,7 @@ If a follow-up call was booked, draft a proposed agenda:
 - `/sales-deal-inspect` — Assess overall deal health beyond just the call
 - `/sales-objection` — Deep-dive on objection handling strategies
 - `/sales-cadence` — Optimize outbound cadences based on call learnings
+- `/sales-seismic` — Seismic platform help including Meeting Intelligence and content management
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Gotchas

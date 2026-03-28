@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-seismic",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "How do I organize our content library in Seismic?",
+      "expected_output": "Guide to structuring the Seismic content library with content profiles, workspaces, and permissions.",
+      "assertions": [
+        {"name": "content_profiles_taxonomy", "description": "Must explain content profiles as metadata schemas and recommend defining taxonomy (persona, deal stage, product line) before loading content"},
+        {"name": "workspace_vs_library", "description": "Must distinguish between workspaces (authoring/editing spaces) and the library (published content for seller consumption)"},
+        {"name": "permission_model", "description": "Must address role-based permissions and recommend a governance model for content ownership and access control"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "Set up a Digital Sales Room for a multi-stakeholder enterprise deal with 6 buyers.",
+      "expected_output": "Step-by-step guide for creating a DSR with multi-stakeholder engagement tracking and role-based content curation.",
+      "assertions": [
+        {"name": "dsr_creation_steps", "description": "Must walk through creating a Digital Sales Room including naming, branding, adding recipients, and selecting content"},
+        {"name": "per_stakeholder_tracking", "description": "Must explain per-stakeholder engagement tracking — who viewed what, time spent, and how to identify champion vs detractor signals"},
+        {"name": "content_curation_by_role", "description": "Must recommend curating content by buyer role (e.g., executive summary for C-suite, technical docs for IT, ROI calculator for finance)"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I want to use the Seismic API to auto-generate personalized proposals with LiveDocs. How do I set that up?",
+      "expected_output": "API guidance for LiveDocs generation with authentication and Express vs Process distinction.",
+      "assertions": [
+        {"name": "api_reference", "description": "Must point to references/seismic-api-reference.md for full API documentation"},
+        {"name": "express_vs_process", "description": "Must clearly distinguish LiveDocs Express (single-step, immediate generation) from LiveDocs Process (multi-step with approvals) and recommend Express for simple use cases"},
+        {"name": "oauth_auth", "description": "Must explain OAuth 2.0 authentication — recommend Client Credentials flow for server-to-server or Authorization Code for user-context integrations"}
+      ]
+    }
+  ]
+}

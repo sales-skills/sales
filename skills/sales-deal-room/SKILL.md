@@ -168,6 +168,14 @@ Use view data to:
 
 For full webhook and CRM automation setup, use `/sales-qwilr-automation`.
 
+### In Seismic
+
+- **Digital Sales Rooms (DSR)**: Create buyer-facing microsites for complex deals. Curate content by stakeholder role — executive summaries for C-suite, technical specs for evaluators, ROI calculators for finance.
+- **Per-stakeholder tracking**: See which stakeholder viewed which content, how long they spent, and what they downloaded. Identify champions (high engagement) and blockers (no activity).
+- **Content recommendations**: Seismic's AI (Aura) suggests relevant content for the deal based on CRM data, deal stage, and buyer persona.
+- **CRM integration**: DSR activity syncs to Salesforce/HubSpot — engagement data appears on the opportunity record for deal reviews.
+- **Best practice**: Create a DSR template per deal type (new business, expansion, renewal) with pre-loaded content for each stage. Customize per deal rather than building from scratch.
+
 ## Gotchas
 
 - **Don't create too many pages for simple deals.** A deal room with 8 sub-pages for a $15k deal is overkill. Match complexity to deal size — small deals need 2-3 pages max (proposal + case study). Reserve the full structure for enterprise deals with multiple stakeholders.
@@ -183,4 +191,5 @@ For full webhook and CRM automation setup, use `/sales-qwilr-automation`.
 - `/sales-qwilr-automation` — Automate deal room creation and CRM sync
 - `/sales-proposal-template` — Create reusable deal room templates
 - `/sales-close` — Closing strategies and mutual action plan tactics
+- `/sales-seismic` — Seismic platform help including Digital Sales Rooms and content management
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

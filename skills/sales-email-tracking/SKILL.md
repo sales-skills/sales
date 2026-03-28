@@ -176,6 +176,14 @@ Security tools like Barracuda, Mimecast, Proofpoint, and Microsoft Defender pre-
 - **Apple MPP impact**: Same as other platforms — Apple Mail recipients inflate open rates. Weight replies and clicks over opens.
 - **Best practice**: Focus on reply rate and "interested" categorization in the centralized inbox rather than open rate. Use A/B testing data to optimize subject lines and body copy over 2-3 campaign cycles.
 
+### In Seismic
+
+- **LiveSend**: Tracked content delivery — send documents, decks, and proposals to prospects and track opens, time spent per page, downloads, and forwards. Different from email open/click tracking — this is document-level engagement analytics.
+- **Engagement signals**: See exactly which pages a prospect spent time on, how many times they returned, and whether they shared the content internally. High engagement on pricing pages = buying signal.
+- **Alerts**: Get notified when a prospect views shared content, enabling timely follow-up while the content is top of mind.
+- **Analytics**: Content effectiveness reporting — which content pieces drive the most engagement across all LiveSend deliveries. Helps marketing understand what resonates.
+- **CRM sync**: LiveSend activity logs to Salesforce/HubSpot opportunity records — visible in deal reviews for pipeline inspection.
+
 ### In Mixmax
 
 - **Tracking types**: Opens (pixel), clicks (link wrapping), file downloads (attachment tracking), RSVPs, poll responses
@@ -236,6 +244,7 @@ Design your follow-up cadence around tracking signals rather than fixed time del
 - `/sales-mixmax` — Mixmax platform help (for Mixmax-specific setup)
 - `/sales-reply` — Reply.io platform help (for Reply.io-specific setup)
 - `/sales-woodpecker` — Woodpecker platform help (for Woodpecker-specific setup)
+- `/sales-seismic` — Seismic platform help including LiveSend tracking and content management
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
 ## Examples
