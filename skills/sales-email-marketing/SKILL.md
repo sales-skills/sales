@@ -1,6 +1,6 @@
 ---
 name: sales-email-marketing
-description: "Email marketing for opt-in subscribers — broadcasts, nurture sequences, automation, segmentation, and list management. Use when planning email campaigns, designing welcome sequences, setting up behavior-based automation, segmenting lists, improving open/click rates, or choosing an email marketing platform. Do NOT use for cold outbound email (use /sales-cadence), email deliverability/SPF/DKIM (use /sales-deliverability), or connecting email tools to CRM (use /sales-integration). For Groove-specific help, use /sales-groove. For Closum-specific help, use /sales-closum. For Mailchimp-specific help, use /sales-mailchimp. For SendGrid-specific help, use /sales-sendgrid. For Postmark-specific help, use /sales-postmark. For Customer.io-specific help, use /sales-customerio. For Mailgun-specific help, use /sales-mailgun. For Klaviyo-specific help, use /sales-klaviyo."
+description: "Email marketing for opt-in subscribers — broadcasts, nurture sequences, automation, segmentation, and list management. Use when planning email campaigns, designing welcome sequences, setting up behavior-based automation, segmenting lists, improving open/click rates, or choosing an email marketing platform. Do NOT use for cold outbound email (use /sales-cadence), email deliverability/SPF/DKIM (use /sales-deliverability), or connecting email tools to CRM (use /sales-integration). For Groove-specific help, use /sales-groove. For Closum-specific help, use /sales-closum. For Mailchimp-specific help, use /sales-mailchimp. For SendGrid-specific help, use /sales-sendgrid. For Postmark-specific help, use /sales-postmark. For Customer.io-specific help, use /sales-customerio. For Mailgun-specific help, use /sales-mailgun. For Klaviyo-specific help, use /sales-klaviyo. For ActiveCampaign-specific help, use /sales-activecampaign."
 argument-hint: "[describe your email marketing question — e.g., 'design a welcome sequence' or 'improve my open rates']"
 license: MIT
 metadata:
@@ -121,11 +121,21 @@ GrooveMail is the email marketing component of the Groove.cm suite. Key capabili
 
 ### In ActiveCampaign
 
-- Use Automations (not Campaigns) for sequences — visual workflow builder is the core strength
-- Leverage site tracking and event tracking to trigger behavior-based automations
-- Use lead scoring to move contacts between nurture stages automatically
-- Conditional content blocks let you personalize within a single email based on tags or fields
-- CRM integration is native — use deal stage changes to trigger email sequences
+ActiveCampaign is the mid-market leader in marketing automation — its automation builder is the most powerful in the category and the core differentiator.
+
+- **Automations (visual workflow builder)**: The heart of ActiveCampaign. Triggers include list subscribe, tag added, form submitted, site visited, deal stage changed, date-based, API event, and more. If/else branching, wait steps, goals (skip to end when achieved), split actions. Use Automations for sequences — Campaigns are for one-time broadcasts only.
+- **Campaigns (broadcasts)**: One-time sends to lists or segments. A/B testing (up to 5 variants for subject, content, from name, from email). Conditional content blocks show different content based on tags, fields, or segments within a single email.
+- **Predictive sending** (Pro+): AI determines optimal send time per contact based on engagement history.
+- **Site tracking**: Track website visits per contact — trigger automations when contacts visit specific pages (pricing page = hot lead). Requires tracking code snippet on your site.
+- **Lead scoring integration**: Score contacts based on email engagement, site visits, form submissions, tags. Use score thresholds to trigger automations (e.g., score > 50 → notify sales, add to deal pipeline).
+- **Segmentation**: Tag-based (manual or automation-assigned), list-based, custom field-based, engagement-based (opened in last X days), behavioral (visited URL). Segments are dynamic and auto-update.
+- **SMS & WhatsApp**: Send SMS messages within automations. Two-way SMS for replies. WhatsApp as a channel in workflows.
+- **Landing pages**: 56 templates, drag-and-drop builder, form integration, custom domains. Available on Plus+.
+- **Forms**: Inline, floating bar, modal, floating box. Conditional fields. Feed directly into automations on submission.
+- **CRM integration is native**: Deal stage changes trigger email sequences. Tag contacts by pipeline stage. Combine marketing automation with sales pipeline management.
+- **Transactional email**: Separate Postmark add-on (ActiveCampaign acquired Postmark in 2022). Not included in base plans.
+- **Pricing**: Starter $15/mo (1K contacts), Plus $49/mo, Pro $79/mo, Enterprise $145/mo. Send limits are 10-15x contact count (not unlimited). All contacts count toward billing (Nov 2025 change).
+- **ActiveCampaign's strength**: Best for businesses that need sophisticated multi-step automations with CRM integration and lead scoring. The automation builder is unmatched in the mid-market. Overkill for simple newsletter sends.
 
 ### In Mailchimp
 
@@ -333,6 +343,7 @@ Perform these maintenance tasks regularly:
 - **/sales-customerio** — Customer.io platform help (behavior-driven Journeys, multi-channel automation, Data Pipelines)
 - **/sales-mailgun** — Mailgun platform help (developer-first email API, mailing lists, templates, batch sending)
 - **/sales-klaviyo** — Klaviyo platform help (e-commerce flows, predictive analytics, Shopify integration, multi-channel)
+- **/sales-activecampaign** — ActiveCampaign platform help (visual automation builder, CRM, lead scoring, predictive sending)
 - **/sales-cadence** — Cold outbound email cadences and sequences (NOT opt-in marketing)
 - **/sales-deliverability** — SPF, DKIM, DMARC, domain warm-up, and inbox placement
 - **/sales-funnel** — Funnel strategy and page design (landing pages that feed your email list)

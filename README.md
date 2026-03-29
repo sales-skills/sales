@@ -10,7 +10,7 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 50 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 51 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -226,6 +226,12 @@ Router recommends a 5-skill sequence:
 | Skill | What it does | Status |
 |---|---|---|
 | `/sales-klaviyo` | Klaviyo platform help — AI-first B2C CRM and marketing automation for e-commerce. Flows (visual automation), Campaigns, Segmentation (behavior + predictive), Predictive Analytics (CLV, churn risk), Multi-channel (email, SMS, WhatsApp, RCS, push), Forms, Reviews, Klaviyo Data Platform (CDP, 350+ integrations), AI Agents, Catalogs, Coupons, Reporting (revenue attribution, benchmarks) | Available |
+
+### ActiveCampaign & Platform
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-activecampaign` | ActiveCampaign platform help — marketing automation (visual builder, 900+ recipes), email marketing (drag-and-drop, A/B testing, predictive sending), CRM (pipelines, deals, lead scoring, win probability), segmentation (tags, lists, behavioral, engagement-based), multi-channel (email, SMS, site messages, Facebook Custom Audiences), landing pages, forms, site tracking, event tracking, transactional email (via Postmark), 900+ integrations, REST API v3 | Available |
 
 ### Mailchimp & Platform
 

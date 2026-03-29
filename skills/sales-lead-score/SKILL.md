@@ -254,6 +254,17 @@ Every quarter:
 4. Add/remove scoring signals based on new data sources
 5. Validate thresholds still align with funnel capacity
 
+### Platform-specific lead scoring
+
+#### In ActiveCampaign
+- **Contact scoring**: Assign points based on email engagement (opens, clicks, replies), site visits, form submissions, tag additions, list membership, custom field values, and event tracking. Create multiple scoring models for different purposes (e.g., engagement score vs. fit score). Available on Plus+ plans.
+- **Deal scoring**: Separate scoring for deals in your CRM pipeline — score based on deal value, stage, age, activity, and custom fields. Win probability predictions available on Pro+ plans.
+- **Automation-based scoring**: Use automations to add/subtract points when contacts take actions. Example: +10 for visiting pricing page, +5 for opening email, -15 for no engagement in 30 days. Automations can also trigger when scores cross thresholds (e.g., score > 50 → notify sales, add to "hot leads" list).
+- **Score decay**: Build decay into automations — schedule periodic score reductions for contacts who haven't engaged recently. No built-in automatic decay, so you must create "subtract points" automations on time-based triggers.
+- **Threshold actions**: When a contact crosses a score threshold, automations can: send an internal notification to sales, add the contact to a CRM pipeline as a deal, move them to a new list, or trigger a targeted email sequence.
+- **Segment by score**: Create segments based on score ranges (e.g., "Hot leads: score > 80", "Warm: 40-80", "Cold: < 40"). Use these for targeted campaigns and CRM prioritization.
+- **Best practice**: Start with two scoring models — one for engagement (behavioral) and one for fit (demographic/firmographic). Use engagement score for sales follow-up triggers and fit score for segmentation. Review score distributions monthly — if most contacts cluster at similar scores, your model needs more differentiation.
+
 ## Gotchas
 
 - **Don't weight demographics too heavily.** Claude defaults to giving 50%+ weight to title/seniority because it's easy to match. But behavioral signals (what they're doing) are more predictive than demographics (who they are). Start with at least 30% behavioral weight.
@@ -268,6 +279,7 @@ Every quarter:
 - `/sales-enrich` — Enrich leads with the demographic/firmographic data you need to score
 - `/revops` — Design the broader marketing-to-sales handoff process around your scoring model
 - `/sales-apollo` — Set up Apollo's native scoring features
+- `/sales-activecampaign` — ActiveCampaign platform help (contact scoring, deal scoring, automation-based scoring with threshold triggers)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -193,6 +193,16 @@ Before building anything custom, check if a native integration exists:
 | Mailgun → Zapier | Native | Triggers: bounce, delivery, inbound email, unsubscribe, log data. Actions: add to mailing list, email validation |
 | Mailgun → Webhooks | Native | 8 event types (accepted, delivered, opened, clicked, permanent_fail, temporary_fail, complained, unsubscribed). HMAC SHA256 signing. 24hr retry. |
 | Mailgun → Any (API) | API | RESTful API for all operations — no native CRM connectors. Use Zapier or custom webhook handlers for CRM sync. |
+| ActiveCampaign → Salesforce | Native (bi-directional) | Contact/lead sync, deal sync, activity logging, custom field mapping |
+| ActiveCampaign → HubSpot | Via Zapier/Make | Contact sync, deal activity, engagement events |
+| ActiveCampaign → Shopify | Native (deep) | Customer sync, order data, abandoned cart automations, purchase triggers |
+| ActiveCampaign → WooCommerce | Native (deep) | Customer sync, order data, abandoned cart, product recommendations |
+| ActiveCampaign → WordPress | Native (plugin) | Form integration, site tracking, contact sync |
+| ActiveCampaign → Facebook Custom Audiences | Native | Sync segments as ad audiences for retargeting |
+| ActiveCampaign → Zapier | Native | 900+ app connections — triggers on contact update, deal update, tag added, automation entered |
+| ActiveCampaign → Make | Native | Visual automation with ActiveCampaign triggers and actions |
+| ActiveCampaign → Slack | Via Zapier | Notifications on deal changes, new contacts, automation events |
+| ActiveCampaign → Postmark | Native (parent company) | Transactional email via Postmark — separate reputation from marketing sends |
 | Klaviyo → Shopify | Native (deep) | Real-time sync of customers, orders, products, carts, browse events. Bi-directional — Klaviyo segments can sync back to Shopify. |
 | Klaviyo → Salesforce CRM | Native | Sync Leads/Contacts to Klaviyo profiles. Map CRM fields to profile properties. |
 | Klaviyo → Salesforce Commerce Cloud | Native | Real-time customer and order sync for e-commerce personalization. |
@@ -400,6 +410,14 @@ Before building anything custom, check if a native integration exists:
 - **Zapier integration**: 3 triggers (new inbound message, bounced email, message opened) + 2 actions (send transactional email). Webhook-based — requires minimal setup.
 - **No native CRM integration**: Postmark is API-first. Use Zapier or build custom webhook handlers for CRM sync. No native Salesforce/HubSpot connector.
 
+### ActiveCampaign webhooks
+- **25+ event types**: subscribe, unsubscribe, update (contact updated), click, open, sent_mail, reply, bounce, forward, share, deal_add, deal_update, deal_task_add, deal_task_complete, deal_pipeline_add, deal_stage_change, contact_note_add, account_add, account_update, contact_tag_added, contact_tag_removed, automation_before_action, sms_reply, sms_sent, sms_unsub. Configure in Settings > Developer > Webhooks or via API (`POST /api/3/webhooks`).
+- **Payload**: Form-encoded POST with event type (`type`), date, and relevant object data (contact ID, deal ID, list ID, tag, automation name). Not JSON by default — parse as form data.
+- **Multiple webhook URLs**: Configure different webhook URLs for different event types. Each webhook subscription can listen to one or more event types.
+- **Automation webhooks**: Add "Send Webhook" action inside any automation to POST custom JSON to any URL when a contact reaches that step. Use for real-time CRM updates, Slack notifications, or triggering external workflows mid-automation.
+- **No built-in signing**: ActiveCampaign webhooks don't include HMAC signing. Secure endpoints with secret tokens in the URL path or verify the source IP range.
+- **900+ native integrations**: Salesforce (deep, bi-directional), Shopify, WooCommerce, WordPress, BigCommerce, Stripe, PayPal, Facebook, Google Analytics, Unbounce, Typeform, Calendly, Zapier, Make, and many more.
+
 ### Klaviyo webhooks
 - **Flow webhooks**: Add a webhook action to any flow step — POST JSON with event/profile data to your endpoint URL when a profile reaches that step. Available on all plans. Use for CRM updates, Slack notifications, or triggering external actions mid-flow.
 - **Advanced KDP system webhooks**: Event-driven webhooks for email events (received, opened, clicked, marked spam), SMS events, review events, consent events. HMAC-SHA256 signed. Managed via Webhooks API (`POST /api/webhooks/`). Enterprise-only (Advanced KDP required).
@@ -495,6 +513,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-customerio` — Customer.io platform help including Track/App/Transactional APIs, Data Pipelines, and webhook workflows
 - `/sales-mailgun` — Mailgun platform help including REST API, inbound routing, webhooks, and Mailgun Optimize
 - `/sales-klaviyo` — Klaviyo platform help including 350+ integrations, flow webhooks, Advanced KDP webhooks, and Shopify deep sync
+- `/sales-activecampaign` — ActiveCampaign platform help including 900+ integrations, 25+ webhook events, automation webhooks, and Salesforce/Shopify deep sync
 - `/sales-sendgrid` — SendGrid platform help including Email API, Event Webhooks, Inbound Parse, and Marketing Campaigns
 - `/sales-postmark` — Postmark platform help including transactional email API, Message Streams, and webhooks
 - `/sales-safetymails` — SafetyMails platform help (bulk verification, real-time API, Email Finder, native integrations)

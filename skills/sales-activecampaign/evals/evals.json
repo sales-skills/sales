@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-activecampaign",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "How do I create a welcome email automation in ActiveCampaign?",
+      "expected_output": "Guidance on creating a welcome email automation in ActiveCampaign",
+      "assertions": [
+        {"name": "mentions_automation_trigger", "description": "Mentions creating an automation with a trigger such as subscribes to list or submits a form"},
+        {"name": "mentions_email_action_steps", "description": "Mentions adding email action steps with wait or delay between them"},
+        {"name": "mentions_visual_builder", "description": "Mentions the visual automation builder"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "I want to set up lead scoring in ActiveCampaign to prioritize my hottest contacts",
+      "expected_output": "Guidance on setting up lead scoring in ActiveCampaign",
+      "assertions": [
+        {"name": "mentions_scoring_model", "description": "Mentions creating a scoring model or contact score"},
+        {"name": "mentions_engagement_rules", "description": "Mentions scoring rules based on engagement such as opens, clicks, site visits, or form submissions"},
+        {"name": "mentions_score_thresholds", "description": "Mentions using score thresholds to trigger automations or notify sales"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "How do I create a deal and add it to a pipeline using the ActiveCampaign API?",
+      "expected_output": "Guidance on using the ActiveCampaign API to create a deal in a pipeline",
+      "assertions": [
+        {"name": "mentions_deals_endpoint", "description": "Mentions POST to /api/3/deals endpoint"},
+        {"name": "mentions_api_token_auth", "description": "Mentions Api-Token header for authentication"},
+        {"name": "mentions_pipeline_and_stage", "description": "Mentions specifying pipeline and stage in the deal creation payload"}
+      ]
+    }
+  ]
+}

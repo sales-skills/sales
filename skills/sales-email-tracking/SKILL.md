@@ -1,6 +1,6 @@
 ---
 name: sales-email-tracking
-description: "Email engagement tracking for sales — open tracking, click tracking, attachment views, real-time notifications, follow-up timing, and engagement analytics. Use when setting up email tracking, interpreting open/click data, Mixmax tracking, Woodpecker tracking, timing follow-ups based on engagement, understanding tracking limitations (Apple MPP, pixel blocking), Reply.io tracking, or choosing a tracking tool. For Yesware-specific help, use /sales-yesware. Do NOT use for email deliverability (use /sales-deliverability), cadence design (use /sales-cadence), buying intent signals beyond email (use /sales-intent), SendGrid-specific config (use /sales-sendgrid), Postmark-specific config (use /sales-postmark), Customer.io-specific config (use /sales-customerio), Mailgun-specific config (use /sales-mailgun), or Klaviyo-specific config (use /sales-klaviyo)."
+description: "Email engagement tracking for sales — open tracking, click tracking, attachment views, real-time notifications, follow-up timing, and engagement analytics. Use when setting up email tracking, interpreting open/click data, Mixmax tracking, Woodpecker tracking, timing follow-ups based on engagement, understanding tracking limitations (Apple MPP, pixel blocking), Reply.io tracking, or choosing a tracking tool. For Yesware-specific help, use /sales-yesware. Do NOT use for email deliverability (use /sales-deliverability), cadence design (use /sales-cadence), buying intent signals beyond email (use /sales-intent), SendGrid-specific config (use /sales-sendgrid), Postmark-specific config (use /sales-postmark), Customer.io-specific config (use /sales-customerio), Mailgun-specific config (use /sales-mailgun), Klaviyo-specific config (use /sales-klaviyo), or ActiveCampaign-specific config (use /sales-activecampaign)."
 argument-hint: "[describe your email tracking question or goal]"
 license: MIT
 metadata:
@@ -255,6 +255,18 @@ Security tools like Barracuda, Mimecast, Proofpoint, and Microsoft Defender pre-
 - **No real-time desktop notifications**: Klaviyo doesn't push individual open/click alerts. Use flow webhooks to trigger Slack/email notifications, or check the dashboard.
 - **Gotcha**: Same Apple MPP and bot-click caveats apply. Klaviyo's revenue attribution window is configurable — default is 5 days for flows, 3 days for campaigns. Overly generous windows inflate attributed revenue.
 
+### In ActiveCampaign
+
+- **Tracking types**: Opens (pixel) and clicks (link wrapping) — enabled by default on all campaigns and automations. Configurable per-campaign.
+- **Site tracking**: JavaScript snippet tracks page visits, referral source, and time on page. Use site tracking data to trigger automations (e.g., visited pricing page → send follow-up) and score leads. Available on all plans.
+- **Event tracking**: Custom event tracking via API or JavaScript — track any user action (e.g., "viewed_demo", "started_trial"). Events feed into automations, segments, and lead scoring.
+- **Automation analytics**: Per-automation metrics — contacts entered, completed, converted (goal reached), email opens/clicks at each step. Conversion goals measure actual outcomes, not just engagement.
+- **Campaign analytics**: Per-campaign metrics with A/B test results, opens, clicks, replies, bounces, unsubscribes, forwards. Split testing up to 5 variants.
+- **Contact activity timeline**: Per-contact history of every email sent, opened, clicked, page visited, form submitted, automation entered — available in the contact record and via API (`GET /api/3/contacts/{id}/contactAutomations`).
+- **Webhooks**: 25+ event types via Settings > Developer > Webhooks. Events include: subscribe, unsubscribe, update, click, open, sent_mail, reply, bounce, deal_add, deal_update, task_complete, and more. Payload is form-encoded with event type and relevant IDs.
+- **No real-time desktop notifications**: ActiveCampaign doesn't push individual open/click alerts. Use webhooks to trigger Slack/email notifications, or set up automations to notify sales when contacts engage.
+- **Gotcha**: Same Apple MPP and bot-click caveats apply. ActiveCampaign's site tracking and event tracking are more reliable engagement signals than email opens. Use goal conversions in automations as the most trustworthy metric.
+
 ## Step 5 — Actionable guidance
 
 ### Setting up tracking for the first time
@@ -307,6 +319,8 @@ Design your follow-up cadence around tracking signals rather than fixed time del
 - `/sales-postmark` — Postmark platform help (7 webhook types, open/click tracking, message detail API)
 - `/sales-customerio` — Customer.io platform help (conversion goals, reporting webhooks, campaign analytics)
 - `/sales-mailgun` — Mailgun platform help (8 webhook event types, Events API, Metrics API, tag-based tracking)
+- `/sales-klaviyo` — Klaviyo platform help (flow/campaign analytics, revenue attribution, predictive engagement, benchmarks)
+- `/sales-activecampaign` — ActiveCampaign platform help (site tracking, event tracking, 25+ webhook types, automation analytics)
 - `/sales-klaviyo` — Klaviyo platform help (flow/campaign analytics, revenue attribution, Metrics API, benchmarks)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
