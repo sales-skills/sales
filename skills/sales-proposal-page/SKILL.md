@@ -86,46 +86,13 @@ If the proposal includes a quote block, design the pricing structure:
 
 ## Step 5 — Generate API payload (optional)
 
-If the user wants to create the page programmatically via the Qwilr API, generate the `POST /pages` JSON payload:
+If the user wants to create the page programmatically via the Qwilr API, generate a `POST /pages` JSON payload with blocks, tokens, and quote sections. See `references/qwilr-api-proposals.md` for the full payload structure, field reference, and endpoint list.
 
-```json
-{
-  "name": "Proposal for {{company_name}}",
-  "isPublished": false,
-  "tags": ["proposal", "{{deal_stage}}"],
-  "blocks": [
-    {
-      "savedBlockId": "<from GET /blocks/saved>",
-      "tokens": {
-        "company_name": "Acme Corp",
-        "contact_first_name": "Jane"
-      }
-    }
-  ],
-  "quoteSections": [
-    {
-      "title": "Platform License",
-      "items": [
-        {
-          "title": "Annual Platform License",
-          "description": "Full access to all features",
-          "type": "fixedCost",
-          "fixedCost": { "amount": 24000, "currency": "USD" },
-          "isOptional": false,
-          "billing": { "type": "recurring", "frequency": "annual" }
-        }
-      ]
-    }
-  ]
-}
-```
-
-Notes for the user:
+Key points:
 - Run `GET /blocks/saved` first to discover available block IDs
 - Set `isPublished: false` to review before sending
-- Use `tokens` to substitute CRM data into the template
-- Auth: `Authorization: Bearer <your-jwt-token>`
-- Base URL: `https://api.qwilr.com/v1`
+- Use `tokens` to substitute CRM data into `{{token}}` placeholders
+- Configure quote sections with line items, optional add-ons, and billing frequency
 
 ## Gotchas
 
