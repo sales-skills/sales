@@ -10,7 +10,7 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 48 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 49 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -208,6 +208,12 @@ Router recommends a 5-skill sequence:
 | Skill | What it does | Status |
 |---|---|---|
 | `/sales-postmark` | Postmark (ActiveCampaign) platform help — transactional email API, SMTP relay, Message Streams (transactional/broadcast), Handlebars templates, Inbound email parsing, 7 webhook types, DMARC Monitoring, bounce management, suppressions, dedicated IPs, sender vetting, best-in-class deliverability (98.7% inbox placement) | Available |
+
+### Mailgun & Platform
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-mailgun` | Mailgun (Sinch) platform help — developer-first transactional email API and SMTP relay, inbound email routing with custom parsing, templates, mailing lists, Domains API (DKIM/SPF/DNS), Routes, webhooks (8 event types), Metrics API, Mailgun Optimize (inbox placement testing, email validation, reputation monitoring), dedicated IPs, tags | Available |
 
 ### Customer.io & Platform
 

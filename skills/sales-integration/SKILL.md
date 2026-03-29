@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -190,6 +190,9 @@ Before building anything custom, check if a native integration exists:
 | Customer.io → Facebook/Instagram | Native | Ad audience sync for retargeting |
 | Customer.io → Twilio | Native | SMS channel — Twilio account required for SMS sends |
 | Customer.io → Webhooks | Native | Webhook destination + webhook actions in journeys — POST to any URL |
+| Mailgun → Zapier | Native | Triggers: bounce, delivery, inbound email, unsubscribe, log data. Actions: add to mailing list, email validation |
+| Mailgun → Webhooks | Native | 8 event types (accepted, delivered, opened, clicked, permanent_fail, temporary_fail, complained, unsubscribed). HMAC SHA256 signing. 24hr retry. |
+| Mailgun → Any (API) | API | RESTful API for all operations — no native CRM connectors. Use Zapier or custom webhook handlers for CRM sync. |
 | Closum → Salesforce | Native | Contact sync, field mapping, lifecycle stage mapping |
 | Closum → Pipedrive | Native | Contact sync |
 | Closum → Zoho | Native | Contact sync |
@@ -387,6 +390,14 @@ Before building anything custom, check if a native integration exists:
 - **Zapier integration**: 3 triggers (new inbound message, bounced email, message opened) + 2 actions (send transactional email). Webhook-based — requires minimal setup.
 - **No native CRM integration**: Postmark is API-first. Use Zapier or build custom webhook handlers for CRM sync. No native Salesforce/HubSpot connector.
 
+### Mailgun webhooks
+- **8 event types**: accepted, delivered, opened, clicked, permanent_fail, temporary_fail, complained, unsubscribed. Configure per-domain via dashboard (Sending > Webhooks) or API (`POST /v3/domains/{domain}/webhooks`).
+- **Payload**: JSON with `signature` (timestamp, token, signature for HMAC verification), `event-data` (event type, recipient, message headers, timestamp, delivery-status, user-variables, tags).
+- **Webhook signing**: HMAC SHA256 — verify payloads using your webhook signing key (available in dashboard under Settings > API Keys). Always verify in production.
+- **Retry schedule**: Automatic retry with exponential backoff for up to 24 hours on non-2xx responses.
+- **Inbound routing**: Configure routes (`POST /v3/routes`) to forward incoming emails to HTTP endpoints as structured JSON — includes From, To, Subject, body-plain, body-html, attachments (base64-encoded). Custom parsing with regex/JSONPath expressions.
+- **Zapier integration**: Triggers for bounce, delivery, inbound, unsubscribe, log data. Actions for mailing list management and email validation. No native CRM connectors — use Zapier as bridge.
+
 ### Customer.io webhooks
 - **Reporting webhooks**: Configured in Settings > Workspace Settings > Reporting Webhooks. Events: email delivered, opened, clicked, bounced, dropped, unsubscribed, spam_complaint, converted. Payload: JSON with `event_type`, `data` (customer_id, delivery_id, campaign_id, timestamp, metadata).
 - **Workflow webhooks**: Add a "Send Webhook" action inside any Journey to POST JSON to any URL when a customer reaches that step — use for CRM updates, Slack notifications, or triggering external actions mid-workflow.
@@ -465,6 +476,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-hunter` — Hunter.io platform help including API, CRM integrations, webhooks, and MCP server
 - `/sales-seamless` — Seamless.AI platform help including API, CRM integrations, and webhooks
 - `/sales-customerio` — Customer.io platform help including Track/App/Transactional APIs, Data Pipelines, and webhook workflows
+- `/sales-mailgun` — Mailgun platform help including REST API, inbound routing, webhooks, and Mailgun Optimize
 - `/sales-sendgrid` — SendGrid platform help including Email API, Event Webhooks, Inbound Parse, and Marketing Campaigns
 - `/sales-postmark` — Postmark platform help including transactional email API, Message Streams, and webhooks
 - `/sales-safetymails` — SafetyMails platform help (bulk verification, real-time API, Email Finder, native integrations)

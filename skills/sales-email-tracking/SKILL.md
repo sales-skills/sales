@@ -1,6 +1,6 @@
 ---
 name: sales-email-tracking
-description: "Email engagement tracking for sales — open tracking, click tracking, attachment views, real-time notifications, follow-up timing, and engagement analytics. Use when setting up email tracking, interpreting open/click data, Mixmax tracking, Woodpecker tracking, timing follow-ups based on engagement, understanding tracking limitations (Apple MPP, pixel blocking), Reply.io tracking, or choosing a tracking tool. For Yesware-specific help, use /sales-yesware. Do NOT use for email deliverability (use /sales-deliverability), cadence design (use /sales-cadence), buying intent signals beyond email (use /sales-intent), SendGrid-specific config (use /sales-sendgrid), Postmark-specific config (use /sales-postmark), or Customer.io-specific config (use /sales-customerio)."
+description: "Email engagement tracking for sales — open tracking, click tracking, attachment views, real-time notifications, follow-up timing, and engagement analytics. Use when setting up email tracking, interpreting open/click data, Mixmax tracking, Woodpecker tracking, timing follow-ups based on engagement, understanding tracking limitations (Apple MPP, pixel blocking), Reply.io tracking, or choosing a tracking tool. For Yesware-specific help, use /sales-yesware. Do NOT use for email deliverability (use /sales-deliverability), cadence design (use /sales-cadence), buying intent signals beyond email (use /sales-intent), SendGrid-specific config (use /sales-sendgrid), Postmark-specific config (use /sales-postmark), Customer.io-specific config (use /sales-customerio), or Mailgun-specific config (use /sales-mailgun)."
 argument-hint: "[describe your email tracking question or goal]"
 license: MIT
 metadata:
@@ -231,6 +231,18 @@ Security tools like Barracuda, Mimecast, Proofpoint, and Microsoft Defender pre-
 - **No real-time desktop notifications**: Customer.io doesn't push open/click alerts to your desktop like Yesware or Mixmax. Use reporting webhooks to build custom notifications, or check the dashboard.
 - **Gotcha**: Same Apple MPP and bot-click caveats apply. Customer.io's conversion goals are the most reliable engagement signal — they measure actual actions, not pixel loads.
 
+### In Mailgun (Sinch)
+
+- **Tracking types**: Opens (tracking pixel) and clicks (link rewriting). Enable/disable per-domain in domain tracking settings or via API. CNAME record must point to mailgun.org for click tracking to work.
+- **Webhooks (8 event types)**: accepted, delivered, opened, clicked, permanent_fail, temporary_fail, complained, unsubscribed. Configure per-domain via dashboard (Sending > Webhooks) or API (`POST /v3/domains/{domain}/webhooks`). Payload is JSON with event type, recipient, timestamp, message headers, and event-specific data.
+- **Webhook signing**: HMAC SHA256 verification — Mailgun signs payloads with your webhook signing key. Always verify signatures in production to prevent spoofing.
+- **Webhook retry**: Automatic retry with exponential backoff for up to 24 hours on failed deliveries (non-2xx responses).
+- **Events API**: `GET /v3/{domain}/events` — query event log filtered by event type, recipient, tags, date range. Paginated via `next` URL. Use for historical analysis when webhooks aren't enough.
+- **Metrics API**: `POST /v1/analytics/metrics` — aggregate analytics on deliverability and engagement per domain, tag, or date range.
+- **Tags for tracking**: Tag sends with up to 3 tags per message. View per-tag statistics via `GET /v3/{domain}/tags/{tag}/stats` — useful for tracking engagement by campaign, template, or segment.
+- **No real-time desktop notifications**: Mailgun is API-first — no browser extension or desktop alerts for opens/clicks. Build custom notifications using webhooks → Slack/email.
+- **Gotcha**: Same Apple MPP and bot-click caveats apply. Mailgun's click tracking requires the CNAME record — without it, click events won't fire.
+
 ## Step 5 — Actionable guidance
 
 ### Setting up tracking for the first time
@@ -282,6 +294,7 @@ Design your follow-up cadence around tracking signals rather than fixed time del
 - `/sales-sendgrid` — SendGrid platform help (Event Webhooks, Email Activity, tracking configuration)
 - `/sales-postmark` — Postmark platform help (7 webhook types, open/click tracking, message detail API)
 - `/sales-customerio` — Customer.io platform help (conversion goals, reporting webhooks, campaign analytics)
+- `/sales-mailgun` — Mailgun platform help (8 webhook event types, Events API, Metrics API, tag-based tracking)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
 ## Examples

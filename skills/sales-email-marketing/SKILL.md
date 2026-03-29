@@ -1,6 +1,6 @@
 ---
 name: sales-email-marketing
-description: "Email marketing for opt-in subscribers — broadcasts, nurture sequences, automation, segmentation, and list management. Use when planning email campaigns, designing welcome sequences, setting up behavior-based automation, segmenting lists, improving open/click rates, or choosing an email marketing platform. Do NOT use for cold outbound email (use /sales-cadence), email deliverability/SPF/DKIM (use /sales-deliverability), or connecting email tools to CRM (use /sales-integration). For Groove-specific help, use /sales-groove. For Closum-specific help, use /sales-closum. For Mailchimp-specific help, use /sales-mailchimp. For SendGrid-specific help, use /sales-sendgrid. For Postmark-specific help, use /sales-postmark. For Customer.io-specific help, use /sales-customerio."
+description: "Email marketing for opt-in subscribers — broadcasts, nurture sequences, automation, segmentation, and list management. Use when planning email campaigns, designing welcome sequences, setting up behavior-based automation, segmenting lists, improving open/click rates, or choosing an email marketing platform. Do NOT use for cold outbound email (use /sales-cadence), email deliverability/SPF/DKIM (use /sales-deliverability), or connecting email tools to CRM (use /sales-integration). For Groove-specific help, use /sales-groove. For Closum-specific help, use /sales-closum. For Mailchimp-specific help, use /sales-mailchimp. For SendGrid-specific help, use /sales-sendgrid. For Postmark-specific help, use /sales-postmark. For Customer.io-specific help, use /sales-customerio. For Mailgun-specific help, use /sales-mailgun."
 argument-hint: "[describe your email marketing question — e.g., 'design a welcome sequence' or 'improve my open rates']"
 license: MIT
 metadata:
@@ -210,6 +210,19 @@ Customer.io is a data-driven marketing automation platform focused on behavior-t
 - **Pricing**: Essentials ($100/mo, 5K profiles, 1M emails), Premium ($1,000/mo annual), Enterprise (custom). $0.009/additional profile.
 - **Customer.io's strength**: Best for product-led companies that need behavior-triggered automation across the entire lifecycle (onboarding → activation → retention → re-engagement) with first-party event data at the center. Overkill for simple newsletter sends.
 
+### In Mailgun (Sinch)
+
+Mailgun is a developer-first transactional email API — not a traditional email marketing platform. However, it supports marketing-style email via mailing lists and templates:
+
+- **Mailing lists**: Programmatic list management via API (`POST /v3/lists`, `POST /v3/lists/{address}/members`). Create lists, add/remove members, bulk import via JSON. Lists support member variables for personalization.
+- **Templates**: Account-level and domain-level stored templates accessible via API. Template versioning for A/B testing. Use Handlebars-style variables for dynamic content.
+- **Batch sending**: Send to up to 1,000 recipients per API call using recipient-variables for per-recipient personalization — functions like a basic broadcast system.
+- **Tags**: Categorize and track sends by tag. Use `GET /v3/{domain}/tags/{tag}/stats` for per-tag engagement analytics (opens, clicks, bounces).
+- **No visual campaign builder**: Mailgun has no drag-and-drop email editor or campaign workflow UI. All sending is via API or SMTP — build your own sending logic or use Zapier.
+- **No automation workflows**: No built-in journey builder or trigger-based sequences. Use external automation (Zapier, custom code) to trigger Mailgun API calls based on events.
+- **Pricing**: Foundation $35/mo (50K emails), Scale $90/mo (100K). No campaign-specific pricing tier.
+- **Mailgun's strength**: Best for developers who need programmatic control over marketing email sends and want to build custom sending infrastructure. Not ideal for marketers who need a visual campaign builder.
+
 ### In Klaviyo
 
 - Flow builder is the automation engine — pre-built flows for welcome, cart abandonment, post-purchase, winback, and browse abandonment
@@ -310,6 +323,7 @@ Perform these maintenance tasks regularly:
 - **/sales-sendgrid** — SendGrid platform help (Email API, Marketing Campaigns, transactional email, dynamic templates)
 - **/sales-postmark** — Postmark platform help (transactional email, broadcast message streams, templates)
 - **/sales-customerio** — Customer.io platform help (behavior-driven Journeys, multi-channel automation, Data Pipelines)
+- **/sales-mailgun** — Mailgun platform help (developer-first email API, mailing lists, templates, batch sending)
 - **/sales-cadence** — Cold outbound email cadences and sequences (NOT opt-in marketing)
 - **/sales-deliverability** — SPF, DKIM, DMARC, domain warm-up, and inbox placement
 - **/sales-funnel** — Funnel strategy and page design (landing pages that feed your email list)
