@@ -1,6 +1,6 @@
 ---
 name: sales-email-tracking
-description: "Email engagement tracking for sales — open tracking, click tracking, attachment views, real-time notifications, follow-up timing, and engagement analytics. Use when setting up email tracking, interpreting open/click data, Mixmax tracking, Woodpecker tracking, timing follow-ups based on engagement, understanding tracking limitations (Apple MPP, pixel blocking), Reply.io tracking, or choosing a tracking tool. For Yesware-specific help, use /sales-yesware. Do NOT use for email deliverability (use /sales-deliverability), cadence design (use /sales-cadence), buying intent signals beyond email (use /sales-intent), or SendGrid-specific config (use /sales-sendgrid)."
+description: "Email engagement tracking for sales — open tracking, click tracking, attachment views, real-time notifications, follow-up timing, and engagement analytics. Use when setting up email tracking, interpreting open/click data, Mixmax tracking, Woodpecker tracking, timing follow-ups based on engagement, understanding tracking limitations (Apple MPP, pixel blocking), Reply.io tracking, or choosing a tracking tool. For Yesware-specific help, use /sales-yesware. Do NOT use for email deliverability (use /sales-deliverability), cadence design (use /sales-cadence), buying intent signals beyond email (use /sales-intent), SendGrid-specific config (use /sales-sendgrid), or Postmark-specific config (use /sales-postmark)."
 argument-hint: "[describe your email tracking question or goal]"
 license: MIT
 metadata:
@@ -209,6 +209,17 @@ Security tools like Barracuda, Mimecast, Proofpoint, and Microsoft Defender pre-
 - **Suppression-based unsubscribe tracking**: SendGrid manages unsubscribe groups (ASM) — recipients can manage subscription preferences across groups. Unsubscribe events fire to webhooks automatically.
 - **Gotcha**: SendGrid's open/click tracking is subject to the same Apple MPP and bot-click inflation as other platforms. The Event Webhook delivers raw events — you'll need to build your own filtering logic for bot detection (rapid multi-click from data center IPs within seconds of delivery).
 
+### In Postmark
+
+- **Tracking types**: Opens (pixel), clicks (link wrapping) — configurable per-message via `TrackOpens` (boolean) and `TrackLinks` (None, HtmlAndText, HtmlOnly, TextOnly) in the Email API, or globally per-server in Settings
+- **Webhooks**: 7 webhook types for tracking: Bounce, Delivery, Open, Click, SpamComplaint, SubscriptionChange, Inbound. Configure per-server in Settings > Webhooks or via API (`POST /webhooks`). Each webhook can subscribe to specific event types.
+- **Webhook payloads**: Rich event data including RecordType, MessageID, Recipient, Tag, timestamp, plus event-specific fields. Open/Click webhooks include Client (name, company, family), OS, Platform, UserAgent, and Geo (city, country, region, IP) data.
+- **Retry schedule**: Bounce & Inbound: retries at 1min, 5min, 10min (×3), 15min, 30min, 1hr, 2hr, 6hr. Click/Open/Delivery: retries at 1min, 5min, 15min. 403 response stops retries immediately.
+- **Statistics API**: `GET /stats/outbound/opens`, `GET /stats/outbound/clicks`, plus breakdowns by platform, email client, browser, and geographic location. Filter by tag or message stream.
+- **Message detail**: `GET /messages/outbound/{messageID}/details` returns full event history for a single message — every open, click, delivery, and bounce event with timestamps.
+- **No real-time notifications**: Postmark doesn't have desktop/mobile push notifications for opens/clicks like Yesware or Mixmax. You receive events via webhooks and build your own notification system.
+- **Gotcha**: Postmark's tracking is subject to the same Apple MPP and bot-click inflation as other platforms. Use click and delivery webhooks as the most reliable signals. Postmark's Geo data in open/click webhooks can help identify bot activity (data center IPs vs. real user locations).
+
 ## Step 5 — Actionable guidance
 
 ### Setting up tracking for the first time
@@ -258,6 +269,7 @@ Design your follow-up cadence around tracking signals rather than fixed time del
 - `/sales-woodpecker` — Woodpecker platform help (for Woodpecker-specific setup)
 - `/sales-seismic` — Seismic platform help including LiveSend tracking and content management
 - `/sales-sendgrid` — SendGrid platform help (Event Webhooks, Email Activity, tracking configuration)
+- `/sales-postmark` — Postmark platform help (7 webhook types, open/click tracking, message detail API)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
 ## Examples

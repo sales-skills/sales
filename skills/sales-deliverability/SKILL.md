@@ -1,6 +1,6 @@
 ---
 name: sales-deliverability
-description: "Email deliverability for outbound sales — domain authentication (SPF/DKIM/DMARC), mailbox warmup, sending limits, inbox placement, blacklist monitoring, sender reputation, custom tracking domains, and list hygiene. Use when setting up a new sending domain, warming up mailboxes, diagnosing spam/deliverability issues, recovering from blacklisting, scaling outbound volume, or switching email platforms. Do NOT use for cadence content and strategy (use /sales-cadence), Apollo sequence mechanics (use /sales-apollo-sequences), Mailshake platform help (use /sales-mailshake), Smartlead platform help (use /sales-smartlead), Lemlist platform help (use /sales-lemlist), Yesware platform help (use /sales-yesware), Mixmax-specific config (use /sales-mixmax), Reply.io-specific config (use /sales-reply), Woodpecker-specific config (use /sales-woodpecker), Hunter.io-specific config (use /sales-hunter), Mailmo-specific config (use /sales-mailmo), Tomba-specific config (use /sales-tomba), Prospeo-specific config (use /sales-prospeo), Seamless.AI-specific config (use /sales-seamless), SafetyMails-specific config (use /sales-safetymails), Mailchimp-specific config (use /sales-mailchimp), or SendGrid-specific config (use /sales-sendgrid)."
+description: "Email deliverability for outbound sales — domain authentication (SPF/DKIM/DMARC), mailbox warmup, sending limits, inbox placement, blacklist monitoring, sender reputation, custom tracking domains, and list hygiene. Use when setting up a new sending domain, warming up mailboxes, diagnosing spam/deliverability issues, recovering from blacklisting, scaling outbound volume, or switching email platforms. Do NOT use for cadence content and strategy (use /sales-cadence), Apollo sequence mechanics (use /sales-apollo-sequences), Mailshake platform help (use /sales-mailshake), Smartlead platform help (use /sales-smartlead), Lemlist platform help (use /sales-lemlist), Yesware platform help (use /sales-yesware), Mixmax-specific config (use /sales-mixmax), Reply.io-specific config (use /sales-reply), Woodpecker-specific config (use /sales-woodpecker), Hunter.io-specific config (use /sales-hunter), Mailmo-specific config (use /sales-mailmo), Tomba-specific config (use /sales-tomba), Prospeo-specific config (use /sales-prospeo), Seamless.AI-specific config (use /sales-seamless), SafetyMails-specific config (use /sales-safetymails), Mailchimp-specific config (use /sales-mailchimp), SendGrid-specific config (use /sales-sendgrid), or Postmark-specific config (use /sales-postmark)."
 argument-hint: "[describe your deliverability situation — new domain, spam issues, warmup, scaling]"
 license: MIT
 metadata:
@@ -218,6 +218,17 @@ These tools simulate real email conversations to build sender reputation. Run wa
 - **Custom tracking domain**: Configure a branded tracking domain for open/click tracking links — reduces spam filtering vs. shared SendGrid tracking domains. Settings > Sender Authentication > Link Branding.
 - **Best practice**: Authenticate your domain before sending anything. If on a dedicated IP, use automated warmup. Use the Email Validation API to clean lists before importing. Monitor suppression lists regularly — high bounce or spam complaint rates trigger SendGrid's compliance review, which can suspend your account.
 
+### In Postmark (ActiveCampaign)
+- **Domain authentication**: Servers > Sender Signatures > Add Domain. Postmark provides DKIM (via CNAME) and Return-Path (for SPF alignment) DNS records. Verify with one click after DNS propagates.
+- **DMARC Monitoring**: Free weekly DMARC report summaries at dmarc.postmarkapp.com — human-readable digests of complex DMARC XML reports. Paid add-on ($14/mo/domain) for detailed monitoring with API access.
+- **No built-in warmup**: Postmark doesn't need traditional warmup because it uses shared IP pools with strict sender vetting. New accounts go through a vetting process — Postmark reviews your sending practices before fully activating your account. This vetting process is Postmark's alternative to warmup.
+- **Dedicated IP**: Available as add-on ($50/mo per IP) but only recommended for 300K+ emails/month. Below that volume, Postmark's shared pools provide better deliverability because they maintain strict sender quality standards.
+- **Sender vetting**: Postmark's key deliverability differentiator — they vet every sender before allowing full access. This keeps spammers off their infrastructure, which is why shared IPs have 98.7% inbox placement without dedicated IPs.
+- **Message Streams**: Separate transactional and broadcast traffic onto different streams with isolated reputation. If broadcast emails damage reputation, transactional email delivery is unaffected.
+- **Bounce management (Rebound)**: Automatic bounce processing — hard bounces are immediately suppressed, soft bounces retry then suppress. Suppression lists managed per message stream.
+- **Quality requirements**: Spam complaint rate must stay below 0.1% (1 in 1,000) and bounce rate below 10%. Exceeding these triggers account review.
+- **Best practice**: Use Postmark's free DMARC monitoring on all your sending domains (even non-Postmark ones). Set up separate message streams for transactional and broadcast from day one. Let Postmark's shared infrastructure handle deliverability — don't add a dedicated IP unless you're consistently above 300K/month.
+
 ### In Mailmo (verification focus)
 - **Email Verifier**: Real-time verification including format, domain, MX records, SMTP response, and catch-all detection.
 - **Catch-all detection**: Mailmo's key differentiator — proprietary catch-all verification claims up to 100% accuracy for identifying valid mailboxes on catch-all domains. Standard verifiers mark all catch-all addresses as "risky"; Mailmo verifies the specific mailbox.
@@ -332,6 +343,7 @@ If your domain reputation is damaged:
 - `/sales-safetymails` — SafetyMails platform help (19-step bulk verification, real-time API, Email Finder)
 - `/sales-mailchimp` — Mailchimp platform help (email campaigns, Customer Journey Builder, domain auth, deliverability)
 - `/sales-sendgrid` — SendGrid platform help (Email API, domain authentication, dedicated IPs, IP warmup, Email Validation API)
+- `/sales-postmark` — Postmark platform help (transactional email, DMARC monitoring, sender vetting, message streams)
 - `/sales-prospect-list` — Build prospect lists with verified contacts
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 

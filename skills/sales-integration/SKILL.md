@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -178,6 +178,9 @@ Before building anything custom, check if a native integration exists:
 | SendGrid → Heroku | Native (add-on) | Provisioned as Heroku add-on — shared account |
 | SendGrid → Google Cloud | Native (marketplace) | Marketplace integration for GCP projects |
 | SendGrid → Azure | Native (marketplace) | Azure marketplace offering for transactional email |
+| Postmark → Zapier | Native | 3 triggers (inbound message, bounce, open) + 2 actions (send email) |
+| Postmark → ActiveCampaign | Parent company | Shared infrastructure under ActiveCampaign umbrella |
+| Postmark → Heroku | Community | Heroku add-on for transactional email |
 | Closum → Salesforce | Native | Contact sync, field mapping, lifecycle stage mapping |
 | Closum → Pipedrive | Native | Contact sync |
 | Closum → Zoho | Native | Contact sync |
@@ -367,6 +370,14 @@ Before building anything custom, check if a native integration exists:
 - **Automation platforms**: Zapier (600+ apps), plus native integrations with form tools (Tally, Typeform) and productivity tools (Notion, Asana, ClickUp).
 - **For custom pipelines**: Use the API for contact management (add leads to audience lists) or Zapier as the bridge for event-driven workflows. Full API documentation may be available via the Postman collection at developers.closum.com.
 
+### Postmark webhooks
+- **7 webhook types**: Bounce, Delivery, Open, Click, SpamComplaint, SubscriptionChange, Inbound. Configure per-server in Settings > Webhooks or via API (`POST /webhooks`).
+- **Inbound email parsing**: Receive incoming emails as structured JSON POST — From, To, Subject, TextBody, HtmlBody, Headers[], Attachments[]. Use for reply parsing, support tickets, forum comments.
+- **Retry schedule**: Bounce & Inbound retry aggressively (1min → 6hr over 10 attempts). Click/Open/Delivery retry briefly (1min, 5min, 15min). 403 response stops retries.
+- **HTTP auth**: Embed credentials in webhook URL (`https://user:pass@example.com/webhook`). HTTPS strongly recommended.
+- **Zapier integration**: 3 triggers (new inbound message, bounced email, message opened) + 2 actions (send transactional email). Webhook-based — requires minimal setup.
+- **No native CRM integration**: Postmark is API-first. Use Zapier or build custom webhook handlers for CRM sync. No native Salesforce/HubSpot connector.
+
 ### SendGrid webhooks
 - **Event Webhooks**: Configure at Settings > Mail Settings > Event Webhooks or via API (`POST /v3/user/webhooks/event/settings`). Events: processed, dropped, delivered, deferred, bounce, open, click, spam_report, unsubscribe, group_unsubscribe, group_resubscribe. Payload: JSON array of event objects with email, timestamp, event type, sg_message_id, and event-specific fields.
 - **Inbound Parse**: Receive incoming emails as structured POST data. Configure a subdomain MX record pointing to SendGrid, then set the parse webhook URL. Receives: from, to, subject, text, html, attachments, envelope, SPF/DKIM results.
@@ -441,6 +452,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-closum` — Closum platform help (omnichannel marketing automation: email, SMS, WhatsApp, Telegram, Web Push)
 - `/sales-mailchimp` — Mailchimp platform help (email marketing, automations, SMS, 300+ integrations, Marketing + Transactional APIs)
 - `/sales-sendgrid` — SendGrid platform help (Email API, Marketing Campaigns, Event Webhooks, Inbound Parse, 353 partner integrations)
+- `/sales-postmark` — Postmark platform help (transactional email API, 7 webhook types, Inbound email parsing, Zapier)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
 ## Examples

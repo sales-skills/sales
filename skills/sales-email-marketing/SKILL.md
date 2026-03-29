@@ -1,6 +1,6 @@
 ---
 name: sales-email-marketing
-description: "Email marketing for opt-in subscribers — broadcasts, nurture sequences, automation, segmentation, and list management. Use when planning email campaigns, designing welcome sequences, setting up behavior-based automation, segmenting lists, improving open/click rates, or choosing an email marketing platform. Do NOT use for cold outbound email (use /sales-cadence), email deliverability/SPF/DKIM (use /sales-deliverability), or connecting email tools to CRM (use /sales-integration). For Groove-specific help, use /sales-groove. For Closum-specific help, use /sales-closum. For Mailchimp-specific help, use /sales-mailchimp. For SendGrid-specific help, use /sales-sendgrid."
+description: "Email marketing for opt-in subscribers — broadcasts, nurture sequences, automation, segmentation, and list management. Use when planning email campaigns, designing welcome sequences, setting up behavior-based automation, segmenting lists, improving open/click rates, or choosing an email marketing platform. Do NOT use for cold outbound email (use /sales-cadence), email deliverability/SPF/DKIM (use /sales-deliverability), or connecting email tools to CRM (use /sales-integration). For Groove-specific help, use /sales-groove. For Closum-specific help, use /sales-closum. For Mailchimp-specific help, use /sales-mailchimp. For SendGrid-specific help, use /sales-sendgrid. For Postmark-specific help, use /sales-postmark."
 argument-hint: "[describe your email marketing question — e.g., 'design a welcome sequence' or 'improve my open rates']"
 license: MIT
 metadata:
@@ -180,6 +180,20 @@ SendGrid (Twilio) is primarily a transactional email API but also offers Marketi
 - **Separate billing**: Marketing Campaigns is billed separately from the Email API. Basic ($15/mo, 5K contacts), Advanced ($60/mo, 100K contacts, dedicated IP), Custom (500K+). Sends count separately from API sends.
 - **SendGrid's strength**: Developer-friendly email marketing — teams already using SendGrid's Email API for transactional email can add marketing campaigns without a separate vendor. Shared domain authentication and suppression management across both products.
 
+### In Postmark (Broadcast Message Streams)
+
+Postmark (ActiveCampaign) is primarily a transactional email service but supports broadcast email via dedicated Message Streams. Key email marketing capabilities:
+
+- **Broadcast Message Streams**: Separate infrastructure for one-to-many sends — newsletters, product announcements, policy updates. Broadcast streams use dedicated infrastructure so transactional delivery stays fast and reliable.
+- **Templates**: Server-side Handlebars templates with layout inheritance — share headers/footers across templates, use dynamic variables for personalization. Template validation prevents broken sends.
+- **No visual drag-and-drop editor**: Postmark templates are code-based (HTML + Handlebars). Use their open-source transactional email templates as starting points, but there's no WYSIWYG builder like Mailchimp or SendGrid.
+- **No automation/journey builder**: Postmark does not have built-in automation workflows. Broadcast sends are API-triggered or manual — you need external automation (your app code, Zapier, or ActiveCampaign) to build sequences.
+- **Unsubscribe management**: Broadcast streams include automatic unsubscribe link handling and subscription change webhooks. Suppression lists managed per-stream.
+- **Statistics**: Opens, clicks, delivery rates per stream and per tag. No A/B testing built in.
+- **Pricing**: Same plans as transactional — broadcast emails count toward your monthly volume. Basic ($15/mo, 10K), Pro ($16.50/mo), Platform ($18/mo).
+- **Postmark's strength for broadcast**: Exceptional deliverability — same 98.7% inbox placement for broadcast as transactional. Best for developer teams already using Postmark for transactional who want simple newsletters without a separate vendor.
+- **Limitation**: No segmentation, no visual editor, no automation — Postmark broadcast is for simple one-to-many sends, not full email marketing. If you need campaigns with segmentation and automation, use Mailchimp, ActiveCampaign, or SendGrid Marketing Campaigns instead.
+
 ### In Klaviyo
 
 - Flow builder is the automation engine — pre-built flows for welcome, cart abandonment, post-purchase, winback, and browse abandonment
@@ -278,6 +292,7 @@ Perform these maintenance tasks regularly:
 - **/sales-closum** — Closum platform help (omnichannel email, SMS, WhatsApp, Telegram, Web Push)
 - **/sales-mailchimp** — Mailchimp platform help (email campaigns, Customer Journey Builder, SMS, audience management, API)
 - **/sales-sendgrid** — SendGrid platform help (Email API, Marketing Campaigns, transactional email, dynamic templates)
+- **/sales-postmark** — Postmark platform help (transactional email, broadcast message streams, templates)
 - **/sales-cadence** — Cold outbound email cadences and sequences (NOT opt-in marketing)
 - **/sales-deliverability** — SPF, DKIM, DMARC, domain warm-up, and inbox placement
 - **/sales-funnel** — Funnel strategy and page design (landing pages that feed your email list)
