@@ -308,6 +308,16 @@ Choose the right approach based on volume and frequency:
 - **Phone numbers**: Mobile and direct dial credits available as add-on (5 free/mo on paid plans, up to 3,000/mo).
 - **Credit economics**: Free: 50 emails/mo. Starter: $49/mo (1K). Growth 5K: $99/mo (5K). Growth 20K: $199/mo (20K). Growth 50K: $399/mo (50K). Credits roll over month to month.
 
+### In Skrapp
+- **Email Finder**: Find verified professional email addresses by name + company/domain. 92% average success rate. Single lookup or bulk via CSV/Excel upload. 1 credit per valid email — no charge for duplicates or invalid results.
+- **Data Enrichment**: Bulk CSV/Excel upload with auto-column mapping. Enriches contacts with verified emails, job titles, company data (industry, revenue, employee count, location), and firmographic attributes.
+- **AI Fields**: ML-powered attributes auto-populated during enrichment — buying role, seniority, function, and gender. Adds segmentation context without manual research. Available on Professional+ plans.
+- **Company Search**: Search 20M+ company profiles by domain. Returns all discoverable professionals at a company with verified emails and role data.
+- **Email Verifier**: Single + bulk verification with 97% accuracy. Checks syntax, format, mailbox validity. Detects personal and disposable addresses.
+- **LinkedIn Chrome Extension**: Extract verified emails from LinkedIn and Sales Navigator profiles — processes 25 profiles/second. Multi-page enrichment on Professional+ plans.
+- **Bulk operations**: Upload CSV/Excel for batch email finding and enrichment. Auto-mapping detects columns and matches to required fields. Export enriched data as CSV/XLSX or sync to CRM.
+- **Credit economics**: Free: 100/mo (1 user). Professional: €30/mo (1,000 credits, 2 users). Enterprise: €262/mo (50,000 credits, 15 users). No charge for duplicates or invalid results.
+
 ### Compliance checklist
 
 Before enriching and contacting, verify compliance with data privacy regulations in your target regions:
@@ -435,6 +445,7 @@ Credits reset monthly and do not roll over. Plan enrichment around your billing 
 - `/sales-minelead` — Minelead platform help (domain email search, email finder, verifier, lead generator, campaigns, bulk operations, API)
 - `/sales-lobstr` — Lobstr.io platform help (50+ web scrapers for Google Maps, LinkedIn, reviews — scraping-based data collection and enrichment)
 - `/sales-getprospect` — GetProspect platform help (200M+ B2B database, email finder, enrichment, verifier, cold email sequences, LinkedIn Chrome extension)
+- `/sales-skrapp` — Skrapp platform help (200M+ B2B contacts, email finder, data enrichment with AI Fields, email verifier, LinkedIn Chrome extension)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

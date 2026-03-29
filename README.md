@@ -10,7 +10,7 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 56 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 57 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -238,6 +238,12 @@ Router recommends a 5-skill sequence:
 | Skill | What it does | Status |
 |---|---|---|
 | `/sales-getprospect` | GetProspect platform help — B2B email finder, verifier, enrichment, and cold email outreach. Email Finder (200M+ contacts, 26M+ companies, 17+ filters, 95% accuracy), LinkedIn Email Finder Extension (Chrome, Sales Navigator export), Contact Enrichment (40+ data attributes), Email Verifier (catch-all detection, 97% deliverability guarantee, bulk verification), Cold Email Software (multi-step sequences, A/B testing, auto-stop, timezone-aware sending, SPF/DKIM checks), Built-in CRM (lists, tags, custom properties), Reverse Email Lookup, Phone Numbers, Team Collaboration, REST API, native CRM integrations (HubSpot, Salesforce, Pipedrive, Zoho, Outreach, Salesloft), Zapier, Google Sheets | Available |
+
+### Skrapp & Platform
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-skrapp` | Skrapp platform help — B2B email finder, data enrichment, and lead generation. Email Finder (200M+ contacts, 92% success rate), Lead Finder (B2B database, 17+ filters), Data Enrichment (bulk CSV/Excel, auto-mapping, AI Fields for buying role/seniority/function/gender), Email Verifier (97% accuracy, personal/disposable detection), LinkedIn Chrome Extension (25 profiles/sec, multi-page enrichment), Company Search (20M+ profiles), CRM integrations (HubSpot, Salesforce, Zoho, Pipedrive, Outreach), Zapier, REST API | Available |
 
 ### Lobstr.io & Platform
 

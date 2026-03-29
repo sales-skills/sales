@@ -273,6 +273,16 @@ Save the search as a dynamic list — new matches will appear automatically.
 - **Best for**: Building B2B prospect lists with verified emails, enriching LinkedIn exports, combining email finding + verification + outreach in one tool.
 - **Pricing**: Free (50 emails/mo), Starter $49/mo (1K), Growth 5K $99/mo (5K), Growth 20K $199/mo (20K), Growth 50K $399/mo (50K). Credits roll over.
 
+### Building lists from Skrapp (email finder + LinkedIn extension)
+- **Email Finder**: Search by name + company/domain to find verified professional emails. 92% average success rate. 200M+ business contacts in database.
+- **Lead Finder**: Search Skrapp's B2B database with filters — job title, location, industry, company size, revenue, seniority. Build targeted lists without needing LinkedIn.
+- **LinkedIn Chrome Extension**: Extract verified emails from LinkedIn and Sales Navigator profiles. Processes 25 profiles/second. Multi-page enrichment on Professional+ plans — bulk extract from search results pages.
+- **Company Search**: Enter a company name or domain to discover all professionals at that company with verified emails. 20M+ company profiles.
+- **Data Enrichment (bulk)**: Upload CSV/Excel of names + companies. Skrapp auto-maps columns, enriches with verified emails, job titles, and firmographic data. AI Fields add buying role, seniority, function, and gender.
+- **List management**: Save contacts into lists, export as CSV/XLSX, or sync directly to CRM (HubSpot, Salesforce, Pipedrive, Zoho, Outreach).
+- **Best for**: Finding verified B2B emails by name/domain, building lists from LinkedIn at scale, enriching existing contact spreadsheets with AI-powered segmentation fields.
+- **Pricing**: Free (100 credits/mo, 1 user). Professional €30/mo (1,000 credits, 2 users). Enterprise €262/mo (50,000 credits, 15 users). No charge for duplicates or invalid results.
+
 ## Step 4 — Segment and prioritize
 
 Split the list into tiers for sequencing:
@@ -373,6 +383,7 @@ Before launching outreach, validate the list:
 - `/sales-minelead` — Minelead platform help (domain email search, email finder, lead generator, verifier, campaigns, bulk operations, Chrome/Firefox extensions)
 - `/sales-lobstr` — Lobstr.io platform help (50+ no-code web scrapers, Google Maps leads, LinkedIn Sales Nav extraction, scheduled automation, API)
 - `/sales-getprospect` — GetProspect platform help (200M+ B2B database, email finder, LinkedIn Chrome extension, enrichment, cold email sequences)
+- `/sales-skrapp` — Skrapp platform help (200M+ B2B contacts, email finder, Lead Finder, data enrichment with AI Fields, LinkedIn Chrome extension)
 - `/sales-mailmo` — Mailmo platform help (Email Finder with catch-all verification, LinkedIn Chrome extension)
 - `/sales-seamless` — Seamless.AI platform help (1.8B+ contacts, Buyer Intent, Job Changes, Autopilot, Chrome extension)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
