@@ -202,6 +202,15 @@ For each call step:
 - **Plan limits**: Zero/Growth: 1 automation; Advanced: 5 automations; add-on: EUR 5/mo per 5 additional automations
 - **Best practice**: Closum's strength is omnichannel journeys for opt-in audiences. For cold outbound prospecting, use a dedicated cold email tool. For warm leads and existing customers, Closum's ability to combine email + SMS + WhatsApp in a single workflow is very effective for re-engagement and nurture.
 
+### In Minelead
+- **Where**: Campaigns section in Minelead dashboard (minelead.io)
+- **Channel support**: Email only (via connected Gmail accounts)
+- **Multi-account sending**: Connect multiple Gmail accounts and send campaigns via Round Robin — distributes sends across accounts to maintain per-account sending limits and improve deliverability
+- **Recipient management**: Select recipients from Minelead CRM (lead collections), import from CSV, or use leads discovered through Minelead's domain search and Lead Finder
+- **Built-in workflow**: Find emails (domain search) → Verify (email verifier) → Save to collection → Send campaign — all in one platform without switching tools
+- **Plan limits**: Campaigns available on all plans. 1 credit per email sent. Free: 25 credits/mo. Enterprise: 200K credits/mo.
+- **Best practice**: Minelead campaigns are best for simple email-only outreach where the list was built using Minelead's own discovery tools. For multi-channel cadences (email + LinkedIn + calls), complex sequences with conditional branching, or high-volume cold outbound, use a dedicated sequencing tool and use Minelead as the data source.
+
 ### Personalization framework
 - **Level 1 (Minimum)**: First name, company name, title — the bare minimum
 - **Level 2 (Standard)**: Industry reference, company-size-specific pain point
@@ -269,6 +278,7 @@ Provide a benchmarks table:
 - `/sales-seamless` — Seamless.AI platform help (Engagement Hub, Pitch Intelligence, contact data)
 - `/sales-email-tracking` — Email engagement tracking — open/click/attachment signals for follow-up timing
 - `/sales-closum` — Closum platform help (omnichannel: email, SMS, WhatsApp, Telegram, Web Push automations)
+- `/sales-minelead` — Minelead platform help (email campaigns via Gmail round-robin, domain email search, lead finder, verifier)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Gotchas

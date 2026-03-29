@@ -241,6 +241,17 @@ Save the search as a dynamic list — new matches will appear automatically.
 - **Best for**: ABM list building from LinkedIn, enriching Sales Navigator exports, expanding account lists with lookalikes, building persona-specific lists from company employee data.
 - **Pricing**: Pay-per-credit model — Email Finder costs 1 credit, LinkedIn enrichment 1 credit, Company Data 1 credit, Similar Companies 1 credit per result.
 
+### Building lists from Minelead (domain search + lead generation)
+- **Company Email Search**: Enter a domain and Minelead returns all discovered email addresses for that company. Use to build contact lists from a target account list — 500M+ emails indexed across 100M+ business profiles. 1 credit per successful search.
+- **Lead Finder / Tags**: `POST /v1/tags` — discover companies and contacts from keyword tags and geographic locations. Great for building initial prospect lists when you have an ICP but no target company list yet (e.g., "SaaS companies in London").
+- **Email Finder**: Find a specific person's email by entering first name, last name, and company domain. 1 credit per find. Use after identifying decision-makers on LinkedIn or company websites.
+- **Built-in verification**: Every email found can be immediately verified via Minelead's Email Verifier (quality scores 25-100%) before adding to your outbound list. Catches catch-all domains and invalid addresses.
+- **Leads CRM**: Save found emails into collections, organize by campaign or segment, and export as CSV. Import into Google Sheets, Zoho CRM, or any tool via Zapier.
+- **Bulk operations**: Upload CSV of domains for batch email discovery. Plan limits: Free/Starter (50), Pro (100), Business (1,000), Enterprise (unlimited).
+- **Browser extensions**: Chrome and Firefox extensions — look up company emails while browsing LinkedIn profiles or company websites without switching tabs.
+- **Best for**: Building email lists from target account domains, discovering contacts at specific companies, keyword-based company discovery, and verifying found emails in one workflow.
+- **Pricing**: Free (25 credits/mo), Starter $39/mo (1K), Pro $69/mo (10K), Business $149/mo (50K), Enterprise $299/mo (200K).
+
 ## Step 4 — Segment and prioritize
 
 Split the list into tiers for sequencing:
@@ -338,6 +349,7 @@ Before launching outreach, validate the list:
 - `/sales-hunter` — Hunter.io platform help (Domain Search, Email Finder, Discover, TechLookup, browser extension)
 - `/sales-outscraper` — Outscraper platform help (Google Maps scraping, reviews, email/contact extraction, company insights API)
 - `/sales-enrichso` — Enrich.so platform help (LinkedIn enrichment, reverse email lookup, employee search, similar companies, bulk enrichment API)
+- `/sales-minelead` — Minelead platform help (domain email search, email finder, lead generator, verifier, campaigns, bulk operations, Chrome/Firefox extensions)
 - `/sales-mailmo` — Mailmo platform help (Email Finder with catch-all verification, LinkedIn Chrome extension)
 - `/sales-seamless` — Seamless.AI platform help (1.8B+ contacts, Buyer Intent, Job Changes, Autopilot, Chrome extension)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

@@ -279,6 +279,16 @@ Choose the right approach based on volume and frequency:
 
 **Credit economics**: Success-based model — only pay for verified data. Free: 25 credits. Starter: $59/mo. Professional: $99/mo. Scale: $149/mo. Pay-as-you-go from $20/100 credits.
 
+### In Minelead
+- **Company Email Search**: `GET /v1/search?domain={domain}` — discover all email addresses associated with a company domain. Returns email pattern, verified emails with quality flags. 500M+ emails indexed, 100M+ business profiles. Costs 1 credit per successful search.
+- **Email Finder**: `GET /v1/find?firstname={first}&lastname={last}&domain={domain}` — find a specific person's professional email. Returns matched email with person and company details. 1 credit per operation.
+- **Email Verifier**: `GET /v1/validate?email={email}` — verify deliverability with MX record check, catch-all detection, webmail detection, and existence validation. Quality scores from 25-100%.
+- **Lead Finder / Tags**: `POST /v1/tags` — discover companies and contacts from keyword tags and locations. Good for building initial prospect lists when you don't have target companies yet.
+- **Bulk Operations**: Upload CSV for batch domain search or email verification. Plan limits: Free/Starter (50 rows), Pro (100), Business (1,000), Enterprise (unlimited).
+- **Leads CRM**: Built-in lead collections — save, organize, and export. Import from CSV or collect from search results. Export to Google Sheets, Zoho CRM, or HubSpot via Zapier.
+- **Browser extensions**: Chrome and Firefox extensions for in-browser email lookup while browsing company websites.
+- **Credit economics**: 1 credit = 1 successful search/verify/find. Free: 25/mo. Starter: $39/mo (1K). Pro: $69/mo (10K). Business: $149/mo (50K). Enterprise: $299/mo (200K). Annual saves 30%.
+
 ### Compliance checklist
 
 Before enriching and contacting, verify compliance with data privacy regulations in your target regions:
@@ -403,6 +413,7 @@ Credits reset monthly and do not roll over. Plan enrichment around your billing 
 - `/sales-safetymails` — SafetyMails platform help (19-step bulk verification, real-time API, Email Finder)
 - `/sales-outscraper` — Outscraper platform help (Google Maps scraping, email/contact extraction, company insights, email validation API)
 - `/sales-enrichso` — Enrich.so platform help (reverse email lookup, LinkedIn enrichment, email/phone finder, company data, bulk enrichment API)
+- `/sales-minelead` — Minelead platform help (domain email search, email finder, verifier, lead generator, campaigns, bulk operations, API)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

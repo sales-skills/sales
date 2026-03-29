@@ -302,6 +302,13 @@ These tools simulate real email conversations to build sender reputation. Run wa
 - **No sending infrastructure**: Enrich.so is an enrichment/verification tool, not a sending tool. Use it upstream to validate emails before importing into outbound tools.
 - **Best practice**: Run enriched email lists through Enrich.so's email validation before importing into any sending tool. The disposable email check catches addresses that other verifiers miss. Combine with the reverse email lookup to verify that enriched contacts are real people at real companies.
 
+### In Minelead (verification focus)
+- **Email Verifier**: `GET /v1/validate?email={email}` — checks form validity, MX records, SMTP response, catch-all detection, and webmail identification. Returns quality score (25-100%) with success/catch-all status. 1 credit per verification.
+- **Disposable Email Detector**: `GET /v1/detect-disposable?email={email}` — returns disposability score (0-5), format validity, spam assessment, and DNS record statuses. Catches temporary/throwaway addresses.
+- **Bulk verification**: Upload CSV for batch email verification. Plan limits: Free/Starter (50 rows), Pro (100), Business (1,000), Enterprise (unlimited).
+- **No sending infrastructure for cold outbound**: Minelead has a campaigns feature for Gmail-based sending, but it's not a dedicated deliverability tool. Use the verifier/disposable detector upstream before importing into your primary outbound tool.
+- **Best practice**: Run prospect lists through Minelead's verifier before importing into outbound tools. Combine domain search (to discover emails) with verification (to validate them) in a single workflow. The disposable email detector is especially useful for cleaning inbound/form-submitted lists.
+
 ### In Outscraper (verification focus)
 - **Email Validator**: `GET /email-validator` — verify individual or batch email addresses (up to 25 per request). Returns deliverability status (valid/invalid/risky). Use after scraping contacts from Google Maps or websites to clean the list before sending.
 - **Batch validation**: Outscraper's batching support (25 queries per request) and async processing with webhook callbacks makes it suitable for bulk validation workflows.
@@ -398,6 +405,7 @@ If your domain reputation is damaged:
 - `/sales-activecampaign` — ActiveCampaign platform help (domain auth, predictive sending, engagement tagging, Postmark integration)
 - `/sales-outscraper` — Outscraper platform help (email validation, Google Maps scraping, contact extraction)
 - `/sales-enrichso` — Enrich.so platform help (email validation, disposable email detection, reverse email lookup)
+- `/sales-minelead` — Minelead platform help (email verification with quality scoring, disposable email detection, domain email search)
 - `/sales-prospect-list` — Build prospect lists with verified contacts
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 

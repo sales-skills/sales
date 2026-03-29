@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-minelead",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "How do I find email addresses for a company using Minelead?",
+      "expected_output": "Guidance on using Minelead domain search to find email addresses associated with a company",
+      "assertions": [
+        {"name": "mentions_domain_search", "description": "Mentions domain search functionality or /search endpoint"},
+        {"name": "mentions_web_ui_or_api", "description": "Mentions using the web UI or API to perform the search"},
+        {"name": "mentions_credits_system", "description": "Mentions the credits system for search usage"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "I want to send an email campaign to my leads in Minelead using multiple Gmail accounts",
+      "expected_output": "Guidance on setting up a Minelead email campaign with round-robin sending across multiple Gmail accounts",
+      "assertions": [
+        {"name": "mentions_campaigns_feature", "description": "Mentions the campaigns feature for sending emails"},
+        {"name": "mentions_round_robin", "description": "Mentions round-robin sending across multiple accounts"},
+        {"name": "mentions_gmail_connection_and_recipients", "description": "Mentions connecting Gmail accounts and setting up recipient lists"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "How do I use the Minelead API to verify an email address?",
+      "expected_output": "Guidance on using the Minelead /validate API endpoint for email verification",
+      "assertions": [
+        {"name": "mentions_validate_endpoint", "description": "Mentions the /validate endpoint for email verification"},
+        {"name": "mentions_api_key_auth", "description": "Mentions API key authentication"},
+        {"name": "mentions_response_fields", "description": "Mentions response fields such as status, MX records, or catch-all detection"}
+      ]
+    }
+  ]
+}

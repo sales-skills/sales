@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -200,6 +200,11 @@ Before building anything custom, check if a native integration exists:
 | Outscraper → n8n | Native | Outscraper node for automated scraping workflows |
 | Outscraper → Pipedream | Native | API integration for custom scraping pipelines |
 | Outscraper → Any (API) | API | REST API with webhook callbacks — scrape, enrich, validate, and POST results to any endpoint |
+| Minelead → Google Sheets | Native | Export lead collections and search results directly to Google Sheets |
+| Minelead → Zoho CRM | Native (Enterprise) | Import discovered leads into Zoho CRM records |
+| Minelead → HubSpot | Via Zapier | Push discovered contacts to HubSpot CRM via Zapier workflows |
+| Minelead → Zapier | Native | 6,000+ app connections — trigger on new lead found, actions for email search and verification |
+| Minelead → Any (API) | API | REST API at api.minelead.io/v1 — search, find, validate, manage leads and campaigns programmatically |
 | Enrich.so → Zapier | Via Zapier | Trigger on enrichment complete. Actions: enrich email, find LinkedIn profile |
 | Enrich.so → n8n | Via n8n | HTTP Request node calling Enrich.so REST API for automated enrichment workflows |
 | Enrich.so → Make | Via Make | HTTP module calling Enrich.so API for enrichment automation |
@@ -428,6 +433,13 @@ Before building anything custom, check if a native integration exists:
 - **Zapier integration**: Trigger on task finished. Actions: search Google Maps, search Google News, extract Amazon reviews. Use Zapier as the bridge to CRM, spreadsheets, or outbound tools.
 - **n8n integration**: Native Outscraper node for self-hosted automation workflows.
 
+### Minelead webhooks
+- **No event-based webhooks documented**: Minelead does not appear to support real-time webhook notifications. The API is request/response based — you call endpoints and get results synchronously.
+- **Zapier integration**: Connect via Zapier for automated workflows — trigger email searches from CRM events, push verified leads to downstream tools. 6,000+ app connections available.
+- **Google Sheets native**: Direct export to Google Sheets for simple automation without code.
+- **Zoho CRM native**: Enterprise-tier feature for direct CRM lead import.
+- **API polling**: Use `GET /v1/history` to poll for recent search activity if you need to track operations programmatically.
+
 ### Enrich.so webhooks
 - **Bulk enrichment callbacks**: When submitting bulk enrichment jobs via API, provide a `callback_url` parameter. Enrich.so POSTs the enriched results as JSON when the batch completes.
 - **No event-based webhooks**: Enrich.so is a request/response enrichment API — no real-time event webhooks. Use polling or callback URLs for async bulk operations.
@@ -540,6 +552,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-activecampaign` — ActiveCampaign platform help including 900+ integrations, 25+ webhook events, automation webhooks, and Salesforce/Shopify deep sync
 - `/sales-outscraper` — Outscraper platform help including REST API with webhook callbacks, Zapier, n8n, and Pipedream integrations
 - `/sales-enrichso` — Enrich.so platform help including REST API, bulk enrichment callbacks, Zapier, and n8n/Make integration
+- `/sales-minelead` — Minelead platform help including REST API, Zapier, Google Sheets, and Zoho CRM integrations
 - `/sales-sendgrid` — SendGrid platform help including Email API, Event Webhooks, Inbound Parse, and Marketing Campaigns
 - `/sales-postmark` — Postmark platform help including transactional email API, Message Streams, and webhooks
 - `/sales-safetymails` — SafetyMails platform help (bulk verification, real-time API, Email Finder, native integrations)
