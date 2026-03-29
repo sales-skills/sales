@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Mailchimp, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -167,6 +167,17 @@ Before building anything custom, check if a native integration exists:
 | Mailchimp → Facebook/Instagram | Native | Ad audiences, retargeting, lead ads sync |
 | Mailchimp → Slack | Via Zapier | Notifications on subscribes, campaign sends |
 | Mailchimp → Canva | Native | Design emails and assets directly from Mailchimp |
+| SendGrid → Salesforce | Via Salesforce Data Cloud | Ingest email engagement data into Data Cloud |
+| SendGrid → HubSpot | Via Zapier/Make | Sync email events, contact activity |
+| SendGrid → Zapier | Native | Triggers: email delivered, opened, clicked, bounced, unsubscribed. Actions: send email, add to list |
+| SendGrid → Make | Native | Email event triggers and actions |
+| SendGrid → n8n | Native (community node) | Full API access — contacts, sends, webhooks |
+| SendGrid → Segment | Native | Event streaming for customer data platforms |
+| SendGrid → WordPress | Native (plugin) | Signup forms, SMTP relay for transactional emails |
+| SendGrid → Shopify | Via Zapier/Make | Transactional email for order confirmations, shipping |
+| SendGrid → Heroku | Native (add-on) | Provisioned as Heroku add-on — shared account |
+| SendGrid → Google Cloud | Native (marketplace) | Marketplace integration for GCP projects |
+| SendGrid → Azure | Native (marketplace) | Azure marketplace offering for transactional email |
 | Closum → Salesforce | Native | Contact sync, field mapping, lifecycle stage mapping |
 | Closum → Pipedrive | Native | Contact sync |
 | Closum → Zoho | Native | Contact sync |
@@ -356,6 +367,13 @@ Before building anything custom, check if a native integration exists:
 - **Automation platforms**: Zapier (600+ apps), plus native integrations with form tools (Tally, Typeform) and productivity tools (Notion, Asana, ClickUp).
 - **For custom pipelines**: Use the API for contact management (add leads to audience lists) or Zapier as the bridge for event-driven workflows. Full API documentation may be available via the Postman collection at developers.closum.com.
 
+### SendGrid webhooks
+- **Event Webhooks**: Configure at Settings > Mail Settings > Event Webhooks or via API (`POST /v3/user/webhooks/event/settings`). Events: processed, dropped, delivered, deferred, bounce, open, click, spam_report, unsubscribe, group_unsubscribe, group_resubscribe. Payload: JSON array of event objects with email, timestamp, event type, sg_message_id, and event-specific fields.
+- **Inbound Parse**: Receive incoming emails as structured POST data. Configure a subdomain MX record pointing to SendGrid, then set the parse webhook URL. Receives: from, to, subject, text, html, attachments, envelope, SPF/DKIM results.
+- **Signed webhooks**: Enable ECDSA signature verification for Event Webhooks — validates payload authenticity. Public key available via API (`GET /v3/user/webhooks/event/settings/signed`).
+- **Up to 5 Event Webhooks**: Pro plan supports up to 5 simultaneous webhook endpoints (Essentials: 2, Free Trial: 1).
+- **353 partner integrations**: Mostly API-driven — no deep native CRM integration. Use Zapier/Make as the bridge for event-driven workflows, or build custom pipelines using the Event Webhook + destination API.
+
 ### Seismic webhooks
 - **Events**: Content views, LiveSend opens, DSR engagement, user provisioning (SCIM)
 - **Setup**: Configure via the developer portal (developer.seismic.com). OAuth 2.0 auth.
@@ -422,6 +440,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-safetymails` — SafetyMails platform help (bulk verification, real-time API, Email Finder, native integrations)
 - `/sales-closum` — Closum platform help (omnichannel marketing automation: email, SMS, WhatsApp, Telegram, Web Push)
 - `/sales-mailchimp` — Mailchimp platform help (email marketing, automations, SMS, 300+ integrations, Marketing + Transactional APIs)
+- `/sales-sendgrid` — SendGrid platform help (Email API, Marketing Campaigns, Event Webhooks, Inbound Parse, 353 partner integrations)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
 ## Examples

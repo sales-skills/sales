@@ -10,7 +10,7 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 45 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 46 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -196,6 +196,12 @@ Router recommends a 5-skill sequence:
 | Skill | What it does | Status |
 |---|---|---|
 | `/sales-safetymails` | SafetyMails platform help — bulk email verification (19-step algorithm, up to 2M emails), real-time API for form validation, Email Finder, spamtrap/disposable detection, integrations | Available |
+
+### SendGrid & Platform
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-sendgrid` | SendGrid (Twilio) platform help — Email API, Marketing Campaigns, transactional email, dynamic templates, domain authentication, dedicated IPs, IP warmup, Event Webhooks, Inbound Parse, Email Validation API, suppressions, statistics, 7 official SDKs, 353 partner integrations | Available |
 
 ### Mailchimp & Platform
 

@@ -1,6 +1,6 @@
 ---
 name: sales-deliverability
-description: "Email deliverability for outbound sales — domain authentication (SPF/DKIM/DMARC), mailbox warmup, sending limits, inbox placement, blacklist monitoring, sender reputation, custom tracking domains, and list hygiene. Use when setting up a new sending domain, warming up mailboxes, diagnosing spam/deliverability issues, recovering from blacklisting, scaling outbound volume, or switching email platforms. Do NOT use for cadence content and strategy (use /sales-cadence), Apollo sequence mechanics (use /sales-apollo-sequences), Mailshake platform help (use /sales-mailshake), Smartlead platform help (use /sales-smartlead), Lemlist platform help (use /sales-lemlist), Yesware platform help (use /sales-yesware), Mixmax-specific config (use /sales-mixmax), Reply.io-specific config (use /sales-reply), Woodpecker-specific config (use /sales-woodpecker), Hunter.io-specific config (use /sales-hunter), Mailmo-specific config (use /sales-mailmo), Tomba-specific config (use /sales-tomba), Prospeo-specific config (use /sales-prospeo), Seamless.AI-specific config (use /sales-seamless), SafetyMails-specific config (use /sales-safetymails), or Mailchimp-specific config (use /sales-mailchimp)."
+description: "Email deliverability for outbound sales — domain authentication (SPF/DKIM/DMARC), mailbox warmup, sending limits, inbox placement, blacklist monitoring, sender reputation, custom tracking domains, and list hygiene. Use when setting up a new sending domain, warming up mailboxes, diagnosing spam/deliverability issues, recovering from blacklisting, scaling outbound volume, or switching email platforms. Do NOT use for cadence content and strategy (use /sales-cadence), Apollo sequence mechanics (use /sales-apollo-sequences), Mailshake platform help (use /sales-mailshake), Smartlead platform help (use /sales-smartlead), Lemlist platform help (use /sales-lemlist), Yesware platform help (use /sales-yesware), Mixmax-specific config (use /sales-mixmax), Reply.io-specific config (use /sales-reply), Woodpecker-specific config (use /sales-woodpecker), Hunter.io-specific config (use /sales-hunter), Mailmo-specific config (use /sales-mailmo), Tomba-specific config (use /sales-tomba), Prospeo-specific config (use /sales-prospeo), Seamless.AI-specific config (use /sales-seamless), SafetyMails-specific config (use /sales-safetymails), Mailchimp-specific config (use /sales-mailchimp), or SendGrid-specific config (use /sales-sendgrid)."
 argument-hint: "[describe your deliverability situation — new domain, spam issues, warmup, scaling]"
 license: MIT
 metadata:
@@ -207,6 +207,17 @@ These tools simulate real email conversations to build sender reputation. Run wa
 - **Key deliverability tip**: Mailchimp bills for ALL contacts including unsubscribed. Unengaged contacts hurt deliverability AND cost money. Archive contacts who haven't opened in 90+ days to improve engagement ratios and reduce costs.
 - **Best practice**: Use Mailchimp's built-in engagement segments to target only active subscribers. Run regular list cleaning campaigns. For transactional email (Mandrill), configure a separate sending domain to isolate marketing and transactional reputation.
 
+### In SendGrid (Twilio)
+- **Domain authentication**: Settings > Sender Authentication > Authenticate Your Domain. SendGrid provides CNAME records for DKIM and a TXT record for SPF. Validates automatically once DNS propagates. Branded links also configured here.
+- **Reverse DNS (rDNS)**: Configure for dedicated IPs to associate your sending domain with your IP address — improves inbox placement and ISP trust. Available in Settings > Sender Authentication > Reverse DNS.
+- **Dedicated IP**: Included on Pro+ (Email API) and Advanced+ (Marketing Campaigns) plans. Additional IPs at $30/mo each. Only recommended for 50K+ emails/month — below that volume, shared IP pools provide better reputation.
+- **IP warmup**: Automated warmup available — SendGrid gradually increases volume over your dedicated IP. Manual warmup also supported for more control. Start at 50-100 emails/day, double every 2-3 days.
+- **Email Validation API**: Real-time single-email validation (`POST /v3/validations/email`) — returns verdict (Valid/Risky/Invalid), score, and checks (disposable domain, role-based address, typo suggestions). Pro plan includes 2,500 validations/month, Premier includes 5,000. Additional validations at extra cost.
+- **Suppressions management**: Automatic suppression of bounces, blocks, invalid emails, spam reports, and unsubscribes. Shared across Email API and Marketing Campaigns. Access via API (`/v3/suppression/*`) or dashboard.
+- **Engagement quality score**: SendGrid provides an engagement quality score that measures your sending reputation based on bounce rates, spam complaints, and engagement metrics.
+- **Custom tracking domain**: Configure a branded tracking domain for open/click tracking links — reduces spam filtering vs. shared SendGrid tracking domains. Settings > Sender Authentication > Link Branding.
+- **Best practice**: Authenticate your domain before sending anything. If on a dedicated IP, use automated warmup. Use the Email Validation API to clean lists before importing. Monitor suppression lists regularly — high bounce or spam complaint rates trigger SendGrid's compliance review, which can suspend your account.
+
 ### In Mailmo (verification focus)
 - **Email Verifier**: Real-time verification including format, domain, MX records, SMTP response, and catch-all detection.
 - **Catch-all detection**: Mailmo's key differentiator — proprietary catch-all verification claims up to 100% accuracy for identifying valid mailboxes on catch-all domains. Standard verifiers mark all catch-all addresses as "risky"; Mailmo verifies the specific mailbox.
@@ -320,6 +331,7 @@ If your domain reputation is damaged:
 - `/sales-seamless` — Seamless.AI platform help (real-time verified contacts, CRM Enrich, Engagement Hub)
 - `/sales-safetymails` — SafetyMails platform help (19-step bulk verification, real-time API, Email Finder)
 - `/sales-mailchimp` — Mailchimp platform help (email campaigns, Customer Journey Builder, domain auth, deliverability)
+- `/sales-sendgrid` — SendGrid platform help (Email API, domain authentication, dedicated IPs, IP warmup, Email Validation API)
 - `/sales-prospect-list` — Build prospect lists with verified contacts
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 

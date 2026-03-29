@@ -1,6 +1,6 @@
 ---
 name: sales-email-tracking
-description: "Email engagement tracking for sales — open tracking, click tracking, attachment views, real-time notifications, follow-up timing, and engagement analytics. Use when setting up email tracking, interpreting open/click data, Mixmax tracking, Woodpecker tracking, timing follow-ups based on engagement, understanding tracking limitations (Apple MPP, pixel blocking), Reply.io tracking, or choosing a tracking tool. For Yesware-specific help, use /sales-yesware. Do NOT use for email deliverability (use /sales-deliverability), cadence design (use /sales-cadence), or buying intent signals beyond email (use /sales-intent)."
+description: "Email engagement tracking for sales — open tracking, click tracking, attachment views, real-time notifications, follow-up timing, and engagement analytics. Use when setting up email tracking, interpreting open/click data, Mixmax tracking, Woodpecker tracking, timing follow-ups based on engagement, understanding tracking limitations (Apple MPP, pixel blocking), Reply.io tracking, or choosing a tracking tool. For Yesware-specific help, use /sales-yesware. Do NOT use for email deliverability (use /sales-deliverability), cadence design (use /sales-cadence), buying intent signals beyond email (use /sales-intent), or SendGrid-specific config (use /sales-sendgrid)."
 argument-hint: "[describe your email tracking question or goal]"
 license: MIT
 metadata:
@@ -198,6 +198,17 @@ Security tools like Barracuda, Mimecast, Proofpoint, and Microsoft Defender pre-
 - **Apple MPP impact**: Mixmax is Gmail-native — Apple MPP primarily affects Apple Mail recipients. Same mitigation applies: weight clicks and replies over opens for Apple Mail contacts
 - **Gotcha**: Mixmax tracking is Gmail-only. If your team uses Outlook, Mixmax tracking won't work — consider Yesware or Salesloft instead
 
+### In SendGrid
+
+- **Tracking types**: Opens (pixel), clicks (link wrapping) — configurable per-message via `tracking_settings` in the Mail Send API or globally in Settings > Tracking
+- **Event Webhooks**: Real-time event delivery to your endpoint. Events: processed, dropped, delivered, deferred, bounce, open, click, spam_report, unsubscribe, group_unsubscribe, group_resubscribe. Configure at Settings > Mail Settings > Event Webhooks or via API (`/v3/user/webhooks/event/settings`).
+- **Signed webhooks**: Enable webhook signature verification to validate that events are genuinely from SendGrid — uses ECDSA signatures with a public key retrievable via API
+- **Statistics dashboard**: Aggregate stats by category, mailbox provider, browser, device, and geography. Available in the dashboard or via Stats API endpoints (`GET /v3/stats`, `GET /v3/categories/stats`, etc.)
+- **Email Activity Feed**: Search and filter individual message events — delivery status, opens, clicks, bounces. Available in the dashboard. API access (`GET /v3/messages`) requires additional purchase on non-Premier plans.
+- **Click tracking domains**: Custom branded domains for click tracking links — reduces spam filtering and improves trust. Configure via Link Branding in Sender Authentication.
+- **Suppression-based unsubscribe tracking**: SendGrid manages unsubscribe groups (ASM) — recipients can manage subscription preferences across groups. Unsubscribe events fire to webhooks automatically.
+- **Gotcha**: SendGrid's open/click tracking is subject to the same Apple MPP and bot-click inflation as other platforms. The Event Webhook delivers raw events — you'll need to build your own filtering logic for bot detection (rapid multi-click from data center IPs within seconds of delivery).
+
 ## Step 5 — Actionable guidance
 
 ### Setting up tracking for the first time
@@ -246,6 +257,7 @@ Design your follow-up cadence around tracking signals rather than fixed time del
 - `/sales-reply` — Reply.io platform help (for Reply.io-specific setup)
 - `/sales-woodpecker` — Woodpecker platform help (for Woodpecker-specific setup)
 - `/sales-seismic` — Seismic platform help including LiveSend tracking and content management
+- `/sales-sendgrid` — SendGrid platform help (Event Webhooks, Email Activity, tracking configuration)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
 ## Examples

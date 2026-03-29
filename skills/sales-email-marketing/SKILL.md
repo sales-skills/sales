@@ -1,6 +1,6 @@
 ---
 name: sales-email-marketing
-description: "Email marketing for opt-in subscribers — broadcasts, nurture sequences, automation, segmentation, and list management. Use when planning email campaigns, designing welcome sequences, setting up behavior-based automation, segmenting lists, improving open/click rates, or choosing an email marketing platform. Do NOT use for cold outbound email (use /sales-cadence), email deliverability/SPF/DKIM (use /sales-deliverability), or connecting email tools to CRM (use /sales-integration). For Groove-specific help, use /sales-groove. For Closum-specific help, use /sales-closum. For Mailchimp-specific help, use /sales-mailchimp."
+description: "Email marketing for opt-in subscribers — broadcasts, nurture sequences, automation, segmentation, and list management. Use when planning email campaigns, designing welcome sequences, setting up behavior-based automation, segmenting lists, improving open/click rates, or choosing an email marketing platform. Do NOT use for cold outbound email (use /sales-cadence), email deliverability/SPF/DKIM (use /sales-deliverability), or connecting email tools to CRM (use /sales-integration). For Groove-specific help, use /sales-groove. For Closum-specific help, use /sales-closum. For Mailchimp-specific help, use /sales-mailchimp. For SendGrid-specific help, use /sales-sendgrid."
 argument-hint: "[describe your email marketing question — e.g., 'design a welcome sequence' or 'improve my open rates']"
 license: MIT
 metadata:
@@ -164,6 +164,22 @@ Closum is a Portugal-based omnichannel marketing automation platform. Key email 
 - **Plan limits**: Zero/Growth: 1 automation; Advanced: 5 automations. Add-on: EUR 5/mo per 5 additional automations
 - **Closum's strength**: True omnichannel — build a single automation that spans email, SMS, WhatsApp, Telegram, and Web Push with condition branches based on engagement
 
+### In SendGrid (Marketing Campaigns)
+
+SendGrid (Twilio) is primarily a transactional email API but also offers Marketing Campaigns as a separate product. Key email marketing capabilities:
+
+- **Drag-and-drop design editor**: Visual email builder with reusable content modules, plus full HTML editing for complete control
+- **Dynamic content**: Handlebars-based template syntax for personalization — conditional content blocks, dynamic sections based on contact data
+- **Single Sends**: One-time broadcast emails to lists or segments — equivalent to campaigns in other platforms
+- **Automations**: Trigger-based email sequences — welcome series, re-engagement, date-based. Visual automation builder with branching logic
+- **Segmentation**: Query-based segments using contact fields, engagement data, and custom fields. Segments update dynamically.
+- **Signup forms**: Built-in form builder for list growth (up to 15 on Advanced plan)
+- **A/B testing**: Test subject lines, content, or send time on Single Sends
+- **Email testing**: Inbox rendering previews across clients/devices, link validation, spam testing (credit-based — 3 on Free Trial, 10 on Basic, 60 on Advanced)
+- **Statistics**: Open rate, click rate, bounce rate, unsubscribe rate — per-send and aggregate. Mailbox provider-level stats available.
+- **Separate billing**: Marketing Campaigns is billed separately from the Email API. Basic ($15/mo, 5K contacts), Advanced ($60/mo, 100K contacts, dedicated IP), Custom (500K+). Sends count separately from API sends.
+- **SendGrid's strength**: Developer-friendly email marketing — teams already using SendGrid's Email API for transactional email can add marketing campaigns without a separate vendor. Shared domain authentication and suppression management across both products.
+
 ### In Klaviyo
 
 - Flow builder is the automation engine — pre-built flows for welcome, cart abandonment, post-purchase, winback, and browse abandonment
@@ -261,6 +277,7 @@ Perform these maintenance tasks regularly:
 - **/sales-groove** — Groove.cm platform-specific guidance (GrooveMail, GroovePages, GrooveSell, GrooveFunnels)
 - **/sales-closum** — Closum platform help (omnichannel email, SMS, WhatsApp, Telegram, Web Push)
 - **/sales-mailchimp** — Mailchimp platform help (email campaigns, Customer Journey Builder, SMS, audience management, API)
+- **/sales-sendgrid** — SendGrid platform help (Email API, Marketing Campaigns, transactional email, dynamic templates)
 - **/sales-cadence** — Cold outbound email cadences and sequences (NOT opt-in marketing)
 - **/sales-deliverability** — SPF, DKIM, DMARC, domain warm-up, and inbox placement
 - **/sales-funnel** — Funnel strategy and page design (landing pages that feed your email list)
