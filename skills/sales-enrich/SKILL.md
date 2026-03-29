@@ -245,6 +245,20 @@ Choose the right approach based on volume and frequency:
 
 **Credit economics**: 1 credit per email verified (bulk). Email Finder: 7 credits per found email, 1 credit for risky/invalid domain, 0 if not found. Pay-as-you-go ($7.50/1,000) or subscription ($6.80/mo/1,000). Credits never expire. Free: 100 bulk + 1,000 API trial.
 
+### In Outscraper
+
+**Emails & Contacts**: Pass a list of website URLs or domains to `GET /emails-and-contacts` — Outscraper scrapes all publicly visible email addresses, phone numbers, and social profiles from those sites. Best for extracting contact info from business websites found via Google Maps scraping.
+
+**Contacts & Leads**: `GET /contacts-and-leads` finds up to 3 email/phone contacts per company, with support for preferred contact types. More targeted than raw email scraping — returns named individuals rather than generic addresses.
+
+**Company Insights**: `GET /company-insights` returns firmographic data (industry, size, revenue estimates), tech stack, social profiles, and company descriptions. Use to enrich CRM records with company-level data.
+
+**Email Validation**: `GET /email-validator` verifies email deliverability (valid/invalid/risky). Run after enrichment to clean the list before sending. Supports batch queries (up to 25 per request).
+
+**Bulk workflow**: Outscraper's API supports batching (25 queries per request) and async processing with webhook callbacks. Ideal for programmatic enrichment pipelines — scrape businesses from Google Maps, then enrich with contacts and validate emails in the same workflow.
+
+**Credit economics**: Pay-as-you-go, no subscriptions. Free tier: 500 Google Maps records/month. Medium: $0.002/record. Business (50K+): $0.001/record. Tiers reset every 30 days.
+
 ### Compliance checklist
 
 Before enriching and contacting, verify compliance with data privacy regulations in your target regions:
@@ -367,6 +381,7 @@ Credits reset monthly and do not roll over. Plan enrichment around your billing 
 - `/sales-mailmo` — Mailmo platform help (Email Finder with catch-all verification, LinkedIn Chrome extension, bulk verification)
 - `/sales-seamless` — Seamless.AI platform help (1.8B+ contacts, Buyer Intent, CRM Enrich, Autopilot, AI Agents, API)
 - `/sales-safetymails` — SafetyMails platform help (19-step bulk verification, real-time API, Email Finder)
+- `/sales-outscraper` — Outscraper platform help (Google Maps scraping, email/contact extraction, company insights, email validation API)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

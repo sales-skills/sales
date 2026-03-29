@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -193,6 +193,13 @@ Before building anything custom, check if a native integration exists:
 | Mailgun → Zapier | Native | Triggers: bounce, delivery, inbound email, unsubscribe, log data. Actions: add to mailing list, email validation |
 | Mailgun → Webhooks | Native | 8 event types (accepted, delivered, opened, clicked, permanent_fail, temporary_fail, complained, unsubscribed). HMAC SHA256 signing. 24hr retry. |
 | Mailgun → Any (API) | API | RESTful API for all operations — no native CRM connectors. Use Zapier or custom webhook handlers for CRM sync. |
+| Outscraper → Google Sheets | Via Zapier | Push scraped Google Maps data, reviews, or contacts to a spreadsheet |
+| Outscraper → Salesforce | Via Zapier | Create leads/contacts from scraped Google Maps businesses |
+| Outscraper → HubSpot | Via Zapier | Create contacts from Google Maps scraping results |
+| Outscraper → Zapier | Native | Trigger on task finished. Actions: Google Maps search, Google News, Amazon reviews |
+| Outscraper → n8n | Native | Outscraper node for automated scraping workflows |
+| Outscraper → Pipedream | Native | API integration for custom scraping pipelines |
+| Outscraper → Any (API) | API | REST API with webhook callbacks — scrape, enrich, validate, and POST results to any endpoint |
 | ActiveCampaign → Salesforce | Native (bi-directional) | Contact/lead sync, deal sync, activity logging, custom field mapping |
 | ActiveCampaign → HubSpot | Via Zapier/Make | Contact sync, deal activity, engagement events |
 | ActiveCampaign → Shopify | Native (deep) | Customer sync, order data, abandoned cart automations, purchase triggers |
@@ -410,6 +417,13 @@ Before building anything custom, check if a native integration exists:
 - **Zapier integration**: 3 triggers (new inbound message, bounced email, message opened) + 2 actions (send transactional email). Webhook-based — requires minimal setup.
 - **No native CRM integration**: Postmark is API-first. Use Zapier or build custom webhook handlers for CRM sync. No native Salesforce/HubSpot connector.
 
+### Outscraper webhooks
+- **Webhook callback pattern**: Pass `webhook=https://your-url.com/callback` as a parameter on any async API endpoint. When the scraping task completes, Outscraper POSTs the full JSON results to your URL.
+- **Supported on all scraping endpoints**: Google Maps search, reviews, photos, emails & contacts, contacts & leads, company insights, Amazon, Yelp, Trustpilot, G2, and all other scraping services.
+- **No event-based webhooks**: Outscraper doesn't fire webhooks on events like "new review found" — it's a task-completion callback pattern. The webhook fires once when the entire scraping task finishes.
+- **Zapier integration**: Trigger on task finished. Actions: search Google Maps, search Google News, extract Amazon reviews. Use Zapier as the bridge to CRM, spreadsheets, or outbound tools.
+- **n8n integration**: Native Outscraper node for self-hosted automation workflows.
+
 ### ActiveCampaign webhooks
 - **25+ event types**: subscribe, unsubscribe, update (contact updated), click, open, sent_mail, reply, bounce, forward, share, deal_add, deal_update, deal_task_add, deal_task_complete, deal_pipeline_add, deal_stage_change, contact_note_add, account_add, account_update, contact_tag_added, contact_tag_removed, automation_before_action, sms_reply, sms_sent, sms_unsub. Configure in Settings > Developer > Webhooks or via API (`POST /api/3/webhooks`).
 - **Payload**: Form-encoded POST with event type (`type`), date, and relevant object data (contact ID, deal ID, list ID, tag, automation name). Not JSON by default — parse as form data.
@@ -514,6 +528,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-mailgun` — Mailgun platform help including REST API, inbound routing, webhooks, and Mailgun Optimize
 - `/sales-klaviyo` — Klaviyo platform help including 350+ integrations, flow webhooks, Advanced KDP webhooks, and Shopify deep sync
 - `/sales-activecampaign` — ActiveCampaign platform help including 900+ integrations, 25+ webhook events, automation webhooks, and Salesforce/Shopify deep sync
+- `/sales-outscraper` — Outscraper platform help including REST API with webhook callbacks, Zapier, n8n, and Pipedream integrations
 - `/sales-sendgrid` — SendGrid platform help including Email API, Event Webhooks, Inbound Parse, and Marketing Campaigns
 - `/sales-postmark` — Postmark platform help including transactional email API, Message Streams, and webhooks
 - `/sales-safetymails` — SafetyMails platform help (bulk verification, real-time API, Email Finder, native integrations)

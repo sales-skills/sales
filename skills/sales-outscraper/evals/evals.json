@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-outscraper",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "How do I scrape Google Maps business listings for restaurants in Brooklyn using Outscraper?",
+      "expected_output": "Guidance on using Outscraper to scrape Google Maps business listings",
+      "assertions": [
+        {"name": "mentions_maps_search_endpoint", "description": "Mentions google_maps_search or /google-maps-search endpoint"},
+        {"name": "mentions_query_format", "description": "Mentions query parameter with category + location format"},
+        {"name": "mentions_limit_parameter", "description": "Mentions limit parameter or result count control"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "I want to extract reviews from multiple Google Maps businesses and filter only recent ones",
+      "expected_output": "Guidance on extracting and filtering Google Maps reviews with Outscraper",
+      "assertions": [
+        {"name": "mentions_reviews_endpoint", "description": "Mentions maps/reviews-v3 or google_maps_reviews endpoint"},
+        {"name": "mentions_cutoff_parameter", "description": "Mentions cutoff parameter for date filtering"},
+        {"name": "mentions_sort_options", "description": "Mentions sort parameter options"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "How do I use the Outscraper API to find email contacts for a list of company domains?",
+      "expected_output": "Guidance on using the Outscraper API for email and contact discovery",
+      "assertions": [
+        {"name": "mentions_contacts_endpoint", "description": "Mentions emails-and-contacts or contacts-and-leads endpoint"},
+        {"name": "mentions_api_key_auth", "description": "Mentions X-API-KEY header authentication"},
+        {"name": "mentions_async_pattern", "description": "Mentions async/webhook pattern or polling for results"}
+      ]
+    }
+  ]
+}

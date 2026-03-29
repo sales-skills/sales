@@ -222,6 +222,15 @@ Save the search as a dynamic list — new matches will appear automatically.
 - **Via Zapier/Make**: Connect any lead source to Reply.io contact creation
 - **Limits**: Unlimited contact storage on Multichannel plan; data credits required for B2B database reveals
 
+### Building lists from Outscraper (Google Maps)
+- **Google Maps scraping**: Search by category + location (e.g., "restaurants brooklyn usa") to extract business names, addresses, phones, websites, ratings, hours, categories, and coordinates. Up to 500 results per query.
+- **Contacts & Leads enrichment**: For each business found, use Outscraper's Contacts & Leads endpoint to find up to 3 email/phone contacts per company — adds decision-maker emails on top of the business listing.
+- **Email & contact scraping**: Pass business website URLs to Outscraper's Emails & Contacts endpoint to scrape all public email addresses from those sites.
+- **Company Insights**: Enrich business records with firmographic data, tech stack, and social profiles.
+- **Export**: Download results as CSV/JSON for import into any outbound tool. Or use Zapier integration to push results directly to your CRM or sequence tool.
+- **Best for**: Local business prospecting, brick-and-mortar lead lists, location-based campaigns, agency clients targeting specific geographies or verticals.
+- **Pricing**: Free tier gives 500 Google Maps records/month. Pay-as-you-go beyond that ($0.002/record medium tier, $0.001/record business tier).
+
 ## Step 4 — Segment and prioritize
 
 Split the list into tiers for sequencing:
@@ -317,6 +326,7 @@ Before launching outreach, validate the list:
 - `/sales-tomba` — Tomba platform help (domain search, email finder, LinkedIn finder, bulk operations)
 - `/sales-prospeo` — Prospeo platform help (200M+ contact search, company search, enrichment, Chrome extension)
 - `/sales-hunter` — Hunter.io platform help (Domain Search, Email Finder, Discover, TechLookup, browser extension)
+- `/sales-outscraper` — Outscraper platform help (Google Maps scraping, reviews, email/contact extraction, company insights API)
 - `/sales-mailmo` — Mailmo platform help (Email Finder with catch-all verification, LinkedIn Chrome extension)
 - `/sales-seamless` — Seamless.AI platform help (1.8B+ contacts, Buyer Intent, Job Changes, Autopilot, Chrome extension)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
