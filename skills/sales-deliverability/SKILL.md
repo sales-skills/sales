@@ -1,6 +1,6 @@
 ---
 name: sales-deliverability
-description: "Email deliverability for outbound sales — domain authentication (SPF/DKIM/DMARC), mailbox warmup, sending limits, inbox placement, blacklist monitoring, sender reputation, custom tracking domains, and list hygiene. Use when setting up a new sending domain, warming up mailboxes, diagnosing spam/deliverability issues, recovering from blacklisting, scaling outbound volume, or switching email platforms. Do NOT use for cadence content and strategy (use /sales-cadence), Apollo sequence mechanics (use /sales-apollo-sequences), Mailshake platform help (use /sales-mailshake), Smartlead platform help (use /sales-smartlead), Lemlist platform help (use /sales-lemlist), Yesware platform help (use /sales-yesware), Mixmax-specific config (use /sales-mixmax), Reply.io-specific config (use /sales-reply), Woodpecker-specific config (use /sales-woodpecker), Hunter.io-specific config (use /sales-hunter), Mailmo-specific config (use /sales-mailmo), Tomba-specific config (use /sales-tomba), Prospeo-specific config (use /sales-prospeo), or Seamless.AI-specific config (use /sales-seamless)."
+description: "Email deliverability for outbound sales — domain authentication (SPF/DKIM/DMARC), mailbox warmup, sending limits, inbox placement, blacklist monitoring, sender reputation, custom tracking domains, and list hygiene. Use when setting up a new sending domain, warming up mailboxes, diagnosing spam/deliverability issues, recovering from blacklisting, scaling outbound volume, or switching email platforms. Do NOT use for cadence content and strategy (use /sales-cadence), Apollo sequence mechanics (use /sales-apollo-sequences), Mailshake platform help (use /sales-mailshake), Smartlead platform help (use /sales-smartlead), Lemlist platform help (use /sales-lemlist), Yesware platform help (use /sales-yesware), Mixmax-specific config (use /sales-mixmax), Reply.io-specific config (use /sales-reply), Woodpecker-specific config (use /sales-woodpecker), Hunter.io-specific config (use /sales-hunter), Mailmo-specific config (use /sales-mailmo), Tomba-specific config (use /sales-tomba), Prospeo-specific config (use /sales-prospeo), Seamless.AI-specific config (use /sales-seamless), or SafetyMails-specific config (use /sales-safetymails)."
 argument-hint: "[describe your deliverability situation — new domain, spam issues, warmup, scaling]"
 license: MIT
 metadata:
@@ -10,7 +10,7 @@ metadata:
 
 # Email Deliverability for Outbound Sales
 
-Help the user set up, diagnose, and optimize email deliverability — from domain authentication and warmup through inbox placement, reputation monitoring, and platform-specific configuration. This skill is tool-agnostic and covers Apollo, Mailshake, Salesloft, Lemlist, Yesware, Mixmax, Reply.io, Woodpecker, Hunter.io, Tomba, Prospeo, Seamless.AI, and standalone tools.
+Help the user set up, diagnose, and optimize email deliverability — from domain authentication and warmup through inbox placement, reputation monitoring, and platform-specific configuration. This skill is tool-agnostic and covers Apollo, Mailshake, Salesloft, Lemlist, Yesware, Mixmax, Reply.io, Woodpecker, Hunter.io, Tomba, Prospeo, Seamless.AI, SafetyMails, and standalone tools.
 
 ## Step 1 — Gather context
 
@@ -221,6 +221,14 @@ These tools simulate real email conversations to build sender reputation. Run wa
 - **No sending infrastructure**: Seamless.AI's Engagement Hub sends emails but doesn't have dedicated deliverability tools (warmup, domain audit, bounce shield). For outbound at scale, export contacts to a dedicated tool with proper deliverability infrastructure.
 - **Best practice**: Use Seamless.AI for data (verified contacts) and a dedicated engagement tool (Salesloft, Outreach, Mailshake, etc.) for sending. The native integrations make this push seamless.
 
+### In SafetyMails (verification + list hygiene)
+- **Bulk Email Verification**: Upload lists up to 2M emails via the panel. 19-step verification algorithm checks syntax, MX records, SMTP response, catch-all detection, spamtrap identification, disposable email detection (80+ services), role-based address detection, and domain typo correction. Results: Valid, Invalid, Catch-All, Disposable, Spamtrap, Role-Based, Syntax Error, Domain Error.
+- **Real-Time API**: JavaScript embed for forms and landing pages — validates emails at point of capture in <1 second. Prevents invalid addresses from entering your database. Customizable error messages for branding. Supports WordPress, Google Tag Manager, RD Station, E-goi, and custom HTML forms.
+- **Email Finder**: B2B corporate email lookup by first name + last name + domain. Every result is auto-verified. Costs 7 credits per found email, 1 credit for risky/invalid domain, 0 credits if not found.
+- **No sending infrastructure**: SafetyMails is a verification/finder tool, not a sending tool. Use it upstream to clean lists before importing into outbound tools.
+- **Credit economics**: 1 credit per email verified (bulk). Pay-as-you-go ($7.50/1,000 credits) or subscription ($6.80/mo/1,000 credits). Credits never expire. Free: 100 bulk credits + 1,000 API trial on signup.
+- **Best practice**: Use SafetyMails for bulk list cleaning before campaigns. Its 19-step algorithm catches spamtraps and disposable emails that simpler verifiers miss. For ongoing form protection, embed the real-time API to prevent bad addresses at the source.
+
 ### In Prospeo (verification focus)
 - **5-Step Email Verification**: Built into every enrichment — syntax check, domain/MX check, SMTP verification, catch-all detection, and result validation. Statuses: VERIFIED (safe to send) or NOT_VERIFIED (use with caution).
 - **Pre-send verification**: Use `only_verified_email: true` on enrichment calls to only get records with verified emails — effectively a built-in verification gate.
@@ -269,7 +277,7 @@ If your domain reputation is damaged:
 5. **Consider a new domain**: If reputation is severely damaged (blacklisted on 3+ lists), it may be faster to start a new outbound domain
 
 ### List hygiene
-- **Verify before sending**: Use NeverBounce, ZeroBounce, or BriteVerify before importing lists
+- **Verify before sending**: Use NeverBounce, ZeroBounce, SafetyMails, or BriteVerify before importing lists
 - **Remove on bounce**: Hard bounces should be permanently removed, not just paused
 - **Re-verify periodically**: Email addresses decay at ~25% per year. Re-verify lists older than 3 months.
 - **Never use purchased lists**: Purchased lists have high bounce/spam rates and will destroy your reputation
@@ -301,6 +309,7 @@ If your domain reputation is damaged:
 - `/sales-hunter` — Hunter.io platform help (Email Verifier, bulk verification, Campaigns with inbox-native sending)
 - `/sales-mailmo` — Mailmo platform help (Email Verifier with catch-all detection, bulk verification)
 - `/sales-seamless` — Seamless.AI platform help (real-time verified contacts, CRM Enrich, Engagement Hub)
+- `/sales-safetymails` — SafetyMails platform help (19-step bulk verification, real-time API, Email Finder)
 - `/sales-prospect-list` — Build prospect lists with verified contacts
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 

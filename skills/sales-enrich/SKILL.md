@@ -75,7 +75,7 @@ Choose the right approach based on volume and frequency:
 - **How**: Try Provider A first → if no result, try Provider B → then Provider C
 - **Credit cost**: Only pay for successful enrichments at each level
 - **Best for**: Maximizing coverage when targeting niche personas or international contacts
-- **Tools**: Clay is purpose-built for this; Lemlist has built-in waterfall enrichment; Apollo's waterfall enrichment is in beta; Yesware Prospector provides 100M+ contacts as an additional source; Reply.io has a built-in B2B database with 1B+ contacts and data credits for email/phone reveals; Woodpecker Lead Finder provides a B2B database with 1B+ leads and data credits for email finding; Tomba provides 430M+ indexed emails with domain search, email finder, and bulk enrichment; Prospeo provides 280M+ leads with 5-step email verification, company enrichment (50+ fields), and bulk operations (50 records per API call); Hunter.io provides Domain Search (all emails at a company), Email Finder (name+domain → email), and Email Verifier with bulk operations for all three; Mailmo provides email finding with catch-all verification (up to 100% accuracy on catch-all domains) and bulk verification via CSV; Seamless.AI provides 1.8B+ verified emails and 414M+ mobile numbers with real-time verification at point of reveal, CRM Enrich for automated database cleanup, and Autopilot for continuous list building
+- **Tools**: Clay is purpose-built for this; Lemlist has built-in waterfall enrichment; Apollo's waterfall enrichment is in beta; Yesware Prospector provides 100M+ contacts as an additional source; Reply.io has a built-in B2B database with 1B+ contacts and data credits for email/phone reveals; Woodpecker Lead Finder provides a B2B database with 1B+ leads and data credits for email finding; Tomba provides 430M+ indexed emails with domain search, email finder, and bulk enrichment; Prospeo provides 280M+ leads with 5-step email verification, company enrichment (50+ fields), and bulk operations (50 records per API call); Hunter.io provides Domain Search (all emails at a company), Email Finder (name+domain → email), and Email Verifier with bulk operations for all three; Mailmo provides email finding with catch-all verification (up to 100% accuracy on catch-all domains) and bulk verification via CSV; Seamless.AI provides 1.8B+ verified emails and 414M+ mobile numbers with real-time verification at point of reveal, CRM Enrich for automated database cleanup, and Autopilot for continuous list building; SafetyMails provides 19-step bulk verification (up to 2M emails), real-time API for form validation, and Email Finder (name+domain → verified email)
 
 ## Step 3 — Execute the enrichment
 
@@ -229,6 +229,22 @@ Choose the right approach based on volume and frequency:
 
 **Credit economics**: 1 credit per contact reveal. Search/browse is free. Pro plan credits expire daily (~1,000/day/user). Free plan: 50 lifetime credits. Basic ($147/mo): 250/month.
 
+### In SafetyMails
+
+**Single enrichment (Email Finder)**: Enter first name, last name, and company domain → SafetyMails returns a verified corporate email. Every result is auto-verified through their 19-step algorithm. You only pay for found emails (7 credits) — risky domains cost 1 credit, not-found is free.
+
+**Bulk verification**:
+1. Upload a CSV/TXT list (up to 2M emails) to the SafetyMails panel
+2. 19-step verification: syntax, MX, SMTP, catch-all, spamtrap, disposable (80+ services), role-based, domain typo correction
+3. Download results with per-email status: Valid, Invalid, Catch-All, Disposable, Spamtrap, Role-Based, Syntax Error, Domain Error
+4. Remove non-valid addresses before importing into outbound tools
+
+**Real-time API (form validation)**: Embed JavaScript on signup forms to verify emails at point of capture. Prevents invalid addresses from entering your database — <1 second response.
+
+**No bulk enrichment API**: SafetyMails bulk verification is upload-only via the panel. The real-time API is designed for single-email form validation, not programmatic batch enrichment. For API-driven bulk workflows, use SafetyMails for verification and another tool (Apollo, Hunter, Prospeo) for finding.
+
+**Credit economics**: 1 credit per email verified (bulk). Email Finder: 7 credits per found email, 1 credit for risky/invalid domain, 0 if not found. Pay-as-you-go ($7.50/1,000) or subscription ($6.80/mo/1,000). Credits never expire. Free: 100 bulk + 1,000 API trial.
+
 ### Compliance checklist
 
 Before enriching and contacting, verify compliance with data privacy regulations in your target regions:
@@ -350,6 +366,7 @@ Credits reset monthly and do not roll over. Plan enrichment around your billing 
 - `/sales-hunter` — Hunter.io platform help (Domain Search, Email Finder, Email Verifier, Campaigns, Discover, TechLookup, Signals)
 - `/sales-mailmo` — Mailmo platform help (Email Finder with catch-all verification, LinkedIn Chrome extension, bulk verification)
 - `/sales-seamless` — Seamless.AI platform help (1.8B+ contacts, Buyer Intent, CRM Enrich, Autopilot, AI Agents, API)
+- `/sales-safetymails` — SafetyMails platform help (19-step bulk verification, real-time API, Email Finder)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

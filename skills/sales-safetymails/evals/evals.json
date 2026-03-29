@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-safetymails",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "How do I clean my email list with SafetyMails?",
+      "expected_output": "Guidance on bulk verification upload process including file upload, 19-step algorithm, and result interpretation",
+      "assertions": [
+        {"name": "mentions_bulk_upload", "description": "Mentions uploading a list (CSV, TXT) to SafetyMails panel for bulk verification"},
+        {"name": "mentions_verification_algorithm", "description": "Mentions the 19-step verification algorithm or describes the verification checks"},
+        {"name": "mentions_credit_cost", "description": "Mentions that bulk verification costs 1 credit per email"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "I want to add real-time email verification to my signup form using SafetyMails",
+      "expected_output": "Guidance on setting up the SafetyMails real-time API JavaScript embed for form validation",
+      "assertions": [
+        {"name": "mentions_javascript_embed", "description": "Mentions the real-time API is a JavaScript embed or snippet for forms"},
+        {"name": "mentions_api_key", "description": "Mentions generating an API key from the SafetyMails panel"},
+        {"name": "mentions_response_time", "description": "Mentions sub-1-second response time or real-time validation speed"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "How does SafetyMails Email Finder work and what does it cost?",
+      "expected_output": "Explanation of Email Finder feature with input requirements and credit economics",
+      "assertions": [
+        {"name": "mentions_inputs", "description": "Mentions that Email Finder requires first name, last name, and company domain as inputs"},
+        {"name": "mentions_credit_cost", "description": "Mentions 7 credits per found email (and 0 credits if not found)"},
+        {"name": "mentions_auto_verification", "description": "Mentions that found emails are automatically verified"}
+      ]
+    }
+  ]
+}

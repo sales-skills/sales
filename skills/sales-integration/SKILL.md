@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -140,6 +140,20 @@ Before building anything custom, check if a native integration exists:
 | Seamless.AI → Greenhouse | Native | Push contacts (recruiting) |
 | Seamless.AI → Mixmax | Native | Push contacts |
 | Seamless.AI → Zapier | Native | Connect to 8,000+ apps |
+| SafetyMails → HubSpot | Native | Verify/clean HubSpot contact emails |
+| SafetyMails → Mailchimp | Native | Verify subscriber lists before sending |
+| SafetyMails → ActiveCampaign | Native | Clean contact lists |
+| SafetyMails → SendGrid | Native | Verify sender lists |
+| SafetyMails → RD Station | Native | Verify lead emails |
+| SafetyMails → Salesforce | Via Zapier | Verify CRM contact emails |
+| SafetyMails → Pipedrive | Via Zapier | Verify deal contact emails |
+| SafetyMails → Brevo | Native | Clean marketing lists |
+| SafetyMails → WordPress | Native (plugin) | Real-time form validation |
+| SafetyMails → Zapier | Native | Connect to 8,000+ apps |
+| SafetyMails → Make | Native | Visual automation workflows |
+| SafetyMails → n8n | Native | Self-hosted automation |
+| SafetyMails → Pabbly Connect | Native | Low-cost automation |
+| SafetyMails → Pluga | Native | Brazil-focused automation platform |
 
 **Rule**: If a native integration covers your use case, use it. Native integrations handle auth, retry, and error handling automatically. Only go custom when native doesn't support your specific trigger or action.
 
@@ -296,6 +310,12 @@ Before building anything custom, check if a native integration exists:
 - **Pattern**: Callback-based — Seamless.AI POSTs enriched data when research completes, rather than event-subscription-based
 - **API-first**: For custom pipelines, use the REST API with research/poll endpoints or webhook callbacks. See `/sales-seamless` for full API reference.
 
+### SafetyMails integrations
+- **No public REST API or webhook support**: SafetyMails does not offer documented REST API endpoints or webhook event subscriptions for custom pipelines.
+- **Real-time API**: JavaScript embed for form validation — not a REST API. Validates emails on web forms in <1 second.
+- **Integration method**: Native connectors (HubSpot, Mailchimp, ActiveCampaign, SendGrid, RD Station, Brevo, Pipedrive, WordPress) and automation platforms (Zapier, Make, n8n, Pabbly Connect, Pluga).
+- **For custom pipelines**: Use Zapier/Make as the bridge — trigger on list upload completion or schedule periodic verification runs. No direct API-to-API integration available.
+
 ### Seismic webhooks
 - **Events**: Content views, LiveSend opens, DSR engagement, user provisioning (SCIM)
 - **Setup**: Configure via the developer portal (developer.seismic.com). OAuth 2.0 auth.
@@ -359,6 +379,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-prospeo` — Prospeo platform help including API, native CRM integrations, and MCP server
 - `/sales-hunter` — Hunter.io platform help including API, CRM integrations, webhooks, and MCP server
 - `/sales-seamless` — Seamless.AI platform help including API, CRM integrations, and webhooks
+- `/sales-safetymails` — SafetyMails platform help (bulk verification, real-time API, Email Finder, native integrations)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
 ## Examples

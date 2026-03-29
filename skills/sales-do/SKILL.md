@@ -1,6 +1,6 @@
 ---
 name: sales-do
-description: "Route any sales, marketing, or GTM objective to the right specialized skill. Covers 42 first-party skills and 53 third-party skills across prospecting, outbound, deals, proposals, forecasting, deliverability, enrichment, intent signals, content, coaching, CRO, SEO, and platform help for Apollo, Salesloft, Mailshake, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter, Tomba, Prospeo, Mailmo, Seamless.AI, Seismic, Groove, and Qwilr. Use when you have a sales or marketing question and are not sure which skill to use. Do NOT use to solve problems directly — this skill only routes."
+description: "Route any sales, marketing, or GTM objective to the right specialized skill. Covers 43 first-party skills and 53 third-party skills across prospecting, outbound, deals, proposals, forecasting, deliverability, enrichment, intent signals, content, coaching, CRO, SEO, and platform help for Apollo, Salesloft, Mailshake, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter, Tomba, Prospeo, Mailmo, Seamless.AI, SafetyMails, Seismic, Groove, and Qwilr. Use when you have a sales or marketing question and are not sure which skill to use. Do NOT use to solve problems directly — this skill only routes."
 ---
 
 You are a sales skills router. Your job is to understand the user's sales objective, match it to the right specialized skill, and generate a ready-to-use prompt. You do NOT solve the problem directly — you route to the skill that will.
@@ -163,6 +163,12 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 | Skill | Route when... |
 |---|---|
 | `/sales-seamless` | General Seamless.AI questions — Prospector, Buyer Intent, Job Changes, CRM Enrich, Pitch Intelligence, Engagement Hub (email, calling, social), AI Agents, Autopilot, Chrome extension, API, integrations | Route when the user asks about Seamless.AI setup, config, features, or troubleshooting. Route when they mention Seamless.AI Prospector, Buyer Intent, Job Changes, CRM Enrich, Pitch Intelligence, Engagement Hub, AI Agents, Autopilot, Seamless Chrome extension, or Seamless API. |
+
+### SafetyMails & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-safetymails` | General SafetyMails questions — bulk email verification, real-time API, Email Finder, 19-step algorithm, verification statuses, credit economics, integrations | Route when the user asks about SafetyMails setup, config, features, or troubleshooting. Route when they mention SafetyMails verification, SafetyMails API, SafetyMails Email Finder, or SafetyMails credits. |
 
 ### Seismic & Platform
 
@@ -408,6 +414,8 @@ Some requests are ambiguous. Apply these rules:
 - **"Hunter" / "Hunter.io" / "Hunter Campaigns" / "Hunter Discover" / "Hunter Signals" / "TechLookup" / "Hunter MCP" / "hunter-mcp"** → `/sales-hunter` (platform help). If asking about enrichment strategy across tools → `/sales-enrich`. If asking about building a prospect list → `/sales-prospect-list`. If asking about email deliverability strategy → `/sales-deliverability`. If asking about cadence strategy → `/sales-cadence`. If asking about connecting Hunter to other tools → `/sales-integration`. If asking about buying signal strategy → `/sales-intent`.
 - **"domain search" / "email finder" / "email verifier"** → Could be Hunter.io or Tomba. Ask which tool they're using. If Hunter → `/sales-hunter`. If Tomba → `/sales-tomba`. If general enrichment → `/sales-enrich`.
 - **"Tomba" / "Tomba.io" / "author finder" / "LinkedIn finder" / "phone finder" / "email format" / "email pattern"** → `/sales-tomba` (platform help). If asking about enrichment strategy across tools → `/sales-enrich`. If asking about building a prospect list → `/sales-prospect-list`. If asking about email deliverability/verification strategy → `/sales-deliverability`. If asking about connecting Tomba to other tools → `/sales-integration`.
+- **"SafetyMails" / "SafetyMails API" / "SafetyMails Email Finder" / "SafetyMails verification"** → `/sales-safetymails` (platform help). If asking about email verification strategy across tools → `/sales-deliverability`. If asking about enrichment strategy → `/sales-enrich`. If asking about connecting SafetyMails to other tools → `/sales-integration`.
+- **"email verification" / "verify emails" / "clean email list" / "list hygiene" / "spamtrap" / "disposable email"** → Could be SafetyMails, Mailmo, or general deliverability. If they mention SafetyMails → `/sales-safetymails`. If they mention Mailmo → `/sales-mailmo`. If general → `/sales-deliverability`.
 - **"Seismic" / "Enablement Cloud" / "LiveSend" / "LiveDocs" / "Aura AI"** → `/sales-seismic`. If they ask about content strategy without mentioning Seismic → `/sales-content`. If they ask about coaching/training without mentioning Seismic → `/sales-coaching`.
 - **"battle cards" / "content library" / "sales collateral" / "one-pagers" / "content audit"** → `/sales-content`. If they mention "Seismic content" → `/sales-seismic`. If they want to write marketing copy → `/copywriting`.
 - **"coaching" / "onboarding" / "ramp time" / "role-play" / "certification"** → `/sales-coaching`. If they want to review a specific recorded call → `/sales-call-review`. If they mention "Seismic Learning" → `/sales-seismic`.
