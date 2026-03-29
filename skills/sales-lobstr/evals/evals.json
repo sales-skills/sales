@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-lobstr",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "How do I scrape Google Maps leads using Lobstr.io?",
+      "expected_output": "Guidance on using Lobstr.io to scrape Google Maps leads",
+      "assertions": [
+        {"name": "mentions_google_maps_scraper", "description": "Mentions Google Maps Leads Scraper squid or template"},
+        {"name": "mentions_no_code_interface", "description": "Mentions no-code web app or squid configuration"},
+        {"name": "mentions_credits_system", "description": "Mentions credits system for usage and billing"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "I want to set up a recurring LinkedIn Sales Navigator scrape that exports to Google Sheets",
+      "expected_output": "Guidance on configuring a scheduled LinkedIn Sales Navigator scrape with Google Sheets export",
+      "assertions": [
+        {"name": "mentions_scheduled_automation", "description": "Mentions scheduled automation or recurring run configuration"},
+        {"name": "mentions_cookie_account_sync", "description": "Mentions cookie-based account sync for LinkedIn authentication"},
+        {"name": "mentions_google_sheets_export", "description": "Mentions Google Sheets export integration"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "How do I use the Lobstr.io API to run a scraping job and get results?",
+      "expected_output": "Guidance on using the Lobstr.io API to run scraping jobs programmatically",
+      "assertions": [
+        {"name": "mentions_async_workflow", "description": "Mentions async workflow: create squid, add tasks, start run, get results"},
+        {"name": "mentions_token_auth", "description": "Mentions Token authentication for API requests"},
+        {"name": "mentions_rate_limits", "description": "Mentions API rate limits"}
+      ]
+    }
+  ]
+}

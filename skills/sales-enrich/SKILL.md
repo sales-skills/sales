@@ -289,6 +289,15 @@ Choose the right approach based on volume and frequency:
 - **Browser extensions**: Chrome and Firefox extensions for in-browser email lookup while browsing company websites.
 - **Credit economics**: 1 credit = 1 successful search/verify/find. Free: 25/mo. Starter: $39/mo (1K). Pro: $69/mo (10K). Business: $149/mo (50K). Enterprise: $299/mo (200K). Annual saves 30%.
 
+### In Lobstr.io (scraping-based enrichment)
+- **Google Maps Leads Scraper**: Extract business contact data (phone, website, email, address, hours, ratings) from Google Maps listings. Not traditional enrichment — it's scraping public data, but the output is structured contact/company records you can import into CRM or outbound tools.
+- **LinkedIn Sales Navigator Scraper**: Extract lead profiles from Sales Nav searches — names, titles, companies, LinkedIn URLs. Requires cookie-based account sync for login-wall access.
+- **Emails & Contacts from websites**: Use Lobstr's website scrapers to extract email addresses and contact info from company websites at scale.
+- **Scheduled enrichment**: Set up recurring scrapes to continuously enrich your data — e.g., weekly Google Maps scrapes for new businesses in target verticals.
+- **No traditional enrichment API**: Lobstr.io scrapes raw data from sources rather than maintaining an enrichment database. Use it upstream to collect raw data, then feed into enrichment tools (Hunter, Tomba, Enrich.so) for email verification and additional firmographic data.
+- **Export**: Google Sheets, Amazon S3, SFTP, or JSON via API. Webhook notifications on completion.
+- **Credit economics**: 1 credit = 1 unique result. Free: 100 credits. Paid from €50/mo.
+
 ### Compliance checklist
 
 Before enriching and contacting, verify compliance with data privacy regulations in your target regions:
@@ -414,6 +423,7 @@ Credits reset monthly and do not roll over. Plan enrichment around your billing 
 - `/sales-outscraper` — Outscraper platform help (Google Maps scraping, email/contact extraction, company insights, email validation API)
 - `/sales-enrichso` — Enrich.so platform help (reverse email lookup, LinkedIn enrichment, email/phone finder, company data, bulk enrichment API)
 - `/sales-minelead` — Minelead platform help (domain email search, email finder, verifier, lead generator, campaigns, bulk operations, API)
+- `/sales-lobstr` — Lobstr.io platform help (50+ web scrapers for Google Maps, LinkedIn, reviews — scraping-based data collection and enrichment)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

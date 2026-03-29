@@ -252,6 +252,17 @@ Save the search as a dynamic list — new matches will appear automatically.
 - **Best for**: Building email lists from target account domains, discovering contacts at specific companies, keyword-based company discovery, and verifying found emails in one workflow.
 - **Pricing**: Free (25 credits/mo), Starter $39/mo (1K), Pro $69/mo (10K), Business $149/mo (50K), Enterprise $299/mo (200K).
 
+### Building lists from Lobstr.io (web scraping + Google Maps + LinkedIn)
+- **Google Maps Leads Scraper**: Search by category + location to extract business names, addresses, phones, websites, ratings, hours, and more. Export structured data as CSV/JSON. Great for local business prospecting.
+- **Google Maps Reviews Scraper**: Extract reviews with ratings, text, and reviewer info — use for competitive research or identifying dissatisfied customers of competitors.
+- **LinkedIn Sales Navigator Leads Scraper**: Extract lead data from Sales Navigator searches. Requires cookie-based account sync (1-click browser extension) — scrapes behind the login wall without sharing credentials.
+- **50+ additional scrapers**: Twitter users, YouTube channels, Instagram profiles, e-commerce product listings, and more. Each scraper returns structured data you can export and import into your outbound tools.
+- **Scheduled automation**: Set up recurring scrapes to build lists automatically — e.g., scrape new Google Maps listings in your target area weekly and export to Google Sheets.
+- **Multi-threading**: Run hundreds of concurrent scrapers for large-scale list building across multiple geographies or verticals simultaneously.
+- **Export options**: Google Sheets (native), Amazon S3, SFTP, or retrieve via API as JSON. Webhook notifications when runs complete.
+- **Best for**: Local business prospecting from Google Maps, LinkedIn lead extraction, building lists from any website at scale, monitoring new listings/profiles over time with scheduled scrapes.
+- **Pricing**: Free (100 credits, 30 rows/export), paid from €50/mo. 1 credit = 1 unique result. Credits refresh monthly.
+
 ## Step 4 — Segment and prioritize
 
 Split the list into tiers for sequencing:
@@ -350,6 +361,7 @@ Before launching outreach, validate the list:
 - `/sales-outscraper` — Outscraper platform help (Google Maps scraping, reviews, email/contact extraction, company insights API)
 - `/sales-enrichso` — Enrich.so platform help (LinkedIn enrichment, reverse email lookup, employee search, similar companies, bulk enrichment API)
 - `/sales-minelead` — Minelead platform help (domain email search, email finder, lead generator, verifier, campaigns, bulk operations, Chrome/Firefox extensions)
+- `/sales-lobstr` — Lobstr.io platform help (50+ no-code web scrapers, Google Maps leads, LinkedIn Sales Nav extraction, scheduled automation, API)
 - `/sales-mailmo` — Mailmo platform help (Email Finder with catch-all verification, LinkedIn Chrome extension)
 - `/sales-seamless` — Seamless.AI platform help (1.8B+ contacts, Buyer Intent, Job Changes, Autopilot, Chrome extension)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

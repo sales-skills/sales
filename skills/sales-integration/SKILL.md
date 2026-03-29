@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -205,6 +205,12 @@ Before building anything custom, check if a native integration exists:
 | Minelead → HubSpot | Via Zapier | Push discovered contacts to HubSpot CRM via Zapier workflows |
 | Minelead → Zapier | Native | 6,000+ app connections — trigger on new lead found, actions for email search and verification |
 | Minelead → Any (API) | API | REST API at api.minelead.io/v1 — search, find, validate, manage leads and campaigns programmatically |
+| Lobstr.io → Google Sheets | Native | Auto-export scraping results to Google Sheets on run completion |
+| Lobstr.io → Amazon S3 | Native | Upload structured JSON/CSV results to S3 bucket automatically |
+| Lobstr.io → Webhook | Native | 4 events (run.running, run.paused, run.done, run.error) — POST JSON to any URL with 3x retry |
+| Lobstr.io → Gmail | Native | Email notifications on run completion or failure |
+| Lobstr.io → Make | Native | No-code automation workflows via make.com integration |
+| Lobstr.io → Any (API) | API | Async REST API at api.lobstr.io/v1 — create squids, add tasks, start runs, retrieve results as JSON |
 | Enrich.so → Zapier | Via Zapier | Trigger on enrichment complete. Actions: enrich email, find LinkedIn profile |
 | Enrich.so → n8n | Via n8n | HTTP Request node calling Enrich.so REST API for automated enrichment workflows |
 | Enrich.so → Make | Via Make | HTTP module calling Enrich.so API for enrichment automation |
@@ -440,6 +446,15 @@ Before building anything custom, check if a native integration exists:
 - **Zoho CRM native**: Enterprise-tier feature for direct CRM lead import.
 - **API polling**: Use `GET /v1/history` to poll for recent search activity if you need to track operations programmatically.
 
+### Lobstr.io webhooks
+- **4 event types**: `run.running` (run begins/resumes), `run.paused` (execution halts due to account limits), `run.done` (run finishes without errors), `run.error` (run crashed with error).
+- **Payload**: JSON with `id` (run hash), `object` ("run"), `event` (event type), `squid` (object with `id` and `name`), `timestamp` (UTC YYYY/MM/DD HH:MM:SS).
+- **Setup**: `POST /v1/delivery?squid={squid_hash}` with `webhook_fields.url`, `webhook_fields.is_active`, `webhook_fields.events` (per-event booleans), `webhook_fields.retry` (boolean).
+- **Retry**: Up to 3 attempts with 15-minute delay between retries. Endpoint must respond with HTTP 200/201/202 within 30 seconds.
+- **Other delivery methods**: Google Sheets (native auto-export), Amazon S3, SFTP, Gmail notifications. Configure via dashboard or API.
+- **Make integration**: Native make.com integration for no-code automation workflows triggered by scraping results.
+- **Coming soon**: HubSpot, Slack, Zapier, Airtable integrations announced but not yet available.
+
 ### Enrich.so webhooks
 - **Bulk enrichment callbacks**: When submitting bulk enrichment jobs via API, provide a `callback_url` parameter. Enrich.so POSTs the enriched results as JSON when the batch completes.
 - **No event-based webhooks**: Enrich.so is a request/response enrichment API — no real-time event webhooks. Use polling or callback URLs for async bulk operations.
@@ -553,6 +568,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-outscraper` — Outscraper platform help including REST API with webhook callbacks, Zapier, n8n, and Pipedream integrations
 - `/sales-enrichso` — Enrich.so platform help including REST API, bulk enrichment callbacks, Zapier, and n8n/Make integration
 - `/sales-minelead` — Minelead platform help including REST API, Zapier, Google Sheets, and Zoho CRM integrations
+- `/sales-lobstr` — Lobstr.io platform help including async REST API, webhooks (4 events), Google Sheets, S3, Make, and SFTP integrations
 - `/sales-sendgrid` — SendGrid platform help including Email API, Event Webhooks, Inbound Parse, and Marketing Campaigns
 - `/sales-postmark` — Postmark platform help including transactional email API, Message Streams, and webhooks
 - `/sales-safetymails` — SafetyMails platform help (bulk verification, real-time API, Email Finder, native integrations)
