@@ -259,6 +259,26 @@ Choose the right approach based on volume and frequency:
 
 **Credit economics**: Pay-as-you-go, no subscriptions. Free tier: 500 Google Maps records/month. Medium: $0.002/record. Business (50K+): $0.001/record. Tiers reset every 30 days.
 
+### In Enrich.so
+
+**Reverse Email Lookup**: Pass an email address to Enrich.so's API — returns the person's LinkedIn profile, job title, company, education, 50+ data points. Best for enriching CRM contacts where you have email but need full professional context.
+
+**LinkedIn Profile Enrichment**: `GET /v1/api/linkedin-by-url` — pass a LinkedIn URL, get full profile data including positions, education, skills, contact info, network stats. Works for both person and company profiles.
+
+**Email Finder / LinkedIn to Email**: Find verified business email from a LinkedIn profile URL. Supports async responses for large batches. Success-based credit model — only charged when an email is found.
+
+**Phone Number Finder**: Find mobile and landline numbers from profiles or emails. Useful for phone-heavy outbound cadences.
+
+**Company Data**: Company lookup by name, domain, or LinkedIn URL returns industry, size, revenue, tech stack, social profiles. Company Funding & Traffic adds investor details, funding rounds, and web traffic estimates.
+
+**Search Similar Companies**: `POST /v1/api/similar-companies` — find lookalike companies from a LinkedIn company URL. Filter by location and employee size. Returns relevancy scores. Great for expanding target account lists from existing customers.
+
+**Search Company Employees**: Find decision-makers by company and role with detailed profiles. Useful for multi-threading into target accounts.
+
+**Bulk Enrichment**: `POST /v1/api/bulk-enrichment` — batch process via CSV upload, JSON array, or CSV URL. Supports types: person, company, find-email, mobile-finder, linkedin-to-email. Async with webhook callbacks (`webhookUrl` parameter). Poll `GET /v1/api/bulk-enrichment-results` for results.
+
+**Credit economics**: Success-based model — only pay for verified data. Free: 25 credits. Starter: $59/mo. Professional: $99/mo. Scale: $149/mo. Pay-as-you-go from $20/100 credits.
+
 ### Compliance checklist
 
 Before enriching and contacting, verify compliance with data privacy regulations in your target regions:
@@ -382,6 +402,7 @@ Credits reset monthly and do not roll over. Plan enrichment around your billing 
 - `/sales-seamless` — Seamless.AI platform help (1.8B+ contacts, Buyer Intent, CRM Enrich, Autopilot, AI Agents, API)
 - `/sales-safetymails` — SafetyMails platform help (19-step bulk verification, real-time API, Email Finder)
 - `/sales-outscraper` — Outscraper platform help (Google Maps scraping, email/contact extraction, company insights, email validation API)
+- `/sales-enrichso` — Enrich.so platform help (reverse email lookup, LinkedIn enrichment, email/phone finder, company data, bulk enrichment API)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

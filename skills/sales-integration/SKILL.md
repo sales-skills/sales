@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -200,6 +200,10 @@ Before building anything custom, check if a native integration exists:
 | Outscraper → n8n | Native | Outscraper node for automated scraping workflows |
 | Outscraper → Pipedream | Native | API integration for custom scraping pipelines |
 | Outscraper → Any (API) | API | REST API with webhook callbacks — scrape, enrich, validate, and POST results to any endpoint |
+| Enrich.so → Zapier | Via Zapier | Trigger on enrichment complete. Actions: enrich email, find LinkedIn profile |
+| Enrich.so → n8n | Via n8n | HTTP Request node calling Enrich.so REST API for automated enrichment workflows |
+| Enrich.so → Make | Via Make | HTTP module calling Enrich.so API for enrichment automation |
+| Enrich.so → Any (API) | API | REST API with bulk enrichment and callback URLs — enrich, search, and POST results to any endpoint |
 | ActiveCampaign → Salesforce | Native (bi-directional) | Contact/lead sync, deal sync, activity logging, custom field mapping |
 | ActiveCampaign → HubSpot | Via Zapier/Make | Contact sync, deal activity, engagement events |
 | ActiveCampaign → Shopify | Native (deep) | Customer sync, order data, abandoned cart automations, purchase triggers |
@@ -424,6 +428,12 @@ Before building anything custom, check if a native integration exists:
 - **Zapier integration**: Trigger on task finished. Actions: search Google Maps, search Google News, extract Amazon reviews. Use Zapier as the bridge to CRM, spreadsheets, or outbound tools.
 - **n8n integration**: Native Outscraper node for self-hosted automation workflows.
 
+### Enrich.so webhooks
+- **Bulk enrichment callbacks**: When submitting bulk enrichment jobs via API, provide a `callback_url` parameter. Enrich.so POSTs the enriched results as JSON when the batch completes.
+- **No event-based webhooks**: Enrich.so is a request/response enrichment API — no real-time event webhooks. Use polling or callback URLs for async bulk operations.
+- **Zapier integration**: Available via Zapier for triggering enrichment from other tools (e.g., new CRM contact → enrich via Enrich.so → update CRM record).
+- **n8n / Make**: Use the HTTP Request node (n8n) or HTTP module (Make) to call Enrich.so's REST API endpoints. Chain with other nodes for automated enrichment pipelines.
+
 ### ActiveCampaign webhooks
 - **25+ event types**: subscribe, unsubscribe, update (contact updated), click, open, sent_mail, reply, bounce, forward, share, deal_add, deal_update, deal_task_add, deal_task_complete, deal_pipeline_add, deal_stage_change, contact_note_add, account_add, account_update, contact_tag_added, contact_tag_removed, automation_before_action, sms_reply, sms_sent, sms_unsub. Configure in Settings > Developer > Webhooks or via API (`POST /api/3/webhooks`).
 - **Payload**: Form-encoded POST with event type (`type`), date, and relevant object data (contact ID, deal ID, list ID, tag, automation name). Not JSON by default — parse as form data.
@@ -529,6 +539,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-klaviyo` — Klaviyo platform help including 350+ integrations, flow webhooks, Advanced KDP webhooks, and Shopify deep sync
 - `/sales-activecampaign` — ActiveCampaign platform help including 900+ integrations, 25+ webhook events, automation webhooks, and Salesforce/Shopify deep sync
 - `/sales-outscraper` — Outscraper platform help including REST API with webhook callbacks, Zapier, n8n, and Pipedream integrations
+- `/sales-enrichso` — Enrich.so platform help including REST API, bulk enrichment callbacks, Zapier, and n8n/Make integration
 - `/sales-sendgrid` — SendGrid platform help including Email API, Event Webhooks, Inbound Parse, and Marketing Campaigns
 - `/sales-postmark` — Postmark platform help including transactional email API, Message Streams, and webhooks
 - `/sales-safetymails` — SafetyMails platform help (bulk verification, real-time API, Email Finder, native integrations)

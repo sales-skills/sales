@@ -10,7 +10,7 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 52 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 53 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -232,6 +232,12 @@ Router recommends a 5-skill sequence:
 | Skill | What it does | Status |
 |---|---|---|
 | `/sales-outscraper` | Outscraper platform help — data extraction and enrichment from Google Maps, reviews, and 50+ internet sources. Google Maps Places scraping (business data), Google Maps Reviews, Google Search/News, Emails & Contacts (website scraping), Contacts & Leads (enrichment), Company Insights, Email Validation, Amazon products/reviews, multi-platform review scraping (Yelp, Tripadvisor, G2, Trustpilot, Glassdoor, Capterra), YouTube Comments, Geocoding, REST API, Zapier/n8n | Available |
+
+### Enrich.so & Platform
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-enrichso` | Enrich.so platform help — LinkedIn enrichment (profile → verified email, phone, company data, job history), Reverse Email Lookup, Email Finder (name + domain), Phone Finder, Company Data (domain or LinkedIn URL → firmographics, tech stack, social profiles), Similar Companies, Search Company Employees, bulk enrichment (CSV upload or API batch), REST API, Zapier/n8n/Make integrations | Available |
 
 ### ActiveCampaign & Platform
 

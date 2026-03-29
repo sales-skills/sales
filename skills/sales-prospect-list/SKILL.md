@@ -231,6 +231,16 @@ Save the search as a dynamic list — new matches will appear automatically.
 - **Best for**: Local business prospecting, brick-and-mortar lead lists, location-based campaigns, agency clients targeting specific geographies or verticals.
 - **Pricing**: Free tier gives 500 Google Maps records/month. Pay-as-you-go beyond that ($0.002/record medium tier, $0.001/record business tier).
 
+### Building lists from Enrich.so (LinkedIn + employee search)
+- **Search Company Employees**: Given a company domain or LinkedIn URL, Enrich.so returns all employees with name, title, LinkedIn URL, and (if available) email/phone. Use this to build targeted lists from specific accounts — great for ABM.
+- **LinkedIn enrichment**: Start with a LinkedIn profile URL and get verified email, phone, company info, and job history. Build your list from LinkedIn Sales Navigator exports.
+- **Email Finder**: Enter a name + company domain to get verified email addresses. Works for individual lookups or bulk CSV upload (up to 25K rows).
+- **Company Data**: Enrich company records with headcount, industry, revenue range, founding year, tech stack, and social profiles via domain or LinkedIn URL.
+- **Similar Companies**: Found a great-fit account? Use Enrich.so's Similar Companies endpoint to find lookalike companies and expand your target list.
+- **Bulk processing**: Upload CSV with LinkedIn URLs, domains, or names+companies for batch enrichment — results available in dashboard or via API callback.
+- **Best for**: ABM list building from LinkedIn, enriching Sales Navigator exports, expanding account lists with lookalikes, building persona-specific lists from company employee data.
+- **Pricing**: Pay-per-credit model — Email Finder costs 1 credit, LinkedIn enrichment 1 credit, Company Data 1 credit, Similar Companies 1 credit per result.
+
 ## Step 4 — Segment and prioritize
 
 Split the list into tiers for sequencing:
@@ -327,6 +337,7 @@ Before launching outreach, validate the list:
 - `/sales-prospeo` — Prospeo platform help (200M+ contact search, company search, enrichment, Chrome extension)
 - `/sales-hunter` — Hunter.io platform help (Domain Search, Email Finder, Discover, TechLookup, browser extension)
 - `/sales-outscraper` — Outscraper platform help (Google Maps scraping, reviews, email/contact extraction, company insights API)
+- `/sales-enrichso` — Enrich.so platform help (LinkedIn enrichment, reverse email lookup, employee search, similar companies, bulk enrichment API)
 - `/sales-mailmo` — Mailmo platform help (Email Finder with catch-all verification, LinkedIn Chrome extension)
 - `/sales-seamless` — Seamless.AI platform help (1.8B+ contacts, Buyer Intent, Job Changes, Autopilot, Chrome extension)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
