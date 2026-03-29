@@ -1,6 +1,6 @@
 ---
 name: sales-email-marketing
-description: "Email marketing for opt-in subscribers — broadcasts, nurture sequences, automation, segmentation, and list management. Use when planning email campaigns, designing welcome sequences, setting up behavior-based automation, segmenting lists, improving open/click rates, or choosing an email marketing platform. Do NOT use for cold outbound email (use /sales-cadence), email deliverability/SPF/DKIM (use /sales-deliverability), or connecting email tools to CRM (use /sales-integration). For Groove-specific help, use /sales-groove. For Closum-specific help, use /sales-closum."
+description: "Email marketing for opt-in subscribers — broadcasts, nurture sequences, automation, segmentation, and list management. Use when planning email campaigns, designing welcome sequences, setting up behavior-based automation, segmenting lists, improving open/click rates, or choosing an email marketing platform. Do NOT use for cold outbound email (use /sales-cadence), email deliverability/SPF/DKIM (use /sales-deliverability), or connecting email tools to CRM (use /sales-integration). For Groove-specific help, use /sales-groove. For Closum-specific help, use /sales-closum. For Mailchimp-specific help, use /sales-mailchimp."
 argument-hint: "[describe your email marketing question — e.g., 'design a welcome sequence' or 'improve my open rates']"
 license: MIT
 metadata:
@@ -129,11 +129,17 @@ GrooveMail is the email marketing component of the Groove.cm suite. Key capabili
 
 ### In Mailchimp
 
-- Use Customer Journeys (replacing the old Automation feature) for multi-step sequences
-- Segments vs. Tags: use tags for manual/import-based grouping, segments for dynamic rule-based filtering
-- Pre-built journeys available for welcome, abandoned cart, and re-engagement — customize rather than build from scratch
-- Send Time Optimization is available on paid plans — enable it for broadcasts
-- Content Optimizer scores your email copy and gives improvement suggestions
+Mailchimp is the dominant email marketing platform (13M+ users, owned by Intuit). For full platform help, use `/sales-mailchimp`.
+
+- **Customer Journey Builder** (Standard+ plan): Visual automation workflows with triggers (signup, purchase, tag, date, API event), conditions, branching, and wait steps. Replaces the older Classic Automations. Pre-built journeys available for welcome, abandoned cart, and re-engagement — customize rather than build from scratch.
+- **Broadcasts**: Create one-time campaigns via the drag-and-drop editor. A/B testing on Essentials+, multivariate testing on Premium only.
+- **Segmentation**: Tags for manual/import-based grouping, segments for dynamic rule-based filtering. Basic segments on Free/Essentials, advanced on Standard, predictive segmentation on Premium.
+- **Send Time Optimization** (Standard+): Learns per-subscriber open patterns and delivers at the individually optimal time.
+- **Dynamic Content** (Standard+): Show different content blocks to different segments within the same email.
+- **Content Studio**: Asset management + generative AI (Intuit Assist) for subject lines, email copy, and content suggestions.
+- **SMS Marketing**: Add-on for paid plans ($20/1,000 credits), 37 countries. Integrate SMS into Customer Journeys alongside email.
+- **Key limitation**: Mailchimp bills for ALL contacts including unsubscribed — archive or delete contacts you're not mailing to control costs.
+- **Transactional email**: Available as Mandrill add-on (Standard+ plan) for receipts, password resets, and notifications via a separate API.
 
 ### In ConvertKit (Kit)
 
@@ -254,6 +260,7 @@ Perform these maintenance tasks regularly:
 
 - **/sales-groove** — Groove.cm platform-specific guidance (GrooveMail, GroovePages, GrooveSell, GrooveFunnels)
 - **/sales-closum** — Closum platform help (omnichannel email, SMS, WhatsApp, Telegram, Web Push)
+- **/sales-mailchimp** — Mailchimp platform help (email campaigns, Customer Journey Builder, SMS, audience management, API)
 - **/sales-cadence** — Cold outbound email cadences and sequences (NOT opt-in marketing)
 - **/sales-deliverability** — SPF, DKIM, DMARC, domain warm-up, and inbox placement
 - **/sales-funnel** — Funnel strategy and page design (landing pages that feed your email list)

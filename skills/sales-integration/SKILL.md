@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Mailchimp, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -154,6 +154,19 @@ Before building anything custom, check if a native integration exists:
 | SafetyMails → n8n | Native | Self-hosted automation |
 | SafetyMails → Pabbly Connect | Native | Low-cost automation |
 | SafetyMails → Pluga | Native | Brazil-focused automation platform |
+| Mailchimp → Salesforce | Native | Contact sync, campaign activity, audience sync |
+| Mailchimp → HubSpot | Native | Contact sync, list sync, campaign data |
+| Mailchimp → Shopify | Native (deep) | E-commerce sync — products, orders, customers, abandoned carts, purchase automations |
+| Mailchimp → WooCommerce | Native | E-commerce sync — products, orders, customers |
+| Mailchimp → BigCommerce | Native | E-commerce sync |
+| Mailchimp → Stripe | Native | Payment and subscription sync for revenue tracking |
+| Mailchimp → WordPress | Native (plugin) | Signup forms, contact sync |
+| Mailchimp → Zapier | Native | 6,000+ app connections — triggers on subscribe, unsubscribe, campaign sent, etc. |
+| Mailchimp → Make | Native | Visual automation workflows |
+| Mailchimp → Google Analytics | Native | Campaign tracking, e-commerce attribution |
+| Mailchimp → Facebook/Instagram | Native | Ad audiences, retargeting, lead ads sync |
+| Mailchimp → Slack | Via Zapier | Notifications on subscribes, campaign sends |
+| Mailchimp → Canva | Native | Design emails and assets directly from Mailchimp |
 | Closum → Salesforce | Native | Contact sync, field mapping, lifecycle stage mapping |
 | Closum → Pipedrive | Native | Contact sync |
 | Closum → Zoho | Native | Contact sync |
@@ -329,6 +342,13 @@ Before building anything custom, check if a native integration exists:
 - **Integration method**: Native connectors (HubSpot, Mailchimp, ActiveCampaign, SendGrid, RD Station, Brevo, Pipedrive, WordPress) and automation platforms (Zapier, Make, n8n, Pabbly Connect, Pluga).
 - **For custom pipelines**: Use Zapier/Make as the bridge — trigger on list upload completion or schedule periodic verification runs. No direct API-to-API integration available.
 
+### Mailchimp webhooks
+- **Marketing API webhooks**: Configure per-audience at `/lists/{list_id}/webhooks`. Events: subscribe, unsubscribe, profile update, cleaned (bounced), email change, campaign sent.
+- **Transactional API (Mandrill) webhooks**: Configure at `/webhooks/add`. Events: send, deferral, hard_bounce, soft_bounce, delivered, open, click, spam, unsub, reject. Payload format: POST with `mandrill_events` JSON parameter.
+- **Setup**: Marketing webhooks via API or Audience > Settings > Webhooks in the dashboard. Transactional webhooks via Mandrill dashboard or API.
+- **Two separate APIs**: Marketing API (`https://<dc>.api.mailchimp.com/3.0/`) and Transactional API (`https://mandrillapp.com/api/1.0/`) have completely independent webhook systems.
+- **300+ native integrations**: Shopify, WooCommerce, Salesforce, HubSpot, WordPress, Canva, Google Analytics, Facebook, Instagram, Zapier, Make, and many more.
+
 ### Closum integrations
 - **API**: Base URL `https://api.closum.com/api`, Bearer token auth. Known endpoints: `GET /audience-list`, `GET /contact-lifecycle-stage/`, `POST /lead-audience-list`. Full endpoint list not publicly documented.
 - **No webhook support documented**: No webhook event subscriptions or callback URLs found in available documentation.
@@ -401,6 +421,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-seamless` — Seamless.AI platform help including API, CRM integrations, and webhooks
 - `/sales-safetymails` — SafetyMails platform help (bulk verification, real-time API, Email Finder, native integrations)
 - `/sales-closum` — Closum platform help (omnichannel marketing automation: email, SMS, WhatsApp, Telegram, Web Push)
+- `/sales-mailchimp` — Mailchimp platform help (email marketing, automations, SMS, 300+ integrations, Marketing + Transactional APIs)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
 ## Examples

@@ -1,6 +1,6 @@
 ---
 name: sales-deliverability
-description: "Email deliverability for outbound sales — domain authentication (SPF/DKIM/DMARC), mailbox warmup, sending limits, inbox placement, blacklist monitoring, sender reputation, custom tracking domains, and list hygiene. Use when setting up a new sending domain, warming up mailboxes, diagnosing spam/deliverability issues, recovering from blacklisting, scaling outbound volume, or switching email platforms. Do NOT use for cadence content and strategy (use /sales-cadence), Apollo sequence mechanics (use /sales-apollo-sequences), Mailshake platform help (use /sales-mailshake), Smartlead platform help (use /sales-smartlead), Lemlist platform help (use /sales-lemlist), Yesware platform help (use /sales-yesware), Mixmax-specific config (use /sales-mixmax), Reply.io-specific config (use /sales-reply), Woodpecker-specific config (use /sales-woodpecker), Hunter.io-specific config (use /sales-hunter), Mailmo-specific config (use /sales-mailmo), Tomba-specific config (use /sales-tomba), Prospeo-specific config (use /sales-prospeo), Seamless.AI-specific config (use /sales-seamless), or SafetyMails-specific config (use /sales-safetymails)."
+description: "Email deliverability for outbound sales — domain authentication (SPF/DKIM/DMARC), mailbox warmup, sending limits, inbox placement, blacklist monitoring, sender reputation, custom tracking domains, and list hygiene. Use when setting up a new sending domain, warming up mailboxes, diagnosing spam/deliverability issues, recovering from blacklisting, scaling outbound volume, or switching email platforms. Do NOT use for cadence content and strategy (use /sales-cadence), Apollo sequence mechanics (use /sales-apollo-sequences), Mailshake platform help (use /sales-mailshake), Smartlead platform help (use /sales-smartlead), Lemlist platform help (use /sales-lemlist), Yesware platform help (use /sales-yesware), Mixmax-specific config (use /sales-mixmax), Reply.io-specific config (use /sales-reply), Woodpecker-specific config (use /sales-woodpecker), Hunter.io-specific config (use /sales-hunter), Mailmo-specific config (use /sales-mailmo), Tomba-specific config (use /sales-tomba), Prospeo-specific config (use /sales-prospeo), Seamless.AI-specific config (use /sales-seamless), SafetyMails-specific config (use /sales-safetymails), or Mailchimp-specific config (use /sales-mailchimp)."
 argument-hint: "[describe your deliverability situation — new domain, spam issues, warmup, scaling]"
 license: MIT
 metadata:
@@ -198,6 +198,15 @@ These tools simulate real email conversations to build sender reputation. Run wa
 - **Inbox rotation**: Distributes sends across multiple mailboxes to stay within per-account limits while maintaining volume. Unlimited email accounts on all plans.
 - **Best practice**: Woodpecker has the most comprehensive built-in deliverability toolkit of any cold email tool. Enable warmup + Bounce Shield + Adaptive Sending on every account. Run domain audit before first campaign. Use the spam checker on every new email template.
 
+### In Mailchimp (opt-in email marketing)
+- **Domain authentication**: Settings > Domain > Authenticate. Mailchimp walks you through adding DKIM and SPF records. DMARC is recommended but configured at your DNS provider, not in Mailchimp.
+- **Custom tracking domain**: Not available on Free or Essentials. Standard+ plans support custom domains for open/click tracking — reduces spam filtering on shared Mailchimp tracking domains.
+- **Dedicated IP**: Available as an add-on for high-volume senders (typically 100K+ contacts). Shared IPs are fine for most users — Mailchimp manages shared IP reputation.
+- **No built-in warmup**: Mailchimp doesn't have a warmup tool because it manages sender reputation via shared infrastructure. New accounts are gradually ramped by Mailchimp's system. If migrating a large list, import in batches (start with most engaged contacts).
+- **Omnivore abuse prevention**: Mailchimp's automated system scans lists for quality issues (high bounce rates, spam traps, purchased lists). Lists that fail Omnivore checks get flagged or suspended — clean your list before importing.
+- **Key deliverability tip**: Mailchimp bills for ALL contacts including unsubscribed. Unengaged contacts hurt deliverability AND cost money. Archive contacts who haven't opened in 90+ days to improve engagement ratios and reduce costs.
+- **Best practice**: Use Mailchimp's built-in engagement segments to target only active subscribers. Run regular list cleaning campaigns. For transactional email (Mandrill), configure a separate sending domain to isolate marketing and transactional reputation.
+
 ### In Mailmo (verification focus)
 - **Email Verifier**: Real-time verification including format, domain, MX records, SMTP response, and catch-all detection.
 - **Catch-all detection**: Mailmo's key differentiator — proprietary catch-all verification claims up to 100% accuracy for identifying valid mailboxes on catch-all domains. Standard verifiers mark all catch-all addresses as "risky"; Mailmo verifies the specific mailbox.
@@ -310,6 +319,7 @@ If your domain reputation is damaged:
 - `/sales-mailmo` — Mailmo platform help (Email Verifier with catch-all detection, bulk verification)
 - `/sales-seamless` — Seamless.AI platform help (real-time verified contacts, CRM Enrich, Engagement Hub)
 - `/sales-safetymails` — SafetyMails platform help (19-step bulk verification, real-time API, Email Finder)
+- `/sales-mailchimp` — Mailchimp platform help (email campaigns, Customer Journey Builder, domain auth, deliverability)
 - `/sales-prospect-list` — Build prospect lists with verified contacts
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 

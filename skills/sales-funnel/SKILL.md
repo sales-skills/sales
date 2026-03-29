@@ -191,6 +191,18 @@ Closum offers landing pages and forms as part of its omnichannel marketing autom
 - **Plan limits**: Landing pages require the Advanced plan (EUR 35/mo, 15 pages included) or the add-on (EUR 15/mo for 4 pages). Not available on Zero or Growth plans.
 - **Best for**: Lead capture funnels where the follow-up sequence needs to span multiple channels (email + SMS + WhatsApp). Not ideal for complex multi-step sales funnels with upsells/downsells — use ClickFunnels or Groove.cm for those.
 
+### In Mailchimp
+
+Mailchimp offers landing pages and basic funnel capabilities as part of its email marketing platform:
+
+- **Landing pages**: Drag-and-drop builder with templates. Free on all plans (including Free tier). Good for opt-in pages, lead magnets, and event registrations.
+- **Signup forms**: Embedded forms, pop-up forms, and hosted signup pages. Auto-connect to audience lists and trigger automations.
+- **Website builder**: Basic website builder included — suitable for simple sites but not a full funnel builder.
+- **Customer Journey integration**: Landing page signups feed directly into Customer Journey automations — trigger welcome sequences, tag-based segmentation, and nurture flows automatically.
+- **Limitations**: Mailchimp is NOT a full funnel builder. No multi-step funnel flows, no upsell/downsell pages, no checkout/order forms, no A/B testing on landing pages (only on emails). For multi-step funnels with checkout, use ClickFunnels, Groove.cm, or GoHighLevel and connect to Mailchimp for email follow-up.
+- **Best for**: Simple lead capture funnels (landing page → email sequence) where Mailchimp is already the email tool. For anything beyond opt-in capture, use a dedicated funnel builder and integrate.
+- **Retargeting**: Mailchimp can create Facebook, Instagram, and Google retargeting audiences from your contacts — useful for funnel retargeting without a separate ad tool.
+
 ### In Other Tools
 
 - **Unbounce / Leadpages**: Best for standalone landing pages and opt-in pages rather than full multi-step funnels. Use Unbounce Smart Traffic for AI-driven A/B testing. Connect to a separate checkout tool (ThriveCart, Stripe) and email tool.
@@ -308,6 +320,7 @@ Follow this framework for every test:
 - `/sales-webinar` — Webinar funnel strategy, registration, replay sequences
 - `/sales-membership` — Membership site setup and retention funnels
 - `/sales-closum` — Closum platform help (landing pages, forms, omnichannel automation)
+- `/sales-mailchimp` — Mailchimp platform help (landing pages, signup forms, email sequences)
 - `/sales-do` — Route to any sales skill by describing what you need
 
 ---
