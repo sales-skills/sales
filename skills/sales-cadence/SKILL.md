@@ -191,6 +191,17 @@ For each call step:
 - **Reporting**: Opens, clicks, replies, bounces, interested rate per step and per campaign
 - **Best practice**: Use condition-based branching to create a single campaign that handles multiple engagement scenarios. Leverage the 16-step depth for longer nurture sequences that most tools can't support.
 
+### In Closum
+- **Where**: Automations section in Closum dashboard (closum.com)
+- **Channel support**: Email (native), SMS (from EUR 0.014/SMS), WhatsApp (automated messaging with intelligent flows), Telegram (automated alerts, document/image sharing), Web Push (browser notifications)
+- **Automation builder**: Visual no-code workflow builder — triggers, conditions, waits, and multi-channel actions in a single flow
+- **Triggers**: Form submission, tag added, lifecycle stage change, date-based, custom events
+- **Actions**: Send email, send SMS, send WhatsApp, send Telegram, add tag, update contact field, wait, condition branch
+- **Cross-channel**: Build journeys that span email → SMS → WhatsApp → Telegram → Web Push in a single automation — strongest omnichannel capability in this list
+- **Personalization**: Dynamic fields (name, company, custom attributes) across all channels
+- **Plan limits**: Zero/Growth: 1 automation; Advanced: 5 automations; add-on: EUR 5/mo per 5 additional automations
+- **Best practice**: Closum's strength is omnichannel journeys for opt-in audiences. For cold outbound prospecting, use a dedicated cold email tool. For warm leads and existing customers, Closum's ability to combine email + SMS + WhatsApp in a single workflow is very effective for re-engagement and nurture.
+
 ### Personalization framework
 - **Level 1 (Minimum)**: First name, company name, title — the bare minimum
 - **Level 2 (Standard)**: Industry reference, company-size-specific pain point
@@ -257,6 +268,7 @@ Provide a benchmarks table:
 - `/sales-hunter` — Hunter.io platform help (Campaigns, Domain Search, Email Finder, Email Verifier)
 - `/sales-seamless` — Seamless.AI platform help (Engagement Hub, Pitch Intelligence, contact data)
 - `/sales-email-tracking` — Email engagement tracking — open/click/attachment signals for follow-up timing
+- `/sales-closum` — Closum platform help (omnichannel: email, SMS, WhatsApp, Telegram, Web Push automations)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Gotchas

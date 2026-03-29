@@ -1,6 +1,6 @@
 ---
 name: sales-email-marketing
-description: "Email marketing for opt-in subscribers — broadcasts, nurture sequences, automation, segmentation, and list management. Use when planning email campaigns, designing welcome sequences, setting up behavior-based automation, segmenting lists, improving open/click rates, or choosing an email marketing platform. Do NOT use for cold outbound email (use /sales-cadence), email deliverability/SPF/DKIM (use /sales-deliverability), or connecting email tools to CRM (use /sales-integration). For Groove-specific help, use /sales-groove."
+description: "Email marketing for opt-in subscribers — broadcasts, nurture sequences, automation, segmentation, and list management. Use when planning email campaigns, designing welcome sequences, setting up behavior-based automation, segmenting lists, improving open/click rates, or choosing an email marketing platform. Do NOT use for cold outbound email (use /sales-cadence), email deliverability/SPF/DKIM (use /sales-deliverability), or connecting email tools to CRM (use /sales-integration). For Groove-specific help, use /sales-groove. For Closum-specific help, use /sales-closum."
 argument-hint: "[describe your email marketing question — e.g., 'design a welcome sequence' or 'improve my open rates']"
 license: MIT
 metadata:
@@ -143,6 +143,21 @@ GrooveMail is the email marketing component of the Groove.cm suite. Key capabili
 - Landing pages and forms are built in — each can trigger different automations
 - Creator-focused: excellent for course creators, newsletters, and digital product sellers
 
+### In Closum
+
+Closum is a Portugal-based omnichannel marketing automation platform. Key email marketing capabilities:
+
+- **Drag-and-drop editor**: Visual email builder with prebuilt templates, custom blocks, and responsive design — no HTML required
+- **Personalization variables**: Dynamic fields (first name, company, custom attributes) in subject lines and body
+- **Newsletters**: One-time broadcasts to audience lists or segments
+- **Email automations**: Trigger-based sequences — welcome, abandoned cart, re-engagement, date-based. Cross-channel: combine email with SMS, WhatsApp, Telegram, and Web Push in a single workflow
+- **Real-time reporting**: Opens, clicks, bounces, unsubscribes — per-campaign and aggregate
+- **Send limits**: Zero plan: 1,000/hr; Growth: 5,000/hr; Advanced: 100,000/hr
+- **Unlimited contacts**: All plans include unlimited contacts
+- **AI assistant**: Built-in OpenAI integration for generating subject lines, email copy, and translations
+- **Plan limits**: Zero/Growth: 1 automation; Advanced: 5 automations. Add-on: EUR 5/mo per 5 additional automations
+- **Closum's strength**: True omnichannel — build a single automation that spans email, SMS, WhatsApp, Telegram, and Web Push with condition branches based on engagement
+
 ### In Klaviyo
 
 - Flow builder is the automation engine — pre-built flows for welcome, cart abandonment, post-purchase, winback, and browse abandonment
@@ -238,6 +253,7 @@ Perform these maintenance tasks regularly:
 ## Related skills
 
 - **/sales-groove** — Groove.cm platform-specific guidance (GrooveMail, GroovePages, GrooveSell, GrooveFunnels)
+- **/sales-closum** — Closum platform help (omnichannel email, SMS, WhatsApp, Telegram, Web Push)
 - **/sales-cadence** — Cold outbound email cadences and sequences (NOT opt-in marketing)
 - **/sales-deliverability** — SPF, DKIM, DMARC, domain warm-up, and inbox placement
 - **/sales-funnel** — Funnel strategy and page design (landing pages that feed your email list)

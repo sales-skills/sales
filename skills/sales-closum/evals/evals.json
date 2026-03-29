@@ -1,0 +1,62 @@
+{
+  "skill_name": "sales-closum",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "How do I create an email campaign in Closum?",
+      "expected_output": "Guidance on email campaign creation workflow",
+      "assertions": [
+        {
+          "name": "mentions_drag_and_drop_editor",
+          "description": "Mentions drag-and-drop editor for composing emails"
+        },
+        {
+          "name": "mentions_personalization_variables",
+          "description": "Mentions personalization variables for customizing email content"
+        },
+        {
+          "name": "mentions_audience_list_or_segmentation",
+          "description": "Mentions audience list or contact segmentation for targeting recipients"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "I want to set up a WhatsApp automation workflow in Closum that sends a welcome message when someone fills out a form",
+      "expected_output": "Guidance on combining landing pages/forms with WhatsApp automation",
+      "assertions": [
+        {
+          "name": "mentions_no_code_automations_or_workflow_builder",
+          "description": "Mentions no-code automations or workflow builder for setting up the workflow"
+        },
+        {
+          "name": "mentions_whatsapp_channel",
+          "description": "Mentions WhatsApp as a channel for sending automated messages"
+        },
+        {
+          "name": "mentions_form_or_landing_page_trigger",
+          "description": "Mentions form or landing page as the trigger for the automation"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "How do I use the Closum API to add contacts to an audience list?",
+      "expected_output": "Guidance on API usage for contact management",
+      "assertions": [
+        {
+          "name": "mentions_api_endpoint",
+          "description": "Mentions POST /lead-audience-list endpoint or relevant API endpoint for adding contacts"
+        },
+        {
+          "name": "mentions_bearer_token_auth",
+          "description": "Mentions Bearer token authentication for API requests"
+        },
+        {
+          "name": "mentions_api_base_url_or_key_generation",
+          "description": "Mentions base URL api.closum.com or API key generation process"
+        }
+      ]
+    }
+  ]
+}

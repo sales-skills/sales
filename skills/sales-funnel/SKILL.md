@@ -178,6 +178,19 @@ Groove.cm bundles funnel building, email, membership, and checkout into one ecos
 - **Elementor + third-party**: Build pages in Elementor, use a separate checkout (ThriveCart, SamCart) embedded via iframe or redirect.
 - WordPress funnels require more setup but offer full control over hosting, speed, and SEO.
 
+### In Closum
+
+Closum offers landing pages and forms as part of its omnichannel marketing automation platform:
+
+- **Drag-and-drop builder**: Visual page builder — no coding required. Build landing pages with forms, CTAs, and lead capture elements
+- **Pop-ups**: Timed, exit-intent, or scroll-triggered pop-ups for lead capture
+- **Forms**: Embedded or pop-up forms for newsletter signups, lead magnets, event registrations
+- **Dynamic segmentation**: Auto-tag and segment contacts based on which form or landing page they convert on
+- **Automation integration**: Connect landing page form submissions directly to Closum automation workflows — trigger welcome emails, SMS confirmations, or WhatsApp messages automatically
+- **Cross-channel follow-up**: Unlike most funnel builders, Closum natively follows up across email, SMS, WhatsApp, Telegram, and Web Push — no external tools needed
+- **Plan limits**: Landing pages require the Advanced plan (EUR 35/mo, 15 pages included) or the add-on (EUR 15/mo for 4 pages). Not available on Zero or Growth plans.
+- **Best for**: Lead capture funnels where the follow-up sequence needs to span multiple channels (email + SMS + WhatsApp). Not ideal for complex multi-step sales funnels with upsells/downsells — use ClickFunnels or Groove.cm for those.
+
 ### In Other Tools
 
 - **Unbounce / Leadpages**: Best for standalone landing pages and opt-in pages rather than full multi-step funnels. Use Unbounce Smart Traffic for AI-driven A/B testing. Connect to a separate checkout tool (ThriveCart, Stripe) and email tool.
@@ -294,6 +307,7 @@ Follow this framework for every test:
 - `/sales-email-marketing` — Post-funnel email sequences, abandoned cart, nurture campaigns
 - `/sales-webinar` — Webinar funnel strategy, registration, replay sequences
 - `/sales-membership` — Membership site setup and retention funnels
+- `/sales-closum` — Closum platform help (landing pages, forms, omnichannel automation)
 - `/sales-do` — Route to any sales skill by describing what you need
 
 ---
