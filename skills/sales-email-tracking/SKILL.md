@@ -1,6 +1,6 @@
 ---
 name: sales-email-tracking
-description: "Email engagement tracking for sales — open tracking, click tracking, attachment views, real-time notifications, follow-up timing, and engagement analytics. Use when setting up email tracking, interpreting open/click data, Mixmax tracking, Woodpecker tracking, timing follow-ups based on engagement, understanding tracking limitations (Apple MPP, pixel blocking), Reply.io tracking, or choosing a tracking tool. For Yesware-specific help, use /sales-yesware. Do NOT use for email deliverability (use /sales-deliverability), cadence design (use /sales-cadence), buying intent signals beyond email (use /sales-intent), SendGrid-specific config (use /sales-sendgrid), Postmark-specific config (use /sales-postmark), Customer.io-specific config (use /sales-customerio), or Mailgun-specific config (use /sales-mailgun)."
+description: "Email engagement tracking for sales — open tracking, click tracking, attachment views, real-time notifications, follow-up timing, and engagement analytics. Use when setting up email tracking, interpreting open/click data, Mixmax tracking, Woodpecker tracking, timing follow-ups based on engagement, understanding tracking limitations (Apple MPP, pixel blocking), Reply.io tracking, or choosing a tracking tool. For Yesware-specific help, use /sales-yesware. Do NOT use for email deliverability (use /sales-deliverability), cadence design (use /sales-cadence), buying intent signals beyond email (use /sales-intent), SendGrid-specific config (use /sales-sendgrid), Postmark-specific config (use /sales-postmark), Customer.io-specific config (use /sales-customerio), Mailgun-specific config (use /sales-mailgun), or Klaviyo-specific config (use /sales-klaviyo)."
 argument-hint: "[describe your email tracking question or goal]"
 license: MIT
 metadata:
@@ -243,6 +243,18 @@ Security tools like Barracuda, Mimecast, Proofpoint, and Microsoft Defender pre-
 - **No real-time desktop notifications**: Mailgun is API-first — no browser extension or desktop alerts for opens/clicks. Build custom notifications using webhooks → Slack/email.
 - **Gotcha**: Same Apple MPP and bot-click caveats apply. Mailgun's click tracking requires the CNAME record — without it, click events won't fire.
 
+### In Klaviyo
+
+- **Tracking types**: Opens (pixel) and clicks (link wrapping) — enabled by default on all campaigns and flows. Configurable per-message.
+- **Flow analytics**: Per-flow and per-step engagement metrics — opens, clicks, revenue attributed, unsubscribes, spam complaints. Conversion tracking attributes revenue to specific flow messages within a configurable attribution window.
+- **Campaign analytics**: Per-campaign metrics with A/B test results, revenue attribution, click heatmaps, and geographic data. Compare performance across campaigns.
+- **Metrics API**: `GET /api/metrics/` lists all tracked events. `POST /api/metric-aggregates/` queries aggregate data (opens, clicks, revenue) by date range, campaign, or flow. Use for custom dashboards and reporting.
+- **Webhooks**: Flow webhooks fire as a flow action step — POST event/profile data to your endpoint URL. Advanced KDP system webhooks fire on any event (email received, clicked, opened, marked spam, consent changes). HMAC-SHA256 signed. Advanced KDP webhooks are enterprise-only.
+- **Benchmarks**: Compare your open rates, click rates, and revenue-per-recipient against industry peers and similar-sized accounts. Available in Analytics > Benchmarks.
+- **Predictive engagement**: Klaviyo predicts churn risk and next order date — use these in segments to proactively target at-risk customers before they disengage.
+- **No real-time desktop notifications**: Klaviyo doesn't push individual open/click alerts. Use flow webhooks to trigger Slack/email notifications, or check the dashboard.
+- **Gotcha**: Same Apple MPP and bot-click caveats apply. Klaviyo's revenue attribution window is configurable — default is 5 days for flows, 3 days for campaigns. Overly generous windows inflate attributed revenue.
+
 ## Step 5 — Actionable guidance
 
 ### Setting up tracking for the first time
@@ -295,6 +307,7 @@ Design your follow-up cadence around tracking signals rather than fixed time del
 - `/sales-postmark` — Postmark platform help (7 webhook types, open/click tracking, message detail API)
 - `/sales-customerio` — Customer.io platform help (conversion goals, reporting webhooks, campaign analytics)
 - `/sales-mailgun` — Mailgun platform help (8 webhook event types, Events API, Metrics API, tag-based tracking)
+- `/sales-klaviyo` — Klaviyo platform help (flow/campaign analytics, revenue attribution, Metrics API, benchmarks)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
 ## Examples

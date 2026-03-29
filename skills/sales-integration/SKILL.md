@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -193,6 +193,16 @@ Before building anything custom, check if a native integration exists:
 | Mailgun → Zapier | Native | Triggers: bounce, delivery, inbound email, unsubscribe, log data. Actions: add to mailing list, email validation |
 | Mailgun → Webhooks | Native | 8 event types (accepted, delivered, opened, clicked, permanent_fail, temporary_fail, complained, unsubscribed). HMAC SHA256 signing. 24hr retry. |
 | Mailgun → Any (API) | API | RESTful API for all operations — no native CRM connectors. Use Zapier or custom webhook handlers for CRM sync. |
+| Klaviyo → Shopify | Native (deep) | Real-time sync of customers, orders, products, carts, browse events. Bi-directional — Klaviyo segments can sync back to Shopify. |
+| Klaviyo → Salesforce CRM | Native | Sync Leads/Contacts to Klaviyo profiles. Map CRM fields to profile properties. |
+| Klaviyo → Salesforce Commerce Cloud | Native | Real-time customer and order sync for e-commerce personalization. |
+| Klaviyo → BigCommerce | Native | Customer, order, and product sync. |
+| Klaviyo → WooCommerce | Native | Customer, order, and product sync via plugin. |
+| Klaviyo → Meta (Facebook/Instagram) | Native | Ad audience sync from Klaviyo segments for retargeting. |
+| Klaviyo → Google Ads | Native | Ad audience sync from Klaviyo segments. |
+| Klaviyo → TikTok | Native | Ad audience sync from Klaviyo segments. |
+| Klaviyo → Zapier | Native | Triggers: new subscriber, new event, updated profile. Actions: add to list, track event, update profile. |
+| Klaviyo → Webhooks | Native | Flow webhooks (POST in any flow step) + Advanced KDP system webhooks (event-driven, HMAC-SHA256 signed). |
 | Closum → Salesforce | Native | Contact sync, field mapping, lifecycle stage mapping |
 | Closum → Pipedrive | Native | Contact sync |
 | Closum → Zoho | Native | Contact sync |
@@ -390,6 +400,13 @@ Before building anything custom, check if a native integration exists:
 - **Zapier integration**: 3 triggers (new inbound message, bounced email, message opened) + 2 actions (send transactional email). Webhook-based — requires minimal setup.
 - **No native CRM integration**: Postmark is API-first. Use Zapier or build custom webhook handlers for CRM sync. No native Salesforce/HubSpot connector.
 
+### Klaviyo webhooks
+- **Flow webhooks**: Add a webhook action to any flow step — POST JSON with event/profile data to your endpoint URL when a profile reaches that step. Available on all plans. Use for CRM updates, Slack notifications, or triggering external actions mid-flow.
+- **Advanced KDP system webhooks**: Event-driven webhooks for email events (received, opened, clicked, marked spam), SMS events, review events, consent events. HMAC-SHA256 signed. Managed via Webhooks API (`POST /api/webhooks/`). Enterprise-only (Advanced KDP required).
+- **350+ native integrations**: Deep Shopify integration (real-time sync), BigCommerce, WooCommerce, Adobe Commerce, Salesforce CRM/Commerce Cloud, Meta, Google Ads, TikTok, Stripe, ReCharge, Yotpo, Gorgias, Zendesk.
+- **Zapier integration**: Triggers on new subscriber, new event, updated profile. Actions to add to list, track event, update profile.
+- **JSON:API format**: All API responses follow JSON:API spec with relationships, filtering, sparse fieldsets, and cursor-based pagination.
+
 ### Mailgun webhooks
 - **8 event types**: accepted, delivered, opened, clicked, permanent_fail, temporary_fail, complained, unsubscribed. Configure per-domain via dashboard (Sending > Webhooks) or API (`POST /v3/domains/{domain}/webhooks`).
 - **Payload**: JSON with `signature` (timestamp, token, signature for HMAC verification), `event-data` (event type, recipient, message headers, timestamp, delivery-status, user-variables, tags).
@@ -477,6 +494,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-seamless` — Seamless.AI platform help including API, CRM integrations, and webhooks
 - `/sales-customerio` — Customer.io platform help including Track/App/Transactional APIs, Data Pipelines, and webhook workflows
 - `/sales-mailgun` — Mailgun platform help including REST API, inbound routing, webhooks, and Mailgun Optimize
+- `/sales-klaviyo` — Klaviyo platform help including 350+ integrations, flow webhooks, Advanced KDP webhooks, and Shopify deep sync
 - `/sales-sendgrid` — SendGrid platform help including Email API, Event Webhooks, Inbound Parse, and Marketing Campaigns
 - `/sales-postmark` — Postmark platform help including transactional email API, Message Streams, and webhooks
 - `/sales-safetymails` — SafetyMails platform help (bulk verification, real-time API, Email Finder, native integrations)

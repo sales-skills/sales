@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-klaviyo",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "How do I set up an abandoned cart flow in Klaviyo?",
+      "expected_output": "Guidance on creating an abandoned cart flow in Klaviyo",
+      "assertions": [
+        {"name": "mentions_flow_trigger", "description": "Mentions creating a flow triggered by a Checkout Started or Added to Cart event"},
+        {"name": "mentions_time_delay", "description": "Mentions adding a time delay before sending the first message"},
+        {"name": "mentions_personalization", "description": "Mentions using dynamic product blocks or catalog data for personalization"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "I want to create a predictive segment of customers likely to churn in Klaviyo",
+      "expected_output": "Guidance on creating a predictive churn segment in Klaviyo",
+      "assertions": [
+        {"name": "mentions_predictive_analytics", "description": "Mentions predictive analytics or predicted churn risk"},
+        {"name": "mentions_segment_filter", "description": "Mentions creating a segment with a churn risk filter or condition"},
+        {"name": "mentions_order_history_requirement", "description": "Mentions needing sufficient order history data for predictions to work"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "How do I track a custom event and create a profile using the Klaviyo API?",
+      "expected_output": "Guidance on using the Klaviyo API to track events and create profiles",
+      "assertions": [
+        {"name": "mentions_api_endpoints", "description": "Mentions POST to /api/events/ or /api/profiles/ endpoint"},
+        {"name": "mentions_auth_header", "description": "Mentions the Klaviyo-API-Key authorization header"},
+        {"name": "mentions_data_format", "description": "Mentions JSON:API format or the event/profile data structure"}
+      ]
+    }
+  ]
+}

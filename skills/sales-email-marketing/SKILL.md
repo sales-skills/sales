@@ -1,6 +1,6 @@
 ---
 name: sales-email-marketing
-description: "Email marketing for opt-in subscribers — broadcasts, nurture sequences, automation, segmentation, and list management. Use when planning email campaigns, designing welcome sequences, setting up behavior-based automation, segmenting lists, improving open/click rates, or choosing an email marketing platform. Do NOT use for cold outbound email (use /sales-cadence), email deliverability/SPF/DKIM (use /sales-deliverability), or connecting email tools to CRM (use /sales-integration). For Groove-specific help, use /sales-groove. For Closum-specific help, use /sales-closum. For Mailchimp-specific help, use /sales-mailchimp. For SendGrid-specific help, use /sales-sendgrid. For Postmark-specific help, use /sales-postmark. For Customer.io-specific help, use /sales-customerio. For Mailgun-specific help, use /sales-mailgun."
+description: "Email marketing for opt-in subscribers — broadcasts, nurture sequences, automation, segmentation, and list management. Use when planning email campaigns, designing welcome sequences, setting up behavior-based automation, segmenting lists, improving open/click rates, or choosing an email marketing platform. Do NOT use for cold outbound email (use /sales-cadence), email deliverability/SPF/DKIM (use /sales-deliverability), or connecting email tools to CRM (use /sales-integration). For Groove-specific help, use /sales-groove. For Closum-specific help, use /sales-closum. For Mailchimp-specific help, use /sales-mailchimp. For SendGrid-specific help, use /sales-sendgrid. For Postmark-specific help, use /sales-postmark. For Customer.io-specific help, use /sales-customerio. For Mailgun-specific help, use /sales-mailgun. For Klaviyo-specific help, use /sales-klaviyo."
 argument-hint: "[describe your email marketing question — e.g., 'design a welcome sequence' or 'improve my open rates']"
 license: MIT
 metadata:
@@ -225,11 +225,19 @@ Mailgun is a developer-first transactional email API — not a traditional email
 
 ### In Klaviyo
 
-- Flow builder is the automation engine — pre-built flows for welcome, cart abandonment, post-purchase, winback, and browse abandonment
-- Deep e-commerce integration (Shopify, WooCommerce, BigCommerce) — product data, cart data, and purchase history available in email templates
-- Predictive analytics: expected date of next order, lifetime value, churn risk
-- Dynamic product recommendations based on browsing and purchase history
-- SMS + email in the same flow — use conditional splits to choose channel based on subscriber preferences
+Klaviyo is a data-driven marketing automation platform built specifically for e-commerce. It's the dominant choice for Shopify-based brands and excels at behavior-triggered multi-channel messaging.
+
+- **Flows (visual automation builder)**: Pre-built flow templates for welcome series, abandoned cart, browse abandonment, post-purchase, winback, sunset/re-engagement, back-in-stock, price drop. Drag-and-drop builder with event triggers, conditional splits, time delays, A/B splits. Cross-channel steps: email + SMS + push in one flow.
+- **Campaigns**: One-time or scheduled broadcasts to segments. A/B testing for subject lines, content, and send time. Smart Send Time optimization uses predictive data to send at each recipient's optimal time.
+- **Deep e-commerce integration**: Native Shopify (deep), BigCommerce, WooCommerce, Adobe Commerce — real-time sync of product data, cart data, purchase history, browse behavior. Product data available in templates for dynamic blocks and recommendations.
+- **Segmentation**: Real-time segments based on purchase behavior, engagement, predictive attributes (CLV, churn risk), custom properties. Segments auto-update. Use as campaign audiences or flow triggers/filters.
+- **Predictive analytics**: Predicted CLV, next order date, churn risk, average order value, spend tier, gender prediction. Requires sufficient data (500+ orders, 180+ days). Use predictions in segments and flows for proactive retention.
+- **Multi-channel in one workflow**: Email, SMS/MMS, WhatsApp, RCS, mobile push — all available as flow steps. Conditional splits to route to preferred channel.
+- **Forms**: Pop-ups, fly-outs, embedded forms, multi-step forms for list growth. Targeting rules (URL, device, referrer, time on page). A/B testing.
+- **Reviews**: Product review collection via email/SMS flows, AI-powered review responses, review display widgets for social proof.
+- **AI agents**: Marketing Agent generates campaigns from your URL. Segments AI creates segments from natural language. Email AI generates subject lines and content.
+- **Pricing**: Free (250 profiles, 500 emails), Email ($20/mo, 500 profiles), Email + SMS ($35/mo). Profile-based billing — all active profiles count (Feb 2025 change). Scales with profile count.
+- **Klaviyo's strength**: Best for e-commerce brands (especially Shopify) that need behavior-triggered automation with deep product data integration, predictive analytics, and multi-channel (email + SMS + push). Overkill for simple newsletters or non-e-commerce use cases.
 
 ## Step 4 — Actionable guidance
 
@@ -324,6 +332,7 @@ Perform these maintenance tasks regularly:
 - **/sales-postmark** — Postmark platform help (transactional email, broadcast message streams, templates)
 - **/sales-customerio** — Customer.io platform help (behavior-driven Journeys, multi-channel automation, Data Pipelines)
 - **/sales-mailgun** — Mailgun platform help (developer-first email API, mailing lists, templates, batch sending)
+- **/sales-klaviyo** — Klaviyo platform help (e-commerce flows, predictive analytics, Shopify integration, multi-channel)
 - **/sales-cadence** — Cold outbound email cadences and sequences (NOT opt-in marketing)
 - **/sales-deliverability** — SPF, DKIM, DMARC, domain warm-up, and inbox placement
 - **/sales-funnel** — Funnel strategy and page design (landing pages that feed your email list)

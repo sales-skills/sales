@@ -1,6 +1,6 @@
 ---
 name: sales-deliverability
-description: "Email deliverability for outbound sales — domain authentication (SPF/DKIM/DMARC), mailbox warmup, sending limits, inbox placement, blacklist monitoring, sender reputation, custom tracking domains, and list hygiene. Use when setting up a new sending domain, warming up mailboxes, diagnosing spam/deliverability issues, recovering from blacklisting, scaling outbound volume, or switching email platforms. Do NOT use for cadence content and strategy (use /sales-cadence), Apollo sequence mechanics (use /sales-apollo-sequences), Mailshake platform help (use /sales-mailshake), Smartlead platform help (use /sales-smartlead), Lemlist platform help (use /sales-lemlist), Yesware platform help (use /sales-yesware), Mixmax-specific config (use /sales-mixmax), Reply.io-specific config (use /sales-reply), Woodpecker-specific config (use /sales-woodpecker), Hunter.io-specific config (use /sales-hunter), Mailmo-specific config (use /sales-mailmo), Tomba-specific config (use /sales-tomba), Prospeo-specific config (use /sales-prospeo), Seamless.AI-specific config (use /sales-seamless), SafetyMails-specific config (use /sales-safetymails), Mailchimp-specific config (use /sales-mailchimp), SendGrid-specific config (use /sales-sendgrid), Postmark-specific config (use /sales-postmark), Customer.io-specific config (use /sales-customerio), or Mailgun-specific config (use /sales-mailgun)."
+description: "Email deliverability for outbound sales — domain authentication (SPF/DKIM/DMARC), mailbox warmup, sending limits, inbox placement, blacklist monitoring, sender reputation, custom tracking domains, and list hygiene. Use when setting up a new sending domain, warming up mailboxes, diagnosing spam/deliverability issues, recovering from blacklisting, scaling outbound volume, or switching email platforms. Do NOT use for cadence content and strategy (use /sales-cadence), Apollo sequence mechanics (use /sales-apollo-sequences), Mailshake platform help (use /sales-mailshake), Smartlead platform help (use /sales-smartlead), Lemlist platform help (use /sales-lemlist), Yesware platform help (use /sales-yesware), Mixmax-specific config (use /sales-mixmax), Reply.io-specific config (use /sales-reply), Woodpecker-specific config (use /sales-woodpecker), Hunter.io-specific config (use /sales-hunter), Mailmo-specific config (use /sales-mailmo), Tomba-specific config (use /sales-tomba), Prospeo-specific config (use /sales-prospeo), Seamless.AI-specific config (use /sales-seamless), SafetyMails-specific config (use /sales-safetymails), Mailchimp-specific config (use /sales-mailchimp), SendGrid-specific config (use /sales-sendgrid), Postmark-specific config (use /sales-postmark), Customer.io-specific config (use /sales-customerio), Mailgun-specific config (use /sales-mailgun), or Klaviyo-specific config (use /sales-klaviyo)."
 argument-hint: "[describe your deliverability situation — new domain, spam issues, warmup, scaling]"
 license: MIT
 metadata:
@@ -246,6 +246,15 @@ These tools simulate real email conversations to build sender reputation. Run wa
 - **No built-in warmup tool**: Mailgun doesn't have automated warmup. For new domains/IPs, manually ramp volume: start with 50-100/day to engaged recipients, increase 20-30% daily over 2-4 weeks.
 - **Best practice**: Use Mailgun Optimize's inbox placement testing before major sends to catch deliverability issues proactively. Set up webhook monitoring for permanent_fail and complained events to catch reputation issues early. Use tags to segment sends and track deliverability metrics per tag.
 
+### In Klaviyo
+- **Domain authentication**: Settings > Email > Domains. Add your sending domain, Klaviyo provides DKIM and SPF DNS records. Shared sending infrastructure by default; dedicated sending domain available on higher tiers.
+- **Dedicated sending infrastructure**: Available for high-volume accounts — contact Klaviyo support. Not self-serve on standard plans.
+- **No built-in warmup**: Klaviyo doesn't have a warmup tool. For new domains or accounts, start by sending to your most engaged segments and gradually expand audience size over 2-4 weeks. Use engagement-based segments (opened/clicked in last 30/60/90 days) to protect reputation.
+- **List hygiene**: Profile-based billing (all active profiles count) incentivizes cleaning — suppress hard bounces (automatic), remove unengaged profiles regularly. Use sunset flows to re-engage or suppress cold subscribers.
+- **Smart Sending**: Global frequency cap prevents over-sending — if a profile received an email within a configurable window (default 16 hours), subsequent sends are skipped. Helps protect deliverability.
+- **Engagement-based segmentation**: Build segments like "Engaged 30d" (opened or clicked in last 30 days) and "Never engaged" — use these to throttle sends and protect sender reputation.
+- **Best practice**: Use Klaviyo's benchmarks feature to compare your deliverability metrics against industry peers. Monitor bounce rates and spam complaints in the Analytics dashboard. Set up a sunset flow to automatically suppress profiles that haven't engaged in 60-90 days.
+
 ### In Mailmo (verification focus)
 - **Email Verifier**: Real-time verification including format, domain, MX records, SMTP response, and catch-all detection.
 - **Catch-all detection**: Mailmo's key differentiator — proprietary catch-all verification claims up to 100% accuracy for identifying valid mailboxes on catch-all domains. Standard verifiers mark all catch-all addresses as "risky"; Mailmo verifies the specific mailbox.
@@ -363,6 +372,7 @@ If your domain reputation is damaged:
 - `/sales-postmark` — Postmark platform help (transactional email, DMARC monitoring, sender vetting, message streams)
 - `/sales-customerio` — Customer.io platform help (behavior-driven automation, domain auth, engagement segmentation)
 - `/sales-mailgun` — Mailgun platform help (domain auth, dedicated IPs, Mailgun Optimize validation/inbox placement)
+- `/sales-klaviyo` — Klaviyo platform help (domain auth, Smart Sending, engagement segmentation, benchmarks)
 - `/sales-prospect-list` — Build prospect lists with verified contacts
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
