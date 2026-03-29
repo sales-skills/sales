@@ -1,6 +1,6 @@
 ---
 name: sales-deliverability
-description: "Email deliverability for outbound sales — domain authentication (SPF/DKIM/DMARC), mailbox warmup, sending limits, inbox placement, blacklist monitoring, sender reputation, custom tracking domains, and list hygiene. Use when setting up a new sending domain, warming up mailboxes, diagnosing spam/deliverability issues, recovering from blacklisting, scaling outbound volume, or switching email platforms. Do NOT use for cadence content and strategy (use /sales-cadence), Apollo sequence mechanics (use /sales-apollo-sequences), Mailshake platform help (use /sales-mailshake), Smartlead platform help (use /sales-smartlead), Lemlist platform help (use /sales-lemlist), Yesware platform help (use /sales-yesware), Mixmax-specific config (use /sales-mixmax), Reply.io-specific config (use /sales-reply), Woodpecker-specific config (use /sales-woodpecker), Hunter.io-specific config (use /sales-hunter), Mailmo-specific config (use /sales-mailmo), Tomba-specific config (use /sales-tomba), Prospeo-specific config (use /sales-prospeo), Seamless.AI-specific config (use /sales-seamless), SafetyMails-specific config (use /sales-safetymails), Mailchimp-specific config (use /sales-mailchimp), SendGrid-specific config (use /sales-sendgrid), or Postmark-specific config (use /sales-postmark)."
+description: "Email deliverability for outbound sales — domain authentication (SPF/DKIM/DMARC), mailbox warmup, sending limits, inbox placement, blacklist monitoring, sender reputation, custom tracking domains, and list hygiene. Use when setting up a new sending domain, warming up mailboxes, diagnosing spam/deliverability issues, recovering from blacklisting, scaling outbound volume, or switching email platforms. Do NOT use for cadence content and strategy (use /sales-cadence), Apollo sequence mechanics (use /sales-apollo-sequences), Mailshake platform help (use /sales-mailshake), Smartlead platform help (use /sales-smartlead), Lemlist platform help (use /sales-lemlist), Yesware platform help (use /sales-yesware), Mixmax-specific config (use /sales-mixmax), Reply.io-specific config (use /sales-reply), Woodpecker-specific config (use /sales-woodpecker), Hunter.io-specific config (use /sales-hunter), Mailmo-specific config (use /sales-mailmo), Tomba-specific config (use /sales-tomba), Prospeo-specific config (use /sales-prospeo), Seamless.AI-specific config (use /sales-seamless), SafetyMails-specific config (use /sales-safetymails), Mailchimp-specific config (use /sales-mailchimp), SendGrid-specific config (use /sales-sendgrid), Postmark-specific config (use /sales-postmark), or Customer.io-specific config (use /sales-customerio)."
 argument-hint: "[describe your deliverability situation — new domain, spam issues, warmup, scaling]"
 license: MIT
 metadata:
@@ -229,6 +229,14 @@ These tools simulate real email conversations to build sender reputation. Run wa
 - **Quality requirements**: Spam complaint rate must stay below 0.1% (1 in 1,000) and bounce rate below 10%. Exceeding these triggers account review.
 - **Best practice**: Use Postmark's free DMARC monitoring on all your sending domains (even non-Postmark ones). Set up separate message streams for transactional and broadcast from day one. Let Postmark's shared infrastructure handle deliverability — don't add a dedicated IP unless you're consistently above 300K/month.
 
+### In Customer.io
+- **Domain authentication**: Settings > Email > Sending Domains. Customer.io provides DKIM and SPF DNS records for your sending domain. Verify with one click after DNS propagation.
+- **Dedicated sending infrastructure**: Premium and Enterprise plans include dedicated sending infrastructure for higher deliverability and reputation isolation.
+- **No built-in warmup**: Customer.io doesn't have a warmup tool. For new domains, start with engaged segments and gradually expand audience size over 2-4 weeks.
+- **Suppression management**: Automatic suppression of hard bounces and spam complaints. Unsubscribes managed per-subscription-topic (configurable subscription preferences page).
+- **Engagement-based segmentation**: Build segments based on email engagement (opened, clicked, not opened in X days) — use these to exclude unengaged contacts and protect sender reputation.
+- **Best practice**: Use Customer.io's engagement segments to target only active subscribers. Set up subscription topics to let users manage preferences instead of fully unsubscribing. Monitor bounce and spam rates in the analytics dashboard — Customer.io may restrict sending if complaint rates exceed acceptable thresholds.
+
 ### In Mailmo (verification focus)
 - **Email Verifier**: Real-time verification including format, domain, MX records, SMTP response, and catch-all detection.
 - **Catch-all detection**: Mailmo's key differentiator — proprietary catch-all verification claims up to 100% accuracy for identifying valid mailboxes on catch-all domains. Standard verifiers mark all catch-all addresses as "risky"; Mailmo verifies the specific mailbox.
@@ -344,6 +352,7 @@ If your domain reputation is damaged:
 - `/sales-mailchimp` — Mailchimp platform help (email campaigns, Customer Journey Builder, domain auth, deliverability)
 - `/sales-sendgrid` — SendGrid platform help (Email API, domain authentication, dedicated IPs, IP warmup, Email Validation API)
 - `/sales-postmark` — Postmark platform help (transactional email, DMARC monitoring, sender vetting, message streams)
+- `/sales-customerio` — Customer.io platform help (behavior-driven automation, domain auth, engagement segmentation)
 - `/sales-prospect-list` — Build prospect lists with verified contacts
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 

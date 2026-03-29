@@ -1,6 +1,6 @@
 ---
 name: sales-email-tracking
-description: "Email engagement tracking for sales — open tracking, click tracking, attachment views, real-time notifications, follow-up timing, and engagement analytics. Use when setting up email tracking, interpreting open/click data, Mixmax tracking, Woodpecker tracking, timing follow-ups based on engagement, understanding tracking limitations (Apple MPP, pixel blocking), Reply.io tracking, or choosing a tracking tool. For Yesware-specific help, use /sales-yesware. Do NOT use for email deliverability (use /sales-deliverability), cadence design (use /sales-cadence), buying intent signals beyond email (use /sales-intent), SendGrid-specific config (use /sales-sendgrid), or Postmark-specific config (use /sales-postmark)."
+description: "Email engagement tracking for sales — open tracking, click tracking, attachment views, real-time notifications, follow-up timing, and engagement analytics. Use when setting up email tracking, interpreting open/click data, Mixmax tracking, Woodpecker tracking, timing follow-ups based on engagement, understanding tracking limitations (Apple MPP, pixel blocking), Reply.io tracking, or choosing a tracking tool. For Yesware-specific help, use /sales-yesware. Do NOT use for email deliverability (use /sales-deliverability), cadence design (use /sales-cadence), buying intent signals beyond email (use /sales-intent), SendGrid-specific config (use /sales-sendgrid), Postmark-specific config (use /sales-postmark), or Customer.io-specific config (use /sales-customerio)."
 argument-hint: "[describe your email tracking question or goal]"
 license: MIT
 metadata:
@@ -220,6 +220,17 @@ Security tools like Barracuda, Mimecast, Proofpoint, and Microsoft Defender pre-
 - **No real-time notifications**: Postmark doesn't have desktop/mobile push notifications for opens/clicks like Yesware or Mixmax. You receive events via webhooks and build your own notification system.
 - **Gotcha**: Postmark's tracking is subject to the same Apple MPP and bot-click inflation as other platforms. Use click and delivery webhooks as the most reliable signals. Postmark's Geo data in open/click webhooks can help identify bot activity (data center IPs vs. real user locations).
 
+### In Customer.io
+
+- **Tracking types**: Opens (pixel), clicks (link wrapping) — enabled by default on campaigns. Configurable per-message in workflow steps.
+- **Conversion goals**: Define conversion events (e.g., "purchased", "activated") on campaigns — Customer.io tracks whether recipients complete the goal within a time window. This is more powerful than basic open/click tracking because it measures actual business outcomes.
+- **Reporting webhooks**: Customer.io can POST engagement events to your webhook URL: email_sent, email_delivered, email_opened, email_clicked, email_bounced, email_dropped, email_spamreport, email_unsubscribed, plus SMS/push equivalents. Configure in Settings > Webhooks.
+- **Campaign analytics**: Per-campaign metrics including sends, deliveries, opens, clicks, conversions, unsubscribes, bounces, spam complaints. Cohort comparison to measure performance over time.
+- **A/B test results**: Built-in significance testing for A/B experiments — Customer.io calculates statistical significance and recommends a winner.
+- **Activity log**: Per-person activity timeline showing every message sent, opened, clicked, converted — available in the UI and via App API (`GET /customers/{id}/activities`).
+- **No real-time desktop notifications**: Customer.io doesn't push open/click alerts to your desktop like Yesware or Mixmax. Use reporting webhooks to build custom notifications, or check the dashboard.
+- **Gotcha**: Same Apple MPP and bot-click caveats apply. Customer.io's conversion goals are the most reliable engagement signal — they measure actual actions, not pixel loads.
+
 ## Step 5 — Actionable guidance
 
 ### Setting up tracking for the first time
@@ -270,6 +281,7 @@ Design your follow-up cadence around tracking signals rather than fixed time del
 - `/sales-seismic` — Seismic platform help including LiveSend tracking and content management
 - `/sales-sendgrid` — SendGrid platform help (Event Webhooks, Email Activity, tracking configuration)
 - `/sales-postmark` — Postmark platform help (7 webhook types, open/click tracking, message detail API)
+- `/sales-customerio` — Customer.io platform help (conversion goals, reporting webhooks, campaign analytics)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
 ## Examples

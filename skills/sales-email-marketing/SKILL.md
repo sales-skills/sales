@@ -1,6 +1,6 @@
 ---
 name: sales-email-marketing
-description: "Email marketing for opt-in subscribers — broadcasts, nurture sequences, automation, segmentation, and list management. Use when planning email campaigns, designing welcome sequences, setting up behavior-based automation, segmenting lists, improving open/click rates, or choosing an email marketing platform. Do NOT use for cold outbound email (use /sales-cadence), email deliverability/SPF/DKIM (use /sales-deliverability), or connecting email tools to CRM (use /sales-integration). For Groove-specific help, use /sales-groove. For Closum-specific help, use /sales-closum. For Mailchimp-specific help, use /sales-mailchimp. For SendGrid-specific help, use /sales-sendgrid. For Postmark-specific help, use /sales-postmark."
+description: "Email marketing for opt-in subscribers — broadcasts, nurture sequences, automation, segmentation, and list management. Use when planning email campaigns, designing welcome sequences, setting up behavior-based automation, segmenting lists, improving open/click rates, or choosing an email marketing platform. Do NOT use for cold outbound email (use /sales-cadence), email deliverability/SPF/DKIM (use /sales-deliverability), or connecting email tools to CRM (use /sales-integration). For Groove-specific help, use /sales-groove. For Closum-specific help, use /sales-closum. For Mailchimp-specific help, use /sales-mailchimp. For SendGrid-specific help, use /sales-sendgrid. For Postmark-specific help, use /sales-postmark. For Customer.io-specific help, use /sales-customerio."
 argument-hint: "[describe your email marketing question — e.g., 'design a welcome sequence' or 'improve my open rates']"
 license: MIT
 metadata:
@@ -194,6 +194,22 @@ Postmark (ActiveCampaign) is primarily a transactional email service but support
 - **Postmark's strength for broadcast**: Exceptional deliverability — same 98.7% inbox placement for broadcast as transactional. Best for developer teams already using Postmark for transactional who want simple newsletters without a separate vendor.
 - **Limitation**: No segmentation, no visual editor, no automation — Postmark broadcast is for simple one-to-many sends, not full email marketing. If you need campaigns with segmentation and automation, use Mailchimp, ActiveCampaign, or SendGrid Marketing Campaigns instead.
 
+### In Customer.io
+
+Customer.io is a data-driven marketing automation platform focused on behavior-triggered multi-channel messaging. Key email marketing capabilities:
+
+- **Journeys (visual workflow builder)**: Drag-and-drop campaign builder with event triggers, segment triggers, date triggers, form submissions, and API triggers. Branching logic, time delays, wait-until conditions, and A/B test splits within workflows.
+- **Multi-channel in one workflow**: Combine email, SMS, push notifications, in-app messages, and WhatsApp in a single journey — route to the optimal channel based on user behavior and preferences.
+- **Event-driven automation**: Trigger campaigns based on any event your app sends (signup, purchase, feature_used, cart_abandoned, etc.) — not just email events. This is Customer.io's core differentiator vs. traditional email marketing platforms.
+- **Data-driven segmentation**: Segments auto-update based on profile attributes, event history, and engagement data. Use segments as campaign triggers or filters within workflows.
+- **Custom Objects**: Model relationships beyond people — accounts, products, subscriptions. Use object data in message personalization and segment conditions (e.g., "users whose subscription expires in 7 days").
+- **Transactional messages**: API-triggered email, push, and SMS for receipts, password resets, etc. — separate from marketing campaigns but managed in the same platform.
+- **Broadcasts**: One-time or scheduled sends to segments — equivalent to campaigns in Mailchimp. API-triggered broadcasts available (1 req/10sec limit).
+- **Design Studio**: Collaborative email editor with drag-and-drop. Liquid templating for dynamic content.
+- **A/B & cohort testing**: Test subject lines, content, send times, and entire workflow branches. Measure against conversion goals.
+- **Pricing**: Essentials ($100/mo, 5K profiles, 1M emails), Premium ($1,000/mo annual), Enterprise (custom). $0.009/additional profile.
+- **Customer.io's strength**: Best for product-led companies that need behavior-triggered automation across the entire lifecycle (onboarding → activation → retention → re-engagement) with first-party event data at the center. Overkill for simple newsletter sends.
+
 ### In Klaviyo
 
 - Flow builder is the automation engine — pre-built flows for welcome, cart abandonment, post-purchase, winback, and browse abandonment
@@ -293,6 +309,7 @@ Perform these maintenance tasks regularly:
 - **/sales-mailchimp** — Mailchimp platform help (email campaigns, Customer Journey Builder, SMS, audience management, API)
 - **/sales-sendgrid** — SendGrid platform help (Email API, Marketing Campaigns, transactional email, dynamic templates)
 - **/sales-postmark** — Postmark platform help (transactional email, broadcast message streams, templates)
+- **/sales-customerio** — Customer.io platform help (behavior-driven Journeys, multi-channel automation, Data Pipelines)
 - **/sales-cadence** — Cold outbound email cadences and sequences (NOT opt-in marketing)
 - **/sales-deliverability** — SPF, DKIM, DMARC, domain warm-up, and inbox placement
 - **/sales-funnel** — Funnel strategy and page design (landing pages that feed your email list)

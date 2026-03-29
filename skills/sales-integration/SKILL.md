@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -181,6 +181,15 @@ Before building anything custom, check if a native integration exists:
 | Postmark → Zapier | Native | 3 triggers (inbound message, bounce, open) + 2 actions (send email) |
 | Postmark → ActiveCampaign | Parent company | Shared infrastructure under ActiveCampaign umbrella |
 | Postmark → Heroku | Community | Heroku add-on for transactional email |
+| Customer.io → Salesforce | Native (bi-directional) | Data-in: sync CRM records to Customer.io. Data-out: create/update Salesforce objects from Customer.io events |
+| Customer.io → Segment | Native (bi-directional) | Data-in: receive Segment events. Data-out: publish metrics to Segment as source |
+| Customer.io → Snowflake | Native (reverse ETL) | Sync warehouse data to Customer.io via Data Pipelines |
+| Customer.io → BigQuery | Native (reverse ETL) | Sync warehouse data to Customer.io via Data Pipelines |
+| Customer.io → Zapier | Native | Triggers on events/messages, actions to add/update people |
+| Customer.io → Google Ads | Native | Ad audience sync for retargeting |
+| Customer.io → Facebook/Instagram | Native | Ad audience sync for retargeting |
+| Customer.io → Twilio | Native | SMS channel — Twilio account required for SMS sends |
+| Customer.io → Webhooks | Native | Webhook destination + webhook actions in journeys — POST to any URL |
 | Closum → Salesforce | Native | Contact sync, field mapping, lifecycle stage mapping |
 | Closum → Pipedrive | Native | Contact sync |
 | Closum → Zoho | Native | Contact sync |
@@ -378,6 +387,13 @@ Before building anything custom, check if a native integration exists:
 - **Zapier integration**: 3 triggers (new inbound message, bounced email, message opened) + 2 actions (send transactional email). Webhook-based — requires minimal setup.
 - **No native CRM integration**: Postmark is API-first. Use Zapier or build custom webhook handlers for CRM sync. No native Salesforce/HubSpot connector.
 
+### Customer.io webhooks
+- **Reporting webhooks**: Configured in Settings > Workspace Settings > Reporting Webhooks. Events: email delivered, opened, clicked, bounced, dropped, unsubscribed, spam_complaint, converted. Payload: JSON with `event_type`, `data` (customer_id, delivery_id, campaign_id, timestamp, metadata).
+- **Workflow webhooks**: Add a "Send Webhook" action inside any Journey to POST JSON to any URL when a customer reaches that step — use for CRM updates, Slack notifications, or triggering external actions mid-workflow.
+- **Data Pipelines**: Reverse ETL from Snowflake/BigQuery into Customer.io. Forward data to 100+ destinations (Salesforce, Segment, Google Ads, Facebook).
+- **Native integrations**: Salesforce (bi-directional contact/lead sync), Segment (bi-directional), Twilio (SMS), Zapier (triggers: new/updated person, event tracked, message sent; actions: create/update person, track event).
+- **API-first architecture**: Track API (100 req/sec) for ingesting data, App API (10 req/sec) for reading, Transactional API (100 req/sec) for triggered messages.
+
 ### SendGrid webhooks
 - **Event Webhooks**: Configure at Settings > Mail Settings > Event Webhooks or via API (`POST /v3/user/webhooks/event/settings`). Events: processed, dropped, delivered, deferred, bounce, open, click, spam_report, unsubscribe, group_unsubscribe, group_resubscribe. Payload: JSON array of event objects with email, timestamp, event type, sg_message_id, and event-specific fields.
 - **Inbound Parse**: Receive incoming emails as structured POST data. Configure a subdomain MX record pointing to SendGrid, then set the parse webhook URL. Receives: from, to, subject, text, html, attachments, envelope, SPF/DKIM results.
@@ -448,6 +464,9 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-prospeo` — Prospeo platform help including API, native CRM integrations, and MCP server
 - `/sales-hunter` — Hunter.io platform help including API, CRM integrations, webhooks, and MCP server
 - `/sales-seamless` — Seamless.AI platform help including API, CRM integrations, and webhooks
+- `/sales-customerio` — Customer.io platform help including Track/App/Transactional APIs, Data Pipelines, and webhook workflows
+- `/sales-sendgrid` — SendGrid platform help including Email API, Event Webhooks, Inbound Parse, and Marketing Campaigns
+- `/sales-postmark` — Postmark platform help including transactional email API, Message Streams, and webhooks
 - `/sales-safetymails` — SafetyMails platform help (bulk verification, real-time API, Email Finder, native integrations)
 - `/sales-closum` — Closum platform help (omnichannel marketing automation: email, SMS, WhatsApp, Telegram, Web Push)
 - `/sales-mailchimp` — Mailchimp platform help (email marketing, automations, SMS, 300+ integrations, Marketing + Transactional APIs)
