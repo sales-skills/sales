@@ -263,6 +263,16 @@ Save the search as a dynamic list — new matches will appear automatically.
 - **Best for**: Local business prospecting from Google Maps, LinkedIn lead extraction, building lists from any website at scale, monitoring new listings/profiles over time with scheduled scrapes.
 - **Pricing**: Free (100 credits, 30 rows/export), paid from €50/mo. 1 credit = 1 unique result. Credits refresh monthly.
 
+### Building lists from GetProspect (B2B database + LinkedIn extension)
+- **B2B Contact Database**: Search 200M+ contacts and 26M+ companies with 17+ filters — name, company, title, industry, location, tech stack, employee count, revenue. Returns verified email addresses (95% accuracy) with enrichment data.
+- **LinkedIn Email Finder Extension**: Chrome extension that exports leads directly from LinkedIn and Sales Navigator searches. Extracts names, titles, companies, and finds verified emails — great for building targeted lists from LinkedIn without manual data entry.
+- **Reverse Email Lookup**: Already have an email? Get back the person's name, title, company, and firmographic data to enrich your existing list.
+- **Bulk finding**: Upload a CSV of names + companies for batch email finding. Enriches in bulk with 40+ data attributes.
+- **Built-in CRM**: Save found contacts into lists, add tags, notes, custom properties. Organize by campaign or segment. Export as CSV/XLSX.
+- **Cold email sequences**: Build your list, verify emails, and send cold email sequences all within GetProspect — no need to export to a separate sending tool. A/B testing, auto-stop on reply, timezone-aware sending.
+- **Best for**: Building B2B prospect lists with verified emails, enriching LinkedIn exports, combining email finding + verification + outreach in one tool.
+- **Pricing**: Free (50 emails/mo), Starter $49/mo (1K), Growth 5K $99/mo (5K), Growth 20K $199/mo (20K), Growth 50K $399/mo (50K). Credits roll over.
+
 ## Step 4 — Segment and prioritize
 
 Split the list into tiers for sequencing:
@@ -362,6 +372,7 @@ Before launching outreach, validate the list:
 - `/sales-enrichso` — Enrich.so platform help (LinkedIn enrichment, reverse email lookup, employee search, similar companies, bulk enrichment API)
 - `/sales-minelead` — Minelead platform help (domain email search, email finder, lead generator, verifier, campaigns, bulk operations, Chrome/Firefox extensions)
 - `/sales-lobstr` — Lobstr.io platform help (50+ no-code web scrapers, Google Maps leads, LinkedIn Sales Nav extraction, scheduled automation, API)
+- `/sales-getprospect` — GetProspect platform help (200M+ B2B database, email finder, LinkedIn Chrome extension, enrichment, cold email sequences)
 - `/sales-mailmo` — Mailmo platform help (Email Finder with catch-all verification, LinkedIn Chrome extension)
 - `/sales-seamless` — Seamless.AI platform help (1.8B+ contacts, Buyer Intent, Job Changes, Autopilot, Chrome extension)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

@@ -211,6 +211,19 @@ For each call step:
 - **Plan limits**: Campaigns available on all plans. 1 credit per email sent. Free: 25 credits/mo. Enterprise: 200K credits/mo.
 - **Best practice**: Minelead campaigns are best for simple email-only outreach where the list was built using Minelead's own discovery tools. For multi-channel cadences (email + LinkedIn + calls), complex sequences with conditional branching, or high-volume cold outbound, use a dedicated sequencing tool and use Minelead as the data source.
 
+### In GetProspect
+- **Where**: Cold Email Software section in GetProspect dashboard (getprospect.com)
+- **Channel support**: Email only (Gmail, Outlook, or SMTP connection)
+- **Sequence builder**: Add unlimited steps with configurable delays between each. Edit subject, body, attachments, unsubscribe link per step.
+- **A/B testing**: Create multiple versions of subjects, messages, and CTAs per step. Compare opens, clicks, and responses to pick winners.
+- **Auto-stop**: Automatically halts remaining sequence steps when a prospect replies or clicks a specific link — prevents over-sending.
+- **Sending controls**: Configurable sending limits, randomized sending intervals, timezone-aware delivery. SPF/DKIM checks before sending.
+- **Personalization**: Custom fields, prospect-specific merge variables (name, company, title, etc.), saved templates.
+- **Lead sourcing**: Unique advantage — search GetProspect's 200M+ B2B database, verify emails, and send sequences all in one tool. No CSV export/import needed.
+- **Team collaboration**: Shared templates, campaigns, and prospect lists. Activity visibility and ownership-based filtering.
+- **CRM sync**: Native integrations with HubSpot, Salesforce, Pipedrive, Zoho, Outreach, Salesloft.
+- **Best practice**: GetProspect is strongest when you use the full workflow — find → verify → sequence in one platform. For multi-channel cadences (email + LinkedIn + calls), complex conditional branching, or very high volume, use a dedicated sequencing tool and use GetProspect as the data source.
+
 ### Personalization framework
 - **Level 1 (Minimum)**: First name, company name, title — the bare minimum
 - **Level 2 (Standard)**: Industry reference, company-size-specific pain point
@@ -279,6 +292,7 @@ Provide a benchmarks table:
 - `/sales-email-tracking` — Email engagement tracking — open/click/attachment signals for follow-up timing
 - `/sales-closum` — Closum platform help (omnichannel: email, SMS, WhatsApp, Telegram, Web Push automations)
 - `/sales-minelead` — Minelead platform help (email campaigns via Gmail round-robin, domain email search, lead finder, verifier)
+- `/sales-getprospect` — GetProspect platform help (cold email sequences with A/B testing, 200M+ B2B database, email finder, verifier)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Gotchas

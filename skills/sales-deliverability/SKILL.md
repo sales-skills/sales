@@ -302,6 +302,14 @@ These tools simulate real email conversations to build sender reputation. Run wa
 - **No sending infrastructure**: Enrich.so is an enrichment/verification tool, not a sending tool. Use it upstream to validate emails before importing into outbound tools.
 - **Best practice**: Run enriched email lists through Enrich.so's email validation before importing into any sending tool. The disposable email check catches addresses that other verifiers miss. Combine with the reverse email lookup to verify that enriched contacts are real people at real companies.
 
+### In GetProspect (verification + sending)
+- **Email Verifier**: Validate email deliverability with catch-all detection. 95% accuracy, 97% deliverability guarantee. Bulk verification available with separate verification credits. Useful for cleaning lists before importing into outbound tools.
+- **SPF/DKIM checks**: GetProspect's cold email software checks your sending domain's SPF and DKIM configuration before sending — flags issues that would hurt deliverability.
+- **Sending controls**: Configurable sending limits, randomized sending intervals, and timezone-aware delivery help maintain sender reputation and avoid spam filters.
+- **Custom domain tracking**: Use your own domain for open/click tracking links instead of shared tracking domains — improves deliverability by avoiding association with other senders.
+- **Auto-stop**: Sequences automatically stop when a prospect replies or clicks a specific link, preventing over-sending that harms reputation.
+- **Best practice**: Use GetProspect's verifier to clean your prospect list before sequencing. The built-in cold email tool handles sending controls, but for dedicated warmup use a tool like Lemwarm or Mailwarm alongside GetProspect.
+
 ### In Minelead (verification focus)
 - **Email Verifier**: `GET /v1/validate?email={email}` — checks form validity, MX records, SMTP response, catch-all detection, and webmail identification. Returns quality score (25-100%) with success/catch-all status. 1 credit per verification.
 - **Disposable Email Detector**: `GET /v1/detect-disposable?email={email}` — returns disposability score (0-5), format validity, spam assessment, and DNS record statuses. Catches temporary/throwaway addresses.
@@ -406,6 +414,7 @@ If your domain reputation is damaged:
 - `/sales-outscraper` — Outscraper platform help (email validation, Google Maps scraping, contact extraction)
 - `/sales-enrichso` — Enrich.so platform help (email validation, disposable email detection, reverse email lookup)
 - `/sales-minelead` — Minelead platform help (email verification with quality scoring, disposable email detection, domain email search)
+- `/sales-getprospect` — GetProspect platform help (email verifier with catch-all detection, SPF/DKIM checks, cold email sending controls)
 - `/sales-prospect-list` — Build prospect lists with verified contacts
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 

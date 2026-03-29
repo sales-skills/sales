@@ -298,6 +298,16 @@ Choose the right approach based on volume and frequency:
 - **Export**: Google Sheets, Amazon S3, SFTP, or JSON via API. Webhook notifications on completion.
 - **Credit economics**: 1 credit = 1 unique result. Free: 100 credits. Paid from €50/mo.
 
+### In GetProspect
+- **Email Finder**: Search 200M+ B2B contacts by name, company, title, domain, location, industry, and 17+ filters. Returns verified email addresses with 95% accuracy claim. 1 credit per valid email found.
+- **Contact Enrichment**: Append 40+ data attributes to existing contacts — location, industry, tech stack, company size, revenue, social profiles, phone numbers. Enriches from GetProspect's own database.
+- **LinkedIn Email Finder Extension**: Chrome extension to export leads directly from LinkedIn and Sales Navigator searches into GetProspect — names, titles, companies, and verified emails.
+- **Reverse Email Lookup**: Input an email address and get back the person's name, title, company, and additional firmographic data.
+- **Email Verifier**: Validate email deliverability with catch-all detection. 97% deliverability guarantee. Bulk verification available. Separate verification credits (don't consume email finder credits).
+- **Bulk operations**: CSV enrichment for batch processing. Upload a list and enrich with emails, phone numbers, and company data.
+- **Phone numbers**: Mobile and direct dial credits available as add-on (5 free/mo on paid plans, up to 3,000/mo).
+- **Credit economics**: Free: 50 emails/mo. Starter: $49/mo (1K). Growth 5K: $99/mo (5K). Growth 20K: $199/mo (20K). Growth 50K: $399/mo (50K). Credits roll over month to month.
+
 ### Compliance checklist
 
 Before enriching and contacting, verify compliance with data privacy regulations in your target regions:
@@ -424,6 +434,7 @@ Credits reset monthly and do not roll over. Plan enrichment around your billing 
 - `/sales-enrichso` — Enrich.so platform help (reverse email lookup, LinkedIn enrichment, email/phone finder, company data, bulk enrichment API)
 - `/sales-minelead` — Minelead platform help (domain email search, email finder, verifier, lead generator, campaigns, bulk operations, API)
 - `/sales-lobstr` — Lobstr.io platform help (50+ web scrapers for Google Maps, LinkedIn, reviews — scraping-based data collection and enrichment)
+- `/sales-getprospect` — GetProspect platform help (200M+ B2B database, email finder, enrichment, verifier, cold email sequences, LinkedIn Chrome extension)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -205,6 +205,17 @@ Before building anything custom, check if a native integration exists:
 | Minelead → HubSpot | Via Zapier | Push discovered contacts to HubSpot CRM via Zapier workflows |
 | Minelead → Zapier | Native | 6,000+ app connections — trigger on new lead found, actions for email search and verification |
 | Minelead → Any (API) | API | REST API at api.minelead.io/v1 — search, find, validate, manage leads and campaigns programmatically |
+| GetProspect → HubSpot | Native | Sync contacts, companies, and lists to HubSpot CRM |
+| GetProspect → Salesforce | Native | Sync contacts and companies to Salesforce |
+| GetProspect → Pipedrive | Native | Sync contacts and deals to Pipedrive |
+| GetProspect → Zoho CRM | Native | Sync contacts and companies to Zoho CRM |
+| GetProspect → Outreach | Native | Push enriched contacts into Outreach sequences |
+| GetProspect → Salesloft | Native | Push enriched contacts into Salesloft cadences |
+| GetProspect → Google Sheets | Native | Export and sync prospect data to Google Sheets |
+| GetProspect → Zapier | Native | Connect to 6,000+ apps — triggers on new contact, actions for email finding/verification |
+| GetProspect → Notion | Native | Sync prospect data to Notion databases |
+| GetProspect → Airtable | Native | Export prospect data to Airtable bases |
+| GetProspect → Any (API) | API | REST API at api.getprospect.com — search leads, find emails, verify, manage contacts/lists programmatically |
 | Lobstr.io → Google Sheets | Native | Auto-export scraping results to Google Sheets on run completion |
 | Lobstr.io → Amazon S3 | Native | Upload structured JSON/CSV results to S3 bucket automatically |
 | Lobstr.io → Webhook | Native | 4 events (run.running, run.paused, run.done, run.error) — POST JSON to any URL with 3x retry |
@@ -446,6 +457,15 @@ Before building anything custom, check if a native integration exists:
 - **Zoho CRM native**: Enterprise-tier feature for direct CRM lead import.
 - **API polling**: Use `GET /v1/history` to poll for recent search activity if you need to track operations programmatically.
 
+### GetProspect integrations
+- **No webhook support documented**: GetProspect's API does not include webhook endpoints. Use polling via the API or Zapier triggers for event-driven workflows.
+- **Native CRM integrations**: HubSpot, Salesforce, Pipedrive, Zoho — direct two-way sync of contacts and companies.
+- **Sales engagement**: Native connectors for Outreach and Salesloft — push enriched contacts directly into sequences/cadences.
+- **Zapier**: Connect to 6,000+ apps. Triggers on new contacts found. Actions for email finding and verification.
+- **Google Sheets / Notion / Airtable**: Native export and sync for spreadsheet/database workflows.
+- **Gmail / Outlook**: Connect email accounts for sending cold email sequences directly from GetProspect.
+- **API**: REST API at api.getprospect.com — search leads, find/verify emails, manage contacts/companies/lists. API key auth. Still under development — some endpoints may change.
+
 ### Lobstr.io webhooks
 - **4 event types**: `run.running` (run begins/resumes), `run.paused` (execution halts due to account limits), `run.done` (run finishes without errors), `run.error` (run crashed with error).
 - **Payload**: JSON with `id` (run hash), `object` ("run"), `event` (event type), `squid` (object with `id` and `name`), `timestamp` (UTC YYYY/MM/DD HH:MM:SS).
@@ -569,6 +589,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-enrichso` — Enrich.so platform help including REST API, bulk enrichment callbacks, Zapier, and n8n/Make integration
 - `/sales-minelead` — Minelead platform help including REST API, Zapier, Google Sheets, and Zoho CRM integrations
 - `/sales-lobstr` — Lobstr.io platform help including async REST API, webhooks (4 events), Google Sheets, S3, Make, and SFTP integrations
+- `/sales-getprospect` — GetProspect platform help including REST API, native CRM integrations (HubSpot, Salesforce, Pipedrive, Zoho), Outreach/Salesloft sync, and Zapier
 - `/sales-sendgrid` — SendGrid platform help including Email API, Event Webhooks, Inbound Parse, and Marketing Campaigns
 - `/sales-postmark` — Postmark platform help including transactional email API, Message Streams, and webhooks
 - `/sales-safetymails` — SafetyMails platform help (bulk verification, real-time API, Email Finder, native integrations)

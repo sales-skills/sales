@@ -10,7 +10,7 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 55 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 56 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -232,6 +232,12 @@ Router recommends a 5-skill sequence:
 | Skill | What it does | Status |
 |---|---|---|
 | `/sales-outscraper` | Outscraper platform help — data extraction and enrichment from Google Maps, reviews, and 50+ internet sources. Google Maps Places scraping (business data), Google Maps Reviews, Google Search/News, Emails & Contacts (website scraping), Contacts & Leads (enrichment), Company Insights, Email Validation, Amazon products/reviews, multi-platform review scraping (Yelp, Tripadvisor, G2, Trustpilot, Glassdoor, Capterra), YouTube Comments, Geocoding, REST API, Zapier/n8n | Available |
+
+### GetProspect & Platform
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-getprospect` | GetProspect platform help — B2B email finder, verifier, enrichment, and cold email outreach. Email Finder (200M+ contacts, 26M+ companies, 17+ filters, 95% accuracy), LinkedIn Email Finder Extension (Chrome, Sales Navigator export), Contact Enrichment (40+ data attributes), Email Verifier (catch-all detection, 97% deliverability guarantee, bulk verification), Cold Email Software (multi-step sequences, A/B testing, auto-stop, timezone-aware sending, SPF/DKIM checks), Built-in CRM (lists, tags, custom properties), Reverse Email Lookup, Phone Numbers, Team Collaboration, REST API, native CRM integrations (HubSpot, Salesforce, Pipedrive, Zoho, Outreach, Salesloft), Zapier, Google Sheets | Available |
 
 ### Lobstr.io & Platform
 

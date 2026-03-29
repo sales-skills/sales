@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-getprospect",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "How do I find email addresses for prospects at a specific company using GetProspect?",
+      "expected_output": "Guidance on using GetProspect Email Finder and B2B database to find prospect emails filtered by company or domain",
+      "assertions": [
+        {"name": "mentions_email_finder_or_b2b_database", "description": "Mentions Email Finder feature or B2B database for finding prospect emails"},
+        {"name": "mentions_company_domain_filtering", "description": "Mentions filtering by company name or domain to narrow results"},
+        {"name": "mentions_credits_system", "description": "Mentions the credits system and valid emails counting toward usage"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "I want to set up a cold email sequence with A/B testing in GetProspect",
+      "expected_output": "Guidance on creating a cold email sequence in GetProspect with multiple steps, delays, and A/B testing for subject lines or messages",
+      "assertions": [
+        {"name": "mentions_cold_email_sequences", "description": "Mentions cold email software and setting up sequence steps with delays"},
+        {"name": "mentions_ab_testing", "description": "Mentions A/B testing for subject lines or message content"},
+        {"name": "mentions_auto_stop_on_reply", "description": "Mentions auto-stop on reply to prevent sending follow-ups after a prospect responds"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "How do I use the GetProspect API to search for leads by company and job title?",
+      "expected_output": "Guidance on using the GetProspect Search Leads API endpoint with filter parameters for company and job title",
+      "assertions": [
+        {"name": "mentions_search_leads_endpoint", "description": "Mentions the Search Leads endpoint for querying leads programmatically"},
+        {"name": "mentions_api_key_auth", "description": "Mentions API key authentication for accessing the API"},
+        {"name": "mentions_filter_parameters", "description": "Mentions filter parameters such as company name and job title for narrowing search results"}
+      ]
+    }
+  ]
+}
