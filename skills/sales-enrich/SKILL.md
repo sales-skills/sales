@@ -337,6 +337,15 @@ Choose the right approach based on volume and frequency:
 - **Credit economics**: Starter €14/mo (50 credits), Standard €39/mo (1K), Scale €129/mo (5K), Ultimate €259/mo (25K). Unused credits accumulate up to 2x plan size.
 - **Best for**: High-accuracy email finding with pay-only-for-verified model, decision maker discovery by role, bulk enrichment at scale.
 
+### In ZeroBounce
+- **Email Finder**: Find B2B emails by name + domain. Returns validated email address. 20 credits per successful find. 10 free queries/month.
+- **Email Validation**: Verify existing email addresses with 99.6% accuracy — returns valid/invalid/catch-all/spam-trap/abuse/do_not_mail status with detailed sub-status. Real-time API or bulk CSV upload (unlimited file size).
+- **AI Email Scoring**: Score catch-all addresses on a 1-10 scale to predict deliverability — unique feature for deciding whether to include catch-all emails in campaigns.
+- **Activity Data**: Append engagement recency to contacts (last active 30/60/90/180/365/365+ days) — helps prioritize recently active contacts for outreach.
+- **Bulk validation**: Upload CSV/TXT for batch processing on `bulkapi.zerobounce.net`. Check status, download results. Detects 30+ email types.
+- **Credit economics**: Free 100/mo, PAYG $39/2K credits (~$0.02/credit), ZeroBounce ONE $99/mo for 25K. Email Finder uses 20 credits per find. Credits never expire.
+- **Best for**: High-accuracy email validation, catch-all scoring, engagement-based list segmentation, comprehensive deliverability monitoring alongside enrichment.
+
 ### Compliance checklist
 
 Before enriching and contacting, verify compliance with data privacy regulations in your target regions:
@@ -467,6 +476,7 @@ Credits reset monthly and do not roll over. Plan enrichment around your billing 
 - `/sales-skrapp` — Skrapp platform help (200M+ B2B contacts, email finder, data enrichment with AI Fields, email verifier, LinkedIn Chrome extension)
 - `/sales-openwebninja` — OpenWeb Ninja platform help (30+ data APIs: Website Contacts Scraper, Email Search, Local Business Data for API-based enrichment)
 - `/sales-anymailfinder` — Anymail Finder platform help (email finder by person/company/decision maker/LinkedIn, email verifier, bulk search, 97%+ delivery guarantee)
+- `/sales-zerobounce` — ZeroBounce platform help (email validation 99.6% accuracy, Email Finder, AI scoring, activity data, blacklist monitoring, DMARC, warmup)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

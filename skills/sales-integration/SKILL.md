@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -229,6 +229,12 @@ Before building anything custom, check if a native integration exists:
 | Anymail Finder → Make | Via Make | Automate email finding workflows with Make.com scenarios |
 | Anymail Finder → n8n | Via n8n | HTTP Request node calling Anymail Finder REST API for automated pipelines |
 | Anymail Finder → Any (API) | API | REST API v5.1 at api.anymailfinder.com — find person/company/decision maker emails, verify, bulk search. Authorization header auth. No rate limits |
+| ZeroBounce → HubSpot | Native | Validate and clean email lists directly from HubSpot contacts |
+| ZeroBounce → Mailchimp | Native | Validate subscriber lists before sending campaigns |
+| ZeroBounce → Salesforce | Via Zapier | Validate emails on contact create/update, sync validation results |
+| ZeroBounce → ActiveCampaign | Via Zapier | Validate emails in automations, clean lists before sending |
+| ZeroBounce → Zapier | Native | 2,000+ app connections — triggers on validation complete, actions for validate/find email |
+| ZeroBounce → Any (API) | API | REST API v2 at api.zerobounce.net (+ US/EU endpoints) — validate, batch validate, bulk file upload, email finder, AI scoring, activity data. api_key query param auth. 80K req/hr. 13 SDKs |
 | Lobstr.io → Google Sheets | Native | Auto-export scraping results to Google Sheets on run completion |
 | Lobstr.io → Amazon S3 | Native | Upload structured JSON/CSV results to S3 bucket automatically |
 | Lobstr.io → Webhook | Native | 4 events (run.running, run.paused, run.done, run.error) — POST JSON to any URL with 3x retry |
@@ -630,6 +636,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-skrapp` — Skrapp platform help including REST API, native CRM integrations (HubSpot, Salesforce, Zoho, Pipedrive, Outreach), and Zapier
 - `/sales-openwebninja` — OpenWeb Ninja platform help including 30+ REST APIs (Website Contacts Scraper, Email Search, Local Business Data, Web Search), RapidAPI marketplace
 - `/sales-anymailfinder` — Anymail Finder platform help including REST API v5.1, webhook support, Make/Zapier/n8n integrations, Chrome Extension
+- `/sales-zerobounce` — ZeroBounce platform help including REST API v2, 60+ native integrations, Zapier, 13 SDKs, email validation/finder/scoring/activity/blacklist/DMARC
 - `/sales-sendgrid` — SendGrid platform help including Email API, Event Webhooks, Inbound Parse, and Marketing Campaigns
 - `/sales-postmark` — Postmark platform help including transactional email API, Message Streams, and webhooks
 - `/sales-safetymails` — SafetyMails platform help (bulk verification, real-time API, Email Finder, native integrations)

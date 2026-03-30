@@ -10,7 +10,7 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 59 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 60 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -256,6 +256,12 @@ Router recommends a 5-skill sequence:
 | Skill | What it does | Status |
 |---|---|---|
 | `/sales-anymailfinder` | Anymail Finder platform help — email finder and verification with 97%+ delivery guarantee. Email Finder by Person (name + company/domain), Email Finder by Decision Maker (10 role categories), Email Finder by Company/Domain (up to 20 emails), Email Finder by LinkedIn URL, Email Verifier (valid/risky/invalid, 0.2 credits), Bulk Email Search (100K rows, async, webhook), GeoLead Finder (location-based), Chrome Extension, REST API v5.1 (no rate limits), Make/Zapier/n8n (7,000+ apps). Pay only for verified emails | Available |
+
+### ZeroBounce & Platform
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-zerobounce` | ZeroBounce platform help — email validation and deliverability suite. Email Validation (99.6% accuracy, 30+ types, bulk + real-time API), Email Finder (name + domain, 20 credits/find), AI Email Scoring (catch-all 1-10 scale), Activity Data (engagement recency 30-365+ days), Inbox Placement Testing (100+ configs), Blacklist Monitoring (200+ providers, 24/7), DMARC Monitor (multi-domain), Email Warmup (automated engagement simulation), REST API v2 (US/EU endpoints, 13 SDKs), 60+ native integrations, Zapier (2,000+ apps). SOC 2 Type 2, ISO-27001, GDPR/HIPAA/CCPA | Available |
 
 ### Lobstr.io & Platform
 

@@ -300,6 +300,14 @@ Save the search as a dynamic list — new matches will appear automatically.
 - **Best for**: Building targeted lists by decision maker role, bulk email finding from name+company lists, geographic prospecting via GeoLead Finder.
 - **Pricing**: Starter €14/mo (50 credits), Standard €39/mo (1K), Scale €129/mo (5K), Ultimate €259/mo (25K). Pay only for verified emails.
 
+### Building lists from ZeroBounce (email finder + validation)
+- **Email Finder**: Find B2B email addresses by name + domain. Each found email is validated automatically. 20 credits per successful find. 10 free queries/month on the free plan.
+- **Bulk validation before outreach**: Upload prospect lists (CSV/TXT) for batch validation. Detects invalid, spam traps, disposable, catch-all, and abuse addresses. Remove bad addresses before importing into outbound tools.
+- **AI Scoring for catch-all domains**: Score catch-all addresses (1-10) to decide which are worth including. Helps expand your sendable list beyond just "valid" results.
+- **Activity Data for prioritization**: Append engagement recency (30-365+ day windows) to decide which contacts to prioritize. Recently active contacts are more likely to respond.
+- **Best for**: Validating and cleaning prospect lists before outreach, finding emails for named contacts, scoring catch-all addresses, and prioritizing by engagement recency.
+- **Pricing**: Free 100/mo, PAYG $39/2K credits, ZeroBounce ONE $99/mo for 25K. Email Finder uses 20 credits per find.
+
 ## Step 4 — Segment and prioritize
 
 Split the list into tiers for sequencing:
@@ -403,6 +411,7 @@ Before launching outreach, validate the list:
 - `/sales-skrapp` — Skrapp platform help (200M+ B2B contacts, email finder, Lead Finder, data enrichment with AI Fields, LinkedIn Chrome extension)
 - `/sales-openwebninja` — OpenWeb Ninja platform help (30+ data APIs: Local Business Data from Google Maps, Website Contacts Scraper, Email Search)
 - `/sales-anymailfinder` — Anymail Finder platform help (email finder by person/company/decision maker, bulk search 100K rows, GeoLead Finder, 97%+ delivery guarantee)
+- `/sales-zerobounce` — ZeroBounce platform help (Email Finder by name+domain, email validation 99.6% accuracy, bulk list cleaning)
 - `/sales-mailmo` — Mailmo platform help (Email Finder with catch-all verification, LinkedIn Chrome extension)
 - `/sales-seamless` — Seamless.AI platform help (1.8B+ contacts, Buyer Intent, Job Changes, Autopilot, Chrome extension)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
