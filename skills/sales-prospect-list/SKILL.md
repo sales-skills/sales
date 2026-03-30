@@ -300,6 +300,18 @@ Save the search as a dynamic list — new matches will appear automatically.
 - **Best for**: Building targeted lists by decision maker role, bulk email finding from name+company lists, geographic prospecting via GeoLead Finder.
 - **Pricing**: Starter €14/mo (50 credits), Standard €39/mo (1K), Scale €129/mo (5K), Ultimate €259/mo (25K). Pay only for verified emails.
 
+### Building lists from Snov.io (all-in-one prospecting)
+- **Domain Search**: Find all emails and prospect profiles at a company domain. Filter by position/role to find decision-makers. 1 credit per unique domain request.
+- **Email Finder (Name + Domain)**: Find specific individual's email by name and domain. Batch support for processing multiple prospects at once.
+- **LinkedIn Extension + LinkedIn Search**: Find emails directly from LinkedIn profiles — Chrome extension for browsing, in-platform LinkedIn search without extension.
+- **LinkedIn Profile Enrichment**: Extract complete prospect data from LinkedIn URLs via API — name, title, company, verified email. 1 credit per profile.
+- **Company Domain Lookup**: Start with company names, discover their domains, then run domain search for emails.
+- **Email Count Check**: Free check to see how many emails are available at a domain before spending credits — helps prioritize which companies to research.
+- **Prospect Management**: Built-in list management with custom fields. Create lists, add prospects, and move directly into campaigns — no CSV export/import needed.
+- **Email Verifier**: Verify prospect emails inline (98% accuracy, 7-tier). Send only to verified addresses.
+- **Best for**: End-to-end prospecting workflow — find → verify → warm up → campaign in one platform. LinkedIn enrichment and domain search are the standout features for list building.
+- **Pricing**: Trial Free (50 credits), Starter $39/mo (1K credits), Pro S $99/mo (5K), Pro M $149/mo (20K), Pro L $249/mo (50K).
+
 ### Building lists from ZeroBounce (email finder + validation)
 - **Email Finder**: Find B2B email addresses by name + domain. Each found email is validated automatically. 20 credits per successful find. 10 free queries/month on the free plan.
 - **Bulk validation before outreach**: Upload prospect lists (CSV/TXT) for batch validation. Detects invalid, spam traps, disposable, catch-all, and abuse addresses. Remove bad addresses before importing into outbound tools.
@@ -412,6 +424,7 @@ Before launching outreach, validate the list:
 - `/sales-openwebninja` — OpenWeb Ninja platform help (30+ data APIs: Local Business Data from Google Maps, Website Contacts Scraper, Email Search)
 - `/sales-anymailfinder` — Anymail Finder platform help (email finder by person/company/decision maker, bulk search 100K rows, GeoLead Finder, 97%+ delivery guarantee)
 - `/sales-zerobounce` — ZeroBounce platform help (Email Finder by name+domain, email validation 99.6% accuracy, bulk list cleaning)
+- `/sales-snov` — Snov.io platform help (email finder, domain search, LinkedIn enrichment, prospect management, multichannel campaigns)
 - `/sales-mailmo` — Mailmo platform help (Email Finder with catch-all verification, LinkedIn Chrome extension)
 - `/sales-seamless` — Seamless.AI platform help (1.8B+ contacts, Buyer Intent, Job Changes, Autopilot, Chrome extension)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

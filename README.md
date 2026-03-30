@@ -10,7 +10,7 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 60 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 61 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -262,6 +262,12 @@ Router recommends a 5-skill sequence:
 | Skill | What it does | Status |
 |---|---|---|
 | `/sales-zerobounce` | ZeroBounce platform help — email validation and deliverability suite. Email Validation (99.6% accuracy, 30+ types, bulk + real-time API), Email Finder (name + domain, 20 credits/find), AI Email Scoring (catch-all 1-10 scale), Activity Data (engagement recency 30-365+ days), Inbox Placement Testing (100+ configs), Blacklist Monitoring (200+ providers, 24/7), DMARC Monitor (multi-domain), Email Warmup (automated engagement simulation), REST API v2 (US/EU endpoints, 13 SDKs), 60+ native integrations, Zapier (2,000+ apps). SOC 2 Type 2, ISO-27001, GDPR/HIPAA/CCPA | Available |
+
+### Snov.io & Platform
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-snov` | Snov.io platform help — AI-powered sales automation and lead generation. Email Finder (domain search, name+domain, LinkedIn enrichment, company domain lookup), Email Verifier (98% accuracy, 7-tier, SMTP checks), Multichannel Campaigns (email + LinkedIn sequences, drip campaigns, A/B testing, sentiment analysis, AI email writer), LinkedIn Automation ($69/mo add-on — profile views, connections, follow-ups), Sales CRM (deals, pipelines, Google Calendar sync), Email Warmup (freemail support, large pool), Deliverability Check (inbox placement, reputation), Email Tracker (Gmail extension), REST API (33+ endpoints, OAuth 2.0, 60 req/min, webhooks), 5,000+ integrations (native HubSpot, Pipedrive, Salesforce, Zoho, Close, Freshsales + Zapier/Make) | Available |
 
 ### Lobstr.io & Platform
 

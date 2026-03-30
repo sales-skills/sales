@@ -321,6 +321,7 @@ Design your follow-up cadence around tracking signals rather than fixed time del
 - `/sales-mailgun` — Mailgun platform help (8 webhook event types, Events API, Metrics API, tag-based tracking)
 - `/sales-klaviyo` — Klaviyo platform help (flow/campaign analytics, revenue attribution, predictive engagement, benchmarks)
 - `/sales-activecampaign` — ActiveCampaign platform help (site tracking, event tracking, 25+ webhook types, automation analytics)
+- `/sales-snov` — Snov.io platform help (email tracker Gmail extension, campaign opens/clicks/replies tracking, sentiment analysis)
 - `/sales-klaviyo` — Klaviyo platform help (flow/campaign analytics, revenue attribution, Metrics API, benchmarks)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 

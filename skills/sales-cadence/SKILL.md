@@ -224,6 +224,19 @@ For each call step:
 - **CRM sync**: Native integrations with HubSpot, Salesforce, Pipedrive, Zoho, Outreach, Salesloft.
 - **Best practice**: GetProspect is strongest when you use the full workflow — find → verify → sequence in one platform. For multi-channel cadences (email + LinkedIn + calls), complex conditional branching, or very high volume, use a dedicated sequencing tool and use GetProspect as the data source.
 
+### In Snov.io
+- **Where**: Campaigns section in Snov.io dashboard (app.snov.io)
+- **Channel support**: Email (native) + LinkedIn automation (add-on at $69/mo per slot — profile views, connection requests, follow-ups)
+- **Sequence builder**: Multichannel campaigns combining email drip sequences and LinkedIn steps. Unlimited campaigns, follow-ups, and senders on all paid plans.
+- **A/B testing**: Split-test subject lines and email body content. Sentiment analysis on replies to gauge response quality.
+- **AI Email Writer**: AI-powered email composition for campaign steps — generates personalized cold emails based on prospect data.
+- **Sending controls**: Email warmup with large warm-up pool (freemail support), deliverability check for inbox placement monitoring, done-for-you SPF/DKIM/DMARC setup service.
+- **Personalization**: Custom fields, merge variables, prospect-specific data from Email Finder and LinkedIn enrichment.
+- **Lead sourcing**: Built-in Email Finder (domain search, name+domain, LinkedIn profile enrichment) and Email Verifier (98% accuracy, 7-tier verification). Find → verify → sequence in one platform.
+- **CRM sync**: Native HubSpot, Pipedrive, Salesforce, Zoho CRM, Close CRM, Freshsales, Nutshell + 5,000+ via Zapier/Make.
+- **API**: REST API with 33+ endpoints — campaign analytics, progress, replies, opens, clicks, sent emails, recipient status management. OAuth 2.0 auth, 60 req/min.
+- **Best practice**: Snov.io's strength is the all-in-one workflow — find emails → verify → warm up → send multichannel campaigns → track in CRM. LinkedIn automation is a paid add-on ($69/mo per slot) — factor this into cost planning for multichannel cadences.
+
 ### Personalization framework
 - **Level 1 (Minimum)**: First name, company name, title — the bare minimum
 - **Level 2 (Standard)**: Industry reference, company-size-specific pain point
@@ -288,6 +301,7 @@ Provide a benchmarks table:
 - `/sales-reply` — Reply.io platform help (for Reply.io-specific setup)
 - `/sales-woodpecker` — Woodpecker platform help (for Woodpecker-specific setup)
 - `/sales-hunter` — Hunter.io platform help (Campaigns, Domain Search, Email Finder, Email Verifier)
+- `/sales-snov` — Snov.io platform help (multichannel email + LinkedIn campaigns, AI email writer, email warmup, email finder)
 - `/sales-seamless` — Seamless.AI platform help (Engagement Hub, Pitch Intelligence, contact data)
 - `/sales-email-tracking` — Email engagement tracking — open/click/attachment signals for follow-up timing
 - `/sales-closum` — Closum platform help (omnichannel: email, SMS, WhatsApp, Telegram, Web Push automations)

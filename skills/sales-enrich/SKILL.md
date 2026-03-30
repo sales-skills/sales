@@ -337,6 +337,17 @@ Choose the right approach based on volume and frequency:
 - **Credit economics**: Starter €14/mo (50 credits), Standard €39/mo (1K), Scale €129/mo (5K), Ultimate €259/mo (25K). Unused credits accumulate up to 2x plan size.
 - **Best for**: High-accuracy email finding with pay-only-for-verified model, decision maker discovery by role, bulk enrichment at scale.
 
+### In Snov.io
+- **Email Finder (Domain Search)**: Find all emails at a company domain — returns company info, prospect profiles, and email addresses. 1 credit per unique domain request. Filter by position/role.
+- **Email Finder (Name + Domain)**: Find individual email by first name, last name, and domain. Batch support with webhook callbacks. 1 credit per email found (valid/unknown).
+- **Company Domain Lookup**: Discover domain from company name. 1 credit per domain found. Batch support.
+- **LinkedIn Profile Enrichment**: Extract complete profile data from LinkedIn URLs — name, title, company, email. 1 credit per profile. Batch support with webhooks.
+- **Profile Enrichment by Email**: Enrich an email with associated profile data. 1 credit per request (free if no data found).
+- **Email Verifier**: 98% accuracy, 7-tier verification with SMTP checks. Returns smtp_status, is_valid_format, is_disposable, is_webmail, is_gibberish. API supports up to 10 emails per request.
+- **Email Count Check**: Free endpoint to check how many emails are available at a domain before spending credits.
+- **Credit economics**: Trial Free (50 credits), Starter $39/mo (1K), Pro S $99/mo (5K), Pro M $149/mo (20K), Pro L $249/mo (50K). Annual billing saves 25%. Unused credits roll over.
+- **Best for**: All-in-one prospecting — find emails, verify them, and immediately send campaigns from the same platform. LinkedIn enrichment is a standout for building prospect profiles from LinkedIn URLs.
+
 ### In ZeroBounce
 - **Email Finder**: Find B2B emails by name + domain. Returns validated email address. 20 credits per successful find. 10 free queries/month.
 - **Email Validation**: Verify existing email addresses with 99.6% accuracy — returns valid/invalid/catch-all/spam-trap/abuse/do_not_mail status with detailed sub-status. Real-time API or bulk CSV upload (unlimited file size).
@@ -477,6 +488,7 @@ Credits reset monthly and do not roll over. Plan enrichment around your billing 
 - `/sales-openwebninja` — OpenWeb Ninja platform help (30+ data APIs: Website Contacts Scraper, Email Search, Local Business Data for API-based enrichment)
 - `/sales-anymailfinder` — Anymail Finder platform help (email finder by person/company/decision maker/LinkedIn, email verifier, bulk search, 97%+ delivery guarantee)
 - `/sales-zerobounce` — ZeroBounce platform help (email validation 99.6% accuracy, Email Finder, AI scoring, activity data, blacklist monitoring, DMARC, warmup)
+- `/sales-snov` — Snov.io platform help (email finder, domain search, LinkedIn enrichment, email verifier 98%, multichannel campaigns)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

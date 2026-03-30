@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-snov",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "How do I find email addresses for prospects at a target company in Snov.io?",
+      "expected_output": "Guide to finding prospect emails using Snov.io's Email Finder tools including domain search, name-based lookup, and browser extension.",
+      "assertions": [
+        {"name": "domain_search", "description": "Must explain the Domain Search feature for finding all email addresses associated with a company domain, including how to filter results by department or seniority"},
+        {"name": "email_finder_methods", "description": "Must cover at least two methods for finding emails: domain search, single Email Finder (name + domain lookup), and the LinkedIn extension (Li Prospect Finder) for extracting emails from LinkedIn profiles"},
+        {"name": "credit_costs", "description": "Must mention that Snov.io uses a credit-based system where email searches consume credits, and explain that different actions (domain search, single find, verification) have different credit costs"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "How do I set up a multichannel email and LinkedIn campaign in Snov.io?",
+      "expected_output": "Step-by-step guide for creating a multichannel drip campaign in Snov.io combining email sequences with LinkedIn automation steps.",
+      "assertions": [
+        {"name": "campaign_creation", "description": "Must explain how to create a multichannel drip campaign with email sequence steps including delays, triggers, and the drag-and-drop campaign builder for designing multi-step flows"},
+        {"name": "linkedin_automation", "description": "Must describe the LinkedIn Automation add-on at $69/mo that enables LinkedIn actions (profile views, connection requests, messages) as campaign steps alongside email, and explain how to install and connect the LinkedIn extension"},
+        {"name": "ab_testing", "description": "Must cover A/B testing capabilities for email variations within campaigns, including how to create multiple subject line or body variants and how Snov.io determines the winning version based on open or reply rates"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "How do I use the Snov.io API to find and verify emails programmatically?",
+      "expected_output": "Technical guide to using the Snov.io REST API for automated email finding and verification, covering authentication, key endpoints, and the async verification pattern.",
+      "assertions": [
+        {"name": "oauth_auth", "description": "Must explain the OAuth 2.0 authentication flow for the Snov.io API, including obtaining a client_id and client_secret from account settings and exchanging them for an access token via the /v1/oauth/access_token endpoint"},
+        {"name": "search_endpoints", "description": "Must describe the Domain Search endpoint (/v2/domain-emails-with-info) for retrieving emails by domain and the Email Finder endpoint (/v1/get-emails-from-names) for finding emails by name + domain, including required parameters and the 60 requests/min rate limit"},
+        {"name": "async_verification", "description": "Must explain the two-step async email verification pattern: first submitting an email via the Add Email for Verification endpoint which returns a task_hash, then polling the Email Verification Status endpoint with that task_hash to retrieve results once processing completes"}
+      ]
+    }
+  ]
+}
