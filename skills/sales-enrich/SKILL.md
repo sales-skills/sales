@@ -318,6 +318,14 @@ Choose the right approach based on volume and frequency:
 - **Bulk operations**: Upload CSV/Excel for batch email finding and enrichment. Auto-mapping detects columns and matches to required fields. Export enriched data as CSV/XLSX or sync to CRM.
 - **Credit economics**: Free: 100/mo (1 user). Professional: €30/mo (1,000 credits, 2 users). Enterprise: €262/mo (50,000 credits, 15 users). No charge for duplicates or invalid results.
 
+### In OpenWeb Ninja (API-based enrichment)
+- **Website Contacts Scraper API**: Extract emails, phone numbers, and social profile links (Facebook, Instagram, Twitter, LinkedIn) from any website domain. Returns structured data with source URLs for each contact found. Response time 0.5-3s. Supports batching via keyword/name-based website lookup.
+- **Email Search API**: Real-time web search for publicly available email addresses by query + optional email domain filter. Returns array of discovered email addresses indexed from the public web. Response time 1-2s.
+- **Local Business Data API**: Retrieve business contact info from Google Maps — phone, email, website, social links, plus 40+ firmographic fields (industry, ratings, review count, opening hours, address, coordinates).
+- **API-only enrichment**: OpenWeb Ninja is a developer API stack, not a point-and-click enrichment tool. Integrate via REST API into your pipeline. No native CRM sync — you build the integration. Code samples available for JavaScript, Python, Java, Ruby, cURL.
+- **Credit economics**: Per-API subscription. Free: 50-500 requests/mo (varies by API). Pro: $25/mo (10K-20K requests). Ultra: $75/mo (50K-100K). Mega: $150/mo (200K-300K). Pay-as-you-go: $0.001-0.005/request. Each API has its own subscription — costs add up if using multiple APIs.
+- **Best for**: Developers building custom enrichment pipelines, scraping contact data from websites at scale, supplementing primary enrichment tools with web-indexed email discovery.
+
 ### Compliance checklist
 
 Before enriching and contacting, verify compliance with data privacy regulations in your target regions:
@@ -446,6 +454,7 @@ Credits reset monthly and do not roll over. Plan enrichment around your billing 
 - `/sales-lobstr` — Lobstr.io platform help (50+ web scrapers for Google Maps, LinkedIn, reviews — scraping-based data collection and enrichment)
 - `/sales-getprospect` — GetProspect platform help (200M+ B2B database, email finder, enrichment, verifier, cold email sequences, LinkedIn Chrome extension)
 - `/sales-skrapp` — Skrapp platform help (200M+ B2B contacts, email finder, data enrichment with AI Fields, email verifier, LinkedIn Chrome extension)
+- `/sales-openwebninja` — OpenWeb Ninja platform help (30+ data APIs: Website Contacts Scraper, Email Search, Local Business Data for API-based enrichment)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

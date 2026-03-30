@@ -1,6 +1,6 @@
 ---
 name: sales-do
-description: "Route any sales, marketing, or GTM objective to the right specialized skill. Covers 57 first-party skills and 53 third-party skills across prospecting, outbound, deals, proposals, forecasting, deliverability, enrichment, intent signals, content, coaching, CRO, SEO, and platform help for Apollo, Salesloft, Mailshake, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter, Tomba, Prospeo, Mailmo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, Seismic, Groove, and Qwilr. Use when you have a sales or marketing question and are not sure which skill to use. Do NOT use to solve problems directly — this skill only routes."
+description: "Route any sales, marketing, or GTM objective to the right specialized skill. Covers 58 first-party skills and 53 third-party skills across prospecting, outbound, deals, proposals, forecasting, deliverability, enrichment, intent signals, content, coaching, CRO, SEO, and platform help for Apollo, Salesloft, Mailshake, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter, Tomba, Prospeo, Mailmo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Seismic, Groove, and Qwilr. Use when you have a sales or marketing question and are not sure which skill to use. Do NOT use to solve problems directly — this skill only routes."
 ---
 
 You are a sales skills router. Your job is to understand the user's sales objective, match it to the right specialized skill, and generate a ready-to-use prompt. You do NOT solve the problem directly — you route to the skill that will.
@@ -248,6 +248,12 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 |---|---|
 | `/sales-skrapp` | General Skrapp questions — Email Finder (200M+ contacts, 92% success rate), Lead Finder (B2B database, 17+ filters), Data Enrichment (bulk CSV/Excel, auto-mapping, AI Fields for buying role/seniority/function/gender), Email Verifier (97% accuracy, personal/disposable detection), LinkedIn Chrome Extension (25 profiles/sec, multi-page enrichment), Company Search (20M+ profiles), CRM integrations (HubSpot, Salesforce, Zoho, Pipedrive, Outreach), Zapier, REST API | Route when the user asks about Skrapp setup, config, features, or troubleshooting. Route when they mention Skrapp API, Skrapp email finder, Skrapp enrichment, Skrapp verifier, Skrapp AI Fields, or Skrapp LinkedIn extension. |
 
+### OpenWeb Ninja & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-openwebninja` | General OpenWeb Ninja questions — 30+ real-time public data APIs. Sales-relevant: Website Contacts Scraper (emails, phones, social from any domain), Email Search (web-indexed email discovery by query), Local Business Data (Google Maps 40+ fields: phone, email, ratings, reviews, address), Social Links Search, Real-Time Web Search (Google SERP, AI Overviews, Knowledge Graph), JSearch (200M+ job postings), Web Unblocker (JS rendering, rotating proxies), Product Data (Amazon, eBay, Walmart), Finance Data, AI/LLM APIs (Gemini, Copilot). RapidAPI marketplace, per-API subscription | Route when the user asks about OpenWeb Ninja setup, APIs, features, or troubleshooting. Route when they mention OpenWeb Ninja, Website Contacts Scraper, Local Business Data API, Email Search API, Web Unblocker, JSearch, or OpenWeb Ninja RapidAPI. |
+
 ### Closum & Platform
 
 | Skill | Route when... |
@@ -468,6 +474,7 @@ Some requests are ambiguous. Apply these rules:
 - **"lead generation"** → `/apify-lead-generation` for scraping leads from platforms (Google Maps, social, web), `/sales-prospect` for ICP definition and target list building, `/lead-magnets` for creating gated content to capture emails.
 - **"link building"** → `/build-links` for link acquisition campaigns and outreach strategy, `/backlink-analyzer` for analyzing existing backlink profiles.
 - **"Skrapp"** → `/sales-skrapp` for Skrapp platform help. If the question is about enrichment strategy across tools → `/sales-enrich`. If about email verification/deliverability → `/sales-deliverability`. If about building prospect lists → `/sales-prospect-list`.
+- **"OpenWeb Ninja"** / **"Website Contacts Scraper"** / **"Local Business Data API"** / **"Email Search API"** / **"Web Unblocker"** / **"JSearch"** → `/sales-openwebninja` for OpenWeb Ninja platform help. If the question is about enrichment strategy → `/sales-enrich`. If about building prospect lists → `/sales-prospect-list`. If about connecting tools → `/sales-integration`.
 
 - **"Smartlead" / "SmartSenders" / "SmartInfra" / "SmartAgents"** → `/sales-smartlead` for platform help. `/sales-cadence` for cadence strategy. `/sales-deliverability` for cross-platform deliverability.
 - **"agency" / "multi-client" / "white label" / "client outbound"** → `/sales-agency-outbound` for multi-client architecture. NOT `/sales-smartlead` (platform-specific) or `/sales-deliverability` (single-domain).

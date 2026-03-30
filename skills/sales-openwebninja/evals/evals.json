@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-openwebninja",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "How do I find email addresses for a company using OpenWeb Ninja?",
+      "expected_output": "Guidance on using Website Contacts Scraper and/or Email Search APIs to find email addresses",
+      "assertions": [
+        {"name": "mentions_scraper_or_email_search", "description": "Mentions Website Contacts Scraper or Email Search API"},
+        {"name": "mentions_domain_query_input", "description": "Explains domain or query parameter input"},
+        {"name": "mentions_free_tier", "description": "Mentions pricing with free tier available"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "How do I build a local business prospect list from Google Maps using OpenWeb Ninja?",
+      "expected_output": "Guidance on using the Local Business Data API for prospecting from Google Maps",
+      "assertions": [
+        {"name": "mentions_local_business_data_api", "description": "Mentions Local Business Data API"},
+        {"name": "mentions_business_fields", "description": "Explains 40+ business fields including phone, email, or ratings"},
+        {"name": "mentions_bulk_search", "description": "Mentions bulk search capability"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "How do I use the OpenWeb Ninja Web Search API to research competitors?",
+      "expected_output": "Guidance on using the Real-Time Web Search API for competitor research",
+      "assertions": [
+        {"name": "mentions_realtime_web_search_api", "description": "Mentions Real-Time Web Search API"},
+        {"name": "mentions_serp_results", "description": "Explains SERP results including organic, knowledge graph, or AI overviews"},
+        {"name": "mentions_results_volume_or_localization", "description": "Mentions up to 500 results per query or localization support"}
+      ]
+    }
+  ]
+}

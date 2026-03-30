@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -223,6 +223,8 @@ Before building anything custom, check if a native integration exists:
 | Skrapp → Outreach | Native | Push enriched contacts into Outreach sequences |
 | Skrapp → Zapier | Native | Connect to 1,000+ apps — triggers on new contacts found |
 | Skrapp → Any (API) | API | REST API at skrapp.io/api — email finder, verifier, company info, account/list management. X-Access-Key auth |
+| OpenWeb Ninja → Any (API) | API | 30+ REST APIs — Website Contacts Scraper, Email Search, Local Business Data, Web Search, JSearch, Web Unblocker. Per-API subscription via portal or RapidAPI |
+| OpenWeb Ninja → RapidAPI | Marketplace | All APIs available on RapidAPI marketplace with X-RapidAPI-Key auth |
 | Lobstr.io → Google Sheets | Native | Auto-export scraping results to Google Sheets on run completion |
 | Lobstr.io → Amazon S3 | Native | Upload structured JSON/CSV results to S3 bucket automatically |
 | Lobstr.io → Webhook | Native | 4 events (run.running, run.paused, run.done, run.error) — POST JSON to any URL with 3x retry |
@@ -481,6 +483,14 @@ Before building anything custom, check if a native integration exists:
 - **API**: REST API at skrapp.io/api — email finder, email verifier, company info, account and list management. X-Access-Key header auth. API access requires Professional+ plan.
 - **Export**: CSV/XLSX export from any list. Direct CRM sync available for supported platforms.
 
+### OpenWeb Ninja integrations
+- **API-only platform**: OpenWeb Ninja is a developer API stack — no native CRM integrations, no Zapier connector, no webhooks. All integration is via direct REST API calls.
+- **30+ REST APIs**: Each API is a separate product with its own subscription, endpoints, and rate limits. Sales-relevant: Website Contacts Scraper, Email Search, Local Business Data, Social Links Search, Real-Time Web Search, JSearch, Web Unblocker.
+- **RapidAPI marketplace**: All APIs available on RapidAPI with `X-RapidAPI-Key` header authentication. Alternative to the direct portal.
+- **Direct portal**: Access via app.openwebninja.com. Auth method via portal's own API key system.
+- **Code samples**: JavaScript/Node.js, Python, Java, Ruby, cURL available for all APIs.
+- **Custom integration required**: Build your own pipeline — API call → parse JSON response → push to CRM/outbound tool. No pre-built connectors.
+
 ### Lobstr.io webhooks
 - **4 event types**: `run.running` (run begins/resumes), `run.paused` (execution halts due to account limits), `run.done` (run finishes without errors), `run.error` (run crashed with error).
 - **Payload**: JSON with `id` (run hash), `object` ("run"), `event` (event type), `squid` (object with `id` and `name`), `timestamp` (UTC YYYY/MM/DD HH:MM:SS).
@@ -606,6 +616,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-lobstr` — Lobstr.io platform help including async REST API, webhooks (4 events), Google Sheets, S3, Make, and SFTP integrations
 - `/sales-getprospect` — GetProspect platform help including REST API, native CRM integrations (HubSpot, Salesforce, Pipedrive, Zoho), Outreach/Salesloft sync, and Zapier
 - `/sales-skrapp` — Skrapp platform help including REST API, native CRM integrations (HubSpot, Salesforce, Zoho, Pipedrive, Outreach), and Zapier
+- `/sales-openwebninja` — OpenWeb Ninja platform help including 30+ REST APIs (Website Contacts Scraper, Email Search, Local Business Data, Web Search), RapidAPI marketplace
 - `/sales-sendgrid` — SendGrid platform help including Email API, Event Webhooks, Inbound Parse, and Marketing Campaigns
 - `/sales-postmark` — Postmark platform help including transactional email API, Message Streams, and webhooks
 - `/sales-safetymails` — SafetyMails platform help (bulk verification, real-time API, Email Finder, native integrations)

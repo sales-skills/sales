@@ -10,7 +10,7 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 57 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 58 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -244,6 +244,12 @@ Router recommends a 5-skill sequence:
 | Skill | What it does | Status |
 |---|---|---|
 | `/sales-skrapp` | Skrapp platform help — B2B email finder, data enrichment, and lead generation. Email Finder (200M+ contacts, 92% success rate), Lead Finder (B2B database, 17+ filters), Data Enrichment (bulk CSV/Excel, auto-mapping, AI Fields for buying role/seniority/function/gender), Email Verifier (97% accuracy, personal/disposable detection), LinkedIn Chrome Extension (25 profiles/sec, multi-page enrichment), Company Search (20M+ profiles), CRM integrations (HubSpot, Salesforce, Zoho, Pipedrive, Outreach), Zapier, REST API | Available |
+
+### OpenWeb Ninja & Platform
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-openwebninja` | OpenWeb Ninja platform help — 30+ real-time public data APIs for sales prospecting and enrichment. Website Contacts Scraper (emails, phones, social links from any domain), Email Search (web-indexed email discovery), Local Business Data (Google Maps 40+ fields), Social Links Search, Real-Time Web Search (SERP, AI Overviews, Knowledge Graph), JSearch (200M+ job postings), Web Unblocker (JS rendering, rotating proxies), Product Data (Amazon, eBay, Walmart, Costco), Finance Data, AI/LLM APIs. RapidAPI marketplace, per-API subscription ($0-$150/mo per API) | Available |
 
 ### Lobstr.io & Platform
 

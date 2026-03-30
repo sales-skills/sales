@@ -283,6 +283,14 @@ Save the search as a dynamic list — new matches will appear automatically.
 - **Best for**: Finding verified B2B emails by name/domain, building lists from LinkedIn at scale, enriching existing contact spreadsheets with AI-powered segmentation fields.
 - **Pricing**: Free (100 credits/mo, 1 user). Professional €30/mo (1,000 credits, 2 users). Enterprise €262/mo (50,000 credits, 15 users). No charge for duplicates or invalid results.
 
+### Building lists from OpenWeb Ninja (Google Maps + web scraping APIs)
+- **Local Business Data API**: Search and retrieve businesses directly from Google Maps. 40+ fields per business — name, phone, email, website, address, coordinates, ratings, review count, opening hours, social links, photos, reviews, posts. Supports nearby search, keyword search, bulk search, and autocomplete.
+- **Website Contacts Scraper API**: Extract emails, phone numbers, and social links from any website domain. Great for building contact lists from a list of target company domains.
+- **Email Search API**: Real-time web search for publicly available emails by company/person query. Cast a wide net for email discovery beyond traditional B2B databases.
+- **API-only workflow**: OpenWeb Ninja is a developer API stack — no GUI for list building. Build your pipeline: Local Business Data → extract businesses → Website Contacts Scraper → enrich with emails/phones → export to CRM or outbound tool.
+- **Best for**: Local/SMB prospecting from Google Maps data, building contact lists from website scraping, developers building custom prospecting pipelines.
+- **Pricing**: Per API — Free (50-500/mo), Pro $25/mo (10K-20K), Ultra $75/mo (50K-100K), Mega $150/mo (200K-300K). Each API subscribed separately.
+
 ## Step 4 — Segment and prioritize
 
 Split the list into tiers for sequencing:
@@ -384,6 +392,7 @@ Before launching outreach, validate the list:
 - `/sales-lobstr` — Lobstr.io platform help (50+ no-code web scrapers, Google Maps leads, LinkedIn Sales Nav extraction, scheduled automation, API)
 - `/sales-getprospect` — GetProspect platform help (200M+ B2B database, email finder, LinkedIn Chrome extension, enrichment, cold email sequences)
 - `/sales-skrapp` — Skrapp platform help (200M+ B2B contacts, email finder, Lead Finder, data enrichment with AI Fields, LinkedIn Chrome extension)
+- `/sales-openwebninja` — OpenWeb Ninja platform help (30+ data APIs: Local Business Data from Google Maps, Website Contacts Scraper, Email Search)
 - `/sales-mailmo` — Mailmo platform help (Email Finder with catch-all verification, LinkedIn Chrome extension)
 - `/sales-seamless` — Seamless.AI platform help (1.8B+ contacts, Buyer Intent, Job Changes, Autopilot, Chrome extension)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
