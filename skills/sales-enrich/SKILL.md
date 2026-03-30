@@ -326,6 +326,17 @@ Choose the right approach based on volume and frequency:
 - **Credit economics**: Per-API subscription. Free: 50-500 requests/mo (varies by API). Pro: $25/mo (10K-20K requests). Ultra: $75/mo (50K-100K). Mega: $150/mo (200K-300K). Pay-as-you-go: $0.001-0.005/request. Each API has its own subscription — costs add up if using multiple APIs.
 - **Best for**: Developers building custom enrichment pipelines, scraping contact data from websites at scale, supplementing primary enrichment tools with web-indexed email discovery.
 
+### In Anymail Finder
+- **Email Finder by Person**: POST name + company/domain to find verified email. 97%+ delivery guarantee on valid results. 1 credit per valid email — free for risky/not-found/blacklisted results. Duplicate searches free within 30 days.
+- **Email Finder by Decision Maker**: Role-based search with 10 categories (ceo, engineering, finance, hr, it, logistics, marketing, operations, buyer, sales). Returns person name, title, LinkedIn URL, and email. 2 credits per valid result.
+- **Email Finder by Company/Domain**: Find up to 20 emails at any company. 1 credit per search.
+- **Email Finder by LinkedIn URL**: Extract email from a LinkedIn profile URL. 1 credit per valid result.
+- **Email Verifier**: Validate deliverability — returns valid/risky/invalid status. 0.2 credits per verification. Repeated checks within 30 days free.
+- **Bulk operations**: Up to 100K rows per request. Async processing (~1K rows in 5 min). JSON or CSV/Excel upload. Credits charged on download only. Webhook notifications for completion.
+- **GeoLead Finder**: Location-based lead discovery — newer feature for geographic prospecting.
+- **Credit economics**: Starter €14/mo (50 credits), Standard €39/mo (1K), Scale €129/mo (5K), Ultimate €259/mo (25K). Unused credits accumulate up to 2x plan size.
+- **Best for**: High-accuracy email finding with pay-only-for-verified model, decision maker discovery by role, bulk enrichment at scale.
+
 ### Compliance checklist
 
 Before enriching and contacting, verify compliance with data privacy regulations in your target regions:
@@ -455,6 +466,7 @@ Credits reset monthly and do not roll over. Plan enrichment around your billing 
 - `/sales-getprospect` — GetProspect platform help (200M+ B2B database, email finder, enrichment, verifier, cold email sequences, LinkedIn Chrome extension)
 - `/sales-skrapp` — Skrapp platform help (200M+ B2B contacts, email finder, data enrichment with AI Fields, email verifier, LinkedIn Chrome extension)
 - `/sales-openwebninja` — OpenWeb Ninja platform help (30+ data APIs: Website Contacts Scraper, Email Search, Local Business Data for API-based enrichment)
+- `/sales-anymailfinder` — Anymail Finder platform help (email finder by person/company/decision maker/LinkedIn, email verifier, bulk search, 97%+ delivery guarantee)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

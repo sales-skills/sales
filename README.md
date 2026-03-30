@@ -10,7 +10,7 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 58 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 59 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -250,6 +250,12 @@ Router recommends a 5-skill sequence:
 | Skill | What it does | Status |
 |---|---|---|
 | `/sales-openwebninja` | OpenWeb Ninja platform help — 30+ real-time public data APIs for sales prospecting and enrichment. Website Contacts Scraper (emails, phones, social links from any domain), Email Search (web-indexed email discovery), Local Business Data (Google Maps 40+ fields), Social Links Search, Real-Time Web Search (SERP, AI Overviews, Knowledge Graph), JSearch (200M+ job postings), Web Unblocker (JS rendering, rotating proxies), Product Data (Amazon, eBay, Walmart, Costco), Finance Data, AI/LLM APIs. RapidAPI marketplace, per-API subscription ($0-$150/mo per API) | Available |
+
+### Anymail Finder & Platform
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-anymailfinder` | Anymail Finder platform help — email finder and verification with 97%+ delivery guarantee. Email Finder by Person (name + company/domain), Email Finder by Decision Maker (10 role categories), Email Finder by Company/Domain (up to 20 emails), Email Finder by LinkedIn URL, Email Verifier (valid/risky/invalid, 0.2 credits), Bulk Email Search (100K rows, async, webhook), GeoLead Finder (location-based), Chrome Extension, REST API v5.1 (no rate limits), Make/Zapier/n8n (7,000+ apps). Pay only for verified emails | Available |
 
 ### Lobstr.io & Platform
 

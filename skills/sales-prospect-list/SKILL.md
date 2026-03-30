@@ -291,6 +291,15 @@ Save the search as a dynamic list — new matches will appear automatically.
 - **Best for**: Local/SMB prospecting from Google Maps data, building contact lists from website scraping, developers building custom prospecting pipelines.
 - **Pricing**: Per API — Free (50-500/mo), Pro $25/mo (10K-20K), Ultra $75/mo (50K-100K), Mega $150/mo (200K-300K). Each API subscribed separately.
 
+### Building lists from Anymail Finder (email finder + decision maker search)
+- **Email Finder by Company/Domain**: Find up to 20 verified emails at any company in one search. 1 credit per search — great for building contact lists from a target company list.
+- **Decision Maker Search**: Find specific roles at target companies — CEO, engineering, finance, HR, IT, marketing, sales, operations, buyer, logistics. Returns name, title, LinkedIn URL, and verified email. 2 credits per valid result.
+- **GeoLead Finder**: Location-based lead discovery for geographic prospecting. Create searches, check status, download results.
+- **Bulk Email Search**: Upload CSV/Excel of up to 100K names + companies for batch email finding. Async processing (~1K rows in 5 min). Credits charged only when you download results.
+- **Domain Email Count**: Check how many emails are available at a domain before committing credits. Order and download full domain email lists.
+- **Best for**: Building targeted lists by decision maker role, bulk email finding from name+company lists, geographic prospecting via GeoLead Finder.
+- **Pricing**: Starter €14/mo (50 credits), Standard €39/mo (1K), Scale €129/mo (5K), Ultimate €259/mo (25K). Pay only for verified emails.
+
 ## Step 4 — Segment and prioritize
 
 Split the list into tiers for sequencing:
@@ -393,6 +402,7 @@ Before launching outreach, validate the list:
 - `/sales-getprospect` — GetProspect platform help (200M+ B2B database, email finder, LinkedIn Chrome extension, enrichment, cold email sequences)
 - `/sales-skrapp` — Skrapp platform help (200M+ B2B contacts, email finder, Lead Finder, data enrichment with AI Fields, LinkedIn Chrome extension)
 - `/sales-openwebninja` — OpenWeb Ninja platform help (30+ data APIs: Local Business Data from Google Maps, Website Contacts Scraper, Email Search)
+- `/sales-anymailfinder` — Anymail Finder platform help (email finder by person/company/decision maker, bulk search 100K rows, GeoLead Finder, 97%+ delivery guarantee)
 - `/sales-mailmo` — Mailmo platform help (Email Finder with catch-all verification, LinkedIn Chrome extension)
 - `/sales-seamless` — Seamless.AI platform help (1.8B+ contacts, Buyer Intent, Job Changes, Autopilot, Chrome extension)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
