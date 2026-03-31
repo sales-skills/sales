@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-push-notification",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Our iOS push opt-in rate is only 20%. How do we increase it?",
+      "expected_output": "Push primer strategy with in-app message before OS prompt, with benchmarks",
+      "assertions": [
+        {"name": "push_primer_pattern", "description": "Response must explain the push primer pattern — showing a custom in-app message before the OS permission prompt"},
+        {"name": "ios_permission_permanence", "description": "Response must mention that iOS push permission denial is permanent (user must go to Settings to re-enable)"},
+        {"name": "benchmark", "description": "Response must provide opt-in rate benchmarks (50-70% with primer vs 30-40% without)"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "How should I design a push notification strategy for an e-commerce app with 200K MAUs?",
+      "expected_output": "Push strategy covering use cases, frequency, segmentation, and timing",
+      "assertions": [
+        {"name": "use_case_types", "description": "Response must cover multiple push use cases (transactional, promotional, re-engagement, cart abandonment)"},
+        {"name": "frequency_guidelines", "description": "Response must include frequency capping recommendations (e.g., max 1-2 promotional per day)"},
+        {"name": "segmentation", "description": "Response must recommend behavioral segmentation for targeting push messages"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "How do I set up push notifications in Braze with rich media and deep links?",
+      "expected_output": "Braze-specific push setup with rich push and deep linking configuration",
+      "assertions": [
+        {"name": "braze_push_setup", "description": "Response must reference Braze push configuration (APNs/FCM setup, SDK integration)"},
+        {"name": "rich_push", "description": "Response must explain rich push features (images, action buttons, push stories)"},
+        {"name": "deep_linking", "description": "Response must explain deep linking configuration to navigate users to specific app screens"}
+      ]
+    }
+  ]
+}

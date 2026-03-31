@@ -1,6 +1,6 @@
 ---
 name: sales-outscraper
-description: "Outscraper platform help — data extraction and enrichment platform that scrapes Google Maps, reviews, and 50+ internet sources. Google Maps Places (business data scraping by query, place ID, or URL, up to 500 results per query), Google Maps Reviews (extract reviews with author, rating, text, date, filtering, replies), Google Maps Photos, Google Maps Directions, Google Search (organic results, ads, featured snippets, PAA, UULE location targeting), Google Search News, Emails & Contacts (scrape email addresses and contact info from websites/domains), Contacts & Leads (find emails, phones, social profiles for companies), Company Insights (firmographic data, tech stack, social profiles), Email Validation (deliverability verification), Phone Enrichment (Whitepages-based lookup), Amazon Products & Reviews, Review Platforms (Yelp, Tripadvisor, G2, Trustpilot, Glassdoor, Capterra, App Store, Google Play), YouTube Comments, Geocoding/Reverse Geocoding, SimilarWeb (traffic estimates), Company Website Finder, Yellow Pages Search, Trustpilot Search. Use when asking 'how do I scrape X with Outscraper', extracting Google Maps business data or reviews, finding emails and contacts from websites, enriching company data, validating emails, scraping Amazon or review platforms, or working with the Outscraper API. Do NOT use for general prospect list strategy (use /sales-prospect-list), cross-platform enrichment strategy (use /sales-enrich), or email deliverability/verification strategy (use /sales-deliverability)."
+description: "Outscraper platform help — data extraction and enrichment platform that scrapes Google Maps, reviews, and 50+ internet sources plus a Business Catalog (instant business database lookups by location, category, rating — not scraping). Google Maps Places (business data scraping by query, place ID, or URL, up to 500 results per query), Google Maps Reviews (extract reviews with author, rating, text, date, filtering, replies), Google Maps Photos, Google Maps Directions, Google Search (organic results, ads, featured snippets, PAA, UULE location targeting), Google Search News, Emails & Contacts (scrape email addresses and contact info from websites/domains), Contacts & Leads (find emails, phones, social profiles for companies), Company Insights (firmographic data, tech stack, social profiles), Email Validation (deliverability verification), Phone Enrichment (Whitepages-based lookup), Amazon Products & Reviews, Review Platforms (Yelp, Tripadvisor, G2, Trustpilot, Glassdoor, Capterra, App Store, Google Play), YouTube Comments, Geocoding/Reverse Geocoding, SimilarWeb (traffic estimates), Company Website Finder, Yellow Pages Search, Trustpilot Search, Business Catalog (pre-built database of millions of businesses with filters for location, category, rating, contacts enrichment — instant results, no scraping). Use when asking 'how do I scrape X with Outscraper', extracting Google Maps business data or reviews, finding emails and contacts from websites, enriching company data, validating emails, scraping Amazon or review platforms, looking up businesses from the Outscraper catalog, or working with the Outscraper API. Do NOT use for general prospect list strategy (use /sales-prospect-list), cross-platform enrichment strategy (use /sales-enrich), or email deliverability/verification strategy (use /sales-deliverability)."
 argument-hint: "[describe what you need help with in Outscraper]"
 license: MIT
 metadata:
@@ -18,17 +18,18 @@ Ask the user:
 
 1. **What area of Outscraper do you need help with?**
    - A) Google Maps scraping — search and extract business data (names, addresses, phones, ratings, hours, websites, categories)
-   - B) Reviews extraction — Google Maps reviews, Yelp, Tripadvisor, G2, Trustpilot, Glassdoor, Capterra, App Store, Google Play
-   - C) Email & contact scraping — extract emails and contact info from websites or domains
-   - D) Lead enrichment — find emails, phones, social profiles for companies (Contacts & Leads)
-   - E) Company insights — firmographic data, tech stack, social profiles
-   - F) Email validation — verify email deliverability (valid/invalid/risky)
-   - G) Amazon scraping — product data and customer reviews
-   - H) Search scraping — Google Search (organic, ads, snippets, PAA), Google News
-   - I) Geocoding — address validation, coordinate lookup, reverse geocoding
-   - J) Integrations / API — REST API, webhooks, SDKs, Zapier, n8n, Pipedream
-   - K) Account / Billing — pricing tiers, usage, free tier
-   - L) Something else — describe it
+   - B) Business Catalog — instant business database lookups by location, category, rating (pre-built database, not scraping)
+   - C) Reviews extraction — Google Maps reviews, Yelp, Tripadvisor, G2, Trustpilot, Glassdoor, Capterra, App Store, Google Play
+   - D) Email & contact scraping — extract emails and contact info from websites or domains
+   - E) Lead enrichment — find emails, phones, social profiles for companies (Contacts & Leads)
+   - F) Company insights — firmographic data, tech stack, social profiles
+   - G) Email validation — verify email deliverability (valid/invalid/risky)
+   - H) Amazon scraping — product data and customer reviews
+   - I) Search scraping — Google Search (organic, ads, snippets, PAA), Google News
+   - J) Geocoding — address validation, coordinate lookup, reverse geocoding
+   - K) Integrations / API — REST API, webhooks, SDKs, Zapier, n8n, Pipedream
+   - L) Account / Billing — pricing tiers, usage, free tier
+   - M) Something else — describe it
 
 2. **What's your role?**
    - A) Sales / business development
@@ -97,6 +98,18 @@ Provide module-by-module guidance based on the user's area:
 ### Google Search News
 - **What it does**: Scrape Google News search results — headlines, sources, dates, links
 - **Use cases**: Media monitoring, competitor news tracking, industry trend research
+
+### Business Catalog (Instant Database)
+- **What it does**: Pre-built database of millions of businesses — instant results without scraping. Query by location, category, rating, and dozens of other filters. Two tiers: free and paid
+- **Free tier** (`POST /businesses-free`): API key auth (`X-API-KEY`), max 50 results per page, 1,000 total results. Good for testing and lightweight apps
+- **Paid tier** (`POST /businesses`): OAuth2 auth (authorization code flow, scope `businesses.read`), higher limits. Full access to all fields and enrichments
+- **Base URL**: `https://api.outscraper.com` (different from the scraping API)
+- **Filters**: `country_code`, `states`, `cities`, `counties`, `postal_codes`, `name` (with `name_exclude`), `types`/`ignore_types`, `rating` (e.g. `"4.5+"`), `reviews` (e.g. `"100+"`), `has_website`, `has_phone`, `domain`, `phone`, `business_statuses`, `area_service`, `verified`, `geo_filters` (circle/polygon/bounding box), `attributes` (e.g. `wheelchair_accessible`, `takes_reservations`), `located_os_id`, `broad_match`, `business_only`
+- **Enrichments**: `contacts_n_leads` (with `contacts_per_company` and `emails_per_contact` sub-params) and `company_insights` (revenue, employee count, industry, social profiles)
+- **Pagination**: Cursor-based — response includes `next_cursor` and `has_more`. Pass `cursor` in the next request. Limit 1–50 results per page
+- **Field selection**: Pass a `fields` array to return only specific fields (e.g. `["name", "phone", "website", "city", "rating"]`)
+- **Response fields**: name, phone, website, rating, reviews, subtypes, business_status, city, state, postal_code, country_code, time_zone, working_hours, photo, photos_count, menu_link, location_link, reviews_link, plus_code, verified, about (detailed attributes)
+- **Use cases**: Build lead lists instantly without waiting for scraping jobs, filter businesses by precise criteria, enrich with contacts and company insights in a single request
 
 ### Emails & Contacts
 - **What it does**: Scrape email addresses and contact information from websites or domains
@@ -170,16 +183,21 @@ Provide module-by-module guidance based on the user's area:
 | **Search Result** | Google Search organic listing | title, link, snippet, position, domain |
 | **Product** | Amazon or marketplace product | title, price, rating, reviews_count, asin, seller, features |
 | **Geocode Result** | Address/coordinate mapping | address, latitude, longitude, place_id, formatted_address |
+| **Business Catalog Record** | Instant business database record (not scraped) | name, phone, website, rating, reviews, subtypes, city, state, postal_code, country_code, business_status, verified, working_hours, enrichments (contacts_n_leads, company_insights) |
 | **Task** | Async processing job | id, status, results_url, created_at, completed_at |
 
 ### API quick reference
 
-- **Base URL**: `https://api.app.outscraper.com` (primary), failover: `https://api.app.outscraper.cloud`, `https://api.outscraper.net`
-- **Authentication**: `X-API-KEY: {your_api_key}` header on all requests
+- **Base URL (scraping)**: `https://api.app.outscraper.com` (primary), failover: `https://api.app.outscraper.cloud`, `https://api.outscraper.net`
+- **Base URL (catalog)**: `https://api.outscraper.com` — used by Business Catalog endpoints only
+- **Authentication (scraping)**: `X-API-KEY: {your_api_key}` header on all scraping requests
+- **Authentication (catalog)**: API key for the free endpoint (`X-API-KEY` header); OAuth2 authorization code flow for the paid endpoint (authorization URL: `https://api.outscraper.com/auth/oauth/authorize`, token URL: `https://api.outscraper.com/auth/oauth/token`, scope: `businesses.read`)
 - **Rate limits**: ~20 QPS soft limit (scalable on request for high-volume accounts)
 - **Batching**: Up to 25 queries per request array — pass multiple queries in a single API call to reduce overhead
 - **Async pattern**: Most endpoints return immediately with a request ID. Poll `GET /requests/{id}` for results, or use the `webhook` parameter to receive a POST callback when the task completes
 - **Key endpoints**:
+  - `POST /businesses` — Business Catalog lookup (paid, OAuth2) — instant database, not scraping
+  - `POST /businesses-free` — Business Catalog lookup (free, API key) — max 1,000 results
   - `GET /google-maps-search` or `POST /google-maps-search` — Search Google Maps for businesses
   - `GET /maps/reviews-v3` — Extract Google Maps reviews
   - `GET /maps/photos-v3` — Extract Google Maps photos
@@ -274,7 +292,16 @@ Based on the user's specific question:
    4. Your webhook endpoint should return a 200 status quickly — process the data asynchronously on your side
    5. For integration with Zapier, use the "Task Finished" trigger to kick off downstream workflows
 
-5. **Using the Python SDK**:
+5. **Building a lead list from the Business Catalog**:
+   1. Choose your tier: use `POST /businesses-free` (API key) for testing or small lists up to 1,000 results, or `POST /businesses` (OAuth2) for full production access
+   2. Define filters: set `country_code`, `states`/`cities`/`postal_codes` for geography, `types` for business category (e.g. `["restaurant", "cafe"]`), `rating` (e.g. `"4.0+"`), `has_website: true`, `has_phone: true` to ensure contactable businesses
+   3. Add enrichments in the same request: `contacts_n_leads` with `contacts_per_company` and `emails_per_contact` to get decision-maker emails, plus `company_insights` for firmographics
+   4. Use `fields` array to return only the columns you need — reduces response size and speeds up processing
+   5. Paginate with `cursor` — each response includes `next_cursor` and `has_more`. Loop until `has_more` is false
+   6. Results are instant (no async polling needed) — the catalog is a pre-built database, not a scraping job
+   7. Validate enriched emails via `GET /email-validator` on the scraping API before outreach
+
+6. **Using the Python SDK**:
    1. Install: `pip install outscraper`
    2. Initialize: `from outscraper import ApiClient; client = ApiClient(api_key='YOUR_KEY')`
    3. Google Maps search: `results = client.google_maps_search('restaurants, NYC', limit=100)`

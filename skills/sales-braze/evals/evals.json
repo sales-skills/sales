@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-braze",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "How do I build a multi-step onboarding journey in Braze for new app users?",
+      "expected_output": "Step-by-step guide to creating a Canvas Flow with action-based entry, message steps, delays, and decision splits",
+      "assertions": [
+        {"name": "mentions_canvas_flow", "description": "Response must reference Canvas Flow (not Campaign) as the tool for multi-step journeys"},
+        {"name": "includes_entry_trigger", "description": "Response must explain setting up an action-based or session-start entry trigger"},
+        {"name": "multi_channel_steps", "description": "Response must include multiple channel types in the journey (e.g., push + email + in-app)"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "I need to set up Braze Currents to stream engagement events to our Snowflake data warehouse",
+      "expected_output": "Guide to configuring Currents export to Snowflake with event selection",
+      "assertions": [
+        {"name": "currents_setup_path", "description": "Response must reference the dashboard path for Currents configuration (Data Settings > Currents)"},
+        {"name": "event_types", "description": "Response must mention specific event types available for streaming (email opens, push clicks, purchases, etc.)"},
+        {"name": "snowflake_option", "description": "Response must mention both Currents and Snowflake Data Sharing as options for getting data to Snowflake"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "How do I use the Braze API to trigger a campaign with dynamic user-specific data?",
+      "expected_output": "API call example using POST /campaigns/trigger/send with trigger_properties",
+      "assertions": [
+        {"name": "correct_endpoint", "description": "Response must reference POST /campaigns/trigger/send as the endpoint"},
+        {"name": "auth_header", "description": "Response must show Bearer token authorization header"},
+        {"name": "trigger_properties", "description": "Response must demonstrate using trigger_properties to pass dynamic per-user data"}
+      ]
+    }
+  ]
+}

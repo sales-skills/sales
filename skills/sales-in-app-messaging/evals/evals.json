@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-in-app-messaging",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "How do I design an onboarding flow using in-app messages for our SaaS product?",
+      "expected_output": "Progressive onboarding flow with contextual tooltips, modals, and checklists",
+      "assertions": [
+        {"name": "progressive_disclosure", "description": "Response must recommend progressive disclosure — showing steps contextually as users reach features, not all at once"},
+        {"name": "trigger_design", "description": "Response must explain event-based triggers (not just time-based) for showing each onboarding step"},
+        {"name": "completion_tracking", "description": "Response must mention tracking onboarding completion rates to measure effectiveness"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "When should I use in-app messages vs push notifications vs Content Cards?",
+      "expected_output": "Decision framework for choosing between in-app, push, and content cards",
+      "assertions": [
+        {"name": "in_app_for_active_users", "description": "Response must explain that in-app messages only reach users currently in the app"},
+        {"name": "push_for_re_engagement", "description": "Response must recommend push for reaching users outside the app"},
+        {"name": "content_cards_for_persistence", "description": "Response must explain Content Cards as persistent content that users can revisit"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "How do I set up in-app messages in Braze as part of a Canvas journey?",
+      "expected_output": "Braze-specific guide to adding in-app messages and Content Cards to Canvas Flow",
+      "assertions": [
+        {"name": "canvas_integration", "description": "Response must reference Canvas Flow as the tool for orchestrating in-app messages with other channels"},
+        {"name": "message_types", "description": "Response must mention Braze in-app message types (Modal, Slideup, Fullscreen, HTML Custom)"},
+        {"name": "trigger_options", "description": "Response must explain Braze in-app trigger options (session start, custom event, purchase)"}
+      ]
+    }
+  ]
+}

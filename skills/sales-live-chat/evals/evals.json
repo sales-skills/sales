@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-live-chat",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I want to add live chat to our SaaS pricing page to convert more visitors into demos. What tool should I use?",
+      "expected_output": "Comparison of live chat tools with recommendation based on SaaS sales use case",
+      "assertions": [
+        {"name": "compares_tools", "description": "Response must compare at least 3 live chat tools (e.g., Intercom, HubSpot, Drift, Brevo)"},
+        {"name": "pricing_page_strategy", "description": "Response must include strategy for proactive chat on pricing pages"},
+        {"name": "demo_booking", "description": "Response must address how to convert chat conversations into booked demos"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "How do I build a chatbot flow that qualifies leads and books meetings when our sales team is offline?",
+      "expected_output": "Step-by-step chatbot flow design with qualification questions, routing logic, and meeting booking",
+      "assertions": [
+        {"name": "qualification_questions", "description": "Response must include specific qualifying questions to ask visitors (2-3 max)"},
+        {"name": "offline_handling", "description": "Response must address what happens when no agents are available"},
+        {"name": "meeting_booking", "description": "Response must explain how to integrate calendar booking into the chatbot flow"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "We're using Brevo and want to set up live chat on our website. How do I configure Conversations?",
+      "expected_output": "Guide to setting up Brevo Conversations with widget installation, agent config, and automated messages",
+      "assertions": [
+        {"name": "widget_installation", "description": "Response must explain installing the Brevo chat JavaScript snippet"},
+        {"name": "automated_messages", "description": "Response must cover setting up automated/proactive messages based on visitor behavior"},
+        {"name": "contact_sync", "description": "Response must mention that chat contacts sync to Brevo's contact database"}
+      ]
+    }
+  ]
+}

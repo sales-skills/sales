@@ -10,7 +10,7 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 61 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 70 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -311,6 +311,30 @@ Router recommends a 5-skill sequence:
 |---|---|---|
 | `/sales-groove` | Groove.cm platform help — GroovePages, GrooveFunnels, GrooveSell, GrooveMail, GrooveAffiliate, GrooveMember, GrooveVideo, GrooveWebinar, GrooveBlog, GrooveKart, GrooveProof | Available |
 
+### Brevo & Platform
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-brevo` | Brevo platform help — email/SMS/WhatsApp campaigns, marketing automation (journeys), transactional messaging, Sales CRM, Conversations (live chat, chatbot), Loyalty programs, push notifications, e-commerce, landing pages, Aura AI, API & integrations | Available |
+
+### Iterable & Platform
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-iterable` | Iterable platform help — cross-channel customer engagement with Studio journey builder, Campaigns, email (Handlebars), SMS/MMS, push (iOS/Android/web), in-app messages, Mobile Inbox, Embedded Messages, WhatsApp, Experiments, Iterable AI (Brand Affinity, STO, Frequency Optimization, Predictive Goals, Journey Assist), Smart Ingest (23+ data sources), Snowflake Secure Data Sharing, Catalog, segmentation, system webhooks, REST API | Available |
+
+### GetResponse & Platform
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-getresponse` | GetResponse platform help — email marketing (newsletters, autoresponders), visual marketing automation, conversion funnels, landing pages, webinars (live/on-demand), course creator, premium newsletters, SMS, web push, live chat, e-commerce (Shopify/WooCommerce), contact scoring, AI content, transactional email (MAX only), REST API | Available |
+
+### Braze & Platform
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-braze` | Braze platform help — Canvas Flow, Campaigns, email (Liquid templating, Connected Content), push notifications, in-app messages, Content Cards, SMS/MMS/RCS, WhatsApp, LINE, BrazeAI (predictive, generative, Decisioning Studio), Braze Data Platform (CDI, Currents), segmentation, Catalogs, Feature Flags, transactional email API, REST API, Braze Alloys integrations | Available |
+
 ### Funnels, Email Marketing & Digital Sales
 
 | Skill | What it does | Status |
@@ -323,6 +347,11 @@ Router recommends a 5-skill sequence:
 | `/sales-checkout` | Checkout optimization — upsells, order bumps, payment plans, cart abandonment across GrooveSell, ThriveCart, SamCart, and more | Available |
 | `/sales-meeting-scheduler` | Schedule sales meetings — booking pages, round-robin, Calendly/Chili Piper, no-show reduction, meeting page conversion | Available |
 | `/sales-email-tracking` | Email engagement tracking — open/click/attachment tracking, follow-up timing, Apple MPP, tracking accuracy | Available |
+| `/sales-transactional-email` | Transactional/triggered email delivery — provider selection, API/SMTP integration, templates, deliverability across SendGrid, Postmark, Mailgun, Brevo, Customer.io, SES | Available |
+| `/sales-live-chat` | Live chat and chatbot for sales — widget setup, chatbot flows, agent routing, chat-to-lead conversion across Brevo, Drift, Intercom, HubSpot, Crisp, and more | Available |
+| `/sales-loyalty` | Customer loyalty programs — points, tiers, rewards, VIP programs, member engagement, ROI across Brevo Loyalty, Smile.io, LoyaltyLion, Yotpo, and more | Available |
+| `/sales-push-notification` | Mobile and web push notification strategy — opt-in optimization, rich push, segmentation, timing, frequency capping, deep linking across Braze, OneSignal, Airship, Firebase/FCM, Customer.io, Klaviyo, Iterable, MoEngage | Available |
+| `/sales-in-app-messaging` | In-app messages and content cards — onboarding, feature announcements, surveys, promotions, trigger design across Braze, Iterable, Intercom, Pendo, Appcues, Customer.io, MoEngage | Available |
 
 ### Prospecting, Enrichment & Signals
 

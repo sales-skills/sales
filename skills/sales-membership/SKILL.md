@@ -114,6 +114,21 @@ GrooveMember is Groove's built-in membership and course platform, tightly integr
 - Community features are less mature than Skool or Circle
 - Reporting is more basic than dedicated course platforms
 
+### In GetResponse (Course Creator)
+
+GetResponse includes a Course Creator (Creator plan+, $69/mo) for building and selling online courses:
+
+- **Course builder**: Create courses with modules, lessons, quizzes, and certificates. Content types: video, text, PDF, downloadable files.
+- **Student management**: Track progress and completion rates per student.
+- **Payment integration**: Connect Stripe for paid courses. One-time or subscription pricing.
+- **Student limits**: Creator plan: up to 500 students. Higher tiers: more.
+- **Premium newsletters**: Paid newsletter subscriptions — recurring revenue from content. Subscribers pay for exclusive email content.
+- **Email integration**: GetResponse's autoresponders and automation workflows handle onboarding, drip content reminders, engagement nudges, and re-enrollment campaigns. Course events trigger automations.
+- **Webinar integration**: Combine courses with GetResponse's built-in webinars for live teaching sessions, Q&A, and launch events.
+- **Funnel integration**: Use Conversion Funnels (Marketer+) to build course sales funnels — landing page → sales page → checkout → course access.
+- **GetResponse's strength for courses**: Only all-in-one email marketing platform with native course creation + webinars + funnels + email automation. Competitors (Mailchimp, ActiveCampaign) require separate course platforms like Teachable or Kajabi.
+- **Limitation**: Course builder is simpler than dedicated platforms (Kajabi, Teachable, Thinkific) — fewer customization options, no built-in community features, limited quiz types. Best for simple courses, not complex academy-style offerings.
+
 ### Kajabi
 
 All-in-one platform (courses, memberships, email, funnels, community, podcasts). Best for creators who want everything in one place and are willing to pay a premium ($149–$399/month). Strong course builder with drip, quizzes, and automations. Built-in community feature. No transaction fees. Good for established creators with revenue to support the price.
@@ -234,6 +249,7 @@ Create a 5-email onboarding sequence for new members:
 
 ## Related Skills
 
+- `/sales-getresponse` — GetResponse platform help (Course Creator, premium newsletters, webinars)
 - `/sales-groove` — Groove.cm platform-specific guidance (GrooveMember, GrooveSell, GroovePages)
 - `/sales-checkout` — Payment pages, order bumps, upsells, and checkout optimization
 - `/sales-email-marketing` — Email sequences, automations, and campaigns for member communication

@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-loyalty",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I run a DTC e-commerce brand and want to start a loyalty program. How should I design it?",
+      "expected_output": "Loyalty program design with points, tiers, earning rules, and rewards tailored to DTC e-commerce",
+      "assertions": [
+        {"name": "program_structure", "description": "Response must recommend a specific program type (points, tiers, or hybrid) with reasoning"},
+        {"name": "earning_rules", "description": "Response must include specific earning rules with point values (e.g., points per dollar spent)"},
+        {"name": "reward_catalog", "description": "Response must suggest specific rewards with redemption thresholds"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "Which loyalty platform should I use for my Shopify store?",
+      "expected_output": "Comparison of loyalty platforms with Shopify focus",
+      "assertions": [
+        {"name": "compares_platforms", "description": "Response must compare at least 3 loyalty platforms (e.g., Smile.io, LoyaltyLion, Yotpo)"},
+        {"name": "shopify_integration", "description": "Response must specifically address Shopify integration quality for each platform"},
+        {"name": "pricing_tiers", "description": "Response must mention pricing or free tiers to help the user decide"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "How do I set up a tiered loyalty program in Brevo with automated notifications?",
+      "expected_output": "Step-by-step guide to creating a Brevo Loyalty program with tiers and automation journeys",
+      "assertions": [
+        {"name": "brevo_loyalty_setup", "description": "Response must reference Brevo Loyalty features (programs, subscriptions, tiers, balances)"},
+        {"name": "tier_design", "description": "Response must include specific tier design with progression criteria"},
+        {"name": "automation_triggers", "description": "Response must explain how to trigger Brevo automation journeys based on loyalty events"}
+      ]
+    }
+  ]
+}

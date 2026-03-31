@@ -123,6 +123,24 @@ GrooveWebinar is part of the Groove.cm all-in-one platform. Its key advantage is
 
 For detailed Groove.cm configuration help, use `/sales-groove`.
 
+### In GetResponse
+
+GetResponse has a built-in webinar platform (Creator plan+ required, $69/mo) — unique among email marketing platforms:
+
+- **Live webinars**: Screen sharing, chat, polls, whiteboard, call-to-action buttons, file sharing. Present directly from your browser — no software downloads for host or attendees.
+- **On-demand webinars**: Record live webinars and make them available for replay. Attendees can watch at their convenience.
+- **Attendee limits**: Creator plan: 300 attendees. MAX: 500-1,000.
+- **Webinar funnels**: Combine with GetResponse's Conversion Funnels (Marketer+) for end-to-end webinar marketing — registration page → confirmation email → reminder sequence → live event → replay → follow-up → offer page.
+- **Automation integration**: Webinar events (registration, attendance, non-attendance) trigger automation workflows — send different follow-up sequences to attendees vs no-shows.
+- **Registration pages**: Use GetResponse's landing page builder for webinar registration pages with integrated form fields. Registration auto-adds contacts to your GetResponse list.
+- **Email reminders**: Autoresponder sequences or automation workflows handle confirmation, 24h reminder, 1h reminder, and "we're live" emails.
+- **Selling during/after**: Drop checkout links (Stripe/PayPal integration) in chat during the webinar. Post-webinar, use automation to send offer sequences.
+- **Course integration**: If selling a course, GetResponse's Course Creator (Creator plan+) handles enrollment and content delivery. Webinar → purchase → course access in one platform.
+- **GetResponse's strength for webinars**: Only all-in-one email marketing platform with native webinars + funnels + courses. Competitors (Mailchimp, ActiveCampaign, Brevo) require external webinar tools. Good for solopreneurs and small teams who want everything in one platform.
+- **Limitation**: Max 1,000 attendees (MAX plan). No simulated live/automated webinar replay with chat interaction (unlike EverWebinar). For large-scale events (5,000+ attendees), use WebinarJam or Zoom.
+
+For detailed GetResponse configuration, use `/sales-getresponse`.
+
 ### Demio
 
 - Purpose-built for marketing webinars. Clean attendee experience with no downloads required (browser-based).
@@ -294,6 +312,7 @@ Always provide this day-by-day sequence proactively. The follow-up is where 40�
 
 ## Step 5 — Related skills
 
+- `/sales-getresponse` — GetResponse platform help (built-in webinars, conversion funnels, course creator)
 - `/sales-groove` — Groove.cm platform help including GrooveWebinar, GroovePages, GrooveMail, and GrooveSell configuration
 - `/sales-funnel` — Funnel strategy, structure, and conversion optimization (tool-agnostic)
 - `/sales-email-marketing` — Email marketing strategy for follow-up sequences and nurture campaigns

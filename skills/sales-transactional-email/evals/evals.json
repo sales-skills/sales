@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-transactional-email",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "We're a SaaS company sending 10K transactional emails per day. Which provider should we use?",
+      "expected_output": "Comparison of transactional email providers with recommendation based on volume and use case",
+      "assertions": [
+        {"name": "compares_multiple_providers", "description": "Response must compare at least 3 transactional email providers (e.g., SendGrid, Postmark, Mailgun, Brevo)"},
+        {"name": "considers_volume", "description": "Response must factor in the 10K/day volume when making recommendations"},
+        {"name": "mentions_deliverability", "description": "Response must discuss deliverability as a key selection criterion"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "How do I separate transactional and marketing email to protect deliverability?",
+      "expected_output": "Guide to using separate domains/subdomains and IPs for transactional vs marketing email",
+      "assertions": [
+        {"name": "separate_domains", "description": "Response must recommend using different subdomains for transactional and marketing email"},
+        {"name": "separate_ips", "description": "Response must mention using dedicated/separate IPs for transactional sending"},
+        {"name": "explains_why", "description": "Response must explain that marketing reputation issues can affect transactional delivery"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I need to send order confirmation emails through Brevo's API with dynamic product data from our e-commerce backend",
+      "expected_output": "Step-by-step guide to using Brevo's transactional email API with templates and params",
+      "assertions": [
+        {"name": "correct_endpoint", "description": "Response must reference POST /smtp/email as the Brevo transactional endpoint"},
+        {"name": "template_params", "description": "Response must show how to use templateId with a params object for dynamic data"},
+        {"name": "auth_method", "description": "Response must mention the api-key header for authentication"}
+      ]
+    }
+  ]
+}

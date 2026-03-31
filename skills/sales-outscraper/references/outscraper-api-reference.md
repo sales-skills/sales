@@ -9,16 +9,19 @@ Outscraper provides a REST API for scraping Google Maps, Google Search, reviews 
 ## Base URLs
 
 ```
-Primary:   https://api.app.outscraper.com
-Failover:  https://api.app.outscraper.cloud
-Failover:  https://api.outscraper.net
+Scraping API (primary):  https://api.app.outscraper.com
+Scraping API (failover): https://api.app.outscraper.cloud
+Scraping API (failover): https://api.outscraper.net
+Catalog API:             https://api.outscraper.com
 ```
 
-If the primary URL is unreachable, retry against the failover URLs in order.
+The scraping API and catalog API use different base URLs. If the primary scraping URL is unreachable, retry against the failover URLs in order.
 
 ---
 
 ### Authentication
+
+#### API Key (scraping endpoints + free catalog endpoint)
 
 API key passed via the `X-API-KEY` header. Obtain your key from your Profile page at https://auth.outscraper.com.
 
@@ -26,6 +29,28 @@ API key passed via the `X-API-KEY` header. Obtain your key from your Profile pag
 curl --request GET \
   --url "https://api.app.outscraper.com/maps/search?query=restaurants+new+york&limit=5" \
   --header "X-API-KEY: YOUR_API_KEY"
+```
+
+#### OAuth2 (paid catalog endpoint — `POST /businesses`)
+
+The paid Business Catalog endpoint uses OAuth2 authorization code flow:
+
+- **Authorization URL**: `https://api.outscraper.com/auth/oauth/authorize`
+- **Token URL**: `https://api.outscraper.com/auth/oauth/token`
+- **Scope**: `businesses.read`
+
+Flow:
+1. Redirect user to the authorization URL with `scope=businesses.read` and your `client_id`
+2. User authorizes access — redirected back with an authorization code
+3. Exchange the code for an access token at the token URL
+4. Pass the access token as a Bearer token in requests to `POST /businesses`
+
+```bash
+curl --request POST \
+  --url "https://api.outscraper.com/businesses" \
+  --header "Authorization: Bearer YOUR_ACCESS_TOKEN" \
+  --header "Content-Type: application/json" \
+  --data '{"filters": {"country_code": "US", "types": ["restaurant"]}, "limit": 10}'
 ```
 
 ---
@@ -115,7 +140,155 @@ Manage and monitor your scraping tasks and request history.
 
 ---
 
-#### 2. Google Maps
+#### 2. Business Catalog
+
+Pre-built database of millions of businesses — instant results without scraping. Uses a different base URL: `https://api.outscraper.com`.
+
+| Method | Endpoint | Auth | Description |
+|---|---|---|---|
+| POST | `/businesses` | OAuth2 (`businesses.read`) | Business catalog lookup (paid, full access) |
+| POST | `/businesses-free` | API Key (`X-API-KEY`) | Business catalog lookup (free, max 1,000 results) |
+
+Both endpoints accept the same request body:
+
+**Top-level parameters**:
+
+| Parameter | Type | Default | Description |
+|---|---|---|---|
+| `filters` | object | | Filtering criteria (see below) |
+| `limit` | integer | `10` | Max results to return (free: max 50/page, 1,000 total) |
+| `cursor` | string | | Cursor for pagination (from previous response's `next_cursor`) |
+| `enrichments` | object | | Enrichments to apply (contacts_n_leads, company_insights) |
+| `include_total` | boolean | `false` | Include total count of matching records (increases response time) |
+| `fields` | array | all | Fields to include in response (e.g. `["name", "phone", "website", "city", "rating"]`) |
+
+**`filters` object**:
+
+| Parameter | Type | Description | Example |
+|---|---|---|---|
+| `os_ids` | string[] | Outscraper business IDs to look up directly | `["b3c1f2a0d9e84f0a6c3b9d2f4e7a1c90"]` |
+| `country_code` | string | Two-letter country code | `"US"` |
+| `states` | string[] | States/provinces | `["CA", "NY"]` |
+| `cities` | string[] | Cities | `["Los Angeles", "New York"]` |
+| `counties` | string[] | Counties/boroughs | `["Kings County"]` |
+| `postal_codes` | string[] | ZIP/postal codes (full or partial) | `["10001", "90"]` |
+| `name` | string | Business name filter (partial match) | `"Starbucks"` |
+| `name_exclude` | boolean | Exclude businesses matching `name` | `true` |
+| `types` | string[] | Business categories to include | `["restaurant", "cafe"]` |
+| `ignore_types` | string[] | Business categories to exclude | `["bar", "night_club"]` |
+| `rating` | string | Rating filter expression | `"4.5+"` |
+| `reviews` | string | Review count filter | `"100+"` |
+| `has_website` | boolean | Has a website | `true` |
+| `domain` | string | Filter by website domain | `"example.com"` |
+| `has_phone` | boolean | Has a phone number | `true` |
+| `phone` | string | Phone number filter (partial match) | `"14155550123"` |
+| `business_statuses` | string[] | Business status | `["operational"]` |
+| `area_service` | boolean | Area service business flag | `false` |
+| `verified` | boolean | Verified business | `true` |
+| `geo_filters` | object[] | Geo filters (circle, polygon, bbox) | `[{"type": "circle", "lat": 34.05, "lng": -118.24, "radius_m": 2000}]` |
+| `attributes` | string[] | Business attributes | `["wheelchair_accessible", "takes_reservations"]` |
+| `located_os_id` | string | Filter by nearby/related location | |
+| `broad_match` | boolean | Broader matching for text/category filters | `false` |
+| `business_only` | boolean | Return only businesses (exclude other entities) | `true` |
+
+**`enrichments` object**:
+
+| Parameter | Type | Description |
+|---|---|---|
+| `contacts_n_leads` | object | Include contacts/leads. Sub-params: `contacts_per_company` (int, default 3), `emails_per_contact` (int, default 1) |
+| `company_insights` | boolean/object | Include company insights (revenue, employees, industry, social profiles) |
+
+**Example — Catalog lookup with enrichments (free tier)**:
+```bash
+curl --request POST \
+  --url "https://api.outscraper.com/businesses-free" \
+  --header "X-API-KEY: YOUR_API_KEY" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "filters": {
+      "country_code": "US",
+      "states": ["NY"],
+      "cities": ["New York", "Buffalo"],
+      "types": ["restaurant", "cafe"],
+      "has_website": true,
+      "has_phone": true,
+      "business_statuses": ["operational"]
+    },
+    "enrichments": {
+      "contacts_n_leads": {
+        "contacts_per_company": 2,
+        "emails_per_contact": 1
+      },
+      "company_insights": true
+    },
+    "limit": 10,
+    "fields": ["name", "phone", "website", "city", "state", "rating", "reviews", "subtypes", "business_status", "verified", "working_hours"]
+  }'
+```
+
+**Response** (200 OK):
+```json
+{
+  "has_more": true,
+  "next_cursor": "NWY3NzViYzY0YzQ0ZTlhMGU3NWNhNDRh",
+  "items": [
+    {
+      "name": "SPoT Coffee",
+      "phone": "17163322299",
+      "website": "http://www.spotcoffee.com/",
+      "city": "Buffalo",
+      "state": "NY",
+      "rating": 4.2,
+      "reviews": 1431,
+      "subtypes": ["Cafe", "Breakfast Restaurant", "Lunch Restaurant"],
+      "business_status": "operational",
+      "verified": true,
+      "working_hours": {
+        "Monday": ["7AM-4PM"],
+        "Tuesday": ["7AM-4PM"]
+      },
+      "enrichments": {
+        "contacts_n_leads": {
+          "contacts": [
+            {
+              "full_name": "Christopher Chase",
+              "title": "cafe manager",
+              "emails": ["chase@spotcoffee.com"],
+              "socials": {"linkedin": "https://linkedin.com/in/christopher-chase-460b0b224"}
+            }
+          ],
+          "emails": ["catering@spotcoffee.com"],
+          "phones": ["17163322299"],
+          "socials": {
+            "facebook": "https://facebook.com/spotcoffeecafe",
+            "linkedin": "https://linkedin.com/company/spot-coffee"
+          }
+        },
+        "company_insights": {
+          "industry": "RESTAURANTS",
+          "employees": "51-200",
+          "founded_year": 1996,
+          "linkedin_company_page": "https://linkedin.com/company/spotcoffee"
+        }
+      }
+    }
+  ]
+}
+```
+
+**Pagination**: Loop using `next_cursor` until `has_more` is `false`:
+```bash
+# Page 2
+curl --request POST \
+  --url "https://api.outscraper.com/businesses-free" \
+  --header "X-API-KEY: YOUR_API_KEY" \
+  --header "Content-Type: application/json" \
+  --data '{"filters": {"country_code": "US", "types": ["restaurant"]}, "limit": 50, "cursor": "NWY3NzViYzY0YzQ0ZTlhMGU3NWNhNDRh"}'
+```
+
+---
+
+#### 3. Google Maps
 
 Search Google Maps places, extract reviews, photos, and directions.
 
@@ -224,7 +397,7 @@ curl --request GET \
 
 ---
 
-#### 3. Google Search
+#### 4. Google Search
 
 Scrape Google Search results and Google News.
 
@@ -246,7 +419,7 @@ Scrape Google Search results and Google News.
 
 ---
 
-#### 4. Contacts & Enrichment
+#### 5. Contacts & Enrichment
 
 Find and validate emails, phone numbers, company information, and leads.
 
@@ -365,7 +538,7 @@ curl --request GET \
 
 ---
 
-#### 5. Reviews (Multi-platform)
+#### 6. Reviews (Multi-platform)
 
 Scrape reviews from Yelp, Tripadvisor, Trustpilot, G2, Glassdoor, and Capterra.
 
@@ -393,7 +566,7 @@ Scrape reviews from Yelp, Tripadvisor, Trustpilot, G2, Glassdoor, and Capterra.
 
 ---
 
-#### 6. Amazon
+#### 7. Amazon
 
 Scrape Amazon product listings and reviews.
 
@@ -408,7 +581,7 @@ Scrape Amazon product listings and reviews.
 
 ---
 
-#### 7. App Store Reviews
+#### 8. App Store Reviews
 
 Scrape reviews from Google Play and Apple App Store.
 
@@ -421,7 +594,7 @@ Scrape reviews from Google Play and Apple App Store.
 
 ---
 
-#### 8. YouTube
+#### 9. YouTube
 
 Scrape YouTube comments.
 
@@ -433,7 +606,7 @@ Scrape YouTube comments.
 
 ---
 
-#### 9. Geocoding
+#### 10. Geocoding
 
 Forward and reverse geocoding.
 
@@ -446,7 +619,7 @@ Forward and reverse geocoding.
 
 ---
 
-#### 10. Other Endpoints
+#### 11. Other Endpoints
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -502,6 +675,33 @@ curl --request GET \
 curl --request GET \
   --url "https://api.app.outscraper.com/requests/REQUEST_ID_HERE" \
   --header "X-API-KEY: YOUR_API_KEY"
+```
+
+### Build a lead list from the Business Catalog
+```bash
+# Search for operational restaurants in NYC with contacts enrichment
+curl --request POST \
+  --url "https://api.outscraper.com/businesses-free" \
+  --header "X-API-KEY: YOUR_API_KEY" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "filters": {
+      "country_code": "US",
+      "states": ["NY"],
+      "cities": ["New York"],
+      "types": ["restaurant"],
+      "rating": "4.0+",
+      "has_website": true,
+      "has_phone": true,
+      "business_statuses": ["operational"]
+    },
+    "enrichments": {
+      "contacts_n_leads": {"contacts_per_company": 3, "emails_per_contact": 2},
+      "company_insights": true
+    },
+    "limit": 50,
+    "fields": ["name", "phone", "website", "city", "state", "rating", "reviews", "subtypes"]
+  }'
 ```
 
 ### Validate emails and find leads

@@ -203,6 +203,20 @@ Mailchimp offers landing pages and basic funnel capabilities as part of its emai
 - **Best for**: Simple lead capture funnels (landing page → email sequence) where Mailchimp is already the email tool. For anything beyond opt-in capture, use a dedicated funnel builder and integrate.
 - **Retargeting**: Mailchimp can create Facebook, Instagram, and Google retargeting audiences from your contacts — useful for funnel retargeting without a separate ad tool.
 
+### In GetResponse
+
+GetResponse offers Conversion Funnels — pre-built funnel templates that combine landing pages, emails, and webinars into a guided conversion path (Marketer plan+ required):
+
+- **Funnel templates**: Lead magnet funnel, sales funnel, webinar funnel, list building funnel. Each template includes the necessary pages and email sequences pre-configured.
+- **Landing pages**: Drag-and-drop builder with templates, forms, popups, and custom domains. Available on all paid plans.
+- **Visual funnel dashboard**: See conversion rates at each stage — traffic → registration → email engagement → sale. Identify drop-off points visually.
+- **Integrated checkout**: Connect Stripe, PayPal, or Square for payment collection within sales funnels. Order forms embedded in funnel pages.
+- **Email follow-up**: Autoresponders and automation workflows trigger based on funnel stage — welcome emails for opt-ins, reminder sequences for webinar registrations, post-purchase follow-up.
+- **Webinar funnels**: Unique to GetResponse — combine the built-in webinar platform (Creator plan+) with funnel pages for end-to-end webinar marketing. Registration → reminders → live event → replay → offer.
+- **E-commerce funnels**: Shopify/WooCommerce integration enables abandoned cart funnels with product data.
+- **Plan limits**: Conversion funnels require Marketer plan ($59/mo) or higher. Landing pages alone are available on all paid plans.
+- **Best for**: Marketers who want funnel functionality integrated with email marketing, webinars, and courses in one platform. Not as flexible as ClickFunnels or Groove.cm for complex multi-step funnels with custom upsell flows, but simpler to set up for standard funnel types.
+
 ### In Other Tools
 
 - **Unbounce / Leadpages**: Best for standalone landing pages and opt-in pages rather than full multi-step funnels. Use Unbounce Smart Traffic for AI-driven A/B testing. Connect to a separate checkout tool (ThriveCart, Stripe) and email tool.
@@ -319,6 +333,7 @@ Follow this framework for every test:
 - `/sales-email-marketing` — Post-funnel email sequences, abandoned cart, nurture campaigns
 - `/sales-webinar` — Webinar funnel strategy, registration, replay sequences
 - `/sales-membership` — Membership site setup and retention funnels
+- `/sales-getresponse` — GetResponse platform help (conversion funnels, landing pages, webinar funnels)
 - `/sales-closum` — Closum platform help (landing pages, forms, omnichannel automation)
 - `/sales-mailchimp` — Mailchimp platform help (landing pages, signup forms, email sequences)
 - `/sales-do` — Route to any sales skill by describing what you need

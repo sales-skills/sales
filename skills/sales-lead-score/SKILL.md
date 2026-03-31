@@ -207,6 +207,14 @@ Subtract points for disqualifying signals:
 3. Use Apollo's intent data as an input to behavioral scoring in your MAP
 4. Export scored leads to your CRM for routing
 
+#### In GetResponse
+- **Contact scoring** (Marketer plan+ required): Assign points based on email engagement (opens, clicks), page visits (requires tracking snippet), purchases, tag additions, and custom field values. Score thresholds trigger automation actions.
+- **Scoring rules**: Configure in Settings > Contact Scoring. Define point values for each action (e.g., +10 for open, +20 for click, +50 for purchase, -10 for 30-day inactivity). Rules recalculate periodically.
+- **Automation triggers**: Use score changes as triggers in visual automation workflows — when score crosses a threshold, send a sales notification, add to a high-value segment, or trigger a targeted sequence.
+- **Segmentation by score**: Create dynamic segments filtering by score range (e.g., "Hot leads: score > 50"). Use for targeted newsletters or automation entry.
+- **Limitation**: Scoring is not available on Free or Starter plans. No built-in decay mechanism — build decay into automation workflows with scheduled score reductions.
+- **Best practice**: Start with two dimensions — engagement scoring (opens, clicks, page visits) and e-commerce scoring (purchases, cart events). Use tag-based manual scoring as a workaround on Starter plan.
+
 ### Testing the model
 
 Before going live:
@@ -280,6 +288,7 @@ Every quarter:
 - `/revops` — Design the broader marketing-to-sales handoff process around your scoring model
 - `/sales-apollo` — Set up Apollo's native scoring features
 - `/sales-activecampaign` — ActiveCampaign platform help (contact scoring, deal scoring, automation-based scoring with threshold triggers)
+- `/sales-getresponse` — GetResponse platform help (contact scoring, automation-triggered scoring, engagement-based scoring)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

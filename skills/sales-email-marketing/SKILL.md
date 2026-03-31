@@ -1,6 +1,6 @@
 ---
 name: sales-email-marketing
-description: "Email marketing for opt-in subscribers — broadcasts, nurture sequences, automation, segmentation, and list management. Use when planning email campaigns, designing welcome sequences, setting up behavior-based automation, segmenting lists, improving open/click rates, or choosing an email marketing platform. Do NOT use for cold outbound email (use /sales-cadence), email deliverability/SPF/DKIM (use /sales-deliverability), or connecting email tools to CRM (use /sales-integration). For Groove-specific help, use /sales-groove. For Closum-specific help, use /sales-closum. For Mailchimp-specific help, use /sales-mailchimp. For SendGrid-specific help, use /sales-sendgrid. For Postmark-specific help, use /sales-postmark. For Customer.io-specific help, use /sales-customerio. For Mailgun-specific help, use /sales-mailgun. For Klaviyo-specific help, use /sales-klaviyo. For ActiveCampaign-specific help, use /sales-activecampaign."
+description: "Email marketing for opt-in subscribers — broadcasts, nurture sequences, automation, segmentation, and list management. Use when planning email campaigns, designing welcome sequences, setting up behavior-based automation, segmenting lists, improving open/click rates, or choosing an email marketing platform. Do NOT use for cold outbound email (use /sales-cadence), email deliverability/SPF/DKIM (use /sales-deliverability), transactional/triggered email (use /sales-transactional-email), or connecting email tools to CRM (use /sales-integration). For GetResponse-specific help, use /sales-getresponse. For Iterable-specific help, use /sales-iterable. For Braze-specific help, use /sales-braze. For Brevo-specific help, use /sales-brevo. For Groove-specific help, use /sales-groove. For Closum-specific help, use /sales-closum. For Mailchimp-specific help, use /sales-mailchimp. For SendGrid-specific help, use /sales-sendgrid. For Postmark-specific help, use /sales-postmark. For Customer.io-specific help, use /sales-customerio. For Mailgun-specific help, use /sales-mailgun. For Klaviyo-specific help, use /sales-klaviyo. For ActiveCampaign-specific help, use /sales-activecampaign."
 argument-hint: "[describe your email marketing question — e.g., 'design a welcome sequence' or 'improve my open rates']"
 license: MIT
 metadata:
@@ -233,6 +233,69 @@ Mailgun is a developer-first transactional email API — not a traditional email
 - **Pricing**: Foundation $35/mo (50K emails), Scale $90/mo (100K). No campaign-specific pricing tier.
 - **Mailgun's strength**: Best for developers who need programmatic control over marketing email sends and want to build custom sending infrastructure. Not ideal for marketers who need a visual campaign builder.
 
+### In Brevo
+
+Brevo (formerly Sendinblue) is an all-in-one marketing platform with email, SMS, WhatsApp, push notifications, CRM, and automation at volume-based pricing (unlimited contacts on all plans).
+
+- **Email campaigns**: Drag-and-drop editor with templates, A/B testing (Standard plan+), AI content generator, AI send-time optimization. Campaigns in Brevo are single sends — for multi-step sequences, use Automation.
+- **Automation (Journeys)**: Visual workflow builder triggered by events (contact added, form submitted, email opened, purchase, custom event, date). Actions include send email, send SMS, send WhatsApp, update contact, webhook, wait, if/else split. Standard plan+ required.
+- **Multi-channel in one workflow**: Combine email, SMS, WhatsApp, and push notifications in a single journey — strongest multi-channel coverage in the mid-market alongside Customer.io and Closum.
+- **Segmentation**: Filter by attributes, behavior (opens, clicks, page visits), e-commerce activity, custom events. AI-powered contact scoring on Professional plan+.
+- **SMS marketing**: Credits-based, integrated into campaigns and automations. Sender name/number varies by country regulation.
+- **WhatsApp campaigns**: Requires approved templates (24-48hr Meta review). Professional plan+ only.
+- **Push notifications**: Web and mobile push to opted-in users. Professional plan+ only.
+- **E-commerce integration**: Native Shopify, WooCommerce, Magento, BigCommerce plugins. Abandoned cart automation, product recommendations, revenue attribution.
+- **Landing pages**: Drag-and-drop builder with form integration (Standard plan+ — 1 page included).
+- **Pricing**: Free (300 emails/day), Starter (from 5K/mo), Standard (most popular — adds automation, A/B, landing pages), Professional (from 150K/mo — WhatsApp, push, AI), Enterprise (custom). Volume-based — unlimited contacts on all plans.
+- **Brevo's strength**: Best all-around value for teams needing email + SMS + WhatsApp + push in one platform with marketing automation, without contact-based billing. Good for growing businesses that want to start free and scale.
+- **Limitation**: Automation requires Standard plan+. WhatsApp and push require Professional+. CRM is lightweight compared to HubSpot/ActiveCampaign.
+
+### In Iterable
+
+Iterable is an enterprise cross-channel customer engagement platform (competitor to Braze). Key email marketing capabilities:
+
+- **Studio journeys**: Visual journey builder for multi-step email sequences — combine email with push, SMS, in-app, web push, and WhatsApp. Event-based, list-based, and API-triggered entry. Filter tiles for engagement-based branching, delay tiles, experiment tiles for A/B splits.
+- **Blast campaigns**: One-time email sends to lists or segments. A/B testing on subject lines, content, and send time.
+- **Triggered campaigns**: Event-driven emails fired by custom events, purchase events, or API calls.
+- **Handlebars templating**: Dynamic content with Handlebars syntax (`{{variable}}`), conditional blocks, loops, and catalog data references for product recommendations.
+- **Snippets**: Reusable content blocks shared across templates (headers, footers, product cards).
+- **Iterable AI**: Send Time Optimization (per-user optimal send time), Brand Affinity (engagement scoring with Loyal/Positive/Neutral/Negative labels), Frequency Optimization (AI-chosen per-user message caps), Copy Assist (AI-generated subject lines).
+- **Experiments**: A/B and multivariate testing built into campaigns and Studio journeys. Test subject lines, content, send time, or entire journey branches.
+- **Segmentation**: Dynamic lists auto-updating on user attributes, events, and engagement. Brand Affinity labels as segment filters.
+- **Pricing**: MAU-based, enterprise sales process. Growth ~$3K-$6K/mo (10K-50K MAUs), Enterprise custom ($10K+/mo). No free tier.
+- **Iterable's strength**: Best for growth and product teams that need sophisticated cross-channel orchestration with strong AI features (Brand Affinity, STO, Frequency Optimization) and native data warehouse integration (Smart Ingest, Snowflake). Comparable to Braze in capabilities but with a different UX philosophy.
+- **Limitation**: No self-serve pricing. Enterprise sales cycle. Handlebars templating (not Liquid like Braze).
+
+### In Braze
+
+Braze is an enterprise customer engagement platform built for cross-channel orchestration at scale. Key email marketing capabilities:
+
+- **Canvas Flow**: Visual journey builder for multi-step email sequences — combine email with push, in-app, SMS, WhatsApp, and Content Cards in one orchestration. Action-based, event-based, and audience-based entry triggers. Decision splits, A/B paths, Intelligent Selection for auto-optimization.
+- **Campaigns**: Single-send or scheduled email broadcasts to segments. Multivariate testing (up to 8 variants). Intelligent Timing for per-user optimal send time.
+- **Liquid templating**: Braze uses Liquid (not Handlebars) for dynamic content — personalization, conditional blocks, connected content, and custom attributes. Liquid is more powerful than most email platform template languages.
+- **Connected Content**: Pull real-time data from external APIs at send time — product recommendations, pricing, inventory, weather. Cached for 5 minutes by default.
+- **Segmentation**: Real-time behavioral segments, predictive segments (BrazeAI churn likelihood, purchase likelihood), and custom attribute segments. Segments update in real-time.
+- **Content Cards**: Persistent in-app content feed — promotions, announcements, recommendations. Cards persist until dismissed or expired. Unique to Braze in the engagement platform category.
+- **BrazeAI**: Intelligent Timing (per-user send time), Intelligent Channel (preferred channel selection), Intelligent Selection (auto-optimize variants), predictive churn/purchase scoring, generative AI for copy.
+- **Pricing**: MAU-based (monthly active users) — contact Braze for pricing. Enterprise-oriented; no self-serve free tier.
+- **Braze's strength**: Best for enterprise brands with large audiences that need sophisticated cross-channel orchestration where email is one channel in a Canvas journey alongside push, in-app, SMS, and Content Cards. Not designed for simple newsletter sends.
+- **Limitation**: MAU pricing can spike on high-traffic apps. Steeper learning curve than mid-market tools. Liquid templating has a learning curve vs. drag-and-drop editors.
+
+### In GetResponse
+
+GetResponse is an all-in-one email marketing platform with autoresponders, visual marketing automation, conversion funnels, webinars, and course creation. Key email marketing capabilities:
+
+- **Newsletters (broadcasts)**: One-time email sends to lists or segments. Drag-and-drop editor with 100+ templates. AI content generator for subject lines and body copy. A/B testing up to 5 variants (subject, content, send time, from field).
+- **Autoresponders**: Time-based automated sequences triggered by subscription date — Day 0 (welcome), Day 1, Day 3, etc. Each list ("campaign" in GetResponse) can have its own autoresponder series. Available on all plans including Starter — use these for simple sequences without upgrading to Marketer.
+- **Marketing automation** (Marketer plan+): Visual workflow builder with triggers (subscribe, open, click, purchase, visit URL, tag applied, custom event, score change), actions (send email, SMS, web push, wait, tag, score, move to list, webhook), and if/else conditions. Pre-built templates for welcome series, abandoned cart, re-engagement.
+- **Perfect Timing**: AI-based per-subscriber send time optimization — delivers emails when each contact is most likely to engage. **Time Travel**: Send at a specific local time regardless of timezone.
+- **Segmentation**: Filter by demographics, behavior, engagement, tags, scores, e-commerce activity. Dynamic segments auto-update.
+- **Contact scoring** (Marketer+): Assign points based on opens, clicks, purchases, page visits. Score thresholds trigger automation actions.
+- **E-commerce integration**: Native Shopify, WooCommerce, Magento. Abandoned cart automation, product recommendations, promo codes, revenue tracking.
+- **Important terminology**: In GetResponse, "campaign" = mailing list. "Newsletter" = email send. This confuses every new user.
+- **Plan limits**: Starter allows 1 automation workflow. Marketer ($59/mo) unlocks unlimited automations, scoring, SMS, advanced segmentation. Creator ($69/mo) adds webinars and course creator.
+- **GetResponse's strength**: Best for businesses that need email marketing + webinars + courses + funnels in one platform without the enterprise pricing of Braze/Iterable. Strong autoresponder heritage (one of the original autoresponder platforms).
+
 ### In Klaviyo
 
 Klaviyo is a data-driven marketing automation platform built specifically for e-commerce. It's the dominant choice for Shopify-based brands and excels at behavior-triggered multi-channel messaging.
@@ -335,6 +398,11 @@ Perform these maintenance tasks regularly:
 
 ## Related skills
 
+- **/sales-getresponse** — GetResponse platform help (autoresponders, marketing automation, conversion funnels, webinars, course creator)
+- **/sales-iterable** — Iterable platform help (Studio journeys, Campaigns, Handlebars templating, Brand Affinity, Smart Ingest, cross-channel)
+- **/sales-braze** — Braze platform help (Canvas Flow, Campaigns, Liquid templating, BrazeAI, Content Cards, cross-channel)
+- **/sales-brevo** — Brevo platform help (email, SMS, WhatsApp, push, automation, CRM)
+- **/sales-transactional-email** — Transactional/triggered email delivery (order confirmations, password resets — not marketing)
 - **/sales-groove** — Groove.cm platform-specific guidance (GrooveMail, GroovePages, GrooveSell, GrooveFunnels)
 - **/sales-closum** — Closum platform help (omnichannel email, SMS, WhatsApp, Telegram, Web Push)
 - **/sales-mailchimp** — Mailchimp platform help (email campaigns, Customer Journey Builder, SMS, audience management, API)

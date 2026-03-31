@@ -1,6 +1,6 @@
 ---
 name: sales-deliverability
-description: "Email deliverability for outbound sales — domain authentication (SPF/DKIM/DMARC), mailbox warmup, sending limits, inbox placement, blacklist monitoring, sender reputation, custom tracking domains, and list hygiene. Use when setting up a new sending domain, warming up mailboxes, diagnosing spam/deliverability issues, recovering from blacklisting, scaling outbound volume, or switching email platforms. Do NOT use for cadence content and strategy (use /sales-cadence), Apollo sequence mechanics (use /sales-apollo-sequences), Mailshake platform help (use /sales-mailshake), Smartlead platform help (use /sales-smartlead), Lemlist platform help (use /sales-lemlist), Yesware platform help (use /sales-yesware), Mixmax-specific config (use /sales-mixmax), Reply.io-specific config (use /sales-reply), Woodpecker-specific config (use /sales-woodpecker), Hunter.io-specific config (use /sales-hunter), Mailmo-specific config (use /sales-mailmo), Tomba-specific config (use /sales-tomba), Prospeo-specific config (use /sales-prospeo), Seamless.AI-specific config (use /sales-seamless), SafetyMails-specific config (use /sales-safetymails), Mailchimp-specific config (use /sales-mailchimp), SendGrid-specific config (use /sales-sendgrid), Postmark-specific config (use /sales-postmark), Customer.io-specific config (use /sales-customerio), Mailgun-specific config (use /sales-mailgun), Klaviyo-specific config (use /sales-klaviyo), or ActiveCampaign-specific config (use /sales-activecampaign), or Outscraper-specific config (use /sales-outscraper), or Enrich.so-specific config (use /sales-enrichso), or Skrapp-specific config (use /sales-skrapp), or Anymail Finder-specific config (use /sales-anymailfinder), or ZeroBounce-specific config (use /sales-zerobounce), or Snov.io-specific config (use /sales-snov)."
+description: "Email deliverability for outbound sales — domain authentication (SPF/DKIM/DMARC), mailbox warmup, sending limits, inbox placement, blacklist monitoring, sender reputation, custom tracking domains, and list hygiene. Use when setting up a new sending domain, warming up mailboxes, diagnosing spam/deliverability issues, recovering from blacklisting, scaling outbound volume, or switching email platforms. Do NOT use for cadence content and strategy (use /sales-cadence), Apollo sequence mechanics (use /sales-apollo-sequences), Mailshake platform help (use /sales-mailshake), Smartlead platform help (use /sales-smartlead), Lemlist platform help (use /sales-lemlist), Yesware platform help (use /sales-yesware), Mixmax-specific config (use /sales-mixmax), Reply.io-specific config (use /sales-reply), Woodpecker-specific config (use /sales-woodpecker), Hunter.io-specific config (use /sales-hunter), Mailmo-specific config (use /sales-mailmo), Tomba-specific config (use /sales-tomba), Prospeo-specific config (use /sales-prospeo), Seamless.AI-specific config (use /sales-seamless), SafetyMails-specific config (use /sales-safetymails), Mailchimp-specific config (use /sales-mailchimp), SendGrid-specific config (use /sales-sendgrid), Postmark-specific config (use /sales-postmark), Customer.io-specific config (use /sales-customerio), Mailgun-specific config (use /sales-mailgun), Klaviyo-specific config (use /sales-klaviyo), or ActiveCampaign-specific config (use /sales-activecampaign), or Outscraper-specific config (use /sales-outscraper), or Enrich.so-specific config (use /sales-enrichso), or Skrapp-specific config (use /sales-skrapp), or Anymail Finder-specific config (use /sales-anymailfinder), or ZeroBounce-specific config (use /sales-zerobounce), or Snov.io-specific config (use /sales-snov), or Brevo-specific config (use /sales-brevo), or Braze-specific config (use /sales-braze), or Iterable-specific config (use /sales-iterable), or GetResponse-specific config (use /sales-getresponse)."
 argument-hint: "[describe your deliverability situation — new domain, spam issues, warmup, scaling]"
 license: MIT
 metadata:
@@ -323,6 +323,46 @@ These tools simulate real email conversations to build sender reputation. Run wa
 - **No sending infrastructure**: Anymail Finder is a finding and verification tool — it doesn't send emails. Use it upstream to build and verify lists before importing into outbound tools.
 - **Best practice**: Leverage the pay-only-for-verified model — risky results are free, so you can attempt finds broadly without wasting credits. Use the standalone verifier (0.2 credits) to re-check emails from other sources before sending.
 
+### In Iterable (domain auth + dedicated IP)
+- **Domain authentication**: Configure in Iterable Settings > Email. Add DNS records for SPF, DKIM, and custom return-path. Iterable provides the specific DNS records to add for your sending domain.
+- **Dedicated IP**: Available on higher-tier plans. Request via your Iterable account manager. Dedicated IPs provide sender reputation isolation from other Iterable customers.
+- **IP warming**: Iterable recommends gradual volume ramp on new dedicated IPs — start with most engaged segments, increase over 4-6 weeks. Follow their IP warming schedule documentation.
+- **Custom tracking domain**: Set up a CNAME record for click/open tracking. Improves deliverability vs. shared tracking domains.
+- **Sender authentication**: Verify sender email addresses and domains in Settings > Email before sending.
+- **System webhooks for monitoring**: Configure system webhooks for bounce, complaint, and delivery events to monitor deliverability in real time.
+- **Brand Affinity for list hygiene**: Use Brand Affinity labels to identify disengaged users (Negative, Never Engaged) and suppress them from campaigns to protect sender reputation.
+- **Best practice**: Authenticate domains immediately. Request dedicated IP when consistently sending 100K+/month. Use Brand Affinity to exclude disengaged users from campaigns. Monitor bounce and complaint rates via system webhooks.
+
+### In Braze (domain auth + dedicated IP + IP warming)
+- **Domain authentication**: Configure in Braze dashboard under Settings > Email Preferences. Add DNS records for SPF (`include:spf.braze.com`), DKIM (CNAME records for Braze-specific selector), and custom return-path. Braze requires domain authentication before sending.
+- **Dedicated IP**: Available on enterprise plans. Braze provisions dedicated sending IPs — request via your Braze account manager. Multiple IPs can be assigned to different IP pools for traffic segmentation.
+- **IP pools**: Assign different sending domains and IPs to different IP pools — separate transactional from marketing, or separate brands. Configure in Settings > Email Preferences > IP Pools.
+- **IP warming**: Braze provides IP warming schedules — start at low volume (5K-10K/day) and gradually increase over 4-6 weeks. Send to your most engaged users first. Braze's IP warming documentation provides day-by-day volume recommendations.
+- **Custom tracking domain**: Required for click/open tracking. Set up a CNAME record pointing to Braze's tracking servers. Improves deliverability vs. shared Braze tracking domains.
+- **Bounce handling**: Braze automatically suppresses hard bounces and manages soft bounce retry logic. Bounced users are marked in the dashboard.
+- **Currents for monitoring**: Stream delivery events (sends, deliveries, bounces, spam complaints) to your data warehouse via Currents for custom deliverability dashboards.
+- **Best practice**: Authenticate your domain and set up a custom tracking domain before sending. Request dedicated IPs once you're consistently sending 100K+/month. Use IP pools to separate transactional and marketing traffic. Monitor Currents delivery data for early warning signs.
+
+### In Brevo (domain auth + dedicated IP + warmup)
+- **Domain authentication**: Settings → Senders, Domains & Dedicated IPs → Domains. Add Brevo code (TXT record), DKIM (CNAME), and DMARC (TXT). SPF: `v=spf1 include:spf.brevo.com ~all`. Brevo uses Entri for automatic DNS configuration — or configure manually.
+- **Dedicated IP**: Available on paid plans. Configure in Settings → Senders, Domains & Dedicated IPs. Associate with a subdomain dedicated only to Brevo sends (e.g., `mail.yourdomain.com`).
+- **IP warmup**: Brevo recommends starting at 50-100 emails/day to engaged contacts, increasing volume gradually over 4-6 weeks. Send to your most engaged segment first, then expand.
+- **DMARC compliance**: Required since Feb 2024 (Gmail/Yahoo) and May 2025 (Microsoft). Brevo supports DMARC monitoring — keep only one DMARC record with a `rua` tag.
+- **Transactional vs marketing separation**: Brevo handles both transactional and marketing on the same platform but recommends separate sending domains/subdomains. Use a dedicated subdomain for transactional (e.g., `notify.yourdomain.com`) and another for marketing (e.g., `mail.yourdomain.com`).
+- **Volume-based pricing**: Brevo charges by email volume, not contacts — unlimited contacts on all plans. Free plan caps at 300 emails/day.
+- **Best practice**: Authenticate your domain immediately after account creation. Request a dedicated IP once you're consistently sending 50K+/month. Warm up the IP gradually. Use Brevo's engagement segmentation to exclude unengaged contacts from campaigns and protect sender reputation.
+
+### In GetResponse (domain auth + Perfect Timing)
+- **Domain authentication**: Settings → Email Addresses → add and verify your sending domain. GetResponse generates SPF (include record) and DKIM (TXT/CNAME) records to add to DNS. DMARC setup recommended.
+- **Dedicated IP**: Available on MAX/Enterprise plans only. Lower-tier plans use shared IPs — GetResponse manages shared IP reputation.
+- **Perfect Timing**: AI-based per-subscriber send time optimization. Analyzes each contact's engagement history and delivers at their individually optimal time. Enable per-newsletter for better inbox placement and engagement.
+- **Time Travel**: Send at a specific local time regardless of subscriber timezone — avoids sending at 3 AM for international lists.
+- **List hygiene**: Use engagement-based segmentation to exclude contacts who haven't opened in 90+ days. GetResponse billing is based on peak subscriber count — clean lists reduce costs too.
+- **Contact scoring for hygiene** (Marketer+): Use scoring rules to identify unengaged contacts. Create automation workflows that tag or remove contacts when engagement scores drop below threshold.
+- **E-commerce bounce management**: Shopify/WooCommerce integrations sync customer data — keep contact lists fresh with real purchase and engagement data.
+- **Transactional email separation**: Transactional email is MAX-only. For Starter/Marketer/Creator users, use a separate transactional provider (SendGrid, Postmark) to keep transactional and marketing on different infrastructure.
+- **Best practice**: Authenticate domain immediately after account creation. Use Perfect Timing for all newsletters. Segment by engagement and stop sending to 90+-day inactive contacts. On MAX, request dedicated IP and warm it up over 4-6 weeks.
+
 ### In Snov.io (warmup + deliverability check)
 - **Email Warmup**: Automated inbox warming with large warm-up pool. Freemail support (Gmail, Outlook). Starter plan gets 3 warmup slots; Pro S+ gets unlimited. Gradually increases sending volume to build sender reputation.
 - **Email Deliverability Check**: Inbox placement monitoring — checks whether emails land in inbox, spam, or promotions. Reputation diagnostics for sending domains.
@@ -454,6 +494,11 @@ If your domain reputation is damaged:
 - `/sales-anymailfinder` — Anymail Finder platform help (email verifier, 97%+ delivery guarantee on found emails, bulk verification, pay-only-for-verified model)
 - `/sales-zerobounce` — ZeroBounce platform help (email validation 99.6% accuracy, AI scoring, activity data, inbox placement testing, blacklist monitoring, DMARC, warmup)
 - `/sales-snov` — Snov.io platform help (email warmup, deliverability check, done-for-you email setup, email verifier 98% accuracy, multichannel campaigns)
+- `/sales-iterable` — Iterable platform help (domain authentication, dedicated IPs, Brand Affinity for list hygiene, system webhooks)
+- `/sales-braze` — Braze platform help (domain authentication, dedicated IPs, IP warming, IP pools, Currents delivery monitoring)
+- `/sales-brevo` — Brevo platform help (domain authentication, dedicated IPs, warmup, transactional + marketing email)
+- `/sales-getresponse` — GetResponse platform help (domain auth, Perfect Timing, contact scoring for list hygiene)
+- `/sales-transactional-email` — Transactional email delivery strategy (separate from marketing deliverability)
 - `/sales-prospect-list` — Build prospect lists with verified contacts
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 

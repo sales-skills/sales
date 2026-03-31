@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, Brevo, Braze, Iterable, GetResponse, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -569,6 +569,48 @@ Before building anything custom, check if a native integration exists:
 - **Up to 5 Event Webhooks**: Pro plan supports up to 5 simultaneous webhook endpoints (Essentials: 2, Free Trial: 1).
 - **353 partner integrations**: Mostly API-driven — no deep native CRM integration. Use Zapier/Make as the bridge for event-driven workflows, or build custom pipelines using the Event Webhook + destination API.
 
+### Iterable Smart Ingest, webhooks & integrations
+- **Smart Ingest** (co-built with Hightouch): Sync data from 23+ sources (Snowflake, BigQuery, Redshift, Databricks, PostgreSQL, S3) directly into Iterable. Sync types: Users, Events, Catalog items, Lists. Up to every 15 minutes. Configure at Integrations > Smart Ingest.
+- **Snowflake Secure Data Sharing**: Export Iterable data (user profiles, campaigns, events) to your Snowflake account. No ETL required — uses Snowflake's native data sharing. Bidirectional when combined with Smart Ingest.
+- **System webhooks**: Events — email send/open/click/bounce/complaint/unsubscribe, push send/open/bounce, SMS send/bounce/received, in-app send/open/click, web push send/open, list subscribe/unsubscribe, user profile update. Configure at Integrations > System Webhooks. Auth: None, Basic, or OAuth 2.0.
+- **Journey webhooks**: Webhook tile in Studio — call any external API at any point in a journey with Handlebars-templated request bodies.
+- **Native integrations**: Shopify (product sync, cart events, purchase tracking, catalog sync), Segment, Hightouch, Movable Ink, Facebook Custom Audiences, Google Ads, Mixpanel, Amplitude.
+- **REST API**: Full API for users, events, campaigns, catalogs, lists, templates, experiments. `Api-Key` header auth. Base URLs: `api.iterable.com` (US), `api.eu.iterable.com` (EU).
+- **Zapier**: Triggers and actions for user updates, event tracking, campaign management.
+- **SDKs**: iOS (Swift), Android (Kotlin/Java), React Native, Web (JavaScript) — for push, in-app, Mobile Inbox, Embedded Messages, and client-side event tracking.
+
+### Braze Currents, CDI & Alloys integrations
+- **Currents (data streaming)**: Real-time event streaming to data warehouses and analytics tools. Events: email sends/deliveries/opens/clicks/bounces, push sends/opens, in-app impressions/clicks, Content Card impressions/clicks/dismissals, SMS sends/deliveries, purchases, custom events, session starts. Destinations: Snowflake, Amazon S3, Google Cloud Storage, Azure Blob, Mixpanel, Amplitude, mParticle, Segment, and more.
+- **Cloud Data Ingestion (CDI)**: Sync data from your data warehouse into Braze — import user attributes, events, and purchases from Snowflake, BigQuery, Redshift, or Databricks. Configure in Settings > Data Settings > Cloud Data Ingestion.
+- **Braze Alloys (technology partners)**: 170+ pre-built integrations across categories: analytics (Amplitude, Mixpanel, Segment), attribution (Adjust, AppsFlyer, Branch), CDP (mParticle, Segment, Tealium), CRM (Salesforce — via Braze native connector), e-commerce (Shopify), data warehouse (Snowflake Data Sharing), and more.
+- **REST API**: Full API for user data (`/users/track`, `/users/identify`, `/users/delete`), messaging (`/messages/send`, `/campaigns/trigger/send`, `/canvas/trigger/send`), segments, catalogs, and more. Bearer token auth. Rate limit: 250,000 requests/hour.
+- **Webhooks in Canvas/Campaigns**: Configure outbound webhook steps in Canvas Flow or Campaigns to call any external API when users reach that step — trigger CRM updates, Slack notifications, or custom backend actions.
+- **Connected Content**: Pull data from external APIs at email send time for real-time personalization (product recommendations, pricing, inventory).
+- **SCIM provisioning**: Automated user provisioning and deprovisioning via SCIM 2.0 (Okta, Azure AD).
+- **No inbound webhooks**: Braze doesn't receive webhooks from external systems the way Mailchimp or SendGrid do. Instead, use the `/users/track` API endpoint to send events/attributes into Braze, or use CDI for warehouse-based sync.
+
+### Brevo webhooks & integrations
+- **Webhooks**: Create via API (`POST /webhooks`). Events: delivered, opened, clicked, hardBounce, softBounce, unsubscribed, complaint, blocked. Separate webhook types for transactional and marketing. Export webhook history via `POST /webhooks/{webhookId}/export`.
+- **Zapier**: Triggers — new contact, campaign status update, email delivered/opened/clicked/bounced/unsubscribed/complaint. Actions — create/update contact, send transactional email, manage deals. 7,000+ connected apps.
+- **Make (Integromat)**: Full Brevo module with contact, campaign, transactional email, and SMS operations.
+- **Native e-commerce**: Shopify, WooCommerce, Magento, BigCommerce, PrestaShop — real-time product/order sync, abandoned cart triggers.
+- **Native CRM sync**: No direct Salesforce native connector — use Zapier/Make as bridge. HubSpot sync available via Zapier.
+- **REST API**: Full API covering contacts, campaigns, transactional email/SMS/WhatsApp, CRM (deals, companies, tasks), e-commerce, loyalty, conversations. SDKs: Python, Node.js, PHP, Ruby, Java, TypeScript, Go, C#.
+- **SMTP relay**: `smtp-relay.brevo.com:587` for transactional email integration with any application.
+- **Master account API**: Sub-account management, SSO token generation, IP management — useful for agencies managing multiple client accounts.
+
+### GetResponse webhooks, API & integrations
+- **Webhooks/Callbacks**: Subscribe to events — subscribe, open, click, goal, survey, unsubscribe. Configure via API (`POST /v3/callbacks`) or in UI under Integrations > API & Webhooks. Callbacks send POST requests with contact data, campaign info, and message details.
+- **REST API v3**: Full API covering contacts, campaigns (lists), newsletters, autoresponders, tags, custom fields, landing pages, webinars, forms, shops (e-commerce), and transactional email (MAX only). Auth: `X-Auth-Token: api-key {key}`. Rate limits: 30K calls/10 min, 80/sec.
+- **Native CRM sync**: Salesforce (bidirectional sync), HubSpot, Zoho CRM.
+- **Native e-commerce**: Shopify, WooCommerce, Magento, BigCommerce, PrestaShop — product/order sync, abandoned cart triggers, product recommendations.
+- **Zapier**: 150+ app connections. Triggers: new contact, newsletter sent, autoresponder triggered. Actions: create/update contact, add tag.
+- **Payment processors**: Stripe, PayPal, Square — for courses and conversion funnels.
+- **Social/Ads**: Facebook Custom Audiences, Google Ads audience sync.
+- **CMS**: WordPress, Squarespace, Wix plugins.
+- **Webinar platforms**: Zoom, GoToWebinar integration (in addition to built-in webinars).
+- **Important note**: GetResponse "campaign" = mailing list in the API. `POST /v3/campaigns` creates a list, not an email send. `POST /v3/newsletters` creates an email send.
+
 ### Seismic webhooks
 - **Events**: Content views, LiveSend opens, DSR engagement, user provisioning (SCIM)
 - **Setup**: Configure via the developer portal (developer.seismic.com). OAuth 2.0 auth.
@@ -649,6 +691,10 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-sendgrid` — SendGrid platform help including Email API, Event Webhooks, Inbound Parse, and Marketing Campaigns
 - `/sales-postmark` — Postmark platform help including transactional email API, Message Streams, and webhooks
 - `/sales-safetymails` — SafetyMails platform help (bulk verification, real-time API, Email Finder, native integrations)
+- `/sales-iterable` — Iterable platform help (Smart Ingest from 23+ sources, Snowflake Secure Data Sharing, system webhooks, Studio journey webhooks, REST API)
+- `/sales-braze` — Braze platform help (Currents data streaming, CDI warehouse sync, 170+ Alloys integrations, REST API, Canvas webhooks, Connected Content)
+- `/sales-brevo` — Brevo platform help (email/SMS/WhatsApp campaigns, automation, transactional API, CRM, 150+ integrations, webhooks)
+- `/sales-getresponse` — GetResponse platform help (REST API v3, webhooks/callbacks, Zapier, native CRM sync, e-commerce integrations)
 - `/sales-closum` — Closum platform help (omnichannel marketing automation: email, SMS, WhatsApp, Telegram, Web Push)
 - `/sales-mailchimp` — Mailchimp platform help (email marketing, automations, SMS, 300+ integrations, Marketing + Transactional APIs)
 - `/sales-sendgrid` — SendGrid platform help (Email API, Marketing Campaigns, Event Webhooks, Inbound Parse, 353 partner integrations)
