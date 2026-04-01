@@ -1,6 +1,6 @@
 ---
 name: sales-live-chat
-description: "Live chat and chatbot for sales and support — widget setup, routing, chatbot flows, agent management, visitor tracking, chat-to-lead conversion, proactive messaging. Covers strategy and implementation across Brevo Conversations, Drift (Salesloft), Intercom, HubSpot, Crisp, LiveChat, Zendesk, Tidio, and Freshdesk. Use when setting up live chat, building chatbot flows, optimizing chat-to-lead conversion, routing chats to agents, or choosing a live chat tool. Do NOT use for email sequences (use /sales-cadence), email marketing (use /sales-email-marketing), or meeting scheduling (use /sales-meeting-scheduler). For platform-specific help, use /sales-brevo or /sales-salesloft."
+description: "Live chat and chatbot for sales and support — widget setup, routing, chatbot flows, agent management, visitor tracking, chat-to-lead conversion, proactive messaging. Covers strategy and implementation across Brevo Conversations, Drift (Salesloft), Intercom, HubSpot, Crisp, LiveChat, Zendesk, Tidio, Freshdesk, and ZoomInfo Chat. Use when setting up live chat, building chatbot flows, optimizing chat-to-lead conversion, routing chats to agents, or choosing a live chat tool. Do NOT use for email sequences (use /sales-cadence), email marketing (use /sales-email-marketing), or meeting scheduling (use /sales-meeting-scheduler). For platform-specific help, use /sales-brevo or /sales-salesloft."
 argument-hint: "[describe your live chat or chatbot question or goal]"
 license: MIT
 metadata:
@@ -10,7 +10,7 @@ metadata:
 
 # Live Chat & Chatbot for Sales
 
-Help the user with live chat and chatbot — from tool selection and widget setup through chatbot flow design, agent routing, visitor tracking, and chat-to-lead conversion. This skill is tool-agnostic but includes platform-specific guidance for Brevo Conversations, Drift (Salesloft), Intercom, HubSpot, Crisp, LiveChat, Zendesk, Tidio, and Freshdesk.
+Help the user with live chat and chatbot — from tool selection and widget setup through chatbot flow design, agent routing, visitor tracking, and chat-to-lead conversion. This skill is tool-agnostic but includes platform-specific guidance for Brevo Conversations, Drift (Salesloft), Intercom, HubSpot, Crisp, LiveChat, Zendesk, Tidio, Freshdesk, and ZoomInfo Chat.
 
 ## Step 1 — Gather context
 
@@ -142,6 +142,15 @@ GetResponse includes a basic live chat widget as part of its all-in-one marketin
 - **Best for**: GetResponse users who want basic website chat without adding another tool. Good for landing pages and simple lead qualification.
 - **Platform skill**: `/sales-getresponse`
 
+### In ZoomInfo (Chat)
+- **Visitor identification** — ZoomInfo Chat identifies anonymous visitors using WebSights (IP-to-company matching) and enriches them with firmographic data before the conversation starts
+- **Smart routing** — route conversations to the right sales rep based on account ownership, territory, or firmographic criteria. High-value accounts get human reps; others get bot.
+- **Chatbot** — automated conversations triggered by visitor firmographics (e.g., show different bot flows for enterprise vs SMB visitors)
+- **Meeting booking** — let qualified visitors book meetings directly from chat, synced to rep calendars
+- **Data enrichment** — even if a visitor doesn't chat, WebSights captures their company info for follow-up
+- **Integration** — chat transcripts and visitor data sync to Salesforce, HubSpot, and ZoomInfo CRM records
+- **Advantage** — ZoomInfo Chat knows WHO is visiting (company, size, industry) before the chat starts, enabling personalized experiences. Most chat tools only see anonymous visitors until they self-identify.
+
 ### In LiveChat / Zendesk / Tidio / Freshdesk
 - **LiveChat**: Support-focused with ticketing integration. Good for support teams.
 - **Zendesk Chat**: Part of Zendesk Suite — best if you're already on Zendesk for support.
@@ -182,6 +191,7 @@ GetResponse includes a basic live chat widget as part of its all-in-one marketin
 
 ## Related skills
 
+- `/sales-zoominfo` — ZoomInfo platform help (Chat, WebSights visitor identification)
 - `/sales-getresponse` — GetResponse platform help (built-in live chat widget)
 - `/sales-brevo` — Brevo platform help (Conversations live chat setup)
 - `/sales-salesloft` — Salesloft/Drift platform help (enterprise sales chat)

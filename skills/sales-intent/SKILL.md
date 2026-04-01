@@ -1,6 +1,6 @@
 ---
 name: sales-intent
-description: "Interpret buying signals and prioritize accounts for outreach. Use when analyzing intent data, prioritizing accounts, reading buying signals, tracking job changes, using intent topics, scoring leads, deciding who to contact first, or building signal-based outreach workflows. Do NOT use for building prospect lists (use /sales-prospect-list), enriching contacts (use /sales-enrich), or general Apollo platform help (use /sales-apollo)."
+description: "Interpret buying signals and prioritize accounts for outreach. Use when analyzing intent data, prioritizing accounts, reading buying signals, tracking job changes, using intent topics, scoring leads, deciding who to contact first, or building signal-based outreach workflows. Do NOT use for building prospect lists (use /sales-prospect-list), enriching contacts (use /sales-enrich), ZoomInfo-specific intent config (use /sales-zoominfo), or general Apollo platform help (use /sales-apollo)."
 argument-hint: "[describe the signals you're seeing or the accounts you want to prioritize]"
 license: MIT
 metadata:
@@ -129,6 +129,15 @@ Seamless.AI provides Buyer Intent and Job Changes as native features:
 4. **Autopilot + Intent**: Set Autopilot to continuously build lists filtered by intent signals — automated signal-to-list workflow.
 5. **Credit note**: Buyer Intent and Job Changes are Pro/Enterprise features. Free/Basic plans don't include these.
 
+### In ZoomInfo
+- **4,000+ intent topics** — ZoomInfo tracks web activity across thousands of topics. Topics must be configured in your ZoomInfo admin — you only see signals for subscribed topics.
+- **Spike detection** — ZoomInfo scores intent relative to a company's baseline. A "Spike" means activity is significantly above normal, indicating active research.
+- **Scoops** — ZoomInfo's research team publishes pre-verified buying signals: project launches, technology evaluations, budget approvals, vendor changes. More specific than topic-based intent.
+- **Recommended Contacts** — intent enrichment returns suggested contacts at spiking accounts, pre-matched to your buyer persona configuration.
+- **Alert configuration** — set up Slack or email alerts when target accounts show intent spikes. Configure in ZoomInfo → SalesOS → Intent → Alerts.
+- **Integration** — intent data syncs to Salesforce, HubSpot, and other CRMs. Use to trigger automated outreach sequences or update lead scores.
+- **API** — POST `/enrich/intent` with companyId returns active topics, signal scores, signal start dates, and recommended contacts.
+
 ### In Apollo.io
 
 Apollo integrates Bombora and LeadSift intent data:
@@ -212,6 +221,8 @@ Use Apollo Workflows (Professional+ plan) to automate:
 - `/sales-prospeo` — Prospeo platform help (company enrichment with tech stack detection, job postings as hiring signals)
 - `/sales-hunter` — Hunter.io platform help (Signals for buying intent, TechLookup for technographic prospecting, Discover for company search)
 - `/sales-seamless` — Seamless.AI platform help (Buyer Intent, Job Changes, Pitch Intelligence, Autopilot)
+- `/sales-zoominfo` — ZoomInfo platform help (SalesOS, intent topics, Scoops)
+- `/sales-b2b-advertising` — account-based advertising driven by intent signals
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

@@ -1,6 +1,6 @@
 ---
 name: sales-call-review
-description: "Review sales calls, extract coaching insights, and score against MEDDPICC/SPIN/Challenger. Use when reviewing a sales call, coaching a rep, scoring a call, analyzing a call transcript, extracting action items from a call, preparing call feedback, or reviewing talk-to-listen ratio. Do NOT use for prepping discovery questions (use /sales-discovery), general objection handling strategy (use /sales-objection), or deal-level risk analysis (use /sales-deal-inspect)."
+description: "Review sales calls, extract coaching insights, and score against MEDDPICC/SPIN/Challenger. Use when reviewing a sales call, coaching a rep, scoring a call, analyzing a call transcript, extracting action items from a call, preparing call feedback, reviewing talk-to-listen ratio, or analyzing ZoomInfo Chorus conversation intelligence data. Do NOT use for prepping discovery questions (use /sales-discovery), general objection handling strategy (use /sales-objection), or deal-level risk analysis (use /sales-deal-inspect)."
 argument-hint: "[paste transcript or describe the call — type, participants, outcome]"
 license: MIT
 metadata:
@@ -178,6 +178,15 @@ If a follow-up call was booked, draft a proposed agenda:
 - **Analytics**: Track talk ratio, question frequency, and topic coverage across the team. Identify coaching opportunities by comparing rep performance patterns.
 - **Note**: Seismic's Meeting Intelligence is a newer module — if your team already uses Gong or Chorus for conversation intelligence, Seismic's meeting features complement rather than replace them (Seismic has a native Gong integration).
 
+### In ZoomInfo (Chorus)
+- **Call recording & transcription** — Chorus (acquired by ZoomInfo) records and transcribes sales calls with AI-powered analysis
+- **Deal insights** — automatically tracks mentions of competitors, pricing discussions, next steps, objections, and decision criteria across all calls in a deal
+- **Coaching metrics** — talk-to-listen ratio, longest monologue, question frequency, filler words. Manager dashboards show rep-level trends.
+- **Smart Playlists** — curate collections of call moments (best discovery questions, great objection handling) for team training
+- **CRM sync** — call summaries, key moments, and action items auto-logged to CRM opportunity records
+- **Momentum** — ZoomInfo's deal intelligence layer uses Chorus data + CRM data + engagement signals to predict deal outcomes and flag risks
+- **Integration with ZoomInfo data** — Chorus enriches call participants with ZoomInfo contact data, showing title, seniority, and buying role during playback
+
 ## Related skills
 
 - `/sales-salesloft` — Salesloft Conversations settings, coaching playlists, recording configuration
@@ -186,6 +195,7 @@ If a follow-up call was booked, draft a proposed agenda:
 - `/sales-objection` — Deep-dive on objection handling strategies
 - `/sales-cadence` — Optimize outbound cadences based on call learnings
 - `/sales-seismic` — Seismic platform help including Meeting Intelligence and content management
+- `/sales-zoominfo` — ZoomInfo platform help (Chorus conversation intelligence, Momentum deal insights)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Gotchas

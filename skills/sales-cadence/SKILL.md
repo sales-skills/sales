@@ -1,6 +1,6 @@
 ---
 name: sales-cadence
-description: "Design multi-channel outbound cadences with timing, A/B testing, and content. Use when building a Salesloft cadence, building a Mailshake campaign, building a Smartlead campaign, building a Lemlist sequence, building a Yesware campaign, building a Mixmax sequence, building a Reply.io sequence, building a Woodpecker campaign, building a Hunter.io campaign, building a Seamless.AI engagement sequence, designing an outbound sequence, planning touchpoint timing, writing cadence emails, creating call scripts, A/B testing subject lines, optimizing sequence performance, or planning multi-channel outreach. Do NOT use for general outreach message writing (use /sales-outreach), marketing cold email (use /cold-email), automated email flows (use /email-sequence), or general Salesloft platform help (use /sales-salesloft)."
+description: "Design multi-channel outbound cadences with timing, A/B testing, and content. Use when building a Salesloft cadence, building a Mailshake campaign, building a Smartlead campaign, building a Lemlist sequence, building a Yesware campaign, building a Mixmax sequence, building a Reply.io sequence, building a Woodpecker campaign, building a Hunter.io campaign, building a Seamless.AI engagement sequence, building a ZoomInfo Engage sequence, designing an outbound sequence, planning touchpoint timing, writing cadence emails, creating call scripts, A/B testing subject lines, optimizing sequence performance, or planning multi-channel outreach. Do NOT use for general outreach message writing (use /sales-outreach), marketing cold email (use /cold-email), automated email flows (use /email-sequence), or general Salesloft platform help (use /sales-salesloft)."
 argument-hint: "[describe campaign goal, target persona, channels, and constraints]"
 license: MIT
 metadata:
@@ -224,6 +224,16 @@ For each call step:
 - **CRM sync**: Native integrations with HubSpot, Salesforce, Pipedrive, Zoho, Outreach, Salesloft.
 - **Best practice**: GetProspect is strongest when you use the full workflow — find → verify → sequence in one platform. For multi-channel cadences (email + LinkedIn + calls), complex conditional branching, or very high volume, use a dedicated sequencing tool and use GetProspect as the data source.
 
+### In ZoomInfo (Engage)
+- **Multi-step sequences** — email + call + LinkedIn steps with automated follow-up and configurable delays
+- **Email templates** — personalization with ZoomInfo data fields (title, company, industry, tech stack), A/B testing
+- **Power dialer** — built-in dialer with local presence, call recording, voicemail drop. Calls are a first-class step type.
+- **Task management** — manual steps (LinkedIn connect, research) auto-create tasks with due dates
+- **Data advantage** — sequences can target contacts discovered via ZoomInfo search, enriched with verified emails and direct dials. No need for separate enrichment before sequencing.
+- **Intent-triggered sequences** — start sequences automatically when a target account shows intent spike. Configure in OperationsOS data orchestration.
+- **Analytics** — per-step open/click/reply rates, sequence-level conversion, rep activity dashboards
+- **CRM sync** — activity (emails, calls, tasks) auto-logged to Salesforce, HubSpot, or Dynamics
+
 ### In Snov.io
 - **Where**: Campaigns section in Snov.io dashboard (app.snov.io)
 - **Channel support**: Email (native) + LinkedIn automation (add-on at $69/mo per slot — profile views, connection requests, follow-ups)
@@ -301,6 +311,7 @@ Provide a benchmarks table:
 - `/sales-reply` — Reply.io platform help (for Reply.io-specific setup)
 - `/sales-woodpecker` — Woodpecker platform help (for Woodpecker-specific setup)
 - `/sales-hunter` — Hunter.io platform help (Campaigns, Domain Search, Email Finder, Email Verifier)
+- `/sales-zoominfo` — ZoomInfo platform help (Engage sequences, dialer, intent-triggered outreach)
 - `/sales-snov` — Snov.io platform help (multichannel email + LinkedIn campaigns, AI email writer, email warmup, email finder)
 - `/sales-seamless` — Seamless.AI platform help (Engagement Hub, Pitch Intelligence, contact data)
 - `/sales-email-tracking` — Email engagement tracking — open/click/attachment signals for follow-up timing

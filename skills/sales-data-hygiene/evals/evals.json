@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-data-hygiene",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Our Salesforce has 80,000 contacts and we think at least 20% are duplicates. We have DemandTools. What's the safest way to deduplicate without losing important data?",
+      "expected_output": "Step-by-step dedup approach: start with exact email match, then fuzzy match with review, configure merge rules to preserve lead source and activity history",
+      "assertions": [
+        {"name": "phased_approach", "description": "Must recommend starting with exact-match dedup (email) before moving to fuzzy matching, to minimize false positives"},
+        {"name": "merge_rules", "description": "Must explain merge/winning record rules — preserving lead source, activity history, and oldest record's attribution data"},
+        {"name": "review_before_merge", "description": "Must warn about reviewing fuzzy match candidates before bulk merging, and recommend testing on a sample first"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "We keep getting duplicate leads in HubSpot from our web forms and Zapier integrations. How do I prevent duplicates from being created in the first place?",
+      "expected_output": "Guidance on duplicate prevention at the source — HubSpot duplicate management, form dedup, Zapier dedup steps, Operations Hub features",
+      "assertions": [
+        {"name": "prevention_over_cleanup", "description": "Must emphasize preventing duplicates at creation rather than just cleaning up after the fact"},
+        {"name": "hubspot_features", "description": "Must mention HubSpot's duplicate management capabilities and/or Operations Hub for more advanced dedup"},
+        {"name": "integration_dedup", "description": "Must address the Zapier/integration angle — checking for existing records before creating new ones"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "How do I set up ZoomInfo OperationsOS to automatically keep our CRM data fresh? We want to catch job changes, fill missing fields, and prevent decay.",
+      "expected_output": "ZoomInfo OperationsOS setup guide covering data orchestration workflows, auto-enrichment triggers, decay detection, and scheduled re-enrichment",
+      "assertions": [
+        {"name": "orchestration_workflows", "description": "Must describe setting up data orchestration workflows in OperationsOS with triggers (record creation, scheduled, decay-based)"},
+        {"name": "decay_management", "description": "Must explain how ZoomInfo detects job changes and data decay, and how to configure re-enrichment schedules"},
+        {"name": "matching_rules", "description": "Must mention configuring matching rules to prevent duplicates as part of the orchestration workflow"}
+      ]
+    }
+  ]
+}

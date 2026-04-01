@@ -180,6 +180,14 @@ Ask the user:
 - **Forms & popups**: Multiple form types with A/B testing
 - **Conversion funnels**: Pre-built signup funnels combining landing page + form + automation
 
+### In ZoomInfo (FormComplete)
+- **Form shortening** — auto-fill form fields using ZoomInfo data when a visitor's email or company is recognized. Reduces friction by removing fields the system already knows.
+- **Progressive profiling** — show only 2-3 essential fields (email, name); ZoomInfo enriches the rest (company, title, phone, industry, employee count) behind the scenes.
+- **Partial submission capture** — even if a visitor abandons the form, ZoomInfo captures and enriches whatever data was entered.
+- **Integration** — works with Marketo, HubSpot, Pardot, and custom HTML forms. Install via JavaScript snippet.
+- **WebSights** — identifies companies visiting your site (even without form fills) via IP-to-company matching. Feeds visitor data into advertising retargeting or sales alerts.
+- **Conversion impact** — shorter forms typically increase conversion rates by 30-50%. FormComplete maintains data richness while reducing visible fields.
+
 ## Step 4 — Actionable guidance
 
 ### Quick-start plan by stage
@@ -245,6 +253,8 @@ Ask the user:
 - `/sales-getresponse` — GetResponse platform help
 - `/sales-activecampaign` — ActiveCampaign platform help
 - `/sales-omnisend` — Omnisend platform help (popups, forms, Wheel of Fortune for ecommerce)
+- `/sales-zoominfo` — ZoomInfo platform help (FormComplete, WebSights)
+- `/sales-b2b-advertising` — account-based advertising (WebSights feeds retargeting audiences)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

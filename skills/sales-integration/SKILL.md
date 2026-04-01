@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Omnisend, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, Brevo, Braze, Iterable, GetResponse, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Omnisend, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, ZoomInfo, Brevo, Braze, Iterable, GetResponse, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -303,6 +303,15 @@ Before building anything custom, check if a native integration exists:
 | Closum → Slack | Native | Notifications and alerts |
 | Closum → OpenAI | Native | AI assistant for message creation |
 | Closum → Apollo | Native | Contact sync |
+| ZoomInfo → Salesforce | Native app (bi-directional) | Contact/account/lead/opportunity sync, enrich on create |
+| ZoomInfo → HubSpot | Native | Contact/company sync, enrichment, intent data, FormComplete |
+| ZoomInfo → Microsoft Dynamics | Native | Contact/account sync, enrichment, intent alerts |
+| ZoomInfo → Marketo | Native | Lead enrichment, audience sync, FormComplete |
+| ZoomInfo → Pardot | Native | Lead enrichment, scoring integration |
+| ZoomInfo → Salesloft | Native | Push contacts to cadences from ZoomInfo |
+| ZoomInfo → Outreach | Native | Push contacts to sequences from ZoomInfo |
+| ZoomInfo → Slack | Native | Intent alerts, Scoops notifications |
+| ZoomInfo → Zapier | Connector | Trigger on new contacts/companies, enrich records |
 
 **Rule**: If a native integration covers your use case, use it. Native integrations handle auth, retry, and error handling automatically. Only go custom when native doesn't support your specific trigger or action.
 
@@ -727,6 +736,8 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-sendgrid` — SendGrid platform help (Email API, Marketing Campaigns, Event Webhooks, Inbound Parse, 353 partner integrations)
 - `/sales-postmark` — Postmark platform help (transactional email API, 7 webhook types, Inbound email parsing, Zapier)
 - `/sales-omnisend` — Omnisend platform help (email/SMS/push for ecommerce, Shopify/WooCommerce/BigCommerce integrations, REST API)
+- `/sales-zoominfo` — ZoomInfo platform help (SalesOS, MarketingOS, OperationsOS integrations)
+- `/sales-data-hygiene` — CRM data quality and enrichment automation
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
 ## Examples

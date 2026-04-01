@@ -10,7 +10,7 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 77 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 80 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -335,6 +335,12 @@ Router recommends a 5-skill sequence:
 |---|---|---|
 | `/sales-braze` | Braze platform help — Canvas Flow, Campaigns, email (Liquid templating, Connected Content), push notifications, in-app messages, Content Cards, SMS/MMS/RCS, WhatsApp, LINE, BrazeAI (predictive, generative, Decisioning Studio), Braze Data Platform (CDI, Currents), segmentation, Catalogs, Feature Flags, transactional email API, REST API, Braze Alloys integrations | Available |
 
+### ZoomInfo & Platform
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-zoominfo` | ZoomInfo platform help — SalesOS (prospecting, enrichment, intent, Engage sequences, Chorus conversation intelligence), MarketingOS (B2B advertising, FormComplete, WebSights, Chat), OperationsOS (data orchestration, CRM hygiene, deduplication), Copilot (AI pipeline management), API (PKI/OAuth auth, search, enrich, lookup, bulk, webhooks) | Available |
+
 ### Omnisend & Platform
 
 | Skill | What it does | Status |
@@ -366,6 +372,8 @@ Router recommends a 5-skill sequence:
 | `/sales-live-chat` | Live chat and chatbot for sales — widget setup, chatbot flows, agent routing, chat-to-lead conversion across Brevo, Drift, Intercom, HubSpot, Crisp, and more | Available |
 | `/sales-loyalty` | Customer loyalty programs — points, tiers, rewards, VIP programs, member engagement, ROI across Brevo Loyalty, Smile.io, LoyaltyLion, Yotpo, and more | Available |
 | `/sales-sms-marketing` | SMS marketing — opt-in collection, compliance (TCPA/GDPR), campaign types, automation, two-way messaging, analytics across Omnisend, Klaviyo, Attentive, Postscript, Brevo, and more | Available |
+| `/sales-data-hygiene` | CRM data quality — deduplication, record matching, data decay management, enrichment automation, normalization across ZoomInfo OperationsOS, Salesforce, HubSpot Operations Hub, Clay, LeanData, DemandTools | Available |
+| `/sales-b2b-advertising` | Account-based B2B advertising — display ads, retargeting, cross-channel campaigns, ABM ads, audience building, ad-to-pipeline attribution across ZoomInfo MarketingOS, Demandbase, 6sense, Terminus, RollWorks, LinkedIn Ads | Available |
 | `/sales-push-notification` | Mobile and web push notification strategy — opt-in optimization, rich push, segmentation, timing, frequency capping, deep linking across Braze, OneSignal, Airship, Firebase/FCM, Customer.io, Klaviyo, Iterable, MoEngage | Available |
 | `/sales-in-app-messaging` | In-app messages and content cards — onboarding, feature announcements, surveys, promotions, trigger design across Braze, Iterable, Intercom, Pendo, Appcues, Customer.io, MoEngage | Available |
 

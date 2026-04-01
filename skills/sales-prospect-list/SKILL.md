@@ -1,6 +1,6 @@
 ---
 name: sales-prospect-list
-description: "Build targeted B2B prospect lists for outbound campaigns. Use when building a prospect list, defining an ICP, searching for leads, filtering contacts by title/industry/company size, creating saved searches, segmenting lists, or finding decision-makers at target accounts. Do NOT use for enriching existing contacts with emails/phones (use /sales-enrich), interpreting buying signals (use /sales-intent), or general Apollo platform help (use /sales-apollo)."
+description: "Build targeted B2B prospect lists for outbound campaigns. Use when building a prospect list, defining an ICP, searching for leads, filtering contacts by title/industry/company size, creating saved searches, segmenting lists, finding decision-makers at target accounts, or building lists in ZoomInfo. Do NOT use for enriching existing contacts with emails/phones (use /sales-enrich), interpreting buying signals (use /sales-intent), or general Apollo platform help (use /sales-apollo)."
 argument-hint: "[describe target persona, industry, company size, or campaign goal]"
 license: MIT
 metadata:
@@ -118,6 +118,16 @@ Use Apollo's People Search with these filter categories:
 - **Signals**: Job changes, funding events, hiring activity
 
 Save the search as a dynamic list — new matches will appear automatically.
+
+### In ZoomInfo
+- **Advanced Search** — 300+ filters: company size, revenue, industry, technology, location, job title, seniority, department, funding events, news triggers. Boolean operators (AND/OR/NOT) for precision targeting.
+- **Intent layering** — filter prospects by companies showing buyer intent on your topics. Combines ICP fit with active research signals.
+- **Org Chart** — once you identify target companies, use org charts to find the complete buying committee (economic buyer, champion, technical evaluator, end users).
+- **Saved Searches** — save filter combinations and receive alerts when new contacts match. Good for "always-on" list building.
+- **Export options** — export to CSV, push directly to CRM (Salesforce, HubSpot), or push to Engage sequences / Salesloft / Outreach.
+- **Scoops** — filter by companies with active buying signals (projects, vendor evaluations, budget approvals) from ZoomInfo's research team.
+- **Credit management** — search is free; exporting/enriching consumes credits. Plan exports carefully to conserve credits.
+- **API** — POST `/search/contact` and `/search/company` for programmatic list building with the same 300+ filters.
 
 ### Exporting for Mailshake
 - Export CSV with columns mapping to Mailshake recipient fields
@@ -427,6 +437,7 @@ Before launching outreach, validate the list:
 - `/sales-snov` — Snov.io platform help (email finder, domain search, LinkedIn enrichment, prospect management, multichannel campaigns)
 - `/sales-mailmo` — Mailmo platform help (Email Finder with catch-all verification, LinkedIn Chrome extension)
 - `/sales-seamless` — Seamless.AI platform help (1.8B+ contacts, Buyer Intent, Job Changes, Autopilot, Chrome extension)
+- `/sales-zoominfo` — ZoomInfo platform help (Advanced Search, Saved Searches, exports)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

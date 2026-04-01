@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-zoominfo",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I want to set up intent-based prospecting in ZoomInfo. I sell cybersecurity software to mid-market companies. How do I find accounts showing buying intent and get the right contacts?",
+      "expected_output": "Step-by-step guide covering intent topic configuration, building a Saved Search with ICP + intent filters, using Recommended Contacts, and setting up alerts",
+      "assertions": [
+        {"name": "intent_topics", "description": "Must explain how to configure intent topics in ZoomInfo admin and that topics are subscription-dependent"},
+        {"name": "saved_search", "description": "Must describe creating a Saved Search combining ICP filters (mid-market, cybersecurity-relevant industries) with intent spike signals"},
+        {"name": "recommended_contacts", "description": "Must mention using Recommended Contacts or Org Charts to find decision-makers at spiking accounts"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "We have 20,000 contacts in Salesforce with missing phone numbers and outdated job titles. How do I use ZoomInfo OperationsOS to clean this up and keep it fresh going forward?",
+      "expected_output": "Guidance on bulk enrichment via OperationsOS, deduplication, auto-enrich rules, and credit management for large-scale operations",
+      "assertions": [
+        {"name": "bulk_enrichment", "description": "Must describe the bulk enrichment process — either in-platform or via API — for refreshing 20K stale records"},
+        {"name": "auto_enrich", "description": "Must recommend setting up auto-enrich rules or data orchestration workflows to prevent future data decay"},
+        {"name": "credit_warning", "description": "Must warn about credit consumption at scale and recommend monitoring usage via the Usage API or dashboard"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I'm building a custom lead scoring system and need to pull ZoomInfo enrichment data via API whenever a new lead is created in our system. Walk me through the API setup.",
+      "expected_output": "Technical guide covering authentication (PKI), Contact Enrich endpoint, token refresh, rate limits, and credit tracking",
+      "assertions": [
+        {"name": "authentication", "description": "Must explain PKI authentication method with Client ID + Private Key, and that JWT expires every 60 minutes requiring refresh logic"},
+        {"name": "enrich_endpoint", "description": "Must describe the POST /enrich/contact endpoint with matchPersonInput format and outputFields parameter"},
+        {"name": "rate_limits", "description": "Must mention rate limits (25 req/s for standard APIs) and the X-RateLimit-Remaining header for monitoring"}
+      ]
+    }
+  ]
+}

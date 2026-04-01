@@ -1,6 +1,6 @@
 ---
 name: sales-account-map
-description: "Map the buying committee at a target account — identify decision-makers, influencers, champions, and blockers, then recommend a multi-threading strategy. Use when mapping stakeholders at a deal, finding the right entry point at a target account, multi-threading an enterprise deal, understanding who's involved in a purchase decision, or planning account penetration. Do NOT use for building prospect lists across many accounts (use /sales-prospect-list), general account research (use /sales-research), or deal health assessment (use /sales-deal-inspect)."
+description: "Map the buying committee at a target account — identify decision-makers, influencers, champions, and blockers, then recommend a multi-threading strategy. Use when mapping stakeholders at a deal, finding the right entry point at a target account, multi-threading an enterprise deal, understanding who's involved in a purchase decision, or planning account penetration. Do NOT use for building prospect lists across many accounts (use /sales-prospect-list), general account research (use /sales-research), deal health assessment (use /sales-deal-inspect), or ZoomInfo-specific org chart config (use /sales-zoominfo)."
 argument-hint: "[name the target account and what you're selling]"
 license: MIT
 metadata:
@@ -99,6 +99,14 @@ For each committee member identified, enrich to get:
 - Job tenure (how long in current role — new leaders are more open to change)
 - Previous companies (look for connections — did they use your product before?)
 
+### In ZoomInfo
+- **Org Charts** — ZoomInfo provides pre-built organizational charts showing reporting hierarchies. Available in SalesOS for any company in their database.
+- **Buying committee identification** — filter contacts at a target account by department, seniority level, and management level to map economic buyer, champion, technical evaluator, and end users.
+- **Scoops** — buying signals that reveal internal projects, vendor evaluations, and budget approvals — useful for identifying which stakeholders are involved in an active buying process.
+- **Intent + Org Chart** — combine intent signals (which accounts are researching) with org charts (who the decision-makers are) for targeted multi-threading.
+- **Engage integration** — once you've mapped the buying committee, push contacts directly to ZoomInfo Engage sequences for multi-threaded outreach.
+- **API** — use Search Contacts with companyId + department/managementLevel filters to programmatically build buying committee maps.
+
 ## Step 4 — Map relationships & entry strategy
 
 ### Org chart reconstruction
@@ -161,6 +169,7 @@ Each committee member needs a different message:
 - `/sales-deal-inspect` — Assess deal health once the committee is mapped
 - `/sales-enrich` — Enrich all committee members with verified contact info
 - `/sales-intent` — Check for buying signals at the account level
+- `/sales-zoominfo` — ZoomInfo platform help (org charts, Scoops, Engage)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ### Ongoing committee monitoring

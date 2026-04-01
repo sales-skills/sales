@@ -1,6 +1,6 @@
 ---
 name: sales-enrich
-description: "Enrich contacts and companies with verified emails, phones, and firmographic data. Also covers CRM data hygiene, deduplication, and bulk enrichment. Use when enriching leads, finding email addresses, cleaning CRM data, doing bulk enrichment, optimizing enrichment credits, setting up auto-enrichment, or fixing stale contact data. Do NOT use for building new prospect lists from scratch (use /sales-prospect-list), interpreting buying signals (use /sales-intent), or general Apollo platform help (use /sales-apollo)."
+description: "Enrich contacts and companies with verified emails, phones, and firmographic data. Also covers CRM data hygiene, deduplication, and bulk enrichment. Use when enriching leads, finding email addresses, cleaning CRM data, doing bulk enrichment, optimizing enrichment credits, setting up auto-enrichment, or fixing stale contact data. Do NOT use for building new prospect lists from scratch (use /sales-prospect-list), interpreting buying signals (use /sales-intent), ZoomInfo-specific enrichment config (use /sales-zoominfo), or general Apollo platform help (use /sales-apollo)."
 argument-hint: "[describe what data you need — e.g., 'enrich 500 leads with emails' or 'clean up stale CRM contacts']"
 license: MIT
 metadata:
@@ -107,6 +107,15 @@ Choose the right approach based on volume and frequency:
 - `POST /people/bulk_match` for batch (up to 10 per call)
 - `GET /organizations/enrich` for company enrichment
 - See `/sales-apollo` for full API reference
+
+### In ZoomInfo
+- **Contact Enrich** — POST `/enrich/contact` with name+company, email, or LinkedIn URL. Returns verified email, direct dial, title, department, seniority. Up to 25 records per API call.
+- **Company Enrich** — POST `/enrich/company` with domain or company name. Returns revenue, employee count, industry, SIC/NAICS, tech stack, HQ location.
+- **Bulk Enrich** — async batch enrichment via POST `/bulk/enrich` with callback URL. Use for 100+ record operations.
+- **Auto-Enrich** — configure OperationsOS rules to enrich new CRM records on creation or on a schedule. No manual intervention needed.
+- **Intent Enrich** — POST `/enrich/intent` returns active intent signals for a company plus recommended contacts. Use to prioritize which records to enrich first.
+- **Credit system** — each enrichment consumes credits. Monitor via `X-Usage-Record-Limit-Remaining` header or Usage API. Professional: 5K credits/yr, Advanced: 10K, Elite: 10K + Copilot.
+- **Waterfall position** — ZoomInfo has the broadest B2B database (260M+ contacts). Often used as the primary enrichment provider, with Apollo, Lusha, or Cognism as secondary/tertiary in a waterfall.
 
 ### In Tomba
 
@@ -489,6 +498,8 @@ Credits reset monthly and do not roll over. Plan enrichment around your billing 
 - `/sales-anymailfinder` — Anymail Finder platform help (email finder by person/company/decision maker/LinkedIn, email verifier, bulk search, 97%+ delivery guarantee)
 - `/sales-zerobounce` — ZeroBounce platform help (email validation 99.6% accuracy, Email Finder, AI scoring, activity data, blacklist monitoring, DMARC, warmup)
 - `/sales-snov` — Snov.io platform help (email finder, domain search, LinkedIn enrichment, email verifier 98%, multichannel campaigns)
+- `/sales-zoominfo` — ZoomInfo platform help (enrichment, intent, OperationsOS)
+- `/sales-data-hygiene` — CRM data quality, deduplication, enrichment automation
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples
