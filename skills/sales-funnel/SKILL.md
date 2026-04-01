@@ -217,6 +217,18 @@ GetResponse offers Conversion Funnels — pre-built funnel templates that combin
 - **Plan limits**: Conversion funnels require Marketer plan ($59/mo) or higher. Landing pages alone are available on all paid plans.
 - **Best for**: Marketers who want funnel functionality integrated with email marketing, webinars, and courses in one platform. Not as flexible as ClickFunnels or Groove.cm for complex multi-step funnels with custom upsell flows, but simpler to set up for standard funnel types.
 
+### In Kit
+
+Kit offers landing pages and forms as growth tools for building email lists and selling digital products. For full platform help, use `/sales-kit`.
+
+- **Landing pages**: Unlimited on all plans (including free). Hosted on Kit or custom domain. Template-based — optimized for email capture and digital product sales.
+- **Opt-in forms**: Inline, modal, slide-in, sticky bar. Embed on any website. Each form can trigger different Visual Automations.
+- **Creator Profile**: Free micro-website / bio link page — consolidate social media CTAs into one link.
+- **Commerce pages**: Sell digital products and subscriptions with built-in checkout (Stripe required, 0.6% Kit fee).
+- **A/B testing**: Not available on landing pages (only on email subject lines and content).
+- **Automation integration**: Form submissions trigger Visual Automations — welcome sequences, tagging, conditional branching.
+- **Best for**: Lead magnet funnels (landing page → email sequence) and digital product sales pages for creators. Not a full multi-step funnel builder — no upsell/downsell page flows, no order bumps. For complex multi-step funnels, use ClickFunnels or Groove.cm and connect to Kit for email follow-up.
+
 ### In Other Tools
 
 - **Unbounce / Leadpages**: Best for standalone landing pages and opt-in pages rather than full multi-step funnels. Use Unbounce Smart Traffic for AI-driven A/B testing. Connect to a separate checkout tool (ThriveCart, Stripe) and email tool.
@@ -336,6 +348,9 @@ Follow this framework for every test:
 - `/sales-getresponse` — GetResponse platform help (conversion funnels, landing pages, webinar funnels)
 - `/sales-closum` — Closum platform help (landing pages, forms, omnichannel automation)
 - `/sales-mailchimp` — Mailchimp platform help (landing pages, signup forms, email sequences)
+- `/sales-kit` — Kit platform help (landing pages, forms, Creator Profile, Commerce)
+- `/sales-audience-growth` — Growing an email list (lead magnets, cross-promotion, referral programs)
+- `/sales-digital-products` — Selling digital products (platform selection, pricing, launch)
 - `/sales-do` — Route to any sales skill by describing what you need
 
 ---

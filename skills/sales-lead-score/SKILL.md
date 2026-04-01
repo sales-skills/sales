@@ -215,6 +215,13 @@ Subtract points for disqualifying signals:
 - **Limitation**: Scoring is not available on Free or Starter plans. No built-in decay mechanism — build decay into automation workflows with scheduled score reductions.
 - **Best practice**: Start with two dimensions — engagement scoring (opens, clicks, page visits) and e-commerce scoring (purchases, cart events). Use tag-based manual scoring as a workaround on Starter plan.
 
+#### In Kit
+- **Engagement scoring** (Pro plan only, $66/mo): Kit assigns engagement scores to subscribers based on open/click activity. Not a full lead scoring system — more of an engagement health indicator.
+- **No custom scoring rules**: Unlike ActiveCampaign or GetResponse, you can't define custom point values. Kit's scoring is automatic and based on email engagement only.
+- **Segmentation by engagement**: Use engagement data to create segments (e.g., "engaged in last 30 days", "cold subscribers"). Use for targeted sends, list hygiene, and re-engagement campaigns.
+- **Tag-based manual scoring**: On any plan, use Visual Automations to apply tags based on behavior (link clicked, form submitted, product purchased). Create segments combining tags as a DIY scoring workaround.
+- **Best practice**: Use Kit's built-in engagement scoring for list hygiene (suppress cold subscribers). For actual lead scoring with firmographic + behavioral dimensions, export Kit subscriber data to your CRM or use a dedicated MAP (ActiveCampaign, HubSpot) with Kit as the email layer.
+
 ### Testing the model
 
 Before going live:

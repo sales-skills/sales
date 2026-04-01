@@ -162,6 +162,19 @@ GrooveSell is the checkout and sales platform within the Groove.cm suite.
 - Checkout overlay or inline embed options.
 - Limited customization of the checkout UI compared to dedicated checkout tools.
 
+### Kit Commerce
+
+Kit (formerly ConvertKit) includes a built-in Commerce feature for selling digital products and subscriptions. For full platform help, use `/sales-kit`.
+
+- **Product types**: Digital downloads (PDF, video, audio, zip) and recurring subscriptions (paid newsletters, memberships).
+- **Checkout**: Simple product page with Stripe-powered checkout. No separate checkout page builder — the product page IS the checkout.
+- **Fees**: 0.6% Kit transaction fee + Stripe processing fees (~2.9% + 30¢). No monthly fee for Commerce — included in all Kit plans (even free).
+- **Order bumps / upsells**: Not supported. Kit Commerce is intentionally simple — one product per purchase.
+- **Payment plans**: Subscription billing only (monthly/annual). No installment plans for one-time products.
+- **Post-purchase automation**: Tag buyers automatically, trigger Visual Automations on purchase (e.g., welcome sequence, access delivery).
+- **Best for**: Creators selling ebooks, templates, or paid newsletter subscriptions who already use Kit for email. Not suitable for complex checkout flows with upsells, bumps, or multi-product carts.
+- **Limitation**: If you need order bumps, upsells, or complex checkout flows, use ThriveCart, SamCart, or GrooveSell and connect to Kit via Zapier for email automation.
+
 ### Other Platforms (Brief Notes)
 
 - **Gumroad**: Simplest setup. Good for creators selling digital products. 10% flat fee. Limited funnel features.
@@ -257,6 +270,8 @@ Body: Create urgency. Optionally add a small incentive (bonus or 10% discount). 
 - `/sales-email-marketing` — Post-purchase email sequences, abandoned cart emails, and nurture campaigns.
 - `/sales-affiliate-program` — Setting up affiliate tracking on checkout pages and managing affiliate payouts.
 - `/sales-membership` — Delivering digital products and courses after purchase, including access provisioning.
+- `/sales-kit` — Kit platform help (Kit Commerce for digital products and subscriptions)
+- `/sales-digital-products` — Digital product sales strategy (pricing, platform selection, launch)
 - `/sales-do` — Route any sales question to the right skill.
 
 ## Examples

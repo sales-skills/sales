@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, Brevo, Braze, Iterable, GetResponse, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Omnisend, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, Brevo, Braze, Iterable, GetResponse, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -97,6 +97,13 @@ Before building anything custom, check if a native integration exists:
 | Woodpecker → Salesforce | Via Zapier | Contact sync, activity logging |
 | Woodpecker → Clay | Yes (native) | Enrichment pipeline |
 | Woodpecker → Calendly | Yes (native) | Meeting booking from campaigns |
+| Kit → Shopify | Yes (native) | Purchase events trigger Kit automations, tag buyers |
+| Kit → WooCommerce | Yes (native) | Purchase events, subscriber sync |
+| Kit → WordPress | Yes (plugin) | Forms, Elementor, Contact Form 7 integration |
+| Kit → Stripe | Yes (required for Commerce) | Payment processing for digital products |
+| Kit → Teachable | Yes (native) | Course enrollment triggers, student tagging |
+| Kit → Zapier | Yes | 120+ app connections via Zapier |
+| Kit → Make | Yes | Automation workflows with Kit triggers/actions |
 | Qwilr → Salesforce | Yes | Proposal/quote sync — see `/sales-qwilr-automation` |
 | Qwilr → HubSpot | Yes | Proposal/quote sync — see `/sales-qwilr-automation` |
 | Seismic → Salesforce | Native | Content recommendations in SF, activity logging, LiveSend tracking, DSR engagement sync |
@@ -273,6 +280,16 @@ Before building anything custom, check if a native integration exists:
 | Klaviyo → TikTok | Native | Ad audience sync from Klaviyo segments. |
 | Klaviyo → Zapier | Native | Triggers: new subscriber, new event, updated profile. Actions: add to list, track event, update profile. |
 | Klaviyo → Webhooks | Native | Flow webhooks (POST in any flow step) + Advanced KDP system webhooks (event-driven, HMAC-SHA256 signed). |
+| Omnisend → Shopify | Native (deep) | Product, order, customer, cart, browse event sync. Bi-directional — Omnisend segments available for targeted campaigns. |
+| Omnisend → WooCommerce | Native (plugin) | Product, order, and customer sync via WordPress plugin. |
+| Omnisend → BigCommerce | Native | Product, order, and customer sync. |
+| Omnisend → Wix | Native | Contact and order sync. |
+| Omnisend → Google Ads | Native | Audience sync from Omnisend segments for retargeting. |
+| Omnisend → Facebook/Meta Ads | Native | Audience sync from Omnisend segments for retargeting. |
+| Omnisend → Zapier | Native | Triggers: new subscriber, new order. Actions: add/update contacts. |
+| Omnisend → Make | Native | Automation scenarios with Omnisend triggers and actions. |
+| Omnisend → Smile.io | Native | Loyalty program data sync. |
+| Omnisend → Gorgias | Native | Customer support data sync. |
 | Closum → Salesforce | Native | Contact sync, field mapping, lifecycle stage mapping |
 | Closum → Pipedrive | Native | Contact sync |
 | Closum → Zoho | Native | Contact sync |
@@ -454,6 +471,16 @@ Before building anything custom, check if a native integration exists:
 - **Setup**: Marketing webhooks via API or Audience > Settings > Webhooks in the dashboard. Transactional webhooks via Mandrill dashboard or API.
 - **Two separate APIs**: Marketing API (`https://<dc>.api.mailchimp.com/3.0/`) and Transactional API (`https://mandrillapp.com/api/1.0/`) have completely independent webhook systems.
 - **300+ native integrations**: Shopify, WooCommerce, Salesforce, HubSpot, WordPress, Canva, Google Analytics, Facebook, Instagram, Zapier, Make, and many more.
+
+### Omnisend integrations
+- **API**: Base URL `https://api.omnisend.com/api/`, API key auth (`X-API-KEY` header), header-based versioning (`Omnisend-Version: 2026-03-15`). Cursor-based pagination. Endpoints: Contacts, Products, Product Categories, Campaigns, Events, Segments, Brands, Batches, Email Content, Images, Analytics.
+- **Webhooks**: Supported — configure in Store Settings → Webhooks. Event types and payload details vary; consult Omnisend API docs for current webhook documentation.
+- **Native ecommerce**: Shopify (deep — products, orders, carts, customers, browse events), WooCommerce (plugin), BigCommerce, Wix, Ecwid. These are the primary integration path — most Omnisend features depend on ecommerce data sync.
+- **Ad platforms**: Google Ads and Facebook/Meta Ads audience sync from Omnisend segments.
+- **Reviews & loyalty**: Loox, Judge.me, Yotpo, Stamped (reviews), Smile.io, LoyaltyLion (loyalty).
+- **Support**: Gorgias, Zendesk.
+- **Automation platforms**: Zapier (triggers: new subscriber, new order; actions: add/update contacts), Make.
+- **For custom pipelines**: Use the REST API for contact sync, product catalog sync, event tracking, and campaign management. The Events API enables custom ecommerce platforms to trigger automations without a native integration.
 
 ### Closum integrations
 - **API**: Base URL `https://api.closum.com/api`, Bearer token auth. Known endpoints: `GET /audience-list`, `GET /contact-lifecycle-stage/`, `POST /lead-audience-list`. Full endpoint list not publicly documented.
@@ -699,6 +726,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-mailchimp` — Mailchimp platform help (email marketing, automations, SMS, 300+ integrations, Marketing + Transactional APIs)
 - `/sales-sendgrid` — SendGrid platform help (Email API, Marketing Campaigns, Event Webhooks, Inbound Parse, 353 partner integrations)
 - `/sales-postmark` — Postmark platform help (transactional email API, 7 webhook types, Inbound email parsing, Zapier)
+- `/sales-omnisend` — Omnisend platform help (email/SMS/push for ecommerce, Shopify/WooCommerce/BigCommerce integrations, REST API)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
 ## Examples

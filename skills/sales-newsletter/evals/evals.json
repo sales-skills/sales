@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-newsletter",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I have a 5,000-subscriber newsletter about SaaS metrics. How should I monetize it?",
+      "expected_output": "Monetization strategy recommending sponsorships (high-CPM B2B niche) and/or paid subscriptions with pricing guidance",
+      "assertions": [
+        {"name": "recommends_model", "description": "Recommends at least one monetization model (sponsorships, paid subscriptions, or paid recommendations) with reasoning"},
+        {"name": "niche_pricing", "description": "Accounts for B2B/SaaS niche in pricing guidance (higher CPM than general interest)"},
+        {"name": "actionable_steps", "description": "Provides concrete next steps to implement the recommended model"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "How do I price my newsletter sponsorships? I get 4,200 opens per issue.",
+      "expected_output": "Sponsorship pricing calculation based on CPM with rate card guidance",
+      "assertions": [
+        {"name": "uses_cpm", "description": "Calculates pricing using CPM (cost per 1,000 opens) model"},
+        {"name": "provides_range", "description": "Gives a specific price range based on the 4,200 opens figure"},
+        {"name": "mentions_rate_card", "description": "Suggests creating a rate card or media kit with key elements"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Should I use Kit or Substack for a paid newsletter?",
+      "expected_output": "Platform comparison covering fees, features, and trade-offs for paid newsletters",
+      "assertions": [
+        {"name": "compares_fees", "description": "Compares Kit's 0.6% + Stripe fees vs Substack's 10% + Stripe fees"},
+        {"name": "compares_features", "description": "Compares relevant features (automation, design, discovery network)"},
+        {"name": "gives_recommendation", "description": "Provides a recommendation based on the user's situation or criteria to decide"}
+      ]
+    }
+  ]
+}

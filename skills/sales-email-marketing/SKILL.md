@@ -1,6 +1,6 @@
 ---
 name: sales-email-marketing
-description: "Email marketing for opt-in subscribers — broadcasts, nurture sequences, automation, segmentation, and list management. Use when planning email campaigns, designing welcome sequences, setting up behavior-based automation, segmenting lists, improving open/click rates, or choosing an email marketing platform. Do NOT use for cold outbound email (use /sales-cadence), email deliverability/SPF/DKIM (use /sales-deliverability), transactional/triggered email (use /sales-transactional-email), or connecting email tools to CRM (use /sales-integration). For GetResponse-specific help, use /sales-getresponse. For Iterable-specific help, use /sales-iterable. For Braze-specific help, use /sales-braze. For Brevo-specific help, use /sales-brevo. For Groove-specific help, use /sales-groove. For Closum-specific help, use /sales-closum. For Mailchimp-specific help, use /sales-mailchimp. For SendGrid-specific help, use /sales-sendgrid. For Postmark-specific help, use /sales-postmark. For Customer.io-specific help, use /sales-customerio. For Mailgun-specific help, use /sales-mailgun. For Klaviyo-specific help, use /sales-klaviyo. For ActiveCampaign-specific help, use /sales-activecampaign."
+description: "Email marketing for opt-in subscribers — broadcasts, nurture sequences, automation, segmentation, and list management. Use when planning email campaigns, designing welcome sequences, setting up behavior-based automation, segmenting lists, improving open/click rates, or choosing an email marketing platform. Do NOT use for cold outbound email (use /sales-cadence), email deliverability/SPF/DKIM (use /sales-deliverability), transactional/triggered email (use /sales-transactional-email), or connecting email tools to CRM (use /sales-integration). For GetResponse-specific help, use /sales-getresponse. For Iterable-specific help, use /sales-iterable. For Braze-specific help, use /sales-braze. For Brevo-specific help, use /sales-brevo. For Groove-specific help, use /sales-groove. For Closum-specific help, use /sales-closum. For Mailchimp-specific help, use /sales-mailchimp. For SendGrid-specific help, use /sales-sendgrid. For Postmark-specific help, use /sales-postmark. For Customer.io-specific help, use /sales-customerio. For Mailgun-specific help, use /sales-mailgun. For Klaviyo-specific help, use /sales-klaviyo. For ActiveCampaign-specific help, use /sales-activecampaign. For Kit-specific help, use /sales-kit. For Omnisend-specific help, use /sales-omnisend."
 argument-hint: "[describe your email marketing question — e.g., 'design a welcome sequence' or 'improve my open rates']"
 license: MIT
 metadata:
@@ -151,13 +151,22 @@ Mailchimp is the dominant email marketing platform (13M+ users, owned by Intuit)
 - **Key limitation**: Mailchimp bills for ALL contacts including unsubscribed — archive or delete contacts you're not mailing to control costs.
 - **Transactional email**: Available as Mandrill add-on (Standard+ plan) for receipts, password resets, and notifications via a separate API.
 
-### In ConvertKit (Kit)
+### In Kit (formerly ConvertKit)
 
-- Visual Automations are the core workflow builder — connect sequences, events, and conditions
-- Sequences are linear email series; Automations are the branching logic layer on top
-- Tag-based architecture (no traditional "lists") — segment entirely through tags and custom fields
-- Landing pages and forms are built in — each can trigger different automations
-- Creator-focused: excellent for course creators, newsletters, and digital product sellers
+Kit is a creator-first email marketing platform built for authors, podcasters, course creators, coaches, and newsletter operators. For full platform help, use `/sales-kit`.
+
+- **Visual Automations**: Canvas-based workflow builder — triggers (form subscribe, tag added, purchase, link clicked, date-based), actions (add/remove tag, subscribe to sequence, send email, set custom field, webhook), and if/else branching. Unlimited automations on Creator+ plans; free plan gets 1.
+- **Sequences**: Linear drip email series with timed delays between steps. Subscriber filters skip steps based on tags/segments/custom fields. Exit conditions remove subscribers on tag add, purchase, or custom event. Not available on the free Newsletter plan.
+- **Broadcasts**: One-off email sends with 3 templates (Text-only, Classic, Modern). A/B test subject lines on Creator+, content on Pro. RSS campaigns auto-send on new content. Resend to unopens with different subject.
+- **Tag-based architecture**: No traditional "lists" — segment entirely through tags and custom fields. Dynamic segments auto-update as subscribers match conditions.
+- **Engagement scoring** (Pro plan only): Subscriber engagement scoring for identifying active vs. cold subscribers. Use for targeted sends and list hygiene.
+- **Landing pages and forms**: Unlimited on all plans (including free). Inline, modal, slide-in, sticky bar forms. Each form can trigger different automations.
+- **Commerce**: Sell digital products and subscriptions directly. Requires Stripe. 0.6% Kit transaction fee + Stripe fees.
+- **Creator Recommendations**: Cross-promotion network — recommend other creators after opt-in confirmation. Paid ($1–$5/subscriber) or free mutual recommendations.
+- **Newsletter referral system** (Pro only): Built-in subscriber referral program with milestone rewards.
+- **Key terminology**: "Broadcast" = one-off email, "Sequence" = drip campaign, "Visual Automation" = workflow, "Creator Profile" = bio link page.
+- **Plan limits**: Free plan (Newsletter) has 10K subscribers but no sequences, no integrations, no A/B testing, 1 automation. Creator ($33/mo) unlocks sequences + automations. Pro ($66/mo) adds engagement scoring, deliverability reporting, referral system, unlimited team members.
+- **API**: v4 at `api.kit.com`, OAuth 2.0 + API key, 120 req/60s rate limit. Legacy v3 at `api.convertkit.com` is deprecated but still functional.
 
 ### In Closum
 
@@ -296,6 +305,20 @@ GetResponse is an all-in-one email marketing platform with autoresponders, visua
 - **Plan limits**: Starter allows 1 automation workflow. Marketer ($59/mo) unlocks unlimited automations, scoring, SMS, advanced segmentation. Creator ($69/mo) adds webinars and course creator.
 - **GetResponse's strength**: Best for businesses that need email marketing + webinars + courses + funnels in one platform without the enterprise pricing of Braze/Iterable. Strong autoresponder heritage (one of the original autoresponder platforms).
 
+### In Omnisend
+
+Omnisend is an ecommerce-first email & SMS marketing automation platform — the affordable Klaviyo alternative for small/mid-sized ecommerce brands. Key email marketing capabilities:
+
+- **Email campaigns**: Drag-and-drop editor with 250+ templates, product picker (pulls from Shopify/WooCommerce/BigCommerce), dynamic discount codes, product recommendations. A/B testing for subject lines and content on Standard+ plans.
+- **Campaign Booster**: Auto-resend to non-openers with a different subject line after a configurable delay — unique feature for improving campaign reach without manual effort.
+- **Automation workflows**: Pre-built workflows for welcome, abandoned cart, browse abandonment, post-purchase, win-back, birthday, back-in-stock. Custom workflows with any trigger. Multi-channel steps: email + SMS + web push in one workflow.
+- **Segmentation**: Dynamic segments based on shopping behavior (purchased, viewed, carted), email engagement, contact properties, lifecycle stage, and RFM scoring. Auto-assigned lifecycle stages (New Subscriber, Active Customer, At Risk, Lapsed, Champions).
+- **Product recommendations**: AI-powered product recommendation blocks in emails based on browsing and purchase history. Requires ecommerce integration.
+- **Popups & forms**: Popup, embedded, landing page, Wheel of Fortune (gamified), multi-step (email → SMS). Targeting by URL, device, referral source, scroll depth, exit intent.
+- **Reporting**: Revenue attribution per campaign and automation, click maps, segment comparison.
+- **Pricing**: Free (250 contacts, 500 emails/mo), Standard ($16/mo, 500 contacts, 6K emails), Pro ($59/mo, unlimited emails). Contact-based billing. 30% discount for 3-month prepay.
+- **Omnisend's strength**: Best for ecommerce brands that want email + SMS + push in one platform at a lower price point than Klaviyo, with strong pre-built automations and ecommerce integrations. Easier learning curve than Klaviyo but less advanced segmentation and predictive analytics.
+
 ### In Klaviyo
 
 Klaviyo is a data-driven marketing automation platform built specifically for e-commerce. It's the dominant choice for Shopify-based brands and excels at behavior-triggered multi-channel messaging.
@@ -412,6 +435,12 @@ Perform these maintenance tasks regularly:
 - **/sales-mailgun** — Mailgun platform help (developer-first email API, mailing lists, templates, batch sending)
 - **/sales-klaviyo** — Klaviyo platform help (e-commerce flows, predictive analytics, Shopify integration, multi-channel)
 - **/sales-activecampaign** — ActiveCampaign platform help (visual automation builder, CRM, lead scoring, predictive sending)
+- **/sales-kit** — Kit (formerly ConvertKit) platform help (Visual Automations, Sequences, Commerce, Creator Recommendations)
+- **/sales-omnisend** — Omnisend platform help (email/SMS/push for ecommerce, Shopify/WooCommerce integration)
+- **/sales-sms-marketing** — SMS marketing strategy (opt-in, compliance, campaigns, automation)
+- **/sales-newsletter** — Newsletter monetization (paid subscriptions, sponsorships, premium tiers)
+- **/sales-audience-growth** — Growing an email list (lead magnets, cross-promotion, referral programs)
+- **/sales-digital-products** — Selling digital products (ebooks, courses, templates)
 - **/sales-cadence** — Cold outbound email cadences and sequences (NOT opt-in marketing)
 - **/sales-deliverability** — SPF, DKIM, DMARC, domain warm-up, and inbox placement
 - **/sales-funnel** — Funnel strategy and page design (landing pages that feed your email list)

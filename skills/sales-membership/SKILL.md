@@ -145,6 +145,18 @@ Similar to Teachable with a free plan available. Strong course builder with more
 
 Community-first platform ($99/month flat). Combines a community feed (like Facebook Groups) with a simple course area. Gamification with leaderboards and levels. Best for community-driven memberships where peer interaction is the primary value. Course features are intentionally simple.
 
+### In Kit
+
+Kit (formerly ConvertKit) offers a lightweight membership model through paid newsletters and gated content. For full platform help, use `/sales-kit`.
+
+- **Paid newsletters**: Create a subscription product via Commerce. Subscribers pay monthly/annually for access to exclusive email content.
+- **Gated sequences**: Use tags to gate Sequence content — only paid subscribers (tagged on purchase) receive premium sequences.
+- **Gated broadcasts**: Use segments to send premium broadcasts only to paying subscribers.
+- **Community**: No built-in community features. Pair with Circle, Skool, or Discord for community.
+- **Course delivery**: No dedicated course builder — Kit is not a course platform. For structured courses, use Teachable, Kajabi, or Thinkific and connect to Kit for email.
+- **Payment**: Stripe required. 0.6% Kit fee + Stripe fees.
+- **Best for**: Creators running a paid newsletter or premium email content tier. Not suitable for structured courses with modules, lessons, quizzes, or progress tracking — use a dedicated course platform.
+
 ### Other Platforms
 
 - **Podia**: Simple, affordable ($39–$89/month). Courses, memberships, digital downloads, coaching, email. Good for beginners.
@@ -251,6 +263,9 @@ Create a 5-email onboarding sequence for new members:
 
 - `/sales-getresponse` — GetResponse platform help (Course Creator, premium newsletters, webinars)
 - `/sales-groove` — Groove.cm platform-specific guidance (GrooveMember, GrooveSell, GroovePages)
+- `/sales-kit` — Kit platform help (paid newsletters, Commerce, Creator Recommendations)
+- `/sales-newsletter` — Newsletter monetization (paid subscriptions, sponsorships, premium tiers)
+- `/sales-digital-products` — Selling digital products (ebooks, templates, courses)
 - `/sales-checkout` — Payment pages, order bumps, upsells, and checkout optimization
 - `/sales-email-marketing` — Email sequences, automations, and campaigns for member communication
 - `/sales-webinar` — Webinar-based selling and live launch events

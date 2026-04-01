@@ -10,7 +10,7 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 70 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 77 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -335,12 +335,27 @@ Router recommends a 5-skill sequence:
 |---|---|---|
 | `/sales-braze` | Braze platform help — Canvas Flow, Campaigns, email (Liquid templating, Connected Content), push notifications, in-app messages, Content Cards, SMS/MMS/RCS, WhatsApp, LINE, BrazeAI (predictive, generative, Decisioning Studio), Braze Data Platform (CDI, Currents), segmentation, Catalogs, Feature Flags, transactional email API, REST API, Braze Alloys integrations | Available |
 
+### Omnisend & Platform
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-omnisend` | Omnisend platform help — email campaigns, SMS marketing, web push, automation workflows, popups/forms, segmentation, product recommendations, reporting, Shopify/WooCommerce/BigCommerce integrations, API | Available |
+
+### Kit (ConvertKit) & Platform
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-kit` | Kit (formerly ConvertKit) platform help — Visual Automations, Sequences, Broadcasts, landing pages, forms, Creator Profile, Commerce (digital products, paid newsletters), Creator Recommendations, subscriber tagging, segmentation, engagement scoring, API | Available |
+
 ### Funnels, Email Marketing & Digital Sales
 
 | Skill | What it does | Status |
 |---|---|---|
 | `/sales-funnel` | Build and optimize sales funnels — strategy, structure, conversion, A/B testing across ClickFunnels, GoHighLevel, Groove, and more | Available |
-| `/sales-email-marketing` | Opt-in email marketing — broadcasts, nurture sequences, automation, segmentation across GrooveMail, Mailchimp, ActiveCampaign, and more | Available |
+| `/sales-email-marketing` | Opt-in email marketing — broadcasts, nurture sequences, automation, segmentation across Kit, GrooveMail, Mailchimp, ActiveCampaign, and more | Available |
+| `/sales-newsletter` | Newsletter monetization — paid subscriptions, sponsorships, ad sales, paid recommendations, premium tiers across Kit, Substack, Beehiiv, Ghost, and more | Available |
+| `/sales-audience-growth` | Grow an email list or newsletter audience — lead magnets, cross-promotion, referral programs, social-to-email across Kit, Beehiiv, Mailchimp, and more | Available |
+| `/sales-digital-products` | Sell digital products — ebooks, templates, courses, downloads, pricing strategy, launch playbooks across Kit Commerce, Gumroad, Lemon Squeezy, and more | Available |
 | `/sales-affiliate-program` | Design and manage affiliate programs — commissions, recruitment, tracking, payouts across GrooveAffiliate, PartnerStack, and more | Available |
 | `/sales-webinar` | Webinar-based selling — live and evergreen strategy, presentation, follow-up across GrooveWebinar, Demio, WebinarJam, and more | Available |
 | `/sales-membership` | Membership sites and online courses — structure, pricing, retention across GrooveMember, Kajabi, Teachable, and more | Available |
@@ -350,6 +365,7 @@ Router recommends a 5-skill sequence:
 | `/sales-transactional-email` | Transactional/triggered email delivery — provider selection, API/SMTP integration, templates, deliverability across SendGrid, Postmark, Mailgun, Brevo, Customer.io, SES | Available |
 | `/sales-live-chat` | Live chat and chatbot for sales — widget setup, chatbot flows, agent routing, chat-to-lead conversion across Brevo, Drift, Intercom, HubSpot, Crisp, and more | Available |
 | `/sales-loyalty` | Customer loyalty programs — points, tiers, rewards, VIP programs, member engagement, ROI across Brevo Loyalty, Smile.io, LoyaltyLion, Yotpo, and more | Available |
+| `/sales-sms-marketing` | SMS marketing — opt-in collection, compliance (TCPA/GDPR), campaign types, automation, two-way messaging, analytics across Omnisend, Klaviyo, Attentive, Postscript, Brevo, and more | Available |
 | `/sales-push-notification` | Mobile and web push notification strategy — opt-in optimization, rich push, segmentation, timing, frequency capping, deep linking across Braze, OneSignal, Airship, Firebase/FCM, Customer.io, Klaviyo, Iterable, MoEngage | Available |
 | `/sales-in-app-messaging` | In-app messages and content cards — onboarding, feature announcements, surveys, promotions, trigger design across Braze, Iterable, Intercom, Pendo, Appcues, Customer.io, MoEngage | Available |
 

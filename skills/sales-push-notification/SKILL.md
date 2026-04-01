@@ -182,6 +182,16 @@ iOS requires explicit user permission for push. Android auto-enables but users c
 - **Strength**: Strong cross-channel orchestration with AI features. Brand Affinity and Frequency Optimization are unique differentiators for push targeting.
 - **Platform skill**: `/sales-iterable`
 
+### In Omnisend
+- **Web push only**: Browser push notifications to opted-in website visitors — no native mobile app push
+- **Unlimited on all plans**: Web push included free on all Omnisend plans including free tier
+- **Automation integration**: Web push as a step in any Omnisend automation workflow (cart abandonment, browse abandonment, welcome, etc.) alongside email and SMS
+- **Content**: Title, message, image, URL, action buttons
+- **Targeting**: Send to all subscribers or specific segments based on shopping behavior, engagement, or lifecycle stage
+- **Best for**: Ecommerce brands on Omnisend who want web push as a third channel alongside email and SMS at no extra cost
+- **Limitation**: Web push only — no iOS/Android native push. For mobile push, use a dedicated push platform (OneSignal, Braze) alongside Omnisend.
+- **Platform skill**: `/sales-omnisend`
+
 ### In MoEngage
 - **MoEngage**: Strong in APAC markets. AI-driven push optimization, smart triggers, geo-targeting. Good for media and e-commerce in India/SE Asia.
 
@@ -225,8 +235,10 @@ iOS requires explicit user permission for push. Android auto-enables but users c
 - `/sales-braze` — Braze platform help (push setup, Canvas integration, BrazeAI timing)
 - `/sales-customerio` — Customer.io platform help (push in Journeys)
 - `/sales-klaviyo` — Klaviyo platform help (push for Shopify e-commerce)
+- `/sales-omnisend` — Omnisend platform help (web push + email + SMS for ecommerce)
 - `/sales-in-app-messaging` — In-app messages and content cards (companion to push)
 - `/sales-email-marketing` — Email marketing strategy (coordinate push + email cadence)
+- `/sales-sms-marketing` — SMS marketing strategy (coordinate push + SMS cadence)
 - `/sales-live-chat` — Live chat and chatbot (another engagement channel)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
