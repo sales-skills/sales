@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Omnisend, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, ZoomInfo, Brevo, Braze, Iterable, GetResponse, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Omnisend, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, ZoomInfo, Brevo, Braze, Iterable, GetResponse, SendPulse, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -647,6 +647,14 @@ Before building anything custom, check if a native integration exists:
 - **Webinar platforms**: Zoom, GoToWebinar integration (in addition to built-in webinars).
 - **Important note**: GetResponse "campaign" = mailing list in the API. `POST /v3/campaigns` creates a list, not an email send. `POST /v3/newsletters` creates an email send.
 
+### SendPulse webhooks, API & integrations
+- **Webhooks**: Email events (delivered, opened, clicked, bounced, spam, unsubscribed), SMTP events, chatbot events (subscribed, message, livechat, trigger).
+- **REST API**: OAuth 2.0 auth. SDKs in 7 languages: PHP, Python, Ruby, Java, Node.js, C#, Go.
+- **MCP Server**: github.com/sendpulse/mcp-server — for AI agent integration.
+- **Zapier**: 30+ triggers/actions (new subscriber, email sent, new deal, contact updated).
+- **Make (Integromat)**: Full module set for email, SMS, chatbot, CRM.
+- **Native integrations**: WordPress, WooCommerce, Shopify, OpenCart, PrestaShop, Magento, Bitrix24, Salesforce, HubSpot, Pipedrive.
+
 ### Seismic webhooks
 - **Events**: Content views, LiveSend opens, DSR engagement, user provisioning (SCIM)
 - **Setup**: Configure via the developer portal (developer.seismic.com). OAuth 2.0 auth.
@@ -731,6 +739,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-braze` — Braze platform help (Currents data streaming, CDI warehouse sync, 170+ Alloys integrations, REST API, Canvas webhooks, Connected Content)
 - `/sales-brevo` — Brevo platform help (email/SMS/WhatsApp campaigns, automation, transactional API, CRM, 150+ integrations, webhooks)
 - `/sales-getresponse` — GetResponse platform help (REST API v3, webhooks/callbacks, Zapier, native CRM sync, e-commerce integrations)
+- `/sales-sendpulse` — SendPulse platform help (email/SMS/chatbot/CRM, REST API with OAuth 2.0, 7 SDKs, Zapier/Make, MCP server, webhooks)
 - `/sales-closum` — Closum platform help (omnichannel marketing automation: email, SMS, WhatsApp, Telegram, Web Push)
 - `/sales-mailchimp` — Mailchimp platform help (email marketing, automations, SMS, 300+ integrations, Marketing + Transactional APIs)
 - `/sales-sendgrid` — SendGrid platform help (Email API, Marketing Campaigns, Event Webhooks, Inbound Parse, 353 partner integrations)

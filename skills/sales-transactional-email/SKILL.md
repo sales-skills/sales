@@ -1,6 +1,6 @@
 ---
 name: sales-transactional-email
-description: "Transactional and triggered email delivery — order confirmations, password resets, welcome emails, receipts, shipping notifications, account alerts. Covers provider selection, template design, deliverability, API integration, SMTP relay, and monitoring across SendGrid, Postmark, Mailgun, Brevo, Braze, Iterable, Customer.io, Mailchimp/Mandrill, GetResponse (MAX only), and Amazon SES. Use when building transactional email flows, choosing a transactional email provider, debugging delivery issues for triggered emails, or setting up SMTP relay. Do NOT use for marketing email campaigns (use /sales-email-marketing), cold outbound sequences (use /sales-cadence), or cross-platform deliverability strategy (use /sales-deliverability). For platform-specific help, use /sales-braze, /sales-iterable, /sales-sendgrid, /sales-postmark, /sales-mailgun, /sales-brevo, /sales-customerio, /sales-mailchimp, or /sales-getresponse."
+description: "Transactional and triggered email delivery — order confirmations, password resets, welcome emails, receipts, shipping notifications, account alerts. Covers provider selection, template design, deliverability, API integration, SMTP relay, and monitoring across SendGrid, Postmark, Mailgun, Brevo, Braze, Iterable, Customer.io, Mailchimp/Mandrill, GetResponse (MAX only), and Amazon SES. Use when building transactional email flows, choosing a transactional email provider, debugging delivery issues for triggered emails, or setting up SMTP relay. Do NOT use for marketing email campaigns (use /sales-email-marketing), cold outbound sequences (use /sales-cadence), cross-platform deliverability strategy (use /sales-deliverability), or SendPulse-specific questions (use /sales-sendpulse). For platform-specific help, use /sales-braze, /sales-iterable, /sales-sendgrid, /sales-postmark, /sales-mailgun, /sales-brevo, /sales-customerio, /sales-mailchimp, /sales-getresponse, or /sales-sendpulse."
 argument-hint: "[describe your transactional email question or goal]"
 license: MIT
 metadata:
@@ -187,6 +187,18 @@ Ask the user:
 - **Strength**: Good if you're already on Mailchimp for marketing and want one vendor.
 - **Platform skill**: `/sales-mailchimp`
 
+### In SendPulse
+- **API endpoint**: `POST https://api.sendpulse.com/smtp/emails` with `subject`, `from`, `to`, `html`, and optional `attachments`
+- **Auth**: OAuth 2.0 — exchange `client_id` + `client_secret` for a 1-hour access token. Static API key also supported.
+- **Delivery tracking**: `GET /smtp/emails/{id}` for per-message status, `GET /smtp/bounces` for bounce list, `GET /smtp/unsubscribe` for unsubscribes
+- **Webhooks**: `smtp_delivered`, `smtp_opened`, `smtp_clicked`, `smtp_bounced`, `smtp_unsubscribed`
+- **SDKs**: PHP, Python, Ruby, Java, Node.js, C#, Go
+- **Free tier**: 12,000 transactional emails/month
+- **Dedicated IP**: Available on higher-tier paid plans
+- **Strength**: Generous free tier for transactional email with broad SDK support. Good for startups and mid-volume senders who want quick integration without per-email pricing pressure.
+- **Limitation**: OAuth token expiry (1 hour) adds complexity vs. static API keys. Less specialized in transactional delivery than Postmark or SendGrid.
+- **Platform skill**: `/sales-sendpulse`
+
 ### In Amazon SES
 - **API**: AWS SDK or SMTP interface
 - **Auth**: AWS IAM credentials
@@ -235,6 +247,7 @@ Ask the user:
 - `/sales-customerio` — Customer.io platform help
 - `/sales-mailchimp` — Mailchimp/Mandrill platform help
 - `/sales-getresponse` — GetResponse platform help (transactional email on MAX plan, marketing automation, webinars)
+- `/sales-sendpulse` — SendPulse platform help (SMTP transactional email, marketing automation, chatbots)
 - `/sales-deliverability` — Cross-platform email deliverability (SPF/DKIM/DMARC, warmup, reputation)
 - `/sales-email-marketing` — Opt-in marketing email strategy (not transactional)
 - `/sales-integration` — Connect email tools with CRM and other systems

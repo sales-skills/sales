@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-chatbot",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I want to build a WhatsApp chatbot that qualifies leads by asking about their company size and budget, then books a demo for qualified leads or sends a resource guide for unqualified ones. How do I set this up?",
+      "expected_output": "Guide covering WhatsApp Business API connection, qualification flow design with branching based on company size/budget answers, meeting booking for qualified leads, content delivery for unqualified, and 24-hour window considerations",
+      "assertions": [
+        {"name": "whatsapp_rules", "description": "Must mention the 24-hour messaging window and template message requirements for messaging outside the window"},
+        {"name": "qualification_flow", "description": "Must describe a branching flow that asks qualification questions and routes to different outcomes based on answers"},
+        {"name": "handoff_or_booking", "description": "Must explain how to connect qualified leads to a demo booking or human handoff, and how to deliver content to unqualified leads"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "We get hundreds of support questions on our website and Facebook page. I want a bot that handles FAQs automatically and transfers to a human when it can't answer. What's the best approach?",
+      "expected_output": "Strategy for building a multi-channel FAQ bot with structured menus, fallback handling, and human handoff configuration across website widget and Facebook Messenger",
+      "assertions": [
+        {"name": "faq_structure", "description": "Must recommend organizing FAQs into categories/menus with button-based navigation rather than free-text matching"},
+        {"name": "fallback_escalation", "description": "Must describe fallback behavior when the bot can't answer and automatic escalation to human agents"},
+        {"name": "multi_channel", "description": "Must address deploying the same bot logic across both website live chat and Facebook Messenger"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I'm using SendPulse and want to connect my Telegram bot to my email marketing so that when someone completes the bot flow, they get added to an email sequence. How do I wire this up?",
+      "expected_output": "Technical guide for connecting SendPulse chatbot flows to Automation 360 email sequences using actions, tags, or API triggers",
+      "assertions": [
+        {"name": "sendpulse_chatbot", "description": "Must reference SendPulse's chatbot flow builder and how to add action steps that subscribe contacts to mailing lists or set tags"},
+        {"name": "automation_connection", "description": "Must explain how to trigger an Automation 360 email sequence from a chatbot event (via mailing list subscription, tag, or webhook)"},
+        {"name": "data_flow", "description": "Must describe how contact data (name, email collected in bot) flows from the chatbot to the email system for personalization"}
+      ]
+    }
+  ]
+}

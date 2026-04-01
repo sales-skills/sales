@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-sendpulse",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I want to set up a welcome automation in SendPulse that sends an email first, then a web push notification if they don't open it, and then an SMS as a last resort. How do I build this?",
+      "expected_output": "Step-by-step Automation 360 setup with multichannel flow: trigger on list subscription, email step, wait + condition check, push step, wait + condition, SMS step",
+      "assertions": [
+        {"name": "automation_360", "description": "Must reference Automation 360 as the tool for building multichannel workflows"},
+        {"name": "multichannel_steps", "description": "Must explain how to add email, web push, and SMS as separate steps in the flow with conditions/branching between them"},
+        {"name": "condition_branching", "description": "Must describe using if/else conditions to check engagement (email opened?) before escalating to the next channel"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "How do I build a WhatsApp chatbot in SendPulse that greets customers, shows a product menu, and hands off to a human agent if they need help?",
+      "expected_output": "Guide covering WhatsApp Business API connection, chatbot flow building with greeting/menu/handoff, keyword triggers, and live chat transfer",
+      "assertions": [
+        {"name": "whatsapp_api", "description": "Must mention that WhatsApp requires Business API connection and the 24-hour messaging window rule"},
+        {"name": "flow_builder", "description": "Must describe using the visual chatbot flow builder with greeting, menu buttons, and branching responses"},
+        {"name": "live_handoff", "description": "Must explain configuring live chat handoff for transferring from bot to human agent"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I'm building a custom app and need to send transactional emails and track delivery via the SendPulse API. Walk me through the setup.",
+      "expected_output": "Technical guide covering OAuth authentication, SMTP email endpoint, webhook setup for delivery tracking",
+      "assertions": [
+        {"name": "authentication", "description": "Must explain OAuth 2.0 authentication with client_id/client_secret and the 1-hour token expiry requiring refresh logic"},
+        {"name": "smtp_endpoint", "description": "Must describe the POST /smtp/emails endpoint with request format including to, from, subject, html fields"},
+        {"name": "webhooks", "description": "Must recommend setting up webhooks for delivery/bounce/open tracking events"}
+      ]
+    }
+  ]
+}

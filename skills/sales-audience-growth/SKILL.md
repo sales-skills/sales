@@ -188,6 +188,16 @@ Ask the user:
 - **WebSights** — identifies companies visiting your site (even without form fills) via IP-to-company matching. Feeds visitor data into advertising retargeting or sales alerts.
 - **Conversion impact** — shorter forms typically increase conversion rates by 30-50%. FormComplete maintains data richness while reducing visible fields.
 
+### In SendPulse
+- **Pop-up forms**: Exit-intent, timed, scroll-triggered, and floating bar — multiple trigger types to capture visitors at the right moment
+- **Subscription forms**: Embed forms directly in landing pages or websites for inline list building
+- **A/B testing**: Test pop-up variations (design, copy, timing) to optimize conversion rates
+- **Smart display rules**: Page targeting, frequency capping, and device targeting — control exactly who sees which pop-up and how often
+- **Pop-up analytics**: Track impressions, conversions, and conversion rate per form to identify top performers
+- **API**: `GET /popups` and `GET /popups/{id}/statistics` for programmatic access to form data and performance metrics
+- **Multi-channel follow-up**: Contacts collected via pop-ups are automatically added to mailing lists for email, SMS, and push notification follow-up sequences
+- **Free plan**: Pop-up builder included on the free tier — no cost to get started with audience growth forms
+
 ## Step 4 — Actionable guidance
 
 ### Quick-start plan by stage
@@ -253,6 +263,7 @@ Ask the user:
 - `/sales-getresponse` — GetResponse platform help
 - `/sales-activecampaign` — ActiveCampaign platform help
 - `/sales-omnisend` — Omnisend platform help (popups, forms, Wheel of Fortune for ecommerce)
+- `/sales-sendpulse` — SendPulse platform help (pop-ups, subscription forms, multi-channel follow-up)
 - `/sales-zoominfo` — ZoomInfo platform help (FormComplete, WebSights)
 - `/sales-b2b-advertising` — account-based advertising (WebSights feeds retargeting audiences)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

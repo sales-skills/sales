@@ -151,6 +151,21 @@ GetResponse includes a basic live chat widget as part of its all-in-one marketin
 - **Integration** — chat transcripts and visitor data sync to Salesforce, HubSpot, and ZoomInfo CRM records
 - **Advantage** — ZoomInfo Chat knows WHO is visiting (company, size, industry) before the chat starts, enabling personalized experiences. Most chat tools only see anonymous visitors until they self-identify.
 
+### In SendPulse
+
+SendPulse offers a full-featured live chat solution as part of its multi-channel marketing platform:
+
+- **Website chat widget**: Customizable appearance and colors to match your brand. Pre-chat form captures visitor details before the conversation starts.
+- **Unified inbox**: Conversations from Telegram, Facebook, WhatsApp, Instagram, Viber, and your website chat all appear in a single panel — agents never have to switch between apps.
+- **Bot-to-human handoff**: SendPulse chatbots can handle initial qualification and transfer to a live agent seamlessly when the visitor needs human help.
+- **Canned responses**: Pre-written quick replies for common questions — speeds up agent response time.
+- **Visitor info panel**: Agents see pages viewed, location, and device info alongside the conversation for better context.
+- **Business hours**: Configure online/offline hours. When agents are unavailable, an offline form collects messages for follow-up.
+- **Mobile app**: Agents can respond from iOS or Android — useful for small teams without a dedicated support desk.
+- **Free plan**: Live chat is included on SendPulse's free plan, making it accessible for startups and solopreneurs.
+- **Best for**: Teams already using SendPulse for email or chatbots who want unified multi-channel conversations without adding a separate chat tool.
+- **Platform skill**: `/sales-sendpulse`
+
 ### In LiveChat / Zendesk / Tidio / Freshdesk
 - **LiveChat**: Support-focused with ticketing integration. Good for support teams.
 - **Zendesk Chat**: Part of Zendesk Suite — best if you're already on Zendesk for support.
@@ -195,6 +210,8 @@ GetResponse includes a basic live chat widget as part of its all-in-one marketin
 - `/sales-getresponse` — GetResponse platform help (built-in live chat widget)
 - `/sales-brevo` — Brevo platform help (Conversations live chat setup)
 - `/sales-salesloft` — Salesloft/Drift platform help (enterprise sales chat)
+- `/sales-sendpulse` — SendPulse platform help (live chat, unified inbox, bot-to-human handoff)
+- `/sales-chatbot` — Chatbot design and automation
 - `/sales-meeting-scheduler` — Book meetings from chat conversations
 - `/sales-lead-routing` — Route chat-qualified leads to the right rep
 - `/sales-lead-score` — Score chat leads based on qualification data

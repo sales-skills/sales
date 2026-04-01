@@ -441,6 +441,16 @@ These tools simulate real email conversations to build sender reputation. Run wa
 - **Domain authentication** — configure SPF, DKIM, and DMARC for all sending domains. This is done at the DNS/email provider level, not in ZoomInfo.
 - **Custom tracking domain** — set up a custom tracking domain for open/click tracking to avoid shared tracking domain reputation issues.
 
+### In SendPulse (verification + domain auth + dedicated IP)
+- **Built-in email verifier**: Validate addresses before sending. Single email — `POST /verifier` checks syntax, domain, MX records, and mailbox existence. Bulk — `POST /verifier/mailing_lists/{id}` verifies an entire mailing list in one call.
+- **Free tier**: 100 email verifications per month on the free plan. Sufficient for small lists; upgrade for higher volume.
+- **Bounce management**: Hard bounces are automatically suppressed — SendPulse removes invalid addresses from future sends without manual intervention.
+- **Reputation monitoring**: Sender domain reputation is tracked in the dashboard. Monitor reputation scores to catch issues before they affect inbox placement.
+- **Dedicated IP**: Available on paid plans. Recommended once you exceed ~50k sends/month so your reputation isn't shared with other senders.
+- **SPF/DKIM setup**: Configure SPF and DKIM records via Account Settings → Domain Authentication. SendPulse provides the exact DNS records to add.
+- **Spam score checker**: The email editor includes a built-in spam score check — run it before every send to catch content-level red flags (spammy words, broken HTML, missing unsubscribe link).
+- **Best practice**: Verify your list with the bulk verifier endpoint before launching a campaign, set up SPF/DKIM on day one, and use the spam score checker on every email. Move to a dedicated IP once volume justifies it.
+
 ### Standalone tools (any platform)
 - **MXToolbox**: DNS lookup, blacklist check, SPF/DKIM/DMARC validation
 - **mail-tester.com**: Send a test email, get a deliverability score (aim for 9+/10)
@@ -530,6 +540,7 @@ If your domain reputation is damaged:
 - `/sales-transactional-email` — Transactional email delivery strategy (separate from marketing deliverability)
 - `/sales-prospect-list` — Build prospect lists with verified contacts
 - `/sales-omnisend` — Omnisend platform help (domain auth, lifecycle segmentation, ecommerce email/SMS/push)
+- `/sales-sendpulse` — SendPulse platform help (email verifier, bounce management, reputation monitoring, dedicated IP, spam score checker)
 - `/sales-zoominfo` — ZoomInfo platform help (Engage email configuration)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 

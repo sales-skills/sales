@@ -1,6 +1,6 @@
 ---
 name: sales-membership
-description: "Build and manage membership sites and online courses — course structure, content delivery, pricing models, retention, community, and platform selection. Use when creating an online course, building a membership site, designing drip content, pricing memberships, reducing churn, or choosing a course platform. Do NOT use for webinar-based selling (use /sales-webinar), checkout and payment setup (use /sales-checkout), or email marketing to members (use /sales-email-marketing). For Groove-specific help, use /sales-groove."
+description: "Build and manage membership sites and online courses — course structure, content delivery, pricing models, retention, community, and platform selection. Use when creating an online course, building a membership site, designing drip content, pricing memberships, reducing churn, or choosing a course platform. Do NOT use for webinar-based selling (use /sales-webinar), checkout and payment setup (use /sales-checkout), email marketing to members (use /sales-email-marketing), or SendPulse-specific help (use /sales-sendpulse). For Groove-specific help, use /sales-groove."
 argument-hint: "[describe your membership or course question — e.g., 'structure a 12-week course' or 'reduce membership churn']"
 license: MIT
 metadata:
@@ -145,6 +145,20 @@ Similar to Teachable with a free plan available. Strong course builder with more
 
 Community-first platform ($99/month flat). Combines a community feed (like Facebook Groups) with a simple course area. Gamification with leaderboards and levels. Best for community-driven memberships where peer interaction is the primary value. Course features are intentionally simple.
 
+### In SendPulse (EDU)
+
+SendPulse EDU is SendPulse's online course platform, integrated with Automation 360 for email and chatbot flows. For full platform help, use `/sales-sendpulse`.
+
+- **Course builder**: Create courses with lessons, modules, and quizzes. Organize content into a structured curriculum.
+- **Student management**: Enroll students and track progress and completion per student.
+- **Drip content delivery**: Unlock lessons over time on a schedule, controlling the pace of student progression.
+- **Certificates**: Issue completion certificates automatically when students finish a course.
+- **Payment integration**: Connect Stripe or PayPal for paid courses. One-time or subscription pricing.
+- **Automation 360 integration**: Trigger email sequences, chatbot flows, or push notifications on enrollment, lesson completion, or course completion. Use this for onboarding sequences, drip reminders, engagement nudges, and win-back campaigns.
+- **API**: `GET /edu/courses` (list courses), `POST /edu/courses` (create course), `GET /edu/courses/{id}/students` (list enrolled students), `POST /edu/courses/{id}/students` (enroll a student). Use the API to automate enrollment from external funnels or CRMs.
+- **Strength**: Tight integration with SendPulse's email, SMS, and chatbot channels means you can build multi-channel onboarding and engagement flows without third-party connectors.
+- **Limitation**: Newer course platform — fewer customization options and community features compared to Kajabi, Teachable, or Thinkific. Best for creators already in the SendPulse ecosystem who want courses alongside their email and chatbot marketing.
+
 ### In Kit
 
 Kit (formerly ConvertKit) offers a lightweight membership model through paid newsletters and gated content. For full platform help, use `/sales-kit`.
@@ -264,6 +278,7 @@ Create a 5-email onboarding sequence for new members:
 - `/sales-getresponse` — GetResponse platform help (Course Creator, premium newsletters, webinars)
 - `/sales-groove` — Groove.cm platform-specific guidance (GrooveMember, GrooveSell, GroovePages)
 - `/sales-kit` — Kit platform help (paid newsletters, Commerce, Creator Recommendations)
+- `/sales-sendpulse` — SendPulse platform help (EDU courses, Automation 360, email, chatbots)
 - `/sales-newsletter` — Newsletter monetization (paid subscriptions, sponsorships, premium tiers)
 - `/sales-digital-products` — Selling digital products (ebooks, templates, courses)
 - `/sales-checkout` — Payment pages, order bumps, upsells, and checkout optimization

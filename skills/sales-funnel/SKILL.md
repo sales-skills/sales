@@ -229,6 +229,17 @@ Kit offers landing pages and forms as growth tools for building email lists and 
 - **Automation integration**: Form submissions trigger Visual Automations — welcome sequences, tagging, conditional branching.
 - **Best for**: Lead magnet funnels (landing page → email sequence) and digital product sales pages for creators. Not a full multi-step funnel builder — no upsell/downsell page flows, no order bumps. For complex multi-step funnels, use ClickFunnels or Groove.cm and connect to Kit for email follow-up.
 
+### In SendPulse
+
+SendPulse includes a drag-and-drop website and landing page builder as part of its marketing platform. For full platform help, use `/sales-sendpulse`.
+
+- **Landing pages & websites**: Drag-and-drop builder with pre-built templates for lead capture, sales pages, and webinar registration. Free plan includes 1 website with up to 5 pages.
+- **Subscription forms & pop-ups**: Built-in opt-in forms and pop-ups for lead capture — embed on SendPulse-hosted pages or external sites.
+- **Custom domains**: Connect your own domain to SendPulse-hosted pages for a branded experience.
+- **Platform integration**: Pages connect natively to SendPulse mailing lists, Automation 360 workflows, and CRM — form submissions flow directly into email sequences and deal pipelines.
+- **Limitations**: SendPulse's website builder is simpler than dedicated funnel builders (ClickFunnels, Groove.cm). No multi-step funnel flows, no upsell/downsell pages, no order bumps or built-in checkout. For complex funnels, use a dedicated funnel builder and connect to SendPulse for email/SMS/push follow-up.
+- **Best for**: Landing pages and simple sales pages where SendPulse is already the email/automation tool. Strong choice for lead magnet funnels (landing page → email sequence) that leverage SendPulse's multi-channel follow-up (email, SMS, web push, chatbots).
+
 ### In Other Tools
 
 - **Unbounce / Leadpages**: Best for standalone landing pages and opt-in pages rather than full multi-step funnels. Use Unbounce Smart Traffic for AI-driven A/B testing. Connect to a separate checkout tool (ThriveCart, Stripe) and email tool.
@@ -349,6 +360,7 @@ Follow this framework for every test:
 - `/sales-closum` — Closum platform help (landing pages, forms, omnichannel automation)
 - `/sales-mailchimp` — Mailchimp platform help (landing pages, signup forms, email sequences)
 - `/sales-kit` — Kit platform help (landing pages, forms, Creator Profile, Commerce)
+- `/sales-sendpulse` — SendPulse platform help (landing pages, email, SMS, chatbots, Automation 360)
 - `/sales-audience-growth` — Growing an email list (lead magnets, cross-promotion, referral programs)
 - `/sales-digital-products` — Selling digital products (platform selection, pricing, launch)
 - `/sales-do` — Route to any sales skill by describing what you need

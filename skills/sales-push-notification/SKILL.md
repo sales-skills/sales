@@ -192,6 +192,17 @@ iOS requires explicit user permission for push. Android auto-enables but users c
 - **Limitation**: Web push only — no iOS/Android native push. For mobile push, use a dedicated push platform (OneSignal, Braze) alongside Omnisend.
 - **Platform skill**: `/sales-omnisend`
 
+### In SendPulse
+- **Web push only**: Browser-based push notifications for Chrome, Firefox, and Safari — no native mobile app push
+- **Free plan**: Unlimited push subscribers, 10,000 web push notifications per month
+- **Subscriber segmentation**: Segment by URL visited, country, browser, and subscription date
+- **Campaigns**: Scheduled and triggered push campaigns with A/B testing for push content (title, message, image variants)
+- **Automation 360 integration**: Add web push as a step in SendPulse multichannel automation flows alongside email, SMS, and chatbots
+- **API**: `POST /push/tasks` (send push), `GET /push/tasks` (list campaigns), `GET /push/websites/{id}/subscribers` (subscriber data)
+- **Strength**: Good free tier for web push with built-in multichannel automation. Best for teams already using SendPulse for email or chatbots who want to add web push as an additional channel.
+- **Limitation**: Web push only — no iOS/Android native push. For mobile push, pair with a dedicated push platform (OneSignal, Braze).
+- **Platform skill**: `/sales-sendpulse`
+
 ### In MoEngage
 - **MoEngage**: Strong in APAC markets. AI-driven push optimization, smart triggers, geo-targeting. Good for media and e-commerce in India/SE Asia.
 
@@ -236,6 +247,7 @@ iOS requires explicit user permission for push. Android auto-enables but users c
 - `/sales-customerio` — Customer.io platform help (push in Journeys)
 - `/sales-klaviyo` — Klaviyo platform help (push for Shopify e-commerce)
 - `/sales-omnisend` — Omnisend platform help (web push + email + SMS for ecommerce)
+- `/sales-sendpulse` — SendPulse platform help (web push + email + chatbots + Automation 360)
 - `/sales-in-app-messaging` — In-app messages and content cards (companion to push)
 - `/sales-email-marketing` — Email marketing strategy (coordinate push + email cadence)
 - `/sales-sms-marketing` — SMS marketing strategy (coordinate push + SMS cadence)

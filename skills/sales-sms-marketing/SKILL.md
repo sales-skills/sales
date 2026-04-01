@@ -203,6 +203,18 @@ SMS is lowest-value for:
 - **Best for**: Teams already on Mailchimp who want basic SMS without switching platforms
 - **Platform skill**: `/sales-mailchimp`
 
+### In SendPulse
+- **Bulk SMS campaigns**: Send personalized bulk SMS with merge fields (name, order details, custom variables)
+- **Automation 360**: Trigger SMS from email events, chatbot events, CRM actions, and custom events — SMS lives alongside email, push, and chatbot in one automation flow
+- **Sender ID registration**: Register a branded sender ID for recipient trust (availability varies by country regulation)
+- **Contacts management**: Import/manage SMS contacts, maintain a blacklist, segment by engagement
+- **API**: `POST /sms/send` (single/bulk), `GET /sms/campaigns` (list campaigns), `POST /sms/contacts/add` (add contacts) — full programmatic control
+- **Delivery reports and analytics**: Per-campaign delivery, click, and cost reporting
+- **200+ countries supported**: Wide international reach — check per-country rates before sending
+- **Pay-per-message pricing**: No monthly SMS fee — you only pay per message sent, making it cost-effective for lower-volume or bursty senders
+- **Best for**: Teams already using SendPulse for email/chatbots who want to add SMS without a new vendor, or businesses needing affordable international SMS
+- **Platform skill**: `/sales-sendpulse`
+
 ## Step 4 — Actionable guidance
 
 ### SMS program launch checklist
@@ -258,6 +270,7 @@ SMS is lowest-value for:
 - `/sales-brevo` — Brevo platform help (SMS + email + WhatsApp + push)
 - `/sales-activecampaign` — ActiveCampaign platform help (SMS in marketing automation)
 - `/sales-mailchimp` — Mailchimp platform help (SMS add-on)
+- `/sales-sendpulse` — SendPulse platform help (SMS + email + chatbots + Automation 360)
 - `/sales-email-marketing` — Email marketing strategy (coordinate SMS + email cadence)
 - `/sales-push-notification` — Push notification strategy (another engagement channel)
 - `/sales-audience-growth` — Growing your subscriber list (feeds SMS opt-in)

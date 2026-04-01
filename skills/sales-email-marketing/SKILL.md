@@ -1,6 +1,6 @@
 ---
 name: sales-email-marketing
-description: "Email marketing for opt-in subscribers — broadcasts, nurture sequences, automation, segmentation, and list management. Use when planning email campaigns, designing welcome sequences, setting up behavior-based automation, segmenting lists, improving open/click rates, or choosing an email marketing platform. Do NOT use for cold outbound email (use /sales-cadence), email deliverability/SPF/DKIM (use /sales-deliverability), transactional/triggered email (use /sales-transactional-email), or connecting email tools to CRM (use /sales-integration). For GetResponse-specific help, use /sales-getresponse. For Iterable-specific help, use /sales-iterable. For Braze-specific help, use /sales-braze. For Brevo-specific help, use /sales-brevo. For Groove-specific help, use /sales-groove. For Closum-specific help, use /sales-closum. For Mailchimp-specific help, use /sales-mailchimp. For SendGrid-specific help, use /sales-sendgrid. For Postmark-specific help, use /sales-postmark. For Customer.io-specific help, use /sales-customerio. For Mailgun-specific help, use /sales-mailgun. For Klaviyo-specific help, use /sales-klaviyo. For ActiveCampaign-specific help, use /sales-activecampaign. For Kit-specific help, use /sales-kit. For Omnisend-specific help, use /sales-omnisend."
+description: "Email marketing for opt-in subscribers — broadcasts, nurture sequences, automation, segmentation, and list management. Use when planning email campaigns, designing welcome sequences, setting up behavior-based automation, segmenting lists, improving open/click rates, or choosing an email marketing platform. Do NOT use for cold outbound email (use /sales-cadence), email deliverability/SPF/DKIM (use /sales-deliverability), transactional/triggered email (use /sales-transactional-email), or connecting email tools to CRM (use /sales-integration). For GetResponse-specific help, use /sales-getresponse. For Iterable-specific help, use /sales-iterable. For Braze-specific help, use /sales-braze. For Brevo-specific help, use /sales-brevo. For Groove-specific help, use /sales-groove. For Closum-specific help, use /sales-closum. For Mailchimp-specific help, use /sales-mailchimp. For SendGrid-specific help, use /sales-sendgrid. For Postmark-specific help, use /sales-postmark. For Customer.io-specific help, use /sales-customerio. For Mailgun-specific help, use /sales-mailgun. For Klaviyo-specific help, use /sales-klaviyo. For ActiveCampaign-specific help, use /sales-activecampaign. For Kit-specific help, use /sales-kit. For Omnisend-specific help, use /sales-omnisend. For SendPulse-specific help, use /sales-sendpulse."
 argument-hint: "[describe your email marketing question — e.g., 'design a welcome sequence' or 'improve my open rates']"
 license: MIT
 metadata:
@@ -319,6 +319,19 @@ Omnisend is an ecommerce-first email & SMS marketing automation platform — the
 - **Pricing**: Free (250 contacts, 500 emails/mo), Standard ($16/mo, 500 contacts, 6K emails), Pro ($59/mo, unlimited emails). Contact-based billing. 30% discount for 3-month prepay.
 - **Omnisend's strength**: Best for ecommerce brands that want email + SMS + push in one platform at a lower price point than Klaviyo, with strong pre-built automations and ecommerce integrations. Easier learning curve than Klaviyo but less advanced segmentation and predictive analytics.
 
+### In SendPulse
+
+SendPulse is an affordable multi-channel marketing platform with strong email automation and a generous free tier. Key email marketing capabilities:
+
+- **Email campaigns**: Visual drag-and-drop editor with 130+ pre-designed templates. A/B testing for subject lines, email content, and send times — test up to 3 variants per campaign.
+- **Mailing lists**: Custom variables (fields) on contacts for personalization and dynamic content. Segment lists by engagement, demographics, custom variables, or behavior. Import contacts via CSV, copy-paste, or API.
+- **Automation 360**: Trigger-based email flows for welcome series, abandoned cart recovery, re-engagement, birthday/anniversary, and custom event triggers. Visual flow builder with conditions, delays, filters, and actions. Connects email flows to chatbot flows (Telegram, Facebook, WhatsApp) within the same automation — unique cross-channel capability.
+- **Subscriber rating**: Engagement scoring system that rates subscribers based on opens, clicks, and activity. Use ratings to segment engaged vs. disengaged subscribers and target re-engagement campaigns.
+- **Send time optimization**: AI-powered optimal send time per recipient based on historical engagement patterns. Available on paid plans.
+- **Verifier integration**: Built-in email address verification to clean lists before sending — reduces bounces without a third-party tool.
+- **Pricing**: Free plan (500 subscribers, 15,000 emails/month — one of the most generous free tiers). Paid plans start at $8/mo for 500 subscribers with unlimited emails. Scales by subscriber count.
+- **SendPulse's strength**: Best for small businesses and solopreneurs who want email marketing + chatbots + SMS + web push in one affordable platform, especially those connecting email automations to chatbot flows via Automation 360. Less advanced segmentation than Klaviyo or ActiveCampaign but significantly cheaper.
+
 ### In Klaviyo
 
 Klaviyo is a data-driven marketing automation platform built specifically for e-commerce. It's the dominant choice for Shopify-based brands and excels at behavior-triggered multi-channel messaging.
@@ -437,6 +450,8 @@ Perform these maintenance tasks regularly:
 - **/sales-activecampaign** — ActiveCampaign platform help (visual automation builder, CRM, lead scoring, predictive sending)
 - **/sales-kit** — Kit (formerly ConvertKit) platform help (Visual Automations, Sequences, Commerce, Creator Recommendations)
 - **/sales-omnisend** — Omnisend platform help (email/SMS/push for ecommerce, Shopify/WooCommerce integration)
+- **/sales-sendpulse** — SendPulse platform help (email, chatbots, SMS, web push, Automation 360)
+- **/sales-chatbot** — Chatbot strategy and automation (SendPulse Automation 360 connects email flows to chatbot flows)
 - **/sales-sms-marketing** — SMS marketing strategy (opt-in, compliance, campaigns, automation)
 - **/sales-newsletter** — Newsletter monetization (paid subscriptions, sponsorships, premium tiers)
 - **/sales-audience-growth** — Growing an email list (lead magnets, cross-promotion, referral programs)
