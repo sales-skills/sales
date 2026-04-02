@@ -3,11 +3,9 @@ name: sales-content
 description: "Sales content management — organizing, distributing, and measuring sales collateral (battle cards, one-pagers, case studies, decks, playbooks, ROI calculators). Also covers content governance, content audits, and sales-marketing alignment on content. Use when building a content library, creating battle cards, organizing sales collateral, auditing content usage, improving content findability, aligning marketing and sales on content needs, or measuring content effectiveness. Do NOT use for writing marketing copy (use /copywriting), Seismic-specific platform help (use /sales-seismic), proposal page design (use /sales-proposal-page), or email sequence copywriting (use /sales-cadence)."
 argument-hint: "[describe your sales content question — e.g., 'organize our battle cards' or 'audit which content reps actually use']"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, content, enablement, collateral]
 ---
-
 # Sales Content Management
 
 Help the user organize, distribute, measure, and govern sales collateral — from building a content library and creating battle cards through auditing content effectiveness and aligning marketing with sales on content needs. This skill is tool-agnostic and applies to any enablement platform (Seismic, Highspot, Showpad, Guru) or general-purpose tool (Google Drive, SharePoint, Notion).

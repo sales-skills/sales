@@ -2,8 +2,9 @@
 name: sales-proposal-template
 description: "Design reusable Qwilr proposal templates for your whole sales team. Use when creating a proposal template, building a Qwilr template, standardizing proposals across reps, building a template library, enabling your team with templates, creating consistent proposals, or designing vertical-specific templates."
 argument-hint: "[describe your team's needs — what you sell, deal types, what's broken today]"
+version: 1.0.0
+tags: [sales, proposal, templates, qwilr]
 ---
-
 # Design Reusable Qwilr Proposal Templates
 
 Help the user design a system of reusable Qwilr templates that their whole sales team can use — with standardized structure, consistent branding, and token-ready fields for API/CRM auto-population.

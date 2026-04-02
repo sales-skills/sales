@@ -3,11 +3,9 @@ name: sales-compete
 description: "Run competitive displacement campaigns — find competitor customers, identify those ready to switch, and build targeted outreach with displacement-specific messaging. Use when targeting a competitor's install base, building a competitive takeout list, finding companies evaluating alternatives, or designing win-away campaigns. Do NOT use for general prospect list building (use /sales-prospect-list), competitive positioning/messaging frameworks (use /sales-positioning), or general outreach writing (use /sales-outreach)."
 argument-hint: "[name the competitor and your product/value prop]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, competitive-intelligence, displacement, win-loss]
 ---
-
 # Competitive Displacement Campaigns
 
 Help the user find competitor customers, identify those ready to switch, and build targeted outreach with displacement-specific messaging. This skill is platform-agnostic but references Apollo.io's technographic and intent data as the primary source. The same frameworks apply to ZoomInfo, G2, BuiltWith, HG Insights, or any technographic/intent provider.

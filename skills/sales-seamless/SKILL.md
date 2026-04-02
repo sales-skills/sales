@@ -3,11 +3,9 @@ name: sales-seamless
 description: "Seamless.AI platform help — Prospector, Buyer Intent, Job Changes, CRM Enrich, Pitch Intelligence, Engagement Hub (email, calling, social), AI Agents, Autopilot, Chrome extension, API. Use when asking 'how do I do X in Seamless.AI', configuring Seamless.AI settings, searching for contacts/companies, setting up Buyer Intent, using Pitch Intelligence, managing AI Agents, or using the Seamless.AI API. Do NOT use for building prospect lists (use /sales-prospect-list), enriching contacts across tools (use /sales-enrich), interpreting buying signals across tools (use /sales-intent), cadence strategy (use /sales-cadence), cross-platform deliverability (use /sales-deliverability), or sales content strategy (use /sales-content)."
 argument-hint: "[describe what you need help with in Seamless.AI]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, enrichment, prospecting, platform]
 ---
-
 # Seamless.AI Platform Help
 
 Help the user with Seamless.AI platform questions — from contact/company search and Buyer Intent through Engagement Hub, AI Agents, Pitch Intelligence, CRM Enrich, Autopilot, Chrome extension, and API integration.

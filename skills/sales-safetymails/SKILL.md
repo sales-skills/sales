@@ -3,11 +3,9 @@ name: sales-safetymails
 description: "SafetyMails platform help — bulk email verification (up to 2M emails, 19-step algorithm), real-time API validation (JavaScript embed for forms), Email Finder (B2B corporate lookup), list cleaning, spamtrap/disposable/catch-all detection, integrations. Use when asking 'how do I do X in SafetyMails', verifying emails with SafetyMails, cleaning email lists in SafetyMails, setting up SafetyMails API/JavaScript embed, using SafetyMails Email Finder, or managing SafetyMails integrations. Do NOT use for general deliverability strategy across tools (use /sales-deliverability), general enrichment strategy (use /sales-enrich), building prospect lists (use /sales-prospect-list), or connecting tools generically (use /sales-integration)."
 argument-hint: "[describe what you need help with in SafetyMails]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, email-verification, deliverability, platform]
 ---
-
 # SafetyMails Platform Help
 
 Help the user with SafetyMails platform questions — from bulk email verification and list cleaning through real-time API validation, Email Finder, integrations, and credit management.

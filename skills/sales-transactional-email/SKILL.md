@@ -3,11 +3,9 @@ name: sales-transactional-email
 description: "Transactional and triggered email delivery — order confirmations, password resets, welcome emails, receipts, shipping notifications, account alerts. Covers provider selection, template design, deliverability, API integration, SMTP relay, and monitoring across SendGrid, Postmark, Mailgun, Brevo, Braze, Iterable, Customer.io, Mailchimp/Mandrill, GetResponse (MAX only), and Amazon SES. Use when building transactional email flows, choosing a transactional email provider, debugging delivery issues for triggered emails, or setting up SMTP relay. Do NOT use for marketing email campaigns (use /sales-email-marketing), cold outbound sequences (use /sales-cadence), cross-platform deliverability strategy (use /sales-deliverability), or SendPulse-specific questions (use /sales-sendpulse). For platform-specific help, use /sales-braze, /sales-iterable, /sales-sendgrid, /sales-postmark, /sales-mailgun, /sales-brevo, /sales-customerio, /sales-mailchimp, /sales-getresponse, or /sales-sendpulse."
 argument-hint: "[describe your transactional email question or goal]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, transactional-email, triggered-email, api]
 ---
-
 # Transactional Email Delivery
 
 Help the user with transactional/triggered email — from provider selection and template design through API integration, SMTP relay, deliverability, and monitoring. This skill is tool-agnostic but includes platform-specific guidance for SendGrid, Postmark, Mailgun, Brevo, Customer.io, Mailchimp/Mandrill, and Amazon SES.

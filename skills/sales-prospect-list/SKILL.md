@@ -3,11 +3,9 @@ name: sales-prospect-list
 description: "Build targeted B2B prospect lists for outbound campaigns. Use when building a prospect list, defining an ICP, searching for leads, filtering contacts by title/industry/company size, creating saved searches, segmenting lists, finding decision-makers at target accounts, or building lists in ZoomInfo. Do NOT use for enriching existing contacts with emails/phones (use /sales-enrich), interpreting buying signals (use /sales-intent), or general Apollo platform help (use /sales-apollo)."
 argument-hint: "[describe target persona, industry, company size, or campaign goal]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, prospecting, list-building, targeting]
 ---
-
 # Build a Targeted Prospect List
 
 Help the user build a targeted B2B prospect list — from ICP definition through filter strategy, list sizing, segmentation, and quality checks. This skill is platform-agnostic but references Apollo.io as the primary tool. The same frameworks apply to ZoomInfo, LinkedIn Sales Navigator, Clay, Lusha, or any data provider.

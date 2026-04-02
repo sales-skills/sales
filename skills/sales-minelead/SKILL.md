@@ -3,11 +3,9 @@ name: sales-minelead
 description: "Minelead platform help — B2B email finder, verifier, and lead generation. Company Email Search (domain-based email discovery, 500M+ emails, 100M+ business profiles), Email Finder (professional email from first+last name + domain), Lead Finder / Tags (discover companies from keywords and locations), Email Verifier (deliverability validation with quality scoring 25-100%), Disposable Email Detector (temporary email identification, score 0-5), Email Campaigns (send via connected Gmail accounts, round-robin multi-account support), Leads/CRM (save, organize, export lead collections, import CSV), Bulk Operations (batch email search/verification via CSV upload), Browser Extensions (Chrome and Firefox), Integrations (HubSpot, Zoho CRM, Google Sheets, Zapier). Use when asking 'how do I find emails with Minelead', searching for company emails by domain, finding professional emails by name, generating leads from keywords, verifying email deliverability, detecting disposable emails, running email campaigns, managing leads, or working with the Minelead API. Do NOT use for cross-platform enrichment strategy (use /sales-enrich), email deliverability/verification strategy (use /sales-deliverability), prospect list building strategy (use /sales-prospect-list), or outbound sequence/cadence strategy (use /sales-cadence)."
 argument-hint: "[describe what you need help with in Minelead]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, enrichment, email-finder, platform]
 ---
-
 # Minelead Platform Help
 
 Help the user with Minelead platform questions — from Company Email Search and Email Finder through Lead Generation, Email Verification, Disposable Email Detection, Email Campaigns, Leads/CRM, Bulk Operations, and Integrations. Minelead is a London-based B2B email finder, verifier, and lead generation platform with 500M+ emails and 100M+ business profiles, offering a REST API and browser extensions for in-workflow lookup.

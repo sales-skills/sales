@@ -3,11 +3,9 @@ name: sales-in-app-messaging
 description: "In-app messages and content cards — onboarding, feature announcements, surveys, promotions, persistent content feeds. Covers strategy, design, triggering, and analytics across Braze, Iterable, Intercom, Pendo, Appcues, Customer.io, MoEngage, and Leanplum. Use when designing in-app message campaigns, building onboarding tours, choosing in-app messaging tools, optimizing in-app engagement, or deciding between in-app messages and push/email. Do NOT use for push notifications (use /sales-push-notification), email marketing (use /sales-email-marketing), live chat widgets (use /sales-live-chat), or cold outbound (use /sales-cadence). For Braze-specific help, use /sales-braze."
 argument-hint: "[describe your in-app messaging question or goal]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, messaging, in-app, onboarding, product-led]
 ---
-
 # In-App Messages & Content Cards
 
 Help the user with in-app messaging — from strategy and message type selection through trigger design, content cards, onboarding flows, and analytics. This skill is tool-agnostic but includes platform-specific guidance for Braze, Iterable, Intercom, Pendo, Appcues, Customer.io, MoEngage, and Leanplum.

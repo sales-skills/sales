@@ -3,11 +3,9 @@ name: sales-email-tracking
 description: "Email engagement tracking for sales — open tracking, click tracking, attachment views, real-time notifications, follow-up timing, and engagement analytics. Use when setting up email tracking, interpreting open/click data, Mixmax tracking, Woodpecker tracking, timing follow-ups based on engagement, understanding tracking limitations (Apple MPP, pixel blocking), Reply.io tracking, or choosing a tracking tool. For Yesware-specific help, use /sales-yesware. Do NOT use for email deliverability (use /sales-deliverability), cadence design (use /sales-cadence), buying intent signals beyond email (use /sales-intent), SendGrid-specific config (use /sales-sendgrid), Postmark-specific config (use /sales-postmark), Customer.io-specific config (use /sales-customerio), Mailgun-specific config (use /sales-mailgun), Klaviyo-specific config (use /sales-klaviyo), or ActiveCampaign-specific config (use /sales-activecampaign)."
 argument-hint: "[describe your email tracking question or goal]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, email-tracking, open-rates, engagement]
 ---
-
 # Email Engagement Tracking for Sales
 
 Help the user set up, interpret, and act on email tracking data — from understanding how tracking works through interpreting engagement signals and timing follow-ups. This skill is tool-agnostic and applies to any email tracking platform (Yesware, Salesloft, Apollo, HubSpot Sales, Mailshake, Mixmax), with platform-specific sections where relevant.

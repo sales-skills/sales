@@ -3,11 +3,9 @@ name: sales-prospeo
 description: "Prospeo platform help — person enrichment, company enrichment, person search, company search, bulk enrichment, Chrome extension, LinkedIn Sales Navigator extraction, 5-step email verification, intent signals, API. Use when asking 'how do I do X in Prospeo', configuring Prospeo settings, managing enrichment, using the Prospeo API, or troubleshooting Prospeo issues. Do NOT use for building prospect lists (use /sales-prospect-list), enrichment strategy across tools (use /sales-enrich), cross-platform deliverability (use /sales-deliverability), or interpreting buying signals (use /sales-intent)."
 argument-hint: "[describe what you need help with in Prospeo]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, enrichment, email-finder, linkedin, platform]
 ---
-
 # Prospeo Platform Help
 
 Help the user with Prospeo platform questions — from person/company enrichment and search through bulk operations, Chrome extension, API, and integrations.

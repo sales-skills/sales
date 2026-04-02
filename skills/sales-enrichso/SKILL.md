@@ -3,11 +3,9 @@ name: sales-enrichso
 description: "Enrich.so platform help — real-time B2B data enrichment API. Reverse Email Lookup (LinkedIn profile, job title, company, 50+ data points from email), LinkedIn Profile Enrichment (full profile from URL — education, positions, skills, contact info), LinkedIn to Email, Email Finder (verified business email from name + company), Phone Number Finder / Mobile Finder, Email to Phone, Company Data Lookup (by name/domain/LinkedIn URL — industry, size, revenue, tech stack), Company Funding & Traffic (rounds, investors, web traffic), Search Similar Companies (lookalikes by LinkedIn URL with filters), Search Company Employees (decision-makers by company and role), IP to Company (identify company from IP), Job Listings (real-time company job postings), Disposable Email Check, Reverse Email Append (hash to address), Email Validation (deliverability with catch-all detection), Bulk Enrichment (CSV/JSON batch with webhook callbacks), Free Tools (Company Logo Finder, Email Validation). Use when asking 'how do I enrich contacts with Enrich.so', looking up profiles by email or LinkedIn URL, finding email/phone from name+company, enriching company data, running bulk enrichment jobs, or working with the Enrich.so API. Do NOT use for cross-platform enrichment strategy (use /sales-enrich), email deliverability/verification strategy (use /sales-deliverability), or prospect list strategy (use /sales-prospect-list)."
 argument-hint: "[describe what you need help with in Enrich.so]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, enrichment, linkedin, platform]
 ---
-
 # Enrich.so Platform Help
 
 Help the user with Enrich.so platform questions — from Reverse Email Lookup and LinkedIn Profile Enrichment through Email/Phone Finders, Company Data, Similar Company Search, Employee Search, IP to Company, Job Listings, Bulk Enrichment, and Email Validation. Enrich.so is a real-time B2B data enrichment API platform providing 50+ data points per lookup with a success-based credit model (only pay for verified results).

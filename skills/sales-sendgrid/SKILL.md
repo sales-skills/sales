@@ -3,11 +3,9 @@ name: sales-sendgrid
 description: "SendGrid platform help — transactional email via Email API (REST + SMTP), Marketing Campaigns (drag-and-drop editor, automations, A/B testing, signup forms, segmentation), Email Validation API, Dynamic Templates (Handlebars), Event Webhooks, Inbound Parse, domain authentication (SPF/DKIM/DMARC), dedicated IPs, suppressions, Design Library, email testing, statistics. Use when asking 'how do I do X in SendGrid', sending transactional email with SendGrid, setting up Marketing Campaigns, configuring Event Webhooks, managing SendGrid domain authentication, using Dynamic Templates, or troubleshooting SendGrid deliverability. Do NOT use for general email marketing strategy (use /sales-email-marketing), cross-platform email deliverability (use /sales-deliverability), or email open/click tracking strategy (use /sales-email-tracking)."
 argument-hint: "[describe what you need help with in SendGrid]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, transactional-email, email-marketing, api, platform]
 ---
-
 # SendGrid Platform Help
 
 Help the user with SendGrid (Twilio) platform questions — from transactional email via the Email API and SMTP relay through Marketing Campaigns, Dynamic Templates, Event Webhooks, Inbound Parse, domain authentication, dedicated IPs, suppressions, email testing, and integrations.

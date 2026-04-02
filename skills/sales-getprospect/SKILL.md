@@ -3,11 +3,9 @@ name: sales-getprospect
 description: "GetProspect platform help — B2B email finder, verifier, enrichment, and cold email outreach with 200M+ contacts and 26M+ companies. Email Finder (search contacts by name, company, title, domain with 17+ filters, 95% accuracy on verified emails), LinkedIn Email Finder Extension (Chrome extension to export leads from LinkedIn and Sales Navigator), B2B Contact Database (200M+ contacts, 26M+ companies, advanced filters), Contact Enrichment (append 40+ data attributes including location, industry, tech stack, phone numbers), Email Verifier (validate deliverability with 95% accuracy, catch-all detection, bulk verification, 97% deliverability guarantee), Cold Email Software (multi-step sequences, A/B testing, auto-stop on reply/click, timezone-aware sending, SPF/DKIM checks), Built-in CRM (lists, tags, custom properties, notes, companies, domain blacklisting), Reverse Email Lookup (find person/company data from email address), Phone Numbers (mobile/direct phone credits), Team Collaboration (shared templates, campaigns, lists, team credit sharing). Use when asking 'how do I find emails with GetProspect', searching for B2B contacts, enriching leads, verifying emails, building cold email sequences, exporting leads from LinkedIn, or working with the GetProspect API. Do NOT use for cross-platform enrichment strategy (use /sales-enrich), email deliverability/verification strategy (use /sales-deliverability), prospect list building strategy (use /sales-prospect-list), or outbound sequence/cadence strategy (use /sales-cadence)."
 argument-hint: "[describe what you need help with in GetProspect]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, enrichment, email-finder, linkedin, platform]
 ---
-
 # GetProspect Platform Help
 
 Help the user with GetProspect platform questions — from Email Finder and B2B Contact Database through Contact Enrichment, Email Verification, Cold Email Software, Built-in CRM, LinkedIn Extension, and Integrations. GetProspect is a Ukrainian B2B email finder, verifier, enrichment, and cold email outreach platform founded in 2016, serving 400K+ customers with a database of 200M+ contacts and 26M+ companies.

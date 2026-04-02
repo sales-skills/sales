@@ -3,11 +3,9 @@ name: sales-live-chat
 description: "Live chat and chatbot for sales and support — widget setup, routing, chatbot flows, agent management, visitor tracking, chat-to-lead conversion, proactive messaging. Covers strategy and implementation across Brevo Conversations, Drift (Salesloft), Intercom, HubSpot, Crisp, LiveChat, Zendesk, Tidio, Freshdesk, and ZoomInfo Chat. Use when setting up live chat, building chatbot flows, optimizing chat-to-lead conversion, routing chats to agents, or choosing a live chat tool. Do NOT use for email sequences (use /sales-cadence), email marketing (use /sales-email-marketing), or meeting scheduling (use /sales-meeting-scheduler). For platform-specific help, use /sales-brevo or /sales-salesloft."
 argument-hint: "[describe your live chat or chatbot question or goal]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, live-chat, chatbot, support]
 ---
-
 # Live Chat & Chatbot for Sales
 
 Help the user with live chat and chatbot — from tool selection and widget setup through chatbot flow design, agent routing, visitor tracking, and chat-to-lead conversion. This skill is tool-agnostic but includes platform-specific guidance for Brevo Conversations, Drift (Salesloft), Intercom, HubSpot, Crisp, LiveChat, Zendesk, Tidio, Freshdesk, and ZoomInfo Chat.

@@ -3,11 +3,9 @@ name: sales-seismic
 description: "Seismic platform help — Enablement Cloud, content management, Learning & Coaching, Aura AI, Digital Sales Rooms, Meeting Intelligence, LiveSend, LiveDocs, Programs, Seismic Exchange, API & integrations. Use when asking 'how do I do X in Seismic', configuring Seismic content library, setting up Learning paths, building Digital Sales Rooms, using LiveSend tracking, generating LiveDocs, managing enablement programs, using Aura AI, or integrating Seismic with CRM. Do NOT use for general sales content strategy (use /sales-content), sales coaching frameworks (use /sales-coaching), cross-platform deal room strategy (use /sales-deal-room), or connecting tools via Zapier (use /sales-integration)."
 argument-hint: "[describe what you need help with in Seismic]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, enablement, content, platform]
 ---
-
 # Seismic Platform Help
 
 Help the user with Seismic platform questions — from content management and LiveDocs through Digital Sales Rooms, Learning & Coaching, Aura AI, Meeting Intelligence, LiveSend, Programs, API, and integrations.

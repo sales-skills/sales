@@ -3,11 +3,9 @@ name: sales-6sense
 description: "6sense platform help — Signalverse Intent Data, Predictive Analytics (6AI Scoring), Sales Intelligence (Sales Copilot), AI Email Agents (Conversational Email), Advertising & Audience Activation, Orchestration Workflows, Segments, Company Identification API, People/Company Enrichment API, Company Discovery, Campaign Analytics. Use when asking 'how do I set up 6sense', '6sense intent data', '6sense predictive scoring', '6sense AI email agents', '6sense advertising', '6sense segments', '6sense API', '6sense Sales Intelligence', '6sense vs Demandbase'. Do NOT use for intent strategy across tools (use /sales-intent), lead scoring strategy across tools (use /sales-lead-score), enrichment strategy across tools (use /sales-enrich), B2B advertising strategy across tools (use /sales-b2b-advertising), or cadence/sequence strategy across tools (use /sales-cadence)."
 argument-hint: "[describe what you need help with in 6sense]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, abm, intent-data, enrichment, advertising, platform]
 ---
-
 # 6sense Platform Help
 
 Help the user with 6sense platform questions — Signalverse Intent Data, Predictive Analytics, Sales Intelligence, AI Email Agents, Advertising & Audience Activation, Orchestration Workflows, Segments, APIs, and integrations.

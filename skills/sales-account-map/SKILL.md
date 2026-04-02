@@ -3,11 +3,9 @@ name: sales-account-map
 description: "Map the buying committee at a target account — identify decision-makers, influencers, champions, and blockers, then recommend a multi-threading strategy. Use when mapping stakeholders at a deal, finding the right entry point at a target account, multi-threading an enterprise deal, understanding who's involved in a purchase decision, or planning account penetration. Do NOT use for building prospect lists across many accounts (use /sales-prospect-list), general account research (use /sales-research), deal health assessment (use /sales-deal-inspect), or ZoomInfo-specific org chart config (use /sales-zoominfo)."
 argument-hint: "[name the target account and what you're selling]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, abm, account-based-marketing, buying-committee]
 ---
-
 # Map the Buying Committee
 
 Help the user map the full buying committee at a target account — identify who's involved in the purchase decision, what role each person plays, and how to multi-thread the account effectively. This skill is platform-agnostic but references Apollo.io as the primary data source for finding and enriching contacts. The same approach works with ZoomInfo, LinkedIn Sales Navigator, or any contact database.

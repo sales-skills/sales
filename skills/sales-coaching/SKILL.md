@@ -3,11 +3,9 @@ name: sales-coaching
 description: "Sales coaching and training — onboarding new reps, skill development, role-play practice, coaching programs, certifications, manager coaching cadences, and measuring coaching impact. Use when building an onboarding program, creating a coaching framework, running role-plays, designing certification paths, improving ramp time, building a coaching culture, or measuring coaching ROI. Do NOT use for reviewing specific sales call recordings (use /sales-call-review), Seismic-specific platform help (use /sales-seismic), or sales content creation (use /sales-content)."
 argument-hint: "[describe your coaching question — e.g., 'build an onboarding program for new AEs' or 'create a coaching framework for frontline managers']"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, coaching, training, onboarding, enablement]
 ---
-
 # Sales Coaching & Training
 
 Help the user build coaching programs, onboard new reps, run role-plays, design certification paths, and measure coaching impact. This skill is tool-agnostic and applies to any enablement platform (Seismic Learning, MindTickle, SalesHood, Brainshark), conversation intelligence tool (Gong, Chorus), or manual approach.

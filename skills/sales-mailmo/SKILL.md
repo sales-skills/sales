@@ -3,11 +3,9 @@ name: sales-mailmo
 description: "Mailmo platform help — Email Finder, Email Verifier, catch-all detection, LinkedIn Chrome extension, bulk verification, CSV export. Use when asking 'how do I do X in Mailmo', finding emails with Mailmo, verifying emails with Mailmo, using the Mailmo Chrome extension, or doing bulk verification in Mailmo. Do NOT use for building prospect lists (use /sales-prospect-list), cross-platform deliverability (use /sales-deliverability), enriching contacts across multiple tools (use /sales-enrich), or sending cold emails (Mailmo is a finder/verifier, not a sending tool — use /sales-cadence for outreach strategy)."
 argument-hint: "[describe what you need help with in Mailmo]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, enrichment, email-finder, verification, platform]
 ---
-
 # Mailmo Platform Help
 
 Help the user with Mailmo platform questions — from finding and verifying emails through the LinkedIn Chrome extension, bulk verification, and CSV export workflows.

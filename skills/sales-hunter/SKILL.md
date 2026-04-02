@@ -3,11 +3,9 @@ name: sales-hunter
 description: "Hunter.io platform help — Domain Search, Email Finder, Email Verifier, Campaigns, Discover, Signals, TechLookup, Leads, browser extension, API, integrations, MCP server. Use when asking 'how do I do X in Hunter', finding emails with Hunter, verifying emails with Hunter, setting up Hunter campaigns, using Hunter Discover or Signals, configuring Hunter integrations, or using the Hunter API. Do NOT use for building prospect lists (use /sales-prospect-list), designing cadence strategy (use /sales-cadence), cross-platform deliverability (use /sales-deliverability), or enriching contacts across multiple tools (use /sales-enrich)."
 argument-hint: "[describe what you need help with in Hunter.io]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, enrichment, email-finder, verification, platform]
 ---
-
 # Hunter.io Platform Help
 
 Help the user with Hunter.io platform questions — from finding and verifying emails through campaign setup, Discover, Signals, TechLookup, API, and integrations.

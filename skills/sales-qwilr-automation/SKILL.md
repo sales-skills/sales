@@ -2,8 +2,9 @@
 name: sales-qwilr-automation
 description: "Build automations connecting Qwilr to CRM and other tools via API, Zapier, or native integrations. Use when connecting Qwilr to HubSpot, connecting Qwilr to Salesforce, setting up Qwilr Zapier workflows, auto-generating proposals from CRM data, using the Qwilr API, automating proposal creation, syncing Qwilr with CRM, configuring Qwilr webhooks, or building Qwilr integrations."
 argument-hint: "[describe what you want to automate — e.g., 'auto-create proposals when a deal hits Stage 3 in HubSpot']"
+version: 1.0.0
+tags: [sales, proposal, automation, crm, qwilr]
 ---
-
 # Automate Qwilr with CRM & Tools
 
 Help the user build automations that connect Qwilr to their CRM and other tools — via the Qwilr REST API, Zapier, or native integrations.

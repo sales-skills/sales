@@ -2,8 +2,9 @@
 name: sales-request-skill
 description: "Request or contribute a new sales/marketing/GTM skill that doesn't exist yet. Use when no existing skill covers the user's need — helps them build the skill and submit a PR, or file an issue requesting it. Also use when the user says 'there should be a skill for this', 'can we make a skill', 'I want to contribute a skill', or 'none of the sales skills cover my use case'."
 argument-hint: "[describe the missing capability]"
+version: 1.0.0
+tags: [sales, meta, skill-request]
 ---
-
 # Request or Build a Missing Sales Skill
 
 The user needs a sales, marketing, or GTM capability that doesn't have a skill yet. Help them contribute it or request it.

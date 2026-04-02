@@ -3,11 +3,9 @@ name: sales-cadence
 description: "Design multi-channel outbound cadences with timing, A/B testing, and content. Use when building a Salesloft cadence, building a Mailshake campaign, building a Smartlead campaign, building a Lemlist sequence, building a Yesware campaign, building a Mixmax sequence, building a Reply.io sequence, building a Woodpecker campaign, building a Hunter.io campaign, building a Seamless.AI engagement sequence, building a ZoomInfo Engage sequence, designing an outbound sequence, planning touchpoint timing, writing cadence emails, creating call scripts, A/B testing subject lines, optimizing sequence performance, or planning multi-channel outreach. Do NOT use for general outreach message writing (use /sales-outreach), marketing cold email (use /cold-email), automated email flows (use /email-sequence), or general Salesloft platform help (use /sales-salesloft)."
 argument-hint: "[describe campaign goal, target persona, channels, and constraints]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, outbound, sequences, cadence, multi-channel]
 ---
-
 # Design a Multi-Channel Outbound Cadence
 
 Help the user design a complete outbound cadence for Salesloft, Mailshake, Smartlead, Lemlist, Yesware, or Hunter.io — from architecture and timing through full content for every step, A/B testing, and optimization benchmarks.

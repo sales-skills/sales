@@ -3,11 +3,9 @@ name: sales-anymailfinder
 description: "Anymail Finder platform help — email finder and verification tool with 97%+ delivery guarantee. Email Finder by Person (name + company/domain lookup, verified email with status), Email Finder by Company/Domain (find up to 20 emails at a company), Email Finder by Decision Maker (role-based search: ceo, engineering, finance, hr, it, logistics, marketing, operations, buyer, sales — returns name, title, LinkedIn URL, email), Email Finder by LinkedIn URL (extract email from LinkedIn profile), Email Verifier (valid/risky/invalid status, 0.2 credits), Bulk Email Search (up to 100K rows, async processing, JSON or CSV/Excel upload, webhook notifications), GeoLead Finder (location-based lead discovery), Chrome Extension (browser-based email finding), Domain Email Count/Order/Download (count and retrieve all emails at a domain), Report Bad Email (feedback mechanism). Use when asking 'how do I find emails with Anymail Finder', looking up emails by name and company, finding decision-maker emails by role, verifying email addresses, running bulk email searches, finding emails from LinkedIn URLs, discovering leads by location, or working with the Anymail Finder API. Do NOT use for cross-platform enrichment strategy (use /sales-enrich), email deliverability/warmup strategy (use /sales-deliverability), or prospect list building strategy (use /sales-prospect-list)."
 argument-hint: "[describe what you need help with in Anymail Finder]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, enrichment, email-finder, platform]
 ---
-
 # Anymail Finder Platform Help
 
 Help the user with Anymail Finder platform questions — from Email Finder (by person, company, decision maker, or LinkedIn URL) through Email Verification, Bulk Email Search, GeoLead Finder, and Domain Email operations. Anymail Finder is a London-based email finder and verification tool (AMF Internet Services Limited, founded 2015) offering a 97%+ delivery guarantee on verified emails, a REST API with no rate limits, and a Chrome Extension for in-workflow lookup.

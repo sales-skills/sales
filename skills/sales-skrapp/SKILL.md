@@ -3,11 +3,9 @@ name: sales-skrapp
 description: "Skrapp.io platform help — B2B email finder and data enrichment. Email Finder (find verified email by name + company/domain, 92% success rate, single + bulk), Lead Finder (search 200M+ B2B contacts with 17+ filters — job title, location, industry, company size, revenue, seniority), Data Enrichment (bulk CSV/Excel upload, auto-map columns, enrich with emails + firmographics), AI Fields (ML-powered attributes — buying role, seniority, function, gender), Email Verifier (single + bulk verification, 97% accuracy, syntax/format/mailbox checks, disposable detection), Chrome Extension (LinkedIn & Sales Navigator email extraction, 25 profiles/sec), Company Search (find all professionals at a company by domain, 20M+ company profiles), CRM Integrations (HubSpot, Salesforce, Zoho, Pipedrive, Outreach, Zapier), API (REST, X-Access-Key header auth). Use when asking 'how do I find emails with Skrapp', finding B2B contacts by filters, enriching CSVs with email and firmographic data, verifying emails in bulk, extracting emails from LinkedIn, searching company contacts by domain, or working with the Skrapp API. Do NOT use for general enrichment strategy (use /sales-enrich), deliverability/warmup (use /sales-deliverability), or building prospect lists strategy (use /sales-prospect-list)."
 argument-hint: "[describe what you need help with in Skrapp.io]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, enrichment, email-finder, linkedin, platform]
 ---
-
 # Skrapp.io Platform Help
 
 Help the user with Skrapp.io platform questions — from Email Finder and Lead Finder through Data Enrichment, AI Fields, Email Verification, Chrome Extension, Company Search, and CRM Integrations. Skrapp.io is a Singapore-based (also Casablanca, Morocco) B2B email finder and data enrichment platform used by 2M+ professionals with 3B+ email searches processed, offering a REST API and Chrome extension for in-workflow lookup.

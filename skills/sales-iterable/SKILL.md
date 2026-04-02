@@ -3,11 +3,9 @@ name: sales-iterable
 description: "Iterable platform help — cross-channel customer engagement with Studio journey builder, Campaigns, email, SMS/MMS, push notifications (iOS/Android/web), in-app messages, Mobile Inbox, Embedded Messages, WhatsApp, Experiments (A/B testing), Iterable AI (Brand Affinity, Send Time Optimization, Frequency Optimization, Predictive Goals, Journey Assist, Copy Assist), Smart Ingest (Hightouch-powered data sync from 23+ sources), Snowflake Secure Data Sharing, Catalog, segmentation, system webhooks, REST API. Use when asking 'how do I do X in Iterable', configuring Studio journeys, setting up Iterable campaigns, building experiments, managing Iterable AI features, configuring Smart Ingest, or troubleshooting Iterable. Do NOT use for general email marketing strategy (use /sales-email-marketing), general push notification strategy (use /sales-push-notification), general in-app messaging strategy (use /sales-in-app-messaging), transactional email strategy (use /sales-transactional-email), cross-platform deliverability (use /sales-deliverability), or connecting tools generically (use /sales-integration)."
 argument-hint: "[describe what you need help with in Iterable]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, marketing-automation, cross-channel, platform]
 ---
-
 # Iterable Platform Help
 
 Help the user with Iterable platform questions — from Studio journey creation and campaign configuration through channel setup (email, SMS, push, in-app, web push, WhatsApp), AI features, data integration, experiments, and API usage.

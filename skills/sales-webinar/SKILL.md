@@ -3,11 +3,9 @@ name: sales-webinar
 description: "Use webinars to sell — live and automated/evergreen webinar strategy, presentation structure, registration funnels, follow-up sequences, and conversion optimization. Use when planning a webinar, designing a webinar presentation, setting up evergreen webinars, optimizing webinar attendance or conversion, or choosing a webinar platform. Do NOT use for general funnel strategy (use /sales-funnel), email follow-up sequences (use /sales-email-marketing), or general sales call prep (use /sales-call-review). For Groove-specific help, use /sales-groove."
 argument-hint: "[describe your webinar question — e.g., 'plan a selling webinar for my course' or 'convert my live webinar to evergreen']"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, webinar, events, lead-generation]
 ---
-
 # Webinar-Based Selling
 
 Help the user plan, execute, and optimize webinars as a sales channel — live selling webinars, automated/evergreen funnels, presentation structure, registration optimization, and post-webinar follow-up.

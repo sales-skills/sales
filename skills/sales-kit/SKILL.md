@@ -3,11 +3,9 @@ name: sales-kit
 description: "Kit (formerly ConvertKit) platform help — email marketing, visual automations, sequences, landing pages, forms, Creator Profile, Commerce (digital products, paid newsletters), Creator Recommendations, subscriber tagging and segmentation, engagement scoring, API. Use when asking 'how do I do X in Kit', 'how do I do X in ConvertKit', configuring Kit settings, setting up automations, managing subscribers, selling digital products, or using the Kit API. Do NOT use for cross-platform email marketing strategy (use /sales-email-marketing), cross-platform deliverability (use /sales-deliverability), funnel strategy (use /sales-funnel), newsletter monetization strategy (use /sales-newsletter), audience growth strategy (use /sales-audience-growth), or digital product strategy (use /sales-digital-products)."
 argument-hint: "[describe what you need help with in Kit]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, email-marketing, creator, newsletter, platform]
 ---
-
 # Kit Platform Help
 
 Help the user with Kit (formerly ConvertKit) platform questions — from email campaigns and automations through landing pages, commerce, Creator Recommendations, subscriber management, API, and integrations.

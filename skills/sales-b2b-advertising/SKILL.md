@@ -3,11 +3,9 @@ name: sales-b2b-advertising
 description: "Account-based B2B advertising — display ads, retargeting, cross-channel campaigns targeting specific accounts or segments. Use when running ABM ad campaigns, targeting accounts with display ads, retargeting website visitors, building B2B audiences, measuring ad-to-pipeline attribution, or choosing a B2B advertising platform. Do NOT use for email outbound (use /sales-cadence), general paid media/B2C ads (out of scope), or ZoomInfo-specific config (use /sales-zoominfo). For platform-specific help, use /sales-zoominfo."
 argument-hint: "[describe your B2B advertising question or goal]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, advertising, abm, linkedin-ads, display-ads]
 ---
-
 # B2B Account-Based Advertising
 
 Help the user plan and execute account-based B2B advertising campaigns — display, social, retargeting, and connected TV. This skill is tool-agnostic but includes platform-specific guidance for ZoomInfo MarketingOS, Demandbase, 6sense, Terminus (now DemandScience), RollWorks, LinkedIn Ads, and Google Ads (B2B targeting).

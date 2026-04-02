@@ -3,11 +3,9 @@ name: sales-sms-marketing
 description: "SMS marketing strategy — opt-in collection, compliance (TCPA/GDPR), campaign types, automation triggers, segmentation, timing, two-way messaging, MMS, and analytics. Covers strategy and implementation across Omnisend, Klaviyo, Attentive, Postscript, Brevo, ActiveCampaign, Mailchimp, and more. Use when planning SMS campaigns, collecting SMS opt-ins, designing SMS automations, choosing an SMS platform, or ensuring SMS compliance. Do NOT use for email marketing (use /sales-email-marketing), push notifications (use /sales-push-notification), cold outbound sequences (use /sales-cadence), or platform-specific config (use /sales-omnisend, /sales-klaviyo, /sales-brevo, etc.). For Omnisend-specific help, use /sales-omnisend. For Klaviyo-specific help, use /sales-klaviyo."
 argument-hint: "[describe your SMS marketing question or goal]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, sms, messaging, mobile-marketing]
 ---
-
 # SMS Marketing
 
 Help the user with SMS marketing strategy — from opt-in collection and compliance through campaign design, automation, segmentation, and analytics. This skill is tool-agnostic but includes platform-specific guidance for Omnisend, Klaviyo, Attentive, Postscript, Brevo, ActiveCampaign, Mailchimp, and others.

@@ -3,17 +3,14 @@ name: sales-membership
 description: "Build and manage membership sites and online courses — course structure, content delivery, pricing models, retention, community, and platform selection. Use when creating an online course, building a membership site, designing drip content, pricing memberships, reducing churn, or choosing a course platform. Do NOT use for webinar-based selling (use /sales-webinar), checkout and payment setup (use /sales-checkout), email marketing to members (use /sales-email-marketing), or SendPulse-specific help (use /sales-sendpulse). For Groove-specific help, use /sales-groove."
 argument-hint: "[describe your membership or course question — e.g., 'structure a 12-week course' or 'reduce membership churn']"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, membership, courses, community]
 ---
-
 # Membership Sites & Online Courses
 
 You help users build, launch, and grow membership sites and online courses. You cover course design, content delivery strategy, pricing models, member retention, community building, and platform selection across GrooveMember, Kajabi, Teachable, Thinkific, Podia, Mighty Networks, Circle, Skool, WordPress (LearnDash/MemberPress), and Patreon.
 
 ---
-
 ## Step 1: Gather Context
 
 Before recommending anything, ask clarifying questions to understand the situation:
@@ -31,7 +28,6 @@ Before recommending anything, ask clarifying questions to understand the situati
 Do not skip this step. The right strategy depends heavily on the answers.
 
 ---
-
 ## Step 2: Strategy
 
 ### Membership & Course Models
@@ -83,7 +79,6 @@ Monthly churn of 5–10% is common for membership sites. Annual retention is sig
 - **Benchmarks**: If monthly churn exceeds 10%, there is likely a value delivery or onboarding problem. If annual churn exceeds 40%, the core offer needs rethinking.
 
 ---
-
 ## Step 3: Platform-Specific Guidance
 
 ### In Groove.cm (GrooveMember)
@@ -180,7 +175,6 @@ Kit (formerly ConvertKit) offers a lightweight membership model through paid new
 - **Patreon**: Creator-focused subscription platform. Best for ongoing content creators (podcasters, writers, artists) rather than structured courses. Easy to launch but limited course/curriculum features.
 
 ---
-
 ## Step 4: Actionable Guidance
 
 ### Course Outline Template
@@ -262,7 +256,6 @@ Create a 5-email onboarding sequence for new members:
 - **Day 90**: Final attempt with a compelling new feature, content drop, or bonus
 
 ---
-
 ## Gotchas
 
 1. **Over-building before launching**: Do not build 12 modules before you have paying students. Launch with Module 1 ready and build as you go. Pre-selling validates demand.
@@ -272,7 +265,6 @@ Create a 5-email onboarding sequence for new members:
 5. **Platform migration is painful**: Switching platforms means re-uploading content, migrating members, updating payment links, and risking broken access. Choose carefully upfront, but do not let analysis paralysis stop you from launching.
 
 ---
-
 ## Related Skills
 
 - `/sales-getresponse` — GetResponse platform help (Course Creator, premium newsletters, webinars)
@@ -288,7 +280,6 @@ Create a 5-email onboarding sequence for new members:
 - `/sales-do` — Route to any sales skill by describing what you need
 
 ---
-
 ## Examples
 
 ### Example 1: Structuring a 12-Week Course
@@ -330,7 +321,6 @@ Create a 5-email onboarding sequence for new members:
 - In GroovePages: Build a sales page with a comparison table showing Basic vs. Premium features
 
 ---
-
 ## Troubleshooting
 
 ### "Students aren't completing the course"

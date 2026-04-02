@@ -3,11 +3,9 @@ name: sales-forecast
 description: "Build and validate revenue forecasts with pipeline coverage and gap analysis. Use when forecasting revenue, validating a commit, analyzing pipeline coverage, preparing for a forecast call, doing gap analysis, calculating weighted pipeline, or reviewing deal confidence levels. Do NOT use for individual deal analysis (use /sales-deal-inspect), portfolio pipeline management (use /sales-pipeline), or building outbound cadences (use /sales-cadence)."
 argument-hint: "[describe scope, time period, known numbers, and primary concern]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, forecasting, pipeline, revenue]
 ---
-
 # Build a Revenue Forecast
 
 Help the user build and validate a revenue forecast — from category modeling through pipeline coverage analysis, deal-level inspection, and gap planning.

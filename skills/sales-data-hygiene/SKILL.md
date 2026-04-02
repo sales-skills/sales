@@ -3,11 +3,9 @@ name: sales-data-hygiene
 description: "CRM data quality, deduplication, enrichment automation, record matching, and data decay management. Use when cleaning CRM data, deduplicating contacts or accounts, fixing stale records, setting up auto-enrichment workflows, normalizing job titles or industries, auditing data quality, or managing data decay. Do NOT use for one-time enrichment of a prospect list (use /sales-enrich), building new prospect lists (use /sales-prospect-list), or ZoomInfo-specific config (use /sales-zoominfo). For platform-specific help, use /sales-zoominfo."
 argument-hint: "[describe your data quality issue or goal]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, data-quality, deduplication, crm-hygiene]
 ---
-
 # CRM Data Hygiene & Quality
 
 Help the user clean, deduplicate, normalize, and maintain CRM data quality. This skill is tool-agnostic but includes platform-specific guidance for ZoomInfo OperationsOS, Salesforce native tools, HubSpot Operations Hub, Clay, LeanData, RingLead, Openprise, and DemandTools.

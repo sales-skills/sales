@@ -3,11 +3,9 @@ name: sales-zerobounce
 description: "ZeroBounce platform help — email validation, email finder, AI scoring, activity data, inbox placement testing, blacklist monitoring, DMARC, warmup. Use when asking 'how do I validate emails in ZeroBounce', 'ZeroBounce API', 'ZeroBounce scoring', 'blacklist monitoring setup', 'DMARC monitor'. Do NOT use for general deliverability strategy (use /sales-deliverability), enrichment strategy (use /sales-enrich), or prospect list building strategy (use /sales-prospect-list)."
 argument-hint: "[describe what you need help with in ZeroBounce]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, email-verification, deliverability, platform]
 ---
-
 # ZeroBounce Platform Help
 
 Help the user with ZeroBounce platform questions — from email validation and list cleaning through AI scoring, activity data, inbox placement testing, blacklist monitoring, DMARC monitoring, email warmup, API integration, and email finder.

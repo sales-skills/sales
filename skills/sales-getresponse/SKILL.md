@@ -3,11 +3,9 @@ name: sales-getresponse
 description: "GetResponse platform help — email marketing, autoresponders, visual marketing automation workflows, conversion funnels, landing pages, webinars (live and on-demand), course creator, premium newsletters, SMS marketing, web push notifications, live chat, signup forms, popups, website builder, e-commerce integrations (Shopify, WooCommerce), contact scoring, segmentation, paid ads, AI content generator, transactional email (MAX only), REST API. Use when asking 'how do I do X in GetResponse', configuring autoresponders, building automation workflows, creating conversion funnels, setting up webinars or courses, managing GetResponse contacts, or troubleshooting GetResponse. Do NOT use for general email marketing strategy (use /sales-email-marketing), general funnel strategy (use /sales-funnel), general webinar strategy (use /sales-webinar), general course/membership strategy (use /sales-membership), cross-platform deliverability (use /sales-deliverability), or connecting tools generically (use /sales-integration)."
 argument-hint: "[describe what you need help with in GetResponse]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, email-marketing, marketing-automation, platform]
 ---
-
 # GetResponse Platform Help
 
 Help the user with GetResponse platform questions — from email campaigns and autoresponders through automation workflows, conversion funnels, webinars, course creation, and API usage.

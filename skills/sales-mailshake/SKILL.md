@@ -3,11 +3,9 @@ name: sales-mailshake
 description: "Mailshake platform help — campaigns, Lead Catcher, recipients, senders, webhooks, API, analytics, integrations, deliverability settings. Use when asking 'how do I do X in Mailshake', configuring Mailshake settings, setting up Lead Catcher, managing campaigns/recipients, connecting integrations, or using the Mailshake API. Do NOT use for building prospect lists (use /sales-prospect-list), enriching contacts (use /sales-enrich), designing cadence strategy (use /sales-cadence), or cross-platform deliverability (use /sales-deliverability)."
 argument-hint: "[describe what you need help with in Mailshake]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, outbound, cold-email, sequences, platform]
 ---
-
 # Mailshake Platform Help
 
 Help the user with Mailshake platform questions — from campaign setup and Lead Catcher through recipient management, deliverability settings, API, and integrations.

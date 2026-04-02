@@ -3,11 +3,9 @@ name: sales-mailchimp
 description: "Mailchimp platform help — email marketing campaigns, Customer Journey Builder automations, SMS marketing, audience management/CRM, landing pages, A/B testing, multivariate testing, transactional email (Mandrill), Content Studio, generative AI (Intuit Assist), retargeting ads, 300+ integrations. Use when asking 'how do I do X in Mailchimp', setting up Mailchimp campaigns, configuring Customer Journey Builder, managing Mailchimp audiences, using Mandrill transactional email, or troubleshooting Mailchimp deliverability. Do NOT use for general email marketing strategy (use /sales-email-marketing), cross-platform email deliverability (use /sales-deliverability), funnel strategy (use /sales-funnel), or connecting tools via middleware (use /sales-integration)."
 argument-hint: "[describe what you need help with in Mailchimp]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, email-marketing, marketing-automation, platform]
 ---
-
 # Mailchimp Platform Help
 
 Help the user with Mailchimp platform questions — from email campaign setup and Customer Journey Builder automations through SMS marketing, audience management, landing pages, A/B testing, transactional email (Mandrill), Content Studio, retargeting ads, and integrations.

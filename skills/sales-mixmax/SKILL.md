@@ -3,11 +3,9 @@ name: sales-mixmax
 description: "Mixmax platform help — sequences, email tracking, one-click meetings, rules engine, dialer, AI Compose, Salesforce/HubSpot integration, polls, reporting. Use when asking 'how do I do X in Mixmax', setting up Mixmax sequences, configuring Mixmax rules or automations, connecting Mixmax to Salesforce or HubSpot, using Mixmax scheduling, or troubleshooting Mixmax tracking. Do NOT use for general outbound cadence strategy (use /sales-cadence), cross-platform email deliverability (use /sales-deliverability), meeting scheduling strategy (use /sales-meeting-scheduler), email tracking strategy (use /sales-email-tracking), or connecting Mixmax to other tools via Zapier (use /sales-integration)."
 argument-hint: "[describe what you need help with in Mixmax]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, outbound, email-tracking, sequences, platform]
 ---
-
 # Mixmax Platform Help
 
 Help the user with Mixmax platform questions — from sequences and email tracking through one-click meetings, rules engine, dialer, AI Compose, Salesforce/HubSpot integration, polls, and reporting.

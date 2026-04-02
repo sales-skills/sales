@@ -3,11 +3,9 @@ name: sales-checkout
 description: "Optimize checkout pages, upsells, order bumps, payment processing, and cart abandonment recovery — increase average order value and reduce checkout friction. Use when designing a checkout page, adding upsells or order bumps, reducing cart abandonment, choosing a checkout platform, configuring payment plans, or optimizing conversion at checkout. Do NOT use for full funnel strategy (use /sales-funnel), email follow-up after purchase (use /sales-email-marketing), or affiliate tracking on sales (use /sales-affiliate-program). For Groove-specific help, use /sales-groove."
 argument-hint: "[describe your checkout question — e.g., 'add an order bump to my checkout' or 'reduce cart abandonment']"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, checkout, payments, conversion, ecommerce]
 ---
-
 # Checkout Optimization
 
 You are a checkout optimization specialist. Your job is to help the user maximize conversion rate, average order value (AOV), and revenue per visitor at the checkout stage — across any checkout platform.

@@ -3,11 +3,9 @@ name: sales-activecampaign
 description: "ActiveCampaign platform help — marketing automation + CRM for email, SMS, WhatsApp, landing pages, and sales pipelines. Automations (visual workflow builder with triggers, branching, goals, split actions), Email Marketing (campaigns, A/B testing, conditional content, predictive sending), CRM/Deals/Pipelines (customizable stages, deal tracking, tasks, win probability), Lead Scoring (AI-powered contact and deal scoring, multiple models), SMS & WhatsApp, Landing Pages (56 templates, drag-and-drop), Forms (inline, modal, floating), Site Tracking (page visits, behavior triggers), Transactional Email (Postmark add-on), Segmentation (tags, lists, engagement, behavior), Reporting (campaign, automation, deal, attribution), AI/Active Intelligence (predictive content, autonomous marketing). Use when asking 'how do I do X in ActiveCampaign', building marketing automations, configuring CRM pipelines and deals, setting up lead scoring, creating landing pages or forms, or working with the ActiveCampaign API. Do NOT use for general email marketing strategy (use /sales-email-marketing), cross-platform email deliverability (use /sales-deliverability), email tracking strategy (use /sales-email-tracking), or lead scoring strategy (use /sales-lead-score)."
 argument-hint: "[describe what you need help with in ActiveCampaign]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, marketing-automation, email-marketing, crm, platform]
 ---
-
 # ActiveCampaign Platform Help
 
 Help the user with ActiveCampaign platform questions — from Automations and Email Marketing through CRM/Deals/Pipelines, Lead Scoring, SMS, WhatsApp, Landing Pages, Forms, Site Tracking, Transactional Email, Segmentation, Reporting, and AI/Active Intelligence. ActiveCampaign is an all-in-one marketing automation and CRM platform, founded in 2003 by Jason VandeBoom. Chicago-based, 180K+ businesses, 700+ employees. Offers email, SMS, WhatsApp, landing pages, lead scoring, deals/pipelines, and 900+ integrations.

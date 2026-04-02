@@ -3,11 +3,9 @@ name: sales-woodpecker
 description: "Woodpecker.co platform help — cold email campaigns, condition-based sequences, email warmup, Bounce Shield, Adaptive Sending, email verification, inbox rotation, centralized inbox, LinkedIn automation, Lead Finder, agency panel, API & webhooks. Use when asking 'how do I do X in Woodpecker', setting up Woodpecker campaigns, configuring Woodpecker warmup or deliverability, using Woodpecker's agency panel, or troubleshooting Woodpecker sending issues. Do NOT use for general outbound cadence strategy (use /sales-cadence), cross-platform email deliverability (use /sales-deliverability), email tracking strategy (use /sales-email-tracking), building prospect lists (use /sales-prospect-list), or connecting Woodpecker to other tools via Zapier (use /sales-integration)."
 argument-hint: "[describe what you need help with in Woodpecker]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, outbound, cold-email, deliverability, platform]
 ---
-
 # Woodpecker.co Platform Help
 
 Help the user with Woodpecker.co platform questions — from cold email campaign setup and condition-based sequences through deliverability tools, warmup, inbox rotation, LinkedIn automation, Lead Finder, agency panel, API, and integrations.

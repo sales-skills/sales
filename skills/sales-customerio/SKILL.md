@@ -3,11 +3,9 @@ name: sales-customerio
 description: "Customer.io platform help — customer engagement & marketing automation for behavior-based multi-channel messaging. Journeys (visual workflow builder with branching, delays, wait-untils), Campaigns (segment/event/date-triggered), Transactional Messages (API-triggered email, push, SMS), Segmentation (data-driven auto-updating and manual/static), Multi-channel (email, SMS via Twilio, push iOS/Android/web, in-app, WhatsApp), Data Pipelines (primary ingestion API, reverse ETL), Custom Objects, Ad Audience Sync (Google, Facebook, Instagram, YouTube), Design Studio (drag-and-drop email editor), A/B & cohort testing, Broadcasts (one-time/scheduled/API-triggered), Webhooks in workflows, and Analytics with AI-powered insights. Use when asking 'how do I do X in Customer.io', building behavior-triggered automation, setting up transactional messaging via Customer.io, configuring segments or journeys, integrating Customer.io Data Pipelines, or working with the Track/App/Transactional APIs. Do NOT use for general email marketing strategy (use /sales-email-marketing), cross-platform email deliverability (use /sales-deliverability), or email open/click tracking strategy (use /sales-email-tracking)."
 argument-hint: "[describe what you need help with in Customer.io]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, marketing-automation, messaging, platform]
 ---
-
 # Customer.io Platform Help
 
 Help the user with Customer.io platform questions — from behavior-triggered journeys and campaigns through transactional messaging, segmentation, multi-channel delivery (email, SMS, push, in-app, WhatsApp), Data Pipelines, Custom Objects, Ad Audience Sync, and analytics. Customer.io is a customer engagement and marketing automation platform for data-driven, event-based messaging across the entire customer lifecycle. Founded in 2012 by Colin Nederkoorn and John Allison, Customer.io serves 9,000+ brands with $100M+ ARR and differentiates through event-driven automation for product-led companies — while Mailchimp/SendGrid focus on marketing email, Customer.io excels at behavior-triggered messaging (onboarding, activation, retention, re-engagement) with first-party data at the center.

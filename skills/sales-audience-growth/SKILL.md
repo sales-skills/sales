@@ -3,11 +3,9 @@ name: sales-audience-growth
 description: "Grow an email list or newsletter audience — lead magnets, content upgrades, cross-promotion, referral programs, social-to-email conversion, SEO-to-email, viral loops, opt-in optimization. Use when growing a subscriber list, creating lead magnets, setting up referral programs, optimizing opt-in forms, or converting social followers to email subscribers. Do NOT use for sending emails to your list (use /sales-email-marketing), monetizing your newsletter (use /sales-newsletter), or platform-specific setup (use /sales-kit, /sales-mailchimp, etc.)."
 argument-hint: "[describe your audience growth question or goal]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, audience, lead-magnet, list-building, growth]
 ---
-
 # Audience Growth
 
 Help the user grow their email list or newsletter audience — lead magnets, content upgrades, cross-promotion networks, referral programs, social-to-email funnels, SEO-to-email capture, and opt-in optimization. This skill is tool-agnostic but includes platform-specific guidance.

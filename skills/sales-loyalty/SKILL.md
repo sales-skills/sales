@@ -3,11 +3,9 @@ name: sales-loyalty
 description: "Design and manage customer loyalty programs — points, tiers, rewards, referrals, VIP programs, retention mechanics. Covers strategy, structure, and implementation across Brevo Loyalty, Smile.io, LoyaltyLion, Yotpo, Stamp.me, and custom-built programs. Use when designing a loyalty program, choosing loyalty software, setting up points/tiers/rewards, optimizing member engagement, or measuring program ROI. Do NOT use for affiliate/referral programs with commission payouts (use /sales-affiliate-program), email marketing to loyalty members (use /sales-email-marketing), or checkout optimization (use /sales-checkout). For Brevo-specific help, use /sales-brevo."
 argument-hint: "[describe your loyalty program question or goal]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, loyalty, retention, rewards]
 ---
-
 # Customer Loyalty Programs
 
 Help the user design and manage loyalty programs — from strategy and structure through points/tiers/rewards mechanics, member engagement, and ROI measurement. This skill is tool-agnostic but includes platform-specific guidance for Brevo Loyalty, Smile.io, LoyaltyLion, Yotpo, Stamp.me, and custom-built solutions.

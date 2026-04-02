@@ -3,11 +3,9 @@ name: sales-braze
 description: "Braze platform help — Canvas Flow journey orchestration, email/push/in-app/SMS/WhatsApp/Content Cards campaigns, BrazeAI (predictive, generative, agentic), Braze Data Platform (CDI, Currents), real-time segmentation, Catalogs, Feature Flags, transactional email API, Liquid templating, Connected Content, Braze Alloys integrations, SCIM, REST API. Use when asking 'how do I do X in Braze', configuring Canvas flows, building segments, setting up Currents data streaming, using the Braze API, or migrating from Appboy. Do NOT use for building prospect lists (use /sales-prospect-list), designing outbound cadence strategy (use /sales-cadence), cross-platform deliverability (use /sales-deliverability), transactional email strategy (use /sales-transactional-email), push notification strategy (use /sales-push-notification), in-app messaging strategy (use /sales-in-app-messaging), or email marketing strategy (use /sales-email-marketing)."
 argument-hint: "[describe what you need help with in Braze]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, marketing-automation, messaging, push-notification, platform]
 ---
-
 # Braze Platform Help
 
 Help the user with Braze platform questions — from Canvas Flow journey orchestration and cross-channel campaigns through BrazeAI, Braze Data Platform, segmentation, Catalogs, Feature Flags, and REST API integrations.

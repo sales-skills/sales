@@ -3,11 +3,9 @@ name: sales-sendpulse
 description: "SendPulse platform help — email marketing, Automation 360, chatbots (WhatsApp/Instagram/Telegram/Facebook/Viber/TikTok), CRM, online course builder (EDU), website/landing page builder, web push notifications, SMS campaigns, Viber campaigns, SMTP/transactional email, pop-ups, email verifier, API. Use when asking 'how do I do X in SendPulse', setting up SendPulse email campaigns, configuring SendPulse automations, building SendPulse chatbots, managing SendPulse CRM deals, creating SendPulse courses, building SendPulse landing pages, SendPulse web push, SendPulse SMS, SendPulse pop-ups, or troubleshooting SendPulse. Do NOT use for general email marketing strategy (use /sales-email-marketing), general chatbot strategy (use /sales-chatbot), general SMS strategy (use /sales-sms-marketing), general push notification strategy (use /sales-push-notification), general funnel strategy (use /sales-funnel), or general course/membership strategy (use /sales-membership)."
 argument-hint: "[describe what you need help with in SendPulse]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, email-marketing, marketing-automation, chatbot, platform]
 ---
-
 # SendPulse Platform Help
 
 Help the user with SendPulse platform questions — email marketing, Automation 360 (multichannel workflows), chatbot builder (WhatsApp, Instagram, Telegram, Facebook, Viber, TikTok), CRM (pipeline, deals, contacts), online course builder (EDU), website/landing page builder, web push notifications, SMS campaigns, Viber campaigns, SMTP/transactional email, pop-ups/forms, email verifier, and API integration.

@@ -3,11 +3,9 @@ name: sales-omnisend
 description: "Omnisend platform help — email campaigns, SMS marketing, web push notifications, marketing automation workflows, popups/forms, segmentation, product recommendations, reporting, Shopify/WooCommerce/BigCommerce integrations, API. Use when asking 'how do I do X in Omnisend', configuring Omnisend settings, setting up automation workflows, managing campaigns, connecting ecommerce integrations, or using the Omnisend API. Do NOT use for cross-platform email marketing strategy (use /sales-email-marketing), cross-platform SMS strategy (use /sales-sms-marketing), cross-platform deliverability (use /sales-deliverability), cross-platform push strategy (use /sales-push-notification), or connecting tools (use /sales-integration)."
 argument-hint: "[describe what you need help with in Omnisend]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, email-marketing, ecommerce, sms, platform]
 ---
-
 # Omnisend Platform Help
 
 Help the user with Omnisend platform questions — from email/SMS campaign setup and automation workflows through popups, segmentation, reporting, ecommerce integrations, and API.

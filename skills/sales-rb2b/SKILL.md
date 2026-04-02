@@ -3,11 +3,9 @@ name: sales-rb2b
 description: "RB2B platform help — Person-Level Website Visitor ID, Company-Level ID, Hot Pages, Hot Leads, Traffic Insights, Identity Resolution API, integrations. Use when asking 'how do I identify website visitors with RB2B', 'RB2B pixel', 'RB2B API', 'RB2B vs Clearbit Reveal', 'person-level visitor identification', 'RB2B Hot Pages'. Do NOT use for visitor identification strategy across tools (use /sales-intent), enrichment strategy across tools (use /sales-enrich), building prospect lists across tools (use /sales-prospect-list), or lead scoring strategy (use /sales-lead-score)."
 argument-hint: "[describe what you need help with in RB2B]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, visitor-identification, intent-data, enrichment, platform]
 ---
-
 # RB2B Platform Help
 
 Help the user with RB2B platform questions — Person-Level Website Visitor ID, Company-Level ID, Hot Pages, Hot Leads, Traffic Insights, Identity Resolution API, and integrations.

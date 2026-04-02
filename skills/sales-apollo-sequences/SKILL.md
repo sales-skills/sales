@@ -3,11 +3,9 @@ name: sales-apollo-sequences
 description: "Manage outbound sequences in Apollo.io — create, configure, optimize deliverability, and analyze performance. Use when creating an Apollo sequence, fixing Apollo email deliverability, setting up A/B tests in Apollo, configuring Apollo mailboxes, analyzing Apollo sequence stats, or troubleshooting Apollo sending issues. Do NOT use for designing cadence strategy and content (use /sales-cadence), general Apollo platform help (use /sales-apollo), or non-Apollo sequence tools (use /email-sequence)."
 argument-hint: "[describe what you need — e.g., 'set up a new sequence' or 'fix my deliverability']"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, outbound, sequences, cadence, platform]
 ---
-
 # Manage Apollo Sequences
 
 Help the user create, configure, and optimize outbound sequences in Apollo.io — from sequence setup through deliverability management, A/B testing, and performance analysis. For cadence strategy and messaging content, use `/sales-cadence` — this skill covers the Apollo-specific execution layer.

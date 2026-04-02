@@ -3,11 +3,9 @@ name: sales-enrich
 description: "Enrich contacts and companies with verified emails, phones, and firmographic data. Also covers CRM data hygiene, deduplication, and bulk enrichment. Use when enriching leads, finding email addresses, cleaning CRM data, doing bulk enrichment, optimizing enrichment credits, setting up auto-enrichment, or fixing stale contact data. Do NOT use for building new prospect lists from scratch (use /sales-prospect-list), interpreting buying signals (use /sales-intent), ZoomInfo-specific enrichment config (use /sales-zoominfo), Clearbit/Breeze Intelligence platform help (use /sales-clearbit), RB2B platform help (use /sales-rb2b), 6sense platform help (use /sales-6sense), or general Apollo platform help (use /sales-apollo)."
 argument-hint: "[describe what data you need — e.g., 'enrich 500 leads with emails' or 'clean up stale CRM contacts']"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, enrichment, data, firmographics, contact-data]
 ---
-
 # Enrich Contacts & Clean CRM Data
 
 Help the user enrich contacts and companies with verified data, clean stale CRM records, and optimize their enrichment workflow. This skill is platform-agnostic but references Apollo.io as the primary tool. The same strategies apply to ZoomInfo, Clay, Lusha, Cognism, or any enrichment provider.

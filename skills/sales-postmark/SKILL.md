@@ -3,11 +3,9 @@ name: sales-postmark
 description: "Postmark platform help — transactional email delivery via REST API (`POST /email`, `POST /email/batch`), SMTP relay, Message Streams (transactional vs broadcast isolation), Handlebars Templates with layout inheritance, Inbound Email parsing, Webhooks (bounce, delivery, open, click, spam complaint, subscription change, inbound), DMARC Monitoring, Bounce Management (Rebound), Suppressions, Statistics, Bulk API, Sender Signatures, and domain authentication. Use when asking 'how do I do X in Postmark', sending transactional email with Postmark, configuring Message Streams, setting up Postmark templates, processing inbound email via Postmark, managing bounces and suppressions, or troubleshooting Postmark deliverability. Do NOT use for general email marketing strategy (use /sales-email-marketing), cross-platform email deliverability (use /sales-deliverability), email open/click tracking strategy (use /sales-email-tracking), or SendGrid-specific questions (use /sales-sendgrid)."
 argument-hint: "[describe what you need help with in Postmark]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, transactional-email, deliverability, platform]
 ---
-
 # Postmark Platform Help
 
 Help the user with Postmark (ActiveCampaign) platform questions — from transactional email via the REST API and SMTP relay through Message Streams, Handlebars Templates, Inbound Email, Webhooks, DMARC Monitoring, Bounce Management, Suppressions, Statistics, and integrations. Postmark is laser-focused on transactional email with best-in-class deliverability (98.7% inbox placement), originally built by Wildbit (Natalie & Chris Nagele) and acquired by ActiveCampaign in 2022.

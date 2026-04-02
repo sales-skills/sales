@@ -3,11 +3,9 @@ name: sales-smartlead
 description: "Smartlead platform help — campaigns, SmartSenders, SmartInfra, SmartAgents, SmartDialer, SmartProspect, SmartDelivery, warmup, API, integrations, agency/white-label. Use when asking 'how do I do X in Smartlead', configuring Smartlead settings, setting up SmartSenders, managing campaigns/leads, provisioning mailboxes, configuring SmartInfra, building SmartAgents, using SmartDialer, testing with SmartDelivery, setting up agency workspaces, white-labeling, or using the Smartlead API. Do NOT use for building prospect lists (use /sales-prospect-list), designing cadence strategy (use /sales-cadence), cross-platform deliverability (use /sales-deliverability), or multi-client agency architecture (use /sales-agency-outbound)."
 argument-hint: "[describe what you need help with in Smartlead]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, outbound, cold-email, warmup, platform]
 ---
-
 # Smartlead Platform Help
 
 Help the user with Smartlead platform questions — from campaign setup and SmartSenders through SmartInfra, SmartAgents, SmartDialer, SmartProspect, SmartDelivery, agency/white-label, API, and integrations.

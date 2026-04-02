@@ -3,11 +3,9 @@ name: sales-openwebninja
 description: "OpenWeb Ninja platform help — real-time public data API stack with 30+ APIs for web scraping, enrichment, and business data. Website Contacts Scraper (extract emails, phones, social links from any domain, 0.5-3s response), Email Search (find publicly available emails by query with optional domain filter, 1-2s response), Local Business Data (Google Maps businesses with 40+ fields — phone, website, email, ratings, reviews, hours, social links, photos, posts; nearby search, bulk search, reviews, photos, autocomplete), Social Links Search (find social media profiles for companies/people), Real-Time Web Search (Google SERP — organic results, AI Overviews, AI Mode, videos, places, news, knowledge graph, People Also Ask, up to 500 results, localized), JSearch (job postings from LinkedIn/Indeed/Glassdoor/ZipRecruiter — 200M+ listings, salary data), Product Data APIs (Amazon, eBay, Walmart, Costco — 35B+ listings, Google Lens, Reverse Image Search), Web Unblocker (fetch rendered HTML with rotating proxies and smart retries), Finance Data (stocks, crypto, forex), AI/LLM APIs (Google AI Mode, Gemini, ChatGPT, Copilot with web access). Use when asking 'how do I scrape contacts from a website with OpenWeb Ninja', extracting emails and phone numbers from domains, searching Google Maps for local business data, finding social media profiles, running web search via API, aggregating job postings, fetching product data, unblocking websites for scraping, or working with any OpenWeb Ninja API. Do NOT use for cross-platform enrichment strategy (use /sales-enrich), prospect list building strategy (use /sales-prospect-list), or connecting tools (use /sales-integration)."
 argument-hint: "[describe what you need help with in OpenWeb Ninja]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, scraping, data-extraction, enrichment, platform]
 ---
-
 # OpenWeb Ninja Platform Help
 
 Help the user with OpenWeb Ninja platform questions — from Website Contacts Scraper and Email Search through Local Business Data, Real-Time Web Search, JSearch, Product Data APIs, Web Unblocker, and more. OpenWeb Ninja is a Sunnyvale-based real-time public data API stack with 30+ APIs, 50K+ subscribers, 1T+ monthly requests, and a 4.8/5 rating on G2. Each API is a separate product with its own subscription, endpoints, and rate limits, available via the app.openwebninja.com portal or RapidAPI marketplace.

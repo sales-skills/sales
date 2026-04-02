@@ -3,11 +3,9 @@ name: sales-email-marketing
 description: "Email marketing for opt-in subscribers — broadcasts, nurture sequences, automation, segmentation, and list management. Use when planning email campaigns, designing welcome sequences, setting up behavior-based automation, segmenting lists, improving open/click rates, or choosing an email marketing platform. Do NOT use for cold outbound email (use /sales-cadence), email deliverability/SPF/DKIM (use /sales-deliverability), transactional/triggered email (use /sales-transactional-email), or connecting email tools to CRM (use /sales-integration). For GetResponse-specific help, use /sales-getresponse. For Iterable-specific help, use /sales-iterable. For Braze-specific help, use /sales-braze. For Brevo-specific help, use /sales-brevo. For Groove-specific help, use /sales-groove. For Closum-specific help, use /sales-closum. For Mailchimp-specific help, use /sales-mailchimp. For SendGrid-specific help, use /sales-sendgrid. For Postmark-specific help, use /sales-postmark. For Customer.io-specific help, use /sales-customerio. For Mailgun-specific help, use /sales-mailgun. For Klaviyo-specific help, use /sales-klaviyo. For ActiveCampaign-specific help, use /sales-activecampaign. For Kit-specific help, use /sales-kit. For Omnisend-specific help, use /sales-omnisend. For SendPulse-specific help, use /sales-sendpulse."
 argument-hint: "[describe your email marketing question — e.g., 'design a welcome sequence' or 'improve my open rates']"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, email-marketing, newsletters, broadcasts, automation]
 ---
-
 # Email Marketing for Opt-In Subscribers
 
 Help the user plan, build, and optimize email marketing campaigns for subscribers who opted in — covering broadcasts, nurture sequences, automation workflows, segmentation, and list management across GrooveMail, Mailchimp, ActiveCampaign, ConvertKit, Klaviyo, and other platforms.

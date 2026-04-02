@@ -3,11 +3,9 @@ name: sales-agency-outbound
 description: "Multi-client outbound for lead gen agencies — infrastructure architecture, client isolation, domain strategy, warmup at scale, white-labeling, unified reporting, client onboarding playbooks, and cross-client operations. Use when setting up agency outbound infrastructure, onboarding new clients, isolating sending domains per client, managing warmup across 20+ mailboxes, building repeatable client onboarding processes, or designing agency-wide reporting. Do NOT use for Smartlead-specific platform config (use /sales-smartlead), single-domain deliverability (use /sales-deliverability), or individual campaign strategy (use /sales-cadence)."
 argument-hint: "[describe your agency setup — client count, volume, tooling, challenge]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, outbound, agency, multi-client, lead-generation]
 ---
-
 # Multi-Client Outbound for Agencies
 
 Help the user architect, scale, and operate outbound infrastructure for a lead generation agency — from client isolation and domain strategy through warmup at scale, onboarding playbooks, and cross-client reporting. This skill is tool-agnostic and covers Smartlead, Instantly, Mailshake, and multi-tool setups.

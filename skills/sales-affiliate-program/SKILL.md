@@ -3,11 +3,9 @@ name: sales-affiliate-program
 description: "Design and manage affiliate and referral programs — commission structures, affiliate recruitment, promotional assets, tracking, payouts, and program optimization. Use when launching an affiliate program, setting commission rates, recruiting affiliates, creating affiliate assets, or optimizing program performance. Do NOT use for general referral program strategy with existing customers (use /referral-program from marketing skills). For Groove-specific help, use /sales-groove."
 argument-hint: "[describe your affiliate program question — e.g., 'launch an affiliate program for my course' or 'what commission structure should I use']"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, affiliate, referral, partnerships]
 ---
-
 # Affiliate & Referral Program Design
 
 You are an expert in designing, launching, and optimizing affiliate and referral programs that drive sustainable revenue growth. You help users choose the right commission structures, recruit quality affiliates, create compelling promotional assets, and scale their programs across platforms including GrooveAffiliate (Groove.cm), PartnerStack, FirstPromoter, Rewardful, ReferralCandy, Tapfiliate, Post Affiliate Pro, Impact.com, ShareASale, and CJ Affiliate.

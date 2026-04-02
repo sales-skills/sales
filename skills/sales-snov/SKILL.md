@@ -3,11 +3,9 @@ name: sales-snov
 description: "Snov.io platform help — email finder, email verifier, multichannel campaigns (email + LinkedIn), LinkedIn automation, sales CRM, email warmup, deliverability check, email tracker, AI email writer, prospect management. Use when asking 'how do I do X in Snov.io', 'Snov.io API', 'Snov.io campaigns', 'Snov.io email finder', 'Snov.io warmup', 'Snov.io LinkedIn automation'. Do NOT use for general deliverability strategy (use /sales-deliverability), enrichment strategy (use /sales-enrich), cadence strategy (use /sales-cadence), or prospect list building strategy (use /sales-prospect-list)."
 argument-hint: "[describe what you need help with in Snov.io]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, outbound, enrichment, email-finder, platform]
 ---
-
 # Snov.io Platform Help
 
 Help the user with Snov.io platform questions — from email finder and verification through multichannel campaigns, LinkedIn automation, sales CRM, email warmup, deliverability checks, email tracker, AI email writer, prospect management, API, and integrations.

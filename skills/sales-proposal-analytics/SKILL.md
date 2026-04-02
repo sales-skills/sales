@@ -2,8 +2,9 @@
 name: sales-proposal-analytics
 description: "Interpret Qwilr engagement signals and decide what to do next. Use when a prospect viewed or didn't view a proposal, analyzing Qwilr analytics, understanding proposal engagement patterns, figuring out why a buyer went dark after a proposal, deciding when to follow up after sending a proposal, understanding read receipts on proposals, or seeing who viewed a Qwilr quote."
 argument-hint: "[describe the engagement signals you're seeing — e.g., 'prospect viewed 3 times but hasn't accepted']"
+version: 1.0.0
+tags: [sales, proposal, analytics, engagement, qwilr]
 ---
-
 # Interpret Qwilr Proposal Analytics
 
 Help the user read Qwilr engagement signals and turn them into concrete next steps — follow-up messages, strategy adjustments, or deal actions.

@@ -3,11 +3,9 @@ name: sales-mailgun
 description: "Mailgun (Sinch) platform help — developer-first transactional email API and SMTP relay. Email API (REST + SMTP), Inbound Email Routing (custom parsing, regex/JSONPath, webhook delivery), Templates (account-level and domain-level), Mailing Lists, Domains API (DKIM/SPF/DNS), Routes (forwarding/storing), Webhooks (8 event types: accepted, delivered, opened, clicked, permanent_fail, temporary_fail, complained, unsubscribed), Metrics API, Mailgun Optimize (inbox placement seed testing, email validation, sender reputation monitoring, blocklist alerts), Tags, Custom Message Limits. Use when asking 'how do I do X in Mailgun', sending transactional email via Mailgun API or SMTP, configuring Mailgun domains or DNS, setting up inbound routing or webhooks, using Mailgun Optimize for deliverability, or working with the Mailgun REST API. Do NOT use for general email deliverability strategy (use /sales-deliverability), cross-platform email marketing (use /sales-email-marketing), or email open/click tracking strategy (use /sales-email-tracking)."
 argument-hint: "[describe what you need help with in Mailgun]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, transactional-email, api, deliverability, platform]
 ---
-
 # Mailgun Platform Help
 
 Help the user with Mailgun (Sinch) platform questions — from sending transactional email via the REST API and SMTP relay through Inbound Email Routing, Templates, Mailing Lists, Domains, Routes, Webhooks, Metrics, and Mailgun Optimize. Mailgun is a developer-first transactional email API service founded in 2010 by Ev Kontsevoy and Taylor Wakefield, acquired by Rackspace (2012), Thoma Bravo (2019), and Sinch (2021). Josh Odom is President of the Sinch Developer & Email unit.

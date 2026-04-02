@@ -3,11 +3,9 @@ name: sales-reply
 description: "Reply.io platform help — multichannel sequences (email, LinkedIn, calls, SMS, WhatsApp), Jason AI SDR, B2B database, email warmup, deliverability tools, unified inbox, analytics, Salesforce/HubSpot integration, agency features. Use when asking 'how do I do X in Reply.io', setting up Reply.io sequences, configuring Jason AI, connecting Reply.io to Salesforce or HubSpot, using Reply.io warmup, or troubleshooting Reply.io deliverability. Do NOT use for general outbound cadence strategy (use /sales-cadence), cross-platform email deliverability (use /sales-deliverability), email tracking strategy (use /sales-email-tracking), building prospect lists (use /sales-prospect-list), or connecting Reply.io to other tools via Zapier (use /sales-integration)."
 argument-hint: "[describe what you need help with in Reply.io]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, outbound, cold-email, sequences, platform]
 ---
-
 # Reply.io Platform Help
 
 Help the user with Reply.io platform questions — from multichannel sequence setup and Jason AI SDR through B2B database, email warmup, deliverability, unified inbox, analytics, integrations, and agency features.

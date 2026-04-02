@@ -3,11 +3,9 @@ name: sales-deal-inspect
 description: "Inspect deal health, map stakeholders, identify risks, and recommend next actions. Use when reviewing a deal, assessing deal health, doing a MEDDPICC assessment, mapping stakeholders, analyzing deal risk, prepping for a deal review, inspecting pipeline deals, or evaluating champion strength. Do NOT use for portfolio-level pipeline management (use /sales-pipeline), revenue forecasting (use /sales-forecast), or reviewing a specific sales call (use /sales-call-review)."
 argument-hint: "[describe the deal — company, size, stage, timeline, and biggest concern]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, deal-management, pipeline, forecasting]
 ---
-
 # Inspect a Deal
 
 Help the user inspect an individual deal — score its health, identify risks, map stakeholders, and build a prioritized action plan.

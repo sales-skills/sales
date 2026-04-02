@@ -3,11 +3,9 @@ name: sales-lobstr
 description: "Lobstr.io platform help — no-code web scraping and data collection platform with 50+ ready-made scrapers for Google Maps, LinkedIn Sales Navigator, Twitter, YouTube, Vinted, and more. Ready-Made Scrapers (50+ pre-built scrapers for Google Maps Leads, Google Maps Reviews, LinkedIn Sales Navigator Leads, Twitter User Tweets, YouTube Channel Scraper, Vinted Products, and many more), No-Code Web App (configure and run scrapers online without coding), Multi-Threading (run hundreds of concurrent scrapers simultaneously), Cookie-Based Account Sync (1-click cookie picking add-on to scrape behind login walls like LinkedIn without sharing credentials), Scheduled Automation (recurring scraping jobs on autopilot with triggers), Data Export (Google Sheets, Amazon S3, SFTP), Webhooks (run status events with JSON payloads), Make Integration (no-code automation workflows via make.com), API + Python SDK + CLI + MCP Server (programmatic access to all scrapers), Enterprise Custom Scrapers (tailored data collectors with 99.5% task completion rate). Use when asking 'how do I scrape X with Lobstr', configuring a Lobstr squid or run, exporting scraped data to Google Sheets or S3, setting up scheduled scraping automation, working with the Lobstr API or Python SDK, or managing credits and browsing limits. Do NOT use for general prospect list strategy (use /sales-prospect-list), cross-platform data enrichment strategy (use /sales-enrich), or integration strategy connecting tools via middleware (use /sales-integration)."
 argument-hint: "[describe what you need help with in Lobstr.io]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, scraping, data-extraction, linkedin, platform]
 ---
-
 # Lobstr.io Platform Help
 
 Help the user with Lobstr.io platform questions — from configuring ready-made scrapers and running data collection jobs through scheduling automation, exporting results, managing credits, and API integration. Lobstr.io is a no-code web scraping and data collection platform based in Saint-Mandé, France. It offers 50+ ready-made scrapers, multi-threading, cookie-based account sync, scheduled automation, and a full API with Python SDK, CLI, and MCP Server.

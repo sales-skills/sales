@@ -3,17 +3,14 @@ name: sales-funnel
 description: "Build and optimize sales funnels — strategy, structure, conversion optimization, A/B testing, and analytics. Use when building a funnel, optimizing conversion rates, designing upsell/downsell flows, choosing a funnel builder, or planning a launch funnel. Do NOT use for email marketing sequences (use /sales-email-marketing), checkout-specific optimization (use /sales-checkout), or webinar funnels (use /sales-webinar). For Groove-specific help, use /sales-groove."
 argument-hint: "[describe your funnel goal — e.g., 'build a webinar registration funnel' or 'optimize my checkout conversion rate']"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, funnel, landing-pages, conversion]
 ---
-
 # Sales Funnel Builder & Optimizer
 
 Build, structure, and optimize sales funnels across any platform. This skill covers funnel strategy, page architecture, conversion optimization, A/B testing, and analytics — tool-agnostic with platform-specific guidance where it matters.
 
 ---
-
 ## Step 1: Lead with Structure, Then Refine
 
 **If the user's request already provides enough context to identify the funnel type, skip directly to the relevant funnel structure and start filling it in. Lead with your best-effort answer using reasonable assumptions (stated explicitly), then ask only the most critical 1-2 clarifying questions at the end.**
@@ -92,7 +89,6 @@ After providing the relevant funnel structure, refine your recommendations with 
 If the user skips details, make reasonable assumptions for a general B2B or B2C info-product funnel and state them explicitly.
 
 ---
-
 ## Step 2: Funnel Strategy
 
 ### Funnel Types & When to Use Each
@@ -127,7 +123,6 @@ Use these as baselines — not guarantees. Benchmarks assume warm-to-lukewarm tr
 | **Application completion** | 30–50% | 50–70% | 70%+ |
 
 ---
-
 ## Step 3: Platform-Specific Guidance
 
 ### In Groove.cm (Detailed)
@@ -246,7 +241,6 @@ SendPulse includes a drag-and-drop website and landing page builder as part of i
 - **Systeme.io**: Budget-friendly all-in-one. Supports funnels, email, courses, and checkout. Limited design flexibility but fast to launch.
 
 ---
-
 ## Step 4: Actionable Guidance
 
 ### Page Structure for Each Funnel Step
@@ -338,7 +332,6 @@ Follow this framework for every test:
 - Calculate **Customer Acquisition Cost (CAC)**: total ad spend / number of customers. Compare to Customer Lifetime Value (LTV) — aim for 3:1 LTV:CAC minimum.
 
 ---
-
 ## Gotchas
 
 1. **Do not recommend specific conversion rates as guaranteed outcomes.** Benchmarks vary wildly by niche, traffic temperature, and offer. Always frame them as baselines to test against, not promises.
@@ -348,7 +341,6 @@ Follow this framework for every test:
 5. **Do not conflate funnel structure with email sequences.** The funnel is the page flow. Post-funnel email nurture and abandoned-cart recovery are separate concerns — point users to /sales-email-marketing for those.
 
 ---
-
 ## Related Skills
 
 - `/sales-groove` — Groove.cm-specific page building, checkout, and membership setup
@@ -366,7 +358,6 @@ Follow this framework for every test:
 - `/sales-do` — Route to any sales skill by describing what you need
 
 ---
-
 ## Examples
 
 ### Example 1: Build a Lead Magnet Funnel
@@ -405,7 +396,6 @@ Follow this framework for every test:
 6. Recommend platform based on needs — Groove.cm or ClickFunnels for the page flow, paired with their native or external email tool.
 
 ---
-
 ## Troubleshooting
 
 ### "My opt-in rate is below 20%"

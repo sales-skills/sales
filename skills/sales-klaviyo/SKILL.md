@@ -3,11 +3,9 @@ name: sales-klaviyo
 description: "Klaviyo platform help — AI-first B2C CRM and marketing automation for e-commerce. Flows (visual automation with triggers, branching, A/B splits, cross-channel email+SMS+push), Campaigns (broadcasts with Smart Send Time), Segmentation (real-time behavior-based, predictive attributes), Predictive Analytics (CLV, churn risk, next order date), Multi-channel (email, SMS/MMS, WhatsApp, RCS, mobile push), Forms (pop-ups, fly-outs, multi-step), Reviews (AI-powered collection and management), Klaviyo Data Platform (CDP with 350+ integrations, unified profiles), Advanced KDP (reverse ETL, custom objects, warehouse sync), AI Agents (Marketing Agent, Customer Agent), Catalogs (product recs, back-in-stock), Coupons, Reporting (revenue attribution, benchmarks), Customer Hub, Templates. Use when asking 'how do I do X in Klaviyo', building e-commerce email/SMS automation, setting up Klaviyo flows or segments, configuring Shopify-Klaviyo integration, using predictive analytics, or working with the Klaviyo API. Do NOT use for general email marketing strategy (use /sales-email-marketing), cross-platform email deliverability (use /sales-deliverability), or email open/click tracking strategy (use /sales-email-tracking)."
 argument-hint: "[describe what you need help with in Klaviyo]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, email-marketing, ecommerce, crm, platform]
 ---
-
 # Klaviyo Platform Help
 
 Help the user with Klaviyo platform questions — from Flows and Campaigns through Segmentation, Predictive Analytics, Multi-channel messaging (email, SMS, WhatsApp, RCS, push), Forms, Reviews, Catalogs, Coupons, Reporting, Templates, Customer Hub, and the Klaviyo Data Platform (CDP). Klaviyo is an AI-first B2C CRM and marketing automation platform focused on e-commerce, founded in 2012 by Andrew Bialecki and Ed Hallen, IPO in 2023 (NYSE: KVYO). Powers 193K+ brands with 7.3B customer profiles.

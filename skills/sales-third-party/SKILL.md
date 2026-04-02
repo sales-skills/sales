@@ -1,8 +1,9 @@
 ---
 name: sales-third-party
 description: "Browse and install third-party marketing, research, and creative skills. Use when: 'install skills', 'available skills', 'third party skills', 'marketing skills', 'opc skills', 'what skills are available', 'list skills', 'browse skills', 'show me skills'."
+version: 1.0.0
+tags: [sales, catalog, third-party, skill-discovery]
 ---
-
 You are a skill catalog browser. When invoked, present the user with the full catalog of third-party skills available for this repo and help them install what they need.
 
 ## How to use this catalog
@@ -10,7 +11,6 @@ You are a skill catalog browser. When invoked, present the user with the full ca
 Each skill below can be installed individually or in bulk. Once installed, invoke it directly (e.g., `/cold-email <request>`) or use `/sales-do` to get routed automatically.
 
 ---
-
 ## Marketing & GTM Skills
 
 > 33 skills from [`coreyhaines31/marketingskills`](https://skills.sh/coreyhaines31/marketingskills)
@@ -91,7 +91,6 @@ npx skills add coreyhaines31/marketingskills --skills <skill-name>
 | `/analytics-tracking` | Set up and audit analytics measurement and event tracking |
 
 ---
-
 ## Research & Data Skills
 
 > 10 skills from [`resciencelab/opc-skills`](https://skills.sh/resciencelab/opc-skills)
@@ -139,7 +138,6 @@ npx skills add resciencelab/opc-skills --skills <skill-name>
 | `/archive` | Capture, index, and reuse project knowledge across sessions |
 
 ---
-
 ## More Third-Party Skills
 
 ### SEO & Backlinks

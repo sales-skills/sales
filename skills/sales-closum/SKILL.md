@@ -3,11 +3,9 @@ name: sales-closum
 description: "Closum platform help — omnichannel marketing automation: email, SMS, WhatsApp, Telegram, Web Push from one dashboard, drag-and-drop editors, no-code automations, AI assistant, landing pages, contact management. Use when asking 'how do I do X in Closum', setting up Closum campaigns, configuring Closum automations or landing pages, connecting Closum to CRMs, or troubleshooting Closum deliverability. Do NOT use for general email marketing strategy (use /sales-email-marketing), outbound cadence strategy (use /sales-cadence), funnel strategy (use /sales-funnel), or connecting Closum to other tools via Zapier (use /sales-integration)."
 argument-hint: "[describe what you need help with in Closum]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, marketing-automation, omnichannel, platform]
 ---
-
 # Closum Platform Help
 
 Help the user with Closum platform questions — from email and SMS campaigns through WhatsApp, Telegram, Web Push notifications, landing pages, no-code automations, AI assistant, contact management, API, and integrations. Closum is a Portugal-based omnichannel marketing automation platform with 2,500+ customers (Decathlon, Fnac, Recheio, Boomfit, Era, Remax, FitnessUp, Job&Talent, Seaside).

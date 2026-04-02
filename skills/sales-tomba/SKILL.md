@@ -3,11 +3,9 @@ name: sales-tomba
 description: "Tomba.io platform help — domain search, email finder, email verifier, enrichment, author finder, LinkedIn finder, phone finder, bulk operations, browser extensions, API, integrations. Use when asking 'how do I do X in Tomba', finding emails with Tomba, verifying emails in Tomba, enriching contacts with Tomba, using the Tomba API, setting up Tomba integrations, or managing Tomba leads/lists. Do NOT use for enrichment strategy across tools (use /sales-enrich), building prospect lists (use /sales-prospect-list), cross-platform deliverability (use /sales-deliverability), or connecting tools generically (use /sales-integration)."
 argument-hint: "[describe what you need help with in Tomba]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, enrichment, email-finder, verification, platform]
 ---
-
 # Tomba Platform Help
 
 Help the user with Tomba.io platform questions — from domain search and email finding through verification, enrichment, bulk operations, API, and integrations.

@@ -3,11 +3,9 @@ name: sales-groove
 description: "Groove.cm platform help — GroovePages, GrooveFunnels, GrooveSell, GrooveMail, GrooveAffiliate, GrooveMember, GrooveVideo, GrooveWebinar, GrooveBlog, GrooveKart, GrooveProof. Use when asking 'how do I do X in Groove', configuring Groove modules, setting up GrooveMail automation, GrooveSell checkout, GrooveAffiliate commissions, GrooveMember courses, or GrooveWebinar events. Do NOT use for general funnel strategy (use /sales-funnel), general email marketing strategy (use /sales-email-marketing), general affiliate program design (use /sales-affiliate-program), general webinar strategy (use /sales-webinar), general membership strategy (use /sales-membership), or general checkout optimization (use /sales-checkout)."
 argument-hint: "[describe what you need help with in Groove.cm]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, funnel, email-marketing, ecommerce, platform]
 ---
-
 # Groove.cm Platform Help
 
 Help the user with Groove.cm platform questions — all-in-one business platform covering websites, funnels, email marketing, e-commerce, membership sites, affiliate programs, webinars, video hosting, and blogging.

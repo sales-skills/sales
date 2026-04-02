@@ -3,11 +3,9 @@ name: sales-push-notification
 description: "Mobile and web push notification strategy — opt-in optimization, rich push, segmentation, timing, frequency capping, deep linking, A/B testing, and analytics. Covers strategy and implementation across Braze, OneSignal, Airship, Firebase/FCM, Customer.io, Klaviyo, Iterable, and MoEngage. Use when designing push notification strategy, improving push opt-in rates, building push campaigns, choosing a push provider, or optimizing push engagement. Do NOT use for in-app messages (use /sales-in-app-messaging), email marketing (use /sales-email-marketing), SMS/WhatsApp messaging (use /sales-braze or platform-specific skill), or cold outbound (use /sales-cadence). For Braze-specific help, use /sales-braze. For Customer.io-specific help, use /sales-customerio."
 argument-hint: "[describe your push notification question or goal]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, push-notification, mobile, web-push]
 ---
-
 # Mobile & Web Push Notifications
 
 Help the user with push notification strategy — from opt-in optimization and message design through segmentation, timing, frequency capping, and analytics. This skill is tool-agnostic but includes platform-specific guidance for Braze, OneSignal, Airship, Firebase/FCM, Customer.io, Klaviyo, Iterable, and MoEngage.

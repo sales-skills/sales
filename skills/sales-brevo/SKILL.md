@@ -3,11 +3,9 @@ name: sales-brevo
 description: "Brevo platform help — email/SMS/WhatsApp campaigns, marketing automation (journeys), transactional messaging, Sales CRM (deals, pipelines), Conversations (live chat, chatbot), Loyalty programs, push notifications, e-commerce, landing pages, contact management, Aura AI, API & integrations. Use when asking 'how do I do X in Brevo', configuring Brevo settings, setting up campaigns or automations, managing contacts, using the Brevo API, or migrating from Sendinblue. Do NOT use for building prospect lists (use /sales-prospect-list), enriching contacts (use /sales-enrich), designing outbound cadence strategy (use /sales-cadence), cross-platform deliverability (use /sales-deliverability), transactional email strategy (use /sales-transactional-email), live chat strategy (use /sales-live-chat), or loyalty program strategy (use /sales-loyalty)."
 argument-hint: "[describe what you need help with in Brevo]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, email-marketing, marketing-automation, sms, platform]
 ---
-
 # Brevo Platform Help
 
 Help the user with Brevo platform questions — from email/SMS/WhatsApp campaigns and marketing automation through transactional messaging, Sales CRM, Conversations (live chat), Loyalty programs, e-commerce, and API integrations.

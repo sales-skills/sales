@@ -3,11 +3,9 @@ name: sales-call-review
 description: "Review sales calls, extract coaching insights, and score against MEDDPICC/SPIN/Challenger. Use when reviewing a sales call, coaching a rep, scoring a call, analyzing a call transcript, extracting action items from a call, preparing call feedback, reviewing talk-to-listen ratio, or analyzing ZoomInfo Chorus conversation intelligence data. Do NOT use for prepping discovery questions (use /sales-discovery), general objection handling strategy (use /sales-objection), or deal-level risk analysis (use /sales-deal-inspect)."
 argument-hint: "[paste transcript or describe the call — type, participants, outcome]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, coaching, call-recording, conversation-intelligence]
 ---
-
 # Review a Sales Call
 
 Help the user review a sales call — score it against best practices, identify key moments, extract coaching insights, and plan follow-up actions.

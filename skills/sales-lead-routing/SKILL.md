@@ -3,11 +3,9 @@ name: sales-lead-routing
 description: "Design and implement lead routing and assignment rules — round-robin, territory-based, score-based, and account-based models. Use when designing how leads get assigned to reps, building routing rules in your CRM, optimizing speed-to-lead, setting up territory assignments, configuring lead queues, or scaling assignment as your team grows. Do NOT use for lead scoring model design (use /sales-lead-score), CRM platform configuration (use /sales-apollo or /sales-salesloft), or marketing-to-sales handoff process (use /revops)."
 argument-hint: "[describe your team structure, lead sources, and current routing]"
 license: MIT
-metadata:
-  author: sales-skills
-  version: 1.0.0
+version: 1.0.0
+tags: [sales, lead-routing, assignment, round-robin]
 ---
-
 # Design Lead Routing Rules
 
 Help the user design and implement lead routing — from choosing a routing model and defining assignment rules through platform implementation, speed-to-lead optimization, and capacity management. This skill is tool-agnostic and covers Salesforce, HubSpot, Salesloft, Apollo, and standalone routing tools.
