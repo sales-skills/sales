@@ -359,6 +359,16 @@ Save the search as a dynamic list — new matches will appear automatically.
 - **Best for**: Enterprise ABM teams building high-quality, intent-driven prospect lists. Not cost-effective for generic list building — use Apollo, ZoomInfo, or Hunter for broader prospecting without ABM context.
 - **Pricing**: Free plan: 50 credits/mo (basic search). Paid plans: $50K+/year for full Company Discovery + intent-driven list building.
 
+### Building lists from Clay
+
+- **Import sources**: Pull prospects from Salesforce, HubSpot, LinkedIn Sales Navigator, CSV uploads, or webhook triggers into Clay tables.
+- **Waterfall enrichment**: Enrich imported lists with work emails, phone numbers, firmographics, and technographics via 150+ providers. Coverage compounds across providers — aim for 85-95% with 3-5 provider waterfalls.
+- **Claygent for list building**: Use AI research agents to find prospects matching specific criteria — scrape company websites, extract team pages, research industry directories.
+- **Signals for dynamic lists**: Track job changes, funding events, and website visits to automatically add new prospects to tables as triggers fire.
+- **Audiences**: Build dynamic buyer segments from enriched data + signals + CRM data. Audiences auto-update as new data flows in.
+- **Export to outbound tools**: Push enriched lists to Outreach, Salesloft, Apollo, Lemlist, Smartlead, or Clay's own Email Sequencer.
+- **Best for**: GTM engineers building automated prospect pipelines — import → enrich → segment → outreach in one workflow.
+
 ## Step 4 — Segment and prioritize
 
 Split the list into tiers for sequencing:
@@ -468,6 +478,7 @@ Before launching outreach, validate the list:
 - `/sales-clearbit` — Clearbit platform help (Prospector contact search by domain, Reveal IP intelligence, enrichment — acquired by HubSpot)
 - `/sales-rb2b` — RB2B platform help (person-level visitor identification, Hot Pages, Identity Resolution API)
 - `/sales-6sense` — 6sense platform help (Company Discovery, Sales Intelligence search, intent-driven list building, segment-based prospecting)
+- `/sales-clay` — Clay platform help (waterfall enrichment, Claygent AI research, signals, audiences, automated prospect pipelines)
 - `/sales-seamless` — Seamless.AI platform help (1.8B+ contacts, Buyer Intent, Job Changes, Autopilot, Chrome extension)
 - `/sales-zoominfo` — ZoomInfo platform help (Advanced Search, Saved Searches, exports)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

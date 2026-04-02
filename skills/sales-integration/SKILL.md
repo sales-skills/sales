@@ -15,7 +15,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Omnisend, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, ZoomInfo, Clearbit, RB2B, 6sense, Brevo, Braze, Iterable, GetResponse, SendPulse, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Omnisend, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, ZoomInfo, Clearbit, RB2B, 6sense, Brevo, Braze, Iterable, GetResponse, SendPulse, Clay, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -698,6 +698,29 @@ Before building anything custom, check if a native integration exists:
 - **Setup**: Configure via the developer portal (developer.seismic.com). OAuth 2.0 auth.
 - **Use cases**: Trigger CRM updates on content engagement or alert reps when prospects view shared content.
 
+### Clay webhooks, API & integrations
+
+| Integration | Type | What it does |
+|------------|------|-------------|
+| Salesforce | Native (bidirectional) | Import leads/contacts/accounts for enrichment, push enriched data back. Create/update records. Growth plan required. |
+| HubSpot | Native (bidirectional) | Import contacts/companies, enrich, push back. Marketplace app available. Growth plan required. |
+| Dynamics 365 | Native (bidirectional) | Create, update, lookup records. Growth plan required. |
+| ActiveCampaign | Native | Manage contacts and automations from Clay workflows. |
+| Pipedrive | Native | Sync contact and deal data. |
+| Outreach | Native | Push enriched contacts to Outreach sequences. |
+| Salesloft | Native | Push enriched contacts to Salesloft cadences. |
+| LinkedIn Ads | Ad Sync | Push Clay Audiences for targeted campaigns. Growth plan required. |
+| Meta Ads | Ad Sync | Push Clay Audiences via email-based matching. Growth plan required. |
+| Google Ads | Ad Sync | Push Clay Audiences via Customer Match. Growth plan required. |
+| Zapier | Native app | Trigger on new/updated rows, create rows via webhook. |
+| Make | Native app | Webhook triggers, row creation, HTTP API workflows. |
+| Webhooks (inbound) | Webhook | Each table has a unique webhook URL — POST JSON to create rows. |
+| HTTP API | Action | Call any external API from Clay workflows. Growth plan required. |
+| Snowflake / BigQuery | Data warehouse | Sync enriched data to data warehouses. Enterprise plan required. |
+| Slack | Native | Notifications and alerts from Clay workflows. |
+| Google Sheets / Airtable | Native | Import/export data between Clay and spreadsheets. |
+| 150+ data providers | Enrichment | Waterfall enrichment via Hunter, Apollo, Clearbit, People Data Labs, ZoomInfo, Lusha, Dropcontact, Cognism, RocketReach, etc. |
+
 ### Qwilr webhooks
 - **Full reference**: See `/sales-qwilr-automation` for Qwilr-specific webhook events and CRM integrations
 
@@ -786,6 +809,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-clearbit` — Clearbit platform help (enrichment API, Reveal, native HubSpot/Salesforce/Segment/Marketo integrations, webhooks)
 - `/sales-rb2b` — RB2B platform help (person-level visitor ID, Hot Pages, Identity Resolution API, native integrations with Slack/HubSpot/Salesforce/Apollo/Salesloft/Outreach)
 - `/sales-6sense` — 6sense platform help (Signalverse intent, predictive scoring, AI Email Agents, advertising, native Salesforce/HubSpot/Marketo/LinkedIn integrations, API)
+- `/sales-clay` — Clay platform help (waterfall enrichment, CRM integrations, webhooks, HTTP API, ad audience sync, 150+ data providers)
 - `/sales-zoominfo` — ZoomInfo platform help (SalesOS, MarketingOS, OperationsOS integrations)
 - `/sales-data-hygiene` — CRM data quality and enrichment automation
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.

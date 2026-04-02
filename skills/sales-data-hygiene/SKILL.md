@@ -175,15 +175,12 @@ ZoomInfo OperationsOS is purpose-built for CRM data management at scale.
 
 ### In Clay
 
-Clay excels at waterfall enrichment and data transformation, not traditional dedup.
-
-**Best for**:
-- Enriching incomplete records from multiple providers (waterfall)
-- Transforming and normalizing data with AI-powered columns
-- Building enrichment workflows that pull from 100+ data providers
-- One-time or recurring data refresh projects
-
-**Not ideal for**: Real-time CRM dedup, matching/merge operations, or ongoing CRM hygiene automation. Use Clay for enrichment, pair with ZoomInfo or DemandTools for dedup.
+- **CRM enrichment & refresh**: Import contacts/accounts from Salesforce, HubSpot, or Dynamics 365 into Clay tables. Run waterfall enrichment to fill missing fields and refresh stale data. Push updated records back via bidirectional sync.
+- **Automated data maintenance**: Set up scheduled imports to regularly pull CRM records into Clay, re-enrich, and sync back. Keeps contact data fresh without manual effort.
+- **Duplicate detection**: Use enrichment data (LinkedIn URLs, company domains, verified emails) to identify and flag duplicate records before syncing back to CRM.
+- **Data standardization**: Use Sculptor workflows to normalize job titles, company names, industry classifications, and other fields. Apply consistent formatting before pushing to CRM.
+- **Plan gate**: CRM sync requires Growth plan ($446-495/mo). Free/Launch users can export enriched data as CSV for manual CRM import.
+- **Best for**: RevOps teams wanting to automate CRM data enrichment and cleanup on a recurring basis.
 
 ### In LeanData / RingLead
 
@@ -263,6 +260,7 @@ Clearbit (now Breeze Intelligence in HubSpot) focuses on enrichment-driven data 
 
 ## Related skills
 
+- `/sales-clay` — Clay platform help
 - `/sales-zoominfo` — ZoomInfo platform help (for OperationsOS-specific setup)
 - `/sales-clearbit` — Clearbit platform help (enrichment, reveal, prospector)
 - `/sales-enrich` — enrichment strategy across all providers

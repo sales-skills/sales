@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-clay",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "We just signed up for Clay and want to enrich our prospect list with work emails and phone numbers. We have 5,000 leads with names and companies. How do we set up waterfall enrichment?",
+      "expected_output": "Step-by-step waterfall enrichment setup covering provider selection, priority ordering, 'only if empty' logic, credit optimization, and small-batch testing",
+      "assertions": [
+        {"name": "waterfall_setup", "description": "Must explain creating a table, adding enrichment columns, and configuring multiple providers in sequence with fallback logic"},
+        {"name": "only_if_empty_logic", "description": "Must recommend using 'only if empty' conditions between waterfall steps to avoid burning credits on already-enriched rows"},
+        {"name": "credit_optimization", "description": "Must mention that different providers cost different Data Credits, recommend starting with cheaper providers first, and suggest testing on a small batch (5-50 rows) before scaling"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "We're evaluating Clay vs Apollo for our enrichment needs. We currently use HubSpot as our CRM and need to keep contact data fresh. Which platform is better for us?",
+      "expected_output": "Comparison of Clay and Apollo covering enrichment approaches, CRM integration, pricing, and recommendation based on stated needs",
+      "assertions": [
+        {"name": "enrichment_approach_comparison", "description": "Must compare Clay's waterfall enrichment (150+ providers, configurable fallback) vs Apollo's single proprietary database (275M+ contacts) and explain trade-offs"},
+        {"name": "crm_integration", "description": "Must note that Clay has native HubSpot sync (Growth plan required, $446+/mo) and that Apollo also has HubSpot integration, with differences in enrichment depth"},
+        {"name": "use_case_recommendation", "description": "Must recommend Clay for maximum coverage and complex enrichment workflows, Apollo for simpler all-in-one prospecting + outreach, or both together (Clay as orchestrator using Apollo as one provider)"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I want to automatically enrich new HubSpot contacts in Clay and push the enriched data back to HubSpot. How do I set up this bidirectional sync?",
+      "expected_output": "Technical guide covering HubSpot integration setup, import configuration, enrichment workflow, push-back field mapping, and plan requirements",
+      "assertions": [
+        {"name": "plan_requirement", "description": "Must clearly state that CRM Sync (including HubSpot bidirectional sync) requires Clay's Growth plan at minimum ($446+/mo)"},
+        {"name": "bidirectional_setup", "description": "Must explain both directions: importing contacts from HubSpot into a Clay table AND pushing enriched data back to HubSpot using update/create actions"},
+        {"name": "field_mapping", "description": "Must mention field mapping between Clay columns and HubSpot properties, noting to use API field names rather than display labels"}
+      ]
+    }
+  ]
+}

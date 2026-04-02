@@ -1,6 +1,6 @@
 ---
 name: sales-enrich
-description: "Enrich contacts and companies with verified emails, phones, and firmographic data. Also covers CRM data hygiene, deduplication, and bulk enrichment. Use when enriching leads, finding email addresses, cleaning CRM data, doing bulk enrichment, optimizing enrichment credits, setting up auto-enrichment, or fixing stale contact data. Do NOT use for building new prospect lists from scratch (use /sales-prospect-list), interpreting buying signals (use /sales-intent), ZoomInfo-specific enrichment config (use /sales-zoominfo), Clearbit/Breeze Intelligence platform help (use /sales-clearbit), RB2B platform help (use /sales-rb2b), 6sense platform help (use /sales-6sense), or general Apollo platform help (use /sales-apollo)."
+description: "Enrich contacts and companies with verified emails, phones, and firmographic data. Also covers CRM data hygiene, deduplication, and bulk enrichment. Use when enriching leads, finding email addresses, cleaning CRM data, doing bulk enrichment, optimizing enrichment credits, setting up auto-enrichment, or fixing stale contact data. Do NOT use for building new prospect lists from scratch (use /sales-prospect-list), interpreting buying signals (use /sales-intent), ZoomInfo-specific enrichment config (use /sales-zoominfo), Clearbit/Breeze Intelligence platform help (use /sales-clearbit), RB2B platform help (use /sales-rb2b), 6sense platform help (use /sales-6sense), general Apollo platform help (use /sales-apollo), or Clay platform help (use /sales-clay)."
 argument-hint: "[describe what data you need — e.g., 'enrich 500 leads with emails' or 'clean up stale CRM contacts']"
 license: MIT
 version: 1.0.0
@@ -430,6 +430,16 @@ Choose the right approach based on volume and frequency:
 
 **Best for**: Enterprise teams already using 6sense for ABM who want to enrich inbound leads with intent data and buying stage alongside contact/firmographic data. Not cost-effective as a standalone enrichment tool — use Apollo, Hunter, or Tomba for enrichment-only use cases.
 
+### In Clay (Waterfall Enrichment)
+
+- **What it is**: Clay aggregates 150+ data providers (Hunter, Apollo, Clearbit, People Data Labs, Dropcontact, ZoomInfo, Lusha, RocketReach, Cognism, and more) in a single waterfall workflow. Query multiple providers in sequence — if Provider A misses, Provider B tries, then C.
+- **Waterfall enrichment**: Configure provider priority order per column (email, phone, firmographics). Use "only if empty" logic between steps to avoid burning credits. Coverage compounds — 3 providers at 60% each can yield 85-95% coverage.
+- **Claygent for custom enrichment**: AI research agents browse the web, extract data from company pages, navigate gated content. Use for non-standard enrichment (tech stack, pricing, org charts).
+- **CRM sync**: Bidirectional sync with Salesforce, HubSpot, Dynamics 365. Import contacts for enrichment, push enriched data back automatically. Requires Growth plan ($446+/mo).
+- **Credit system**: Data Credits consumed per provider lookup. Different providers cost different amounts. Unused credits roll over up to 2x monthly allocation on paid plans.
+- **Pricing**: Free (100 credits/mo), Launch ($167-185/mo, 2,500 credits), Growth ($446-495/mo, 6,000 credits), Enterprise (custom). As of March 2026 — verify current pricing.
+- **Best for**: Teams needing maximum enrichment coverage across multiple providers with a single tool. GTM engineers building automated enrichment workflows.
+
 ### Compliance checklist
 
 Before enriching and contacting, verify compliance with data privacy regulations in your target regions:
@@ -564,6 +574,7 @@ Credits reset monthly and do not roll over. Plan enrichment around your billing 
 - `/sales-snov` — Snov.io platform help (email finder, domain search, LinkedIn enrichment, email verifier 98%, multichannel campaigns)
 - `/sales-clearbit` — Clearbit / Breeze Intelligence platform help (person enrichment, company enrichment, prospector, Name to Domain, streaming API)
 - `/sales-rb2b` — RB2B platform help (person-level visitor identification pixel, Identity Resolution API)
+- `/sales-clay` — Clay platform help (waterfall enrichment across 150+ providers, Claygent AI research, CRM sync)
 - `/sales-6sense` — 6sense platform help (People/Company Enrichment APIs, Company Identification, Segments API — enterprise ABM platform)
 - `/sales-zoominfo` — ZoomInfo platform help (enrichment, intent, OperationsOS)
 - `/sales-data-hygiene` — CRM data quality, deduplication, enrichment automation

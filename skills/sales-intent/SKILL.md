@@ -181,6 +181,15 @@ RB2B provides **person-level** website visitor identification (US traffic only) 
 7. **Signal trends**: 6sense tracks whether research intensity is increasing, stable, or decreasing — trend direction is more actionable than absolute signal strength.
 8. **Pricing note**: Enterprise-only ($50K-200K+/year). Free plan (50 credits/mo) does NOT include intent data or predictive scoring. For budget-conscious teams, consider Bombora standalone ($25K/yr) or Apollo.io (intent included in lower-cost plans).
 
+### In Clay
+
+- **Signals**: Clay tracks job changes, promotions, funding rounds, website visits, and company news as automated triggers. Configure signal rules to fire when conditions match your ICP.
+- **Signal-triggered workflows**: When a signal fires, Clay can automatically enrich the person/company via waterfall, run Claygent for custom research, and trigger Email Sequencer outreach — all in one workflow.
+- **Audiences**: Combine signals with enrichment data and CRM data to build dynamic buyer segments. Audiences update automatically as new signals fire.
+- **Ad Sync**: Push signal-based audiences to LinkedIn, Meta, and Google Ads for targeted campaigns alongside outbound.
+- **Plan gate**: Signals require Launch plan ($167-185/mo) or above. Ad Sync requires Growth ($446-495/mo).
+- **Best for**: Teams wanting to automate the signal → enrichment → outreach pipeline in a single platform.
+
 ## Step 4 — Signal-to-action playbooks
 
 ### For each signal type, define the action:
@@ -259,6 +268,7 @@ Use Apollo Workflows (Professional+ plan) to automate:
 - `/sales-rb2b` — RB2B platform help (person-level visitor identification, Hot Pages, Identity Resolution API)
 - `/sales-6sense` — 6sense platform help (Signalverse intent data, predictive scoring, Sales Intelligence, AI Email Agents, advertising, orchestration)
 - `/sales-zoominfo` — ZoomInfo platform help (SalesOS, intent topics, Scoops)
+- `/sales-clay` — Clay platform help (Signals, waterfall enrichment, Claygent, Email Sequencer, Ad Sync)
 - `/sales-b2b-advertising` — account-based advertising driven by intent signals
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 

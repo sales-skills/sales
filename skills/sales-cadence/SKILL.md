@@ -256,6 +256,15 @@ For each call step:
 6. **Analytics**: Track agent performance across the entire journey — response rates, meeting bookings, lead qualification rates, and pipeline attribution.
 7. **Important**: AI Email Agents are a separate add-on to 6sense, not included in all paid plans. Enterprise pricing. Best for teams already on 6sense who want AI-driven outbound integrated with their ABM data.
 
+### In Clay (Email Sequencer)
+
+- **What it is**: Clay's native Email Sequencer for multi-step outbound email campaigns. Available on Free plan and above.
+- **Enrichment-powered personalization**: Unique advantage — every email can reference data from Clay's 150+ provider waterfall enrichment and Claygent AI research. Personalize with firmographic data, tech stack, recent funding, job changes, and custom research without manual work.
+- **Signal-triggered sequences**: Combine with Clay Signals to auto-enroll prospects when they change jobs, get promoted, or when their company raises funding.
+- **Features**: A/B testing, send scheduling, reply detection, auto-pause on reply.
+- **Limitations**: Email-only — no phone, LinkedIn, or multi-channel steps. For full multi-channel cadences, push enriched data from Clay to Outreach, Salesloft, Apollo, or Lemlist.
+- **Best for**: Teams already using Clay for enrichment who want lightweight outbound without adding another tool.
+
 ### Personalization framework
 - **Level 1 (Minimum)**: First name, company name, title — the bare minimum
 - **Level 2 (Standard)**: Industry reference, company-size-specific pain point
@@ -328,6 +337,7 @@ Provide a benchmarks table:
 - `/sales-closum` — Closum platform help (omnichannel: email, SMS, WhatsApp, Telegram, Web Push automations)
 - `/sales-minelead` — Minelead platform help (email campaigns via Gmail round-robin, domain email search, lead finder, verifier)
 - `/sales-getprospect` — GetProspect platform help (cold email sequences with A/B testing, 200M+ B2B database, email finder, verifier)
+- `/sales-clay` — Clay platform help (enrichment, Email Sequencer, Signals, Claygent AI research)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Gotchas

@@ -229,6 +229,13 @@ Subtract points for disqualifying signals:
 - **Combined person + company enrichment**: The combined endpoint returns both person and company data in one call, giving you demographic (role, seniority) and firmographic (employee count, revenue, industry) signals together for efficient scoring.
 - **Breeze Intelligence in HubSpot**: If you use HubSpot, Breeze Intelligence (Clearbit's HubSpot-native product) auto-enriches contacts and companies, feeding directly into HubSpot's native lead scoring workflows without manual data piping.
 
+#### In Clay
+- **Enrichment-powered scoring**: Use Clay's 150+ provider waterfall to enrich every lead with firmographic, technographic, and intent data — then score based on enriched attributes (company size, revenue, tech stack, job title seniority).
+- **Claygent for custom scoring signals**: AI research agents can gather non-standard signals — check if a company uses a competitor's product, verify budget authority from org charts, assess tech stack fit.
+- **Signal-based scoring**: Layer Clay Signals (job changes, funding, website visits) into scoring models as real-time triggers.
+- **Workflow automation**: Build scoring logic directly in Clay tables using Sculptor — conditional formulas, weighted scoring, tier assignment. Push scores to CRM via bidirectional sync (Growth plan required).
+- **Best for**: Teams wanting to build custom scoring models with rich, multi-source data without requiring a dedicated scoring platform.
+
 #### In RB2B
 - **Person-level website visit signals**: RB2B identifies the individual visiting your site (US only), giving you person-specific behavioral signals — not just "someone from Company X visited." Use as a high-value behavioral scoring input: +15 for person-level identification on pricing page, +10 for other Hot Pages.
 - **Hot Pages as scoring triggers**: Configure key pages (pricing, demo, case studies) as Hot Pages in RB2B. When an identified visitor hits a Hot Page, add behavioral points to their lead score. More specific than generic "website visit" signals.
@@ -321,6 +328,7 @@ Every quarter:
 - `/sales-rb2b` — RB2B platform help (person-level visitor identification for scoring triggers, Hot Pages, real-time CRM integration)
 - `/sales-6sense` — 6sense platform help (AI-driven predictive scoring, 6QA qualification, Signalverse intent for behavioral scoring)
 - `/sales-getresponse` — GetResponse platform help (contact scoring, automation-triggered scoring, engagement-based scoring)
+- `/sales-clay` — Clay platform help (enrichment waterfall for scoring, Claygent for custom signals, Sculptor for scoring logic)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

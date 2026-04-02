@@ -212,6 +212,15 @@ ZoomInfo MarketingOS combines B2B data with advertising execution.
 
 **Limitation**: No intent data, limited display network, higher CPM than programmatic alternatives.
 
+### In Clay
+
+- **Ad Sync**: Push Clay Audiences directly to LinkedIn Ads, Meta Ads, and Google Ads. Build enriched, signal-driven audiences in Clay → sync to ad platforms for targeted campaigns.
+- **Enrichment-powered targeting**: Use waterfall enrichment to build precise audiences — filter by firmographics (revenue, employee count, industry), technographics (tech stack), and intent signals (job changes, funding, website visits).
+- **Dynamic audiences**: Audiences auto-update as new enrichment data and signals flow in. Ad platforms receive refreshed audience lists automatically.
+- **ABM air cover**: Pair Ad Sync with Clay's Email Sequencer or outbound tool integrations — run display/social ads alongside outbound for multi-channel ABM.
+- **Plan gate**: Ad Sync requires Growth plan ($446-495/mo, 1 audience included) or Enterprise (2 audiences).
+- **Best for**: Teams using Clay for enrichment who want to add advertising as a channel without a separate ABM platform.
+
 ### In Google Ads (B2B targeting)
 
 **Search and display for B2B:**
@@ -270,6 +279,7 @@ ZoomInfo MarketingOS combines B2B data with advertising execution.
 - `/sales-cadence` — coordinating outbound sequences with ad campaigns
 - `/sales-prospect-list` — building target account lists for advertising
 - `/sales-funnel` — funnel strategy (ads feed the top of the funnel)
+- `/sales-clay` — Clay platform help (enrichment, audience building, Ad Sync)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples
