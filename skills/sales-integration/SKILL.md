@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Omnisend, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, ZoomInfo, Clearbit, Brevo, Braze, Iterable, GetResponse, SendPulse, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Omnisend, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, ZoomInfo, Clearbit, RB2B, Brevo, Braze, Iterable, GetResponse, SendPulse, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -666,6 +666,20 @@ Before building anything custom, check if a native integration exists:
 - **API**: REST API with per-resource subdomains, HTTP Basic Auth, 600 req/min.
 - **Webhooks**: Async enrichment delivery for queued (202) responses, data change notifications with `subscribe:true`.
 
+### RB2B webhooks, API & integrations
+- **Slack**: Native — real-time alerts with visitor name, company, title, LinkedIn when visitors are identified.
+- **HubSpot**: Native — push identified visitors as contacts, create/update records automatically.
+- **Salesforce**: Native — push to leads/contacts, match to existing accounts.
+- **Apollo.io**: Native — sync identified visitors for outbound sequencing.
+- **Salesloft**: Native — push visitors to Salesloft cadences.
+- **Outreach**: Native — push visitors to Outreach sequences.
+- **Smartlead**: Native — add identified visitors to Smartlead campaigns.
+- **Clay**: Native — enrich RB2B visitors with Clay's waterfall enrichment.
+- **Zapier**: Triggers on new visitor identified → connect to 8,000+ apps.
+- **Make (Integromat)**: RB2B visitor data in automation scenarios.
+- **Webhooks**: Push visitor data (person + company + visit context) to any endpoint in real-time.
+- **Identity Resolution API**: Separate product at api.rb2b.com — credit-based access to IP→identity, LinkedIn→email, email→LinkedIn, company→firmographics endpoints.
+
 ### Seismic webhooks
 - **Events**: Content views, LiveSend opens, DSR engagement, user provisioning (SCIM)
 - **Setup**: Configure via the developer portal (developer.seismic.com). OAuth 2.0 auth.
@@ -757,6 +771,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-postmark` — Postmark platform help (transactional email API, 7 webhook types, Inbound email parsing, Zapier)
 - `/sales-omnisend` — Omnisend platform help (email/SMS/push for ecommerce, Shopify/WooCommerce/BigCommerce integrations, REST API)
 - `/sales-clearbit` — Clearbit platform help (enrichment API, Reveal, native HubSpot/Salesforce/Segment/Marketo integrations, webhooks)
+- `/sales-rb2b` — RB2B platform help (person-level visitor ID, Hot Pages, Identity Resolution API, native integrations with Slack/HubSpot/Salesforce/Apollo/Salesloft/Outreach)
 - `/sales-zoominfo` — ZoomInfo platform help (SalesOS, MarketingOS, OperationsOS integrations)
 - `/sales-data-hygiene` — CRM data quality and enrichment automation
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.

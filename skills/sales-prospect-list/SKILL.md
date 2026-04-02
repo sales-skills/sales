@@ -340,6 +340,16 @@ Save the search as a dynamic list — new matches will appear automatically.
 - **Acquired by HubSpot**: Clearbit was acquired by HubSpot in December 2023. HubSpot customers may have access through their HubSpot subscription; standalone API access may change over time.
 - **Best for**: Finding contacts at specific target companies by domain, ABM list building when you already have a target account list, converting website visitors into prospect lists via Reveal + Prospector.
 
+### Building lists from RB2B (visitor-to-prospect)
+- **Person-level visitor identification**: RB2B's pixel identifies individual website visitors (US traffic only) — name, work email, LinkedIn URL, job title, and company. Unlike Clearbit Reveal (company-level only), RB2B gives you the person, not just the company.
+- **Hot Pages for intent filtering**: Mark pricing, demo, and comparison pages as "Hot Pages" — only build lists from visitors who viewed high-intent content. Reduces noise from casual browsing.
+- **Hot Leads for ICP filtering**: Apply firmographic and demographic filters (title, company size, industry, seniority) to only surface visitors matching your ICP. Automated list qualification.
+- **CRM integration**: Push identified visitors directly to HubSpot or Salesforce as new leads/contacts. Auto-create records when ICP-matching visitors hit Hot Pages.
+- **Outbound tool integration**: Native integrations with Apollo, Salesloft, Outreach, Smartlead, and Clay — push identified visitors directly into outbound sequences.
+- **Identity Resolution API**: For programmatic list building, use the API (api.rb2b.com) to resolve IPs, LinkedIn URLs, and emails. Chain endpoints: IP→LinkedIn→Email to build a full contact record.
+- **Best for**: Converting anonymous website visitors into actionable prospect lists, warm outbound to people who've already shown interest, combining website intent with ICP filtering for high-quality lists.
+- **Coverage**: Pro+ plans: 35-45% person-level match rate for US visitors. Free plan: company-level only (150 resolutions/mo).
+
 ## Step 4 — Segment and prioritize
 
 Split the list into tiers for sequencing:
@@ -447,6 +457,7 @@ Before launching outreach, validate the list:
 - `/sales-snov` — Snov.io platform help (email finder, domain search, LinkedIn enrichment, prospect management, multichannel campaigns)
 - `/sales-mailmo` — Mailmo platform help (Email Finder with catch-all verification, LinkedIn Chrome extension)
 - `/sales-clearbit` — Clearbit platform help (Prospector contact search by domain, Reveal IP intelligence, enrichment — acquired by HubSpot)
+- `/sales-rb2b` — RB2B platform help (person-level visitor identification, Hot Pages, Identity Resolution API)
 - `/sales-seamless` — Seamless.AI platform help (1.8B+ contacts, Buyer Intent, Job Changes, Autopilot, Chrome extension)
 - `/sales-zoominfo` — ZoomInfo platform help (Advanced Search, Saved Searches, exports)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

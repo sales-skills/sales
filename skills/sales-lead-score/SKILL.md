@@ -231,6 +231,13 @@ Subtract points for disqualifying signals:
 - **Combined person + company enrichment**: The combined endpoint returns both person and company data in one call, giving you demographic (role, seniority) and firmographic (employee count, revenue, industry) signals together for efficient scoring.
 - **Breeze Intelligence in HubSpot**: If you use HubSpot, Breeze Intelligence (Clearbit's HubSpot-native product) auto-enriches contacts and companies, feeding directly into HubSpot's native lead scoring workflows without manual data piping.
 
+#### In RB2B
+- **Person-level website visit signals**: RB2B identifies the individual visiting your site (US only), giving you person-specific behavioral signals — not just "someone from Company X visited." Use as a high-value behavioral scoring input: +15 for person-level identification on pricing page, +10 for other Hot Pages.
+- **Hot Pages as scoring triggers**: Configure key pages (pricing, demo, case studies) as Hot Pages in RB2B. When an identified visitor hits a Hot Page, add behavioral points to their lead score. More specific than generic "website visit" signals.
+- **Hot Leads for ICP pre-filtering**: RB2B's Hot Leads feature filters visitors by firmographic/demographic criteria before they even enter your scoring model. Use this as a pre-qualification step to only score visitors who match your ICP.
+- **Real-time scoring**: RB2B pushes visitor data to CRM in real-time via webhooks or native integrations. Trigger immediate score recalculation when a high-value visitor is identified — no batch delay.
+- **Company-level fallback**: For non-US traffic and unmatched visitors, RB2B provides company-level identification (via Demandbase). Score company-level visits lower than person-level visits (e.g., +5 for company-level vs +15 for person-level).
+
 ### Testing the model
 
 Before going live:
@@ -305,6 +312,7 @@ Every quarter:
 - `/sales-apollo` — Set up Apollo's native scoring features
 - `/sales-activecampaign` — ActiveCampaign platform help (contact scoring, deal scoring, automation-based scoring with threshold triggers)
 - `/sales-clearbit` — Clearbit platform help (enrichment for scoring, Reveal for behavioral signals, Breeze Intelligence in HubSpot)
+- `/sales-rb2b` — RB2B platform help (person-level visitor identification for scoring triggers, Hot Pages, real-time CRM integration)
 - `/sales-getresponse` — GetResponse platform help (contact scoring, automation-triggered scoring, engagement-based scoring)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 

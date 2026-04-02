@@ -159,6 +159,18 @@ Clearbit Reveal identifies anonymous website visitors by matching IP addresses t
 7. **JavaScript tag**: Install the Clearbit JavaScript tag on your website to capture visitor IPs and stream identification data in real time.
 8. **Breeze Intelligence (HubSpot)**: Clearbit was acquired by HubSpot in December 2023. Reveal capabilities are now available as Breeze Intelligence within HubSpot, including buyer intent features. If you're on HubSpot, check Breeze Intelligence instead of standalone Clearbit.
 
+### In RB2B
+
+RB2B provides **person-level** website visitor identification (US traffic only) — it identifies the individual visiting your site, not just the company:
+1. **Person-level identification**: RB2B's pixel resolves individual visitors to name, work email, LinkedIn profile URL, job title, and company. This is a stronger signal than company-level identification (Clearbit Reveal) because you know exactly who visited.
+2. **Company-level identification**: For non-US traffic and unmatched visitors, RB2B provides company-level ID (powered by Demandbase) — similar to Clearbit Reveal.
+3. **Hot Pages**: Configure high-intent pages (pricing, demo, case studies) as "Hot Pages" — visitors to these pages are flagged for immediate sales follow-up. Use as a high-value signal in the scoring matrix above.
+4. **Hot Leads**: Filter identified visitors by ICP criteria (title, company size, industry, seniority) — only surface visitors who match your target profile. Reduces noise from non-ICP traffic.
+5. **Real-time alerts**: Push identified visitors to Slack, CRM (HubSpot/Salesforce), or webhooks in real-time. Sales reps can act within minutes of a website visit.
+6. **US-only limitation**: Person-level ID only works for US-based visitors. International traffic gets company-level ID only. If your audience is primarily non-US, use Clearbit Reveal or Demandbase instead.
+7. **Coverage**: Pro+ plans identify 35-45% of US visitors at person level. Lower plans have lower match rates. Set expectations accordingly.
+8. **Identity Resolution API**: Separate API product at api.rb2b.com offers programmatic resolution (IP→LinkedIn, IP→Company, Email→LinkedIn, LinkedIn→Email). Credit-based pricing separate from the pixel product.
+
 ## Step 4 — Signal-to-action playbooks
 
 ### For each signal type, define the action:
@@ -234,6 +246,7 @@ Use Apollo Workflows (Professional+ plan) to automate:
 - `/sales-hunter` — Hunter.io platform help (Signals for buying intent, TechLookup for technographic prospecting, Discover for company search)
 - `/sales-seamless` — Seamless.AI platform help (Buyer Intent, Job Changes, Pitch Intelligence, Autopilot)
 - `/sales-clearbit` — Clearbit platform help (Reveal for visitor identification, Enrichment, Prospector)
+- `/sales-rb2b` — RB2B platform help (person-level visitor identification, Hot Pages, Identity Resolution API)
 - `/sales-zoominfo` — ZoomInfo platform help (SalesOS, intent topics, Scoops)
 - `/sales-b2b-advertising` — account-based advertising driven by intent signals
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

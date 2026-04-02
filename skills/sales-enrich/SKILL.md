@@ -1,6 +1,6 @@
 ---
 name: sales-enrich
-description: "Enrich contacts and companies with verified emails, phones, and firmographic data. Also covers CRM data hygiene, deduplication, and bulk enrichment. Use when enriching leads, finding email addresses, cleaning CRM data, doing bulk enrichment, optimizing enrichment credits, setting up auto-enrichment, or fixing stale contact data. Do NOT use for building new prospect lists from scratch (use /sales-prospect-list), interpreting buying signals (use /sales-intent), ZoomInfo-specific enrichment config (use /sales-zoominfo), Clearbit/Breeze Intelligence platform help (use /sales-clearbit), or general Apollo platform help (use /sales-apollo)."
+description: "Enrich contacts and companies with verified emails, phones, and firmographic data. Also covers CRM data hygiene, deduplication, and bulk enrichment. Use when enriching leads, finding email addresses, cleaning CRM data, doing bulk enrichment, optimizing enrichment credits, setting up auto-enrichment, or fixing stale contact data. Do NOT use for building new prospect lists from scratch (use /sales-prospect-list), interpreting buying signals (use /sales-intent), ZoomInfo-specific enrichment config (use /sales-zoominfo), Clearbit/Breeze Intelligence platform help (use /sales-clearbit), RB2B platform help (use /sales-rb2b), or general Apollo platform help (use /sales-apollo)."
 argument-hint: "[describe what data you need — e.g., 'enrich 500 leads with emails' or 'clean up stale CRM contacts']"
 license: MIT
 metadata:
@@ -394,6 +394,26 @@ Choose the right approach based on volume and frequency:
 
 **Credit economics**: Clearbit pricing is volume-based and quote-driven (no public per-credit pricing). Contact sales for plans. HubSpot Breeze Intelligence: credits purchased as add-on packs within HubSpot billing.
 
+### In RB2B (Identity Resolution API)
+
+**IP-to-identity resolution**: RB2B's API product (api.rb2b.com) resolves IP addresses to identity data — hashed email (HEM), LinkedIn profile URL, and company firmographics. Use for enriching website visitor data or building identity resolution into custom pipelines.
+
+**Endpoint chain for full enrichment**:
+1. `GET /v1/ip/hem` — resolve IP to hashed email (SHA256)
+2. `GET /v1/ip/linkedin` — resolve IP directly to LinkedIn profile URL
+3. `GET /v1/ip/company` — resolve IP to company firmographics
+4. `GET /v1/linkedin/email` — resolve LinkedIn URL to work email
+5. `GET /v1/email/linkedin` — resolve email to LinkedIn URL
+6. `GET /v1/company/firmographics` — get full company data from domain
+
+**Pixel-based enrichment**: The main RB2B product (pixel, not API) automatically enriches website visitors with person-level data (name, email, LinkedIn, title, company) — no manual enrichment needed. Data pushed to CRM/Slack in real-time.
+
+**API pricing**: Credit-based, separate from pixel product. 1 credit per lookup. 100 credits = $9, 1,000 = $49, 10,000 = $299. No subscription required — buy credits as needed.
+
+**US-focused**: Person-level resolution has highest match rates for US-based data. Company-level resolution works globally.
+
+**Best for**: Enriching anonymous website traffic with identity data, building custom identity resolution pipelines, resolving IP→person→company in programmatic workflows.
+
 ### Compliance checklist
 
 Before enriching and contacting, verify compliance with data privacy regulations in your target regions:
@@ -527,6 +547,7 @@ Credits reset monthly and do not roll over. Plan enrichment around your billing 
 - `/sales-zerobounce` — ZeroBounce platform help (email validation 99.6% accuracy, Email Finder, AI scoring, activity data, blacklist monitoring, DMARC, warmup)
 - `/sales-snov` — Snov.io platform help (email finder, domain search, LinkedIn enrichment, email verifier 98%, multichannel campaigns)
 - `/sales-clearbit` — Clearbit / Breeze Intelligence platform help (person enrichment, company enrichment, prospector, Name to Domain, streaming API)
+- `/sales-rb2b` — RB2B platform help (person-level visitor identification pixel, Identity Resolution API)
 - `/sales-zoominfo` — ZoomInfo platform help (enrichment, intent, OperationsOS)
 - `/sales-data-hygiene` — CRM data quality, deduplication, enrichment automation
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

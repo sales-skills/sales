@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-rb2b",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I want to know exactly who is visiting our pricing page so my sales team can follow up. We're a US-focused B2B SaaS company. How do I set up RB2B for this?",
+      "expected_output": "Guide covering pixel installation, Hot Pages configuration for pricing page, Slack alert setup, person-level ID explanation with US-only limitation, and follow-up workflow recommendations",
+      "assertions": [
+        {"name": "pixel_setup", "description": "Must explain how to install the RB2B pixel (JavaScript snippet in <head> tag or via GTM) and verify it's working"},
+        {"name": "hot_pages", "description": "Must recommend configuring the pricing page as a Hot Page to flag high-intent visitors"},
+        {"name": "person_level_us_only", "description": "Must explain that person-level identification only works for US-based visitors, with expected match rates (35-45% on Pro+)"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "We're currently using Clearbit Reveal for website visitor identification and considering switching to RB2B. What are the key differences and is it worth the switch?",
+      "expected_output": "Comparison covering person-level vs company-level identification, US-only limitation, pricing differences, Clearbit's HubSpot acquisition impact, and recommendation based on use case",
+      "assertions": [
+        {"name": "person_vs_company", "description": "Must clearly explain that RB2B offers person-level ID (name, email, LinkedIn) while Clearbit Reveal only provides company-level identification"},
+        {"name": "geographic_limitation", "description": "Must note that RB2B person-level ID is US-only while Clearbit Reveal works globally"},
+        {"name": "clearbit_hubspot_context", "description": "Must mention that Clearbit is now Breeze Intelligence under HubSpot, which affects standalone API availability and may create HubSpot lock-in"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I want to use the RB2B API to resolve IP addresses to LinkedIn profiles for our custom analytics platform. How does the API work and what will it cost?",
+      "expected_output": "Guide covering the Identity Resolution API at api.rb2b.com, IP→LinkedIn endpoint, credit-based pricing, authentication, and chaining endpoints for richer data",
+      "assertions": [
+        {"name": "api_separate_product", "description": "Must explain that the RB2B API is a separate product from the pixel with its own credit-based pricing at api.rb2b.com"},
+        {"name": "ip_linkedin_endpoint", "description": "Must describe the IP→LinkedIn endpoint and how to authenticate with an API key"},
+        {"name": "credit_pricing", "description": "Must include credit pricing tiers (e.g., 1,000 credits for $49, 10,000 for $299) with 1 credit per lookup"}
+      ]
+    }
+  ]
+}
