@@ -222,6 +222,15 @@ Subtract points for disqualifying signals:
 - **Tag-based manual scoring**: On any plan, use Visual Automations to apply tags based on behavior (link clicked, form submitted, product purchased). Create segments combining tags as a DIY scoring workaround.
 - **Best practice**: Use Kit's built-in engagement scoring for list hygiene (suppress cold subscribers). For actual lead scoring with firmographic + behavioral dimensions, export Kit subscriber data to your CRM or use a dedicated MAP (ActiveCampaign, HubSpot) with Kit as the email layer.
 
+#### In Clearbit
+- **Enrichment as scoring fuel**: Clearbit enrichment provides the data dimensions needed for scoring — employee count, revenue, industry, tech stack, role, seniority, and location. These map directly to demographic and firmographic scoring attributes.
+- **Real-time scoring on form submission**: Enrich leads in real time on form submission so you can score instantly before the lead hits your CRM. This enables immediate routing and follow-up for high-score leads.
+- **Company type filtering**: Company type data (private, public, nonprofit) helps filter out non-buyers early. Subtract points for company types outside your ICP (e.g., -15 for nonprofit if you only sell to commercial companies).
+- **Technographic scoring**: Tech stack data enables technographic scoring — score higher if a lead's company uses a competitor's tool (displacement opportunity) or complementary technology (integration fit). Example: +10 if they use a competing product, +5 if they use a tool you integrate with.
+- **Behavioral scoring with Reveal**: Reveal identifies anonymous website visitors from target accounts, adding behavioral scoring signals (website visits from target accounts) before a lead even fills out a form. Feed Reveal data into your scoring model as an intent signal.
+- **Combined person + company enrichment**: The combined endpoint returns both person and company data in one call, giving you demographic (role, seniority) and firmographic (employee count, revenue, industry) signals together for efficient scoring.
+- **Breeze Intelligence in HubSpot**: If you use HubSpot, Breeze Intelligence (Clearbit's HubSpot-native product) auto-enriches contacts and companies, feeding directly into HubSpot's native lead scoring workflows without manual data piping.
+
 ### Testing the model
 
 Before going live:
@@ -295,6 +304,7 @@ Every quarter:
 - `/revops` — Design the broader marketing-to-sales handoff process around your scoring model
 - `/sales-apollo` — Set up Apollo's native scoring features
 - `/sales-activecampaign` — ActiveCampaign platform help (contact scoring, deal scoring, automation-based scoring with threshold triggers)
+- `/sales-clearbit` — Clearbit platform help (enrichment for scoring, Reveal for behavioral signals, Breeze Intelligence in HubSpot)
 - `/sales-getresponse` — GetResponse platform help (contact scoring, automation-triggered scoring, engagement-based scoring)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 

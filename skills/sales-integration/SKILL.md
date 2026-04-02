@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Omnisend, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, ZoomInfo, Brevo, Braze, Iterable, GetResponse, SendPulse, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Omnisend, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, ZoomInfo, Clearbit, Brevo, Braze, Iterable, GetResponse, SendPulse, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -655,6 +655,17 @@ Before building anything custom, check if a native integration exists:
 - **Make (Integromat)**: Full module set for email, SMS, chatbot, CRM.
 - **Native integrations**: WordPress, WooCommerce, Shopify, OpenCart, PrestaShop, Magento, Bitrix24, Salesforce, HubSpot, Pipedrive.
 
+### Clearbit webhooks, API & integrations
+- **HubSpot**: Native integration (Breeze Intelligence) — auto-enrichment, form shortening, buyer intent.
+- **Salesforce**: Native — enrich leads/contacts/accounts, enrichment workflows.
+- **Segment**: Native — enrichment data pushed to all connected destinations.
+- **Marketo**: Native — lead enrichment in marketing automation.
+- **Slack**: clearbit-slack integration — notify channels when target accounts visit site (Reveal).
+- **Zapier**: Triggers + actions for person/company enrichment, push to 8,000+ apps.
+- **Make (Integromat)**: Clearbit enrichment module.
+- **API**: REST API with per-resource subdomains, HTTP Basic Auth, 600 req/min.
+- **Webhooks**: Async enrichment delivery for queued (202) responses, data change notifications with `subscribe:true`.
+
 ### Seismic webhooks
 - **Events**: Content views, LiveSend opens, DSR engagement, user provisioning (SCIM)
 - **Setup**: Configure via the developer portal (developer.seismic.com). OAuth 2.0 auth.
@@ -745,6 +756,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-sendgrid` — SendGrid platform help (Email API, Marketing Campaigns, Event Webhooks, Inbound Parse, 353 partner integrations)
 - `/sales-postmark` — Postmark platform help (transactional email API, 7 webhook types, Inbound email parsing, Zapier)
 - `/sales-omnisend` — Omnisend platform help (email/SMS/push for ecommerce, Shopify/WooCommerce/BigCommerce integrations, REST API)
+- `/sales-clearbit` — Clearbit platform help (enrichment API, Reveal, native HubSpot/Salesforce/Segment/Marketo integrations, webhooks)
 - `/sales-zoominfo` — ZoomInfo platform help (SalesOS, MarketingOS, OperationsOS integrations)
 - `/sales-data-hygiene` — CRM data quality and enrichment automation
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.

@@ -209,6 +209,26 @@ Clay excels at waterfall enrichment and data transformation, not traditional ded
 - Import management: clean data before it enters CRM
 - Single Table Dedupe, Table-to-Table Dedupe (cross-object)
 
+### In Clearbit
+
+Clearbit (now Breeze Intelligence in HubSpot) focuses on enrichment-driven data hygiene — standardizing and filling CRM records with firmographic and demographic data.
+
+**Enrichment-based cleanup**:
+- Enrich existing CRM records with standardized firmographic/demographic data
+- Bulk enrichment via API or Breeze Intelligence in HubSpot
+- Continuous data refresh: subscribe to enrichment updates when data changes (`subscribe: true` parameter) — records stay current without manual re-enrichment
+
+**Normalization**:
+- Standardized industry codes (NAICS, GICS, SIC) — normalizes messy free-text industry fields
+- Normalized role and seniority classifications — standardizes job titles across records into consistent categories
+- Corporate hierarchy: parent company and ultimate parent domain fields help deduplicate subsidiary records
+
+**Data quality signals**:
+- `emailProvider` flag identifies personal email addresses (gmail, yahoo) vs business emails — useful for filtering low-quality records
+- Tech stack data helps identify outdated technology fields in CRM
+
+**Best for**: Filling missing fields, standardizing industries and titles, flagging personal emails, and keeping records fresh with continuous enrichment. Pair with a dedup tool (ZoomInfo, DemandTools) for full hygiene coverage.
+
 ## Step 4 — Actionable guidance
 
 ### Quick wins (do these first)
@@ -246,6 +266,7 @@ Clay excels at waterfall enrichment and data transformation, not traditional ded
 ## Related skills
 
 - `/sales-zoominfo` — ZoomInfo platform help (for OperationsOS-specific setup)
+- `/sales-clearbit` — Clearbit platform help (enrichment, reveal, prospector)
 - `/sales-enrich` — enrichment strategy across all providers
 - `/sales-lead-routing` — lead assignment and territory rules (often paired with dedup)
 - `/sales-lead-score` — lead scoring models (depend on clean data)

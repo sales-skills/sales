@@ -1,6 +1,6 @@
 ---
 name: sales-enrich
-description: "Enrich contacts and companies with verified emails, phones, and firmographic data. Also covers CRM data hygiene, deduplication, and bulk enrichment. Use when enriching leads, finding email addresses, cleaning CRM data, doing bulk enrichment, optimizing enrichment credits, setting up auto-enrichment, or fixing stale contact data. Do NOT use for building new prospect lists from scratch (use /sales-prospect-list), interpreting buying signals (use /sales-intent), ZoomInfo-specific enrichment config (use /sales-zoominfo), or general Apollo platform help (use /sales-apollo)."
+description: "Enrich contacts and companies with verified emails, phones, and firmographic data. Also covers CRM data hygiene, deduplication, and bulk enrichment. Use when enriching leads, finding email addresses, cleaning CRM data, doing bulk enrichment, optimizing enrichment credits, setting up auto-enrichment, or fixing stale contact data. Do NOT use for building new prospect lists from scratch (use /sales-prospect-list), interpreting buying signals (use /sales-intent), ZoomInfo-specific enrichment config (use /sales-zoominfo), Clearbit/Breeze Intelligence platform help (use /sales-clearbit), or general Apollo platform help (use /sales-apollo)."
 argument-hint: "[describe what data you need — e.g., 'enrich 500 leads with emails' or 'clean up stale CRM contacts']"
 license: MIT
 metadata:
@@ -366,6 +366,34 @@ Choose the right approach based on volume and frequency:
 - **Credit economics**: Free 100/mo, PAYG $39/2K credits (~$0.02/credit), ZeroBounce ONE $99/mo for 25K. Email Finder uses 20 credits per find. Credits never expire.
 - **Best for**: High-accuracy email validation, catch-all scoring, engagement-based list segmentation, comprehensive deliverability monitoring alongside enrichment.
 
+### In Clearbit (Breeze Intelligence)
+
+**Person enrichment**: Pass an email address to `GET https://person.clearbit.com/v2/people/find?email={email}` — returns 80+ attributes: name, title, role, seniority, company, social profiles (LinkedIn, Twitter, GitHub), location, bio, and more. 1 credit per successful lookup.
+
+**Company enrichment**: Pass a domain to `GET https://company.clearbit.com/v2/companies/find?domain={domain}` — returns 100+ firmographic attributes: employee count, estimated annual revenue, tech stack, industry (SIC/NAICS codes), funding history, company type, parent company, social profiles, location.
+
+**Combined enrichment**: `GET https://person-stream.clearbit.com/v2/combined/find?email={email}` — returns both person and company data in a single call. Use this when you need both and want to minimize requests.
+
+**Streaming vs async**: Clearbit offers two modes per endpoint:
+- **Streaming** (e.g., `person-stream.clearbit.com`): Holds the HTTP connection open for up to 60 seconds while data is fetched. Returns the result inline. Best for real-time form enrichment and low-latency workflows.
+- **Standard** (e.g., `person.clearbit.com`): Returns `202 Accepted` if data isn't immediately available, then delivers via webhook. Best for batch/background enrichment.
+
+**Name to Domain**: `GET https://company.clearbit.com/v1/domains/find?name={company_name}` — resolve a company name to its website domain. Useful when you have company names but no domains (e.g., from event lead lists).
+
+**Prospector**: `GET https://prospector.clearbit.com/v1/people/search` — find contacts at a company filtered by role, seniority, title, and location. Use to build contact lists at target accounts without needing names upfront.
+
+**API details**:
+- REST API, HTTP Basic Auth (API key as username, no password)
+- Rate limit: 600 requests/minute
+- Base URLs vary by API: `person.clearbit.com`, `company.clearbit.com`, `prospector.clearbit.com`, `reveal.clearbit.com`
+- SDKs (Ruby, Node, Python, Go) are deprecated — use direct HTTP requests
+
+**HubSpot / Breeze Intelligence**: Clearbit was acquired by HubSpot in December 2023 and is now also available as the Breeze Intelligence add-on inside HubSpot. Breeze uses a credit-based model within HubSpot. If the user is already on HubSpot, they may be able to access Clearbit enrichment natively without a separate Clearbit subscription.
+
+**Bulk workflow**: Clearbit doesn't have a dedicated bulk endpoint. For batch enrichment, loop through the streaming endpoints (up to 600 req/min). Use the combined endpoint to get person + company in one call and halve your request count.
+
+**Credit economics**: Clearbit pricing is volume-based and quote-driven (no public per-credit pricing). Contact sales for plans. HubSpot Breeze Intelligence: credits purchased as add-on packs within HubSpot billing.
+
 ### Compliance checklist
 
 Before enriching and contacting, verify compliance with data privacy regulations in your target regions:
@@ -498,6 +526,7 @@ Credits reset monthly and do not roll over. Plan enrichment around your billing 
 - `/sales-anymailfinder` — Anymail Finder platform help (email finder by person/company/decision maker/LinkedIn, email verifier, bulk search, 97%+ delivery guarantee)
 - `/sales-zerobounce` — ZeroBounce platform help (email validation 99.6% accuracy, Email Finder, AI scoring, activity data, blacklist monitoring, DMARC, warmup)
 - `/sales-snov` — Snov.io platform help (email finder, domain search, LinkedIn enrichment, email verifier 98%, multichannel campaigns)
+- `/sales-clearbit` — Clearbit / Breeze Intelligence platform help (person enrichment, company enrichment, prospector, Name to Domain, streaming API)
 - `/sales-zoominfo` — ZoomInfo platform help (enrichment, intent, OperationsOS)
 - `/sales-data-hygiene` — CRM data quality, deduplication, enrichment automation
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

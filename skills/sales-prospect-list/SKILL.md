@@ -330,6 +330,16 @@ Save the search as a dynamic list — new matches will appear automatically.
 - **Best for**: Validating and cleaning prospect lists before outreach, finding emails for named contacts, scoring catch-all addresses, and prioritizing by engagement recency.
 - **Pricing**: Free 100/mo, PAYG $39/2K credits, ZeroBounce ONE $99/mo for 25K. Email Finder uses 20 credits per find.
 
+### In Clearbit (Prospector)
+- **Contact search by domain**: `GET prospector.clearbit.com/v1/people/search?domain={domain}` — search for contacts at any company by domain. Returns name, email, title, role, seniority, and verified status for each match.
+- **Filtering**: Narrow results by role, seniority, title, city, state, country, or name. Combine filters to find specific personas (e.g., VP-level marketing contacts in San Francisco).
+- **Pagination**: Use `page` and `page_size` parameters (max 100 per page) to iterate through large result sets.
+- **Suppression**: Use the suppression parameter to exclude contacts from a specific domain — useful for filtering out your own employees or existing customers.
+- **Combine with Reveal**: Pair Prospector with Clearbit Reveal (IP intelligence) to identify companies visiting your website, then use Prospector to find decision-makers at those companies. Turns anonymous traffic into targeted prospect lists.
+- **Paid add-on**: Prospector is not included in standard Clearbit enrichment plans — it requires a separate subscription.
+- **Acquired by HubSpot**: Clearbit was acquired by HubSpot in December 2023. HubSpot customers may have access through their HubSpot subscription; standalone API access may change over time.
+- **Best for**: Finding contacts at specific target companies by domain, ABM list building when you already have a target account list, converting website visitors into prospect lists via Reveal + Prospector.
+
 ## Step 4 — Segment and prioritize
 
 Split the list into tiers for sequencing:
@@ -436,6 +446,7 @@ Before launching outreach, validate the list:
 - `/sales-zerobounce` — ZeroBounce platform help (Email Finder by name+domain, email validation 99.6% accuracy, bulk list cleaning)
 - `/sales-snov` — Snov.io platform help (email finder, domain search, LinkedIn enrichment, prospect management, multichannel campaigns)
 - `/sales-mailmo` — Mailmo platform help (Email Finder with catch-all verification, LinkedIn Chrome extension)
+- `/sales-clearbit` — Clearbit platform help (Prospector contact search by domain, Reveal IP intelligence, enrichment — acquired by HubSpot)
 - `/sales-seamless` — Seamless.AI platform help (1.8B+ contacts, Buyer Intent, Job Changes, Autopilot, Chrome extension)
 - `/sales-zoominfo` — ZoomInfo platform help (Advanced Search, Saved Searches, exports)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

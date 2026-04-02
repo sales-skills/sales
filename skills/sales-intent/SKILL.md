@@ -147,6 +147,18 @@ Apollo integrates Bombora and LeadSift intent data:
 4. **Combine with ICP filters**: Layer intent on top of firmographic/demographic filters for highest-quality lists
 5. **Job change tracking**: Apollo surfaces job changes for contacts in your CRM — new roles within 90 days
 
+### In Clearbit (Reveal)
+
+Clearbit Reveal identifies anonymous website visitors by matching IP addresses to companies:
+1. **IP-to-company identification**: `GET reveal.clearbit.com/v1/companies/find?ip={ip}` — returns company firmographics (name, domain, industry, size, location) plus a confidence score.
+2. **Match rate**: Typically 20-30% of website traffic. Only resolves business IPs — home/mobile IPs won't match. Set expectations accordingly.
+3. **De-anonymize website visitors**: See which companies are visiting your site, which pages they view, and how often. Use this as a website visit signal in the scoring matrix above.
+4. **Personalize content**: Use Reveal data to dynamically adjust website content, CTAs, or pricing pages based on visitor's company size, industry, or name.
+5. **Trigger sales alerts for target accounts**: When a target account visits your pricing or demo page, fire a Slack alert or CRM task for the assigned rep. High-value signal when combined with intent data.
+6. **Combine with Prospector**: Once Reveal identifies a company, use Clearbit Prospector (or `/sales-enrich`) to find the right contacts at that company — turns anonymous traffic into actionable leads.
+7. **JavaScript tag**: Install the Clearbit JavaScript tag on your website to capture visitor IPs and stream identification data in real time.
+8. **Breeze Intelligence (HubSpot)**: Clearbit was acquired by HubSpot in December 2023. Reveal capabilities are now available as Breeze Intelligence within HubSpot, including buyer intent features. If you're on HubSpot, check Breeze Intelligence instead of standalone Clearbit.
+
 ## Step 4 — Signal-to-action playbooks
 
 ### For each signal type, define the action:
@@ -221,6 +233,7 @@ Use Apollo Workflows (Professional+ plan) to automate:
 - `/sales-prospeo` — Prospeo platform help (company enrichment with tech stack detection, job postings as hiring signals)
 - `/sales-hunter` — Hunter.io platform help (Signals for buying intent, TechLookup for technographic prospecting, Discover for company search)
 - `/sales-seamless` — Seamless.AI platform help (Buyer Intent, Job Changes, Pitch Intelligence, Autopilot)
+- `/sales-clearbit` — Clearbit platform help (Reveal for visitor identification, Enrichment, Prospector)
 - `/sales-zoominfo` — ZoomInfo platform help (SalesOS, intent topics, Scoops)
 - `/sales-b2b-advertising` — account-based advertising driven by intent signals
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

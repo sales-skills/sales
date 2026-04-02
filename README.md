@@ -10,7 +10,7 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 82 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 83 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -352,6 +352,12 @@ Router recommends a 5-skill sequence:
 | Skill | What it does | Status |
 |---|---|---|
 | `/sales-sendpulse` | SendPulse platform help — email marketing, Automation 360, chatbots (Telegram, Facebook, WhatsApp, Instagram, Viber, Live Chat), CRM, online course builder (EDU), website/landing page builder, web push, SMS, SMTP transactional email, pop-ups, email verifier, API (OAuth 2.0, 7 SDKs), MCP Server | Available |
+
+### Clearbit & Platform
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-clearbit` | Clearbit (HubSpot) platform help — Person Enrichment (80+ attributes), Company Enrichment (100+ firmographics), Reveal (IP-to-company), Prospector (contact search), Name to Domain, Form Shortening, Risk API, Breeze Intelligence, API (REST, HTTP Basic Auth, 600 req/min) | Available |
 
 ### Kit (ConvertKit) & Platform
 

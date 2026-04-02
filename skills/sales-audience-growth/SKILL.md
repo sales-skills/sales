@@ -188,6 +188,13 @@ Ask the user:
 - **WebSights** — identifies companies visiting your site (even without form fills) via IP-to-company matching. Feeds visitor data into advertising retargeting or sales alerts.
 - **Conversion impact** — shorter forms typically increase conversion rates by 30-50%. FormComplete maintains data richness while reducing visible fields.
 
+### In Clearbit
+- **Form shortening** — auto-populate form fields when a visitor enters their email. Uses the Person Enrichment API to look up the email in real-time and pre-fills company name, title, phone, employee count, and industry.
+- **Radical field reduction** — reduces visible form fields from 8–10 down to 1–2 (just email). Improves conversion rates by 20–50%.
+- **HubSpot native** — available as a built-in feature in HubSpot forms via Breeze Intelligence. No custom code required.
+- **Non-HubSpot implementation** — for other platforms, implement via JavaScript calling the streaming Person API. On email field blur, fetch enrichment data and pre-fill remaining fields.
+- **Autocomplete API** — suggest company names as the user types (typeahead). Reduces friction on company name fields and ensures clean, standardized data.
+
 ### In SendPulse
 - **Pop-up forms**: Exit-intent, timed, scroll-triggered, and floating bar — multiple trigger types to capture visitors at the right moment
 - **Subscription forms**: Embed forms directly in landing pages or websites for inline list building
@@ -264,6 +271,7 @@ Ask the user:
 - `/sales-activecampaign` — ActiveCampaign platform help
 - `/sales-omnisend` — Omnisend platform help (popups, forms, Wheel of Fortune for ecommerce)
 - `/sales-sendpulse` — SendPulse platform help (pop-ups, subscription forms, multi-channel follow-up)
+- `/sales-clearbit` — Clearbit platform help (form shortening, enrichment, Autocomplete API)
 - `/sales-zoominfo` — ZoomInfo platform help (FormComplete, WebSights)
 - `/sales-b2b-advertising` — account-based advertising (WebSights feeds retargeting audiences)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
