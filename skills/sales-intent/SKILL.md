@@ -171,6 +171,18 @@ RB2B provides **person-level** website visitor identification (US traffic only) 
 7. **Coverage**: Pro+ plans identify 35-45% of US visitors at person level. Lower plans have lower match rates. Set expectations accordingly.
 8. **Identity Resolution API**: Separate API product at api.rb2b.com offers programmatic resolution (IP→LinkedIn, IP→Company, Email→LinkedIn, LinkedIn→Email). Credit-based pricing separate from the pixel product.
 
+### In 6sense
+
+6sense is an enterprise ABM platform with proprietary intent data (Signalverse) and AI-driven buying stage predictions:
+1. **Signalverse Intent Data**: 6sense captures 1 trillion+ signals from first-party website visits, third-party content consumption (Bombora, G2, TrustRadius), and CRM/MAP activity. Configure intent topics relevant to your product in the platform — 6sense tracks which accounts are researching those topics.
+2. **Buying Stage Predictions**: AI classifies accounts into buying stages — Target, Awareness, Consideration, Decision, Purchase. Updated daily. More actionable than raw intent scores because it tells you where the account is in their journey.
+3. **6QA (6sense Qualified Accounts)**: Fully customizable qualification criteria combining intent signals, profile fit, and buying stage. Use 6QAs as the trigger for sales outreach — they represent accounts most likely to buy.
+4. **Company Identification**: `GET epsilon.6sense.com/v3/company/details` — identifies companies visiting your website by IP. Claims highest match rates in the industry. Feed identified companies into segments and workflows.
+5. **Sales Intelligence & Sales Copilot**: AI-driven dashboard embedded in CRM showing prioritized accounts, recommended next actions, and talking points. Chrome extension shows intent data while browsing LinkedIn.
+6. **Company Discovery**: Finds new accounts matching your ICP that aren't in your CRM yet — proactive signal-based prospecting.
+7. **Signal trends**: 6sense tracks whether research intensity is increasing, stable, or decreasing — trend direction is more actionable than absolute signal strength.
+8. **Pricing note**: Enterprise-only ($50K-200K+/year). Free plan (50 credits/mo) does NOT include intent data or predictive scoring. For budget-conscious teams, consider Bombora standalone ($25K/yr) or Apollo.io (intent included in lower-cost plans).
+
 ## Step 4 — Signal-to-action playbooks
 
 ### For each signal type, define the action:
@@ -247,6 +259,7 @@ Use Apollo Workflows (Professional+ plan) to automate:
 - `/sales-seamless` — Seamless.AI platform help (Buyer Intent, Job Changes, Pitch Intelligence, Autopilot)
 - `/sales-clearbit` — Clearbit platform help (Reveal for visitor identification, Enrichment, Prospector)
 - `/sales-rb2b` — RB2B platform help (person-level visitor identification, Hot Pages, Identity Resolution API)
+- `/sales-6sense` — 6sense platform help (Signalverse intent data, predictive scoring, Sales Intelligence, AI Email Agents, advertising, orchestration)
 - `/sales-zoominfo` — ZoomInfo platform help (SalesOS, intent topics, Scoops)
 - `/sales-b2b-advertising` — account-based advertising driven by intent signals
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

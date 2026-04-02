@@ -1,6 +1,6 @@
 ---
 name: sales-enrich
-description: "Enrich contacts and companies with verified emails, phones, and firmographic data. Also covers CRM data hygiene, deduplication, and bulk enrichment. Use when enriching leads, finding email addresses, cleaning CRM data, doing bulk enrichment, optimizing enrichment credits, setting up auto-enrichment, or fixing stale contact data. Do NOT use for building new prospect lists from scratch (use /sales-prospect-list), interpreting buying signals (use /sales-intent), ZoomInfo-specific enrichment config (use /sales-zoominfo), Clearbit/Breeze Intelligence platform help (use /sales-clearbit), RB2B platform help (use /sales-rb2b), or general Apollo platform help (use /sales-apollo)."
+description: "Enrich contacts and companies with verified emails, phones, and firmographic data. Also covers CRM data hygiene, deduplication, and bulk enrichment. Use when enriching leads, finding email addresses, cleaning CRM data, doing bulk enrichment, optimizing enrichment credits, setting up auto-enrichment, or fixing stale contact data. Do NOT use for building new prospect lists from scratch (use /sales-prospect-list), interpreting buying signals (use /sales-intent), ZoomInfo-specific enrichment config (use /sales-zoominfo), Clearbit/Breeze Intelligence platform help (use /sales-clearbit), RB2B platform help (use /sales-rb2b), 6sense platform help (use /sales-6sense), or general Apollo platform help (use /sales-apollo)."
 argument-hint: "[describe what data you need — e.g., 'enrich 500 leads with emails' or 'clean up stale CRM contacts']"
 license: MIT
 metadata:
@@ -414,6 +414,24 @@ Choose the right approach based on volume and frequency:
 
 **Best for**: Enriching anonymous website traffic with identity data, building custom identity resolution pipelines, resolving IP→person→company in programmatic workflows.
 
+### In 6sense
+
+**People Enrichment API**: `GET/POST scribe.6sense.com/v2/people/Enrichment` — pass email or name+company to get contact data including email, phone, mobile, title, seniority, job function, department, and associated company firmographics. 1 API credit per lookup.
+
+**Full Enrichment (Lead Scoring + Firmographics)**: `GET/POST scribe.6sense.com/v2/people/full` — returns everything from People Enrichment plus product scoring data and segment membership. Use when you need both contact data and 6sense intelligence in one call.
+
+**Company Identification**: `GET epsilon.6sense.com/v3/company/details` — resolve IP addresses to company firmographics. Install via WebTag (JavaScript) on your website for automatic visitor identification, or call directly from your backend.
+
+**Segments API**: `GET scribe.6sense.com/v2/company/segments` — check which 6sense segments a company belongs to, plus buying stage, intent scores, and profile fit score. Use for real-time personalization.
+
+**API auth**: Org-level API tokens provisioned in platform settings. Multiple tokens supported for security isolation.
+
+**Credit system**: API calls consume credits from plan allocation. Credit consumption varies by endpoint. Unused credits expire monthly.
+
+**Pricing note**: API access requires a paid 6sense plan ($50K+/year). Free plan (50 credits/mo) gives basic search only — not full API access. Enterprise pricing makes 6sense better suited for high-volume, high-value enrichment, not one-off lookups.
+
+**Best for**: Enterprise teams already using 6sense for ABM who want to enrich inbound leads with intent data and buying stage alongside contact/firmographic data. Not cost-effective as a standalone enrichment tool — use Apollo, Hunter, or Tomba for enrichment-only use cases.
+
 ### Compliance checklist
 
 Before enriching and contacting, verify compliance with data privacy regulations in your target regions:
@@ -548,6 +566,7 @@ Credits reset monthly and do not roll over. Plan enrichment around your billing 
 - `/sales-snov` — Snov.io platform help (email finder, domain search, LinkedIn enrichment, email verifier 98%, multichannel campaigns)
 - `/sales-clearbit` — Clearbit / Breeze Intelligence platform help (person enrichment, company enrichment, prospector, Name to Domain, streaming API)
 - `/sales-rb2b` — RB2B platform help (person-level visitor identification pixel, Identity Resolution API)
+- `/sales-6sense` — 6sense platform help (People/Company Enrichment APIs, Company Identification, Segments API — enterprise ABM platform)
 - `/sales-zoominfo` — ZoomInfo platform help (enrichment, intent, OperationsOS)
 - `/sales-data-hygiene` — CRM data quality, deduplication, enrichment automation
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

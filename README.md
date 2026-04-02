@@ -10,7 +10,7 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 84 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 85 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -364,6 +364,12 @@ Router recommends a 5-skill sequence:
 | Skill | What it does | Status |
 |---|---|---|
 | `/sales-rb2b` | RB2B platform help — Person-Level Website Visitor ID (US only, 35-45% match rate), Company-Level ID (Demandbase, global), Hot Pages (high-intent page flagging), Hot Leads (ICP filtering), Traffic Insights, Identity Resolution API (api.rb2b.com — IP/LinkedIn/email/company resolution, credit-based), 50+ integrations (Slack, HubSpot, Salesforce, Apollo, Salesloft, Outreach, Clay) | Available |
+
+### 6sense & Platform
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-6sense` | 6sense platform help — Signalverse Intent Data (1T+ signals, buying stage predictions), Predictive Analytics (6AI Scoring, 6QA), Sales Intelligence (Sales Copilot, Chrome extension), AI Email Agents (automated personalized outreach), Advertising & Audience Activation (display, LinkedIn sync, retargeting), Orchestration Workflows, Segments, Company Identification API, People/Company Enrichment API, Company Discovery | Available |
 
 ### Kit (ConvertKit) & Platform
 

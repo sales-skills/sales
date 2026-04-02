@@ -238,6 +238,14 @@ Subtract points for disqualifying signals:
 - **Real-time scoring**: RB2B pushes visitor data to CRM in real-time via webhooks or native integrations. Trigger immediate score recalculation when a high-value visitor is identified — no batch delay.
 - **Company-level fallback**: For non-US traffic and unmatched visitors, RB2B provides company-level identification (via Demandbase). Score company-level visits lower than person-level visits (e.g., +5 for company-level vs +15 for person-level).
 
+#### In 6sense
+- **Predictive scoring built-in**: 6sense's AI generates profile fit scores and buying stage predictions automatically — no manual scoring model needed. The AI analyzes firmographic fit, intent signals, and engagement patterns to classify accounts into buying stages (Awareness → Purchase) updated daily.
+- **6QA (6sense Qualified Accounts)**: Customizable qualification criteria combining AI-driven intent + fit scores. 6QAs replace manual MQL/SQL definitions — accounts are flagged as qualified based on combined signal strength. Customize the 6QA thresholds to match your actual buying process.
+- **Intent as a scoring dimension**: Signalverse intent data provides the behavioral scoring dimension — which topics are being researched, signal trend (increasing/stable/decreasing), and recency. Feed these into your scoring model as the highest-weight behavioral signals.
+- **Profile fit as demographic/firmographic scoring**: 6sense automatically scores ICP fit based on firmographic and technographic attributes configured in your platform. This replaces manual demographic/firmographic scoring dimensions.
+- **CRM integration for scoring**: 6sense scores sync to Salesforce/HubSpot — use them as inputs to CRM-native lead scoring workflows, or use 6sense scores directly as your scoring model (replacing CRM-built models).
+- **Pricing note**: Predictive scoring requires a paid plan ($50K+/year). Free plan (50 credits/mo) does NOT include predictive features.
+
 ### Testing the model
 
 Before going live:
@@ -313,6 +321,7 @@ Every quarter:
 - `/sales-activecampaign` — ActiveCampaign platform help (contact scoring, deal scoring, automation-based scoring with threshold triggers)
 - `/sales-clearbit` — Clearbit platform help (enrichment for scoring, Reveal for behavioral signals, Breeze Intelligence in HubSpot)
 - `/sales-rb2b` — RB2B platform help (person-level visitor identification for scoring triggers, Hot Pages, real-time CRM integration)
+- `/sales-6sense` — 6sense platform help (AI-driven predictive scoring, 6QA qualification, Signalverse intent for behavioral scoring)
 - `/sales-getresponse` — GetResponse platform help (contact scoring, automation-triggered scoring, engagement-based scoring)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 

@@ -247,6 +247,17 @@ For each call step:
 - **API**: REST API with 33+ endpoints — campaign analytics, progress, replies, opens, clicks, sent emails, recipient status management. OAuth 2.0 auth, 60 req/min.
 - **Best practice**: Snov.io's strength is the all-in-one workflow — find emails → verify → warm up → send multichannel campaigns → track in CRM. LinkedIn automation is a paid add-on ($69/mo per slot) — factor this into cost planning for multichannel cadences.
 
+### In 6sense (AI Email Agents)
+
+6sense's AI Email Agents (formerly Conversational Email) automate the entire email lifecycle with AI — not templates:
+1. **AI-written emails**: Persona-driven agents craft unique, personalized emails using CRM data, Signalverse intent insights, and custom brand voice prompts. Not template swaps — original content per recipient.
+2. **Automated follow-up**: Agents read replies, analyze response patterns, adjust messaging, and follow up intelligently without human intervention.
+3. **Qualification & handoff**: AI determines interest level and qualification status, then routes qualified opportunities to sales reps at the right moment.
+4. **Buying group targeting**: Engage multiple stakeholders at the same account — AI agents coordinate outreach across the buying committee.
+5. **Deliverability infrastructure**: Custom AI email agent inboxes, contact validation rules, and security features for high inbox placement.
+6. **Analytics**: Track agent performance across the entire journey — response rates, meeting bookings, lead qualification rates, and pipeline attribution.
+7. **Important**: AI Email Agents are a separate add-on to 6sense, not included in all paid plans. Enterprise pricing. Best for teams already on 6sense who want AI-driven outbound integrated with their ABM data.
+
 ### Personalization framework
 - **Level 1 (Minimum)**: First name, company name, title — the bare minimum
 - **Level 2 (Standard)**: Industry reference, company-size-specific pain point
@@ -313,6 +324,7 @@ Provide a benchmarks table:
 - `/sales-hunter` — Hunter.io platform help (Campaigns, Domain Search, Email Finder, Email Verifier)
 - `/sales-zoominfo` — ZoomInfo platform help (Engage sequences, dialer, intent-triggered outreach)
 - `/sales-snov` — Snov.io platform help (multichannel email + LinkedIn campaigns, AI email writer, email warmup, email finder)
+- `/sales-6sense` — 6sense platform help (AI Email Agents for automated personalized outreach, Signalverse intent data for signal-based sequencing)
 - `/sales-seamless` — Seamless.AI platform help (Engagement Hub, Pitch Intelligence, contact data)
 - `/sales-email-tracking` — Email engagement tracking — open/click/attachment signals for follow-up timing
 - `/sales-closum` — Closum platform help (omnichannel: email, SMS, WhatsApp, Telegram, Web Push automations)

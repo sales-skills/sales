@@ -169,14 +169,15 @@ ZoomInfo MarketingOS combines B2B data with advertising execution.
 
 ### In 6sense
 
-**Revenue AI platform with advertising:**
-- AI-powered intent detection (6sense's own Dark Funnel data)
-- Predictive segments: accounts automatically grouped by buying stage
-- Display, retargeting, and LinkedIn orchestration
-- Audience sync to Google, Facebook, LinkedIn
-- Revenue AI recommendations: which accounts to target and when
-
-**Best for**: Companies that want AI-driven audience selection. 6sense's intent data and predictive models are industry-leading for identifying in-market accounts.
+6sense is a full ABM platform with strong advertising capabilities powered by Signalverse intent data:
+1. **Programmatic display ads**: Serve display ads to target accounts across the web. Build audiences from 6sense segments that combine ICP fit + intent signals + buying stage.
+2. **LinkedIn audience sync**: Dynamic 6sense segments automatically sync to LinkedIn Campaign Manager. 6sense claims 50%+ better match rates than competitors. Supports all LinkedIn ad types — Sponsored Content, Sponsored Messaging, Text Ads, Dynamic Ads.
+3. **Retargeting**: Re-engage website visitors (identified via Company Identification / WebTag) with display ads. Target specific accounts that visited key pages.
+4. **Contextual targeting**: Serve ads on pages contextually relevant to the intent topics your target accounts are researching.
+5. **Dynamic audiences**: Segments auto-update as accounts move between buying stages — ad audiences adjust in real-time. Accounts entering Decision stage get different ads than those in Awareness.
+6. **Cross-channel orchestration**: Advertising is orchestrated alongside email, sales outreach, and CRM actions from 6sense's workflow canvas. Coordinate ad impressions with sales touches.
+7. **Campaign analytics**: Multi-touch attribution tracks which ads influenced pipeline and revenue. Measure ad impact at the account level, not just clicks.
+8. **Pricing note**: Advertising is part of 6sense's enterprise platform ($50K-200K+/year). Not available on the Free plan. For teams without enterprise budgets, consider LinkedIn Ads direct, Demandbase (similar enterprise), or RollWorks (more accessible pricing).
 
 ### In Terminus (DemandScience)
 
@@ -264,6 +265,7 @@ ZoomInfo MarketingOS combines B2B data with advertising execution.
 
 ## Related skills
 
+- `/sales-6sense` — 6sense platform help (display ads, LinkedIn audience sync, retargeting, contextual targeting — advertising integrated with ABM intent data)
 - `/sales-zoominfo` — ZoomInfo platform help (for MarketingOS-specific setup)
 - `/sales-intent` — interpreting buying signals and prioritizing accounts
 - `/sales-account-map` — mapping buying committees at target accounts

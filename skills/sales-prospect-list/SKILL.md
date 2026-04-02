@@ -350,6 +350,17 @@ Save the search as a dynamic list — new matches will appear automatically.
 - **Best for**: Converting anonymous website visitors into actionable prospect lists, warm outbound to people who've already shown interest, combining website intent with ICP filtering for high-quality lists.
 - **Coverage**: Pro+ plans: 35-45% person-level match rate for US visitors. Free plan: company-level only (150 resolutions/mo).
 
+### Building lists from 6sense (Company Discovery + Sales Intelligence)
+- **Company Discovery**: 6sense identifies new accounts matching your ICP that aren't in your CRM — proactive list building from intent signals. Accounts showing buying behavior for your category are surfaced automatically.
+- **Sales Intelligence search**: Search 6sense's database for contacts by title, seniority, department, company, industry, and more. Free plan gives 50 credits/mo for basic search.
+- **Intent-driven list building**: Build prospect lists filtered by buying stage (Consideration+), intent topics, and ICP fit. Focus on accounts actively researching your category — higher conversion than cold lists.
+- **Segment-based lists**: Create 6sense segments combining firmographic fit + intent signals + buying stage, then export or sync matched accounts/contacts to CRM or outbound tools.
+- **Buyer discovery**: Once 6sense identifies an in-market account, use buyer discovery to find the right contacts (by persona, seniority, department) at that account.
+- **Chrome extension**: Browse LinkedIn or company websites and see 6sense intent data, buying stage, and firmographics in a sidebar. One-click save to lists.
+- **Export to outbound**: Push 6sense-identified accounts and contacts to Outreach, Salesloft, or CRM for sequencing. Native integrations maintain intent context.
+- **Best for**: Enterprise ABM teams building high-quality, intent-driven prospect lists. Not cost-effective for generic list building — use Apollo, ZoomInfo, or Hunter for broader prospecting without ABM context.
+- **Pricing**: Free plan: 50 credits/mo (basic search). Paid plans: $50K+/year for full Company Discovery + intent-driven list building.
+
 ## Step 4 — Segment and prioritize
 
 Split the list into tiers for sequencing:
@@ -458,6 +469,7 @@ Before launching outreach, validate the list:
 - `/sales-mailmo` — Mailmo platform help (Email Finder with catch-all verification, LinkedIn Chrome extension)
 - `/sales-clearbit` — Clearbit platform help (Prospector contact search by domain, Reveal IP intelligence, enrichment — acquired by HubSpot)
 - `/sales-rb2b` — RB2B platform help (person-level visitor identification, Hot Pages, Identity Resolution API)
+- `/sales-6sense` — 6sense platform help (Company Discovery, Sales Intelligence search, intent-driven list building, segment-based prospecting)
 - `/sales-seamless` — Seamless.AI platform help (1.8B+ contacts, Buyer Intent, Job Changes, Autopilot, Chrome extension)
 - `/sales-zoominfo` — ZoomInfo platform help (Advanced Search, Saved Searches, exports)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

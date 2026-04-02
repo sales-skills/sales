@@ -17,7 +17,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Omnisend, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, ZoomInfo, Clearbit, RB2B, Brevo, Braze, Iterable, GetResponse, SendPulse, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Omnisend, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, ZoomInfo, Clearbit, RB2B, 6sense, Brevo, Braze, Iterable, GetResponse, SendPulse, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -680,6 +680,21 @@ Before building anything custom, check if a native integration exists:
 - **Webhooks**: Push visitor data (person + company + visit context) to any endpoint in real-time.
 - **Identity Resolution API**: Separate product at api.rb2b.com — credit-based access to IP→identity, LinkedIn→email, email→LinkedIn, company→firmographics endpoints.
 
+### 6sense webhooks, API & integrations
+- **Salesforce**: Native bidirectional sync — account scores, buying stages, intent data, contact enrichment, workflow triggers, recommended actions in CRM.
+- **HubSpot**: Native — account data sync, intent insights in HubSpot, enrichment export via 6sense Enrichment App, nightly data sync.
+- **Microsoft Dynamics**: Native CRM sync with account intelligence and scoring.
+- **Marketo**: Native MAP sync — People Enrichment API integration, segment-based campaign activation.
+- **LinkedIn Ads**: Native — dynamic segment sync to LinkedIn Campaign Manager for all ad types (Sponsored Content, Messaging, Text, Dynamic). Auto-updating audiences.
+- **Outreach**: Native — push prioritized accounts and contacts with intent context to sequences.
+- **Salesloft**: Native — push accounts/contacts to cadences with buying stage and intent data.
+- **Drift**: Native — conversational marketing powered by 6sense account intelligence.
+- **Slack**: Native — real-time alerts when target accounts show intent spikes or buying stage changes.
+- **Bombora / G2 / TrustRadius**: Data partners — third-party intent data feeding into Signalverse.
+- **LeanData**: Native — lead-to-account matching and routing powered by 6sense data.
+- **Zapier**: Connector — connect 6sense events to 8,000+ apps.
+- **API**: Company Identification (`epsilon.6sense.com`), People Enrichment + Segments (`scribe.6sense.com`). Org-level API tokens, credit-based.
+
 ### Seismic webhooks
 - **Events**: Content views, LiveSend opens, DSR engagement, user provisioning (SCIM)
 - **Setup**: Configure via the developer portal (developer.seismic.com). OAuth 2.0 auth.
@@ -772,6 +787,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-omnisend` — Omnisend platform help (email/SMS/push for ecommerce, Shopify/WooCommerce/BigCommerce integrations, REST API)
 - `/sales-clearbit` — Clearbit platform help (enrichment API, Reveal, native HubSpot/Salesforce/Segment/Marketo integrations, webhooks)
 - `/sales-rb2b` — RB2B platform help (person-level visitor ID, Hot Pages, Identity Resolution API, native integrations with Slack/HubSpot/Salesforce/Apollo/Salesloft/Outreach)
+- `/sales-6sense` — 6sense platform help (Signalverse intent, predictive scoring, AI Email Agents, advertising, native Salesforce/HubSpot/Marketo/LinkedIn integrations, API)
 - `/sales-zoominfo` — ZoomInfo platform help (SalesOS, MarketingOS, OperationsOS integrations)
 - `/sales-data-hygiene` — CRM data quality and enrichment automation
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
