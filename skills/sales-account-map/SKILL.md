@@ -1,6 +1,6 @@
 ---
 name: sales-account-map
-description: "Map the buying committee at a target account — identify decision-makers, influencers, champions, and blockers, then recommend a multi-threading strategy. Use when mapping stakeholders at a deal, finding the right entry point at a target account, multi-threading an enterprise deal, understanding who's involved in a purchase decision, or planning account penetration. Do NOT use for building prospect lists across many accounts (use /sales-prospect-list), general account research (use /sales-research), deal health assessment (use /sales-deal-inspect), or ZoomInfo-specific org chart config (use /sales-zoominfo)."
+description: "Maps the buying committee at a target account — identify decision-makers, influencers, champions, and blockers, then recommend a multi-threading strategy. Use when mapping stakeholders at a deal, finding the right entry point at a target account, multi-threading an enterprise deal, understanding who's involved in a purchase decision, or planning account penetration. Do NOT use for building prospect lists across many accounts (use /sales-prospect-list), general account research (use /sales-research), deal health assessment (use /sales-deal-inspect), or ZoomInfo-specific org chart config (use /sales-zoominfo)."
 argument-hint: "[name the target account and what you're selling]"
 license: MIT
 version: 1.0.0

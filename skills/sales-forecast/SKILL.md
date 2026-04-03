@@ -1,6 +1,6 @@
 ---
 name: sales-forecast
-description: "Build and validate revenue forecasts with pipeline coverage and gap analysis. Use when forecasting revenue, validating a commit, analyzing pipeline coverage, preparing for a forecast call, doing gap analysis, calculating weighted pipeline, or reviewing deal confidence levels. Do NOT use for individual deal analysis (use /sales-deal-inspect), portfolio pipeline management (use /sales-pipeline), or building outbound cadences (use /sales-cadence)."
+description: "Builds and validate revenue forecasts with pipeline coverage and gap analysis. Use when forecasting revenue, validating a commit, analyzing pipeline coverage, preparing for a forecast call, doing gap analysis, calculating weighted pipeline, or reviewing deal confidence levels. Do NOT use for individual deal analysis (use /sales-deal-inspect), portfolio pipeline management (use /sales-pipeline), or building outbound cadences (use /sales-cadence)."
 argument-hint: "[describe scope, time period, known numbers, and primary concern]"
 license: MIT
 version: 1.0.0

@@ -1,6 +1,6 @@
 ---
 name: sales-third-party
-description: "Browse and install third-party marketing, research, and creative skills. Use when: 'install skills', 'available skills', 'third party skills', 'marketing skills', 'opc skills', 'what skills are available', 'list skills', 'browse skills', 'show me skills'."
+description: "Browses and install third-party marketing, research, and creative skills. Use when: 'install skills', 'available skills', 'third party skills', 'marketing skills', 'opc skills', 'what skills are available', 'list skills', 'browse skills', 'show me skills'."
 version: 1.0.0
 tags: [sales, catalog, third-party, skill-discovery]
 ---
