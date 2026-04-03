@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-retargeting",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I run a Shopify store and want to retarget visitors who viewed products but didn't buy. What's the best approach?",
+      "expected_output": "Retargeting strategy for ecommerce product viewers including channel selection, audience segmentation, and dynamic product ads",
+      "assertions": [
+        {"name": "audience_segmentation", "description": "Recommends segmenting by behavior — cart abandoners vs product viewers vs general visitors — with different budgets per segment"},
+        {"name": "dynamic_ads", "description": "Recommends dynamic product ads that auto-show the products the visitor viewed"},
+        {"name": "multi_channel", "description": "Suggests multiple channels (email retargeting + display/social ads) with email as the free starting point"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "What's the difference between retargeting on AdRoll vs just using Google Ads remarketing and Meta Ads?",
+      "expected_output": "Platform comparison covering when to use a dedicated retargeting platform vs native ad platform remarketing",
+      "assertions": [
+        {"name": "adroll_advantage", "description": "Explains AdRoll's cross-channel management (display + social + CTV in one platform) and ecommerce integrations"},
+        {"name": "native_advantage", "description": "Explains that Google/Meta direct is simpler for teams already on those platforms and avoids extra vendor costs"},
+        {"name": "recommendation_framework", "description": "Provides decision criteria based on budget, business type, or existing ad stack"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Our retargeting ROAS was 8x last quarter but has dropped to 3x. What's going wrong?",
+      "expected_output": "Diagnosis of declining retargeting performance with creative fatigue, audience saturation, and incrementality as key factors",
+      "assertions": [
+        {"name": "creative_fatigue", "description": "Identifies creative fatigue as a common cause and recommends rotating creative every 2-3 weeks"},
+        {"name": "audience_saturation", "description": "Explains that initial high ROAS comes from easy wins and subsequent drops reflect lower-intent users remaining in the pool"},
+        {"name": "frequency_check", "description": "Recommends checking frequency caps and suppressing non-converters after a threshold"}
+      ]
+    }
+  ]
+}

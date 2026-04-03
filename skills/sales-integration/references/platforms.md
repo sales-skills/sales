@@ -410,5 +410,20 @@ Platform-specific webhook configurations, API integrations, and native connector
 | Instantly | Compatible | Use LeadMagic to enrich leads before importing to Instantly campaigns. |
 | Smartlead | Compatible | Enrich and validate emails before loading into Smartlead. |
 
+### AdRoll / NextRoll integrations
+
+| Integration | Type | What it does |
+|------------|------|-------------|
+| Shopify | Native (deep) | One-click install. Auto-syncs product catalog, installs pixel, enables dynamic retargeting, tracks revenue. |
+| BigCommerce | Native | Product feed sync, pixel installation, conversion tracking. |
+| WooCommerce | Native (plugin) | WordPress plugin. Product catalog sync, pixel, conversion tracking. |
+| Wix | Native | Via Wix App Market. Pixel and basic product sync. |
+| HubSpot (RollWorks) | Native (bidirectional) | Sync HubSpot company lists to RollWorks audiences. Account-level engagement data in HubSpot. Trigger workflows from RollWorks signals. |
+| Salesforce (RollWorks) | Native | Sync account lists, push engagement data to Salesforce. |
+| Facebook/Instagram | Native | Manage social retargeting campaigns through AdRoll. Audience sync. |
+| Zapier | Native | Triggers on conversion events. Actions for audience management. |
+| NextRoll API | REST API | CRUD, GraphQL Reporting, Audience, User Lists, Prospecting, Automated Campaigns, Universal Campaigns, S2S conversion tracking. OAuth 2.0 / PAT auth. |
+| S2S Conversion Tracking | API | Server-side conversion events without client-side pixel. `POST /track/convert`. |
+
 ### Qwilr webhooks
 - **Full reference**: See `/sales-qwilr-automation` for Qwilr-specific webhook events and CRM integrations

@@ -20,6 +20,7 @@ Detailed per-platform email marketing configuration — automation builders, seg
 - [In Omnisend](#in-omnisend)
 - [In SendPulse](#in-sendpulse)
 - [In Klaviyo](#in-klaviyo)
+- [In AdRoll](#in-adroll)
 
 ### In Groove.cm (GrooveMail)
 
@@ -282,4 +283,15 @@ Klaviyo is a data-driven marketing automation platform built specifically for e-
 - **AI agents**: Marketing Agent generates campaigns from your URL. Segments AI creates segments from natural language. Email AI generates subject lines and content.
 - **Pricing**: Free (250 profiles, 500 emails), Email ($20/mo, 500 profiles), Email + SMS ($35/mo). Profile-based billing — all active profiles count (Feb 2025 change). Scales with profile count.
 - **Klaviyo's strength**: Best for e-commerce brands (especially Shopify) that need behavior-triggered automation with deep product data integration, predictive analytics, and multi-channel (email + SMS + push). Overkill for simple newsletters or non-e-commerce use cases.
+
+### In AdRoll
+
+AdRoll is primarily a retargeting and advertising platform, but includes email retargeting capabilities for ecommerce:
+
+- **Email retargeting**: Send behavior-triggered emails based on website activity — browse abandonment, cart abandonment, post-purchase follow-up. Emails are retargeting-focused (triggered by pixel data), not broadcast campaigns.
+- **Dynamic product emails**: Auto-populate emails with products the visitor viewed or carted. Requires product feed integration (Shopify, BigCommerce, WooCommerce).
+- **Cross-channel orchestration**: Coordinate email retargeting with display, social, and CTV ads from the same platform. A visitor who abandons cart gets both an email and retargeting ads.
+- **Audience segmentation**: Segment email recipients by website behavior, purchase history, and engagement level. Exclude recent purchasers, target high-value browsers.
+- **Limitations**: AdRoll email is retargeting, not a full ESP. No broadcast campaigns, no newsletter builder, no advanced segmentation beyond behavior. For full email marketing, use a dedicated platform (Klaviyo, Omnisend, ActiveCampaign, etc.) and layer AdRoll for ad retargeting alongside email.
+- **Best for**: Ecommerce brands already using AdRoll for ad retargeting who want to add behavior-triggered emails without a separate ESP for that specific use case. Most brands will still need a primary ESP for broadcast and lifecycle email.
 

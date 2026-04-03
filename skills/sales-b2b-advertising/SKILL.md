@@ -221,6 +221,31 @@ ZoomInfo MarketingOS combines B2B data with advertising execution.
 - **Plan gate**: Ad Sync requires Growth plan ($446-495/mo, 1 audience included) or Enterprise (2 audiences).
 - **Best for**: Teams using Clay for enrichment who want to add advertising as a channel without a separate ABM platform.
 
+### In AdRoll (RollWorks ABM)
+
+AdRoll's B2B arm, RollWorks, provides account-based advertising for sales and marketing teams:
+
+**Account-based targeting**:
+- Upload target account lists or build audiences from firmographic criteria (industry, company size, revenue, technology)
+- IP-based and cookie-based matching to serve display ads to specific companies
+- Machine learning account scoring to prioritize accounts most likely to convert
+
+**HubSpot integration**:
+- Deep bidirectional integration — sync HubSpot company lists to RollWorks audiences
+- Account-level reporting surfaces in HubSpot — see ad engagement on account records
+- Trigger workflows based on RollWorks engagement data
+- Often called "the ABM platform for HubSpot"
+
+**Campaign types**:
+- Account-based display ads across 500+ ad exchanges
+- Social ads (Facebook/Instagram) targeted at account lists
+- Site visitor identification — identify companies visiting your website via IP matching
+- Cross-channel budget optimization distributes spend across channels automatically
+
+**Best for**: HubSpot-centric B2B teams wanting ABM advertising without the enterprise price tag of Demandbase or 6sense. Strong account identification and straightforward setup.
+
+**Pricing note**: RollWorks has separate pricing from AdRoll's consumer/ecommerce plans. Contact sales for RollWorks ABM pricing.
+
 ### In Google Ads (B2B targeting)
 
 **Search and display for B2B:**
@@ -280,6 +305,8 @@ ZoomInfo MarketingOS combines B2B data with advertising execution.
 - `/sales-prospect-list` — building target account lists for advertising
 - `/sales-funnel` — funnel strategy (ads feed the top of the funnel)
 - `/sales-clay` — Clay platform help (enrichment, audience building, Ad Sync)
+- `/sales-adroll` — AdRoll platform help (RollWorks ABM, display retargeting, ecommerce integration)
+- `/sales-retargeting` — Retargeting strategy across all platforms (consumer and B2B)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

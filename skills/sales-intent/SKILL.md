@@ -190,6 +190,15 @@ RB2B provides **person-level** website visitor identification (US traffic only) 
 - **Plan gate**: Signals require Launch plan ($167-185/mo) or above. Ad Sync requires Growth ($446-495/mo).
 - **Best for**: Teams wanting to automate the signal → enrichment → outreach pipeline in a single platform.
 
+### In AdRoll (RollWorks)
+
+RollWorks (AdRoll's B2B arm) provides account-level intent and engagement signals:
+1. **Site visitor identification**: IP-to-company matching identifies which companies visit your website. Pages viewed, visit frequency, and recency are intent signals for sales outreach.
+2. **Account scoring**: Machine learning scores accounts based on fit + engagement. Prioritize accounts showing sustained engagement (multiple visits, key page views like pricing/demo).
+3. **HubSpot integration**: RollWorks engagement data flows into HubSpot — account-level ad engagement, website visits, and scores visible on company records. Use to trigger HubSpot workflows for sales alerts.
+4. **Intent-based advertising**: Target accounts showing engagement signals with account-based display ads — coordinate ad air cover with sales outreach timing.
+5. **Best for**: HubSpot-centric teams wanting website visitor identification + account scoring without a full enterprise intent platform.
+
 ### In LeadMagic
 
 - **Job Change Detector**: Track when contacts change jobs — new role, new company (3 credits per result). Use to trigger outreach when champions move to new accounts or when decision-makers join target companies.
@@ -278,7 +287,9 @@ Use Apollo Workflows (Professional+ plan) to automate:
 - `/sales-zoominfo` — ZoomInfo platform help (SalesOS, intent topics, Scoops)
 - `/sales-clay` — Clay platform help (Signals, waterfall enrichment, Claygent, Email Sequencer, Ad Sync)
 - `/sales-leadmagic` — LeadMagic platform help (Job Change Detector, Jobs Finder, Ads Intelligence, programmatic signal APIs)
+- `/sales-adroll` — AdRoll platform help (RollWorks site visitor identification, account scoring, HubSpot integration)
 - `/sales-b2b-advertising` — account-based advertising driven by intent signals
+- `/sales-retargeting` — Retargeting strategy (website visitor retargeting as a signal-driven channel)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

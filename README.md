@@ -1,5 +1,10 @@
 # Sales Skills
 
+[![Skills](https://img.shields.io/badge/skills-89-blue)](https://skills.sh/sales-skills/sales)
+[![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
+[![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
+[![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
+
 Claude Code skills for sales, marketing, and GTM workflows.
 
 ## Quick Start
@@ -8,7 +13,7 @@ Claude Code skills for sales, marketing, and GTM workflows.
 npx skills add sales-skills/sales --skills sales-do
 ```
 
-Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill.
+Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill (89 first-party + 53 third-party skills).
 
 Want every skill at once?
 
@@ -18,7 +23,7 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 87 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 89 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -391,6 +396,12 @@ Router recommends a 5-skill sequence:
 |---|---|
 | `/sales-leadmagic` | LeadMagic platform help — Email Finder (97% accuracy), Email Validation (catch-all detection), Mobile Finder, Profile Search, Company Search (firmographics/technographics), Company Funding, Employee Finder, Role Finder, Job Change Detector, Jobs Finder, Google/Meta/B2B Ads Search, REST API (19 endpoints at api.leadmagic.io), MCP Server (Claude/Cursor/Windsurf), CLI |
 
+### AdRoll & Platform
+
+| Skill | What it does |
+|---|---|
+| `/sales-adroll` | AdRoll platform help — retargeting pixel setup, display/social/CTV/native/DOOH campaigns, dynamic retargeting, audience segmentation, ecommerce integrations (Shopify/BigCommerce/WooCommerce), RollWorks ABM (account-based targeting, HubSpot integration), email retargeting, cross-channel attribution, NextRoll API |
+
 ### Kit (ConvertKit) & Platform
 
 | Skill | What it does |
@@ -418,6 +429,7 @@ Router recommends a 5-skill sequence:
 | `/sales-sms-marketing` | SMS marketing — opt-in collection, compliance (TCPA/GDPR), campaign types, automation, two-way messaging, analytics across Omnisend, Klaviyo, Attentive, Postscript, Brevo, and more |
 | `/sales-data-hygiene` | CRM data quality — deduplication, record matching, data decay management, enrichment automation, normalization across ZoomInfo OperationsOS, Salesforce, HubSpot Operations Hub, Clay, LeanData, DemandTools |
 | `/sales-b2b-advertising` | Account-based B2B advertising — display ads, retargeting, cross-channel campaigns, ABM ads, audience building, ad-to-pipeline attribution across ZoomInfo MarketingOS, Demandbase, 6sense, Terminus, RollWorks, LinkedIn Ads |
+| `/sales-retargeting` | Retargeting and remarketing strategy — website visitor retargeting, cart abandonment recovery, dynamic product ads, cross-channel retargeting, audience segmentation, frequency capping, platform selection (AdRoll, Google Ads, Meta, Criteo, LinkedIn) |
 | `/sales-push-notification` | Mobile and web push notification strategy — opt-in optimization, rich push, segmentation, timing, frequency capping, deep linking across Braze, OneSignal, Airship, Firebase/FCM, Customer.io, Klaviyo, Iterable, MoEngage |
 | `/sales-in-app-messaging` | In-app messages and content cards — onboarding, feature announcements, surveys, promotions, trigger design across Braze, Iterable, Intercom, Pendo, Appcues, Customer.io, MoEngage |
 | `/sales-chatbot` | Chatbot marketing and conversational automation — chatbot flows, multichannel messaging (WhatsApp, Telegram, Facebook, Instagram, Viber, live chat), lead qualification bots, FAQ bots, human handoff across SendPulse, ManyChat, Tidio, Intercom, Drift, HubSpot |

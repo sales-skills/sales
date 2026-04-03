@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-adroll",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "How do I set up AdRoll retargeting for my Shopify store?",
+      "expected_output": "Step-by-step guide to installing AdRoll via the Shopify app, verifying pixel tracking, and creating a retargeting campaign",
+      "assertions": [
+        {"name": "shopify_install", "description": "Explains installing AdRoll from the Shopify App Store and that it auto-syncs product catalog and installs pixel"},
+        {"name": "audience_creation", "description": "Covers creating retargeting audiences from website visitors (e.g., cart abandoners, product viewers)"},
+        {"name": "dynamic_retargeting", "description": "Mentions dynamic retargeting that automatically shows products the visitor viewed or carted"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "What's the difference between AdRoll and RollWorks? We're a B2B SaaS company.",
+      "expected_output": "Explains that AdRoll is consumer/ecommerce-focused retargeting while RollWorks is the B2B ABM arm under the same parent company (NextRoll)",
+      "assertions": [
+        {"name": "parent_company", "description": "Identifies NextRoll as the parent company of both AdRoll and RollWorks"},
+        {"name": "b2b_distinction", "description": "Clarifies that RollWorks is the B2B ABM product with account-based targeting, HubSpot integration, and intent data"},
+        {"name": "separate_products", "description": "Notes that RollWorks has separate pricing and features from consumer AdRoll"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I want to use the AdRoll API to programmatically create campaigns and pull performance reports. Where do I start?",
+      "expected_output": "API overview with authentication method, base URL, and key endpoints for campaign management and reporting",
+      "assertions": [
+        {"name": "api_reference", "description": "Points to references/adroll-api-reference.md for full API documentation"},
+        {"name": "auth_method", "description": "Explains OAuth 2.0 or Personal Access Token authentication at api.nextroll.com"},
+        {"name": "reporting_api", "description": "Mentions the GraphQL Reporting API for cross-channel analytics"}
+      ]
+    }
+  ]
+}
