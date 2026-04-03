@@ -76,384 +76,384 @@ Router recommends a 5-skill sequence:
 
 ### Prospecting & Pipeline
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-prospect` | ICP definition, target lists, lead identification | Coming soon |
-| `/sales-research` | Account/contact research, competitive intel, org charts | Coming soon |
-| `/sales-outreach` | Cold emails, LinkedIn messages, multi-touch sequences | Coming soon |
-| `/sales-pipeline` | Pipeline review, forecasting, deal prioritization | Coming soon |
+| Skill | What it does |
+|---|---|
+| `/sales-prospect` | ICP definition, target lists, lead identification |
+| `/sales-research` | Account/contact research, competitive intel, org charts |
+| `/sales-outreach` | Cold emails, LinkedIn messages, multi-touch sequences |
+| `/sales-pipeline` | Pipeline review, forecasting, deal prioritization |
 
 ### Active Deals
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-discovery` | Discovery/qualification call prep, MEDDIC/BANT | Coming soon |
-| `/sales-demo` | Demo prep, pitch decks, presentation customization | Coming soon |
-| `/sales-proposal` | Proposals, pricing, SOWs, business cases, ROI | Coming soon |
-| `/sales-objection` | Objection handling, negotiation prep | Coming soon |
-| `/sales-follow-up` | Nurture, re-engagement, going-dark recovery | Coming soon |
-| `/sales-close` | Closing strategies, mutual action plans, urgency | Coming soon |
+| Skill | What it does |
+|---|---|
+| `/sales-discovery` | Discovery/qualification call prep, MEDDIC/BANT |
+| `/sales-demo` | Demo prep, pitch decks, presentation customization |
+| `/sales-proposal` | Proposals, pricing, SOWs, business cases, ROI |
+| `/sales-objection` | Objection handling, negotiation prep |
+| `/sales-follow-up` | Nurture, re-engagement, going-dark recovery |
+| `/sales-close` | Closing strategies, mutual action plans, urgency |
 
 ### Qwilr & Proposals
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-proposal-page` | Write and structure a Qwilr proposal page with interactive quote blocks | Available |
-| `/sales-proposal-analytics` | Interpret Qwilr engagement signals and decide follow-up actions | Available |
-| `/sales-deal-room` | Design multi-stakeholder Qwilr deal rooms for complex B2B deals | Available |
-| `/sales-qwilr-automation` | Build automations connecting Qwilr to CRM via API, Zapier, or native integrations | Available |
-| `/sales-proposal-template` | Design reusable Qwilr proposal templates for your whole sales team | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-proposal-page` | Write and structure a Qwilr proposal page with interactive quote blocks |
+| `/sales-proposal-analytics` | Interpret Qwilr engagement signals and decide follow-up actions |
+| `/sales-deal-room` | Design multi-stakeholder Qwilr deal rooms for complex B2B deals |
+| `/sales-qwilr-automation` | Build automations connecting Qwilr to CRM via API, Zapier, or native integrations |
+| `/sales-proposal-template` | Design reusable Qwilr proposal templates for your whole sales team |
 
 ### Salesloft & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-salesloft` | Salesloft platform help — config, Rhythm, Conversations, Drift, integrations | Available |
-| `/sales-cadence` | Design multi-channel outbound cadences with timing, A/B testing, and content | Available |
-| `/sales-call-review` | Review sales calls, extract coaching insights, score against MEDDPICC/SPIN | Available |
-| `/sales-deal-inspect` | Inspect deal health, map stakeholders, identify risks, recommend next actions | Available |
-| `/sales-forecast` | Build and validate revenue forecasts with pipeline coverage and gap analysis | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-salesloft` | Salesloft platform help — config, Rhythm, Conversations, Drift, integrations |
+| `/sales-cadence` | Design multi-channel outbound cadences with timing, A/B testing, and content |
+| `/sales-call-review` | Review sales calls, extract coaching insights, score against MEDDPICC/SPIN |
+| `/sales-deal-inspect` | Inspect deal health, map stakeholders, identify risks, recommend next actions |
+| `/sales-forecast` | Build and validate revenue forecasts with pipeline coverage and gap analysis |
 
 ### Apollo.io & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-apollo` | Apollo.io platform help — config, CRM sync, API, analytics, dialer, credits, admin | Available |
-| `/sales-apollo-sequences` | Create and manage Apollo sequences — deliverability, A/B testing, mailbox config | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-apollo` | Apollo.io platform help — config, CRM sync, API, analytics, dialer, credits, admin |
+| `/sales-apollo-sequences` | Create and manage Apollo sequences — deliverability, A/B testing, mailbox config |
 
 ### Mailshake & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-mailshake` | Mailshake platform help — campaigns, Lead Catcher, recipients, senders, API, webhooks | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-mailshake` | Mailshake platform help — campaigns, Lead Catcher, recipients, senders, API, webhooks |
 
 ### Lemlist & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-lemlist` | Lemlist platform help — multichannel sequences, Lemwarm, People Database, enrichment, LinkedIn automation, calls, WhatsApp, API | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-lemlist` | Lemlist platform help — multichannel sequences, Lemwarm, People Database, enrichment, LinkedIn automation, calls, WhatsApp, API |
 
 ### Smartlead & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-smartlead` | Smartlead platform help — campaigns, SmartSenders, SmartInfra, SmartAgents, SmartDialer, SmartDelivery, SmartProspect, API, agency/white-label | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-smartlead` | Smartlead platform help — campaigns, SmartSenders, SmartInfra, SmartAgents, SmartDialer, SmartDelivery, SmartProspect, API, agency/white-label |
 
 ### Yesware & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-yesware` | Yesware platform help — email tracking, campaigns, templates, Prospector, Meeting Scheduler, Salesforce integration, reporting | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-yesware` | Yesware platform help — email tracking, campaigns, templates, Prospector, Meeting Scheduler, Salesforce integration, reporting |
 
 ### Mixmax & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-mixmax` | Mixmax platform help — sequences, email tracking, one-click meetings, rules engine, dialer, AI Compose, Salesforce/HubSpot integration, polls, reporting | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-mixmax` | Mixmax platform help — sequences, email tracking, one-click meetings, rules engine, dialer, AI Compose, Salesforce/HubSpot integration, polls, reporting |
 
 ### Reply.io & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-reply` | Reply.io platform help — multichannel sequences, Jason AI SDR, B2B database, email warmup, deliverability tools, unified inbox, analytics, Salesforce/HubSpot integration, agency features | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-reply` | Reply.io platform help — multichannel sequences, Jason AI SDR, B2B database, email warmup, deliverability tools, unified inbox, analytics, Salesforce/HubSpot integration, agency features |
 
 ### Woodpecker & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-woodpecker` | Woodpecker platform help — cold email campaigns, condition-based sequences, email warmup, Bounce Shield, Adaptive Sending, email verification, inbox rotation, centralized inbox, LinkedIn automation, Lead Finder, agency panel, API & webhooks | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-woodpecker` | Woodpecker platform help — cold email campaigns, condition-based sequences, email warmup, Bounce Shield, Adaptive Sending, email verification, inbox rotation, centralized inbox, LinkedIn automation, Lead Finder, agency panel, API & webhooks |
 
 ### Mailmo & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-mailmo` | Mailmo platform help — Email Finder, Email Verifier, catch-all detection, LinkedIn Chrome extension, bulk verification, CSV export | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-mailmo` | Mailmo platform help — Email Finder, Email Verifier, catch-all detection, LinkedIn Chrome extension, bulk verification, CSV export |
 
 ### Hunter.io & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-hunter` | Hunter.io platform help — Domain Search, Email Finder, Email Verifier, Campaigns, Discover, Signals, TechLookup, Leads, browser extension, MCP server, API & integrations | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-hunter` | Hunter.io platform help — Domain Search, Email Finder, Email Verifier, Campaigns, Discover, Signals, TechLookup, Leads, browser extension, MCP server, API & integrations |
 
 ### Prospeo & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-prospeo` | Prospeo platform help — person enrichment, company enrichment, person/company search, bulk operations, Chrome extension, LinkedIn Sales Navigator extraction, 5-step email verification, API & integrations | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-prospeo` | Prospeo platform help — person enrichment, company enrichment, person/company search, bulk operations, Chrome extension, LinkedIn Sales Navigator extraction, 5-step email verification, API & integrations |
 
 ### Tomba & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-tomba` | Tomba.io platform help — domain search, email finder, email verifier, enrichment, author finder, LinkedIn finder, phone finder, bulk operations, browser extensions, API & integrations | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-tomba` | Tomba.io platform help — domain search, email finder, email verifier, enrichment, author finder, LinkedIn finder, phone finder, bulk operations, browser extensions, API & integrations |
 
 ### Seismic & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-seismic` | Seismic platform help — Enablement Cloud, content management, Learning & Coaching, Aura AI, Digital Sales Rooms, Meeting Intelligence, LiveSend, LiveDocs, Programs, API & integrations | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-seismic` | Seismic platform help — Enablement Cloud, content management, Learning & Coaching, Aura AI, Digital Sales Rooms, Meeting Intelligence, LiveSend, LiveDocs, Programs, API & integrations |
 
 ### Seamless.AI & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-seamless` | Seamless.AI platform help — Prospector, Buyer Intent, Job Changes, CRM Enrich, Pitch Intelligence, Engagement Hub, AI Agents, Autopilot, Chrome extension, API & integrations | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-seamless` | Seamless.AI platform help — Prospector, Buyer Intent, Job Changes, CRM Enrich, Pitch Intelligence, Engagement Hub, AI Agents, Autopilot, Chrome extension, API & integrations |
 
 ### SafetyMails & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-safetymails` | SafetyMails platform help — bulk email verification (19-step algorithm, up to 2M emails), real-time API for form validation, Email Finder, spamtrap/disposable detection, integrations | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-safetymails` | SafetyMails platform help — bulk email verification (19-step algorithm, up to 2M emails), real-time API for form validation, Email Finder, spamtrap/disposable detection, integrations |
 
 ### SendGrid & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-sendgrid` | SendGrid (Twilio) platform help — Email API, Marketing Campaigns, transactional email, dynamic templates, domain authentication, dedicated IPs, IP warmup, Event Webhooks, Inbound Parse, Email Validation API, suppressions, statistics, 7 official SDKs, 353 partner integrations | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-sendgrid` | SendGrid (Twilio) platform help — Email API, Marketing Campaigns, transactional email, dynamic templates, domain authentication, dedicated IPs, IP warmup, Event Webhooks, Inbound Parse, Email Validation API, suppressions, statistics, 7 official SDKs, 353 partner integrations |
 
 ### Postmark & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-postmark` | Postmark (ActiveCampaign) platform help — transactional email API, SMTP relay, Message Streams (transactional/broadcast), Handlebars templates, Inbound email parsing, 7 webhook types, DMARC Monitoring, bounce management, suppressions, dedicated IPs, sender vetting, best-in-class deliverability (98.7% inbox placement) | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-postmark` | Postmark (ActiveCampaign) platform help — transactional email API, SMTP relay, Message Streams (transactional/broadcast), Handlebars templates, Inbound email parsing, 7 webhook types, DMARC Monitoring, bounce management, suppressions, dedicated IPs, sender vetting, best-in-class deliverability (98.7% inbox placement) |
 
 ### Mailgun & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-mailgun` | Mailgun (Sinch) platform help — developer-first transactional email API and SMTP relay, inbound email routing with custom parsing, templates, mailing lists, Domains API (DKIM/SPF/DNS), Routes, webhooks (8 event types), Metrics API, Mailgun Optimize (inbox placement testing, email validation, reputation monitoring), dedicated IPs, tags | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-mailgun` | Mailgun (Sinch) platform help — developer-first transactional email API and SMTP relay, inbound email routing with custom parsing, templates, mailing lists, Domains API (DKIM/SPF/DNS), Routes, webhooks (8 event types), Metrics API, Mailgun Optimize (inbox placement testing, email validation, reputation monitoring), dedicated IPs, tags |
 
 ### Customer.io & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-customerio` | Customer.io platform help — customer engagement & marketing automation, Journeys (visual workflow builder), multi-channel messaging (email, SMS, push, in-app, WhatsApp), Data Pipelines (reverse ETL), Custom Objects, Ad Audience Sync, Transactional Messages API, segmentation, Broadcasts, A/B testing, analytics | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-customerio` | Customer.io platform help — customer engagement & marketing automation, Journeys (visual workflow builder), multi-channel messaging (email, SMS, push, in-app, WhatsApp), Data Pipelines (reverse ETL), Custom Objects, Ad Audience Sync, Transactional Messages API, segmentation, Broadcasts, A/B testing, analytics |
 
 ### Klaviyo & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-klaviyo` | Klaviyo platform help — AI-first B2C CRM and marketing automation for e-commerce. Flows (visual automation), Campaigns, Segmentation (behavior + predictive), Predictive Analytics (CLV, churn risk), Multi-channel (email, SMS, WhatsApp, RCS, push), Forms, Reviews, Klaviyo Data Platform (CDP, 350+ integrations), AI Agents, Catalogs, Coupons, Reporting (revenue attribution, benchmarks) | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-klaviyo` | Klaviyo platform help — AI-first B2C CRM and marketing automation for e-commerce. Flows (visual automation), Campaigns, Segmentation (behavior + predictive), Predictive Analytics (CLV, churn risk), Multi-channel (email, SMS, WhatsApp, RCS, push), Forms, Reviews, Klaviyo Data Platform (CDP, 350+ integrations), AI Agents, Catalogs, Coupons, Reporting (revenue attribution, benchmarks) |
 
 ### Outscraper & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-outscraper` | Outscraper platform help — data extraction and enrichment from Google Maps, reviews, and 50+ internet sources. Google Maps Places scraping (business data), Google Maps Reviews, Google Search/News, Emails & Contacts (website scraping), Contacts & Leads (enrichment), Company Insights, Email Validation, Amazon products/reviews, multi-platform review scraping (Yelp, Tripadvisor, G2, Trustpilot, Glassdoor, Capterra), YouTube Comments, Geocoding, REST API, Zapier/n8n | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-outscraper` | Outscraper platform help — data extraction and enrichment from Google Maps, reviews, and 50+ internet sources. Google Maps Places scraping (business data), Google Maps Reviews, Google Search/News, Emails & Contacts (website scraping), Contacts & Leads (enrichment), Company Insights, Email Validation, Amazon products/reviews, multi-platform review scraping (Yelp, Tripadvisor, G2, Trustpilot, Glassdoor, Capterra), YouTube Comments, Geocoding, REST API, Zapier/n8n |
 
 ### GetProspect & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-getprospect` | GetProspect platform help — B2B email finder, verifier, enrichment, and cold email outreach. Email Finder (200M+ contacts, 26M+ companies, 17+ filters, 95% accuracy), LinkedIn Email Finder Extension (Chrome, Sales Navigator export), Contact Enrichment (40+ data attributes), Email Verifier (catch-all detection, 97% deliverability guarantee, bulk verification), Cold Email Software (multi-step sequences, A/B testing, auto-stop, timezone-aware sending, SPF/DKIM checks), Built-in CRM (lists, tags, custom properties), Reverse Email Lookup, Phone Numbers, Team Collaboration, REST API, native CRM integrations (HubSpot, Salesforce, Pipedrive, Zoho, Outreach, Salesloft), Zapier, Google Sheets | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-getprospect` | GetProspect platform help — B2B email finder, verifier, enrichment, and cold email outreach. Email Finder (200M+ contacts, 26M+ companies, 17+ filters, 95% accuracy), LinkedIn Email Finder Extension (Chrome, Sales Navigator export), Contact Enrichment (40+ data attributes), Email Verifier (catch-all detection, 97% deliverability guarantee, bulk verification), Cold Email Software (multi-step sequences, A/B testing, auto-stop, timezone-aware sending, SPF/DKIM checks), Built-in CRM (lists, tags, custom properties), Reverse Email Lookup, Phone Numbers, Team Collaboration, REST API, native CRM integrations (HubSpot, Salesforce, Pipedrive, Zoho, Outreach, Salesloft), Zapier, Google Sheets |
 
 ### Skrapp & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-skrapp` | Skrapp platform help — B2B email finder, data enrichment, and lead generation. Email Finder (200M+ contacts, 92% success rate), Lead Finder (B2B database, 17+ filters), Data Enrichment (bulk CSV/Excel, auto-mapping, AI Fields for buying role/seniority/function/gender), Email Verifier (97% accuracy, personal/disposable detection), LinkedIn Chrome Extension (25 profiles/sec, multi-page enrichment), Company Search (20M+ profiles), CRM integrations (HubSpot, Salesforce, Zoho, Pipedrive, Outreach), Zapier, REST API | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-skrapp` | Skrapp platform help — B2B email finder, data enrichment, and lead generation. Email Finder (200M+ contacts, 92% success rate), Lead Finder (B2B database, 17+ filters), Data Enrichment (bulk CSV/Excel, auto-mapping, AI Fields for buying role/seniority/function/gender), Email Verifier (97% accuracy, personal/disposable detection), LinkedIn Chrome Extension (25 profiles/sec, multi-page enrichment), Company Search (20M+ profiles), CRM integrations (HubSpot, Salesforce, Zoho, Pipedrive, Outreach), Zapier, REST API |
 
 ### OpenWeb Ninja & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-openwebninja` | OpenWeb Ninja platform help — 30+ real-time public data APIs for sales prospecting and enrichment. Website Contacts Scraper (emails, phones, social links from any domain), Email Search (web-indexed email discovery), Local Business Data (Google Maps 40+ fields), Social Links Search, Real-Time Web Search (SERP, AI Overviews, Knowledge Graph), JSearch (200M+ job postings), Web Unblocker (JS rendering, rotating proxies), Product Data (Amazon, eBay, Walmart, Costco), Finance Data, AI/LLM APIs. RapidAPI marketplace, per-API subscription ($0-$150/mo per API) | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-openwebninja` | OpenWeb Ninja platform help — 30+ real-time public data APIs for sales prospecting and enrichment. Website Contacts Scraper (emails, phones, social links from any domain), Email Search (web-indexed email discovery), Local Business Data (Google Maps 40+ fields), Social Links Search, Real-Time Web Search (SERP, AI Overviews, Knowledge Graph), JSearch (200M+ job postings), Web Unblocker (JS rendering, rotating proxies), Product Data (Amazon, eBay, Walmart, Costco), Finance Data, AI/LLM APIs. RapidAPI marketplace, per-API subscription ($0-$150/mo per API) |
 
 ### Anymail Finder & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-anymailfinder` | Anymail Finder platform help — email finder and verification with 97%+ delivery guarantee. Email Finder by Person (name + company/domain), Email Finder by Decision Maker (10 role categories), Email Finder by Company/Domain (up to 20 emails), Email Finder by LinkedIn URL, Email Verifier (valid/risky/invalid, 0.2 credits), Bulk Email Search (100K rows, async, webhook), GeoLead Finder (location-based), Chrome Extension, REST API v5.1 (no rate limits), Make/Zapier/n8n (7,000+ apps). Pay only for verified emails | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-anymailfinder` | Anymail Finder platform help — email finder and verification with 97%+ delivery guarantee. Email Finder by Person (name + company/domain), Email Finder by Decision Maker (10 role categories), Email Finder by Company/Domain (up to 20 emails), Email Finder by LinkedIn URL, Email Verifier (valid/risky/invalid, 0.2 credits), Bulk Email Search (100K rows, async, webhook), GeoLead Finder (location-based), Chrome Extension, REST API v5.1 (no rate limits), Make/Zapier/n8n (7,000+ apps). Pay only for verified emails |
 
 ### ZeroBounce & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-zerobounce` | ZeroBounce platform help — email validation and deliverability suite. Email Validation (99.6% accuracy, 30+ types, bulk + real-time API), Email Finder (name + domain, 20 credits/find), AI Email Scoring (catch-all 1-10 scale), Activity Data (engagement recency 30-365+ days), Inbox Placement Testing (100+ configs), Blacklist Monitoring (200+ providers, 24/7), DMARC Monitor (multi-domain), Email Warmup (automated engagement simulation), REST API v2 (US/EU endpoints, 13 SDKs), 60+ native integrations, Zapier (2,000+ apps). SOC 2 Type 2, ISO-27001, GDPR/HIPAA/CCPA | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-zerobounce` | ZeroBounce platform help — email validation and deliverability suite. Email Validation (99.6% accuracy, 30+ types, bulk + real-time API), Email Finder (name + domain, 20 credits/find), AI Email Scoring (catch-all 1-10 scale), Activity Data (engagement recency 30-365+ days), Inbox Placement Testing (100+ configs), Blacklist Monitoring (200+ providers, 24/7), DMARC Monitor (multi-domain), Email Warmup (automated engagement simulation), REST API v2 (US/EU endpoints, 13 SDKs), 60+ native integrations, Zapier (2,000+ apps). SOC 2 Type 2, ISO-27001, GDPR/HIPAA/CCPA |
 
 ### Snov.io & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-snov` | Snov.io platform help — AI-powered sales automation and lead generation. Email Finder (domain search, name+domain, LinkedIn enrichment, company domain lookup), Email Verifier (98% accuracy, 7-tier, SMTP checks), Multichannel Campaigns (email + LinkedIn sequences, drip campaigns, A/B testing, sentiment analysis, AI email writer), LinkedIn Automation ($69/mo add-on — profile views, connections, follow-ups), Sales CRM (deals, pipelines, Google Calendar sync), Email Warmup (freemail support, large pool), Deliverability Check (inbox placement, reputation), Email Tracker (Gmail extension), REST API (33+ endpoints, OAuth 2.0, 60 req/min, webhooks), 5,000+ integrations (native HubSpot, Pipedrive, Salesforce, Zoho, Close, Freshsales + Zapier/Make) | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-snov` | Snov.io platform help — AI-powered sales automation and lead generation. Email Finder (domain search, name+domain, LinkedIn enrichment, company domain lookup), Email Verifier (98% accuracy, 7-tier, SMTP checks), Multichannel Campaigns (email + LinkedIn sequences, drip campaigns, A/B testing, sentiment analysis, AI email writer), LinkedIn Automation ($69/mo add-on — profile views, connections, follow-ups), Sales CRM (deals, pipelines, Google Calendar sync), Email Warmup (freemail support, large pool), Deliverability Check (inbox placement, reputation), Email Tracker (Gmail extension), REST API (33+ endpoints, OAuth 2.0, 60 req/min, webhooks), 5,000+ integrations (native HubSpot, Pipedrive, Salesforce, Zoho, Close, Freshsales + Zapier/Make) |
 
 ### Lobstr.io & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-lobstr` | Lobstr.io platform help — no-code web scraping and data collection at scale. 50+ ready-made scrapers (Google Maps Leads, Google Maps Reviews, LinkedIn Sales Navigator Leads, Twitter, YouTube, Vinted, and more), multi-threading (hundreds of concurrent scrapers), cookie-based account sync (scrape behind login walls), scheduled automation, data export (Google Sheets, Amazon S3, SFTP), webhooks (4 events with retry), Make integration, async REST API, Python SDK, CLI, MCP Server, enterprise custom scrapers | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-lobstr` | Lobstr.io platform help — no-code web scraping and data collection at scale. 50+ ready-made scrapers (Google Maps Leads, Google Maps Reviews, LinkedIn Sales Navigator Leads, Twitter, YouTube, Vinted, and more), multi-threading (hundreds of concurrent scrapers), cookie-based account sync (scrape behind login walls), scheduled automation, data export (Google Sheets, Amazon S3, SFTP), webhooks (4 events with retry), Make integration, async REST API, Python SDK, CLI, MCP Server, enterprise custom scrapers |
 
 ### Minelead & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-minelead` | Minelead platform help — B2B email finder, verifier, and lead generation. Company Email Search (domain-based, 500M+ emails, 100M+ business profiles), Email Finder (name + domain), Lead Finder / Tags (keyword + location discovery), Email Verifier (quality scoring 25-100%), Disposable Email Detector, Email Campaigns (Gmail round-robin), Leads CRM, Bulk Operations (CSV upload), Browser Extensions (Chrome, Firefox), Integrations (HubSpot, Zoho CRM, Google Sheets, Zapier), REST API | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-minelead` | Minelead platform help — B2B email finder, verifier, and lead generation. Company Email Search (domain-based, 500M+ emails, 100M+ business profiles), Email Finder (name + domain), Lead Finder / Tags (keyword + location discovery), Email Verifier (quality scoring 25-100%), Disposable Email Detector, Email Campaigns (Gmail round-robin), Leads CRM, Bulk Operations (CSV upload), Browser Extensions (Chrome, Firefox), Integrations (HubSpot, Zoho CRM, Google Sheets, Zapier), REST API |
 
 ### Enrich.so & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-enrichso` | Enrich.so platform help — LinkedIn enrichment (profile → verified email, phone, company data, job history), Reverse Email Lookup, Email Finder (name + domain), Phone Finder, Company Data (domain or LinkedIn URL → firmographics, tech stack, social profiles), Similar Companies, Search Company Employees, bulk enrichment (CSV upload or API batch), REST API, Zapier/n8n/Make integrations | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-enrichso` | Enrich.so platform help — LinkedIn enrichment (profile → verified email, phone, company data, job history), Reverse Email Lookup, Email Finder (name + domain), Phone Finder, Company Data (domain or LinkedIn URL → firmographics, tech stack, social profiles), Similar Companies, Search Company Employees, bulk enrichment (CSV upload or API batch), REST API, Zapier/n8n/Make integrations |
 
 ### ActiveCampaign & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-activecampaign` | ActiveCampaign platform help — marketing automation (visual builder, 900+ recipes), email marketing (drag-and-drop, A/B testing, predictive sending), CRM (pipelines, deals, lead scoring, win probability), segmentation (tags, lists, behavioral, engagement-based), multi-channel (email, SMS, site messages, Facebook Custom Audiences), landing pages, forms, site tracking, event tracking, transactional email (via Postmark), 900+ integrations, REST API v3 | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-activecampaign` | ActiveCampaign platform help — marketing automation (visual builder, 900+ recipes), email marketing (drag-and-drop, A/B testing, predictive sending), CRM (pipelines, deals, lead scoring, win probability), segmentation (tags, lists, behavioral, engagement-based), multi-channel (email, SMS, site messages, Facebook Custom Audiences), landing pages, forms, site tracking, event tracking, transactional email (via Postmark), 900+ integrations, REST API v3 |
 
 ### Mailchimp & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-mailchimp` | Mailchimp platform help — email campaigns, Customer Journey Builder automations, SMS marketing, audience management, segmentation, landing pages, transactional email (Mandrill), A/B testing, Content Studio, generative AI, 300+ integrations, Marketing + Transactional APIs | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-mailchimp` | Mailchimp platform help — email campaigns, Customer Journey Builder automations, SMS marketing, audience management, segmentation, landing pages, transactional email (Mandrill), A/B testing, Content Studio, generative AI, 300+ integrations, Marketing + Transactional APIs |
 
 ### Closum & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-closum` | Closum platform help — omnichannel marketing automation: email, SMS, WhatsApp, Telegram, Web Push, no-code automations, AI assistant, landing pages, contact management, API & integrations | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-closum` | Closum platform help — omnichannel marketing automation: email, SMS, WhatsApp, Telegram, Web Push, no-code automations, AI assistant, landing pages, contact management, API & integrations |
 
 ### Groove.cm & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-groove` | Groove.cm platform help — GroovePages, GrooveFunnels, GrooveSell, GrooveMail, GrooveAffiliate, GrooveMember, GrooveVideo, GrooveWebinar, GrooveBlog, GrooveKart, GrooveProof | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-groove` | Groove.cm platform help — GroovePages, GrooveFunnels, GrooveSell, GrooveMail, GrooveAffiliate, GrooveMember, GrooveVideo, GrooveWebinar, GrooveBlog, GrooveKart, GrooveProof |
 
 ### Brevo & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-brevo` | Brevo platform help — email/SMS/WhatsApp campaigns, marketing automation (journeys), transactional messaging, Sales CRM, Conversations (live chat, chatbot), Loyalty programs, push notifications, e-commerce, landing pages, Aura AI, API & integrations | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-brevo` | Brevo platform help — email/SMS/WhatsApp campaigns, marketing automation (journeys), transactional messaging, Sales CRM, Conversations (live chat, chatbot), Loyalty programs, push notifications, e-commerce, landing pages, Aura AI, API & integrations |
 
 ### Iterable & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-iterable` | Iterable platform help — cross-channel customer engagement with Studio journey builder, Campaigns, email (Handlebars), SMS/MMS, push (iOS/Android/web), in-app messages, Mobile Inbox, Embedded Messages, WhatsApp, Experiments, Iterable AI (Brand Affinity, STO, Frequency Optimization, Predictive Goals, Journey Assist), Smart Ingest (23+ data sources), Snowflake Secure Data Sharing, Catalog, segmentation, system webhooks, REST API | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-iterable` | Iterable platform help — cross-channel customer engagement with Studio journey builder, Campaigns, email (Handlebars), SMS/MMS, push (iOS/Android/web), in-app messages, Mobile Inbox, Embedded Messages, WhatsApp, Experiments, Iterable AI (Brand Affinity, STO, Frequency Optimization, Predictive Goals, Journey Assist), Smart Ingest (23+ data sources), Snowflake Secure Data Sharing, Catalog, segmentation, system webhooks, REST API |
 
 ### GetResponse & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-getresponse` | GetResponse platform help — email marketing (newsletters, autoresponders), visual marketing automation, conversion funnels, landing pages, webinars (live/on-demand), course creator, premium newsletters, SMS, web push, live chat, e-commerce (Shopify/WooCommerce), contact scoring, AI content, transactional email (MAX only), REST API | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-getresponse` | GetResponse platform help — email marketing (newsletters, autoresponders), visual marketing automation, conversion funnels, landing pages, webinars (live/on-demand), course creator, premium newsletters, SMS, web push, live chat, e-commerce (Shopify/WooCommerce), contact scoring, AI content, transactional email (MAX only), REST API |
 
 ### Braze & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-braze` | Braze platform help — Canvas Flow, Campaigns, email (Liquid templating, Connected Content), push notifications, in-app messages, Content Cards, SMS/MMS/RCS, WhatsApp, LINE, BrazeAI (predictive, generative, Decisioning Studio), Braze Data Platform (CDI, Currents), segmentation, Catalogs, Feature Flags, transactional email API, REST API, Braze Alloys integrations | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-braze` | Braze platform help — Canvas Flow, Campaigns, email (Liquid templating, Connected Content), push notifications, in-app messages, Content Cards, SMS/MMS/RCS, WhatsApp, LINE, BrazeAI (predictive, generative, Decisioning Studio), Braze Data Platform (CDI, Currents), segmentation, Catalogs, Feature Flags, transactional email API, REST API, Braze Alloys integrations |
 
 ### ZoomInfo & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-zoominfo` | ZoomInfo platform help — SalesOS (prospecting, enrichment, intent, Engage sequences, Chorus conversation intelligence), MarketingOS (B2B advertising, FormComplete, WebSights, Chat), OperationsOS (data orchestration, CRM hygiene, deduplication), Copilot (AI pipeline management), API (PKI/OAuth auth, search, enrich, lookup, bulk, webhooks) | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-zoominfo` | ZoomInfo platform help — SalesOS (prospecting, enrichment, intent, Engage sequences, Chorus conversation intelligence), MarketingOS (B2B advertising, FormComplete, WebSights, Chat), OperationsOS (data orchestration, CRM hygiene, deduplication), Copilot (AI pipeline management), API (PKI/OAuth auth, search, enrich, lookup, bulk, webhooks) |
 
 ### Omnisend & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-omnisend` | Omnisend platform help — email campaigns, SMS marketing, web push, automation workflows, popups/forms, segmentation, product recommendations, reporting, Shopify/WooCommerce/BigCommerce integrations, API | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-omnisend` | Omnisend platform help — email campaigns, SMS marketing, web push, automation workflows, popups/forms, segmentation, product recommendations, reporting, Shopify/WooCommerce/BigCommerce integrations, API |
 
 ### SendPulse & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-sendpulse` | SendPulse platform help — email marketing, Automation 360, chatbots (Telegram, Facebook, WhatsApp, Instagram, Viber, Live Chat), CRM, online course builder (EDU), website/landing page builder, web push, SMS, SMTP transactional email, pop-ups, email verifier, API (OAuth 2.0, 7 SDKs), MCP Server | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-sendpulse` | SendPulse platform help — email marketing, Automation 360, chatbots (Telegram, Facebook, WhatsApp, Instagram, Viber, Live Chat), CRM, online course builder (EDU), website/landing page builder, web push, SMS, SMTP transactional email, pop-ups, email verifier, API (OAuth 2.0, 7 SDKs), MCP Server |
 
 ### Clearbit & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-clearbit` | Clearbit (HubSpot) platform help — Person Enrichment (80+ attributes), Company Enrichment (100+ firmographics), Reveal (IP-to-company), Prospector (contact search), Name to Domain, Form Shortening, Risk API, Breeze Intelligence, API (REST, HTTP Basic Auth, 600 req/min) | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-clearbit` | Clearbit (HubSpot) platform help — Person Enrichment (80+ attributes), Company Enrichment (100+ firmographics), Reveal (IP-to-company), Prospector (contact search), Name to Domain, Form Shortening, Risk API, Breeze Intelligence, API (REST, HTTP Basic Auth, 600 req/min) |
 
 ### RB2B & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-rb2b` | RB2B platform help — Person-Level Website Visitor ID (US only, 35-45% match rate), Company-Level ID (Demandbase, global), Hot Pages (high-intent page flagging), Hot Leads (ICP filtering), Traffic Insights, Identity Resolution API (api.rb2b.com — IP/LinkedIn/email/company resolution, credit-based), 50+ integrations (Slack, HubSpot, Salesforce, Apollo, Salesloft, Outreach, Clay) | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-rb2b` | RB2B platform help — Person-Level Website Visitor ID (US only, 35-45% match rate), Company-Level ID (Demandbase, global), Hot Pages (high-intent page flagging), Hot Leads (ICP filtering), Traffic Insights, Identity Resolution API (api.rb2b.com — IP/LinkedIn/email/company resolution, credit-based), 50+ integrations (Slack, HubSpot, Salesforce, Apollo, Salesloft, Outreach, Clay) |
 
 ### 6sense & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-6sense` | 6sense platform help — Signalverse Intent Data (1T+ signals, buying stage predictions), Predictive Analytics (6AI Scoring, 6QA), Sales Intelligence (Sales Copilot, Chrome extension), AI Email Agents (automated personalized outreach), Advertising & Audience Activation (display, LinkedIn sync, retargeting), Orchestration Workflows, Segments, Company Identification API, People/Company Enrichment API, Company Discovery | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-6sense` | 6sense platform help — Signalverse Intent Data (1T+ signals, buying stage predictions), Predictive Analytics (6AI Scoring, 6QA), Sales Intelligence (Sales Copilot, Chrome extension), AI Email Agents (automated personalized outreach), Advertising & Audience Activation (display, LinkedIn sync, retargeting), Orchestration Workflows, Segments, Company Identification API, People/Company Enrichment API, Company Discovery |
 
 ### Clay & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-clay` | Clay platform help — Waterfall Enrichment (150+ data providers, multi-provider fallback), Claygent (AI research agents), Sculptor (natural language workflow builder), Signals (job changes, funding, website visits), Audiences (dynamic buyer segments), Ad Sync (LinkedIn/Meta/Google Ads), Email Sequencer (native outbound), CRM Sync (Salesforce/HubSpot/Dynamics bidirectional), HTTP API actions, webhooks | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-clay` | Clay platform help — Waterfall Enrichment (150+ data providers, multi-provider fallback), Claygent (AI research agents), Sculptor (natural language workflow builder), Signals (job changes, funding, website visits), Audiences (dynamic buyer segments), Ad Sync (LinkedIn/Meta/Google Ads), Email Sequencer (native outbound), CRM Sync (Salesforce/HubSpot/Dynamics bidirectional), HTTP API actions, webhooks |
 
 ### LeadMagic & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-leadmagic` | LeadMagic platform help — Email Finder (97% accuracy), Email Validation (catch-all detection), Mobile Finder, Profile Search, Company Search (firmographics/technographics), Company Funding, Employee Finder, Role Finder, Job Change Detector, Jobs Finder, Google/Meta/B2B Ads Search, REST API (19 endpoints at api.leadmagic.io), MCP Server (Claude/Cursor/Windsurf), CLI | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-leadmagic` | LeadMagic platform help — Email Finder (97% accuracy), Email Validation (catch-all detection), Mobile Finder, Profile Search, Company Search (firmographics/technographics), Company Funding, Employee Finder, Role Finder, Job Change Detector, Jobs Finder, Google/Meta/B2B Ads Search, REST API (19 endpoints at api.leadmagic.io), MCP Server (Claude/Cursor/Windsurf), CLI |
 
 ### Kit (ConvertKit) & Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-kit` | Kit (formerly ConvertKit) platform help — Visual Automations, Sequences, Broadcasts, landing pages, forms, Creator Profile, Commerce (digital products, paid newsletters), Creator Recommendations, subscriber tagging, segmentation, engagement scoring, API | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-kit` | Kit (formerly ConvertKit) platform help — Visual Automations, Sequences, Broadcasts, landing pages, forms, Creator Profile, Commerce (digital products, paid newsletters), Creator Recommendations, subscriber tagging, segmentation, engagement scoring, API |
 
 ### Funnels, Email Marketing & Digital Sales
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-funnel` | Build and optimize sales funnels — strategy, structure, conversion, A/B testing across ClickFunnels, GoHighLevel, Groove, and more | Available |
-| `/sales-email-marketing` | Opt-in email marketing — broadcasts, nurture sequences, automation, segmentation across Kit, GrooveMail, Mailchimp, ActiveCampaign, and more | Available |
-| `/sales-newsletter` | Newsletter monetization — paid subscriptions, sponsorships, ad sales, paid recommendations, premium tiers across Kit, Substack, Beehiiv, Ghost, and more | Available |
-| `/sales-audience-growth` | Grow an email list or newsletter audience — lead magnets, cross-promotion, referral programs, social-to-email across Kit, Beehiiv, Mailchimp, and more | Available |
-| `/sales-digital-products` | Sell digital products — ebooks, templates, courses, downloads, pricing strategy, launch playbooks across Kit Commerce, Gumroad, Lemon Squeezy, and more | Available |
-| `/sales-affiliate-program` | Design and manage affiliate programs — commissions, recruitment, tracking, payouts across GrooveAffiliate, PartnerStack, and more | Available |
-| `/sales-webinar` | Webinar-based selling — live and evergreen strategy, presentation, follow-up across GrooveWebinar, Demio, WebinarJam, and more | Available |
-| `/sales-membership` | Membership sites and online courses — structure, pricing, retention across GrooveMember, Kajabi, Teachable, and more | Available |
-| `/sales-checkout` | Checkout optimization — upsells, order bumps, payment plans, cart abandonment across GrooveSell, ThriveCart, SamCart, and more | Available |
-| `/sales-meeting-scheduler` | Schedule sales meetings — booking pages, round-robin, Calendly/Chili Piper, no-show reduction, meeting page conversion | Available |
-| `/sales-email-tracking` | Email engagement tracking — open/click/attachment tracking, follow-up timing, Apple MPP, tracking accuracy | Available |
-| `/sales-transactional-email` | Transactional/triggered email delivery — provider selection, API/SMTP integration, templates, deliverability across SendGrid, Postmark, Mailgun, Brevo, Customer.io, SES | Available |
-| `/sales-live-chat` | Live chat and chatbot for sales — widget setup, chatbot flows, agent routing, chat-to-lead conversion across Brevo, Drift, Intercom, HubSpot, Crisp, and more | Available |
-| `/sales-loyalty` | Customer loyalty programs — points, tiers, rewards, VIP programs, member engagement, ROI across Brevo Loyalty, Smile.io, LoyaltyLion, Yotpo, and more | Available |
-| `/sales-sms-marketing` | SMS marketing — opt-in collection, compliance (TCPA/GDPR), campaign types, automation, two-way messaging, analytics across Omnisend, Klaviyo, Attentive, Postscript, Brevo, and more | Available |
-| `/sales-data-hygiene` | CRM data quality — deduplication, record matching, data decay management, enrichment automation, normalization across ZoomInfo OperationsOS, Salesforce, HubSpot Operations Hub, Clay, LeanData, DemandTools | Available |
-| `/sales-b2b-advertising` | Account-based B2B advertising — display ads, retargeting, cross-channel campaigns, ABM ads, audience building, ad-to-pipeline attribution across ZoomInfo MarketingOS, Demandbase, 6sense, Terminus, RollWorks, LinkedIn Ads | Available |
-| `/sales-push-notification` | Mobile and web push notification strategy — opt-in optimization, rich push, segmentation, timing, frequency capping, deep linking across Braze, OneSignal, Airship, Firebase/FCM, Customer.io, Klaviyo, Iterable, MoEngage | Available |
-| `/sales-in-app-messaging` | In-app messages and content cards — onboarding, feature announcements, surveys, promotions, trigger design across Braze, Iterable, Intercom, Pendo, Appcues, Customer.io, MoEngage | Available |
-| `/sales-chatbot` | Chatbot marketing and conversational automation — chatbot flows, multichannel messaging (WhatsApp, Telegram, Facebook, Instagram, Viber, live chat), lead qualification bots, FAQ bots, human handoff across SendPulse, ManyChat, Tidio, Intercom, Drift, HubSpot | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-funnel` | Build and optimize sales funnels — strategy, structure, conversion, A/B testing across ClickFunnels, GoHighLevel, Groove, and more |
+| `/sales-email-marketing` | Opt-in email marketing — broadcasts, nurture sequences, automation, segmentation across Kit, GrooveMail, Mailchimp, ActiveCampaign, and more |
+| `/sales-newsletter` | Newsletter monetization — paid subscriptions, sponsorships, ad sales, paid recommendations, premium tiers across Kit, Substack, Beehiiv, Ghost, and more |
+| `/sales-audience-growth` | Grow an email list or newsletter audience — lead magnets, cross-promotion, referral programs, social-to-email across Kit, Beehiiv, Mailchimp, and more |
+| `/sales-digital-products` | Sell digital products — ebooks, templates, courses, downloads, pricing strategy, launch playbooks across Kit Commerce, Gumroad, Lemon Squeezy, and more |
+| `/sales-affiliate-program` | Design and manage affiliate programs — commissions, recruitment, tracking, payouts across GrooveAffiliate, PartnerStack, and more |
+| `/sales-webinar` | Webinar-based selling — live and evergreen strategy, presentation, follow-up across GrooveWebinar, Demio, WebinarJam, and more |
+| `/sales-membership` | Membership sites and online courses — structure, pricing, retention across GrooveMember, Kajabi, Teachable, and more |
+| `/sales-checkout` | Checkout optimization — upsells, order bumps, payment plans, cart abandonment across GrooveSell, ThriveCart, SamCart, and more |
+| `/sales-meeting-scheduler` | Schedule sales meetings — booking pages, round-robin, Calendly/Chili Piper, no-show reduction, meeting page conversion |
+| `/sales-email-tracking` | Email engagement tracking — open/click/attachment tracking, follow-up timing, Apple MPP, tracking accuracy |
+| `/sales-transactional-email` | Transactional/triggered email delivery — provider selection, API/SMTP integration, templates, deliverability across SendGrid, Postmark, Mailgun, Brevo, Customer.io, SES |
+| `/sales-live-chat` | Live chat and chatbot for sales — widget setup, chatbot flows, agent routing, chat-to-lead conversion across Brevo, Drift, Intercom, HubSpot, Crisp, and more |
+| `/sales-loyalty` | Customer loyalty programs — points, tiers, rewards, VIP programs, member engagement, ROI across Brevo Loyalty, Smile.io, LoyaltyLion, Yotpo, and more |
+| `/sales-sms-marketing` | SMS marketing — opt-in collection, compliance (TCPA/GDPR), campaign types, automation, two-way messaging, analytics across Omnisend, Klaviyo, Attentive, Postscript, Brevo, and more |
+| `/sales-data-hygiene` | CRM data quality — deduplication, record matching, data decay management, enrichment automation, normalization across ZoomInfo OperationsOS, Salesforce, HubSpot Operations Hub, Clay, LeanData, DemandTools |
+| `/sales-b2b-advertising` | Account-based B2B advertising — display ads, retargeting, cross-channel campaigns, ABM ads, audience building, ad-to-pipeline attribution across ZoomInfo MarketingOS, Demandbase, 6sense, Terminus, RollWorks, LinkedIn Ads |
+| `/sales-push-notification` | Mobile and web push notification strategy — opt-in optimization, rich push, segmentation, timing, frequency capping, deep linking across Braze, OneSignal, Airship, Firebase/FCM, Customer.io, Klaviyo, Iterable, MoEngage |
+| `/sales-in-app-messaging` | In-app messages and content cards — onboarding, feature announcements, surveys, promotions, trigger design across Braze, Iterable, Intercom, Pendo, Appcues, Customer.io, MoEngage |
+| `/sales-chatbot` | Chatbot marketing and conversational automation — chatbot flows, multichannel messaging (WhatsApp, Telegram, Facebook, Instagram, Viber, live chat), lead qualification bots, FAQ bots, human handoff across SendPulse, ManyChat, Tidio, Intercom, Drift, HubSpot |
 
 ### Prospecting, Enrichment & Signals
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-prospect-list` | Build targeted B2B prospect lists with ICP definition, filters, and segmentation | Available |
-| `/sales-enrich` | Enrich contacts with emails/phones, CRM data hygiene, dedup, bulk enrichment | Available |
-| `/sales-intent` | Interpret buying signals, intent data, job changes, lead scoring, account prioritization | Available |
-| `/sales-compete` | Run competitive displacement campaigns — find competitor customers ready to switch | Available |
-| `/sales-account-map` | Map the buying committee at a target account with multi-threading strategy | Available |
-| `/sales-lead-score` | Design, weight, and tune a lead scoring model with MQL/SQL thresholds | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-prospect-list` | Build targeted B2B prospect lists with ICP definition, filters, and segmentation |
+| `/sales-enrich` | Enrich contacts with emails/phones, CRM data hygiene, dedup, bulk enrichment |
+| `/sales-intent` | Interpret buying signals, intent data, job changes, lead scoring, account prioritization |
+| `/sales-compete` | Run competitive displacement campaigns — find competitor customers ready to switch |
+| `/sales-account-map` | Map the buying committee at a target account with multi-threading strategy |
+| `/sales-lead-score` | Design, weight, and tune a lead scoring model with MQL/SQL thresholds |
 
 ### Cross-Platform
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-deliverability` | Email deliverability — SPF/DKIM/DMARC, warmup, inbox placement, blacklists, sender reputation | Available |
-| `/sales-agency-outbound` | Multi-client outbound for agencies — infrastructure, client isolation, white-labeling, onboarding | Available |
-| `/sales-lead-routing` | Design lead routing and assignment rules — round-robin, territory, score-based, account-based | Available |
-| `/sales-integration` | Connect sales tools with webhooks, Zapier/Make, native integrations, and CRM sync | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-deliverability` | Email deliverability — SPF/DKIM/DMARC, warmup, inbox placement, blacklists, sender reputation |
+| `/sales-agency-outbound` | Multi-client outbound for agencies — infrastructure, client isolation, white-labeling, onboarding |
+| `/sales-lead-routing` | Design lead routing and assignment rules — round-robin, territory, score-based, account-based |
+| `/sales-integration` | Connect sales tools with webhooks, Zapier/Make, native integrations, and CRM sync |
 
 ### Strategy & Content
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-positioning` | Messaging, value props, competitive differentiation | Coming soon |
+| Skill | What it does |
+|---|---|
+| `/sales-positioning` | Messaging, value props, competitive differentiation |
 
 ### Sales Enablement & Content
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-content` | Organize, distribute, and measure sales collateral — battle cards, one-pagers, case studies, decks, playbooks, content governance | Available |
-| `/sales-coaching` | Sales coaching and training — onboarding, role-play, coaching frameworks, certifications, ramp time optimization | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-content` | Organize, distribute, and measure sales collateral — battle cards, one-pagers, case studies, decks, playbooks, content governance |
+| `/sales-coaching` | Sales coaching and training — onboarding, role-play, coaching frameworks, certifications, ramp time optimization |
 
 ### Marketing & GTM
 
@@ -463,69 +463,69 @@ Router recommends a 5-skill sequence:
 
 #### SEO & Content
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/ai-seo` | Optimize content for AI search engines and LLM citations | Available |
-| `/content-strategy` | Plan content strategy and identify topics to cover | Available |
-| `/copywriting` | Write marketing copy for homepages, landing pages, and sites | Available |
-| `/copy-editing` | Edit, review, and improve existing marketing copy | Available |
-| `/programmatic-seo` | Generate SEO pages at scale using templates | Available |
-| `/schema-markup` | Add and optimize structured data markup | Available |
-| `/seo-audit` | Audit and diagnose technical and on-page SEO issues | Available |
-| `/site-architecture` | Plan website hierarchy, navigation, and URL structure | Available |
-| `/social-content` | Create and schedule social media content | Available |
+| Skill | What it does |
+|---|---|
+| `/ai-seo` | Optimize content for AI search engines and LLM citations |
+| `/content-strategy` | Plan content strategy and identify topics to cover |
+| `/copywriting` | Write marketing copy for homepages, landing pages, and sites |
+| `/copy-editing` | Edit, review, and improve existing marketing copy |
+| `/programmatic-seo` | Generate SEO pages at scale using templates |
+| `/schema-markup` | Add and optimize structured data markup |
+| `/seo-audit` | Audit and diagnose technical and on-page SEO issues |
+| `/site-architecture` | Plan website hierarchy, navigation, and URL structure |
+| `/social-content` | Create and schedule social media content |
 
 #### Conversion & Growth
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/ab-test-setup` | Plan, design, and implement A/B tests and experiments | Available |
-| `/form-cro` | Optimize lead capture and contact forms | Available |
-| `/onboarding-cro` | Optimize post-signup activation and time-to-value | Available |
-| `/page-cro` | Increase conversions on marketing and landing pages | Available |
-| `/paywall-upgrade-cro` | Optimize in-app paywalls and upsell modals | Available |
-| `/popup-cro` | Create and optimize popups, modals, and overlays | Available |
-| `/signup-flow-cro` | Optimize signup, registration, and trial activation | Available |
+| Skill | What it does |
+|---|---|
+| `/ab-test-setup` | Plan, design, and implement A/B tests and experiments |
+| `/form-cro` | Optimize lead capture and contact forms |
+| `/onboarding-cro` | Optimize post-signup activation and time-to-value |
+| `/page-cro` | Increase conversions on marketing and landing pages |
+| `/paywall-upgrade-cro` | Optimize in-app paywalls and upsell modals |
+| `/popup-cro` | Create and optimize popups, modals, and overlays |
+| `/signup-flow-cro` | Optimize signup, registration, and trial activation |
 
 #### Acquisition & Campaigns
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/ad-creative` | Generate and scale ad headlines, descriptions, and full ads | Available |
-| `/cold-email` | Write B2B cold outreach and follow-up sequences | Available |
-| `/email-sequence` | Create automated email flows and drip campaigns | Available |
-| `/free-tool-strategy` | Plan and build free marketing tools for lead generation | Available |
-| `/lead-magnets` | Create and optimize lead magnets for email capture | Available |
-| `/paid-ads` | Manage Google, Meta, LinkedIn, and Twitter ad campaigns | Available |
+| Skill | What it does |
+|---|---|
+| `/ad-creative` | Generate and scale ad headlines, descriptions, and full ads |
+| `/cold-email` | Write B2B cold outreach and follow-up sequences |
+| `/email-sequence` | Create automated email flows and drip campaigns |
+| `/free-tool-strategy` | Plan and build free marketing tools for lead generation |
+| `/lead-magnets` | Create and optimize lead magnets for email capture |
+| `/paid-ads` | Manage Google, Meta, LinkedIn, and Twitter ad campaigns |
 
 #### Strategy & Positioning
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/competitor-alternatives` | Create competitor comparison and alternative pages | Available |
-| `/launch-strategy` | Plan product launches and feature announcements | Available |
-| `/marketing-ideas` | Generate marketing inspiration and SaaS strategies | Available |
-| `/marketing-psychology` | Apply behavioral science and mental models to marketing | Available |
-| `/pricing-strategy` | Determine pricing, packaging, and monetization decisions | Available |
-| `/product-marketing-context` | Create foundational product marketing documentation | Available |
-| `/competitive-landscape` | Analyze competitive dynamics with Porter's Five Forces, Blue Ocean Strategy, and positioning maps | Available |
+| Skill | What it does |
+|---|---|
+| `/competitor-alternatives` | Create competitor comparison and alternative pages |
+| `/launch-strategy` | Plan product launches and feature announcements |
+| `/marketing-ideas` | Generate marketing inspiration and SaaS strategies |
+| `/marketing-psychology` | Apply behavioral science and mental models to marketing |
+| `/pricing-strategy` | Determine pricing, packaging, and monetization decisions |
+| `/product-marketing-context` | Create foundational product marketing documentation |
+| `/competitive-landscape` | Analyze competitive dynamics with Porter's Five Forces, Blue Ocean Strategy, and positioning maps |
 
 #### Retention & Revenue
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/churn-prevention` | Reduce churn through cancellation flows and save offers | Available |
-| `/referral-program` | Build and optimize referral and affiliate programs | Available |
-| `/revops` | Manage lead lifecycle and marketing-to-sales handoff | Available |
-| `/sales-enablement` | Create pitch decks, one-pagers, and objection handling docs | Available |
+| Skill | What it does |
+|---|---|
+| `/churn-prevention` | Reduce churn through cancellation flows and save offers |
+| `/referral-program` | Build and optimize referral and affiliate programs |
+| `/revops` | Manage lead lifecycle and marketing-to-sales handoff |
+| `/sales-enablement` | Create pitch decks, one-pagers, and objection handling docs |
 
 #### Analytics
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/analytics-tracking` | Set up and audit analytics measurement and event tracking | Available |
-| `/marketing-skills-collection` | Generate marketing deliverables across CRO, copywriting, SEO, analytics, and growth | Available |
-| `/marketing-automation` | Marketing automation with 23 sub-skills across CRO, copywriting, SEO, analytics, and growth | Available |
+| Skill | What it does |
+|---|---|
+| `/analytics-tracking` | Set up and audit analytics measurement and event tracking |
+| `/marketing-skills-collection` | Generate marketing deliverables across CRO, copywriting, SEO, analytics, and growth |
+| `/marketing-automation` | Marketing automation with 23 sub-skills across CRO, copywriting, SEO, analytics, and growth |
 
 ### Research & Data
 
@@ -535,47 +535,47 @@ Router recommends a 5-skill sequence:
 
 #### Research
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/producthunt` | Search and retrieve Product Hunt posts, topics, and collections | Available |
-| `/product-hunt-launch` | Optimize Product Hunt launches with research, gallery strategy, and timing | Available |
-| `/reddit` | Search and retrieve Reddit posts, comments, and subreddit info | Available |
-| `/requesthunt` | Collect and analyze user feedback from Reddit, X, and GitHub | Available |
-| `/apify-lead-generation` | Multi-platform lead scraping from Google Maps, social media, websites, and search engines | Available |
-| `/twitter` | Search and retrieve tweets, user profiles, and trends from X | Available |
+| Skill | What it does |
+|---|---|
+| `/producthunt` | Search and retrieve Product Hunt posts, topics, and collections |
+| `/product-hunt-launch` | Optimize Product Hunt launches with research, gallery strategy, and timing |
+| `/reddit` | Search and retrieve Reddit posts, comments, and subreddit info |
+| `/requesthunt` | Collect and analyze user feedback from Reddit, X, and GitHub |
+| `/apify-lead-generation` | Multi-platform lead scraping from Google Maps, social media, websites, and search engines |
+| `/twitter` | Search and retrieve tweets, user profiles, and trends from X |
 
 #### Creative & Design
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/banner-creator` | Generate professional banners for GitHub, Twitter, and websites | Available |
-| `/logo-creator` | Generate professional logos with AI through iterative design | Available |
-| `/nanobanana` | Generate and edit images using AI (Gemini image model) | Available |
-| `/baoyu-slide-deck` | Transform content into professional presentation decks with customizable styles | Available |
+| Skill | What it does |
+|---|---|
+| `/banner-creator` | Generate professional banners for GitHub, Twitter, and websites |
+| `/logo-creator` | Generate professional logos with AI through iterative design |
+| `/nanobanana` | Generate and edit images using AI (Gemini image model) |
+| `/baoyu-slide-deck` | Transform content into professional presentation decks with customizable styles |
 
 #### SEO & Domains
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/seo-geo` | Optimize for AI search engines (GEO) and traditional search | Available |
-| `/backlink-analyzer` | Analyze backlink profiles with toxic link detection and competitor benchmarking | Available |
-| `/build-links` | Design link acquisition campaigns with prospect scoring and outreach strategy | Available |
-| `/domain-hunter` | Find domain names with availability checks and price comparison | Available |
+| Skill | What it does |
+|---|---|
+| `/seo-geo` | Optimize for AI search engines (GEO) and traditional search |
+| `/backlink-analyzer` | Analyze backlink profiles with toxic link detection and competitor benchmarking |
+| `/build-links` | Design link acquisition campaigns with prospect scoring and outreach strategy |
+| `/domain-hunter` | Find domain names with availability checks and price comparison |
 
 #### Utilities
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/archive` | Capture, index, and reuse project knowledge across sessions | Available |
-| `/skill-standardization` | Validate and standardize SKILL.md files against the Agent Skills spec | Available |
-| `/skill-creator` | Scaffold new skills with validated directory structure, frontmatter, and progressive disclosure | Available |
+| Skill | What it does |
+|---|---|
+| `/archive` | Capture, index, and reuse project knowledge across sessions |
+| `/skill-standardization` | Validate and standardize SKILL.md files against the Agent Skills spec |
+| `/skill-creator` | Scaffold new skills with validated directory structure, frontmatter, and progressive disclosure |
 
 ### Router
 
-| Skill | What it does | Status |
-|---|---|---|
-| `/sales-do` | Routes your objective to the right skill | Available |
-| `/sales-request-skill` | Build or request a skill that doesn't exist yet | Available |
+| Skill | What it does |
+|---|---|
+| `/sales-do` | Routes your objective to the right skill |
+| `/sales-request-skill` | Build or request a skill that doesn't exist yet |
 
 ## Usage Examples
 
@@ -589,6 +589,3 @@ Router recommends a 5-skill sequence:
 /sales-objection they say they already have a solution in place
 ```
 
-## License
-
-MIT
