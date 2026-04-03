@@ -449,6 +449,14 @@ These tools simulate real email conversations to build sender reputation. Run wa
 - **Spam score checker**: The email editor includes a built-in spam score check — run it before every send to catch content-level red flags (spammy words, broken HTML, missing unsubscribe link).
 - **Best practice**: Verify your list with the bulk verifier endpoint before launching a campaign, set up SPF/DKIM on day one, and use the spam score checker on every email. Move to a dedicated IP once volume justifies it.
 
+### In LeadMagic
+
+- **Email Validation endpoint**: `POST /v1/people/email-validation` — real-time SMTP verification returning `valid`, `invalid`, or `unknown` status with catch-all domain detection (0.25 credits per validation).
+- **Pre-send validation**: Validate your entire prospect list before sending outbound campaigns. At 0.25 credits per validation, 10,000 validations = 2,500 credits (~$25 on Essential plan).
+- **Catch-all detection**: Identifies catch-all domains where all emails appear valid but may not reach real inboxes — flag these for extra caution or lower-priority sending.
+- **API-first**: REST endpoint at api.leadmagic.io — integrate validation into your outbound pipeline or use via MCP server in Claude Code.
+- **Best for**: Teams wanting cheap, API-accessible email validation to clean lists before sending. Complements dedicated deliverability tools like ZeroBounce and SafetyMails.
+
 ### Standalone tools (any platform)
 - **MXToolbox**: DNS lookup, blacklist check, SPF/DKIM/DMARC validation
 - **mail-tester.com**: Send a test email, get a deliverability score (aim for 9+/10)
@@ -539,6 +547,7 @@ If your domain reputation is damaged:
 - `/sales-prospect-list` — Build prospect lists with verified contacts
 - `/sales-omnisend` — Omnisend platform help (domain auth, lifecycle segmentation, ecommerce email/SMS/push)
 - `/sales-sendpulse` — SendPulse platform help (email verifier, bounce management, reputation monitoring, dedicated IP, spam score checker)
+- `/sales-leadmagic` — LeadMagic platform help (email validation, catch-all detection, API-first verification)
 - `/sales-zoominfo` — ZoomInfo platform help (Engage email configuration)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 

@@ -5,12 +5,20 @@ Claude Code skills for sales, marketing, and GTM workflows.
 ## Quick Start
 
 ```bash
+npx skills add sales-skills/sales --skills sales-do
+```
+
+Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill.
+
+Want every skill at once?
+
+```bash
 npx skills add sales-skills/sales
 ```
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 86 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 87 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -376,6 +384,12 @@ Router recommends a 5-skill sequence:
 | Skill | What it does | Status |
 |---|---|---|
 | `/sales-clay` | Clay platform help — Waterfall Enrichment (150+ data providers, multi-provider fallback), Claygent (AI research agents), Sculptor (natural language workflow builder), Signals (job changes, funding, website visits), Audiences (dynamic buyer segments), Ad Sync (LinkedIn/Meta/Google Ads), Email Sequencer (native outbound), CRM Sync (Salesforce/HubSpot/Dynamics bidirectional), HTTP API actions, webhooks | Available |
+
+### LeadMagic & Platform
+
+| Skill | What it does | Status |
+|---|---|---|
+| `/sales-leadmagic` | LeadMagic platform help — Email Finder (97% accuracy), Email Validation (catch-all detection), Mobile Finder, Profile Search, Company Search (firmographics/technographics), Company Funding, Employee Finder, Role Finder, Job Change Detector, Jobs Finder, Google/Meta/B2B Ads Search, REST API (19 endpoints at api.leadmagic.io), MCP Server (Claude/Cursor/Windsurf), CLI | Available |
 
 ### Kit (ConvertKit) & Platform
 

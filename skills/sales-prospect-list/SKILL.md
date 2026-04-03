@@ -369,6 +369,17 @@ Save the search as a dynamic list — new matches will appear automatically.
 - **Export to outbound tools**: Push enriched lists to Outreach, Salesloft, Apollo, Lemlist, Smartlead, or Clay's own Email Sequencer.
 - **Best for**: GTM engineers building automated prospect pipelines — import → enrich → segment → outreach in one workflow.
 
+### Building lists from LeadMagic
+
+- **Employee Finder**: Discover employees at target companies at just 0.05 credits each — the cheapest bulk discovery option. Great for building initial lists of contacts at target accounts.
+- **Role Finder**: Find specific roles at companies (e.g., "VP Sales at Acme") for targeted prospecting (1-2 credits).
+- **Email Finder**: Enrich discovered contacts with verified work emails (1 credit per valid result, free for not_found).
+- **Mobile Finder**: Add direct dial numbers for phone-based outreach (5 credits per valid result).
+- **Company Search**: Identify target companies by firmographics, technographics, and competitors, then use Employee/Role Finder to build contact lists.
+- **Jobs Finder**: Search job listings to identify companies with active hiring signals — a proxy for growth and budget.
+- **API-first approach**: All endpoints are REST APIs — pipe results directly into CRM, outbound tools, or Clay for further enrichment.
+- **Best for**: GTM engineers building automated prospecting pipelines via API. Combine with Clay waterfall for maximum coverage.
+
 ## Step 4 — Segment and prioritize
 
 Split the list into tiers for sequencing:
@@ -479,6 +490,7 @@ Before launching outreach, validate the list:
 - `/sales-rb2b` — RB2B platform help (person-level visitor identification, Hot Pages, Identity Resolution API)
 - `/sales-6sense` — 6sense platform help (Company Discovery, Sales Intelligence search, intent-driven list building, segment-based prospecting)
 - `/sales-clay` — Clay platform help (waterfall enrichment, Claygent AI research, signals, audiences, automated prospect pipelines)
+- `/sales-leadmagic` — LeadMagic platform help (Employee Finder, Role Finder, Email/Mobile Finder, Company Search, Jobs Finder — API-first prospecting)
 - `/sales-seamless` — Seamless.AI platform help (1.8B+ contacts, Buyer Intent, Job Changes, Autopilot, Chrome extension)
 - `/sales-zoominfo` — ZoomInfo platform help (Advanced Search, Saved Searches, exports)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

@@ -15,7 +15,7 @@ Help the user design and implement integrations between sales tools — from cho
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Omnisend, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, ZoomInfo, Clearbit, RB2B, 6sense, Brevo, Braze, Iterable, GetResponse, SendPulse, Clay, HubSpot, Salesforce, Qwilr, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Omnisend, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, LeadMagic, ZoomInfo, Clearbit, RB2B, 6sense, Brevo, Braze, Iterable, GetResponse, SendPulse, Clay, HubSpot, Salesforce, Qwilr, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -721,6 +721,21 @@ Before building anything custom, check if a native integration exists:
 | Google Sheets / Airtable | Native | Import/export data between Clay and spreadsheets. |
 | 150+ data providers | Enrichment | Waterfall enrichment via Hunter, Apollo, Clearbit, People Data Labs, ZoomInfo, Lusha, Dropcontact, Cognism, RocketReach, etc. |
 
+### LeadMagic API & integrations
+
+| Integration | Type | What it does |
+|------------|------|-------------|
+| REST API | Native (19 endpoints) | All enrichment, company, job, and ads endpoints via api.leadmagic.io with X-API-Key auth. |
+| MCP Server | Native | 19 tools for Claude Code, Cursor, Windsurf, VS Code, Continue.dev, ChatGPT. github.com/LeadMagic/leadmagic-mcp |
+| CLI | Native | Command-line access for terminal-based lookups. github.com/LeadMagic/cold-email-cli |
+| Clay | Native provider | LeadMagic is available as an enrichment provider in Clay's waterfall. |
+| Zapier | Native | Trigger enrichment from Zapier workflows, push results to other tools. |
+| Make | Native | Integrate LeadMagic into Make scenarios. |
+| n8n | Native | LeadMagic nodes for n8n workflow automation. |
+| Salesforce | Via middleware | Push enriched data to Salesforce via Zapier, Make, n8n, or custom API integration. |
+| Instantly | Compatible | Use LeadMagic to enrich leads before importing to Instantly campaigns. |
+| Smartlead | Compatible | Enrich and validate emails before loading into Smartlead. |
+
 ### Qwilr webhooks
 - **Full reference**: See `/sales-qwilr-automation` for Qwilr-specific webhook events and CRM integrations
 
@@ -810,6 +825,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-rb2b` — RB2B platform help (person-level visitor ID, Hot Pages, Identity Resolution API, native integrations with Slack/HubSpot/Salesforce/Apollo/Salesloft/Outreach)
 - `/sales-6sense` — 6sense platform help (Signalverse intent, predictive scoring, AI Email Agents, advertising, native Salesforce/HubSpot/Marketo/LinkedIn integrations, API)
 - `/sales-clay` — Clay platform help (waterfall enrichment, CRM integrations, webhooks, HTTP API, ad audience sync, 150+ data providers)
+- `/sales-leadmagic` — LeadMagic platform help including REST API (19 endpoints), MCP server, CLI, Clay/Zapier/Make/n8n integrations
 - `/sales-zoominfo` — ZoomInfo platform help (SalesOS, MarketingOS, OperationsOS integrations)
 - `/sales-data-hygiene` — CRM data quality and enrichment automation
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.

@@ -67,6 +67,16 @@ Don't target the entire installed base — narrow to your ICP:
 | G2 visitor data | High intent signal | Real-time | Active evaluators |
 | CRM win/loss data | 100% (your data) | Current | Known competitive encounters |
 
+### In LeadMagic
+
+- **Google Ads Search**: Analyze competitor Google search ads — ad copy, keywords, landing page URLs. See what competitors bid on and how they position (1 credit per ad).
+- **Meta Ads Search**: Research competitor Facebook/Instagram ads — creative, copy, and engagement. Understand their social advertising strategy (1 credit per ad).
+- **B2B Ads Search**: Discover competitor B2B display and social campaigns. See which accounts they're targeting with ABM-style advertising (1 credit per ad).
+- **Technographics**: Via Company Search, identify what technology stack competitors and their customers use — useful for displacement campaigns targeting specific tools.
+- **Competitors Search**: Discover companies in the same competitive space as your targets.
+- **API-first**: All endpoints available via REST API at api.leadmagic.io — automate competitive monitoring in your pipeline.
+- **Best for**: Teams wanting programmatic competitive ad intelligence without expensive CI platforms.
+
 ## Step 3 — Find displacement signals
 
 Layer signals on top of the installed base to identify companies ready to switch:
@@ -166,6 +176,7 @@ Design signal-specific outreach strategies:
 - `/sales-objection` — Handle "we're happy with [competitor]" and loyalty objections
 - `/sales-intent` — Interpret buying signals beyond competitive displacement
 - `/sales-positioning` — Develop competitive messaging frameworks
+- `/sales-leadmagic` — LeadMagic competitive ad intelligence, technographics, and company enrichment
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Gotchas

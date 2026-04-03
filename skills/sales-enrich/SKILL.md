@@ -1,6 +1,6 @@
 ---
 name: sales-enrich
-description: "Enrich contacts and companies with verified emails, phones, and firmographic data. Also covers CRM data hygiene, deduplication, and bulk enrichment. Use when enriching leads, finding email addresses, cleaning CRM data, doing bulk enrichment, optimizing enrichment credits, setting up auto-enrichment, or fixing stale contact data. Do NOT use for building new prospect lists from scratch (use /sales-prospect-list), interpreting buying signals (use /sales-intent), ZoomInfo-specific enrichment config (use /sales-zoominfo), Clearbit/Breeze Intelligence platform help (use /sales-clearbit), RB2B platform help (use /sales-rb2b), 6sense platform help (use /sales-6sense), general Apollo platform help (use /sales-apollo), or Clay platform help (use /sales-clay)."
+description: "Enrich contacts and companies with verified emails, phones, and firmographic data. Also covers CRM data hygiene, deduplication, and bulk enrichment. Use when enriching leads, finding email addresses, cleaning CRM data, doing bulk enrichment, optimizing enrichment credits, setting up auto-enrichment, or fixing stale contact data. Do NOT use for building new prospect lists from scratch (use /sales-prospect-list), interpreting buying signals (use /sales-intent), ZoomInfo-specific enrichment config (use /sales-zoominfo), Clearbit/Breeze Intelligence platform help (use /sales-clearbit), RB2B platform help (use /sales-rb2b), 6sense platform help (use /sales-6sense), general Apollo platform help (use /sales-apollo), Clay platform help (use /sales-clay), or LeadMagic platform help (use /sales-leadmagic)."
 argument-hint: "[describe what data you need — e.g., 'enrich 500 leads with emails' or 'clean up stale CRM contacts']"
 license: MIT
 version: 1.0.0
@@ -440,6 +440,17 @@ Choose the right approach based on volume and frequency:
 - **Pricing**: Free (100 credits/mo), Launch ($167-185/mo, 2,500 credits), Growth ($446-495/mo, 6,000 credits), Enterprise (custom). As of March 2026 — verify current pricing.
 - **Best for**: Teams needing maximum enrichment coverage across multiple providers with a single tool. GTM engineers building automated enrichment workflows.
 
+### In LeadMagic
+
+- **What it is**: API-first B2B data enrichment with 19 REST endpoints. Pay-per-result — you only pay for valid results (not_found = free). Base URL: api.leadmagic.io, auth via X-API-Key header.
+- **Email Finder**: Name + domain → verified work email at 97% accuracy (1 credit). Profile to Email: LinkedIn URL → work email (1-2 credits). Personal Email Finder: B2B profile → personal email (1-2 credits).
+- **Mobile Finder**: Direct dial mobile numbers for decision-makers (5 credits per valid result).
+- **Company enrichment**: Company Search for firmographics, technographics, and competitors (1-2 credits). Company Funding for rounds, investors, amounts (4 credits).
+- **Employee/Role discovery**: Employee Finder at just 0.05 credits per employee for bulk discovery. Role Finder for specific titles at companies (1-2 credits).
+- **MCP Server**: Official MCP server with all 19 tools for Claude Code, Cursor, Windsurf, VS Code — enrich directly from your editor.
+- **Pricing**: Trial (free, 100 credits), Basic ($59.99/mo, 2,500), Essential ($99.99/mo, 10,000), Growth ($179.99/mo, 20,000), Advanced ($259.99/mo, 30,000). As of April 2026 — verify current pricing.
+- **Best for**: Developers and GTM engineers wanting API-first enrichment with transparent per-result pricing. Excellent as a provider in Clay waterfall enrichment.
+
 ### Compliance checklist
 
 Before enriching and contacting, verify compliance with data privacy regulations in your target regions:
@@ -575,6 +586,7 @@ Credits reset monthly and do not roll over. Plan enrichment around your billing 
 - `/sales-clearbit` — Clearbit / Breeze Intelligence platform help (person enrichment, company enrichment, prospector, Name to Domain, streaming API)
 - `/sales-rb2b` — RB2B platform help (person-level visitor identification pixel, Identity Resolution API)
 - `/sales-clay` — Clay platform help (waterfall enrichment across 150+ providers, Claygent AI research, CRM sync)
+- `/sales-leadmagic` — LeadMagic platform help (API-first B2B enrichment, 19 REST endpoints, pay-per-result pricing, email/mobile/company enrichment, MCP server)
 - `/sales-6sense` — 6sense platform help (People/Company Enrichment APIs, Company Identification, Segments API — enterprise ABM platform)
 - `/sales-zoominfo` — ZoomInfo platform help (enrichment, intent, OperationsOS)
 - `/sales-data-hygiene` — CRM data quality, deduplication, enrichment automation

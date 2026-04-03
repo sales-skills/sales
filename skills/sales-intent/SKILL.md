@@ -190,6 +190,14 @@ RB2B provides **person-level** website visitor identification (US traffic only) 
 - **Plan gate**: Signals require Launch plan ($167-185/mo) or above. Ad Sync requires Growth ($446-495/mo).
 - **Best for**: Teams wanting to automate the signal → enrichment → outreach pipeline in a single platform.
 
+### In LeadMagic
+
+- **Job Change Detector**: Track when contacts change jobs — new role, new company (3 credits per result). Use to trigger outreach when champions move to new accounts or when decision-makers join target companies.
+- **Jobs Finder**: Search job listings across industries to identify hiring signals — companies posting for roles that indicate budget, growth, or need for your product (1 credit per result).
+- **Ads Intelligence**: Google Ads Search, Meta Ads Search, and B2B Ads Search reveal what competitors and prospects are spending on advertising — a signal of active investment and priorities (1 credit per ad).
+- **API-first**: All signal endpoints are REST APIs — automate signal detection in pipelines via api.leadmagic.io.
+- **Best for**: Teams wanting programmatic access to job change and hiring signals without a full intent platform.
+
 ## Step 4 — Signal-to-action playbooks
 
 ### For each signal type, define the action:
@@ -269,6 +277,7 @@ Use Apollo Workflows (Professional+ plan) to automate:
 - `/sales-6sense` — 6sense platform help (Signalverse intent data, predictive scoring, Sales Intelligence, AI Email Agents, advertising, orchestration)
 - `/sales-zoominfo` — ZoomInfo platform help (SalesOS, intent topics, Scoops)
 - `/sales-clay` — Clay platform help (Signals, waterfall enrichment, Claygent, Email Sequencer, Ad Sync)
+- `/sales-leadmagic` — LeadMagic platform help (Job Change Detector, Jobs Finder, Ads Intelligence, programmatic signal APIs)
 - `/sales-b2b-advertising` — account-based advertising driven by intent signals
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
