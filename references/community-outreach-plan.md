@@ -222,6 +222,48 @@ This could be a simple Python script in `scripts/check-threads.py` or integrated
 
 ---
 
+## ActiveCampaign → Make Community Experiment (2026-04-04)
+
+### Context
+
+Originally planned to test HubSpot Community, but it returns 403 on all WebFetch requests. Pivoted to Make Community (community.make.com) — Discourse-based, fully automatable.
+
+### Community profile: Make Community
+
+- **URL**: community.make.com
+- **Platform**: Discourse
+- **WebFetch**: Works — full content returned
+- **Reply boxes**: Present, open to registered users
+- **Thread lifespan**: No auto-close observed (threads from 2024 still open)
+- **Tone**: Technical, workflow-oriented, helpful community with active moderators
+- **Best search patterns**: `site:community.make.com "{platform}" OR "{problem}"`
+- **Audience**: Automation builders, agencies, technical marketers
+- **Competitor mentions**: Tolerated — people discuss ActiveCampaign, Mailchimp, Klaviyo, etc. freely
+- **Best for skills**: Any platform with Make/Zapier integration (most sales platforms)
+
+### Threads found and verified
+
+| # | Thread | URL | Posted | Replies | Status | Reply Drafted |
+|---|--------|-----|--------|---------|--------|--------------|
+| 1 | WhatsApp API + ActiveCampaign cart recovery | https://community.make.com/t/assistance-with-whatsapp-api-and-activecampaign-automation/70527 | 2025-02-19 | 0 | **Unresolved, replyable** | `/tmp/community-reply-activecampaign-1.md` |
+| 2 | ActiveCampaign Analytics to Airtable | https://community.make.com/t/activecampaign-analytics/74504 | 2025-03-09 | 9 | Partially resolved | Not yet |
+| 3 | Create campaign via AC API call | https://community.make.com/t/how-to-create-campaign-in-active-campaign-using-activecampaign-make-an-api-call-module/64594 | 2024-12-22 | 0 | Unresolved | Not yet |
+| 4 | AC API call — dynamic tags | https://community.make.com/t/activecampaign-make-an-api-call/65861 | 2025-01-09 | 9 | Resolved | Not needed |
+
+### Skill enrichments made
+
+Added to `skills/sales-activecampaign/SKILL.md`:
+- **Troubleshooting**: "Building WhatsApp/SMS cart recovery in external automation tools instead of natively" — users build complex Make/Zapier scenarios when AC's native WhatsApp channel + automation builder can handle it
+
+### What we learned
+
+1. **Make Community is a strong new channel** — Discourse-based, fully automatable, high density of platform-integration threads
+2. **iPaaS communities surface "wrong tool for the job" problems** — users building complex middleware when native platform features exist. This is our sweet spot.
+3. **HubSpot Community is blocked** — 403 on all requests. Added to `references/blocked-communities.md`
+4. **Thread recency varies** — AC-specific threads cluster around 2024-2025, but upstream email automation threads are fresh (2026)
+
+---
+
 ## Files Reference
 
 | File | Purpose |
