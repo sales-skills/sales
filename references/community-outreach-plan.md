@@ -264,6 +264,33 @@ Added to `skills/sales-activecampaign/SKILL.md`:
 
 ---
 
+## Apollo → Indie Hackers Experiment (2026-04-04)
+
+### Result: Not viable for tool-specific outreach
+
+Indie Hackers is a strategy/founder community, not a tool Q&A community. Threads discuss *how to think about outbound* — cold email philosophy, copywriting frameworks, customer acquisition strategy. They don't ask "how do I configure Apollo" or "my CRM sync is broken."
+
+### Community profile: Indie Hackers
+
+- **URL**: indiehackers.com
+- **WebFetch**: Works — full content returned
+- **Reply boxes**: Present (requires sign-in)
+- **Thread lifespan**: Very long — threads from 2023 still getting comments in 2026
+- **Tone**: Founder-to-founder, strategic, experience-sharing
+- **Audience**: Solo founders, indie makers, bootstrapped startups
+- **Best for**: Upstream "how do I get customers" discussions — but these are strategy threads, not tool questions
+- **NOT good for**: Platform-specific skill replies. Tool mentions happen in comments but the threads aren't asking for tool help.
+- **Verdict**: Demote from outreach target. Useful for problem signal discovery (what founders struggle with) but not for posting skill replies.
+
+### What we learned
+
+1. Indie Hackers threads are strategic, not tactical — people discuss frameworks and philosophy, not tool configuration
+2. Recent threads (Mar 2026) have engagement but are about cold email copywriting, not "which tool should I use"
+3. Tool-specific Apollo questions would appear on Reddit r/sales or Apollo's own community — both currently blocked
+4. Community is still valuable for discovering upstream problems to enrich skills, just not for posting replies
+
+---
+
 ## Files Reference
 
 | File | Purpose |
