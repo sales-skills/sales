@@ -103,17 +103,38 @@ Added to `skills/sales-omnisend/SKILL.md`:
 3. Verify threads are active (<6 months, still getting replies or unresolved)
 4. Draft replies, open in browser for posting
 
-**Priority order** (by expected thread volume):
-1. Email marketing tools: sales-klaviyo, sales-mailchimp, sales-sendgrid, sales-brevo, sales-activecampaign
-2. Outbound/prospecting: sales-apollo, sales-reply, sales-salesloft, sales-lemlist, sales-hunter
-3. Enrichment/validation: sales-clay, sales-clearbit, sales-zerobounce, sales-zoominfo
-4. Ecommerce marketing: sales-omnisend (done), sales-getresponse, sales-iterable, sales-customerio
-5. Niche tools: sales-lobstr, sales-outscraper, sales-minelead, sales-skrapp, etc.
+**Priority order** (by expected thread volume) — see Phase 6 for which communities to search for each group:
+1. Ecommerce email: sales-klaviyo, sales-mailchimp, sales-kit, sales-getresponse → Shopify Community, WordPress.org, Reddit
+2. Outbound/prospecting: sales-apollo, sales-reply, sales-salesloft, sales-lemlist, sales-hunter → Reddit, Salesforce Trailblazer, Indie Hackers
+3. Dev API tools: sales-sendgrid, sales-postmark, sales-mailgun, sales-customerio → Stack Overflow, Dev.to, GitHub Discussions
+4. CRM/marketing automation: sales-brevo, sales-activecampaign, sales-braze, sales-iterable → HubSpot Community, Reddit
+5. Enrichment/validation: sales-clay, sales-clearbit, sales-zerobounce, sales-zoominfo → Reddit, Salesforce Trailblazer
+6. Ecommerce marketing: sales-omnisend (done), sales-getresponse, sales-iterable → Shopify Community, BigCommerce
+7. Niche tools: sales-lobstr, sales-outscraper, sales-minelead, sales-skrapp, etc. → Reddit, Indie Hackers
 
-**Search templates per skill**:
-- Upstream: `"{problem the skill solves}" site:reddit.com` / `reddit_search("{problem in user's words}")`
-- Platform: `"{platform name}" help OR issue OR not working site:community.shopify.com` (or relevant community)
+**Search templates per skill** — pick the community that matches the skill's category:
+
+General (all skills):
+- Upstream: `reddit_search("{problem in user's words}")` or `"{problem}" site:reddit.com`
 - Comparison: `"{platform} vs {competitor}" reddit` — great for upstream "which tool" threads
+
+Ecommerce tools (Omnisend, Klaviyo, Mailchimp, etc.):
+- `site:community.shopify.com "{platform}" OR "{problem}"`
+- `site:wordpress.org "{platform}" OR "{problem}"` (WooCommerce)
+- `site:support.bigcommerce.com "{platform}" OR "{problem}"`
+
+CRM / marketing automation (HubSpot, ActiveCampaign, Brevo, etc.):
+- `site:community.hubspot.com "{platform}" OR "{problem}"`
+- `site:trailhead.salesforce.com "{platform}" OR "{problem}"`
+
+Dev API tools (SendGrid, Postmark, Mailgun, etc.):
+- `site:stackoverflow.com "{platform}"`
+- `site:dev.to "{platform}"`
+- Check GitHub Discussions on the platform's repos
+
+SMB / startup tools:
+- `site:indiehackers.com "{platform}" OR "{problem}"`
+- `site:news.ycombinator.com "{platform}"`
 
 ### Phase 4 — Automate thread freshness checking
 
@@ -139,17 +160,51 @@ This could be a simple Python script in `scripts/check-threads.py` or integrated
 
 **Why lower priority**: Manual posting lets us quality-check every reply. Automating too early risks getting flagged as spam. Start manual, move to assisted posting once we have a feel for what works.
 
-### Phase 6 — Expand beyond Shopify Community + Reddit
+### Phase 6 — Expand to category-matched communities
 
-**Goal**: Find threads on other platforms where our skills are useful.
+**Goal**: Search the communities where each skill's audience actually hangs out, not just Reddit + Shopify Community.
 
-**Sources to add**:
-- **Stack Overflow** — for API/integration questions (sales-sendgrid, sales-postmark, sales-mailgun)
-- **Indie Hackers** — for tool recommendation threads
-- **Product Hunt discussions** — for newly launched competitor threads
-- **G2 review responses** — some platforms let you respond to reviews
-- **Twitter/X** — for real-time problem threads (harder to find, harder to reply helpfully)
-- **Quora** — lower quality but high SEO, good for evergreen answers
+**Prioritized community list** — pick based on which skills you're sweeping:
+
+#### Tier 1 — High volume, threads stay open, proven reply model
+| Community | Best for skills | Search pattern | Notes |
+|-----------|----------------|----------------|-------|
+| **Reddit** | All skills | `reddit_search()` or `site:reddit.com` | Threads stay open indefinitely, high SEO |
+| **Shopify Community** | Ecommerce email/marketing (Omnisend, Klaviyo, Mailchimp, Kit) | `site:community.shopify.com` | Proven in Omnisend experiment — threads active 9+ months |
+| **HubSpot Community** | CRM, marketing automation (ActiveCampaign, Brevo, HubSpot integrations) | `site:community.hubspot.com` | Massive volume, covers sales ops + marketing |
+| **Stack Overflow** | API/dev platforms (SendGrid, Postmark, Mailgun, Customer.io) | `site:stackoverflow.com` | Technical audience, high SEO |
+
+#### Tier 2 — Good signal, moderate volume
+| Community | Best for skills | Search pattern | Notes |
+|-----------|----------------|----------------|-------|
+| **Salesforce Trailblazer** | Enterprise sales (Salesloft, ZoomInfo, Seismic, 6sense) | `site:trailhead.salesforce.com` | Sales ops and rev ops audience |
+| **WordPress.org forums** | WooCommerce tools (same platforms as Shopify but WP ecosystem) | `site:wordpress.org` | Same dynamic as Shopify Community |
+| **Indie Hackers** | SMB/startup tools (any platform) | `site:indiehackers.com` | "Which tool should I use" threads — upstream gold |
+| **Dev.to** | Developer-facing platforms (API-heavy tools) | `site:dev.to` | Tutorials and discussions, developer trust |
+| **GitHub Discussions** | Any platform with a GitHub presence | Check repos directly | Very targeted, developer audience |
+
+#### Tier 3 — Niche or lower engagement, still worth checking
+| Community | Best for skills | Search pattern | Notes |
+|-----------|----------------|----------------|-------|
+| **BigCommerce Community** | Ecommerce tools (smaller volume than Shopify) | `site:support.bigcommerce.com` | Same pattern as Shopify, fewer threads |
+| **Hacker News** | Open-source / dev tools | `site:news.ycombinator.com` | Hostile to marketing, loves open-source (good fit) |
+| **Quora** | Evergreen questions (all categories) | `site:quora.com` | Lower quality but high SEO, answers rank long-term |
+| **G2 / Capterra reviews** | Platform comparison questions | `site:g2.com`, `site:capterra.com` | Not replyable threads, but good problem signal |
+
+#### Tier 4 — Lower priority
+| Community | Best for skills | Notes |
+|-----------|----------------|-------|
+| **Twitter/X** | Real-time problems | Hard to search systematically, replies get buried |
+| **Product Hunt** | Newly launched competitors | Spiky around launches, not ongoing |
+| **Facebook Groups** | Niche marketing (Shopify sellers, cold outreach, email marketing) | Hard to automate, requires group membership |
+
+**Which skills map to which communities:**
+- **Ecommerce email** (Omnisend, Klaviyo, Mailchimp, Kit, GetResponse): Shopify Community, WordPress.org, BigCommerce, Reddit
+- **Outbound/prospecting** (Apollo, Reply, Salesloft, Lemlist, Hunter): Reddit r/sales r/coldemail, Salesforce Trailblazer, Indie Hackers
+- **Enrichment/validation** (Clay, Clearbit, ZeroBounce, ZoomInfo): Reddit r/sales, HubSpot Community, Salesforce Trailblazer
+- **Dev API tools** (SendGrid, Postmark, Mailgun, Customer.io): Stack Overflow, Dev.to, GitHub Discussions
+- **Enterprise sales** (Salesloft, ZoomInfo, Seismic, 6sense): Salesforce Trailblazer, HubSpot Community
+- **SMB / startup** (any platform): Indie Hackers, Hacker News, Reddit r/SaaS r/Entrepreneur
 
 ---
 
