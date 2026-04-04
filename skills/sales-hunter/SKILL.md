@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in Hunter.io]"
 license: MIT
 version: 1.0.0
 tags: [sales, enrichment, email-finder, verification, platform]
+github: "https://github.com/hunter-io"
 ---
 # Hunter.io Platform Help
 

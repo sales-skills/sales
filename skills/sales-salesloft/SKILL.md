@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in Salesloft]"
 license: MIT
 version: 1.0.0
 tags: [sales, outbound, engagement, crm, platform]
+github: "https://github.com/SalesLoft"
 ---
 # Salesloft Platform Help
 

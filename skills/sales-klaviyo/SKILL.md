@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in Klaviyo]"
 license: MIT
 version: 1.0.0
 tags: [sales, email-marketing, ecommerce, crm, platform]
+github: "https://github.com/klaviyo"
 ---
 # Klaviyo Platform Help
 

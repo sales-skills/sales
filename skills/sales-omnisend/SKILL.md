@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in Omnisend]"
 license: MIT
 version: 1.0.0
 tags: [sales, email-marketing, ecommerce, sms, platform]
+github: "https://github.com/omnisend"
 ---
 # Omnisend Platform Help
 
@@ -168,6 +169,9 @@ Based on the user's specific question:
 - **Don't skip SMS consent.** Omnisend requires separate SMS opt-in consent. Email opt-in does NOT grant SMS permission. Multi-step popups (email first, then SMS) are the recommended approach.
 - **Don't recommend features without checking the plan.** Campaign Booster, advanced reporting, and higher SMS allowances are plan-gated. A/B testing for automations requires Standard+.
 - **Don't overlook the ecommerce platform connection.** Most Omnisend features depend on an active ecommerce integration. Product recommendations, cart abandonment, browse abandonment, and order-based segments all require product/order data syncing from Shopify/WooCommerce/BigCommerce.
+- **Segment-based audience filters can silently block automations.** If a workflow uses a segment-based audience filter, there's a race condition: it can take 1-2 minutes for a contact to be added to a segment, but the automation trigger fires immediately. The contact isn't in the segment yet → exits the workflow. Use contact property filters instead of segment filters for time-sensitive triggers, or add a short delay before the filter check.
+- **Template customization has real limits.** G2's top complaint about Omnisend is limited design control. If the user needs pixel-perfect layouts or highly custom visual elements, set expectations early — Omnisend trades deep design flexibility for ease of use. For advanced designs, suggest coding custom HTML templates or using a dedicated email design tool and importing.
+- **Reporting is shallower than Klaviyo.** Users migrating from Klaviyo frequently miss the depth of analytics — custom reporting, data visualization, cohort analysis. If the user needs advanced reporting, recommend exporting data to Google Sheets/Looker or using the API to build custom dashboards.
 
 ## Step 5 — Related skills
 
@@ -220,8 +224,24 @@ Based on the user's specific question:
 
 ### Automation not triggering
 **Symptom**: Workflow is active but contacts aren't entering
-**Cause**: Trigger conditions not met, ecommerce platform not connected, or contacts don't match entry conditions
-**Solution**: Check that the ecommerce integration is active and syncing (Settings > Integrations). Verify the trigger event is firing (check Events tab on a test contact). Ensure the workflow's audience filter isn't excluding contacts. Test with a known contact by triggering the event manually.
+**Cause**: Trigger conditions not met, ecommerce platform not connected, contacts don't match entry conditions, or segment-based filter race condition
+**Solution**: Each trigger has four stages contacts must pass in sequence: Trigger & Trigger Filters → Audience Filters → Frequency → Exit Conditions. Use the **Trigger Preview Tool** to identify which stage blocked entry. Common culprits:
+1. **Workflow not published** — unpublished workflows don't fire, even if events occur. Click Start Workflow.
+2. **Ecommerce integration disconnected** — check Settings > Integrations is active and syncing.
+3. **Segment-based audience filter timing** — if the workflow uses a segment filter, contacts may not be in the segment yet when the trigger fires (1-2 min delay). Switch to contact property filters or add a delay before the filter.
+4. **Multi-channel subscription gaps** — in a workflow with email + SMS steps, contacts not subscribed to SMS will skip those steps. Check Workflow Channel Settings.
+5. **Exit conditions firing early** — if the exit condition (e.g., "placed order") is met before the first message sends, the contact exits silently.
+Verify by checking the Events tab on a test contact to confirm the trigger event is firing.
+
+### Double order confirmation emails (Omnisend + Shopify)
+**Symptom**: Customers receive two order confirmation emails — one from Omnisend and one from Shopify
+**Cause**: Both Omnisend's transactional automation and Shopify's built-in order notification are active
+**Solution**: Disable one of them. If using Omnisend's order confirmation automation (recommended — more customizable), go to Shopify Admin > Settings > Notifications > Order Confirmation and uncheck the notification. If using Shopify POS, note that POS order confirmations are separate from online order confirmations — you may need to disable both.
+
+### Subscriber count mismatch between Omnisend and Shopify
+**Symptom**: Omnisend shows more (or fewer) subscribers than Shopify's customer list
+**Cause**: Omnisend and Shopify track subscriptions independently. Omnisend collects subscribers via its own popups/forms that may not sync back to Shopify's marketing consent field. Conversely, Shopify customers who opt in at checkout may not immediately appear in Omnisend if the sync is delayed.
+**Solution**: Check Settings > Integrations > Shopify and verify the sync is active. For contacts collected via Omnisend forms, they'll be in Omnisend but may not have Shopify marketing consent. For an accurate count, treat Omnisend as your source of truth for email marketing subscribers.
 
 ### SMS credits running out fast
 **Symptom**: SMS credits depleted faster than expected

@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in GetProspect]"
 license: MIT
 version: 1.0.0
 tags: [sales, enrichment, email-finder, linkedin, platform]
+github: "https://github.com/GetProspect"
 ---
 # GetProspect Platform Help
 

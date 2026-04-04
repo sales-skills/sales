@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in Seismic]"
 license: MIT
 version: 1.0.0
 tags: [sales, enablement, content, platform]
+github: "https://github.com/seismic"
 ---
 # Seismic Platform Help
 

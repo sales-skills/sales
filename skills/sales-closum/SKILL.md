@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in Closum]"
 license: MIT
 version: 1.0.0
 tags: [sales, marketing-automation, omnichannel, platform]
+github: "https://github.com/Closum"
 ---
 # Closum Platform Help
 

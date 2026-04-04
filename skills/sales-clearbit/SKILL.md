@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in Clearbit]"
 license: MIT
 version: 1.0.0
 tags: [sales, enrichment, firmographics, platform]
+github: "https://github.com/clearbit"
 ---
 # Clearbit Platform Help
 

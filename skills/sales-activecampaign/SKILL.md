@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in ActiveCampaign]"
 license: MIT
 version: 1.0.0
 tags: [sales, marketing-automation, email-marketing, crm, platform]
+github: "https://github.com/ActiveCampaign"
 ---
 # ActiveCampaign Platform Help
 

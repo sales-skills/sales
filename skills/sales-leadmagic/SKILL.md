@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in LeadMagic]"
 license: MIT
 version: 1.0.0
 tags: [sales, enrichment, email-finder, api, mcp, platform]
+github: "https://github.com/LeadMagic"
 ---
 # LeadMagic Platform Help
 

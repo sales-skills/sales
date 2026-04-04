@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in Outscraper]"
 license: MIT
 version: 1.0.0
 tags: [sales, scraping, google-maps, reviews, platform]
+github: "https://github.com/outscraper"
 ---
 # Outscraper Platform Help
 

@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in GetResponse]"
 license: MIT
 version: 1.0.0
 tags: [sales, email-marketing, marketing-automation, platform]
+github: "https://github.com/GetResponse"
 ---
 # GetResponse Platform Help
 

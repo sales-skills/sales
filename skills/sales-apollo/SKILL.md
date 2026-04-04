@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in Apollo]"
 license: MIT
 version: 1.0.0
 tags: [sales, outbound, enrichment, crm, platform]
+github: "https://github.com/apolloio"
 ---
 # Apollo.io Platform Help
 

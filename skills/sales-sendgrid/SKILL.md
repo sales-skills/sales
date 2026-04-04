@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in SendGrid]"
 license: MIT
 version: 1.0.0
 tags: [sales, transactional-email, email-marketing, api, platform]
+github: "https://github.com/sendgrid"
 ---
 # SendGrid Platform Help
 

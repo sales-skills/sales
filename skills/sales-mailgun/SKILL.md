@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in Mailgun]"
 license: MIT
 version: 1.0.0
 tags: [sales, transactional-email, api, deliverability, platform]
+github: "https://github.com/mailgun"
 ---
 # Mailgun Platform Help
 

@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in Postmark]"
 license: MIT
 version: 1.0.0
 tags: [sales, transactional-email, deliverability, platform]
+github: "https://github.com/wildbit"
 ---
 # Postmark Platform Help
 

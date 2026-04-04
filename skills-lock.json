@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "skills": {
+    "ai-discoverability-audit": {
+      "source": "brianrwagner/ai-marketing-skills",
+      "sourceType": "github",
+      "computedHash": "5714f197ba65391f1a89386f98dc7f703ae6a153d92af2357a34d5a8b1020b1f"
+    },
+    "case-study-builder": {
+      "source": "brianrwagner/ai-marketing-skills",
+      "sourceType": "github",
+      "computedHash": "d37ca154a550440c8945c28e099b8b88e6cd859c6d9e7b519f2bb99785e0ebae"
+    },
+    "cold-outreach-sequence": {
+      "source": "brianrwagner/ai-marketing-skills",
+      "sourceType": "github",
+      "computedHash": "987a0a7df737f63d6335913f9cbd8fc1fb7d0c54290cb27d950d4349f6354389"
+    },
+    "content-idea-generator": {
+      "source": "brianrwagner/ai-marketing-skills",
+      "sourceType": "github",
+      "computedHash": "43902c30da40570e788bbe88c2b649f95783a8202d59058a8de3229d446dc0af"
+    },
+    "daily-briefing-builder": {
+      "source": "brianrwagner/ai-marketing-skills",
+      "sourceType": "github",
+      "computedHash": "77ec479a9d797e536d0ddb310163db0a3301207a23b7d895bea14433fc7d2194"
+    },
+    "de-ai-ify": {
+      "source": "brianrwagner/ai-marketing-skills",
+      "sourceType": "github",
+      "computedHash": "b2c96d19db9ce3709a24f30c7a7d53a512ada99810e299437e4af75499fac5a4"
+    },
+    "go-mode": {
+      "source": "brianrwagner/ai-marketing-skills",
+      "sourceType": "github",
+      "computedHash": "a2b5a808f875069e6ce1235b2cbe5386897de8a0b821dbb0e89e0212be90d0a0"
+    },
+    "homepage-audit": {
+      "source": "brianrwagner/ai-marketing-skills",
+      "sourceType": "github",
+      "computedHash": "55af73d069bdfa53d1fcc9ba3429d968a18400829b3c54278dad3ece3c367db8"
+    },
+    "last30days": {
+      "source": "brianrwagner/ai-marketing-skills",
+      "sourceType": "github",
+      "computedHash": "0ab0770e230675ee637e107ddd3b644c9a1592c8832ed4ef902510b66bef909e"
+    },
+    "linkedin-authority-builder": {
+      "source": "brianrwagner/ai-marketing-skills",
+      "sourceType": "github",
+      "computedHash": "c79a4fa94298765239437f546b9008350b6436e9bf710ef400a33e7bb0d16dfb"
+    },
+    "linkedin-profile-optimizer": {
+      "source": "brianrwagner/ai-marketing-skills",
+      "sourceType": "github",
+      "computedHash": "f0620da9c832a249f9abf0f178f4dbc0a2b5be7cc5d83ba8e2eb2a2f28f7d5a5"
+    },
+    "marketing-principles": {
+      "source": "brianrwagner/ai-marketing-skills",
+      "sourceType": "github",
+      "computedHash": "f777a863fd2164b6cc68bccc97ca2ad1a036dcb931446ccad30d889d34450aa6"
+    },
+    "meeting-prep-cc": {
+      "source": "brianrwagner/ai-marketing-skills",
+      "sourceType": "github",
+      "computedHash": "35750488880b098478dfdf2eeb0c6f14dabafc4c35d557673e2d1c911dcab61b"
+    },
+    "newsletter-creation-curation": {
+      "source": "brianrwagner/ai-marketing-skills",
+      "sourceType": "github",
+      "computedHash": "ee603f47bbc2b6d3c87989b5d78ceb8746802c5249bd689cedbcd992abc292a6"
+    },
+    "plan-my-day": {
+      "source": "brianrwagner/ai-marketing-skills",
+      "sourceType": "github",
+      "computedHash": "6b8f0dc0e675c63d98a1bc0963e5e7df98512fbb25bd971cf48fa25e8f8d4da0"
+    },
+    "positioning-basics": {
+      "source": "brianrwagner/ai-marketing-skills",
+      "sourceType": "github",
+      "computedHash": "8bc23a759a97e940f4bb936ced9cbd043d4227535ca018982c81deba959c0016"
+    },
+    "reddit-automation": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "computedHash": "9ff56008a3b37f1ef47ba1ad6d6a45049917ed46c77435c437b394fc981256a4"
+    },
+    "reddit-insights": {
+      "source": "brianrwagner/ai-marketing-skills",
+      "sourceType": "github",
+      "computedHash": "4883b70a412f3adb90f8d1b89735f19db5c67b24462f8157f512678a81eb6049"
+    },
+    "social-card-gen": {
+      "source": "brianrwagner/ai-marketing-skills",
+      "sourceType": "github",
+      "computedHash": "73ca0c56deaedd3c35c439cd8f53841d049c7176a6b363c055232f277204262c"
+    },
+    "testimonial-collector": {
+      "source": "brianrwagner/ai-marketing-skills",
+      "sourceType": "github",
+      "computedHash": "37803003b13defec73b3b8ac08011020bb4306dcfa20fb2cd58237e2a1bcef0f"
+    },
+    "tweet-draft-reviewer": {
+      "source": "brianrwagner/ai-marketing-skills",
+      "sourceType": "github",
+      "computedHash": "9c8c241f75624963634156a22bfdcce84e9b810998e287c3f63262d809f2968d"
+    },
+    "vault-cleanup-auditor": {
+      "source": "brianrwagner/ai-marketing-skills",
+      "sourceType": "github",
+      "computedHash": "cde07aceb67d841f38ffc9c8cb02251fdbdd9cbec24fd42591b4450d0c78a682"
+    },
+    "voice-extractor": {
+      "source": "brianrwagner/ai-marketing-skills",
+      "sourceType": "github",
+      "computedHash": "9ad9ab968052e1de7a5cc026e7c52ac6aff6923e4cc10fc164399ae27cda5d48"
+    },
+    "youtube-summarizer": {
+      "source": "brianrwagner/ai-marketing-skills",
+      "sourceType": "github",
+      "computedHash": "e0e8470e8d01bf04df7cced58af79e5ea91c79ca3640fbc56ada661397c1b417"
+    }
+  }
+}

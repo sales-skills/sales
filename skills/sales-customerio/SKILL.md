@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in Customer.io]"
 license: MIT
 version: 1.0.0
 tags: [sales, marketing-automation, messaging, platform]
+github: "https://github.com/customerio"
 ---
 # Customer.io Platform Help
 

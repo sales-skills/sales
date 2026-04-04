@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in Reply.io]"
 license: MIT
 version: 1.0.0
 tags: [sales, outbound, cold-email, sequences, platform]
+github: "https://github.com/replyio"
 ---
 # Reply.io Platform Help
 

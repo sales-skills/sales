@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in Braze]"
 license: MIT
 version: 1.0.0
 tags: [sales, marketing-automation, messaging, push-notification, platform]
+github: "https://github.com/braze-inc"
 ---
 # Braze Platform Help
 

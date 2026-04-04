@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in Brevo]"
 license: MIT
 version: 1.0.0
 tags: [sales, email-marketing, marketing-automation, sms, platform]
+github: "https://github.com/sendinblue"
 ---
 # Brevo Platform Help
 

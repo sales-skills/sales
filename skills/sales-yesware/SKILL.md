@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in Yesware]"
 license: MIT
 version: 1.0.0
 tags: [sales, outbound, email-tracking, sequences, platform]
+github: "https://github.com/Yesware"
 ---
 # Yesware Platform Help
 

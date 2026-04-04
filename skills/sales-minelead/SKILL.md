@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in Minelead]"
 license: MIT
 version: 1.0.0
 tags: [sales, enrichment, email-finder, platform]
+github: "https://github.com/minelead"
 ---
 # Minelead Platform Help
 

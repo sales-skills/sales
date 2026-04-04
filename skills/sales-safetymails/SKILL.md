@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in SafetyMails]"
 license: MIT
 version: 1.0.0
 tags: [sales, email-verification, deliverability, platform]
+github: "https://github.com/SafetyMails"
 ---
 # SafetyMails Platform Help
 

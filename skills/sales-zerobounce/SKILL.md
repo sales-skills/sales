@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in ZeroBounce]"
 license: MIT
 version: 1.0.0
 tags: [sales, email-verification, deliverability, platform]
+github: "https://github.com/zerobounce"
 ---
 # ZeroBounce Platform Help
 

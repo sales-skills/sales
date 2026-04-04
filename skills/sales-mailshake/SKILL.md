@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in Mailshake]"
 license: MIT
 version: 1.0.0
 tags: [sales, outbound, cold-email, sequences, platform]
+github: "https://github.com/mailshake"
 ---
 # Mailshake Platform Help
 

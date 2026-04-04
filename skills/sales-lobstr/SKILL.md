@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in Lobstr.io]"
 license: MIT
 version: 1.0.0
 tags: [sales, scraping, data-extraction, linkedin, platform]
+github: "https://github.com/lobstrio"
 ---
 # Lobstr.io Platform Help
 

@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in ZoomInfo]"
 license: MIT
 version: 1.0.0
 tags: [sales, enrichment, intent-data, prospecting, platform]
+github: "https://github.com/Zoominfo"
 ---
 # ZoomInfo Platform Help
 

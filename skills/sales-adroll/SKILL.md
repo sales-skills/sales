@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in AdRoll]"
 license: MIT
 version: 1.0.0
 tags: [sales, retargeting, advertising, ecommerce, platform]
+github: "https://github.com/NextRoll"
 ---
 # AdRoll Platform Help
 

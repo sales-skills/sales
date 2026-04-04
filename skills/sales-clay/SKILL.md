@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in Clay]"
 license: MIT
 version: 1.0.0
 tags: [sales, enrichment, automation, waterfall, ai-agents, platform]
+github: "https://github.com/clay-run"
 ---
 # Clay Platform Help
 

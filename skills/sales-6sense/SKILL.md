@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in 6sense]"
 license: MIT
 version: 1.0.0
 tags: [sales, abm, intent-data, enrichment, advertising, platform]
+github: "https://github.com/6sense-Technologies"
 ---
 # 6sense Platform Help
 

@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in Tomba]"
 license: MIT
 version: 1.0.0
 tags: [sales, enrichment, email-finder, verification, platform]
+github: "https://github.com/tomba-io"
 ---
 # Tomba Platform Help
 

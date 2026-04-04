@@ -5,6 +5,7 @@ argument-hint: "[describe what you need help with in Mailchimp]"
 license: MIT
 version: 1.0.0
 tags: [sales, email-marketing, marketing-automation, platform]
+github: "https://github.com/mailchimp"
 ---
 # Mailchimp Platform Help
 

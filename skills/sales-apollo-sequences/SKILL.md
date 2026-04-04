@@ -5,6 +5,7 @@ argument-hint: "[describe what you need — e.g., 'set up a new sequence' or 'fi
 license: MIT
 version: 1.0.0
 tags: [sales, outbound, sequences, cadence, platform]
+github: "https://github.com/apolloio"
 ---
 # Manage Apollo Sequences
 
