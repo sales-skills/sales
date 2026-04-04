@@ -291,6 +291,47 @@ Indie Hackers is a strategy/founder community, not a tool Q&A community. Threads
 
 ---
 
+## Klaviyo → Klaviyo Community Experiment (2026-04-04)
+
+### Context
+
+Originally planned WordPress.org forums, but all Klaviyo plugin threads are 1-11 years old and auto-closed. Tested community.klaviyo.com — individual thread pages are publicly accessible despite category listing pages being JS-rendered. Active community with daily posting.
+
+### Community profile: Klaviyo Community
+
+- **URL**: community.klaviyo.com
+- **Platform**: Custom forum (Insided/Gainsight)
+- **WebFetch**: Works on individual thread URLs. Category listing pages are JS-rendered (no content in HTML), but thread URLs return full content
+- **Reply boxes**: Present, open to registered users
+- **Thread lifespan**: Threads stay open — no auto-close observed. Solved threads can still receive replies.
+- **Tone**: Mix of beginners and experienced marketers. Community managers actively respond. Friendly, helpful.
+- **Best search patterns**: `site:community.klaviyo.com "{problem}" {year}`, then browse category pages for recent threads not yet indexed
+- **Audience**: E-commerce marketers, Shopify store owners, email/SMS marketers, agencies
+- **Best for skills**: sales-klaviyo, sales-email-marketing, sales-deliverability, sales-checkout
+
+### Threads found and verified
+
+| # | Thread | URL | Posted | Replies | Status | Reply Drafted |
+|---|--------|-----|--------|---------|--------|--------------|
+| 1 | Popup not triggering in incognito (Chrome) but works in Safari | https://community.klaviyo.com/marketing-30/popup-not-triggering-in-incognito-chrome-but-works-in-safari-desktop-only-issue-19175 | 2026-04-01 | 4 | **Open, unresolved** | `/tmp/community-reply-klaviyo-1.md` |
+| 2 | Action required Shopify integration | https://community.klaviyo.com/marketing-30/action-required-shopify-integration-19177 | 2026-04-01 | 2 | **Open, unresolved** | Not yet |
+| 3 | 2 Questions about flow + missing profile filter | https://community.klaviyo.com/marketing-30/2-question-about-creating-a-certain-flow-and-also-a-missing-profile-filter-19152 | 2026-03-25 | 2 | **Open, unresolved** | Not yet |
+
+### Skill enrichments made
+
+Added to `skills/sales-klaviyo/SKILL.md`:
+- **Troubleshooting**: "Klaviyo popup/form not triggering in Chrome but works in Safari" — duplicate `klaviyo.js` script loading causes race condition; Chrome's stricter execution exposes it
+- **Troubleshooting**: "Shopify integration showing 'Action Required' and reconnection failing" — broken OAuth handshake after billing disruption; must initiate reconnection from Klaviyo, not Shopify App Store
+
+### What we learned
+
+1. **Klaviyo Community is a strong channel** — publicly accessible threads, active daily posting, mix of beginner and advanced questions
+2. **Category pages are JS-rendered but individual threads work** — need to use WebSearch to discover thread URLs, then WebFetch individual threads to verify
+3. **Problems cluster around Shopify integration** — broken OAuth, tracking events not syncing, duplicate scripts. These are exactly what our skill covers.
+4. **Community members help each other** — not just Klaviyo staff. Good environment for skill replies that add structured troubleshooting.
+
+---
+
 ## Files Reference
 
 | File | Purpose |
