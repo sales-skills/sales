@@ -140,11 +140,20 @@ SMB / startup tools:
 
 **Goal**: Instead of manually WebFetching every thread to check if it's open, batch-verify a list of URLs.
 
+**Discourse forums (Make Community, n8n)**: Use the `.json` API — append `.json` to any thread URL to get structured data with `closed`, `created_at`, `reply_count`, `posts_count` fields. No HTML parsing needed. Tested and working on both Make Community and n8n Community (2026-04-04).
+
+**Non-Discourse forums**: WebFetch individual thread pages and parse for close/lock indicators.
+
+**JS-rendered forums (HubSpot/Khoros, Zapier/Insided, Trailblazer/Khoros)**: Currently blocked. Options to unblock:
+1. **Firecrawl** (installed, untested) — renders JS before extracting content
+2. **Headless browser MCP** — Puppeteer/Playwright as MCP server
+3. **Community-specific APIs** — Khoros and Insided may have APIs behind authentication
+
 **Approach**: Write a small script that:
 1. Takes a list of thread URLs
-2. Fetches each one
-3. Extracts last reply date
-4. Flags threads that are <6 months old and still active
+2. For Discourse URLs: fetch `{url}.json` and read `closed` + `created_at` fields directly
+3. For other URLs: WebFetch and extract last reply date from HTML
+4. Flags threads that are <2 months old and still open
 5. Outputs a filtered list of replyable threads
 
 This could be a simple Python script in `scripts/check-threads.py` or integrated into the add-platform skill as a helper.
@@ -166,37 +175,42 @@ This could be a simple Python script in `scripts/check-threads.py` or integrated
 
 **Prioritized community list** — pick based on which skills you're sweeping:
 
-#### Tier 1 — High volume, threads stay open, proven reply model
-| Community | Best for skills | Search pattern | Notes |
-|-----------|----------------|----------------|-------|
-| **Reddit** | All skills | `reddit_search()` or `site:reddit.com` | Threads stay open indefinitely, high SEO |
-| **Shopify Community** | Ecommerce email/marketing (Omnisend, Klaviyo, Mailchimp, Kit) | `site:community.shopify.com` | Proven in Omnisend experiment — threads active 9+ months |
-| **HubSpot Community** | CRM, marketing automation (ActiveCampaign, Brevo, HubSpot integrations) | `site:community.hubspot.com` | Massive volume, covers sales ops + marketing |
-| **Stack Overflow** | API/dev platforms (SendGrid, Postmark, Mailgun, Customer.io) | `site:stackoverflow.com` | Technical audience, high SEO |
+#### Tier 1 — Proven working, high volume, threads stay open
+| Community | Platform | Best for skills | Search pattern | Verification method | Notes |
+|-----------|----------|----------------|----------------|--------------------| ------|
+| **Reddit** | Custom | All skills | `reddit_search()` or `site:reddit.com` | N/A (blocked without reddit-insights MCP) | Threads stay open indefinitely, high SEO. Currently blocked for automated access. |
+| **Shopify Community** | Custom | Ecommerce (Omnisend, Klaviyo, Mailchimp, Kit) | `site:community.shopify.com` | WebFetch thread URL | Proven — threads active 9+ months |
+| **Make Community** | Discourse | iPaaS/automation (ActiveCampaign, Klaviyo, any tool with Make integration) | `site:community.make.com` | `.json` API or WebFetch | Proven — no auto-close, rich integration threads |
+| **Klaviyo Community** | Custom (Insided variant) | Ecommerce email/marketing (Klaviyo, Shopify integrations) | `site:community.klaviyo.com` | WebFetch thread URL (category pages JS-rendered) | Proven — active daily, threads stay open |
+| **GitHub Issues** | Custom | Dev/API platforms (any with GitHub org) | `gh search issues` | `gh` CLI | Proven — always open, developer audience |
+| **Stack Overflow** | Custom | API/dev platforms (SendGrid, Postmark, Mailgun, Customer.io) | `site:stackoverflow.com` | WebFetch | Technical audience, high SEO. Untested in our process. |
 
-#### Tier 2 — Good signal, moderate volume
-| Community | Best for skills | Search pattern | Notes |
-|-----------|----------------|----------------|-------|
-| **Salesforce Trailblazer** | Enterprise sales (Salesloft, ZoomInfo, Seismic, 6sense) | `site:trailhead.salesforce.com` | Sales ops and rev ops audience |
-| **WordPress.org forums** | WooCommerce tools (same platforms as Shopify but WP ecosystem) | `site:wordpress.org` | Same dynamic as Shopify Community |
-| **Indie Hackers** | SMB/startup tools (any platform) | `site:indiehackers.com` | "Which tool should I use" threads — upstream gold |
-| **Dev.to** | Developer-facing platforms (API-heavy tools) | `site:dev.to` | Tutorials and discussions, developer trust |
-| **GitHub Discussions** | Any platform with a GitHub presence | Check repos directly | Very targeted, developer audience |
+#### Tier 2 — Good signal, moderate volume, or blocked pending Firecrawl
+| Community | Platform | Best for skills | Search pattern | Status | Notes |
+|-----------|----------|----------------|----------------|--------|-------|
+| **HubSpot Community** | Khoros | CRM, marketing automation (ActiveCampaign, Brevo) | `site:community.hubspot.com` | **Blocked (403)** — try Firecrawl | Massive volume if unblocked |
+| **Salesforce Trailblazer** | Khoros | Enterprise sales (Salesloft, ZoomInfo, Seismic, 6sense) | `site:trailhead.salesforce.com` | **Blocked (JS-rendered)** — try Firecrawl | Enterprise audience if unblocked |
+| **Platform-owned communities** | Varies | Platform-specific questions | `site:community.{domain}` | Test per-platform | Many platforms have their own forums (ActiveCampaign, Brevo, etc.) — test thread URLs directly |
+| **n8n Community** | Discourse | Automation tools with n8n integration | `site:community.n8n.io` | `.json` API or WebFetch | Limited — auto-closes after ~3 months. Only target threads <3 months old |
+| **Dev.to** | Custom | Developer-facing platforms (API-heavy tools) | `site:dev.to` | Untested | Tutorials and discussions, developer trust |
 
-#### Tier 3 — Niche or lower engagement, still worth checking
-| Community | Best for skills | Search pattern | Notes |
-|-----------|----------------|----------------|-------|
-| **BigCommerce Community** | Ecommerce tools (smaller volume than Shopify) | `site:support.bigcommerce.com` | Same pattern as Shopify, fewer threads |
-| **Hacker News** | Open-source / dev tools | `site:news.ycombinator.com` | Hostile to marketing, loves open-source (good fit) |
-| **Quora** | Evergreen questions (all categories) | `site:quora.com` | Lower quality but high SEO, answers rank long-term |
-| **G2 / Capterra reviews** | Platform comparison questions | `site:g2.com`, `site:capterra.com` | Not replyable threads, but good problem signal |
+#### Tier 3 — Lower engagement or not suitable for tool-specific replies
+| Community | Platform | Best for skills | Status | Notes |
+|-----------|----------|----------------|--------|-------|
+| **Zapier Community** | Insided | Automation tools | **Blocked (JS-rendered)** — try Firecrawl | Similar to Make Community but can't access |
+| **WordPress.org forums** | Custom | WooCommerce tools | **Limited** — threads auto-close, most old | Only viable for very active plugins with recent threads |
+| **Indie Hackers** | Custom | N/A | **Not viable for tool replies** | Strategy community — useful for problem signal, not for posting skill replies |
+| **BigCommerce Community** | Custom | Ecommerce tools | Untested | Same pattern as Shopify, fewer threads |
+| **Hacker News** | Custom | Open-source / dev tools | Untested | Hostile to marketing, loves open-source |
+| **Quora** | Custom | Evergreen questions | Untested | Lower quality but high SEO |
+| **G2 / Capterra reviews** | N/A | Problem signal only | N/A | Not replyable — use for problem discovery only |
 
-#### Tier 4 — Lower priority
-| Community | Best for skills | Notes |
-|-----------|----------------|-------|
-| **Twitter/X** | Real-time problems | Hard to search systematically, replies get buried |
-| **Product Hunt** | Newly launched competitors | Spiky around launches, not ongoing |
-| **Facebook Groups** | Niche marketing (Shopify sellers, cold outreach, email marketing) | Hard to automate, requires group membership |
+#### Not viable
+| Community | Notes |
+|-----------|-------|
+| **Twitter/X** | Hard to search systematically, replies get buried |
+| **Product Hunt** | Spiky around launches, not ongoing |
+| **Facebook Groups** | Hard to automate, requires group membership |
 
 **Which skills map to which communities:**
 - **Ecommerce email** (Omnisend, Klaviyo, Mailchimp, Kit, GetResponse): Shopify Community, WordPress.org, BigCommerce, Reddit
