@@ -180,7 +180,7 @@ This could be a simple Python script in `scripts/check-threads.py` or integrated
 |-----------|----------|----------------|----------------|--------------------| ------|
 | **Reddit** | Custom | All skills | `reddit_search()` or `site:reddit.com` | N/A (blocked without reddit-insights MCP) | Threads stay open indefinitely, high SEO. Currently blocked for automated access. |
 | **Shopify Community** | Custom | Ecommerce (Omnisend, Klaviyo, Mailchimp, Kit) | `site:community.shopify.com` | WebFetch thread URL | Proven — threads active 9+ months |
-| **Make Community** | Discourse | iPaaS/automation (ActiveCampaign, Klaviyo, any tool with Make integration) | `site:community.make.com` | `.json` API or WebFetch | Proven — no auto-close, rich integration threads |
+| **Make Community** | Discourse | iPaaS/automation (ActiveCampaign, Klaviyo, any tool with Make integration) | `site:community.make.com` | `.json` API or WebFetch | Threads get closed via solved plugin — expect ~20% open rate on older threads. Rich integration threads but verify open status. |
 | **Klaviyo Community** | Custom (Insided variant) | Ecommerce email/marketing (Klaviyo, Shopify integrations) | `site:community.klaviyo.com` | WebFetch thread URL (category pages JS-rendered) | Proven — active daily, threads stay open |
 | **GitHub Issues** | Custom | Dev/API platforms (any with GitHub org) | `gh search issues` | `gh` CLI | Proven — always open, developer audience |
 | **Stack Overflow** | Custom | API/dev platforms (SendGrid, Postmark, Mailgun, Customer.io) | `site:stackoverflow.com` | WebFetch | Technical audience, high SEO. Untested in our process. |
@@ -346,6 +346,108 @@ Added to `skills/sales-klaviyo/SKILL.md`:
 
 ---
 
+## Salesloft → All Communities Blocked (2026-04-04)
+
+### Result: No viable automatable community found
+
+Every community where Salesloft users ask questions is blocked for automated access. Enterprise sales tools live in an ecosystem of JS-rendered forums (Khoros, custom) that WebFetch can't parse.
+
+### Communities tested
+
+| Community | Platform | Result |
+|-----------|----------|--------|
+| champions.salesloft.com | JS-rendered (custom) | Blocked — thread content loaded via JS, HTML is empty shell |
+| HubSpot Community | Khoros | Blocked — 403 on all requests |
+| Salesforce Trailblazer | Khoros | Blocked — JS-rendered |
+| Reddit r/sales | Custom | Blocked — needs reddit-insights MCP |
+| Make Community | Discourse | No Salesloft threads (wrong audience — automation builders, not sales reps) |
+| Stack Overflow | — | No Salesloft questions found |
+| Dev.to | — | Mentions only, no problem threads |
+| G2 Reviews | Custom | 403 on WebFetch |
+| GitHub Issues | — | Only feature requests (activepieces#12137), not usage questions |
+
+### Problem signal found (from WebSearch, not fetchable threads)
+
+Despite being unable to access threads, WebSearch surfaced real Salesloft problems:
+- **A/B subject line confusion in cadences** — threaded emails referencing wrong variant
+- **HubSpot-Salesloft integration limitations** — can't trigger cadences from HubSpot workflows, limited data sync
+- **CRM sync issues** — contact sharing limitations between HubSpot and Salesloft
+- **Email deliverability with automation** — emails auto-sent to spam
+
+These could enrich the skill once we can verify threads are open and reply.
+
+### What we learned
+
+1. **Enterprise sales tools are a dead zone for our current process** — their users live on Khoros-powered forums (HubSpot, Trailblazer) and custom JS-rendered communities that WebFetch can't access
+2. **Firecrawl is the critical unblock** — testing Firecrawl on champions.salesloft.com, community.hubspot.com, and trailhead.salesforce.com would unlock the entire enterprise tier
+3. **Reddit r/sales is the other unblock** — enterprise sales reps discuss tools on Reddit, but we need reddit-insights MCP to search effectively
+4. **Without Firecrawl or reddit-insights, enterprise platforms can only do GitHub Issues outreach** — which is developer-to-developer, not the sales rep audience
+
+### Action items
+
+- [ ] Test Firecrawl on champions.salesloft.com, community.hubspot.com, trailhead.salesforce.com
+- [ ] Set up reddit-insights MCP to unlock Reddit r/sales, r/salesops
+- [ ] Once either is unblocked, re-run Salesloft test
+
+---
+
+## Mailchimp → Multi-Community Experiment (2026-04-05)
+
+### Context
+
+Tested Mailchimp across Shopify Community, Make Community, Klaviyo Community, and WordPress.org forums. Mailchimp is well-known so threads were abundant, but many were old or closed.
+
+### Communities tested
+
+| Community | Threads Found | Open/Replyable | Notes |
+|-----------|--------------|----------------|-------|
+| Shopify Community | 21 | 2 | Upstream "which tool" threads active, platform-specific threads mostly old |
+| Make Community | 14 | 1 | **4/5 recent threads were closed** — Discourse solved plugin closes threads on resolution. Much lower open rate than previously assumed |
+| Klaviyo Community | 15 | 3 | Mostly Mailchimp→Klaviyo migration threads. Open but older (Mar 2025 and earlier) |
+| WordPress.org | 14 | ~2 | Some 2025 threads, many auto-closed or old |
+
+### Threads verified and viable
+
+| # | Thread | URL | Last Activity | Status | Reply Drafted |
+|---|--------|-----|---------------|--------|--------------|
+| 1 | Which email marketing services work well with Shopify? | https://community.shopify.com/t/which-email-marketing-services-work-well-with-shopify/579971 | 2026-03-17 | **Open, upstream** | `/tmp/community-reply-mailchimp-1.md` |
+| 2 | Mailchimp issue (archiving non-subscribed contacts) | https://community.make.com/t/mailchimp-issue/100870 | 2026-01-14 | **Open, unresolved** | `/tmp/community-reply-mailchimp-2.md` |
+
+### Skill enrichments made
+
+Added to `skills/sales-mailchimp/SKILL.md`:
+- **Troubleshooting**: "Contact status confusion when automating via API or Make/Zapier" — 5 distinct contact statuses (subscribed, non-subscribed, transactional, cleaned, unsubscribed) cause filter mismatches in Make/Zapier modules; correct archive path via API
+
+### What we learned
+
+1. **Make Community threads close more than expected** — Discourse solved plugin marks threads as closed on resolution. 4/5 Mailchimp threads were closed. Previous assessment ("no auto-close") was wrong — updated Tier 1 notes and add-platform skill.
+2. **Well-known platforms have too many old threads** — Mailchimp has been around forever, so most search results are years old. Time-scoping searches is critical.
+3. **Klaviyo Community is a migration hub** — most Mailchimp mentions on Klaviyo Community are people migrating FROM Mailchimp. Good signal for enriching both skills' migration guidance.
+
+---
+
+## All Tests Summary (2026-04-05)
+
+| Test | Skill | Original Community | Pivoted To | Result | Enrichments | Replies |
+|------|-------|--------------------|------------|--------|-------------|---------|
+| 1 | ActiveCampaign | HubSpot Community (blocked) | Make Community | Success | 1 Troubleshooting entry | 1 draft |
+| 2 | Apollo | Indie Hackers | — | Not viable (strategy community) | 0 | 0 |
+| 3 | Klaviyo | WordPress.org (old/closed) | Klaviyo Community | Success | 2 Troubleshooting entries | 1 draft |
+| 4 | Salesloft | Trailblazer (blocked) | All blocked | Blocked | 0 (problem signal only) | 0 |
+| 5 | Mailchimp | Multi-community | — | Success | 1 Troubleshooting entry | 2 drafts |
+
+### Key takeaways
+
+1. **Ecommerce tools have accessible communities** — Shopify Community, Klaviyo Community, Make Community all work. Ecommerce platforms are our strongest outreach channel.
+2. **Enterprise tools are blocked** — HubSpot, Trailblazer, Champions.salesloft.com are all JS-rendered or 403. Need Firecrawl to unlock.
+3. **iPaaS communities (Make) surface "wrong tool for the job" problems** — users building complex middleware when native features exist. This is our sweet spot.
+4. **Make Community threads close more than expected** — solved plugin closes resolved threads. ~20% open rate on older threads. Still valuable but verify open status via `.json` API before drafting.
+5. **Platform-owned communities are worth testing** — Klaviyo Community was initially written off but turned out to be fully accessible on individual thread URLs.
+6. **Discourse JSON API is a fast verification shortcut** — `.json` endpoint on Make/n8n gives structured thread status without HTML parsing.
+7. **Two unblocks would dramatically expand reach**: Firecrawl (enterprise communities) and reddit-insights MCP (Reddit).
+
+---
+
 ## Files Reference
 
 | File | Purpose |
@@ -358,3 +460,5 @@ Added to `skills/sales-klaviyo/SKILL.md`:
 | `/tmp/community-reply-omnisend-2.md` | Draft: subscriber count mismatch (too old to post) |
 | `/tmp/community-reply-omnisend-3.md` | Draft: honest advice on email tools (**post this**) |
 | `/tmp/community-reply-omnisend-4.md` | Draft: best email marketing for Shopify (**post this**) |
+| `/tmp/community-reply-mailchimp-1.md` | Draft: which email marketing services for Shopify (**post this**) |
+| `/tmp/community-reply-mailchimp-2.md` | Draft: Mailchimp archiving non-subscribed contacts via Make (**post this**) |
