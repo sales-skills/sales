@@ -1,6 +1,6 @@
 ---
 name: sales-coaching
-description: "Sales coaching and training — onboarding new reps, skill development, role-play practice, coaching programs, certifications, manager coaching cadences, and measuring coaching impact. Use when building an onboarding program, creating a coaching framework, running role-plays, designing certification paths, improving ramp time, building a coaching culture, or measuring coaching ROI. Do NOT use for reviewing specific sales call recordings (use /sales-call-review), Seismic-specific platform help (use /sales-seismic), or sales content creation (use /sales-content)."
+description: "Sales coaching and training — onboarding new reps, skill development, role-play practice, coaching programs, certifications, manager coaching cadences, and measuring coaching impact. Use when building an onboarding program, creating a coaching framework, running role-plays, designing certification paths, improving ramp time, building a coaching culture, or measuring coaching ROI. Do NOT use for reviewing specific sales call recordings (use /sales-call-review), Seismic-specific platform help (use /sales-seismic), Allego-specific platform help (use /sales-allego), or sales content creation (use /sales-content)."
 argument-hint: "[describe your coaching question — e.g., 'build an onboarding program for new AEs' or 'create a coaching framework for frontline managers']"
 license: MIT
 version: 1.0.0
@@ -8,7 +8,7 @@ tags: [sales, coaching, training, onboarding, enablement]
 ---
 # Sales Coaching & Training
 
-Help the user build coaching programs, onboard new reps, run role-plays, design certification paths, and measure coaching impact. This skill is tool-agnostic and applies to any enablement platform (Seismic Learning, MindTickle, SalesHood, Brainshark), conversation intelligence tool (Gong, Chorus), or manual approach.
+Help the user build coaching programs, onboard new reps, run role-plays, design certification paths, and measure coaching impact. This skill is tool-agnostic and applies to any enablement platform (Seismic Learning, Allego, MindTickle, SalesHood, Brainshark), conversation intelligence tool (Gong, Chorus), or manual approach.
 
 ## Step 1 — Gather context
 
@@ -31,13 +31,14 @@ Ask the user:
 
 3. **Current coaching tools?**
    - A) Seismic Learning
-   - B) Gong/Chorus (conversation intelligence)
-   - C) MindTickle
-   - D) Brainshark
-   - E) SalesHood
-   - F) LMS (generic)
-   - G) Spreadsheets/manual
-   - H) Nothing formal
+   - B) Allego
+   - C) Gong/Chorus (conversation intelligence)
+   - D) MindTickle
+   - E) Brainshark
+   - F) SalesHood
+   - G) LMS (generic)
+   - H) Spreadsheets/manual
+   - I) Nothing formal
 
 4. **Sales methodology?**
    - A) MEDDPICC
@@ -123,6 +124,15 @@ Ask the user:
 - **Reporting**: Track completion rates, assessment scores, and time-to-completion. Correlate with sales performance.
 - **Integration**: Syncs with Salesforce for tying learning completion to rep performance metrics.
 
+### In Allego
+
+- **Modern Learning**: Video-based training with bite-sized modules. Combine video, quizzes, and interactive exercises into learning paths. Supports peer-shared "agile content" for authentic learning alongside formal training.
+- **AI Role-Play**: AI-powered practice simulations — reps rehearse against AI buyer personas with automated grading on discovery depth, objection handling, messaging alignment, and talk-to-listen ratio. Managers can review AI-graded sessions and add coaching notes.
+- **Conversation Intelligence**: Record and analyze real calls with AI. Auto-detects key moments (objection handling, budget discussions, competitor mentions). Coaching scorecards for structured methodology-based evaluation.
+- **Collaborative learning**: Reps share best practices — what's working on calls, competitive insights, objection responses — in channels for team learning. Combines formal training with real-world peer knowledge.
+- **Certifications**: Completion-based credentials tied to learning paths with assessment gates.
+- **Best practice**: Use AI Role-Play for skills that need practice (objections, discovery) and Conversation Intelligence for coaching on real calls. Allego is stronger in video-based learning and AI practice than Seismic.
+
 ### In Gong / Chorus
 
 - **Call coaching**: Review recorded calls with AI-generated insights (talk ratio, questions asked, topics discussed).
@@ -172,6 +182,7 @@ Ask the user:
 ## Related skills
 
 - `/sales-seismic` — Seismic platform help (for Seismic Learning, Role-Play Agent, and coaching features)
+- `/sales-allego` — Allego platform help (for Modern Learning, AI Role-Play, and Conversation Intelligence)
 - `/sales-call-review` — Review specific sales calls and extract coaching insights
 - `/sales-content` — Sales content for training and enablement programs
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

@@ -1,6 +1,6 @@
 ---
 name: sales-content
-description: "Sales content management — organizing, distributing, and measuring sales collateral (battle cards, one-pagers, case studies, decks, playbooks, ROI calculators). Also covers content governance, content audits, and sales-marketing alignment on content. Use when building a content library, creating battle cards, organizing sales collateral, auditing content usage, improving content findability, aligning marketing and sales on content needs, or measuring content effectiveness. Do NOT use for writing marketing copy (use /copywriting), Seismic-specific platform help (use /sales-seismic), proposal page design (use /sales-proposal-page), or email sequence copywriting (use /sales-cadence)."
+description: "Sales content management — organizing, distributing, and measuring sales collateral (battle cards, one-pagers, case studies, decks, playbooks, ROI calculators). Also covers content governance, content audits, and sales-marketing alignment on content. Use when building a content library, creating battle cards, organizing sales collateral, auditing content usage, improving content findability, aligning marketing and sales on content needs, or measuring content effectiveness. Do NOT use for writing marketing copy (use /copywriting), Seismic-specific platform help (use /sales-seismic), Allego-specific platform help (use /sales-allego), proposal page design (use /sales-proposal-page), or email sequence copywriting (use /sales-cadence)."
 argument-hint: "[describe your sales content question — e.g., 'organize our battle cards' or 'audit which content reps actually use']"
 license: MIT
 version: 1.0.0
@@ -8,7 +8,7 @@ tags: [sales, content, enablement, collateral]
 ---
 # Sales Content Management
 
-Help the user organize, distribute, measure, and govern sales collateral — from building a content library and creating battle cards through auditing content effectiveness and aligning marketing with sales on content needs. This skill is tool-agnostic and applies to any enablement platform (Seismic, Highspot, Showpad, Guru) or general-purpose tool (Google Drive, SharePoint, Notion).
+Help the user organize, distribute, measure, and govern sales collateral — from building a content library and creating battle cards through auditing content effectiveness and aligning marketing with sales on content needs. This skill is tool-agnostic and applies to any enablement platform (Seismic, Allego, Highspot, Showpad, Guru) or general-purpose tool (Google Drive, SharePoint, Notion).
 
 ## Step 1 — Gather context
 
@@ -41,12 +41,13 @@ Ask the user:
 
 4. **Current content tool?**
    - A) Seismic
-   - B) Highspot
-   - C) Showpad
-   - D) Guru
-   - E) Google Drive/SharePoint/Notion
-   - F) No dedicated tool
-   - G) Other
+   - B) Allego
+   - C) Highspot
+   - D) Showpad
+   - E) Guru
+   - F) Google Drive/SharePoint/Notion
+   - G) No dedicated tool
+   - H) Other
 
 **If the user's request already provides most of this context, skip directly to the relevant step.** Lead with your best-effort answer using reasonable assumptions (stated explicitly), then ask only the most critical 1-2 clarifying questions at the end — don't gate your response behind gathering complete context.
 
@@ -114,6 +115,14 @@ Organize content along these dimensions:
 - **LiveDocs**: Auto-generate personalized one-pagers, proposals, and datasheets by pulling CRM data into templates. Use LiveDocs Express for quick generation, Process for approval workflows.
 - **Analytics**: Track content usage, engagement (via LiveSend), and win correlation. Seismic's reporting shows which content is used in won deals.
 - **Governance**: Use workspaces for content authoring with review/approval workflows before publishing to the library.
+
+### In Allego
+
+- **Content Library**: Centralized repository with AI-powered content recommendations. AI surfaces relevant content based on deal context, buyer persona, and sales stage.
+- **Content sharing**: Share content via tracked links or Digital Sales Rooms. Track who opened, what they viewed, and time spent per item.
+- **Agile content**: Quick-capture format for reps to share timely knowledge — competitive updates, win stories, product changes — without formal course creation. Peer content alongside formal library content.
+- **Engagement analytics**: Track content usage, sharing activity, and engagement. Identify which content correlates with won deals.
+- **Governance**: Version control, expiration dates, approval workflows. Content tagging drives AI recommendations — thorough metadata is critical.
 
 ### In Highspot
 
@@ -188,6 +197,7 @@ Tie content usage to pipeline and revenue metrics:
 ## Related skills
 
 - `/sales-seismic` — Seismic platform help (for Seismic-specific content management setup)
+- `/sales-allego` — Allego platform help (for Allego-specific content management and AI recommendations)
 - `/sales-seamless` — Seamless.AI platform help (Pitch Intelligence for AI-generated prospect-level content)
 - `/sales-coaching` — Sales coaching and training (content for onboarding and enablement programs)
 - `/sales-compete` — Competitive displacement campaigns (battle cards and competitive content)

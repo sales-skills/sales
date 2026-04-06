@@ -1,6 +1,6 @@
 # Sales Skills
 
-[![Skills](https://img.shields.io/badge/skills-89-blue)](https://skills.sh/sales-skills/sales)
+[![Skills](https://img.shields.io/badge/skills-90-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
@@ -13,7 +13,7 @@ Claude Code skills for sales, marketing, and GTM workflows.
 npx skills add sales-skills/sales --skills sales-do
 ```
 
-Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill (89 first-party + 53 third-party skills).
+Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill (90 first-party + 53 third-party skills).
 
 Want every skill at once?
 
@@ -197,6 +197,12 @@ Router recommends a 5-skill sequence:
 | Skill | What it does |
 |---|---|
 | `/sales-seismic` | Seismic platform help — Enablement Cloud, content management, Learning & Coaching, Aura AI, Digital Sales Rooms, Meeting Intelligence, LiveSend, LiveDocs, Programs, API & integrations |
+
+### Allego & Platform
+
+| Skill | What it does |
+|---|---|
+| `/sales-allego` | Allego platform help — AI-powered revenue enablement with Modern Learning (video training, AI role-play, conversation intelligence), Modern Content (AI-recommended content, centralized library), Digital Sales Rooms, coaching scorecards, Salesforce/HubSpot/Dynamics integrations |
 
 ### Seamless.AI & Platform
 
