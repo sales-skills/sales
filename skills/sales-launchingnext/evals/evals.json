@@ -1,0 +1,38 @@
+{
+  "skill_name": "sales-launchingnext",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I built a SaaS tool and want to get listed on LaunchingNext for the SEO backlink. What should I do?",
+      "expected_output": "Submission checklist with headline, description, tags guidance, free vs expedited decision, and realistic traffic expectations",
+      "assertions": [
+        {"name": "submission_checklist", "description": "Covers submission preparation: headline (5-8 words), description (max 2,500 chars), tags, stage classification"},
+        {"name": "free_vs_expedited", "description": "Explains free queue (weeks/months) vs $99 expedited (1-business-day review) tradeoff"},
+        {"name": "backlink_value", "description": "Mentions DR51 do-follow backlink as the primary value of a LaunchingNext listing"},
+        {"name": "realistic_expectations", "description": "Sets realistic traffic expectations given ~727 monthly visitors across the whole site"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "Is the LaunchingNext Seed Boost promoted ad worth $500/month for my startup?",
+      "expected_output": "ROI analysis of Seed Boost with cost per visit calculation, comparison framework, and recommendation",
+      "assertions": [
+        {"name": "cost_breakdown", "description": "Breaks down Seed Boost numbers: 8K impressions, 125-350 visits, ~$2.11 per visit average"},
+        {"name": "roi_framework", "description": "Provides a framework to calculate ROI based on conversion rate and customer LTV"},
+        {"name": "delivery_guarantee", "description": "Mentions the 30-day delivery guarantee (free extension if impression floor isn't met)"},
+        {"name": "recommendation", "description": "Provides a clear recommendation, such as trying one month to measure real conversion data"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I submitted my startup to LaunchingNext 3 weeks ago and haven't heard anything. What's going on?",
+      "expected_output": "Explains the long free queue, offers expedited upgrade option, and suggests productive use of wait time",
+      "assertions": [
+        {"name": "queue_explanation", "description": "Explains that free submissions have a long queue (weeks to months) due to editorial review volume"},
+        {"name": "expedited_option", "description": "Suggests the $99 expedited review as an option for faster consideration"},
+        {"name": "no_guarantee", "description": "Notes that even expedited review doesn't guarantee publication — still editorial discretion"},
+        {"name": "productive_wait", "description": "Suggests using wait time productively (polish landing page, prepare other directory submissions)"}
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Sales Skills
 
-[![Skills](https://img.shields.io/badge/skills-93-blue)](https://skills.sh/sales-skills/sales)
+[![Skills](https://img.shields.io/badge/skills-94-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
@@ -233,6 +233,12 @@ Router recommends a 5-skill sequence:
 | Skill | What it does |
 |---|---|
 | `/sales-microlaunch` | MicroLaunch platform help — product launch and discovery platform for startups and indie makers. Month-long launch cycles (leaderboard ranking over 30 days), community scoring (idea and product scores), Pro Launch ($39/mo — skip queue, 2x boosts, featured spots, Product of the Day), deals marketplace (lifetime deals, discounts), DR59+ do-follow SEO backlinks, auto distribution (4+ SEO-optimized pages), verified product reviews, landing page audits |
+
+### LaunchingNext & Platform
+
+| Skill | What it does |
+|---|---|
+| `/sales-launchingnext` | LaunchingNext platform help — curated startup directory with 45,000+ listed startups. Free submission (editorial review, weeks/months queue), expedited review ($99 for 1-business-day consideration), promoted ads (Seed Boost $500/mo, Growth Engine $1,500/mo, Market Leader $4,500/mo with guaranteed impressions), DR51 do-follow backlinks, weekly newsletter (5,000+ founders), Twitter/X distribution (14.9K followers) |
 
 ### Seamless.AI & Platform
 
