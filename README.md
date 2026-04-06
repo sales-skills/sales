@@ -13,7 +13,7 @@ Claude Code skills for sales, marketing, and GTM workflows.
 npx skills add sales-skills/sales --skills sales-do
 ```
 
-Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill (92 first-party + 53 third-party skills).
+Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill (93 first-party + 53 third-party skills).
 
 Want every skill at once?
 
@@ -251,6 +251,12 @@ Router recommends a 5-skill sequence:
 | Skill | What it does |
 |---|---|
 | `/sales-productburst` | ProductBurst platform help — product launch and discovery platform with daily and weekly rankings (ongoing, not single-day like Product Hunt). Community upvoting, Top of Day/Week badges (shareable SVGs), featured homepage placement (one-time fee), DR46 do-follow backlinks, idea validation without a full build, comment threads, marketplace. No gatekeepers — launch in under 5 minutes |
+
+### SoloPush & Platform
+
+| Skill | What it does |
+|---|---|
+| `/sales-solopush` | SoloPush platform help — product launch and discovery platform for indie makers and solopreneurs with no launch day pressure. Community upvoting, daily trending, product reviews and comments, DR46-47 do-follow backlinks, solo maker community focus, idea-stage posting. Free submission, no editorial gatekeeping, instant listing |
 
 ### Seamless.AI & Platform
 
