@@ -216,6 +216,12 @@ Router recommends a 5-skill sequence:
 |---|---|
 | `/sales-tagshop` | Tagshop.ai platform help — AI UGC video ad generator (1000+ avatars, AI Twin, URL-to-Video, text-to-video, auto-captions, campaign publishing to Facebook/Instagram/TikTok/YouTube) and shoppable UGC galleries (Instagram/TikTok content collection, AI product tagging, Shopify/WooCommerce/BigCommerce/Wix integration, analytics) |
 
+### influData & Platform
+
+| Skill | What it does |
+|---|---|
+| `/sales-infludata` | influData platform help — AI-powered influencer marketing with creator discovery (20M+ profiles, prompt-based AI search, lookalike builder), audience analysis (50+ metrics, fake follower detection, overlap analysis), campaign management (real-time tracking, EMV/CPM/reach KPIs, sentiment analysis, shitstorm detection), social listening (brand mentions, hashtags, UGC), outreach mailing, Co-Pilot AI, Chrome extension |
+
 ### Seamless.AI & Platform
 
 | Skill | What it does |
