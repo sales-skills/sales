@@ -1,6 +1,6 @@
 # Sales Skills
 
-[![Skills](https://img.shields.io/badge/skills-95-blue)](https://skills.sh/sales-skills/sales)
+[![Skills](https://img.shields.io/badge/skills-96-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
@@ -245,6 +245,12 @@ Router recommends a 5-skill sequence:
 | Skill | What it does |
 |---|---|
 | `/sales-sideprojectors` | SideProjectors platform help — marketplace to buy, sell, and showcase side projects (24,500+ listings). Free listing with no commission, co-founder matching, project showcase, editorial review, DR69 do-follow backlinks (highest among project directories), no escrow/payment handling (peer-to-peer), 631 categories |
+
+### ProductBurst & Platform
+
+| Skill | What it does |
+|---|---|
+| `/sales-productburst` | ProductBurst platform help — product launch and discovery platform with daily and weekly rankings (ongoing, not single-day like Product Hunt). Community upvoting, Top of Day/Week badges (shareable SVGs), featured homepage placement (one-time fee), DR46 do-follow backlinks, idea validation without a full build, comment threads, marketplace. No gatekeepers — launch in under 5 minutes |
 
 ### Seamless.AI & Platform
 
