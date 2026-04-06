@@ -1,0 +1,38 @@
+{
+  "skill_name": "sales-creatorco",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I want to send my new protein bar to 30 fitness influencers on Instagram and get Reels back for my ads",
+      "expected_output": "Product gifting campaign setup with London AI for creator matching, Shopify integration, UGC rights explanation",
+      "assertions": [
+        {"name": "london_ai", "description": "Mentions London AI agent for finding fitness creators or automated matching"},
+        {"name": "product_gifting", "description": "Covers Shopify product gifting integration or shipping to creators"},
+        {"name": "ugc_rights", "description": "Mentions full content usage rights for repurposing UGC in ads"},
+        {"name": "content_workflow", "description": "Describes content approval workflow or reviewing submitted UGC"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "How do I connect my Impact affiliate account to Creator.co and track which creators drive sales?",
+      "expected_output": "Affiliate setup walkthrough with Impact integration, tracking links, and ROAS reporting",
+      "assertions": [
+        {"name": "impact_integration", "description": "Mentions Impact as a supported affiliate network integration"},
+        {"name": "tracking_setup", "description": "Covers setting up unique tracking links or coupon codes per creator"},
+        {"name": "attribution", "description": "Mentions conversion attribution or linking creator content to sales"},
+        {"name": "reporting", "description": "Mentions real-time dashboard, ROAS, or performance analytics"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I have 25 creators who applied to my campaign but I'm not sure how to pick the good ones — some might have fake followers",
+      "expected_output": "Creator vetting workflow using Deep Insights with fake follower warning",
+      "assertions": [
+        {"name": "deep_insights", "description": "Mentions Deep Insights reports for reviewing creator quality"},
+        {"name": "fake_follower_warning", "description": "Warns about fake followers on the marketplace or mentions Creator.co lacks built-in detection"},
+        {"name": "vetting_criteria", "description": "Lists specific vetting criteria like engagement rate, audience demographics, or authenticity indicators"},
+        {"name": "cross_reference", "description": "Suggests cross-referencing with native analytics or third-party tools"}
+      ]
+    }
+  ]
+}

@@ -222,6 +222,12 @@ Router recommends a 5-skill sequence:
 |---|---|
 | `/sales-infludata` | influData platform help — AI-powered influencer marketing with creator discovery (20M+ profiles, prompt-based AI search, lookalike builder), audience analysis (50+ metrics, fake follower detection, overlap analysis), campaign management (real-time tracking, EMV/CPM/reach KPIs, sentiment analysis, shitstorm detection), social listening (brand mentions, hashtags, UGC), outreach mailing, Co-Pilot AI, Chrome extension |
 
+### Creator.co & Platform
+
+| Skill | What it does |
+|---|---|
+| `/sales-creatorco` | Creator.co platform help — AI-powered influencer marketing with London AI agent (automated creator matching from 400M+ profiles, AI outreach), campaign management (briefs, approvals, payouts), creator marketplace (creator.space), UGC with full usage rights, affiliate tracking (Impact, CJ, Awin, Rakuten), Shopify product gifting, Deep Insights reports, performance analytics (ROAS, conversions) |
+
 ### Seamless.AI & Platform
 
 | Skill | What it does |
