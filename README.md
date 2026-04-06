@@ -1,6 +1,6 @@
 # Sales Skills
 
-[![Skills](https://img.shields.io/badge/skills-91-blue)](https://skills.sh/sales-skills/sales)
+[![Skills](https://img.shields.io/badge/skills-92-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
@@ -13,7 +13,7 @@ Claude Code skills for sales, marketing, and GTM workflows.
 npx skills add sales-skills/sales --skills sales-do
 ```
 
-Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill (91 first-party + 53 third-party skills).
+Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill (92 first-party + 53 third-party skills).
 
 Want every skill at once?
 
@@ -209,6 +209,12 @@ Router recommends a 5-skill sequence:
 | Skill | What it does |
 |---|---|
 | `/sales-swai` | SWAI.ai platform help — Autonomous Revenue OS with AI-driven campaign execution, landing page builder, AI chat widget, CRM, email automation, AI assistants (sales, support, lead gen, appointment scheduling), content tools, white-label partner program, analytics |
+
+### Tagshop & Platform
+
+| Skill | What it does |
+|---|---|
+| `/sales-tagshop` | Tagshop.ai platform help — AI UGC video ad generator (1000+ avatars, AI Twin, URL-to-Video, text-to-video, auto-captions, campaign publishing to Facebook/Instagram/TikTok/YouTube) and shoppable UGC galleries (Instagram/TikTok content collection, AI product tagging, Shopify/WooCommerce/BigCommerce/Wix integration, analytics) |
 
 ### Seamless.AI & Platform
 
