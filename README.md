@@ -1,6 +1,6 @@
 # Sales Skills
 
-[![Skills](https://img.shields.io/badge/skills-92-blue)](https://skills.sh/sales-skills/sales)
+[![Skills](https://img.shields.io/badge/skills-93-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
@@ -227,6 +227,12 @@ Router recommends a 5-skill sequence:
 | Skill | What it does |
 |---|---|
 | `/sales-creatorco` | Creator.co platform help — AI-powered influencer marketing with London AI agent (automated creator matching from 400M+ profiles, AI outreach), campaign management (briefs, approvals, payouts), creator marketplace (creator.space), UGC with full usage rights, affiliate tracking (Impact, CJ, Awin, Rakuten), Shopify product gifting, Deep Insights reports, performance analytics (ROAS, conversions) |
+
+### MicroLaunch & Platform
+
+| Skill | What it does |
+|---|---|
+| `/sales-microlaunch` | MicroLaunch platform help — product launch and discovery platform for startups and indie makers. Month-long launch cycles (leaderboard ranking over 30 days), community scoring (idea and product scores), Pro Launch ($39/mo — skip queue, 2x boosts, featured spots, Product of the Day), deals marketplace (lifetime deals, discounts), DR59+ do-follow SEO backlinks, auto distribution (4+ SEO-optimized pages), verified product reviews, landing page audits |
 
 ### Seamless.AI & Platform
 

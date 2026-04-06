@@ -1,0 +1,252 @@
+---
+name: sales-microlaunch
+description: "MicroLaunch platform help — product launch and discovery platform for startups and indie makers. Covers month-long launch cycles (leaderboard ranking over 30 days vs Product Hunt's 1-day window), community scoring (separate idea and product scores), Pro Launch (skip queue, 2x boosts, featured spots, Product of the Day), deals marketplace (lifetime deals, discounts), DR59+ do-follow SEO backlinks, auto distribution (4+ SEO-optimized pages), verified product reviews, and landing page audits. Use when launching a product on MicroLaunch, optimizing a MicroLaunch listing, publishing deals, or choosing between free and Pro Launch. Do NOT use for general product launch strategy across platforms (use /sales-funnel), email marketing (use /sales-email-marketing), or audience growth (use /sales-audience-growth)."
+argument-hint: "[describe what you need help with on MicroLaunch]"
+license: MIT
+version: 1.0.0
+tags: [sales, product-launch, startup, discovery, platform]
+---
+# MicroLaunch Platform Help
+
+Helps the user with MicroLaunch platform questions — from preparing a product launch and optimizing listings through leaderboard strategy, deals marketplace, and maximizing SEO backlinks.
+
+## Step 1 — Gather context
+
+Ask the user:
+
+1. **What do you need help with?**
+   - A) Launching a product — preparing listing, timing, strategy
+   - B) Climbing the leaderboard — getting votes, engagement, visibility
+   - C) Deals marketplace — publishing lifetime deals or discounts
+   - D) SEO backlinks — maximizing backlink value from MicroLaunch
+   - E) Product reviews — getting verified reviews and badges
+   - F) Pro Launch vs free — deciding whether to upgrade
+   - G) Landing page audit — getting a product review session
+   - H) Something else — describe it
+
+2. **What stage is your product?**
+   - A) Pre-launch — haven't submitted yet
+   - B) In queue — submitted, waiting to go live
+   - C) Live on leaderboard — currently in a launch cycle
+   - D) Post-launch — cycle ended, evaluating results
+   - E) Considering MicroLaunch — haven't decided yet
+
+3. **What's your goal?**
+   - A) First customers / revenue
+   - B) Feedback and validation
+   - C) SEO backlinks and visibility
+   - D) Deals marketplace sales
+   - E) All of the above
+
+**If the user's request already provides most of this context, skip directly to the relevant step.** Lead with your best-effort answer using reasonable assumptions (stated explicitly), then ask only the most critical 1-2 clarifying questions at the end.
+
+## Step 2 — Route or answer directly
+
+If the request maps to a specialized skill, route:
+- Product launch strategy across multiple platforms → `/sales-funnel`
+- Email list building / audience growth → `/sales-audience-growth`
+- Email marketing to subscribers → `/sales-email-marketing`
+- Selling digital products → `/sales-digital-products`
+- Landing page / checkout optimization → `/sales-checkout`
+
+Otherwise, answer directly from platform knowledge below.
+
+## Step 3 — MicroLaunch platform reference
+
+### How MicroLaunch works
+
+MicroLaunch is a product launch platform where products compete on a monthly leaderboard — unlike Product Hunt's 24-hour window, launches stay live for 30 days.
+
+#### Launch cycle
+- Products are scored by the community over a full month
+- **Idea score** (0-5) — how interesting/novel is the concept
+- **Product score** (0-5) — how well-executed is the product
+- Scores are separate — a great idea with a rough MVP can still rank well on idea score
+- Engagement (votes, comments, feedback) determines leaderboard position
+- Every product starts on equal footing — no featured section for free launches
+
+#### Leaderboard mechanics
+- Monthly competition cycle with rankings
+- Top products get "Product of the Day" and monthly winner badges
+- Points earned through engagement boost visibility
+- Products accumulate votes and feedback throughout the month
+- Unlike Product Hunt, there's no single-day pressure — steady engagement wins
+
+### Submitting a product
+
+#### Free submission
+- Submit product details: name, tagline, description, screenshots, URL
+- Joins a waiting queue — launch timing is not guaranteed
+- Queue can take "quite some time" according to user reports
+- Once live, product appears on the leaderboard for 30 days
+
+#### Pro Launch ($39/mo, regularly $49)
+- **Skip the queue** — launch immediately, any time
+- **2x visibility boosts** — doubled leaderboard weight
+- **Featured spots** — eligible for Product of the Day
+- **Auto distribution** — 4+ SEO-optimized pages created automatically
+- **Marketplace access** — publish deals and discounts
+- **Verified reviews** — badge and verified review collection
+- **DR59+ do-follow backlinks** — lifetime SEO value
+- **Premium founder support** — direct access to team
+- Limited to **40 spots per month** — scarcity is real
+
+#### Product Review & Action Plan ($129/session)
+- Landing page and product audit by MicroLaunch team
+- 5-10 quick wins identified, ranked by ROI
+- Custom action plan with implementation guidance
+- Premium support via email and DM
+- 2 startup slots per week — limited availability
+- Best for early-stage founders with minimal or no sales
+
+### Optimizing your listing
+
+#### Tagline
+- Keep it under 60 characters
+- Focus on the problem you solve, not the feature
+- Bad: "AI-powered task management platform"
+- Good: "Stop losing track of what matters"
+
+#### Description
+- Lead with the user's pain point
+- Show what makes you different (vs existing tools)
+- Include a clear CTA (try it, sign up, get the deal)
+- Keep it scannable — bullet points for features
+
+#### Screenshots and media
+- Show the product in action, not just logos
+- First screenshot is the hero — make it count
+- Include before/after or problem/solution framing
+- Demo videos increase engagement significantly
+
+### Deals marketplace
+
+Publish exclusive deals for the MicroLaunch audience.
+
+- **Lifetime deals (LTDs)** — one-time payment for perpetual access, popular with early adopters
+- **Discount codes** — percentage or fixed-amount discounts
+- **Limited-time offers** — create urgency
+- Deals appear in the dedicated marketplace section
+- Requires Pro Launch to publish
+- Good channel for first revenue — MicroLaunch users expect and seek deals
+
+### SEO value
+
+MicroLaunch provides meaningful backlink value.
+
+- **DR59+ domain rating** — do-follow backlinks
+- **4+ SEO-optimized pages** per product (Pro Launch)
+- Pages are indexed by search engines — long-term organic traffic
+- Product page stays live after launch cycle ends
+- Backlinks are lifetime — not removed after the month
+
+### Platform metrics
+
+*Best-effort — these change as the platform grows.*
+
+- 320,000+ total unique visitors
+- 25,000+ monthly unique visitors
+- 5.5M+ product impressions
+- 92,000+ product clicks
+- ~103 active products at any time
+- Audience: primarily US, UK, India, EU
+
+## Step 4 — Actionable guidance
+
+Based on the user's specific question:
+
+1. **Pre-launch checklist** — what to prepare before submitting
+2. **Engagement strategy** — how to climb the leaderboard over 30 days
+3. **Deal pricing** — how to structure lifetime deals for maximum revenue
+4. **Post-launch playbook** — what to do after the cycle ends
+
+### Pre-launch checklist
+
+| Step | What to do | Why it matters |
+|---|---|---|
+| 1. Polish your landing page | Clear value prop, social proof, CTA | MicroLaunch sends traffic — convert it |
+| 2. Prepare screenshots | Product in action, problem/solution framing | First impression determines engagement |
+| 3. Write your tagline | Problem-focused, under 60 chars | Drives clicks from the leaderboard |
+| 4. Set up analytics | UTM parameters, conversion tracking | Measure MicroLaunch ROI |
+| 5. Prepare a deal (optional) | Lifetime deal or discount for marketplace | Drives immediate revenue |
+| 6. Decide free vs Pro | $39/mo for skip queue + 2x boost + backlinks | Pro pays for itself if you value DR59 backlinks |
+
+### 30-day engagement strategy
+
+Unlike Product Hunt, MicroLaunch rewards sustained engagement over a month:
+
+- **Week 1** — Initial push: share with your network, respond to every comment
+- **Week 2** — Content: post updates, share behind-the-scenes in the community
+- **Week 3** — Feedback: ask for specific feedback, iterate publicly on suggestions
+- **Week 4** — Close strong: share progress metrics, thank voters, final push
+
+## Gotchas
+
+*Best-effort from research — review these, especially items about plan-gated features and integration gotchas that may be outdated.*
+
+- **Free queue can be long.** Without Pro Launch, your product joins a waitlist with no guaranteed launch date. If timing matters, pay the $39.
+- **MicroLaunch is small.** ~2,600 daily visitors and ~103 active products. Don't expect Product Hunt-level traffic. Set realistic expectations — this is about steady traction, not viral spikes.
+- **Pro Launch has 40 spots/month.** This is a real cap. If you're planning a launch around a specific date, secure your Pro spot early.
+- **Deals marketplace requires Pro.** You can't publish lifetime deals or discounts on the free tier.
+- **Engagement is key, not just submitting.** Products that "submit and forget" sink on the leaderboard. The month-long window rewards founders who actively engage with the community.
+- **Pricing has changed before.** The current $39/mo Pro price (with LAUNCH20 code) may revert to $49. Check microlaunch.net/premium for current rates.
+- **Don't treat it as your only launch channel.** MicroLaunch works best as part of a multi-platform launch strategy (Product Hunt, BetaList, Indie Hackers, Hacker News). Use it for the sustained 30-day window and backlinks, not as a standalone channel.
+
+## Related skills
+
+- `/sales-funnel` — Build and optimize sales funnels for conversion
+- `/sales-audience-growth` — Grow your email list and subscriber base
+- `/sales-digital-products` — Sell digital products (ebooks, templates, SaaS)
+- `/sales-checkout` — Optimize landing pages and checkout for conversion
+- `/sales-email-marketing` — Email marketing to nurture leads from your launch
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
+  `npx skills add sales-skills/sales --skills sales-do`
+
+## Examples
+
+### Example 1: Prepare a SaaS launch on MicroLaunch
+**User says**: "I built an AI writing tool and want to launch it on MicroLaunch to get my first customers"
+**Skill does**:
+1. Walks through the pre-launch checklist: polish landing page, prepare screenshots, write a problem-focused tagline
+2. Recommends Pro Launch ($39) for skip-queue, 2x boost, and DR59 backlinks
+3. Suggests preparing a lifetime deal for the marketplace (e.g., $49 LTD for early adopters)
+4. Outlines the 30-day engagement strategy: initial push, content updates, feedback iteration, close strong
+5. Recommends setting up UTM tracking to measure MicroLaunch traffic and conversions
+**Result**: Launch plan with clear timeline, deal strategy, and engagement playbook
+
+### Example 2: Publish a lifetime deal on the marketplace
+**User says**: "I want to sell a lifetime deal for my project management tool on MicroLaunch"
+**Skill does**:
+1. Confirms Pro Launch is required for marketplace access
+2. Helps structure the LTD: one-time price, what's included, any limitations (seats, usage caps)
+3. Recommends pricing strategy: anchor to monthly price (e.g., "$149 LTD = 3 months of the Pro plan, forever")
+4. Suggests creating urgency: limited quantity or limited-time window
+5. Explains how to track deal revenue through MicroLaunch
+**Result**: Lifetime deal published on marketplace with clear pricing and urgency
+
+### Example 3: Decide between free and Pro Launch
+**User says**: "Is it worth paying for Pro Launch or should I just do the free submission?"
+**Skill does**:
+1. Compares free vs Pro: queue wait vs immediate launch, 1x vs 2x visibility, no backlinks vs DR59+ do-follow
+2. Calculates ROI: a single DR59 do-follow backlink is worth $100-300+ in SEO value — Pro pays for itself
+3. Notes the 40 spots/month cap and potential queue delays on free
+4. Recommends Pro if they have a landing page ready and want to launch within a specific window
+5. Recommends free only if budget is zero and timing is flexible
+**Result**: Data-driven decision on plan choice with clear ROI framework
+
+## Troubleshooting
+
+### Product stuck in free queue
+**Symptom**: Submitted weeks ago but product hasn't gone live on the leaderboard
+**Cause**: Free submissions join a waitlist. MicroLaunch prioritizes Pro launches (40/month) and queues free submissions behind them. High submission volume can extend wait times significantly.
+**Solution**: If timing matters, upgrade to Pro Launch ($39/mo) to skip the queue immediately. If budget is tight, be patient — your product will eventually go live. You can use the wait time to polish your listing, prepare screenshots, and build an audience to engage when you do go live.
+
+### Low engagement despite being on the leaderboard
+**Symptom**: Product is live but barely getting votes or comments
+**Cause**: MicroLaunch rewards active participation. "Submit and forget" listings get buried as engaged products climb. Your tagline or screenshots may not be compelling enough, or you're not engaging with the community.
+**Solution**: Improve your tagline (problem-focused, not feature-focused). Update screenshots to show the product in action. Engage with other products — comment, vote, provide feedback. Share your MicroLaunch listing with your existing audience (Twitter, email list, communities). Post progress updates during the month.
+
+### Launch didn't generate expected traffic or sales
+**Symptom**: Month ended with few clicks and no conversions
+**Cause**: MicroLaunch has ~2,600 daily visitors across all products. Even a top-ranking product will see hundreds, not thousands, of visitors. Conversion depends on your landing page quality.
+**Solution**: Check your analytics — if MicroLaunch sent traffic but it didn't convert, the issue is your landing page (use `/sales-checkout` for optimization). If traffic was low, your leaderboard position may have been too low — review engagement strategy for next time. Consider the $129 Product Review session for a landing page audit. Remember: MicroLaunch works best as one channel in a multi-platform launch, not your sole traffic source.
