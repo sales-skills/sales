@@ -126,6 +126,18 @@ SendPulse includes a drag-and-drop website and landing page builder as part of i
 - **Limitations**: SendPulse's website builder is simpler than dedicated funnel builders (ClickFunnels, Groove.cm). No multi-step funnel flows, no upsell/downsell pages, no order bumps or built-in checkout. For complex funnels, use a dedicated funnel builder and connect to SendPulse for email/SMS/push follow-up.
 - **Best for**: Landing pages and simple sales pages where SendPulse is already the email/automation tool. Strong choice for lead magnet funnels (landing page → email sequence) that leverage SendPulse's multi-channel follow-up (email, SMS, web push, chatbots).
 
+## In SWAI
+
+SWAI.ai is an AI-Native Revenue OS that autonomously builds and optimizes funnels. For full platform help, use `/sales-swai`.
+
+- **Goal-driven funnel creation**: Set a goal in plain English ("I need more qualified leads") and SWAI builds the entire funnel — landing page, email sequence, chat widget, and ads — automatically.
+- **Landing pages**: Recently rebuilt native builder with full customization, AI-powered forms, script injection, and brand-tailored design. No third-party builder dependency.
+- **AI forms**: Forms powered by AI agents that qualify and route leads intelligently based on responses.
+- **Continuous optimization**: SWAI auto-tests and optimizes funnel elements — page design, email content, chat responses — without manual A/B test setup.
+- **Integrated channels**: Funnels span email, landing pages, AI chat widget, and ad campaigns as a unified system rather than separate tools.
+- **Limitations**: Less granular control than dedicated funnel builders (ClickFunnels, Groove.cm). No manual multi-step funnel flow editor — the AI decides the funnel structure based on your goal. No native checkout/upsell/downsell pages for e-commerce funnels.
+- **Best for**: Agencies and small businesses that want AI to handle funnel creation and optimization end-to-end. Not ideal for teams that want manual control over every funnel step or complex e-commerce checkout flows.
+
 ## In Other Tools
 
 - **Unbounce / Leadpages**: Best for standalone landing pages and opt-in pages rather than full multi-step funnels. Use Unbounce Smart Traffic for AI-driven A/B testing. Connect to a separate checkout tool (ThriveCart, Stripe) and email tool.

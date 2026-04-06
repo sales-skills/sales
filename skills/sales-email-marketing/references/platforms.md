@@ -284,6 +284,17 @@ Klaviyo is a data-driven marketing automation platform built specifically for e-
 - **Pricing**: Free (250 profiles, 500 emails), Email ($20/mo, 500 profiles), Email + SMS ($35/mo). Profile-based billing — all active profiles count (Feb 2025 change). Scales with profile count.
 - **Klaviyo's strength**: Best for e-commerce brands (especially Shopify) that need behavior-triggered automation with deep product data integration, predictive analytics, and multi-channel (email + SMS + push). Overkill for simple newsletters or non-e-commerce use cases.
 
+### In SWAI
+
+SWAI.ai is an AI-Native Revenue OS that handles email marketing as part of autonomous campaign execution. For full platform help, use `/sales-swai`.
+
+- **AI-generated email campaigns**: SWAI creates email content, subject lines, and send schedules based on your campaign goal — no manual campaign building required.
+- **Automated sequences**: Trigger-based flows (welcome, nurture, re-engagement) generated and optimized by AI.
+- **Personalization**: Dynamic content based on contact data, behavior, and engagement patterns.
+- **Unified with other channels**: Email campaigns are coordinated with landing pages, AI chat widget, and ads as part of the overall campaign goal — not managed as a standalone channel.
+- **Limitations**: No manual drag-and-drop email editor, no advanced segmentation UI, no A/B testing controls — SWAI handles optimization autonomously. Users who want fine-grained control over email design and segmentation should use a dedicated ESP (Mailchimp, ActiveCampaign, Klaviyo).
+- **Best for**: Agencies and small businesses that want AI to handle email as part of an autonomous marketing system. Not ideal for teams that need manual control over email templates, complex segmentation, or detailed campaign analytics.
+
 ### In AdRoll
 
 AdRoll is primarily a retargeting and advertising platform, but includes email retargeting capabilities for ecommerce:

@@ -1,6 +1,6 @@
 ---
 name: sales-chatbot
-description: "Chatbot marketing and conversational automation — building chatbot flows, multichannel messaging (WhatsApp, Telegram, Facebook, Instagram, Viber, live chat), lead qualification bots, FAQ bots, and handoff to human agents. Use when asking 'how do I build a chatbot', 'WhatsApp bot', 'Telegram bot for sales', 'chatbot lead qualification', 'conversational marketing', 'live chat handoff'. Do NOT use for live chat widget setup without bots (use /sales-live-chat), email sequences (use /sales-cadence), or SMS campaigns without conversational flow (use /sales-sms-marketing). For SendPulse-specific help, use /sales-sendpulse."
+description: "Chatbot marketing and conversational automation — building chatbot flows, multichannel messaging (WhatsApp, Telegram, Facebook, Instagram, Viber, live chat), lead qualification bots, FAQ bots, and handoff to human agents. Use when asking 'how do I build a chatbot', 'WhatsApp bot', 'Telegram bot for sales', 'chatbot lead qualification', 'conversational marketing', 'live chat handoff'. Do NOT use for live chat widget setup without bots (use /sales-live-chat), email sequences (use /sales-cadence), or SMS campaigns without conversational flow (use /sales-sms-marketing). For SendPulse-specific help, use /sales-sendpulse. For SWAI-specific help, use /sales-swai."
 argument-hint: "[describe your chatbot or conversational automation question]"
 license: MIT
 version: 1.0.0
@@ -136,6 +136,20 @@ GET  /messenger/{platform}/contacts    # List subscribers per channel
 
 > For full SendPulse platform setup, use `/sales-sendpulse`.
 
+### In SWAI
+
+SWAI.ai includes an AI-powered chat widget as part of its autonomous revenue OS:
+
+- **AI chat widget**: Embeddable website chat that uses AI to handle conversations — lead qualification, FAQ, and appointment scheduling
+- **AI-driven qualification**: The chat agent qualifies leads based on conversation and routes them to the appropriate next step (booking, nurture, human handoff)
+- **Cal.com integration**: Book meetings directly from chat via native Cal.com scheduling
+- **24/7 availability**: AI handles all conversations when team is offline — no dead chat widget
+- **Part of autonomous campaigns**: Chat widget activity is coordinated with SWAI's email, landing page, and ad campaigns as a unified system
+- **Limitations**: No visual chatbot flow builder — the AI handles conversation logic autonomously. No multi-channel chatbot (website only, no WhatsApp/Telegram/Messenger). Less customizable than dedicated chatbot platforms (ManyChat, SendPulse).
+- **Best for**: Teams that want an intelligent website chat that qualifies leads and books meetings without building manual conversation flows.
+
+> For full SWAI platform setup, use `/sales-swai`.
+
 ### In ManyChat
 
 ManyChat is a dedicated chatbot platform focused on Instagram, Facebook Messenger, WhatsApp, Telegram, and SMS:
@@ -231,6 +245,7 @@ HubSpot's chatbot builder (included in free CRM):
 ## Step 5 — Related skills
 
 - `/sales-sendpulse` — SendPulse platform help (chatbots across 7 channels, visual flow builder, Automation 360)
+- `/sales-swai` — SWAI platform help (AI chat widget, autonomous lead qualification, Cal.com scheduling)
 - `/sales-live-chat` — Live chat widget setup and optimization (non-bot focused)
 - `/sales-sms-marketing` — SMS campaigns and automation (non-conversational)
 - `/sales-cadence` — Multi-channel outbound sequences (email, call, social — structured outreach vs. conversational)

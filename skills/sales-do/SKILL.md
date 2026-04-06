@@ -1,6 +1,6 @@
 ---
 name: sales-do
-description: "Routes any sales, marketing, or GTM objective to the right specialized skill. Covers 90 first-party skills and 53 third-party skills across prospecting, outbound, deals, proposals, forecasting, deliverability, enrichment, intent signals, content, coaching, CRO, SEO, data hygiene, B2B advertising, retargeting, chatbots, and platform help for Apollo, Salesloft, Mailshake, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter, Tomba, Prospeo, Mailmo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, Brevo, Braze, Iterable, GetResponse, Seismic, Allego, Groove, Kit (ConvertKit), Omnisend, ZoomInfo, SendPulse, Clearbit, RB2B, 6sense, Clay, LeadMagic, AdRoll, and Qwilr. Use when you have a sales or marketing question and are not sure which skill to use. Do NOT use to solve problems directly — this skill only routes."
+description: "Routes any sales, marketing, or GTM objective to the right specialized skill. Covers 91 first-party skills and 53 third-party skills across prospecting, outbound, deals, proposals, forecasting, deliverability, enrichment, intent signals, content, coaching, CRO, SEO, data hygiene, B2B advertising, retargeting, chatbots, and platform help for Apollo, Salesloft, Mailshake, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter, Tomba, Prospeo, Mailmo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, Brevo, Braze, Iterable, GetResponse, Seismic, Allego, Groove, Kit (ConvertKit), Omnisend, ZoomInfo, SendPulse, Clearbit, RB2B, 6sense, Clay, LeadMagic, AdRoll, SWAI, and Qwilr. Use when you have a sales or marketing question and are not sure which skill to use. Do NOT use to solve problems directly — this skill only routes."
 version: 1.0.0
 tags: [sales, router, skill-discovery]
 ---
@@ -290,6 +290,12 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 | Skill | Route when... |
 |---|---|
 | `/sales-allego` | User asks about Allego platform configuration, Allego Modern Learning, Allego AI Role-Play, Allego Conversation Intelligence, Allego Modern Content, Digital Sales Rooms in Allego, Allego coaching scorecards, Allego integrations with Salesforce/HubSpot/Dynamics, or Allego mobile app |
+
+### SWAI & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-swai` | User asks about SWAI platform configuration, SWAI campaigns, SWAI landing pages, SWAI AI chat widget, SWAI CRM, SWAI email automation, SWAI AI assistants, SWAI content tools, SWAI white-label partner program, SWAI analytics, or SWAI integrations |
 
 ### Groove.cm & Platform
 
@@ -652,6 +658,7 @@ Some requests are ambiguous. Apply these rules:
 - **"newsletter monetization" / "paid newsletter" / "newsletter sponsors" / "newsletter ads" / "newsletter subscriptions" / "paid recommendations"** → `/sales-newsletter` for newsletter monetization strategy. If they mention a specific platform: Kit → `/sales-kit`, Substack → ask if they need platform help or strategy. NOT `/sales-email-marketing` (which is about sending emails, not monetizing them). NOT `/sales-membership` (which is courses/memberships, not newsletters).
 - **"grow my list" / "grow subscribers" / "lead magnet" / "content upgrade" / "cross-promotion" / "referral program" / "grow my audience" / "get more subscribers"** → `/sales-audience-growth` for list growth strategy. If they mention a specific platform: Kit → `/sales-kit`, Beehiiv → ask if they need platform help or strategy. NOT `/sales-prospect-list` (which is B2B prospecting, not audience building). NOT `/sales-email-marketing` (which is sending emails to existing subscribers).
 - **"sell digital product" / "sell ebook" / "sell template" / "sell download" / "Gumroad" / "Lemon Squeezy" / "Payhip"** → `/sales-digital-products` for digital product sales strategy. If they mention Kit Commerce → `/sales-kit`. If they mention Groove → `/sales-groove`. NOT `/sales-checkout` (which optimizes checkout UX, not product strategy). NOT `/sales-membership` (which is ongoing access, not one-time downloads).
+- **"SWAI" / "SWAI.ai" / "SWAI campaigns" / "SWAI landing pages" / "SWAI chat widget" / "SWAI white-label" / "SWAI AI assistant" / "autonomous revenue OS"** → `/sales-swai` (platform help). If asking about funnel strategy without mentioning SWAI → `/sales-funnel`. If asking about email marketing strategy → `/sales-email-marketing`. If asking about chatbot design → `/sales-chatbot`. If asking about live chat strategy → `/sales-live-chat`.
 - **"Seismic" / "Enablement Cloud" / "LiveSend" / "LiveDocs" / "Aura AI"** → `/sales-seismic`. If they ask about content strategy without mentioning Seismic → `/sales-content`. If they ask about coaching/training without mentioning Seismic → `/sales-coaching`.
 - **"Allego" / "Allego Learning" / "Allego AI Role-Play" / "Allego conversation intelligence" / "Allego Modern Content" / "Allego Digital Sales Rooms"** → `/sales-allego`. If they ask about content strategy without mentioning Allego → `/sales-content`. If they ask about coaching/training without mentioning Allego → `/sales-coaching`. If they mention "Seismic" → `/sales-seismic`.
 - **"battle cards" / "content library" / "sales collateral" / "one-pagers" / "content audit"** → `/sales-content`. If they mention "Seismic content" → `/sales-seismic`. If they mention "Allego content" → `/sales-allego`. If they want to write marketing copy → `/copywriting`.

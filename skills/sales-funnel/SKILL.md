@@ -1,6 +1,6 @@
 ---
 name: sales-funnel
-description: "Builds and optimize sales funnels — strategy, structure, conversion optimization, A/B testing, and analytics. Use when building a funnel, optimizing conversion rates, designing upsell/downsell flows, choosing a funnel builder, or planning a launch funnel. Do NOT use for email marketing sequences (use /sales-email-marketing), checkout-specific optimization (use /sales-checkout), or webinar funnels (use /sales-webinar). For Groove-specific help, use /sales-groove."
+description: "Builds and optimize sales funnels — strategy, structure, conversion optimization, A/B testing, and analytics. Use when building a funnel, optimizing conversion rates, designing upsell/downsell flows, choosing a funnel builder, or planning a launch funnel. Do NOT use for email marketing sequences (use /sales-email-marketing), checkout-specific optimization (use /sales-checkout), or webinar funnels (use /sales-webinar). For Groove-specific help, use /sales-groove. For SWAI-specific help, use /sales-swai."
 argument-hint: "[describe your funnel goal — e.g., 'build a webinar registration funnel' or 'optimize my checkout conversion rate']"
 license: MIT
 version: 1.0.0
@@ -239,6 +239,7 @@ Follow this framework for every test:
 - `/sales-closum` — Closum platform help (landing pages, forms, omnichannel automation)
 - `/sales-mailchimp` — Mailchimp platform help (landing pages, signup forms, email sequences)
 - `/sales-kit` — Kit platform help (landing pages, forms, Creator Profile, Commerce)
+- `/sales-swai` — SWAI platform help (AI-driven funnel creation, landing pages, chat widget)
 - `/sales-sendpulse` — SendPulse platform help (landing pages, email, SMS, chatbots, Automation 360)
 - `/sales-audience-growth` — Growing an email list (lead magnets, cross-promotion, referral programs)
 - `/sales-digital-products` — Selling digital products (platform selection, pricing, launch)

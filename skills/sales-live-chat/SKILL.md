@@ -1,6 +1,6 @@
 ---
 name: sales-live-chat
-description: "Live chat and chatbot for sales and support — widget setup, routing, chatbot flows, agent management, visitor tracking, chat-to-lead conversion, proactive messaging. Covers strategy and implementation across Brevo Conversations, Drift (Salesloft), Intercom, HubSpot, Crisp, LiveChat, Zendesk, Tidio, Freshdesk, and ZoomInfo Chat. Use when setting up live chat, building chatbot flows, optimizing chat-to-lead conversion, routing chats to agents, or choosing a live chat tool. Do NOT use for email sequences (use /sales-cadence), email marketing (use /sales-email-marketing), or meeting scheduling (use /sales-meeting-scheduler). For platform-specific help, use /sales-brevo or /sales-salesloft."
+description: "Live chat and chatbot for sales and support — widget setup, routing, chatbot flows, agent management, visitor tracking, chat-to-lead conversion, proactive messaging. Covers strategy and implementation across Brevo Conversations, Drift (Salesloft), Intercom, HubSpot, Crisp, LiveChat, Zendesk, Tidio, Freshdesk, and ZoomInfo Chat. Use when setting up live chat, building chatbot flows, optimizing chat-to-lead conversion, routing chats to agents, or choosing a live chat tool. Do NOT use for email sequences (use /sales-cadence), email marketing (use /sales-email-marketing), or meeting scheduling (use /sales-meeting-scheduler). For platform-specific help, use /sales-brevo, /sales-salesloft, or /sales-swai."
 argument-hint: "[describe your live chat or chatbot question or goal]"
 license: MIT
 version: 1.0.0
@@ -164,6 +164,19 @@ SendPulse offers a full-featured live chat solution as part of its multi-channel
 - **Best for**: Teams already using SendPulse for email or chatbots who want unified multi-channel conversations without adding a separate chat tool.
 - **Platform skill**: `/sales-sendpulse`
 
+### In SWAI
+
+SWAI.ai includes an AI-powered chat widget as part of its Autonomous Revenue OS:
+
+- **AI chat widget**: Embeddable chat for lead capture and qualification — AI handles conversations autonomously
+- **Lead qualification**: AI agent asks qualifying questions and routes leads based on responses
+- **Appointment booking**: Native Cal.com integration for scheduling meetings directly from chat
+- **Always-on**: AI handles conversations 24/7 — no offline dead widget
+- **Unified with campaigns**: Chat activity feeds into SWAI's CRM and triggers email/campaign follow-up automatically
+- **Limitation**: Website-only chat (no WhatsApp, Messenger, or other channels). No visual chatbot flow builder. Less agent management features than dedicated tools (Intercom, Drift, LiveChat).
+- **Best for**: Teams using SWAI for marketing automation who want an intelligent website chat without adding a separate tool.
+- **Platform skill**: `/sales-swai`
+
 ### In LiveChat / Zendesk / Tidio / Freshdesk
 - **LiveChat**: Support-focused with ticketing integration. Good for support teams.
 - **Zendesk Chat**: Part of Zendesk Suite — best if you're already on Zendesk for support.
@@ -209,6 +222,7 @@ SendPulse offers a full-featured live chat solution as part of its multi-channel
 - `/sales-brevo` — Brevo platform help (Conversations live chat setup)
 - `/sales-salesloft` — Salesloft/Drift platform help (enterprise sales chat)
 - `/sales-sendpulse` — SendPulse platform help (live chat, unified inbox, bot-to-human handoff)
+- `/sales-swai` — SWAI platform help (AI chat widget, autonomous lead qualification, Cal.com scheduling)
 - `/sales-chatbot` — Chatbot design and automation
 - `/sales-meeting-scheduler` — Book meetings from chat conversations
 - `/sales-lead-routing` — Route chat-qualified leads to the right rep

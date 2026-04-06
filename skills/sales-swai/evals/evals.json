@@ -1,0 +1,26 @@
+[
+  {
+    "input": "/sales-swai I want to set up an AI-driven lead generation campaign for my B2B consulting firm",
+    "assertions": [
+      "mentions setting a goal in plain English / natural language",
+      "covers landing page, email automation, and chat widget as campaign components",
+      "mentions Cal.com integration for appointment scheduling"
+    ]
+  },
+  {
+    "input": "/sales-swai How do I set up the white-label partner program for my marketing agency?",
+    "assertions": [
+      "explains branding customization (logo, colors, domain)",
+      "mentions client account management from one dashboard",
+      "mentions partner community access or dedicated support"
+    ]
+  },
+  {
+    "input": "/sales-swai I need to build a landing page with an AI form that qualifies leads and books meetings",
+    "assertions": [
+      "describes SWAI's native landing page builder (not third-party)",
+      "explains AI-powered forms for lead qualification",
+      "mentions Cal.com integration for meeting booking"
+    ]
+  }
+]
