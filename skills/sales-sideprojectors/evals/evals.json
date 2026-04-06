@@ -1,0 +1,38 @@
+{
+  "skill_name": "sales-sideprojectors",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I built a SaaS tool but stopped working on it. It has 50 users and $200/mo MRR. How do I sell it on SideProjectors?",
+      "expected_output": "Selling checklist with pricing guidance, listing optimization, and safe transaction advice",
+      "assertions": [
+        {"name": "pricing_guidance", "description": "Provides a valuation framework based on revenue multiples (1-3x annual revenue for side projects)"},
+        {"name": "listing_checklist", "description": "Covers preparation steps: clean code, gather metrics, write description, add screenshots"},
+        {"name": "no_escrow_warning", "description": "Warns that SideProjectors has no escrow and recommends third-party escrow for the transaction"},
+        {"name": "cross_listing", "description": "Suggests also listing on other marketplaces like Acquire.com for broader buyer reach"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "I just want the DR69 backlink from SideProjectors for SEO. What's the fastest way to get listed?",
+      "expected_output": "Showcase listing guide focused on getting the backlink with minimal effort",
+      "assertions": [
+        {"name": "showcase_listing", "description": "Recommends a showcase listing (not for-sale) as the path to the backlink"},
+        {"name": "working_product_required", "description": "Notes the requirement for a working product with a live URL"},
+        {"name": "dr69_value", "description": "Mentions the DR69 do-follow backlink value and how it compares to other directories"},
+        {"name": "multi_directory", "description": "Suggests pairing with other high-DR directories (MicroLaunch DR59, LaunchingNext DR51)"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I found a project I want to buy on SideProjectors but I'm worried about getting scammed. How do I protect myself?",
+      "expected_output": "Due diligence checklist for buying safely on a platform with no escrow",
+      "assertions": [
+        {"name": "no_escrow_reality", "description": "Explains that SideProjectors has no escrow, payment handling, or buyer protection"},
+        {"name": "verification_steps", "description": "Recommends specific verification: live demo, analytics access, seller background check"},
+        {"name": "third_party_escrow", "description": "Suggests using a third-party escrow service like Escrow.com for transactions over $500"},
+        {"name": "written_agreement", "description": "Advises getting a written agreement listing what's included in the sale"}
+      ]
+    }
+  ]
+}
