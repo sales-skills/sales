@@ -106,15 +106,15 @@ ProductBurst includes a marketplace section for products and services, extending
 
 ### Comparison with other launch platforms
 
-| Feature | ProductBurst | Product Hunt | Open Launch | MicroLaunch | LaunchingNext | CtrlAlt.cc |
-|---|---|---|---|---|---|---|
-| Ranking window | Daily + weekly (ongoing) | 24 hours | Daily (resets) | 30 days | None (static directory) | None (curated daily) |
-| Editorial review | None — instant | Community-moderated | Queue or $12 skip | Editorial review | Editorial review | Yes (manual curation) |
-| Upvoting | Yes | Yes | Yes | Yes (idea + product scores) | No | Yes |
-| Featured (paid) | One-time fee | No paid features | $12 premium / $59 SEO | Pro Launch $39/mo | $99 expedited + promoted ads | $39 (1-week feature) |
-| Backlink DR/DA | DR46 | DR91 | DR65 (conditional free) | DR59 | DR51 | DA30 |
-| Idea-stage OK | Yes | No (needs working product) | No | No (needs working product) | No (needs working product) | No |
-| Speed to list | <5 minutes | Varies (community) | Queue or next day ($12) | Free queue or pay to skip | Weeks/months or $99 | Up to 2 months or $39 |
+| Feature | ProductBurst | Huzzler | Product Hunt | Open Launch | MicroLaunch | LaunchingNext | CtrlAlt.cc |
+|---|---|---|---|---|---|---|---|
+| Ranking window | Daily + weekly (ongoing) | Weekly (Mon-Sun cycle) | 24 hours | Daily (resets) | 30 days | None (static directory) | None (curated daily) |
+| Editorial review | None — instant | None — instant | Community-moderated | Queue or $12 skip | Editorial review | Editorial review | Yes (manual curation) |
+| Upvoting | Yes | Yes (Wed-Sun voting) | Yes | Yes | Yes (idea + product scores) | No | Yes |
+| Featured (paid) | One-time fee | $79 Black (lifetime) / $34 promoted | No paid features | $12 premium / $59 SEO | Pro Launch $39/mo | $99 expedited + promoted ads | $39 (1-week feature) |
+| Backlink DR/DA | DR46 | DR41-47 (winners only) | DR91 | DR65 (conditional free) | DR59 | DR51 | DA30 |
+| Idea-stage OK | Yes | Yes (#startup-ideas) | No (needs working product) | No | No (needs working product) | No (needs working product) | No |
+| Speed to list | <5 minutes | Instant (compete Mon-Wed) | Varies (community) | Queue or next day ($12) | Free queue or pay to skip | Weeks/months or $99 | Up to 2 months or $39 |
 
 ## Step 4 — Actionable guidance
 
@@ -177,6 +177,7 @@ If you're pre-build:
 - `/sales-launchingnext` — LaunchingNext platform help (curated startup directory)
 - `/sales-solopush` — SoloPush platform help (indie maker community)
 - `/sales-sideprojectors` — SideProjectors platform help (buy/sell side projects)
+- `/sales-huzzler` — Huzzler platform help (founder community, weekly Launch Arena competition)
 - `/sales-funnel` — Build and optimize sales funnels for conversion
 - `/sales-audience-growth` — Grow your email list and subscriber base
 - `/sales-checkout` — Optimize landing pages and checkout for conversion

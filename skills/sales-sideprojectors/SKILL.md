@@ -203,6 +203,7 @@ If you're listing to showcase (not sell):
 - `/sales-openlaunch` — Open Launch platform help (open-source PH alternative, DR65 backlinks)
 - `/sales-productburst` — ProductBurst platform help (daily/weekly rankings, badges)
 - `/sales-solopush` — SoloPush platform help (indie maker community)
+- `/sales-huzzler` — Huzzler platform help (founder community, weekly Launch Arena competition)
 - `/sales-funnel` — Build and optimize sales funnels for conversion
 - `/sales-digital-products` — Sell digital products (ebooks, templates, SaaS)
 - `/sales-checkout` — Optimize landing pages and checkout for conversion

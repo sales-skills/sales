@@ -181,6 +181,7 @@ CtrlAlt.cc works best as one platform in a broader launch. Use `/sales-launch-di
 - `/sales-launchingnext` — LaunchingNext platform help (curated startup directory)
 - `/sales-solopush` — SoloPush platform help (indie maker community, no-pressure launch)
 - `/sales-sideprojectors` — SideProjectors platform help (buy/sell side projects)
+- `/sales-huzzler` — Huzzler platform help (founder community, weekly Launch Arena competition)
 - `/sales-funnel` — Build and optimize sales funnels for conversion
 - `/sales-audience-growth` — Grow your email list and subscriber base
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:

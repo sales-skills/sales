@@ -93,17 +93,17 @@ SoloPush specifically targets:
 
 ### Comparison with other launch platforms
 
-| Feature | SoloPush | ProductBurst | Product Hunt | Open Launch | MicroLaunch | LaunchingNext | CtrlAlt.cc |
-|---|---|---|---|---|---|---|---|
-| Launch pressure | None — anytime | Daily rankings | 24 hours | Daily (resets) | 30 days | None (static directory) | None (curated daily) |
-| Editorial review | None — instant | None — instant | Community-moderated | Queue or $12 skip | Editorial review | Editorial review | Yes (manual curation) |
-| Upvoting | Yes | Yes | Yes | Yes | Yes (idea + product scores) | No | Yes |
-| Reviews | Yes | Comment threads | Comment threads | Comments | Verified reviews | No | No |
-| Backlink DR/DA | DR46-47 | DR46 | DR91 | DR65 (conditional free) | DR59 | DR51 | DA30 |
-| Target audience | Solo makers | General startups | General products | Tech products | General startups | General startups | Startup tools |
-| Idea-stage OK | Yes (implied) | Yes | No | No | No | No | No |
+| Feature | SoloPush | Huzzler | ProductBurst | Product Hunt | Open Launch | MicroLaunch | LaunchingNext | CtrlAlt.cc |
+|---|---|---|---|---|---|---|---|---|
+| Launch pressure | None — anytime | Weekly (Mon-Sun cycle) | Daily rankings | 24 hours | Daily (resets) | 30 days | None (static directory) | None (curated daily) |
+| Editorial review | None — instant | None — instant | None — instant | Community-moderated | Queue or $12 skip | Editorial review | Editorial review | Yes (manual curation) |
+| Upvoting | Yes | Yes (Wed-Sun voting) | Yes | Yes | Yes | Yes (idea + product scores) | No | Yes |
+| Reviews | Yes | Community forums | Comment threads | Comment threads | Comments | Verified reviews | No | No |
+| Backlink DR/DA | DR46-47 | DR41-47 (winners only) | DR46 | DR91 | DR65 (conditional free) | DR59 | DR51 | DA30 |
+| Target audience | Solo makers | Founders (AI-free community) | General startups | General products | Tech products | General startups | General startups | Startup tools |
+| Idea-stage OK | Yes (implied) | Yes (#startup-ideas) | Yes | No | No | No | No | No |
 | Free submission | Yes | Yes | Yes | Yes (conditional backlink) | Free queue or paid | $99 expedited or free (long wait) | Free (up to 2 months queue) |
-| Featured (paid) | Unknown | One-time fee | No paid features | $12 premium / $59 SEO | Pro Launch $39/mo | $99 expedited + promoted ads | $39 (1-week feature) |
+| Featured (paid) | Unknown | $79 Black (lifetime) / $34 promoted | One-time fee | No paid features | $12 premium / $59 SEO | Pro Launch $39/mo | $99 expedited + promoted ads | $39 (1-week feature) |
 
 ## Step 4 — Actionable guidance
 
@@ -167,6 +167,7 @@ SoloPush's solo maker focus makes it good for personal brand building:
 - `/sales-microlaunch` — MicroLaunch platform help (30-day leaderboard, deals marketplace)
 - `/sales-launchingnext` — LaunchingNext platform help (curated startup directory)
 - `/sales-sideprojectors` — SideProjectors platform help (buy/sell side projects)
+- `/sales-huzzler` — Huzzler platform help (founder community, weekly Launch Arena competition)
 - `/sales-funnel` — Build and optimize sales funnels for conversion
 - `/sales-audience-growth` — Grow your email list and subscriber base
 - `/sales-checkout` — Optimize landing pages and checkout for conversion

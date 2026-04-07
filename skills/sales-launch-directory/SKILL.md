@@ -1,6 +1,6 @@
 ---
 name: sales-launch-directory
-description: "Startup directory launch strategy — coordinates submissions across multiple product launch and discovery platforms for maximum visibility, backlinks, and early users. Covers platform selection (Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Product Hunt, BetaList, Hacker News, Indie Hackers), launch sequencing (instant-list first, editorial-review last), backlink stacking (DA/DR comparison across directories), listing optimization, timing strategy, and multi-platform coordination. Use when planning a product launch across directories, choosing which directories to submit to, or building a backlink portfolio from startup directories. Do NOT use for a single specific platform (use the platform skill instead). Do NOT use for paid advertising (use /sales-b2b-advertising)."
+description: "Startup directory launch strategy — coordinates submissions across multiple product launch and discovery platforms for maximum visibility, backlinks, and early users. Covers platform selection (Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Product Hunt, BetaList, Hacker News, Indie Hackers), launch sequencing (instant-list first, editorial-review last), backlink stacking (DA/DR comparison across directories), listing optimization, timing strategy, and multi-platform coordination. Use when planning a product launch across directories, choosing which directories to submit to, or building a backlink portfolio from startup directories. Do NOT use for a single specific platform (use the platform skill instead). Do NOT use for paid advertising (use /sales-b2b-advertising)."
 argument-hint: "[describe your product and what you want from directory submissions]"
 license: MIT
 version: 1.0.0
@@ -57,6 +57,7 @@ If the request maps to a single platform, route:
 - ProductBurst-specific questions → `/sales-productburst`
 - SoloPush-specific questions → `/sales-solopush`
 - SideProjectors-specific questions → `/sales-sideprojectors`
+- Huzzler-specific questions → `/sales-huzzler`
 - Product Hunt-specific questions → `/product-hunt-launch` (third-party)
 - Email marketing to subscribers → `/sales-email-marketing`
 - Landing page optimization → `/sales-checkout`
@@ -76,6 +77,7 @@ Otherwise, answer directly from the directory knowledge below.
 | LaunchingNext | DR51 dofollow | Free | $99 expedited | Weeks/months (free), 1 day ($99) | Curated directory | `/sales-launchingnext` |
 | ProductBurst | DR46 dofollow | Free | One-time featured fee | None — instant | Daily/weekly rankings | `/sales-productburst` |
 | SoloPush | DR46-47 dofollow | Free | Unknown | None — instant | No-pressure community | `/sales-solopush` |
+| Huzzler | DR41-47 dofollow (winners only) | Free | $79 Black (lifetime) / $34 promoted | None — instant | Weekly Launch Arena competition | `/sales-huzzler` |
 | CtrlAlt.cc | DA30 dofollow | Free | $39 (1-week feature) | Up to 2 months (free) | Curated directory | `/sales-ctrlaltcc` |
 
 ### Third-party platforms (no skill — general guidance)
@@ -106,7 +108,8 @@ All first-party + key third-party directories sorted by backlink strength:
 | 9 | LaunchingNext | DR51 | Yes | Yes (queue) |
 | 10 | ProductBurst | DR46 | Yes | Yes |
 | 11 | SoloPush | DR46-47 | Yes | Yes |
-| 12 | CtrlAlt.cc | DA30 | Yes | Yes (queue) |
+| 12 | Huzzler | DR41-47 | Yes (winners only) | Yes (must win Launch Arena) |
+| 13 | CtrlAlt.cc | DA30 | Yes | Yes (queue) |
 
 ## Step 4 — Actionable guidance
 
@@ -118,7 +121,8 @@ The key principle: **submit to instant-listing platforms first, editorial-review
 Submit to platforms with no editorial queue to get live immediately:
 1. **SoloPush** — instant listing, no gatekeeping, solo maker community
 2. **ProductBurst** — instant listing, daily/weekly ranking opportunities
-3. **Indie Hackers** — post in relevant groups, share your story
+3. **Huzzler Launch Arena** — submit Monday for weekly competition (Wed-Sun voting)
+4. **Indie Hackers** — post in relevant groups, share your story
 
 **Goal**: Get live listings, initial backlinks, and early feedback to refine your messaging.
 
@@ -168,7 +172,8 @@ Each platform has different listing requirements, but these principles apply eve
 |---|---|---|
 | $0 | All free submissions (8+ platforms) | 8+ dofollow backlinks over 1-3 months |
 | $12 | Open Launch Premium (best value) | 8+ backlinks, 1 guaranteed DR65 |
-| $51 | Open Launch ($12) + CtrlAlt.cc ($39) | 8+ backlinks, 2 with premium placement |
+| $46 | Open Launch ($12) + Huzzler promoted ($34) | 9+ backlinks, 2 with boosted visibility |
+| $51 | Open Launch ($12) + CtrlAlt.cc ($39) | 9+ backlinks, 2 with premium placement |
 | $90 | Above + MicroLaunch Pro ($39) | 8+ backlinks, 3 with premium placement |
 | $189 | Above + LaunchingNext expedited ($99) | 8+ backlinks, 4 with premium placement |
 | $318 | Above + BetaList skip ($129) | 9+ backlinks, 5 with premium placement |
@@ -209,6 +214,7 @@ For each directory submission, track:
 - `/sales-launchingnext` — LaunchingNext platform help (curated startup directory)
 - `/sales-solopush` — SoloPush platform help (indie maker community, no-pressure launch)
 - `/sales-sideprojectors` — SideProjectors platform help (buy/sell side projects)
+- `/sales-huzzler` — Huzzler platform help (founder community, weekly Launch Arena competition)
 - `/sales-funnel` — Build and optimize sales funnels for conversion
 - `/sales-audience-growth` — Grow your email list and subscriber base
 - `/sales-checkout` — Optimize landing pages and checkout for conversion
