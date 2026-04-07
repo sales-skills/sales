@@ -1,6 +1,6 @@
 ---
 name: sales-launch-directory
-description: "Startup directory launch strategy — coordinates submissions across multiple product launch and discovery platforms for maximum visibility, backlinks, and early users. Covers platform selection (Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, OpenHunts, Awesome Indie, Product Hunt, BetaList, Hacker News, Indie Hackers), launch sequencing (instant-list first, editorial-review last), backlink stacking (DA/DR comparison across directories), listing optimization, timing strategy, and multi-platform coordination. Use when planning a product launch across directories, choosing which directories to submit to, or building a backlink portfolio from startup directories. Do NOT use for a single specific platform (use the platform skill instead). Do NOT use for paid advertising (use /sales-b2b-advertising)."
+description: "Startup directory launch strategy — coordinates submissions across multiple product launch and discovery platforms for maximum visibility, backlinks, and early users. Covers platform selection (Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Product Hunt, BetaList, Hacker News, Indie Hackers), launch sequencing (instant-list first, editorial-review last), backlink stacking (DA/DR comparison across directories), listing optimization, timing strategy, and multi-platform coordination. Use when planning a product launch across directories, choosing which directories to submit to, or building a backlink portfolio from startup directories. Do NOT use for a single specific platform (use the platform skill instead). Do NOT use for paid advertising (use /sales-b2b-advertising)."
 argument-hint: "[describe your product and what you want from directory submissions]"
 license: MIT
 version: 1.0.0
@@ -61,6 +61,7 @@ If the request maps to a single platform, route:
 - Firsto-specific questions → `/sales-firsto`
 - OpenHunts-specific questions → `/sales-openhunts`
 - Awesome Indie-specific questions → `/sales-awesomeindie`
+- LaunchDay-specific questions → `/sales-launchday`
 - Product Hunt-specific questions → `/product-hunt-launch` (third-party)
 - Email marketing to subscribers → `/sales-email-marketing`
 - Landing page optimization → `/sales-checkout`
@@ -83,6 +84,7 @@ Otherwise, answer directly from the directory knowledge below.
 | Firsto | DR57 dofollow (conditional free) | Free (conditional) | $19.90 premium / $59.90 pro / $149 SEO | ~180 days (free), 24 hours (paid) | Daily rankings + SEO pages | `/sales-firsto` |
 | OpenHunts | DR50 dofollow (conditional free) | Free (conditional) | $9.90 premium / $20 highlight | ~89 weeks (free), next Monday (paid) | Weekly rankings (Mon-Mon) | `/sales-openhunts` |
 | Huzzler | DR41-47 dofollow (winners only) | Free | $79 Black (lifetime) / $34 promoted | None — instant | Weekly Launch Arena competition | `/sales-huzzler` |
+| LaunchDay | Unknown | None | $99 (if selected) | 1-2 events/month | 24-hour launch event + podcast + influencer promo | `/sales-launchday` |
 | Awesome Indie | DR~19-31 unconfirmed | Free | None | Editorial queue (unknown) | Curated indie directory | `/sales-awesomeindie` |
 | CtrlAlt.cc | DA30 dofollow | Free | $39 (1-week feature) | Up to 2 months (free) | Curated directory | `/sales-ctrlaltcc` |
 
@@ -142,6 +144,7 @@ If budget allows, pay to skip queues and guarantee backlinks:
 3. **Firsto Premium ($19.90)** — 24-hour launch, guaranteed DR57+ dofollow backlink + permanent SEO page
 3. **CtrlAlt.cc ($39)** — skip 2-month queue, 1-week homepage feature
 4. **MicroLaunch Pro ($39/mo)** — skip queue, 2x visibility, DR59 backlink
+4. **LaunchDay ($99)** — curated 24-hour event with podcast interview + influencer promo (indie/bootstrapped only, >40% discount required)
 4. **LaunchingNext ($99)** — 1-business-day expedited review
 5. **BetaList ($129)** — skip queue for pre-launch directory
 
@@ -191,6 +194,7 @@ Each platform has different listing requirements, but these principles apply eve
 | $46 | Open Launch ($12) + Huzzler promoted ($34) | 9+ backlinks, 2 with boosted visibility |
 | $51 | Open Launch ($12) + CtrlAlt.cc ($39) | 9+ backlinks, 2 with premium placement |
 | $90 | Above + MicroLaunch Pro ($39) | 8+ backlinks, 3 with premium placement |
+| $99 | LaunchDay event (podcast + influencer promo, no guaranteed backlink) | 10+ backlinks from free subs + event exposure |
 | $189 | Above + LaunchingNext expedited ($99) | 8+ backlinks, 4 with premium placement |
 | $318 | Above + BetaList skip ($129) | 9+ backlinks, 5 with premium placement |
 
@@ -234,6 +238,7 @@ For each directory submission, track:
 - `/sales-firsto` — Firsto platform help (fair launch platform, sustained SEO discovery, Open Launch fork)
 - `/sales-openhunts` — OpenHunts platform help (weekly launch cycle, DR50 backlinks)
 - `/sales-awesomeindie` — Awesome Indie platform help (curated indie directory, free submission)
+- `/sales-launchday` — LaunchDay platform help (24-hour launch events, podcast, influencer promo, $99)
 - `/sales-funnel` — Build and optimize sales funnels for conversion
 - `/sales-audience-growth` — Grow your email list and subscriber base
 - `/sales-checkout` — Optimize landing pages and checkout for conversion
