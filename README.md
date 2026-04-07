@@ -1,6 +1,6 @@
 # Sales Skills
 
-[![Skills](https://img.shields.io/badge/skills-98-blue)](https://skills.sh/sales-skills/sales)
+[![Skills](https://img.shields.io/badge/skills-99-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
@@ -13,7 +13,7 @@ Claude Code skills for sales, marketing, and GTM workflows.
 npx skills add sales-skills/sales --skills sales-do
 ```
 
-Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill (95 first-party + 53 third-party skills).
+Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill (96 first-party + 53 third-party skills).
 
 Want every skill at once?
 
@@ -23,7 +23,7 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 91 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 92 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -264,11 +264,17 @@ Router recommends a 5-skill sequence:
 |---|---|
 | `/sales-ctrlaltcc` | CtrlAlt.cc platform help — curated startup tool directory with 26 categories, daily featured products, community upvoting, free submission (editorial review queue, up to 2 months), paid launch ($39 for week-long homepage feature with dofollow links), DA30 dofollow backlinks, Product of the Week newsletter |
 
+### Open Launch & Platform
+
+| Skill | What it does |
+|---|---|
+| `/sales-openlaunch` | Open Launch platform help — open-source Product Hunt alternative with tiered backlink system. Free submission (queue, conditional DR65 dofollow backlink requiring Top 3 daily + badge display), Premium launch ($12 for next-day launch with guaranteed DR65 backlink, 10 slots/day), SEO Growth ($59 for dedicated review article + backlink), daily rankings, community upvoting, 1,000+ listed tools |
+
 ### Startup Directory Launch Strategy
 
 | Skill | What it does |
 |---|---|
-| `/sales-launch-directory` | Startup directory launch strategy — coordinates submissions across CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Product Hunt, and more. Platform selection, launch sequencing (instant-list first, editorial last), backlink stacking, listing optimization, budget allocation, multi-directory coordination |
+| `/sales-launch-directory` | Startup directory launch strategy — coordinates submissions across Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Product Hunt, and more. Platform selection, launch sequencing (instant-list first, editorial last), backlink stacking, listing optimization, budget allocation, multi-directory coordination |
 
 ### Seamless.AI & Platform
 

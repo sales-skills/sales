@@ -106,15 +106,15 @@ ProductBurst includes a marketplace section for products and services, extending
 
 ### Comparison with other launch platforms
 
-| Feature | ProductBurst | Product Hunt | MicroLaunch | LaunchingNext | CtrlAlt.cc |
-|---|---|---|---|---|---|
-| Ranking window | Daily + weekly (ongoing) | 24 hours | 30 days | None (static directory) | None (curated daily) |
-| Editorial review | None — instant | Community-moderated | Editorial review | Editorial review | Yes (manual curation) |
-| Upvoting | Yes | Yes | Yes (idea + product scores) | No | Yes |
-| Featured (paid) | One-time fee | No paid features | Pro Launch $39/mo | $99 expedited + promoted ads | $39 (1-week feature) |
-| Backlink DR/DA | DR46 | DR91 | DR59 | DR51 | DA30 |
-| Idea-stage OK | Yes | No (needs working product) | No (needs working product) | No (needs working product) | No |
-| Speed to list | <5 minutes | Varies (community) | Free queue or pay to skip | Weeks/months or $99 | Up to 2 months or $39 |
+| Feature | ProductBurst | Product Hunt | Open Launch | MicroLaunch | LaunchingNext | CtrlAlt.cc |
+|---|---|---|---|---|---|---|
+| Ranking window | Daily + weekly (ongoing) | 24 hours | Daily (resets) | 30 days | None (static directory) | None (curated daily) |
+| Editorial review | None — instant | Community-moderated | Queue or $12 skip | Editorial review | Editorial review | Yes (manual curation) |
+| Upvoting | Yes | Yes | Yes | Yes (idea + product scores) | No | Yes |
+| Featured (paid) | One-time fee | No paid features | $12 premium / $59 SEO | Pro Launch $39/mo | $99 expedited + promoted ads | $39 (1-week feature) |
+| Backlink DR/DA | DR46 | DR91 | DR65 (conditional free) | DR59 | DR51 | DA30 |
+| Idea-stage OK | Yes | No (needs working product) | No | No (needs working product) | No (needs working product) | No |
+| Speed to list | <5 minutes | Varies (community) | Queue or next day ($12) | Free queue or pay to skip | Weeks/months or $99 | Up to 2 months or $39 |
 
 ## Step 4 — Actionable guidance
 
@@ -171,6 +171,7 @@ If you're pre-build:
 ## Related skills
 
 - `/sales-launch-directory` — Launch strategy across multiple startup directories
+- `/sales-openlaunch` — Open Launch platform help (open-source PH alternative, DR65 backlinks)
 - `/sales-ctrlaltcc` — CtrlAlt.cc platform help (curated tool directory)
 - `/sales-microlaunch` — MicroLaunch platform help (30-day leaderboard, deals marketplace)
 - `/sales-launchingnext` — LaunchingNext platform help (curated startup directory)

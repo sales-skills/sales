@@ -200,6 +200,7 @@ If you're listing to showcase (not sell):
 - `/sales-ctrlaltcc` — CtrlAlt.cc platform help (curated tool directory)
 - `/sales-microlaunch` — MicroLaunch platform help (30-day leaderboard, deals marketplace)
 - `/sales-launchingnext` — LaunchingNext platform help (curated startup directory)
+- `/sales-openlaunch` — Open Launch platform help (open-source PH alternative, DR65 backlinks)
 - `/sales-productburst` — ProductBurst platform help (daily/weekly rankings, badges)
 - `/sales-solopush` — SoloPush platform help (indie maker community)
 - `/sales-funnel` — Build and optimize sales funnels for conversion

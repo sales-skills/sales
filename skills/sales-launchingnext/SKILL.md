@@ -165,6 +165,7 @@ LaunchingNext works best as one listing in a broader directory submission strate
 - `/sales-launch-directory` — Launch strategy across multiple startup directories
 - `/sales-ctrlaltcc` — CtrlAlt.cc platform help (curated tool directory)
 - `/sales-microlaunch` — MicroLaunch platform help (30-day leaderboard, deals marketplace)
+- `/sales-openlaunch` — Open Launch platform help (open-source PH alternative, DR65 backlinks)
 - `/sales-productburst` — ProductBurst platform help (daily/weekly rankings, badges)
 - `/sales-solopush` — SoloPush platform help (indie maker community)
 - `/sales-sideprojectors` — SideProjectors platform help (buy/sell side projects)

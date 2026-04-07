@@ -199,6 +199,7 @@ Unlike Product Hunt, MicroLaunch rewards sustained engagement over a month:
 - `/sales-ctrlaltcc` — CtrlAlt.cc platform help (curated tool directory)
 - `/sales-productburst` — ProductBurst platform help (daily/weekly rankings, badges)
 - `/sales-launchingnext` — LaunchingNext platform help (curated startup directory)
+- `/sales-openlaunch` — Open Launch platform help (open-source PH alternative, DR65 backlinks)
 - `/sales-solopush` — SoloPush platform help (indie maker community)
 - `/sales-sideprojectors` — SideProjectors platform help (buy/sell side projects)
 - `/sales-funnel` — Build and optimize sales funnels for conversion

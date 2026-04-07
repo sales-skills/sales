@@ -1,6 +1,6 @@
 ---
 name: sales-launch-directory
-description: "Startup directory launch strategy — coordinates submissions across multiple product launch and discovery platforms for maximum visibility, backlinks, and early users. Covers platform selection (CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Product Hunt, BetaList, Hacker News, Indie Hackers), launch sequencing (instant-list first, editorial-review last), backlink stacking (DA/DR comparison across directories), listing optimization, timing strategy, and multi-platform coordination. Use when planning a product launch across directories, choosing which directories to submit to, or building a backlink portfolio from startup directories. Do NOT use for a single specific platform (use the platform skill instead). Do NOT use for paid advertising (use /sales-b2b-advertising)."
+description: "Startup directory launch strategy — coordinates submissions across multiple product launch and discovery platforms for maximum visibility, backlinks, and early users. Covers platform selection (Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Product Hunt, BetaList, Hacker News, Indie Hackers), launch sequencing (instant-list first, editorial-review last), backlink stacking (DA/DR comparison across directories), listing optimization, timing strategy, and multi-platform coordination. Use when planning a product launch across directories, choosing which directories to submit to, or building a backlink portfolio from startup directories. Do NOT use for a single specific platform (use the platform skill instead). Do NOT use for paid advertising (use /sales-b2b-advertising)."
 argument-hint: "[describe your product and what you want from directory submissions]"
 license: MIT
 version: 1.0.0
@@ -50,6 +50,7 @@ Ask the user:
 ## Step 2 — Route or answer directly
 
 If the request maps to a single platform, route:
+- Open Launch-specific questions → `/sales-openlaunch`
 - CtrlAlt.cc-specific questions → `/sales-ctrlaltcc`
 - MicroLaunch-specific questions → `/sales-microlaunch`
 - LaunchingNext-specific questions → `/sales-launchingnext`
@@ -70,6 +71,7 @@ Otherwise, answer directly from the directory knowledge below.
 | Platform | Backlink | Cost (free tier) | Cost (paid) | Queue wait | Model | Skill |
 |---|---|---|---|---|---|---|
 | SideProjectors | DR69 dofollow | Free | None | Varies | Buy/sell marketplace + showcase | `/sales-sideprojectors` |
+| Open Launch | DR65 dofollow | Free (conditional) | $12 premium / $59 SEO | Queue (free), next day ($12) | Daily rankings (PH-style) | `/sales-openlaunch` |
 | MicroLaunch | DR59 dofollow | Free | $39/mo Pro Launch | Varies (free), instant (Pro) | 30-day leaderboard | `/sales-microlaunch` |
 | LaunchingNext | DR51 dofollow | Free | $99 expedited | Weeks/months (free), 1 day ($99) | Curated directory | `/sales-launchingnext` |
 | ProductBurst | DR46 dofollow | Free | One-time featured fee | None — instant | Daily/weekly rankings | `/sales-productburst` |
@@ -99,11 +101,12 @@ All first-party + key third-party directories sorted by backlink strength:
 | 4 | F6S | DR74 | Yes | Yes |
 | 5 | SideProjectors | DR69 | Yes | Yes |
 | 6 | BetaList | DR67 | Yes | Yes (queue) |
-| 7 | MicroLaunch | DR59 | Yes | Yes (queue) |
-| 8 | LaunchingNext | DR51 | Yes | Yes (queue) |
-| 9 | ProductBurst | DR46 | Yes | Yes |
-| 10 | SoloPush | DR46-47 | Yes | Yes |
-| 11 | CtrlAlt.cc | DA30 | Yes | Yes (queue) |
+| 7 | Open Launch | DR65 | Yes | Conditional (Top 3 + badge) / $12 guaranteed |
+| 8 | MicroLaunch | DR59 | Yes | Yes (queue) |
+| 9 | LaunchingNext | DR51 | Yes | Yes (queue) |
+| 10 | ProductBurst | DR46 | Yes | Yes |
+| 11 | SoloPush | DR46-47 | Yes | Yes |
+| 12 | CtrlAlt.cc | DA30 | Yes | Yes (queue) |
 
 ## Step 4 — Actionable guidance
 
@@ -119,21 +122,23 @@ Submit to platforms with no editorial queue to get live immediately:
 
 **Goal**: Get live listings, initial backlinks, and early feedback to refine your messaging.
 
-#### Phase 2 — Paid fast-track (Day 3-7)
-If budget allows, pay to skip queues on curated directories:
-1. **CtrlAlt.cc ($39)** — skip 2-month queue, 1-week homepage feature
-2. **MicroLaunch Pro ($39/mo)** — skip queue, 2x visibility, DR59 backlink
-3. **LaunchingNext ($99)** — 1-business-day expedited review
-4. **BetaList ($129)** — skip queue for pre-launch directory
+#### Phase 2 — Paid fast-track (Day 1-7)
+If budget allows, pay to skip queues and guarantee backlinks:
+1. **Open Launch Premium ($12)** — next-day launch, guaranteed DR65 dofollow backlink (best value)
+2. **CtrlAlt.cc ($39)** — skip 2-month queue, 1-week homepage feature
+3. **MicroLaunch Pro ($39/mo)** — skip queue, 2x visibility, DR59 backlink
+4. **LaunchingNext ($99)** — 1-business-day expedited review
+5. **BetaList ($129)** — skip queue for pre-launch directory
 
 **Goal**: Get featured on curated platforms while momentum is building.
 
 #### Phase 3 — Free editorial queues (Day 1, but goes live later)
 Submit to all free editorial queues on Day 1 — they'll go live weeks/months later:
-1. **CtrlAlt.cc (free)** — up to 2 months wait
-2. **MicroLaunch (free)** — variable queue
-3. **LaunchingNext (free)** — weeks/months wait
-4. **SideProjectors** — editorial review, variable timing
+1. **Open Launch (free)** — queue wait, conditional backlink (Top 3 + badge)
+2. **CtrlAlt.cc (free)** — up to 2 months wait
+3. **MicroLaunch (free)** — variable queue
+4. **LaunchingNext (free)** — weeks/months wait
+5. **SideProjectors** — editorial review, variable timing
 
 **Goal**: Set-and-forget submissions that provide long-tail backlinks and discovery.
 
@@ -161,11 +166,12 @@ Each platform has different listing requirements, but these principles apply eve
 
 | Budget | Recommended allocation | Expected backlinks |
 |---|---|---|
-| $0 | All free submissions (7+ platforms) | 7+ dofollow backlinks over 1-3 months |
-| $39 | CtrlAlt.cc paid OR MicroLaunch Pro | 7+ backlinks, 1 faster with feature |
-| $78 | CtrlAlt.cc paid + MicroLaunch Pro | 7+ backlinks, 2 with premium placement |
-| $177 | Above + LaunchingNext expedited ($99) | 7+ backlinks, 3 with premium placement |
-| $306 | Above + BetaList skip ($129) | 8+ backlinks, 4 with premium placement |
+| $0 | All free submissions (8+ platforms) | 8+ dofollow backlinks over 1-3 months |
+| $12 | Open Launch Premium (best value) | 8+ backlinks, 1 guaranteed DR65 |
+| $51 | Open Launch ($12) + CtrlAlt.cc ($39) | 8+ backlinks, 2 with premium placement |
+| $90 | Above + MicroLaunch Pro ($39) | 8+ backlinks, 3 with premium placement |
+| $189 | Above + LaunchingNext expedited ($99) | 8+ backlinks, 4 with premium placement |
+| $318 | Above + BetaList skip ($129) | 9+ backlinks, 5 with premium placement |
 
 ### Tracking and measuring results
 
@@ -196,6 +202,7 @@ For each directory submission, track:
 
 ## Related skills
 
+- `/sales-openlaunch` — Open Launch platform help (open-source PH alternative, DR65 backlinks)
 - `/sales-ctrlaltcc` — CtrlAlt.cc platform help
 - `/sales-productburst` — ProductBurst platform help (daily/weekly rankings, badges)
 - `/sales-microlaunch` — MicroLaunch platform help (30-day leaderboard, deals marketplace)
