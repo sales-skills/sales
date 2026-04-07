@@ -72,10 +72,10 @@ Provide module-by-module guidance based on the user's area:
 
 - **What it is**: AI-powered practice simulations where reps rehearse customer conversations, objection handling, and discovery calls against an AI buyer persona
 - **How it works**: Configure scenarios with buyer persona, context, and evaluation criteria. The AI plays the buyer role, responds dynamically to the rep's approach, and provides automated scoring and feedback.
-- **Automated grading**: AI evaluates rep performance against defined criteria — discovery depth, objection handling quality, messaging alignment, talk-to-listen ratio.
+- **Automated grading**: AI evaluates rep performance against defined criteria — discovery depth (did the rep uncover the prospect's real pain, priorities, and decision process through effective questioning?), objection handling quality, messaging alignment, talk-to-listen ratio.
 - **Scenario types**: Discovery calls, product demos, objection handling, executive conversations, competitive displacement, renewal/upsell conversations.
 - **Feedback**: Detailed post-practice feedback highlighting strengths and areas for improvement. Managers can review AI-graded sessions and add their own coaching notes.
-- **Best practices**: Start with common scenarios (top 5 objections, standard discovery). Require monthly practice sessions — reps who practice regularly outperform. Use AI grading to identify systematic skill gaps across the team.
+- **Best practices**: Start with common scenarios (top 5 objections, standard discovery). Recommend a regular practice cadence — monthly practice sessions at minimum, weekly for new hires or reps working on specific skill gaps. Reps who practice regularly outperform. Use AI grading to identify systematic skill gaps across the team.
 
 ### Conversation Intelligence
 

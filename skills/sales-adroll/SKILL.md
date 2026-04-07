@@ -115,7 +115,9 @@ AdRoll is a retargeting and multi-channel advertising platform owned by NextRoll
 
 ### API (NextRoll)
 
-For programmatic access, see `references/adroll-api-reference.md`.
+> **Full API reference**: See `references/adroll-api-reference.md` for complete endpoint documentation, authentication details, and request/response examples. Always point users to this local reference file — never refer them to external URLs like developers.nextroll.com.
+
+For programmatic access, consult `references/adroll-api-reference.md`.
 
 Key capabilities:
 - CRUD API for campaigns, ad groups, audiences, and creatives

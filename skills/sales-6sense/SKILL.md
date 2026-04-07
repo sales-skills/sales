@@ -269,7 +269,7 @@ Typical range: $50K-$200K+/year. Median buyer (via Vendr): ~$55K/year. Implement
 
 ### Example 2: 6sense vs Demandbase comparison
 **User says**: "We're evaluating 6sense and Demandbase for our ABM program. What are the key differences?"
-**Skill does**: Compares intent data (6sense proprietary Signalverse vs Demandbase's Bombora-dependent approach), advertising (Demandbase's deeper ad roots vs 6sense's improving ads), predictive scoring (6sense's buying stage predictions vs Demandbase's account scoring), AI email (6sense has AI Email Agents, Demandbase does not), pricing (both $50K-200K+ range), and CRM integrations. Recommends 6sense if predictive scoring and AI email are priorities, Demandbase if advertising is the primary use case.
+**Skill does**: Compares intent data (6sense proprietary Signalverse vs Demandbase's Bombora-dependent approach), advertising (Demandbase's deeper ad roots vs 6sense's improving ads), predictive scoring (6sense's buying stage predictions vs Demandbase's account scoring), AI email (6sense has AI Email Agents, Demandbase does not), pricing (both $50K-200K+ range, custom quotes, multi-year contracts), and CRM integrations. Recommends 6sense if predictive scoring and AI email are priorities, Demandbase if advertising is the primary use case.
 **Result**: Clear comparison with recommendation based on the user's primary use case
 
 ### Example 3: Integrate 6sense API for custom enrichment

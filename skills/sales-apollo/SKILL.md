@@ -149,7 +149,7 @@ Based on the user's specific question:
 2. **Configuration recommendations** — specific settings to change, with where to find them (Settings > [section] > [page])
 3. **Common pitfalls** — what can go wrong and how to avoid it
 4. **Verification** — how to confirm the change worked
-5. **For API questions** — always include a pointer: "For the full endpoint catalog, request/response schemas, and rate limits, see `references/apollo-api-reference.md`."
+5. **For API questions** — always end your response with this exact line: "For the full endpoint catalog, request/response schemas, and rate limits, see `references/apollo-api-reference.md`." This citation is mandatory even when you provide inline code examples.
 
 ## Gotchas
 
@@ -180,7 +180,15 @@ Based on the user's specific question:
 3. Recommends sync direction and conflict resolution settings
 **Result**: User has diagnosed and resolved the duplicate creation issue
 
-### Example 2: Credit management
+### Example 2: API integration
+**User says**: "I want to use the Apollo API to auto-create contacts from our onboarding form"
+**Skill does**:
+1. Explains API key auth (`x-api-key` header) and the POST /contacts endpoint
+2. Provides a sample request payload with name, email, company, and title fields
+3. Points the user to `references/apollo-api-reference.md` for the full endpoint catalog, request/response schemas, and rate limits
+**Result**: User has a working integration plan and knows where to find complete API documentation in `references/apollo-api-reference.md`
+
+### Example 3: Credit management
 **User says**: "I'm burning through my Apollo credits too fast"
 **Skill does**:
 1. Reviews the user's plan and credit allocation

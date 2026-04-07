@@ -26,6 +26,8 @@ Before recommending anything, collect these details from the user:
 
 If any of these are missing, ask before proceeding. Do not guess at margins or pricing.
 
+**Exception**: When the user asks for platform-specific setup (e.g., "set up two-tier affiliates in Groove"), provide the full walkthrough immediately using typical defaults (e.g., Tier 1: 20%–30%, Tier 2: 5%–10%) rather than stopping to ask for context. You can note these are starting points they should adjust based on their margins.
+
 ## Step 2: Affiliate Program Strategy
 
 ### Commission Models
@@ -140,10 +142,11 @@ GrooveAffiliate is Groove's built-in affiliate management system, tightly integr
 - Affiliates access their dashboard to get links, view stats, and track earnings
 - Custom tracking IDs let affiliates tag campaigns for their own analytics
 
-**Two-tier setup in Groove:**
+**Two-tier setup in GrooveAffiliate:**
 - Enable two-tier in program settings
-- Set Tier 2 commission rate (typically 5%–10% of the sale)
-- Groove automatically tracks which affiliate recruited which sub-affiliate
+- Set Tier 1 commission rate (typically 20%–30% of the sale) — this is what the affiliate earns on their own direct sales
+- Set Tier 2 commission rate (typically 5%–10% of the sale) — this is what the original affiliate earns when their recruited sub-affiliates make sales. For example, if Affiliate A recruits Affiliate B, and B makes a sale, A earns the Tier 2 commission on B's sale in addition to their own Tier 1 commissions on their own sales
+- GrooveAffiliate automatically tracks the recruitment chain — which affiliate recruited which sub-affiliate
 - Payouts for both tiers are calculated and displayed in the affiliate dashboard
 
 **Promotional tools in Groove:**

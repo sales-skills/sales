@@ -101,7 +101,7 @@ Ask the user:
 - Make sharing effortless (pre-written tweet, copy-paste link)
 - Show progress (leaderboard, progress bar)
 - Rewards should be desirable but not so expensive they attract gaming
-- Fraud prevention: verify referred email engagement before awarding
+- **Fraud prevention**: Referral programs are susceptible to fake signups, bot traffic, and self-referral abuse. Prevention strategies: require double opt-in for referred subscribers, verify referred email engagement (opens/clicks) before awarding rewards, set a minimum engagement window (e.g., subscriber must open at least 1 email within 14 days), block disposable email domains, monitor for suspicious patterns (same IP, rapid-fire signups, identical referrer chains), and review top referrers manually. Track 30-day retention of referred subscribers — if a referral source shows >50% unsubscribe rate, investigate or block it
 
 ### Social-to-email conversion
 

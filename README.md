@@ -1,6 +1,6 @@
 # Sales Skills
 
-[![Skills](https://img.shields.io/badge/skills-101-blue)](https://skills.sh/sales-skills/sales)
+[![Skills](https://img.shields.io/badge/skills-102-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
@@ -282,11 +282,17 @@ Router recommends a 5-skill sequence:
 |---|---|
 | `/sales-firsto` | Firsto platform help — fair product launch platform for indie makers with sustained SEO discovery. Free submission (~180-day queue, dofollow for Top 3 only + badge), Premium ($19.90 for 24-hour launch with guaranteed DR57+ backlink), Pro ($59.90 — 30-day homepage feature, mini review, star ratings in search), SEO Growth ($149 for custom review article), permanent SEO-optimized product pages, 72 categories, forked from Open Launch |
 
+### OpenHunts & Platform
+
+| Skill | What it does |
+|---|---|
+| `/sales-openhunts` | OpenHunts platform help — weekly product launch and discovery platform for indie makers. Free submission (~89-week queue, dofollow for Top 3 weekly only), Premium ($9.90 for next-Monday launch with guaranteed DR50 dofollow backlink), Highlight ($20/week — instant pinned launch with guaranteed Twitter/newsletter shoutout), weekly Monday launch cycle, 72+ categories, founder leaderboards |
+
 ### Startup Directory Launch Strategy
 
 | Skill | What it does |
 |---|---|
-| `/sales-launch-directory` | Startup directory launch strategy — coordinates submissions across Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, Product Hunt, and more. Platform selection, launch sequencing (instant-list first, editorial last), backlink stacking, listing optimization, budget allocation, multi-directory coordination |
+| `/sales-launch-directory` | Startup directory launch strategy — coordinates submissions across Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, OpenHunts, Product Hunt, and more. Platform selection, launch sequencing (instant-list first, editorial last), backlink stacking, listing optimization, budget allocation, multi-directory coordination |
 
 ### Seamless.AI & Platform
 

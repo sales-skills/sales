@@ -69,7 +69,7 @@ Provide module-by-module guidance based on the user's area:
 
 ### Automations
 - **What they are**: Visual workflows triggered by events — email opens/clicks, site visits, purchases, form submissions, deal changes, tag additions/removals, dates, custom events
-- **Builder**: Drag-and-drop canvas with trigger, if/else branching, wait steps (fixed duration or until conditions), goals, split actions, and action nodes
+- **Builder**: ActiveCampaign's visual automation builder is a drag-and-drop canvas where you design workflows using trigger, if/else branching, wait steps (fixed duration or until conditions), goals, split actions, and action nodes
 - **Triggers**: Email events (open, click, reply, forward, bounce), site visits (visited URL, time on site), purchases, form submissions, deal changes (stage move, field update, won/lost), tag added/removed, date-based, custom events
 - **If/else branching**: Conditional paths based on contact fields, tags, list membership, deal properties, lead score, site visits, email engagement, or custom conditions
 - **Wait steps**: Wait a fixed duration, wait until a specific date, or wait until a condition is met (e.g., contact visits a URL or reaches a lead score threshold)
