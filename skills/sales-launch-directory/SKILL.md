@@ -1,6 +1,6 @@
 ---
 name: sales-launch-directory
-description: "Startup directory launch strategy — coordinates submissions across multiple product launch and discovery platforms for maximum visibility, backlinks, and early users. Covers platform selection (Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Product Hunt, BetaList, Hacker News, Indie Hackers), launch sequencing (instant-list first, editorial-review last), backlink stacking (DA/DR comparison across directories), listing optimization, timing strategy, and multi-platform coordination. Use when planning a product launch across directories, choosing which directories to submit to, or building a backlink portfolio from startup directories. Do NOT use for a single specific platform (use the platform skill instead). Do NOT use for paid advertising (use /sales-b2b-advertising)."
+description: "Startup directory launch strategy — coordinates submissions across multiple product launch and discovery platforms for maximum visibility, backlinks, and early users. Covers platform selection (Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, Product Hunt, BetaList, Hacker News, Indie Hackers), launch sequencing (instant-list first, editorial-review last), backlink stacking (DA/DR comparison across directories), listing optimization, timing strategy, and multi-platform coordination. Use when planning a product launch across directories, choosing which directories to submit to, or building a backlink portfolio from startup directories. Do NOT use for a single specific platform (use the platform skill instead). Do NOT use for paid advertising (use /sales-b2b-advertising)."
 argument-hint: "[describe your product and what you want from directory submissions]"
 license: MIT
 version: 1.0.0
@@ -62,6 +62,7 @@ If the request maps to a single platform, route:
 - OpenHunts-specific questions → `/sales-openhunts`
 - Awesome Indie-specific questions → `/sales-awesomeindie`
 - LaunchDay-specific questions → `/sales-launchday`
+- Super Launch-specific questions → `/sales-superlaunch`
 - Product Hunt-specific questions → `/product-hunt-launch` (third-party)
 - Email marketing to subscribers → `/sales-email-marketing`
 - Landing page optimization → `/sales-checkout`
@@ -84,6 +85,7 @@ Otherwise, answer directly from the directory knowledge below.
 | Firsto | DR57 dofollow (conditional free) | Free (conditional) | $19.90 premium / $59.90 pro / $149 SEO | ~180 days (free), 24 hours (paid) | Daily rankings + SEO pages | `/sales-firsto` |
 | OpenHunts | DR50 dofollow (conditional free) | Free (conditional) | $9.90 premium / $20 highlight | ~89 weeks (free), next Monday (paid) | Weekly rankings (Mon-Mon) | `/sales-openhunts` |
 | Huzzler | DR41-47 dofollow (winners only) | Free | $79 Black (lifetime) / $34 promoted | None — instant | Weekly Launch Arena competition | `/sales-huzzler` |
+| Super Launch | DR59 nofollow (free) / dofollow (paid) | Free | $49/mo advertising | None — instant (7-day front page) | Minimalist directory + leaderboard | `/sales-superlaunch` |
 | LaunchDay | Unknown | None | $99 (if selected) | 1-2 events/month | 24-hour launch event + podcast + influencer promo | `/sales-launchday` |
 | Awesome Indie | DR~19-31 unconfirmed | Free | None | Editorial queue (unknown) | Curated indie directory | `/sales-awesomeindie` |
 | CtrlAlt.cc | DA30 dofollow | Free | $39 (1-week feature) | Up to 2 months (free) | Curated directory | `/sales-ctrlaltcc` |
@@ -113,13 +115,14 @@ All first-party + key third-party directories sorted by backlink strength:
 | 6 | BetaList | DR67 | Yes | Yes (queue) |
 | 7 | Open Launch | DR65 | Yes | Conditional (Top 3 + badge) / $12 guaranteed |
 | 8 | MicroLaunch | DR59 | Yes | Yes (queue) |
-| 9 | Firsto | DR57 | Yes (conditional free) | Conditional (Top 3 + badge) / $19.90 guaranteed |
-| 10 | LaunchingNext | DR51 | Yes | Yes (queue) |
-| 11 | OpenHunts | DR50 | Yes (conditional free) | Conditional (Top 3 weekly) / $9.90 guaranteed |
-| 12 | ProductBurst | DR46 | Yes | Yes |
-| 13 | SoloPush | DR46-47 | Yes | Yes |
-| 14 | Huzzler | DR41-47 | Yes (winners only) | Yes (must win Launch Arena) |
-| 15 | Awesome Indie | DR~19-31 | Unconfirmed | Yes (queue) |
+| 9 | Super Launch | DR59 | Paid only ($49/mo) | Free (nofollow) / $49/mo (dofollow) |
+| 10 | Firsto | DR57 | Yes (conditional free) | Conditional (Top 3 + badge) / $19.90 guaranteed |
+| 11 | LaunchingNext | DR51 | Yes | Yes (queue) |
+| 12 | OpenHunts | DR50 | Yes (conditional free) | Conditional (Top 3 weekly) / $9.90 guaranteed |
+| 13 | ProductBurst | DR46 | Yes | Yes |
+| 14 | SoloPush | DR46-47 | Yes | Yes |
+| 15 | Huzzler | DR41-47 | Yes (winners only) | Yes (must win Launch Arena) |
+| 16 | Awesome Indie | DR~19-31 | Unconfirmed | Yes (queue) |
 | 16 | CtrlAlt.cc | DA30 | Yes | Yes (queue) |
 
 ## Step 4 — Actionable guidance
@@ -132,7 +135,8 @@ The key principle: **submit to instant-listing platforms first, editorial-review
 Submit to platforms with no editorial queue to get live immediately:
 1. **SoloPush** — instant listing, no gatekeeping, solo maker community
 2. **ProductBurst** — instant listing, daily/weekly ranking opportunities
-3. **Huzzler Launch Arena** — submit Monday for weekly competition (Wed-Sun voting)
+3. **Super Launch** — instant listing, 7-day guaranteed front page (note: free backlink is nofollow)
+4. **Huzzler Launch Arena** — submit Monday for weekly competition (Wed-Sun voting)
 4. **Indie Hackers** — post in relevant groups, share your story
 
 **Goal**: Get live listings, initial backlinks, and early feedback to refine your messaging.
@@ -239,6 +243,7 @@ For each directory submission, track:
 - `/sales-openhunts` — OpenHunts platform help (weekly launch cycle, DR50 backlinks)
 - `/sales-awesomeindie` — Awesome Indie platform help (curated indie directory, free submission)
 - `/sales-launchday` — LaunchDay platform help (24-hour launch events, podcast, influencer promo, $99)
+- `/sales-superlaunch` — Super Launch platform help (7-day front page, DR59 dofollow for paid, Top 50 leaderboard)
 - `/sales-funnel` — Build and optimize sales funnels for conversion
 - `/sales-audience-growth` — Grow your email list and subscriber base
 - `/sales-checkout` — Optimize landing pages and checkout for conversion
