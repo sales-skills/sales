@@ -119,16 +119,16 @@ Huzzler is a founder community and product launch platform built around a weekly
 
 ### Comparison with other launch platforms
 
-| Feature | Huzzler | ProductBurst | SoloPush | Open Launch | MicroLaunch | LaunchingNext | CtrlAlt.cc |
-|---|---|---|---|---|---|---|---|
-| Launch model | Weekly competition (Mon-Sun) | Daily/weekly rankings | No pressure — anytime | Daily rankings (8AM UTC) | 30-day leaderboard | Static directory | Curated daily |
-| Editorial review | None — instant | None — instant | None — instant | Queue (free) or $12 skip | Editorial review | Editorial review | Yes (manual curation) |
-| Backlink | Winners only (dofollow) | Automatic dofollow | Automatic dofollow | Conditional (Top 3 + badge) or $12 | Queue-dependent | Automatic dofollow | Automatic dofollow |
-| Backlink DR | DR41-47 | DR46 | DR46-47 | DR65 | DR59 | DR51 | DA30 |
-| Premium option | $79 Black (lifetime) / $34 promoted | One-time featured fee | Unknown | $12 premium / $59 SEO | $39/mo Pro Launch | $99 expedited | $39 (1-week feature) |
-| Community | Yes (13+ categories, forums) | Comment threads | Reviews + comments | Comment threads | Community + deals | No community | No community |
-| Idea-stage OK | Yes (#startup-ideas) | Yes | Yes (implied) | No | No | No | No |
-| Unique feature | Stripe-verified MRR, AI-free | Top of Day/Week badges | Solo maker focus | Open source, tiered backlinks | Deals marketplace | 45K+ startups, newsletter | 26 curated categories |
+| Feature | Huzzler | Firsto | ProductBurst | SoloPush | Open Launch | MicroLaunch | LaunchingNext | CtrlAlt.cc |
+|---|---|---|---|---|---|---|---|---|
+| Launch model | Weekly competition (Mon-Sun) | Daily rankings + SEO pages | Daily/weekly rankings | No pressure — anytime | Daily rankings (8AM UTC) | 30-day leaderboard | Static directory | Curated daily |
+| Editorial review | None — instant | None — instant | None — instant | None — instant | Queue (free) or $12 skip | Editorial review | Editorial review | Yes (manual curation) |
+| Backlink | Winners only (dofollow) | Conditional (Top 3 + badge) or paid | Automatic dofollow | Automatic dofollow | Conditional (Top 3 + badge) or $12 | Queue-dependent | Automatic dofollow | Automatic dofollow |
+| Backlink DR | DR41-47 | DR57 (claimed 59+) | DR46 | DR46-47 | DR65 | DR59 | DR51 | DA30 |
+| Premium option | $79 Black (lifetime) / $34 promoted | $19.90 / $59.90 / $149 | One-time featured fee | Unknown | $12 premium / $59 SEO | $39/mo Pro Launch | $99 expedited | $39 (1-week feature) |
+| Community | Yes (13+ categories, forums) | Categories + SEO pages | Comment threads | Reviews + comments | Comment threads | Community + deals | No community | No community |
+| Idea-stage OK | Yes (#startup-ideas) | Unknown | Yes | Yes (implied) | No | No | No | No |
+| Unique feature | Stripe-verified MRR, AI-free | Permanent SEO pages, Open Launch fork | Top of Day/Week badges | Solo maker focus | Open source, tiered backlinks | Deals marketplace | 45K+ startups, newsletter | 26 curated categories |
 
 ### Platform details
 
@@ -200,6 +200,7 @@ Huzzler works best as one platform in a broader launch:
 
 - `/sales-launch-directory` — Launch strategy across multiple startup directories
 - `/sales-openlaunch` — Open Launch platform help (open-source PH alternative, DR65 backlinks)
+- `/sales-firsto` — Firsto platform help (fair launch platform, sustained SEO discovery)
 - `/sales-ctrlaltcc` — CtrlAlt.cc platform help (curated tool directory)
 - `/sales-productburst` — ProductBurst platform help (daily/weekly rankings, badges)
 - `/sales-microlaunch` — MicroLaunch platform help (30-day leaderboard, deals marketplace)

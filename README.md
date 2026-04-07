@@ -1,6 +1,6 @@
 # Sales Skills
 
-[![Skills](https://img.shields.io/badge/skills-100-blue)](https://skills.sh/sales-skills/sales)
+[![Skills](https://img.shields.io/badge/skills-101-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
@@ -13,7 +13,7 @@ Claude Code skills for sales, marketing, and GTM workflows.
 npx skills add sales-skills/sales --skills sales-do
 ```
 
-Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill (97 first-party + 53 third-party skills).
+Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill (98 first-party + 53 third-party skills).
 
 Want every skill at once?
 
@@ -276,11 +276,17 @@ Router recommends a 5-skill sequence:
 |---|---|
 | `/sales-huzzler` | Huzzler platform help — founder community and weekly product launch competition for startups. Launch Arena (Mon-Wed submissions, Wed-Sun voting, Gold/Silver/Bronze badges with dofollow backlinks for winners only), community categories (#feedback, #showcases, #wins, #growth, #marketing), Huzzler Black ($79 one-time — lifetime premium visibility, verified badge, SEO boost), product showcases, Stripe-verified MRR, advertising credits ($34 promoted), AI-free community |
 
+### Firsto & Platform
+
+| Skill | What it does |
+|---|---|
+| `/sales-firsto` | Firsto platform help — fair product launch platform for indie makers with sustained SEO discovery. Free submission (~180-day queue, dofollow for Top 3 only + badge), Premium ($19.90 for 24-hour launch with guaranteed DR57+ backlink), Pro ($59.90 — 30-day homepage feature, mini review, star ratings in search), SEO Growth ($149 for custom review article), permanent SEO-optimized product pages, 72 categories, forked from Open Launch |
+
 ### Startup Directory Launch Strategy
 
 | Skill | What it does |
 |---|---|
-| `/sales-launch-directory` | Startup directory launch strategy — coordinates submissions across Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Product Hunt, and more. Platform selection, launch sequencing (instant-list first, editorial last), backlink stacking, listing optimization, budget allocation, multi-directory coordination |
+| `/sales-launch-directory` | Startup directory launch strategy — coordinates submissions across Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, Product Hunt, and more. Platform selection, launch sequencing (instant-list first, editorial last), backlink stacking, listing optimization, budget allocation, multi-directory coordination |
 
 ### Seamless.AI & Platform
 

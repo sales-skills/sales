@@ -1,6 +1,6 @@
 ---
 name: sales-launch-directory
-description: "Startup directory launch strategy — coordinates submissions across multiple product launch and discovery platforms for maximum visibility, backlinks, and early users. Covers platform selection (Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Product Hunt, BetaList, Hacker News, Indie Hackers), launch sequencing (instant-list first, editorial-review last), backlink stacking (DA/DR comparison across directories), listing optimization, timing strategy, and multi-platform coordination. Use when planning a product launch across directories, choosing which directories to submit to, or building a backlink portfolio from startup directories. Do NOT use for a single specific platform (use the platform skill instead). Do NOT use for paid advertising (use /sales-b2b-advertising)."
+description: "Startup directory launch strategy — coordinates submissions across multiple product launch and discovery platforms for maximum visibility, backlinks, and early users. Covers platform selection (Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, Product Hunt, BetaList, Hacker News, Indie Hackers), launch sequencing (instant-list first, editorial-review last), backlink stacking (DA/DR comparison across directories), listing optimization, timing strategy, and multi-platform coordination. Use when planning a product launch across directories, choosing which directories to submit to, or building a backlink portfolio from startup directories. Do NOT use for a single specific platform (use the platform skill instead). Do NOT use for paid advertising (use /sales-b2b-advertising)."
 argument-hint: "[describe your product and what you want from directory submissions]"
 license: MIT
 version: 1.0.0
@@ -58,6 +58,7 @@ If the request maps to a single platform, route:
 - SoloPush-specific questions → `/sales-solopush`
 - SideProjectors-specific questions → `/sales-sideprojectors`
 - Huzzler-specific questions → `/sales-huzzler`
+- Firsto-specific questions → `/sales-firsto`
 - Product Hunt-specific questions → `/product-hunt-launch` (third-party)
 - Email marketing to subscribers → `/sales-email-marketing`
 - Landing page optimization → `/sales-checkout`
@@ -77,6 +78,7 @@ Otherwise, answer directly from the directory knowledge below.
 | LaunchingNext | DR51 dofollow | Free | $99 expedited | Weeks/months (free), 1 day ($99) | Curated directory | `/sales-launchingnext` |
 | ProductBurst | DR46 dofollow | Free | One-time featured fee | None — instant | Daily/weekly rankings | `/sales-productburst` |
 | SoloPush | DR46-47 dofollow | Free | Unknown | None — instant | No-pressure community | `/sales-solopush` |
+| Firsto | DR57 dofollow (conditional free) | Free (conditional) | $19.90 premium / $59.90 pro / $149 SEO | ~180 days (free), 24 hours (paid) | Daily rankings + SEO pages | `/sales-firsto` |
 | Huzzler | DR41-47 dofollow (winners only) | Free | $79 Black (lifetime) / $34 promoted | None — instant | Weekly Launch Arena competition | `/sales-huzzler` |
 | CtrlAlt.cc | DA30 dofollow | Free | $39 (1-week feature) | Up to 2 months (free) | Curated directory | `/sales-ctrlaltcc` |
 
@@ -105,11 +107,12 @@ All first-party + key third-party directories sorted by backlink strength:
 | 6 | BetaList | DR67 | Yes | Yes (queue) |
 | 7 | Open Launch | DR65 | Yes | Conditional (Top 3 + badge) / $12 guaranteed |
 | 8 | MicroLaunch | DR59 | Yes | Yes (queue) |
-| 9 | LaunchingNext | DR51 | Yes | Yes (queue) |
-| 10 | ProductBurst | DR46 | Yes | Yes |
-| 11 | SoloPush | DR46-47 | Yes | Yes |
-| 12 | Huzzler | DR41-47 | Yes (winners only) | Yes (must win Launch Arena) |
-| 13 | CtrlAlt.cc | DA30 | Yes | Yes (queue) |
+| 9 | Firsto | DR57 | Yes (conditional free) | Conditional (Top 3 + badge) / $19.90 guaranteed |
+| 10 | LaunchingNext | DR51 | Yes | Yes (queue) |
+| 11 | ProductBurst | DR46 | Yes | Yes |
+| 12 | SoloPush | DR46-47 | Yes | Yes |
+| 13 | Huzzler | DR41-47 | Yes (winners only) | Yes (must win Launch Arena) |
+| 14 | CtrlAlt.cc | DA30 | Yes | Yes (queue) |
 
 ## Step 4 — Actionable guidance
 
@@ -129,8 +132,9 @@ Submit to platforms with no editorial queue to get live immediately:
 #### Phase 2 — Paid fast-track (Day 1-7)
 If budget allows, pay to skip queues and guarantee backlinks:
 1. **Open Launch Premium ($12)** — next-day launch, guaranteed DR65 dofollow backlink (best value)
-2. **CtrlAlt.cc ($39)** — skip 2-month queue, 1-week homepage feature
-3. **MicroLaunch Pro ($39/mo)** — skip queue, 2x visibility, DR59 backlink
+2. **Firsto Premium ($19.90)** — 24-hour launch, guaranteed DR57+ dofollow backlink + permanent SEO page
+3. **CtrlAlt.cc ($39)** — skip 2-month queue, 1-week homepage feature
+4. **MicroLaunch Pro ($39/mo)** — skip queue, 2x visibility, DR59 backlink
 4. **LaunchingNext ($99)** — 1-business-day expedited review
 5. **BetaList ($129)** — skip queue for pre-launch directory
 
@@ -139,7 +143,8 @@ If budget allows, pay to skip queues and guarantee backlinks:
 #### Phase 3 — Free editorial queues (Day 1, but goes live later)
 Submit to all free editorial queues on Day 1 — they'll go live weeks/months later:
 1. **Open Launch (free)** — queue wait, conditional backlink (Top 3 + badge)
-2. **CtrlAlt.cc (free)** — up to 2 months wait
+2. **Firsto (free)** — ~180 day queue, conditional backlink (Top 3 + badge)
+3. **CtrlAlt.cc (free)** — up to 2 months wait
 3. **MicroLaunch (free)** — variable queue
 4. **LaunchingNext (free)** — weeks/months wait
 5. **SideProjectors** — editorial review, variable timing
@@ -215,6 +220,7 @@ For each directory submission, track:
 - `/sales-solopush` — SoloPush platform help (indie maker community, no-pressure launch)
 - `/sales-sideprojectors` — SideProjectors platform help (buy/sell side projects)
 - `/sales-huzzler` — Huzzler platform help (founder community, weekly Launch Arena competition)
+- `/sales-firsto` — Firsto platform help (fair launch platform, sustained SEO discovery, Open Launch fork)
 - `/sales-funnel` — Build and optimize sales funnels for conversion
 - `/sales-audience-growth` — Grow your email list and subscriber base
 - `/sales-checkout` — Optimize landing pages and checkout for conversion

@@ -203,6 +203,7 @@ Unlike Product Hunt, MicroLaunch rewards sustained engagement over a month:
 - `/sales-solopush` — SoloPush platform help (indie maker community)
 - `/sales-sideprojectors` — SideProjectors platform help (buy/sell side projects)
 - `/sales-huzzler` — Huzzler platform help (founder community, weekly Launch Arena competition)
+- `/sales-firsto` — Firsto platform help (fair launch platform, sustained SEO discovery)
 - `/sales-funnel` — Build and optimize sales funnels for conversion
 - `/sales-audience-growth` — Grow your email list and subscriber base
 - `/sales-digital-products` — Sell digital products (ebooks, templates, SaaS)

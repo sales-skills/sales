@@ -52,6 +52,7 @@ If the request maps to a specialized skill, route:
 - SoloPush-specific questions → `/sales-solopush`
 - SideProjectors buy/sell questions → `/sales-sideprojectors`
 - Huzzler-specific questions → `/sales-huzzler`
+- Firsto-specific questions → `/sales-firsto`
 
 Otherwise, answer directly from platform knowledge below.
 
@@ -115,16 +116,16 @@ AI (1,010 tools), SaaS (915), Productivity (741), Marketing (387), Design (340),
 
 ### Comparison with other launch platforms
 
-| Feature | Open Launch | Huzzler | ProductBurst | SoloPush | MicroLaunch | LaunchingNext | CtrlAlt.cc |
-|---|---|---|---|---|---|---|---|
-| Model | Daily rankings (PH-style) | Weekly competition (Mon-Sun) | Daily/weekly rankings | No-pressure community | 30-day leaderboard | Curated directory | Curated directory |
-| Editorial review | Queue (free) or skip ($12) | None — instant | None — instant | None — instant | Editorial review | Editorial review | Yes (manual curation) |
-| Free backlink | Conditional (Top 3 + badge) | Winners only (dofollow) | Automatic dofollow | Automatic dofollow | Queue-dependent | Automatic dofollow | Automatic dofollow |
-| Paid option | $12 (premium) / $59 (SEO) | $79 Black (lifetime) / $34 promoted | One-time fee (featured) | Unknown | $39/mo (Pro Launch) | $99 expedited | $39 (1-week feature) |
-| Backlink DR/DA | DR65 | DR41-47 | DR46 | DR46-47 | DR59 | DR51 | DA30 |
-| Open source | Yes (TypeScript) | No | No (Bubble.io) | No | No | No | No (WordPress) |
-| Idea-stage OK | No | Yes (#startup-ideas) | Yes | Yes (implied) | No | No | No |
-| Launch time | 8:00 AM UTC daily | Weekly (Mon-Wed submit) | Anytime | Anytime | Queue-based | Queue-based | Queue-based |
+| Feature | Open Launch | Firsto (fork) | Huzzler | ProductBurst | SoloPush | MicroLaunch | LaunchingNext | CtrlAlt.cc |
+|---|---|---|---|---|---|---|---|---|
+| Model | Daily rankings (PH-style) | Daily rankings + SEO pages | Weekly competition (Mon-Sun) | Daily/weekly rankings | No-pressure community | 30-day leaderboard | Curated directory | Curated directory |
+| Editorial review | Queue (free) or skip ($12) | None — instant | None — instant | None — instant | None — instant | Editorial review | Editorial review | Yes (manual curation) |
+| Free backlink | Conditional (Top 3 + badge) | Conditional (Top 3 + badge) | Winners only (dofollow) | Automatic dofollow | Automatic dofollow | Queue-dependent | Automatic dofollow | Automatic dofollow |
+| Paid option | $12 (premium) / $59 (SEO) | $19.90 / $59.90 / $149 | $79 Black (lifetime) / $34 promoted | One-time fee (featured) | Unknown | $39/mo (Pro Launch) | $99 expedited | $39 (1-week feature) |
+| Backlink DR/DA | DR65 | DR57 (claimed 59+) | DR41-47 | DR46 | DR46-47 | DR59 | DR51 | DA30 |
+| Open source | Yes (TypeScript) | Forked from Open Launch | No | No (Bubble.io) | No | No | No | No (WordPress) |
+| Idea-stage OK | No | Unknown | Yes (#startup-ideas) | Yes | Yes (implied) | No | No | No |
+| Launch time | 8:00 AM UTC daily | 8:00 UTC daily | Weekly (Mon-Wed submit) | Anytime | Anytime | Queue-based | Queue-based | Queue-based |
 
 ### Platform details
 
@@ -206,6 +207,7 @@ Open Launch works best as one platform in a broader launch. Use `/sales-launch-d
 - `/sales-solopush` — SoloPush platform help (indie maker community, no-pressure launch)
 - `/sales-sideprojectors` — SideProjectors platform help (buy/sell side projects)
 - `/sales-huzzler` — Huzzler platform help (founder community, weekly Launch Arena competition)
+- `/sales-firsto` — Firsto platform help (fair launch platform, sustained SEO discovery — forked from Open Launch)
 - `/sales-funnel` — Build and optimize sales funnels for conversion
 - `/sales-audience-growth` — Grow your email list and subscriber base
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
