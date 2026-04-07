@@ -1,0 +1,38 @@
+{
+  "skill_name": "sales-launch-directory",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I built a no-code analytics tool and want to launch it across as many startup directories as possible for backlinks and early users. Plan my launch.",
+      "expected_output": "Multi-phase launch plan with sequencing, platform selection, and tracking setup",
+      "assertions": [
+        {"name": "phased_approach", "description": "Recommends phased launch: instant-listing platforms first, editorial queues second, Product Hunt last"},
+        {"name": "platform_list", "description": "Covers at least 5 specific directories with backlink strength and cost"},
+        {"name": "timing_strategy", "description": "Recommends submitting to free editorial queues on Day 1 while doing instant listings"},
+        {"name": "tracking", "description": "Suggests UTM parameters or analytics to measure results per platform"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "I have no budget. What free startup directories should I submit to for SEO backlinks?",
+      "expected_output": "List of free directories sorted by backlink strength with submission strategy",
+      "assertions": [
+        {"name": "free_only", "description": "Only recommends free submission options, no paid placements"},
+        {"name": "sorted_by_strength", "description": "Ranks directories by backlink DR/DA from highest to lowest"},
+        {"name": "instant_vs_queue", "description": "Distinguishes between instant-listing and editorial-queue platforms"},
+        {"name": "cumulative_value", "description": "Explains that backlink value is cumulative across multiple directories"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Which startup directories should I prioritize — there are too many and I don't have time for all of them",
+      "expected_output": "Prioritized shortlist with rationale, starting with highest-value submissions",
+      "assertions": [
+        {"name": "prioritized_list", "description": "Provides a ranked shortlist of top 5-7 directories to focus on"},
+        {"name": "time_estimate", "description": "Notes instant-listing platforms take ~10 minutes each"},
+        {"name": "diminishing_returns", "description": "Acknowledges most directories beyond the top 7-10 have diminishing returns"},
+        {"name": "product_relevance", "description": "Considers product category fit when prioritizing directories"}
+      ]
+    }
+  ]
+}

@@ -196,8 +196,12 @@ If you're listing to showcase (not sell):
 
 ## Related skills
 
+- `/sales-launch-directory` — Launch strategy across multiple startup directories
+- `/sales-ctrlaltcc` — CtrlAlt.cc platform help (curated tool directory)
 - `/sales-microlaunch` — MicroLaunch platform help (30-day leaderboard, deals marketplace)
 - `/sales-launchingnext` — LaunchingNext platform help (curated startup directory)
+- `/sales-productburst` — ProductBurst platform help (daily/weekly rankings, badges)
+- `/sales-solopush` — SoloPush platform help (indie maker community)
 - `/sales-funnel` — Build and optimize sales funnels for conversion
 - `/sales-digital-products` — Sell digital products (ebooks, templates, SaaS)
 - `/sales-checkout` — Optimize landing pages and checkout for conversion

@@ -1,6 +1,6 @@
 ---
 name: sales-solopush
-description: "SoloPush platform help — product launch and discovery platform for indie makers and solopreneurs with no launch day pressure. Covers product submission (free, no editorial gatekeeping, instant listing), community upvoting, daily trending products, product reviews and comments, do-follow backlinks (DR46-47), solo maker community, and idea-stage posting. Use when launching a product on SoloPush, optimizing a SoloPush listing, choosing between SoloPush and Product Hunt, or getting backlinks from the directory. Do NOT use for general product launch strategy across platforms (use /sales-funnel), email marketing (use /sales-email-marketing), or audience growth (use /sales-audience-growth)."
+description: "SoloPush platform help — product launch and discovery platform for indie makers and solopreneurs with no launch day pressure. Covers product submission (free, no editorial gatekeeping, instant listing), community upvoting, daily trending products, product reviews and comments, do-follow backlinks (DR46-47), solo maker community, and idea-stage posting. Use when launching a product on SoloPush, optimizing a SoloPush listing, choosing between SoloPush and Product Hunt, or getting backlinks from the directory. Do NOT use for general launch strategy across multiple directories (use /sales-launch-directory), email marketing (use /sales-email-marketing), or audience growth (use /sales-audience-growth)."
 argument-hint: "[describe what you need help with on SoloPush]"
 license: MIT
 version: 1.0.0
@@ -38,7 +38,8 @@ Ask the user:
 ## Step 2 — Route or answer directly
 
 If the request maps to a specialized skill, route:
-- Product launch strategy across multiple platforms → `/sales-funnel`
+- Launch strategy across multiple directories → `/sales-launch-directory`
+- Product launch strategy and funnels → `/sales-funnel`
 - Email list building / audience growth → `/sales-audience-growth`
 - Email marketing to subscribers → `/sales-email-marketing`
 - Landing page / checkout optimization → `/sales-checkout`
@@ -92,17 +93,17 @@ SoloPush specifically targets:
 
 ### Comparison with other launch platforms
 
-| Feature | SoloPush | ProductBurst | Product Hunt | MicroLaunch | LaunchingNext |
-|---|---|---|---|---|---|
-| Launch pressure | None — anytime | Daily rankings | 24 hours | 30 days | None (static directory) |
-| Editorial review | None — instant | None — instant | Community-moderated | Editorial review | Editorial review |
-| Upvoting | Yes | Yes | Yes | Yes (idea + product scores) | No |
-| Reviews | Yes | Comment threads | Comment threads | Verified reviews | No |
-| Backlink DR | DR46-47 | DR46 | DR91 | DR59 | DR51 |
-| Target audience | Solo makers | General startups | General products | General startups | General startups |
-| Idea-stage OK | Yes (implied) | Yes | No | No | No |
-| Free submission | Yes | Yes | Yes | Free queue or paid | $99 expedited or free (long wait) |
-| Featured (paid) | Unknown | One-time fee | No paid features | Pro Launch $39/mo | $99 expedited + promoted ads |
+| Feature | SoloPush | ProductBurst | Product Hunt | MicroLaunch | LaunchingNext | CtrlAlt.cc |
+|---|---|---|---|---|---|---|
+| Launch pressure | None — anytime | Daily rankings | 24 hours | 30 days | None (static directory) | None (curated daily) |
+| Editorial review | None — instant | None — instant | Community-moderated | Editorial review | Editorial review | Yes (manual curation) |
+| Upvoting | Yes | Yes | Yes | Yes (idea + product scores) | No | Yes |
+| Reviews | Yes | Comment threads | Comment threads | Verified reviews | No | No |
+| Backlink DR/DA | DR46-47 | DR46 | DR91 | DR59 | DR51 | DA30 |
+| Target audience | Solo makers | General startups | General products | General startups | General startups | Startup tools |
+| Idea-stage OK | Yes (implied) | Yes | No | No | No | No |
+| Free submission | Yes | Yes | Yes | Free queue or paid | $99 expedited or free (long wait) | Free (up to 2 months queue) |
+| Featured (paid) | Unknown | One-time fee | No paid features | Pro Launch $39/mo | $99 expedited + promoted ads | $39 (1-week feature) |
 
 ## Step 4 — Actionable guidance
 
@@ -159,6 +160,8 @@ SoloPush's solo maker focus makes it good for personal brand building:
 
 ## Related skills
 
+- `/sales-launch-directory` — Launch strategy across multiple startup directories
+- `/sales-ctrlaltcc` — CtrlAlt.cc platform help (curated tool directory)
 - `/sales-productburst` — ProductBurst platform help (daily/weekly rankings, badges)
 - `/sales-microlaunch` — MicroLaunch platform help (30-day leaderboard, deals marketplace)
 - `/sales-launchingnext` — LaunchingNext platform help (curated startup directory)

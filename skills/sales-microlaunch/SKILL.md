@@ -1,6 +1,6 @@
 ---
 name: sales-microlaunch
-description: "MicroLaunch platform help — product launch and discovery platform for startups and indie makers. Covers month-long launch cycles (leaderboard ranking over 30 days vs Product Hunt's 1-day window), community scoring (separate idea and product scores), Pro Launch (skip queue, 2x boosts, featured spots, Product of the Day), deals marketplace (lifetime deals, discounts), DR59+ do-follow SEO backlinks, auto distribution (4+ SEO-optimized pages), verified product reviews, and landing page audits. Use when launching a product on MicroLaunch, optimizing a MicroLaunch listing, publishing deals, or choosing between free and Pro Launch. Do NOT use for general product launch strategy across platforms (use /sales-funnel), email marketing (use /sales-email-marketing), or audience growth (use /sales-audience-growth)."
+description: "MicroLaunch platform help — product launch and discovery platform for startups and indie makers. Covers month-long launch cycles (leaderboard ranking over 30 days vs Product Hunt's 1-day window), community scoring (separate idea and product scores), Pro Launch (skip queue, 2x boosts, featured spots, Product of the Day), deals marketplace (lifetime deals, discounts), DR59+ do-follow SEO backlinks, auto distribution (4+ SEO-optimized pages), verified product reviews, and landing page audits. Use when launching a product on MicroLaunch, optimizing a MicroLaunch listing, publishing deals, or choosing between free and Pro Launch. Do NOT use for general launch strategy across multiple directories (use /sales-launch-directory), email marketing (use /sales-email-marketing), or audience growth (use /sales-audience-growth)."
 argument-hint: "[describe what you need help with on MicroLaunch]"
 license: MIT
 version: 1.0.0
@@ -43,7 +43,8 @@ Ask the user:
 ## Step 2 — Route or answer directly
 
 If the request maps to a specialized skill, route:
-- Product launch strategy across multiple platforms → `/sales-funnel`
+- Launch strategy across multiple directories → `/sales-launch-directory`
+- Product launch strategy and funnels → `/sales-funnel`
 - Email list building / audience growth → `/sales-audience-growth`
 - Email marketing to subscribers → `/sales-email-marketing`
 - Selling digital products → `/sales-digital-products`
@@ -194,6 +195,12 @@ Unlike Product Hunt, MicroLaunch rewards sustained engagement over a month:
 
 ## Related skills
 
+- `/sales-launch-directory` — Launch strategy across multiple startup directories
+- `/sales-ctrlaltcc` — CtrlAlt.cc platform help (curated tool directory)
+- `/sales-productburst` — ProductBurst platform help (daily/weekly rankings, badges)
+- `/sales-launchingnext` — LaunchingNext platform help (curated startup directory)
+- `/sales-solopush` — SoloPush platform help (indie maker community)
+- `/sales-sideprojectors` — SideProjectors platform help (buy/sell side projects)
 - `/sales-funnel` — Build and optimize sales funnels for conversion
 - `/sales-audience-growth` — Grow your email list and subscriber base
 - `/sales-digital-products` — Sell digital products (ebooks, templates, SaaS)

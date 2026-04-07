@@ -1,0 +1,38 @@
+{
+  "skill_name": "sales-ctrlaltcc",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I built a project management tool and want to list it on CtrlAlt.cc to get some visibility. What should I do?",
+      "expected_output": "Submission checklist with listing optimization, timing advice, and free vs paid recommendation",
+      "assertions": [
+        {"name": "submission_steps", "description": "Covers listing preparation: name, description (1 paragraph max), URL, maker verification"},
+        {"name": "timing_advice", "description": "Recommends Monday launch at 10:00 UTC for best visibility"},
+        {"name": "free_vs_paid", "description": "Explains $39 paid option to skip 2-month queue and get homepage feature"},
+        {"name": "multi_platform", "description": "Suggests pairing with other launch directories for broader reach"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "Is the $39 paid launch on CtrlAlt.cc worth it or should I just do the free submission?",
+      "expected_output": "Cost-benefit analysis comparing free vs paid with clear recommendation based on user's situation",
+      "assertions": [
+        {"name": "paid_benefits", "description": "Explains what $39 gets: skip queue, 1-week homepage feature, dofollow links"},
+        {"name": "free_tradeoff", "description": "Notes free queue can take up to 2 months"},
+        {"name": "backlink_context", "description": "Notes DA30 is modest compared to other directories"},
+        {"name": "decision_framework", "description": "Recommends paid if timing matters, free if budget-constrained"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I want to get SEO backlinks from CtrlAlt.cc and similar startup directories. What should I submit to?",
+      "expected_output": "Backlink comparison across directories with priority ordering and route to /sales-launch-directory",
+      "assertions": [
+        {"name": "backlink_confirmed", "description": "Confirms CtrlAlt.cc provides DA30 dofollow backlink"},
+        {"name": "comparison", "description": "Compares backlink strength across directories: SideProjectors DR69, MicroLaunch DR59, LaunchingNext DR51, etc."},
+        {"name": "route_to_meta", "description": "Routes to /sales-launch-directory for full multi-directory strategy"},
+        {"name": "cumulative_strategy", "description": "Recommends submitting to all directories for cumulative backlink value"}
+      ]
+    }
+  ]
+}

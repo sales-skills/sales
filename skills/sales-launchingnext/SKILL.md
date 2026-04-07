@@ -1,6 +1,6 @@
 ---
 name: sales-launchingnext
-description: "LaunchingNext platform help — curated startup directory and discovery platform with 45,000+ listed startups. Covers free submission (editorial review queue), expedited review ($99 for 1-business-day consideration), promoted ads (Seed Boost / Growth Engine / Market Leader tiers from $500-$4,500/mo with guaranteed impressions), DR51 do-follow backlinks, weekly newsletter (5,000+ founders), and Twitter/X distribution (14.9K followers). Use when submitting a startup to LaunchingNext, deciding between free and expedited review, evaluating promoted ad ROI, or maximizing backlink value from the directory. Do NOT use for general product launch strategy across platforms (use /sales-funnel), email marketing (use /sales-email-marketing), or audience growth (use /sales-audience-growth)."
+description: "LaunchingNext platform help — curated startup directory and discovery platform with 45,000+ listed startups. Covers free submission (editorial review queue), expedited review ($99 for 1-business-day consideration), promoted ads (Seed Boost / Growth Engine / Market Leader tiers from $500-$4,500/mo with guaranteed impressions), DR51 do-follow backlinks, weekly newsletter (5,000+ founders), and Twitter/X distribution (14.9K followers). Use when submitting a startup to LaunchingNext, deciding between free and expedited review, evaluating promoted ad ROI, or maximizing backlink value from the directory. Do NOT use for general launch strategy across multiple directories (use /sales-launch-directory), email marketing (use /sales-email-marketing), or audience growth (use /sales-audience-growth)."
 argument-hint: "[describe what you need help with on LaunchingNext]"
 license: MIT
 version: 1.0.0
@@ -162,7 +162,12 @@ LaunchingNext works best as one listing in a broader directory submission strate
 
 ## Related skills
 
+- `/sales-launch-directory` — Launch strategy across multiple startup directories
+- `/sales-ctrlaltcc` — CtrlAlt.cc platform help (curated tool directory)
 - `/sales-microlaunch` — MicroLaunch platform help (30-day leaderboard, deals marketplace)
+- `/sales-productburst` — ProductBurst platform help (daily/weekly rankings, badges)
+- `/sales-solopush` — SoloPush platform help (indie maker community)
+- `/sales-sideprojectors` — SideProjectors platform help (buy/sell side projects)
 - `/sales-funnel` — Build and optimize sales funnels for conversion
 - `/sales-audience-growth` — Grow your email list and subscriber base
 - `/sales-digital-products` — Sell digital products (ebooks, templates, SaaS)

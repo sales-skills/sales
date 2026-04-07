@@ -1,6 +1,6 @@
 ---
 name: sales-productburst
-description: "ProductBurst platform help — product launch and discovery platform for startups with daily and weekly rankings. Covers product submission (launch in under 5 minutes, no gatekeepers), daily/weekly leaderboard rankings (not single-day like Product Hunt), community upvoting, Top of Day/Week badges (shareable SVGs), featured homepage placement (one-time fee), do-follow backlinks (DR46), comment threads, idea validation without a full build, and marketplace. Use when launching a product on ProductBurst, optimizing a ProductBurst listing, choosing between ProductBurst and Product Hunt, or getting backlinks from the directory. Do NOT use for general product launch strategy across platforms (use /sales-funnel), email marketing (use /sales-email-marketing), or audience growth (use /sales-audience-growth)."
+description: "ProductBurst platform help — product launch and discovery platform for startups with daily and weekly rankings. Covers product submission (launch in under 5 minutes, no gatekeepers), daily/weekly leaderboard rankings (not single-day like Product Hunt), community upvoting, Top of Day/Week badges (shareable SVGs), featured homepage placement (one-time fee), do-follow backlinks (DR46), comment threads, idea validation without a full build, and marketplace. Use when launching a product on ProductBurst, optimizing a ProductBurst listing, choosing between ProductBurst and Product Hunt, or getting backlinks from the directory. Do NOT use for general launch strategy across multiple directories (use /sales-launch-directory), email marketing (use /sales-email-marketing), or audience growth (use /sales-audience-growth)."
 argument-hint: "[describe what you need help with on ProductBurst]"
 license: MIT
 version: 1.0.0
@@ -40,7 +40,8 @@ Ask the user:
 ## Step 2 — Route or answer directly
 
 If the request maps to a specialized skill, route:
-- Product launch strategy across multiple platforms → `/sales-funnel`
+- Launch strategy across multiple directories → `/sales-launch-directory`
+- Product launch strategy and funnels → `/sales-funnel`
 - Email list building / audience growth → `/sales-audience-growth`
 - Email marketing to subscribers → `/sales-email-marketing`
 - Landing page / checkout optimization → `/sales-checkout`
@@ -105,15 +106,15 @@ ProductBurst includes a marketplace section for products and services, extending
 
 ### Comparison with other launch platforms
 
-| Feature | ProductBurst | Product Hunt | MicroLaunch | LaunchingNext |
-|---|---|---|---|---|
-| Ranking window | Daily + weekly (ongoing) | 24 hours | 30 days | None (static directory) |
-| Editorial review | None — instant | Community-moderated | Editorial review | Editorial review |
-| Upvoting | Yes | Yes | Yes (idea + product scores) | No |
-| Featured (paid) | One-time fee | No paid features | Pro Launch $39/mo | $99 expedited + promoted ads |
-| Backlink DR | DR46 | DR91 | DR59 | DR51 |
-| Idea-stage OK | Yes | No (needs working product) | No (needs working product) | No (needs working product) |
-| Speed to list | <5 minutes | Varies (community) | Free queue or pay to skip | Weeks/months or $99 |
+| Feature | ProductBurst | Product Hunt | MicroLaunch | LaunchingNext | CtrlAlt.cc |
+|---|---|---|---|---|---|
+| Ranking window | Daily + weekly (ongoing) | 24 hours | 30 days | None (static directory) | None (curated daily) |
+| Editorial review | None — instant | Community-moderated | Editorial review | Editorial review | Yes (manual curation) |
+| Upvoting | Yes | Yes | Yes (idea + product scores) | No | Yes |
+| Featured (paid) | One-time fee | No paid features | Pro Launch $39/mo | $99 expedited + promoted ads | $39 (1-week feature) |
+| Backlink DR/DA | DR46 | DR91 | DR59 | DR51 | DA30 |
+| Idea-stage OK | Yes | No (needs working product) | No (needs working product) | No (needs working product) | No |
+| Speed to list | <5 minutes | Varies (community) | Free queue or pay to skip | Weeks/months or $99 | Up to 2 months or $39 |
 
 ## Step 4 — Actionable guidance
 
@@ -169,8 +170,11 @@ If you're pre-build:
 
 ## Related skills
 
+- `/sales-launch-directory` — Launch strategy across multiple startup directories
+- `/sales-ctrlaltcc` — CtrlAlt.cc platform help (curated tool directory)
 - `/sales-microlaunch` — MicroLaunch platform help (30-day leaderboard, deals marketplace)
 - `/sales-launchingnext` — LaunchingNext platform help (curated startup directory)
+- `/sales-solopush` — SoloPush platform help (indie maker community)
 - `/sales-sideprojectors` — SideProjectors platform help (buy/sell side projects)
 - `/sales-funnel` — Build and optimize sales funnels for conversion
 - `/sales-audience-growth` — Grow your email list and subscriber base
