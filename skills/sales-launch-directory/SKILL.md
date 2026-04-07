@@ -1,6 +1,6 @@
 ---
 name: sales-launch-directory
-description: "Startup directory launch strategy — coordinates submissions across multiple product launch and discovery platforms for maximum visibility, backlinks, and early users. Covers platform selection (Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, Product Hunt, BetaList, Hacker News, Indie Hackers), launch sequencing (instant-list first, editorial-review last), backlink stacking (DA/DR comparison across directories), listing optimization, timing strategy, and multi-platform coordination. Use when planning a product launch across directories, choosing which directories to submit to, or building a backlink portfolio from startup directories. Do NOT use for a single specific platform (use the platform skill instead). Do NOT use for paid advertising (use /sales-b2b-advertising)."
+description: "Startup directory launch strategy — coordinates submissions across multiple product launch and discovery platforms for maximum visibility, backlinks, and early users. Covers platform selection (Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Product Hunt, BetaList, Hacker News, Indie Hackers), launch sequencing (instant-list first, editorial-review last), backlink stacking (DA/DR comparison across directories), listing optimization, timing strategy, and multi-platform coordination. Use when planning a product launch across directories, choosing which directories to submit to, or building a backlink portfolio from startup directories. Do NOT use for a single specific platform (use the platform skill instead). Do NOT use for paid advertising (use /sales-b2b-advertising)."
 argument-hint: "[describe your product and what you want from directory submissions]"
 license: MIT
 version: 1.0.0
@@ -63,6 +63,7 @@ If the request maps to a single platform, route:
 - Awesome Indie-specific questions → `/sales-awesomeindie`
 - LaunchDay-specific questions → `/sales-launchday`
 - Super Launch-specific questions → `/sales-superlaunch`
+- JustGotFound-specific questions → `/sales-justgotfound`
 - Product Hunt-specific questions → `/product-hunt-launch` (third-party)
 - Email marketing to subscribers → `/sales-email-marketing`
 - Landing page optimization → `/sales-checkout`
@@ -88,6 +89,7 @@ Otherwise, answer directly from the directory knowledge below.
 | Super Launch | DR59 nofollow (free) / dofollow (paid) | Free | $49/mo advertising | None — instant (7-day front page) | Minimalist directory + leaderboard | `/sales-superlaunch` |
 | LaunchDay | Unknown | None | $99 (if selected) | 1-2 events/month | 24-hour launch event + podcast + influencer promo | `/sales-launchday` |
 | Awesome Indie | DR~19-31 unconfirmed | Free | None | Editorial queue (unknown) | Curated indie directory | `/sales-awesomeindie` |
+| JustGotFound | DR23 dofollow | Free | $50-$500 promotion | None — instant | Community-curated PH alternative | `/sales-justgotfound` |
 | CtrlAlt.cc | DA30 dofollow | Free | $39 (1-week feature) | Up to 2 months (free) | Curated directory | `/sales-ctrlaltcc` |
 
 ### Third-party platforms (no skill — general guidance)
@@ -123,7 +125,8 @@ All first-party + key third-party directories sorted by backlink strength:
 | 14 | SoloPush | DR46-47 | Yes | Yes |
 | 15 | Huzzler | DR41-47 | Yes (winners only) | Yes (must win Launch Arena) |
 | 16 | Awesome Indie | DR~19-31 | Unconfirmed | Yes (queue) |
-| 16 | CtrlAlt.cc | DA30 | Yes | Yes (queue) |
+| 17 | CtrlAlt.cc | DA30 | Yes | Yes (queue) |
+| 18 | JustGotFound | DR23 | Yes | Yes |
 
 ## Step 4 — Actionable guidance
 
@@ -136,6 +139,7 @@ Submit to platforms with no editorial queue to get live immediately:
 1. **SoloPush** — instant listing, no gatekeeping, solo maker community
 2. **ProductBurst** — instant listing, daily/weekly ranking opportunities
 3. **Super Launch** — instant listing, 7-day guaranteed front page (note: free backlink is nofollow)
+4. **JustGotFound** — instant listing, free dofollow backlink (DR23 — low but still free)
 4. **Huzzler Launch Arena** — submit Monday for weekly competition (Wed-Sun voting)
 4. **Indie Hackers** — post in relevant groups, share your story
 
@@ -244,6 +248,7 @@ For each directory submission, track:
 - `/sales-awesomeindie` — Awesome Indie platform help (curated indie directory, free submission)
 - `/sales-launchday` — LaunchDay platform help (24-hour launch events, podcast, influencer promo, $99)
 - `/sales-superlaunch` — Super Launch platform help (7-day front page, DR59 dofollow for paid, Top 50 leaderboard)
+- `/sales-justgotfound` — JustGotFound platform help (community-curated PH alternative, DR23 dofollow, free instant listing)
 - `/sales-funnel` — Build and optimize sales funnels for conversion
 - `/sales-audience-growth` — Grow your email list and subscriber base
 - `/sales-checkout` — Optimize landing pages and checkout for conversion
