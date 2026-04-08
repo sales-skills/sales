@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-uneed",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Is Uneed worth submitting to for SEO backlinks? How does it compare?",
+      "expected_output": "Explains Uneed offers a free dofollow backlink at DR74, which is one of the highest from any startup directory. Compares with Open Launch (DR65), DevHunt (DR57-62), TinyLaunch (DR60-71). Notes only Product Hunt (DR91) and Hacker News (DR91) significantly exceed it.",
+      "assertions": [
+        {"name": "dr_value", "description": "States Uneed has a DR74 dofollow backlink, one of the highest free directory backlinks"},
+        {"name": "comparison", "description": "Compares with at least one other directory like Open Launch (DR65) or DevHunt (DR57-62)"},
+        {"name": "free_backlink", "description": "Notes the DR74 dofollow backlink is available on the free tier without needing to win or place Top 3, unlike some other directories"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "Should I pay $29.99 to skip the line on Uneed or just wait for free?",
+      "expected_output": "Explains Skip the Line lets you choose your launch date for $29.99 vs waiting in the free queue. Recommends paying if coordinating a multi-platform launch or need timing control. Notes the free backlink is the same either way — DR74 dofollow.",
+      "assertions": [
+        {"name": "skip_cost", "description": "States Skip the Line costs $29.99 and lets you choose your launch date"},
+        {"name": "free_alternative", "description": "Mentions the free option (Join the Line or free queue) and notes the wait time is unclear or variable"},
+        {"name": "same_backlink", "description": "Clarifies the backlink value is the same whether free or paid — DR74 dofollow"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "How do I submit my product to Uneed and what should I prepare?",
+      "expected_output": "Walks through submission: create account, prepare materials (name, description, screenshots, working URL), submit via /submit-a-tool, choose free or Skip the Line ($29.99), compete in 24-hour daily voting window, engage with community.",
+      "assertions": [
+        {"name": "submission_steps", "description": "Describes creating an account and submitting with product details and screenshots"},
+        {"name": "launch_options", "description": "Mentions Join the Line (free) and Skip the Line ($29.99) options"},
+        {"name": "daily_competition", "description": "Notes the daily 24-hour voting competition format with 8-15 products per day"}
+      ]
+    }
+  ]
+}
