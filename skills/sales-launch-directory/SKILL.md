@@ -1,6 +1,6 @@
 ---
 name: sales-launch-directory
-description: "Startup directory launch strategy — coordinates submissions across multiple product launch and discovery platforms for maximum visibility, backlinks, and early users. Covers platform selection (Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, Product Hunt, BetaList, Hacker News, Indie Hackers), launch sequencing (instant-list first, editorial-review last), backlink stacking (DA/DR comparison across directories), listing optimization, timing strategy, and multi-platform coordination. Use when planning a product launch across directories, choosing which directories to submit to, or building a backlink portfolio from startup directories. Do NOT use for a single specific platform (use the platform skill instead). Do NOT use for paid advertising (use /sales-b2b-advertising)."
+description: "Startup directory launch strategy — coordinates submissions across multiple product launch and discovery platforms for maximum visibility, backlinks, and early users. Covers platform selection (Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Product Hunt, BetaList, Hacker News, Indie Hackers), launch sequencing (instant-list first, editorial-review last), backlink stacking (DA/DR comparison across directories), listing optimization, timing strategy, and multi-platform coordination. Use when planning a product launch across directories, choosing which directories to submit to, or building a backlink portfolio from startup directories. Do NOT use for a single specific platform (use the platform skill instead). Do NOT use for paid advertising (use /sales-b2b-advertising)."
 argument-hint: "[describe your product and what you want from directory submissions]"
 license: MIT
 version: 1.0.0
@@ -62,6 +62,7 @@ If the request maps to a single platform, route:
 - OpenHunts-specific questions → `/sales-openhunts`
 - Tiny Startups-specific questions → `/sales-tinystartups`
 - DevHunt-specific questions → `/sales-devhunt`
+- TinyLaunch-specific questions → `/sales-tinylaunch`
 - Awesome Indie-specific questions → `/sales-awesomeindie`
 - LaunchDay-specific questions → `/sales-launchday`
 - Super Launch-specific questions → `/sales-superlaunch`
@@ -80,6 +81,7 @@ Otherwise, answer directly from the directory knowledge below.
 | Platform | Backlink | Cost (free tier) | Cost (paid) | Queue wait | Model | Skill |
 |---|---|---|---|---|---|---|
 | SideProjectors | DR69 dofollow | Free | None | Varies | Buy/sell marketplace + showcase | `/sales-sideprojectors` |
+| TinyLaunch | DR60-71 dofollow (Top 3 or $39) | Free (conditional) | $39 premium launch | Weekly batches (free), skip queue ($39) | Weekly rankings + newsletter (~11K subs) | `/sales-tinylaunch` |
 | Open Launch | DR65 dofollow | Free (conditional) | $12 premium / $59 SEO | Queue (free), next day ($12) | Daily rankings (PH-style) | `/sales-openlaunch` |
 | MicroLaunch | DR59 dofollow | Free | $39/mo Pro Launch | Varies (free), instant (Pro) | 30-day leaderboard | `/sales-microlaunch` |
 | LaunchingNext | DR51 dofollow | Free | $99 expedited | Weeks/months (free), 1 day ($99) | Curated directory | `/sales-launchingnext` |
@@ -119,20 +121,21 @@ All first-party + key third-party directories sorted by backlink strength:
 | 4 | F6S | DR74 | Yes | Yes |
 | 5 | SideProjectors | DR69 | Yes | Yes |
 | 6 | BetaList | DR67 | Yes | Yes (queue) |
-| 7 | Open Launch | DR65 | Yes | Conditional (Top 3 + badge) / $12 guaranteed |
-| 8 | DevHunt | DR57-62 | Yes | Yes |
-| 9 | MicroLaunch | DR59 | Yes | Yes (queue) |
-| 10 | Super Launch | DR59 | Paid only ($49/mo) | Free (nofollow) / $49/mo (dofollow) |
-| 11 | Firsto | DR57 | Yes (conditional free) | Conditional (Top 3 + badge) / $19.90 guaranteed |
-| 12 | LaunchingNext | DR51 | Yes | Yes (queue) |
-| 13 | OpenHunts | DR50 | Yes (conditional free) | Conditional (Top 3 weekly) / $9.90 guaranteed |
-| 14 | Tiny Startups | DR50 | Yes | Yes (weekly curation) |
-| 15 | ProductBurst | DR46 | Yes | Yes |
-| 16 | SoloPush | DR46-47 | Yes | Yes |
-| 17 | Huzzler | DR41-47 | Yes (winners only) | Yes (must win Launch Arena) |
-| 18 | Awesome Indie | DR~19-31 | Unconfirmed | Yes (queue) |
-| 19 | CtrlAlt.cc | DA30 | Yes | Yes (queue) |
-| 20 | JustGotFound | DR23 | Yes | Yes |
+| 7 | TinyLaunch | DR60-71 | Yes (Top 3 or $39) | Conditional (Top 3) / $39 guaranteed |
+| 8 | Open Launch | DR65 | Yes | Conditional (Top 3 + badge) / $12 guaranteed |
+| 9 | DevHunt | DR57-62 | Yes | Yes |
+| 10 | MicroLaunch | DR59 | Yes | Yes (queue) |
+| 11 | Super Launch | DR59 | Paid only ($49/mo) | Free (nofollow) / $49/mo (dofollow) |
+| 12 | Firsto | DR57 | Yes (conditional free) | Conditional (Top 3 + badge) / $19.90 guaranteed |
+| 13 | LaunchingNext | DR51 | Yes | Yes (queue) |
+| 14 | OpenHunts | DR50 | Yes (conditional free) | Conditional (Top 3 weekly) / $9.90 guaranteed |
+| 15 | Tiny Startups | DR50 | Yes | Yes (weekly curation) |
+| 16 | ProductBurst | DR46 | Yes | Yes |
+| 17 | SoloPush | DR46-47 | Yes | Yes |
+| 18 | Huzzler | DR41-47 | Yes (winners only) | Yes (must win Launch Arena) |
+| 19 | Awesome Indie | DR~19-31 | Unconfirmed | Yes (queue) |
+| 20 | CtrlAlt.cc | DA30 | Yes | Yes (queue) |
+| 21 | JustGotFound | DR23 | Yes | Yes |
 
 ## Step 4 — Actionable guidance
 
@@ -157,6 +160,7 @@ If budget allows, pay to skip queues and guarantee backlinks:
 1. **OpenHunts Premium ($9.90)** — next-Monday launch, guaranteed DR50 dofollow backlink (cheapest guaranteed backlink)
 2. **Open Launch Premium ($12)** — next-day launch, guaranteed DR65 dofollow backlink (best DR for price)
 3. **Firsto Premium ($19.90)** — 24-hour launch, guaranteed DR57+ dofollow backlink + permanent SEO page
+3. **TinyLaunch Premium ($39)** — skip queue, guaranteed DR60-71 dofollow backlink, placed between 3rd and 4th
 3. **CtrlAlt.cc ($39)** — skip 2-month queue, 1-week homepage feature
 4. **DevHunt Featured ($49)** — promoted visibility, DR57-62 dofollow backlink (developer tools only)
 4. **MicroLaunch Pro ($39/mo)** — skip queue, 2x visibility, DR59 backlink
@@ -174,6 +178,7 @@ Submit to all free editorial queues on Day 1 — they'll go live weeks/months la
 3. **CtrlAlt.cc (free)** — up to 2 months wait
 3. **MicroLaunch (free)** — variable queue
 3. **Tiny Startups (free)** — weekly human curation, DR50 dofollow + newsletter exposure (17,500+ subs)
+3. **TinyLaunch (free)** — weekly launch batches, DR60-71 dofollow if Top 3
 4. **Awesome Indie (free)** — editorial queue, unknown wait time
 4. **LaunchingNext (free)** — weeks/months wait
 5. **SideProjectors** — editorial review, variable timing
@@ -260,6 +265,7 @@ For each directory submission, track:
 - `/sales-justgotfound` — JustGotFound platform help (community-curated PH alternative, DR23 dofollow, free instant listing)
 - `/sales-tinystartups` — Tiny Startups platform help (curated directory + newsletter, DR50 dofollow, 17,500+ subscribers)
 - `/sales-devhunt` — DevHunt platform help (developer tool launch platform, DR57-62 dofollow, GitHub-authenticated voting)
+- `/sales-tinylaunch` — TinyLaunch platform help (weekly launch platform, DR60-71 dofollow for Top 3 or $39 Premium)
 - `/sales-funnel` — Build and optimize sales funnels for conversion
 - `/sales-audience-growth` — Grow your email list and subscriber base
 - `/sales-checkout` — Optimize landing pages and checkout for conversion

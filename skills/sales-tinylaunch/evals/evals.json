@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-tinylaunch",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Is TinyLaunch worth submitting to for SEO backlinks? How does it compare?",
+      "expected_output": "Explains TinyLaunch offers dofollow backlinks at DR60-71, which is among the highest from directories. Notes free backlinks are conditional on Top 3 placement. Compares with Open Launch (DR65), DevHunt (DR57-62), MicroLaunch (DR59). Recommends $39 Premium for guaranteed backlink.",
+      "assertions": [
+        {"name": "dr_value", "description": "States TinyLaunch DR is in the 60-71 range with dofollow backlink"},
+        {"name": "conditional_free", "description": "Notes that free backlinks are conditional on Top 3 weekly placement"},
+        {"name": "comparison", "description": "Compares TinyLaunch with at least one other directory like Open Launch (DR65) or MicroLaunch (DR59)"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "Should I pay $39 for TinyLaunch Premium or just submit for free?",
+      "expected_output": "Explains $39 Premium guarantees a dofollow backlink from DR60-71, skips queue, and places between 3rd and 4th. Compares with Open Launch Premium ($12 for DR65) and OpenHunts ($9.90 for DR50). Notes free tier requires Top 3 for backlink. Recommends Premium if backlink is the primary goal.",
+      "assertions": [
+        {"name": "premium_features", "description": "Describes $39 Premium: guaranteed dofollow backlink, queue skip, placement between 3rd and 4th"},
+        {"name": "free_tier_limitation", "description": "Notes free tier only gives backlinks to Top 3 weekly launches"},
+        {"name": "alternatives", "description": "Compares with cheaper alternatives like Open Launch Premium ($12) or OpenHunts ($9.90)"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "How do I submit my product to TinyLaunch and what should I prepare?",
+      "expected_output": "Walks through submission: create account, prepare materials (name, description, screenshots, working URL), choose free or $39 Premium, engage during launch week. Notes weekly launch cadence and Top 3 badge system.",
+      "assertions": [
+        {"name": "submission_steps", "description": "Describes creating an account and submitting with product details and screenshots"},
+        {"name": "free_vs_premium", "description": "Mentions the choice between free Standard and $39 Premium launch"},
+        {"name": "weekly_cadence", "description": "Notes the weekly launch cycle and competition for Top 3 placement"}
+      ]
+    }
+  ]
+}
