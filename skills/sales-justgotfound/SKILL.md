@@ -41,7 +41,7 @@ Ask the user:
 
 If the request maps to a different skill, route:
 - Multi-directory launch strategy → `/sales-launch-directory`
-- Product Hunt launch → `/product-hunt-launch` (third-party)
+- Product Hunt launch → `/sales-producthunt`
 - Email marketing to subscribers → `/sales-email-marketing`
 - Landing page optimization → `/sales-checkout`
 - Audience growth strategy → `/sales-audience-growth`
@@ -156,6 +156,7 @@ JustGotFound fits into **Phase 1 — Instant listings** as a free, no-queue subm
 - `/sales-openlaunch` — Open Launch platform help (open-source PH alternative, DR65 backlinks)
 - `/sales-superlaunch` — Super Launch platform help (7-day front page, DR59 dofollow for paid)
 - `/sales-microlaunch` — MicroLaunch platform help (30-day leaderboard, deals marketplace, DR59)
+- `/sales-producthunt` — Product Hunt platform help (largest launch platform, DR91 dofollow, 5M+ visits/mo)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
   `npx skills add sales-skills/sales --skills sales-do`
 

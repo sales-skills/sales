@@ -42,7 +42,7 @@ Ask the user:
 
 If the request maps to a different skill, route:
 - Multi-directory launch strategy → `/sales-launch-directory`
-- Product Hunt launch → `/product-hunt-launch` (third-party)
+- Product Hunt launch → `/sales-producthunt`
 - Email marketing to subscribers → `/sales-email-marketing`
 - Landing page optimization → `/sales-checkout`
 - Audience growth strategy → `/sales-audience-growth`
@@ -168,6 +168,7 @@ Tiny Startups fits into **Phase 3 — Free editorial queues** since it's human-c
 - `/sales-microlaunch` — MicroLaunch platform help (30-day leaderboard, DR59)
 - `/sales-superlaunch` — Super Launch platform help (7-day front page, DR59 dofollow for paid)
 - `/sales-huzzler` — Huzzler platform help (founder community, weekly Launch Arena)
+- `/sales-producthunt` — Product Hunt platform help (largest launch platform, DR91 dofollow, 5M+ visits/mo)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
   `npx skills add sales-skills/sales --skills sales-do`
 

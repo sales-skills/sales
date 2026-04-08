@@ -43,7 +43,7 @@ Ask the user:
 
 If the request maps to a different skill, route:
 - Multi-directory launch strategy → `/sales-launch-directory`
-- Product Hunt launch → `/product-hunt-launch` (third-party)
+- Product Hunt launch → `/sales-producthunt`
 - Email marketing to subscribers → `/sales-email-marketing`
 - Landing page optimization → `/sales-checkout`
 - Audience growth strategy → `/sales-audience-growth`
@@ -171,6 +171,7 @@ DevHunt fits into **Phase 1 — Instant listings** since there's no editorial qu
 - `/sales-superlaunch` — Super Launch platform help (7-day front page, DR59 dofollow for paid)
 - `/sales-firsto` — Firsto platform help (fair launch platform, DR57 dofollow)
 - `/sales-tinystartups` — Tiny Startups platform help (curated directory + newsletter, DR50 dofollow)
+- `/sales-producthunt` — Product Hunt platform help (largest launch platform, DR91 dofollow, 5M+ visits/mo)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
   `npx skills add sales-skills/sales --skills sales-do`
 

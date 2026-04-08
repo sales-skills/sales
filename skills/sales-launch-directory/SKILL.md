@@ -70,7 +70,7 @@ If the request maps to a single platform, route:
 - LaunchDay-specific questions → `/sales-launchday`
 - Super Launch-specific questions → `/sales-superlaunch`
 - JustGotFound-specific questions → `/sales-justgotfound`
-- Product Hunt-specific questions → `/product-hunt-launch` (third-party)
+- Product Hunt-specific questions → `/sales-producthunt`
 - Email marketing to subscribers → `/sales-email-marketing`
 - Landing page optimization → `/sales-checkout`
 - Audience growth strategy → `/sales-audience-growth`
@@ -101,6 +101,7 @@ Otherwise, answer directly from the directory knowledge below.
 | LaunchDay | Unknown | None | $99 (if selected) | 1-2 events/month | 24-hour launch event + podcast + influencer promo | `/sales-launchday` |
 | Awesome Indie | DR~19-31 unconfirmed | Free | None | Editorial queue (unknown) | Curated indie directory | `/sales-awesomeindie` |
 | JustGotFound | DR23 dofollow | Free | $50-$500 promotion | None — instant | Community-curated PH alternative | `/sales-justgotfound` |
+| Product Hunt | DR91 dofollow | Free | Pro $100/mo / Super Pro $300/mo | None — 24-hour daily window | Largest launch platform (5M+ visits/mo), 2026 algo weights comments > upvotes | `/sales-producthunt` |
 | Peerlist | DR76 nofollow | Free | Ads (pricing not public) | None — all projects featured Monday | Weekly launches + professional network (203K+ users) | `/sales-peerlist` |
 | CtrlAlt.cc | DA30 dofollow | Free | $39 (1-week feature) | Up to 2 months (free) | Curated directory | `/sales-ctrlaltcc` |
 
@@ -108,7 +109,6 @@ Otherwise, answer directly from the directory knowledge below.
 
 | Platform | Backlink | Cost | Model | Notes |
 |---|---|---|---|---|
-| Product Hunt | DR91 dofollow | Free | 24-hour launch window | Highest traffic, highest competition. Use `/product-hunt-launch` if installed |
 | BetaList | DR67 dofollow | Free (queue) / $129 (skip) | Pre-launch directory | Best for beta/early products |
 | Hacker News (Show HN) | DR91 dofollow | Free | Community voting | Tech audience, hostile to marketing |
 | Indie Hackers | DR75 dofollow | Free | Community posts | Founder audience, authentic engagement required |
@@ -286,6 +286,7 @@ For each directory submission, track:
 - `/sales-tinylaunch` — TinyLaunch platform help (weekly launch platform, DR60-71 dofollow for Top 3 or $39 Premium)
 - `/sales-uneed` — Uneed platform help (social launchpad with daily voting, DR74 dofollow, 64K+ makers, newsletter 15K subs)
 - `/sales-fazier` — Fazier platform help (product discovery for indie makers, DR81 dofollow, free with badge or $19+ paid)
+- `/sales-producthunt` — Product Hunt platform help (largest launch platform, DR91 dofollow, 5M+ visits/mo, 2026 algorithm)
 - `/sales-peerlist` — Peerlist platform help (professional network for tech builders, weekly Launchpad, DR76 nofollow, 203K+ users)
 - `/sales-funnel` — Build and optimize sales funnels for conversion
 - `/sales-audience-growth` — Grow your email list and subscriber base

@@ -42,7 +42,7 @@ Ask the user:
 
 If the request maps to a different skill, route:
 - Multi-directory launch strategy → `/sales-launch-directory`
-- Product Hunt launch → `/product-hunt-launch` (third-party)
+- Product Hunt launch → `/sales-producthunt`
 - Email marketing to subscribers → `/sales-email-marketing`
 - Landing page optimization → `/sales-checkout`
 - Audience growth strategy → `/sales-audience-growth`
@@ -194,6 +194,7 @@ Uneed fits into **Phase 1 — Instant listings** if you use Skip the Line ($29.9
 - `/sales-microlaunch` — MicroLaunch platform help (30-day leaderboard, DR59)
 - `/sales-productburst` — ProductBurst platform help (daily/weekly rankings, DR46)
 - `/sales-solopush` — SoloPush platform help (no-pressure indie maker community, DR46)
+- `/sales-producthunt` — Product Hunt platform help (largest launch platform, DR91 dofollow, 5M+ visits/mo)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
   `npx skills add sales-skills/sales --skills sales-do`
 

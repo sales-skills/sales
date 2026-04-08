@@ -42,7 +42,7 @@ Ask the user:
 
 If the request maps to a different skill, route:
 - Multi-directory launch strategy → `/sales-launch-directory`
-- Product Hunt launch → `/product-hunt-launch` (third-party)
+- Product Hunt launch → `/sales-producthunt`
 - Email marketing to subscribers → `/sales-email-marketing`
 - Landing page optimization → `/sales-checkout`
 - Audience growth strategy → `/sales-audience-growth`
@@ -195,6 +195,7 @@ TinyLaunch fits into **Phase 2 — Paid fast-track** at $39 for a guaranteed DR6
 - `/sales-superlaunch` — Super Launch platform help (7-day front page, DR59 dofollow for paid)
 - `/sales-productburst` — ProductBurst platform help (daily/weekly rankings, DR46)
 - `/sales-solopush` — SoloPush platform help (no-pressure indie maker community, DR46)
+- `/sales-producthunt` — Product Hunt platform help (largest launch platform, DR91 dofollow, 5M+ visits/mo)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
   `npx skills add sales-skills/sales --skills sales-do`
 
