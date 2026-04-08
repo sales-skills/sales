@@ -1,6 +1,6 @@
 # Sales Skills
 
-[![Skills](https://img.shields.io/badge/skills-106-blue)](https://skills.sh/sales-skills/sales)
+[![Skills](https://img.shields.io/badge/skills-107-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
@@ -312,11 +312,17 @@ Router recommends a 5-skill sequence:
 |---|---|
 | `/sales-justgotfound` | JustGotFound platform help — community-curated product discovery platform (Product Hunt alternative). Free submission with DR23 dofollow backlink, paid promotion tiers ($50/week to $500/3 months), community voting, category browsing (AI, Productivity, Marketing, Dev Tools), earnings program |
 
+### Tiny Startups & Platform
+
+| Skill | What it does |
+|---|---|
+| `/sales-tinystartups` | Tiny Startups platform help — curated startup launch directory and newsletter for bootstrapped founders and indie makers. Free submission (DR50 dofollow backlink), weekly human curation (#1 Product of the Week), newsletter distribution (17,500+ subscribers on Beehiiv), income reports, deals section, founder directory (17,500+ founders) |
+
 ### Startup Directory Launch Strategy
 
 | Skill | What it does |
 |---|---|
-| `/sales-launch-directory` | Startup directory launch strategy — coordinates submissions across Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Product Hunt, and more. Platform selection, launch sequencing (instant-list first, editorial last), backlink stacking, listing optimization, budget allocation, multi-directory coordination |
+| `/sales-launch-directory` | Startup directory launch strategy — coordinates submissions across Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, Product Hunt, and more. Platform selection, launch sequencing (instant-list first, editorial last), backlink stacking, listing optimization, budget allocation, multi-directory coordination |
 
 ### Seamless.AI & Platform
 

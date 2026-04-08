@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-tinystartups",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Is the Tiny Startups backlink worth submitting for SEO?",
+      "expected_output": "Explains Tiny Startups offers a free DR50 dofollow backlink, which is solid mid-range. Compares with Open Launch (DR65), MicroLaunch (DR59), OpenHunts (DR50). Highlights the newsletter (17,500+ subscribers) as a unique differentiator most directories don't offer.",
+      "assertions": [
+        {"name": "dr_value", "description": "States Tiny Startups has a DR50 dofollow backlink"},
+        {"name": "comparison", "description": "Compares Tiny Startups backlink value with at least one other directory like Open Launch (DR65) or MicroLaunch (DR59)"},
+        {"name": "newsletter_differentiator", "description": "Mentions the newsletter with 17,500+ subscribers as additional value beyond the backlink"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "I built a bootstrapped SaaS making $3K MRR and want to get featured in the Tiny Startups newsletter",
+      "expected_output": "Explains the weekly human curation process by Jaisal Rathee. Recommends sharing MRR/revenue data, submitting an income report for credibility, offering a community deal, and engaging with @RatheeJaisal on X before submitting.",
+      "assertions": [
+        {"name": "curation_process", "description": "Mentions weekly human curation by Jaisal Rathee"},
+        {"name": "revenue_transparency", "description": "Recommends sharing revenue/MRR data or submitting an income report"},
+        {"name": "engagement_strategy", "description": "Suggests engaging with Jaisal on X/Twitter or offering a community deal to increase feature chances"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "How do I submit my product to Tiny Startups?",
+      "expected_output": "Walks through the Tally form submission process at tinystartups.com. Mentions preparing product name, description, screenshots, and founder story. Emphasizes the bootstrapped narrative and notes weekly curation means not every submission gets featured.",
+      "assertions": [
+        {"name": "tally_form", "description": "Mentions submitting via Tally form at tinystartups.com"},
+        {"name": "preparation", "description": "Lists what to prepare: product name, description, screenshots, and founder story"},
+        {"name": "weekly_curation", "description": "Notes that curation is weekly and not every submission gets featured"}
+      ]
+    }
+  ]
+}
