@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-fazier",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Is Fazier worth submitting to for SEO backlinks? How does it compare to other directories?",
+      "expected_output": "Explains Fazier offers a DR81 dofollow backlink, one of the highest from any startup directory. Notes the free tier requires adding a badge to your site and has a 15-day review period. Compares with Uneed (DR74, no badge), Open Launch (DR65), and notes only Product Hunt (DR91) and Hacker News (DR91) significantly exceed it.",
+      "assertions": [
+        {"name": "dr_value", "description": "States Fazier has a DR81 dofollow backlink, one of the highest from startup directories"},
+        {"name": "comparison", "description": "Compares with at least one other directory like Uneed (DR74) or Open Launch (DR65) to show relative value"},
+        {"name": "free_tier_tradeoffs", "description": "Notes the free tier involves a trade-off such as a badge requirement or review wait period, unlike some other directories that offer instant free listings"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "Should I pay $39 for Fazier Premium or just use the free tier?",
+      "expected_output": "Explains Premium guarantees a DR81+ dofollow backlink, removes the badge requirement, publishes instantly, and includes 15-day promotion. Free tier also provides a backlink but requires adding a badge to your site and waiting up to 15 days. Recommends Premium if backlink certainty and speed matter, free if patient and willing to add the badge.",
+      "assertions": [
+        {"name": "premium_benefits", "description": "Describes Premium tier benefits including a guaranteed backlink and faster publishing compared to the free tier"},
+        {"name": "free_requirements", "description": "Mentions the free tier requires some form of badge or verification on your site and involves a review wait"},
+        {"name": "recommendation", "description": "Provides a recommendation based on the user's priorities such as budget, timing, or willingness to add a badge"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "How do I submit my product to Fazier and what should I prepare?",
+      "expected_output": "Walks through submission: create account at fazier.com, prepare materials (name, description, screenshots, working URL), submit via /submit, choose tier (free with badge, or paid for instant), wait for manual review if free tier, engage with community after listing.",
+      "assertions": [
+        {"name": "submission_steps", "description": "Describes creating an account and submitting with product details like name, description, and screenshots"},
+        {"name": "tier_choice", "description": "Mentions the choice between free and paid tiers as part of the submission process"},
+        {"name": "review_process", "description": "Notes that submissions go through manual moderation or review before being published"}
+      ]
+    }
+  ]
+}
