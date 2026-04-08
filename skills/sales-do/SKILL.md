@@ -1,6 +1,6 @@
 ---
 name: sales-do
-description: "Routes any sales, marketing, or GTM objective to the right specialized skill. Covers 102 first-party skills and 53 third-party skills across prospecting, outbound, deals, proposals, forecasting, deliverability, enrichment, intent signals, content, coaching, CRO, SEO, data hygiene, B2B advertising, retargeting, chatbots, and platform help for Apollo, Salesloft, Mailshake, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter, Tomba, Prospeo, Mailmo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, Brevo, Braze, Iterable, GetResponse, Seismic, Allego, Groove, Kit (ConvertKit), Omnisend, ZoomInfo, SendPulse, Clearbit, RB2B, 6sense, Clay, LeadMagic, AdRoll, SWAI, Tagshop, influData, Creator.co, MicroLaunch, LaunchingNext, SideProjectors, ProductBurst, SoloPush, CtrlAlt.cc, Open Launch, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, and Qwilr. Use when you have a sales or marketing question and are not sure which skill to use. Do NOT use to solve problems directly — this skill only routes."
+description: "Routes any sales, marketing, or GTM objective to the right specialized skill. Covers 103 first-party skills and 53 third-party skills across prospecting, outbound, deals, proposals, forecasting, deliverability, enrichment, intent signals, content, coaching, CRO, SEO, data hygiene, B2B advertising, retargeting, chatbots, and platform help for Apollo, Salesloft, Mailshake, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter, Tomba, Prospeo, Mailmo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, Brevo, Braze, Iterable, GetResponse, Seismic, Allego, Groove, Kit (ConvertKit), Omnisend, ZoomInfo, SendPulse, Clearbit, RB2B, 6sense, Clay, LeadMagic, AdRoll, SWAI, Tagshop, influData, Creator.co, MicroLaunch, LaunchingNext, SideProjectors, ProductBurst, SoloPush, CtrlAlt.cc, Open Launch, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, Semrush, and Qwilr. Use when you have a sales or marketing question and are not sure which skill to use. Do NOT use to solve problems directly — this skill only routes."
 version: 1.0.0
 tags: [sales, router, skill-discovery]
 ---
@@ -447,6 +447,12 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 |---|---|
 | `/sales-launch-directory` | User asks about launching across multiple startup directories, which directories to submit to, startup directory strategy, backlink stacking from directories, directory submission sequence, comparing launch platforms, multi-directory launch plan, or maximizing backlinks from directories. NOT for a single specific platform — route to that platform's skill instead |
 
+### Semrush & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-semrush` | User asks about Semrush platform, Semrush keyword research, Semrush site audit, Semrush rank tracking, Semrush backlink analysis, Semrush API, Semrush Position Tracking, Keyword Magic Tool, Semrush Content Marketing Toolkit, Semrush AI Visibility, Semrush Local SEO, Semrush Listing Management, Semrush Advertising Research, Semrush pricing, Semrush Pro vs Guru vs Business, Semrush One, Semrush MCP, semrush.com, Semrush vs Ahrefs, or Semrush SEO workflow |
+
 ### Groove.cm & Platform
 
 | Skill | Route when... |
@@ -737,7 +743,8 @@ Some requests are ambiguous. Apply these rules:
 - **"Content"** → `/content-strategy` for planning what to create, `/sales-content` for sales enablement materials, `/copywriting` for writing the actual page copy, `/social-content` for social media.
 - **"A/B test"** → `/ab-test-setup` for experiment design, `/page-cro` for page conversion optimization.
 - **"Ads"** → `/ad-creative` for ad copy/creative, `/paid-ads` for campaign management and targeting.
-- **"SEO"** → `/seo-audit` for auditing, `/ai-seo` for AI search optimization, `/programmatic-seo` for scaled pages, `/schema-markup` for structured data.
+- **"SEO"** → `/sales-semrush` if using Semrush, `/seo-audit` for general auditing, `/ai-seo` for AI search optimization, `/programmatic-seo` for scaled pages, `/schema-markup` for structured data.
+- **"Semrush" / "keyword research Semrush" / "site audit Semrush" / "Semrush API" / "Keyword Magic Tool" / "Semrush vs Ahrefs" / "Semrush One"** → `/sales-semrush` (platform help). If asking about general SEO audit strategy without Semrush → `/seo-audit`. If asking about AI search visibility without Semrush → `/ai-seo` or `/seo-geo`. If asking about link building strategy → `/build-links`. If asking about backlink analysis → `/backlink-analyzer`. If asking about page conversion → `/page-cro`.
 - **"GEO" / "AI search"** → `/seo-geo` for generative engine optimization (AI search engines), `/ai-seo` for general AI search content optimization.
 - **"CRO" / "optimize"** → Ask what they're optimizing: form (`/form-cro`), page (`/page-cro`), signup (`/signup-flow-cro`), popup (`/popup-cro`), paywall (`/paywall-upgrade-cro`), or onboarding (`/onboarding-cro`).
 - **"Sales enablement"** → `/sales-enablement` for marketing-flavored decks/one-pagers, `/sales-content` for sales team battle cards/case studies.

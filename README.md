@@ -1,6 +1,6 @@
 # Sales Skills
 
-[![Skills](https://img.shields.io/badge/skills-113-blue)](https://skills.sh/sales-skills/sales)
+[![Skills](https://img.shields.io/badge/skills-114-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
@@ -13,7 +13,7 @@ Claude Code skills for sales, marketing, and GTM workflows.
 npx skills add sales-skills/sales --skills sales-do
 ```
 
-Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill (102 first-party + 53 third-party skills).
+Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill (103 first-party + 53 third-party skills).
 
 Want every skill at once?
 
@@ -23,7 +23,7 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 96 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 97 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -365,6 +365,12 @@ Router recommends a 5-skill sequence:
 | Skill | What it does |
 |---|---|
 | `/sales-seamless` | Seamless.AI platform help — Prospector, Buyer Intent, Job Changes, CRM Enrich, Pitch Intelligence, Engagement Hub, AI Agents, Autopilot, Chrome extension, API & integrations |
+
+### Semrush & Platform
+
+| Skill | What it does |
+|---|---|
+| `/sales-semrush` | Semrush platform help — the leading SEO and online visibility platform (27B keywords, 43T backlinks, 808M domains). Keyword research (Keyword Magic Tool), site audits (140+ checks), rank tracking, backlink analysis, AI Visibility Toolkit (LLM citation tracking), Content Marketing, Traffic Analytics, Local SEO, Advertising Intelligence, Social Media, AI PR. REST API (unit-based, Business plan), MCP server, Zapier. Pro $139.95/mo, Guru $249.95/mo, Business $499.95/mo |
 
 ### SafetyMails & Platform
 

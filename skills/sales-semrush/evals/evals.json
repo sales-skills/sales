@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-semrush",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I just launched a new SaaS product. How do I find keywords I can actually rank for using Semrush?",
+      "expected_output": "Walks through using Keyword Magic Tool with seed keywords, filtering by keyword difficulty (KD%) for realistic targets, using intent filters for commercial/transactional keywords, and organizing winners into topic clusters. Mentions that KD% is relative to your domain authority and new sites should target lower difficulty.",
+      "assertions": [
+        {"name": "keyword_tool", "description": "Recommends using Semrush's Keyword Magic Tool or Keyword Overview for discovering keyword opportunities"},
+        {"name": "difficulty_filtering", "description": "Explains filtering by keyword difficulty (KD%) and notes that new or low-authority sites should target lower difficulty keywords"},
+        {"name": "actionable_workflow", "description": "Provides a concrete workflow with multiple steps, not just a single tool recommendation — e.g., seed keyword entry, filtering, gap analysis, or organizing results"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "My Semrush site audit shows 500+ errors. How do I prioritize what to fix?",
+      "expected_output": "Explains the issue hierarchy (Errors > Warnings > Notices), recommends prioritizing by category (crawlability, HTTPS, performance), identifies highest-impact fixes, and advises re-crawling to track progress. Notes that not all issues are equally important.",
+      "assertions": [
+        {"name": "priority_framework", "description": "Provides a prioritization framework for site audit issues, such as fixing errors before warnings, or categorizing by impact type"},
+        {"name": "specific_categories", "description": "Mentions specific types of audit issues to focus on, such as broken links, crawl errors, HTTPS issues, Core Web Vitals, or internal linking"},
+        {"name": "tracking_progress", "description": "Recommends re-crawling or monitoring the health score over time to track improvement after fixes"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I want to use the Semrush API to build automated SEO reports. What do I need to know?",
+      "expected_output": "Explains API access requires Business plan ($499.95/mo), authentication via API key, unit-based pricing model, key endpoints for reporting (Domain Overview, Organic Positions), and warns about unit costs. Mentions Zapier Site Audit connector as a no-API alternative.",
+      "assertions": [
+        {"name": "plan_requirement", "description": "States that Semrush API access requires the Business plan or mentions the cost barrier for API access"},
+        {"name": "unit_pricing", "description": "Explains the unit-based consumption model where different endpoints have different costs, and advises budgeting or testing with small queries"},
+        {"name": "alternative_path", "description": "Mentions the Zapier Site Audit connector or MCP server as alternatives that don't require the Business plan or full API access"}
+      ]
+    }
+  ]
+}
