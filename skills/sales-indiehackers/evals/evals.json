@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-indiehackers",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "How should I share my new SaaS product on Indie Hackers to get feedback and users?",
+      "expected_output": "Recommends creating a product page, spending time engaging with the community before posting, writing a Show IH post with story structure (problem, solution, metrics, specific ask), posting mid-week, and responding to all comments.",
+      "assertions": [
+        {"name": "post_structure", "description": "Recommends a structured approach to the product share post, such as including the problem being solved, metrics or progress, and a specific ask for the community"},
+        {"name": "pre_engagement", "description": "Advises engaging with the IH community (commenting, helping others) before or alongside promoting their own product"},
+        {"name": "engagement_tactics", "description": "Mentions at least one concrete engagement tactic like responding to comments, posting mid-week, or using the Show IH format"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "Is Indie Hackers worth it for SEO backlinks? How does the link value compare to Product Hunt?",
+      "expected_output": "Explains IH has DR75 but backlinks are nofollow, so no SEO link equity is passed. Compares with Product Hunt (DR91 dofollow). Recommends IH for community engagement and high conversion rates rather than SEO backlinks.",
+      "assertions": [
+        {"name": "nofollow_explained", "description": "States that Indie Hackers backlinks are nofollow and explains this means no direct SEO link equity"},
+        {"name": "ph_comparison", "description": "Compares IH's backlink value with Product Hunt, noting PH provides dofollow links with higher DR"},
+        {"name": "community_value", "description": "Explains that IH's primary value is community engagement, founder networking, or high conversion rates rather than SEO backlinks"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Should I launch on Indie Hackers or Product Hunt first?",
+      "expected_output": "Compares the two platforms: IH is ongoing engagement with high conversion (~24%), PH is a 24-hour competitive sprint (~3% conversion). Recommends IH first to build community and refine messaging, then PH as a polished launch event.",
+      "assertions": [
+        {"name": "platform_comparison", "description": "Compares key differences between Indie Hackers and Product Hunt such as engagement style, competition level, conversion rates, or audience"},
+        {"name": "sequencing_recommendation", "description": "Recommends an order for using the platforms, with reasoning for which to use first"},
+        {"name": "conversion_insight", "description": "Mentions that IH tends to have higher conversion or engagement rates for indie/bootstrapped products compared to PH's broader but less targeted audience"}
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Sales Skills
 
-[![Skills](https://img.shields.io/badge/skills-114-blue)](https://skills.sh/sales-skills/sales)
+[![Skills](https://img.shields.io/badge/skills-115-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
@@ -13,7 +13,7 @@ Claude Code skills for sales, marketing, and GTM workflows.
 npx skills add sales-skills/sales --skills sales-do
 ```
 
-Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill (103 first-party + 53 third-party skills).
+Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill (104 first-party + 53 third-party skills).
 
 Want every skill at once?
 
@@ -23,7 +23,7 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 97 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 98 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -341,6 +341,12 @@ Router recommends a 5-skill sequence:
 | Skill | What it does |
 |---|---|
 | `/sales-fazier` | Fazier platform help — product discovery and launch platform for indie makers. Free submission (DR81 dofollow backlink, 15-day review, badge required), Lite ($19 instant publish), Premium ($39 guaranteed DR81+ backlink + 15-day promo), Super ($99 top placement), daily launches, community voting, leaderboards. Founded by Falak Sher |
+
+### Indie Hackers & Platform
+
+| Skill | What it does |
+|---|---|
+| `/sales-indiehackers` | Indie Hackers platform help — the largest founder community (165K+ entrepreneurs, ~1-2M monthly visits). Community engagement strategy (Show IH, Ask IH, post formatting, timing), product pages (revenue milestones, transparent metrics), groups, interviews, podcast, Partner Up co-founder matching, advertising. DR75 nofollow. ~24% trial conversion rate. Founded by Courtland and Channing Allen |
 
 ### Product Hunt & Platform
 

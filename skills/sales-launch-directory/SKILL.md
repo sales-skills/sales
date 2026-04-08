@@ -70,6 +70,7 @@ If the request maps to a single platform, route:
 - LaunchDay-specific questions → `/sales-launchday`
 - Super Launch-specific questions → `/sales-superlaunch`
 - JustGotFound-specific questions → `/sales-justgotfound`
+- Indie Hackers-specific questions → `/sales-indiehackers`
 - Product Hunt-specific questions → `/sales-producthunt`
 - Email marketing to subscribers → `/sales-email-marketing`
 - Landing page optimization → `/sales-checkout`
@@ -102,6 +103,7 @@ Otherwise, answer directly from the directory knowledge below.
 | Awesome Indie | DR~19-31 unconfirmed | Free | None | Editorial queue (unknown) | Curated indie directory | `/sales-awesomeindie` |
 | JustGotFound | DR23 dofollow | Free | $50-$500 promotion | None — instant | Community-curated PH alternative | `/sales-justgotfound` |
 | Product Hunt | DR91 dofollow | Free | Pro $100/mo / Super Pro $300/mo | None — 24-hour daily window | Largest launch platform (5M+ visits/mo), 2026 algo weights comments > upvotes | `/sales-producthunt` |
+| Indie Hackers | DR75 nofollow | Free | IH+ ~$24.75/mo / Advertising (contact) | None — post anytime | Founder community (165K+ entrepreneurs), ~24% trial conversion, journey sharing | `/sales-indiehackers` |
 | Peerlist | DR76 nofollow | Free | Ads (pricing not public) | None — all projects featured Monday | Weekly launches + professional network (203K+ users) | `/sales-peerlist` |
 | CtrlAlt.cc | DA30 dofollow | Free | $39 (1-week feature) | Up to 2 months (free) | Curated directory | `/sales-ctrlaltcc` |
 
@@ -111,7 +113,6 @@ Otherwise, answer directly from the directory knowledge below.
 |---|---|---|---|---|
 | BetaList | DR67 dofollow | Free (queue) / $129 (skip) | Pre-launch directory | Best for beta/early products |
 | Hacker News (Show HN) | DR91 dofollow | Free | Community voting | Tech audience, hostile to marketing |
-| Indie Hackers | DR75 dofollow | Free | Community posts | Founder audience, authentic engagement required |
 | F6S | DR74 dofollow | Free | Startup directory | Also connects to accelerators/funding |
 
 ### Backlink value ranking
@@ -123,7 +124,7 @@ All first-party + key third-party directories sorted by backlink strength:
 | 1 | Product Hunt | DR91 | Yes | Yes |
 | 2 | Hacker News | DR91 | Yes | Yes |
 | 3 | Fazier | DR81 | Yes (free w/ badge) | Yes (badge req.) / $39 guaranteed |
-| 4 | Indie Hackers | DR75 | Yes | Yes |
+| 4 | Indie Hackers | DR75 | No (nofollow) | Free (nofollow only) |
 | 5 | F6S | DR74 | Yes | Yes |
 | 6 | Uneed | DR74 | Yes | Yes |
 | 7 | SideProjectors | DR69 | Yes | Yes |
@@ -161,7 +162,7 @@ Submit to platforms with no editorial queue to get live immediately:
 4. **Huzzler Launch Arena** — submit Monday for weekly competition (Wed-Sun voting)
 4. **Peerlist Launchpad** — submit for Monday launch, all projects featured, streak-based vote multipliers (nofollow backlink, DR76 — community value, not SEO)
 4. **Uneed (Skip the Line, $29.99)** — choose your launch date, DR74 dofollow backlink (one of the highest free directory backlinks)
-4. **Indie Hackers** — post in relevant groups, share your story
+4. **Indie Hackers** — post in relevant groups, share your story (nofollow backlink, DR75 — community value, not SEO)
 
 **Goal**: Get live listings, initial backlinks, and early feedback to refine your messaging.
 
@@ -191,7 +192,7 @@ Submit to all free editorial queues on Day 1 — they'll go live weeks/months la
 3. **MicroLaunch (free)** — variable queue
 3. **Tiny Startups (free)** — weekly human curation, DR50 dofollow + newsletter exposure (17,500+ subs)
 3. **TinyLaunch (free)** — weekly launch batches, DR60-71 dofollow if Top 3
-3. **Uneed (free)** — Join the Line for automatic launch slot, DR74 dofollow backlink (highest free directory backlink after Fazier and Indie Hackers)
+3. **Uneed (free)** — Join the Line for automatic launch slot, DR74 dofollow backlink (highest free dofollow directory backlink after Fazier)
 3. **Fazier (free)** — 15-day review, DR81 dofollow backlink, requires badge on your site (highest DR free backlink from any first-party directory)
 4. **Awesome Indie (free)** — editorial queue, unknown wait time
 4. **LaunchingNext (free)** — weeks/months wait
@@ -286,6 +287,7 @@ For each directory submission, track:
 - `/sales-tinylaunch` — TinyLaunch platform help (weekly launch platform, DR60-71 dofollow for Top 3 or $39 Premium)
 - `/sales-uneed` — Uneed platform help (social launchpad with daily voting, DR74 dofollow, 64K+ makers, newsletter 15K subs)
 - `/sales-fazier` — Fazier platform help (product discovery for indie makers, DR81 dofollow, free with badge or $19+ paid)
+- `/sales-indiehackers` — Indie Hackers platform help (largest founder community, DR75 nofollow, 165K+ entrepreneurs, ~24% trial conversion)
 - `/sales-producthunt` — Product Hunt platform help (largest launch platform, DR91 dofollow, 5M+ visits/mo, 2026 algorithm)
 - `/sales-peerlist` — Peerlist platform help (professional network for tech builders, weekly Launchpad, DR76 nofollow, 203K+ users)
 - `/sales-funnel` — Build and optimize sales funnels for conversion
@@ -312,7 +314,7 @@ For each directory submission, track:
 1. Lists all free-submission directories sorted by backlink strength
 2. Starts with instant listings (SoloPush, ProductBurst) for immediate backlinks
 3. Submits to all free editorial queues (CtrlAlt.cc, MicroLaunch, LaunchingNext, SideProjectors)
-4. Recommends Show HN and Indie Hackers for high-DR free backlinks
+4. Recommends Show HN for high-DR free dofollow backlinks and Indie Hackers for community engagement (nofollow but highest conversion)
 5. Sets up Google Search Console to track when backlinks are indexed
 **Result**: 8+ dofollow backlinks from free submissions, staggered over 1-3 months
 
