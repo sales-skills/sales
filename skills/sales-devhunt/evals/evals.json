@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-devhunt",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Is DevHunt worth submitting to for SEO backlinks? How does it compare?",
+      "expected_output": "Explains DevHunt offers free dofollow backlinks at DR57-62, which is strong mid-to-high range. Compares with Open Launch (DR65), MicroLaunch (DR59), SoloPush (DR46). Notes developer-only audience as unique differentiator.",
+      "assertions": [
+        {"name": "dr_value", "description": "States DevHunt DR is in the 57-62 range with dofollow backlink"},
+        {"name": "comparison", "description": "Compares DevHunt backlink value with at least one other directory like Open Launch (DR65) or MicroLaunch (DR59)"},
+        {"name": "developer_audience", "description": "Notes the developer-only audience or GitHub authentication as a unique differentiator"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "Should I pay $49 for DevHunt featured placement or use that budget elsewhere?",
+      "expected_output": "Explains the $49 featured placement gets promoted visibility. Compares with cheaper alternatives: Open Launch Premium ($12 for DR65 dofollow) and OpenHunts Premium ($9.90 for DR50). Recommends paying only if product specifically targets developers.",
+      "assertions": [
+        {"name": "featured_cost", "description": "States the $49 featured placement cost and what it offers"},
+        {"name": "cheaper_alternatives", "description": "Recommends cheaper alternatives like Open Launch ($12) or OpenHunts ($9.90) for guaranteed backlinks"},
+        {"name": "developer_fit", "description": "Notes that $49 is worth it primarily if the product targets developers specifically"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "How do I submit my developer tool to DevHunt?",
+      "expected_output": "Walks through submission: sign in via GitHub, click Submit your Dev Tool, fill out form with logo/tagline/description/screenshots/category, choose free or $49 featured, engage with community after launch.",
+      "assertions": [
+        {"name": "github_auth", "description": "Mentions GitHub authentication is required to submit"},
+        {"name": "submission_steps", "description": "Describes the submission form including product details, category selection, and screenshots"},
+        {"name": "free_vs_paid", "description": "Mentions the choice between free submission and $49 featured placement"}
+      ]
+    }
+  ]
+}
