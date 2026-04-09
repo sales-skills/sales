@@ -1,6 +1,6 @@
 ---
 name: sales-launch-directory
-description: "Startup directory launch strategy — coordinates submissions across multiple product launch and discovery platforms for maximum visibility, backlinks, and early users. Covers platform selection (Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, BetaList, Hacker News, Indie Hackers, Altern, Lobsters), launch sequencing (instant-list first, editorial-review last), backlink stacking (DA/DR comparison across directories), listing optimization, timing strategy, and multi-platform coordination. Use when planning a product launch across directories, choosing which directories to submit to, or building a backlink portfolio from startup directories. Do NOT use for a single specific platform (use the platform skill instead). Do NOT use for paid advertising (use /sales-b2b-advertising)."
+description: "Startup directory launch strategy — coordinates submissions across multiple product launch and discovery platforms for maximum visibility, backlinks, and early users. Covers platform selection (Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, BetaList, Hacker News, Indie Hackers, Altern, Lobsters, StartupBase), launch sequencing (instant-list first, editorial-review last), backlink stacking (DA/DR comparison across directories), listing optimization, timing strategy, and multi-platform coordination. Use when planning a product launch across directories, choosing which directories to submit to, or building a backlink portfolio from startup directories. Do NOT use for a single specific platform (use the platform skill instead). Do NOT use for paid advertising (use /sales-b2b-advertising)."
 argument-hint: "[describe your product and what you want from directory submissions]"
 license: MIT
 version: 1.0.0
@@ -72,6 +72,7 @@ If the request maps to a single platform, route:
 - JustGotFound-specific questions → `/sales-justgotfound`
 - Altern-specific questions → `/sales-altern`
 - Lobsters-specific questions → `/sales-lobsters`
+- StartupBase-specific questions → `/sales-startupbase`
 - Indie Hackers-specific questions → `/sales-indiehackers`
 - Product Hunt-specific questions → `/sales-producthunt`
 - Email marketing to subscribers → `/sales-email-marketing`
@@ -109,6 +110,7 @@ Otherwise, answer directly from the directory knowledge below.
 | Peerlist | DR76 nofollow | Free | Ads (pricing not public) | None — all projects featured Monday | Weekly launches + professional network (203K+ users) | `/sales-peerlist` |
 | Altern | Dofollow (DR unconfirmed) | Free | Gold/Silver/Bronze (pricing not public) | Editorial review (no SLA) | AI-only curated directory (10,000+ tools, 100+ categories) + newsletter | `/sales-altern` |
 | Lobsters | DR unconfirmed | Free (invite-only) | None | Invite required + 70-day restrictions | Computing-focused link aggregation, invite-only, anti-marketing, FLOSS-friendly | `/sales-lobsters` |
+| StartupBase | DR39 dofollow | Free | Premium (price not public) | 2-3 months (free), 24h (paid) | Community discovery + editorial review, tech startups only | `/sales-startupbase` |
 | CtrlAlt.cc | DA30 dofollow | Free | $39 (1-week feature) | Up to 2 months (free) | Curated directory | `/sales-ctrlaltcc` |
 
 ### Third-party platforms (no skill — general guidance)
@@ -147,10 +149,11 @@ All first-party + key third-party directories sorted by backlink strength:
 | 19 | SoloPush | DR46-47 | Yes | Yes |
 | 20 | Huzzler | DR41-47 | Yes (winners only) | Yes (must win Launch Arena) |
 | 21 | Awesome Indie | DR~19-31 | Unconfirmed | Yes (queue) |
-| 22 | CtrlAlt.cc | DA30 | Yes | Yes (queue) |
-| 23 | JustGotFound | DR23 | Yes | Yes |
-| 24 | Altern | Unconfirmed | Yes | Yes (AI tools only) |
-| 25 | Lobsters | Unconfirmed | Unconfirmed | Yes (invite-only, FLOSS focus) |
+| 22 | StartupBase | DR39 | Yes | Yes (queue) |
+| 23 | CtrlAlt.cc | DA30 | Yes | Yes (queue) |
+| 24 | JustGotFound | DR23 | Yes | Yes |
+| 25 | Altern | Unconfirmed | Yes | Yes (AI tools only) |
+| 26 | Lobsters | Unconfirmed | Unconfirmed | Yes (invite-only, FLOSS focus) |
 
 ## Step 4 — Actionable guidance
 
@@ -201,6 +204,7 @@ Submit to all free editorial queues on Day 1 — they'll go live weeks/months la
 3. **TinyLaunch (free)** — weekly launch batches, DR60-71 dofollow if Top 3
 3. **Uneed (free)** — Join the Line for automatic launch slot, DR74 dofollow backlink (highest free dofollow directory backlink after Fazier)
 3. **Fazier (free)** — 15-day review, DR81 dofollow backlink, requires badge on your site (highest DR free backlink from any first-party directory)
+3. **StartupBase (free)** — 2-3 month queue, DR39 dofollow backlink (tech startups only, social auth required)
 4. **Awesome Indie (free)** — editorial queue, unknown wait time
 4. **LaunchingNext (free)** — weeks/months wait
 5. **SideProjectors** — editorial review, variable timing
@@ -299,6 +303,7 @@ For each directory submission, track:
 - `/sales-peerlist` — Peerlist platform help (professional network for tech builders, weekly Launchpad, DR76 nofollow, 203K+ users)
 - `/sales-altern` — Altern platform help (AI tools directory, 10,000+ tools, dofollow backlinks, newsletter)
 - `/sales-lobsters` — Lobsters platform help (invite-only computing community, FLOSS-friendly, anti-marketing)
+- `/sales-startupbase` — StartupBase platform help (community startup directory, DR39 dofollow, 2-3 month queue, tech startups only)
 - `/sales-funnel` — Build and optimize sales funnels for conversion
 - `/sales-audience-growth` — Grow your email list and subscriber base
 - `/sales-checkout` — Optimize landing pages and checkout for conversion

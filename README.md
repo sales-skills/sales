@@ -1,6 +1,6 @@
 # Sales Skills
 
-[![Skills](https://img.shields.io/badge/skills-117-blue)](https://skills.sh/sales-skills/sales)
+[![Skills](https://img.shields.io/badge/skills-118-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
@@ -13,7 +13,7 @@ Claude Code skills for sales, marketing, and GTM workflows.
 npx skills add sales-skills/sales --skills sales-do
 ```
 
-Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill (106 first-party + 53 third-party skills).
+Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill (107 first-party + 53 third-party skills).
 
 Want every skill at once?
 
@@ -23,7 +23,7 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 100 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 101 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -473,6 +473,12 @@ Router recommends a 5-skill sequence:
 | Skill | What it does |
 |---|---|
 | `/sales-lobsters` | Lobsters (lobste.rs) platform help — invite-only computing-focused link aggregation community (10K+ daily views, est. 2012). Invitation system (public invite tree, 70-day new-user restrictions), posting norms (self-promotion <25% rule, release/show tags, anti-marketing culture), tagging system (50+ predefined tags), moderation (public mod log, Hats system), JSON API. Founded by Joshua Stein, administered by Peter Bhat Harkins |
+
+### StartupBase & Platform
+
+| Skill | What it does |
+|---|---|
+| `/sales-startupbase` | StartupBase (startupbase.io) platform help — community-driven startup discovery directory (DR39 dofollow, est. 2017). Free submission (tech startups only — SaaS, AI, mobile apps, IoT, hardware, browser extensions), 2-3 month editorial queue (free) or 24-hour premium featuring (paid), strict selection criteria (custom domain, public product, newsletter signup), Spark newsletter (weekly Tuesdays), market categories, streaks leaderboard, AcquireBase integration. Founded by Atta-Ur-Rehman Shah (@attacomsian) |
 
 ### Minelead & Platform
 

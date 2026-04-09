@@ -8,7 +8,7 @@ A platform can belong to **multiple** meta skills (e.g., a platform with email +
 
 | Meta skill | Problem domain | Platforms it coordinates |
 |---|---|---|
-| `/sales-launch-directory` | Startup directory launches | Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, BetaList, Hacker News, Indie Hackers, Altern, Lobsters |
+| `/sales-launch-directory` | Startup directory launches | Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, BetaList, Hacker News, Indie Hackers, Altern, Lobsters, StartupBase |
 | `/sales-cadence` | Outbound sequences | Salesloft, Mailshake, Smartlead, Lemlist, Yesware, Mixmax, Reply.io, Woodpecker, Apollo, Hunter.io, Seamless.AI, ZoomInfo Engage |
 | `/sales-deliverability` | Email deliverability | Apollo, Mailshake, Salesloft, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter.io, SafetyMails, ZeroBounce, Snov.io |
 | `/sales-email-marketing` | Opt-in email marketing | Kit, Mailchimp, ActiveCampaign, Klaviyo, Brevo, GetResponse, Omnisend, SendPulse, Iterable, Braze, Customer.io, Closum |
