@@ -1,6 +1,6 @@
 ---
 name: sales-launchingnext
-description: "LaunchingNext platform help — curated startup directory and discovery platform with 45,000+ listed startups. Covers free submission (editorial review queue), expedited review ($99 for 1-business-day consideration), promoted ads (Seed Boost / Growth Engine / Market Leader tiers from $500-$4,500/mo with guaranteed impressions), DR51 do-follow backlinks, weekly newsletter (5,000+ founders), and Twitter/X distribution (14.9K followers). Use when submitting a startup to LaunchingNext, deciding between free and expedited review, evaluating promoted ad ROI, or maximizing backlink value from the directory. Do NOT use for general launch strategy across multiple directories (use /sales-launch-directory), email marketing (use /sales-email-marketing), or audience growth (use /sales-audience-growth)."
+description: "LaunchingNext platform help — curated startup directory and discovery platform with 45,000+ listed startups. Covers free submission (editorial review queue), Express Approval ($149 for 1-business-day review + newsletter feature + social blast), promoted ads (Seed Boost / Growth Engine / Market Leader tiers from $500-$4,500/mo with guaranteed impressions), DR51 do-follow backlinks, weekly newsletter (18,000+ subscribers), and Twitter/X distribution (25K+ followers). Use when submitting a startup to LaunchingNext, deciding between free and expedited review, evaluating promoted ad ROI, or maximizing backlink value from the directory. Do NOT use for general launch strategy across multiple directories (use /sales-launch-directory), email marketing (use /sales-email-marketing), or audience growth (use /sales-audience-growth)."
 argument-hint: "[describe what you need help with on LaunchingNext]"
 license: MIT
 version: 1.0.0
@@ -16,7 +16,7 @@ Ask the user:
 
 1. **What do you need help with?**
    - A) Submitting a startup — preparing listing, description, tags
-   - B) Free vs expedited review — deciding whether to pay $99
+   - B) Free vs Express Approval — deciding whether to pay $149
    - C) Promoted ads — evaluating Seed Boost / Growth Engine / Market Leader
    - D) SEO backlinks — maximizing backlink value from LaunchingNext
    - E) Newsletter exposure — getting featured in the weekly email
@@ -60,17 +60,18 @@ LaunchingNext is a curated startup directory — an editorial team reviews submi
 3. If approved, startup is listed permanently in the directory
 4. Listing includes a DR51 do-follow backlink to your site
 
-#### Free vs expedited review
+#### Free vs Express Approval
 
-| | Free | Expedited ($99) |
+| | Free | Express Approval ($149) |
 |---|---|---|
-| Review timeline | Weeks to months | 1 business day consideration |
+| Review timeline | Weeks to months | 1 business day |
 | Backlink | DR51 do-follow | DR51 do-follow |
 | Permanent listing | Yes | Yes |
-| Newsletter consideration | Yes (if featured) | Yes (if featured) |
+| Newsletter feature | Only if editorially selected | Included |
+| Social media blast | No | Included (@LaunchingNext, 25K+ followers) |
 | Guaranteed publication | No — editorial discretion | No — still editorial discretion |
 
-**Key point**: The $99 expedited fee speeds up review, but does not guarantee publication. Your startup still needs to pass editorial review.
+**Key point**: The $149 Express Approval speeds up review AND includes newsletter + social distribution. The old $99 option has been replaced with this higher-value package. Your startup still needs to pass editorial review.
 
 ### Promoted ads
 
@@ -111,16 +112,16 @@ For startups wanting guaranteed visibility beyond a directory listing.
 
 - 45,669+ startups listed
 - ~727 monthly visitors (per third-party estimates)
-- 5,000+ newsletter subscribers
+- 18,000+ newsletter subscribers
 - Weekly newsletter every Friday
-- @LaunchingNext on X/Twitter: 14.9K followers
-- Operating since ~2012
+- @LaunchingNext on X/Twitter: 25,000+ followers
+- Founded 2013, Chicago, IL (co-founder: Alex Robb)
 
 ### Distribution channels
 
 1. **Directory listing** — permanent placement, searchable by category/tags
-2. **Newsletter** — weekly Friday email to 5,000+ founders (editorial selection)
-3. **Twitter/X** — @LaunchingNext tweets featured startups to 14.9K followers
+2. **Newsletter** — weekly Friday email to 18,000+ subscribers (editorial selection, or guaranteed with Express Approval)
+3. **Twitter/X** — @LaunchingNext tweets featured startups to 25,000+ followers
 4. **Browse/Trending** — homepage sections for discovery
 
 ## Step 4 — Actionable guidance
@@ -134,7 +135,7 @@ For startups wanting guaranteed visibility beyond a directory listing.
 | 3. Choose 5-10 relevant tags | Match your category and audience | Affects discoverability in directory |
 | 4. Classify your stage | Accurate stage (idea, beta, launched, etc.) | Sets expectations for reviewers |
 | 5. Prepare your landing page | Clear value prop, working product/demo | Editors visit your URL — make it count |
-| 6. Decide free vs expedited | $99 if timing matters | Free queue is weeks/months |
+| 6. Decide free vs Express Approval | $149 if timing matters | Free queue is weeks/months |
 
 ### Multi-directory strategy
 
@@ -152,8 +153,8 @@ LaunchingNext works best as one listing in a broader directory submission strate
 
 *Best-effort from research — review these, especially items about plan-gated features and integration gotchas that may be outdated.*
 
-- **Free queue is very long.** Founders report waiting weeks or months for editorial review. If timing matters, pay the $99 expedited fee.
-- **$99 does not guarantee publication.** Expedited review means faster review, not automatic approval. Your startup still needs to pass editorial standards.
+- **Free queue is very long.** Founders report waiting weeks or months for editorial review. If timing matters, pay the $149 Express Approval.
+- **$149 does not guarantee publication.** Express Approval means faster review + newsletter + social blast, not automatic approval. Your startup still needs to pass editorial standards.
 - **Traffic is modest.** ~727 monthly visitors across the entire site. Don't expect significant direct traffic — the value is primarily the DR51 backlink and newsletter/Twitter distribution.
 - **Promoted ads are expensive relative to traffic.** Seed Boost at $500/mo delivers ~237 visits on average ($2.11/visit). Compare to your cost per visit on other channels before committing.
 - **No community engagement mechanics.** Unlike Product Hunt (upvotes, comments) or MicroLaunch (leaderboard, scores), LaunchingNext is a static directory. There's no way to climb rankings through engagement.
@@ -185,7 +186,7 @@ LaunchingNext works best as one listing in a broader directory submission strate
 **User says**: "I built a project management tool and want to get it listed on LaunchingNext for the backlink"
 **Skill does**:
 1. Walks through the submission checklist: headline, description, tags, stage
-2. Recommends free submission if timing is flexible, $99 expedited if they want the backlink sooner
+2. Recommends free submission if timing is flexible, $149 Express Approval for faster review + newsletter + social blast
 3. Suggests optimizing the landing page before submitting (editors review the URL)
 4. Sets realistic expectations: DR51 backlink is the primary value, not traffic
 5. Recommends pairing with MicroLaunch and Product Hunt for a multi-directory strategy
@@ -206,7 +207,7 @@ LaunchingNext works best as one listing in a broader directory submission strate
 **Skill does**:
 1. Recommends a sequenced approach rather than all-at-once
 2. Prioritizes by impact: Product Hunt (traffic) → MicroLaunch (sustained + deals) → BetaList (beta users) → LaunchingNext (backlink)
-3. Notes that LaunchingNext's free queue is weeks/months — submit early or pay $99
+3. Notes that LaunchingNext's free queue is weeks/months — submit early or pay $149
 4. Suggests focusing on 10-15 high-DR directories rather than mass submission
 5. Flags that each directory needs tailored copy, not copy-paste
 **Result**: Prioritized launch calendar with directory-specific preparation
@@ -215,8 +216,8 @@ LaunchingNext works best as one listing in a broader directory submission strate
 
 ### Submitted weeks ago, no response
 **Symptom**: Submitted for free and haven't heard back after weeks
-**Cause**: The free review queue is long — LaunchingNext prioritizes expedited ($99) submissions and the editorial team reviews free submissions as capacity allows. With 45,000+ startups listed, the volume is high.
-**Solution**: If timing matters, upgrade to the $99 expedited review for 1-business-day consideration. If budget is tight, be patient — use the wait time to polish your landing page and prepare other directory submissions. Note that expedited speeds up review but doesn't guarantee publication.
+**Cause**: The free review queue is long — LaunchingNext prioritizes Express Approval ($149) submissions and the editorial team reviews free submissions as capacity allows. With 45,000+ startups listed, the volume is high.
+**Solution**: If timing matters, upgrade to the $149 Express Approval for 1-business-day review + newsletter feature + social blast. If budget is tight, be patient — use the wait time to polish your landing page and prepare other directory submissions. Note that Express Approval speeds up review but doesn't guarantee publication.
 
 ### Listed but getting no traffic
 **Symptom**: Startup is on LaunchingNext but analytics show minimal referral traffic

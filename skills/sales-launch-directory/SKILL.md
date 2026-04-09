@@ -93,7 +93,7 @@ Otherwise, answer directly from the directory knowledge below.
 | TinyLaunch | DR60-71 dofollow (Top 3 or $39) | Free (conditional) | $39 premium launch | Weekly batches (free), skip queue ($39) | Weekly rankings + newsletter (~11K subs) | `/sales-tinylaunch` |
 | Open Launch | DR65 dofollow | Free (conditional) | $12 premium / $59 SEO | Queue (free), next day ($12) | Daily rankings (PH-style) | `/sales-openlaunch` |
 | MicroLaunch | DR59 dofollow | Free | $39/mo Pro Launch | Varies (free), instant (Pro) | 30-day leaderboard | `/sales-microlaunch` |
-| LaunchingNext | DR51 dofollow | Free | $99 expedited | Weeks/months (free), 1 day ($99) | Curated directory | `/sales-launchingnext` |
+| LaunchingNext | DR51 dofollow | Free | $149 Express Approval | Weeks/months (free), 1 day ($99) | Curated directory | `/sales-launchingnext` |
 | ProductBurst | DR46 dofollow | Free | One-time featured fee | None — instant | Daily/weekly rankings | `/sales-productburst` |
 | SoloPush | DR46-47 dofollow | Free | Unknown | None — instant | No-pressure community | `/sales-solopush` |
 | DevHunt | DR57-62 dofollow | Free | $49 featured | None — instant | Developer tools only, GitHub auth voting | `/sales-devhunt` |

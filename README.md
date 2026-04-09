@@ -244,7 +244,7 @@ Router recommends a 5-skill sequence:
 
 | Skill | What it does |
 |---|---|
-| `/sales-launchingnext` | LaunchingNext platform help — curated startup directory with 45,000+ listed startups. Free submission (editorial review, weeks/months queue), expedited review ($99 for 1-business-day consideration), promoted ads (Seed Boost $500/mo, Growth Engine $1,500/mo, Market Leader $4,500/mo with guaranteed impressions), DR51 do-follow backlinks, weekly newsletter (5,000+ founders), Twitter/X distribution (14.9K followers) |
+| `/sales-launchingnext` | LaunchingNext platform help — curated startup directory with 45,000+ listed startups. Free submission (editorial review, weeks/months queue), Express Approval ($149 for 1-business-day review + newsletter feature + social blast), promoted ads (Seed Boost $500/mo, Growth Engine $1,500/mo, Market Leader $4,500/mo with guaranteed impressions), DR51 do-follow backlinks, weekly newsletter (18,000+ subscribers), Twitter/X distribution (25,000+ followers). Co-founded by Alex Robb (Chicago, IL) |
 
 ### SideProjectors & Platform
 
