@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-lobsters",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I built an open-source Rust CLI tool and want to share it on Lobsters. How should I approach this?",
+      "expected_output": "Recommends getting an invite via the invitation queue or a known member, spending time participating in the community before posting, using the release tag plus relevant technical tags like rust and cli, and keeping self-promotion under 25% of total activity.",
+      "assertions": [
+        {"name": "invite_process", "description": "Explains how to get a Lobsters invitation, mentioning the invitation queue or reaching out to existing members"},
+        {"name": "community_participation", "description": "Advises participating in the community (commenting, sharing others' work) before self-promoting, and mentions the less-than-25-percent self-promotion guideline"},
+        {"name": "tagging_and_submission", "description": "Recommends specific tags for the submission (such as release, rust, or cli) and advises writing a substantive description rather than just dropping a link"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "What's the difference between Lobsters and Hacker News for launching a developer tool?",
+      "expected_output": "Compares invite-only vs open, traffic levels, audience focus, marketing tolerance, and self-promotion norms. Notes HN has much more traffic but Lobsters has higher signal-to-noise and stricter anti-marketing culture.",
+      "assertions": [
+        {"name": "access_comparison", "description": "Explains that Lobsters is invite-only while Hacker News has open registration, and notes the significant traffic difference between the two platforms"},
+        {"name": "marketing_tolerance", "description": "Describes Lobsters' stricter anti-marketing culture compared to HN, mentioning that commercial content is more likely to be flagged on Lobsters"},
+        {"name": "recommendation", "description": "Provides a recommendation or framework for choosing between the platforms based on the type of product (open-source vs commercial) or the user's goals"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I just got a Lobsters invite. What are the rules I need to know as a new member?",
+      "expected_output": "Covers the 70-day new user restrictions, the less-than-25-percent self-promotion rule, the tagging system, the anti-marketing culture, and the public invitation tree accountability system.",
+      "assertions": [
+        {"name": "new_user_restrictions", "description": "Explains the 70-day new user restriction period and what new members cannot do during that time, such as submitting from new domains or flagging content"},
+        {"name": "self_promotion_rule", "description": "Describes the self-promotion guideline that it should be less than a quarter of total contributions"},
+        {"name": "community_norms", "description": "Covers at least one important community norm beyond self-promotion, such as the anti-marketing culture, the public mod log, the tagging requirements, or the accountability through the invitation tree"}
+      ]
+    }
+  ]
+}

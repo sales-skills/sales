@@ -1,6 +1,6 @@
 # Sales Skills
 
-[![Skills](https://img.shields.io/badge/skills-116-blue)](https://skills.sh/sales-skills/sales)
+[![Skills](https://img.shields.io/badge/skills-117-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
@@ -13,7 +13,7 @@ Claude Code skills for sales, marketing, and GTM workflows.
 npx skills add sales-skills/sales --skills sales-do
 ```
 
-Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill (105 first-party + 53 third-party skills).
+Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill (106 first-party + 53 third-party skills).
 
 Want every skill at once?
 
@@ -23,7 +23,7 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 99 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 100 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -467,6 +467,12 @@ Router recommends a 5-skill sequence:
 | Skill | What it does |
 |---|---|
 | `/sales-lobstr` | Lobstr.io platform help — no-code web scraping and data collection at scale. 50+ ready-made scrapers (Google Maps Leads, Google Maps Reviews, LinkedIn Sales Navigator Leads, Twitter, YouTube, Vinted, and more), multi-threading (hundreds of concurrent scrapers), cookie-based account sync (scrape behind login walls), scheduled automation, data export (Google Sheets, Amazon S3, SFTP), webhooks (4 events with retry), Make integration, async REST API, Python SDK, CLI, MCP Server, enterprise custom scrapers |
+
+### Lobsters & Platform
+
+| Skill | What it does |
+|---|---|
+| `/sales-lobsters` | Lobsters (lobste.rs) platform help — invite-only computing-focused link aggregation community (10K+ daily views, est. 2012). Invitation system (public invite tree, 70-day new-user restrictions), posting norms (self-promotion <25% rule, release/show tags, anti-marketing culture), tagging system (50+ predefined tags), moderation (public mod log, Hats system), JSON API. Founded by Joshua Stein, administered by Peter Bhat Harkins |
 
 ### Minelead & Platform
 
