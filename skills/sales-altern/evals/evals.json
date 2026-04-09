@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-altern",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I built an AI agent platform and want to submit it to Altern. What's the process and is the backlink worth it?",
+      "expected_output": "Explains the submission process (GitHub/Google auth, submit tool details, editorial review), confirms dofollow backlinks, notes the alternatives pages SEO value, and recommends accurate category selection for maximum visibility.",
+      "assertions": [
+        {"name": "submission_process", "description": "Describes the submission steps including authentication method (GitHub or Google) and that there is an editorial review before the listing goes live"},
+        {"name": "dofollow_confirmed", "description": "Confirms that Altern provides dofollow backlinks and explains what this means for SEO value"},
+        {"name": "listing_optimization", "description": "Provides at least one concrete tip for optimizing the listing, such as choosing a specific category, writing a clear description, or including screenshots"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "How does Altern compare to There's An AI For That and Futurepedia for listing my AI tool?",
+      "expected_output": "Compares the three directories on traffic, focus, backlink type, and audience. Notes TAAFT and Futurepedia have much higher traffic but Altern offers dev-focused curation. Recommends submitting to multiple directories.",
+      "assertions": [
+        {"name": "traffic_comparison", "description": "Compares traffic levels across the directories, noting that TAAFT and Futurepedia have significantly higher traffic than Altern"},
+        {"name": "differentiation", "description": "Explains what makes Altern different from the other directories, such as its developer/AI focus, curation approach, or alternatives pages"},
+        {"name": "multi_directory_recommendation", "description": "Recommends submitting to multiple AI directories rather than choosing just one, or suggests combining Altern with other directories as part of a broader strategy"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "What's the featured listing on Altern? How much does Gold/Silver/Bronze cost?",
+      "expected_output": "Explains the tiered system (Gold highest, Bronze entry-level), notes featured listings get homepage placement for at least 1 week, and acknowledges that specific pricing is not publicly documented.",
+      "assertions": [
+        {"name": "tier_system", "description": "Describes the featured tier system with Gold, Silver, and Bronze levels and explains the general benefits like homepage placement"},
+        {"name": "pricing_transparency", "description": "Acknowledges that featured tier pricing is not publicly listed and suggests contacting the team to inquire"},
+        {"name": "free_tier_value", "description": "Explains what the free (standard) listing includes, such as a tool page, dofollow backlink, and placement on alternatives pages"}
+      ]
+    }
+  ]
+}

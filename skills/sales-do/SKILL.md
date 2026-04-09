@@ -1,6 +1,6 @@
 ---
 name: sales-do
-description: "Routes any sales, marketing, or GTM objective to the right specialized skill. Covers 104 first-party skills and 53 third-party skills across prospecting, outbound, deals, proposals, forecasting, deliverability, enrichment, intent signals, content, coaching, CRO, SEO, data hygiene, B2B advertising, retargeting, chatbots, and platform help for Apollo, Salesloft, Mailshake, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter, Tomba, Prospeo, Mailmo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, Brevo, Braze, Iterable, GetResponse, Seismic, Allego, Groove, Kit (ConvertKit), Omnisend, ZoomInfo, SendPulse, Clearbit, RB2B, 6sense, Clay, LeadMagic, AdRoll, SWAI, Tagshop, influData, Creator.co, MicroLaunch, LaunchingNext, SideProjectors, ProductBurst, SoloPush, CtrlAlt.cc, Open Launch, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, Semrush, Indie Hackers, and Qwilr. Use when you have a sales or marketing question and are not sure which skill to use. Do NOT use to solve problems directly — this skill only routes."
+description: "Routes any sales, marketing, or GTM objective to the right specialized skill. Covers 105 first-party skills and 53 third-party skills across prospecting, outbound, deals, proposals, forecasting, deliverability, enrichment, intent signals, content, coaching, CRO, SEO, data hygiene, B2B advertising, retargeting, chatbots, and platform help for Apollo, Salesloft, Mailshake, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter, Tomba, Prospeo, Mailmo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, Brevo, Braze, Iterable, GetResponse, Seismic, Allego, Groove, Kit (ConvertKit), Omnisend, ZoomInfo, SendPulse, Clearbit, RB2B, 6sense, Clay, LeadMagic, AdRoll, SWAI, Tagshop, influData, Creator.co, MicroLaunch, LaunchingNext, SideProjectors, ProductBurst, SoloPush, CtrlAlt.cc, Open Launch, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, Semrush, Indie Hackers, Altern, and Qwilr. Use when you have a sales or marketing question and are not sure which skill to use. Do NOT use to solve problems directly — this skill only routes."
 version: 1.0.0
 tags: [sales, router, skill-discovery]
 ---
@@ -440,6 +440,12 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 | Skill | Route when... |
 |---|---|
 | `/sales-producthunt` | User asks about Product Hunt platform, launching on Product Hunt, PH launch preparation, Product Hunt algorithm, Product Hunt 2026 changes, PH Pro or Super Pro, Product Hunt Ship, Product Hunt Promoted Products, PH first comment strategy, Product Hunt backlink, Product Hunt DR91, PH launch day execution, producthunt.com, Ryan Hoover, PH upvotes vs ranking, Product Hunt featured, or PH GraphQL API |
+
+### Altern & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-altern` | User asks about Altern platform, submitting to Altern, Altern AI directory, Altern featured listing, Altern Gold Silver Bronze tiers, Altern backlink, Altern alternatives pages, altern.ai, Altern newsletter, Altern vs TAAFT, Altern vs Futurepedia, Altern vs Toolify, AI tool directory submission, Altern SEO value, Altern categories, or Altern review process |
 
 ### Indie Hackers & Platform
 

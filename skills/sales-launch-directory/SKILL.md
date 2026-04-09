@@ -1,6 +1,6 @@
 ---
 name: sales-launch-directory
-description: "Startup directory launch strategy — coordinates submissions across multiple product launch and discovery platforms for maximum visibility, backlinks, and early users. Covers platform selection (Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, BetaList, Hacker News, Indie Hackers), launch sequencing (instant-list first, editorial-review last), backlink stacking (DA/DR comparison across directories), listing optimization, timing strategy, and multi-platform coordination. Use when planning a product launch across directories, choosing which directories to submit to, or building a backlink portfolio from startup directories. Do NOT use for a single specific platform (use the platform skill instead). Do NOT use for paid advertising (use /sales-b2b-advertising)."
+description: "Startup directory launch strategy — coordinates submissions across multiple product launch and discovery platforms for maximum visibility, backlinks, and early users. Covers platform selection (Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, BetaList, Hacker News, Indie Hackers, Altern), launch sequencing (instant-list first, editorial-review last), backlink stacking (DA/DR comparison across directories), listing optimization, timing strategy, and multi-platform coordination. Use when planning a product launch across directories, choosing which directories to submit to, or building a backlink portfolio from startup directories. Do NOT use for a single specific platform (use the platform skill instead). Do NOT use for paid advertising (use /sales-b2b-advertising)."
 argument-hint: "[describe your product and what you want from directory submissions]"
 license: MIT
 version: 1.0.0
@@ -70,6 +70,7 @@ If the request maps to a single platform, route:
 - LaunchDay-specific questions → `/sales-launchday`
 - Super Launch-specific questions → `/sales-superlaunch`
 - JustGotFound-specific questions → `/sales-justgotfound`
+- Altern-specific questions → `/sales-altern`
 - Indie Hackers-specific questions → `/sales-indiehackers`
 - Product Hunt-specific questions → `/sales-producthunt`
 - Email marketing to subscribers → `/sales-email-marketing`
@@ -105,6 +106,7 @@ Otherwise, answer directly from the directory knowledge below.
 | Product Hunt | DR91 dofollow | Free | Pro $100/mo / Super Pro $300/mo | None — 24-hour daily window | Largest launch platform (5M+ visits/mo), 2026 algo weights comments > upvotes | `/sales-producthunt` |
 | Indie Hackers | DR75 nofollow | Free | IH+ ~$24.75/mo / Advertising (contact) | None — post anytime | Founder community (165K+ entrepreneurs), ~24% trial conversion, journey sharing | `/sales-indiehackers` |
 | Peerlist | DR76 nofollow | Free | Ads (pricing not public) | None — all projects featured Monday | Weekly launches + professional network (203K+ users) | `/sales-peerlist` |
+| Altern | Dofollow (DR unconfirmed) | Free | Gold/Silver/Bronze (pricing not public) | Editorial review (no SLA) | AI-only curated directory (10,000+ tools, 100+ categories) + newsletter | `/sales-altern` |
 | CtrlAlt.cc | DA30 dofollow | Free | $39 (1-week feature) | Up to 2 months (free) | Curated directory | `/sales-ctrlaltcc` |
 
 ### Third-party platforms (no skill — general guidance)
@@ -145,6 +147,7 @@ All first-party + key third-party directories sorted by backlink strength:
 | 21 | Awesome Indie | DR~19-31 | Unconfirmed | Yes (queue) |
 | 22 | CtrlAlt.cc | DA30 | Yes | Yes (queue) |
 | 23 | JustGotFound | DR23 | Yes | Yes |
+| 24 | Altern | Unconfirmed | Yes | Yes (AI tools only) |
 
 ## Step 4 — Actionable guidance
 
@@ -163,6 +166,7 @@ Submit to platforms with no editorial queue to get live immediately:
 4. **Peerlist Launchpad** — submit for Monday launch, all projects featured, streak-based vote multipliers (nofollow backlink, DR76 — community value, not SEO)
 4. **Uneed (Skip the Line, $29.99)** — choose your launch date, DR74 dofollow backlink (one of the highest free directory backlinks)
 4. **Indie Hackers** — post in relevant groups, share your story (nofollow backlink, DR75 — community value, not SEO)
+4. **Altern** — submit if your product is AI-focused (dofollow backlink, editorial review queue)
 
 **Goal**: Get live listings, initial backlinks, and early feedback to refine your messaging.
 
@@ -290,6 +294,7 @@ For each directory submission, track:
 - `/sales-indiehackers` — Indie Hackers platform help (largest founder community, DR75 nofollow, 165K+ entrepreneurs, ~24% trial conversion)
 - `/sales-producthunt` — Product Hunt platform help (largest launch platform, DR91 dofollow, 5M+ visits/mo, 2026 algorithm)
 - `/sales-peerlist` — Peerlist platform help (professional network for tech builders, weekly Launchpad, DR76 nofollow, 203K+ users)
+- `/sales-altern` — Altern platform help (AI tools directory, 10,000+ tools, dofollow backlinks, newsletter)
 - `/sales-funnel` — Build and optimize sales funnels for conversion
 - `/sales-audience-growth` — Grow your email list and subscriber base
 - `/sales-checkout` — Optimize landing pages and checkout for conversion
