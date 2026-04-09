@@ -250,7 +250,7 @@ Router recommends a 5-skill sequence:
 
 | Skill | What it does |
 |---|---|
-| `/sales-sideprojectors` | SideProjectors platform help — marketplace to buy, sell, and showcase side projects (24,500+ listings). Free listing with no commission, co-founder matching, project showcase, editorial review, DR69 do-follow backlinks (highest among project directories), no escrow/payment handling (peer-to-peer), 631 categories |
+| `/sales-sideprojectors` | SideProjectors platform help — marketplace to buy, sell, and showcase side projects (24,600+ listings). Freemium model (free listing with no commission, premium features for enhanced visibility), co-founder matching, project showcase, editorial review, DR69 do-follow backlinks (highest among project directories), no escrow/payment handling (peer-to-peer), 631 categories |
 
 ### ProductBurst & Platform
 

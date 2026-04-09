@@ -1,6 +1,6 @@
 ---
 name: sales-sideprojectors
-description: "SideProjectors platform help — marketplace to buy, sell, and showcase side projects with 24,500+ listings. Covers selling projects (free listing, no commission, no escrow), buying projects (source code, docs, service accounts), co-founder matching, project showcase for community feedback, editorial review process, and DR69 do-follow backlinks. Use when listing a side project for sale on SideProjectors, buying a project, finding a co-founder, showcasing a project, or maximizing backlink value from the directory. Do NOT use for general product launch strategy across platforms (use /sales-funnel), email marketing (use /sales-email-marketing), or startup directory listings without buy/sell (use /sales-launchingnext or /sales-microlaunch)."
+description: "SideProjectors platform help — marketplace to buy, sell, and showcase side projects with 24,600+ listings. Covers selling projects (free listing, no commission, no escrow), buying projects (source code, docs, service accounts), co-founder matching, project showcase for community feedback, editorial review process, and DR69 do-follow backlinks. Use when listing a side project for sale on SideProjectors, buying a project, finding a co-founder, showcasing a project, or maximizing backlink value from the directory. Do NOT use for general product launch strategy across platforms (use /sales-funnel), email marketing (use /sales-email-marketing), or startup directory listings without buy/sell (use /sales-launchingnext or /sales-microlaunch)."
 argument-hint: "[describe what you need help with on SideProjectors]"
 license: MIT
 version: 1.0.0
@@ -54,7 +54,7 @@ Otherwise, answer directly from platform knowledge below.
 
 ### How SideProjectors works
 
-SideProjectors is a peer-to-peer marketplace for side projects — developers list projects for sale, co-founder search, or showcase, and the community browses and connects. Founded by Eric Bae at a Sydney hackathon (~2013), it now has 24,500+ listed projects.
+SideProjectors is a peer-to-peer marketplace for side projects — developers list projects for sale, co-founder search, or showcase, and the community browses and connects. Founded by Eric Bae at a Sydney hackathon (~2013), it now has 24,600+ listed projects.
 
 **Key difference from other marketplaces**: SideProjectors is 100% free with no commissions. Unlike Acquire.com (verified buyers, escrow) or Flippa (auction model, fees), SideProjectors connects buyers and sellers directly with zero platform fees. The tradeoff: no escrow, no payment handling, no due diligence assistance.
 
@@ -96,7 +96,7 @@ SideProjectors is a peer-to-peer marketplace for side projects — developers li
 | Showcasing a project | Free |
 | Co-founder listings | Free |
 
-**No premium tiers documented.** SideProjectors appears to be entirely free — no promoted listings, no featured spots, no paid visibility boosts.
+**Premium features exist but pricing is not public.** SideProjectors operates a freemium model — basic listing, browsing, and buying are free. Premium features include enhanced visibility, priority support, and advanced analytics. Contact hello@sideprojectors.com or visit sideprojectors.com/sponsor/home for current pricing.
 
 ### SEO value
 
@@ -110,7 +110,7 @@ SideProjectors is a peer-to-peer marketplace for side projects — developers li
 
 *Best-effort — these change as the platform grows.*
 
-- 24,528+ projects listed
+- 24,600+ projects listed
 - ~723 monthly visitors (per third-party estimates)
 - 631 categories
 - Founded ~2013 in Sydney, Australia
@@ -190,7 +190,7 @@ If you're listing to showcase (not sell):
 - **No buyer verification.** Unlike Acquire.com (verified buyers with $2B+ in funds), anyone can express interest on SideProjectors. Vet buyers yourself before sharing sensitive project details.
 - **Traffic is very low.** ~723 monthly visitors across the entire site. Don't expect a flood of buyer inquiries — this is a long-tail marketplace. The primary value for many users is the DR69 backlink.
 - **Must have a working product.** Unlike some directories that accept ideas or pre-launch products, SideProjectors requires a live website or app. MVP is fine, but vaporware will be rejected.
-- **No promoted listings.** There's no way to pay for extra visibility. All listings compete equally, which means your description, screenshots, and pricing need to do the heavy lifting.
+- **Premium features exist but pricing is opaque.** Enhanced visibility, priority support, and advanced analytics are available as premium features, but pricing isn't publicly listed. Contact hello@sideprojectors.com for current rates before assuming it's entirely free.
 - **Editorial review has no guaranteed timeline.** Submissions are reviewed by the team, but there's no documented SLA. Could be hours, could be days.
 - **Free means no support infrastructure.** No dispute resolution, no refund mechanism, no transaction guarantees. You're on your own for the transaction itself.
 
@@ -247,7 +247,7 @@ If you're listing to showcase (not sell):
 
 ### Listed a project for sale but no buyers
 **Symptom**: Project has been listed for weeks/months with no inquiries
-**Cause**: SideProjectors has ~723 monthly visitors across all 24,500+ listings. Individual listings get a tiny fraction of that traffic. The platform is a long-tail marketplace — most projects sit without activity.
+**Cause**: SideProjectors has ~723 monthly visitors across all 24,600+ listings. Individual listings get a tiny fraction of that traffic. The platform is a long-tail marketplace — most projects sit without activity.
 **Solution**: Don't rely on SideProjectors as your only sales channel. Cross-list on Acquire.com (higher-value buyers, built-in escrow), 1Kprojects (if under $1K), and Flippa (auction model, broader audience). Share your SideProjectors listing on Twitter, Indie Hackers, and relevant subreddits. Lower your price if it's been sitting — the market is telling you something.
 
 ### Worried about getting scammed as a buyer
