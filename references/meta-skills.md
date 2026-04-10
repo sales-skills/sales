@@ -14,7 +14,7 @@ A platform can belong to **multiple** meta skills (e.g., a platform with email +
 | `/sales-email-marketing` | Opt-in email marketing | Kit, Mailchimp, ActiveCampaign, Klaviyo, Brevo, GetResponse, Omnisend, SendPulse, Iterable, Braze, Customer.io, Closum |
 | `/sales-funnel` | Sales funnels | ClickFunnels, GoHighLevel, Groove, Kartra, Closum, Mailchimp, GetResponse, Kit, SendPulse, SWAI |
 | `/sales-newsletter` | Newsletter monetization | Kit, Substack, Beehiiv, Ghost |
-| `/sales-audience-growth` | Email list growth | Kit, Beehiiv, Mailchimp, ActiveCampaign, Substack, SparkLoop |
+| `/sales-audience-growth` | Email list growth | Kit, Beehiiv, Mailchimp, ActiveCampaign, Substack, SparkLoop, Retention.com |
 | `/sales-checkout` | Checkout optimization | GrooveSell, ThriveCart, SamCart, Stripe, Paddle, Gumroad, Shopify, WooCommerce, Lemon Squeezy |
 | `/sales-digital-products` | Digital product sales | Kit Commerce, Gumroad, Lemon Squeezy, SendOwl, Podia |
 | `/sales-affiliate-program` | Affiliate programs | GrooveAffiliate, PartnerStack, Refersion, ShareASale, Creator.co |
@@ -29,7 +29,7 @@ A platform can belong to **multiple** meta skills (e.g., a platform with email +
 | `/sales-loyalty` | Loyalty programs | Brevo Loyalty, Smile.io, LoyaltyLion, Yotpo |
 | `/sales-data-hygiene` | CRM data quality | ZoomInfo OperationsOS, Salesforce, HubSpot Operations Hub, Clay, LeanData, DemandTools, Attio |
 | `/sales-b2b-advertising` | B2B / ABM advertising | ZoomInfo MarketingOS, Demandbase, 6sense, Terminus, RollWorks, LinkedIn Ads |
-| `/sales-retargeting` | Retargeting / remarketing | AdRoll, Google Ads, Meta, Criteo, LinkedIn |
+| `/sales-retargeting` | Retargeting / remarketing | AdRoll, Google Ads, Meta, Criteo, LinkedIn, Retention.com |
 | `/sales-meeting-scheduler` | Meeting scheduling | Calendly, Chili Piper, Mixmax, Yesware |
 | `/sales-enrich` | Contact enrichment | Apollo, ZoomInfo, Clearbit, Clay, Hunter.io, Tomba, Prospeo, Mailmo, Seamless.AI, Enrich.so, Minelead, GetProspect, Skrapp, Anymail Finder, LeadMagic, Snov.io, Lobstr.io, OpenWeb Ninja, Outscraper, Attio |
 | `/sales-integration` | Tool integration | Any platform ↔ CRM, Zapier, Make, webhooks, API pipelines, Attio |

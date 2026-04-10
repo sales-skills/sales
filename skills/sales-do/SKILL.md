@@ -1,6 +1,6 @@
 ---
 name: sales-do
-description: "Routes any sales, marketing, or GTM objective to the right specialized skill. Covers 108 first-party skills and 53 third-party skills across prospecting, outbound, deals, proposals, forecasting, deliverability, enrichment, intent signals, content, coaching, CRO, SEO, data hygiene, B2B advertising, retargeting, chatbots, and platform help for Attio, Apollo, Salesloft, Mailshake, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter, Tomba, Prospeo, Mailmo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, Brevo, Braze, Iterable, GetResponse, Seismic, Allego, Groove, Kit (ConvertKit), Omnisend, ZoomInfo, SendPulse, Clearbit, RB2B, 6sense, Clay, LeadMagic, AdRoll, SWAI, Tagshop, influData, Creator.co, MicroLaunch, LaunchingNext, SideProjectors, ProductBurst, SoloPush, CtrlAlt.cc, Open Launch, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, Semrush, Indie Hackers, Altern, Lobsters, StartupBase, and Qwilr. Use when you have a sales or marketing question and are not sure which skill to use. Do NOT use to solve problems directly — this skill only routes."
+description: "Routes any sales, marketing, or GTM objective to the right specialized skill. Covers 109 first-party skills and 53 third-party skills across prospecting, outbound, deals, proposals, forecasting, deliverability, enrichment, intent signals, content, coaching, CRO, SEO, data hygiene, B2B advertising, retargeting, chatbots, and platform help for Attio, Apollo, Salesloft, Mailshake, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter, Tomba, Prospeo, Mailmo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, Brevo, Braze, Iterable, GetResponse, Seismic, Allego, Groove, Kit (ConvertKit), Omnisend, ZoomInfo, SendPulse, Clearbit, RB2B, Retention.com, 6sense, Clay, LeadMagic, AdRoll, SWAI, Tagshop, influData, Creator.co, MicroLaunch, LaunchingNext, SideProjectors, ProductBurst, SoloPush, CtrlAlt.cc, Open Launch, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, Semrush, Indie Hackers, Altern, Lobsters, StartupBase, and Qwilr. Use when you have a sales or marketing question and are not sure which skill to use. Do NOT use to solve problems directly — this skill only routes."
 version: 1.0.0
 tags: [sales, router, skill-discovery]
 ---
@@ -542,6 +542,12 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 | Skill | Route when... |
 |---|---|
 | `/sales-rb2b` | General RB2B questions — Person-Level Website Visitor ID (US only), Company-Level ID (Demandbase), Hot Pages (high-intent page flagging), Hot Leads (ICP filtering), Traffic Insights, Identity Resolution API (api.rb2b.com — IP→HEM, IP→Company, IP→LinkedIn, LinkedIn→Email, Email→LinkedIn, Company→Firmographics), pixel setup, integrations. Route when the user asks about RB2B setup, config, features, or troubleshooting. Route when they mention RB2B, RB2B pixel, RB2B API, RB2B Hot Pages, RB2B Hot Leads, person-level visitor identification, rb2b.com, or api.rb2b.com. |
+
+### Retention.com & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-retention` | Retention.com questions — ecommerce identity resolution, Grow (email list growth from anonymous visitors), Reclaim (abandonment flow recovery), tracking pixel setup, Shopify integration, deliverability management with identified contacts, compliance (CCPA, implicit consent), Retention.com API, Retention.com vs RB2B vs Customers.ai vs Opensend. Route when the user mentions Retention.com, GetEmails, ecommerce identity resolution, or B2C visitor identification. |
 
 ### 6sense & Platform
 

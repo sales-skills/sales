@@ -21,6 +21,7 @@ Detailed per-platform email marketing configuration — automation builders, seg
 - [In SendPulse](#in-sendpulse)
 - [In Klaviyo](#in-klaviyo)
 - [In AdRoll](#in-adroll)
+- [In Retention.com](#in-retentioncom)
 
 ### In Groove.cm (GrooveMail)
 
@@ -305,4 +306,14 @@ AdRoll is primarily a retargeting and advertising platform, but includes email r
 - **Audience segmentation**: Segment email recipients by website behavior, purchase history, and engagement level. Exclude recent purchasers, target high-value browsers.
 - **Limitations**: AdRoll email is retargeting, not a full ESP. No broadcast campaigns, no newsletter builder, no advanced segmentation beyond behavior. For full email marketing, use a dedicated platform (Klaviyo, Omnisend, ActiveCampaign, etc.) and layer AdRoll for ad retargeting alongside email.
 - **Best for**: Ecommerce brands already using AdRoll for ad retargeting who want to add behavior-triggered emails without a separate ESP for that specific use case. Most brands will still need a primary ESP for broadcast and lifecycle email.
+
+### In Retention.com
+
+Retention.com is not an ESP — it's an identity resolution layer that feeds identified contacts INTO your ESP (Klaviyo, Mailchimp, Omnisend, etc.) for email marketing:
+
+- **Reclaim (abandonment recovery)**: Identifies anonymous visitors who abandon checkout/cart/browse and pushes them to your ESP's abandonment flows. Captures events that Klaviyo and Elevar miss because the visitor was anonymous.
+- **Grow (list building)**: Identifies anonymous visitors and adds them to your marketing email list in your ESP. These contacts bypass opt-in forms entirely.
+- **Integration pattern**: Retention.com → your ESP (Klaviyo, etc.) → your email flows. Retention.com identifies the contact; your ESP sends the email. Keep identified contacts in separate segments with different cadence and sunset rules.
+- **Deliverability impact**: Retention.com contacts didn't opt in. Send from a separate subdomain. Expect higher spam complaints and lower engagement. Don't mix with your organic list segments.
+- **Best for**: Ecommerce brands using Klaviyo/Omnisend who want to expand their abandonment recovery and list building beyond what opt-in forms capture. Not a replacement for an ESP — it's a data source that feeds into one.
 

@@ -1,0 +1,38 @@
+{
+  "skill_name": "sales-retention",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I run a Shopify store with 80K monthly visitors. Is Retention.com worth it for abandoned cart recovery?",
+      "expected_output": "ROI analysis with realistic match rates, setup guidance, and deliverability warnings",
+      "assertions": [
+        {"name": "realistic_match_rate", "description": "Uses a conservative match rate estimate (15-25%) rather than the claimed 35% when calculating expected identifications"},
+        {"name": "reclaim_first", "description": "Recommends starting with Reclaim (abandonment recovery) as the higher-ROI product before trying Grow (list building)"},
+        {"name": "deliverability_warning", "description": "Warns about higher spam complaint rates from identified contacts and suggests protective measures like a separate sending domain"},
+        {"name": "pricing_context", "description": "Mentions the pricing range and that annual contracts are required with no free trial"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "My Klaviyo deliverability dropped after I turned on Retention.com. Spam complaints are at 0.2%. What do I do?",
+      "expected_output": "Diagnosis and recovery plan for deliverability issues caused by non-opted-in contacts",
+      "assertions": [
+        {"name": "root_cause", "description": "Identifies that identified contacts didn't opt in and generate higher spam complaint rates than organic subscribers"},
+        {"name": "separate_domain", "description": "Recommends using a separate sending subdomain to isolate reputation damage"},
+        {"name": "segmentation", "description": "Advises restricting emails to high-intent segments only (cart abandoners, repeat visitors) rather than all identified contacts"},
+        {"name": "sunset_policy", "description": "Suggests a faster sunset/removal policy for non-engaging contacts compared to organic list cadence"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "What's the difference between Retention.com and RB2B? My friend recommended both.",
+      "expected_output": "Clear comparison showing B2C vs B2B use cases with the same founder context",
+      "assertions": [
+        {"name": "b2c_vs_b2b", "description": "Explains that Retention.com is for B2C ecommerce while RB2B is for B2B sales teams"},
+        {"name": "same_founder", "description": "Notes that both are founded by Adam Robinson but are separate products"},
+        {"name": "use_case_guidance", "description": "Provides clear guidance on which to use based on whether the user's business is B2C or B2B"},
+        {"name": "key_differences", "description": "Highlights at least one practical difference beyond market focus (e.g., pricing model, contract terms, or identification approach)"}
+      ]
+    }
+  ]
+}

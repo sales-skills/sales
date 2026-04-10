@@ -153,6 +153,13 @@ Structure retargeting by intent level:
 - **Best for**: Ecommerce brands who have opted-in email addresses. Email retargeting is free (no ad spend) and highly effective — 5-10x ROAS vs display retargeting.
 - **Limitation**: Only reaches known contacts (people who provided email). Not a substitute for ad-based retargeting of anonymous visitors.
 
+### In Retention.com (Identity resolution retargeting)
+- **Anonymous → known**: Retention.com identifies anonymous visitors using third-party data, converting them to email/SMS contacts for retargeting without opt-in.
+- **Reclaim product**: Captures abandonment events (cart, checkout, browse) that ESPs miss because the visitor was anonymous. Pushes identified contacts to Klaviyo, Mailchimp, etc. for abandonment flows.
+- **Retargeting activation**: Identified contacts can be synced to Meta and Google Ads as custom audiences for paid retargeting — expanding your retargeting pool beyond cookie-based pixels.
+- **Deliverability caveat**: Identified contacts generate higher spam complaints (~0.15-0.20%) than opted-in lists. Use a separate sending domain and aggressive sunsetting.
+- **Best for**: Ecommerce brands with high anonymous traffic who want to retarget visitors across email, SMS, and paid ads without relying solely on opt-in forms or cookie-based pixels. US traffic only.
+
 ## Step 4 — Actionable guidance
 
 ### Quick-start: First retargeting campaign
@@ -203,6 +210,7 @@ Structure retargeting by intent level:
 
 ## Related skills
 
+- `/sales-retention` — Retention.com platform help (ecommerce identity resolution, abandonment recovery)
 - `/sales-adroll` — AdRoll platform help (retargeting pixel, campaigns, audiences, RollWorks ABM, NextRoll API)
 - `/sales-b2b-advertising` — Account-based B2B advertising (ABM ads, not consumer retargeting)
 - `/sales-email-marketing` — Email marketing strategy (email retargeting flows are covered here for strategy, platform skills for setup)

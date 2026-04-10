@@ -1,6 +1,6 @@
 # Sales Skills
 
-[![Skills](https://img.shields.io/badge/skills-119-blue)](https://skills.sh/sales-skills/sales)
+[![Skills](https://img.shields.io/badge/skills-120-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
@@ -13,7 +13,7 @@ Claude Code skills for sales, marketing, and GTM workflows.
 npx skills add sales-skills/sales --skills sales-do
 ```
 
-Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill (108 first-party + 53 third-party skills).
+Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill (109 first-party + 53 third-party skills).
 
 Want every skill at once?
 
@@ -575,6 +575,12 @@ Router recommends a 5-skill sequence:
 | Skill | What it does |
 |---|---|
 | `/sales-rb2b` | RB2B platform help — Person-Level Website Visitor ID (US only, 35-45% match rate), Company-Level ID (Demandbase, global), Hot Pages (high-intent page flagging), Hot Leads (ICP filtering), Traffic Insights, Identity Resolution API (api.rb2b.com — IP/LinkedIn/email/company resolution, credit-based), 50+ integrations (Slack, HubSpot, Salesforce, Apollo, Salesloft, Outreach, Clay) |
+
+### Retention.com & Platform
+
+| Skill | What it does |
+|---|---|
+| `/sales-retention` | Retention.com platform help — ecommerce identity resolution that identifies anonymous website visitors and converts them to email/SMS contacts. Grow (10x email list growth), Reclaim (abandonment flow recovery for events missed by Klaviyo/Elevar), retargeting activation, Shopify/Klaviyo integration, compliance (CCPA, implicit consent). $500-$2,500/mo annual contracts. Founded by Adam Robinson (also RB2B), 1,500+ ecommerce brands |
 
 ### 6sense & Platform
 

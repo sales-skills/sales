@@ -13,6 +13,7 @@ Detailed per-platform audience growth features — opt-in forms, landing pages, 
 - [In ActiveCampaign](#in-activecampaign)
 - [In GetResponse](#in-getresponse)
 - [In ZoomInfo (FormComplete)](#in-zoominfo-formcomplete)
+- [In Retention.com](#in-retentioncom)
 - [In Clearbit](#in-clearbit)
 - [In SendPulse](#in-sendpulse)
 - [In AdRoll](#in-adroll)
@@ -103,3 +104,13 @@ Detailed per-platform audience growth features — opt-in forms, landing pages, 
 - **Dynamic creative**: Personalize ad content based on which pages visitors viewed — show relevant lead magnet offers based on content interest
 - **Ecommerce focus**: Deep Shopify/BigCommerce/WooCommerce integration — retarget shoppers who browse but don't subscribe, offer discount-for-email swaps
 - **Best for**: Ecommerce and D2C brands using paid retargeting to grow subscriber lists alongside customer acquisition
+
+### In Retention.com
+- **Identity resolution for list growth**: Identifies anonymous website visitors using third-party licensed data and adds them to your email/SMS lists automatically — no opt-in form required
+- **Grow product**: Claims 10x email list growth by converting anonymous visitors to known contacts. Contacts are pushed directly to your ESP (Klaviyo, Mailchimp, etc.)
+- **Match rates**: Claims ~35% identification rate, but independent reports show 15-25%. US-only database.
+- **Engagement caveat**: Grow contacts engage at ~3% CTR vs ~12% for opted-in subscribers. They didn't ask to hear from you, so treat them differently — lower frequency, higher-value offers, faster sunsetting.
+- **Deliverability risk**: Higher spam complaint rates than organic lists. Use a separate sending subdomain and aggressive non-engager cleanup.
+- **Compliance**: CAN-SPAM compliant (implicit consent model), NOT GDPR compliant. Only use for US traffic.
+- **Pricing**: From $300/mo a la carte, $500/mo bundled. Annual contracts required.
+- **Best for**: Ecommerce/DTC brands with 50K+ monthly US visitors who want to grow their email list beyond opt-in forms. Pair with a strong deliverability strategy.
