@@ -1,6 +1,6 @@
 # Sales Skills
 
-[![Skills](https://img.shields.io/badge/skills-123-blue)](https://skills.sh/sales-skills/sales)
+[![Skills](https://img.shields.io/badge/skills-124-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
@@ -498,6 +498,12 @@ Router recommends a 5-skill sequence:
 |---|---|
 | `/sales-pitchwall` | PitchWall (pitchwall.co) platform help — AI product discovery directory (65K+ products, 100K+ users, DR60, 45K+ newsletter subscribers). Free submission (30+ day queue), Premium ($99, 1-day), Growth (custom). Advertising: Spotlight Ad ($1K/mo), Newsletter Sponsor ($199), Website Ad ($199/mo), Dedicated Newsletter ($599). Manual curation for AI tools. Founded by Sebastian Zontek |
 | `/sales-futurepedia` | Futurepedia (futurepedia.io) platform help — largest independent AI tools directory and education platform (5,700+ tools, 500K+ accounts, ~2M visits/mo, 2M+ YouTube subscribers). Basic listing $247 (sold out), Verified $497 (2-day review, verified badge, enhanced page), Enterprise custom (sponsorship bundles, co-branded webinars, YouTube sponsorships). No free tier. Founded by Vivek Varma |
+
+### LaunchCaster & Platform
+
+| Skill | What it does |
+|---|---|
+| `/sales-launchcaster` | LaunchCaster (launchcaster.xyz) platform help — Web3 project discovery directory built on Farcaster ("Product Hunt for Web3"). Free submission via Farcaster cast mentioning @launch. Wallet-connected voting, weekly newsletter. 9K+ builders, 1K+ launches. Farcaster account required. YC W21, a16z crypto backed. Founded by Jayme Hoffman (Launcher Labs) |
 
 ### Minelead & Platform
 
