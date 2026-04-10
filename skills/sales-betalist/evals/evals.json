@@ -1,0 +1,26 @@
+[
+  {
+    "prompt": "I built a time tracking app for freelancers and want to submit it to BetaList. It's in private beta right now. Should I pay for Priority?",
+    "assertions": [
+      "Discusses the free queue wait time versus Priority skip and helps the user decide based on their timing needs",
+      "Covers submission optimization including tagline, description, and visual best practices",
+      "Mentions BetaList's acceptance criteria and what makes a submission more likely to be accepted"
+    ]
+  },
+  {
+    "prompt": "BetaList rejected my AI writing tool. I don't know why. How do I fix it and resubmit?",
+    "assertions": [
+      "Walks through a diagnostic checklist covering landing page quality, value proposition clarity, uniqueness, and domain requirements",
+      "Explains that BetaList does not provide rejection feedback and suggests common reasons for rejection",
+      "Recommends specific improvements and advises resubmitting after making changes"
+    ]
+  },
+  {
+    "prompt": "How does BetaList compare to Product Hunt for launching my developer tool?",
+    "assertions": [
+      "Explains that BetaList is focused on pre-launch and beta products while Product Hunt is for broader launches",
+      "Mentions BetaList's DR67 dofollow backlink value and compares positioning to Product Hunt",
+      "Routes to the multi-directory strategy skill or Product Hunt skill for deeper comparison"
+    ]
+  }
+]

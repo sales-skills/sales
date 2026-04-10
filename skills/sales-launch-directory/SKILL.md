@@ -76,6 +76,7 @@ If the request maps to a single platform, route:
 - Startup Stash-specific questions → `/sales-startupstash`
 - PitchWall-specific questions → `/sales-pitchwall`
 - Futurepedia-specific questions → `/sales-futurepedia`
+- BetaList-specific questions → `/sales-betalist`
 - LaunchCaster-specific questions → `/sales-launchcaster`
 - Indie Hackers-specific questions → `/sales-indiehackers`
 - Product Hunt-specific questions → `/sales-producthunt`
@@ -119,13 +120,13 @@ Otherwise, answer directly from the directory knowledge below.
 | Startup Stash | DR65 nofollow | Free | Advertising (contact) | Selective curation (days-weeks) | Largest curated tool directory (10K+ tools, 200+ categories) | `/sales-startupstash` |
 | PitchWall | DR60 disputed (dofollow claimed) | Free | $99 Premium / $1K Spotlight | 30+ days (free), 1 day ($99) | AI product discovery (65K+ products, 45K+ newsletter subs) | `/sales-pitchwall` |
 | Futurepedia | Dofollow (high DA) | None | $497 Verified / Enterprise custom | 2 business days (Verified) | Largest AI directory (5,700+ tools, ~2M visits/mo, YouTube 2M+ subs) | `/sales-futurepedia` |
+| BetaList | DR67 dofollow | Free (queue) | $129 Priority | ~2 months (free), days (Priority) | Pre-launch directory (15K+ startups, 100K+ early adopters, 30K newsletter) | `/sales-betalist` |
 | LaunchCaster | Unconfirmed (.xyz) | Free | None | None — instant (via Farcaster cast) | Web3 "Product Hunt" on Farcaster (9K+ builders, wallet voting) | `/sales-launchcaster` |
 
 ### Third-party platforms (no skill — general guidance)
 
 | Platform | Backlink | Cost | Model | Notes |
 |---|---|---|---|---|
-| BetaList | DR67 dofollow | Free (queue) / $129 (skip) | Pre-launch directory | Best for beta/early products |
 | Hacker News (Show HN) | DR91 dofollow | Free | Community voting | Tech audience, hostile to marketing |
 | F6S | DR74 dofollow | Free | Startup directory | Also connects to accelerators/funding |
 
@@ -324,6 +325,7 @@ For each directory submission, track:
 - `/sales-startupstash` — Startup Stash platform help (largest curated tool directory, DR65 nofollow, 10K+ tools, 200+ categories)
 - `/sales-pitchwall` — PitchWall platform help (AI product discovery, DR60, 65K+ products, 45K+ newsletter subscribers)
 - `/sales-futurepedia` — Futurepedia platform help (largest AI directory, 5,700+ tools, ~2M visits/mo, $497 Verified, YouTube 2M+ subs)
+- `/sales-betalist` — BetaList platform help (pre-launch directory, DR67 dofollow, 15K+ startups, $129 Priority skip)
 - `/sales-launchcaster` — LaunchCaster platform help (Web3 project discovery on Farcaster, free, wallet-connected voting)
 - `/sales-funnel` — Build and optimize sales funnels for conversion
 - `/sales-audience-growth` — Grow your email list and subscriber base
