@@ -224,6 +224,28 @@ Clearbit (now Breeze Intelligence in HubSpot) focuses on enrichment-driven data 
 
 **Best for**: Filling missing fields, standardizing industries and titles, flagging personal emails, and keeping records fresh with continuous enrichment. Pair with a dedup tool (ZoomInfo, DemandTools) for full hygiene coverage.
 
+### In Attio
+
+Attio's flexible data model makes hygiene both easier (custom attributes, no rigid schema) and harder (more objects to maintain).
+
+**Built-in hygiene features**:
+- Auto-enrichment fills contact and company fields from email/domain data on record creation
+- AI Research Agent (Pro plan) enriches records from public web sources
+- Merge duplicates via UI — select records and merge with field-level control
+- Record references enforce relationships between objects
+
+**Custom data model considerations**:
+- Custom objects multiply hygiene surface area — each object needs its own dedup and completeness rules
+- No built-in formula fields — computed hygiene scores (completeness %, last activity) require automations or external tools
+- Attribute types enforce data formats (email, phone, domain) — use these over free-text to prevent format drift
+
+**Automation-based hygiene**:
+- Set up automations to flag records missing critical fields (e.g., no email, no company)
+- Use "record updated" triggers to normalize data on entry (e.g., standardize country names)
+- Schedule periodic enrichment re-runs via API for stale records
+
+**Best for**: Teams under 50 using Attio as primary CRM. For enterprise-scale hygiene with advanced dedup rules, ZoomInfo OperationsOS or DemandTools are more powerful.
+
 ## Step 4 — Actionable guidance
 
 ### Quick wins (do these first)
@@ -260,6 +282,7 @@ Clearbit (now Breeze Intelligence in HubSpot) focuses on enrichment-driven data 
 
 ## Related skills
 
+- `/sales-attio` — Attio platform help (AI-native CRM with custom objects)
 - `/sales-clay` — Clay platform help
 - `/sales-zoominfo` — ZoomInfo platform help (for OperationsOS-specific setup)
 - `/sales-clearbit` — Clearbit platform help (enrichment, reveal, prospector)

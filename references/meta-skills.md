@@ -9,7 +9,7 @@ A platform can belong to **multiple** meta skills (e.g., a platform with email +
 | Meta skill | Problem domain | Platforms it coordinates |
 |---|---|---|
 | `/sales-launch-directory` | Startup directory launches | Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, BetaList, Hacker News, Indie Hackers, Altern, Lobsters, StartupBase |
-| `/sales-cadence` | Outbound sequences | Salesloft, Mailshake, Smartlead, Lemlist, Yesware, Mixmax, Reply.io, Woodpecker, Apollo, Hunter.io, Seamless.AI, ZoomInfo Engage |
+| `/sales-cadence` | Outbound sequences | Salesloft, Mailshake, Smartlead, Lemlist, Yesware, Mixmax, Reply.io, Woodpecker, Apollo, Hunter.io, Seamless.AI, ZoomInfo Engage, Attio |
 | `/sales-deliverability` | Email deliverability | Apollo, Mailshake, Salesloft, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter.io, SafetyMails, ZeroBounce, Snov.io |
 | `/sales-email-marketing` | Opt-in email marketing | Kit, Mailchimp, ActiveCampaign, Klaviyo, Brevo, GetResponse, Omnisend, SendPulse, Iterable, Braze, Customer.io, Closum |
 | `/sales-funnel` | Sales funnels | ClickFunnels, GoHighLevel, Groove, Kartra, Closum, Mailchimp, GetResponse, Kit, SendPulse, SWAI |
@@ -27,12 +27,12 @@ A platform can belong to **multiple** meta skills (e.g., a platform with email +
 | `/sales-chatbot` | Chatbot marketing | SendPulse, ManyChat, Tidio, Intercom, Drift, HubSpot |
 | `/sales-live-chat` | Live chat | Brevo, Drift, Intercom, HubSpot, Crisp, LiveChat, Zendesk, Tidio |
 | `/sales-loyalty` | Loyalty programs | Brevo Loyalty, Smile.io, LoyaltyLion, Yotpo |
-| `/sales-data-hygiene` | CRM data quality | ZoomInfo OperationsOS, Salesforce, HubSpot Operations Hub, Clay, LeanData, DemandTools |
+| `/sales-data-hygiene` | CRM data quality | ZoomInfo OperationsOS, Salesforce, HubSpot Operations Hub, Clay, LeanData, DemandTools, Attio |
 | `/sales-b2b-advertising` | B2B / ABM advertising | ZoomInfo MarketingOS, Demandbase, 6sense, Terminus, RollWorks, LinkedIn Ads |
 | `/sales-retargeting` | Retargeting / remarketing | AdRoll, Google Ads, Meta, Criteo, LinkedIn |
 | `/sales-meeting-scheduler` | Meeting scheduling | Calendly, Chili Piper, Mixmax, Yesware |
-| `/sales-enrich` | Contact enrichment | Apollo, ZoomInfo, Clearbit, Clay, Hunter.io, Tomba, Prospeo, Mailmo, Seamless.AI, Enrich.so, Minelead, GetProspect, Skrapp, Anymail Finder, LeadMagic, Snov.io, Lobstr.io, OpenWeb Ninja, Outscraper |
-| `/sales-integration` | Tool integration | Any platform ↔ CRM, Zapier, Make, webhooks, API pipelines |
+| `/sales-enrich` | Contact enrichment | Apollo, ZoomInfo, Clearbit, Clay, Hunter.io, Tomba, Prospeo, Mailmo, Seamless.AI, Enrich.so, Minelead, GetProspect, Skrapp, Anymail Finder, LeadMagic, Snov.io, Lobstr.io, OpenWeb Ninja, Outscraper, Attio |
+| `/sales-integration` | Tool integration | Any platform ↔ CRM, Zapier, Make, webhooks, API pipelines, Attio |
 | `/sales-account-map` | Buying committee mapping | Apollo, ZoomInfo, LinkedIn Sales Navigator, 6sense |
 | `/sales-email-tracking` | Email tracking | Yesware, Mixmax, Mailshake, HubSpot |
 | `/sales-content` | Sales content management | Seismic, Allego, Highspot |

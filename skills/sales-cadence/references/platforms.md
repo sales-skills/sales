@@ -8,6 +8,7 @@ Detailed per-platform cadence setup — campaign types, channel support, A/B tes
 - [In Lemlist](#in-lemlist)
 - [In Yesware](#in-yesware)
 - [In Smartlead](#in-smartlead)
+- [In Attio](#in-attio)
 - [In Mixmax](#in-mixmax)
 - [In Reply.io](#in-replyio)
 - [In Hunter.io](#in-hunterio)
@@ -189,3 +190,12 @@ Detailed per-platform cadence setup — campaign types, channel support, A/B tes
 - **Features**: A/B testing, send scheduling, reply detection, auto-pause on reply.
 - **Limitations**: Email-only — no phone, LinkedIn, or multi-channel steps. For full multi-channel cadences, push enriched data from Clay to Outreach, Salesloft, Apollo, or Lemlist.
 - **Best for**: Teams already using Clay for enrichment who want lightweight outbound without adding another tool.
+
+## In Attio
+
+- **What it is**: Attio's built-in email sequences for outreach within the CRM. Available on Plus plan and above.
+- **CRM-native personalization**: Sequences pull directly from CRM record attributes — no data sync needed. Any attribute on a Person, Company, or custom object can be used in email templates.
+- **Features**: Multi-step sequences with configurable delays, open/click tracking, auto-pause on reply, personalization merge tags from CRM data.
+- **Email sync required**: Must connect Gmail or Outlook account. Sequences send from your connected email, not a separate sending infrastructure.
+- **Limitations**: Email-only — no phone, LinkedIn, or SMS steps. No dedicated warmup or deliverability tools. Limited A/B testing compared to dedicated outbound platforms.
+- **Best for**: Teams already using Attio as their CRM who want simple email sequences without adding another tool. For complex multi-channel cadences, use a dedicated platform (Salesloft, Lemlist, Apollo) and sync data from Attio.

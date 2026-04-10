@@ -425,5 +425,18 @@ Platform-specific webhook configurations, API integrations, and native connector
 | NextRoll API | REST API | CRUD, GraphQL Reporting, Audience, User Lists, Prospecting, Automated Campaigns, Universal Campaigns, S2S conversion tracking. OAuth 2.0 / PAT auth. |
 | S2S Conversion Tracking | API | Server-side conversion events without client-side pixel. `POST /track/convert`. |
 
+### Attio webhooks & API
+
+| Integration | Type | Details |
+|---|---|---|
+| REST API | Native | 100+ endpoints. Records, objects, lists, notes, tasks, comments. OAuth 2.0 / API key auth. 100 reads/s, 25 writes/s. |
+| Webhooks | Native | Record CRUD, list entry changes, attribute updates, comments, notes, tasks, call recordings. |
+| Gmail/Outlook | Native | Email sync for automatic contact creation and email tracking. |
+| Zapier | Native | Triggers: record created/updated. Actions: create/update records, add list entries. |
+| Make | Native | Attio module with triggers and actions for CRM operations. |
+| MCP Server | Native | mcp.attio.com/mcp — AI agents can search, update, and manage CRM data. |
+| App SDK | Native | Embed TypeScript React apps within Attio UI with server functions and API access. |
+| SDKs | Official | Node.js, TypeScript, Python, PHP, .NET, Java. |
+
 ### Qwilr webhooks
 - **Full reference**: See `/sales-qwilr-automation` for Qwilr-specific webhook events and CRM integrations

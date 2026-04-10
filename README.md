@@ -1,6 +1,6 @@
 # Sales Skills
 
-[![Skills](https://img.shields.io/badge/skills-118-blue)](https://skills.sh/sales-skills/sales)
+[![Skills](https://img.shields.io/badge/skills-119-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
@@ -13,7 +13,7 @@ Claude Code skills for sales, marketing, and GTM workflows.
 npx skills add sales-skills/sales --skills sales-do
 ```
 
-Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill (107 first-party + 53 third-party skills).
+Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill (108 first-party + 53 third-party skills).
 
 Want every skill at once?
 
@@ -124,6 +124,12 @@ Router recommends a 5-skill sequence:
 | Skill | What it does |
 |---|---|
 | `/sales-altern` | Altern platform help — curated AI tools and agents directory (10,000+ tools, 100+ categories). Tool submissions (free + Gold/Silver/Bronze featured tiers), listing optimization, category selection, newsletter inclusion, alternatives pages, dofollow backlinks. Founded by Dariush Abbasi |
+
+### Attio & Platform
+
+| Skill | What it does |
+|---|---|
+| `/sales-attio` | Attio platform help — AI-native CRM with custom objects, relationship database, deal pipelines, email sequences, automations, built-in enrichment, AI agents (Ask Attio), REST API (100+ endpoints, OAuth 2.0, webhooks, MCP server), App SDK. Free (3 seats) / Plus ($29/seat/mo) / Pro ($69/seat/mo) / Enterprise. 80,000+ startups, VC firms, PLG companies. Founded by Nicolas Sharp and Alexander Christie, London |
 
 ### Apollo.io & Platform
 

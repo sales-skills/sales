@@ -27,6 +27,7 @@ Detailed per-platform enrichment workflows, API endpoints, credit economics, and
 - [In 6sense](#in-6sense)
 - [In Clay (Waterfall Enrichment)](#in-clay-waterfall-enrichment)
 - [In LeadMagic](#in-leadmagic)
+- [In Attio](#in-attio)
 
 ### In Apollo.io
 
@@ -394,4 +395,13 @@ Detailed per-platform enrichment workflows, API endpoints, credit economics, and
 - **MCP Server**: Official MCP server with all 19 tools for Claude Code, Cursor, Windsurf, VS Code — enrich directly from your editor.
 - **Pricing**: Trial (free, 100 credits), Basic ($59.99/mo, 2,500), Essential ($99.99/mo, 10,000), Growth ($179.99/mo, 20,000), Advanced ($259.99/mo, 30,000). As of April 2026 — verify current pricing.
 - **Best for**: Developers and GTM engineers wanting API-first enrichment with transparent per-result pricing. Excellent as a provider in Clay waterfall enrichment.
+
+## In Attio
+
+- **What it is**: Attio's built-in contact and company enrichment. Basic enrichment on all plans; AI-powered enrichment on Pro ($69/seat/mo) and above.
+- **Auto-enrichment**: New contacts and companies are automatically enriched from email addresses and domain data. Fills company name, industry, size, social profiles, and contact details.
+- **AI Research Agent** (Pro plan): Goes beyond database lookups — researches contacts and companies from public web sources, LinkedIn, news, and more. Can create notes and update fields automatically.
+- **Data sources**: Email metadata, domain/company databases, public web (AI agent). Not as comprehensive as dedicated enrichment tools (Apollo, ZoomInfo, Clay) but eliminates manual data entry for basic CRM fields.
+- **Limitations**: No credit-based pay-per-enrichment model — enrichment is included but limited to Attio's data sources. No waterfall enrichment across multiple providers. Personal email addresses (Gmail, Yahoo) often don't match.
+- **Best for**: Teams using Attio as primary CRM who want automatic record enrichment without adding a separate tool. For deeper enrichment needs (mobile numbers, technographics, intent data), pair with Apollo, Clay, or ZoomInfo.
 
