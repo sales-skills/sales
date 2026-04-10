@@ -1,6 +1,6 @@
 # Sales Skills
 
-[![Skills](https://img.shields.io/badge/skills-120-blue)](https://skills.sh/sales-skills/sales)
+[![Skills](https://img.shields.io/badge/skills-121-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
@@ -485,6 +485,12 @@ Router recommends a 5-skill sequence:
 | Skill | What it does |
 |---|---|
 | `/sales-startupbase` | StartupBase (startupbase.io) platform help — community-driven startup discovery directory (DR39 dofollow, est. 2017). Free submission (tech startups only — SaaS, AI, mobile apps, IoT, hardware, browser extensions), 2-3 month editorial queue (free) or 24-hour premium featuring (paid), strict selection criteria (custom domain, public product, newsletter signup), Spark newsletter (weekly Tuesdays), market categories, streaks leaderboard, AcquireBase integration. Founded by Atta-Ur-Rehman Shah (@attacomsian) |
+
+### Startup Stash & Platform
+
+| Skill | What it does |
+|---|---|
+| `/sales-startupstash` | Startup Stash (startupstash.com) platform help — one of the largest curated startup tool directories (10,000+ tools, 200+ categories, DR65 nofollow). Free submission with selective curation, advertising partnerships available, weekly "STASH!" newsletter. Founded by Bram Kanstein (#1 most upvoted PH product of all time), acquired Nov 2017 |
 
 ### Minelead & Platform
 
