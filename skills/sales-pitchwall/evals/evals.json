@@ -1,0 +1,47 @@
+[
+  {
+    "prompt": "I have an AI-powered code review tool and want to submit it to PitchWall. Walk me through the process.",
+    "assertions": [
+      {
+        "description": "Explains the submission process including where to submit (pitchwall.co/submit) and the manual review step"
+      },
+      {
+        "description": "Describes the pricing tiers — free with 30+ day wait and a paid option around $99 for faster review"
+      },
+      {
+        "description": "Mentions the disputed or uncertain backlink type and recommends verifying after listing goes live"
+      },
+      {
+        "description": "Highlights the newsletter exposure to tens of thousands of subscribers as a key value of the platform"
+      }
+    ]
+  },
+  {
+    "prompt": "Is PitchWall worth it for SEO backlinks compared to other startup directories?",
+    "assertions": [
+      {
+        "description": "Notes the domain rating is around DR60 and discusses the backlink type uncertainty (dofollow claimed but disputed)"
+      },
+      {
+        "description": "Compares PitchWall's backlink value with stronger alternatives like Fazier, Uneed, or other higher-DR dofollow directories"
+      },
+      {
+        "description": "Recommends submitting to PitchWall for newsletter exposure but deprioritizing it for pure SEO purposes"
+      }
+    ]
+  },
+  {
+    "prompt": "What advertising options does PitchWall offer and what are the prices?",
+    "assertions": [
+      {
+        "description": "Lists multiple advertising products including newsletter sponsorship and a dedicated email option with their approximate prices"
+      },
+      {
+        "description": "Mentions expected click or impression ranges for at least one advertising product"
+      },
+      {
+        "description": "Notes that performance metrics are self-reported by PitchWall and suggests a test-first approach"
+      }
+    ]
+  }
+]

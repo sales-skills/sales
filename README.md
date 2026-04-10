@@ -1,6 +1,6 @@
 # Sales Skills
 
-[![Skills](https://img.shields.io/badge/skills-121-blue)](https://skills.sh/sales-skills/sales)
+[![Skills](https://img.shields.io/badge/skills-122-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
@@ -23,7 +23,7 @@ npx skills add sales-skills/sales
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 101 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 102 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -491,6 +491,12 @@ Router recommends a 5-skill sequence:
 | Skill | What it does |
 |---|---|
 | `/sales-startupstash` | Startup Stash (startupstash.com) platform help — one of the largest curated startup tool directories (10,000+ tools, 200+ categories, DR65 nofollow). Free submission with selective curation, advertising partnerships available, weekly "STASH!" newsletter. Founded by Bram Kanstein (#1 most upvoted PH product of all time), acquired Nov 2017 |
+
+### PitchWall & Platform
+
+| Skill | What it does |
+|---|---|
+| `/sales-pitchwall` | PitchWall (pitchwall.co) platform help — AI product discovery directory (65K+ products, 100K+ users, DR60, 45K+ newsletter subscribers). Free submission (30+ day queue), Premium ($99, 1-day), Growth (custom). Advertising: Spotlight Ad ($1K/mo), Newsletter Sponsor ($199), Website Ad ($199/mo), Dedicated Newsletter ($599). Manual curation for AI tools. Founded by Sebastian Zontek |
 
 ### Minelead & Platform
 
