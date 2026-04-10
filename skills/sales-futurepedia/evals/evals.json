@@ -1,0 +1,29 @@
+[
+  {
+    "prompt": "I built an AI image generator and want to get it listed on Futurepedia. What does it cost and how does it work?",
+    "assertions": [
+      "Explains that Futurepedia does not offer a free submission tier and requires payment to list",
+      "Mentions the Verified listing tier and its approximate cost in the hundreds of dollars range",
+      "Describes the editorial review process and notes that rejected submissions get refunded",
+      "Recommends choosing the AI Image Tools category or a related specific category for an image generator"
+    ]
+  },
+  {
+    "prompt": "Is Futurepedia worth the money compared to cheaper AI directories? I have a limited budget.",
+    "assertions": [
+      "Compares Futurepedia's cost with at least two cheaper directory alternatives that offer dofollow backlinks",
+      "Acknowledges Futurepedia's higher traffic volume as a differentiator from smaller directories",
+      "Mentions the YouTube network or education platform as a unique value that other directories lack",
+      "Suggests a budget-conscious approach such as starting with cheaper directories before investing in Futurepedia"
+    ]
+  },
+  {
+    "prompt": "I want to launch my AI tool across multiple directories. Where does Futurepedia fit in my launch sequence?",
+    "assertions": [
+      "Positions Futurepedia in the paid fast-track phase of a multi-directory launch rather than in the free queue phase",
+      "Mentions the turnaround time for Futurepedia verified listings being faster than free editorial queues",
+      "Suggests using cheaper or free instant-listing platforms before or alongside Futurepedia",
+      "References the launch-directory skill or multi-directory coordination for the full launch strategy"
+    ]
+  }
+]

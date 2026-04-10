@@ -45,7 +45,8 @@ Ask the user:
 If the request maps to another skill, route:
 - Multi-directory launch planning → `/sales-launch-directory`
 - Product Hunt launch → `/sales-producthunt`
-- Other AI directories (Futurepedia, TAAFT, Toolify) → `/sales-launch-directory` for comparison
+- Futurepedia-specific questions → `/sales-futurepedia`
+- Other AI directories (TAAFT, Toolify) → `/sales-launch-directory` for comparison
 - SEO strategy → `/sales-semrush`
 - Landing page optimization → `/sales-checkout`
 
@@ -113,7 +114,7 @@ Featured listings include homepage display (at least 1 week) and a dedicated pag
 | Backlink | Dofollow | Dofollow | Dofollow | Varies |
 | Curation | Editorial | Community + editorial | Editorial + reviews | Algorithm + community |
 | Newsletter | Weekly (AI tools + agents) | Yes | Yes (+ YouTube) | Yes |
-| Submission | Free + featured tiers | Free + featured ($99-$499) | Free + featured | Free |
+| Submission | Free + featured tiers | Free + featured ($99-$499) | Paid only ($497+ Verified) | Free |
 | Best for | Developer/AI agent tools | Broad AI discovery | Business use cases | Trending tools |
 
 ### Pricing

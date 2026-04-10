@@ -1,6 +1,6 @@
 ---
 name: sales-launch-directory
-description: "Startup directory launch strategy — coordinates submissions across multiple product launch and discovery platforms for maximum visibility, backlinks, and early users. Covers platform selection (Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, BetaList, Hacker News, Indie Hackers, Altern, Lobsters, StartupBase, Startup Stash, PitchWall), launch sequencing (instant-list first, editorial-review last), backlink stacking (DA/DR comparison across directories), listing optimization, timing strategy, and multi-platform coordination. Use when planning a product launch across directories, choosing which directories to submit to, or building a backlink portfolio from startup directories. Do NOT use for a single specific platform (use the platform skill instead). Do NOT use for paid advertising (use /sales-b2b-advertising)."
+description: "Startup directory launch strategy — coordinates submissions across multiple product launch and discovery platforms for maximum visibility, backlinks, and early users. Covers platform selection (Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, BetaList, Hacker News, Indie Hackers, Altern, Lobsters, StartupBase, Startup Stash, PitchWall, Futurepedia), launch sequencing (instant-list first, editorial-review last), backlink stacking (DA/DR comparison across directories), listing optimization, timing strategy, and multi-platform coordination. Use when planning a product launch across directories, choosing which directories to submit to, or building a backlink portfolio from startup directories. Do NOT use for a single specific platform (use the platform skill instead). Do NOT use for paid advertising (use /sales-b2b-advertising)."
 argument-hint: "[describe your product and what you want from directory submissions]"
 license: MIT
 version: 1.0.0
@@ -75,6 +75,7 @@ If the request maps to a single platform, route:
 - StartupBase-specific questions → `/sales-startupbase`
 - Startup Stash-specific questions → `/sales-startupstash`
 - PitchWall-specific questions → `/sales-pitchwall`
+- Futurepedia-specific questions → `/sales-futurepedia`
 - Indie Hackers-specific questions → `/sales-indiehackers`
 - Product Hunt-specific questions → `/sales-producthunt`
 - Email marketing to subscribers → `/sales-email-marketing`
@@ -116,6 +117,7 @@ Otherwise, answer directly from the directory knowledge below.
 | CtrlAlt.cc | DA30 dofollow | Free | $39 (1-week feature) | Up to 2 months (free) | Curated directory | `/sales-ctrlaltcc` |
 | Startup Stash | DR65 nofollow | Free | Advertising (contact) | Selective curation (days-weeks) | Largest curated tool directory (10K+ tools, 200+ categories) | `/sales-startupstash` |
 | PitchWall | DR60 disputed (dofollow claimed) | Free | $99 Premium / $1K Spotlight | 30+ days (free), 1 day ($99) | AI product discovery (65K+ products, 45K+ newsletter subs) | `/sales-pitchwall` |
+| Futurepedia | Dofollow (high DA) | None | $497 Verified / Enterprise custom | 2 business days (Verified) | Largest AI directory (5,700+ tools, ~2M visits/mo, YouTube 2M+ subs) | `/sales-futurepedia` |
 
 ### Third-party platforms (no skill — general guidance)
 
@@ -160,6 +162,7 @@ All first-party + key third-party directories sorted by backlink strength:
 | 25 | PitchWall | DR60 | Disputed | Yes (30+ day queue) / $99 |
 | 26 | Altern | Unconfirmed | Yes | Yes (AI tools only) |
 | 27 | Lobsters | Unconfirmed | Unconfirmed | Yes (invite-only, FLOSS focus) |
+| 28 | Futurepedia | High (est.) | Yes | No ($497 Verified minimum) |
 
 ## Step 4 — Actionable guidance
 
@@ -196,6 +199,7 @@ If budget allows, pay to skip queues and guarantee backlinks:
 4. **LaunchDay ($99)** — curated 24-hour event with podcast interview + influencer promo (indie/bootstrapped only, >40% discount required)
 4. **LaunchingNext ($99)** — 1-business-day expedited review
 5. **BetaList ($129)** — skip queue for pre-launch directory
+5. **Futurepedia Verified ($497)** — 2-business-day review, verified badge, enhanced listing, ~2M monthly visitors, YouTube network (AI tools only, premium price)
 
 **Goal**: Get featured on curated platforms while momentum is building.
 
@@ -257,6 +261,7 @@ Each platform has different listing requirements, but these principles apply eve
 | $99 | LaunchDay event (podcast + influencer promo, no guaranteed backlink) | 10+ backlinks from free subs + event exposure |
 | $189 | Above + LaunchingNext expedited ($99) | 8+ backlinks, 4 with premium placement |
 | $318 | Above + BetaList skip ($129) | 9+ backlinks, 5 with premium placement |
+| $497 | Futurepedia Verified (standalone, AI tools only) | 10+ backlinks, 1 from highest-traffic AI directory (~2M/mo) |
 
 ### Tracking and measuring results
 
@@ -314,6 +319,7 @@ For each directory submission, track:
 - `/sales-startupbase` — StartupBase platform help (community startup directory, DR39 dofollow, 2-3 month queue, tech startups only)
 - `/sales-startupstash` — Startup Stash platform help (largest curated tool directory, DR65 nofollow, 10K+ tools, 200+ categories)
 - `/sales-pitchwall` — PitchWall platform help (AI product discovery, DR60, 65K+ products, 45K+ newsletter subscribers)
+- `/sales-futurepedia` — Futurepedia platform help (largest AI directory, 5,700+ tools, ~2M visits/mo, $497 Verified, YouTube 2M+ subs)
 - `/sales-funnel` — Build and optimize sales funnels for conversion
 - `/sales-audience-growth` — Grow your email list and subscriber base
 - `/sales-checkout` — Optimize landing pages and checkout for conversion
