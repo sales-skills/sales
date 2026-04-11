@@ -224,6 +224,9 @@ Based on the user's specific question:
 
 ## Related skills
 
+- `/sales-influencer-marketing` — Influencer marketing strategy across platforms (Modash, influData, Creator.co). Platform comparison, discovery, vetting, ROI tracking
+- `/sales-modash` — Modash platform help — discovery, tracking, Shopify gifting, payments, API
+- `/sales-creatorco` — Creator.co platform help — London AI agent, UGC rights, affiliate tracking
 - `/sales-tagshop` — UGC video ads and shoppable galleries for ecommerce
 - `/sales-affiliate-program` — Affiliate and creator partnership program design
 - `/sales-content` — Sales content management and governance

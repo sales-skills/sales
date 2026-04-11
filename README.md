@@ -1,11 +1,23 @@
 # Sales Skills
 
+**AI-powered sales copilot — 129 skills for prospecting, outbound, deals, proposals, and GTM. One install, one router.**
+
 [![Skills](https://img.shields.io/badge/skills-129-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
 
-Claude Code skills for sales, marketing, and GTM workflows.
+<p align="center">
+  <img src="assets/demo.gif" alt="Sales Skills demo — install, route, and run" width="600">
+</p>
+
+## Contents
+
+- [Quick Start](#quick-start)
+- [Why?](#why)
+- [What is sales-do?](#what-is-sales-do)
+- [Skills Catalog](#skills-catalog)
+- [Usage Examples](#usage-examples)
 
 ## Quick Start
 
@@ -20,6 +32,16 @@ Want every skill at once?
 ```bash
 npx skills add sales-skills/sales
 ```
+
+## Why?
+
+- You're copy-pasting the same cold email structure for every campaign
+- You can't remember which tool does email validation vs enrichment vs deliverability
+- You need to launch on Product Hunt, DevHunt, and 20 other directories but don't know what each one requires
+- You want to build a prospect list but don't know whether to use Apollo, Clay, ZoomInfo, or Seamless
+- You're spending more time figuring out _which_ tool to use than actually doing the work
+
+One router skill (`/sales-do`) understands all 129 skills and matches you to the right one based on what you're trying to accomplish.
 
 ## What is `sales-do`?
 
@@ -99,7 +121,16 @@ Router recommends a 5-skill sequence:
 | `/sales-follow-up` | Nurture, re-engagement, going-dark recovery |
 | `/sales-close` | Closing strategies, mutual action plans, urgency |
 
-### Qwilr & Proposals
+### Router
+
+| Skill | What it does |
+|---|---|
+| `/sales-do` | Routes your objective to the right skill |
+| `/sales-request-skill` | Build or request a skill that doesn't exist yet |
+
+
+<details>
+<summary><strong>Qwilr & Proposals</strong> (5 skills)</summary>
 
 | Skill | What it does |
 |---|---|
@@ -109,7 +140,10 @@ Router recommends a 5-skill sequence:
 | `/sales-qwilr-automation` | Build automations connecting Qwilr to CRM via API, Zapier, or native integrations |
 | `/sales-proposal-template` | Design reusable Qwilr proposal templates for your whole sales team |
 
-### Salesloft & Platform
+</details>
+
+<details>
+<summary><strong>Salesloft</strong> (5 skills)</summary>
 
 | Skill | What it does |
 |---|---|
@@ -119,605 +153,208 @@ Router recommends a 5-skill sequence:
 | `/sales-deal-inspect` | Inspect deal health, map stakeholders, identify risks, recommend next actions |
 | `/sales-forecast` | Build and validate revenue forecasts with pipeline coverage and gap analysis |
 
-### Altern & Platform
+</details>
 
-| Skill | What it does |
-|---|---|
-| `/sales-altern` | Altern platform help — curated AI tools and agents directory (10,000+ tools, 100+ categories). Tool submissions (free + Gold/Silver/Bronze featured tiers), listing optimization, category selection, newsletter inclusion, alternatives pages, dofollow backlinks. Founded by Dariush Abbasi |
-
-### Attio & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-attio` | Attio platform help — AI-native CRM with custom objects, relationship database, deal pipelines, email sequences, automations, built-in enrichment, AI agents (Ask Attio), REST API (100+ endpoints, OAuth 2.0, webhooks, MCP server), App SDK. Free (3 seats) / Plus ($29/seat/mo) / Pro ($69/seat/mo) / Enterprise. 80,000+ startups, VC firms, PLG companies. Founded by Nicolas Sharp and Alexander Christie, London |
-
-### Apollo.io & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-apollo` | Apollo.io platform help — config, CRM sync, API, analytics, dialer, credits, admin |
-| `/sales-apollo-sequences` | Create and manage Apollo sequences — deliverability, A/B testing, mailbox config |
-
-### Mailshake & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-mailshake` | Mailshake platform help — campaigns, Lead Catcher, recipients, senders, API, webhooks |
-
-### Lemlist & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-lemlist` | Lemlist platform help — multichannel sequences, Lemwarm, People Database, enrichment, LinkedIn automation, calls, WhatsApp, API |
-
-### Smartlead & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-smartlead` | Smartlead platform help — campaigns, SmartSenders, SmartInfra, SmartAgents, SmartDialer, SmartDelivery, SmartProspect, API, agency/white-label |
-
-### Yesware & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-yesware` | Yesware platform help — email tracking, campaigns, templates, Prospector, Meeting Scheduler, Salesforce integration, reporting |
-
-### Mixmax & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-mixmax` | Mixmax platform help — sequences, email tracking, one-click meetings, rules engine, dialer, AI Compose, Salesforce/HubSpot integration, polls, reporting |
-
-### Reply.io & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-reply` | Reply.io platform help — multichannel sequences, Jason AI SDR, B2B database, email warmup, deliverability tools, unified inbox, analytics, Salesforce/HubSpot integration, agency features |
-
-### Woodpecker & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-woodpecker` | Woodpecker platform help — cold email campaigns, condition-based sequences, email warmup, Bounce Shield, Adaptive Sending, email verification, inbox rotation, centralized inbox, LinkedIn automation, Lead Finder, agency panel, API & webhooks |
-
-### Mailmo & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-mailmo` | Mailmo platform help — Email Finder, Email Verifier, catch-all detection, LinkedIn Chrome extension, bulk verification, CSV export |
-
-### Hunter.io & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-hunter` | Hunter.io platform help — Domain Search, Email Finder, Email Verifier, Campaigns, Discover, Signals, TechLookup, Leads, browser extension, MCP server, API & integrations |
-
-### Prospeo & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-prospeo` | Prospeo platform help — person enrichment, company enrichment, person/company search, bulk operations, Chrome extension, LinkedIn Sales Navigator extraction, 5-step email verification, API & integrations |
-
-### Tomba & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-tomba` | Tomba.io platform help — domain search, email finder, email verifier, enrichment, author finder, LinkedIn finder, phone finder, bulk operations, browser extensions, API & integrations |
-
-### Seismic & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-seismic` | Seismic platform help — Enablement Cloud, content management, Learning & Coaching, Aura AI, Digital Sales Rooms, Meeting Intelligence, LiveSend, LiveDocs, Programs, API & integrations |
-
-### Allego & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-allego` | Allego platform help — AI-powered revenue enablement with Modern Learning (video training, AI role-play, conversation intelligence), Modern Content (AI-recommended content, centralized library), Digital Sales Rooms, coaching scorecards, Salesforce/HubSpot/Dynamics integrations |
-
-### SWAI & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-swai` | SWAI.ai platform help — Autonomous Revenue OS with AI-driven campaign execution, landing page builder, AI chat widget, CRM, email automation, AI assistants (sales, support, lead gen, appointment scheduling), content tools, white-label partner program, analytics |
-
-### Tagshop & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-tagshop` | Tagshop.ai platform help — AI UGC video ad generator (1000+ avatars, AI Twin, URL-to-Video, text-to-video, auto-captions, campaign publishing to Facebook/Instagram/TikTok/YouTube) and shoppable UGC galleries (Instagram/TikTok content collection, AI product tagging, Shopify/WooCommerce/BigCommerce/Wix integration, analytics) |
-
-### influData & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-infludata` | influData platform help — AI-powered influencer marketing with creator discovery (20M+ profiles, prompt-based AI search, lookalike builder), audience analysis (50+ metrics, fake follower detection, overlap analysis), campaign management (real-time tracking, EMV/CPM/reach KPIs, sentiment analysis, shitstorm detection), social listening (brand mentions, hashtags, UGC), outreach mailing, Co-Pilot AI, Chrome extension |
-
-### Creator.co & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-creatorco` | Creator.co platform help — AI-powered influencer marketing with London AI agent (automated creator matching from 400M+ profiles, AI outreach), campaign management (briefs, approvals, payouts), creator marketplace (creator.space), UGC with full usage rights, affiliate tracking (Impact, CJ, Awin, Rakuten), Shopify product gifting, Deep Insights reports, performance analytics (ROAS, conversions) |
-
-### Modash & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-modash` | Modash platform help — influencer marketing for Shopify brands with creator discovery (350M+ profiles on Instagram, TikTok, YouTube), audience analysis (demographics, fake follower detection), campaign management (auto-tracking, ROAS, EMV, CPM), creator payments (180+ countries), product gifting, affiliate tracking, promo codes, Discovery API, Raw API, AI Search API, Collaborations API |
-
-### Influencity & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-influencity` | Influencity platform help — all-in-one influencer marketing with Discover (200M+ profiles on Instagram, TikTok, YouTube), IRM (influencer relationship management, audience analysis, fake follower detection), Campaigns (workflow visualization, Shopify gifting, coupon tracking, bulk email outreach), Reports (publication performance, PDF/Excel export), Social Hub (multi-channel content calendar, approval workflows), Monitoring (brand tracking, competitor analysis, 100M+ sources), Influencer Payments, credit system (Monthly Results, Monthly Analyses, Monthly Post Analyses) |
-
-### Hypefy & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-hypefy` | Hypefy platform help — AI-native influencer marketing with zero-subscription, pay-per-campaign pricing. AI campaign setup (brief generation from product description, geography, and budget), influencer discovery (3K+ vetted internal + 12M+ external on Instagram and TikTok), automated outreach and hiring, content review and approval before publishing, influencer payments (multi-currency, milestone-based, compliance), performance dashboard, built-in calculators (Budget, ROI, Engagement, CPM, CTR) |
-
-### Influencer Marketing Strategy
-
-| Skill | What it does |
-|---|---|
-| `/sales-influencer-marketing` | Influencer marketing strategy across platforms (Modash, influData, Creator.co, Hypefy, LTK, Influencity) — platform comparison, creator discovery workflow, vetting framework (fake followers, audience quality), outreach templates, campaign tracking and ROI measurement, product gifting programs, influencer affiliate programs, creator rate benchmarks |
-
-### MicroLaunch & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-microlaunch` | MicroLaunch platform help — product launch and discovery platform for startups and indie makers. Month-long launch cycles (leaderboard ranking over 30 days), community scoring (idea and product scores), Pro Launch ($39/mo — skip queue, 2x boosts, featured spots, Product of the Day), deals marketplace (lifetime deals, discounts), DR59+ do-follow SEO backlinks, auto distribution (4+ SEO-optimized pages), verified product reviews, landing page audits |
-
-### LaunchingNext & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-launchingnext` | LaunchingNext platform help — curated startup directory with 45,000+ listed startups. Free submission (editorial review, weeks/months queue), Express Approval ($149 for 1-business-day review + newsletter feature + social blast), promoted ads (Seed Boost $500/mo, Growth Engine $1,500/mo, Market Leader $4,500/mo with guaranteed impressions), DR51 do-follow backlinks, weekly newsletter (18,000+ subscribers), Twitter/X distribution (25,000+ followers). Co-founded by Alex Robb (Chicago, IL) |
-
-### SideProjectors & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-sideprojectors` | SideProjectors platform help — marketplace to buy, sell, and showcase side projects (24,600+ listings). Freemium model (free listing with no commission, premium features for enhanced visibility), co-founder matching, project showcase, editorial review, DR69 do-follow backlinks (highest among project directories), no escrow/payment handling (peer-to-peer), 631 categories |
-
-### ProductBurst & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-productburst` | ProductBurst platform help — product launch and discovery platform with daily and weekly rankings (ongoing, not single-day like Product Hunt). Community upvoting, Top of Day/Week badges (shareable SVGs), featured homepage placement (one-time fee), DR46 do-follow backlinks, idea validation without a full build, comment threads, marketplace. No gatekeepers — launch in under 5 minutes |
-
-### SoloPush & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-solopush` | SoloPush platform help — product launch and discovery platform for indie makers and solopreneurs with no launch day pressure. Community upvoting, daily trending, product reviews and comments, DR46-47 do-follow backlinks, solo maker community focus, idea-stage posting. Free submission, no editorial gatekeeping, instant listing |
-
-### CtrlAlt.cc & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-ctrlaltcc` | CtrlAlt.cc platform help — curated startup tool directory with 26 categories, daily featured products, community upvoting, free submission (editorial review queue, up to 2 months), paid launch ($39 for week-long homepage feature with dofollow links), DA30 dofollow backlinks, Product of the Week newsletter |
-
-### Open Launch & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-openlaunch` | Open Launch platform help — open-source Product Hunt alternative with tiered backlink system. Free submission (queue, conditional DR65 dofollow backlink requiring Top 3 daily + badge display), Premium launch ($12 for next-day launch with guaranteed DR65 backlink, 10 slots/day), SEO Growth ($59 for dedicated review article + backlink), daily rankings, community upvoting, 1,000+ listed tools |
-
-### Huzzler & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-huzzler` | Huzzler platform help — founder community and weekly product launch competition for startups. Launch Arena (Mon-Wed submissions, Wed-Sun voting, Gold/Silver/Bronze badges with dofollow backlinks for winners only), community categories (#feedback, #showcases, #wins, #growth, #marketing), Huzzler Black ($79 one-time — lifetime premium visibility, verified badge, SEO boost), product showcases, Stripe-verified MRR, advertising credits ($34 promoted), AI-free community |
-
-### Firsto & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-firsto` | Firsto platform help — fair product launch platform for indie makers with sustained SEO discovery. Free submission (~180-day queue, dofollow for Top 3 only + badge), Premium ($19.90 for 24-hour launch with guaranteed DR57+ backlink), Pro ($59.90 — 30-day homepage feature, mini review, star ratings in search), SEO Growth ($149 for custom review article), permanent SEO-optimized product pages, 72 categories, forked from Open Launch |
-
-### OpenHunts & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-openhunts` | OpenHunts platform help — weekly product launch and discovery platform for indie makers. Free submission (~89-week queue, dofollow for Top 3 weekly only), Premium ($9.90 for next-Monday launch with guaranteed DR50 dofollow backlink), Highlight ($20/week — instant pinned launch with guaranteed Twitter/newsletter shoutout), weekly Monday launch cycle, 72+ categories, founder leaderboards |
-
-### Awesome Indie & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-awesomeindie` | Awesome Indie platform help — curated startup and indie product directory. Free submission only (no paid tiers), editorial review queue, DR ~19-31 (backlink type unconfirmed — sources conflict on dofollow vs nofollow), 1-3 products listed per day, categories include AI, productivity, SaaS. Created by Diogo Capela |
-
-### LaunchDay & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-launchday` | LaunchDay platform help — curated 24-hour product launch events for indie makers. $99 submission fee (only charged if selected), 1-2 events per month (max 20 products), >40% discount required, 30-min podcast interview (LaunchDay Podcast, 53+ episodes), influencer promotion (100K+ followers), Slack community, permanent archive. Created by Dagobert Renouf |
-
-### Super Launch & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-superlaunch` | Super Launch platform help — minimalist product launch directory where every product gets 7 days on the front page. Covers free submission (nofollow backlink), paid dofollow backlinks (DR59), $49/month advertising, Top 50 Leaderboard, category browsing, and voting system |
-
-### JustGotFound & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-justgotfound` | JustGotFound platform help — community-curated product discovery platform (Product Hunt alternative). Free submission with DR23 dofollow backlink, paid promotion tiers ($50/week to $500/3 months), community voting, category browsing (AI, Productivity, Marketing, Dev Tools), earnings program |
-
-### Tiny Startups & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-tinystartups` | Tiny Startups platform help — curated startup launch directory and newsletter for bootstrapped founders and indie makers. Free submission (DR50 dofollow backlink), weekly human curation (#1 Product of the Week), newsletter distribution (17,500+ subscribers on Beehiiv), income reports, deals section, founder directory (17,500+ founders) |
-
-### DevHunt & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-devhunt` | DevHunt platform help — open-source developer tool launch platform ("Product Hunt for developers"). Free submission (DR57-62 dofollow backlink), $49 featured placement, GitHub-authenticated voting, weekly rankings, 25+ developer categories, newsletter promotion. Founded by John Rush, part of MarsX ecosystem |
-
-### TinyLaunch & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-tinylaunch` | TinyLaunch platform help — weekly product launch platform for indie makers (Product Hunt alternative). Free submission (DR60-71 dofollow backlink for Top 3), $39 premium launch (skip queue, guaranteed dofollow), weekly badge system, newsletter sponsorship ($50/issue to ~11,000 subscribers), featured spot placement. Founded by Christopher Woggon |
-
-### Uneed & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-uneed` | Uneed platform help — social launchpad for tech products with daily voting competitions. Free submission (DR74 dofollow backlink), skip-the-line ($29.99), Pro subscription ($89/yr with vote multiplier and monthly relaunch), newsletter sponsorship ($147 to 15,000 subscribers at 40% open rate), premium ad spots, product reviews. Founded by Thomas Sanlis |
-
-### Fazier & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-fazier` | Fazier platform help — product discovery and launch platform for indie makers. Free submission (DR81 dofollow backlink, 15-day review, badge required), Lite ($19 instant publish), Premium ($39 guaranteed DR81+ backlink + 15-day promo), Super ($99 top placement), daily launches, community voting, leaderboards. Founded by Falak Sher |
-
-### Indie Hackers & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-indiehackers` | Indie Hackers platform help — the largest founder community (165K+ entrepreneurs, ~1-2M monthly visits). Community engagement strategy (Show IH, Ask IH, post formatting, timing), product pages (revenue milestones, transparent metrics), groups, interviews, podcast, Partner Up co-founder matching, advertising. DR75 nofollow. ~24% trial conversion rate. Founded by Courtland and Channing Allen |
-
-### Product Hunt & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-producthunt` | Product Hunt platform help — the largest product launch platform (DR91 dofollow, 5M+ monthly visits). Launch preparation (6-week timeline, asset checklist, supporter list), launch day execution (24-hour window, first comment strategy, engagement), 2026 algorithm changes (comment quality > upvotes, account age weighting), Pro ($100/mo) and Super Pro ($300/mo), Ship pre-launch pages, Promoted Products ($4-6K/day), GraphQL API |
+<details>
+<summary><strong>Outreach & Sequence Platforms</strong> (10 platforms)</summary>
 
-### Peerlist & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-peerlist` | Peerlist platform help — professional network for tech builders with weekly Launchpad (Monday launches, all projects featured, streak-based vote multipliers), portfolio profiles (GitHub/Dribbble/Medium integration, verified credentials, custom domain), Scroll feed, job board. DR76 nofollow, 180K monthly visits, 203K+ users. Founded by Akash Bhadange and Yogini Bende |
-
-### Startup Directory Launch Strategy
-
-| Skill | What it does |
-|---|---|
-| `/sales-launch-directory` | Startup directory launch strategy — coordinates submissions across Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, and more. Platform selection, launch sequencing (instant-list first, editorial last), backlink stacking, listing optimization, budget allocation, multi-directory coordination |
-
-### Seamless.AI & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-seamless` | Seamless.AI platform help — Prospector, Buyer Intent, Job Changes, CRM Enrich, Pitch Intelligence, Engagement Hub, AI Agents, Autopilot, Chrome extension, API & integrations |
-
-### Semrush & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-semrush` | Semrush platform help — the leading SEO and online visibility platform (27B keywords, 43T backlinks, 808M domains). Keyword research (Keyword Magic Tool), site audits (140+ checks), rank tracking, backlink analysis, AI Visibility Toolkit (LLM citation tracking), Content Marketing, Traffic Analytics, Local SEO, Advertising Intelligence, Social Media, AI PR. REST API (unit-based, Business plan), MCP server, Zapier. Pro $139.95/mo, Guru $249.95/mo, Business $499.95/mo |
-
-### SafetyMails & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-safetymails` | SafetyMails platform help — bulk email verification (19-step algorithm, up to 2M emails), real-time API for form validation, Email Finder, spamtrap/disposable detection, integrations |
-
-### SendGrid & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-sendgrid` | SendGrid (Twilio) platform help — Email API, Marketing Campaigns, transactional email, dynamic templates, domain authentication, dedicated IPs, IP warmup, Event Webhooks, Inbound Parse, Email Validation API, suppressions, statistics, 7 official SDKs, 353 partner integrations |
-
-### Postmark & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-postmark` | Postmark (ActiveCampaign) platform help — transactional email API, SMTP relay, Message Streams (transactional/broadcast), Handlebars templates, Inbound email parsing, 7 webhook types, DMARC Monitoring, bounce management, suppressions, dedicated IPs, sender vetting, best-in-class deliverability (98.7% inbox placement) |
-
-### Mailgun & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-mailgun` | Mailgun (Sinch) platform help — developer-first transactional email API and SMTP relay, inbound email routing with custom parsing, templates, mailing lists, Domains API (DKIM/SPF/DNS), Routes, webhooks (8 event types), Metrics API, Mailgun Optimize (inbox placement testing, email validation, reputation monitoring), dedicated IPs, tags |
-
-### Customer.io & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-customerio` | Customer.io platform help — customer engagement & marketing automation, Journeys (visual workflow builder), multi-channel messaging (email, SMS, push, in-app, WhatsApp), Data Pipelines (reverse ETL), Custom Objects, Ad Audience Sync, Transactional Messages API, segmentation, Broadcasts, A/B testing, analytics |
-
-### Klaviyo & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-klaviyo` | Klaviyo platform help — AI-first B2C CRM and marketing automation for e-commerce. Flows (visual automation), Campaigns, Segmentation (behavior + predictive), Predictive Analytics (CLV, churn risk), Multi-channel (email, SMS, WhatsApp, RCS, push), Forms, Reviews, Klaviyo Data Platform (CDP, 350+ integrations), AI Agents, Catalogs, Coupons, Reporting (revenue attribution, benchmarks) |
-
-### Outscraper & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-outscraper` | Outscraper platform help — data extraction and enrichment from Google Maps, reviews, and 50+ internet sources. Google Maps Places scraping (business data), Google Maps Reviews, Google Search/News, Emails & Contacts (website scraping), Contacts & Leads (enrichment), Company Insights, Email Validation, Amazon products/reviews, multi-platform review scraping (Yelp, Tripadvisor, G2, Trustpilot, Glassdoor, Capterra), YouTube Comments, Geocoding, REST API, Zapier/n8n |
-
-### GetProspect & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-getprospect` | GetProspect platform help — B2B email finder, verifier, enrichment, and cold email outreach. Email Finder (200M+ contacts, 26M+ companies, 17+ filters, 95% accuracy), LinkedIn Email Finder Extension (Chrome, Sales Navigator export), Contact Enrichment (40+ data attributes), Email Verifier (catch-all detection, 97% deliverability guarantee, bulk verification), Cold Email Software (multi-step sequences, A/B testing, auto-stop, timezone-aware sending, SPF/DKIM checks), Built-in CRM (lists, tags, custom properties), Reverse Email Lookup, Phone Numbers, Team Collaboration, REST API, native CRM integrations (HubSpot, Salesforce, Pipedrive, Zoho, Outreach, Salesloft), Zapier, Google Sheets |
-
-### Skrapp & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-skrapp` | Skrapp platform help — B2B email finder, data enrichment, and lead generation. Email Finder (200M+ contacts, 92% success rate), Lead Finder (B2B database, 17+ filters), Data Enrichment (bulk CSV/Excel, auto-mapping, AI Fields for buying role/seniority/function/gender), Email Verifier (97% accuracy, personal/disposable detection), LinkedIn Chrome Extension (25 profiles/sec, multi-page enrichment), Company Search (20M+ profiles), CRM integrations (HubSpot, Salesforce, Zoho, Pipedrive, Outreach), Zapier, REST API |
-
-### OpenWeb Ninja & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-openwebninja` | OpenWeb Ninja platform help — 30+ real-time public data APIs for sales prospecting and enrichment. Website Contacts Scraper (emails, phones, social links from any domain), Email Search (web-indexed email discovery), Local Business Data (Google Maps 40+ fields), Social Links Search, Real-Time Web Search (SERP, AI Overviews, Knowledge Graph), JSearch (200M+ job postings), Web Unblocker (JS rendering, rotating proxies), Product Data (Amazon, eBay, Walmart, Costco), Finance Data, AI/LLM APIs. RapidAPI marketplace, per-API subscription ($0-$150/mo per API) |
-
-### Anymail Finder & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-anymailfinder` | Anymail Finder platform help — email finder and verification with 97%+ delivery guarantee. Email Finder by Person (name + company/domain), Email Finder by Decision Maker (10 role categories), Email Finder by Company/Domain (up to 20 emails), Email Finder by LinkedIn URL, Email Verifier (valid/risky/invalid, 0.2 credits), Bulk Email Search (100K rows, async, webhook), GeoLead Finder (location-based), Chrome Extension, REST API v5.1 (no rate limits), Make/Zapier/n8n (7,000+ apps). Pay only for verified emails |
-
-### ZeroBounce & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-zerobounce` | ZeroBounce platform help — email validation and deliverability suite. Email Validation (99.6% accuracy, 30+ types, bulk + real-time API), Email Finder (name + domain, 20 credits/find), AI Email Scoring (catch-all 1-10 scale), Activity Data (engagement recency 30-365+ days), Inbox Placement Testing (100+ configs), Blacklist Monitoring (200+ providers, 24/7), DMARC Monitor (multi-domain), Email Warmup (automated engagement simulation), REST API v2 (US/EU endpoints, 13 SDKs), 60+ native integrations, Zapier (2,000+ apps). SOC 2 Type 2, ISO-27001, GDPR/HIPAA/CCPA |
-
-### Snov.io & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-snov` | Snov.io platform help — AI-powered sales automation and lead generation. Email Finder (domain search, name+domain, LinkedIn enrichment, company domain lookup), Email Verifier (98% accuracy, 7-tier, SMTP checks), Multichannel Campaigns (email + LinkedIn sequences, drip campaigns, A/B testing, sentiment analysis, AI email writer), LinkedIn Automation ($69/mo add-on — profile views, connections, follow-ups), Sales CRM (deals, pipelines, Google Calendar sync), Email Warmup (freemail support, large pool), Deliverability Check (inbox placement, reputation), Email Tracker (Gmail extension), REST API (33+ endpoints, OAuth 2.0, 60 req/min, webhooks), 5,000+ integrations (native HubSpot, Pipedrive, Salesforce, Zoho, Close, Freshsales + Zapier/Make) |
-
-### Lobstr.io & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-lobstr` | Lobstr.io platform help — no-code web scraping and data collection at scale. 50+ ready-made scrapers (Google Maps Leads, Google Maps Reviews, LinkedIn Sales Navigator Leads, Twitter, YouTube, Vinted, and more), multi-threading (hundreds of concurrent scrapers), cookie-based account sync (scrape behind login walls), scheduled automation, data export (Google Sheets, Amazon S3, SFTP), webhooks (4 events with retry), Make integration, async REST API, Python SDK, CLI, MCP Server, enterprise custom scrapers |
-
-### Lobsters & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-lobsters` | Lobsters (lobste.rs) platform help — invite-only computing-focused link aggregation community (10K+ daily views, est. 2012). Invitation system (public invite tree, 70-day new-user restrictions), posting norms (self-promotion <25% rule, release/show tags, anti-marketing culture), tagging system (50+ predefined tags), moderation (public mod log, Hats system), JSON API. Founded by Joshua Stein, administered by Peter Bhat Harkins |
-
-### StartupBase & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-startupbase` | StartupBase (startupbase.io) platform help — community-driven startup discovery directory (DR39 dofollow, est. 2017). Free submission (tech startups only — SaaS, AI, mobile apps, IoT, hardware, browser extensions), 2-3 month editorial queue (free) or 24-hour premium featuring (paid), strict selection criteria (custom domain, public product, newsletter signup), Spark newsletter (weekly Tuesdays), market categories, streaks leaderboard, AcquireBase integration. Founded by Atta-Ur-Rehman Shah (@attacomsian) |
-
-### Startup Stash & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-startupstash` | Startup Stash (startupstash.com) platform help — one of the largest curated startup tool directories (10,000+ tools, 200+ categories, DR65 nofollow). Free submission with selective curation, advertising partnerships available, weekly "STASH!" newsletter. Founded by Bram Kanstein (#1 most upvoted PH product of all time), acquired Nov 2017 |
-
-### PitchWall & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-pitchwall` | PitchWall (pitchwall.co) platform help — AI product discovery directory (65K+ products, 100K+ users, DR60, 45K+ newsletter subscribers). Free submission (30+ day queue), Premium ($99, 1-day), Growth (custom). Advertising: Spotlight Ad ($1K/mo), Newsletter Sponsor ($199), Website Ad ($199/mo), Dedicated Newsletter ($599). Manual curation for AI tools. Founded by Sebastian Zontek |
-| `/sales-futurepedia` | Futurepedia (futurepedia.io) platform help — largest independent AI tools directory and education platform (5,700+ tools, 500K+ accounts, ~2M visits/mo, 2M+ YouTube subscribers). Basic listing $247 (sold out), Verified $497 (2-day review, verified badge, enhanced page), Enterprise custom (sponsorship bundles, co-branded webinars, YouTube sponsorships). No free tier. Founded by Vivek Varma |
-
-### BetaList & Platform
-
 | Skill | What it does |
 |---|---|
-| `/sales-betalist` | BetaList (betalist.com) platform help — pre-launch startup discovery directory (15,000+ featured startups, 100K+ early adopters, DR67 dofollow backlink, 30K+ newsletter subscribers). Free submission (~2 month queue) or $129 Priority (reviewed in days, guaranteed newsletter). 21% acceptance rate. Founded by Marc Kohlbrugge (2010) |
+| `/sales-apollo` | Apollo.io — config, CRM sync, API, analytics, dialer, credits, admin |
+| `/sales-apollo-sequences` | Apollo sequences — deliverability, A/B testing, mailbox config |
+| `/sales-mailshake` | Mailshake — campaigns, Lead Catcher, recipients, senders, API, webhooks |
+| `/sales-lemlist` | Lemlist — multichannel sequences, Lemwarm, People Database, enrichment, LinkedIn automation, WhatsApp, API |
+| `/sales-smartlead` | Smartlead — campaigns, SmartSenders, SmartInfra, SmartAgents, SmartDialer, API, agency/white-label |
+| `/sales-yesware` | Yesware — email tracking, campaigns, templates, Prospector, Meeting Scheduler, Salesforce integration |
+| `/sales-mixmax` | Mixmax — sequences, email tracking, one-click meetings, rules engine, dialer, AI Compose |
+| `/sales-reply` | Reply.io — multichannel sequences, Jason AI SDR, B2B database, email warmup, unified inbox |
+| `/sales-woodpecker` | Woodpecker — cold email campaigns, condition-based sequences, email warmup, Bounce Shield, LinkedIn automation |
+| `/sales-snov` | Snov.io — AI-powered sales automation, email finder, multichannel campaigns, LinkedIn automation, Sales CRM |
 
-### LaunchCaster & Platform
+</details>
 
-| Skill | What it does |
-|---|---|
-| `/sales-launchcaster` | LaunchCaster (launchcaster.xyz) platform help — Web3 project discovery directory built on Farcaster ("Product Hunt for Web3"). Free submission via Farcaster cast mentioning @launch. Wallet-connected voting, weekly newsletter. 9K+ builders, 1K+ launches. Farcaster account required. YC W21, a16z crypto backed. Founded by Jayme Hoffman (Launcher Labs) |
-
-### SaaSHunt & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-saashunt` | SaaSHunt (saashunt.ai) platform help — AI-powered SaaS discovery directory with free dofollow backlinks (DR49). Template-based submission (download Excel, fill out, upload). 8 categories: HR, CRM, Accounting, ERP, Marketing, PM, Risk Management, Retail/POS. AI-powered software matching, comparison tools, demo booking. Free listing / Pro ~$49/mo / Premium ~$120/mo. Based in Gurgaon, India |
-
-### Resource.fyi & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-resourcefyi` | Resource.fyi platform help — curated tools and resources directory for developers, designers, and marketers. 2,519+ resources across 25+ categories (AI, API, Design, Dev Tools, Marketing, No-Code, Web3). Free submission with editorial review. Community upvoting, bookmarking, trending section. Social auth (Google/GitHub). Founded by Musharof Chowdhury (Pimjo), Dhaka/Wyoming |
-
-### LaunchVibe & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-launchvibe` | LaunchVibe (launchvibe.app) platform help — product launch and discovery directory for makers, founders, and creators. DR10 dofollow backlinks, free instant submission (no editorial queue). Daily launches, community upvoting/commenting, XP gamification system with streak multipliers. 1,000+ founders. Created by J.J (@jjcooldev). Launched ~January 2026 |
-
-### Minelead & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-minelead` | Minelead platform help — B2B email finder, verifier, and lead generation. Company Email Search (domain-based, 500M+ emails, 100M+ business profiles), Email Finder (name + domain), Lead Finder / Tags (keyword + location discovery), Email Verifier (quality scoring 25-100%), Disposable Email Detector, Email Campaigns (Gmail round-robin), Leads CRM, Bulk Operations (CSV upload), Browser Extensions (Chrome, Firefox), Integrations (HubSpot, Zoho CRM, Google Sheets, Zapier), REST API |
-
-### Enrich.so & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-enrichso` | Enrich.so platform help — LinkedIn enrichment (profile → verified email, phone, company data, job history), Reverse Email Lookup, Email Finder (name + domain), Phone Finder, Company Data (domain or LinkedIn URL → firmographics, tech stack, social profiles), Similar Companies, Search Company Employees, bulk enrichment (CSV upload or API batch), REST API, Zapier/n8n/Make integrations |
-
-### ActiveCampaign & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-activecampaign` | ActiveCampaign platform help — marketing automation (visual builder, 900+ recipes), email marketing (drag-and-drop, A/B testing, predictive sending), CRM (pipelines, deals, lead scoring, win probability), segmentation (tags, lists, behavioral, engagement-based), multi-channel (email, SMS, site messages, Facebook Custom Audiences), landing pages, forms, site tracking, event tracking, transactional email (via Postmark), 900+ integrations, REST API v3 |
-
-### Mailchimp & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-mailchimp` | Mailchimp platform help — email campaigns, Customer Journey Builder automations, SMS marketing, audience management, segmentation, landing pages, transactional email (Mandrill), A/B testing, Content Studio, generative AI, 300+ integrations, Marketing + Transactional APIs |
-
-### Closum & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-closum` | Closum platform help — omnichannel marketing automation: email, SMS, WhatsApp, Telegram, Web Push, no-code automations, AI assistant, landing pages, contact management, API & integrations |
-
-### Groove.cm & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-groove` | Groove.cm platform help — GroovePages, GrooveFunnels, GrooveSell, GrooveMail, GrooveAffiliate, GrooveMember, GrooveVideo, GrooveWebinar, GrooveBlog, GrooveKart, GrooveProof |
-
-### Brevo & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-brevo` | Brevo platform help — email/SMS/WhatsApp campaigns, marketing automation (journeys), transactional messaging, Sales CRM, Conversations (live chat, chatbot), Loyalty programs, push notifications, e-commerce, landing pages, Aura AI, API & integrations |
-
-### Iterable & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-iterable` | Iterable platform help — cross-channel customer engagement with Studio journey builder, Campaigns, email (Handlebars), SMS/MMS, push (iOS/Android/web), in-app messages, Mobile Inbox, Embedded Messages, WhatsApp, Experiments, Iterable AI (Brand Affinity, STO, Frequency Optimization, Predictive Goals, Journey Assist), Smart Ingest (23+ data sources), Snowflake Secure Data Sharing, Catalog, segmentation, system webhooks, REST API |
-
-### GetResponse & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-getresponse` | GetResponse platform help — email marketing (newsletters, autoresponders), visual marketing automation, conversion funnels, landing pages, webinars (live/on-demand), course creator, premium newsletters, SMS, web push, live chat, e-commerce (Shopify/WooCommerce), contact scoring, AI content, transactional email (MAX only), REST API |
-
-### Braze & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-braze` | Braze platform help — Canvas Flow, Campaigns, email (Liquid templating, Connected Content), push notifications, in-app messages, Content Cards, SMS/MMS/RCS, WhatsApp, LINE, BrazeAI (predictive, generative, Decisioning Studio), Braze Data Platform (CDI, Currents), segmentation, Catalogs, Feature Flags, transactional email API, REST API, Braze Alloys integrations |
-
-### ZoomInfo & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-zoominfo` | ZoomInfo platform help — SalesOS (prospecting, enrichment, intent, Engage sequences, Chorus conversation intelligence), MarketingOS (B2B advertising, FormComplete, WebSights, Chat), OperationsOS (data orchestration, CRM hygiene, deduplication), Copilot (AI pipeline management), API (PKI/OAuth auth, search, enrich, lookup, bulk, webhooks) |
-
-### LoyaltyLion & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-loyaltylion` | LoyaltyLion platform help — points, tiers, rewards, referrals, custom loyalty pages, receipt upload (omnichannel), AI recommendations, analytics, Klaviyo Events (Elite Master Partner), Shopify POS, Admin API + Headless API (TypeScript client, Hydrogen reference store) |
-
-### LTK & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-ltk` | LTK (formerly rewardStyle / LIKEtoKNOW.it) platform help — creator commerce and influencer marketing for brands. Brand Platform (free: Brand Profiles, Creator Discovery, Gifting & Codes, Creator CRM, Content Library, Dashboard, Leaderboards), LTK Connect (self-serve campaigns: Launch $99/mo, Pro $999/mo, Enterprise), LTK Optimize (managed service), LTK Ads, LTK Boost, LTK CTV (Connected TV), LTK 360 (analytics), LTK AI (creator matching), LTK RMN (retail media network) |
-
-### Omnisend & Platform
+<details>
+<summary><strong>Email Finder & Verification</strong> (12 platforms)</summary>
 
 | Skill | What it does |
 |---|---|
-| `/sales-omnisend` | Omnisend platform help — email campaigns, SMS marketing, web push, automation workflows, popups/forms, segmentation, product recommendations, reporting, Shopify/WooCommerce/BigCommerce integrations, API |
+| `/sales-mailmo` | Mailmo — Email Finder, Email Verifier, catch-all detection, LinkedIn Chrome extension, bulk verification |
+| `/sales-hunter` | Hunter.io — Domain Search, Email Finder, Email Verifier, Campaigns, Signals, TechLookup, MCP server, API |
+| `/sales-prospeo` | Prospeo — person/company enrichment, LinkedIn Sales Navigator extraction, 5-step email verification, API |
+| `/sales-tomba` | Tomba.io — domain search, email finder, email verifier, enrichment, author/LinkedIn/phone finder, API |
+| `/sales-getprospect` | GetProspect — B2B email finder (200M+ contacts), LinkedIn extension, enrichment, cold email software, CRM |
+| `/sales-skrapp` | Skrapp — B2B email finder (200M+ contacts), data enrichment, AI Fields, email verifier, LinkedIn extension |
+| `/sales-anymailfinder` | Anymail Finder — email finder with 97%+ delivery guarantee, bulk search, GeoLead Finder, Chrome extension |
+| `/sales-zerobounce` | ZeroBounce — email validation (99.6% accuracy), AI email scoring, inbox placement testing, blacklist monitoring |
+| `/sales-minelead` | Minelead — B2B email finder (500M+ emails), lead finder, email verifier, disposable detector, campaigns, CRM |
+| `/sales-safetymails` | SafetyMails — bulk email verification (19-step algorithm), real-time API, spamtrap/disposable detection |
+| `/sales-openwebninja` | OpenWeb Ninja — 30+ real-time public data APIs, website contacts scraper, email search, local business data |
+| `/sales-enrichso` | Enrich.so — LinkedIn enrichment, reverse email lookup, email/phone finder, company data, bulk enrichment |
 
-### SendPulse & Platform
+</details>
 
-| Skill | What it does |
-|---|---|
-| `/sales-sendpulse` | SendPulse platform help — email marketing, Automation 360, chatbots (Telegram, Facebook, WhatsApp, Instagram, Viber, Live Chat), CRM, online course builder (EDU), website/landing page builder, web push, SMS, SMTP transactional email, pop-ups, email verifier, API (OAuth 2.0, 7 SDKs), MCP Server |
-
-### Clearbit & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-clearbit` | Clearbit (HubSpot) platform help — Person Enrichment (80+ attributes), Company Enrichment (100+ firmographics), Reveal (IP-to-company), Prospector (contact search), Name to Domain, Form Shortening, Risk API, Breeze Intelligence, API (REST, HTTP Basic Auth, 600 req/min) |
-
-### RB2B & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-rb2b` | RB2B platform help — Person-Level Website Visitor ID (US only, 35-45% match rate), Company-Level ID (Demandbase, global), Hot Pages (high-intent page flagging), Hot Leads (ICP filtering), Traffic Insights, Identity Resolution API (api.rb2b.com — IP/LinkedIn/email/company resolution, credit-based), 50+ integrations (Slack, HubSpot, Salesforce, Apollo, Salesloft, Outreach, Clay) |
-
-### Retention.com & Platform
+<details>
+<summary><strong>Data, Intelligence & Enrichment</strong> (10 platforms)</summary>
 
 | Skill | What it does |
 |---|---|
-| `/sales-retention` | Retention.com platform help — ecommerce identity resolution that identifies anonymous website visitors and converts them to email/SMS contacts. Grow (10x email list growth), Reclaim (abandonment flow recovery for events missed by Klaviyo/Elevar), retargeting activation, Shopify/Klaviyo integration, compliance (CCPA, implicit consent). $500-$2,500/mo annual contracts. Founded by Adam Robinson (also RB2B), 1,500+ ecommerce brands |
+| `/sales-seamless` | Seamless.AI — Prospector, Buyer Intent, Job Changes, CRM Enrich, Pitch Intelligence, AI Agents, API |
+| `/sales-clearbit` | Clearbit (HubSpot) — Person/Company Enrichment, Reveal (IP-to-company), Prospector, Breeze Intelligence, API |
+| `/sales-rb2b` | RB2B — Person-Level Website Visitor ID (US), Company-Level ID (global), Hot Pages, Identity Resolution API |
+| `/sales-retention` | Retention.com — ecommerce identity resolution, anonymous visitor → email/SMS, abandonment recovery |
+| `/sales-6sense` | 6sense — Signalverse Intent Data (1T+ signals), Predictive Analytics, Sales Intelligence, AI Email Agents |
+| `/sales-clay` | Clay — Waterfall Enrichment (150+ providers), Claygent AI agents, Sculptor, Signals, CRM Sync |
+| `/sales-leadmagic` | LeadMagic — Email Finder, Mobile Finder, Company Search, Job Change Detector, MCP Server, CLI |
+| `/sales-outscraper` | Outscraper — Google Maps/Reviews scraping, email/contact extraction, multi-platform review scraping, API |
+| `/sales-lobstr` | Lobstr.io — 50+ no-code scrapers (Google Maps, LinkedIn, Twitter, YouTube), MCP Server, Python SDK |
+| `/sales-zoominfo` | ZoomInfo — SalesOS, MarketingOS, OperationsOS, Copilot AI, API (search, enrich, lookup, bulk, webhooks) |
 
-### 6sense & Platform
+</details>
+
+<details>
+<summary><strong>CRM & Marketing Automation</strong> (16 platforms)</summary>
 
 | Skill | What it does |
 |---|---|
-| `/sales-6sense` | 6sense platform help — Signalverse Intent Data (1T+ signals, buying stage predictions), Predictive Analytics (6AI Scoring, 6QA), Sales Intelligence (Sales Copilot, Chrome extension), AI Email Agents (automated personalized outreach), Advertising & Audience Activation (display, LinkedIn sync, retargeting), Orchestration Workflows, Segments, Company Identification API, People/Company Enrichment API, Company Discovery |
+| `/sales-attio` | Attio — AI-native CRM with custom objects, deal pipelines, email sequences, automations, AI agents, API |
+| `/sales-activecampaign` | ActiveCampaign — marketing automation (900+ recipes), email marketing, CRM, multi-channel, 900+ integrations |
+| `/sales-mailchimp` | Mailchimp — email campaigns, Customer Journey Builder, SMS, audience management, Mandrill, 300+ integrations |
+| `/sales-closum` | Closum — omnichannel marketing automation: email, SMS, WhatsApp, Telegram, Web Push, AI assistant |
+| `/sales-groove` | Groove.cm — GroovePages, GrooveFunnels, GrooveSell, GrooveMail, GrooveAffiliate, GrooveMember, GrooveWebinar |
+| `/sales-brevo` | Brevo — email/SMS/WhatsApp campaigns, marketing automation, Sales CRM, Conversations, Loyalty, Aura AI |
+| `/sales-iterable` | Iterable — cross-channel engagement, Studio journeys, Iterable AI, Smart Ingest, Snowflake sharing, API |
+| `/sales-getresponse` | GetResponse — email marketing, visual automation, conversion funnels, landing pages, webinars, course creator |
+| `/sales-braze` | Braze — Canvas Flow, multi-channel messaging, BrazeAI, Braze Data Platform, Catalogs, Feature Flags, API |
+| `/sales-customerio` | Customer.io — Journeys, multi-channel (email, SMS, push, in-app, WhatsApp), Data Pipelines, Custom Objects |
+| `/sales-klaviyo` | Klaviyo — AI-first B2C CRM for e-commerce, Flows, Predictive Analytics, multi-channel, CDP, AI Agents |
+| `/sales-omnisend` | Omnisend — email campaigns, SMS, web push, automation workflows, Shopify/WooCommerce/BigCommerce |
+| `/sales-sendpulse` | SendPulse — email marketing, Automation 360, chatbots, CRM, course builder, web push, SMS, MCP Server |
+| `/sales-kit` | Kit (ConvertKit) — Visual Automations, Sequences, Broadcasts, landing pages, Commerce, API |
+| `/sales-swai` | SWAI.ai — Autonomous Revenue OS, AI-driven campaigns, landing page builder, CRM, AI assistants |
+| `/sales-adroll` | AdRoll — retargeting, display/social/CTV campaigns, dynamic retargeting, RollWorks ABM, attribution |
 
-### Clay & Platform
+</details>
 
-| Skill | What it does |
-|---|---|
-| `/sales-clay` | Clay platform help — Waterfall Enrichment (150+ data providers, multi-provider fallback), Claygent (AI research agents), Sculptor (natural language workflow builder), Signals (job changes, funding, website visits), Audiences (dynamic buyer segments), Ad Sync (LinkedIn/Meta/Google Ads), Email Sequencer (native outbound), CRM Sync (Salesforce/HubSpot/Dynamics bidirectional), HTTP API actions, webhooks |
-
-### LeadMagic & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-leadmagic` | LeadMagic platform help — Email Finder (97% accuracy), Email Validation (catch-all detection), Mobile Finder, Profile Search, Company Search (firmographics/technographics), Company Funding, Employee Finder, Role Finder, Job Change Detector, Jobs Finder, Google/Meta/B2B Ads Search, REST API (19 endpoints at api.leadmagic.io), MCP Server (Claude/Cursor/Windsurf), CLI |
+<details>
+<summary><strong>Transactional Email</strong> (3 platforms)</summary>
 
-### AdRoll & Platform
-
 | Skill | What it does |
 |---|---|
-| `/sales-adroll` | AdRoll platform help — retargeting pixel setup, display/social/CTV/native/DOOH campaigns, dynamic retargeting, audience segmentation, ecommerce integrations (Shopify/BigCommerce/WooCommerce), RollWorks ABM (account-based targeting, HubSpot integration), email retargeting, cross-channel attribution, NextRoll API |
+| `/sales-sendgrid` | SendGrid (Twilio) — Email API, Marketing Campaigns, transactional email, dynamic templates, 7 SDKs |
+| `/sales-postmark` | Postmark (ActiveCampaign) — transactional email API, SMTP relay, Message Streams, DMARC Monitoring |
+| `/sales-mailgun` | Mailgun (Sinch) — transactional email API, SMTP relay, inbound routing, Mailgun Optimize, dedicated IPs |
 
-### Kit (ConvertKit) & Platform
-
-| Skill | What it does |
-|---|---|
-| `/sales-kit` | Kit (formerly ConvertKit) platform help — Visual Automations, Sequences, Broadcasts, landing pages, forms, Creator Profile, Commerce (digital products, paid newsletters), Creator Recommendations, subscriber tagging, segmentation, engagement scoring, API |
+</details>
 
-### Funnels, Email Marketing & Digital Sales
+<details>
+<summary><strong>Sales Enablement Platforms</strong> (3 platforms)</summary>
 
 | Skill | What it does |
-|---|---|
-| `/sales-funnel` | Build and optimize sales funnels — strategy, structure, conversion, A/B testing across ClickFunnels, GoHighLevel, Groove, and more |
-| `/sales-email-marketing` | Opt-in email marketing — broadcasts, nurture sequences, automation, segmentation across Kit, GrooveMail, Mailchimp, ActiveCampaign, and more |
-| `/sales-newsletter` | Newsletter monetization — paid subscriptions, sponsorships, ad sales, paid recommendations, premium tiers across Kit, Substack, Beehiiv, Ghost, and more |
-| `/sales-audience-growth` | Grow an email list or newsletter audience — lead magnets, cross-promotion, referral programs, social-to-email across Kit, Beehiiv, Mailchimp, and more |
-| `/sales-digital-products` | Sell digital products — ebooks, templates, courses, downloads, pricing strategy, launch playbooks across Kit Commerce, Gumroad, Lemon Squeezy, and more |
-| `/sales-affiliate-program` | Design and manage affiliate programs — commissions, recruitment, tracking, payouts across GrooveAffiliate, PartnerStack, and more |
-| `/sales-webinar` | Webinar-based selling — live and evergreen strategy, presentation, follow-up across GrooveWebinar, Demio, WebinarJam, and more |
-| `/sales-membership` | Membership sites and online courses — structure, pricing, retention across GrooveMember, Kajabi, Teachable, and more |
-| `/sales-checkout` | Checkout optimization — upsells, order bumps, payment plans, cart abandonment across GrooveSell, ThriveCart, SamCart, and more |
-| `/sales-meeting-scheduler` | Schedule sales meetings — booking pages, round-robin, Calendly/Chili Piper, no-show reduction, meeting page conversion |
-| `/sales-email-tracking` | Email engagement tracking — open/click/attachment tracking, follow-up timing, Apple MPP, tracking accuracy |
-| `/sales-transactional-email` | Transactional/triggered email delivery — provider selection, API/SMTP integration, templates, deliverability across SendGrid, Postmark, Mailgun, Brevo, Customer.io, SES |
-| `/sales-live-chat` | Live chat and chatbot for sales — widget setup, chatbot flows, agent routing, chat-to-lead conversion across Brevo, Drift, Intercom, HubSpot, Crisp, and more |
-| `/sales-loyalty` | Customer loyalty programs — points, tiers, rewards, VIP programs, member engagement, ROI across Brevo Loyalty, Smile.io, LoyaltyLion, Yotpo, and more |
-| `/sales-sms-marketing` | SMS marketing — opt-in collection, compliance (TCPA/GDPR), campaign types, automation, two-way messaging, analytics across Omnisend, Klaviyo, Attentive, Postscript, Brevo, and more |
-| `/sales-data-hygiene` | CRM data quality — deduplication, record matching, data decay management, enrichment automation, normalization across ZoomInfo OperationsOS, Salesforce, HubSpot Operations Hub, Clay, LeanData, DemandTools |
-| `/sales-b2b-advertising` | Account-based B2B advertising — display ads, retargeting, cross-channel campaigns, ABM ads, audience building, ad-to-pipeline attribution across ZoomInfo MarketingOS, Demandbase, 6sense, Terminus, RollWorks, LinkedIn Ads |
-| `/sales-retargeting` | Retargeting and remarketing strategy — website visitor retargeting, cart abandonment recovery, dynamic product ads, cross-channel retargeting, audience segmentation, frequency capping, platform selection (AdRoll, Google Ads, Meta, Criteo, LinkedIn) |
-| `/sales-push-notification` | Mobile and web push notification strategy — opt-in optimization, rich push, segmentation, timing, frequency capping, deep linking across Braze, OneSignal, Airship, Firebase/FCM, Customer.io, Klaviyo, Iterable, MoEngage |
-| `/sales-in-app-messaging` | In-app messages and content cards — onboarding, feature announcements, surveys, promotions, trigger design across Braze, Iterable, Intercom, Pendo, Appcues, Customer.io, MoEngage |
-| `/sales-chatbot` | Chatbot marketing and conversational automation — chatbot flows, multichannel messaging (WhatsApp, Telegram, Facebook, Instagram, Viber, live chat), lead qualification bots, FAQ bots, human handoff across SendPulse, ManyChat, Tidio, Intercom, Drift, HubSpot |
-
-### Prospecting, Enrichment & Signals
+|---|---|
+| `/sales-seismic` | Seismic — Enablement Cloud, content management, Learning & Coaching, Aura AI, Digital Sales Rooms |
+| `/sales-allego` | Allego — AI-powered revenue enablement, Modern Learning, Modern Content, Digital Sales Rooms |
+| `/sales-altern` | Altern — curated AI tools directory (10,000+ tools, 100+ categories), listing optimization, dofollow backlinks |
+
+</details>
+
+<details>
+<summary><strong>Influencer Marketing</strong> (8 skills)</summary>
+
+| Skill | What it does |
+|---|---|
+| `/sales-infludata` | influData — creator discovery (20M+ profiles), audience analysis, campaign management, social listening |
+| `/sales-creatorco` | Creator.co — AI-powered influencer marketing, London AI agent (400M+ profiles), UGC, affiliate tracking |
+| `/sales-modash` | Modash — influencer marketing for Shopify, creator discovery (350M+ profiles), audience analysis, API |
+| `/sales-influencity` | Influencity — all-in-one influencer marketing, Discover (200M+ profiles), IRM, Campaigns, Social Hub |
+| `/sales-hypefy` | Hypefy — AI-native influencer marketing, zero-subscription/pay-per-campaign, content review, payments |
+| `/sales-ltk` | LTK — creator commerce, Brand Platform, LTK Connect, LTK Ads, LTK Boost, LTK AI |
+| `/sales-tagshop` | Tagshop.ai — AI UGC video ad generator (1000+ avatars), shoppable UGC galleries |
+| `/sales-influencer-marketing` | Influencer marketing strategy — platform comparison, creator discovery, vetting, campaign tracking |
+
+</details>
+
+<details>
+<summary><strong>Launch Directories</strong> (28 platforms)</summary>
+
+| Skill | What it does |
+|---|---|
+| `/sales-producthunt` | Product Hunt — largest launch platform (DR91 dofollow, 5M+ visits/mo), Pro/Super Pro, GraphQL API |
+| `/sales-betalist` | BetaList — pre-launch directory (DR67 dofollow, 30K+ newsletter), free or $129 Priority |
+| `/sales-indiehackers` | Indie Hackers — largest founder community (165K+ entrepreneurs), DR75 nofollow |
+| `/sales-peerlist` | Peerlist — professional network, weekly Launchpad, portfolio profiles, DR76 nofollow |
+| `/sales-fazier` | Fazier — product discovery (DR81 dofollow), free/$19 Lite/$39 Premium/$99 Super |
+| `/sales-uneed` | Uneed — social launchpad (DR74 dofollow), skip-the-line $29.99, Pro $89/yr |
+| `/sales-tinylaunch` | TinyLaunch — weekly launches (DR60-71 dofollow for Top 3), $39 premium launch |
+| `/sales-devhunt` | DevHunt — developer tool launches (DR57-62 dofollow), $49 featured |
+| `/sales-openlaunch` | Open Launch — open-source PH alternative (DR65 dofollow), $12 Premium, $59 SEO Growth |
+| `/sales-microlaunch` | MicroLaunch — month-long launch cycles, DR59+ dofollow, Pro Launch $39/mo |
+| `/sales-tinystartups` | Tiny Startups — curated directory (DR50 dofollow), 17,500+ newsletter subscribers |
+| `/sales-superlaunch` | Super Launch — 7 days on front page, DR59 paid dofollow, $49/mo advertising |
+| `/sales-sideprojectors` | SideProjectors — project marketplace (DR69 dofollow), 24,600+ listings |
+| `/sales-launchingnext` | LaunchingNext — curated directory (DR51 dofollow, 45K+ startups), $149 Express |
+| `/sales-pitchwall` | PitchWall — AI product directory (DR60, 65K+ products), free/$99 Premium |
+| `/sales-futurepedia` | Futurepedia — largest AI tools directory (5,700+ tools, ~2M visits/mo), $247/$497 |
+| `/sales-startupstash` | Startup Stash — curated tool directory (10K+ tools, DR65 nofollow) |
+| `/sales-productburst` | ProductBurst — daily/weekly rankings (DR46 dofollow), no gatekeepers |
+| `/sales-solopush` | SoloPush — indie maker launches (DR46-47 dofollow), free instant listing |
+| `/sales-ctrlaltcc` | CtrlAlt.cc — startup tool directory (DA30 dofollow), $39 paid launch |
+| `/sales-huzzler` | Huzzler — weekly launch competition, dofollow for winners only, Huzzler Black $79 |
+| `/sales-firsto` | Firsto — fair launch platform (DR57+ dofollow), $19.90 Premium, $59.90 Pro |
+| `/sales-openhunts` | OpenHunts — weekly Monday launches (DR50 dofollow), $9.90 Premium |
+| `/sales-awesomeindie` | Awesome Indie — curated directory, free only, editorial review |
+| `/sales-launchday` | LaunchDay — curated 24-hour events ($99), podcast interview, influencer promotion |
+| `/sales-justgotfound` | JustGotFound — community-curated (DR23 dofollow), paid promotion $50-$500 |
+| `/sales-launchcaster` | LaunchCaster — Web3 project discovery on Farcaster, wallet-connected voting |
+| `/sales-saashunt` | SaaSHunt — AI-powered SaaS directory (DR49 dofollow), template-based submission |
+| `/sales-resourcefyi` | Resource.fyi — curated tools directory (2,519+ resources), free submission |
+| `/sales-launchvibe` | LaunchVibe — instant free submission (DR10 dofollow), XP gamification |
+| `/sales-startupbase` | StartupBase — community-driven directory (DR39 dofollow), Spark newsletter |
+| `/sales-lobsters` | Lobsters — invite-only computing community (10K+ daily views), self-promotion <25% rule |
+| `/sales-launch-directory` | Launch directory strategy — coordinates submissions across 22+ platforms, sequencing, backlink stacking |
+
+</details>
+
+<details>
+<summary><strong>SEO & Visibility</strong> (2 platforms)</summary>
+
+| Skill | What it does |
+|---|---|
+| `/sales-semrush` | Semrush — leading SEO platform (27B keywords, 43T backlinks), AI Visibility Toolkit, MCP server, API |
+| `/sales-loyaltylion` | LoyaltyLion — points, tiers, rewards, referrals, AI recommendations, Klaviyo Events, Shopify POS, API |
+
+</details>
+
+<details>
+<summary><strong>Funnels, Email Marketing & Digital Sales</strong> (21 skills)</summary>
+
+| Skill | What it does |
+|---|---|
+| `/sales-funnel` | Build and optimize sales funnels — strategy, structure, conversion, A/B testing |
+| `/sales-email-marketing` | Opt-in email marketing — broadcasts, nurture sequences, automation, segmentation |
+| `/sales-newsletter` | Newsletter monetization — paid subscriptions, sponsorships, ad sales, premium tiers |
+| `/sales-audience-growth` | Grow an email list or newsletter audience — lead magnets, cross-promotion, referral programs |
+| `/sales-digital-products` | Sell digital products — ebooks, templates, courses, downloads, pricing strategy |
+| `/sales-affiliate-program` | Design and manage affiliate programs — commissions, recruitment, tracking, payouts |
+| `/sales-webinar` | Webinar-based selling — live and evergreen strategy, presentation, follow-up |
+| `/sales-membership` | Membership sites and online courses — structure, pricing, retention |
+| `/sales-checkout` | Checkout optimization — upsells, order bumps, payment plans, cart abandonment |
+| `/sales-meeting-scheduler` | Schedule sales meetings — booking pages, round-robin, Calendly/Chili Piper |
+| `/sales-email-tracking` | Email engagement tracking — open/click/attachment tracking, follow-up timing |
+| `/sales-transactional-email` | Transactional/triggered email — provider selection, API/SMTP, templates, deliverability |
+| `/sales-live-chat` | Live chat and chatbot for sales — widget setup, chatbot flows, agent routing |
+| `/sales-loyalty` | Customer loyalty programs — points, tiers, rewards, VIP programs, member engagement |
+| `/sales-sms-marketing` | SMS marketing — opt-in collection, compliance (TCPA/GDPR), automation, two-way messaging |
+| `/sales-data-hygiene` | CRM data quality — deduplication, record matching, data decay, enrichment automation |
+| `/sales-b2b-advertising` | Account-based B2B advertising — display ads, retargeting, ABM, ad-to-pipeline attribution |
+| `/sales-retargeting` | Retargeting — visitor retargeting, cart abandonment, dynamic ads, cross-channel |
+| `/sales-push-notification` | Push notifications — opt-in optimization, rich push, segmentation, timing, deep linking |
+| `/sales-in-app-messaging` | In-app messages — onboarding, feature announcements, surveys, promotions, triggers |
+| `/sales-chatbot` | Chatbot marketing — chatbot flows, multichannel messaging, lead qualification, human handoff |
+
+</details>
+
+<details>
+<summary><strong>Prospecting, Enrichment & Signals</strong> (6 skills)</summary>
 
 | Skill | What it does |
 |---|---|
@@ -728,35 +365,30 @@ Router recommends a 5-skill sequence:
 | `/sales-account-map` | Map the buying committee at a target account with multi-threading strategy |
 | `/sales-lead-score` | Design, weight, and tune a lead scoring model with MQL/SQL thresholds |
 
-### Cross-Platform
+</details>
+
+<details>
+<summary><strong>Cross-Platform & Strategy</strong> (7 skills)</summary>
 
 | Skill | What it does |
 |---|---|
 | `/sales-deliverability` | Email deliverability — SPF/DKIM/DMARC, warmup, inbox placement, blacklists, sender reputation |
-| `/sales-agency-outbound` | Multi-client outbound for agencies — infrastructure, client isolation, white-labeling, onboarding |
-| `/sales-lead-routing` | Design lead routing and assignment rules — round-robin, territory, score-based, account-based |
+| `/sales-agency-outbound` | Multi-client outbound for agencies — infrastructure, client isolation, white-labeling |
+| `/sales-lead-routing` | Design lead routing and assignment rules — round-robin, territory, score-based |
 | `/sales-integration` | Connect sales tools with webhooks, Zapier/Make, native integrations, and CRM sync |
-
-### Strategy & Content
-
-| Skill | What it does |
-|---|---|
 | `/sales-positioning` | Messaging, value props, competitive differentiation |
+| `/sales-content` | Organize, distribute, and measure sales collateral — battle cards, one-pagers, case studies |
+| `/sales-coaching` | Sales coaching and training — onboarding, role-play, coaching frameworks, certifications |
 
-### Sales Enablement & Content
+</details>
 
-| Skill | What it does |
-|---|---|
-| `/sales-content` | Organize, distribute, and measure sales collateral — battle cards, one-pagers, case studies, decks, playbooks, content governance |
-| `/sales-coaching` | Sales coaching and training — onboarding, role-play, coaching frameworks, certifications, ramp time optimization |
+<details>
+<summary><strong>Marketing & GTM</strong> (33 skills from <code>coreyhaines31/marketingskills</code>)</summary>
 
-### Marketing & GTM
-
-> 33 marketing skills from [`coreyhaines31/marketingskills`](https://skills.sh/coreyhaines31/marketingskills).
 > Install all: `npx skills add coreyhaines31/marketingskills`
 > Install one: `npx skills add coreyhaines31/marketingskills --skills <skill-name>`
 
-#### SEO & Content
+**SEO & Content**
 
 | Skill | What it does |
 |---|---|
@@ -770,7 +402,7 @@ Router recommends a 5-skill sequence:
 | `/site-architecture` | Plan website hierarchy, navigation, and URL structure |
 | `/social-content` | Create and schedule social media content |
 
-#### Conversion & Growth
+**Conversion & Growth**
 
 | Skill | What it does |
 |---|---|
@@ -782,7 +414,7 @@ Router recommends a 5-skill sequence:
 | `/popup-cro` | Create and optimize popups, modals, and overlays |
 | `/signup-flow-cro` | Optimize signup, registration, and trial activation |
 
-#### Acquisition & Campaigns
+**Acquisition & Campaigns**
 
 | Skill | What it does |
 |---|---|
@@ -793,7 +425,7 @@ Router recommends a 5-skill sequence:
 | `/lead-magnets` | Create and optimize lead magnets for email capture |
 | `/paid-ads` | Manage Google, Meta, LinkedIn, and Twitter ad campaigns |
 
-#### Strategy & Positioning
+**Strategy & Positioning**
 
 | Skill | What it does |
 |---|---|
@@ -805,7 +437,7 @@ Router recommends a 5-skill sequence:
 | `/product-marketing-context` | Create foundational product marketing documentation |
 | `/competitive-landscape` | Analyze competitive dynamics with Porter's Five Forces, Blue Ocean Strategy, and positioning maps |
 
-#### Retention & Revenue
+**Retention & Revenue**
 
 | Skill | What it does |
 |---|---|
@@ -814,7 +446,7 @@ Router recommends a 5-skill sequence:
 | `/revops` | Manage lead lifecycle and marketing-to-sales handoff |
 | `/sales-enablement` | Create pitch decks, one-pagers, and objection handling docs |
 
-#### Analytics
+**Analytics**
 
 | Skill | What it does |
 |---|---|
@@ -822,13 +454,15 @@ Router recommends a 5-skill sequence:
 | `/marketing-skills-collection` | Generate marketing deliverables across CRO, copywriting, SEO, analytics, and growth |
 | `/marketing-automation` | Marketing automation with 23 sub-skills across CRO, copywriting, SEO, analytics, and growth |
 
-### Research & Data
+</details>
 
-> 10 skills from [`resciencelab/opc-skills`](https://skills.sh/resciencelab/opc-skills).
+<details>
+<summary><strong>Research & Data</strong> (14 skills from <code>resciencelab/opc-skills</code>)</summary>
+
 > Install all: `npx skills add resciencelab/opc-skills`
 > Install one: `npx skills add resciencelab/opc-skills --skills <skill-name>`
 
-#### Research
+**Research**
 
 | Skill | What it does |
 |---|---|
@@ -839,7 +473,7 @@ Router recommends a 5-skill sequence:
 | `/apify-lead-generation` | Multi-platform lead scraping from Google Maps, social media, websites, and search engines |
 | `/twitter` | Search and retrieve tweets, user profiles, and trends from X |
 
-#### Creative & Design
+**Creative & Design**
 
 | Skill | What it does |
 |---|---|
@@ -848,7 +482,7 @@ Router recommends a 5-skill sequence:
 | `/nanobanana` | Generate and edit images using AI (Gemini image model) |
 | `/baoyu-slide-deck` | Transform content into professional presentation decks with customizable styles |
 
-#### SEO & Domains
+**SEO & Domains**
 
 | Skill | What it does |
 |---|---|
@@ -857,20 +491,7 @@ Router recommends a 5-skill sequence:
 | `/build-links` | Design link acquisition campaigns with prospect scoring and outreach strategy |
 | `/domain-hunter` | Find domain names with availability checks and price comparison |
 
-#### Utilities
-
-| Skill | What it does |
-|---|---|
-| `/archive` | Capture, index, and reuse project knowledge across sessions |
-| `/skill-standardization` | Validate and standardize SKILL.md files against the Agent Skills spec |
-| `/skill-creator` | Scaffold new skills with validated directory structure, frontmatter, and progressive disclosure |
-
-### Router
-
-| Skill | What it does |
-|---|---|
-| `/sales-do` | Routes your objective to the right skill |
-| `/sales-request-skill` | Build or request a skill that doesn't exist yet |
+</details>
 
 ## Usage Examples
 
@@ -883,4 +504,3 @@ Router recommends a 5-skill sequence:
 /sales-outreach cold email for VP Engineering at Series B startups
 /sales-objection they say they already have a solution in place
 ```
-
