@@ -517,6 +517,12 @@ Router recommends a 5-skill sequence:
 |---|---|
 | `/sales-saashunt` | SaaSHunt (saashunt.ai) platform help — AI-powered SaaS discovery directory with free dofollow backlinks (DR49). Template-based submission (download Excel, fill out, upload). 8 categories: HR, CRM, Accounting, ERP, Marketing, PM, Risk Management, Retail/POS. AI-powered software matching, comparison tools, demo booking. Free listing / Pro ~$49/mo / Premium ~$120/mo. Based in Gurgaon, India |
 
+### Resource.fyi & Platform
+
+| Skill | What it does |
+|---|---|
+| `/sales-resourcefyi` | Resource.fyi platform help — curated tools and resources directory for developers, designers, and marketers. 2,519+ resources across 25+ categories (AI, API, Design, Dev Tools, Marketing, No-Code, Web3). Free submission with editorial review. Community upvoting, bookmarking, trending section. Social auth (Google/GitHub). Founded by Musharof Chowdhury (Pimjo), Dhaka/Wyoming |
+
 ### Minelead & Platform
 
 | Skill | What it does |

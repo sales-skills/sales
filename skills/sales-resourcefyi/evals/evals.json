@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-resourcefyi",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Is Resource.fyi worth submitting to? How does it compare to other directories for developer tools?",
+      "expected_output": "Explains Resource.fyi is a curated directory targeting developers and designers. Notes DR is unconfirmed and compares with known-DR directories.",
+      "assertions": [
+        {"name": "audience", "description": "Identifies Resource.fyi's audience as developers, designers, and technical professionals, distinguishing it from general startup directories"},
+        {"name": "dr_unknown", "description": "Notes that the DR and backlink type are unconfirmed, and recommends directories with known DR values for guaranteed backlink value"},
+        {"name": "comparison", "description": "Compares with at least one other directory like DevHunt, Product Hunt, or Uneed to provide context on relative value"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "How do I submit my developer tool to Resource.fyi?",
+      "expected_output": "Walks through the submission process including social login, category selection, and editorial review.",
+      "assertions": [
+        {"name": "auth_method", "description": "Mentions that account creation requires social login via Google or GitHub"},
+        {"name": "categories", "description": "References the 25+ category structure and recommends picking the most specific category that matches the tool"},
+        {"name": "review_process", "description": "Notes that submissions go through editorial review with no guaranteed timeline"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Where does Resource.fyi fit in a multi-directory launch strategy for a design tool?",
+      "expected_output": "Places Resource.fyi in Phase 3 (free editorial queues) and highlights the dev/designer audience as its unique value.",
+      "assertions": [
+        {"name": "phase_placement", "description": "Places Resource.fyi in the free editorial queue phase rather than instant-listing or paid fast-track phases"},
+        {"name": "audience_value", "description": "Highlights the developer/designer audience as Resource.fyi's unique differentiator compared to general startup directories"},
+        {"name": "pair_with", "description": "Recommends pairing with other developer-focused directories like DevHunt, Product Hunt, or Peerlist for maximum visibility"}
+      ]
+    }
+  ]
+}
