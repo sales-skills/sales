@@ -49,6 +49,7 @@ Ask the user:
 ## Step 2 — Route or answer directly
 
 If the request maps to a platform-specific skill, route:
+- Sprout Social setup, config, or features → `/sales-sproutsocial`
 - Brandwatch setup, config, or features → `/sales-brandwatch`
 - Meltwater setup, config, or features → `/sales-meltwater`
 - Influencer discovery or campaign tracking → `/sales-influencer-marketing`
@@ -241,8 +242,11 @@ Based on the user's specific question:
 
 ## Related skills
 
+- `/sales-sproutsocial` — Sprout Social platform help — Publishing, Smart Inbox, Analytics, Listening, Influencer, Advocacy, API
 - `/sales-brandwatch` — Brandwatch platform help — Consumer Intelligence, Social Media Management, Influence, API
 - `/sales-meltwater` — Meltwater platform help — monitoring, media relations, API, integrations
+- `/sales-social-media-management` — Social media management strategy — publishing, scheduling, engagement, tool comparison
+- `/sales-employee-advocacy` — Employee advocacy strategy — content curation, gamification, compliance
 - `/sales-intent` — Buying intent signals and prioritization from monitoring data
 - `/sales-influencer-marketing` — Influencer discovery and campaign tracking
 - `/sales-content` — Sales content management and strategy

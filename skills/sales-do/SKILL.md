@@ -1,6 +1,6 @@
 ---
 name: sales-do
-description: "Routes any sales, marketing, or GTM objective to the right specialized skill. Covers 123 first-party skills and 53 third-party skills across prospecting, outbound, deals, proposals, forecasting, deliverability, enrichment, intent signals, content, coaching, CRO, SEO, social listening, media relations, customer reviews, data hygiene, B2B advertising, retargeting, chatbots, and platform help for Attio, Apollo, Salesloft, Mailshake, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter, Tomba, Prospeo, Mailmo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, Brevo, Braze, Iterable, GetResponse, Seismic, Allego, Groove, Kit (ConvertKit), Omnisend, ZoomInfo, SendPulse, Clearbit, RB2B, Retention.com, 6sense, Clay, LeadMagic, AdRoll, SWAI, Tagshop, influData, Creator.co, Hypefy, LTK, Influencity, Meltwater, Brandwatch, Skeepers, Heepsy, CreatorIQ, Afluencer, LoyaltyLion, MicroLaunch, LaunchingNext, SideProjectors, ProductBurst, SoloPush, CtrlAlt.cc, Open Launch, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, Reddit Ads, Semrush, BrandJet, Indie Hackers, Altern, Lobsters, StartupBase, Startup Stash, PitchWall, Futurepedia, LaunchCaster, BetaList, SaaSHunt, Resource.fyi, LaunchVibe, and Qwilr. Use when you have a sales or marketing question and are not sure which skill to use. Do NOT use to solve problems directly — this skill only routes."
+description: "Routes any sales, marketing, or GTM objective to the right specialized skill. Covers 126 first-party skills and 53 third-party skills across prospecting, outbound, deals, proposals, forecasting, deliverability, enrichment, intent signals, content, coaching, CRO, SEO, social listening, social media management, employee advocacy, media relations, customer reviews, data hygiene, B2B advertising, retargeting, chatbots, and platform help for Attio, Apollo, Salesloft, Mailshake, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter, Tomba, Prospeo, Mailmo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, Brevo, Braze, Iterable, GetResponse, Seismic, Allego, Groove, Kit (ConvertKit), Omnisend, ZoomInfo, SendPulse, Clearbit, RB2B, Retention.com, 6sense, Clay, LeadMagic, AdRoll, SWAI, Tagshop, influData, Creator.co, Hypefy, LTK, Influencity, Meltwater, Brandwatch, Sprout Social, Skeepers, Heepsy, CreatorIQ, Afluencer, LoyaltyLion, MicroLaunch, LaunchingNext, SideProjectors, ProductBurst, SoloPush, CtrlAlt.cc, Open Launch, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, Reddit Ads, Semrush, BrandJet, Indie Hackers, Altern, Lobsters, StartupBase, Startup Stash, PitchWall, Futurepedia, LaunchCaster, BetaList, SaaSHunt, Resource.fyi, LaunchVibe, and Qwilr. Use when you have a sales or marketing question and are not sure which skill to use. Do NOT use to solve problems directly — this skill only routes."
 version: 1.0.0
 tags: [sales, router, skill-discovery]
 ---
@@ -380,6 +380,24 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 | Skill | Route when... |
 |---|---|
 | `/sales-customer-reviews` | User asks about product review collection strategy, choosing a review app for Shopify or ecommerce (Judge.me vs Loox vs Okendo vs Stamped vs Yotpo vs Skeepers vs Bazaarvoice vs PowerReviews vs Trustpilot), setting up post-purchase review requests, photo/video review collection, review display widgets, Google Rich Snippets for reviews, review syndication to retail partners, review moderation, migrating between review platforms, or improving review collection rates |
+
+### Sprout Social & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-sproutsocial` | User asks about Sprout Social platform, Sprout Social Publishing, Sprout Smart Inbox, Sprout Analytics, Sprout Social Listening (add-on), Sprout Influencer Marketing (Tagger), Sprout Employee Advocacy, Sprout AI Assist, Sprout API, Sprout Salesforce integration, Sprout HubSpot integration, Sprout Zendesk integration, Sprout optimal send times, Sprout content calendar, Sprout approval workflows, Sprout chatbot builder, Sprout pricing, or Sprout Social vs Hootsuite/Buffer/Agorapulse |
+
+### Social Media Management Strategy
+
+| Skill | Route when... |
+|---|---|
+| `/sales-social-media-management` | User asks about social media management strategy across platforms, choosing a social media management or scheduling tool (Sprout Social vs Hootsuite vs Buffer vs Agorapulse vs Sendible vs Later vs Planable vs Statusbrew), setting up a publishing workflow, building a content calendar, optimizing post timing, managing social inbox engagement, configuring team collaboration for social, measuring social media ROI, or content approval workflows |
+
+### Employee Advocacy Strategy
+
+| Skill | Route when... |
+|---|---|
+| `/sales-employee-advocacy` | User asks about employee advocacy strategy, choosing an employee advocacy tool (Sprout Social Advocacy vs Hootsuite Amplify vs DSMN8 vs GaggleAMP vs EveryoneSocial vs Sociabble), designing an employee advocacy program, increasing employee social sharing, creating shareable content libraries, measuring advocacy ROI and earned media value, gamification for advocacy, or compliance controls for employee posting |
 
 ### Social Listening & Brand Monitoring Strategy
 
@@ -931,7 +949,10 @@ Some requests are ambiguous. Apply these rules:
 - **"CRO" / "optimize"** → Ask what they're optimizing: form (`/form-cro`), page (`/page-cro`), signup (`/signup-flow-cro`), popup (`/popup-cro`), paywall (`/paywall-upgrade-cro`), or onboarding (`/onboarding-cro`).
 - **"Sales enablement"** → `/sales-enablement` for marketing-flavored decks/one-pagers, `/sales-content` for sales team battle cards/case studies.
 - **"Research competitors"** → `/sales-research` for account-level intel, `/competitor-alternatives` for comparison pages, `/producthunt` for launch tracking, `/requesthunt` for demand/feature request research.
-- **"Social media"** → `/social-content` for creating posts, `/twitter` for searching/retrieving tweets and trends, `/reddit` for Reddit research.
+- **"Social media"** → `/sales-social-media-management` for social media management strategy and tool selection. `/social-content` for creating individual posts. `/twitter` for searching/retrieving tweets and trends. `/reddit` for Reddit research. If they mention Sprout Social → `/sales-sproutsocial`.
+- **"Sprout Social" / "Sprout" / "Smart Inbox" / "Sprout Analytics" / "Sprout Listening" / "Sprout API" / "Sprout Advocacy" / "Sprout Influencer" / "Sprout AI Assist" / "Tagger"** → `/sales-sproutsocial` (platform help). If asking about social media management strategy across tools → `/sales-social-media-management`. If asking about social listening strategy across tools → `/sales-social-listening`. If asking about influencer marketing strategy → `/sales-influencer-marketing`. If asking about employee advocacy strategy → `/sales-employee-advocacy`. If asking about connecting Sprout to CRM → `/sales-integration`.
+- **"employee advocacy" / "employee social sharing" / "employee ambassadors" / "DSMN8" / "GaggleAMP" / "EveryoneSocial" / "Sociabble" / "Hootsuite Amplify" / "advocacy program"** → `/sales-employee-advocacy` for strategy and tool selection. If they mention Sprout Social Advocacy specifically → `/sales-sproutsocial`. NOT `/sales-influencer-marketing` (which is about external creators, not employees). NOT `/sales-content` (which is sales enablement materials, not shareable social content).
+- **"social media management tool" / "social media scheduling tool" / "content calendar tool" / "social inbox" / "Hootsuite" / "Buffer" / "Agorapulse" / "Sendible" / "Later" / "Planable" / "Statusbrew" / "Loomly"** → `/sales-social-media-management` for strategy and tool selection. If they mention Sprout Social → `/sales-sproutsocial`. If asking about social listening → `/sales-social-listening`.
 - **"Logo" / "banner" / "image"** → `/logo-creator` for logos, `/banner-creator` for banners/headers, `/nanobanana` for general AI image generation.
 - **"Domain"** → `/domain-hunter` for finding and purchasing domain names.
 - **"backlinks"** → `/backlink-analyzer` for backlink profile analysis, toxic link detection, and competitor benchmarking.

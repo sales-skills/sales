@@ -60,6 +60,7 @@ If the request maps to a platform-specific skill, route:
 - Heepsy setup, config, or features → `/sales-heepsy`
 - CreatorIQ setup, config, or features → `/sales-creatoriq`
 - Afluencer setup, config, or features → `/sales-afluencer`
+- Sprout Social influencer features → `/sales-sproutsocial`
 - Affiliate program design (not influencer-specific) → `/sales-affiliate-program`
 - UGC galleries / shoppable content → `/sales-tagshop`
 - Ad campaign strategy → `/sales-retargeting` or `/sales-b2b-advertising`
@@ -270,6 +271,7 @@ Based on the user's specific question:
 - `/sales-heepsy` — Heepsy platform help — influencer discovery (11M+ profiles), analytics, campaigns, CRM, Shopify integration
 - `/sales-creatoriq` — CreatorIQ platform help — enterprise influencer OS, Creator Graph, SafeIQ, BenchmarkIQ, ExchangeIQ API
 - `/sales-afluencer` — Afluencer platform help — micro-influencer marketplace, Collab listings, Shopify gifting
+- `/sales-sproutsocial` — Sprout Social platform help — includes Influencer Marketing module (Tagger acquisition)
 - `/sales-tagshop` — UGC video ads and shoppable galleries for ecommerce
 - `/sales-affiliate-program` — Affiliate and referral program design (strategy, not platform-specific)
 - `/sales-retargeting` — Retargeting campaign audiences from influencer content
