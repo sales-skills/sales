@@ -511,6 +511,12 @@ Router recommends a 5-skill sequence:
 |---|---|
 | `/sales-launchcaster` | LaunchCaster (launchcaster.xyz) platform help — Web3 project discovery directory built on Farcaster ("Product Hunt for Web3"). Free submission via Farcaster cast mentioning @launch. Wallet-connected voting, weekly newsletter. 9K+ builders, 1K+ launches. Farcaster account required. YC W21, a16z crypto backed. Founded by Jayme Hoffman (Launcher Labs) |
 
+### SaaSHunt & Platform
+
+| Skill | What it does |
+|---|---|
+| `/sales-saashunt` | SaaSHunt (saashunt.ai) platform help — AI-powered SaaS discovery directory with free dofollow backlinks (DR49). Template-based submission (download Excel, fill out, upload). 8 categories: HR, CRM, Accounting, ERP, Marketing, PM, Risk Management, Retail/POS. AI-powered software matching, comparison tools, demo booking. Free listing / Pro ~$49/mo / Premium ~$120/mo. Based in Gurgaon, India |
+
 ### Minelead & Platform
 
 | Skill | What it does |

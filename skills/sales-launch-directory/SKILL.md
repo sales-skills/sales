@@ -1,6 +1,6 @@
 ---
 name: sales-launch-directory
-description: "Startup directory launch strategy — coordinates submissions across multiple product launch and discovery platforms for maximum visibility, backlinks, and early users. Covers platform selection (Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, BetaList, Hacker News, Indie Hackers, Altern, Lobsters, StartupBase, Startup Stash, PitchWall, Futurepedia, LaunchCaster), launch sequencing (instant-list first, editorial-review last), backlink stacking (DA/DR comparison across directories), listing optimization, timing strategy, and multi-platform coordination. Use when planning a product launch across directories, choosing which directories to submit to, or building a backlink portfolio from startup directories. Do NOT use for a single specific platform (use the platform skill instead). Do NOT use for paid advertising (use /sales-b2b-advertising)."
+description: "Startup directory launch strategy — coordinates submissions across multiple product launch and discovery platforms for maximum visibility, backlinks, and early users. Covers platform selection (Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, BetaList, Hacker News, Indie Hackers, Altern, Lobsters, StartupBase, Startup Stash, PitchWall, Futurepedia, LaunchCaster, SaaSHunt), launch sequencing (instant-list first, editorial-review last), backlink stacking (DA/DR comparison across directories), listing optimization, timing strategy, and multi-platform coordination. Use when planning a product launch across directories, choosing which directories to submit to, or building a backlink portfolio from startup directories. Do NOT use for a single specific platform (use the platform skill instead). Do NOT use for paid advertising (use /sales-b2b-advertising)."
 argument-hint: "[describe your product and what you want from directory submissions]"
 license: MIT
 version: 1.0.0
@@ -78,6 +78,7 @@ If the request maps to a single platform, route:
 - Futurepedia-specific questions → `/sales-futurepedia`
 - BetaList-specific questions → `/sales-betalist`
 - LaunchCaster-specific questions → `/sales-launchcaster`
+- SaaSHunt-specific questions → `/sales-saashunt`
 - Indie Hackers-specific questions → `/sales-indiehackers`
 - Product Hunt-specific questions → `/sales-producthunt`
 - Email marketing to subscribers → `/sales-email-marketing`
@@ -122,6 +123,7 @@ Otherwise, answer directly from the directory knowledge below.
 | Futurepedia | Dofollow (high DA) | None | $497 Verified / Enterprise custom | 2 business days (Verified) | Largest AI directory (5,700+ tools, ~2M visits/mo, YouTube 2M+ subs) | `/sales-futurepedia` |
 | BetaList | DR67 dofollow | Free (queue) | $129 Priority | ~2 months (free), days (Priority) | Pre-launch directory (15K+ startups, 100K+ early adopters, 30K newsletter) | `/sales-betalist` |
 | LaunchCaster | Unconfirmed (.xyz) | Free | None | None — instant (via Farcaster cast) | Web3 "Product Hunt" on Farcaster (9K+ builders, wallet voting) | `/sales-launchcaster` |
+| SaaSHunt | DR49 dofollow | Free | ~$49/mo Pro | Editorial review (no SLA) | AI-powered B2B SaaS directory (8 categories, template-based submission) | `/sales-saashunt` |
 
 ### Third-party platforms (no skill — general guidance)
 
@@ -159,14 +161,15 @@ All first-party + key third-party directories sorted by backlink strength:
 | 19 | SoloPush | DR46-47 | Yes | Yes |
 | 20 | Huzzler | DR41-47 | Yes (winners only) | Yes (must win Launch Arena) |
 | 21 | Awesome Indie | DR~19-31 | Unconfirmed | Yes (queue) |
-| 22 | StartupBase | DR39 | Yes | Yes (queue) |
-| 23 | CtrlAlt.cc | DA30 | Yes | Yes (queue) |
-| 24 | JustGotFound | DR23 | Yes | Yes |
-| 25 | PitchWall | DR60 | Disputed | Yes (30+ day queue) / $99 |
-| 26 | Altern | Unconfirmed | Yes | Yes (AI tools only) |
-| 27 | Lobsters | Unconfirmed | Unconfirmed | Yes (invite-only, FLOSS focus) |
-| 28 | Futurepedia | High (est.) | Yes | No ($497 Verified minimum) |
-| 29 | LaunchCaster | Unconfirmed | Unconfirmed | Yes (Web3 only, Farcaster required) |
+| 22 | SaaSHunt | DR49 | Yes | Yes (queue) |
+| 24 | StartupBase | DR39 | Yes | Yes (queue) |
+| 24 | CtrlAlt.cc | DA30 | Yes | Yes (queue) |
+| 25 | JustGotFound | DR23 | Yes | Yes |
+| 26 | PitchWall | DR60 | Disputed | Yes (30+ day queue) / $99 |
+| 27 | Altern | Unconfirmed | Yes | Yes (AI tools only) |
+| 28 | Lobsters | Unconfirmed | Unconfirmed | Yes (invite-only, FLOSS focus) |
+| 29 | Futurepedia | High (est.) | Yes | No ($497 Verified minimum) |
+| 30 | LaunchCaster | Unconfirmed | Unconfirmed | Yes (Web3 only, Farcaster required) |
 
 ## Step 4 — Actionable guidance
 
@@ -222,6 +225,7 @@ Submit to all free editorial queues on Day 1 — they'll go live weeks/months la
 3. **Uneed (free)** — Join the Line for automatic launch slot, DR74 dofollow backlink (highest free dofollow directory backlink after Fazier)
 3. **Fazier (free)** — 15-day review, DR81 dofollow backlink, requires badge on your site (highest DR free backlink from any first-party directory)
 3. **StartupBase (free)** — 2-3 month queue, DR39 dofollow backlink (tech startups only, social auth required)
+3. **SaaSHunt (free)** — editorial review (no published SLA), DR49 dofollow backlink (B2B SaaS only, template-based submission)
 4. **Awesome Indie (free)** — editorial queue, unknown wait time
 4. **LaunchingNext (free)** — weeks/months wait
 5. **SideProjectors** — editorial review, variable timing
@@ -327,6 +331,7 @@ For each directory submission, track:
 - `/sales-futurepedia` — Futurepedia platform help (largest AI directory, 5,700+ tools, ~2M visits/mo, $497 Verified, YouTube 2M+ subs)
 - `/sales-betalist` — BetaList platform help (pre-launch directory, DR67 dofollow, 15K+ startups, $129 Priority skip)
 - `/sales-launchcaster` — LaunchCaster platform help (Web3 project discovery on Farcaster, free, wallet-connected voting)
+- `/sales-saashunt` — SaaSHunt platform help (AI-powered B2B SaaS directory, DR49 dofollow, free template-based submission)
 - `/sales-funnel` — Build and optimize sales funnels for conversion
 - `/sales-audience-growth` — Grow your email list and subscriber base
 - `/sales-checkout` — Optimize landing pages and checkout for conversion
