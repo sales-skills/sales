@@ -18,7 +18,7 @@ A platform can belong to **multiple** meta skills (e.g., a platform with email +
 | `/sales-checkout` | Checkout optimization | GrooveSell, ThriveCart, SamCart, Stripe, Paddle, Gumroad, Shopify, WooCommerce, Lemon Squeezy |
 | `/sales-digital-products` | Digital product sales | Kit Commerce, Gumroad, Lemon Squeezy, SendOwl, Podia |
 | `/sales-affiliate-program` | Affiliate programs | GrooveAffiliate, PartnerStack, Refersion, ShareASale, Creator.co, Modash, LTK |
-| `/sales-influencer-marketing` | Influencer marketing | Modash, influData, Creator.co, Hypefy, LTK, Influencity |
+| `/sales-influencer-marketing` | Influencer marketing | Modash, influData, Creator.co, Hypefy, LTK, Influencity, Meltwater |
 | `/sales-webinar` | Webinar selling | GrooveWebinar, Demio, WebinarJam, Zoom, GoToWebinar, GetResponse |
 | `/sales-membership` | Membership / courses | GrooveMember, Kajabi, Teachable, Mighty Networks |
 | `/sales-transactional-email` | Transactional email | SendGrid, Postmark, Mailgun, Brevo, Customer.io, SES |
@@ -38,6 +38,8 @@ A platform can belong to **multiple** meta skills (e.g., a platform with email +
 | `/sales-email-tracking` | Email tracking | Yesware, Mixmax, Mailshake, HubSpot |
 | `/sales-content` | Sales content management | Seismic, Allego, Highspot |
 | `/sales-coaching` | Sales coaching | Seismic, Allego, Salesloft Conversations, ZoomInfo Chorus |
+| `/sales-social-listening` | Social listening & brand monitoring | Meltwater, Brandwatch, Talkwalker, Brand24, Sprout Social, Mention, Hootsuite |
+| `/sales-media-relations` | Media relations & PR outreach | Meltwater, Cision, Muck Rack, Prowly, Agility PR, BuzzStream |
 | `/sales-agency-outbound` | Agency multi-client outbound | Smartlead, Reply.io, Woodpecker, Lemlist |
 
 ## How to use this registry

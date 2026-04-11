@@ -20,3 +20,5 @@ Problem spaces discovered during platform research that don't have dedicated ski
 | Local SEO strategy (Google Business Profile, directory management, map pack ranking) | G2, medium frequency — no skill exists | sales-semrush | 2026-04-08 |
 | SEO meta skill (`sales-seo`) — cross-platform SEO strategy coordinating Semrush, Ahrefs, Moz, SE Ranking | Proposed during Semrush add-platform — defer until second SEO platform added | sales-semrush | 2026-04-08 |
 | CRM comparison/selection for startups (Attio vs HubSpot vs Salesforce vs Folk vs spreadsheets) | G2, Reddit, review sites — very high frequency, "which CRM" is a top question for early-stage teams | sales-attio | 2026-04-10 |
+| Social media management/scheduling (publishing, content calendar, engagement across channels) | Meltwater Engage, Hootsuite, Sprout Social, Buffer — large category, partially outside sales focus | sales-meltwater | 2026-04-11 |
+| Consumer intelligence / market research (audience segmentation, trend analysis, behavioral insights) | Meltwater, Brandwatch — niche enterprise use case | sales-meltwater | 2026-04-11 |
