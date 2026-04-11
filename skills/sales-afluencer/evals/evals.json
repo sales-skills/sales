@@ -1,0 +1,26 @@
+[
+  {
+    "prompt": "I have a Shopify beauty brand and want to set up a gifting Collab on Afluencer for Instagram micro-influencers. Walk me through it.",
+    "assertions": [
+      "Explains how to connect Shopify to Afluencer for product sync before setting up the Collab",
+      "Covers creating a Collab listing with gifting as compensation type, Instagram as platform, and beauty/skincare as interest category",
+      "Mentions setting deliverable expectations like posts or stories as part of the Collab setup"
+    ]
+  },
+  {
+    "prompt": "I'm on the VIP plan but influencers aren't responding to my invitations. What am I doing wrong?",
+    "assertions": [
+      "Recommends checking creator activity levels and recent post dates before spending invitation credits",
+      "Suggests personalizing invitation messages rather than sending generic outreach",
+      "Mentions posting public Collabs as an alternative or supplement to outbound invitations since inbound applications tend to convert better"
+    ]
+  },
+  {
+    "prompt": "Should I use Afluencer or another platform for my first influencer marketing campaign?",
+    "assertions": [
+      "Positions Afluencer as accessible and budget-friendly for SMBs and brands new to influencer marketing",
+      "Acknowledges Afluencer's limitations compared to competitors such as smaller database, no advanced analytics, or no content auto-detection",
+      "Recommends trying the free plan or low-cost option to test the marketplace model before committing"
+    ]
+  }
+]

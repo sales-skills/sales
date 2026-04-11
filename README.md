@@ -1,8 +1,8 @@
 # Sales Skills
 
-**AI-powered sales copilot — 138 skills for prospecting, outbound, deals, proposals, and GTM. One install, one router.**
+**AI-powered sales copilot — 139 skills for prospecting, outbound, deals, proposals, and GTM. One install, one router.**
 
-[![Skills](https://img.shields.io/badge/skills-139-blue)](https://skills.sh/sales-skills/sales)
+[![Skills](https://img.shields.io/badge/skills-140-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
@@ -278,7 +278,7 @@ Router recommends a 5-skill sequence:
 </details>
 
 <details>
-<summary><strong>Influencer Marketing</strong> (11 skills)</summary>
+<summary><strong>Influencer Marketing</strong> (12 skills)</summary>
 
 | Skill | What it does |
 |---|---|
@@ -292,6 +292,7 @@ Router recommends a 5-skill sequence:
 | `/sales-skeepers` | Skeepers — UGC suite (Verified Reviews, Influencer Marketing, Feedback Management, Brand Communities) |
 | `/sales-heepsy` | Heepsy — influencer discovery (11M+ profiles), analytics, campaign marketplace, CRM, Shopify integration |
 | `/sales-creatoriq` | CreatorIQ — enterprise influencer OS, Creator Graph (~20M profiles), SafeIQ, BenchmarkIQ, ExchangeIQ API |
+| `/sales-afluencer` | Afluencer — micro-influencer marketplace, Collab listings, Shopify/BigCommerce gifting, invitation credits |
 | `/sales-influencer-marketing` | Influencer marketing strategy — platform comparison, creator discovery, vetting, campaign tracking |
 
 </details>
