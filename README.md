@@ -1,8 +1,8 @@
 # Sales Skills
 
-**AI-powered sales copilot — 143 skills for prospecting, outbound, deals, proposals, and GTM. One install, one router.**
+**AI-powered sales copilot — 144 skills for prospecting, outbound, deals, proposals, and GTM. One install, one router.**
 
-[![Skills](https://img.shields.io/badge/skills-144-blue)](https://skills.sh/sales-skills/sales)
+[![Skills](https://img.shields.io/badge/skills-145-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
@@ -25,7 +25,7 @@
 npx skills add sales-skills/sales --skills sales-do
 ```
 
-Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill (116 first-party + 53 third-party skills).
+Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill (117 first-party + 53 third-party skills).
 
 Want every skill at once?
 
@@ -47,11 +47,11 @@ npx skills add sales-skills/sales -a claude-code --copy -y
 - You want to build a prospect list but don't know whether to use Apollo, Clay, ZoomInfo, or Seamless
 - You're spending more time figuring out _which_ tool to use than actually doing the work
 
-One router skill (`/sales-do`) understands all 129 skills and matches you to the right one based on what you're trying to accomplish.
+One router skill (`/sales-do`) understands all 130 skills and matches you to the right one based on what you're trying to accomplish.
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 107 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 108 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -282,7 +282,7 @@ Router recommends a 5-skill sequence:
 </details>
 
 <details>
-<summary><strong>Influencer Marketing</strong> (12 skills)</summary>
+<summary><strong>Influencer Marketing</strong> (13 skills)</summary>
 
 | Skill | What it does |
 |---|---|
@@ -297,6 +297,7 @@ Router recommends a 5-skill sequence:
 | `/sales-heepsy` | Heepsy — influencer discovery (11M+ profiles), analytics, campaign marketplace, CRM, Shopify integration |
 | `/sales-creatoriq` | CreatorIQ — enterprise influencer OS, Creator Graph (~20M profiles), SafeIQ, BenchmarkIQ, ExchangeIQ API |
 | `/sales-afluencer` | Afluencer — micro-influencer marketplace, Collab listings, Shopify/BigCommerce gifting, invitation credits |
+| `/sales-collabstr` | Collabstr — influencer and UGC creator marketplace, vetted creators, escrow payments, campaign posting |
 | `/sales-influencer-marketing` | Influencer marketing strategy — platform comparison, creator discovery, vetting, campaign tracking |
 
 </details>
