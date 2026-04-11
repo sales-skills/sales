@@ -1,6 +1,6 @@
 ---
 name: sales-influencer-marketing
-description: "Influencer marketing strategy across platforms — creator discovery, audience vetting, campaign tracking, ROI measurement, outreach, gifting, and affiliate programs. Covers platform comparison (Modash, influData, Creator.co, Hypefy, LTK, Influencity, Meltwater), discovery workflow (search, filters, lookalikes, audience analysis), vetting framework (fake followers, engagement authenticity, audience demographics), campaign setup and tracking (EMV, ROAS, CPM, sales attribution), creator outreach (email templates, negotiation, rate cards), product gifting and seeding, influencer affiliate programs, and creator payments. Use when choosing an influencer platform, building a creator discovery workflow, vetting influencers, setting up campaign tracking, planning influencer outreach, or measuring influencer ROI. Do NOT use for platform-specific config (use /sales-modash, /sales-infludata, /sales-creatorco, /sales-hypefy, /sales-ltk, /sales-influencity, or /sales-meltwater), ad campaign strategy (use /sales-retargeting), or email marketing to subscribers (use /sales-email-marketing)."
+description: "Influencer marketing strategy across platforms — creator discovery, audience vetting, campaign tracking, ROI measurement, outreach, gifting, and affiliate programs. Covers platform comparison (Modash, influData, Creator.co, Hypefy, LTK, Influencity, Meltwater, Skeepers), discovery workflow (search, filters, lookalikes, audience analysis), vetting framework (fake followers, engagement authenticity, audience demographics), campaign setup and tracking (EMV, ROAS, CPM, sales attribution), creator outreach (email templates, negotiation, rate cards), product gifting and seeding, influencer affiliate programs, and creator payments. Use when choosing an influencer platform, building a creator discovery workflow, vetting influencers, setting up campaign tracking, planning influencer outreach, or measuring influencer ROI. Do NOT use for platform-specific config (use /sales-modash, /sales-infludata, /sales-creatorco, /sales-hypefy, /sales-ltk, /sales-influencity, /sales-meltwater, or /sales-skeepers), ad campaign strategy (use /sales-retargeting), or email marketing to subscribers (use /sales-email-marketing)."
 argument-hint: "[describe your influencer marketing question — e.g., 'how do I find micro-influencers for my skincare brand' or 'what metrics should I track for influencer campaigns']"
 license: MIT
 version: 1.0.0
@@ -56,6 +56,7 @@ If the request maps to a platform-specific skill, route:
 - LTK setup, config, or features → `/sales-ltk`
 - Influencity setup, config, or features → `/sales-influencity`
 - Meltwater setup, config, or features → `/sales-meltwater`
+- Skeepers setup, config, or features → `/sales-skeepers`
 - Affiliate program design (not influencer-specific) → `/sales-affiliate-program`
 - UGC galleries / shoppable content → `/sales-tagshop`
 - Ad campaign strategy → `/sales-retargeting` or `/sales-b2b-advertising`
@@ -67,22 +68,22 @@ Otherwise, answer directly from the strategy knowledge below.
 
 ### Platform comparison
 
-| Feature | Modash | influData | Creator.co | Hypefy | LTK | Influencity | Meltwater |
-|---|---|---|---|---|---|---|---|
-| **Database size** | 350M+ profiles (IG, TT, YT) | 20M+ profiles (IG, TT, YT, Twitch, Snapchat, FB) | 400M+ profiles | 3K+ vetted + 12M+ external (IG, TT) | 300K+ opted-in creators | 200M+ profiles (IG, TT, YT) | Large (global, not publicly sized) |
-| **Discovery method** | AI search + filters + lookalikes | AI prompt search + lookalike builder | London AI agent (automated matching) | AI matching from 3-input brief | LTK AI (250M+ data points) | Filters + audience demographics + lookalikes | Search by topic, platform, demographics, engagement |
-| **Fake follower detection** | Yes | Yes (detailed scoring) | Via Deep Insights | Yes (bot detection, vetting) | Not documented | Yes | Not documented |
-| **Audience analysis** | Demographics, overlap | 50+ metrics, overlap, sentiment | Deep Insights reports | Demographics, engagement patterns | Purchase behavior, brand affinity | Demographics, overlap, engagement | Demographics, engagement |
-| **Campaign tracking** | Auto-detect (no creator signup) | Real-time with story archival | Dashboard with approvals | Real-time dashboard | Full-funnel dashboard (clicks, sales, orders) | Manual URL submission (no auto-detect) | Campaign reporting (reach, engagement, EMV) |
-| **Shopify integration** | Deep (gifting, affiliates, payouts) | No native Shopify | Product gifting via Shopify | No native ecommerce | VIP access (Enterprise/Pro) | Product gifting + coupon tracking | No native ecommerce |
-| **Creator payments** | Built-in (180+ countries) | No | Via platform | Built-in (multi-currency, milestone-based) | Built-in (commission-based) | Built-in (multi-currency) | No |
-| **Outreach** | Gmail/Outlook sync, templates | Built-in email campaigns | London AI automated outreach | Fully automated outreach + follow-ups | Creator CRM + gifting offers | Bulk email + Gmail/Outlook sync | Via media relations module |
-| **UGC rights** | No | No | Full usage rights | No | Content Library (with permissions) | No | No |
-| **Affiliate tracking** | Promo codes via Shopify | No | Impact, CJ, Awin, Rakuten | Not documented | Built-in (commission/affiliate model) | Coupon codes via Shopify | No |
-| **Social listening** | No | Brand mentions, hashtags, UGC | No | No | No | Yes (100M+ sources, Business+) | Yes (300K+ news sources + social — strongest in class) |
-| **Content review** | No pre-publish approval | No | Yes | Yes (approve before publishing) | No | Yes (Social Hub approval workflows) | No |
-| **Starting price** | $199/mo | €599/mo (annual) | Contact for pricing | No subscription — 20-30% of spend | Free Brand Platform; Connect from $99/mo | ~$278/mo (annual) | ~$6K/yr (sales call, includes full suite) |
-| **API** | Yes (separate pricing) | Enterprise only | No public API | No public API | Behind auth (apply for access) | Business+ (no public docs) | Yes (REST + streaming + MCP, plan-gated) |
+| Feature | Modash | influData | Creator.co | Hypefy | LTK | Influencity | Meltwater | Skeepers |
+|---|---|---|---|---|---|---|---|---|
+| **Database size** | 350M+ profiles (IG, TT, YT) | 20M+ profiles (IG, TT, YT, Twitch, Snapchat, FB) | 400M+ profiles | 3K+ vetted + 12M+ external (IG, TT) | 300K+ opted-in creators | 200M+ profiles (IG, TT, YT) | Large (global, not publicly sized) | 100K+ pre-vetted micro/nano creators |
+| **Discovery method** | AI search + filters + lookalikes | AI prompt search + lookalike builder | London AI agent (automated matching) | AI matching from 3-input brief | LTK AI (250M+ data points) | Filters + audience demographics + lookalikes | Search by topic, platform, demographics, engagement | AI creator-brand matching (inbound opt-in model) |
+| **Fake follower detection** | Yes | Yes (detailed scoring) | Via Deep Insights | Yes (bot detection, vetting) | Not documented | Yes | Not documented | Pre-vetted community (screened on join) |
+| **Audience analysis** | Demographics, overlap | 50+ metrics, overlap, sentiment | Deep Insights reports | Demographics, engagement patterns | Purchase behavior, brand affinity | Demographics, overlap, engagement | Demographics, engagement | Demographics, engagement, brand affinity |
+| **Campaign tracking** | Auto-detect (no creator signup) | Real-time with story archival | Dashboard with approvals | Real-time dashboard | Full-funnel dashboard (clicks, sales, orders) | Manual URL submission (no auto-detect) | Campaign reporting (reach, engagement, EMV) | Campaign dashboard (reach, engagement, conversions) |
+| **Shopify integration** | Deep (gifting, affiliates, payouts) | No native Shopify | Product gifting via Shopify | No native ecommerce | VIP access (Enterprise/Pro) | Product gifting + coupon tracking | No native ecommerce | Native Shopify app (product sync, review widgets) |
+| **Creator payments** | Built-in (180+ countries) | No | Via platform | Built-in (multi-currency, milestone-based) | Built-in (commission-based) | Built-in (multi-currency) | No | Product gifting (no cash payments) |
+| **Outreach** | Gmail/Outlook sync, templates | Built-in email campaigns | London AI automated outreach | Fully automated outreach + follow-ups | Creator CRM + gifting offers | Bulk email + Gmail/Outlook sync | Via media relations module | Inbound — creators apply to campaigns |
+| **UGC rights** | No | No | Full usage rights | No | Content Library (with permissions) | No | No | Yes (automatic content licensing) |
+| **Affiliate tracking** | Promo codes via Shopify | No | Impact, CJ, Awin, Rakuten | Not documented | Built-in (commission/affiliate model) | Coupon codes via Shopify | No | No |
+| **Social listening** | No | Brand mentions, hashtags, UGC | No | No | No | Yes (100M+ sources, Business+) | Yes (300K+ news sources + social — strongest in class) | No |
+| **Content review** | No pre-publish approval | No | Yes | Yes (approve before publishing) | No | Yes (Social Hub approval workflows) | No | Yes (review + approve before publishing) |
+| **Starting price** | $199/mo | €599/mo (annual) | Contact for pricing | No subscription — 20-30% of spend | Free Brand Platform; Connect from $99/mo | ~$278/mo (annual) | ~$6K/yr (sales call, includes full suite) | ~3K EUR/mo (sales call, includes UGC suite) |
+| **API** | Yes (separate pricing) | Enterprise only | No public API | No public API | Behind auth (apply for access) | Business+ (no public docs) | Yes (REST + streaming + MCP, plan-gated) | Yes (OAuth 2.0, Published API for reviews) |
 
 #### When to choose each platform
 
@@ -93,6 +94,7 @@ Otherwise, answer directly from the strategy knowledge below.
 - **LTK** — best for ecommerce and DTC brands focused on creator commerce with a commission/affiliate model. Free Brand Platform includes creator discovery, gifting, CRM, and dashboard. 300K+ opted-in creators with 40M+ monthly shoppers on the LTK App. Commission-based (10% min, 15%+ recommended) — no flat-fee creator payments. Best when you want creators driving shoppable content directly to consumers through the LTK shopping app.
 - **Influencity** — best for brands and agencies that need influencer marketing plus social media management in one platform. 200M+ creator database with Social Hub (content calendar, approval workflows), Monitoring (brand tracking, competitor analysis across 100M+ sources), and Shopify gifting. Credit-based system (results, analyses, post analyses). Strongest fit when you also need social listening and multi-channel content planning alongside influencer campaigns. Starting ~$278/mo annual.
 - **Meltwater** — best for enterprise PR and communications teams that already use Meltwater for media monitoring and want influencer marketing in the same platform. Influencer discovery + campaign tracking integrated with 300K+ news sources and social listening. Strongest when influencer campaigns are part of a broader PR and media intelligence strategy. No separate influencer pricing — included in the Meltwater suite (~$6K+/yr).
+- **Skeepers** — best for ecommerce brands that want influencer-generated UGC combined with product reviews in one platform. 100K+ pre-vetted micro/nano creators opt into campaigns (inbound model — no cold outreach). AI matches creators to brands. Automatic content licensing for reuse across ads and product pages. Unique "Gifted Reviews" extension bridges influencer content and review collection. Strongest when you need UGC + reviews + influencer in a single platform. European focus — creator pool skews French/EU. ~3K EUR/mo (sales call required, includes full UGC suite).
 
 ### Creator discovery workflow
 
@@ -256,6 +258,7 @@ Based on the user's specific question:
 - `/sales-ltk` — LTK platform help — creator commerce, Brand Platform, Connect campaigns, Ads, Boost, CTV
 - `/sales-influencity` — Influencity platform help — 200M+ creators, IRM, campaigns, Social Hub, Monitoring, Shopify gifting
 - `/sales-meltwater` — Meltwater platform help — media intelligence, social listening, influencer marketing, API
+- `/sales-skeepers` — Skeepers platform help — UGC suite (Verified Reviews, Influencer Marketing, Feedback Management, Brand Communities)
 - `/sales-tagshop` — UGC video ads and shoppable galleries for ecommerce
 - `/sales-affiliate-program` — Affiliate and referral program design (strategy, not platform-specific)
 - `/sales-retargeting` — Retargeting campaign audiences from influencer content

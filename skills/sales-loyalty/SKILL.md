@@ -1,6 +1,6 @@
 ---
 name: sales-loyalty
-description: "Designs and manage customer loyalty programs — points, tiers, rewards, referrals, VIP programs, retention mechanics. Covers strategy, structure, and implementation across Brevo Loyalty, Smile.io, LoyaltyLion, Yotpo, Stamp.me, and custom-built programs. Use when designing a loyalty program, choosing loyalty software, setting up points/tiers/rewards, optimizing member engagement, or measuring program ROI. Do NOT use for affiliate/referral programs with commission payouts (use /sales-affiliate-program), email marketing to loyalty members (use /sales-email-marketing), or checkout optimization (use /sales-checkout). For Brevo-specific help, use /sales-brevo."
+description: "Designs and manage customer loyalty programs — points, tiers, rewards, referrals, VIP programs, brand communities, retention mechanics. Covers strategy, structure, and implementation across Brevo Loyalty, Smile.io, LoyaltyLion, Yotpo, Stamp.me, Skeepers Brand Communities, and custom-built programs. Use when designing a loyalty program, choosing loyalty software, setting up points/tiers/rewards, building a brand community for customer advocates, optimizing member engagement, or measuring program ROI. Do NOT use for affiliate/referral programs with commission payouts (use /sales-affiliate-program), email marketing to loyalty members (use /sales-email-marketing), checkout optimization (use /sales-checkout), or Skeepers-specific config (use /sales-skeepers). For Brevo-specific help, use /sales-brevo."
 argument-hint: "[describe your loyalty program question or goal]"
 license: MIT
 version: 1.0.0
@@ -137,6 +137,14 @@ Ask the user:
 - **Limitation**: Less sophisticated than full loyalty platforms. Limited e-commerce integrations.
 - **Best for**: Cafes, restaurants, salons, and small retail with simple loyalty needs
 
+### In Skeepers
+- **Product**: Skeepers Brand Communities — white-labeled, AI-powered community platform for customer advocates
+- **Programs**: Community membership, gamification (badges, points, levels), member segmentation
+- **Strength**: Integrates with Skeepers Verified Reviews and Influencer Marketing — community members become review generators and UGC creators. AI-powered engagement features. White-labeled to match your brand.
+- **Limitation**: Part of the broader Skeepers UGC suite (~3K EUR/mo) — not available standalone. European focus.
+- **Best for**: Ecommerce brands already using Skeepers for reviews or influencer marketing who want to build a customer advocate community that drives UGC and reviews
+- **Platform skill**: `/sales-skeepers`
+
 ### Custom-built
 - **When**: Unique business model, specific integration needs, or very high volume (millions of members)
 - **Approach**: Build on your database + API layer, or use headless loyalty APIs
@@ -178,6 +186,7 @@ Ask the user:
 
 ## Related skills
 
+- `/sales-skeepers` — Skeepers platform help (Brand Communities, Verified Reviews, Influencer Marketing)
 - `/sales-loyaltylion` — LoyaltyLion platform help (points, tiers, rewards, Klaviyo Events, API)
 - `/sales-brevo` — Brevo platform help (Brevo Loyalty setup and configuration)
 - `/sales-affiliate-program` — Affiliate and referral programs with commission payouts

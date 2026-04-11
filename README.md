@@ -1,8 +1,8 @@
 # Sales Skills
 
-**AI-powered sales copilot — 132 skills for prospecting, outbound, deals, proposals, and GTM. One install, one router.**
+**AI-powered sales copilot — 134 skills for prospecting, outbound, deals, proposals, and GTM. One install, one router.**
 
-[![Skills](https://img.shields.io/badge/skills-132-blue)](https://skills.sh/sales-skills/sales)
+[![Skills](https://img.shields.io/badge/skills-134-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
@@ -25,7 +25,7 @@
 npx skills add sales-skills/sales --skills sales-do
 ```
 
-Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill (112 first-party + 53 third-party skills).
+Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill (114 first-party + 53 third-party skills).
 
 Want every skill at once?
 
@@ -269,7 +269,7 @@ Router recommends a 5-skill sequence:
 </details>
 
 <details>
-<summary><strong>Influencer Marketing</strong> (8 skills)</summary>
+<summary><strong>Influencer Marketing</strong> (9 skills)</summary>
 
 | Skill | What it does |
 |---|---|
@@ -280,7 +280,17 @@ Router recommends a 5-skill sequence:
 | `/sales-hypefy` | Hypefy — AI-native influencer marketing, zero-subscription/pay-per-campaign, content review, payments |
 | `/sales-ltk` | LTK — creator commerce, Brand Platform, LTK Connect, LTK Ads, LTK Boost, LTK AI |
 | `/sales-tagshop` | Tagshop.ai — AI UGC video ad generator (1000+ avatars), shoppable UGC galleries |
+| `/sales-skeepers` | Skeepers — UGC suite (Verified Reviews, Influencer Marketing, Feedback Management, Brand Communities) |
 | `/sales-influencer-marketing` | Influencer marketing strategy — platform comparison, creator discovery, vetting, campaign tracking |
+
+</details>
+
+<details>
+<summary><strong>Customer Reviews & UGC</strong> (1 skill)</summary>
+
+| Skill | What it does |
+|---|---|
+| `/sales-customer-reviews` | Product review collection, display, moderation, syndication — Judge.me, Loox, Okendo, Yotpo, Bazaarvoice |
 
 </details>
 

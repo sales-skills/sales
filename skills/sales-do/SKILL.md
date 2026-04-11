@@ -1,6 +1,6 @@
 ---
 name: sales-do
-description: "Routes any sales, marketing, or GTM objective to the right specialized skill. Covers 119 first-party skills and 53 third-party skills across prospecting, outbound, deals, proposals, forecasting, deliverability, enrichment, intent signals, content, coaching, CRO, SEO, social listening, media relations, data hygiene, B2B advertising, retargeting, chatbots, and platform help for Attio, Apollo, Salesloft, Mailshake, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter, Tomba, Prospeo, Mailmo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, Brevo, Braze, Iterable, GetResponse, Seismic, Allego, Groove, Kit (ConvertKit), Omnisend, ZoomInfo, SendPulse, Clearbit, RB2B, Retention.com, 6sense, Clay, LeadMagic, AdRoll, SWAI, Tagshop, influData, Creator.co, Hypefy, LTK, Influencity, Meltwater, LoyaltyLion, MicroLaunch, LaunchingNext, SideProjectors, ProductBurst, SoloPush, CtrlAlt.cc, Open Launch, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, Semrush, Indie Hackers, Altern, Lobsters, StartupBase, Startup Stash, PitchWall, Futurepedia, LaunchCaster, BetaList, SaaSHunt, Resource.fyi, LaunchVibe, and Qwilr. Use when you have a sales or marketing question and are not sure which skill to use. Do NOT use to solve problems directly — this skill only routes."
+description: "Routes any sales, marketing, or GTM objective to the right specialized skill. Covers 121 first-party skills and 53 third-party skills across prospecting, outbound, deals, proposals, forecasting, deliverability, enrichment, intent signals, content, coaching, CRO, SEO, social listening, media relations, customer reviews, data hygiene, B2B advertising, retargeting, chatbots, and platform help for Attio, Apollo, Salesloft, Mailshake, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter, Tomba, Prospeo, Mailmo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, Brevo, Braze, Iterable, GetResponse, Seismic, Allego, Groove, Kit (ConvertKit), Omnisend, ZoomInfo, SendPulse, Clearbit, RB2B, Retention.com, 6sense, Clay, LeadMagic, AdRoll, SWAI, Tagshop, influData, Creator.co, Hypefy, LTK, Influencity, Meltwater, Skeepers, LoyaltyLion, MicroLaunch, LaunchingNext, SideProjectors, ProductBurst, SoloPush, CtrlAlt.cc, Open Launch, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, Semrush, Indie Hackers, Altern, Lobsters, StartupBase, Startup Stash, PitchWall, Futurepedia, LaunchCaster, BetaList, SaaSHunt, Resource.fyi, LaunchVibe, and Qwilr. Use when you have a sales or marketing question and are not sure which skill to use. Do NOT use to solve problems directly — this skill only routes."
 version: 1.0.0
 tags: [sales, router, skill-discovery]
 ---
@@ -351,6 +351,18 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 |---|---|
 | `/sales-meltwater` | User asks about Meltwater platform, Meltwater Explore (media monitoring), Meltwater Boolean searches, Meltwater social listening, Meltwater media relations (journalist database, pitching), Meltwater influencer marketing, Meltwater Engage (social publishing), Meltwater consumer intelligence, Meltwater Mira AI, Meltwater API, Meltwater MCP server, Meltwater integrations (Salesforce, HubSpot, Slack, Power BI, Looker), Meltwater dashboards, Meltwater alerts, or Meltwater pricing |
 
+### Skeepers & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-skeepers` | User asks about Skeepers platform, Skeepers Verified Reviews (review collection, display, moderation, syndication), Skeepers Feedback Management (NPS, CSAT surveys), Skeepers Influencer Marketing (micro/nano creator campaigns, gifting), Skeepers Brand Communities (customer advocates), Skeepers Shoppable Content, Skeepers Gifted Reviews, Skeepers API, Skeepers Shopify/Magento/VTEX integration, Skeepers widget configuration, or Skeepers pricing |
+
+### Customer Reviews Strategy
+
+| Skill | Route when... |
+|---|---|
+| `/sales-customer-reviews` | User asks about product review collection strategy, choosing a review app for Shopify or ecommerce (Judge.me vs Loox vs Okendo vs Stamped vs Yotpo vs Skeepers vs Bazaarvoice vs PowerReviews vs Trustpilot), setting up post-purchase review requests, photo/video review collection, review display widgets, Google Rich Snippets for reviews, review syndication to retail partners, review moderation, migrating between review platforms, or improving review collection rates |
+
 ### Social Listening & Brand Monitoring Strategy
 
 | Skill | Route when... |
@@ -367,7 +379,7 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 
 | Skill | Route when... |
 |---|---|
-| `/sales-influencer-marketing` | User asks about influencer marketing strategy across platforms, choosing an influencer platform (Modash vs influData vs Creator.co vs Hypefy vs LTK vs Influencity vs Meltwater), influencer discovery workflow, creator vetting framework, influencer outreach templates, influencer campaign ROI measurement, product gifting programs, influencer affiliate programs, or creator rate benchmarks |
+| `/sales-influencer-marketing` | User asks about influencer marketing strategy across platforms, choosing an influencer platform (Modash vs influData vs Creator.co vs Hypefy vs LTK vs Influencity vs Meltwater vs Skeepers), influencer discovery workflow, creator vetting framework, influencer outreach templates, influencer campaign ROI measurement, product gifting programs, influencer affiliate programs, or creator rate benchmarks |
 
 ### MicroLaunch & Platform
 
@@ -921,6 +933,8 @@ Some requests are ambiguous. Apply these rules:
 - **"lead routing" / "lead assignment" / "round-robin" / "territory routing"** → `/sales-lead-routing` for designing assignment rules. NOT `/sales-lead-score` (which designs scoring models) or `/revops` (which handles broader handoff process).
 - **"webhook" / "Zapier" / "Make" / "connect tools" / "sync data" / "integration"** → `/sales-integration` for connecting sales tools. NOT `/sales-qwilr-automation` (Qwilr-specific) or `/sales-apollo` (Apollo CRM sync config).
 - **"inbox placement" / "sender reputation" / "email warmup" / "custom tracking domain"** → `/sales-deliverability`.
+- **"Skeepers" / "Skeepers Verified Reviews" / "Skeepers Feedback" / "Skeepers Influencer" / "Skeepers Brand Communities" / "Skeepers NPS" / "Skeepers CSAT" / "Skeepers Gifted Reviews" / "Skeepers Shoppable Content" / "Skeepers API" / "Skeepers widget"** → `/sales-skeepers` (platform help). If asking about review collection strategy across tools → `/sales-customer-reviews`. If asking about influencer marketing strategy → `/sales-influencer-marketing`. If asking about loyalty/community programs → `/sales-loyalty`. If asking about email marketing → `/sales-email-marketing`.
+- **"product reviews" / "review app" / "review collection" / "review widget" / "photo reviews" / "video reviews" / "review syndication" / "syndicate reviews" / "Google Rich Snippets reviews" / "Judge.me" / "Loox" / "Okendo" / "Stamped" / "Bazaarvoice" / "PowerReviews" / "Trustpilot" / "Yotpo reviews"** → `/sales-customer-reviews` for review strategy across tools. If they mention Skeepers specifically → `/sales-skeepers`. If they mention Klaviyo reviews → `/sales-klaviyo`. NOT `/sales-email-marketing` (which is about sending marketing emails, not collecting reviews).
 - **"Prospeo" / "Prospeo.io" / "Prospeo enrichment" / "Prospeo search" / "Prospeo API"** → `/sales-prospeo` (platform help). If asking about enrichment strategy across tools → `/sales-enrich`. If asking about building a prospect list → `/sales-prospect-list`. If asking about email verification strategy → `/sales-deliverability`. If asking about connecting Prospeo to other tools → `/sales-integration`.
 - **"Mailmo" / "Mailmo.io" / "Mailmo Chrome extension" / "Mailmo verifier"** → `/sales-mailmo` (platform help). If asking about enrichment strategy across tools → `/sales-enrich`. If asking about email verification strategy → `/sales-deliverability`. If asking about building a prospect list → `/sales-prospect-list`.
 - **"catch-all verification" / "catch-all detection"** → Could be Mailmo (best catch-all verification) or general deliverability. If they mention Mailmo → `/sales-mailmo`. If general → `/sales-deliverability`.
