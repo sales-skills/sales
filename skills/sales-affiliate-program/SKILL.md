@@ -208,6 +208,7 @@ Best for enterprise-level partnership programs.
 ### Other Platforms (Brief)
 
 - **LTK**: Creator commerce platform with built-in commission/affiliate model. 300K+ creators, 40M+ monthly shoppers on LTK App. Brands set commission rates (10% min, 15%+ recommended), creators earn on sales through LTK links. Free Brand Platform for discovery and gifting; Connect plans ($99-999+/mo) for structured campaigns. Best for DTC/ecommerce brands wanting influencer-driven affiliate sales. See `/sales-ltk` for full platform help.
+- **CreatorIQ**: Enterprise influencer platform with native affiliate network integrations — CJ, Awin, Impact, Rakuten Advertising, Commission Factory, and Partnerize. CreatorIQ Convert module handles coupon code tracking, affiliate link attribution, and Shopify sales tracking. Built-in CreatorIQ Pay for creator payments with tax compliance. Best for enterprises running large-scale influencer affiliate programs across multiple affiliate networks. Pricing starts ~$30K/yr (enterprise only). See `/sales-creatoriq` for full platform help.
 - **ReferralCandy**: E-commerce focused; integrates with Shopify, WooCommerce; automated reward fulfillment
 - **Tapfiliate**: Flexible tracking for SaaS and e-commerce; supports multi-level commissions; good API
 - **Post Affiliate Pro**: Self-hosted option with 200+ integrations; highly customizable; good for complex setups
@@ -288,6 +289,7 @@ Create a structured onboarding experience:
 - `/sales-funnel` — Design the funnels your affiliates will promote, including front-end offers and upsell sequences
 - `/sales-email-marketing` — Build affiliate onboarding sequences and ongoing communication cadences
 - `/sales-ltk` — LTK platform help — creator commerce with built-in commission/affiliate model
+- `/sales-creatoriq` — CreatorIQ platform help — enterprise influencer OS with affiliate network integrations (CJ, Awin, Impact, Rakuten)
 - `/sales-do` — Route to the right skill when you are unsure where to start
 
 ## Examples

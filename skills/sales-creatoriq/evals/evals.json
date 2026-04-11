@@ -1,0 +1,26 @@
+[
+  {
+    "prompt": "I need to set up a campaign in CreatorIQ for 30 fashion micro-influencers on Instagram. Walk me through the setup.",
+    "assertions": [
+      "Explains how to use Creator Graph discovery with filters for fashion niche, Instagram platform, and micro-influencer follower range",
+      "Covers campaign creation steps including brief, deliverables, timeline, and budget configuration",
+      "Mentions content review or pre-publish approval workflow as part of campaign execution"
+    ]
+  },
+  {
+    "prompt": "How do I connect CreatorIQ data to our Tableau dashboards?",
+    "assertions": [
+      "References ExchangeIQ as the API integration layer for connecting to BI tools",
+      "Explains the API authentication method using an API key in the request header",
+      "Notes that API key provisioning requires contacting CreatorIQ support or account rep rather than self-serve generation"
+    ]
+  },
+  {
+    "prompt": "SafeIQ flagged a creator with a high fake follower percentage. How should I evaluate whether to keep working with them?",
+    "assertions": [
+      "Explains how SafeIQ detects fake followers and engagement fraud using AI-powered scoring",
+      "Recommends reviewing the creator's audience analysis and engagement patterns to verify the flag",
+      "Suggests response options such as pausing the relationship, investigating further, or clearing if it appears to be a false positive"
+    ]
+  }
+]

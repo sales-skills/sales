@@ -25,3 +25,4 @@ Problem spaces discovered during platform research that don't have dedicated ski
 | Customer feedback / NPS / CSAT survey tools (post-purchase surveys, Voice of Customer) | Skeepers Feedback Management, Qualtrics, SurveyMonkey, Typeform, Zonka — distinct from product reviews | sales-skeepers | 2026-04-11 |
 | Brand community platforms (white-label advocate communities, gamification) | Skeepers Brand Communities, Mighty Networks, Khoros — too few platforms for meta skill | sales-skeepers | 2026-04-11 |
 | AI-generated outreach copy quality / personalization at scale (using AI agents to write and send on your behalf) | AppSumo reviews, cold email threads — medium frequency, broader AI writing quality topic | sales-brandjet | 2026-04-11 |
+| Creator payment automation (delays, tax compliance, multi-currency payouts at scale) | G2 reviews, industry reports — 68% of creators cite payment delays as top frustration | sales-creatoriq | 2026-04-11 |
