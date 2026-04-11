@@ -1,8 +1,8 @@
 # Sales Skills
 
-**AI-powered sales copilot — 134 skills for prospecting, outbound, deals, proposals, and GTM. One install, one router.**
+**AI-powered sales copilot — 136 skills for prospecting, outbound, deals, proposals, and GTM. One install, one router.**
 
-[![Skills](https://img.shields.io/badge/skills-135-blue)](https://skills.sh/sales-skills/sales)
+[![Skills](https://img.shields.io/badge/skills-137-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
@@ -25,7 +25,7 @@
 npx skills add sales-skills/sales --skills sales-do
 ```
 
-Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill (114 first-party + 53 third-party skills).
+Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill (116 first-party + 53 third-party skills).
 
 Want every skill at once?
 
@@ -45,7 +45,7 @@ One router skill (`/sales-do`) understands all 129 skills and matches you to the
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 105 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 107 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -259,12 +259,14 @@ Router recommends a 5-skill sequence:
 </details>
 
 <details>
-<summary><strong>Media Intelligence & PR</strong> (3 skills)</summary>
+<summary><strong>Media Intelligence & PR</strong> (5 skills)</summary>
 
 | Skill | What it does |
 |---|---|
 | `/sales-meltwater` | Meltwater — media intelligence, social listening, media relations, influencer marketing, Mira AI, API |
+| `/sales-brandjet` | BrandJet AI — multi-channel outreach, brand monitoring, AI visibility monitoring, Artemis MCP, unified inbox |
 | `/sales-social-listening` | Social listening strategy — brand monitoring, sentiment analysis, competitive intelligence, crisis detection |
+| `/sales-ai-visibility` | AI visibility monitoring — track brand mentions in ChatGPT, Claude, Perplexity, Gemini, AI Overviews |
 | `/sales-media-relations` | Media relations strategy — journalist databases, PR pitching, press outreach, coverage tracking |
 
 </details>

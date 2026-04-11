@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-ai-visibility",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I've never checked what AI chatbots say about my brand. How do I start?",
+      "expected_output": "A manual audit approach with prompt templates for checking brand mentions across multiple AI models",
+      "assertions": [
+        {"name": "prompt_templates", "description": "Provides example prompts to ask AI models about the brand, covering areas like brand overview, reputation, or comparisons"},
+        {"name": "multiple_models", "description": "Recommends checking more than one AI model, mentioning at least two of ChatGPT, Claude, Perplexity, or Gemini"},
+        {"name": "tracking_method", "description": "Suggests a way to record or track findings over time, such as a spreadsheet or regular cadence"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "Competitors show up in ChatGPT answers for our category but we don't. What can I do to improve this?",
+      "expected_output": "Content and presence strategy to improve brand visibility in AI model answers",
+      "assertions": [
+        {"name": "third_party_presence", "description": "Recommends building presence on third-party sites like review platforms, forums, or authoritative publications"},
+        {"name": "content_strategy", "description": "Suggests creating or improving content such as comparison pages, structured data, or knowledge base entries"},
+        {"name": "realistic_timeline", "description": "Sets expectations that changes take time — does not promise immediate or overnight results"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I need to pick a tool to monitor what LLMs say about our brand across ChatGPT, Perplexity, and Claude. Budget is around $200/mo.",
+      "expected_output": "Tool comparison and recommendation matched to the user's budget and multi-model coverage requirement",
+      "assertions": [
+        {"name": "tool_options", "description": "Mentions at least two AI visibility monitoring tools or platforms by name"},
+        {"name": "model_coverage", "description": "Addresses which tools cover which AI models, since the user wants multi-model monitoring"},
+        {"name": "budget_fit", "description": "Factors the stated budget into the recommendation rather than only suggesting enterprise-priced options"}
+      ]
+    }
+  ]
+}

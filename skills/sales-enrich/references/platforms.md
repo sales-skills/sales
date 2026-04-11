@@ -405,3 +405,15 @@ Detailed per-platform enrichment workflows, API endpoints, credit economics, and
 - **Limitations**: No credit-based pay-per-enrichment model — enrichment is included but limited to Attio's data sources. No waterfall enrichment across multiple providers. Personal email addresses (Gmail, Yahoo) often don't match.
 - **Best for**: Teams using Attio as primary CRM who want automatic record enrichment without adding a separate tool. For deeper enrichment needs (mobile numbers, technographics, intent data), pair with Apollo, Clay, or ZoomInfo.
 
+## In BrandJet
+
+- 700M+ contact database with AI-powered enrichment — search by company, title, industry, location
+- Instant email and phone lookups built into the platform — no separate enrichment tool needed
+- LinkedIn autopilot: collect contacts from LinkedIn searches, Sales Navigator, and post reactions automatically
+- Social listening enrichment: discover leads from social conversations mentioning relevant topics, competitors, or buyer intent signals
+- Contact verification included — verified leads marked in the database, reducing bounce risk
+- Import enriched contacts directly into multi-channel sequences without CSV export/import
+- Integrations: sync enriched contacts to HubSpot or Attio CRM for downstream use
+- No public API for enrichment — all enrichment happens within the BrandJet platform
+- Starter plan: 1,000 verified leads/mo; Pro plan: 10,000 verified leads/mo — monthly credit model, plan usage carefully
+

@@ -199,3 +199,16 @@ Detailed per-platform cadence setup — campaign types, channel support, A/B tes
 - **Email sync required**: Must connect Gmail or Outlook account. Sequences send from your connected email, not a separate sending infrastructure.
 - **Limitations**: Email-only — no phone, LinkedIn, or SMS steps. No dedicated warmup or deliverability tools. Limited A/B testing compared to dedicated outbound platforms.
 - **Best for**: Teams already using Attio as their CRM who want simple email sequences without adding another tool. For complex multi-channel cadences, use a dedicated platform (Salesloft, Lemlist, Apollo) and sync data from Attio.
+
+## In BrandJet
+
+- BrandJet sequences = multi-channel workflows — visual drag-and-drop builder mixing Email, LinkedIn, Twitter/X, WhatsApp, Instagram, and Telegram steps
+- AI Agents reply autonomously across all channels based on configured rules — stops sequence when reply detected
+- Unified inbox aggregates replies from all channels with AI sentiment categorization
+- Email warmup included on all plans (unlimited) — warmup runs automatically when mailboxes are connected
+- Lead discovery from 700M+ contact database with AI enrichment — import leads directly into sequences
+- Social listening triggers: create sequences triggered by buyer intent signals detected across social platforms
+- Artemis MCP layer: build and launch sequences via natural language prompts instead of the visual builder
+- No public API — use webhooks to push sequence events to external systems (Slack, HubSpot, Attio)
+- Additional social accounts cost $17-20/mo each beyond included account
+- LinkedIn automation: ramp up gradually for new accounts to avoid restrictions

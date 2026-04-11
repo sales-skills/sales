@@ -217,6 +217,7 @@ If your domain reputation is damaged:
 - `/sales-sendpulse` — SendPulse platform help (email verifier, bounce management, reputation monitoring, dedicated IP, spam score checker)
 - `/sales-leadmagic` — LeadMagic platform help (email validation, catch-all detection, API-first verification)
 - `/sales-zoominfo` — ZoomInfo platform help (Engage email configuration)
+- `/sales-brandjet` — BrandJet AI platform help — multi-channel outreach, brand intelligence, AI monitoring
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
 ## Examples

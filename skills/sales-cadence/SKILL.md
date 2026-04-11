@@ -96,7 +96,7 @@ For each call step:
 - Duration: 60-90 seconds max
 - Structure: Say their name, show you did research, one key insight, soft CTA
 
-For platform-specific cadence implementation (Salesloft, Mailshake, Lemlist, Smartlead, Mixmax, Reply.io, Woodpecker, Hunter.io, Seamless.AI, Closum, Minelead, GetProspect, ZoomInfo, Snov.io, 6sense, Clay), see references/platforms.md.
+For platform-specific cadence implementation (Salesloft, Mailshake, Lemlist, Smartlead, Mixmax, Reply.io, Woodpecker, Hunter.io, Seamless.AI, Closum, Minelead, GetProspect, ZoomInfo, Snov.io, 6sense, Clay, BrandJet), see references/platforms.md.
 
 ### Personalization framework
 - **Level 1 (Minimum)**: First name, company name, title — the bare minimum
@@ -155,6 +155,7 @@ Provide a benchmarks table:
 - `/sales-lemlist` — Lemlist platform help (sequences, Lemwarm, LinkedIn automation, enrichment, API)
 - `/sales-call-review` — Review calls from your cadence to improve scripts
 - `/sales-email-tracking` — Email engagement tracking — open/click/attachment signals for follow-up timing
+- `/sales-brandjet` — BrandJet AI platform help — multi-channel outreach, brand intelligence, AI monitoring
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill
 
 ## Gotchas

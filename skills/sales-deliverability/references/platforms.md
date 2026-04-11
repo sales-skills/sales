@@ -378,3 +378,14 @@ Detailed per-platform deliverability configuration — sending limits, warmup, d
 - **API-first**: REST endpoint at api.leadmagic.io — integrate validation into your outbound pipeline or use via MCP server in Claude Code.
 - **Best for**: Teams wanting cheap, API-accessible email validation to clean lists before sending. Complements dedicated deliverability tools like ZeroBounce and SafetyMails.
 
+## In BrandJet
+
+- Built-in email warmup included on all plans — unlimited warmup, runs automatically when mailboxes are connected
+- Custom tracking domain setup available — configure to improve deliverability and brand consistency
+- Sending limits managed per-mailbox — platform controls daily send volume to protect sender reputation
+- Domain authentication (SPF/DKIM/DMARC) required before sending — BrandJet validates your DNS records during mailbox setup
+- Lead verification: BrandJet's 700M+ database includes verification status — use verified leads only to reduce bounce rates
+- Unified inbox tracks bounces, opens, and replies across all channels — use bounce data to clean lists proactively
+- No public API for deliverability metrics — monitor via the BrandJet dashboard or push events via webhooks
+- Starter plan: 1,000 verified leads/mo; Pro plan: 10,000 verified leads/mo — plan lead volume to match sending capacity
+

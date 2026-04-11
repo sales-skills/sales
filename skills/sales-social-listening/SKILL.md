@@ -1,6 +1,6 @@
 ---
 name: sales-social-listening
-description: "Social listening and brand monitoring strategy across platforms — setting up monitoring, Boolean queries, sentiment analysis, competitive intelligence, crisis detection, share of voice, and reporting. Covers platform comparison (Meltwater, Brandwatch, Talkwalker, Brand24, Sprout Social, Mention, Hootsuite), monitoring setup (keywords, sources, alerts), sentiment analysis (accuracy, manual review, trend tracking), competitive benchmarking (share of voice, message pull-through), crisis detection (real-time alerts, escalation workflows), consumer insights (trend analysis, audience research), and reporting (dashboards, stakeholder reports, ROI measurement). Use when setting up brand monitoring, choosing a social listening tool, tracking competitor mentions, measuring brand sentiment, detecting PR crises, or analyzing consumer conversations. Do NOT use for platform-specific config (use /sales-meltwater), influencer discovery (use /sales-influencer-marketing), social media publishing/scheduling (use platform-specific skills), or SEO keyword research (use /sales-semrush)."
+description: "Social listening and brand monitoring strategy — monitoring, Boolean queries, sentiment, competitive intel, crisis detection, AI visibility monitoring, LLM brand mentions. Platform comparison (Meltwater, Brandwatch, Talkwalker, Brand24, Sprout Social, Mention, Hootsuite, BrandJet), monitoring setup (keywords, sources, alerts), sentiment analysis, competitive benchmarking (share of voice), crisis detection (real-time alerts, escalation), consumer insights, and reporting. Use when setting up brand monitoring, choosing a social listening tool, tracking competitor mentions, measuring brand sentiment, detecting PR crises, analyzing consumer conversations, monitoring AI visibility, or tracking LLM brand mentions. Do NOT use for platform-specific config (use /sales-meltwater), influencer discovery (use /sales-influencer-marketing), social media publishing/scheduling, or SEO keyword research (use /sales-semrush)."
 argument-hint: "[describe your social listening question — e.g., 'how do I track competitor mentions' or 'which social listening tool should I use']"
 license: MIT
 version: 1.0.0
@@ -61,20 +61,20 @@ Otherwise, answer directly from the strategy knowledge below.
 
 ### Platform comparison
 
-| Feature | Meltwater | Brandwatch | Talkwalker | Brand24 | Sprout Social | Mention | Hootsuite |
-|---|---|---|---|---|---|---|---|
-| **Channels** | News, social, print, broadcast, podcasts, forums | Social, news, blogs, forums, reviews | Social, news, blogs, forums, print | Social, news, blogs, forums, podcasts | Social, reviews | Social, news, blogs, forums | Social (30+ networks) |
-| **Source volume** | 300K+ news sources, global | 100M+ sources | 150M+ websites + social | 25M+ online sources | Social-focused | Billions of sources | Social-focused |
-| **Sentiment** | Auto + manual correction | AI-powered, customizable | AI with image recognition | AI-powered | AI-powered | AI-powered | Basic |
-| **Boolean queries** | Yes (advanced with NEAR/n) | Yes (advanced) | Yes (advanced) | Basic keyword matching | Basic keywords | Basic keywords | Basic keywords |
-| **Crisis detection** | Real-time alerts via email/Slack/Teams | Signals, anomaly detection | Real-time crisis alerts | Storm Alerts | Smart Inbox alerts | Real-time alerts | Basic alerts |
-| **Media relations** | Built-in journalist database + pitching | No | No | No | No | No | No |
-| **Influencer discovery** | Yes | Yes (via acquisition) | Yes | Basic | Yes | No | Yes (limited) |
-| **Social publishing** | Yes | No | No | No | Yes (core strength) | No | Yes (core strength) |
-| **Consumer intelligence** | Yes (audience insights, trends) | Yes (deep audience research) | Yes (conversation clusters) | Basic trends | Audience demographics | Basic | Basic |
-| **API** | Yes (REST, streaming, MCP) | Yes (REST) | Yes (REST) | Yes (REST) | Yes (REST) | Yes (REST) | Yes (REST) |
-| **Starting price** | ~$6K/yr (sales call) | Enterprise pricing | Enterprise pricing | $79/mo | $199/mo (Social only) | $41/mo | $99/mo |
-| **Best for** | Enterprise PR + comms teams needing news + social + media relations in one | Enterprise brands wanting deep consumer insights and data science | Global brands needing image recognition and visual analytics | SMBs and startups wanting affordable monitoring | Teams needing publishing + listening in one | Startups wanting simple, affordable monitoring | Teams already using Hootsuite for publishing |
+| Feature | Meltwater | Brandwatch | Talkwalker | Brand24 | Sprout Social | Mention | Hootsuite | BrandJet |
+|---|---|---|---|---|---|---|---|---|
+| **Channels** | News, social, print, broadcast, podcasts, forums | Social, news, blogs, forums, reviews | Social, news, blogs, forums, print | Social, news, blogs, forums, podcasts | Social, reviews | Social, news, blogs, forums | Social (30+ networks) | Social, news, AI assistants (ChatGPT, Claude, Perplexity, Gemini) |
+| **Source volume** | 300K+ news sources, global | 100M+ sources | 150M+ websites + social | 25M+ online sources | Social-focused | Billions of sources | Social-focused | Social + AI visibility monitoring |
+| **Sentiment** | Auto + manual correction | AI-powered, customizable | AI with image recognition | AI-powered | AI-powered | AI-powered | Basic | AI-powered |
+| **Boolean queries** | Yes (advanced with NEAR/n) | Yes (advanced) | Yes (advanced) | Basic keyword matching | Basic keywords | Basic keywords | Basic keywords | Basic keywords |
+| **Crisis detection** | Real-time alerts via email/Slack/Teams | Signals, anomaly detection | Real-time crisis alerts | Storm Alerts | Smart Inbox alerts | Real-time alerts | Basic alerts | Real-time alerts |
+| **Media relations** | Built-in journalist database + pitching | No | No | No | No | No | No | No |
+| **Influencer discovery** | Yes | Yes (via acquisition) | Yes | Basic | Yes | No | Yes (limited) | No |
+| **Social publishing** | Yes | No | No | No | Yes (core strength) | No | Yes (core strength) | No |
+| **Consumer intelligence** | Yes (audience insights, trends) | Yes (deep audience research) | Yes (conversation clusters) | Basic trends | Audience demographics | Basic | Basic | AI visibility insights |
+| **API** | Yes (REST, streaming, MCP) | Yes (REST) | Yes (REST) | Yes (REST) | Yes (REST) | Yes (REST) | Yes (REST) | No (webhooks only) |
+| **Starting price** | ~$6K/yr (sales call) | Enterprise pricing | Enterprise pricing | $79/mo | $199/mo (Social only) | $41/mo | $99/mo | $60/mo |
+| **Best for** | Enterprise PR + comms teams needing news + social + media relations in one | Enterprise brands wanting deep consumer insights and data science | Global brands needing image recognition and visual analytics | SMBs and startups wanting affordable monitoring | Teams needing publishing + listening in one | Startups wanting simple, affordable monitoring | Teams already using Hootsuite for publishing | GTM teams wanting social listening + multi-channel outreach + AI visibility in one |
 
 #### When to choose each platform
 
@@ -85,6 +85,7 @@ Otherwise, answer directly from the strategy knowledge below.
 - **Sprout Social** — best for social media teams that want publishing, engagement, and listening in one tool. Social-focused (not strong for news monitoring). Starts at $199/mo for social management, listening is an add-on.
 - **Mention** — best for startups and small teams wanting simple, affordable brand monitoring. Recently acquired by Agorapulse. $41/mo starting price.
 - **Hootsuite** — best for teams already using Hootsuite for social publishing who want to add listening. Talkwalker acquisition added listening capabilities. Social-focused.
+- **BrandJet** — best for GTM teams that want social listening + multi-channel outreach + AI visibility monitoring in one platform. Unique differentiator: tracks brand mentions in ChatGPT, Claude, Perplexity, and Gemini. Affordable starting at $60/mo. Less depth than enterprise tools but unified workflow from monitoring → outreach.
 
 ### Setting up monitoring
 
@@ -243,6 +244,8 @@ Based on the user's specific question:
 - `/sales-intent` — Buying intent signals and prioritization from monitoring data
 - `/sales-influencer-marketing` — Influencer discovery and campaign tracking
 - `/sales-content` — Sales content management and strategy
+- `/sales-brandjet` — BrandJet AI platform help — outreach, brand intelligence, AI monitoring
+- `/sales-ai-visibility` — AI visibility monitoring — track what LLMs say about your brand
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

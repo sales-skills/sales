@@ -182,6 +182,7 @@ For platform-specific credit economics, see the relevant platform skill (`/sales
 - `/sales-hunter` — Hunter.io (Domain Search, Email Finder, Email Verifier)
 - `/sales-seamless` — Seamless.AI (1.8B+ contacts, CRM Enrich, Autopilot)
 - `/sales-snov` — Snov.io (email finder, verifier, multichannel campaigns)
+- `/sales-brandjet` — BrandJet AI platform help — multi-channel outreach, brand intelligence, AI monitoring
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill
 
 ## Examples

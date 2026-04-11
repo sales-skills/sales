@@ -1,6 +1,6 @@
 ---
 name: sales-do
-description: "Routes any sales, marketing, or GTM objective to the right specialized skill. Covers 121 first-party skills and 53 third-party skills across prospecting, outbound, deals, proposals, forecasting, deliverability, enrichment, intent signals, content, coaching, CRO, SEO, social listening, media relations, customer reviews, data hygiene, B2B advertising, retargeting, chatbots, and platform help for Attio, Apollo, Salesloft, Mailshake, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter, Tomba, Prospeo, Mailmo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, Brevo, Braze, Iterable, GetResponse, Seismic, Allego, Groove, Kit (ConvertKit), Omnisend, ZoomInfo, SendPulse, Clearbit, RB2B, Retention.com, 6sense, Clay, LeadMagic, AdRoll, SWAI, Tagshop, influData, Creator.co, Hypefy, LTK, Influencity, Meltwater, Skeepers, LoyaltyLion, MicroLaunch, LaunchingNext, SideProjectors, ProductBurst, SoloPush, CtrlAlt.cc, Open Launch, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, Reddit Ads, Semrush, Indie Hackers, Altern, Lobsters, StartupBase, Startup Stash, PitchWall, Futurepedia, LaunchCaster, BetaList, SaaSHunt, Resource.fyi, LaunchVibe, and Qwilr. Use when you have a sales or marketing question and are not sure which skill to use. Do NOT use to solve problems directly — this skill only routes."
+description: "Routes any sales, marketing, or GTM objective to the right specialized skill. Covers 123 first-party skills and 53 third-party skills across prospecting, outbound, deals, proposals, forecasting, deliverability, enrichment, intent signals, content, coaching, CRO, SEO, social listening, media relations, customer reviews, data hygiene, B2B advertising, retargeting, chatbots, and platform help for Attio, Apollo, Salesloft, Mailshake, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter, Tomba, Prospeo, Mailmo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, Brevo, Braze, Iterable, GetResponse, Seismic, Allego, Groove, Kit (ConvertKit), Omnisend, ZoomInfo, SendPulse, Clearbit, RB2B, Retention.com, 6sense, Clay, LeadMagic, AdRoll, SWAI, Tagshop, influData, Creator.co, Hypefy, LTK, Influencity, Meltwater, Skeepers, LoyaltyLion, MicroLaunch, LaunchingNext, SideProjectors, ProductBurst, SoloPush, CtrlAlt.cc, Open Launch, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, Reddit Ads, Semrush, BrandJet, Indie Hackers, Altern, Lobsters, StartupBase, Startup Stash, PitchWall, Futurepedia, LaunchCaster, BetaList, SaaSHunt, Resource.fyi, LaunchVibe, and Qwilr. Use when you have a sales or marketing question and are not sure which skill to use. Do NOT use to solve problems directly — this skill only routes."
 version: 1.0.0
 tags: [sales, router, skill-discovery]
 ---
@@ -351,6 +351,18 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 |---|---|
 | `/sales-meltwater` | User asks about Meltwater platform, Meltwater Explore (media monitoring), Meltwater Boolean searches, Meltwater social listening, Meltwater media relations (journalist database, pitching), Meltwater influencer marketing, Meltwater Engage (social publishing), Meltwater consumer intelligence, Meltwater Mira AI, Meltwater API, Meltwater MCP server, Meltwater integrations (Salesforce, HubSpot, Slack, Power BI, Looker), Meltwater dashboards, Meltwater alerts, or Meltwater pricing |
 
+### BrandJet & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-brandjet` | BrandJet AI platform help — multi-channel outreach (Email, LinkedIn, Twitter/X, WhatsApp, Instagram, Telegram), brand monitoring, AI visibility monitoring, Artemis MCP, unified inbox, lead discovery, email warmup, AI Agents, webhooks | Route when the user asks about BrandJet setup, config, features, or troubleshooting. Route when they mention BrandJet sequences, BrandJet Artemis, BrandJet AI agents, BrandJet brand monitoring, BrandJet AI visibility, BrandJet unified inbox, BrandJet warmup, BrandJet lead discovery, or BrandJet integrations (Slack, HubSpot, Attio). |
+
+### AI Visibility Monitoring Strategy
+
+| Skill | Route when... |
+|---|---|
+| `/sales-ai-visibility` | User asks about AI visibility monitoring strategy, tracking brand mentions in ChatGPT, Claude, Perplexity, Gemini, or AI Overviews, choosing an AI visibility tool (BrandJet vs Otterly vs Topify vs Sight AI vs LLMrefs vs Semrush AI Visibility), monitoring what LLMs say about their brand, improving AI search visibility, AI citation tracking, or entity optimization for AI discovery |
+
 ### Skeepers & Platform
 
 | Skill | Route when... |
@@ -367,7 +379,7 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 
 | Skill | Route when... |
 |---|---|
-| `/sales-social-listening` | User asks about social listening strategy across platforms, choosing a social listening or media monitoring tool (Meltwater vs Brandwatch vs Talkwalker vs Brand24 vs Sprout Social vs Mention vs Hootsuite), setting up brand monitoring, competitive share of voice, sentiment analysis, crisis detection and alerts, consumer insights from social data, or social listening reporting |
+| `/sales-social-listening` | User asks about social listening strategy across platforms, choosing a social listening or media monitoring tool (Meltwater vs Brandwatch vs Talkwalker vs Brand24 vs Sprout Social vs Mention vs Hootsuite vs BrandJet), setting up brand monitoring, competitive share of voice, sentiment analysis, crisis detection and alerts, consumer insights from social data, AI visibility monitoring, LLM brand mentions, or social listening reporting |
 
 ### Media Relations & PR Strategy
 

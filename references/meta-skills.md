@@ -9,8 +9,8 @@ A platform can belong to **multiple** meta skills (e.g., a platform with email +
 | Meta skill | Problem domain | Platforms it coordinates |
 |---|---|---|
 | `/sales-launch-directory` | Startup directory launches | Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, BetaList, Hacker News, Indie Hackers, Altern, Lobsters, StartupBase, Startup Stash, PitchWall, Futurepedia, LaunchCaster, SaaSHunt, Resource.fyi, LaunchVibe |
-| `/sales-cadence` | Outbound sequences | Salesloft, Mailshake, Smartlead, Lemlist, Yesware, Mixmax, Reply.io, Woodpecker, Apollo, Hunter.io, Seamless.AI, ZoomInfo Engage, Attio |
-| `/sales-deliverability` | Email deliverability | Apollo, Mailshake, Salesloft, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter.io, SafetyMails, ZeroBounce, Snov.io |
+| `/sales-cadence` | Outbound sequences | Salesloft, Mailshake, Smartlead, Lemlist, Yesware, Mixmax, Reply.io, Woodpecker, Apollo, Hunter.io, Seamless.AI, ZoomInfo Engage, Attio, BrandJet |
+| `/sales-deliverability` | Email deliverability | Apollo, Mailshake, Salesloft, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter.io, SafetyMails, ZeroBounce, Snov.io, BrandJet |
 | `/sales-email-marketing` | Opt-in email marketing | Kit, Mailchimp, ActiveCampaign, Klaviyo, Brevo, GetResponse, Omnisend, SendPulse, Iterable, Braze, Customer.io, Closum |
 | `/sales-funnel` | Sales funnels | ClickFunnels, GoHighLevel, Groove, Kartra, Closum, Mailchimp, GetResponse, Kit, SendPulse, SWAI |
 | `/sales-newsletter` | Newsletter monetization | Kit, Substack, Beehiiv, Ghost |
@@ -32,13 +32,14 @@ A platform can belong to **multiple** meta skills (e.g., a platform with email +
 | `/sales-b2b-advertising` | B2B / ABM advertising | ZoomInfo MarketingOS, Demandbase, 6sense, Terminus, RollWorks, LinkedIn Ads, Reddit Ads |
 | `/sales-retargeting` | Retargeting / remarketing | AdRoll, Google Ads, Meta, Criteo, LinkedIn, Retention.com, Reddit Ads |
 | `/sales-meeting-scheduler` | Meeting scheduling | Calendly, Chili Piper, Mixmax, Yesware |
-| `/sales-enrich` | Contact enrichment | Apollo, ZoomInfo, Clearbit, Clay, Hunter.io, Tomba, Prospeo, Mailmo, Seamless.AI, Enrich.so, Minelead, GetProspect, Skrapp, Anymail Finder, LeadMagic, Snov.io, Lobstr.io, OpenWeb Ninja, Outscraper, Attio |
+| `/sales-enrich` | Contact enrichment | Apollo, ZoomInfo, Clearbit, Clay, Hunter.io, Tomba, Prospeo, Mailmo, Seamless.AI, Enrich.so, Minelead, GetProspect, Skrapp, Anymail Finder, LeadMagic, Snov.io, Lobstr.io, OpenWeb Ninja, Outscraper, Attio, BrandJet |
 | `/sales-integration` | Tool integration | Any platform ↔ CRM, Zapier, Make, webhooks, API pipelines, Attio |
 | `/sales-account-map` | Buying committee mapping | Apollo, ZoomInfo, LinkedIn Sales Navigator, 6sense |
 | `/sales-email-tracking` | Email tracking | Yesware, Mixmax, Mailshake, HubSpot |
 | `/sales-content` | Sales content management | Seismic, Allego, Highspot |
 | `/sales-coaching` | Sales coaching | Seismic, Allego, Salesloft Conversations, ZoomInfo Chorus |
-| `/sales-social-listening` | Social listening & brand monitoring | Meltwater, Brandwatch, Talkwalker, Brand24, Sprout Social, Mention, Hootsuite |
+| `/sales-social-listening` | Social listening & brand monitoring | Meltwater, Brandwatch, Talkwalker, Brand24, Sprout Social, Mention, Hootsuite, BrandJet |
+| `/sales-ai-visibility` | AI visibility monitoring | BrandJet, Otterly, Topify, Sight AI, LLMrefs, Semrush AI Visibility, Ahrefs Brand Radar, Meltwater |
 | `/sales-media-relations` | Media relations & PR outreach | Meltwater, Cision, Muck Rack, Prowly, Agility PR, BuzzStream |
 | `/sales-customer-reviews` | Product review collection & syndication | Skeepers, Yotpo, Judge.me, Bazaarvoice, Loox, Okendo, Stamped, PowerReviews, Trustpilot |
 | `/sales-agency-outbound` | Agency multi-client outbound | Smartlead, Reply.io, Woodpecker, Lemlist |

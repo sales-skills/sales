@@ -24,3 +24,4 @@ Problem spaces discovered during platform research that don't have dedicated ski
 | Consumer intelligence / market research (audience segmentation, trend analysis, behavioral insights) | Meltwater, Brandwatch — niche enterprise use case | sales-meltwater | 2026-04-11 |
 | Customer feedback / NPS / CSAT survey tools (post-purchase surveys, Voice of Customer) | Skeepers Feedback Management, Qualtrics, SurveyMonkey, Typeform, Zonka — distinct from product reviews | sales-skeepers | 2026-04-11 |
 | Brand community platforms (white-label advocate communities, gamification) | Skeepers Brand Communities, Mighty Networks, Khoros — too few platforms for meta skill | sales-skeepers | 2026-04-11 |
+| AI-generated outreach copy quality / personalization at scale (using AI agents to write and send on your behalf) | AppSumo reviews, cold email threads — medium frequency, broader AI writing quality topic | sales-brandjet | 2026-04-11 |
