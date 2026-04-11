@@ -1,6 +1,6 @@
 ---
 name: sales-launch-directory
-description: "Startup directory launch strategy — coordinates submissions across multiple product launch and discovery platforms for maximum visibility, backlinks, and early users. Covers platform selection (Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, BetaList, Hacker News, Indie Hackers, Altern, Lobsters, StartupBase, Startup Stash, PitchWall, Futurepedia, LaunchCaster, SaaSHunt, Resource.fyi), launch sequencing (instant-list first, editorial-review last), backlink stacking (DA/DR comparison across directories), listing optimization, timing strategy, and multi-platform coordination. Use when planning a product launch across directories, choosing which directories to submit to, or building a backlink portfolio from startup directories. Do NOT use for a single specific platform (use the platform skill instead). Do NOT use for paid advertising (use /sales-b2b-advertising)."
+description: "Startup directory launch strategy — coordinates submissions across multiple product launch and discovery platforms for maximum visibility, backlinks, and early users. Covers platform selection (Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, BetaList, Hacker News, Indie Hackers, Altern, Lobsters, StartupBase, Startup Stash, PitchWall, Futurepedia, LaunchCaster, SaaSHunt, Resource.fyi, LaunchVibe), launch sequencing (instant-list first, editorial-review last), backlink stacking (DA/DR comparison across directories), listing optimization, timing strategy, and multi-platform coordination. Use when planning a product launch across directories, choosing which directories to submit to, or building a backlink portfolio from startup directories. Do NOT use for a single specific platform (use the platform skill instead). Do NOT use for paid advertising (use /sales-b2b-advertising)."
 argument-hint: "[describe your product and what you want from directory submissions]"
 license: MIT
 version: 1.0.0
@@ -80,6 +80,7 @@ If the request maps to a single platform, route:
 - LaunchCaster-specific questions → `/sales-launchcaster`
 - SaaSHunt-specific questions → `/sales-saashunt`
 - Resource.fyi-specific questions → `/sales-resourcefyi`
+- LaunchVibe-specific questions → `/sales-launchvibe`
 - Indie Hackers-specific questions → `/sales-indiehackers`
 - Product Hunt-specific questions → `/sales-producthunt`
 - Email marketing to subscribers → `/sales-email-marketing`
@@ -126,6 +127,7 @@ Otherwise, answer directly from the directory knowledge below.
 | LaunchCaster | Unconfirmed (.xyz) | Free | None | None — instant (via Farcaster cast) | Web3 "Product Hunt" on Farcaster (9K+ builders, wallet voting) | `/sales-launchcaster` |
 | SaaSHunt | DR49 dofollow | Free | ~$49/mo Pro | Editorial review (no SLA) | AI-powered B2B SaaS directory (8 categories, template-based submission) | `/sales-saashunt` |
 | Resource.fyi | Unconfirmed | Free | None | Editorial review (no SLA) | Curated dev/designer/marketer tools directory (2,519+ resources, 25+ categories, upvoting) | `/sales-resourcefyi` |
+| LaunchVibe | DR10 dofollow | Free | None | None — instant | Daily launches + XP gamification + streaks (1,000+ founders) | `/sales-launchvibe` |
 
 ### Third-party platforms (no skill — general guidance)
 
@@ -173,6 +175,7 @@ All first-party + key third-party directories sorted by backlink strength:
 | 29 | Futurepedia | High (est.) | Yes | No ($497 Verified minimum) |
 | 30 | LaunchCaster | Unconfirmed | Unconfirmed | Yes (Web3 only, Farcaster required) |
 | 31 | Resource.fyi | Unconfirmed | Likely dofollow | Yes (dev/designer tools) |
+| 32 | LaunchVibe | DR10 | Yes | Yes (instant, XP gamification) |
 
 ## Step 4 — Actionable guidance
 
@@ -191,6 +194,7 @@ Submit to platforms with no editorial queue to get live immediately:
 4. **Peerlist Launchpad** — submit for Monday launch, all projects featured, streak-based vote multipliers (nofollow backlink, DR76 — community value, not SEO)
 4. **Uneed (Skip the Line, $29.99)** — choose your launch date, DR74 dofollow backlink (one of the highest free directory backlinks)
 4. **Indie Hackers** — post in relevant groups, share your story (nofollow backlink, DR75 — community value, not SEO)
+4. **LaunchVibe** — instant listing, free dofollow backlink (DR10 — low but free), XP gamification rewards engagement
 4. **Altern** — submit if your product is AI-focused (dofollow backlink, editorial review queue)
 4. **LaunchCaster** — submit if your product is Web3/crypto (free, instant via Farcaster cast @launch, niche but engaged audience)
 
@@ -337,6 +341,7 @@ For each directory submission, track:
 - `/sales-launchcaster` — LaunchCaster platform help (Web3 project discovery on Farcaster, free, wallet-connected voting)
 - `/sales-saashunt` — SaaSHunt platform help (AI-powered B2B SaaS directory, DR49 dofollow, free template-based submission)
 - `/sales-resourcefyi` — Resource.fyi platform help (curated dev/designer tools directory, 2,519+ resources, 25+ categories, community upvoting)
+- `/sales-launchvibe` — LaunchVibe platform help (daily launches, XP gamification, DR10 dofollow, 1,000+ founders)
 - `/sales-funnel` — Build and optimize sales funnels for conversion
 - `/sales-audience-growth` — Grow your email list and subscriber base
 - `/sales-checkout` — Optimize landing pages and checkout for conversion

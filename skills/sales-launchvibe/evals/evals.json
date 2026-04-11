@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-launchvibe",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Is LaunchVibe worth submitting to? How does it compare to other instant-listing directories?",
+      "expected_output": "Acknowledges DR10 is low, recommends submitting because it's free and dofollow, compares with similar platforms.",
+      "assertions": [
+        {"name": "low_dr", "description": "Acknowledges that LaunchVibe's DR is very low (around 10) compared to other directories and sets realistic expectations for SEO value"},
+        {"name": "still_worth_it", "description": "Recommends submitting anyway because it's free, instant, and provides a dofollow backlink — every cumulative backlink helps"},
+        {"name": "comparison", "description": "Compares with at least one other instant-listing directory like ProductBurst, SoloPush, or Huzzler to provide context on relative backlink value"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "How do I submit my SaaS product to LaunchVibe and maximize my visibility there?",
+      "expected_output": "Walks through the submission process and explains the XP system for gaining visibility.",
+      "assertions": [
+        {"name": "submission_process", "description": "Explains creating an account at launchvibe.app and submitting with a working product URL, description, and screenshots"},
+        {"name": "xp_system", "description": "Explains the XP gamification system where launching, commenting, and upvoting earn experience points that build reputation and visibility"},
+        {"name": "engagement_strategy", "description": "Recommends active community engagement (commenting on other launches, maintaining streaks) rather than passive submission"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Where does LaunchVibe fit in a multi-directory launch strategy?",
+      "expected_output": "Places LaunchVibe in Phase 1 instant listings alongside similar platforms.",
+      "assertions": [
+        {"name": "phase_placement", "description": "Places LaunchVibe in the instant-listing phase rather than editorial-queue or paid fast-track phases"},
+        {"name": "low_priority_seo", "description": "Notes that LaunchVibe should not be prioritized for SEO/backlink value due to low DR, but is worth including as a free instant submission"},
+        {"name": "pair_with", "description": "Recommends pairing with other instant-listing directories like SoloPush, ProductBurst, or JustGotFound"}
+      ]
+    }
+  ]
+}

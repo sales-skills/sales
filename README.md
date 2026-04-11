@@ -523,6 +523,12 @@ Router recommends a 5-skill sequence:
 |---|---|
 | `/sales-resourcefyi` | Resource.fyi platform help — curated tools and resources directory for developers, designers, and marketers. 2,519+ resources across 25+ categories (AI, API, Design, Dev Tools, Marketing, No-Code, Web3). Free submission with editorial review. Community upvoting, bookmarking, trending section. Social auth (Google/GitHub). Founded by Musharof Chowdhury (Pimjo), Dhaka/Wyoming |
 
+### LaunchVibe & Platform
+
+| Skill | What it does |
+|---|---|
+| `/sales-launchvibe` | LaunchVibe (launchvibe.app) platform help — product launch and discovery directory for makers, founders, and creators. DR10 dofollow backlinks, free instant submission (no editorial queue). Daily launches, community upvoting/commenting, XP gamification system with streak multipliers. 1,000+ founders. Created by J.J (@jjcooldev). Launched ~January 2026 |
+
 ### Minelead & Platform
 
 | Skill | What it does |
