@@ -1,6 +1,6 @@
 # Sales Skills
 
-[![Skills](https://img.shields.io/badge/skills-125-blue)](https://skills.sh/sales-skills/sales)
+[![Skills](https://img.shields.io/badge/skills-127-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
@@ -239,6 +239,24 @@ Router recommends a 5-skill sequence:
 | Skill | What it does |
 |---|---|
 | `/sales-creatorco` | Creator.co platform help — AI-powered influencer marketing with London AI agent (automated creator matching from 400M+ profiles, AI outreach), campaign management (briefs, approvals, payouts), creator marketplace (creator.space), UGC with full usage rights, affiliate tracking (Impact, CJ, Awin, Rakuten), Shopify product gifting, Deep Insights reports, performance analytics (ROAS, conversions) |
+
+### Modash & Platform
+
+| Skill | What it does |
+|---|---|
+| `/sales-modash` | Modash platform help — influencer marketing for Shopify brands with creator discovery (350M+ profiles on Instagram, TikTok, YouTube), audience analysis (demographics, fake follower detection), campaign management (auto-tracking, ROAS, EMV, CPM), creator payments (180+ countries), product gifting, affiliate tracking, promo codes, Discovery API, Raw API, AI Search API, Collaborations API |
+
+### Hypefy & Platform
+
+| Skill | What it does |
+|---|---|
+| `/sales-hypefy` | Hypefy platform help — AI-native influencer marketing with zero-subscription, pay-per-campaign pricing. AI campaign setup (brief generation from product description, geography, and budget), influencer discovery (3K+ vetted internal + 12M+ external on Instagram and TikTok), automated outreach and hiring, content review and approval before publishing, influencer payments (multi-currency, milestone-based, compliance), performance dashboard, built-in calculators (Budget, ROI, Engagement, CPM, CTR) |
+
+### Influencer Marketing Strategy
+
+| Skill | What it does |
+|---|---|
+| `/sales-influencer-marketing` | Influencer marketing strategy across platforms (Modash, influData, Creator.co, Hypefy) — platform comparison, creator discovery workflow, vetting framework (fake followers, audience quality), outreach templates, campaign tracking and ROI measurement, product gifting programs, influencer affiliate programs, creator rate benchmarks |
 
 ### MicroLaunch & Platform
 
@@ -594,6 +612,12 @@ Router recommends a 5-skill sequence:
 | Skill | What it does |
 |---|---|
 | `/sales-zoominfo` | ZoomInfo platform help — SalesOS (prospecting, enrichment, intent, Engage sequences, Chorus conversation intelligence), MarketingOS (B2B advertising, FormComplete, WebSights, Chat), OperationsOS (data orchestration, CRM hygiene, deduplication), Copilot (AI pipeline management), API (PKI/OAuth auth, search, enrich, lookup, bulk, webhooks) |
+
+### LoyaltyLion & Platform
+
+| Skill | What it does |
+|---|---|
+| `/sales-loyaltylion` | LoyaltyLion platform help — points, tiers, rewards, referrals, custom loyalty pages, receipt upload (omnichannel), AI recommendations, analytics, Klaviyo Events (Elite Master Partner), Shopify POS, Admin API + Headless API (TypeScript client, Hydrogen reference store) |
 
 ### Omnisend & Platform
 

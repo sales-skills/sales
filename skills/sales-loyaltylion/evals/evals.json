@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-loyaltylion",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I just installed LoyaltyLion on my Shopify store. How do I set up a basic points and rewards program?",
+      "expected_output": "Step-by-step guide to configuring earning rules, rewards, and loyalty page in LoyaltyLion",
+      "assertions": [
+        {"name": "earning_rules", "description": "Response explains how to configure earning rules including points per dollar spent and bonus actions like reviews or referrals"},
+        {"name": "rewards_setup", "description": "Response explains how to create a reward catalog with specific reward types like discount codes or free shipping"},
+        {"name": "klaviyo_mention", "description": "Response mentions connecting Klaviyo for loyalty email flows or data sync as part of the setup process"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "How do I send automated emails when a customer earns enough points for a reward in LoyaltyLion?",
+      "expected_output": "Guide to setting up Klaviyo Events integration with LoyaltyLion for reward notification flows",
+      "assertions": [
+        {"name": "klaviyo_events", "description": "Response explains the Klaviyo Events feature and which plan levels support it (Advanced add-on or Plus)"},
+        {"name": "flow_setup", "description": "Response describes creating a Klaviyo flow triggered by a LoyaltyLion event like reward availability or points earned"},
+        {"name": "plan_gating", "description": "Response warns that real-time event triggers require a specific plan level, not just the basic Klaviyo integration"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "We're building a headless Shopify storefront with Hydrogen. How do we integrate LoyaltyLion?",
+      "expected_output": "Guide to using LoyaltyLion's Headless API and TypeScript client for custom storefront integration",
+      "assertions": [
+        {"name": "headless_api", "description": "Response mentions the Headless API as the correct approach for custom storefronts"},
+        {"name": "typescript_client", "description": "Response references the TypeScript client package or the Hydrogen reference store on GitHub"},
+        {"name": "use_cases", "description": "Response describes specific UI elements that can be built like points display on product pages or custom rewards widgets"}
+      ]
+    }
+  ]
+}

@@ -113,11 +113,15 @@ Ask the user:
 - **Best for**: Shopify stores wanting a quick, attractive loyalty program
 
 ### In LoyaltyLion
-- **Product**: E-commerce loyalty platform with deep analytics
-- **Programs**: Points, tiers, custom rewards, loyalty pages
-- **Strength**: Advanced analytics and segmentation. Can create custom loyalty pages. Good for data-driven teams.
-- **Limitation**: Higher starting price. Setup is more complex.
-- **Best for**: Mid-market e-commerce brands wanting detailed loyalty analytics
+- **Product**: E-commerce loyalty platform with deep analytics, AI recommendations, and headless API
+- **Programs**: Points, tiers, custom rewards, referrals, loyalty pages, receipt upload (omnichannel)
+- **Pricing**: Classic $199/mo (500 orders), Advanced (custom, 4k orders), Plus (custom, 10k+ orders). Free tier via Shopify App Store (very limited).
+- **Klaviyo**: Elite Master Partner — syncs loyalty data to profiles on Classic, real-time Klaviyo Events (reward claimed, tier upgrade, points expiring) on Advanced add-on or Plus
+- **API**: Admin API (token/secret auth, 20 req/sec) + Headless API (TypeScript client for custom UIs, Hydrogen reference store)
+- **Strength**: Advanced analytics and segmentation. Branded loyalty pages built for you. Klaviyo Events for advanced email flows. Headless API for custom storefronts. 100+ integrations including Shopify POS.
+- **Limitation**: Higher starting price ($199/mo). VIP tiers require Advanced plan. Klaviyo Events require Advanced add-on or Plus. Multi-currency stores may need separate setups.
+- **Best for**: Mid-market DTC/e-commerce brands on Shopify wanting data-driven loyalty with deep Klaviyo integration
+- **Platform skill**: `/sales-loyaltylion`
 
 ### In Yotpo
 - **Product**: Part of Yotpo's retention marketing suite (loyalty + reviews + SMS + email)
@@ -174,6 +178,7 @@ Ask the user:
 
 ## Related skills
 
+- `/sales-loyaltylion` — LoyaltyLion platform help (points, tiers, rewards, Klaviyo Events, API)
 - `/sales-brevo` — Brevo platform help (Brevo Loyalty setup and configuration)
 - `/sales-affiliate-program` — Affiliate and referral programs with commission payouts
 - `/sales-email-marketing` — Email communication for loyalty program members

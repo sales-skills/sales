@@ -1,6 +1,6 @@
 ---
 name: sales-do
-description: "Routes any sales, marketing, or GTM objective to the right specialized skill. Covers 113 first-party skills and 53 third-party skills across prospecting, outbound, deals, proposals, forecasting, deliverability, enrichment, intent signals, content, coaching, CRO, SEO, data hygiene, B2B advertising, retargeting, chatbots, and platform help for Attio, Apollo, Salesloft, Mailshake, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter, Tomba, Prospeo, Mailmo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, Brevo, Braze, Iterable, GetResponse, Seismic, Allego, Groove, Kit (ConvertKit), Omnisend, ZoomInfo, SendPulse, Clearbit, RB2B, Retention.com, 6sense, Clay, LeadMagic, AdRoll, SWAI, Tagshop, influData, Creator.co, MicroLaunch, LaunchingNext, SideProjectors, ProductBurst, SoloPush, CtrlAlt.cc, Open Launch, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, Semrush, Indie Hackers, Altern, Lobsters, StartupBase, Startup Stash, PitchWall, Futurepedia, LaunchCaster, BetaList, SaaSHunt, Resource.fyi, LaunchVibe, and Qwilr. Use when you have a sales or marketing question and are not sure which skill to use. Do NOT use to solve problems directly — this skill only routes."
+description: "Routes any sales, marketing, or GTM objective to the right specialized skill. Covers 115 first-party skills and 53 third-party skills across prospecting, outbound, deals, proposals, forecasting, deliverability, enrichment, intent signals, content, coaching, CRO, SEO, data hygiene, B2B advertising, retargeting, chatbots, and platform help for Attio, Apollo, Salesloft, Mailshake, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter, Tomba, Prospeo, Mailmo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, Brevo, Braze, Iterable, GetResponse, Seismic, Allego, Groove, Kit (ConvertKit), Omnisend, ZoomInfo, SendPulse, Clearbit, RB2B, Retention.com, 6sense, Clay, LeadMagic, AdRoll, SWAI, Tagshop, influData, Creator.co, Hypefy, LoyaltyLion, MicroLaunch, LaunchingNext, SideProjectors, ProductBurst, SoloPush, CtrlAlt.cc, Open Launch, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, Semrush, Indie Hackers, Altern, Lobsters, StartupBase, Startup Stash, PitchWall, Futurepedia, LaunchCaster, BetaList, SaaSHunt, Resource.fyi, LaunchVibe, and Qwilr. Use when you have a sales or marketing question and are not sure which skill to use. Do NOT use to solve problems directly — this skill only routes."
 version: 1.0.0
 tags: [sales, router, skill-discovery]
 ---
@@ -309,6 +309,12 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 |---|---|
 | `/sales-tagshop` | User asks about Tagshop platform, AI UGC video ads, AI avatars, AI Twin (clone face/voice), URL-to-Video, text-to-video, shoppable UGC galleries, AI product tagging, Taggbox Shopify app, campaign publishing to TikTok/Instagram/YouTube/Facebook, or video ad creation |
 
+### Hypefy & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-hypefy` | User asks about Hypefy platform, Hypefy AI campaigns, Hypefy influencer discovery, Hypefy automated outreach, Hypefy content review, Hypefy creator payments, Hypefy pay-per-campaign pricing, Hypefy campaign brief generation, Hypefy micro-influencer campaigns, Hypefy performance dashboard, Hypefy ROI calculator, or Hypefy vs other influencer platforms |
+
 ### influData & Platform
 
 | Skill | Route when... |
@@ -320,6 +326,18 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 | Skill | Route when... |
 |---|---|
 | `/sales-creatorco` | User asks about Creator.co platform, London AI agent, creator marketplace, creator.space, influencer campaign management, UGC content rights, product gifting to creators, affiliate tracking with Impact/CJ/Awin/Rakuten, Deep Insights reports, creator vetting on Creator.co, or Shopify influencer integration |
+
+### Modash & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-modash` | User asks about Modash platform, Modash influencer discovery (350M+ creators), Modash audience analysis, Modash fake follower detection, Modash campaign tracking, Modash Shopify integration, Modash product gifting, Modash affiliate tracking, Modash promo codes, Modash creator payments, Modash Discovery API, Modash Raw API, Modash AI Search API, or Modash pricing |
+
+### Influencer Marketing Strategy
+
+| Skill | Route when... |
+|---|---|
+| `/sales-influencer-marketing` | User asks about influencer marketing strategy across platforms, choosing an influencer platform (Modash vs influData vs Creator.co vs Hypefy), influencer discovery workflow, creator vetting framework, influencer outreach templates, influencer campaign ROI measurement, product gifting programs, influencer affiliate programs, or creator rate benchmarks |
 
 ### MicroLaunch & Platform
 
@@ -538,6 +556,12 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 | Skill | Route when... |
 |---|---|
 | `/sales-brevo` | General Brevo questions — email/SMS/WhatsApp campaigns, marketing automation (journeys), transactional messaging, Sales CRM (deals, pipelines), Conversations (live chat, chatbot), Loyalty programs, push notifications, e-commerce integration, landing pages, contact management, Aura AI, domain authentication, dedicated IPs, API, SMTP relay, sub-accounts, migration from Sendinblue | Route when the user asks about Brevo setup, config, features, or troubleshooting. Route when they mention Brevo campaigns, Brevo automation, Brevo journeys, Brevo CRM, Brevo API, Brevo SMTP, Brevo loyalty, Brevo conversations, Brevo WhatsApp, Brevo SMS, Brevo transactional email, or Sendinblue. |
+
+### LoyaltyLion & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-loyaltylion` | General LoyaltyLion questions — points, tiers, rewards, referrals, custom loyalty pages, receipt upload (omnichannel), AI recommendations, analytics, Klaviyo Events integration (Elite Master Partner), Shopify POS, Admin API (token/secret auth, customers, orders, activities, rewards, webhooks), Headless API (TypeScript client, Hydrogen reference store). Plans: Free (Shopify App Store), Classic ($199/mo), Advanced, Plus. Route when the user asks about LoyaltyLion setup, config, features, or troubleshooting. Route when they mention LoyaltyLion, LoyaltyLion points, LoyaltyLion tiers, LoyaltyLion Klaviyo, LoyaltyLion API, LoyaltyLion Headless, LoyaltyLion POS, or loyaltylion.com. |
 
 ### Iterable & Platform
 
@@ -931,7 +955,8 @@ Some requests are ambiguous. Apply these rules:
 - **"GetResponse" / "GetResponse autoresponder" / "GetResponse automation" / "GetResponse funnel" / "GetResponse webinar" / "GetResponse course" / "GetResponse newsletter" / "GetResponse API"** → `/sales-getresponse` (platform help). Important: "campaign" in GetResponse means mailing list, not email send. If asking about email marketing strategy across tools → `/sales-email-marketing`. If asking about funnel strategy → `/sales-funnel`. If asking about webinar selling strategy → `/sales-webinar`. If asking about course/membership strategy → `/sales-membership`. If asking about lead scoring strategy → `/sales-lead-score`. If asking about live chat strategy → `/sales-live-chat`. If asking about deliverability strategy → `/sales-deliverability`. If asking about connecting GetResponse to other tools → `/sales-integration`.
 - **"Brevo" / "Sendinblue" / "Brevo campaigns" / "Brevo automation" / "Brevo journeys" / "Brevo CRM" / "Brevo API" / "Brevo SMTP" / "Brevo loyalty" / "Brevo conversations" / "Brevo WhatsApp" / "Brevo SMS" / "Brevo transactional"** → `/sales-brevo` (platform help). If asking about email marketing strategy across tools → `/sales-email-marketing`. If asking about transactional email strategy → `/sales-transactional-email`. If asking about live chat strategy → `/sales-live-chat`. If asking about loyalty program strategy → `/sales-loyalty`. If asking about deliverability strategy → `/sales-deliverability`. If asking about connecting Brevo to other tools → `/sales-integration`.
 - **"live chat" / "chat widget" / "website chat" / "chat-to-lead" / "conversational sales"** → `/sales-live-chat` for human-staffed live chat strategy and tool selection. If they mention a specific platform: Brevo Conversations → `/sales-brevo`, Drift → `/sales-salesloft`, Intercom/HubSpot/Crisp/LiveChat/Zendesk/Tidio → `/sales-live-chat`. If asking about meeting booking from chat → also recommend `/sales-meeting-scheduler`. If asking about building automated chatbot flows → `/sales-chatbot`.
-- **"loyalty program" / "loyalty points" / "loyalty tiers" / "VIP program" / "rewards program" / "customer loyalty" / "loyalty app"** → `/sales-loyalty` for strategy and tool selection. If they mention Brevo Loyalty → `/sales-brevo`. If asking about affiliate/referral programs with commission payouts → `/sales-affiliate-program`. If asking about churn prevention without a loyalty program → `/churn-prevention`.
+- **"loyalty program" / "loyalty points" / "loyalty tiers" / "VIP program" / "rewards program" / "customer loyalty" / "loyalty app"** → `/sales-loyalty` for strategy and tool selection. If they mention LoyaltyLion specifically → `/sales-loyaltylion`. If they mention Brevo Loyalty → `/sales-brevo`. If asking about affiliate/referral programs with commission payouts → `/sales-affiliate-program`. If asking about churn prevention without a loyalty program → `/churn-prevention`.
+- **"LoyaltyLion" / "LoyaltyLion points" / "LoyaltyLion tiers" / "LoyaltyLion Klaviyo" / "LoyaltyLion API" / "LoyaltyLion Headless" / "LoyaltyLion POS" / "LoyaltyLion rewards" / "loyaltylion.com"** → `/sales-loyaltylion` (platform help). If asking about loyalty strategy across tools → `/sales-loyalty`. If asking about Klaviyo platform help → `/sales-klaviyo`. If asking about email marketing strategy → `/sales-email-marketing`. If asking about connecting LoyaltyLion to other tools → `/sales-integration`.
 
 - **"ZoomInfo" / "ZoomInfo SalesOS" / "ZoomInfo MarketingOS" / "ZoomInfo OperationsOS" / "ZoomInfo Copilot" / "ZoomInfo Engage" / "ZoomInfo Chorus" / "ZoomInfo WebSights" / "ZoomInfo FormComplete" / "ZoomInfo API" / "ZoomInfo data orchestration" / "ZoomInfo intent" / "ZoomInfo Scoops"** → `/sales-zoominfo` (platform help). If asking about enrichment strategy across tools → `/sales-enrich`. If asking about intent strategy across tools → `/sales-intent`. If asking about cadence/sequence strategy → `/sales-cadence`. If asking about org chart/buying committee strategy → `/sales-account-map`. If asking about CRM data quality/dedup strategy → `/sales-data-hygiene`. If asking about B2B advertising strategy → `/sales-b2b-advertising`. If asking about call coaching strategy → `/sales-call-review`. If asking about live chat strategy → `/sales-live-chat`. If asking about building prospect lists → `/sales-prospect-list`. If asking about connecting ZoomInfo to other tools → `/sales-integration`.
 - **"data hygiene" / "CRM cleanup" / "deduplication" / "deduplicate" / "data decay" / "stale CRM data" / "data quality" / "CRM dedup" / "data orchestration" / "normalize job titles"** → `/sales-data-hygiene` for CRM data quality strategy. If they mention ZoomInfo OperationsOS → `/sales-zoominfo`. If asking about one-time enrichment → `/sales-enrich`. If asking about building prospect lists → `/sales-prospect-list`. NOT `/sales-enrich` (which is about getting new data, not cleaning existing data).
