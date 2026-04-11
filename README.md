@@ -1,6 +1,6 @@
 # Sales Skills
 
-[![Skills](https://img.shields.io/badge/skills-128-blue)](https://skills.sh/sales-skills/sales)
+[![Skills](https://img.shields.io/badge/skills-129-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
@@ -246,6 +246,12 @@ Router recommends a 5-skill sequence:
 |---|---|
 | `/sales-modash` | Modash platform help — influencer marketing for Shopify brands with creator discovery (350M+ profiles on Instagram, TikTok, YouTube), audience analysis (demographics, fake follower detection), campaign management (auto-tracking, ROAS, EMV, CPM), creator payments (180+ countries), product gifting, affiliate tracking, promo codes, Discovery API, Raw API, AI Search API, Collaborations API |
 
+### Influencity & Platform
+
+| Skill | What it does |
+|---|---|
+| `/sales-influencity` | Influencity platform help — all-in-one influencer marketing with Discover (200M+ profiles on Instagram, TikTok, YouTube), IRM (influencer relationship management, audience analysis, fake follower detection), Campaigns (workflow visualization, Shopify gifting, coupon tracking, bulk email outreach), Reports (publication performance, PDF/Excel export), Social Hub (multi-channel content calendar, approval workflows), Monitoring (brand tracking, competitor analysis, 100M+ sources), Influencer Payments, credit system (Monthly Results, Monthly Analyses, Monthly Post Analyses) |
+
 ### Hypefy & Platform
 
 | Skill | What it does |
@@ -256,7 +262,7 @@ Router recommends a 5-skill sequence:
 
 | Skill | What it does |
 |---|---|
-| `/sales-influencer-marketing` | Influencer marketing strategy across platforms (Modash, influData, Creator.co, Hypefy, LTK) — platform comparison, creator discovery workflow, vetting framework (fake followers, audience quality), outreach templates, campaign tracking and ROI measurement, product gifting programs, influencer affiliate programs, creator rate benchmarks |
+| `/sales-influencer-marketing` | Influencer marketing strategy across platforms (Modash, influData, Creator.co, Hypefy, LTK, Influencity) — platform comparison, creator discovery workflow, vetting framework (fake followers, audience quality), outreach templates, campaign tracking and ROI measurement, product gifting programs, influencer affiliate programs, creator rate benchmarks |
 
 ### MicroLaunch & Platform
 

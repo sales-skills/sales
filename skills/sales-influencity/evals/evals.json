@@ -1,0 +1,26 @@
+[
+  {
+    "prompt": "I'm on the Professional plan and keep running out of analysis credits before I can vet enough influencers for my campaign. What should I do?",
+    "assertions": [
+      "Explains that Monthly Analyses are consumed when refreshing creator profiles in IRM and the Professional plan includes a limited number of them",
+      "Suggests credit optimization strategies like narrowing Discover filters before analyzing and avoiding repeated profile refreshes",
+      "Mentions upgrading to the Business plan as an option for more analysis credits"
+    ]
+  },
+  {
+    "prompt": "How do I set up product gifting through Influencity with my Shopify store?",
+    "assertions": [
+      "Describes connecting Shopify to Influencity via API token in account settings",
+      "Explains the workflow of selecting products from the Shopify catalog within Influencity campaigns",
+      "Mentions that only Shopify is supported for native ecommerce integration and other platforms like WooCommerce are not available"
+    ]
+  },
+  {
+    "prompt": "I'm an agency deciding between Influencity and Modash for my clients. What are the key differences?",
+    "assertions": [
+      "Compares Influencity and Modash on relevant dimensions like database size, social listening capability, and ecommerce integration depth",
+      "Notes that Influencity offers social media management features (Social Hub, Monitoring) that Modash does not have",
+      "Routes to /sales-influencer-marketing or /sales-modash for deeper cross-platform comparison or Modash-specific guidance"
+    ]
+  }
+]
