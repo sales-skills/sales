@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-saashunt",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Is SaaSHunt worth submitting to for SEO backlinks? How does it compare to other directories?",
+      "expected_output": "Explains SaaSHunt offers a free dofollow backlink at DR49, which is mid-range among directories. Compares with higher-DR alternatives and recommends as part of a broader submission sweep.",
+      "assertions": [
+        {"name": "dr_value", "description": "States SaaSHunt has a dofollow backlink around DR49 and explains this is mid-range compared to other directories"},
+        {"name": "comparison", "description": "Compares with at least one higher-DR directory like Uneed, Fazier, or Product Hunt to provide context on where SaaSHunt ranks"},
+        {"name": "traffic_reality", "description": "Notes that SaaSHunt has very low traffic and positions the value primarily as a backlink play rather than a traffic or lead generation source"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "How do I submit my product to SaaSHunt and what's the process?",
+      "expected_output": "Walks through the template-based submission process including downloading the Excel template, filling it out, and uploading via the web form.",
+      "assertions": [
+        {"name": "template_process", "description": "Describes the template-based submission — downloading an Excel template, filling it out offline, and uploading it, which is different from typical online form submissions"},
+        {"name": "required_info", "description": "Mentions the key information needed including product details, category selection, and contact information"},
+        {"name": "categories", "description": "References the limited category structure covering business software categories like HR, CRM, Accounting, ERP, Marketing, or Project Management"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Where does SaaSHunt fit in a multi-directory launch strategy?",
+      "expected_output": "Places SaaSHunt in Phase 3 (free editorial queues) alongside other slow-review directories. Recommends submitting as a set-and-forget play for cumulative backlink value.",
+      "assertions": [
+        {"name": "phase_placement", "description": "Places SaaSHunt in the free editorial queue phase rather than instant-listing or paid fast-track phases"},
+        {"name": "submit_early", "description": "Recommends submitting early alongside other free-queue directories since the review timeline is unclear and it runs in parallel"},
+        {"name": "realistic_expectations", "description": "Sets realistic expectations about very low traffic and positions the DR49 backlink as mid-range cumulative value in a broader directory strategy"}
+      ]
+    }
+  ]
+}
