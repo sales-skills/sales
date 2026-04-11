@@ -18,7 +18,7 @@ A platform can belong to **multiple** meta skills (e.g., a platform with email +
 | `/sales-checkout` | Checkout optimization | GrooveSell, ThriveCart, SamCart, Stripe, Paddle, Gumroad, Shopify, WooCommerce, Lemon Squeezy |
 | `/sales-digital-products` | Digital product sales | Kit Commerce, Gumroad, Lemon Squeezy, SendOwl, Podia |
 | `/sales-affiliate-program` | Affiliate programs | GrooveAffiliate, PartnerStack, Refersion, ShareASale, Creator.co, Modash, LTK, CreatorIQ |
-| `/sales-influencer-marketing` | Influencer marketing | Modash, influData, Creator.co, Hypefy, LTK, Influencity, Meltwater, Skeepers, Heepsy, CreatorIQ, Afluencer |
+| `/sales-influencer-marketing` | Influencer marketing | Modash, influData, Creator.co, Hypefy, LTK, Influencity, Meltwater, Brandwatch, Skeepers, Heepsy, CreatorIQ, Afluencer |
 | `/sales-webinar` | Webinar selling | GrooveWebinar, Demio, WebinarJam, Zoom, GoToWebinar, GetResponse |
 | `/sales-membership` | Membership / courses | GrooveMember, Kajabi, Teachable, Mighty Networks |
 | `/sales-transactional-email` | Transactional email | SendGrid, Postmark, Mailgun, Brevo, Customer.io, SES |

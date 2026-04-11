@@ -1,8 +1,8 @@
 # Sales Skills
 
-**AI-powered sales copilot — 139 skills for prospecting, outbound, deals, proposals, and GTM. One install, one router.**
+**AI-powered sales copilot — 140 skills for prospecting, outbound, deals, proposals, and GTM. One install, one router.**
 
-[![Skills](https://img.shields.io/badge/skills-140-blue)](https://skills.sh/sales-skills/sales)
+[![Skills](https://img.shields.io/badge/skills-141-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
@@ -265,11 +265,12 @@ Router recommends a 5-skill sequence:
 </details>
 
 <details>
-<summary><strong>Media Intelligence & PR</strong> (5 skills)</summary>
+<summary><strong>Media Intelligence & PR</strong> (6 skills)</summary>
 
 | Skill | What it does |
 |---|---|
 | `/sales-meltwater` | Meltwater — media intelligence, social listening, media relations, influencer marketing, Mira AI, API |
+| `/sales-brandwatch` | Brandwatch — Consumer Intelligence (100M+ sources), Social Media Management, Influence, 6 REST APIs |
 | `/sales-brandjet` | BrandJet AI — multi-channel outreach, brand monitoring, AI visibility monitoring, Artemis MCP, unified inbox |
 | `/sales-social-listening` | Social listening strategy — brand monitoring, sentiment analysis, competitive intelligence, crisis detection |
 | `/sales-ai-visibility` | AI visibility monitoring — track brand mentions in ChatGPT, Claude, Perplexity, Gemini, AI Overviews |
