@@ -18,7 +18,7 @@ A platform can belong to **multiple** meta skills (e.g., a platform with email +
 | `/sales-checkout` | Checkout optimization | GrooveSell, ThriveCart, SamCart, Stripe, Paddle, Gumroad, Shopify, WooCommerce, Lemon Squeezy |
 | `/sales-digital-products` | Digital product sales | Kit Commerce, Gumroad, Lemon Squeezy, SendOwl, Podia |
 | `/sales-affiliate-program` | Affiliate programs | GrooveAffiliate, PartnerStack, Refersion, ShareASale, Creator.co, Modash, LTK, CreatorIQ |
-| `/sales-influencer-marketing` | Influencer marketing | Modash, influData, Creator.co, Hypefy, LTK, Influencity, Meltwater, Brandwatch, Sprout Social, Skeepers, Heepsy, CreatorIQ, Afluencer, Collabstr |
+| `/sales-influencer-marketing` | Influencer marketing | Modash, influData, Creator.co, Hypefy, LTK, Influencity, Meltwater, Brandwatch, Sprout Social, Skeepers, Heepsy, CreatorIQ, Afluencer, Collabstr, Cloutboost |
 | `/sales-webinar` | Webinar selling | GrooveWebinar, Demio, WebinarJam, Zoom, GoToWebinar, GetResponse |
 | `/sales-membership` | Membership / courses | GrooveMember, Kajabi, Teachable, Mighty Networks |
 | `/sales-transactional-email` | Transactional email | SendGrid, Postmark, Mailgun, Brevo, Customer.io, SES |
@@ -30,7 +30,7 @@ A platform can belong to **multiple** meta skills (e.g., a platform with email +
 | `/sales-loyalty` | Loyalty programs | Brevo Loyalty, Smile.io, LoyaltyLion, Yotpo, Skeepers |
 | `/sales-data-hygiene` | CRM data quality | ZoomInfo OperationsOS, Salesforce, HubSpot Operations Hub, Clay, LeanData, DemandTools, Attio |
 | `/sales-b2b-advertising` | B2B / ABM advertising | ZoomInfo MarketingOS, Demandbase, 6sense, Terminus, RollWorks, LinkedIn Ads, Reddit Ads |
-| `/sales-retargeting` | Retargeting / remarketing | AdRoll, Google Ads, Meta, Criteo, LinkedIn, Retention.com, Reddit Ads |
+| `/sales-retargeting` | Retargeting / remarketing | AdRoll, Google Ads, Meta, Criteo, LinkedIn, Retention.com, Reddit Ads, Cloutboost |
 | `/sales-meeting-scheduler` | Meeting scheduling | Calendly, Chili Piper, Mixmax, Yesware |
 | `/sales-enrich` | Contact enrichment | Apollo, ZoomInfo, Clearbit, Clay, Hunter.io, Tomba, Prospeo, Mailmo, Seamless.AI, Enrich.so, Minelead, GetProspect, Skrapp, Anymail Finder, LeadMagic, Snov.io, Lobstr.io, OpenWeb Ninja, Outscraper, Attio, BrandJet |
 | `/sales-integration` | Tool integration | Any platform ↔ CRM, Zapier, Make, webhooks, API pipelines, Attio |
@@ -40,7 +40,8 @@ A platform can belong to **multiple** meta skills (e.g., a platform with email +
 | `/sales-coaching` | Sales coaching | Seismic, Allego, Salesloft Conversations, ZoomInfo Chorus |
 | `/sales-social-listening` | Social listening & brand monitoring | Meltwater, Brandwatch, Talkwalker, Brand24, Sprout Social, Mention, Hootsuite, BrandJet |
 | `/sales-ai-visibility` | AI visibility monitoring | BrandJet, Otterly, Topify, Sight AI, LLMrefs, Semrush AI Visibility, Ahrefs Brand Radar, Meltwater |
-| `/sales-media-relations` | Media relations & PR outreach | Meltwater, Cision, Muck Rack, Prowly, Agility PR, BuzzStream |
+| `/sales-media-relations` | Media relations & PR outreach | Meltwater, Cision, Muck Rack, Prowly, Agility PR, BuzzStream, Cloutboost |
+| `/sales-gaming-marketing` | Gaming influencer marketing | Cloutboost, Keymailer, Lurkit, GameInfluencer |
 | `/sales-customer-reviews` | Product review collection & syndication | Skeepers, Yotpo, Judge.me, Bazaarvoice, Loox, Okendo, Stamped, PowerReviews, Trustpilot |
 | `/sales-social-media-management` | Social media management | Sprout Social, Hootsuite, Buffer, Agorapulse, Sendible, Later, Brandwatch, Meltwater Engage, Planable, Statusbrew |
 | `/sales-employee-advocacy` | Employee advocacy | Sprout Social, Hootsuite Amplify, DSMN8, GaggleAMP, EveryoneSocial, Sociabble |

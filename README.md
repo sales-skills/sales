@@ -1,8 +1,8 @@
 # Sales Skills
 
-**AI-powered sales copilot — 144 skills for prospecting, outbound, deals, proposals, and GTM. One install, one router.**
+**AI-powered sales copilot — 146 skills for prospecting, outbound, deals, proposals, and GTM. One install, one router.**
 
-[![Skills](https://img.shields.io/badge/skills-145-blue)](https://skills.sh/sales-skills/sales)
+[![Skills](https://img.shields.io/badge/skills-147-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
@@ -282,7 +282,7 @@ Router recommends a 5-skill sequence:
 </details>
 
 <details>
-<summary><strong>Influencer Marketing</strong> (13 skills)</summary>
+<summary><strong>Influencer Marketing</strong> (15 skills)</summary>
 
 | Skill | What it does |
 |---|---|
@@ -298,7 +298,19 @@ Router recommends a 5-skill sequence:
 | `/sales-creatoriq` | CreatorIQ — enterprise influencer OS, Creator Graph (~20M profiles), SafeIQ, BenchmarkIQ, ExchangeIQ API |
 | `/sales-afluencer` | Afluencer — micro-influencer marketplace, Collab listings, Shopify/BigCommerce gifting, invitation credits |
 | `/sales-collabstr` | Collabstr — influencer and UGC creator marketplace, vetted creators, escrow payments, campaign posting |
+| `/sales-cloutboost` | Cloutboost — gaming influencer marketing platform (1.5M+ creators), Portal discovery, campaign management, retargeting, PR |
+| `/sales-gaming-marketing` | Gaming influencer marketing strategy — streamer partnerships, game launch campaigns, budget allocation, ROI |
 | `/sales-influencer-marketing` | Influencer marketing strategy — platform comparison, creator discovery, vetting, campaign tracking |
+
+</details>
+
+<details>
+<summary><strong>Gaming Marketing</strong> (2 skills)</summary>
+
+| Skill | What it does |
+|---|---|
+| `/sales-cloutboost` | Cloutboost — gaming influencer marketing platform (1.5M+ creators), Portal discovery, campaign management, retargeting, PR |
+| `/sales-gaming-marketing` | Gaming influencer marketing strategy — streamer partnerships, game launch campaigns, budget allocation, ROI |
 
 </details>
 

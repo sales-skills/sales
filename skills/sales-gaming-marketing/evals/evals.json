@@ -1,0 +1,26 @@
+[
+  {
+    "prompt": "I'm launching an indie roguelike on Steam in 2 months. Budget is $5K. How should I plan my influencer campaign?",
+    "assertions": [
+      "Provides a week-by-week or phased campaign plan covering pre-launch through launch day activities",
+      "Recommends a mix of creator tiers appropriate for the budget, including free key distribution to nano creators and paid partnerships with micro or mid-tier creators",
+      "Includes gaming-specific metrics like wishlists and explains how to track attribution via Steam UTM links or similar methods"
+    ]
+  },
+  {
+    "prompt": "How do I find Twitch streamers who play survival horror games?",
+    "assertions": [
+      "Suggests specific discovery methods including gaming-focused tools like Cloutboost Portal, Twitch directory browsing, or analytics sites like SullyGnome or TwitchTracker",
+      "Recommends filtering by game genre and checking if creators regularly play survival horror rather than just one-off sponsored content",
+      "Mentions vetting steps specific to gaming creators like checking genre alignment, completion rate, and audience platform match"
+    ]
+  },
+  {
+    "prompt": "We spent $20K on gaming YouTubers for our game launch. Views were good but sales were disappointing. What went wrong?",
+    "assertions": [
+      "Explores possible causes including missing attribution setup, audience-game mismatch, or content that didn't drive purchase intent",
+      "Explains how to retroactively analyze the campaign using wishlist timing correlation, Steam traffic sources, or post-purchase surveys",
+      "Provides actionable recommendations for improving future campaigns such as requiring Steam links, better creator-genre vetting, or adding demo coverage"
+    ]
+  }
+]

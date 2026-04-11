@@ -191,6 +191,16 @@ AVE (multiplying ad rates by coverage area) is widely discredited. Use instead:
 - **Share of voice change** — did your SOV increase after the campaign?
 - **Website traffic from coverage** — UTM tracking or referral traffic in analytics
 
+### In Cloutboost (Gaming PR)
+
+Cloutboost offers PR services specifically for the gaming industry as part of their managed agency service:
+
+- **Gaming media focus**: Specialized relationships with gaming press outlets, reviewers, and editors
+- **Services**: Press release creation and distribution, review key management and distribution, press kit creation, media coverage tracking
+- **Integrated with influencer campaigns**: PR runs alongside influencer marketing — one agency coordinates both earned media and creator partnerships for game launches
+- **Best for**: Game publishers and studios who want gaming PR bundled with influencer marketing in a single agency relationship. Eliminates the need for a separate PR agency for gaming media.
+- **Limitation**: Gaming-only. Not a journalist database — Cloutboost handles outreach directly as a managed service. No self-serve PR tools. Requires $5K+ managed service engagement.
+
 ## Step 4 — Actionable guidance
 
 Based on the user's specific question:
@@ -218,6 +228,8 @@ Based on the user's specific question:
 - `/sales-social-listening` — Cross-platform social listening and brand monitoring strategy
 - `/sales-influencer-marketing` — Influencer marketing strategy (creator outreach is different from journalist outreach)
 - `/sales-cadence` — Outbound sequence design (adaptable to PR outreach cadences)
+- `/sales-cloutboost` — Cloutboost platform help — gaming PR, influencer discovery, campaign management
+- `/sales-gaming-marketing` — Gaming influencer marketing strategy — streamer partnerships, game launch campaigns
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

@@ -1,6 +1,6 @@
 ---
 name: sales-do
-description: "Routes any sales, marketing, or GTM objective to the right specialized skill. Covers 127 first-party skills and 53 third-party skills across prospecting, outbound, deals, proposals, forecasting, deliverability, enrichment, intent signals, content, coaching, CRO, SEO, social listening, social media management, employee advocacy, media relations, customer reviews, data hygiene, B2B advertising, retargeting, chatbots, and platform help for Attio, Apollo, Salesloft, Mailshake, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter, Tomba, Prospeo, Mailmo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, Brevo, Braze, Iterable, GetResponse, Seismic, Allego, Groove, Kit (ConvertKit), Omnisend, ZoomInfo, SendPulse, Clearbit, RB2B, Retention.com, 6sense, Clay, LeadMagic, AdRoll, SWAI, Tagshop, influData, Creator.co, Hypefy, LTK, Influencity, Meltwater, Brandwatch, Sprout Social, Skeepers, Heepsy, CreatorIQ, Afluencer, Collabstr, LoyaltyLion, MicroLaunch, LaunchingNext, SideProjectors, ProductBurst, SoloPush, CtrlAlt.cc, Open Launch, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, Reddit Ads, Semrush, BrandJet, Indie Hackers, Altern, Lobsters, StartupBase, Startup Stash, PitchWall, Futurepedia, LaunchCaster, BetaList, SaaSHunt, Resource.fyi, LaunchVibe, and Qwilr. Use when you have a sales or marketing question and are not sure which skill to use. Do NOT use to solve problems directly — this skill only routes."
+description: "Routes any sales, marketing, or GTM objective to the right specialized skill. Covers 127 first-party skills and 53 third-party skills across prospecting, outbound, deals, proposals, forecasting, deliverability, enrichment, intent signals, content, coaching, CRO, SEO, social listening, social media management, employee advocacy, media relations, customer reviews, data hygiene, B2B advertising, retargeting, chatbots, and platform help for Attio, Apollo, Salesloft, Mailshake, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter, Tomba, Prospeo, Mailmo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, Brevo, Braze, Iterable, GetResponse, Seismic, Allego, Groove, Kit (ConvertKit), Omnisend, ZoomInfo, SendPulse, Clearbit, RB2B, Retention.com, 6sense, Clay, LeadMagic, AdRoll, SWAI, Tagshop, influData, Creator.co, Hypefy, LTK, Influencity, Meltwater, Brandwatch, Sprout Social, Skeepers, Heepsy, CreatorIQ, Afluencer, Collabstr, Cloutboost, LoyaltyLion, MicroLaunch, LaunchingNext, SideProjectors, ProductBurst, SoloPush, CtrlAlt.cc, Open Launch, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, Reddit Ads, Semrush, BrandJet, Indie Hackers, Altern, Lobsters, StartupBase, Startup Stash, PitchWall, Futurepedia, LaunchCaster, BetaList, SaaSHunt, Resource.fyi, LaunchVibe, and Qwilr. Use when you have a sales or marketing question and are not sure which skill to use. Do NOT use to solve problems directly — this skill only routes."
 version: 1.0.0
 tags: [sales, router, skill-discovery]
 ---
@@ -429,11 +429,23 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 |---|---|
 | `/sales-collabstr` | User asks about Collabstr platform, Collabstr influencer search, Collabstr UGC creators, Collabstr campaign posting, Collabstr order placement, Collabstr escrow payment, Collabstr content submissions, Collabstr revisions, Collabstr analytics dashboard, Collabstr team management, Collabstr Bring Your Own Creators, Collabstr marketplace fee, Collabstr Pro/Premium plan, Collabstr pricing, or Collabstr vs other influencer platforms |
 
+### Cloutboost & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-cloutboost` | User asks about Cloutboost platform, Cloutboost Portal, Cloutboost gaming influencer discovery, Cloutboost campaign management, Cloutboost analytics, Cloutboost retargeting, Cloutboost PR services, Cloutboost pricing, Cloutboost Indie/Studio/Scale/Agency plan, Cloutboost managed service, Cloutboost API, or Cloutboost vs other gaming influencer agencies |
+
+### Gaming Influencer Marketing Strategy
+
+| Skill | Route when... |
+|---|---|
+| `/sales-gaming-marketing` | User asks about gaming influencer marketing strategy, finding gaming creators or streamers, planning a game launch influencer campaign, budgeting for gaming influencer marketing, choosing a gaming influencer agency (Cloutboost vs Keymailer vs Lurkit vs GameInfluencer), gaming-specific creator outreach, Twitch streamer partnerships, YouTube Let's Play sponsorships, game key gifting programs, measuring gaming influencer ROI (wishlists, installs, concurrent players), or game launch campaign sequencing |
+
 ### Influencer Marketing Strategy
 
 | Skill | Route when... |
 |---|---|
-| `/sales-influencer-marketing` | User asks about influencer marketing strategy across platforms, choosing an influencer platform (Modash vs influData vs Creator.co vs Hypefy vs LTK vs Influencity vs Meltwater vs Skeepers vs Heepsy vs CreatorIQ vs Afluencer vs Collabstr), influencer discovery workflow, creator vetting framework, influencer outreach templates, influencer campaign ROI measurement, product gifting programs, influencer affiliate programs, or creator rate benchmarks |
+| `/sales-influencer-marketing` | User asks about influencer marketing strategy across platforms, choosing an influencer platform (Modash vs influData vs Creator.co vs Hypefy vs LTK vs Influencity vs Meltwater vs Skeepers vs Heepsy vs CreatorIQ vs Afluencer vs Collabstr vs Cloutboost), influencer discovery workflow, creator vetting framework, influencer outreach templates, influencer campaign ROI measurement, product gifting programs, influencer affiliate programs, or creator rate benchmarks |
 
 ### MicroLaunch & Platform
 

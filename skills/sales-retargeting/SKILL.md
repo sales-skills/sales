@@ -181,6 +181,14 @@ Reddit supports website visitor retargeting and engagement-based remarketing:
 
 **Best for**: Brands with Reddit-savvy audiences (tech, gaming, finance, SaaS). Pair with Meta/Google retargeting for cross-channel coverage. Not a replacement for Meta DPA at scale but a strong complementary channel.
 
+### In Cloutboost (Gaming influencer content retargeting)
+- **Influencer content → paid ads**: Cloutboost's retargeting service repurposes gaming influencer content (YouTube videos, Twitch streams, TikTok clips) into paid ad formats. Targets users who engaged with the original influencer content.
+- **Gaming-specific**: Exclusively focused on gaming audiences. Retargets users who watched, liked, or commented on gaming influencer content about your game.
+- **Claimed 3x CTR improvement** over standard creative when using influencer-generated content for retargeting ads.
+- **Managed service only**: Retargeting is not available through the self-serve Portal — requires Cloutboost's agency service ($5K+ minimum budget).
+- **Best for**: Game publishers and studios who ran influencer campaigns and want to convert awareness into installs/purchases through paid retargeting of engaged viewers.
+- **Limitation**: Gaming-only. No ecommerce or general retargeting capabilities. Performance claims are self-reported — benchmark against your own data.
+
 ### In Retention.com (Identity resolution retargeting)
 - **Anonymous → known**: Retention.com identifies anonymous visitors using third-party data, converting them to email/SMS contacts for retargeting without opt-in.
 - **Reclaim product**: Captures abandonment events (cart, checkout, browse) that ESPs miss because the visitor was anonymous. Pushes identified contacts to Klaviyo, Mailchimp, etc. for abandonment flows.
@@ -248,6 +256,8 @@ Reddit supports website visitor retargeting and engagement-based remarketing:
 - `/sales-klaviyo` — Klaviyo platform help (email/SMS retargeting flows for ecommerce)
 - `/sales-omnisend` — Omnisend platform help (email/SMS retargeting for ecommerce)
 - `/sales-reddit-ads` — Reddit Ads platform help (subreddit targeting, website retargeting, engagement audiences)
+- `/sales-cloutboost` — Cloutboost platform help — gaming influencer retargeting, Portal discovery, campaign management
+- `/sales-gaming-marketing` — Gaming influencer marketing strategy — streamer partnerships, game launch campaigns
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples
