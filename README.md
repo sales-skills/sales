@@ -1,6 +1,6 @@
 # Sales Skills
 
-[![Skills](https://img.shields.io/badge/skills-127-blue)](https://skills.sh/sales-skills/sales)
+[![Skills](https://img.shields.io/badge/skills-128-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
@@ -256,7 +256,7 @@ Router recommends a 5-skill sequence:
 
 | Skill | What it does |
 |---|---|
-| `/sales-influencer-marketing` | Influencer marketing strategy across platforms (Modash, influData, Creator.co, Hypefy) — platform comparison, creator discovery workflow, vetting framework (fake followers, audience quality), outreach templates, campaign tracking and ROI measurement, product gifting programs, influencer affiliate programs, creator rate benchmarks |
+| `/sales-influencer-marketing` | Influencer marketing strategy across platforms (Modash, influData, Creator.co, Hypefy, LTK) — platform comparison, creator discovery workflow, vetting framework (fake followers, audience quality), outreach templates, campaign tracking and ROI measurement, product gifting programs, influencer affiliate programs, creator rate benchmarks |
 
 ### MicroLaunch & Platform
 
@@ -618,6 +618,12 @@ Router recommends a 5-skill sequence:
 | Skill | What it does |
 |---|---|
 | `/sales-loyaltylion` | LoyaltyLion platform help — points, tiers, rewards, referrals, custom loyalty pages, receipt upload (omnichannel), AI recommendations, analytics, Klaviyo Events (Elite Master Partner), Shopify POS, Admin API + Headless API (TypeScript client, Hydrogen reference store) |
+
+### LTK & Platform
+
+| Skill | What it does |
+|---|---|
+| `/sales-ltk` | LTK (formerly rewardStyle / LIKEtoKNOW.it) platform help — creator commerce and influencer marketing for brands. Brand Platform (free: Brand Profiles, Creator Discovery, Gifting & Codes, Creator CRM, Content Library, Dashboard, Leaderboards), LTK Connect (self-serve campaigns: Launch $99/mo, Pro $999/mo, Enterprise), LTK Optimize (managed service), LTK Ads, LTK Boost, LTK CTV (Connected TV), LTK 360 (analytics), LTK AI (creator matching), LTK RMN (retail media network) |
 
 ### Omnisend & Platform
 

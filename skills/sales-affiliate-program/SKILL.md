@@ -207,6 +207,7 @@ Best for enterprise-level partnership programs.
 
 ### Other Platforms (Brief)
 
+- **LTK**: Creator commerce platform with built-in commission/affiliate model. 300K+ creators, 40M+ monthly shoppers on LTK App. Brands set commission rates (10% min, 15%+ recommended), creators earn on sales through LTK links. Free Brand Platform for discovery and gifting; Connect plans ($99-999+/mo) for structured campaigns. Best for DTC/ecommerce brands wanting influencer-driven affiliate sales. See `/sales-ltk` for full platform help.
 - **ReferralCandy**: E-commerce focused; integrates with Shopify, WooCommerce; automated reward fulfillment
 - **Tapfiliate**: Flexible tracking for SaaS and e-commerce; supports multi-level commissions; good API
 - **Post Affiliate Pro**: Self-hosted option with 200+ integrations; highly customizable; good for complex setups
@@ -286,6 +287,7 @@ Create a structured onboarding experience:
 - `/sales-checkout` — Optimize checkout pages that affiliates send traffic to, increasing their conversion rates and your revenue
 - `/sales-funnel` — Design the funnels your affiliates will promote, including front-end offers and upsell sequences
 - `/sales-email-marketing` — Build affiliate onboarding sequences and ongoing communication cadences
+- `/sales-ltk` — LTK platform help — creator commerce with built-in commission/affiliate model
 - `/sales-do` — Route to the right skill when you are unsure where to start
 
 ## Examples

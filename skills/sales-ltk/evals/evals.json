@@ -1,0 +1,35 @@
+{
+  "skill_name": "sales-ltk",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I'm a DTC beauty brand and want to start using LTK to work with influencers. How do I get started?",
+      "expected_output": "Step-by-step guide to getting started with the LTK Brand Platform and creator outreach",
+      "assertions": [
+        {"name": "free_platform", "description": "Response mentions the free Brand Platform as a starting point, noting that it includes creator discovery, gifting, and a dashboard at no cost"},
+        {"name": "creator_discovery", "description": "Response explains how to find relevant creators using LTK's discovery tools, mentioning category or audience matching"},
+        {"name": "gifting_workflow", "description": "Response describes a gifting or product seeding approach as an initial strategy before paid campaigns"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "What's the difference between LTK Connect Launch, Pro, and Enterprise? Which should I pick?",
+      "expected_output": "Comparison of LTK Connect pricing tiers with recommendations",
+      "assertions": [
+        {"name": "tier_comparison", "description": "Response compares at least the three Connect tiers covering price points and creator limits per month"},
+        {"name": "spend_caps", "description": "Response mentions yearly spend limits or caps that differ between tiers"},
+        {"name": "recommendation", "description": "Response provides guidance on which tier suits different brand sizes or campaign volumes"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I want to amplify a creator's post about my product. What LTK ad products can I use?",
+      "expected_output": "Overview of LTK's paid amplification options including Boost, Ads, and CTV",
+      "assertions": [
+        {"name": "boost", "description": "Response explains LTK Boost as a way to amplify specific creator content with paid media"},
+        {"name": "multiple_products", "description": "Response mentions at least two paid amplification products beyond just Boost, such as LTK Ads or LTK CTV"},
+        {"name": "use_case_matching", "description": "Response suggests which product fits the user's scenario of amplifying an existing creator post"}
+      ]
+    }
+  ]
+}
