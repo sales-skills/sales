@@ -1,6 +1,6 @@
 ---
 name: sales-infludata
-description: "influData platform help — AI-powered influencer marketing for creator discovery, audience analysis, and campaign tracking. Covers prompt-based creator search (20M+ profiles across Instagram, TikTok, YouTube, Twitch, Snapchat, Facebook), audience demographics (50+ metrics, fake follower detection, overlap analysis), campaign management (real-time tracking, EMV/CPM/reach KPIs, sentiment analysis, shitstorm detection), social listening (brand mentions, hashtag tracking, UGC discovery), outreach mailing (creator email campaigns, templates, tracking), Co-Pilot AI, Chrome extension, and lookalike builder. Use when searching for influencers, analyzing creator audiences, tracking influencer campaigns, setting up social listening, sending creator outreach, or choosing an influData plan. Do NOT use for ad campaign strategy (use /sales-retargeting or /sales-b2b-advertising), email marketing to subscribers (use /sales-email-marketing), or affiliate program design (use /sales-affiliate-program)."
+description: "influData platform help — AI-powered influencer marketing for creator discovery, audience analysis, and campaign tracking. Covers prompt-based creator search (20M+ profiles across Instagram, TikTok, YouTube, Twitch, Snapchat, Facebook, LinkedIn), audience demographics (50+ metrics, fake follower detection, overlap analysis), campaign management (real-time tracking, EMV/CPM/reach KPIs, sentiment analysis, shitstorm detection), social listening (brand mentions, hashtag tracking, UGC discovery), outreach mailing (creator email campaigns with per-plan limits, templates, tracking), Co-Pilot AI, Chrome extension, and lookalike builder. Use when searching for influencers, analyzing creator audiences, tracking influencer campaigns, setting up social listening, sending creator outreach, or choosing an influData plan. Do NOT use for ad campaign strategy (use /sales-retargeting or /sales-b2b-advertising), email marketing to subscribers (use /sales-email-marketing), or affiliate program design (use /sales-affiliate-program)."
 argument-hint: "[describe what you need help with in influData]"
 license: MIT
 version: 1.0.0
@@ -57,7 +57,7 @@ Otherwise, answer directly from platform knowledge below.
 
 ### Creator Discovery
 
-influData's AI-powered search finds creators across 20M+ profiles on Instagram (15M), TikTok (10M), YouTube (5M+), Twitch (~100K), Snapchat, and Facebook.
+influData's AI-powered search finds creators across 20M+ profiles on Instagram (15M), TikTok (10M), YouTube (5M+), Twitch (~100K), Snapchat, Facebook, and LinkedIn.
 
 #### Prompt-based AI search
 - Type natural-language queries: "fitness influencers in Germany with 50K-200K followers who post about home workouts"
@@ -139,13 +139,15 @@ Monitor brand mentions and discover UGC across platforms.
 
 ### Outreach & Mailing
 
-Send creator email campaigns directly from influData (newer feature).
+Send creator email campaigns directly from influData.
 
 - **Email campaigns** — send personalized outreach to creators from the platform
 - **Dynamic placeholders** — merge fields for creator name, handle, audience size, etc.
 - **Templates** — save and reuse outreach templates
 - **Tracking** — open rate, reply rate, bounce rate
+- **Email validation** — built-in deliverability checks before sending
 - **Built-in inbox** — manage creator replies without switching to your email client
+- **Monthly limits**: Pro (20 emails/mo), All-In (100 emails/mo), Enterprise (500 emails/mo)
 
 ### Co-Pilot AI
 
@@ -168,18 +170,19 @@ View creator insights directly on Instagram and TikTok without leaving the platf
 
 *Best-effort — verify at infludata.com/pricing. All plans require 12-month minimum contract.*
 
-| Plan | Price | Platforms | Audience reports/yr | Campaign seats | Social listening trackers | Key gated features |
-|---|---|---|---|---|---|---|
-| Pro | €599/mo | Instagram, TikTok, YouTube | 300 | 10 | 3 | Core search + analysis, Chrome extension, exports |
-| All-In | €1,199/mo | All 6 platforms | 1,200 | 30 | 10 | Content search, lookalikes, sentiment, brand analytics, 3 team members |
-| Enterprise | Custom | All 6 platforms | Unlimited (fair use) | 60 | 20 | API, SSO, SLA, custom data import, Airtable access, 5 team members |
+| Plan | Price | Platforms | Audience reports/yr | Campaign seats | Mailing/mo | Sentiment/yr | Social listening | Team members | Key gated features |
+|---|---|---|---|---|---|---|---|---|---|
+| Pro | €599/mo | IG, TT, YT | 300 | 10 | 20 | 10 | 3 trackers | 1 | Core search + analysis, Chrome extension, exports |
+| All-In | €1,199/mo | All 7 platforms | 1,200 | 30 | 100 | 30 | 10 trackers | 3 | Content search, lookalikes, brand analytics, 2 orgs |
+| Enterprise | Custom | All 7 platforms | Unlimited (fair use) | 60 | 500 | 120 | 20 trackers | 5 | API, SSO, SLA, custom data import, Airtable access |
 
 **Important plan-gated features:**
 - **Content search** — All-In and above only
 - **Lookalike builder** — All-In and above only
 - **Sentiment analytics / shitstorm detection** — All-In and above only
 - **API access** — Enterprise only
-- **Snapchat and Facebook** — All-In and above only (Pro covers Instagram, TikTok, YouTube)
+- **Snapchat, Facebook, and LinkedIn** — All-In and above only (Pro covers Instagram, TikTok, YouTube)
+- **Creator mailing** — limited per plan: Pro (20/mo), All-In (100/mo), Enterprise (500/mo)
 
 ### API
 
@@ -215,7 +218,7 @@ Based on the user's specific question:
 
 - **Audience reports are rationed.** Pro gets 300/year, All-In gets 1,200/year. Each time you unlock a creator's audience demographics, it consumes one report. Plan your vetting workflow to avoid burning reports on creators you'll reject for other reasons (check engagement rate and content quality first — those are free).
 - **Pro plan doesn't include all platforms.** Pro covers Instagram, TikTok, and YouTube only. If you need Twitch, Snapchat, or Facebook data, you need All-In or Enterprise.
-- **Sentiment analysis is All-In only.** The "shitstorm detection" and comment sentiment features — arguably the most differentiated features — are gated behind the All-In plan (€1,199/mo). Pro users won't see comment analysis.
+- **Sentiment analysis is rationed.** Pro gets 10 community sentiment analyses per year, All-In gets 30, Enterprise gets 120. The "shitstorm detection" and comment analysis features — arguably the most differentiated features — are very limited on Pro.
 - **No public API docs.** If you need programmatic access to influData data, you must be on Enterprise and request API documentation from their sales team. There's no self-serve developer portal.
 - **12-month minimum on all plans.** There's no monthly billing option. Factor this into your evaluation — you're committing to at least €7,188 (Pro) or €14,388 (All-In) annually.
 - **Audience data can be slow.** Capterra reviewers note that unlocking audience demographic reports has gotten slower over time. Plan for this during time-sensitive campaign planning.
@@ -227,6 +230,7 @@ Based on the user's specific question:
 - `/sales-influencer-marketing` — Influencer marketing strategy across platforms (Modash, influData, Creator.co). Platform comparison, discovery, vetting, ROI tracking
 - `/sales-modash` — Modash platform help — discovery, tracking, Shopify gifting, payments, API
 - `/sales-creatorco` — Creator.co platform help — London AI agent, UGC rights, affiliate tracking
+- `/sales-collabstr` — Collabstr platform help — influencer and UGC creator marketplace, escrow payments, campaign posting
 - `/sales-tagshop` — UGC video ads and shoppable galleries for ecommerce
 - `/sales-affiliate-program` — Affiliate and creator partnership program design
 - `/sales-content` — Sales content management and governance
