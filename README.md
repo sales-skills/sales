@@ -1,8 +1,8 @@
 # Sales Skills
 
-**AI-powered sales copilot — 136 skills for prospecting, outbound, deals, proposals, and GTM. One install, one router.**
+**AI-powered sales copilot — 137 skills for prospecting, outbound, deals, proposals, and GTM. One install, one router.**
 
-[![Skills](https://img.shields.io/badge/skills-137-blue)](https://skills.sh/sales-skills/sales)
+[![Skills](https://img.shields.io/badge/skills-138-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
@@ -30,7 +30,13 @@ Not sure which skill you need? Just run `/sales-do` and describe what you're try
 Want every skill at once?
 
 ```bash
-npx skills add sales-skills/sales
+npx skills add sales-skills/sales -a
+```
+
+Every skill for claude code, copy instead of symlink, no confirmttion
+
+```bash
+npx skills add sales-skills/sales -a claude-code --copy -y
 ```
 
 ## Why?
@@ -272,7 +278,7 @@ Router recommends a 5-skill sequence:
 </details>
 
 <details>
-<summary><strong>Influencer Marketing</strong> (9 skills)</summary>
+<summary><strong>Influencer Marketing</strong> (10 skills)</summary>
 
 | Skill | What it does |
 |---|---|
@@ -284,6 +290,7 @@ Router recommends a 5-skill sequence:
 | `/sales-ltk` | LTK — creator commerce, Brand Platform, LTK Connect, LTK Ads, LTK Boost, LTK AI |
 | `/sales-tagshop` | Tagshop.ai — AI UGC video ad generator (1000+ avatars), shoppable UGC galleries |
 | `/sales-skeepers` | Skeepers — UGC suite (Verified Reviews, Influencer Marketing, Feedback Management, Brand Communities) |
+| `/sales-heepsy` | Heepsy — influencer discovery (11M+ profiles), analytics, campaign marketplace, CRM, Shopify integration |
 | `/sales-influencer-marketing` | Influencer marketing strategy — platform comparison, creator discovery, vetting, campaign tracking |
 
 </details>

@@ -1,6 +1,6 @@
 ---
 name: sales-do
-description: "Routes any sales, marketing, or GTM objective to the right specialized skill. Covers 123 first-party skills and 53 third-party skills across prospecting, outbound, deals, proposals, forecasting, deliverability, enrichment, intent signals, content, coaching, CRO, SEO, social listening, media relations, customer reviews, data hygiene, B2B advertising, retargeting, chatbots, and platform help for Attio, Apollo, Salesloft, Mailshake, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter, Tomba, Prospeo, Mailmo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, Brevo, Braze, Iterable, GetResponse, Seismic, Allego, Groove, Kit (ConvertKit), Omnisend, ZoomInfo, SendPulse, Clearbit, RB2B, Retention.com, 6sense, Clay, LeadMagic, AdRoll, SWAI, Tagshop, influData, Creator.co, Hypefy, LTK, Influencity, Meltwater, Skeepers, LoyaltyLion, MicroLaunch, LaunchingNext, SideProjectors, ProductBurst, SoloPush, CtrlAlt.cc, Open Launch, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, Reddit Ads, Semrush, BrandJet, Indie Hackers, Altern, Lobsters, StartupBase, Startup Stash, PitchWall, Futurepedia, LaunchCaster, BetaList, SaaSHunt, Resource.fyi, LaunchVibe, and Qwilr. Use when you have a sales or marketing question and are not sure which skill to use. Do NOT use to solve problems directly — this skill only routes."
+description: "Routes any sales, marketing, or GTM objective to the right specialized skill. Covers 123 first-party skills and 53 third-party skills across prospecting, outbound, deals, proposals, forecasting, deliverability, enrichment, intent signals, content, coaching, CRO, SEO, social listening, media relations, customer reviews, data hygiene, B2B advertising, retargeting, chatbots, and platform help for Attio, Apollo, Salesloft, Mailshake, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter, Tomba, Prospeo, Mailmo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, Brevo, Braze, Iterable, GetResponse, Seismic, Allego, Groove, Kit (ConvertKit), Omnisend, ZoomInfo, SendPulse, Clearbit, RB2B, Retention.com, 6sense, Clay, LeadMagic, AdRoll, SWAI, Tagshop, influData, Creator.co, Hypefy, LTK, Influencity, Meltwater, Skeepers, Heepsy, LoyaltyLion, MicroLaunch, LaunchingNext, SideProjectors, ProductBurst, SoloPush, CtrlAlt.cc, Open Launch, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, Reddit Ads, Semrush, BrandJet, Indie Hackers, Altern, Lobsters, StartupBase, Startup Stash, PitchWall, Futurepedia, LaunchCaster, BetaList, SaaSHunt, Resource.fyi, LaunchVibe, and Qwilr. Use when you have a sales or marketing question and are not sure which skill to use. Do NOT use to solve problems directly — this skill only routes."
 version: 1.0.0
 tags: [sales, router, skill-discovery]
 ---
@@ -363,6 +363,12 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 |---|---|
 | `/sales-ai-visibility` | User asks about AI visibility monitoring strategy, tracking brand mentions in ChatGPT, Claude, Perplexity, Gemini, or AI Overviews, choosing an AI visibility tool (BrandJet vs Otterly vs Topify vs Sight AI vs LLMrefs vs Semrush AI Visibility), monitoring what LLMs say about their brand, improving AI search visibility, AI citation tracking, or entity optimization for AI discovery |
 
+### Heepsy & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-heepsy` | User asks about Heepsy platform, Heepsy influencer search (11M+ profiles), Heepsy analytics reports, Heepsy audience quality score, Heepsy fake follower detection, Heepsy campaign marketplace, Heepsy influencer CRM, Heepsy media gallery, Heepsy Shopify integration, Heepsy WooCommerce integration, Heepsy credit system, Heepsy bulk export, Heepsy creator detection, Heepsy pricing, or Heepsy vs other influencer platforms |
+
 ### Skeepers & Platform
 
 | Skill | Route when... |
@@ -391,7 +397,7 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 
 | Skill | Route when... |
 |---|---|
-| `/sales-influencer-marketing` | User asks about influencer marketing strategy across platforms, choosing an influencer platform (Modash vs influData vs Creator.co vs Hypefy vs LTK vs Influencity vs Meltwater vs Skeepers), influencer discovery workflow, creator vetting framework, influencer outreach templates, influencer campaign ROI measurement, product gifting programs, influencer affiliate programs, or creator rate benchmarks |
+| `/sales-influencer-marketing` | User asks about influencer marketing strategy across platforms, choosing an influencer platform (Modash vs influData vs Creator.co vs Hypefy vs LTK vs Influencity vs Meltwater vs Skeepers vs Heepsy), influencer discovery workflow, creator vetting framework, influencer outreach templates, influencer campaign ROI measurement, product gifting programs, influencer affiliate programs, or creator rate benchmarks |
 
 ### MicroLaunch & Platform
 
