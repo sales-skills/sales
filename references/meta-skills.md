@@ -29,8 +29,8 @@ A platform can belong to **multiple** meta skills (e.g., a platform with email +
 | `/sales-live-chat` | Live chat | Brevo, Drift, Intercom, HubSpot, Crisp, LiveChat, Zendesk, Tidio |
 | `/sales-loyalty` | Loyalty programs | Brevo Loyalty, Smile.io, LoyaltyLion, Yotpo, Skeepers |
 | `/sales-data-hygiene` | CRM data quality | ZoomInfo OperationsOS, Salesforce, HubSpot Operations Hub, Clay, LeanData, DemandTools, Attio |
-| `/sales-b2b-advertising` | B2B / ABM advertising | ZoomInfo MarketingOS, Demandbase, 6sense, Terminus, RollWorks, LinkedIn Ads |
-| `/sales-retargeting` | Retargeting / remarketing | AdRoll, Google Ads, Meta, Criteo, LinkedIn, Retention.com |
+| `/sales-b2b-advertising` | B2B / ABM advertising | ZoomInfo MarketingOS, Demandbase, 6sense, Terminus, RollWorks, LinkedIn Ads, Reddit Ads |
+| `/sales-retargeting` | Retargeting / remarketing | AdRoll, Google Ads, Meta, Criteo, LinkedIn, Retention.com, Reddit Ads |
 | `/sales-meeting-scheduler` | Meeting scheduling | Calendly, Chili Piper, Mixmax, Yesware |
 | `/sales-enrich` | Contact enrichment | Apollo, ZoomInfo, Clearbit, Clay, Hunter.io, Tomba, Prospeo, Mailmo, Seamless.AI, Enrich.so, Minelead, GetProspect, Skrapp, Anymail Finder, LeadMagic, Snov.io, Lobstr.io, OpenWeb Ninja, Outscraper, Attio |
 | `/sales-integration` | Tool integration | Any platform ↔ CRM, Zapier, Make, webhooks, API pipelines, Attio |

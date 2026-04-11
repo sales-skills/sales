@@ -2,7 +2,7 @@
 
 **AI-powered sales copilot — 134 skills for prospecting, outbound, deals, proposals, and GTM. One install, one router.**
 
-[![Skills](https://img.shields.io/badge/skills-134-blue)](https://skills.sh/sales-skills/sales)
+[![Skills](https://img.shields.io/badge/skills-135-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
@@ -232,6 +232,7 @@ Router recommends a 5-skill sequence:
 | `/sales-kit` | Kit (ConvertKit) — Visual Automations, Sequences, Broadcasts, landing pages, Commerce, API |
 | `/sales-swai` | SWAI.ai — Autonomous Revenue OS, AI-driven campaigns, landing page builder, CRM, AI assistants |
 | `/sales-adroll` | AdRoll — retargeting, display/social/CTV campaigns, dynamic retargeting, RollWorks ABM, attribution |
+| `/sales-reddit-ads` | Reddit Ads — subreddit targeting, 12 ad formats, Reddit Pixel, CAPI, Lead Gen Ads, Business Manager |
 
 </details>
 

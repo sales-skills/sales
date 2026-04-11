@@ -246,6 +246,29 @@ AdRoll's B2B arm, RollWorks, provides account-based advertising for sales and ma
 
 **Pricing note**: RollWorks has separate pricing from AdRoll's consumer/ecommerce plans. Contact sales for RollWorks ABM pricing.
 
+### In Reddit Ads
+
+Reddit Ads offers B2B advertising through community-level targeting — reach professionals in industry-specific subreddits where they discuss work challenges and evaluate tools.
+
+**B2B targeting on Reddit:**
+- **Community targeting**: Target subreddits where your ICP congregates — r/sales, r/sysadmin, r/devops, r/marketing, r/startups, r/SaaS. More precise than interest targeting.
+- **Interest categories**: Reddit's B2B-relevant interests include Technology, Business & Finance, Career & Education.
+- **Keyword targeting**: Target users who've engaged with posts containing B2B-relevant keywords (e.g., "CRM migration", "sales automation").
+- **Custom audience — customer list**: Upload hashed email lists from CRM for direct account targeting.
+- **Retargeting**: Reddit Pixel + CAPI track website visitors for remarketing campaigns.
+
+**B2B campaign strategy:**
+- Reddit is upper-funnel for B2B — brand awareness and consideration, not direct conversion. 96% of Reddit conversions are view-through, not click.
+- **Air cover**: Run Reddit ads alongside outbound to warm target accounts. Reddit campaigns increase branded Google search by 10-25%.
+- **Content promotion**: Long-form Free-Form ads work for B2B — Redditors read. Share thought leadership, case studies, or product stories.
+- **Community engagement**: Ads have comment sections. Authentic engagement with questions builds trust.
+
+**Budget**: CPC $0.50-$2.00 for B2B/SaaS. Start at $50-100/day. Subreddit targeting is cheaper than LinkedIn but less precise on firmographics.
+
+**Limitation**: No native firmographic targeting (company size, industry, revenue). Can't target specific companies by name. For account-level B2B targeting, pair Reddit with a dedicated ABM platform (ZoomInfo, 6sense, Demandbase) or use customer list uploads.
+
+**Best for**: B2B brands wanting to reach tech-savvy, early-adopter audiences at lower CPM than LinkedIn. Strong for SaaS, developer tools, and startup-focused products.
+
 ### In Google Ads (B2B targeting)
 
 **Search and display for B2B:**
@@ -306,6 +329,7 @@ AdRoll's B2B arm, RollWorks, provides account-based advertising for sales and ma
 - `/sales-funnel` — funnel strategy (ads feed the top of the funnel)
 - `/sales-clay` — Clay platform help (enrichment, audience building, Ad Sync)
 - `/sales-adroll` — AdRoll platform help (RollWorks ABM, display retargeting, ecommerce integration)
+- `/sales-reddit-ads` — Reddit Ads platform help (subreddit targeting, community-based B2B ads, Lead Gen Ads)
 - `/sales-retargeting` — Retargeting strategy across all platforms (consumer and B2B)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 

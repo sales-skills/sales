@@ -153,6 +153,34 @@ Structure retargeting by intent level:
 - **Best for**: Ecommerce brands who have opted-in email addresses. Email retargeting is free (no ad spend) and highly effective — 5-10x ROAS vs display retargeting.
 - **Limitation**: Only reaches known contacts (people who provided email). Not a substitute for ad-based retargeting of anonymous visitors.
 
+### In Reddit Ads
+
+Reddit supports website visitor retargeting and engagement-based remarketing:
+
+**Custom audiences for retargeting:**
+- **Website custom audience**: Install the Reddit Pixel on your site. Build retargeting audiences from visitors — segment by pages visited, events fired (AddToCart, ViewContent, etc.), and recency (7/14/30/60/90-day windows).
+- **Engagement audience**: Retarget users who interacted with your Reddit posts or ads (upvoted, commented, clicked). Warm audience that already knows your brand.
+- **Customer list audience**: Upload hashed email lists to retarget existing customers or leads on Reddit.
+- **Lookalike audience**: Expand from any custom audience to reach similar users.
+
+**Retargeting setup:**
+1. Install Reddit Pixel on all pages (GTM or manual)
+2. Set up Conversions API (CAPI) for server-side tracking — critical because ad blockers block 30-40% of client-side pixel data
+3. Wait 1-2 weeks for audience to build (minimum ~1,000 users recommended)
+4. Create separate ad groups for retargeting vs prospecting
+5. Use Conversation placement alongside feed — 15-30% cheaper CPMs
+
+**Creative for retargeting:**
+- Reddit retargeting ads should still feel native — don't switch to corporate creative just because they visited your site
+- Dynamic Product Ads available via product catalog for ecommerce retargeting
+- Engagement retargeting (users who interacted with your Reddit content) converts well because they already know your brand voice
+
+**Cost**: CPC $0.20-$2.00, CPM $0.50-$15. Typically 50-70% cheaper than Meta retargeting. Smaller audience pool than Meta/Google but highly engaged.
+
+**Attribution note**: Reddit's attribution is primarily view-through (96% of conversions). Use 1-day view + 28-day click attribution window. If only measuring last-click, Reddit retargeting will appear to underperform vs Meta/Google.
+
+**Best for**: Brands with Reddit-savvy audiences (tech, gaming, finance, SaaS). Pair with Meta/Google retargeting for cross-channel coverage. Not a replacement for Meta DPA at scale but a strong complementary channel.
+
 ### In Retention.com (Identity resolution retargeting)
 - **Anonymous → known**: Retention.com identifies anonymous visitors using third-party data, converting them to email/SMS contacts for retargeting without opt-in.
 - **Reclaim product**: Captures abandonment events (cart, checkout, browse) that ESPs miss because the visitor was anonymous. Pushes identified contacts to Klaviyo, Mailchimp, etc. for abandonment flows.
@@ -219,6 +247,7 @@ Structure retargeting by intent level:
 - `/sales-audience-growth` — Growing your email/subscriber list (retargeting as a list-growth tactic)
 - `/sales-klaviyo` — Klaviyo platform help (email/SMS retargeting flows for ecommerce)
 - `/sales-omnisend` — Omnisend platform help (email/SMS retargeting for ecommerce)
+- `/sales-reddit-ads` — Reddit Ads platform help (subreddit targeting, website retargeting, engagement audiences)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples
