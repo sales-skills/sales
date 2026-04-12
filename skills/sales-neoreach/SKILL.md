@@ -14,7 +14,6 @@ Helps users configure and get the most out of NeoReach — enterprise influencer
 
 ## Step 1 — Gather context
 
-
 If `references/learnings.md` exists, read it first for accumulated knowledge.
 
 Ask the user:
@@ -46,106 +45,22 @@ Ask the user:
 ## Step 2 — Route or answer directly
 
 If the request maps to a different skill, route:
-- Influencer marketing strategy across platforms → `/sales-influencer-marketing`
-- TikTok marketing strategy → `/sales-tiktok-marketing`
-- Gaming influencer marketing → `/sales-gaming-marketing`
-- Competitor platform help → hand off to that platform's skill (e.g., `/sales-creatoriq`, `/sales-modash`)
+- Influencer marketing strategy across platforms → "Run: `/sales-influencer-marketing {user's question}`"
+- TikTok marketing strategy → "Run: `/sales-tiktok-marketing {user's question}`"
+- Gaming influencer marketing → "Run: `/sales-gaming-marketing {user's question}`"
+- Competitor platform help → hand off to that platform's skill (e.g., "Run: `/sales-creatoriq {user's question}`", "Run: `/sales-modash {user's question}`")
 
 Otherwise, answer directly from the platform reference below.
 
 ## Step 3 — NeoReach platform reference
 
-### Platform overview
+**Read `references/platform-guide.md`** for the full platform reference — modules, pricing, integrations, data model, workflows, and competitive comparison.
 
-NeoReach operates in three areas:
-1. **SaaS platform** — self-serve influencer discovery, campaign management, analytics
-2. **Data Intelligence API** — REST API with 400+ data points for enterprise integrations
-3. **Managed services** — full-service campaign execution by NeoReach's team
-
-### Influencer discovery
-
-- **Database**: 3M+ indexed influencer profiles across Instagram, TikTok, YouTube, and other platforms
-- **Search filters**: 40+ filters including keywords, social platform, audience demographics (age, gender, location, interests, income, occupation, marital/parental status), brand affinities, engagement metrics, and follower ranges
-- **AI recommendation engine**: Learns from your selections and improves suggestions over time — the more you use it, the better it gets at matching creators to your brand
-- **Lookalike search**: Find creators similar to ones already performing well
-- **Conversation topics**: Search by what creators talk about, not just their bio or hashtags
-
-### Fraud detection
-
-- **Fake follower analysis**: Detects purchased followers, bot accounts, and artificially inflated engagement
-- **Engagement authenticity**: Identifies engagement pods, comment spam, and coordinated artificial boosting
-- **Audience verification**: Confirms audience demographics match what the creator claims
-- **Always-on monitoring**: Continuous fraud checks, not just point-in-time snapshots
-
-### Campaign management
-
-- **Centralized hub**: Plan campaigns, coordinate influencer relationships, manage contracts, track deadlines, review posts, and track payment history in one place
-- **Content tracking**: Monitor content progress from brief through publication
-- **Contract management**: Handle agreements, deliverables, and timelines
-- **Team collaboration**: Shared workspace across your organization
-- **Payment tracking**: Track payment history and status per influencer
-
-### Analytics and reporting
-
-- **Influencer Media Value (IMV)**: NeoReach's proprietary ROI metric that estimates the media value of influencer content — used to demonstrate campaign ROI in terms stakeholders understand
-- **Campaign metrics**: ROI, CPM, CPE, impressions, engagements at campaign, post, and influencer level
-- **Audience exposure demographics**: Understand who you're actually reaching — age, gender, location breakdowns of the audience that saw your campaign content
-- **Multi-influencer comparison**: Compare performance across creators within a campaign
-- **Competitor spend analysis**: See what competitors are spending on influencer marketing (via API)
-
-### API
-
-NeoReach offers a REST API returning JSON data. Key capabilities:
-
-- **Sponsorship pricing data** — historical and current influencer rates
-- **Audience matching** — find creators whose audience matches your target demographics
-- **Fast-growing influencer tracking** — identify rising creators before they're expensive
-- **Competitor spend analysis** — monitor competitor influencer budgets
-- **Historical price and ROI data** — benchmark rates and expected returns
-- **Fraud detection** — programmatic access to fraud scoring
-- **400+ custom data points** — integrate into in-house tools and dashboards
-
-API access is enterprise-tier and requires a sales conversation. No public developer documentation is available — API specs and auth details are provided during onboarding.
-
-### Managed services
-
-For brands that want NeoReach's team to run campaigns end-to-end:
-
-- **Campaign strategy** — NeoReach plans the influencer strategy based on your goals
-- **Creator sourcing and vetting** — their team finds and vets creators using the platform's data
-- **Outreach and negotiation** — NeoReach handles all creator communication
-- **Content coordination** — review and approval workflows managed by their team
-- **Reporting** — campaign performance reports delivered to your team
-- **Minimum engagement**: $25K+ per managed campaign
-
-### Pricing
-
-*Best-effort from research — verify current pricing directly with NeoReach.*
-
-| Tier | Price | Best for |
-|---|---|---|
-| Small team SaaS | ~$399/mo | Small teams needing basic discovery and campaign management |
-| Full platform SaaS | ~$1,500/mo | Larger teams needing full analytics, API preview, and advanced features |
-| Enterprise annual | $50K-$500K/yr | Large brands or agencies with custom requirements and API access |
-| Managed campaigns | $25K+ per campaign | Brands wanting full-service campaign execution |
-
-Plan-gated features (enterprise pricing required):
-- Full API access with 400+ data points
-- Competitor spend analysis
-- Advanced audience matching
-- Historical pricing data
-- Custom integrations
-
-### Supported platforms
-
-- Instagram
-- TikTok
-- YouTube
-- Additional platforms indexed but less prominently featured
+Answer the user's question using only the relevant section. Don't dump the full reference.
 
 ## Step 4 — Actionable guidance
 
-Based on the user's specific question:
+You no longer need the platform guide — focus on the user's specific situation.
 
 1. **Discovery optimization** — how to use 40+ filters effectively, building lookalike audiences from top performers, leveraging the AI recommendation engine
 2. **Fraud detection workflow** — using NeoReach's fraud tools as part of the vetting process, interpreting fraud scores, setting thresholds
@@ -153,6 +68,8 @@ Based on the user's specific question:
 4. **API integration** — what's possible via API, planning an integration, working with NeoReach's team on API access
 5. **Managed vs self-serve decision** — when managed services make sense vs running campaigns yourself
 6. **Platform evaluation** — NeoReach vs alternatives based on use case, budget, and scale
+
+If you discover a gotcha, workaround, or tip not covered in `references/learnings.md`, append it there.
 
 ## Gotchas
 
@@ -164,6 +81,7 @@ Based on the user's specific question:
 - **Limited micro-influencer coverage.** NeoReach's 3M+ database skews toward larger creators. If your strategy focuses on nano/micro-influencers (under 50K followers), platforms like Heepsy (11M+ profiles) or Modash (350M+ profiles) may surface more options.
 - **Managed services minimum is $25K+.** The managed campaign option is not available for smaller budgets. For sub-$25K managed influencer campaigns, consider Famesters or House of Marketers.
 - **IMV metric is proprietary.** NeoReach's Influencer Media Value calculation is internal — you can't replicate or verify the methodology independently. Useful for internal reporting but may not satisfy external audit requirements.
+- **No native ecommerce integration.** Unlike Modash (deep Shopify) or Aspire (5 ecommerce platforms), NeoReach doesn't have native Shopify/WooCommerce connectors. Product gifting requires manual coordination or API custom work.
 
 - **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
@@ -172,7 +90,9 @@ Based on the user's specific question:
 - `/sales-influencer-marketing` — Influencer marketing strategy across platforms — platform comparison, creator discovery, vetting, campaign tracking, ROI measurement
 - `/sales-creatoriq` — CreatorIQ platform help — enterprise influencer OS, closest NeoReach competitor
 - `/sales-modash` — Modash platform help — Shopify-focused influencer marketing, more accessible pricing
+- `/sales-hypeauditor` — HypeAuditor platform help — industry-leading fraud detection (53 patterns), 223.6M+ profiles
 - `/sales-heepsy` — Heepsy platform help — budget-friendly influencer discovery
+- `/sales-aspire` — Aspire platform help — word-of-mouth commerce, product seeding, affiliate tracking
 - `/sales-tiktok-marketing` — TikTok marketing strategy — organic, paid, influencer
 - `/sales-gaming-marketing` — Gaming influencer marketing strategy
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
