@@ -313,6 +313,7 @@ Router recommends a 5-skill sequence:
 | `/sales-influencer-hero` | Influencer Hero — all-in-one influencer marketing (200M+ profiles), AI-personalized outreach (email + DMs), CRM, affiliate tracking (code leakage prevention), product gifting, UGC capture, API |
 | `/sales-instajet` | InstaJet.io — Instagram Stories influencer marketplace (10K+ vetted creators, 50+ countries), escrow payments, managed service |
 | `/sales-openinfluence` | Open Influence — AI-powered influencer agency + SaaS (image recognition search, 20M+ keywords, Mood Board, paid media amplification, Studio OI, 50+ countries) |
+| `/sales-viralnation` | Viral Nation — enterprise influencer agency + SaaS (CreatorOS campaign management, Secure AI brand safety, talent representation, 35+ verticals) |
 | `/sales-trendhero` | trendHERO — Instagram influencer analytics (95M+ profiles), Account Quality Score (AQS) fake follower detection, Ads Database (10M+ posts), audience overlap, REST API |
 | `/sales-tiktok-marketing` | TikTok marketing strategy — organic growth, paid ads, content creation, influencer strategy, algorithm, metrics |
 | `/sales-gaming-marketing` | Gaming influencer marketing strategy — streamer partnerships, game launch campaigns, budget allocation, ROI |
@@ -410,6 +411,7 @@ Router recommends a 5-skill sequence:
 | `/sales-digital-products` | Sell digital products — ebooks, templates, courses, downloads, pricing strategy |
 | `/sales-affiliate-program` | Design and manage affiliate programs — commissions, recruitment, tracking, payouts |
 | `/sales-performcb` | Perform[cb] — #1 CPA network, Outcome Engine AI optimization, PerformSHIELD fraud detection, Partner API |
+| `/sales-fansrevenue` | FansRevenue — creator monetization through affiliate brand promotion, MyEroLink, Creator Academy, CrakRevenue network |
 | `/sales-webinar` | Webinar-based selling — live and evergreen strategy, presentation, follow-up |
 | `/sales-membership` | Membership sites and online courses — structure, pricing, retention |
 | `/sales-checkout` | Checkout optimization — upsells, order bumps, payment plans, cart abandonment |
