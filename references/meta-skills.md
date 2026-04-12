@@ -17,8 +17,8 @@ A platform can belong to **multiple** meta skills (e.g., a platform with email +
 | `/sales-audience-growth` | Email list growth | Kit, Beehiiv, Mailchimp, ActiveCampaign, Substack, SparkLoop, Retention.com |
 | `/sales-checkout` | Checkout optimization | GrooveSell, ThriveCart, SamCart, Stripe, Paddle, Gumroad, Shopify, WooCommerce, Lemon Squeezy |
 | `/sales-digital-products` | Digital product sales | Kit Commerce, Gumroad, Lemon Squeezy, SendOwl, Podia |
-| `/sales-affiliate-program` | Affiliate programs | GrooveAffiliate, PartnerStack, Refersion, ShareASale, Creator.co, Modash, LTK, CreatorIQ, Aspire |
-| `/sales-influencer-marketing` | Influencer marketing | Modash, influData, Creator.co, Hypefy, LTK, Influencity, Meltwater, Brandwatch, Sprout Social, Skeepers, Heepsy, CreatorIQ, NeoReach, Afluencer, Collabstr, Cloutboost, House of Marketers, Tagshop, Famesters, inBeat, Later Influence, HypeAuditor, Aspire |
+| `/sales-affiliate-program` | Affiliate programs | GrooveAffiliate, PartnerStack, Refersion, ShareASale, Creator.co, Modash, LTK, CreatorIQ, Aspire, Influencer Hero |
+| `/sales-influencer-marketing` | Influencer marketing | Modash, influData, Creator.co, Hypefy, LTK, Influencity, Meltwater, Brandwatch, Sprout Social, Skeepers, Heepsy, CreatorIQ, NeoReach, Afluencer, Collabstr, Cloutboost, House of Marketers, Tagshop, Famesters, inBeat, Later Influence, HypeAuditor, Aspire, Influencer Hero |
 | `/sales-webinar` | Webinar selling | GrooveWebinar, Demio, WebinarJam, Zoom, GoToWebinar, GetResponse |
 | `/sales-membership` | Membership / courses | GrooveMember, Kajabi, Teachable, Mighty Networks |
 | `/sales-transactional-email` | Transactional email | SendGrid, Postmark, Mailgun, Brevo, Customer.io, SES |

@@ -209,6 +209,7 @@ Best for enterprise-level partnership programs.
 
 - **LTK**: Creator commerce platform with built-in commission/affiliate model. 300K+ creators, 40M+ monthly shoppers on LTK App. Brands set commission rates (10% min, 15%+ recommended), creators earn on sales through LTK links. Free Brand Platform for discovery and gifting; Connect plans ($99-999+/mo) for structured campaigns. Best for DTC/ecommerce brands wanting influencer-driven affiliate sales. See `/sales-ltk` for full platform help.
 - **CreatorIQ**: Enterprise influencer platform with native affiliate network integrations — CJ, Awin, Impact, Rakuten Advertising, Commission Factory, and Partnerize. CreatorIQ Convert module handles coupon code tracking, affiliate link attribution, and Shopify sales tracking. Built-in CreatorIQ Pay for creator payments with tax compliance. Best for enterprises running large-scale influencer affiliate programs across multiple affiliate networks. Pricing starts ~$30K/yr (enterprise only). See `/sales-creatoriq` for full platform help.
+- **Influencer Hero**: All-in-one influencer marketing platform with built-in affiliate tracking — unique discount codes per influencer, real-time sales attribution via Shopify/WooCommerce/Magento/BigCommerce/Amazon, code leakage prevention, and commission payout management. Best for ecommerce brands running influencer affiliate programs alongside discovery and outreach. Standard $649/mo; Pro $1,049/mo; Business $2,490/mo. See `/sales-influencer-hero` for full platform help.
 - **ReferralCandy**: E-commerce focused; integrates with Shopify, WooCommerce; automated reward fulfillment
 - **Tapfiliate**: Flexible tracking for SaaS and e-commerce; supports multi-level commissions; good API
 - **Post Affiliate Pro**: Self-hosted option with 200+ integrations; highly customizable; good for complex setups
@@ -291,6 +292,7 @@ Create a structured onboarding experience:
 - `/sales-ltk` — LTK platform help — creator commerce with built-in commission/affiliate model
 - `/sales-creatoriq` — CreatorIQ platform help — enterprise influencer OS with affiliate network integrations (CJ, Awin, Impact, Rakuten)
 - `/sales-aspire` — Aspire platform help — built-in affiliate tracking with promo codes and trackable links via Shopify
+- `/sales-influencer-hero` — Influencer Hero platform help — affiliate tracking with discount codes, code leakage prevention, multi-ecommerce integration
 - `/sales-do` — Route to the right skill when you are unsure where to start
 
 ## Examples
