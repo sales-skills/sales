@@ -4,3 +4,7 @@ drafts/
 .claude/
 **/evals/
 _internal/
+eval-scripts/
+agents/
+memory/
+scripts/
