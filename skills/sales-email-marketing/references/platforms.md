@@ -307,6 +307,23 @@ AdRoll is primarily a retargeting and advertising platform, but includes email r
 - **Limitations**: AdRoll email is retargeting, not a full ESP. No broadcast campaigns, no newsletter builder, no advanced segmentation beyond behavior. For full email marketing, use a dedicated platform (Klaviyo, Omnisend, ActiveCampaign, etc.) and layer AdRoll for ad retargeting alongside email.
 - **Best for**: Ecommerce brands already using AdRoll for ad retargeting who want to add behavior-triggered emails without a separate ESP for that specific use case. Most brands will still need a primary ESP for broadcast and lifecycle email.
 
+### In MailerLite
+
+MailerLite is an affordable, easy-to-use email marketing platform targeting solopreneurs, small businesses, and creators. For full platform help, use `/sales-mailerlite`.
+
+- **Email campaigns**: Drag-and-drop editor (templates on paid plans only — free plan is design-from-scratch). A/B testing for subject lines and content. Campaign types: regular, A/B, resend (to non-openers), RSS. Auto-resend to non-openers with different subject line (Growing Business+).
+- **Automation workflows**: Trigger-based sequences — form submission, group join, link click, date-based, e-commerce events. Actions: send email, wait, if/else condition, add/remove group, update field, webhook. Pre-built templates for welcome, abandoned cart, re-engagement, birthday. **Limitation**: Linear flow only — no multi-path branching. If/else splits exist but flows are linear. For complex branching, use ActiveCampaign or Klaviyo.
+- **Segmentation**: Groups (manual or automation-assigned) + Segments (dynamic rule-based filters, up to 250). Filter by subscriber data, engagement, e-commerce activity.
+- **Smart sending** (Advanced+): AI-optimized per-subscriber send time based on engagement history.
+- **AI writing assistant** (Advanced+): Subject line and body copy generation.
+- **Landing pages**: Drag-and-drop builder with templates, custom domains, SEO settings. 10 on Free, unlimited on paid. No A/B testing on landing pages.
+- **Signup forms**: Pop-up, embedded, promotion (Advanced+). Exit-intent, scroll, time triggers. GDPR consent checkbox.
+- **E-commerce**: Native Shopify, WooCommerce, BigCommerce, PrestaShop integration. Abandoned cart, post-purchase, product recommendation automations. Revenue tracking per campaign/automation.
+- **Digital products & paid newsletters**: Sell downloads and recurring subscriptions via Stripe. 1 product on Free, 3 on Growing Business, unlimited on Advanced.
+- **Pricing**: Free (500 subs, 12K emails/mo, no templates), Growing Business ($10/mo, unlimited emails, 3 seats), Advanced ($20/mo, unlimited seats, AI, smart sending), Enterprise (custom, dedicated IP).
+- **Key terminology**: "Groups" = lists, "Segments" = dynamic filters, "Automation" = workflow, "Forms" = signup forms.
+- **MailerLite's strength**: Best for solopreneurs and small businesses that want an affordable all-in-one (email + landing pages + digital products + paid newsletters) without the complexity of ActiveCampaign or the cost of Mailchimp. Overkill limitation: automation is basic compared to mid-market tools.
+
 ### In Retention.com
 
 Retention.com is not an ESP — it's an identity resolution layer that feeds identified contacts INTO your ESP (Klaviyo, Mailchimp, Omnisend, etc.) for email marketing:

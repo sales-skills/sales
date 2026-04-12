@@ -149,6 +149,14 @@ Ask the user:
 - **Strengths**: Minimal, developer-friendly, good API, low fees
 - **Limitations**: Smaller ecosystem, fewer growth tools
 
+### In MailerLite
+- **Paid newsletter subscriptions**: Built-in Stripe integration for recurring payments. Gate content to paid subscribers vs free. Manage subscriber tiers directly in MailerLite.
+- **Pricing**: No MailerLite transaction fee (just Stripe ~2.9% + $0.30). 1 paid subscription product on Free, 3 on Growing Business ($10/mo), unlimited on Advanced ($20/mo).
+- **Sponsorships**: Use content blocks and templates for consistent sponsor placement. MailerLite is listed as a supported ESP on Paved (Ad Network + Marketplace).
+- **Strengths**: Cheapest option for paid newsletters — no platform fee on subscriptions, just Stripe. Landing pages included for subscriber growth. Simple automation for welcome/onboarding.
+- **Limitations**: No built-in referral system (use SparkLoop). No discovery network (unlike Substack or Beehiiv). Basic automation compared to Kit or Beehiiv. No built-in ad network or boost marketplace.
+- **Setup**: Account > Billing > Stripe integration > Create subscription product > Set price > Create gated content with subscriber groups
+
 ### In Mailchimp
 - **No native paid newsletter**: Use Stripe + Zapier to manage paid subscribers via tags/groups
 - **Sponsorships**: Use content blocks and templates for consistent sponsor placement
@@ -210,6 +218,7 @@ Paid recommendations:
 - `/sales-email-marketing` — Email marketing strategy (sending campaigns, automation, segmentation)
 - `/sales-audience-growth` — Growing your subscriber list (lead magnets, cross-promotion, referrals)
 - `/sales-digital-products` — Selling digital products (ebooks, courses, templates)
+- `/sales-mailerlite` — MailerLite platform help (paid newsletters, digital products)
 - `/sales-kit` — Kit platform help (Kit-specific setup and configuration)
 - `/sales-mailchimp` — Mailchimp platform help
 - `/sales-content` — Sales content management (creating compelling content)

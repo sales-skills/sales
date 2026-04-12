@@ -393,6 +393,19 @@ Detailed per-platform deliverability configuration — sending limits, warmup, d
 - Monitoring: performance dashboard shows open rates, reply rates, bounce rates, and meeting bookings. No public API for programmatic monitoring.
 - Key deliverability limitation: AiSDR controls the sending infrastructure end-to-end — you can't configure sending schedules, IP rotation, or per-step timing like you can in Smartlead or Lemlist
 
+## In MailerLite (opt-in email marketing)
+
+- Domain authentication required: DKIM (CNAME record), SPF (TXT record), and Domain verification (TXT record) — all generated in MailerLite dashboard under Domains. DMARC must be configured separately in DNS (MailerLite does not generate it).
+- Shared IP infrastructure: Free and Growing Business plans send from shared IPs — deliverability depends on co-senders. Enterprise plan includes dedicated IP.
+- Strict anti-spam policy: MailerLite manually reviews every new account and enforces aggressive bounce-rate rules. Importing a dirty list can trigger immediate account suspension without warning.
+- MailerCheck integration: Built-in email verification tool — verify addresses before import to reduce bounces. Use on every list import.
+- No warmup tool: MailerLite doesn't have built-in mailbox warmup. For new domains, send to your most engaged subscribers first and gradually increase volume.
+- No spam testing: No inbox rendering preview or spam score testing built in. Use Litmus, Mail Tester, or Email on Acid externally.
+- Engagement-based throttling: MailerLite tracks opens/clicks and may throttle sends to low-engagement subscribers to protect reputation.
+- Sunset policy: Suppress subscribers who haven't opened in 90+ days — MailerLite's strict list hygiene rules make this critical.
+- Custom tracking domain: Available on paid plans — configure to improve click tracking deliverability and brand consistency.
+- Enterprise deliverability consultation: Enterprise plan includes dedicated IP, onboarding, and deliverability audit services.
+
 ## In BrandJet
 
 - Built-in email warmup included on all plans — unlimited warmup, runs automatically when mailboxes are connected

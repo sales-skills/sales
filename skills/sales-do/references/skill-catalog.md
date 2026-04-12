@@ -233,6 +233,12 @@
 |---|---|
 | `/sales-snov` | General Snov.io questions — email finder, email verifier (98% accuracy), multichannel campaigns (email + LinkedIn), LinkedIn automation ($69/mo add-on), sales CRM, email warmup, deliverability check, email tracker, AI email writer, prospect management, REST API (33+ endpoints, OAuth 2.0), 5,000+ integrations | Route when the user asks about Snov.io setup, config, features, or troubleshooting. Route when they mention Snov.io campaigns, Snov.io email finder, Snov.io verifier, Snov.io warmup, Snov.io LinkedIn, Snov.io CRM, Snov.io API, or Snov.io drip campaigns. |
 
+### MailerLite & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-mailerlite` | MailerLite platform help — email campaigns, automation workflows, landing pages, signup forms, websites, e-commerce, digital products, paid newsletters, transactional email, email verification, API. Route when the user asks about MailerLite setup, config, features, or troubleshooting. Route when they mention MailerLite campaigns, MailerLite automation, MailerLite landing pages, MailerLite forms, MailerLite e-commerce, MailerLite digital products, MailerLite paid newsletters, MailerLite API, or MailerLite account issues. |
+
 ### Closum & Platform
 
 | Skill | Route when... |

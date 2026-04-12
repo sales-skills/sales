@@ -227,6 +227,7 @@ Router recommends a 5-skill sequence:
 | `/sales-activecampaign` | ActiveCampaign — marketing automation (900+ recipes), email marketing, CRM, multi-channel, 900+ integrations |
 | `/sales-mailchimp` | Mailchimp — email campaigns, Customer Journey Builder, SMS, audience management, Mandrill, 300+ integrations |
 | `/sales-closum` | Closum — omnichannel marketing automation: email, SMS, WhatsApp, Telegram, Web Push, AI assistant |
+| `/sales-mailerlite` | MailerLite — email campaigns, automation, landing pages, signup forms, e-commerce, digital products, paid newsletters, API |
 | `/sales-groove` | Groove.cm — GroovePages, GrooveFunnels, GrooveSell, GrooveMail, GrooveAffiliate, GrooveMember, GrooveWebinar |
 | `/sales-brevo` | Brevo — email/SMS/WhatsApp campaigns, marketing automation, Sales CRM, Conversations, Loyalty, Aura AI |
 | `/sales-iterable` | Iterable — cross-channel engagement, Studio journeys, Iterable AI, Smart Ingest, Snowflake sharing, API |

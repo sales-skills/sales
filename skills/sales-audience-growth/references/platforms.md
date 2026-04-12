@@ -105,6 +105,16 @@ Detailed per-platform audience growth features — opt-in forms, landing pages, 
 - **Ecommerce focus**: Deep Shopify/BigCommerce/WooCommerce integration — retarget shoppers who browse but don't subscribe, offer discount-for-email swaps
 - **Best for**: Ecommerce and D2C brands using paid retargeting to grow subscriber lists alongside customer acquisition
 
+### In MailerLite
+- **Signup forms**: Pop-up, embedded, and promotion forms (promotion requires Advanced plan). Triggers: exit-intent, scroll depth, time delay. GDPR consent checkbox option.
+- **Landing pages**: Drag-and-drop builder with templates (10 on Free, unlimited on paid). Custom domains supported. SEO settings (title, description, slug).
+- **Double opt-in**: Supported and recommended — MailerLite's strict anti-spam policy makes clean lists essential.
+- **Website builder**: Full website and blog builder with signup form integration — combine content marketing with list building.
+- **E-commerce forms**: Shopify/WooCommerce integration auto-adds customers to MailerLite groups on purchase.
+- **No built-in referral system** — use SparkLoop or a custom solution.
+- **iPad subscribe app**: Offline subscriber collection at events, trade shows, and retail. Syncs when reconnected to internet.
+- **Best for**: Small businesses and solopreneurs using MailerLite for email who want native signup forms and landing pages without a separate tool. 10 free landing pages is generous for getting started.
+
 ### In Retention.com
 - **Identity resolution for list growth**: Identifies anonymous website visitors using third-party licensed data and adds them to your email/SMS lists automatically — no opt-in form required
 - **Grow product**: Claims 10x email list growth by converting anonymous visitors to known contacts. Contacts are pushed directly to your ESP (Klaviyo, Mailchimp, etc.)

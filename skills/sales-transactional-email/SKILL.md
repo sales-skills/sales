@@ -102,6 +102,14 @@ Ask the user:
 
 **Read `references/platform-guide.md`** for detailed provider comparisons, API references, integration checklist, and key metrics.
 
+### In MailerLite
+MailerLite supports transactional email as a separate feature from marketing campaigns:
+- **API-triggered**: Transactional emails are sent via the MailerLite API, not through the campaign builder. Use for order confirmations, password resets, shipping notifications.
+- **Separate infrastructure**: Transactional sends don't count against marketing email limits and use separate delivery infrastructure.
+- **Templates**: Create reusable templates in the MailerLite dashboard, reference them by ID in API calls.
+- **Limitations**: MailerLite's transactional email is basic compared to SendGrid, Postmark, or Mailgun. No inbound parsing, no advanced analytics, no dedicated IP for transactional (Enterprise only). Best for MailerLite users who want to keep everything in one platform. For high-volume or latency-sensitive transactional email, use a dedicated provider.
+- **API**: `POST /api/subscribers` for contact management, webhooks for delivery tracking. See `/sales-mailerlite` for full API reference.
+
 *You no longer need the platform guide details — focus on the user's specific situation.*
 
 ## Step 4 — Actionable guidance
@@ -131,6 +139,7 @@ Based on the user's specific question, provide targeted recommendations drawing 
 - `/sales-getresponse` — GetResponse platform help (transactional email on MAX plan, marketing automation, webinars)
 - `/sales-sendpulse` — SendPulse platform help (SMTP transactional email, marketing automation, chatbots)
 - `/sales-deliverability` — Cross-platform email deliverability (SPF/DKIM/DMARC, warmup, reputation)
+- `/sales-mailerlite` — MailerLite platform help (email campaigns, automation, transactional email, API)
 - `/sales-email-marketing` — Opt-in marketing email strategy (not transactional)
 - `/sales-integration` — Connect email tools with CRM and other systems
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

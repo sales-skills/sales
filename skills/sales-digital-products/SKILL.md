@@ -60,6 +60,17 @@ Ask the user:
 
 **Read `references/platform-guide.md`** for detailed pricing strategy, launch playbook, delivery methods, upsell frameworks, platform comparisons, and revenue benchmarks.
 
+### In MailerLite
+MailerLite supports selling digital products directly within its platform:
+- **Digital product sales**: Sell ebooks, downloads, and digital files. Buyers receive a download link in a confirmation email.
+- **Stripe required**: All payments go through Stripe — no PayPal or other payment processors.
+- **Plan limits**: 1 digital product on Free, 3 on Growing Business ($10/mo), unlimited on Advanced ($20/mo).
+- **Paid newsletters**: Separate from digital products — recurring subscription payments via Stripe for gated content.
+- **Landing pages**: Use MailerLite's built-in landing page builder for product sales pages (10 on Free, unlimited on paid).
+- **Automation integration**: Trigger post-purchase email sequences automatically based on product purchase events.
+- **Limitations**: No order bumps, no upsell/downsell flows, no cart/checkout page customization. For complex digital product sales with bundles and upsells, use Gumroad, Lemon Squeezy, or Kit Commerce and connect to MailerLite for email follow-up.
+- **Best for**: Solopreneurs and creators already using MailerLite who want to sell 1-3 simple digital products (ebooks, templates) without adding another platform.
+
 *You no longer need the platform guide details — focus on the user's specific situation.*
 
 ## Step 4 — Actionable guidance
@@ -86,6 +97,7 @@ Ask the user:
 - `/sales-audience-growth` — Growing your audience (lead magnets, referrals, cross-promotion)
 - `/sales-email-marketing` — Email marketing (launch sequences, nurture campaigns)
 - `/sales-funnel` — Sales funnel strategy (landing pages, conversion paths)
+- `/sales-mailerlite` — MailerLite platform help (digital product sales, paid newsletters)
 - `/sales-kit` — Kit platform help (Kit Commerce setup)
 - `/sales-groove` — Groove.cm platform help (GrooveSell, GroovePages)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

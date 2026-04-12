@@ -138,6 +138,20 @@ SWAI.ai is an AI-Native Revenue OS that autonomously builds and optimizes funnel
 - **Limitations**: Less granular control than dedicated funnel builders (ClickFunnels, Groove.cm). No manual multi-step funnel flow editor — the AI decides the funnel structure based on your goal. No native checkout/upsell/downsell pages for e-commerce funnels.
 - **Best for**: Agencies and small businesses that want AI to handle funnel creation and optimization end-to-end. Not ideal for teams that want manual control over every funnel step or complex e-commerce checkout flows.
 
+## In MailerLite
+
+MailerLite offers landing pages and basic funnel capabilities as part of its email marketing platform. For full platform help, use `/sales-mailerlite`.
+
+- **Landing pages**: Drag-and-drop builder with templates, custom domains, SEO settings. 10 on Free, unlimited on paid plans. Good for opt-in pages, lead magnets, and product sales pages.
+- **Signup forms**: Pop-up, embedded, and promotion (Advanced+). Exit-intent, scroll, and time-delay triggers. Auto-connect to groups and trigger automations.
+- **Website builder**: Basic website and blog builder — suitable for simple sites but not a full funnel builder.
+- **Automation integration**: Form and landing page signups feed directly into automation workflows — trigger welcome sequences, group assignments, and follow-up emails.
+- **Digital products**: Sell ebooks and downloads directly via MailerLite with Stripe integration. 1 product on Free, 3 on Growing Business, unlimited on Advanced.
+- **Paid newsletters**: Recurring subscription payments via Stripe — a funnel for content monetization.
+- **E-commerce integration**: Shopify/WooCommerce connection enables abandoned cart and post-purchase funnel automation.
+- **Limitations**: MailerLite is NOT a full funnel builder. No multi-step funnel flows, no upsell/downsell pages, no order bumps, no A/B testing on landing pages (only on emails). For multi-step funnels with checkout, use ClickFunnels, Groove.cm, or GoHighLevel and connect to MailerLite for email follow-up.
+- **Best for**: Simple lead capture funnels (landing page → email sequence) and digital product sales where MailerLite is already the email tool. For anything beyond opt-in capture and basic product sales, use a dedicated funnel builder and integrate.
+
 ## In Other Tools
 
 - **Unbounce / Leadpages**: Best for standalone landing pages and opt-in pages rather than full multi-step funnels. Use Unbounce Smart Traffic for AI-driven A/B testing. Connect to a separate checkout tool (ThriveCart, Stripe) and email tool.
