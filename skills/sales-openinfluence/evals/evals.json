@@ -1,0 +1,32 @@
+[
+  {
+    "prompt": "I'm a Fortune 500 CPG brand evaluating Open Influence for a multi-market influencer campaign across Instagram and TikTok. We want managed services, not self-serve. What should we know?",
+    "assertions": [
+      "Explains that Open Influence operates as a hybrid agency and SaaS platform, with managed campaign services available at the Enterprise tier",
+      "Mentions that Open Influence works with Fortune 500 brands and covers 50+ countries with offices globally",
+      "Discusses the image recognition discovery feature as a differentiator for finding brand-aligned creators visually",
+      "Notes that managed service pricing is custom and separate from the self-serve SaaS plans shown on the website",
+      "Suggests comparing against at least one enterprise competitor like CreatorIQ or NeoReach before committing"
+    ]
+  },
+  {
+    "prompt": "I have a $200/month budget for influencer discovery. Is Open Influence worth it at the Pro plan?",
+    "assertions": [
+      "Describes the limitations of the Pro plan — restricted number of searches and results per search",
+      "Notes that image recognition requires the Premium plan at a higher price point, not available on Pro",
+      "Recommends at least one more affordable alternative with larger database or more features at a similar price",
+      "Explains that the self-serve tiers are discovery tools only with no campaign management functionality",
+      "Provides actionable advice on whether to stay or switch based on the user's budget constraints"
+    ]
+  },
+  {
+    "prompt": "How does Open Influence's visual search work compared to just using keyword filters on other platforms?",
+    "assertions": [
+      "Explains that image recognition analyzes visual elements in creator content rather than relying on text or hashtags",
+      "Notes that this feature requires the Premium tier or higher and is not available on Basic or Pro plans",
+      "Describes how the visual search helps find creators whose aesthetic matches a brand even without keyword overlap",
+      "Mentions look-alike modeling as a complementary discovery method to expand from known good creators",
+      "Acknowledges that most competitors rely on keyword and filter-based search, making visual search a genuine differentiator"
+    ]
+  }
+]

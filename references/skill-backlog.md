@@ -39,6 +39,9 @@ Problems discovered during platform research that don't have dedicated skills ye
 | Influencer content-to-paid-ads pipeline (UGC → Spark Ads / Meta whitelisting workflow, rights management) | Industry articles, platform feature comparisons — growing importance | sales-aspire | 2026-04-12 |
 | Visual social listening (AI image/video recognition for logo detection in visual content) | YouScan differentiator, Talkwalker capability — growing importance as visual content dominates | sales-brandwatch | 2026-04-12 |
 | Reddit-specific monitoring strategy (post-GummySearch shutdown, dedicated Reddit intelligence tools) | GummySearch shutdown Dec 2025, Threadlytics emerging, Reddit official API partner programs | sales-brandwatch | 2026-04-12 |
+| Instagram Stories-specific influencer campaign optimization (Stories-only formats, swipe-up CTR, story sequencing) | InstaJet Stories-only focus, Stories tracking gap in industry — medium frequency | sales-instajet | 2026-04-12 |
+| Managed vs self-serve influencer marketplace comparison (when to use managed service vs DIY platform) | InstaJet managed service vs Collabstr self-serve vs agency — recurring question | sales-instajet | 2026-04-12 |
+| Agency vs self-serve influencer platform decision framework (when to hire an agency vs use a SaaS tool, budget thresholds, hybrid models) | Review sites, comparison articles — medium frequency, Open Influence hybrid model highlights the gap | sales-openinfluence | 2026-04-12 |
 
 ## Platforms to add
 
@@ -67,3 +70,12 @@ Specific platforms, tools, or websites discovered during research that should ge
 | Awario | https://awario.com | Budget social listening with strong Reddit monitoring capabilities | sales-brandwatch | 2026-04-12 |
 | Threadlytics | https://threadlytics.com | Reddit-specific monitoring and analytics, emerged after GummySearch shutdown | sales-brandwatch | 2026-04-12 |
 | Statusbrew | https://statusbrew.com | Social media management + listening alternative to Brandwatch for mid-market | sales-brandwatch | 2026-04-12 |
+| Ainfluencer | https://ainfluencer.com | Free influencer marketplace, direct InstaJet competitor with AI matching | sales-instajet | 2026-04-12 |
+| Stormy | https://stormy.ai | AI-powered influencer marketing with 1.6B Instagram profiles | sales-instajet | 2026-04-12 |
+| Favikon | https://favikon.com | Top recommended 2026 influencer platform, covers 9 social platforms including LinkedIn | sales-instajet | 2026-04-12 |
+| Telega.io | https://telega.io | Same parent company as InstaJet (Mirafox Holding), Telegram advertising marketplace | sales-instajet | 2026-04-12 |
+| Viral Nation | https://viralnation.com | Top Open Influence competitor, enterprise agency with AI platform (Viral Nation_Secure brand safety) | sales-openinfluence | 2026-04-12 |
+| HireInfluence | https://hireinfluence.com | Premium managed influencer agency, Reddit-active, compliance-first execution | sales-openinfluence | 2026-04-12 |
+| The Influencer Marketing Factory | https://theinfluencermarketingfactory.com | Competitor agency frequently listed alongside Open Influence in rankings | sales-openinfluence | 2026-04-12 |
+| Obviously | https://obvious.ly | Top Open Influence competitor per CBInsights, enterprise influencer agency | sales-openinfluence | 2026-04-12 |
+| Linqia | https://linqia.com | Top Open Influence competitor, performance-based influencer marketing model | sales-openinfluence | 2026-04-12 |

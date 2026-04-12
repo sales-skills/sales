@@ -307,6 +307,8 @@ Router recommends a 5-skill sequence:
 | `/sales-hypeauditor` | HypeAuditor — AI-powered influencer analytics (223.6M+ profiles), fraud detection (53 patterns, 95%+ accuracy), Discovery, Campaign Management, Market Analysis, API |
 | `/sales-aspire` | Aspire (formerly AspireIQ) — word-of-mouth commerce for influencer marketing, product seeding (Shopify), affiliate tracking, UGC sourcing, paid social (TikTok Spark Ads, Meta), 170M+ profiles |
 | `/sales-influencer-hero` | Influencer Hero — all-in-one influencer marketing (200M+ profiles), AI-personalized outreach (email + DMs), CRM, affiliate tracking (code leakage prevention), product gifting, UGC capture, API |
+| `/sales-instajet` | InstaJet.io — Instagram Stories influencer marketplace (10K+ vetted creators, 50+ countries), escrow payments, managed service |
+| `/sales-openinfluence` | Open Influence — AI-powered influencer agency + SaaS (image recognition search, 20M+ keywords, Mood Board, paid media amplification, Studio OI, 50+ countries) |
 | `/sales-tiktok-marketing` | TikTok marketing strategy — organic growth, paid ads, content creation, influencer strategy, algorithm, metrics |
 | `/sales-gaming-marketing` | Gaming influencer marketing strategy — streamer partnerships, game launch campaigns, budget allocation, ROI |
 | `/sales-influencer-marketing` | Influencer marketing strategy — platform comparison, creator discovery, vetting, campaign tracking |
