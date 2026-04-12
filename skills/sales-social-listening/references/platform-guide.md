@@ -2,20 +2,20 @@
 
 ## Platform comparison
 
-| Feature | Meltwater | Brandwatch | Talkwalker | Brand24 | Sprout Social | Mention | Hootsuite | BrandJet |
-|---|---|---|---|---|---|---|---|---|
-| **Channels** | News, social, print, broadcast, podcasts, forums | Social, news, blogs, forums, reviews | Social, news, blogs, forums, print | Social, news, blogs, forums, podcasts | Social, reviews | Social, news, blogs, forums | Social (30+ networks) | Social, news, AI assistants (ChatGPT, Claude, Perplexity, Gemini) |
-| **Source volume** | 300K+ news sources, global | 100M+ sources | 150M+ websites + social | 25M+ online sources | Social-focused | Billions of sources | Social-focused | Social + AI visibility monitoring |
-| **Sentiment** | Auto + manual correction | AI-powered, customizable | AI with image recognition | AI-powered | AI-powered | AI-powered | Basic | AI-powered |
-| **Boolean queries** | Yes (advanced with NEAR/n) | Yes (advanced) | Yes (advanced) | Basic keyword matching | Basic keywords | Basic keywords | Basic keywords | Basic keywords |
-| **Crisis detection** | Real-time alerts via email/Slack/Teams | Signals, anomaly detection | Real-time crisis alerts | Storm Alerts | Smart Inbox alerts | Real-time alerts | Basic alerts | Real-time alerts |
-| **Media relations** | Built-in journalist database + pitching | No | No | No | No | No | No | No |
-| **Influencer discovery** | Yes | Yes (via acquisition) | Yes | Basic | Yes | No | Yes (limited) | No |
-| **Social publishing** | Yes | No | No | No | Yes (core strength) | No | Yes (core strength) | No |
-| **Consumer intelligence** | Yes (audience insights, trends) | Yes (deep audience research) | Yes (conversation clusters) | Basic trends | Audience demographics | Basic | Basic | AI visibility insights |
-| **API** | Yes (REST, streaming, MCP) | Yes (REST) | Yes (REST) | Yes (REST) | Yes (REST) | Yes (REST) | Yes (REST) | No (webhooks only) |
-| **Starting price** | ~$6K/yr (sales call) | Enterprise pricing | Enterprise pricing | $79/mo | $199/mo (Social only) | $41/mo | $99/mo | $60/mo |
-| **Best for** | Enterprise PR + comms teams needing news + social + media relations in one | Enterprise brands wanting deep consumer insights and data science | Global brands needing image recognition and visual analytics | SMBs and startups wanting affordable monitoring | Teams needing publishing + listening in one | Startups wanting simple, affordable monitoring | Teams already using Hootsuite for publishing | GTM teams wanting social listening + multi-channel outreach + AI visibility in one |
+| Feature | Meltwater | Brandwatch | Talkwalker | Brand24 | Sprout Social | Mention | Hootsuite | BrandJet | Influencity |
+|---|---|---|---|---|---|---|---|---|---|
+| **Channels** | News, social, print, broadcast, podcasts, forums | Social, news, blogs, forums, reviews | Social, news, blogs, forums, print | Social, news, blogs, forums, podcasts | Social, reviews | Social, news, blogs, forums | Social (30+ networks) | Social, news, AI assistants (ChatGPT, Claude, Perplexity, Gemini) | Social + web (100M+ sources) |
+| **Source volume** | 300K+ news sources, global | 100M+ sources | 150M+ websites + social | 25M+ online sources | Social-focused | Billions of sources | Social-focused | Social + AI visibility monitoring | 100M+ sources |
+| **Sentiment** | Auto + manual correction | AI-powered, customizable | AI with image recognition | AI-powered | AI-powered | AI-powered | Basic | AI-powered | AI-powered |
+| **Boolean queries** | Yes (advanced with NEAR/n) | Yes (advanced) | Yes (advanced) | Basic keyword matching | Basic keywords | Basic keywords | Basic keywords | Basic keywords | Basic keywords |
+| **Crisis detection** | Real-time alerts via email/Slack/Teams | Signals, anomaly detection | Real-time crisis alerts | Storm Alerts | Smart Inbox alerts | Real-time alerts | Basic alerts | Real-time alerts | Real-time alerts |
+| **Media relations** | Built-in journalist database + pitching | No | No | No | No | No | No | No | No |
+| **Influencer discovery** | Yes | Yes (via acquisition) | Yes | Basic | Yes | No | Yes (limited) | No | Yes (200M+ profiles — core strength) |
+| **Social publishing** | Yes | No | No | No | Yes (core strength) | No | Yes (core strength) | No | Yes (Social Hub) |
+| **Consumer intelligence** | Yes (audience insights, trends) | Yes (deep audience research) | Yes (conversation clusters) | Basic trends | Audience demographics | Basic | Basic | AI visibility insights | Competitor analysis, trend detection |
+| **API** | Yes (REST, streaming, MCP) | Yes (REST) | Yes (REST) | Yes (REST) | Yes (REST) | Yes (REST) | Yes (REST) | No (webhooks only) | Business+ (no public docs) |
+| **Starting price** | ~$6K/yr (sales call) | Enterprise pricing | Enterprise pricing | $79/mo | $199/mo (Social only) | $41/mo | $99/mo | $60/mo | ~$318/mo (annual, Business+ for listening) |
+| **Best for** | Enterprise PR + comms teams needing news + social + media relations in one | Enterprise brands wanting deep consumer insights and data science | Global brands needing image recognition and visual analytics | SMBs and startups wanting affordable monitoring | Teams needing publishing + listening in one | Startups wanting simple, affordable monitoring | Teams already using Hootsuite for publishing | GTM teams wanting social listening + multi-channel outreach + AI visibility in one | Teams needing influencer marketing + social listening in one |
 
 ### When to choose each platform
 
@@ -27,6 +27,7 @@
 - **Mention** — best for startups and small teams wanting simple, affordable brand monitoring. Recently acquired by Agorapulse. $41/mo starting price.
 - **Hootsuite** — best for teams already using Hootsuite for social publishing who want to add listening. Talkwalker acquisition added listening capabilities. Social-focused.
 - **BrandJet** — best for GTM teams that want social listening + multi-channel outreach + AI visibility monitoring in one platform. Unique differentiator: tracks brand mentions in ChatGPT, Claude, Perplexity, and Gemini. Affordable starting at $60/mo. Less depth than enterprise tools but unified workflow from monitoring to outreach.
+- **Influencity** — best for teams that already use or plan to use Influencity for influencer marketing and want social listening in the same platform. Monitoring module covers 100M+ sources with brand tracking, competitor analysis, sentiment, and trend detection. The social listening is secondary to the influencer marketing core — if you only need social listening without influencer marketing, dedicated tools like Brand24 or Meltwater are stronger. Available on Business plan (~$798/mo) and above only.
 
 ## Setting up monitoring
 

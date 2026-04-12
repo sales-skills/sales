@@ -1,6 +1,6 @@
 ---
 name: sales-social-listening
-description: "Social listening and brand monitoring strategy — monitoring, Boolean queries, sentiment, competitive intel, crisis detection, AI visibility monitoring, LLM brand mentions. Platform comparison (Meltwater, Brandwatch, Talkwalker, Brand24, Sprout Social, Mention, Hootsuite, BrandJet), monitoring setup (keywords, sources, alerts), sentiment analysis, competitive benchmarking (share of voice), crisis detection (real-time alerts, escalation), consumer insights, and reporting. Use when you don't know what people are saying about your brand, competitors are getting mentioned more than you, negative sentiment is spiking and you need to understand why, you're missing PR crises until it's too late, you can't tell if your brand shows up in AI/LLM answers, or you need to pick the right social listening tool. Do NOT use for platform-specific config (use /sales-meltwater), influencer discovery (use /sales-influencer-marketing), social media publishing/scheduling, or SEO keyword research (use /sales-semrush)."
+description: "Social listening and brand monitoring strategy — monitoring, Boolean queries, sentiment, competitive intel, crisis detection, AI visibility monitoring, LLM brand mentions. Platform comparison (Meltwater, Brandwatch, Talkwalker, Brand24, Sprout Social, Mention, Hootsuite, BrandJet, Influencity), monitoring setup (keywords, sources, alerts), sentiment analysis, competitive benchmarking (share of voice), crisis detection (real-time alerts, escalation), consumer insights, and reporting. Use when you don't know what people are saying about your brand, competitors are getting mentioned more than you, negative sentiment is spiking and you need to understand why, you're missing PR crises until it's too late, you can't tell if your brand shows up in AI/LLM answers, or you need to pick the right social listening tool. Do NOT use for platform-specific config (use /sales-meltwater), influencer discovery (use /sales-influencer-marketing), social media publishing/scheduling, or SEO keyword research (use /sales-semrush)."
 argument-hint: "[describe your social listening question — e.g., 'how do I track competitor mentions' or 'which social listening tool should I use']"
 license: MIT
 version: 1.0.0
@@ -55,6 +55,7 @@ If the request maps to a platform-specific skill, route:
 - Sprout Social setup, config, or features → `/sales-sproutsocial`
 - Brandwatch setup, config, or features → `/sales-brandwatch`
 - Meltwater setup, config, or features → `/sales-meltwater`
+- Influencity Monitoring or influencer marketing → `/sales-influencity`
 - Influencer discovery or campaign tracking → `/sales-influencer-marketing`
 - Email marketing analytics → `/sales-email-marketing`
 - SEO keyword research → `/sales-semrush`
@@ -99,6 +100,7 @@ Based on the user's specific question:
 - `/sales-social-media-management` — Social media management strategy — publishing, scheduling, engagement, tool comparison
 - `/sales-employee-advocacy` — Employee advocacy strategy — content curation, gamification, compliance
 - `/sales-intent` — Buying intent signals and prioritization from monitoring data
+- `/sales-influencity` — Influencity platform help — Monitoring module for brand tracking and competitor analysis
 - `/sales-influencer-marketing` — Influencer discovery and campaign tracking
 - `/sales-content` — Sales content management and strategy
 - `/sales-brandjet` — BrandJet AI platform help — outreach, brand intelligence, AI monitoring

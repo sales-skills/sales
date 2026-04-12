@@ -2,17 +2,17 @@
 
 ## Platform comparison
 
-| Feature | Sprout Social | Hootsuite | Buffer | Agorapulse | Sendible | Later | Planable | Statusbrew |
-|---|---|---|---|---|---|---|---|---|
-| **Networks** | IG, FB, LI, X, TikTok, Pinterest, Threads, Reddit, Bluesky, WhatsApp | 30+ networks | IG, FB, LI, X, TikTok, Pinterest, Threads, Bluesky, YouTube, Mastodon | IG, FB, LI, X, TikTok, YouTube, Google Business | IG, FB, LI, X, TikTok, YouTube, Google Business | IG, FB, LI, X, TikTok, Pinterest, YouTube | IG, FB, LI, X, TikTok, YouTube, Google Business | IG, FB, LI, X, TikTok, YouTube, Google Business, Pinterest |
-| **Smart Inbox** | Yes (unified) | Yes (unified) | Basic | Yes (unified) | Yes | No | No | Yes (unified) |
-| **Content Calendar** | Visual drag-and-drop | Visual calendar | Visual calendar | Visual calendar | Visual calendar | Visual grid + calendar | Visual with drag-and-drop | Visual calendar |
-| **Approval Workflows** | Advanced+ plan | Business+ plan | No | Yes (all plans) | Yes | No | Yes (core feature) | Yes |
-| **Social Listening** | Add-on ($999+/mo) | Talkwalker integration | No | Basic monitoring | Basic monitoring | No | No | Basic monitoring |
-| **Analytics** | Deep (Premium add-on) | Custom reports | Basic | Detailed | Standard | Basic | No | Detailed |
-| **AI Features** | AI Assist (copy, replies) | OwlyWriter AI | AI Assistant | AI writing | AI | AI caption writer | AI copywriting | AI suggestions |
-| **Best for** | Data-driven teams, enterprise | Multi-channel power users | Solo/small teams, simplicity | Agencies, mid-market | Agencies (white-label) | Visual brands, Instagram-first | Content approval teams | Budget-conscious teams |
-| **Starting price** | $199/seat/mo | $99/mo (1 user) | $6/mo per channel | $49/mo | $29/mo | $25/mo | $33/mo per workspace | $69/mo |
+| Feature | Sprout Social | Hootsuite | Buffer | Agorapulse | Sendible | Later | Planable | Statusbrew | Influencity |
+|---|---|---|---|---|---|---|---|---|---|
+| **Networks** | IG, FB, LI, X, TikTok, Pinterest, Threads, Reddit, Bluesky, WhatsApp | 30+ networks | IG, FB, LI, X, TikTok, Pinterest, Threads, Bluesky, YouTube, Mastodon | IG, FB, LI, X, TikTok, YouTube, Google Business | IG, FB, LI, X, TikTok, YouTube, Google Business | IG, FB, LI, X, TikTok, Pinterest, YouTube | IG, FB, LI, X, TikTok, YouTube, Google Business | IG, FB, LI, X, TikTok, YouTube, Google Business, Pinterest | IG, TikTok, YouTube (via Social Hub) |
+| **Smart Inbox** | Yes (unified) | Yes (unified) | Basic | Yes (unified) | Yes | No | No | Yes (unified) | Yes (Social Media Inbox) |
+| **Content Calendar** | Visual drag-and-drop | Visual calendar | Visual calendar | Visual calendar | Visual calendar | Visual grid + calendar | Visual with drag-and-drop | Visual calendar | Yes (Content Planner) |
+| **Approval Workflows** | Advanced+ plan | Business+ plan | No | Yes (all plans) | Yes | No | Yes (core feature) | Yes | Yes (Social Hub) |
+| **Social Listening** | Add-on ($999+/mo) | Talkwalker integration | No | Basic monitoring | Basic monitoring | No | No | Basic monitoring | Yes (100M+ sources, Business+) |
+| **Analytics** | Deep (Premium add-on) | Custom reports | Basic | Detailed | Standard | Basic | No | Detailed | Social Media Analytics |
+| **AI Features** | AI Assist (copy, replies) | OwlyWriter AI | AI Assistant | AI writing | AI | AI caption writer | AI copywriting | AI suggestions | AI-powered creator discovery |
+| **Best for** | Data-driven teams, enterprise | Multi-channel power users | Solo/small teams, simplicity | Agencies, mid-market | Agencies (white-label) | Visual brands, Instagram-first | Content approval teams | Budget-conscious teams | Teams needing influencer + social in one |
+| **Starting price** | $199/seat/mo | $99/mo (1 user) | $6/mo per channel | $49/mo | $29/mo | $25/mo | $33/mo per workspace | $69/mo | ~$318/mo (annual) |
 
 ### When to choose each platform
 
@@ -24,6 +24,7 @@
 - **Later** — best for visual brands focused on Instagram and TikTok. Grid preview for visual planning. Linkin.bio for driving traffic from Instagram. Limited inbox and analytics.
 - **Planable** — best for teams where content approval is the bottleneck. Visual approval workflows are the core feature. No analytics or inbox — purely a content collaboration tool.
 - **Statusbrew** — best for teams wanting Sprout-level features at 30-40% lower cost. Strong analytics and unified inbox. Good alternative when Sprout pricing is prohibitive.
+- **Influencity** — best for teams that need influencer marketing and social media management in one platform. Social Hub covers content planning, inbox, and approval workflows for your own channels alongside influencer discovery (200M+ profiles), campaign management, and social listening (100M+ sources, Business+ only). The social management features are secondary to the influencer marketing core — if you only need social scheduling without influencer marketing, dedicated tools like Sprout or Agorapulse are stronger. Starting ~$318/mo annual.
 
 ## Setting up a publishing workflow
 

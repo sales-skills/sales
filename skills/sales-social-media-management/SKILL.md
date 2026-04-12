@@ -1,6 +1,6 @@
 ---
 name: sales-social-media-management
-description: "Social media management strategy — publishing, scheduling, content calendars, engagement workflows, analytics, team collaboration, tool comparison (Sprout Social, Hootsuite, Buffer, Agorapulse, Sendible, Later, Brandwatch, Meltwater Engage, Pallyy, Statusbrew, Sociality.io, Loomly, Planable). Use when social posts aren't getting engagement, you're spending too much time manually publishing, your content calendar is chaotic, you don't know when to post for best reach, DMs and comments are piling up unanswered, team approval workflows are slowing you down, or you can't prove social media ROI. Do NOT use for platform-specific config (use /sales-later, /sales-sproutsocial, /sales-meltwater, or /sales-brandwatch), social listening strategy (use /sales-social-listening), influencer marketing (use /sales-influencer-marketing), or paid social ads (use /sales-retargeting or /sales-b2b-advertising)."
+description: "Social media management strategy — publishing, scheduling, content calendars, engagement workflows, analytics, team collaboration, tool comparison (Sprout Social, Hootsuite, Buffer, Agorapulse, Sendible, Later, Brandwatch, Meltwater Engage, Influencity, Pallyy, Statusbrew, Sociality.io, Loomly, Planable). Use when social posts aren't getting engagement, you're spending too much time manually publishing, your content calendar is chaotic, you don't know when to post for best reach, DMs and comments are piling up unanswered, team approval workflows are slowing you down, or you can't prove social media ROI. Do NOT use for platform-specific config (use /sales-later, /sales-sproutsocial, /sales-meltwater, /sales-brandwatch, or /sales-influencity), social listening strategy (use /sales-social-listening), influencer marketing (use /sales-influencer-marketing), or paid social ads (use /sales-retargeting or /sales-b2b-advertising)."
 argument-hint: "[describe your social media management question — e.g., 'which tool for my 3-person team' or 'how to set up a content approval workflow']"
 license: MIT
 version: 1.0.0
@@ -56,6 +56,7 @@ If the request maps to a platform-specific skill, route:
 - Sprout Social setup, config, or features → `/sales-sproutsocial`
 - Meltwater Engage or social publishing in Meltwater → `/sales-meltwater`
 - Brandwatch social media management → `/sales-brandwatch`
+- Influencity Social Hub or influencer marketing → `/sales-influencity`
 - Social listening (monitoring, sentiment, crisis) → `/sales-social-listening`
 - Influencer marketing → `/sales-influencer-marketing`
 - Employee advocacy → `/sales-employee-advocacy`
@@ -98,6 +99,7 @@ Based on the user's specific question:
 - `/sales-sproutsocial` — Sprout Social platform help — Publishing, Smart Inbox, Analytics, Listening, API
 - `/sales-meltwater` — Meltwater platform help — media intelligence, social publishing (Engage), influencer marketing
 - `/sales-brandwatch` — Brandwatch platform help — Social Media Management module, Consumer Intelligence
+- `/sales-influencity` — Influencity platform help — influencer marketing + Social Hub (content calendar, inbox, approval workflows)
 - `/sales-social-listening` — Social listening strategy — monitoring, sentiment, crisis detection, tool comparison
 - `/sales-employee-advocacy` — Employee advocacy programs — content curation, gamification, compliance
 - `/sales-influencer-marketing` — Influencer marketing strategy — discovery, vetting, campaigns, ROI
