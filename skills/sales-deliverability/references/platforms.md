@@ -43,6 +43,8 @@ Detailed per-platform deliverability configuration — sending limits, warmup, d
 - [In ZoomInfo (Engage)](#in-zoominfo-engage)
 - [In SendPulse (verification + domain auth + dedicated IP)](#in-sendpulse-verification-domain-auth-dedicated-ip)
 - [In LeadMagic](#in-leadmagic)
+- [In AiSDR](#in-aisdr)
+- [In BrandJet](#in-brandjet)
 
 ### In Mailshake
 - **Sending limits**: Configure per-sender daily limits in Settings > Senders
@@ -377,6 +379,19 @@ Detailed per-platform deliverability configuration — sending limits, warmup, d
 - **Catch-all detection**: Identifies catch-all domains where all emails appear valid but may not reach real inboxes — flag these for extra caution or lower-priority sending.
 - **API-first**: REST endpoint at api.leadmagic.io — integrate validation into your outbound pipeline or use via MCP server in Claude Code.
 - **Best for**: Teams wanting cheap, API-accessible email validation to clean lists before sending. Complements dedicated deliverability tools like ZeroBounce and SafetyMails.
+
+## In AiSDR
+
+- Built-in email warmup: automated warmup for all connected email accounts — runs automatically, no manual configuration needed
+- Warmup timeline: 30-60 days for new accounts before reaching full sending capacity. AiSDR claims to ramp 73% faster than manual warmup
+- During warmup: AiSDR sends warm-up emails from your connected accounts and manages replies/engagement automatically to build sender reputation
+- Domain authentication: SPF, DKIM, and DMARC records must be configured for your sending domain before connecting to AiSDR — verify these first using `/sales-deliverability`
+- Sending volume controls: AiSDR manages daily send volume per account automatically — starts low during warmup, increases based on engagement and reputation signals
+- Bounce verification: AiSDR verifies prospect emails before sending — contacts with invalid or high-risk addresses are filtered out to protect sender reputation
+- Extra domains: $99/mo each — use multiple domains to distribute sending volume and reduce per-domain reputation risk
+- No custom tracking domain documentation found — check with AiSDR support
+- Monitoring: performance dashboard shows open rates, reply rates, bounce rates, and meeting bookings. No public API for programmatic monitoring.
+- Key deliverability limitation: AiSDR controls the sending infrastructure end-to-end — you can't configure sending schedules, IP rotation, or per-step timing like you can in Smartlead or Lemlist
 
 ## In BrandJet
 

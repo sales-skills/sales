@@ -33,6 +33,7 @@ Detailed per-platform list-building workflows, search filters, import/export pro
 - [Building lists from 6sense (Company Discovery + Sales Intelligence)](#building-lists-from-6sense-company-discovery-sales-intelligence)
 - [Building lists from Clay](#building-lists-from-clay)
 - [Building lists from LeadMagic](#building-lists-from-leadmagic)
+- [Prospecting with AiSDR](#prospecting-with-aisdr)
 
 ### In Apollo.io
 
@@ -297,6 +298,16 @@ Save the search as a dynamic list — new matches will appear automatically.
 - **Audiences**: Build dynamic buyer segments from enriched data + signals + CRM data. Audiences auto-update as new data flows in.
 - **Export to outbound tools**: Push enriched lists to Outreach, Salesloft, Apollo, Lemlist, Smartlead, or Clay's own Email Sequencer.
 - **Best for**: GTM engineers building automated prospect pipelines — import → enrich → segment → outreach in one workflow.
+
+### Prospecting with AiSDR
+
+- **Built-in database**: AiSDR provides access to 700M+ contacts — search by title, seniority, industry, company size, and buying signals. No separate prospecting tool needed.
+- **ICP filtering**: Define your Ideal Customer Profile in AiSDR and the AI finds matching prospects automatically. Filters include persona, company attributes, and intent signals.
+- **HubSpot import**: Sync HubSpot lists directly into AiSDR campaigns — no CSV export/import. Bi-directional sync keeps contacts updated.
+- **No CSV import for external lists**: AiSDR is designed to use its own database or CRM imports. For lists built in other tools (Apollo, ZoomInfo, Clay), import into HubSpot first, then sync to AiSDR.
+- **Lead search credits**: 1,200/mo on Explore ($900/mo), 4,500/mo on Grow ($2,500/mo). Credits consumed when adding prospects to campaigns.
+- **AI enrichment**: AiSDR researches each prospect individually — company news, tech stack, job postings, LinkedIn activity — for personalized outreach. This happens automatically as part of campaign execution.
+- **Best for**: Teams who want AI-driven prospecting and outreach in one platform without managing separate tools. For advanced list building with custom enrichment waterfalls, use Clay or Apollo and push to AiSDR via CRM sync.
 
 ### Building lists from LeadMagic
 

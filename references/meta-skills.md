@@ -9,8 +9,8 @@ A platform can belong to **multiple** meta skills (e.g., a platform with email +
 | Meta skill | Problem domain | Platforms it coordinates |
 |---|---|---|
 | `/sales-launch-directory` | Startup directory launches | Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, BetaList, Hacker News, Indie Hackers, Altern, Lobsters, StartupBase, Startup Stash, PitchWall, Futurepedia, LaunchCaster, SaaSHunt, Resource.fyi, LaunchVibe |
-| `/sales-cadence` | Outbound sequences | Salesloft, Mailshake, Smartlead, Lemlist, Yesware, Mixmax, Reply.io, Woodpecker, Apollo, Apollo Sequences, Hunter.io, Seamless.AI, ZoomInfo Engage, Attio, BrandJet |
-| `/sales-deliverability` | Email deliverability | Apollo, Mailshake, Salesloft, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter.io, SafetyMails, ZeroBounce, Snov.io, BrandJet |
+| `/sales-cadence` | Outbound sequences | Salesloft, Mailshake, Smartlead, Lemlist, Yesware, Mixmax, Reply.io, Woodpecker, Apollo, Apollo Sequences, Hunter.io, Seamless.AI, ZoomInfo Engage, Attio, BrandJet, AiSDR |
+| `/sales-deliverability` | Email deliverability | Apollo, Mailshake, Salesloft, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter.io, SafetyMails, ZeroBounce, Snov.io, BrandJet, AiSDR |
 | `/sales-email-marketing` | Opt-in email marketing | Kit, Mailchimp, ActiveCampaign, Klaviyo, Brevo, GetResponse, Omnisend, SendPulse, Iterable, Braze, Customer.io, Closum |
 | `/sales-funnel` | Sales funnels | ClickFunnels, GoHighLevel, Groove, Kartra, Closum, Mailchimp, GetResponse, Kit, SendPulse, SWAI |
 | `/sales-newsletter` | Newsletter monetization | Kit, Substack, Beehiiv, Ghost |
@@ -31,8 +31,8 @@ A platform can belong to **multiple** meta skills (e.g., a platform with email +
 | `/sales-data-hygiene` | CRM data quality | ZoomInfo OperationsOS, Salesforce, HubSpot Operations Hub, Clay, LeanData, DemandTools, Attio |
 | `/sales-b2b-advertising` | B2B / ABM advertising | ZoomInfo MarketingOS, Demandbase, 6sense, Terminus, RollWorks, LinkedIn Ads, Reddit Ads |
 | `/sales-retargeting` | Retargeting / remarketing | AdRoll, Google Ads, Meta, Criteo, LinkedIn, Retention.com, Reddit Ads, Cloutboost, Remerge |
-| `/sales-meeting-scheduler` | Meeting scheduling | Calendly, Chili Piper, Mixmax, Yesware |
-| `/sales-enrich` | Contact enrichment | Apollo, ZoomInfo, Clearbit, Clay, Hunter.io, Tomba, Prospeo, Mailmo, Seamless.AI, Enrich.so, Minelead, GetProspect, Skrapp, Anymail Finder, LeadMagic, Snov.io, Lobstr.io, OpenWeb Ninja, Outscraper, Attio, BrandJet, RB2B |
+| `/sales-meeting-scheduler` | Meeting scheduling | Calendly, Chili Piper, Mixmax, Yesware, AiSDR |
+| `/sales-enrich` | Contact enrichment | Apollo, ZoomInfo, Clearbit, Clay, Hunter.io, Tomba, Prospeo, Mailmo, Seamless.AI, Enrich.so, Minelead, GetProspect, Skrapp, Anymail Finder, LeadMagic, Snov.io, Lobstr.io, OpenWeb Ninja, Outscraper, Attio, BrandJet, RB2B, AiSDR |
 | `/sales-integration` | Tool integration | Any platform ↔ CRM, Zapier, Make, webhooks, API pipelines, Attio |
 | `/sales-account-map` | Buying committee mapping | Apollo, ZoomInfo, LinkedIn Sales Navigator, 6sense |
 | `/sales-email-tracking` | Email tracking | Yesware, Mixmax, Mailshake, HubSpot |
@@ -46,7 +46,7 @@ A platform can belong to **multiple** meta skills (e.g., a platform with email +
 | `/sales-customer-reviews` | Product review collection & syndication | Skeepers, Yotpo, Judge.me, Bazaarvoice, Loox, Okendo, Stamped, PowerReviews, Trustpilot |
 | `/sales-social-media-management` | Social media management | Sprout Social, Hootsuite, Buffer, Agorapulse, Sendible, Later, Brandwatch, Meltwater Engage, Planable, Statusbrew |
 | `/sales-employee-advocacy` | Employee advocacy | Sprout Social, Hootsuite Amplify, DSMN8, GaggleAMP, EveryoneSocial, Sociabble |
-| `/sales-prospect-list` | Prospect list building | Apollo, ZoomInfo, Clay, Seamless.AI, LeadMagic, Snov.io, Lobstr.io, LinkedIn Sales Navigator |
+| `/sales-prospect-list` | Prospect list building | Apollo, ZoomInfo, Clay, Seamless.AI, LeadMagic, Snov.io, Lobstr.io, LinkedIn Sales Navigator, AiSDR |
 | `/sales-intent` | Buyer intent & visitor identification | 6sense, ZoomInfo, Bombora, RB2B, Retention.com, Clay |
 | `/sales-compete` | Competitive displacement | Crayon, Klue, Semrush, ZoomInfo |
 | `/sales-forecast` | Revenue forecasting & deal health | Salesloft, HubSpot, Salesforce, Clari, Deal Inspect |

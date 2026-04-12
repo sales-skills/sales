@@ -1,0 +1,26 @@
+[
+  {
+    "prompt": "/sales-aisdr I just signed up for the Explore plan and want to start sending cold emails to CTOs at mid-market SaaS companies. What do I need to do first?",
+    "assertions": [
+      "Explains that email warmup is required before sending cold outreach and that it takes roughly 30 to 60 days for new accounts",
+      "Describes how to set up ICP targeting using AiSDR's contact database, including persona and company filters",
+      "Mentions the Explore plan's message and lead search credit limits and that billing is quarterly"
+    ]
+  },
+  {
+    "prompt": "/sales-aisdr My AiSDR campaigns have decent open rates but very low reply rates. How do I improve this?",
+    "assertions": [
+      "Suggests improving the AI Strategist context by providing more specific product value props, pain points, and customer proof points",
+      "Recommends reviewing ICP targeting to ensure the audience is specific enough rather than too broad",
+      "Provides benchmark context for what a reasonable reply rate looks like for AI-generated cold outreach"
+    ]
+  },
+  {
+    "prompt": "/sales-aisdr How does AiSDR compare to using a traditional sequence tool like Salesloft or Lemlist? Should I switch?",
+    "assertions": [
+      "Explains AiSDR's AI-first approach where the AI researches and writes messages autonomously versus traditional tools where you write templates manually",
+      "Notes AiSDR's limitation of email and LinkedIn channels only with no built-in phone dialer",
+      "Mentions the trade-off between AiSDR's hands-off automation and the greater customization and control offered by traditional sequence tools"
+    ]
+  }
+]

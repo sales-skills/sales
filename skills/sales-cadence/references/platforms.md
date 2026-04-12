@@ -21,6 +21,7 @@ Detailed per-platform cadence setup — campaign types, channel support, A/B tes
 - [In Snov.io](#in-snovio)
 - [In 6sense (AI Email Agents)](#in-6sense-ai-email-agents)
 - [In Clay (Email Sequencer)](#in-clay-email-sequencer)
+- [In AiSDR](#in-aisdr)
 
 ## In Mailshake
 - Mailshake campaigns = cadences — a campaign has an initial message plus follow-ups
@@ -212,3 +213,18 @@ Detailed per-platform cadence setup — campaign types, channel support, A/B tes
 - No public API — use webhooks to push sequence events to external systems (Slack, HubSpot, Attio)
 - Additional social accounts cost $17-20/mo each beyond included account
 - LinkedIn automation: ramp up gradually for new accounts to avoid restrictions
+
+## In AiSDR
+
+- AiSDR is an AI SDR that automates the entire outbound cadence — prospecting, research, message writing, sending, and follow-up
+- AI-generated outreach: the AI researches each prospect individually (company news, tech stack, job postings, LinkedIn) and writes unique messages — not template swaps
+- Channels: email + LinkedIn only — no phone dialer or SMS. For voice touches, pair AiSDR with Aircall or a separate dialer
+- Campaign types: cold outbound, inbound follow-up, trigger-based (signal-driven), re-engagement
+- AI Strategist: configure your product value prop, target pain points, and messaging context — the AI uses this to generate relevant, personalized messages
+- Follow-up: AI reads replies, analyzes tone, and adjusts follow-up messaging automatically
+- Sending limits: managed per-account with daily volume controls — starts low during warmup, ramps gradually
+- No manual sequence building: you don't build step-by-step cadences like in Salesloft or Lemlist — the AI decides timing, channel, and message content based on engagement signals
+- HubSpot/Salesforce/Pipedrive sync: all activity (sends, opens, replies, meetings) logs to CRM automatically
+- Meeting booking: Calendly integration — prospects can self-schedule directly from email
+- Credits: 1,200 AI messages/mo (Explore $900/mo), 4,500 (Grow $2,500/mo). Each AI-generated touchpoint consumes one credit
+- Best for: teams wanting fully autonomous outbound without building and managing sequences manually. Trade-off: less control over exact message content and timing vs traditional sequence tools

@@ -31,6 +31,7 @@ Problems discovered during platform research that don't have dedicated skills ye
 | Esports team sponsorship strategy (team deals, jersey placement, tournament activations) | Research — distinct from influencer marketing, involves team orgs not individual creators | sales-cloutboost | 2026-04-11 |
 | Gaming livestream ad formats (pre-roll, overlay, mid-roll, sponsored segments) | Research — ad tech for streaming platforms, different from influencer partnerships | sales-cloutboost | 2026-04-11 |
 | TikTok Shop setup and optimization (product listings, live shopping, affiliate commission structure) | Upstream research — growing ecommerce channel, distinct from general TikTok marketing | sales-houseofmarketers | 2026-04-12 |
+| AI SDR tool comparison/selection (AiSDR vs Artisan vs 11x vs Salesforge vs Coldreach — which AI SDR for which use case) | G2, review sites, comparison blogs — high frequency | sales-aisdr | 2026-04-12 |
 | TikTok algorithm analytics tools (performance debugging, trend detection, competitive analysis) | Upstream research — platform-specific tooling gap | sales-houseofmarketers | 2026-04-12 |
 | iGaming influencer regulatory compliance (gambling ad rules, financial promotion guidelines per jurisdiction) | Research — niche but critical for iGaming vertical, no existing skill | sales-famesters | 2026-04-12 |
 | Link-in-bio strategy (Linktree vs Later Linkin.bio vs Shorby vs Stan Store — tool comparison, shoppable pages, click tracking) | Review sites, comparison articles — medium frequency | sales-later | 2026-04-12 |
@@ -96,3 +97,8 @@ Specific platforms, tools, or websites discovered during research that should ge
 | Dataseat | https://dataseat.com | Privacy-first mobile DSP, ID-less advertising, SKAdNetwork specialist | sales-remerge | 2026-04-12 |
 | Captiv8 | https://captiv8.io | Top Aspire competitor, enterprise influencer marketing with social listening | sales-aspire | 2026-04-12 |
 | Brandbassador | https://www.brandbassador.com | Ambassador marketing platform, gamified missions, competitor to Aspire | sales-aspire | 2026-04-12 |
+| Artisan (Ava) | https://www.artisan.co | Top AiSDR competitor, AI SDR with BDR agent Ava, mentioned in every comparison | sales-aisdr | 2026-04-12 |
+| 11x.ai | https://11x.ai | Major AI SDR competitor (Alice/Jordan agents), mentioned in pricing comparisons | sales-aisdr | 2026-04-12 |
+| Salesforge (Agent Frank) | https://www.salesforge.ai | Top-performing AI SDR in comparison tests, self-serve outbound | sales-aisdr | 2026-04-12 |
+| Coldreach | https://coldreach.ai | Signal-based AI SDR, top performer in comparison tests | sales-aisdr | 2026-04-12 |
+| Instantly | https://instantly.ai | Cold email leader, high-volume scaling, mentioned as alternative in every AI SDR comparison | sales-aisdr | 2026-04-12 |

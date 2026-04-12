@@ -20,6 +20,12 @@ Research date: 2026-04-12
 | Braze | Partner only | https://www.braze.com/partners | In-house | - | Alloys Solutions Partner, enterprise-focused |
 | Iterable | Partner only | https://iterable.com/become-a-partner/ | In-house | - | Solutions and technology partner tracks only |
 
+## AI SDR & Autonomous Outbound
+
+| Platform | Status | Signup Link | Network | Commission | Notes |
+|---|---|---|---|---|---|
+| AiSDR | Active | https://aisdr.com/aisdr-partnership/ | PartnerStack | 20% for 1 year (referral) or 30% lifetime (reseller) | Quarterly payouts, 1-2 day onboarding, global partners welcome |
+
 ## Outbound & Sales Engagement
 
 | Platform | Status | Signup Link | Network | Commission | Notes |

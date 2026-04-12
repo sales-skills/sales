@@ -96,7 +96,7 @@ For each call step:
 - Duration: 60-90 seconds max
 - Structure: Say their name, show you did research, one key insight, soft CTA
 
-For platform-specific cadence implementation (Salesloft, Mailshake, Lemlist, Smartlead, Mixmax, Reply.io, Woodpecker, Hunter.io, Seamless.AI, Closum, Minelead, GetProspect, ZoomInfo, Snov.io, 6sense, Clay, BrandJet), see references/platforms.md.
+For platform-specific cadence implementation (Salesloft, Mailshake, Lemlist, Smartlead, Mixmax, Reply.io, Woodpecker, Hunter.io, Seamless.AI, Closum, Minelead, GetProspect, ZoomInfo, Snov.io, 6sense, Clay, BrandJet, AiSDR), see references/platforms.md.
 
 ### Personalization framework
 - **Level 1 (Minimum)**: First name, company name, title — the bare minimum

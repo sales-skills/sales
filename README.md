@@ -176,6 +176,7 @@ Router recommends a 5-skill sequence:
 | `/sales-reply` | Reply.io — multichannel sequences, Jason AI SDR, B2B database, email warmup, unified inbox |
 | `/sales-woodpecker` | Woodpecker — cold email campaigns, condition-based sequences, email warmup, Bounce Shield, LinkedIn automation |
 | `/sales-snov` | Snov.io — AI-powered sales automation, email finder, multichannel campaigns, LinkedIn automation, Sales CRM |
+| `/sales-aisdr` | AiSDR — AI-powered SDR, autonomous cold email + LinkedIn outreach, 700M+ contacts, email warmup, HubSpot integration |
 
 </details>
 
