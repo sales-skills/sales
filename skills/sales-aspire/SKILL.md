@@ -1,6 +1,6 @@
 ---
 name: sales-aspire
-description: "Aspire platform help — word-of-mouth commerce for influencer marketing, product seeding, affiliate tracking, UGC sourcing, and paid social. Covers Influencer Discovery (170M+ profiles, Quickmatch AI, image recognition, competitor monitoring), Campaign Management (lifecycle tracking, content approval, digital term sheets), Product Seeding (Shopify automated gifting, variant selection, shipping), Affiliate Tracking (promo codes, sales attribution, trackable links), UGC & Content (content library, repurposing for ads, Facebook/Meta integration), Paid Social (TikTok Spark Ads, Meta whitelisting), Social Analytics, Review Generation, and Creator Payments (free payment processing). Integrates with Shopify, WooCommerce, Meta, TikTok, Pinterest, Slack, Gmail. Use when setting up Aspire campaigns, configuring Shopify product seeding, building affiliate programs in Aspire, managing influencer content approvals, using Aspire discovery, or choosing an Aspire plan. Do NOT use for influencer strategy across platforms (use /sales-influencer-marketing), TikTok marketing strategy (use /sales-tiktok-marketing), gaming influencer marketing (use /sales-gaming-marketing), or affiliate program design (use /sales-affiliate-program)."
+description: "Aspire platform help — word-of-mouth commerce for influencer marketing, product seeding, affiliate tracking, UGC sourcing, and paid social. Covers Discovery (170M+ profiles, Quickmatch AI, image recognition), Campaign Management (lifecycle tracking, content approval, term sheets), Product Seeding (Shopify gifting, shipping), Affiliate Tracking (promo codes, attribution), UGC & Content (library, repurposing for ads), Paid Social (TikTok Spark Ads, Meta whitelisting), Creator Payments (free processing). Integrates with Shopify, WooCommerce, Meta, TikTok, Pinterest, Klaviyo, CJ, Impact, ShareASale/Awin. Use when setting up Aspire campaigns, configuring Shopify product seeding, building affiliate programs in Aspire, managing content approvals, using Aspire discovery, choosing an Aspire plan, or connecting Aspire integrations. Do NOT use for influencer strategy across platforms (use /sales-influencer-marketing) or affiliate program design (use /sales-affiliate-program)."
 argument-hint: "[describe what you need help with in Aspire]"
 license: MIT
 version: 1.0.0
@@ -84,6 +84,13 @@ Aspire (formerly AspireIQ, founded 2014) is a word-of-mouth commerce platform bu
 | **Pinterest** | Creator content tracking |
 | **Slack** | Campaign notifications, team collaboration |
 | **Gmail** | Creator outreach email sync |
+| **Microsoft Outlook** | Branded creator communication and shared inbox management |
+| **Klaviyo** | Sync influencer contacts to CRM for email nurture sequences |
+| **CJ** | Centralize conversion data for affiliate performance measurement |
+| **Impact** | Affiliate link integration for sales tracking and creator payments |
+| **ShareASale / Awin** | Track affiliate clicks, conversions, and payouts across systems |
+| **PayPal** | Direct creator payment processing |
+| **Chrome Extension** | Search, invite, and import creators to campaigns directly from your browser |
 
 ### Shopify integration deep dive
 
@@ -124,8 +131,8 @@ The Shopify integration is Aspire's strongest ecommerce connector:
 | Tier | Users | Campaigns | Key features |
 |---|---|---|---|
 | **Basic** | 1 | 1 | Core discovery, campaign management, analytics |
-| **Pro** | 4 | 4 | Everything in Basic + dedicated success manager |
-| **Enterprise** | Unlimited | 10 | Everything in Pro + dedicated success team, automated legal contracts |
+| **Pro** | 4 | 4 | Everything in Basic + dedicated success manager, social listening, competitor tracking (up to 5 competitors) |
+| **Enterprise** | Unlimited | 10 | Everything in Pro + dedicated success team, automated e-signature legal contracts, customizable media values for ROI |
 
 - Custom pricing starting ~$2,300/mo (yearly commitment required)
 - No free tier or self-serve signup — demo required
@@ -167,6 +174,10 @@ Based on the user's specific question:
 - **Yearly commitment required.** No month-to-month plans. Test with a demo and trial before committing.
 - **Only Shopify and WooCommerce for ecommerce.** No BigCommerce, Magento, or other platform integrations. If you're not on Shopify or WooCommerce, product seeding and affiliate tracking require manual workarounds.
 - **API docs are not public.** You need an account manager to access API documentation and credentials.
+- **Creator database quality can be inconsistent.** Shopify App Store reviewers report scarce results for popular hashtags (sometimes <10 results), inaccurate user data, and undeliverable email addresses. Cross-reference with a second discovery method if results look thin.
+- **Instagram lookalike search was removed.** You can no longer find creators with similar audiences to your top performers via lookalike search on Instagram. Use keyword search, competitor monitoring, or image recognition AI as alternatives.
+- **Post tracking relies on creator tagging.** Aspire requires creators to submit content via briefs or tag the brand. If they tag incorrectly or forget, you have to manually find their posts.
+- **PayPal payments are USD-only.** International creators get hit with currency conversion fees on their agreed rates. Factor this into compensation discussions with non-US creators.
 
 ## Related skills
 

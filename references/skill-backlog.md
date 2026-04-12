@@ -94,3 +94,5 @@ Specific platforms, tools, or websites discovered during research that should ge
 | Adikteev | https://www.adikteev.com | Top Remerge competitor, app re-engagement + churn prediction DSP | sales-remerge | 2026-04-12 |
 | Liftoff | https://liftoff.ai | Major mobile DSP competitor (UA + retargeting), merged with Vungle | sales-remerge | 2026-04-12 |
 | Dataseat | https://dataseat.com | Privacy-first mobile DSP, ID-less advertising, SKAdNetwork specialist | sales-remerge | 2026-04-12 |
+| Captiv8 | https://captiv8.io | Top Aspire competitor, enterprise influencer marketing with social listening | sales-aspire | 2026-04-12 |
+| Brandbassador | https://www.brandbassador.com | Ambassador marketing platform, gamified missions, competitor to Aspire | sales-aspire | 2026-04-12 |
