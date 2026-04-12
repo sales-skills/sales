@@ -28,3 +28,5 @@ Problem spaces discovered during platform research that don't have dedicated ski
 | Creator payment automation (delays, tax compliance, multi-currency payouts at scale) | G2 reviews, industry reports — 68% of creators cite payment delays as top frustration | sales-creatoriq | 2026-04-11 |
 | Esports team sponsorship strategy (team deals, jersey placement, tournament activations) | Research — distinct from influencer marketing, involves team orgs not individual creators | sales-cloutboost | 2026-04-11 |
 | Gaming livestream ad formats (pre-roll, overlay, mid-roll, sponsored segments) | Research — ad tech for streaming platforms, different from influencer partnerships | sales-cloutboost | 2026-04-11 |
+| TikTok Shop setup and optimization (product listings, live shopping, affiliate commission structure) | Upstream research — growing ecommerce channel, distinct from general TikTok marketing | sales-houseofmarketers | 2026-04-12 |
+| TikTok algorithm analytics tools (performance debugging, trend detection, competitive analysis) | Upstream research — platform-specific tooling gap | sales-houseofmarketers | 2026-04-12 |

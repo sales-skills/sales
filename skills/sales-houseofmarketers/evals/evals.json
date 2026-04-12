@@ -1,0 +1,26 @@
+[
+  {
+    "prompt": "I'm a DTC beauty brand with $30K to spend on TikTok influencer marketing. Should I use House of Marketers or find creators myself on Modash?",
+    "assertions": [
+      "Discusses the tradeoff between full-service agency support (HoM handles creator selection, outreach, negotiation, content review) versus self-serve discovery platforms where the brand manages everything",
+      "Mentions that $30K is within HoM's campaign range and explains what that budget could cover in terms of creators or campaign scope",
+      "Addresses the agency vs in-house/DIY decision by considering factors like time, expertise, and creator network access"
+    ]
+  },
+  {
+    "prompt": "We're a mobile gaming company launching a new puzzle game. House of Marketers says they serve gaming verticals. How should we brief them for a TikTok campaign?",
+    "assertions": [
+      "Provides guidance on how to brief an agency effectively, covering elements like target audience, KPIs, timeline, and creative direction",
+      "Acknowledges HoM serves gaming as a vertical and suggests asking for relevant gaming case studies or creator examples",
+      "Mentions setting realistic performance expectations, such as the 60-90 day timeline before reliable results"
+    ]
+  },
+  {
+    "prompt": "House of Marketers wants $80K for a multi-market TikTok campaign in UK and Germany. Is that reasonable? What should I watch out for?",
+    "assertions": [
+      "Contextualizes the $80K price against HoM's typical campaign ranges and notes that multi-market campaigns require separate creator pools and localized content",
+      "Identifies specific things to watch for or clarify before committing, such as deliverables, reporting frequency, or creator count",
+      "Mentions that HoM has campaign managers across multiple continents and that multi-market execution is within their capability"
+    ]
+  }
+]
