@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "eval": "node scripts/eval.mjs",
+    "eval": "node eval-scripts/eval.mjs",
     "eval:list": "node scripts/eval.mjs list"
   }
 }

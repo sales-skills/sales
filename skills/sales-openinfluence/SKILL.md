@@ -165,6 +165,7 @@ Based on the user's question, provide specific next steps. For common scenarios:
 ## Related skills
 
 - `/sales-influencer-marketing` — Influencer marketing strategy across all platforms — choosing platforms, discovery workflows, vetting, outreach, ROI measurement
+- `/sales-viralnation` — Viral Nation — enterprise influencer agency + SaaS, CreatorOS campaign management, Secure AI brand safety, talent representation (competitor)
 - `/sales-neoreach` — NeoReach — enterprise influencer marketing with API and managed services (competitor)
 - `/sales-creatoriq` — CreatorIQ — enterprise influencer OS with Creator Graph and SafeIQ
 - `/sales-hypeauditor` — HypeAuditor — AI-powered fraud detection and influencer analytics (223M+ profiles)
