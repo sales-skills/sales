@@ -1,0 +1,178 @@
+# Agency Outbound Platform Guide
+
+## Infrastructure model
+
+Choose the right isolation level based on client count, volume, and risk tolerance:
+
+| Model | How it works | Best for | Risk level |
+|---|---|---|---|
+| **Shared mailboxes** | Agency-owned mailboxes used across clients | Solo operator, 1-2 clients, testing | High — one client's reputation affects all |
+| **Dedicated per client** | Each client has their own domains + mailboxes | 3+ clients, any volume | Low — full isolation |
+| **Hybrid** | Dedicated domains per client, shared infrastructure (IPs) | Budget-conscious, low-volume clients | Medium — domain-level isolation without IP isolation |
+
+**Recommendation**: Always use **dedicated per client** for domain and mailbox isolation. The cost of a single cross-contamination incident (blacklisted domain, cascading reputation damage) far exceeds the cost of separate domains.
+
+## Domain strategy
+
+| Decision | Recommendation | Rationale |
+|---|---|---|
+| **Domain ownership** | Client-owned preferred, agency-provisioned acceptable | Client keeps the asset; if they leave, their domain goes with them |
+| **Domains per client** | 1 domain per 3-5 mailboxes | Distributes reputation risk; losing one domain doesn't kill the campaign |
+| **Domain naming** | {client}mail.com, get{client}.com, try{client}.com | Close to brand but clearly separate from primary domain |
+| **Primary domain protection** | Never send cold outbound from the client's primary domain | If outbound domain gets blacklisted, primary email is protected |
+
+**Example**: Client "Acme Corp" (acme.com) gets:
+- acmemail.com — 5 mailboxes (jane@, mike@, sarah@, tom@, alex@)
+- getacme.com — 5 mailboxes (as backup/rotation domain)
+- acme.com — never used for cold outbound
+
+## Warmup at scale
+
+Managing warmup across 20+ mailboxes requires planning:
+
+| Phase | What to do | Timeline |
+|---|---|---|
+| **Stagger starts** | Don't start all mailboxes on the same day — stagger by 2-3 days per batch of 5 | Days 1-10 |
+| **Monitor reputation** | Check warmup reputation scores daily — all mailboxes should reach 80+ before campaign sends | Weeks 1-3 |
+| **Gradual activation** | Add warmed mailboxes to campaigns in batches, not all at once | Week 3+ |
+| **Ongoing warmup** | Keep warmup running even during active campaigns — it supplements reputation | Continuous |
+
+## Tool selection matrix
+
+| Feature | Smartlead | Instantly | Mailshake |
+|---|---|---|---|
+| **Unlimited mailboxes** | Yes (all plans) | Yes (Growth plan) | No (plan-based limits) |
+| **Built-in warmup** | Ultra Premium Warmup | Warmup pool | No (use external) |
+| **Master inbox** | Yes — unified across clients | Limited | No |
+| **Client workspaces** | Yes — native isolation | Yes — workspace management | Limited — team member isolation |
+| **White-label** | Yes (higher plans) | No | No |
+| **API for automation** | Yes | Yes | Yes |
+| **Best for agency use** | Full-featured agency platform | Simple multi-client warmup | Single-client with CRM focus |
+
+## Client onboarding playbook
+
+Repeatable checklist for onboarding each new client:
+
+### Phase 1: Infrastructure (Days 1-3)
+
+1. **Domain provisioning**
+   - Register 2 outbound domains (primary + backup) per client
+   - Point DNS to your email provider
+   - Configure SPF, DKIM, DMARC for each domain (-> `/sales-deliverability`)
+
+2. **Mailbox creation**
+   - Create 3-5 mailboxes per domain (real names, professional formatting)
+   - Connect via OAuth (Gmail/Outlook) or SMTP
+   - Set daily limits: 30-50 per mailbox
+
+3. **Warmup scheduling**
+   - Enable warmup on all mailboxes immediately
+   - Stagger start dates if provisioning 10+ mailboxes
+   - Target: 2-3 weeks warmup before first campaign send
+   - Monitor warmup reputation daily
+
+### Phase 2: Campaign setup (Days 3-7)
+
+4. **ICP definition + list building** (-> `/sales-prospect-list`)
+   - Define target persona with client input
+   - Build initial prospect list (200-500 for first campaign)
+   - Verify emails before import
+
+5. **Cadence design** (-> `/sales-cadence`)
+   - Design email sequence (3-5 steps, 7-14 day cadence)
+   - Write email copy with client-approved messaging
+   - Set up A/B tests for subject lines
+
+6. **Integration setup** (-> `/sales-integration`)
+   - Connect to client's CRM (if applicable)
+   - Set up lead forwarding (webhook, Zapier, or email)
+   - Configure Slack/email notifications for interested replies
+
+### Phase 3: Launch (Days 14-21)
+
+7. **Go-live checklist**
+   - [ ] All mailboxes have 80+ warmup reputation
+   - [ ] DNS records verified (SPF/DKIM/DMARC passing)
+   - [ ] SmartDelivery or mail-tester.com shows inbox placement
+   - [ ] Prospect list verified (<3% expected bounce rate)
+   - [ ] Email copy approved by client
+   - [ ] CRM/notification integration tested
+   - [ ] Daily sending limits configured correctly
+   - [ ] Campaign activated with small initial batch (50-100 leads)
+
+## Client-facing metrics
+
+Report what clients actually care about — not vanity metrics:
+
+| Metric | What to report | Cadence |
+|---|---|---|
+| **Meetings booked** | Total meetings booked, cost per meeting | Weekly |
+| **Pipeline generated** | Dollar value of opportunities created | Monthly |
+| **Interested replies** | Leads who expressed interest (qualified replies) | Weekly |
+| **Reply rate** | Positive reply rate (not total replies) | Weekly |
+| **Campaign health** | Active campaigns, leads in pipeline, next steps | Weekly |
+
+**Avoid reporting**: Raw open rates (unreliable with Apple MPP), total sends, click rates (meaningless for cold outbound). Clients who fixate on opens/clicks will micromanage the wrong things.
+
+## Internal ops metrics
+
+Track these internally to spot issues before clients notice:
+
+| Metric | Target | Action if exceeded |
+|---|---|---|
+| Bounce rate (per client) | <3% | Pause campaign, verify remaining list, investigate domain |
+| Warmup reputation (per mailbox) | 80+ | Remove from campaign rotation, investigate |
+| Cross-client deliverability | <5% variance in inbox placement | Investigate outlier clients for contamination |
+| Mailbox utilization | 60-80% of daily limit | Scale up if >80%, investigate if <40% |
+| Warmup pipeline | 2+ weeks ahead of new campaigns | Provision mailboxes earlier |
+
+## Scaling patterns
+
+| Trigger | Action |
+|---|---|
+| Client reaches daily limit | Add mailboxes (1 per 50 emails/day needed) |
+| Client adds new persona | New domain + mailboxes for isolation |
+| Bounce rate creeping up | Rotate to fresh domain, investigate list quality |
+| New client onboarded | Follow Phase 1-3 playbook (14-21 day ramp) |
+| Client churns | Decommission domains (don't reuse for other clients) |
+
+## Platform-specific implementation
+
+### In Smartlead
+- **Master inbox**: Unified view across all client campaigns — manage replies from one interface
+- **Client workspaces**: Create a workspace per client (Settings > Clients). All campaigns, leads, and sender accounts scoped to the workspace.
+- **White-label**: Settings > White Label — custom domain, logo, colors for client-facing access
+- **Unified analytics**: Cross-client performance dashboard with per-client drill-down
+- **SmartSenders**: Bulk-provision mailboxes per workspace. Warmup runs per-mailbox automatically.
+
+### In Instantly
+- **Workspace management**: Create separate workspaces per client for isolation
+- **Bulk warmup**: Instantly's warmup pool handles large mailbox counts efficiently
+- **Campaign organization**: Name campaigns with client prefix (e.g., "Acme - Q1 VP Eng")
+- **Limitation**: No native white-label or master inbox — less agency-friendly than Smartlead
+
+### In Mailshake
+- **Team member isolation**: Assign team members per client, but isolation is weaker than workspace-based tools
+- **Lead Catcher**: Useful for per-client reply management, but no master inbox across clients
+- **CRM integration**: Strong native CRM integration (Salesforce, HubSpot) — good if clients require direct CRM sync
+- **Limitation**: Plan-based mailbox limits make scaling expensive for agencies
+
+### In Reply.io
+- **Agency plan**: Dedicated Agency plan (~$166/mo) with unlimited clients and unlimited users
+- **Client isolation**: Each client gets isolated sequences and contact lists
+- **Unified dashboard**: Manage all clients from a single dashboard
+- **Built-in warmup**: Warmup for all client mailboxes included
+- **API access**: Programmatic client management — create seats, add mailboxes via Master API Key
+
+### In Woodpecker
+- **Agency panel**: Add-on at EUR 27/month per active client — manage all clients from a single dashboard
+- **Client isolation**: Each client gets separate campaigns, prospects, mailboxes, and deliverability settings
+- **Agency API**: HQ API key + `x-company-id` header to manage clients programmatically — create API keys per company, manage mailboxes and campaigns across clients
+- **Per-client warmup**: Each client's mailboxes get independent warmup slots — no cross-contamination of sender reputation
+- **Pricing model**: Scales per active client (EUR 27/client) + per contacted prospects tier. Compare: Smartlead has flat agency pricing, Woodpecker scales linearly.
+- **White-labeling**: Not natively supported — agency panel is Woodpecker-branded
+
+### Cross-platform setup
+- Some agencies use different tools for different clients based on client needs (e.g., Smartlead for high-volume, Mailshake for CRM-heavy clients)
+- Standardize reporting across tools — use a shared dashboard (Google Sheets, Looker, or custom) that aggregates metrics from all platforms
+- Maintain per-client tool documentation so any team member can pick up any client
