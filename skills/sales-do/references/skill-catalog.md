@@ -751,6 +751,7 @@
 | `/sales-funnel` | Building or optimizing sales funnels — funnel strategy, structure, conversion optimization, A/B testing, choosing a funnel builder |
 | `/sales-email-marketing` | Opt-in email marketing — broadcasts, nurture sequences, automation, segmentation, list management (NOT cold outbound) |
 | `/sales-newsletter` | Newsletter monetization — paid subscriptions, sponsorships, ad sales, paid recommendations, premium tiers, pricing strategy |
+| `/sales-paved` | Paved platform help — newsletter sponsorship marketplace, programmatic Ad Network, Booker direct-deal management, Radar lead enrichment, ESP monetization integrations. Route when the user asks about Paved, newsletter sponsorship marketplaces, selling ads in newsletters via Paved, or finding newsletter sponsors through a marketplace. |
 | `/sales-audience-growth` | Growing an email list or newsletter audience — lead magnets, content upgrades, cross-promotion, referral programs, social-to-email, opt-in optimization |
 | `/sales-digital-products` | Selling digital products — ebooks, templates, courses, downloads, pricing strategy, platform selection, launch playbooks |
 | `/sales-affiliate-program` | Affiliate/referral program design — commission structures, affiliate recruitment, tracking, payouts |

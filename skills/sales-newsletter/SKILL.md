@@ -87,7 +87,7 @@ Ask the user:
 
 **Finding sponsors**:
 - Direct outreach to brands your audience uses
-- Sponsorship marketplaces: Swapstack, Paved, Letterhead
+- Sponsorship marketplaces: Paved (3,000+ publishers, Marketplace + Ad Network), Swapstack, Letterhead
 - Affiliate → sponsor pipeline: pitch brands whose affiliates already convert
 
 **Sponsorship rate card elements**:
@@ -133,6 +133,15 @@ Ask the user:
 - **Pricing**: Self-hosted = free (just hosting costs), Ghost(Pro) from $9/mo
 - **Strengths**: Full website + newsletter in one, no transaction fees (self-hosted), complete ownership
 - **Limitations**: More technical to set up, smaller ecosystem
+
+### In Paved
+- **Marketplace**: List your newsletter for curated sponsor bookings — Paved handles invoices, contracts, and payouts. Requires 5,000+ subscribers and ESP integration for verified badge.
+- **Ad Network**: Insert a code snippet in your ESP template for automated CPC-based ads (~$1.45 avg per click). Lower effort, lower CPM than direct Marketplace placements.
+- **Booker**: Manage your own direct sponsor relationships through Paved — they handle billing and insertion orders while you keep control of sponsor selection.
+- **Radar**: Lead enrichment to identify potential sponsors and do outbound sponsor outreach with data-backed targeting.
+- **Pricing**: 30% commission on Marketplace sponsorships. CPM typically $15–$100 depending on niche (B2B/finance at top, general interest at bottom).
+- **ESP integrations**: ActiveCampaign, AWeber, Beehiiv, Brevo, Campaign Monitor, Constant Contact, ConvertKit, EmailOctopus, GetResponse, Mailchimp, MailJet, MailerLite, Zoho.
+- **Best strategy**: Use both Marketplace (premium placements, 1-2 per issue) and Ad Network (fill remaining inventory) to maximize revenue.
 
 ### In Buttondown
 - **Paid subscriptions**: Stripe integration, paywall support
@@ -197,6 +206,7 @@ Paid recommendations:
 
 ## Related skills
 
+- `/sales-paved` — Paved platform help (newsletter sponsorship marketplace, Ad Network, Booker, Radar)
 - `/sales-email-marketing` — Email marketing strategy (sending campaigns, automation, segmentation)
 - `/sales-audience-growth` — Growing your subscriber list (lead magnets, cross-promotion, referrals)
 - `/sales-digital-products` — Selling digital products (ebooks, courses, templates)
