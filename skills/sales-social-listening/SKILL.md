@@ -60,6 +60,7 @@ If the request maps to a platform-specific skill, route:
 - Email marketing analytics → `/sales-email-marketing`
 - SEO keyword research → `/sales-semrush`
 - Sales intent signals → `/sales-intent`
+- GRIN social listening setup or configuration → `/sales-grin`
 
 Otherwise, answer directly from the strategy knowledge below.
 
@@ -104,6 +105,7 @@ Based on the user's specific question:
 - `/sales-influencer-marketing` — Influencer discovery and campaign tracking
 - `/sales-content` — Sales content management and strategy
 - `/sales-brandjet` — BrandJet AI platform help — outreach, brand intelligence, AI monitoring
+- `/sales-grin` — GRIN platform help — includes social listening with hashtag monitoring and brand mention alerts
 - `/sales-ai-visibility` — AI visibility monitoring — track what LLMs say about your brand
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 

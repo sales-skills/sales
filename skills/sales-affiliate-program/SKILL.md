@@ -33,6 +33,9 @@ If any of these are missing, ask before proceeding. Do not guess at margins or p
 
 ## Step 2: Strategy and Platform Reference
 
+If the request maps to a platform-specific skill, route:
+- GRIN Affiliate Hub setup or tracking → `/sales-grin`
+
 **Read `references/platform-guide.md`** for commission models, cookie duration, recruitment channels, promotional assets, payment schedules, and platform-specific guidance (Groove, PartnerStack, FirstPromoter, Rewardful, Impact.com, Perform[cb], and others).
 
 *You no longer need the platform guide details — focus on the user's specific situation.*
@@ -119,6 +122,7 @@ Create a structured onboarding experience:
 - `/sales-upfluence` — Upfluence platform help — commission-free affiliate tracking for ecommerce, promo codes, product seeding
 - `/sales-performcb` — Perform[cb] platform help — #1 CPA network, Outcome Engine, PerformSHIELD fraud detection, Partner API
 - `/sales-fansrevenue` — FansRevenue platform help — creator monetization through affiliate brand promotion, CrakRevenue network
+- `/sales-grin` — GRIN platform help — includes Affiliate Hub with bulk link creation, discount codes, automated payouts
 - `/sales-do` — Route to the right skill when you are unsure where to start
 
 ## Examples
