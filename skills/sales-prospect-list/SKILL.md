@@ -1,6 +1,6 @@
 ---
 name: sales-prospect-list
-description: "Builds targeted B2B prospect lists for outbound campaigns. Use when building a prospect list, defining an ICP, searching for leads, filtering contacts by title/industry/company size, creating saved searches, segmenting lists, finding decision-makers at target accounts, or building lists in ZoomInfo. Do NOT use for enriching existing contacts with emails/phones (use /sales-enrich), interpreting buying signals (use /sales-intent), or general Apollo platform help (use /sales-apollo)."
+description: "Builds targeted B2B prospect lists for outbound campaigns. Use when you don't know who to target, your outbound list is too broad and response rates are low, you can't find the right decision-makers at target accounts, your ICP is vague, or your prospect list is full of bad-fit contacts. Do NOT use for enriching existing contacts with emails/phones (use /sales-enrich), interpreting buying signals (use /sales-intent), or general Apollo platform help (use /sales-apollo)."
 argument-hint: "[describe target persona, industry, company size, or campaign goal]"
 license: MIT
 version: 1.0.0

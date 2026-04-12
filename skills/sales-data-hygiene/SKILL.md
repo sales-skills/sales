@@ -1,6 +1,6 @@
 ---
 name: sales-data-hygiene
-description: "CRM data quality, deduplication, enrichment automation, record matching, and data decay management. Use when cleaning CRM data, deduplicating contacts or accounts, fixing stale records, setting up auto-enrichment workflows, normalizing job titles or industries, auditing data quality, or managing data decay. Do NOT use for one-time enrichment of a prospect list (use /sales-enrich), building new prospect lists (use /sales-prospect-list), or ZoomInfo-specific config (use /sales-zoominfo). For platform-specific help, use /sales-zoominfo."
+description: "CRM data quality, deduplication, enrichment automation, record matching, and data decay management. Use when CRM is full of duplicates, records are outdated or decaying, fields are missing or inconsistent, job titles and industries don't match across records, you're not sure how bad your data quality is, or enrichment keeps overwriting good data. Do NOT use for one-time enrichment of a prospect list (use /sales-enrich), building new prospect lists (use /sales-prospect-list), or ZoomInfo-specific config (use /sales-zoominfo). For platform-specific help, use /sales-zoominfo."
 argument-hint: "[describe your data quality issue or goal]"
 license: MIT
 version: 1.0.0

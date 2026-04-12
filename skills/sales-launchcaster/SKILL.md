@@ -1,6 +1,6 @@
 ---
 name: sales-launchcaster
-description: "LaunchCaster platform help — Web3 project discovery directory built on Farcaster ('Product Hunt for Web3'). Covers project submission via Farcaster casts, listing optimization for Web3 audience, voting mechanics (wallet-connected), newsletter exposure (LaunchCaster Weekly), and Farcaster Frame integration. Use when submitting a Web3 project to LaunchCaster, optimizing a LaunchCaster listing, understanding LaunchCaster voting, or launching on Farcaster via @launch. Do NOT use for non-Web3 product launches (use /sales-launch-directory). Do NOT use for Product Hunt (use /sales-producthunt)."
+description: "LaunchCaster platform help — Web3 project discovery directory built on Farcaster ('Product Hunt for Web3'). Covers project submission via Farcaster casts, listing optimization for Web3 audience, voting mechanics (wallet-connected), newsletter exposure (LaunchCaster Weekly), and Farcaster Frame integration. Use when your Web3 project isn't getting noticed on LaunchCaster, listing not getting votes, unsure how Farcaster-based submissions work, or want more visibility in the Web3 builder community. Do NOT use for non-Web3 product launches (use /sales-launch-directory). Do NOT use for Product Hunt (use /sales-producthunt)."
 argument-hint: "[describe what you need help with on LaunchCaster]"
 license: MIT
 version: 1.0.0

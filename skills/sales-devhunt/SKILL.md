@@ -1,6 +1,6 @@
 ---
 name: sales-devhunt
-description: "DevHunt platform help — open-source developer tool launch platform ('Product Hunt for developers'). Covers free submission (DR57-62 dofollow backlink), $49 featured placement, GitHub-authenticated voting, weekly rankings, 25+ developer categories (DevOps, AI, CI/CD, API, Database, Open Source), newsletter promotion, and OSS Friends directory. Use when submitting to DevHunt, evaluating DevHunt backlink value, optimizing a DevHunt launch, or comparing DevHunt with other directories. Do NOT use for multi-directory launch strategy (use /sales-launch-directory). Do NOT use for Product Hunt launches (use /product-hunt-launch)."
+description: "DevHunt platform help — open-source developer tool launch platform ('Product Hunt for developers'). Covers free submission (DR57-62 dofollow backlink), $49 featured placement, GitHub-authenticated voting, weekly rankings, 25+ developer categories (DevOps, AI, CI/CD, API, Database, Open Source), newsletter promotion, and OSS Friends directory. Use when you want your dev tool listed on DevHunt, wondering if the DevHunt backlink is worth it, not sure how to get votes or featured placement, or deciding between DevHunt and other developer directories. Do NOT use for multi-directory launch strategy (use /sales-launch-directory). Do NOT use for Product Hunt launches (use /product-hunt-launch)."
 argument-hint: "[describe what you need help with on DevHunt]"
 license: MIT
 version: 1.0.0

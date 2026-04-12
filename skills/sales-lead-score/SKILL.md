@@ -1,6 +1,6 @@
 ---
 name: sales-lead-score
-description: "Designs, weight, and tune a lead scoring model for your sales funnel. Use when building a lead scoring system, defining MQL/SQL criteria, assigning point values to lead attributes, setting up scoring in your CRM or MAP, tuning conversion thresholds, or deciding which signals should trigger sales follow-up. Do NOT use for reading existing buying signals (use /sales-intent), building prospect lists (use /sales-prospect-list), or marketing-to-sales handoff process design (use /revops)."
+description: "Designs, weight, and tune a lead scoring model for your sales funnel. Use when scores don't predict conversion, MQL/SQL threshold feels arbitrary, reps ignoring lead scores because they're inaccurate, too many unqualified leads passing to sales, or not sure which signals actually matter. Do NOT use for reading existing buying signals (use /sales-intent), building prospect lists (use /sales-prospect-list), or marketing-to-sales handoff process design (use /revops)."
 argument-hint: "[describe your product, sales motion, and current funnel]"
 license: MIT
 version: 1.0.0

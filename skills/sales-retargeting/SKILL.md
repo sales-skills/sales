@@ -1,6 +1,6 @@
 ---
 name: sales-retargeting
-description: "Retargeting and remarketing strategy — website visitor retargeting, cart abandonment recovery, dynamic product ads, cross-channel retargeting, audience segmentation, frequency capping, attribution, pixel setup, in-app retargeting. Use when planning a retargeting strategy, recovering abandoned carts with ads, building retargeting audiences, choosing a retargeting platform, or measuring retargeting ROI. Do NOT use for AdRoll-specific config (use /sales-adroll), Remerge-specific config (use /sales-remerge), email marketing (use /sales-email-marketing), B2B account-based advertising (use /sales-b2b-advertising), or general paid ads strategy (use /paid-ads)."
+description: "Retargeting and remarketing strategy — website visitor retargeting, cart abandonment recovery, dynamic product ads, cross-channel retargeting, audience segmentation, frequency capping, attribution, pixel setup, in-app retargeting. Use when website visitors leave without converting, cart abandonment rates are too high, retargeting ads aren't profitable, you're unsure which retargeting platform to use, or past visitors never come back. Do NOT use for AdRoll-specific config (use /sales-adroll), Remerge-specific config (use /sales-remerge), email marketing (use /sales-email-marketing), B2B account-based advertising (use /sales-b2b-advertising), or general paid ads strategy (use /paid-ads)."
 argument-hint: "[describe your retargeting question or goal]"
 license: MIT
 version: 1.0.0

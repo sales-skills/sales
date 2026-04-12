@@ -1,6 +1,6 @@
 ---
 name: sales-brandjet
-description: "BrandJet AI platform help — multi-channel outreach sequences, unified inbox, brand monitoring, AI visibility tracking, lead discovery, social listening, email warmup, Artemis AI agent, and integrations. Use when asking 'how do I do X in BrandJet', configuring outreach workflows, setting up brand monitoring, managing multi-channel sequences, using the unified inbox, or tracking AI visibility. Do NOT use for designing cadence strategy (use /sales-cadence), cross-platform deliverability (use /sales-deliverability), social listening strategy (use /sales-social-listening), or enriching contacts (use /sales-enrich)."
+description: "BrandJet AI platform help — multi-channel outreach sequences, unified inbox, brand monitoring, AI visibility tracking, lead discovery, social listening, email warmup, Artemis AI agent, and integrations. Use when outreach sequences aren't getting replies, brand mentions going unnoticed, multi-channel sequences feel disjointed, unified inbox is overwhelming, or AI visibility scores are dropping. Do NOT use for designing cadence strategy (use /sales-cadence), cross-platform deliverability (use /sales-deliverability), social listening strategy (use /sales-social-listening), or enriching contacts (use /sales-enrich)."
 argument-hint: "[describe what you need help with in BrandJet AI]"
 license: MIT
 version: 1.0.0

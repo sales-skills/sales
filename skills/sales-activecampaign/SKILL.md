@@ -1,6 +1,6 @@
 ---
 name: sales-activecampaign
-description: "ActiveCampaign platform help — marketing automation and CRM for email, SMS, WhatsApp, landing pages, and sales pipelines. Use when building marketing automations, configuring CRM pipelines and deals, setting up lead scoring, creating landing pages or forms, managing email campaigns with A/B testing and conditional content, or working with the ActiveCampaign API. Do NOT use for general email marketing strategy (use /sales-email-marketing), cross-platform email deliverability (use /sales-deliverability), email tracking strategy (use /sales-email-tracking), or lead scoring strategy (use /sales-lead-score)."
+description: "ActiveCampaign platform help — marketing automation and CRM for email, SMS, WhatsApp, landing pages, and sales pipelines. Use when automations aren't triggering correctly, CRM pipeline stages need restructuring, lead scores don't reflect real engagement, landing pages or forms aren't converting, email campaigns have low open rates or broken conditional content, or API calls to ActiveCampaign aren't working. Do NOT use for general email marketing strategy (use /sales-email-marketing), cross-platform email deliverability (use /sales-deliverability), email tracking strategy (use /sales-email-tracking), or lead scoring strategy (use /sales-lead-score)."
 argument-hint: "[describe what you need help with in ActiveCampaign]"
 license: MIT
 version: 1.0.0

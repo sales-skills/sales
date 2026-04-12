@@ -1,6 +1,6 @@
 ---
 name: sales-indiehackers
-description: "Indie Hackers platform help — the largest founder community for bootstrapped and indie businesses (~1-2M monthly visits, 165K+ entrepreneurs). Covers community engagement strategy (post types, formatting, timing), product pages (revenue milestones, transparent metrics), groups, interviews, podcast, Partner Up co-founder matching, advertising, and IH+ premium. DR75 nofollow backlinks. Use when posting on Indie Hackers, optimizing IH engagement, listing a product, or deciding how to use IH for launch and distribution. Do NOT use for multi-directory launch coordination (use /sales-launch-directory). Do NOT use for other launch platforms (use the platform-specific skill)."
+description: "Indie Hackers platform help — the largest founder community for bootstrapped and indie businesses (~1-2M monthly visits, 165K+ entrepreneurs). Covers community engagement strategy (post types, formatting, timing), product pages (revenue milestones, transparent metrics), groups, interviews, podcast, Partner Up co-founder matching, advertising, and IH+ premium. DR75 nofollow backlinks. Use when your Indie Hackers posts aren't getting traction, product page isn't attracting interest, want more visibility among bootstrapped founders, or unsure if IH is worth the time for your launch. Do NOT use for multi-directory launch coordination (use /sales-launch-directory). Do NOT use for other launch platforms (use the platform-specific skill)."
 argument-hint: "[describe what you need help with on Indie Hackers]"
 license: MIT
 version: 1.0.0

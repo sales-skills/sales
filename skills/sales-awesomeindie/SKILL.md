@@ -1,6 +1,6 @@
 ---
 name: sales-awesomeindie
-description: "Awesome Indie platform help — curated startup and indie product directory by Diogo Capela. Covers submission process, editorial queue, listing optimization, backlink details (DR ~19-31, dofollow status unconfirmed), and category selection. Use when submitting to Awesome Indie, optimizing an Awesome Indie listing, or comparing Awesome Indie with other startup directories. Do NOT use for multi-directory launch strategy (use /sales-launch-directory). Do NOT use for Product Hunt launches (use /product-hunt-launch)."
+description: "Awesome Indie platform help — curated startup and indie product directory by Diogo Capela. Covers submission process, editorial queue, listing optimization, backlink details (DR ~19-31, dofollow status unconfirmed), and category selection. Use when your indie product isn't getting enough directory visibility, want to get listed on Awesome Indie but not sure how, listing isn't standing out, or wondering if Awesome Indie is worth submitting to. Do NOT use for multi-directory launch strategy (use /sales-launch-directory). Do NOT use for Product Hunt launches (use /product-hunt-launch)."
 argument-hint: "[describe what you need help with on Awesome Indie]"
 license: MIT
 version: 1.0.0

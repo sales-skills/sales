@@ -1,6 +1,6 @@
 ---
 name: sales-membership
-description: "Builds and manage membership sites and online courses — course structure, content delivery, pricing models, retention, community, and platform selection. Use when creating an online course, building a membership site, designing drip content, pricing memberships, reducing churn, or choosing a course platform. Do NOT use for webinar-based selling (use /sales-webinar), checkout and payment setup (use /sales-checkout), email marketing to members (use /sales-email-marketing), or SendPulse-specific help (use /sales-sendpulse). For Groove-specific help, use /sales-groove."
+description: "Builds and manage membership sites and online courses — course structure, content delivery, pricing models, retention, community, and platform selection. Use when members keep canceling, course completion rates are low, unsure how to price a membership, drip content isn't engaging subscribers, need to pick a course platform, or struggling to structure a membership site. Do NOT use for webinar-based selling (use /sales-webinar), checkout and payment setup (use /sales-checkout), email marketing to members (use /sales-email-marketing), or SendPulse-specific help (use /sales-sendpulse). For Groove-specific help, use /sales-groove."
 argument-hint: "[describe your membership or course question — e.g., 'structure a 12-week course' or 'reduce membership churn']"
 license: MIT
 version: 1.0.0

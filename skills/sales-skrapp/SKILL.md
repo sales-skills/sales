@@ -1,6 +1,6 @@
 ---
 name: sales-skrapp
-description: "Skrapp.io platform help — B2B email finder and datan enrichment with 200M+ contacts and 20M+ company profiles. Use when finding emails by name and company, searching B2B contacts with filters (title, location, industry, seniority), enriching CSVs with email and firmographic data, extracting emails from LinkedIn via Chrome extension, verifying emails in bulk, or working with the Skrapp API. Do NOT use for general enrichment strategy (use /sales-enrich), deliverability/warmup (use /sales-deliverability), or building prospect lists strategy (use /sales-prospect-list)."
+description: "Skrapp.io platform help — B2B email finder and datan enrichment with 200M+ contacts and 20M+ company profiles. Use when you can't find a prospect's email, LinkedIn profiles don't show contact info, your CSV of leads is missing emails and firmographics, email verification is bouncing too many contacts, the Chrome extension isn't pulling data from LinkedIn, or the Skrapp API isn't returning results. Do NOT use for general enrichment strategy (use /sales-enrich), deliverability/warmup (use /sales-deliverability), or building prospect lists strategy (use /sales-prospect-list)."
 argument-hint: "[describe what you need help with in Skrapp.io]"
 license: MIT
 version: 1.0.0

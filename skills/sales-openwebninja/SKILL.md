@@ -1,6 +1,6 @@
 ---
 name: sales-openwebninja
-description: "OpenWeb Ninja platform help — real-time public data API stack with 30+ APIs for web scraping, enrichment, and business data. Key APIs include Website Contacts Scraper, Email Search, Local Business Data (Google Maps), Real-Time Web Search (SERP), JSearch (job postings), and Product Data. Use when extracting emails/contacts from domains, searching Google Maps for local businesses, running web search via API, aggregating job postings, fetching product data, or working with any OpenWeb Ninja API. Do NOT use for cross-platform enrichment strategy (use /sales-enrich), prospect list building strategy (use /sales-prospect-list), or connecting tools (use /sales-integration)."
+description: "OpenWeb Ninja platform help — real-time public data API stack with 30+ APIs for web scraping, enrichment, and business data. Key APIs include Website Contacts Scraper, Email Search, Local Business Data (Google Maps), Real-Time Web Search (SERP), JSearch (job postings), and Product Data. Use when you can't pull emails or contacts from a domain, Google Maps scraping isn't returning results, SERP API data looks incomplete, job posting aggregation is missing listings, product data isn't fetching, or any OpenWeb Ninja API call is failing. Do NOT use for cross-platform enrichment strategy (use /sales-enrich), prospect list building strategy (use /sales-prospect-list), or connecting tools (use /sales-integration)."
 argument-hint: "[describe what you need help with in OpenWeb Ninja]"
 license: MIT
 version: 1.0.0

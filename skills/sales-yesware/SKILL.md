@@ -1,6 +1,6 @@
 ---
 name: sales-yesware
-description: "Yesware platform help — email tracking, campaigns, templates, Prospector, Meeting Scheduler, Salesforce integration, reporting. Use when asking 'how do I do X in Yesware', configuring Yesware settings, setting up campaigns, managing templates, using Prospector, configuring Meeting Scheduler, or connecting to Salesforce. Do NOT use for building prospect lists (use /sales-prospect-list), enriching contacts (use /sales-enrich), designing cadence strategy (use /sales-cadence), cross-platform deliverability (use /sales-deliverability), meeting scheduling strategy (use /sales-meeting-scheduler), or email tracking strategy (use /sales-email-tracking)."
+description: "Yesware platform help — email tracking, campaigns, templates, Prospector, Meeting Scheduler, Salesforce integration, reporting. Use when Yesware tracking isn't showing opens, campaigns aren't sending to recipients, templates aren't personalizing correctly, Prospector search returns irrelevant leads, Meeting Scheduler links aren't working, or the Salesforce sync isn't logging activities. Do NOT use for building prospect lists (use /sales-prospect-list), enriching contacts (use /sales-enrich), designing cadence strategy (use /sales-cadence), cross-platform deliverability (use /sales-deliverability), meeting scheduling strategy (use /sales-meeting-scheduler), or email tracking strategy (use /sales-email-tracking)."
 argument-hint: "[describe what you need help with in Yesware]"
 license: MIT
 version: 1.0.0

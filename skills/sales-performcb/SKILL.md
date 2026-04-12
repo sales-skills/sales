@@ -1,6 +1,6 @@
 ---
 name: sales-performcb
-description: "Perform[cb] platform help — Outcome Engine, PerformSHIELD fraud detection, CPA/CPS/CPL/CPC campaigns, partner API, reporting, lead rating, MMP integrations. Use when asking 'how do I do X in Perform[cb]', setting up campaigns, configuring PerformSHIELD, managing partner payouts, using the Perform[cb] API, or troubleshooting Perform[cb] tracking. Do NOT use for affiliate program design strategy (use /sales-affiliate-program), general email deliverability (use /sales-deliverability), or building prospect lists (use /sales-prospect-list)."
+description: "Perform[cb] platform help — Outcome Engine, PerformSHIELD fraud detection, CPA/CPS/CPL/CPC campaigns, partner API, reporting, lead rating, MMP integrations. Use when Perform[cb] campaigns aren't converting, PerformSHIELD is flagging legitimate traffic, partner payouts aren't processing, the Perform[cb] API isn't returning data, or tracking pixels aren't firing correctly. Do NOT use for affiliate program design strategy (use /sales-affiliate-program), general email deliverability (use /sales-deliverability), or building prospect lists (use /sales-prospect-list)."
 argument-hint: "[describe what you need help with in Perform[cb]]"
 license: MIT
 version: 1.0.0

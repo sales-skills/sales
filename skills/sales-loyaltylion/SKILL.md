@@ -1,6 +1,6 @@
 ---
 name: sales-loyaltylion
-description: "LoyaltyLion platform help — points, tiers, rewards, referrals, custom loyalty pages, receipt upload (omnichannel), AI recommendations, analytics, Klaviyo Events integration, Admin API, Headless API. Use when asking 'how do I do X in LoyaltyLion', configuring LoyaltyLion settings, setting up points/tiers/rewards, building custom loyalty pages, connecting Klaviyo flows, using the LoyaltyLion API, or troubleshooting LoyaltyLion issues. Do NOT use for cross-platform loyalty strategy (use /sales-loyalty), cross-platform email marketing (use /sales-email-marketing), or connecting tools generally (use /sales-integration)."
+description: "LoyaltyLion platform help — points, tiers, rewards, referrals, custom loyalty pages, receipt upload (omnichannel), AI recommendations, analytics, Klaviyo Events integration, Admin API, Headless API. Use when LoyaltyLion points not accruing correctly, tiers not promoting members, custom loyalty page not displaying, Klaviyo flows not triggering from LoyaltyLion events, API returning errors, or rewards not redeeming at checkout. Do NOT use for cross-platform loyalty strategy (use /sales-loyalty), cross-platform email marketing (use /sales-email-marketing), or connecting tools generally (use /sales-integration)."
 argument-hint: "[describe what you need help with in LoyaltyLion]"
 license: MIT
 version: 1.0.0

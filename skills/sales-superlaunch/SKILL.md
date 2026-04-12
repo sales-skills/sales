@@ -1,6 +1,6 @@
 ---
 name: sales-superlaunch
-description: "Super Launch platform help — minimalist product launch directory where every product gets 7 days on the front page. Covers free submission (nofollow backlink), paid dofollow backlinks (DR59), $49/month advertising, Top 50 Leaderboard, category browsing, and voting system. Use when submitting to Super Launch, evaluating Super Launch backlink value, or comparing Super Launch with other directories. Do NOT use for multi-directory launch strategy (use /sales-launch-directory). Do NOT use for Product Hunt launches (use /product-hunt-launch)."
+description: "Super Launch platform help — minimalist product launch directory where every product gets 7 days on the front page. Covers free submission (nofollow backlink), paid dofollow backlinks (DR59), $49/month advertising, Top 50 Leaderboard, category browsing, and voting system. Use when your product needs guaranteed front-page visibility, you want the DR59 dofollow backlink from Super Launch, you're unsure if the $49 ad spend is worth it, or you're comparing Super Launch against other launch directories. Do NOT use for multi-directory launch strategy (use /sales-launch-directory). Do NOT use for Product Hunt launches (use /product-hunt-launch)."
 argument-hint: "[describe what you need help with on Super Launch]"
 license: MIT
 version: 1.0.0

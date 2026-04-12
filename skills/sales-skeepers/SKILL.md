@@ -1,6 +1,6 @@
 ---
 name: sales-skeepers
-description: "Skeepers platform help — UGC suite covering Verified Reviews, Feedback Management (NPS/CSAT), Influencer Marketing (micro/nano creators), Brand Communities, review syndication, and Shoppable Content. Use when configuring Skeepers review collection, setting up influencer gifting campaigns, building NPS surveys, managing Brand Communities, integrating Skeepers widgets on Shopify/Magento/VTEX, or connecting via the Skeepers API. Do NOT use for general review collection strategy (use /sales-customer-reviews), influencer marketing strategy (use /sales-influencer-marketing), or loyalty program design (use /sales-loyalty)."
+description: "Skeepers platform help — UGC suite covering Verified Reviews, Feedback Management (NPS/CSAT), Influencer Marketing (micro/nano creators), Brand Communities, review syndication, and Shoppable Content. Use when product pages lack reviews, influencer gifting campaigns aren't generating UGC, NPS scores are dropping and you need to dig into why, Brand Community engagement is low, Skeepers widgets aren't displaying on your store, or review syndication isn't working. Do NOT use for general review collection strategy (use /sales-customer-reviews), influencer marketing strategy (use /sales-influencer-marketing), or loyalty program design (use /sales-loyalty)."
 argument-hint: "[describe what you need help with in Skeepers]"
 license: MIT
 version: 1.0.0

@@ -1,6 +1,6 @@
 ---
 name: sales-startupbase
-description: "StartupBase platform help — community-driven startup discovery directory with free dofollow backlinks (DR39). Covers submission process (social auth, tech startups only), review queue (2-3 months free, 24-hour premium), selection criteria (custom domain, public product, never previously featured), weekly Spark newsletter, market categories, and comparison with other directories. Use when submitting to StartupBase, evaluating StartupBase backlink value, or understanding the review process. Do NOT use for multi-directory launch strategy (use /sales-launch-directory). Do NOT use for Product Hunt launches (use /sales-producthunt)."
+description: "StartupBase platform help — community-driven startup discovery directory with free dofollow backlinks (DR39). Covers submission process (social auth, tech startups only), review queue (2-3 months free, 24-hour premium), selection criteria (custom domain, public product, never previously featured), weekly Spark newsletter, market categories, and comparison with other directories. Use when your startup needs more visibility and early adopter traffic, you want the DR39 dofollow backlink from StartupBase, your submission keeps getting rejected, or the review queue is taking too long. Do NOT use for multi-directory launch strategy (use /sales-launch-directory). Do NOT use for Product Hunt launches (use /sales-producthunt)."
 argument-hint: "[describe what you need help with on StartupBase]"
 license: MIT
 version: 1.0.0

@@ -1,6 +1,6 @@
 ---
 name: sales-audience-growth
-description: "Grows an email list or newsletter audience — lead magnets, content upgrades, cross-promotion, referral programs, social-to-email conversion, SEO-to-email, viral loops, opt-in optimization. Use when growing a subscriber list, creating lead magnets, setting up referral programs, optimizing opt-in forms, or converting social followers to email subscribers. Do NOT use for sending emails to your list (use /sales-email-marketing), monetizing your newsletter (use /sales-newsletter), or platform-specific setup (use /sales-kit, /sales-mailchimp, etc.)."
+description: "Grows an email list or newsletter audience — lead magnets, content upgrades, cross-promotion, referral programs, social-to-email conversion, SEO-to-email, viral loops, opt-in optimization. Use when subscriber growth has stalled, lead magnets aren't converting, referral program isn't driving signups, opt-in forms have low conversion rates, or social followers aren't joining your email list. Do NOT use for sending emails to your list (use /sales-email-marketing), monetizing your newsletter (use /sales-newsletter), or platform-specific setup (use /sales-kit, /sales-mailchimp, etc.)."
 argument-hint: "[describe your audience growth question or goal]"
 license: MIT
 version: 1.0.0

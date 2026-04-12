@@ -1,6 +1,6 @@
 ---
 name: sales-lemlist
-description: "Lemlist platform help — multichannel sequences, lead database, enrichment, Lemwarm, unified inbox, AI personalization, LinkedIn automation, calls, WhatsApp, API, integrations. Use when asking 'how do I do X in Lemlist', configuring Lemlist settings, setting up sequences, managing leads, using Lemwarm warmup, connecting integrations, using the People Database, or using the Lemlist API. Do NOT use for building prospect lists (use /sales-prospect-list), designing cadence strategy (use /sales-cadence), cross-platform deliverability (use /sales-deliverability), or enriching contacts outside Lemlist (use /sales-enrich)."
+description: "Lemlist platform help — multichannel sequences, lead database, enrichment, Lemwarm, unified inbox, AI personalization, LinkedIn automation, calls, WhatsApp, API, integrations. Use when Lemlist sequences not sending, emails landing in spam despite Lemwarm, leads not importing correctly, integrations not syncing, People Database search returning poor matches, or Lemlist API calls failing. Do NOT use for building prospect lists (use /sales-prospect-list), designing cadence strategy (use /sales-cadence), cross-platform deliverability (use /sales-deliverability), or enriching contacts outside Lemlist (use /sales-enrich)."
 argument-hint: "[describe what you need help with in Lemlist]"
 license: MIT
 version: 1.0.0

@@ -1,6 +1,6 @@
 ---
 name: sales-pitchwall
-description: "PitchWall platform help — AI product discovery directory (65K+ products, 100K+ users, DR60, 45K+ newsletter subscribers). Helps with submitting a product listing, choosing free vs Premium ($99) tiers, understanding backlink value, advertising options (Spotlight Ad, newsletter sponsorship, dedicated email), and optimizing listings for approval. Use when submitting to PitchWall, evaluating PitchWall for SEO/backlinks, or buying PitchWall advertising. Do NOT use for multi-directory launch strategy (use /sales-launch-directory). Do NOT use for Product Hunt launches (use /sales-producthunt)."
+description: "PitchWall platform help — AI product discovery directory (65K+ products, 100K+ users, DR60, 45K+ newsletter subscribers). Helps with submitting a product listing, choosing free vs Premium ($99) tiers, understanding backlink value, advertising options (Spotlight Ad, newsletter sponsorship, dedicated email), and optimizing listings for approval. Use when you want traffic and backlinks from PitchWall, your AI product needs more discoverability, unsure if Premium is worth the cost, or considering PitchWall ads to reach a tech audience. Do NOT use for multi-directory launch strategy (use /sales-launch-directory). Do NOT use for Product Hunt launches (use /sales-producthunt)."
 argument-hint: "[describe what you need help with on PitchWall]"
 license: MIT
 version: 1.0.0

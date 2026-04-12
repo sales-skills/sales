@@ -1,6 +1,6 @@
 ---
 name: sales-later
-description: "Later platform help — social media scheduling, visual content calendar, Linkin.bio shoppable pages, analytics, Later Influence (influencer discovery, campaign management, Reporting API). Use when asking 'how do I do X in Later', configuring Later scheduling, setting up Linkin.bio, optimizing post timing, managing Later Influence campaigns, or using the Later Influence API. Do NOT use for social media management strategy or tool comparison (use /sales-social-media-management), influencer marketing strategy (use /sales-influencer-marketing), Sprout Social config (use /sales-sproutsocial), or social listening (use /sales-social-listening)."
+description: "Later platform help — social media scheduling, visual content calendar, Linkin.bio shoppable pages, analytics, Later Influence (influencer discovery, campaign management, Reporting API). Use when Later posts not publishing on schedule, Linkin.bio links not working, unsure about best posting times, Later Influence campaigns underperforming, or Later Influence API not returning expected data. Do NOT use for social media management strategy or tool comparison (use /sales-social-media-management), influencer marketing strategy (use /sales-influencer-marketing), Sprout Social config (use /sales-sproutsocial), or social listening (use /sales-social-listening)."
 argument-hint: "[describe what you need help with in Later]"
 license: MIT
 version: 1.0.0

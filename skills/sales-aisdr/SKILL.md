@@ -1,6 +1,6 @@
 ---
 name: sales-aisdr
-description: "AiSDR platform help — AI-powered SDR that automates cold email and LinkedIn outreach with deeply researched personalization. Use when configuring AiSDR campaigns, setting up email warmup in AiSDR, connecting AiSDR to HubSpot, importing prospects into AiSDR, troubleshooting AiSDR deliverability, understanding AiSDR pricing or message credits, comparing AiSDR to other AI SDR tools, or optimizing AiSDR reply rates. Do NOT use for general outbound cadence design (use /sales-cadence) or general email deliverability strategy (use /sales-deliverability)."
+description: "AiSDR platform help — AI-powered SDR that automates cold email and LinkedIn outreach with deeply researched personalization. Use when AiSDR campaigns aren't getting replies, emails landing in spam, HubSpot sync not working, prospect imports failing, not sure how message credits work, wondering if AiSDR is the right AI SDR tool, or reply rates are lower than expected. Do NOT use for general outbound cadence design (use /sales-cadence) or general email deliverability strategy (use /sales-deliverability)."
 argument-hint: "[describe what you need help with in AiSDR]"
 license: MIT
 version: 1.0.0

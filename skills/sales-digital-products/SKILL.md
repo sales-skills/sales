@@ -1,6 +1,6 @@
 ---
 name: sales-digital-products
-description: "Sells digital products — ebooks, templates, courses, downloads, software, presets, printables. Covers pricing strategy, product-market fit, delivery, upsells, launch playbooks, and platform selection. Use when creating or selling digital products, choosing a platform for digital sales, pricing digital goods, or planning a product launch. Do NOT use for membership/subscription sites (use /sales-membership), checkout page optimization (use /sales-checkout), or platform-specific setup (use /sales-kit, /sales-groove, etc.)."
+description: "Sells digital products — ebooks, templates, courses, downloads, software, presets, printables. Covers pricing strategy, product-market fit, delivery, upsells, launch playbooks, and platform selection. Use when you have a digital product idea but don't know how to price or sell it, sales are flat and you need a better launch strategy, you're unsure which platform fits your product type, or delivery and upsell flow isn't converting. Do NOT use for membership/subscription sites (use /sales-membership), checkout page optimization (use /sales-checkout), or platform-specific setup (use /sales-kit, /sales-groove, etc.)."
 argument-hint: "[describe your digital product question or goal]"
 license: MIT
 version: 1.0.0

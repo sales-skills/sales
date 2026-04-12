@@ -1,6 +1,6 @@
 ---
 name: sales-affiliate-program
-description: "Designs and manage affiliate and referral programs — commission structures, affiliate recruitment, promotional assets, tracking, payouts, and program optimization. Use when launching an affiliate program, setting commission rates, recruiting affiliates, creating affiliate assets, or optimizing program performance. Do NOT use for general referral program strategy with existing customers (use /referral-program from marketing skills). For Groove-specific help, use /sales-groove."
+description: "Designs and manage affiliate and referral programs — commission structures, affiliate recruitment, promotional assets, tracking, payouts, and program optimization. Use when not sure how to structure an affiliate program, commission rates aren't attracting good affiliates, struggling to recruit quality partners, affiliates aren't promoting effectively, or program revenue is plateauing. Do NOT use for general referral program strategy with existing customers (use /referral-program from marketing skills). For Groove-specific help, use /sales-groove."
 argument-hint: "[describe your affiliate program question — e.g., 'launch an affiliate program for my course' or 'what commission structure should I use']"
 license: MIT
 version: 1.0.0

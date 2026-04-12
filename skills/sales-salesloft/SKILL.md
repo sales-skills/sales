@@ -1,6 +1,6 @@
 ---
 name: sales-salesloft
-description: "Salesloft platform help — config, Rhythm, Conversations, Deals, Forecast, Analytics, Drift, integrations, admin, API. Use when asking 'how do I do X in Salesloft', configuring Salesloft settings, understanding Rhythm signals, setting up Analytics dashboards, managing Drift chatbots, or troubleshooting Salesloft integrations. Do NOT use for building cadences (use /sales-cadence), reviewing calls (use /sales-call-review), inspecting deals (use /sales-deal-inspect), or forecasting (use /sales-forecast)."
+description: "Salesloft platform help — config, Rhythm, Conversations, Deals, Forecast, Analytics, Drift, integrations, admin, API. Use when Salesloft settings aren't configured right, Rhythm signals feel noisy or unhelpful, Analytics dashboards don't show what you need, Drift chatbots aren't converting, or Salesloft integrations are broken. Do NOT use for building cadences (use /sales-cadence), reviewing calls (use /sales-call-review), inspecting deals (use /sales-deal-inspect), or forecasting (use /sales-forecast)."
 argument-hint: "[describe what you need help with in Salesloft]"
 license: MIT
 version: 1.0.0

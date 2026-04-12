@@ -1,6 +1,6 @@
 ---
 name: sales-call-review
-description: "Reviews sales calls, extract coaching insights, and score against MEDDPICC/SPIN/Challenger. Use when reviewing a sales call, coaching a rep, scoring a call, analyzing a call transcript, extracting action items from a call, preparing call feedback, reviewing talk-to-listen ratio, or analyzing ZoomInfo Chorus conversation intelligence data. Do NOT use for prepping discovery questions (use /sales-discovery), general objection handling strategy (use /sales-objection), or deal-level risk analysis (use /sales-deal-inspect)."
+description: "Reviews sales calls, extract coaching insights, and score against MEDDPICC/SPIN/Challenger. Use when a rep lost a deal and you want to understand why, call went sideways and need to debrief, not sure if rep is qualifying properly, need to pull action items from a recorded call, rep talking too much and not listening, or need to give structured feedback on a call. Do NOT use for prepping discovery questions (use /sales-discovery), general objection handling strategy (use /sales-objection), or deal-level risk analysis (use /sales-deal-inspect)."
 argument-hint: "[paste transcript or describe the call — type, participants, outcome]"
 license: MIT
 version: 1.0.0

@@ -1,6 +1,6 @@
 ---
 name: sales-outscraper
-description: "Outscraper platform help — data extraction platform that scrapes Google Maps, reviews, and 50+ sources plus an instant Business Catalog database. Use when scraping Google Maps businesses or reviews, extracting emails/contacts from websites, enriching company data, validating emails, scraping Amazon or review platforms, or working with the Outscraper API. Do NOT use for general prospect list strategy (use /sales-prospect-list), cross-platform enrichment strategy (use /sales-enrich), or email deliverability strategy (use /sales-deliverability)."
+description: "Outscraper platform help — data extraction platform that scrapes Google Maps, reviews, and 50+ sources plus an instant Business Catalog database. Use when Google Maps scraping isn't returning enough businesses, reviews aren't extracting correctly, email/contact scraping misses results, company enrichment data is incomplete, email validation flags too many false positives, or the Outscraper API isn't working as expected. Do NOT use for general prospect list strategy (use /sales-prospect-list), cross-platform enrichment strategy (use /sales-enrich), or email deliverability strategy (use /sales-deliverability)."
 argument-hint: "[describe what you need help with in Outscraper]"
 license: MIT
 version: 1.0.0

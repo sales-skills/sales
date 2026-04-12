@@ -1,6 +1,6 @@
 ---
 name: sales-launchday
-description: "LaunchDay platform help — curated 24-hour product launch events for indie makers by Dagobert Renouf. Covers $99 submission process (pay only if selected), event model (1-2/month, max 20 products), deal requirements (>40% discount), 30-min podcast interview, influencer promotion (100K+ followers), Slack community access, and permanent archive. Use when submitting to LaunchDay, evaluating if LaunchDay is worth $99, or comparing LaunchDay with free directories. Do NOT use for multi-directory launch strategy (use /sales-launch-directory). Do NOT use for Product Hunt launches (use /product-hunt-launch)."
+description: "LaunchDay platform help — curated 24-hour product launch events for indie makers by Dagobert Renouf. Covers $99 submission process (pay only if selected), event model (1-2/month, max 20 products), deal requirements (>40% discount), 30-min podcast interview, influencer promotion (100K+ followers), Slack community access, and permanent archive. Use when unsure if LaunchDay is worth the $99, want more exposure for your indie product but free directories aren't enough, or wondering how LaunchDay compares to other paid options. Do NOT use for multi-directory launch strategy (use /sales-launch-directory). Do NOT use for Product Hunt launches (use /product-hunt-launch)."
 argument-hint: "[describe what you need help with on LaunchDay]"
 license: MIT
 version: 1.0.0

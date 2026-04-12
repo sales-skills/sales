@@ -1,6 +1,6 @@
 ---
 name: sales-proposal-page
-description: "Writes and structure a Qwilr proposal page that closes deals. Use when writing a Qwilr proposal, structuring a proposal page, building a Qwilr quote, creating a pricing table, designing an interactive proposal, laying out a web proposal, or planning proposal page sections."
+description: "Writes and structure a Qwilr proposal page that closes deals. Use when your proposals look generic and aren't closing, you don't know what sections to include, the pricing table confuses buyers, your proposal doesn't stand out from competitors, or you're staring at a blank Qwilr page and need a structure that sells."
 argument-hint: "[describe what you're proposing, to whom, and any Qwilr features to use]"
 version: 1.0.0
 tags: [sales, proposal, copywriting, qwilr]

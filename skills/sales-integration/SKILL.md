@@ -1,6 +1,6 @@
 ---
 name: sales-integration
-description: "Connects sales tools with webhooks, Zapier/Make, native integrations, and custom API pipelines — CRM sync, event triggers, data mapping, and error handling. Use when connecting Mailshake/Apollo/Salesloft to CRM, setting up webhook pipelines, building Zapier/Make automations for sales workflows, syncing data between tools, or troubleshooting integration issues. Do NOT use for Qwilr-specific automations (use /sales-qwilr-automation), general CRM platform config (use /sales-apollo or /sales-salesloft), or marketing automation flows (use /email-sequence)."
+description: "Connects sales tools with webhooks, Zapier/Make, native integrations, and custom API pipelines — CRM sync, event triggers, data mapping, and error handling. Use when CRM data isn't syncing from Mailshake/Apollo/Salesloft, webhook events aren't firing or arriving malformed, Zapier/Make automations are failing or skipping records, data is duplicating or missing between tools, or an integration that was working suddenly breaks. Do NOT use for Qwilr-specific automations (use /sales-qwilr-automation), general CRM platform config (use /sales-apollo or /sales-salesloft), or marketing automation flows (use /email-sequence)."
 argument-hint: "[describe source tool, destination tool, trigger event, and desired action]"
 license: MIT
 version: 1.0.0

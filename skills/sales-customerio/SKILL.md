@@ -1,6 +1,6 @@
 ---
 name: sales-customerio
-description: "Customer.io platform help — customer engagement and marketing automation for behavior-based multi-channel messaging (email, SMS, push, in-app, WhatsApp). Use when building behavior-triggered automation, setting up transactional messaging, configuring segments or journeys, integrating Data Pipelines or reverse ETL, managing custom objects, or working with the Track/App/Transactional APIs. Do NOT use for general email marketing strategy (use /sales-email-marketing), cross-platform email deliverability (use /sales-deliverability), or email open/click tracking strategy (use /sales-email-tracking)."
+description: "Customer.io platform help — customer engagement and marketing automation for behavior-based multi-channel messaging (email, SMS, push, in-app, WhatsApp). Use when automations aren't triggering on the right behavior, transactional messages are failing or delayed, segments aren't updating as expected, journeys need debugging or restructuring, Data Pipelines or reverse ETL aren't syncing, custom object relationships aren't working, or API calls to Track/App/Transactional endpoints are erroring. Do NOT use for general email marketing strategy (use /sales-email-marketing), cross-platform email deliverability (use /sales-deliverability), or email open/click tracking strategy (use /sales-email-tracking)."
 argument-hint: "[describe what you need help with in Customer.io]"
 license: MIT
 version: 1.0.0

@@ -1,6 +1,6 @@
 ---
 name: sales-funnel
-description: "Builds and optimize sales funnels — strategy, structure, conversion optimization, A/B testing, and analytics. Use when building a funnel, optimizing conversion rates, designing upsell/downsell flows, choosing a funnel builder, or planning a launch funnel. Do NOT use for email marketing sequences (use /sales-email-marketing), checkout-specific optimization (use /sales-checkout), or webinar funnels (use /sales-webinar). For Groove-specific help, use /sales-groove. For SWAI-specific help, use /sales-swai."
+description: "Builds and optimize sales funnels — strategy, structure, conversion optimization, A/B testing, and analytics. Use when your funnel isn't converting, you need to build a funnel from scratch but don't know the right structure, upsell/downsell flow is leaving money on the table, you're not sure which funnel builder to use, or a launch needs a funnel strategy. Do NOT use for email marketing sequences (use /sales-email-marketing), checkout-specific optimization (use /sales-checkout), or webinar funnels (use /sales-webinar). For Groove-specific help, use /sales-groove. For SWAI-specific help, use /sales-swai."
 argument-hint: "[describe your funnel goal — e.g., 'build a webinar registration funnel' or 'optimize my checkout conversion rate']"
 license: MIT
 version: 1.0.0

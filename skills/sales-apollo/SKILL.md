@@ -1,6 +1,6 @@
 ---
 name: sales-apollo
-description: "Apollo.io platform help — config, integrations, CRM sync, API, analytics, dialer, Chrome extension, credit management, admin. Use when asking 'how do I do X in Apollo', configuring Apollo settings, troubleshooting Apollo integrations, managing Apollo credits, or using the Apollo API. Do NOT use for building prospect lists (use /sales-prospect-list), enriching contacts (use /sales-enrich), interpreting buying signals (use /sales-intent), or designing outbound sequences (use /sales-cadence)."
+description: "Apollo.io platform help — config, integrations, CRM sync, API, analytics, dialer, Chrome extension, credit management, admin. Use when Apollo settings aren't configured right, CRM sync is breaking or duplicating records, running out of credits too fast, API calls returning errors, or something in Apollo isn't working as expected. Do NOT use for building prospect lists (use /sales-prospect-list), enriching contacts (use /sales-enrich), interpreting buying signals (use /sales-intent), or designing outbound sequences (use /sales-cadence)."
 argument-hint: "[describe what you need help with in Apollo]"
 license: MIT
 version: 1.0.0

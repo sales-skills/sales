@@ -1,6 +1,6 @@
 ---
 name: sales-coaching
-description: "Sales coaching and training — onboarding new reps, skill development, role-play practice, coaching programs, certifications, manager coaching cadences, and measuring coaching impact. Use when building an onboarding program, creating a coaching framework, running role-plays, designing certification paths, improving ramp time, building a coaching culture, or measuring coaching ROI. Do NOT use for reviewing specific sales call recordings (use /sales-call-review), Seismic-specific platform help (use /sales-seismic), Allego-specific platform help (use /sales-allego), or sales content creation (use /sales-content)."
+description: "Sales coaching and training — onboarding new reps, skill development, role-play practice, coaching programs, certifications, manager coaching cadences, and measuring coaching impact. Use when new reps ramping too slowly, managers not sure how to coach effectively, role-plays feel awkward or unproductive, no structured way to certify reps, coaching efforts not moving pipeline metrics, or struggling to build a coaching culture. Do NOT use for reviewing specific sales call recordings (use /sales-call-review), Seismic-specific platform help (use /sales-seismic), Allego-specific platform help (use /sales-allego), or sales content creation (use /sales-content)."
 argument-hint: "[describe your coaching question — e.g., 'build an onboarding program for new AEs' or 'create a coaching framework for frontline managers']"
 license: MIT
 version: 1.0.0

@@ -1,6 +1,6 @@
 ---
 name: sales-meeting-scheduler
-description: "Schedules sales meetings efficiently — booking pages, round-robin routing, calendar integration, reminders, no-show recovery, and meeting page conversion. Use when setting up booking links, configuring round-robin scheduling, reducing no-shows, optimizing meeting pages, choosing a scheduling tool, Mixmax scheduling, or Mixmax meetings. For Yesware-specific help, use /sales-yesware. Do NOT use for lead routing rules (use /sales-lead-routing), cadence design (use /sales-cadence), or calendar-based CRM automation (use /sales-integration)."
+description: "Schedules sales meetings efficiently — booking pages, round-robin routing, calendar integration, reminders, no-show recovery, and meeting page conversion. Use when prospects aren't booking meetings, no-show rates are too high, round-robin isn't distributing evenly, booking page conversion is low, unsure which scheduling tool to use, or Mixmax meetings aren't working. For Yesware-specific help, use /sales-yesware. Do NOT use for lead routing rules (use /sales-lead-routing), cadence design (use /sales-cadence), or calendar-based CRM automation (use /sales-integration)."
 argument-hint: "[describe your meeting scheduling question or goal]"
 license: MIT
 version: 1.0.0

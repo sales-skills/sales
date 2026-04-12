@@ -1,6 +1,6 @@
 ---
 name: sales-mailgun
-description: "Mailgun (Sinch) platform help — developer-first transactional email API and SMTP relay with inbound routing, webhooks, and Mailgun Optimize deliverability tools. Use when sending transactional email via Mailgun API or SMTP, configuring domains or DNS (DKIM/SPF), setting up inbound email routing, managing webhooks or templates, using Mailgun Optimize for inbox placement testing, or working with the Mailgun REST API. Do NOT use for general email deliverability strategy (use /sales-deliverability), cross-platform email marketing (use /sales-email-marketing), or email open/click tracking strategy (use /sales-email-tracking)."
+description: "Mailgun (Sinch) platform help — developer-first transactional email API and SMTP relay with inbound routing, webhooks, and Mailgun Optimize deliverability tools. Use when Mailgun emails not delivering, DNS records (DKIM/SPF) failing verification, inbound routing not catching messages, webhooks not firing, templates rendering wrong, Mailgun Optimize showing poor inbox placement, or API calls returning errors. Do NOT use for general email deliverability strategy (use /sales-deliverability), cross-platform email marketing (use /sales-email-marketing), or email open/click tracking strategy (use /sales-email-tracking)."
 argument-hint: "[describe what you need help with in Mailgun]"
 license: MIT
 version: 1.0.0

@@ -1,6 +1,6 @@
 ---
 name: sales-deal-room
-description: "Designs a Qwilr deal room for complex multi-stakeholder B2B deals. Use when setting up a deal room, building a Qwilr deal room, creating a digital sales room, managing a multi-stakeholder deal, building buyer enablement content, creating a mutual action plan, or packaging an enterprise deal."
+description: "Designs a Qwilr deal room for complex multi-stakeholder B2B deals. Use when a deal has too many stakeholders to manage over email, buyers keep losing track of materials, there's no single source of truth for a complex deal, you need a mutual action plan to keep procurement on track, or an enterprise deal needs a polished hub for all parties."
 argument-hint: "[describe the deal — type, stakeholders, stage, and what materials are needed]"
 version: 1.0.0
 tags: [sales, proposal, deal-room, qwilr]

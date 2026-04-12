@@ -1,6 +1,6 @@
 ---
 name: sales-closum
-description: "Closum platform help — omnichannel marketing automation: email, SMS, WhatsApp, Telegram, Web Push from one dashboard, drag-and-drop editors, no-code automations, AI assistant, landing pages, contact management. Use when asking 'how do I do X in Closum', setting up Closum campaigns, configuring Closum automations or landing pages, connecting Closum to CRMs, or troubleshooting Closum deliverability. Do NOT use for general email marketing strategy (use /sales-email-marketing), outbound cadence strategy (use /sales-cadence), funnel strategy (use /sales-funnel), or connecting Closum to other tools via Zapier (use /sales-integration)."
+description: "Closum platform help — omnichannel marketing automation: email, SMS, WhatsApp, Telegram, Web Push from one dashboard, drag-and-drop editors, no-code automations, AI assistant, landing pages, contact management. Use when Closum campaigns not sending or reaching inboxes, automations not triggering, landing pages not converting, CRM connection broken or data not syncing, or Closum deliverability rates dropping. Do NOT use for general email marketing strategy (use /sales-email-marketing), outbound cadence strategy (use /sales-cadence), funnel strategy (use /sales-funnel), or connecting Closum to other tools via Zapier (use /sales-integration)."
 argument-hint: "[describe what you need help with in Closum]"
 license: MIT
 version: 1.0.0

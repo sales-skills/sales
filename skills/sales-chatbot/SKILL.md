@@ -1,6 +1,6 @@
 ---
 name: sales-chatbot
-description: "Chatbot marketing and conversational automation — building chatbot flows, multichannel messaging (WhatsApp, Telegram, Facebook, Instagram, Viber, live chat), lead qualification bots, FAQ bots, and handoff to human agents. Use when asking 'how do I build a chatbot', 'WhatsApp bot', 'Telegram bot for sales', 'chatbot lead qualification', 'conversational marketing', 'live chat handoff'. Do NOT use for live chat widget setup without bots (use /sales-live-chat), email sequences (use /sales-cadence), or SMS campaigns without conversational flow (use /sales-sms-marketing). For SendPulse-specific help, use /sales-sendpulse. For SWAI-specific help, use /sales-swai."
+description: "Chatbot marketing and conversational automation — building chatbot flows, multichannel messaging (WhatsApp, Telegram, Facebook, Instagram, Viber, live chat), lead qualification bots, FAQ bots, and handoff to human agents. Use when website visitors leaving without engaging, WhatsApp or Telegram leads not getting qualified, bot flow feels broken or confusing, leads dropping off before reaching a human agent, or not sure how to automate conversations for sales. Do NOT use for live chat widget setup without bots (use /sales-live-chat), email sequences (use /sales-cadence), or SMS campaigns without conversational flow (use /sales-sms-marketing). For SendPulse-specific help, use /sales-sendpulse. For SWAI-specific help, use /sales-swai."
 argument-hint: "[describe your chatbot or conversational automation question]"
 license: MIT
 version: 1.0.0

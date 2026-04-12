@@ -1,6 +1,6 @@
 ---
 name: sales-zoominfo
-description: "ZoomInfo platform help — SalesOS, MarketingOS, OperationsOS, Copilot, API, integrations. Use when asking 'how do I do X in ZoomInfo', setting up ZoomInfo searches, configuring ZoomInfo enrichment, ZoomInfo intent, ZoomInfo Engage sequences, ZoomInfo advertising, ZoomInfo FormComplete, ZoomInfo data orchestration, ZoomInfo Copilot, or troubleshooting ZoomInfo. Do NOT use for general enrichment strategy (use /sales-enrich), general intent strategy (use /sales-intent), general cadence design (use /sales-cadence), general data hygiene strategy (use /sales-data-hygiene), or general B2B advertising strategy (use /sales-b2b-advertising)."
+description: "ZoomInfo platform help — SalesOS, MarketingOS, OperationsOS, Copilot, API, integrations. Use when ZoomInfo searches aren't returning the right prospects, enrichment data is incomplete or stale, intent signals aren't surfacing target accounts, Engage sequences have low reply rates, advertising audiences aren't matching your ICP, FormComplete isn't auto-filling leads, data orchestration rules aren't firing, or Copilot recommendations seem off. Do NOT use for general enrichment strategy (use /sales-enrich), general intent strategy (use /sales-intent), general cadence design (use /sales-cadence), general data hygiene strategy (use /sales-data-hygiene), or general B2B advertising strategy (use /sales-b2b-advertising)."
 argument-hint: "[describe what you need help with in ZoomInfo]"
 license: MIT
 version: 1.0.0

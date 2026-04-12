@@ -1,6 +1,6 @@
 ---
 name: sales-minelead
-description: "Minelead platform help — B2B email finder, verifier, and lead generation with 500M+ emails and 100M+ business profiles. Use when searching for company emails by domain, finding professional emails by name, generating leads from keywords/locations, verifying email deliverability, detecting disposable emails, running email campaigns via Gmail, or working with the Minelead API. Do NOT use for cross-platform enrichment strategy (use /sales-enrich), email deliverability/verification strategy (use /sales-deliverability), prospect list building strategy (use /sales-prospect-list), or outbound sequence/cadence strategy (use /sales-cadence)."
+description: "Minelead platform help — B2B email finder, verifier, and lead generation with 500M+ emails and 100M+ business profiles. Use when you can't find email addresses for a company, need to verify if emails are valid before sending, leads from keyword searches aren't relevant, Gmail campaigns in Minelead aren't delivering, disposable emails are polluting your list, or the Minelead API isn't returning results. Do NOT use for cross-platform enrichment strategy (use /sales-enrich), email deliverability/verification strategy (use /sales-deliverability), prospect list building strategy (use /sales-prospect-list), or outbound sequence/cadence strategy (use /sales-cadence)."
 argument-hint: "[describe what you need help with in Minelead]"
 license: MIT
 version: 1.0.0

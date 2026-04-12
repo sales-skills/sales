@@ -1,6 +1,6 @@
 ---
 name: sales-startupstash
-description: "Startup Stash platform help — one of the largest curated startup tool directories (10,000+ tools, 200+ categories, DR65). Helps with submitting a product listing, optimizing your listing for acceptance, understanding backlink value (nofollow), and advertising options. Use when submitting to Startup Stash, optimizing a Startup Stash listing, or evaluating Startup Stash for SEO/backlink value. Do NOT use for multi-directory launch strategy (use /sales-launch-directory). Do NOT use for Product Hunt launches (use /sales-producthunt)."
+description: "Startup Stash platform help — one of the largest curated startup tool directories (10,000+ tools, 200+ categories, DR65). Helps with submitting a product listing, optimizing your listing for acceptance, understanding backlink value (nofollow), and advertising options. Use when your tool needs visibility in a high-authority directory (DR65), your Startup Stash listing isn't getting approved, or you're unsure if Startup Stash is worth it for SEO given nofollow links. Do NOT use for multi-directory launch strategy (use /sales-launch-directory). Do NOT use for Product Hunt launches (use /sales-producthunt)."
 argument-hint: "[describe what you need help with on Startup Stash]"
 license: MIT
 version: 1.0.0

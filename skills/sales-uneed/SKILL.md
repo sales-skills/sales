@@ -1,6 +1,6 @@
 ---
 name: sales-uneed
-description: "Uneed platform help — social launchpad for tech products with daily voting competitions. Covers free submission (DR74 dofollow backlink), skip-the-line ($29.99), Pro subscription ($89/yr with vote multiplier and monthly relaunch), newsletter sponsorship ($147 to 15,000 subscribers at 40% open rate), premium ad spots, product reviews, and auto-submit service. Use when submitting to Uneed, evaluating Uneed backlink value, choosing between free and paid launch options, or comparing Uneed with other directories. Do NOT use for multi-directory launch strategy (use /sales-launch-directory). Do NOT use for Product Hunt launches (use /product-hunt-launch)."
+description: "Uneed platform help — social launchpad for tech products with daily voting competitions. Covers free submission (DR74 dofollow backlink), skip-the-line ($29.99), Pro subscription ($89/yr with vote multiplier and monthly relaunch), newsletter sponsorship ($147 to 15,000 subscribers at 40% open rate), premium ad spots, product reviews, and auto-submit service. Use when your tech product needs more exposure in maker communities, you want to know if the Uneed DR74 backlink is worth the queue wait, you're deciding between free and paid launch options on Uneed, or you're comparing Uneed against other startup directories. Do NOT use for multi-directory launch strategy (use /sales-launch-directory). Do NOT use for Product Hunt launches (use /product-hunt-launch)."
 argument-hint: "[describe what you need help with on Uneed]"
 license: MIT
 version: 1.0.0

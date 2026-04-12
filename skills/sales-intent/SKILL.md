@@ -1,6 +1,6 @@
 ---
 name: sales-intent
-description: "Interprets buying signals and prioritize accounts for outreach. Use when analyzing intent data, prioritizing accounts, reading buying signals, tracking job changes, using intent topics, scoring leads, deciding who to contact first, or building signal-based outreach workflows. Do NOT use for building prospect lists (use /sales-prospect-list), enriching contacts (use /sales-enrich), ZoomInfo-specific intent config (use /sales-zoominfo), or general Apollo platform help (use /sales-apollo)."
+description: "Interprets buying signals and prioritize accounts for outreach. Use when drowning in intent data and not sure what matters, can't tell which accounts to prioritize, buying signals aren't translating to pipeline, job change alerts are noisy, intent topics feel too broad, lead scores don't match actual deal quality, or not sure how to act on signals in outreach. Do NOT use for building prospect lists (use /sales-prospect-list), enriching contacts (use /sales-enrich), ZoomInfo-specific intent config (use /sales-zoominfo), or general Apollo platform help (use /sales-apollo)."
 argument-hint: "[describe the signals you're seeing or the accounts you want to prioritize]"
 license: MIT
 version: 1.0.0

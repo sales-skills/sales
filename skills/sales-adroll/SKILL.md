@@ -1,6 +1,6 @@
 ---
 name: sales-adroll
-description: "AdRoll platform help — retargeting, display ads, social ads, CTV, native ads, DOOH, email retargeting, audience segmentation, cross-channel campaigns, Shopify/BigCommerce/WooCommerce integration, RollWorks ABM, NextRoll API. Use when asking 'how do I do X in AdRoll', configuring AdRoll campaigns, setting up retargeting pixels, building audiences, connecting ecommerce integrations, using the NextRoll API, or asking about RollWorks ABM features. Do NOT use for B2B advertising strategy across tools (use /sales-b2b-advertising), general retargeting strategy (use /sales-retargeting), email marketing strategy (use /sales-email-marketing), or audience growth strategy (use /sales-audience-growth)."
+description: "AdRoll platform help — retargeting, display ads, social ads, CTV, native ads, DOOH, email retargeting, audience segmentation, cross-channel campaigns, Shopify/BigCommerce/WooCommerce integration, RollWorks ABM, NextRoll API. Use when retargeting pixel isn't tracking visitors, campaigns have low ROAS, audiences aren't populating correctly, ecommerce integration not syncing products, NextRoll API returning errors, or not sure how to use RollWorks ABM features. Do NOT use for B2B advertising strategy across tools (use /sales-b2b-advertising), general retargeting strategy (use /sales-retargeting), email marketing strategy (use /sales-email-marketing), or audience growth strategy (use /sales-audience-growth)."
 argument-hint: "[describe what you need help with in AdRoll]"
 license: MIT
 version: 1.0.0

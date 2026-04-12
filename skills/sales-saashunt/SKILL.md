@@ -1,6 +1,6 @@
 ---
 name: sales-saashunt
-description: "SaaSHunt platform help — AI-powered SaaS discovery directory with free dofollow backlinks (DR49). Covers submission process (download Excel template, fill out product details, upload for review), listing categories (HR, CRM, Accounting, ERP, Marketing, PM, Risk Management, Retail/POS), AI-powered software matching, comparison tools, demo booking for vendors, and Pro plans for enhanced visibility (~$49/mo internationally). Use when submitting to SaaSHunt, evaluating SaaSHunt backlink value, or optimizing a SaaS directory listing. Do NOT use for multi-directory launch strategy (use /sales-launch-directory). Do NOT use for Product Hunt launches (use /sales-producthunt)."
+description: "SaaSHunt platform help — AI-powered SaaS discovery directory with free dofollow backlinks (DR49). Covers submission process (download Excel template, fill out product details, upload for review), listing categories (HR, CRM, Accounting, ERP, Marketing, PM, Risk Management, Retail/POS), AI-powered software matching, comparison tools, demo booking for vendors, and Pro plans for enhanced visibility (~$49/mo internationally). Use when your SaaS product needs more directory visibility, you want a free dofollow backlink from a DR49 domain, or your SaaSHunt listing isn't standing out against competitors. Do NOT use for multi-directory launch strategy (use /sales-launch-directory). Do NOT use for Product Hunt launches (use /sales-producthunt)."
 argument-hint: "[describe what you need help with on SaaSHunt]"
 license: MIT
 version: 1.0.0

@@ -1,6 +1,6 @@
 ---
 name: sales-compete
-description: "Runs competitive displacement campaigns — find competitor customers, identify those ready to switch, and build targeted outreach with displacement-specific messaging. Use when targeting a competitor's install base, building a competitive takeout list, finding companies evaluating alternatives, or designing win-away campaigns. Do NOT use for general prospect list building (use /sales-prospect-list), competitive positioning/messaging frameworks (use /sales-positioning), or general outreach writing (use /sales-outreach)."
+description: "Runs competitive displacement campaigns — find competitor customers, identify those ready to switch, and build targeted outreach with displacement-specific messaging. Use when you know prospects are using a competitor and want to win them over, need to find companies likely to switch, losing deals to a specific competitor, or displacement outreach isn't landing. Do NOT use for general prospect list building (use /sales-prospect-list), competitive positioning/messaging frameworks (use /sales-positioning), or general outreach writing (use /sales-outreach)."
 argument-hint: "[name the competitor and your product/value prop]"
 license: MIT
 version: 1.0.0

@@ -1,6 +1,6 @@
 ---
 name: sales-newsletter
-description: "Newsletter monetization — paid subscriptions, sponsorships, ad sales, paid recommendations, premium tiers, pricing strategy, subscriber-to-revenue conversion. Use when monetizing a newsletter, setting up paid subscriptions, finding sponsors, pricing a premium tier, or deciding between ad-supported and subscription models. Do NOT use for sending email campaigns (use /sales-email-marketing), growing your subscriber list (use /sales-audience-growth), or platform-specific setup (use /sales-kit, /sales-mailchimp, etc.)."
+description: "Newsletter monetization — paid subscriptions, sponsorships, ad sales, paid recommendations, premium tiers, pricing strategy, subscriber-to-revenue conversion. Use when your newsletter isn't generating revenue, paid subscribers aren't converting, can't find sponsors, unsure how to price a premium tier, or torn between ad-supported and subscription models. Do NOT use for sending email campaigns (use /sales-email-marketing), growing your subscriber list (use /sales-audience-growth), or platform-specific setup (use /sales-kit, /sales-mailchimp, etc.)."
 argument-hint: "[describe your newsletter monetization question or goal]"
 license: MIT
 version: 1.0.0

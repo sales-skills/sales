@@ -1,6 +1,6 @@
 ---
 name: sales-launchvibe
-description: "LaunchVibe platform help — product launch and discovery directory for makers, founders, and creators with daily launches, community upvoting/commenting, and XP gamification system. DR10 dofollow backlinks, free submission, no editorial queue. Covers submission process, listing optimization, XP and streak system, community engagement strategy, and daily launch timing. Use when submitting to LaunchVibe, optimizing a LaunchVibe listing, or evaluating LaunchVibe for product visibility. Do NOT use for multi-directory launch strategy (use /sales-launch-directory). Do NOT use for Product Hunt launches (use /sales-producthunt)."
+description: "LaunchVibe platform help — product launch and discovery directory for makers, founders, and creators with daily launches, community upvoting/commenting, and XP gamification system. DR10 dofollow backlinks, free submission, no editorial queue. Covers submission process, listing optimization, XP and streak system, community engagement strategy, and daily launch timing. Use when your LaunchVibe listing isn't getting upvotes, not sure how to stand out on launch day, or wondering if LaunchVibe is worth it for visibility. Do NOT use for multi-directory launch strategy (use /sales-launch-directory). Do NOT use for Product Hunt launches (use /sales-producthunt)."
 argument-hint: "[describe what you need help with on LaunchVibe]"
 license: MIT
 version: 1.0.0

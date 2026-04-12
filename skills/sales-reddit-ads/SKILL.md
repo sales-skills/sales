@@ -1,6 +1,6 @@
 ---
 name: sales-reddit-ads
-description: "Reddit Ads platform help — campaign setup, subreddit targeting, ad formats (Image, Video, Carousel, Conversation, Product, Free-Form, AMA, Takeover, Interactive, Max), Reddit Pixel, Conversions API (CAPI), Lead Gen Ads, Business Manager, bidding strategy, audience building, conversion tracking. Use when asking 'how do I do X in Reddit Ads', setting up Reddit ad campaigns, configuring the Reddit Pixel, choosing subreddits to target, building Reddit audiences, optimizing Reddit ad ROAS, or troubleshooting Reddit Ads Manager. Do NOT use for general retargeting strategy (use /sales-retargeting), B2B advertising strategy across tools (use /sales-b2b-advertising), or organic Reddit marketing (out of scope)."
+description: "Reddit Ads platform help — campaign setup, subreddit targeting, ad formats (Image, Video, Carousel, Conversation, Product, Free-Form, AMA, Takeover, Interactive, Max), Reddit Pixel, Conversions API (CAPI), Lead Gen Ads, Business Manager, bidding strategy, audience building, conversion tracking. Use when Reddit ad ROAS is underperforming, you're not sure which subreddits to target, the Reddit Pixel isn't tracking conversions, your ads get downvoted or feel off-tone for Reddit, or you can't figure out the right bidding strategy. Do NOT use for general retargeting strategy (use /sales-retargeting), B2B advertising strategy across tools (use /sales-b2b-advertising), or organic Reddit marketing (out of scope)."
 argument-hint: "[describe what you need help with in Reddit Ads]"
 license: MIT
 version: 1.0.0

@@ -1,6 +1,6 @@
 ---
 name: sales-lobstr
-description: "Lobstr.io platform help — no-code web scraping platform with 50+ ready-made scrapers for Google Maps, LinkedIn Sales Navigator, Twitter, YouTube, and more. Features cookie-based login sync, scheduled automation, multi-threading, and a full API with Python SDK and MCP Server. Use when configuring a Lobstr scraper, exporting data to Google Sheets or S3, setting up scheduled scraping, working with the Lobstr API or Python SDK, or managing credits. Do NOT use for general prospect list strategy (use /sales-prospect-list), cross-platform enrichment strategy (use /sales-enrich), or integration strategy (use /sales-integration)."
+description: "Lobstr.io platform help — no-code web scraping platform with 50+ ready-made scrapers for Google Maps, LinkedIn Sales Navigator, Twitter, YouTube, and more. Features cookie-based login sync, scheduled automation, multi-threading, and a full API with Python SDK and MCP Server. Use when Lobstr scraper returning empty or incomplete results, exports to Google Sheets or S3 failing, scheduled scrapes not running, API or Python SDK throwing errors, or credits draining faster than expected. Do NOT use for general prospect list strategy (use /sales-prospect-list), cross-platform enrichment strategy (use /sales-enrich), or integration strategy (use /sales-integration)."
 argument-hint: "[describe what you need help with in Lobstr.io]"
 license: MIT
 version: 1.0.0

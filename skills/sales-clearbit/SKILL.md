@@ -1,6 +1,6 @@
 ---
 name: sales-clearbit
-description: "Clearbit (HubSpot) platform help — Person Enrichment, Company Enrichment, Reveal (IP-to-company), Prospector, Name to Domain, Form Shortening, Risk API, Breeze Intelligence, API & integrations. Use when asking 'how do I enrich leads with Clearbit', 'Clearbit API', 'Clearbit Reveal', 'Clearbit Prospector', 'Breeze Intelligence', 'Clearbit form shortening', 'Clearbit HubSpot'. Do NOT use for enrichment strategy across tools (use /sales-enrich), intent/visitor identification strategy (use /sales-intent), building prospect lists across tools (use /sales-prospect-list), or lead scoring strategy (use /sales-lead-score)."
+description: "Clearbit (HubSpot) platform help — Person Enrichment, Company Enrichment, Reveal (IP-to-company), Prospector, Name to Domain, Form Shortening, Risk API, Breeze Intelligence, API & integrations. Use when lead enrichment returning incomplete data, Reveal not identifying website visitors, Prospector not finding the right contacts, Breeze Intelligence not working in HubSpot, form shortening not auto-filling fields, or API responses missing expected attributes. Do NOT use for enrichment strategy across tools (use /sales-enrich), intent/visitor identification strategy (use /sales-intent), building prospect lists across tools (use /sales-prospect-list), or lead scoring strategy (use /sales-lead-score)."
 argument-hint: "[describe what you need help with in Clearbit]"
 license: MIT
 version: 1.0.0

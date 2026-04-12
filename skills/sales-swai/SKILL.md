@@ -1,6 +1,6 @@
 ---
 name: sales-swai
-description: "SWAI.ai platform help — Autonomous Revenue OS that plans, executes, and optimizes marketing and sales campaigns with AI. Use when configuring SWAI campaigns, building landing pages in SWAI, setting up the AI chat widget, managing CRM contacts, creating email automations, configuring AI assistants, using SWAI's content tools, setting up the white-label partner program, or optimizing campaign performance. Do NOT use for general funnel strategy (use /sales-funnel), email marketing strategy (use /sales-email-marketing), chatbot design (use /sales-chatbot), or live chat setup (use /sales-live-chat)."
+description: "SWAI.ai platform help — Autonomous Revenue OS that plans, executes, and optimizes marketing and sales campaigns with AI. Use when SWAI campaigns aren't generating leads, landing pages have low conversion rates, the AI chat widget isn't capturing visitors, CRM contacts are disorganized, email automations aren't triggering, AI assistants give poor responses, content tools aren't producing usable output, or the white-label setup isn't working. Do NOT use for general funnel strategy (use /sales-funnel), email marketing strategy (use /sales-email-marketing), chatbot design (use /sales-chatbot), or live chat setup (use /sales-live-chat)."
 argument-hint: "[describe what you need help with in SWAI]"
 license: MIT
 version: 1.0.0

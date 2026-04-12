@@ -1,6 +1,6 @@
 ---
 name: sales-b2b-advertising
-description: "Account-based B2B advertising — display ads, retargeting, cross-channel campaigns targeting specific accounts or segments. Use when running ABM ad campaigns, targeting accounts with display ads, retargeting website visitors, building B2B audiences, measuring ad-to-pipeline attribution, or choosing a B2B advertising platform. Do NOT use for email outbound (use /sales-cadence), general paid media/B2C ads (out of scope), or ZoomInfo-specific config (use /sales-zoominfo). For platform-specific help, use /sales-zoominfo."
+description: "Account-based B2B advertising — display ads, retargeting, cross-channel campaigns targeting specific accounts or segments. Use when ABM ads aren't reaching target accounts, display ad CTRs are low, retargeted visitors aren't converting, B2B audiences are too broad or too small, can't tie ad spend to pipeline, or not sure which B2B ad platform to pick. Do NOT use for email outbound (use /sales-cadence), general paid media/B2C ads (out of scope), or ZoomInfo-specific config (use /sales-zoominfo). For platform-specific help, use /sales-zoominfo."
 argument-hint: "[describe your B2B advertising question or goal]"
 license: MIT
 version: 1.0.0

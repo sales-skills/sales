@@ -1,6 +1,6 @@
 ---
 name: sales-betalist
-description: "BetaList platform help — pre-launch startup discovery directory where early adopters find startups before they make it big (15,000+ featured startups, 100K+ early adopters, DR67 dofollow backlink). Covers submission optimization, acceptance criteria (21% acceptance rate), free queue vs $129 Priority listing, newsletter inclusion (30K+ subscribers), listing best practices, and API access. Use when submitting a startup to BetaList, optimizing a BetaList listing, deciding free vs Priority, or understanding BetaList acceptance criteria. Do NOT use for multi-directory launch strategy (use /sales-launch-directory). Do NOT use for Product Hunt (use /sales-producthunt)."
+description: "BetaList platform help — pre-launch startup discovery directory where early adopters find startups before they make it big (15,000+ featured startups, 100K+ early adopters, DR67 dofollow backlink). Covers submission optimization, acceptance criteria (21% acceptance rate), free queue vs $129 Priority listing, newsletter inclusion (30K+ subscribers), listing best practices, and API access. Use when your startup needs early adopter signups, BetaList submission got rejected, not sure if Priority listing is worth $129, or listing isn't attracting enough interest. Do NOT use for multi-directory launch strategy (use /sales-launch-directory). Do NOT use for Product Hunt (use /sales-producthunt)."
 argument-hint: "[describe what you need help with on BetaList]"
 license: MIT
 version: 1.0.0

@@ -1,6 +1,6 @@
 ---
 name: sales-enrichso
-description: "Enrich.so platform help — real-time B2B datan enrichment API with 50+ data points per lookup and success-based billing. Key capabilities: reverse email lookup, LinkedIn profile enrichment, email/phone finders, company data, similar company search, employee search, IP to company, and bulk enrichment. Use when enriching contacts by email or LinkedIn URL, finding emails/phones from name+company, looking up company data, running bulk enrichment, or working with the Enrich.so API. Do NOT use for cross-platform enrichment strategy (use /sales-enrich), email deliverability strategy (use /sales-deliverability), or prospect list strategy (use /sales-prospect-list)."
+description: "Enrich.so platform help — real-time B2B datan enrichment API with 50+ data points per lookup and success-based billing. Key capabilities: reverse email lookup, LinkedIn profile enrichment, email/phone finders, company data, similar company search, employee search, IP to company, and bulk enrichment. Use when you have an email but need the LinkedIn profile behind it, a LinkedIn URL but need contact details, you need to find someone's email from just name and company, company data is missing for your leads, or the Enrich.so API isn't returning expected results. Do NOT use for cross-platform enrichment strategy (use /sales-enrich), email deliverability strategy (use /sales-deliverability), or prospect list strategy (use /sales-prospect-list)."
 argument-hint: "[describe what you need help with in Enrich.so]"
 license: MIT
 version: 1.0.0

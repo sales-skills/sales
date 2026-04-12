@@ -1,6 +1,6 @@
 ---
 name: sales-klaviyo
-description: "Klaviyo platform help — AI-first B2C CRM and marketing automation for e-commerce with predictive analytics, 350+ integrations, and cross-channel messaging. Use when building e-commerce email/SMS automation, setting up Klaviyo flows or segments, configuring Shopify-Klaviyo integration, using predictive analytics (CLV, churn risk), managing forms or reviews, or working with the Klaviyo API. Do NOT use for general email marketing strategy (use /sales-email-marketing), cross-platform email deliverability (use /sales-deliverability), or email open/click tracking strategy (use /sales-email-tracking)."
+description: "Klaviyo platform help — AI-first B2C CRM and marketing automation for e-commerce with predictive analytics, 350+ integrations, and cross-channel messaging. Use when Klaviyo flows not triggering, segments returning wrong contacts, Shopify data not syncing to Klaviyo, predictive scores (CLV, churn) seem off, forms not capturing signups, reviews not collecting, or Klaviyo API returning errors. Do NOT use for general email marketing strategy (use /sales-email-marketing), cross-platform email deliverability (use /sales-deliverability), or email open/click tracking strategy (use /sales-email-tracking)."
 argument-hint: "[describe what you need help with in Klaviyo]"
 license: MIT
 version: 1.0.0

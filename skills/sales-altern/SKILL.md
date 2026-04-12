@@ -1,6 +1,6 @@
 ---
 name: sales-altern
-description: "Altern platform help — curated AI tools and agents directory (10,000+ tools, 100+ categories, ~5-28K monthly visits). Covers tool submissions (free + featured tiers: Gold/Silver/Bronze), listing optimization, category selection, newsletter inclusion (weekly AI tools + agents digest), alternatives pages, and dofollow backlinks. Use when submitting an AI tool to Altern, optimizing an Altern listing, or evaluating Altern vs other AI directories. Do NOT use for multi-directory launch coordination (use /sales-launch-directory). Do NOT use for non-AI product directories (use the platform-specific skill)."
+description: "Altern platform help — curated AI tools and agents directory (10,000+ tools, 100+ categories, ~5-28K monthly visits). Covers tool submissions (free + featured tiers: Gold/Silver/Bronze), listing optimization, category selection, newsletter inclusion (weekly AI tools + agents digest), alternatives pages, and dofollow backlinks. Use when your AI tool isn't listed on Altern, listing isn't getting visibility, not sure if a featured tier is worth it, or wondering how Altern compares to other AI directories. Do NOT use for multi-directory launch coordination (use /sales-launch-directory). Do NOT use for non-AI product directories (use the platform-specific skill)."
 argument-hint: "[describe what you need help with on Altern]"
 license: MIT
 version: 1.0.0

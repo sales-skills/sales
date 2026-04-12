@@ -1,6 +1,6 @@
 ---
 name: sales-anymailfinder
-description: "Anymail Finder platform help — email finder and verification tool with 97%+ delivery guarantee. Finds emails by person name, company/domain, decision-maker role, or LinkedIn URL, with bulk search up to 100K rows and a GeoLead Finder. Use when looking up emails by name and company, finding decision-maker emails by role, verifying emails, running bulk email searches, finding emails from LinkedIn URLs, or working with the Anymail Finder API. Do NOT use for cross-platform enrichment strategy (use /sales-enrich), email deliverability strategy (use /sales-deliverability), or prospect list strategy (use /sales-prospect-list)."
+description: "Anymail Finder platform help — email finder and verification tool with 97%+ delivery guarantee. Finds emails by person name, company/domain, decision-maker role, or LinkedIn URL, with bulk search up to 100K rows and a GeoLead Finder. Use when you can't find someone's email, need decision-maker contacts at a company, email addresses keep bouncing, bulk search results have low match rates, LinkedIn URLs aren't returning emails, or the Anymail Finder API isn't returning expected results. Do NOT use for cross-platform enrichment strategy (use /sales-enrich), email deliverability strategy (use /sales-deliverability), or prospect list strategy (use /sales-prospect-list)."
 argument-hint: "[describe what you need help with in Anymail Finder]"
 license: MIT
 version: 1.0.0

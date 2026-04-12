@@ -1,6 +1,6 @@
 ---
 name: sales-lead-routing
-description: "Designs and implement lead routing and assignment rules — round-robin, territory-based, score-based, and account-based models. Use when designing how leads get assigned to reps, building routing rules in your CRM, optimizing speed-to-lead, setting up territory assignments, configuring lead queues, or scaling assignment as your team grows. Do NOT use for lead scoring model design (use /sales-lead-score), CRM platform configuration (use /sales-apollo or /sales-salesloft), or marketing-to-sales handoff process (use /revops)."
+description: "Designs and implement lead routing and assignment rules — round-robin, territory-based, score-based, and account-based models. Use when leads going to the wrong reps, response time too slow, reps arguing over territory ownership, lead queue backing up, or routing rules breaking as the team grows. Do NOT use for lead scoring model design (use /sales-lead-score), CRM platform configuration (use /sales-apollo or /sales-salesloft), or marketing-to-sales handoff process (use /revops)."
 argument-hint: "[describe your team structure, lead sources, and current routing]"
 license: MIT
 version: 1.0.0
