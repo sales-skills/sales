@@ -116,6 +116,7 @@ Create a structured onboarding experience:
 - `/sales-creatoriq` — CreatorIQ platform help — enterprise influencer OS with affiliate network integrations (CJ, Awin, Impact, Rakuten)
 - `/sales-aspire` — Aspire platform help — built-in affiliate tracking with promo codes and trackable links via Shopify
 - `/sales-influencer-hero` — Influencer Hero platform help — affiliate tracking with discount codes, code leakage prevention, multi-ecommerce integration
+- `/sales-upfluence` — Upfluence platform help — commission-free affiliate tracking for ecommerce, promo codes, product seeding
 - `/sales-performcb` — Perform[cb] platform help — #1 CPA network, Outcome Engine, PerformSHIELD fraud detection, Partner API
 - `/sales-fansrevenue` — FansRevenue platform help — creator monetization through affiliate brand promotion, CrakRevenue network
 - `/sales-do` — Route to the right skill when you are unsure where to start
