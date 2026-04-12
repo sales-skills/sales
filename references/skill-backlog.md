@@ -49,3 +49,7 @@ Specific platforms, tools, or websites discovered during research that should ge
 | Linktree | https://linktr.ee | Link-in-bio market leader, direct Linkin.bio competitor | sales-later | 2026-04-12 |
 | Pallyy | https://pallyy.com | Budget Later alternative with strong link-in-bio and scheduling | sales-later | 2026-04-12 |
 | SocialBee | https://socialbee.com | Later alternative with content recycling feature Later lacks | sales-later | 2026-04-12 |
+| GRIN | https://grin.co | Top HypeAuditor competitor, ecommerce-focused influencer marketing | sales-hypeauditor | 2026-04-12 |
+| Upfluence | https://www.upfluence.com | Major HypeAuditor competitor with Jace AI automation | sales-hypeauditor | 2026-04-12 |
+| Lessie AI | https://lessie.ai | Top free fake follower checker in 2026, direct HypeAuditor competitor | sales-hypeauditor | 2026-04-12 |
+| Aspire (AspireIQ) | https://aspire.io | Frequently listed HypeAuditor alternative for influencer marketing | sales-hypeauditor | 2026-04-12 |
