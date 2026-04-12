@@ -37,6 +37,8 @@ Problems discovered during platform research that don't have dedicated skills ye
 | Social media content repurposing (one video → all platform formats, aspect ratio adaptation, caption localization) | Comparison articles, G2 reviews — medium frequency | sales-later | 2026-04-12 |
 | Influencer algorithm accuracy/relevance (AI matching returns irrelevant creators across platforms) | G2/Capterra reviews of Aspire, GRIN, CreatorIQ — medium frequency | sales-aspire | 2026-04-12 |
 | Influencer content-to-paid-ads pipeline (UGC → Spark Ads / Meta whitelisting workflow, rights management) | Industry articles, platform feature comparisons — growing importance | sales-aspire | 2026-04-12 |
+| Visual social listening (AI image/video recognition for logo detection in visual content) | YouScan differentiator, Talkwalker capability — growing importance as visual content dominates | sales-brandwatch | 2026-04-12 |
+| Reddit-specific monitoring strategy (post-GummySearch shutdown, dedicated Reddit intelligence tools) | GummySearch shutdown Dec 2025, Threadlytics emerging, Reddit official API partner programs | sales-brandwatch | 2026-04-12 |
 
 ## Platforms to add
 
@@ -58,3 +60,10 @@ Specific platforms, tools, or websites discovered during research that should ge
 | Insense | https://insense.pro | UGC-focused influencer platform, frequently listed as Aspire alternative | sales-aspire | 2026-04-12 |
 | SARAL | https://www.getsaral.com | Product seeding automation platform for DTC brands | sales-aspire | 2026-04-12 |
 | Shopify Collabs | https://shopify.com/collabs | Free native Shopify influencer tool, frequently recommended as budget alternative | sales-aspire | 2026-04-12 |
+| Talkwalker | https://www.talkwalker.com | Top Brandwatch competitor, acquired by Hootsuite, strong visual analytics and multi-language sentiment | sales-brandwatch | 2026-04-12 |
+| Brand24 | https://brand24.com | Affordable Brandwatch alternative ($79/mo), strong SMB social listening with Storm Alerts | sales-brandwatch | 2026-04-12 |
+| YouScan | https://youscan.io | Visual AI social listening — logo/product detection in images/videos, unique differentiator | sales-brandwatch | 2026-04-12 |
+| Mention | https://mention.com | Simple affordable brand monitoring ($41/mo), acquired by Agorapulse | sales-brandwatch | 2026-04-12 |
+| Awario | https://awario.com | Budget social listening with strong Reddit monitoring capabilities | sales-brandwatch | 2026-04-12 |
+| Threadlytics | https://threadlytics.com | Reddit-specific monitoring and analytics, emerged after GummySearch shutdown | sales-brandwatch | 2026-04-12 |
+| Statusbrew | https://statusbrew.com | Social media management + listening alternative to Brandwatch for mid-market | sales-brandwatch | 2026-04-12 |
