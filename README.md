@@ -372,7 +372,6 @@ Router recommends a 5-skill sequence:
 | `/sales-resourcefyi` | Resource.fyi — curated tools directory (2,519+ resources), free submission |
 | `/sales-launchvibe` | LaunchVibe — instant free submission (DR10 dofollow), XP gamification |
 | `/sales-startupbase` | StartupBase — community-driven directory (DR39 dofollow), Spark newsletter |
-| `/sales-lobsters` | Lobsters — invite-only computing community (10K+ daily views), self-promotion <25% rule |
 | `/sales-launch-directory` | Launch directory strategy — coordinates submissions across 22+ platforms, sequencing, backlink stacking |
 
 </details>
@@ -406,6 +405,7 @@ Router recommends a 5-skill sequence:
 | `/sales-audience-growth` | Grow an email list or newsletter audience — lead magnets, cross-promotion, referral programs |
 | `/sales-digital-products` | Sell digital products — ebooks, templates, courses, downloads, pricing strategy |
 | `/sales-affiliate-program` | Design and manage affiliate programs — commissions, recruitment, tracking, payouts |
+| `/sales-performcb` | Perform[cb] — #1 CPA network, Outcome Engine AI optimization, PerformSHIELD fraud detection, Partner API |
 | `/sales-webinar` | Webinar-based selling — live and evergreen strategy, presentation, follow-up |
 | `/sales-membership` | Membership sites and online courses — structure, pricing, retention |
 | `/sales-checkout` | Checkout optimization — upsells, order bumps, payment plans, cart abandonment |

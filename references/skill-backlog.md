@@ -42,6 +42,10 @@ Problems discovered during platform research that don't have dedicated skills ye
 | Instagram Stories-specific influencer campaign optimization (Stories-only formats, swipe-up CTR, story sequencing) | InstaJet Stories-only focus, Stories tracking gap in industry — medium frequency | sales-instajet | 2026-04-12 |
 | Managed vs self-serve influencer marketplace comparison (when to use managed service vs DIY platform) | InstaJet managed service vs Collabstr self-serve vs agency — recurring question | sales-instajet | 2026-04-12 |
 | Agency vs self-serve influencer platform decision framework (when to hire an agency vs use a SaaS tool, budget thresholds, hybrid models) | Review sites, comparison articles — medium frequency, Open Influence hybrid model highlights the gap | sales-openinfluence | 2026-04-12 |
+| CPA network comparison/selection (Perform[cb] vs MaxBounty vs ClickDealer vs CrakRevenue — which network for which vertical) | G2, mThink Blue Book rankings, affiliate forums — high frequency | sales-performcb | 2026-04-12 |
+| Affiliate offer selection optimization (finding high-converting CPA offers, evaluating EPC, vertical selection) | Affiliate forums, Quora, PropellerAds guides — medium frequency | sales-performcb | 2026-04-12 |
+| CPA network approval process (application best practices, what networks look for, building a track record) | Affiliate beginner guides, forum threads — medium frequency | sales-performcb | 2026-04-12 |
+| Affiliate payment processing and compliance (payout methods, tax implications, international payments) | Affiliate forums — medium frequency | sales-performcb | 2026-04-12 |
 
 ## Platforms to add
 
@@ -79,3 +83,9 @@ Specific platforms, tools, or websites discovered during research that should ge
 | The Influencer Marketing Factory | https://theinfluencermarketingfactory.com | Competitor agency frequently listed alongside Open Influence in rankings | sales-openinfluence | 2026-04-12 |
 | Obviously | https://obvious.ly | Top Open Influence competitor per CBInsights, enterprise influencer agency | sales-openinfluence | 2026-04-12 |
 | Linqia | https://linqia.com | Top Open Influence competitor, performance-based influencer marketing model | sales-openinfluence | 2026-04-12 |
+| Impact.com | https://impact.com | Top Perform[cb] competitor, full partnership management platform | sales-performcb | 2026-04-12 |
+| MaxBounty | https://www.maxbounty.com | #1 CPA competitor to Perform[cb], strong for beginners, 2000+ active campaigns | sales-performcb | 2026-04-12 |
+| ClickDealer | https://www.clickdealer.com | Market-leading CPA network, smartlink technology, top competitor | sales-performcb | 2026-04-12 |
+| CrakRevenue | https://www.crakrevenue.com | Top CPA network, 14+ years, strong in dating/gaming verticals | sales-performcb | 2026-04-12 |
+| CPAlead | https://cpalead.com | Beginner-friendly CPA network, instant approval, content locking | sales-performcb | 2026-04-12 |
+| Everflow | https://www.everflow.io | Partner marketing platform with advanced tracking and fraud detection | sales-performcb | 2026-04-12 |

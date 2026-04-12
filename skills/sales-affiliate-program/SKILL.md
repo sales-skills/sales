@@ -205,6 +205,33 @@ Best for enterprise-level partnership programs.
 - **Notable feature**: Partnership automation workflows for onboarding, nurturing, and optimization at scale
 - **Pricing**: Custom enterprise pricing
 
+### In Perform[cb] (CPA Network)
+
+Perform[cb] is the #1-ranked CPA affiliate network worldwide (mThink Blue Book, six consecutive years). Rather than hosting your own affiliate program, Perform[cb] connects your offers with their network of vetted affiliate partners.
+
+**When to use Perform[cb] vs self-hosted:**
+- Use Perform[cb] when you want access to a large established affiliate base without recruiting individually
+- Use self-hosted (PartnerStack, FirstPromoter, GrooveAffiliate) when you want full control over affiliate relationships and program terms
+- Many brands use both — CPA network for volume, self-hosted for VIP/strategic partners
+
+**Setup for Advertisers:**
+1. Apply as a marketer at performcb.com — include your offer details, target CPA, and budget
+2. Define your pricing model — CPA, CPS, CPL, CPC, CPI, or CPE
+3. Set commission payouts per action (affiliates typically retain 70-80%)
+4. Configure lead rating for value-based payouts — assign quality scores to different lead attributes
+5. Upload approved creatives and landing pages
+6. PerformSHIELD (proprietary fraud detection) monitors traffic quality automatically — 3,500+ audits monthly
+
+**Fraud protection:**
+- PerformSHIELD runs real-time traffic quality audits, bot detection, and compliance enforcement
+- This is a significant advantage over self-hosted programs where you must build or buy fraud detection separately
+- Source-level traffic scoring helps you identify and reward high-quality affiliates
+
+**Commission structure in CPA networks vs self-hosted:**
+- CPA networks: you set the payout per action; the network handles affiliate payments
+- Network takes a margin (typically 20-30% of your total spend)
+- Trade-off: higher cost per acquisition but zero affiliate management overhead
+
 ### Other Platforms (Brief)
 
 - **LTK**: Creator commerce platform with built-in commission/affiliate model. 300K+ creators, 40M+ monthly shoppers on LTK App. Brands set commission rates (10% min, 15%+ recommended), creators earn on sales through LTK links. Free Brand Platform for discovery and gifting; Connect plans ($99-999+/mo) for structured campaigns. Best for DTC/ecommerce brands wanting influencer-driven affiliate sales. See `/sales-ltk` for full platform help.
@@ -293,6 +320,7 @@ Create a structured onboarding experience:
 - `/sales-creatoriq` — CreatorIQ platform help — enterprise influencer OS with affiliate network integrations (CJ, Awin, Impact, Rakuten)
 - `/sales-aspire` — Aspire platform help — built-in affiliate tracking with promo codes and trackable links via Shopify
 - `/sales-influencer-hero` — Influencer Hero platform help — affiliate tracking with discount codes, code leakage prevention, multi-ecommerce integration
+- `/sales-performcb` — Perform[cb] platform help — #1 CPA network, Outcome Engine, PerformSHIELD fraud detection, Partner API
 - `/sales-do` — Route to the right skill when you are unsure where to start
 
 ## Examples
