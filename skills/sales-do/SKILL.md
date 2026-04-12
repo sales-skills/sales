@@ -48,11 +48,19 @@ Don't rush this step. A great prompt depends on great context.
 
 Scan the catalog to find the best skill match for the user's objective. If the match is ambiguous, **read `references/disambiguation-rules.md`** for detailed routing rules that resolve common conflicts.
 
+### Meta-skills — route here for system-level requests
+
+These three skills (including this one) are not problem-solvers — they operate on the skill system itself:
+
+| Skill | Route when... |
+|---|---|
+| `/sales-do` | User is already here. Only re-invoke if a prior skill sent the user back for re-routing. |
+| `/sales-third-party` | User asks "what skills are available", "show me all skills", "install marketing skills", "browse skills", "what third-party skills exist", or wants to discover/install skills from third-party repos (marketing, research, creative, SEO). This is a full browsable catalog with install commands — hand off when the user wants to explore, not when you already know which skill to recommend. |
+| `/sales-request-skill` | User says "there should be a skill for this", "can we build a skill", "I want to contribute", or no existing skill covers their need. This skill either **builds the skill** (creates files, commits, opens a PR to `sales-skills/sales`) or **files a GitHub issue** requesting it. It delegates to `/skill-creator` when available. Always hand off here — don't just say "that doesn't exist" and stop. |
+
 ### Fallthrough
 
-If no existing skill is an adequate match for the user's objective, hand off to `/sales-request-skill`. Explain that this capability doesn't exist as a skill yet and offer to help them either build it or request it. Example:
-
-> I don't have a skill that covers that yet. I can help you **build one** or **request one** — want me to kick off `/sales-request-skill`?
+If no existing skill is an adequate match for the user's objective, hand off: "No existing skill covers this — run: `/sales-request-skill {describe the missing capability}`". Explain that this capability doesn't exist as a skill yet and offer to help them either build it or request it.
 
 ## Step 4 — Recommend and generate
 
