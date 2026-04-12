@@ -201,6 +201,7 @@ For platform-specific audience growth features (Kit, Beehiiv, SparkLoop, Mailchi
 - `/sales-clearbit` — Clearbit platform help (form shortening, enrichment, Autocomplete API)
 - `/sales-zoominfo` — ZoomInfo platform help (FormComplete, WebSights)
 - `/sales-adroll` — AdRoll platform help (retargeting for list growth, lookalike audiences, ecommerce integration)
+- `/sales-buttondown` — Buttondown platform help (newsletter publishing, paid subscriptions, Markdown, API, CLI)
 - `/sales-ghost` — Ghost platform help (publishing, newsletters, memberships, Stripe, Mailgun, API, migration)
 - `/sales-retargeting` — Retargeting strategy (using ads to drive visitors back to signup pages)
 - `/sales-b2b-advertising` — account-based advertising (WebSights feeds retargeting audiences)

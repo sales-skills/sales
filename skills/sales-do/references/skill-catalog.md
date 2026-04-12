@@ -245,6 +245,12 @@
 |---|---|
 | `/sales-mailerlite` | MailerLite platform help — email campaigns, automation workflows, landing pages, signup forms, websites, e-commerce, digital products, paid newsletters, transactional email, email verification, API. Route when the user asks about MailerLite setup, config, features, or troubleshooting. Route when they mention MailerLite campaigns, MailerLite automation, MailerLite landing pages, MailerLite forms, MailerLite e-commerce, MailerLite digital products, MailerLite paid newsletters, MailerLite API, or MailerLite account issues. |
 
+### Buttondown & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-buttondown` | Buttondown platform help — newsletter publishing, paid subscriptions via Stripe, Markdown editor, automations, subscriber management, tags, RSS-to-email, custom domains, CLI, REST API. Route when the user asks about Buttondown setup, config, features, or troubleshooting. Route when they mention Buttondown newsletters, Buttondown paid subscriptions, Buttondown Stripe, Buttondown API, Buttondown CLI, Buttondown Markdown, Buttondown migration, Buttondown automations, Buttondown custom domain, or Buttondown RSS-to-email. |
+
 ### Closum & Platform
 
 | Skill | Route when... |

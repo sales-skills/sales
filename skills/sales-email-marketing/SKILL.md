@@ -87,7 +87,7 @@ These benchmarks vary by industry — e-commerce and media tend to have lower op
 
 ## Step 3 — Platform-specific guidance
 
-For platform-specific email marketing configuration (automation builders, segmentation tools, campaign setup, and platform features for Ghost, Mailchimp, ActiveCampaign, Kit, Klaviyo, and others), see `references/platforms.md`.
+For platform-specific email marketing configuration (automation builders, segmentation tools, campaign setup, and platform features for Ghost, Buttondown, Mailchimp, ActiveCampaign, Kit, Klaviyo, and others), see `references/platforms.md`.
 
 ## Step 4 — Actionable guidance
 
@@ -181,6 +181,7 @@ Perform these maintenance tasks regularly:
 - **/sales-iterable** — Iterable platform help (Studio journeys, Campaigns, Handlebars templating, Brand Affinity, Smart Ingest, cross-channel)
 - **/sales-braze** — Braze platform help (Canvas Flow, Campaigns, Liquid templating, BrazeAI, Content Cards, cross-channel)
 - **/sales-brevo** — Brevo platform help (email, SMS, WhatsApp, push, automation, CRM)
+- **/sales-buttondown** — Buttondown platform help (newsletter publishing, paid subscriptions, Markdown, API, CLI)
 - **/sales-ghost** — Ghost platform help (publishing, newsletters, memberships, Stripe, Mailgun, API, migration)
 - **/sales-transactional-email** — Transactional/triggered email delivery (order confirmations, password resets — not marketing)
 - **/sales-groove** — Groove.cm platform-specific guidance (GrooveMail, GroovePages, GrooveSell, GrooveFunnels)

@@ -45,6 +45,7 @@ Detailed per-platform deliverability configuration — sending limits, warmup, d
 - [In LeadMagic](#in-leadmagic)
 - [In AiSDR](#in-aisdr)
 - [In BrandJet](#in-brandjet)
+- [In Buttondown](#in-buttondown)
 
 ### In Mailshake
 - **Sending limits**: Configure per-sender daily limits in Settings > Senders
@@ -416,4 +417,17 @@ Detailed per-platform deliverability configuration — sending limits, warmup, d
 - Unified inbox tracks bounces, opens, and replies across all channels — use bounce data to clean lists proactively
 - No public API for deliverability metrics — monitor via the BrandJet dashboard or push events via webhooks
 - Starter plan: 1,000 verified leads/mo; Pro plan: 10,000 verified leads/mo — plan lead volume to match sending capacity
+
+## In Buttondown
+
+- **Custom sending domain**: Configure SPF/DKIM/DMARC in Settings → Domains. Required for sending from your own domain (e.g., newsletter@yourdomain.com).
+- **Shared IP by default**: Buttondown sends from shared infrastructure. No dedicated IP option documented.
+- **No warmup tool**: No built-in domain warmup feature. When migrating, Buttondown's concierge migration team can advise on gradual ramp-up.
+- **Spam protection**: Buttondown checks emails before sending — flags broken links, malformed images, and potential spam triggers. Emails may be held in draft if issues detected.
+- **Bounce handling**: Hard bounces automatically remove subscribers (status changes to hard-bounced). Soft bounces are retried.
+- **Analytics opt-in**: Open/click tracking is disabled by default (privacy-first). Enable the Analytics add-on ($9/mo) if you need engagement data for deliverability monitoring.
+- **Sending limits**: Pricing assumes max one email per day to full list. Higher frequency requires contacting Buttondown for custom pricing.
+- **Active subscribers only**: Unsubscribed, bounced, and removed contacts are automatically excluded from sends — no manual suppression needed.
+- **Double opt-in**: Available and recommended for new subscribers to reduce spam complaints and improve list quality.
+- **Best for**: Newsletter senders who prioritize clean, text-forward emails with Markdown. The privacy-first approach (no tracking by default) means fewer spam triggers from tracking pixels.
 

@@ -22,6 +22,7 @@ Detailed per-platform email marketing configuration — automation builders, seg
 - [In Klaviyo](#in-klaviyo)
 - [In AdRoll](#in-adroll)
 - [In Retention.com](#in-retentioncom)
+- [In Buttondown](#in-buttondown)
 
 ### In Groove.cm (GrooveMail)
 
@@ -370,4 +371,34 @@ Retention.com is not an ESP — it's an identity resolution layer that feeds ide
 - **Integration pattern**: Retention.com → your ESP (Klaviyo, etc.) → your email flows. Retention.com identifies the contact; your ESP sends the email. Keep identified contacts in separate segments with different cadence and sunset rules.
 - **Deliverability impact**: Retention.com contacts didn't opt in. Send from a separate subdomain. Expect higher spam complaints and lower engagement. Don't mix with your organic list segments.
 - **Best for**: Ecommerce brands using Klaviyo/Omnisend who want to expand their abandonment recovery and list building beyond what opt-in forms capture. Not a replacement for an ESP — it's a data source that feeds into one.
+
+### In Buttondown
+
+Buttondown is a minimal, developer-friendly newsletter platform with Markdown-native editing and privacy-first analytics.
+
+**Broadcasts**
+- Compose in Markdown or rich text editor. Schedule for future delivery or send immediately.
+- Email-to-send: email `newsletters@mg.buttondown.email` to create a draft from any email client.
+- File attachments available as an add-on ($9/mo).
+
+**Automations**
+- Welcome sequences for new subscribers, tag-triggered flows, and survey-driven flows.
+- Requires Automations add-on ($29/mo) — not included in base plan.
+- No visual automation builder (unlike Kit or ActiveCampaign) — automations are configured via settings and rules.
+
+**Segmentation**
+- Tags for manual categorization (add-on: $9/mo for tagging & segmentation).
+- Segments are dynamic filtered groups based on tags, subscription type, and metadata.
+- Custom metadata on subscribers via API for advanced segmentation.
+
+**Analytics**
+- Opt-in only — not enabled by default (privacy-first). Add-on: $9/mo.
+- Tracks opens, clicks, subscriber growth when enabled.
+
+**API-first**
+- Full REST API at `https://api.buttondown.com/v1/` — available on all plans including free.
+- Every UI feature is available via API. Manage subscribers, send emails, create tags programmatically.
+- CLI tool available for terminal-based newsletter management.
+
+**Best for**: Developers and technical writers who want Markdown, API access, and no tracking by default. Not ideal for visual-heavy marketing campaigns or complex multi-step automations.
 

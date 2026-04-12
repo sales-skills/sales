@@ -144,10 +144,13 @@ Ask the user:
 - **Best strategy**: Use both Marketplace (premium placements, 1-2 per issue) and Ad Network (fill remaining inventory) to maximize revenue.
 
 ### In Buttondown
-- **Paid subscriptions**: Stripe integration, paywall support
-- **Pricing**: Free up to 100 subscribers, paid from $9/mo, low transaction fee
-- **Strengths**: Minimal, developer-friendly, good API, low fees
-- **Limitations**: Smaller ecosystem, fewer growth tools
+- **Paid subscriptions**: Stripe integration with paywall toggle per email. Requires Paid Subscriptions add-on ($9/mo). No Buttondown transaction fee — only Stripe's ~2.9% + $0.30.
+- **Pricing models**: Fixed price, pay-what-you-want, or free tier + paid tier. Gift subscriptions supported.
+- **Base pricing**: Free (100 subs), Basic $9/mo (1K), Standard $29/mo (5K), Professional $79/mo (10K). Add-ons cost extra.
+- **Sponsorships**: No built-in ad network or sponsor marketplace. Use Paved or direct outreach. Buttondown's hosted archives support custom HTML blocks for sponsor placements.
+- **Strengths**: 0% platform fee (vs Substack's 10%), native Markdown editor, excellent REST API (all plans), privacy-first analytics, free concierge migration.
+- **Limitations**: No discovery network (unlike Substack or Beehiiv Boosts), no built-in referral program, most features are paid add-ons ($9-$79/mo each), smaller ecosystem.
+- **Best for**: Developers, privacy-conscious creators, writers who want Markdown, anyone who wants minimal fees on paid subscriptions.
 
 ### In MailerLite
 - **Paid newsletter subscriptions**: Built-in Stripe integration for recurring payments. Gate content to paid subscribers vs free. Manage subscriber tiers directly in MailerLite.
@@ -221,6 +224,7 @@ Paid recommendations:
 - `/sales-mailerlite` — MailerLite platform help (paid newsletters, digital products)
 - `/sales-kit` — Kit platform help (Kit-specific setup and configuration)
 - `/sales-mailchimp` — Mailchimp platform help
+- `/sales-buttondown` — Buttondown platform help (newsletter publishing, paid subscriptions, Markdown, API, CLI)
 - `/sales-ghost` — Ghost platform help (publishing, newsletters, memberships, Stripe, Mailgun, API, migration)
 - `/sales-content` — Sales content management (creating compelling content)
 - `/sales-checkout` — Checkout optimization (payment flows, upsells)

@@ -17,6 +17,7 @@ Detailed per-platform audience growth features — opt-in forms, landing pages, 
 - [In Clearbit](#in-clearbit)
 - [In SendPulse](#in-sendpulse)
 - [In AdRoll](#in-adroll)
+- [In Buttondown](#in-buttondown)
 
 ### In Kit
 - **Landing pages**: Unlimited on all plans (including free) — use for lead magnets
@@ -153,3 +154,27 @@ Ghost has built-in member signup and management — no external tools needed for
 - Recommendations are Ghost-to-Ghost only — can't cross-promote non-Ghost newsletters
 
 **Best for**: Content creators who want signup built into their publishing platform. If you need advanced list building (pop-ups, A/B testing, paid recommendations), pair Ghost with SparkLoop or use Kit/Beehiiv alongside.
+
+### In Buttondown
+
+Buttondown is a minimal newsletter platform focused on simplicity, privacy, and API access.
+
+**Subscriber acquisition**:
+- **Hosted archive**: Every newsletter gets a public archive page — visitors can subscribe directly from it. Optional custom domain hosting ($29/mo add-on).
+- **Embeddable forms**: Simple HTML form embeds for any website. No drag-and-drop form builder — just a form snippet.
+- **API-driven signups**: Full REST API (`POST /v1/subscribers`) on all plans including free. Build custom signup forms with any frontend framework.
+- **Concierge migration**: Free migration service from any platform — Buttondown staff handle the import within one business day.
+
+**Growth tools**:
+- **Subscriber referrals**: Built-in subscriber referral settings (self-serve, added Feb 2025). Subscribers can share a referral link.
+- **No discovery network**: Unlike Substack or Beehiiv Boosts, Buttondown has no built-in cross-promotion network. Growth is primarily through your own channels.
+- **No paid recommendations**: Unlike Kit Creator Recommendations, Buttondown doesn't offer pay-per-subscriber cross-promotion.
+- **RSS feed**: Newsletter published as RSS — readers can subscribe via RSS readers as an alternative to email.
+
+**Limitations**:
+- No pop-up or exit-intent form builder — embed forms manually or use a third-party tool
+- No A/B testing on opt-in forms
+- No landing page builder — use your own website or a third-party tool
+- No referral rewards/milestones (unlike Kit Pro or Beehiiv)
+
+**Best for**: Developers and technical writers who prefer API-driven signups, Markdown editing, and minimal tooling. Pair with SparkLoop for referral programs or Paved for sponsor-driven growth.
