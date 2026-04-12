@@ -53,15 +53,15 @@ Ask the user:
 
 If the user's question is better served by a specialized skill, route them:
 
-| Question type | Route to |
+| Question type | Hand off |
 |---|---|
-| Funnel strategy, conversion optimization, funnel structure | `/sales-funnel` |
-| Email marketing strategy, nurture sequences, broadcast planning | `/sales-email-marketing` |
-| Affiliate program design, commission structures, recruitment | `/sales-affiliate-program` |
-| Webinar selling strategy, presentation structure, follow-up | `/sales-webinar` |
-| Membership/course design, pricing, retention | `/sales-membership` |
-| Checkout optimization, upsell strategy, pricing psychology | `/sales-checkout` |
-| Connecting Groove to CRM, Zapier workflows, webhooks | `/sales-integration` |
+| Funnel strategy, conversion optimization, funnel structure | "This is a funnel strategy question — run: `/sales-funnel {your question}`" |
+| Email marketing strategy, nurture sequences, broadcast planning | "This is an email marketing strategy question — run: `/sales-email-marketing {your question}`" |
+| Affiliate program design, commission structures, recruitment | "This is a affiliate program question — run: `/sales-affiliate-program {your question}`" |
+| Webinar selling strategy, presentation structure, follow-up | "This is a webinar strategy question — run: `/sales-webinar {your question}`" |
+| Membership/course design, pricing, retention | "This is a membership strategy question — run: `/sales-membership {your question}`" |
+| Checkout optimization, upsell strategy, pricing psychology | "This is a checkout optimization question — run: `/sales-checkout {your question}`" |
+| Connecting Groove to CRM, Zapier workflows, webhooks | "This is a tool integration question — run: `/sales-integration {your question}`" |
 
 If the question is Groove-specific (how to configure a module, platform limitations, Groove-specific terminology), answer directly.
 

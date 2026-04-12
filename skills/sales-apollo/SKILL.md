@@ -19,10 +19,10 @@ If `references/learnings.md` exists, read it first for accumulated knowledge.
 Ask the user:
 
 1. **What area of Apollo do you need help with?**
-   - A) Prospecting & Search — finding and filtering leads (route to `/sales-prospect-list`)
-   - B) Enrichment — getting emails, phones, firmographic data (route to `/sales-enrich`)
-   - C) Sequences — outbound email/call sequences (route to `/sales-apollo-sequences` for Apollo mechanics, `/sales-cadence` for strategy)
-   - D) Intent & Signals — buying intent, job changes, lead scoring (route to `/sales-intent`)
+   - A) Prospecting & Search — finding and filtering leads (hand off: `/sales-prospect-list {your question}`)
+   - B) Enrichment — getting emails, phones, firmographic data (hand off: `/sales-enrich {your question}`)
+   - C) Sequences — outbound email/call sequences (for Apollo mechanics, `/sales-cadence` for strategy, hand off: `/sales-apollo-sequences {your question}`)
+   - D) Intent & Signals — buying intent, job changes, lead scoring (hand off: `/sales-intent {your question}`)
    - E) Dialer — click-to-call, parallel dialing, call recording
    - F) Analytics — reports, dashboards, sequence performance
    - G) CRM Sync — Salesforce/HubSpot integration, field mapping, sync issues

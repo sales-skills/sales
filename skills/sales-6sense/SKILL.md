@@ -49,13 +49,13 @@ If `references/learnings.md` exists, read it first for accumulated knowledge.
 
 ## Step 2 — Route or answer directly
 
-If the question is about **intent signal strategy across tools** (not 6sense-specific), route to `/sales-intent`.
-If the question is about **lead scoring strategy across tools**, route to `/sales-lead-score`.
-If the question is about **enrichment strategy across tools**, route to `/sales-enrich`.
-If the question is about **B2B advertising strategy across tools**, route to `/sales-b2b-advertising`.
-If the question is about **outbound cadence/sequence strategy**, route to `/sales-cadence`.
-If the question is about **building prospect lists across tools**, route to `/sales-prospect-list`.
-If the question is about **connecting 6sense to other tools**, route to `/sales-integration`.
+If the question is about **intent signal strategy across tools** (not 6sense-specific) — hand off: "This is an intent signal strategy question — run: `/sales-intent {user's original question}`"
+If the question is about **lead scoring strategy across tools** — hand off: "This is a lead scoring strategy question — run: `/sales-lead-score {user's original question}`"
+If the question is about **enrichment strategy across tools** — hand off: "This is an enrichment strategy question — run: `/sales-enrich {user's original question}`"
+If the question is about **B2B advertising strategy across tools** — hand off: "This is a B2B advertising strategy question — run: `/sales-b2b-advertising {user's original question}`"
+If the question is about **outbound cadence/sequence strategy** — hand off: "This is a cadence/sequence design question — run: `/sales-cadence {user's original question}`"
+If the question is about **building prospect lists across tools** — hand off: "This is a prospect list building question — run: `/sales-prospect-list {user's original question}`"
+If the question is about **connecting 6sense to other tools** — hand off: "This is a tool integration question — run: `/sales-integration {user's original question}`"
 
 Otherwise, answer directly using the reference below.
 
@@ -232,7 +232,7 @@ Typical range: $50K-$200K+/year. Median buyer (via Vendr): ~$55K/year. Implement
 
 ### 6sense + outbound workflow
 
-1. **6sense identifies in-market account** via intent signals + buying stage
+1. **6sense identifies in-market account** vian intent signals + buying stage
 2. **Segment filters to ICP** — only accounts matching firmographic criteria
 3. **AI Email Agent** engages buying group contacts with personalized outreach
 4. **Display + LinkedIn ads** reinforce messaging to the same account

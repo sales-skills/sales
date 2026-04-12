@@ -39,17 +39,17 @@ Ask the user:
 
 ## Step 2 — Route or answer directly
 
-Based on the user's need, either answer directly from the reference below or route to a more appropriate skill:
+Based on the user's need, either answer directly from the reference below or hand off to a more appropriate skill:
 
 | Need | Action |
 |---|---|
 | AiSDR-specific config, campaigns, warmup, integrations | Answer directly from Step 3 |
-| General outbound cadence design (multi-platform) | Route to `/sales-cadence` |
-| Email deliverability strategy (SPF/DKIM/DMARC) | Route to `/sales-deliverability` |
-| Building prospect lists beyond AiSDR's database | Route to `/sales-prospect-list` |
-| Contact enrichment from other providers | Route to `/sales-enrich` |
-| Meeting scheduling beyond Calendly integration | Route to `/sales-meeting-scheduler` |
-| Lead scoring strategy | Route to `/sales-lead-score` |
+| General outbound cadence design (multi-platform) | Hand off: "This is a cadence/sequence design question — run: `/sales-cadence {your question}`" |
+| Email deliverability strategy (SPF/DKIM/DMARC) | Hand off: "This is an email deliverability question — run: `/sales-deliverability {your question}`" |
+| Building prospect lists beyond AiSDR's database | Hand off: "This is a prospect list building question — run: `/sales-prospect-list {your question}`" |
+| Contact enrichment from other providers | Hand off: "This is an enrichment strategy question — run: `/sales-enrich {your question}`" |
+| Meeting scheduling beyond Calendly integration | Hand off: "This is a meeting scheduling question — run: `/sales-meeting-scheduler {your question}`" |
+| Lead scoring strategy | Hand off: "This is a lead scoring strategy question — run: `/sales-lead-score {your question}`" |
 
 ## Step 3 — AiSDR platform reference
 

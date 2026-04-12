@@ -22,16 +22,16 @@ Ask the user:
    - A) Canvas Flow — journey orchestration, multi-step cross-channel flows
    - B) Campaigns — single-send or API-triggered messages
    - C) Email — templates, drag-and-drop editor, Liquid, Connected Content
-   - D) Push notifications — iOS, Android, web push, rich push (route to `/sales-push-notification` for cross-platform strategy)
-   - E) In-app messages / Content Cards — modals, slideups, persistent cards (route to `/sales-in-app-messaging` for cross-platform strategy)
+   - D) Push notifications — iOS, Android, web push, rich push (for cross-platform strategy, hand off: `/sales-push-notification {your question}`)
+   - E) In-app messages / Content Cards — modals, slideups, persistent cards (for cross-platform strategy, hand off: `/sales-in-app-messaging {your question}`)
    - F) SMS / MMS / RCS / WhatsApp / LINE — mobile messaging channels
    - G) BrazeAI — predictive models, generative content, AI agents, Decisioning Studio
    - H) Segmentation — real-time segments, SQL segments, CDI Segments, filters
    - I) Braze Data Platform — Cloud Data Ingestion, Currents streaming, data transformation
    - J) Catalogs — product data, location data, dynamic personalization
    - K) Feature Flags — controlled rollouts, A/B testing features
-   - L) Transactional email — dedicated API for time-sensitive 1:1 messages (route to `/sales-transactional-email` for cross-platform)
-   - M) Deliverability — domain auth, IP warmup, sender reputation (route to `/sales-deliverability` for cross-platform)
+   - L) Transactional email — dedicated API for time-sensitive 1:1 messages (for cross-platform, hand off: `/sales-transactional-email {your question}`)
+   - M) Deliverability — domain auth, IP warmup, sender reputation (for cross-platform, hand off: `/sales-deliverability {your question}`)
    - N) REST API — endpoints, authentication, rate limits, SDKs
    - O) Integrations — Braze Alloys, CDP connectors, data warehouse sync
    - P) Liquid templating / Connected Content — dynamic personalization

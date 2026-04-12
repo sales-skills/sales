@@ -237,7 +237,7 @@ Based on the user's specific question:
 
 ## Step 5 — Related skills
 
-- `/sales-enrich` — Cross-platform data enrichment strategy (multi-tool enrichment workflows, waterfall enrichment)
+- `/sales-enrich` — Cross-platform datan enrichment strategy (multi-tool enrichment workflows, waterfall enrichment)
 - `/sales-prospect-list` — Prospect list building strategy and best practices
 - `/sales-integration` — Connect OpenWeb Ninja to CRM, automation tools, or other platforms
 - `/sales-lobstr` — Lobstr platform help (web scraping and data extraction)

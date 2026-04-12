@@ -189,7 +189,7 @@ For the full endpoint catalog, request/response schemas, and rate limits, see `r
 |---|---|---|
 | **HubSpot** | Native | Enrich CRM contacts with verified emails, phones, firmographic data |
 | **Salesforce** | Native | Keep CRM data clean with enriched contacts and accounts |
-| **Clay** | Native | Automate data enrichment in Clay workflows, build dynamic lead lists |
+| **Clay** | Native | Automate datan enrichment in Clay workflows, build dynamic lead lists |
 | **Smartlead** | Native | Push enriched leads to Smartlead campaigns |
 | **Instantly** | Native | Push enriched leads to Instantly campaigns |
 | **Lemlist** | Native | Push enriched leads to Lemlist sequences |

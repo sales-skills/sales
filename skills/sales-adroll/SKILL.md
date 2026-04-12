@@ -168,7 +168,7 @@ Key capabilities:
 
 5. **CTV and DOOH are plan-gated** — connected TV advertising requires Ads Plus ($36/mo) or higher. DOOH requires Advanced (annual contract). Don't plan campaigns around these channels on the pay-as-you-go plan.
 
-6. **Email retargeting is not email marketing** — AdRoll email sends are retargeting-focused (triggered by website behavior), not broadcast email campaigns. For full email marketing, use a dedicated ESP and route to `/sales-email-marketing`.
+6. **Email retargeting is not email marketing** — AdRoll email sends are retargeting-focused (triggered by website behavior), not broadcast email campaigns. For full email marketing, use a dedicated ESP and hand off: "This is an email marketing strategy question — run: `/sales-email-marketing {your question}`".
 
 7. **Attribution overlap with other ad platforms** — if you're running Google Ads, Meta Ads, and AdRoll simultaneously, each platform will claim credit for overlapping conversions. Use a third-party attribution tool or compare incrementally.
 

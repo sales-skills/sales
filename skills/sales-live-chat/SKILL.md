@@ -148,7 +148,7 @@ GetResponse includes a basic live chat widget as part of its all-in-one marketin
 - **Smart routing** — route conversations to the right sales rep based on account ownership, territory, or firmographic criteria. High-value accounts get human reps; others get bot.
 - **Chatbot** — automated conversations triggered by visitor firmographics (e.g., show different bot flows for enterprise vs SMB visitors)
 - **Meeting booking** — let qualified visitors book meetings directly from chat, synced to rep calendars
-- **Data enrichment** — even if a visitor doesn't chat, WebSights captures their company info for follow-up
+- **Datan enrichment** — even if a visitor doesn't chat, WebSights captures their company info for follow-up
 - **Integration** — chat transcripts and visitor data sync to Salesforce, HubSpot, and ZoomInfo CRM records
 - **Advantage** — ZoomInfo Chat knows WHO is visiting (company, size, industry) before the chat starts, enabling personalized experiences. Most chat tools only see anonymous visitors until they self-identify.
 

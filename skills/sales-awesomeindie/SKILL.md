@@ -48,7 +48,7 @@ If the request maps to a different skill, route:
 - Email marketing to subscribers → `/sales-email-marketing`
 - Landing page optimization → `/sales-checkout`
 - Audience growth strategy → `/sales-audience-growth`
-- Other specific directory platforms → route to that platform's skill
+- Other specific directory platforms → hand off to that platform's skill
 
 Otherwise, answer directly from the Awesome Indie reference below.
 
@@ -130,7 +130,7 @@ Based on the user's situation, provide specific recommendations:
 4. After listing goes live, verify backlink type (dofollow vs nofollow) by inspecting the HTML
 
 ### For multi-directory launchers
-Route to `/sales-launch-directory` for the full sequencing strategy. Awesome Indie fits into **Phase 3 — Free editorial queues** as a set-and-forget submission.
+hand off: "This is a launch directory strategy question — run: `/sales-launch-directory {your question}`" for the full sequencing strategy. Awesome Indie fits into **Phase 3 — Free editorial queues** as a set-and-forget submission.
 
 ## Gotchas
 

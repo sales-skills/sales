@@ -53,7 +53,7 @@ Ask the user:
 
 ## Step 2 — Route or answer directly
 
-If the question is about **strategy** rather than SendPulse-specific configuration, route to the appropriate skill:
+If the question is about **strategy** rather than SendPulse-specific configuration, hand off to the appropriate skill:
 
 - Email marketing strategy → `/sales-email-marketing`
 - Chatbot strategy across platforms → `/sales-chatbot`
@@ -155,10 +155,10 @@ Create, market, and sell online courses within SendPulse.
 - **Lesson types** — text, video (embed or upload), audio, PDF, infographics
 - **Monetization** — accept payments via Stripe, PayPal, MercadoPago; set pricing per course
 - **Student management** — enrollment, progress tracking, completion certificates
-- **Communication** — lesson comments, Q&A, notifications via email/SMS/chatbot/push
+- **Communication** — lesson comments, Q&A, notifications vian email/SMS/chatbot/push
 - **Access control** — free, paid, drip (time-released), or completion-gated lessons
 - **CRM integration** — student contacts auto-added to CRM, deal created on enrollment
-- **Marketing integration** — promote courses via email campaigns, automations, chatbots, pop-ups
+- **Marketing integration** — promote courses vian email campaigns, automations, chatbots, pop-ups
 
 ### Website / Landing Page Builder
 
@@ -317,7 +317,7 @@ See `/sales-sendpulse/references/sendpulse-api-reference.md` for the full API re
 2. Build modules and lessons — add text, video, audio, PDF content
 3. Configure payment (connect Stripe/PayPal)
 4. Set up enrollment automation — welcome email, progress reminders via Automation 360
-5. Promote via email campaigns, chatbots, pop-ups, or landing pages
+5. Promote vian email campaigns, chatbots, pop-ups, or landing pages
 6. Monitor student progress and completion rates
 7. Use CRM to track course-related deals and student lifetime value
 

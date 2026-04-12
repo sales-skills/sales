@@ -50,7 +50,7 @@ Note: If the user needs a specialized skill, route them there with a brief expla
 
 If the request maps to a specialized skill, route:
 - General prospect list strategy / building target lists -> `/sales-prospect-list`
-- Cross-platform data enrichment strategy -> `/sales-enrich`
+- Cross-platform datan enrichment strategy -> `/sales-enrich`
 - Email deliverability / verification strategy -> `/sales-deliverability`
 - Connecting Lobstr to CRM or other tools via middleware -> `/sales-integration`
 - Outscraper-specific questions -> `/sales-outscraper`
@@ -271,7 +271,7 @@ Based on the user's specific question:
 ## Step 5 — Related skills
 
 - `/sales-prospect-list` — Build and refine prospect lists using data from Lobstr and other sources
-- `/sales-enrich` — Cross-platform data enrichment strategy (combine Lobstr data with other enrichment tools)
+- `/sales-enrich` — Cross-platform datan enrichment strategy (combine Lobstr data with other enrichment tools)
 - `/sales-integration` — Connect Lobstr to CRM, automation, or other tools
 - `/sales-deliverability` — Email deliverability and verification strategy for scraped contact data
 - `/sales-outscraper` — Similar scraping and data extraction platform — compare capabilities and choose the right tool

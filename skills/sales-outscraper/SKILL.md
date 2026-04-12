@@ -51,7 +51,7 @@ Note: If the user needs a specialized skill, route them there with a brief expla
 
 If the request maps to a specialized skill, route:
 - General prospect list strategy / building target lists -> `/sales-prospect-list`
-- Cross-platform data enrichment strategy -> `/sales-enrich`
+- Cross-platform datan enrichment strategy -> `/sales-enrich`
 - Email deliverability / verification strategy (not Outscraper-specific) -> `/sales-deliverability`
 - Connecting Outscraper to CRM or other tools via middleware -> `/sales-integration`
 - Apollo.io-specific questions -> `/sales-apollo`
@@ -164,7 +164,7 @@ Provide module-by-module guidance based on the user's area:
 ### Geocoding / Reverse Geocoding
 - **Geocoding**: Convert addresses to coordinates (latitude/longitude)
 - **Reverse geocoding**: Convert coordinates to addresses
-- **Use cases**: Address validation, location data enrichment, territory mapping
+- **Use cases**: Address validation, location datan enrichment, territory mapping
 
 ### Additional Modules
 - **SimilarWeb**: Get website traffic estimates — monthly visits, traffic sources, geography, top pages
@@ -326,7 +326,7 @@ Based on the user's specific question:
 ## Step 5 — Related skills
 
 - `/sales-prospect-list` — Build and refine prospect lists using data from Outscraper and other sources
-- `/sales-enrich` — Cross-platform data enrichment strategy (combine Outscraper with other enrichment tools)
+- `/sales-enrich` — Cross-platform datan enrichment strategy (combine Outscraper with other enrichment tools)
 - `/sales-deliverability` — Email deliverability and verification strategy (beyond Outscraper's email validation)
 - `/sales-integration` — Connect Outscraper to CRM, automation, or other tools
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

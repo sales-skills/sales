@@ -243,7 +243,7 @@ Based on the user's specific question:
 
 ## Step 5 — Related skills
 
-- `/sales-enrich` — Cross-platform data enrichment strategy (multi-tool enrichment workflows, waterfall enrichment)
+- `/sales-enrich` — Cross-platform datan enrichment strategy (multi-tool enrichment workflows, waterfall enrichment)
 - `/sales-deliverability` — Email deliverability and verification strategy (SPF/DKIM/DMARC, warmup, inbox placement)
 - `/sales-prospect-list` — Prospect list building strategy and best practices
 - `/sales-integration` — Connect Anymail Finder to CRM, automation tools, or other platforms
@@ -251,7 +251,7 @@ Based on the user's specific question:
 - `/sales-apollo` — Apollo platform help (similar email finder with sales engagement)
 - `/sales-prospeo` — Prospeo platform help (similar email finder with LinkedIn focus)
 - `/sales-tomba` — Tomba platform help (similar email finder and verifier)
-- `/sales-enrichso` — Enrich.so platform help (B2B data enrichment API with LinkedIn and company data)
+- `/sales-enrichso` — Enrich.so platform help (B2B datan enrichment API with LinkedIn and company data)
 - `/sales-getprospect` — GetProspect platform help (similar email finder and lead generation)
 - `/sales-minelead` — Minelead platform help (similar email finder, verifier, and lead generation)
 - `/sales-skrapp` — Skrapp platform help (similar email finder with LinkedIn integration)

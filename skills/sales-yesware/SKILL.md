@@ -20,7 +20,7 @@ Ask the user:
 
 1. **What area of Yesware do you need help with?**
    - A) Email Tracking — open, click, and attachment tracking notifications
-   - B) Campaigns — creating and managing multi-channel sequences (route to `/sales-cadence` for strategy)
+   - B) Campaigns — creating and managing multi-channel sequences (for strategy, hand off: `/sales-cadence {your question}`)
    - C) Templates — creating, sharing, and personalizing email templates
    - D) Prospector — finding B2B contacts from the built-in database
    - E) Meeting Scheduler — booking links, event types, Zoom integration

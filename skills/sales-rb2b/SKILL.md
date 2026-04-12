@@ -45,11 +45,11 @@ If `references/learnings.md` exists, read it first for accumulated knowledge.
 
 ## Step 2 — Route or answer directly
 
-If the question is about **visitor identification strategy across tools** (not RB2B-specific), route to `/sales-intent`.
-If the question is about **enrichment strategy across tools**, route to `/sales-enrich`.
-If the question is about **building prospect lists across tools**, route to `/sales-prospect-list`.
-If the question is about **lead scoring model design**, route to `/sales-lead-score`.
-If the question is about **connecting RB2B to other tools**, route to `/sales-integration`.
+If the question is about **visitor identification strategy across tools** (not RB2B-specific) — hand off: "This is an intent signal strategy question — run: `/sales-intent {user's original question}`"
+If the question is about **enrichment strategy across tools** — hand off: "This is an enrichment strategy question — run: `/sales-enrich {user's original question}`"
+If the question is about **building prospect lists across tools** — hand off: "This is a prospect list building question — run: `/sales-prospect-list {user's original question}`"
+If the question is about **lead scoring model design** — hand off: "This is a lead scoring strategy question — run: `/sales-lead-score {user's original question}`"
+If the question is about **connecting RB2B to other tools** — hand off: "This is a tool integration question — run: `/sales-integration {user's original question}`"
 
 Otherwise, answer directly using the reference below.
 

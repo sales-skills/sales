@@ -48,7 +48,7 @@ If the request maps to a different skill, route:
 - Email marketing to subscribers → `/sales-email-marketing`
 - Landing page optimization → `/sales-checkout`
 - Audience growth strategy → `/sales-audience-growth`
-- Other specific directory platforms → route to that platform's skill
+- Other specific directory platforms → hand off to that platform's skill
 
 Otherwise, answer directly from the LaunchDay reference below.
 

@@ -199,7 +199,7 @@ Set up Apollo alerts for the account to catch these changes.
 **Skill does**:
 1. Identifies company size (enterprise, 5,000 employees)
 2. Maps expected committee: CISO (Economic Buyer), Director of Security (Champion), Security Architect (Technical Evaluator), SOC Analysts (User Buyers), VP Engineering (potential Blocker)
-3. Finds contacts via Apollo People Search filtered to Acme + Security/IT departments
+3. Finds contacts vian Apollo People Search filtered to Acme + Security/IT departments
 4. Recommends entry via Director of Security (Champion), with dual-track approach to CISO
 5. Creates per-person outreach plan with role-appropriate messaging
 **Result**: Complete committee map with entry strategy and multi-threading plan

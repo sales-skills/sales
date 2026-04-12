@@ -47,7 +47,7 @@ Ask the user:
 
 ## Step 2 — Route or answer directly
 
-If the question is about **strategy** rather than ZoomInfo-specific configuration, route to the appropriate skill:
+If the question is about **strategy** rather than ZoomInfo-specific configuration, hand off to the appropriate skill:
 
 - General enrichment strategy → `/sales-enrich`
 - Buying intent interpretation → `/sales-intent`

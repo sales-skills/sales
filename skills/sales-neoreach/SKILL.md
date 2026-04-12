@@ -49,7 +49,7 @@ If the request maps to a different skill, route:
 - Influencer marketing strategy across platforms → `/sales-influencer-marketing`
 - TikTok marketing strategy → `/sales-tiktok-marketing`
 - Gaming influencer marketing → `/sales-gaming-marketing`
-- Competitor platform help → route to that platform's skill (e.g., `/sales-creatoriq`, `/sales-modash`)
+- Competitor platform help → hand off to that platform's skill (e.g., `/sales-creatoriq`, `/sales-modash`)
 
 Otherwise, answer directly from the platform reference below.
 

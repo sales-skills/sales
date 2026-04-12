@@ -165,7 +165,7 @@ Ask the user:
 4. **Design assets** — loyalty page, widget, emails (welcome, points earned, reward available, expiry warning)
 5. **Set up automations** — trigger emails/SMS based on loyalty events
 6. **Soft launch** — test with a small group, verify points earning and redemption
-7. **Promote** — announce via email, site banner, checkout page, social media
+7. **Promote** — announce vian email, site banner, checkout page, social media
 8. **Measure** — track enrollment, engagement, and revenue impact weekly
 
 ### Key metrics

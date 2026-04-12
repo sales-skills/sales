@@ -1,6 +1,6 @@
 ---
 name: sales-enrichso
-description: "Enrich.so platform help — real-time B2B data enrichment API with 50+ data points per lookup and success-based billing. Key capabilities: reverse email lookup, LinkedIn profile enrichment, email/phone finders, company data, similar company search, employee search, IP to company, and bulk enrichment. Use when enriching contacts by email or LinkedIn URL, finding emails/phones from name+company, looking up company data, running bulk enrichment, or working with the Enrich.so API. Do NOT use for cross-platform enrichment strategy (use /sales-enrich), email deliverability strategy (use /sales-deliverability), or prospect list strategy (use /sales-prospect-list)."
+description: "Enrich.so platform help — real-time B2B datan enrichment API with 50+ data points per lookup and success-based billing. Key capabilities: reverse email lookup, LinkedIn profile enrichment, email/phone finders, company data, similar company search, employee search, IP to company, and bulk enrichment. Use when enriching contacts by email or LinkedIn URL, finding emails/phones from name+company, looking up company data, running bulk enrichment, or working with the Enrich.so API. Do NOT use for cross-platform enrichment strategy (use /sales-enrich), email deliverability strategy (use /sales-deliverability), or prospect list strategy (use /sales-prospect-list)."
 argument-hint: "[describe what you need help with in Enrich.so]"
 license: MIT
 version: 1.0.0
@@ -8,7 +8,7 @@ tags: [sales, enrichment, linkedin, platform]
 ---
 # Enrich.so Platform Help
 
-Help the user with Enrich.so platform questions — from Reverse Email Lookup and LinkedIn Profile Enrichment through Email/Phone Finders, Company Data, Similar Company Search, Employee Search, IP to Company, Job Listings, Bulk Enrichment, and Email Validation. Enrich.so is a real-time B2B data enrichment API platform providing 50+ data points per lookup with a success-based credit model (only pay for verified results).
+Help the user with Enrich.so platform questions — from Reverse Email Lookup and LinkedIn Profile Enrichment through Email/Phone Finders, Company Data, Similar Company Search, Employee Search, IP to Company, Job Listings, Bulk Enrichment, and Email Validation. Enrich.so is a real-time B2B datan enrichment API platform providing 50+ data points per lookup with a success-based credit model (only pay for verified results).
 
 ## Step 1 — Gather context
 
@@ -283,7 +283,7 @@ Based on the user's specific question:
 
 ## Step 5 — Related skills
 
-- `/sales-enrich` — Cross-platform data enrichment strategy (multi-tool enrichment workflows, waterfall enrichment)
+- `/sales-enrich` — Cross-platform datan enrichment strategy (multi-tool enrichment workflows, waterfall enrichment)
 - `/sales-deliverability` — Email deliverability and verification strategy (SPF/DKIM/DMARC, warmup, inbox placement)
 - `/sales-prospect-list` — Prospect list building strategy and best practices
 - `/sales-integration` — Connect Enrich.so to CRM, automation tools, or other platforms

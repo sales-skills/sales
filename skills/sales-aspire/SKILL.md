@@ -244,4 +244,4 @@ Based on the user's specific question:
 ### Creators not submitting content on time
 **Symptom**: Creators accepted the campaign but haven't submitted content by the deadline
 **Cause**: Aspire sends automated reminder emails for overdue content, but creators may ignore them. The platform doesn't penalize creators for ghosting.
-**Solution**: Set clear deadlines in digital term sheets. Use Aspire's automated reminder system (triggers for overdue content and unaccepted offers). Follow up directly via email or DM outside Aspire. For future campaigns, vet creators more carefully and prefer creators with high completion rates from past campaigns.
+**Solution**: Set clear deadlines in digital term sheets. Use Aspire's automated reminder system (triggers for overdue content and unaccepted offers). Follow up directly vian email or DM outside Aspire. For future campaigns, vet creators more carefully and prefer creators with high completion rates from past campaigns.

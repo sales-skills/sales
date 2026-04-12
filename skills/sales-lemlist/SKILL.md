@@ -18,7 +18,7 @@ If `references/learnings.md` exists, read it first for accumulated knowledge.
 Ask the user:
 
 1. **What area of Lemlist do you need help with?**
-   - A) Sequences — creating, managing, or optimizing multichannel sequences (route to `/sales-cadence` for strategy)
+   - A) Sequences — creating, managing, or optimizing multichannel sequences (for strategy, hand off: `/sales-cadence {your question}`)
    - B) Lead database — finding prospects with People Database, filters, intent signals
    - C) Enrichment — waterfall enrichment for emails and phone numbers
    - D) Lemwarm — warmup, deliverability score, sender reputation

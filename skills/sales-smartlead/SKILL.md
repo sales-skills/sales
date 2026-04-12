@@ -18,7 +18,7 @@ If `references/learnings.md` exists, read it first for accumulated knowledge.
 Ask the user:
 
 1. **What area of Smartlead do you need help with?**
-   - A) Campaigns — creating, managing, or optimizing email campaigns (route to `/sales-cadence` for strategy)
+   - A) Campaigns — creating, managing, or optimizing email campaigns (for strategy, hand off: `/sales-cadence {your question}`)
    - B) SmartSenders — automated mailbox provisioning, rotation, daily limits
    - C) SmartInfra — dedicated-tenant infrastructure, private IPs, DNS config
    - D) SmartAgents — no-code AI agents for research and personalization

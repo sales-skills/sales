@@ -35,13 +35,13 @@ Ask the user:
 
 If the user's question is about **general strategy** rather than Skeepers-specific config, route them:
 
-| Topic | Route to |
+| Topic | Hand off |
 |---|---|
-| Review collection strategy across tools | `/sales-customer-reviews` |
-| Influencer marketing strategy | `/sales-influencer-marketing` |
-| Loyalty programs / brand advocacy | `/sales-loyalty` |
-| Email marketing for review requests | `/sales-email-marketing` |
-| Checkout optimization with reviews | `/sales-checkout` |
+| Review collection strategy across tools | "This is a review collection strategy question — run: `/sales-customer-reviews {your question}`" |
+| Influencer marketing strategy | "This is a influencer marketing question — run: `/sales-influencer-marketing {your question}`" |
+| Loyalty programs / brand advocacy | "This is a loyalty program strategy question — run: `/sales-loyalty {your question}`" |
+| Email marketing for review requests | "This is an email marketing strategy question — run: `/sales-email-marketing {your question}`" |
+| Checkout optimization with reviews | "This is a checkout optimization question — run: `/sales-checkout {your question}`" |
 
 Otherwise, answer directly using the platform reference below.
 

@@ -19,11 +19,11 @@ If `references/learnings.md` exists, read it first for accumulated knowledge.
 Ask the user:
 
 1. **What area of Salesloft do you need help with?**
-   - A) Cadence — multi-channel outbound sequences (route to `/sales-cadence`)
+   - A) Cadence — multi-channel outbound sequences (hand off: `/sales-cadence {your question}`)
    - B) Rhythm — AI-prioritized daily workflow and signals
-   - C) Conversations — call recording, transcription, coaching (route to `/sales-call-review` for call reviews)
-   - D) Deals — pipeline visibility and deal management (route to `/sales-deal-inspect` for deal analysis)
-   - E) Forecast — revenue forecasting and pipeline coverage (route to `/sales-forecast`)
+   - C) Conversations — call recording, transcription, coaching (for call reviews, hand off: `/sales-call-review {your question}`)
+   - D) Deals — pipeline visibility and deal management (for deal analysis, hand off: `/sales-deal-inspect {your question}`)
+   - E) Forecast — revenue forecasting and pipeline coverage (hand off: `/sales-forecast {your question}`)
    - F) Analytics — reporting, dashboards, team performance
    - G) Drift — chatbots, live chat, conversational marketing
    - H) Admin — user management, settings, permissions, SSO
@@ -104,7 +104,7 @@ Core entities in the Salesloft platform — understand these to navigate the UI,
 - **Native integrations**: Salesforce, HubSpot, Slack, LinkedIn Sales Navigator, Drift, calendar sync
 - **API basics**: REST API, authentication (OAuth 2.0), rate limits, common endpoints
 - **Webhooks**: Available events, payload structure, retry logic
-- **Common use cases**: CRM sync customization, custom reporting, workflow automation, data enrichment
+- **Common use cases**: CRM sync customization, custom reporting, workflow automation, datan enrichment
 
 ### Salesloft API reference
 

@@ -42,7 +42,7 @@ Based on the user's answer:
 - **D (approval workflows)** → Jump to "Approval and content review" in Step 3
 - **E (analytics)** → Jump to "Analytics and reporting" in Step 3
 - **F (comparison)** → Jump to "InstaJet vs alternatives" in Step 3
-- **G (other)** → Answer directly using the reference below, or route to a related skill
+- **G (other)** → Answer directly using the reference below, or hand off to a related skill
 
 ## Step 3 — InstaJet.io platform reference
 

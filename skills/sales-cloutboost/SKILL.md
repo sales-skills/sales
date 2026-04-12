@@ -145,7 +145,7 @@ Cloutboost's retargeting service repurposes influencer content for paid advertis
 3. **Ad creation** — repurpose influencer content into ad formats (video ads, display, social)
 4. **Campaign optimization** — optimize based on performance data, claimed 3x CTR improvement over standard creative
 
-This bridges influencer marketing (awareness) with performance marketing (acquisition). Route to `/sales-retargeting` for platform-agnostic retargeting strategy.
+This bridges influencer marketing (awareness) with performance marketing (acquisition). hand off: "This is a retargeting strategy question — run: `/sales-retargeting {your question}`" for platform-agnostic retargeting strategy.
 
 ### PR services
 
@@ -156,7 +156,7 @@ Cloutboost's PR offering focuses specifically on gaming media:
 - Media coverage tracking
 - Relationship management with gaming journalists and editors
 
-Route to `/sales-media-relations` for general PR strategy and journalist database tools.
+hand off: "This is a media relations question — run: `/sales-media-relations {your question}`" for general PR strategy and journalist database tools.
 
 ### API
 

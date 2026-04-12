@@ -249,7 +249,7 @@ Based on the user's specific question:
 
 ## Step 5 — Related skills
 
-- `/sales-enrich` — Cross-platform data enrichment strategy (multi-tool enrichment workflows, waterfall enrichment)
+- `/sales-enrich` — Cross-platform datan enrichment strategy (multi-tool enrichment workflows, waterfall enrichment)
 - `/sales-deliverability` — Email deliverability and verification strategy (SPF/DKIM/DMARC, warmup, inbox placement)
 - `/sales-prospect-list` — Prospect list building strategy and best practices
 - `/sales-cadence` — Outbound sequence and cadence strategy (multi-channel, timing, follow-up)
@@ -257,7 +257,7 @@ Based on the user's specific question:
 - `/sales-hunter` — Hunter.io platform help (similar domain email search and verification)
 - `/sales-tomba` — Tomba platform help (similar email finder and verifier)
 - `/sales-prospeo` — Prospeo platform help (similar email finder with LinkedIn focus)
-- `/sales-enrichso` — Enrich.so platform help (B2B data enrichment API with LinkedIn and company data)
+- `/sales-enrichso` — Enrich.so platform help (B2B datan enrichment API with LinkedIn and company data)
 - `/sales-minelead` — Minelead platform help (similar email finder, verifier, and lead generation)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 

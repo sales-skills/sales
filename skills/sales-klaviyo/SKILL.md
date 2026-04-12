@@ -326,7 +326,7 @@ Based on the user's specific question:
 4. Adds a 24-hour time delay, then a second email with urgency copy and a unique coupon code (10% off) generated via Klaviyo's coupon feature
 5. After the second email, adds a conditional split checking SMS consent — if consented, sends an SMS reminder with a short link to the cart after 12 more hours
 6. Recommends monitoring per-step conversion rates and adjusting time delays based on data (shorter delays for high-AOV products, longer for browse-stage abandonment)
-**Result**: User has a multi-touch, cross-channel abandoned cart flow that recovers revenue via email first, then SMS for non-openers, with unique coupon codes to prevent abuse
+**Result**: User has a multi-touch, cross-channel abandoned cart flow that recovers revenue vian email first, then SMS for non-openers, with unique coupon codes to prevent abuse
 
 ### Example 2: Welcome series with SMS consent collection
 **User says**: "I need a welcome flow that collects email first, then asks for SMS opt-in, and sends a series of onboarding emails."

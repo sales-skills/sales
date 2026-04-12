@@ -21,13 +21,13 @@ Ask the user:
 1. **What area of Brevo do you need help with?**
    - A) Email campaigns — creating, managing, or optimizing marketing emails
    - B) SMS / WhatsApp campaigns — setup, templates, approval
-   - C) Marketing automation — journeys, triggers, workflows (route to `/sales-email-marketing` for cross-platform strategy)
-   - D) Transactional messaging — API/SMTP email, transactional SMS (route to `/sales-transactional-email` for cross-platform)
+   - C) Marketing automation — journeys, triggers, workflows (for cross-platform strategy, hand off: `/sales-email-marketing {your question}`)
+   - D) Transactional messaging — API/SMTP email, transactional SMS (for cross-platform, hand off: `/sales-transactional-email {your question}`)
    - E) Sales CRM — deals, pipelines, companies, tasks
-   - F) Conversations — live chat, chatbot setup (route to `/sales-live-chat` for cross-platform strategy)
-   - G) Loyalty — programs, rewards, tiers, vouchers (route to `/sales-loyalty` for cross-platform strategy)
+   - F) Conversations — live chat, chatbot setup (for cross-platform strategy, hand off: `/sales-live-chat {your question}`)
+   - G) Loyalty — programs, rewards, tiers, vouchers (for cross-platform strategy, hand off: `/sales-loyalty {your question}`)
    - H) Contacts — lists, segments, attributes, import/export
-   - I) Deliverability — domain auth, dedicated IPs, warmup (route to `/sales-deliverability` for cross-platform)
+   - I) Deliverability — domain auth, dedicated IPs, warmup (for cross-platform, hand off: `/sales-deliverability {your question}`)
    - J) E-commerce — product sync, orders, coupons, revenue attribution
    - K) Landing pages & forms
    - L) Push notifications — web & mobile

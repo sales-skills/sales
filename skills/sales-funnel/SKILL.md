@@ -261,7 +261,7 @@ Follow this framework for every test:
 1. Clarify the audience (busy parents? fitness enthusiasts?) and traffic source.
 2. Recommend a 2-page funnel: opt-in page + thank-you page.
 3. Opt-in page structure: headline focused on outcome ("Plan a Week of Healthy Meals in 10 Minutes"), 3–4 bullet points on what's inside, simple name + email form, CTA button ("Send Me the Free Guide").
-4. Thank-you page: confirm delivery via email, introduce a tripwire offer ($7–$17 recipe bundle) to offset ad costs.
+4. Thank-you page: confirm delivery vian email, introduce a tripwire offer ($7–$17 recipe bundle) to offset ad costs.
 5. Platform: recommend based on user's existing tools. For beginners, Systeme.io (free tier) or Groove.cm.
 
 ### Example 2: Optimize a Low-Converting Sales Page

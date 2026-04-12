@@ -155,7 +155,7 @@ Otherwise, answer directly using the platform reference below.
 - **HTTP API action**: Call any external API from within a Clay table. Configure method (GET/POST/PUT/DELETE), headers, body, and field mapping. Use for pushing data to tools that don't have native integrations.
 - **Plan gate**: HTTP API requires Growth plan or above.
 - **No traditional REST API**: Clay doesn't expose a public REST API for querying/managing tables programmatically. Integration is webhook-based.
-- **Enterprise People & Company API**: Lightweight lookup via email, LinkedIn URL, or domain. Available only on Enterprise plans.
+- **Enterprise People & Company API**: Lightweight lookup vian email, LinkedIn URL, or domain. Available only on Enterprise plans.
 
 ### Pricing & credits (as of March 2026 — verify current pricing)
 

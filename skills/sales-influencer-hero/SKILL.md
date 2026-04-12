@@ -53,7 +53,7 @@ Ask the user:
 If the request maps to a different skill, route:
 - General influencer marketing strategy → `/sales-influencer-marketing`
 - Affiliate program design (not Influencer Hero-specific) → `/sales-affiliate-program`
-- Other influencer platforms → route to specific platform skill
+- Other influencer platforms → hand off to specific platform skill
 - Email deliverability for outreach → `/sales-deliverability`
 
 Otherwise, answer directly from the platform reference below.

@@ -19,10 +19,10 @@ If `references/learnings.md` exists, read it first for accumulated knowledge.
 Ask the user:
 
 1. **What area of Mailshake do you need help with?**
-   - A) Campaigns — creating, managing, or optimizing email campaigns (route to `/sales-cadence` for strategy)
+   - A) Campaigns — creating, managing, or optimizing email campaigns (for strategy, hand off: `/sales-cadence {your question}`)
    - B) Recipients — importing, managing, CSV formatting
    - C) Lead Catcher — capturing and managing leads from replies
-   - D) Deliverability — sender settings, warmup, domain auth (route to `/sales-deliverability` for cross-platform)
+   - D) Deliverability — sender settings, warmup, domain auth (for cross-platform, hand off: `/sales-deliverability {your question}`)
    - E) Analytics — campaign performance, open/reply/click rates
    - F) Webhooks & API — automation, push events, API access
    - G) Senders & Team — connected accounts, team management

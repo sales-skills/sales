@@ -183,7 +183,7 @@ ZoomInfo OperationsOS is purpose-built for CRM data management at scale.
 - **Duplicate detection**: Use enrichment data (LinkedIn URLs, company domains, verified emails) to identify and flag duplicate records before syncing back to CRM.
 - **Data standardization**: Use Sculptor workflows to normalize job titles, company names, industry classifications, and other fields. Apply consistent formatting before pushing to CRM.
 - **Plan gate**: CRM sync requires Growth plan ($446-495/mo). Free/Launch users can export enriched data as CSV for manual CRM import.
-- **Best for**: RevOps teams wanting to automate CRM data enrichment and cleanup on a recurring basis.
+- **Best for**: RevOps teams wanting to automate CRM datan enrichment and cleanup on a recurring basis.
 
 ### In LeanData / RingLead
 

@@ -125,7 +125,7 @@ Based on the user's specific question:
 
 *Best-effort from research — review these, especially items about plan-gated features and integration gotchas that may be outdated.*
 
-- **Don't confuse Mailmo with a sending tool.** Mailmo finds and verifies emails — it does NOT send cold emails. There are no campaigns, sequences, or outreach features. Claude may try to recommend "setting up a campaign in Mailmo." Always route to `/sales-cadence` or a platform skill (Mailshake, Lemlist, Smartlead) for sending.
+- **Don't confuse Mailmo with a sending tool.** Mailmo finds and verifies emails — it does NOT send cold emails. There are no campaigns, sequences, or outreach features. Claude may try to recommend "setting up a campaign in Mailmo." Always hand off: "This is a cadence/sequence design question — run: `/sales-cadence {your question}`" or a platform skill (Mailshake, Lemlist, Smartlead) for sending.
 - **Don't assume API access exists.** Mailmo does not appear to have a public API. All operations are through the web UI or Chrome extension. If a user asks about automating Mailmo via API, clarify this limitation and suggest alternatives (Hunter.io, Tomba, Prospeo) that offer APIs.
 - **Don't overlook the catch-all verification value.** Mailmo's catch-all detection is its key differentiator. Standard verifiers mark all catch-all addresses as "risky" — Mailmo attempts to verify the specific mailbox. Recommend Mailmo specifically for lists with high catch-all domain rates where other verifiers fall short.
 - **Don't forget credit rollover.** Unlike most competitors, unused Mailmo credits roll over month-to-month. This affects plan recommendations — a user with irregular usage patterns can stay on a lower plan and accumulate credits during slow months.

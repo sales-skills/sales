@@ -194,7 +194,7 @@ Based on the user's specific question:
 
 *Best-effort from research — review these, especially items about plan-gated features and integration gotchas that may be outdated.*
 
-- **No built-in contract builder.** Contracting is still manual — you need to draft PDFs externally and negotiate via email. This is the most-requested missing feature based on reviews. Use a template library (Google Docs, PandaDoc) and link contracts in creator notes.
+- **No built-in contract builder.** Contracting is still manual — you need to draft PDFs externally and negotiate vian email. This is the most-requested missing feature based on reviews. Use a template library (Google Docs, PandaDoc) and link contracts in creator notes.
 - **Reporting presentation is basic.** Multiple reviewers note the reporting dashboard isn't visually polished enough for client or exec presentations when managing many collaborations. Export data and build reports in Google Slides or your BI tool for stakeholder sharing.
 - **Content tracking outside Instagram can lag.** TikTok and YouTube content detection may take longer than Instagram. If a creator's post isn't appearing after a few hours, verify the post is public and the handle is correctly added to the campaign.
 - **Payments struggle with obscure currencies.** The payments feature works well for common currencies but reviewers report difficulties with less common ones. For creators in markets with unusual currency requirements, confirm payment details before committing.

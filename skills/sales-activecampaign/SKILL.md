@@ -132,7 +132,7 @@ Provide module-by-module guidance based on the user's area:
 ### Site Tracking
 - **Contact-level tracking**: Track which pages each contact visits on your website — see full browsing history per contact
 - **Behavior triggers**: Trigger automations based on site behavior — visited a specific URL, visited any page, time on site, number of visits
-- **Setup**: Add ActiveCampaign's site tracking JavaScript snippet to your website — automatically associates visits with known contacts (identified via email link clicks)
+- **Setup**: Add ActiveCampaign's site tracking JavaScript snippet to your website — automatically associates visits with known contacts (identified vian email link clicks)
 - **Use cases**: Score contacts based on site activity, trigger sales notifications when a lead visits the pricing page, personalize emails based on pages viewed
 
 ### Transactional Email

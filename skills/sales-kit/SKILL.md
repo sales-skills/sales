@@ -19,13 +19,13 @@ Ask the user:
 
 1. **What area of Kit do you need help with?**
    - A) Broadcasts — sending one-off emails, scheduling, A/B testing
-   - B) Sequences — drip campaigns, autoresponder series (route to `/sales-email-marketing` for cross-platform strategy)
+   - B) Sequences — drip campaigns, autoresponder series (for cross-platform strategy, hand off: `/sales-email-marketing {your question}`)
    - C) Visual Automations — trigger-based workflows, automation canvas
-   - D) Landing pages & Forms — opt-in forms, Creator Profile, lead capture (route to `/sales-funnel` for strategy)
-   - E) Commerce — selling digital products, paid newsletters, subscriptions (route to `/sales-digital-products` for strategy)
-   - F) Creator Recommendations — cross-promotion network, paid recommendations (route to `/sales-audience-growth` for strategy)
+   - D) Landing pages & Forms — opt-in forms, Creator Profile, lead capture (for strategy, hand off: `/sales-funnel {your question}`)
+   - E) Commerce — selling digital products, paid newsletters, subscriptions (for strategy, hand off: `/sales-digital-products {your question}`)
+   - F) Creator Recommendations — cross-promotion network, paid recommendations (for strategy, hand off: `/sales-audience-growth {your question}`)
    - G) Subscribers — tagging, segmentation, custom fields, engagement scoring
-   - H) Deliverability — domain auth, SPF/DKIM/DMARC, sender reputation (route to `/sales-deliverability` for cross-platform)
+   - H) Deliverability — domain auth, SPF/DKIM/DMARC, sender reputation (for cross-platform, hand off: `/sales-deliverability {your question}`)
    - I) Integrations — Zapier, Make, Shopify, WordPress, Stripe, native apps
    - J) API & Webhooks — Kit API v4, OAuth, automation via API
    - K) Analytics — broadcast stats, subscriber growth, engagement
@@ -45,20 +45,20 @@ Ask the user:
 
 ## Step 2 — Route or answer directly
 
-**Route to specialized skills when the question is about strategy, not Kit-specific config:**
+**Hand off to specialized skills when the question is about strategy, not Kit-specific config:**
 
-| If the question is about... | Route to |
+| If the question is about... | Hand off |
 |---|---|
-| Email marketing strategy across tools | `/sales-email-marketing` |
-| Deliverability, warmup, domain auth beyond Kit | `/sales-deliverability` |
-| Funnel strategy, landing page optimization | `/sales-funnel` |
-| Newsletter monetization strategy | `/sales-newsletter` |
-| Growing an email list / audience | `/sales-audience-growth` |
-| Selling digital products (strategy) | `/sales-digital-products` |
-| Membership / course platform decisions | `/sales-membership` |
-| Checkout optimization | `/sales-checkout` |
-| Connecting Kit to other tools | `/sales-integration` |
-| Lead scoring models | `/sales-lead-score` |
+| Email marketing strategy across tools | "This is an email marketing strategy question — run: `/sales-email-marketing {your question}`" |
+| Deliverability, warmup, domain auth beyond Kit | "This is an email deliverability question — run: `/sales-deliverability {your question}`" |
+| Funnel strategy, landing page optimization | "This is a funnel strategy question — run: `/sales-funnel {your question}`" |
+| Newsletter monetization strategy | "This is a newsletter strategy question — run: `/sales-newsletter {your question}`" |
+| Growing an email list / audience | "This is an audience growth question — run: `/sales-audience-growth {your question}`" |
+| Selling digital products (strategy) | "This is a digital products question — run: `/sales-digital-products {your question}`" |
+| Membership / course platform decisions | "This is a membership strategy question — run: `/sales-membership {your question}`" |
+| Checkout optimization | "This is a checkout optimization question — run: `/sales-checkout {your question}`" |
+| Connecting Kit to other tools | "This is a tool integration question — run: `/sales-integration {your question}`" |
+| Lead scoring models | "This is a lead scoring strategy question — run: `/sales-lead-score {your question}`" |
 
 **Answer directly when the question is Kit-specific** — platform config, Kit UI navigation, Kit-specific features, Kit API usage.
 

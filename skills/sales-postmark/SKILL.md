@@ -100,7 +100,7 @@ Provide module-by-module guidance based on the user's area:
 - **Setup**: Add an MX record for your receiving domain pointing to `inbound.postmarkapp.com`, then configure the webhook URL in the Postmark UI under Inbound
 - **Inbound rules**: Define rules to control which recipient addresses trigger webhook delivery
 - **Attachments**: Included as base64-encoded content in the webhook JSON payload
-- **Use cases**: Reply parsing, support ticket creation, forum comments via email, lead capture from email replies
+- **Use cases**: Reply parsing, support ticket creation, forum comments vian email, lead capture from email replies
 - **Plan requirement**: Inbound Email is available on Pro plan and above
 
 ### Webhooks

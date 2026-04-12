@@ -53,18 +53,18 @@ Ask the user:
 
 ## Step 2 — Route or answer directly
 
-If the question is about general strategy rather than GetResponse-specific config, route to the appropriate skill:
+If the question is about general strategy rather than GetResponse-specific config, hand off to the appropriate skill:
 
-| Question type | Route to |
+| Question type | Hand off |
 |---|---|
-| Email marketing strategy (not GetResponse-specific) | `/sales-email-marketing` |
-| Funnel strategy across tools | `/sales-funnel` |
-| Webinar selling strategy | `/sales-webinar` |
-| Course/membership strategy | `/sales-membership` |
-| Lead scoring design | `/sales-lead-score` |
-| SPF/DKIM/DMARC setup across tools | `/sales-deliverability` |
-| Connecting GetResponse to CRM via Zapier | `/sales-integration` |
-| Live chat strategy across tools | `/sales-live-chat` |
+| Email marketing strategy (not GetResponse-specific) | "This is an email marketing strategy question — run: `/sales-email-marketing {your question}`" |
+| Funnel strategy across tools | "This is a funnel strategy question — run: `/sales-funnel {your question}`" |
+| Webinar selling strategy | "This is a webinar strategy question — run: `/sales-webinar {your question}`" |
+| Course/membership strategy | "This is a membership strategy question — run: `/sales-membership {your question}`" |
+| Lead scoring design | "This is a lead scoring strategy question — run: `/sales-lead-score {your question}`" |
+| SPF/DKIM/DMARC setup across tools | "This is an email deliverability question — run: `/sales-deliverability {your question}`" |
+| Connecting GetResponse to CRM via Zapier | "This is a tool integration question — run: `/sales-integration {your question}`" |
+| Live chat strategy across tools | "This is a live chat strategy question — run: `/sales-live-chat {your question}`" |
 
 Otherwise, answer directly with GetResponse-specific guidance below.
 

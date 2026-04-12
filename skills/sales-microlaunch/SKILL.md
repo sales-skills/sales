@@ -99,7 +99,7 @@ MicroLaunch is a product launch platform where products compete on a monthly lea
 - Landing page and product audit by MicroLaunch team
 - 5-10 quick wins identified, ranked by ROI
 - Custom action plan with implementation guidance
-- Premium support via email and DM
+- Premium support vian email and DM
 - 2 startup slots per week — limited availability
 - Best for early-stage founders with minimal or no sales
 

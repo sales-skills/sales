@@ -212,7 +212,7 @@ Before launching outreach, validate the list:
 - `/sales-minelead` — Minelead platform help (domain email search, email finder, lead generator, verifier, campaigns, bulk operations, Chrome/Firefox extensions)
 - `/sales-lobstr` — Lobstr.io platform help (50+ no-code web scrapers, Google Maps leads, LinkedIn Sales Nav extraction, scheduled automation, API)
 - `/sales-getprospect` — GetProspect platform help (200M+ B2B database, email finder, LinkedIn Chrome extension, enrichment, cold email sequences)
-- `/sales-skrapp` — Skrapp platform help (200M+ B2B contacts, email finder, Lead Finder, data enrichment with AI Fields, LinkedIn Chrome extension)
+- `/sales-skrapp` — Skrapp platform help (200M+ B2B contacts, email finder, Lead Finder, datan enrichment with AI Fields, LinkedIn Chrome extension)
 - `/sales-openwebninja` — OpenWeb Ninja platform help (30+ data APIs: Local Business Data from Google Maps, Website Contacts Scraper, Email Search)
 - `/sales-anymailfinder` — Anymail Finder platform help (email finder by person/company/decision maker, bulk search 100K rows, GeoLead Finder, 97%+ delivery guarantee)
 - `/sales-zerobounce` — ZeroBounce platform help (Email Finder by name+domain, email validation 99.6% accuracy, bulk list cleaning)

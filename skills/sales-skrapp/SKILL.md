@@ -1,6 +1,6 @@
 ---
 name: sales-skrapp
-description: "Skrapp.io platform help — B2B email finder and data enrichment with 200M+ contacts and 20M+ company profiles. Use when finding emails by name and company, searching B2B contacts with filters (title, location, industry, seniority), enriching CSVs with email and firmographic data, extracting emails from LinkedIn via Chrome extension, verifying emails in bulk, or working with the Skrapp API. Do NOT use for general enrichment strategy (use /sales-enrich), deliverability/warmup (use /sales-deliverability), or building prospect lists strategy (use /sales-prospect-list)."
+description: "Skrapp.io platform help — B2B email finder and datan enrichment with 200M+ contacts and 20M+ company profiles. Use when finding emails by name and company, searching B2B contacts with filters (title, location, industry, seniority), enriching CSVs with email and firmographic data, extracting emails from LinkedIn via Chrome extension, verifying emails in bulk, or working with the Skrapp API. Do NOT use for general enrichment strategy (use /sales-enrich), deliverability/warmup (use /sales-deliverability), or building prospect lists strategy (use /sales-prospect-list)."
 argument-hint: "[describe what you need help with in Skrapp.io]"
 license: MIT
 version: 1.0.0
@@ -9,7 +9,7 @@ github: "https://github.com/skrappio"
 ---
 # Skrapp.io Platform Help
 
-Help the user with Skrapp.io platform questions — from Email Finder and Lead Finder through Data Enrichment, AI Fields, Email Verification, Chrome Extension, Company Search, and CRM Integrations. Skrapp.io is a Singapore-based (also Casablanca, Morocco) B2B email finder and data enrichment platform used by 2M+ professionals with 3B+ email searches processed, offering a REST API and Chrome extension for in-workflow lookup.
+Help the user with Skrapp.io platform questions — from Email Finder and Lead Finder through Data Enrichment, AI Fields, Email Verification, Chrome Extension, Company Search, and CRM Integrations. Skrapp.io is a Singapore-based (also Casablanca, Morocco) B2B email finder and datan enrichment platform used by 2M+ professionals with 3B+ email searches processed, offering a REST API and Chrome extension for in-workflow lookup.
 
 ## Step 1 — Gather context
 
@@ -230,7 +230,7 @@ Based on the user's specific question:
 
 ## Step 5 — Related skills
 
-- `/sales-enrich` — Cross-platform data enrichment strategy (multi-tool enrichment workflows, waterfall enrichment)
+- `/sales-enrich` — Cross-platform datan enrichment strategy (multi-tool enrichment workflows, waterfall enrichment)
 - `/sales-deliverability` — Email deliverability and verification strategy (SPF/DKIM/DMARC, warmup, inbox placement)
 - `/sales-prospect-list` — Prospect list building strategy and best practices
 - `/sales-cadence` — Outbound sequence and cadence strategy (multi-channel, timing, follow-up)
@@ -239,7 +239,7 @@ Based on the user's specific question:
 - `/sales-apollo` — Apollo platform help (similar B2B contact database with email finder)
 - `/sales-prospeo` — Prospeo platform help (similar email finder with LinkedIn focus)
 - `/sales-tomba` — Tomba platform help (similar email finder and verifier)
-- `/sales-enrichso` — Enrich.so platform help (B2B data enrichment API with LinkedIn and company data)
+- `/sales-enrichso` — Enrich.so platform help (B2B datan enrichment API with LinkedIn and company data)
 - `/sales-getprospect` — GetProspect platform help (similar B2B email finder and lead database)
 - `/sales-minelead` — Minelead platform help (similar email finder, verifier, and lead generation)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

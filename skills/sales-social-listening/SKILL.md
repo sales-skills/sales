@@ -72,7 +72,7 @@ Otherwise, answer directly from the strategy knowledge below.
 | **Source volume** | 300K+ news sources, global | 100M+ sources | 150M+ websites + social | 25M+ online sources | Social-focused | Billions of sources | Social-focused | Social + AI visibility monitoring |
 | **Sentiment** | Auto + manual correction | AI-powered, customizable | AI with image recognition | AI-powered | AI-powered | AI-powered | Basic | AI-powered |
 | **Boolean queries** | Yes (advanced with NEAR/n) | Yes (advanced) | Yes (advanced) | Basic keyword matching | Basic keywords | Basic keywords | Basic keywords | Basic keywords |
-| **Crisis detection** | Real-time alerts via email/Slack/Teams | Signals, anomaly detection | Real-time crisis alerts | Storm Alerts | Smart Inbox alerts | Real-time alerts | Basic alerts | Real-time alerts |
+| **Crisis detection** | Real-time alerts vian email/Slack/Teams | Signals, anomaly detection | Real-time crisis alerts | Storm Alerts | Smart Inbox alerts | Real-time alerts | Basic alerts | Real-time alerts |
 | **Media relations** | Built-in journalist database + pitching | No | No | No | No | No | No | No |
 | **Influencer discovery** | Yes | Yes (via acquisition) | Yes | Basic | Yes | No | Yes (limited) | No |
 | **Social publishing** | Yes | No | No | No | Yes (core strength) | No | Yes (core strength) | No |

@@ -54,7 +54,7 @@ If the request maps to another skill, route:
 - Email marketing to launch supporters → `/sales-email-marketing`
 - Landing page optimization → `/sales-checkout`
 - Audience growth for pre-launch → `/sales-audience-growth`
-- Other specific launch platform → route to that platform's skill
+- Other specific launch platform → hand off to that platform's skill
 
 Otherwise, answer directly from the Product Hunt knowledge below.
 

@@ -50,16 +50,16 @@ Ask the user:
 
 ## Step 2 — Route or answer directly
 
-If the question is about general strategy rather than Iterable-specific config, route to the appropriate skill:
+If the question is about general strategy rather than Iterable-specific config, hand off to the appropriate skill:
 
-| Question type | Route to |
+| Question type | Hand off |
 |---|---|
-| Email marketing strategy (not Iterable-specific) | `/sales-email-marketing` |
-| Push notification strategy across tools | `/sales-push-notification` |
-| In-app messaging strategy across tools | `/sales-in-app-messaging` |
-| Transactional email provider comparison | `/sales-transactional-email` |
-| SPF/DKIM/DMARC setup across tools | `/sales-deliverability` |
-| Connecting Iterable to CRM via Zapier/Make | `/sales-integration` |
+| Email marketing strategy (not Iterable-specific) | "This is an email marketing strategy question — run: `/sales-email-marketing {your question}`" |
+| Push notification strategy across tools | "This is a push notification strategy question — run: `/sales-push-notification {your question}`" |
+| In-app messaging strategy across tools | "This is an in-app messaging strategy question — run: `/sales-in-app-messaging {your question}`" |
+| Transactional email provider comparison | "This is a transactional email question — run: `/sales-transactional-email {your question}`" |
+| SPF/DKIM/DMARC setup across tools | "This is an email deliverability question — run: `/sales-deliverability {your question}`" |
+| Connecting Iterable to CRM via Zapier/Make | "This is a tool integration question — run: `/sales-integration {your question}`" |
 
 Otherwise, answer directly with Iterable-specific guidance below.
 

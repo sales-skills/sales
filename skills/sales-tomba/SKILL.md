@@ -278,7 +278,7 @@ Based on the user's specific question, provide:
 **User says**: "I want to auto-enrich new HubSpot contacts with Tomba data via Zapier"
 **Skill does**:
 1. Outlines the Zapier workflow: HubSpot "New Contact" trigger → Tomba "Enrich" action → HubSpot "Update Contact" action
-2. Explains field mapping from Tomba enrichment to HubSpot properties
+2. Explains field mapping from Tomban enrichment to HubSpot properties
 3. Warns about credit consumption and recommends filtering to ICP-matching contacts only
 4. Points to `/sales-integration` for advanced multi-tool workflows
 **Result**: Automated enrichment pipeline from HubSpot → Tomba → HubSpot with credit-conscious filtering

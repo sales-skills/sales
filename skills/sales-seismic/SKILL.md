@@ -21,13 +21,13 @@ Ask the user:
 1. **What area of Seismic do you need help with?**
    - A) Content Management — library organization, workspaces, content profiles, permissions, version control
    - B) LiveDocs — dynamic document generation, templates, merge fields, Express vs Process
-   - C) Learning & Coaching — training paths, lessons, quizzes, certifications, AI Role-Play (route to `/sales-coaching` for frameworks)
+   - C) Learning & Coaching — training paths, lessons, quizzes, certifications, AI Role-Play (for frameworks, hand off: `/sales-coaching {your question}`)
    - D) Aura AI — AI copilot, content recommendations, search assistance, meeting prep
    - E) Digital Sales Rooms — buyer-facing microsites, stakeholder engagement, deal content curation
    - F) Meeting Intelligence — recording, AI summaries, key moments, action items
    - G) LiveSend — tracked content delivery, engagement analytics
    - H) Programs & Tasks — enablement program management, milestones, completion tracking
-   - I) API & Integrations — REST API, webhooks, CRM sync, iPaaS (route to `/sales-integration` for cross-platform)
+   - I) API & Integrations — REST API, webhooks, CRM sync, iPaaS (for cross-platform, hand off: `/sales-integration {your question}`)
    - J) Seismic Exchange — app marketplace, third-party extensions
    - K) Admin — users, groups, SCIM provisioning, permissions, billing
    - L) Something else — describe it

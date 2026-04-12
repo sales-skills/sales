@@ -145,7 +145,7 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 
 | Skill | Route when... |
 |---|---|
-| `/sales-tomba` | General Tomba.io questions — domain search, email finder, email verifier, enrichment, author finder, LinkedIn finder, phone finder, bulk operations, browser extensions, Google Sheets/Excel, API, leads/lists, Zapier/HubSpot/Salesforce integrations | Route when the user asks about Tomba setup, config, features, or troubleshooting. Route when they mention Tomba domain search, Tomba email finder, Tomba verifier, Tomba enrichment, Tomba API, Tomba bulk operations, or Tomba browser extension. |
+| `/sales-tomba` | General Tomba.io questions — domain search, email finder, email verifier, enrichment, author finder, LinkedIn finder, phone finder, bulk operations, browser extensions, Google Sheets/Excel, API, leads/lists, Zapier/HubSpot/Salesforce integrations | Route when the user asks about Tomba setup, config, features, or troubleshooting. Route when they mention Tomba domain search, Tomban email finder, Tomba verifier, Tomban enrichment, Tomba API, Tomba bulk operations, or Tomba browser extension. |
 
 ### Prospeo & Platform
 
