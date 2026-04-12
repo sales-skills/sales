@@ -477,7 +477,8 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 
 | Skill | Route when... |
 |---|---|
-| `/sales-influencer-marketing` | User asks about influencer marketing strategy across platforms, choosing an influencer platform (Modash vs influData vs Creator.co vs Hypefy vs LTK vs Influencity vs Meltwater vs Skeepers vs Heepsy vs CreatorIQ vs NeoReach vs Afluencer vs Collabstr vs Cloutboost vs House of Marketers vs Famesters vs inBeat vs HypeAuditor), influencer discovery workflow, creator vetting framework, influencer outreach templates, influencer campaign ROI measurement, product gifting programs, influencer affiliate programs, or creator rate benchmarks |
+| `/sales-aspire` | User asks about Aspire platform (formerly AspireIQ), Aspire influencer discovery (170M+ profiles), Aspire Quickmatch AI, Aspire image recognition search, Aspire campaign management, Aspire product seeding (Shopify gifting), Aspire affiliate tracking (promo codes, trackable links), Aspire UGC and content approval, Aspire paid social (TikTok Spark Ads, Meta whitelisting), Aspire creator payments, Aspire social listening, Aspire review generation, Aspire pricing, or Aspire vs GRIN vs Modash vs other influencer platforms |
+| `/sales-influencer-marketing` | User asks about influencer marketing strategy across platforms, choosing an influencer platform (Modash vs influData vs Creator.co vs Hypefy vs LTK vs Influencity vs Meltwater vs Skeepers vs Heepsy vs CreatorIQ vs NeoReach vs Afluencer vs Collabstr vs Cloutboost vs House of Marketers vs Famesters vs inBeat vs HypeAuditor vs Aspire), influencer discovery workflow, creator vetting framework, influencer outreach templates, influencer campaign ROI measurement, product gifting programs, influencer affiliate programs, or creator rate benchmarks |
 
 ### MicroLaunch & Platform
 

@@ -35,6 +35,8 @@ Problems discovered during platform research that don't have dedicated skills ye
 | iGaming influencer regulatory compliance (gambling ad rules, financial promotion guidelines per jurisdiction) | Research — niche but critical for iGaming vertical, no existing skill | sales-famesters | 2026-04-12 |
 | Link-in-bio strategy (Linktree vs Later Linkin.bio vs Shorby vs Stan Store — tool comparison, shoppable pages, click tracking) | Review sites, comparison articles — medium frequency | sales-later | 2026-04-12 |
 | Social media content repurposing (one video → all platform formats, aspect ratio adaptation, caption localization) | Comparison articles, G2 reviews — medium frequency | sales-later | 2026-04-12 |
+| Influencer algorithm accuracy/relevance (AI matching returns irrelevant creators across platforms) | G2/Capterra reviews of Aspire, GRIN, CreatorIQ — medium frequency | sales-aspire | 2026-04-12 |
+| Influencer content-to-paid-ads pipeline (UGC → Spark Ads / Meta whitelisting workflow, rights management) | Industry articles, platform feature comparisons — growing importance | sales-aspire | 2026-04-12 |
 
 ## Platforms to add
 
@@ -52,4 +54,7 @@ Specific platforms, tools, or websites discovered during research that should ge
 | GRIN | https://grin.co | Top HypeAuditor competitor, ecommerce-focused influencer marketing | sales-hypeauditor | 2026-04-12 |
 | Upfluence | https://www.upfluence.com | Major HypeAuditor competitor with Jace AI automation | sales-hypeauditor | 2026-04-12 |
 | Lessie AI | https://lessie.ai | Top free fake follower checker in 2026, direct HypeAuditor competitor | sales-hypeauditor | 2026-04-12 |
-| Aspire (AspireIQ) | https://aspire.io | Frequently listed HypeAuditor alternative for influencer marketing | sales-hypeauditor | 2026-04-12 |
+| ~~Aspire (AspireIQ)~~ | ~~https://aspire.io~~ | ~~Frequently listed HypeAuditor alternative for influencer marketing~~ | ~~sales-hypeauditor~~ | ~~2026-04-12~~ → **Created: `/sales-aspire`** |
+| Insense | https://insense.pro | UGC-focused influencer platform, frequently listed as Aspire alternative | sales-aspire | 2026-04-12 |
+| SARAL | https://www.getsaral.com | Product seeding automation platform for DTC brands | sales-aspire | 2026-04-12 |
+| Shopify Collabs | https://shopify.com/collabs | Free native Shopify influencer tool, frequently recommended as budget alternative | sales-aspire | 2026-04-12 |

@@ -305,6 +305,7 @@ Router recommends a 5-skill sequence:
 | `/sales-famesters` | Famesters — full-cycle influencer agency (gaming, fintech, iGaming, apps), 1000+ brands, BuzzGuru analytics |
 | `/sales-inbeat` | inBeat — creative growth agency (influencer, UGC, paid media, performance creative), free marketing toolkit (calculators, ad mockups) |
 | `/sales-hypeauditor` | HypeAuditor — AI-powered influencer analytics (223.6M+ profiles), fraud detection (53 patterns, 95%+ accuracy), Discovery, Campaign Management, Market Analysis, API |
+| `/sales-aspire` | Aspire (formerly AspireIQ) — word-of-mouth commerce for influencer marketing, product seeding (Shopify), affiliate tracking, UGC sourcing, paid social (TikTok Spark Ads, Meta), 170M+ profiles |
 | `/sales-tiktok-marketing` | TikTok marketing strategy — organic growth, paid ads, content creation, influencer strategy, algorithm, metrics |
 | `/sales-gaming-marketing` | Gaming influencer marketing strategy — streamer partnerships, game launch campaigns, budget allocation, ROI |
 | `/sales-influencer-marketing` | Influencer marketing strategy — platform comparison, creator discovery, vetting, campaign tracking |

@@ -290,6 +290,7 @@ Create a structured onboarding experience:
 - `/sales-email-marketing` — Build affiliate onboarding sequences and ongoing communication cadences
 - `/sales-ltk` — LTK platform help — creator commerce with built-in commission/affiliate model
 - `/sales-creatoriq` — CreatorIQ platform help — enterprise influencer OS with affiliate network integrations (CJ, Awin, Impact, Rakuten)
+- `/sales-aspire` — Aspire platform help — built-in affiliate tracking with promo codes and trackable links via Shopify
 - `/sales-do` — Route to the right skill when you are unsure where to start
 
 ## Examples
