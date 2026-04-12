@@ -309,6 +309,7 @@ Router recommends a 5-skill sequence:
 | `/sales-influencer-hero` | Influencer Hero — all-in-one influencer marketing (200M+ profiles), AI-personalized outreach (email + DMs), CRM, affiliate tracking (code leakage prevention), product gifting, UGC capture, API |
 | `/sales-instajet` | InstaJet.io — Instagram Stories influencer marketplace (10K+ vetted creators, 50+ countries), escrow payments, managed service |
 | `/sales-openinfluence` | Open Influence — AI-powered influencer agency + SaaS (image recognition search, 20M+ keywords, Mood Board, paid media amplification, Studio OI, 50+ countries) |
+| `/sales-trendhero` | trendHERO — Instagram influencer analytics (95M+ profiles), Account Quality Score (AQS) fake follower detection, Ads Database (10M+ posts), audience overlap, REST API |
 | `/sales-tiktok-marketing` | TikTok marketing strategy — organic growth, paid ads, content creation, influencer strategy, algorithm, metrics |
 | `/sales-gaming-marketing` | Gaming influencer marketing strategy — streamer partnerships, game launch campaigns, budget allocation, ROI |
 | `/sales-influencer-marketing` | Influencer marketing strategy — platform comparison, creator discovery, vetting, campaign tracking |
