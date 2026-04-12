@@ -778,6 +778,7 @@
 |---|---|
 | `/sales-adroll` | General AdRoll/RollWorks questions — retargeting pixel setup, campaign management, audience building, dynamic retargeting, ecommerce integration (Shopify/BigCommerce/WooCommerce), RollWorks ABM, NextRoll API, cross-channel ads (display, social, CTV, DOOH), email retargeting, reporting/attribution |
 | `/sales-remerge` | Remerge platform questions — in-app retargeting DSP, mobile app re-engagement campaigns, audience segmentation from MMP events, incrementality measurement, Reporting API, Event Tracking API, MMP integration (AppsFlyer/Adjust/Branch), Braze webhook, deep linking, dynamic product ads for mobile apps, comparing mobile DSPs (Remerge vs Adikteev vs Liftoff) |
+| `/sales-adwake` | Adwake platform questions — managed-service mobile app user acquisition, CPI/CPA optimization, app install campaigns, mobile branding campaigns, in-app retargeting, Playback Rewards loyalty, cross-platform campaign management, Entravision mobile advertising, comparing managed vs self-serve mobile DSPs, gaming/travel/fintech/retail app marketing |
 
 ### Prospecting, Enrichment & Signals
 

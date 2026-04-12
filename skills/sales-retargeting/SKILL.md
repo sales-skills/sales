@@ -41,8 +41,9 @@ Ask the user:
    - D) Criteo
    - E) LinkedIn Ads (website retargeting)
    - F) Native ESP retargeting (Klaviyo, Omnisend, etc.)
-   - G) None — evaluating options
-   - H) Other — describe it
+   - G) Remerge or Adwake (mobile in-app retargeting)
+   - H) None — evaluating options
+   - I) Other — describe it
 
 4. **What's your business type?**
    - A) Ecommerce / D2C
@@ -110,6 +111,7 @@ Retargeting serves ads to people who have already interacted with your brand —
 - `/sales-cloutboost` — Cloutboost platform help — gaming influencer retargeting, Portal discovery, campaign management
 - `/sales-gaming-marketing` — Gaming influencer marketing strategy — streamer partnerships, game launch campaigns
 - `/sales-remerge` — Remerge platform help — in-app retargeting DSP, audience segmentation, incrementality measurement, MMP integrations
+- `/sales-adwake` — Adwake platform help — managed mobile app UA, branding, in-app retargeting (Entravision)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples
