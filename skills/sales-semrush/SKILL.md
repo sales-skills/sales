@@ -14,6 +14,9 @@ Helps with everything related to using Semrush — the leading SEO and online vi
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What are you trying to do in Semrush?**
@@ -190,6 +193,8 @@ Based on the user's situation, provide specific Semrush workflows:
 - **Unit costs vary widely by API endpoint.** Some endpoints cost 10 units, others cost 1,000+. Budget carefully and test with small queries first.
 - **Free trial auto-renews.** Cancel before the 7-day trial ends to avoid charges. This is the #1 user complaint about Semrush on review sites.
 - **Semrush One vs traditional plans.** Semrush One is a newer unified offering combining SEO + AI visibility. Pricing and feature sets may differ from the traditional Pro/Guru/Business tiers listed above.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

@@ -12,6 +12,9 @@ Help the user set up and optimize meeting scheduling for their sales workflow â€
 
 ## Step 1 â€” Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What's your scheduling challenge?**
@@ -257,6 +260,8 @@ Based on the user's context, provide:
 - **Don't ignore timezone display.** If the booking page shows times in YOUR timezone instead of the booker's, you'll get mis-booked meetings and confused prospects. Always verify timezone auto-detection is working.
 - **Don't set up round-robin without weighting.** Equal distribution sounds fair but ignores capacity. A rep with 30 meetings this week shouldn't get the same allocation as one with 10. Weight by current load or quota attainment.
 - **Don't forget CRM integration.** Every booked meeting should auto-create/update a CRM record. Manual logging means meetings fall through the cracks, pipeline data is inaccurate, and managers can't report on meeting volume.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

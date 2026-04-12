@@ -12,6 +12,9 @@ Help the user design, weight, and tune a lead scoring model — from defining sc
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you sell?**
@@ -260,6 +263,8 @@ Every quarter:
 - **Don't skip negative scoring.** A lead can have a perfect title at a perfect company but be a student, a competitor, or already unsubscribed. Negative scores prevent false positives that waste sales time and damage your credibility with the sales team.
 - **Don't set static thresholds and forget them.** Scoring models drift as your ICP evolves and market conditions change. A model that was calibrated 6 months ago may be surfacing the wrong leads today. Review and recalibrate quarterly using actual conversion data.
 - **Don't build the model in isolation.** Sales and marketing must agree on MQL/SQL definitions. A scoring model that marketing builds without sales input leads to "bad MQLs" complaints and erodes trust. Co-create with sales leadership and review together monthly.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

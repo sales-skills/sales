@@ -12,6 +12,9 @@ Helps the user design and run employee advocacy programs — turning employees i
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -205,6 +208,8 @@ Based on the user's specific question:
 - **Don't expect instant scale.** Start with 20-50 enthusiastic employees, prove value, then expand. Company-wide launches have high initial sign-ups and low sustained engagement.
 - **Advocacy tools add cost on top of social management.** Sprout Advocacy requires a Sprout subscription + advocacy add-on. DSMN8 is $5-8/user/month. For a 200-person program on DSMN8, that's $1,000-1,600/month. Budget accordingly.
 - **Employees sharing identical content looks bad.** If 20 people post the same LinkedIn post with the same caption, it's obviously corporate. Use tools that generate personalized variations (DSMN8) or strongly encourage employees to edit captions.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

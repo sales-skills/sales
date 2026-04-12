@@ -12,6 +12,9 @@ Help the user enrich contacts and companies with verified data, clean stale CRM 
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need to do?**
@@ -168,6 +171,8 @@ For platform-specific credit economics, see the relevant platform skill (`/sales
 - **Don't ignore phone number credit costs.** Mobile number reveals are 5-10x more expensive than email reveals in most tools. Only reveal phone numbers for contacts your team will actually call — not the entire list.
 - **Don't set up auto-enrichment without a credit budget cap.** Auto-enrichment can burn through an entire month's credits in days if configured too broadly. Set a monthly cap and limit auto-enrichment to new records matching your ICP.
 - **Don't enrich contacts without checking regional compliance.** Enriching EU contacts without a lawful basis for processing (GDPR), or emailing US contacts without an unsubscribe link (CAN-SPAM), exposes you to legal risk. See the compliance checklist in Step 3 before enriching in bulk.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

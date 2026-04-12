@@ -11,6 +11,9 @@ Help the user design a system of reusable Qwilr templates that their whole sales
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What does your team sell?**
@@ -181,6 +184,8 @@ Recommend supporting assets to create alongside templates:
 - **Don't design for one deal type when the team handles multiple.** Ask how many distinct deal types exist before building templates. A single template for "SMB SaaS" and "Enterprise Financial Services" will serve neither well. But also don't over-segment — most teams need 2-4 templates, not 15.
 - **Don't forget mobile responsiveness.** Qwilr pages are web-based and will be viewed on phones and tablets. Avoid designs that depend on side-by-side layouts or wide tables that break on small screens. Test the template on mobile before rolling out.
 - **Don't create templates without a rollout plan.** A great template that reps don't know about or don't know how to use is wasted effort. Always include guidance on when to use each template and how to customize the variable sections.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

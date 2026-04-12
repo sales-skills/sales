@@ -13,6 +13,9 @@ Help the user with Mailgun (Sinch) platform questions — from sending transacti
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Mailgun do you need help with?**
@@ -258,6 +261,8 @@ Based on the user's specific question:
 3. **Domain Sending Keys can ONLY send messages — they cannot manage domains, routes, or webhooks.** If your application needs to create routes, manage domains, or configure webhooks, you must use your main API key. Domain Sending Keys are restricted to `/messages` endpoints for security isolation. Using a Domain Sending Key for other API calls will return 401 errors.
 4. **Dedicated IPs cost $59/mo each and need warmup — do not assume they are included.** Dedicated IPs are an add-on available on Scale and Enterprise plans. New dedicated IPs start with no reputation and must be warmed up gradually (start with low volume and increase over 2-4 weeks). Sending high volume on a cold dedicated IP will result in poor deliverability. For lower volumes, Mailgun's shared IP pools often deliver better results.
 5. **The Free plan is 100 emails per DAY (not month) — very limited for testing.** This is significantly more restrictive than it sounds for development and testing workflows. If you need to test bulk sending, webhook handling, or template rendering at any meaningful scale, you will need at least the Foundation plan ($35/mo for 50,000/mo). The daily limit resets at midnight UTC.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

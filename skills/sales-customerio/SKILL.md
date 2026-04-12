@@ -13,6 +13,9 @@ Help the user with Customer.io platform questions — from behavior-triggered jo
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Customer.io do you need help with?**
@@ -298,6 +301,8 @@ Based on the user's specific question:
 4. **In-app messages require Customer.io SDK integration in your application.** Unlike email or SMS which work without any client-side code, in-app messages need the Customer.io JavaScript SDK (web) or mobile SDK (iOS/Android/React Native/Flutter) installed and initialized in your app. This means engineering work to integrate the SDK, handle message rendering, and manage the user session. Budget development time for this — it is not a plug-and-play channel.
 
 5. **SMS requires a separate Twilio account and incurs separate Twilio charges.** Customer.io does not provide SMS infrastructure directly — it uses Twilio under the hood. You must create a Twilio account, purchase a phone number, and connect your Twilio credentials to Customer.io. SMS costs are billed by Twilio (not Customer.io) based on Twilio's per-message pricing. This adds billing complexity and means your total messaging cost is split across two vendors.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

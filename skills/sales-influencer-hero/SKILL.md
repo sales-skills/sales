@@ -14,6 +14,9 @@ Helps the user configure and use Influencer Hero — an all-in-one influencer ma
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -163,6 +166,8 @@ Based on the user's specific question, provide:
 - **UGC capture and reporting are Pro+ only.** The Standard plan covers core modules (search, outreach, CRM, affiliate, gifting) but UGC post capture and reporting/analytics dashboards require the Pro plan ($1,049/mo) or higher.
 - **Steep learning curve for small teams.** The platform is feature-rich, which means new users often feel overwhelmed. Start with one module (usually discovery + outreach), get comfortable, then expand to CRM, affiliate, and gifting.
 - **14-day free trial may not be enough.** Given the learning curve, 14 days is tight to evaluate all modules. Focus your trial on the 1-2 features most critical to your decision.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

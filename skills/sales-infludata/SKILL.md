@@ -12,6 +12,9 @@ Helps the user with influData platform questions — from AI-powered creator dis
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -224,6 +227,8 @@ Based on the user's specific question:
 - **Audience data can be slow.** Capterra reviewers note that unlocking audience demographic reports has gotten slower over time. Plan for this during time-sensitive campaign planning.
 - **Data accuracy varies by platform.** Some reviewers report occasional inaccuracies in audience data, particularly for smaller creators or newer platforms (Twitch, Snapchat). Cross-reference key data points with the creator's own analytics when possible.
 - **Lookalike builder is powerful but needs good seeds.** The AI Lookalike Builder requires up to 3 brands or 10 creators as input. If your seed profiles are too diverse, results will be scattered. Use seeds with similar audience profiles for best results.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

@@ -12,6 +12,9 @@ github: "https://github.com/aisdrapp"
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -150,6 +153,8 @@ For campaign optimization:
 - **Limited customization on pre-built playbooks.** You can't build complex branching logic or custom signal-based triggers on Explore/Grow. If you need that level of control, evaluate whether AiSDR's AI-first approach fits or if you need a traditional sequence tool.
 - **"Replacing your SDR" is the pitch — augmenting is usually the reality.** AiSDR handles the volume and research grunt work well. Complex deals, relationship building, and real-time objection handling still need humans.
 - **Salesforce and Pipedrive integration depth varies.** HubSpot is the most mature integration. Verify current Salesforce/Pipedrive sync capabilities before committing.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

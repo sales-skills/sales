@@ -13,6 +13,9 @@ Helps the user set up and get the most out of Afluencer — the micro-influencer
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -160,6 +163,8 @@ Based on the user's specific question:
 - **Creator quality classification may be inaccurate.** Some users report influencers being wrongly classified as "premium" when their metrics don't justify it. Always review a creator's actual social profiles before committing.
 - **No API.** There's no public API for programmatic access, bulk operations, or integration with CRM/BI tools.
 - **No content auto-detection.** Unlike Modash or CreatorIQ, Afluencer doesn't automatically detect when creators publish content. You'll need to manually track post completion.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

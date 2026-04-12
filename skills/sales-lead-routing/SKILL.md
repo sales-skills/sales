@@ -12,6 +12,9 @@ Help the user design and implement lead routing — from choosing a routing mode
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What's your team structure?**
@@ -182,6 +185,8 @@ What happens when the assigned rep can't respond in time:
 - **Don't route without enrichment.** If leads arrive with just an email (e.g., from a form), enrich with company data before routing. Without company/title data, territory and score-based routing can't work. Use `/sales-enrich` to fill in gaps before routing.
 - **Don't ignore speed-to-lead.** A perfect routing model with slow response is worse than a simple round-robin with fast response. If you can only optimize one thing, optimize speed-to-lead. The data is clear: 5 minutes vs 30 minutes is an 8x difference in qualification.
 - **Don't overcomplicate before simple works.** Start with round-robin. Only add territory or score-based routing when you have data showing it improves conversion. Complexity increases maintenance burden and failure modes.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

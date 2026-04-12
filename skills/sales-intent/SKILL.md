@@ -12,6 +12,9 @@ Help the user interpret buying signals, score leads, and prioritize accounts for
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What signals are you working with?**
@@ -269,6 +272,8 @@ Use Apollo Workflows (Professional+ plan) to automate:
 - **Don't act on stale signals.** Intent data older than 30 days is context, not a trigger. A funding round from 6 months ago is not a reason to reach out "about your recent raise." Check signal dates.
 - **Don't ignore ICP fit because a signal is strong.** A strong buying signal at a company that's too small, in the wrong industry, or in a geography you can't serve is still a bad prospect. Signal + fit = action. Signal alone ≠ action.
 - **Don't automate outreach for high-value signals.** For direct intent, competitive evaluation, and champion job changes, manual personalized outreach dramatically outperforms automated sequences. Reserve automation for lower-strength signals (content downloads, website visits).
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

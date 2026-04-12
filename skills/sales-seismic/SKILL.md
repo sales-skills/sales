@@ -13,6 +13,9 @@ Help the user with Seismic platform questions — from content management and Li
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Seismic do you need help with?**
@@ -207,6 +210,8 @@ Based on the user's specific question:
 - **Don't recommend Seismic for small teams or startups.** Seismic is enterprise-focused with $20K+ annual contracts and 4-month onboarding. For teams under 50 reps, suggest lighter alternatives (Guru, Google Drive with structure, Notion).
 - **Don't forget that Seismic Learning was formerly Lessonly.** Older documentation, blog posts, and API references may still use the Lessonly name. The Learning API endpoint may differ from the main Seismic API.
 - **Don't overlook the Seismic-Highspot merger.** Announced in late 2025, this merger may significantly change the platform's feature set, pricing, and integrations. Flag any Seismic recommendations as potentially affected by this consolidation.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

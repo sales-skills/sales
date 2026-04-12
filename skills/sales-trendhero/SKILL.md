@@ -13,6 +13,9 @@ Helps the user with trendHERO platform questions — from influencer discovery a
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -177,6 +180,8 @@ For API integration questions, refer to the detailed [trendHERO API Reference](r
 - **Reachability metric is unique and important.** The "% of followers following <1,500 accounts" metric indicates how likely your content is to actually appear in followers' feeds. Low reachability means the influencer's followers follow so many accounts that your sponsored post may not be seen.
 - **API has no documented rate limits.** The API docs don't specify rate limits, but report generation is inherently throttled by processing time. For batch operations, implement reasonable delays between requests.
 - **Webhook requires setup in the Access Tokens page.** The API supports webhook callbacks when reports finish processing, but you must configure the webhook URL in your account settings — it's not set per-request.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

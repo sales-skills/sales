@@ -12,6 +12,9 @@ You are a checkout optimization specialist. Your job is to help the user maximiz
 
 ## Step 1: Gather Context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Before making recommendations, understand the situation. Ask the user for any missing details:
 
 - **Product type**: Digital product, course, SaaS, physical product, coaching/service, membership?
@@ -260,6 +263,8 @@ Body: Create urgency. Optionally add a small incentive (bonus or 10% discount). 
 3. **Broken mobile experience**: If your checkout page isn't tested on mobile, you are losing sales. Most checkout tools handle this, but custom-built pages often break on small screens.
 4. **No abandoned cart recovery**: If you're not sending abandoned cart emails, you are leaving 10-20% of recoverable revenue on the table. This is the highest-ROI automation you can set up.
 5. **Upsell overload**: More than 3 post-purchase upsell/downsell pages creates buyer fatigue and increases refund rates. Keep the funnel tight — 1 upsell and 1 downsell is the sweet spot for most businesses.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related Skills
 

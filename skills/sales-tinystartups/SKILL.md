@@ -13,6 +13,9 @@ Helps the user submit to, optimize listings on, and get the most from Tiny Start
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -157,6 +160,8 @@ Tiny Startups fits into **Phase 3 — Free editorial queues** since it's human-c
 - **Featured placement pricing is not public.** If you want promoted visibility, you'll need to inquire directly.
 - **Income reports are optional but powerful.** Sharing MRR data is a strong credibility signal in this community. If you're comfortable sharing, it significantly boosts your profile.
 - **Associated with Buy Sell Startups.** Jaisal also runs buysellstartups.com — if you're ever considering selling your startup, you're already in the ecosystem.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

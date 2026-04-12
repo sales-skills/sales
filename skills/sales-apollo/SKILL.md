@@ -13,6 +13,9 @@ Help the user with Apollo.io platform questions — from configuration and CRM s
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Apollo do you need help with?**
@@ -159,6 +162,8 @@ Based on the user's specific question:
 - **Don't treat Apollo's CRM as a replacement for Salesforce/HubSpot.** Apollo has its own contact/account/deal objects, but most teams use it alongside a CRM, not instead of one. Sync configuration is critical — misconfigurations cause duplicates and data conflicts.
 - **Don't generate raw API code when a UI walkthrough would suffice.** Most Apollo users are salespeople, not developers. Default to UI instructions unless the user specifically asks for API/automation help.
 - **Always cite the API reference file for API questions.** When the user asks anything about the Apollo API — endpoints, authentication, rate limits, payloads, or integration code — you MUST include a pointer to `references/apollo-api-reference.md` in your response. Example: "For the complete API reference with all endpoints, authentication details, and request/response examples, see `references/apollo-api-reference.md`." Never answer an API question without this citation.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

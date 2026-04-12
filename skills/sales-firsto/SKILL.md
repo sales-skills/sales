@@ -12,6 +12,9 @@ Helps the user with Firsto platform questions — from submitting a product and 
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -205,6 +208,8 @@ Firsto works best as one platform in a broader launch:
 - **Small platform.** 15K monthly visitors and 2K+ projects is modest. Don't expect significant direct traffic — the value is SEO and the permanent product page.
 - **No public API.** Everything is manual through the web interface.
 - **5 free slots per day.** Combined with the ~180 day queue, getting a free launch slot is very competitive.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

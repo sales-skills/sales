@@ -13,6 +13,9 @@ Helps the user evaluate and work with Famesters — the global full-cycle influe
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -189,6 +192,8 @@ Based on the user's specific question:
 - **Creator database size not disclosed.** Unlike platforms that publish database sizes (Modash 350M+, Cloutboost 1.5M+), Famesters doesn't disclose how many creators they source from. The BuzzGuru platform powers discovery, but the exact coverage isn't public.
 - **Multi-vertical breadth vs depth tradeoff.** Famesters covers gaming, fintech, iGaming, and apps — broader than gaming-only Cloutboost or TikTok-only HoM. This breadth may mean less niche depth per vertical compared to specialized agencies.
 - **Cyprus-headquartered.** While they serve global clients, timezone differences may affect response times for teams in North/South America or Asia-Pacific.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

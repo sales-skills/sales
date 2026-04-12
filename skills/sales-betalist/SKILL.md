@@ -14,6 +14,9 @@ Helps with everything related to using BetaList — a pre-launch startup discove
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What are you trying to do on BetaList?**
@@ -196,6 +199,8 @@ Since BetaList doesn't provide rejection reasons, work through this checklist:
 - **$129 is non-refundable if accepted.** Only rejected Priority submissions get refunds. Once featured, no refunds regardless of results.
 - **One shot per submission.** Each submission is reviewed independently. If rejected, improve and resubmit as a new submission.
 - **Exclusivity preference.** BetaList favors products that haven't launched on other major platforms. If you've already done a Product Hunt launch, your chances decrease.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

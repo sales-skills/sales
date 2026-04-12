@@ -13,6 +13,9 @@ Help the user with Hunter.io platform questions — from finding and verifying e
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Hunter.io do you need help with?**
@@ -171,6 +174,8 @@ Based on the user's specific question:
 - **Don't confuse credits across operations.** Domain Search, Email Finder, and Email Verifier all consume from the same credit pool. A workflow of "search domain → find emails → verify all" consumes credits at each step. Plan your credit budget for the full workflow, not just one step.
 - **Don't assume Campaigns features are available on all plans.** Campaigns require Starter plan or above (not available on Free). Review queue is Growth+ only. Sender limits vary by plan (3/15/40/unlimited). Check the user's plan before recommending features.
 - **Don't use Hunter as a standalone outbound platform for high-volume.** Hunter excels at email finding and verification. Its Campaigns feature is best for low-to-medium volume (under 500 emails/day). For high-volume outbound, use Hunter for finding/verifying and export to a dedicated sending tool.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

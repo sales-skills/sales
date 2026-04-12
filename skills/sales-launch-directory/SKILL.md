@@ -12,6 +12,9 @@ Helps the user plan and execute a coordinated launch across multiple startup dir
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What are you launching?**
@@ -303,6 +306,8 @@ For each directory submission, track:
 - **"Dofollow" claims vary.** Some directories report dofollow but individual listings may vary. Always verify after your listing goes live by inspecting the HTML.
 - **Editorial queues are unpredictable.** "Up to 2 months" is a documented worst case, not a guarantee. Some platforms review faster, some slower.
 - **Small platforms have small traffic.** Most directories in this list have modest traffic (5K-25K/mo). Set realistic expectations — directory submissions are a long-term SEO play, not an overnight traffic source.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

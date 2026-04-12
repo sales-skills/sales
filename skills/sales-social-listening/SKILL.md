@@ -12,6 +12,9 @@ Helps the user plan and execute social listening programs — from choosing the 
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -239,6 +242,8 @@ Based on the user's specific question:
 - **Free tools have severe limitations.** Google Alerts and free tiers miss most social mentions, have no sentiment analysis, and provide no historical data. They're fine for awareness, not for strategic intelligence.
 - **Social platform data access is shrinking.** X/Twitter, Reddit, and Meta regularly restrict API access. Tools that are official data partners (Meltwater is a Reddit data partner) have more reliable access. Check which platforms your tool can actually monitor.
 - **ROI is hard to prove directly.** Social listening ROI is often indirect (faster crisis response, better content strategy, competitive awareness). Don't promise direct revenue attribution from listening alone.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

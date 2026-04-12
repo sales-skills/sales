@@ -13,6 +13,9 @@ Help the user with Skrapp.io platform questions — from Email Finder and Lead F
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Skrapp.io do you need help with?**
@@ -222,6 +225,8 @@ Based on the user's specific question:
 8. **Email Verifier confirms the mailbox exists but does not guarantee inbox delivery.** A "valid" verification result means the email address exists and the mailbox accepts mail — it does not mean your email will land in the inbox rather than spam. Deliverability depends on your sender reputation, email content, authentication (SPF/DKIM/DMARC), and sending volume. For deliverability strategy beyond verification, use `/sales-deliverability`. Accept-all domains are particularly tricky — verification will return "accept-all" status even for non-existent mailboxes at those domains.
 
 9. **SSO (Single Sign-On) is only available on Enterprise plan.** If your organization requires SSO for security compliance, you must be on the Enterprise plan (€262/mo). Professional plan teams manage access through individual email/password accounts. This can be a blocker for organizations with strict IT security policies that mandate SSO for all SaaS tools.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

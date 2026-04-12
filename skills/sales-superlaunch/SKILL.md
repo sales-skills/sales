@@ -13,6 +13,9 @@ Helps the user submit to, optimize listings on, and get the most from Super Laun
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -158,6 +161,8 @@ Super Launch fits into **Phase 1 — Instant listings** as a free, no-queue subm
 - **7-day front page is nice but limited.** After 7 days, your product rotates off the homepage. You remain in the directory but visibility drops significantly.
 - **10 ad slots per month.** If all 10 slots are taken, you can't purchase advertising until the next month.
 - **No editorial queue — low barrier.** This means less curation, so the quality of co-listed products varies more than on editorial platforms.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

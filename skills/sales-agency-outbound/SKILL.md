@@ -12,6 +12,9 @@ Help the user architect, scale, and operate outbound infrastructure for a lead g
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **How many clients do you serve (or plan to)?**
@@ -241,6 +244,8 @@ Track these internally to spot issues before clients notice:
 - **Don't skip per-client warmup.** New domains need their own warmup regardless of mailbox age. Even if you're reusing an established mailbox on a new domain, the domain itself has zero reputation. Follow the full warmup schedule.
 - **Don't report vanity metrics.** Report meetings booked and pipeline generated, not opens and clicks. Clients who focus on opens will micromanage subject lines instead of trusting the process. Set expectations during onboarding about which metrics matter.
 - **Don't use a single Zapier account for all clients.** Billing, rate limits, and error handling cascade across all zaps in one account. If one client's integration breaks and triggers retries, it can exhaust your Zapier task quota and break every other client's integration. Use separate Zapier accounts or a dedicated integration layer.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

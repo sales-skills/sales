@@ -12,6 +12,9 @@ Helps the user with ProductBurst platform questions — from launching a product
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -167,6 +170,8 @@ If you're pre-build:
 - **Backlink DR is modest.** DR46 is lower than Product Hunt (DR91), SideProjectors (DR69), MicroLaunch (DR59), and LaunchingNext (DR51). The backlink has value but shouldn't be the primary reason to list.
 - **Idea-stage listings may dilute signal.** Because ideas without working products are allowed, the platform mixes validated products with concepts. Buyers/users may be skeptical.
 - **No contact email publicly available.** If you need support, you may need to use the platform's built-in messaging or social channels.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

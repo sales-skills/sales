@@ -13,6 +13,9 @@ Help the user create, configure, and optimize outbound sequences in Apollo.io �
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -220,6 +223,8 @@ New mailboxes (or mailboxes that haven't sent outbound before) must be warmed up
 - **Don't use Apollo's "Auto" sequence type for multi-channel cadences.** Auto sequences only work for email steps. If the cadence includes calls or LinkedIn touches, use "Manual" sequence type — otherwise those steps are skipped entirely.
 - **Don't evaluate A/B tests too early.** Claude will analyze test results after 30-40 sends. You need at least 100 sends per variant for statistically meaningful results. Premature conclusions lead to wrong optimizations.
 - **Don't ignore the Deliverability Command Center.** Apollo has a built-in deliverability monitoring dashboard that most users never check. It shows domain health, bounce rates, spam complaints, and sending patterns. Review it weekly.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

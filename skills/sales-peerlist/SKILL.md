@@ -14,6 +14,9 @@ Helps the user launch projects, optimize profiles, and get the most from Peerlis
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -165,6 +168,8 @@ Peerlist fits into **Phase 1 — Instant listings** since all projects get featu
 - **Profile completion is gated.** You need at least 70% profile completion to publish and be discoverable. This takes time — connect GitHub, add work history, verify credentials.
 - **Tech-focused audience.** If your product targets non-technical users, Peerlist's audience won't be the right fit. The community is developers, designers, and technical PMs.
 - **Ads pricing is not public.** The advertising platform exists but pricing isn't listed — you need to contact Peerlist directly.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

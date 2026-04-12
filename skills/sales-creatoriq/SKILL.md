@@ -13,6 +13,9 @@ Helps the user set up and get the most out of CreatorIQ — the enterprise opera
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -168,6 +171,8 @@ Based on the user's specific question:
 - **Payment error notifications are inconsistent.** G2 reviews mention that CreatorIQ Pay doesn't always proactively notify when a payment fails or is delayed. Creators may follow up about missing payments before you know there's an issue. Monitor payment status dashboards regularly.
 - **Platform can feel slow and overwhelming.** Enterprise-grade features come with enterprise-grade complexity. Navigation requires multiple clicks and separate windows. New users report a steep learning curve — invest in onboarding and training.
 - **ExchangeIQ API key requires manual provisioning.** You can't generate API keys self-serve. Contact support@creatoriq.com or your CreatorIQ account rep to request API access.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

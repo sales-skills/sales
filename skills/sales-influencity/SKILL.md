@@ -13,6 +13,9 @@ Helps the user set up and optimize Influencity for influencer discovery, relatio
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -222,6 +225,8 @@ Based on the user's specific question:
 - **API is not publicly documented.** Even on Business/Enterprise plans, API access requires contacting support. Don't assume you can build integrations quickly.
 - **Maintenance windows reported.** Some users report occasional extended maintenance periods that interrupt workflow. If running time-sensitive campaigns, build in buffer time.
 - **Pricing varies across sources.** Published pricing differs between review sites. Always verify current pricing directly at influencity.com/pricing.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

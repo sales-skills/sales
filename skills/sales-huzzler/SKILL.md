@@ -12,6 +12,9 @@ Helps the user with Huzzler platform questions — from submitting a product and
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -195,6 +198,8 @@ Huzzler works best as one platform in a broader launch:
 - **AI-free policy is strict.** Don't use AI-generated descriptions or spam. The community actively moderates for AI content.
 - **No public API.** Everything is manual through the web interface.
 - **Advertising uses a credit system.** Pricing adjusts based on platform impressions — $34 promoted product, but credit costs may change.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

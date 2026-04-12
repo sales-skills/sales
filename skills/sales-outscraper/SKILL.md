@@ -13,6 +13,9 @@ Help the user with Outscraper platform questions — from Google Maps scraping a
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Outscraper do you need help with?**
@@ -317,6 +320,8 @@ Based on the user's specific question:
 3. **Email validation and contact enrichment are separate modules with separate costs — don't assume emails from Contacts & Leads are pre-validated.** The `/contacts-and-leads` endpoint finds emails but does not verify deliverability. Always run found emails through `/email-validator` before outreach to avoid bounces and protect your sender reputation.
 4. **Rate limits are soft at ~20 QPS but batching is the real throughput lever — use the 25-query batch limit.** Instead of sending 25 individual requests, batch them into a single request with an array of up to 25 queries. This is more efficient and avoids hitting rate limits. For sustained high-volume usage, contact Outscraper to increase your QPS limit.
 5. **Review scraping costs scale with volume — set reviewsLimit to control spend.** A single business may have tens of thousands of reviews. Without a `reviewsLimit` parameter, you could extract (and pay for) all of them. Always set a sensible limit unless you specifically need the full review history.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

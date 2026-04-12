@@ -15,6 +15,9 @@ Help the user with 6sense platform questions — Signalverse Intent Data, Predic
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 **What area of 6sense do you need help with?**
 - a) Signalverse Intent Data — understanding buying signals and topics
 - b) Predictive Analytics / 6AI Scoring — account scoring and buying stage predictions
@@ -245,6 +248,8 @@ Typical range: $50K-$200K+/year. Median buyer (via Vendr): ~$55K/year. Implement
 - **Intent data requires tuning**: Out-of-the-box intent topics are broad and noisy. You must configure relevant topics and regularly refine them based on conversion data. Untuned intent data generates false positives that waste sales time.
 - **API docs behind auth wall**: 6sense's support documentation (support.6sense.com) requires authentication to view actual content. The API endpoints and schemas documented here are best-effort from public sources — verify against your org's API portal for exact specifications.
 - **AI Email Agents are a separate add-on**: Conversational Email / AI Email Agents are not included in all paid plans. They're a distinct product with separate pricing. Don't assume they're available to all 6sense customers.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

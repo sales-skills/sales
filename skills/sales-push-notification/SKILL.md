@@ -12,6 +12,9 @@ Help the user with push notification strategy — from opt-in optimization and m
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -237,6 +240,8 @@ iOS requires explicit user permission for push. Android auto-enables but users c
 3. **Push tokens expire** — if a user doesn't open your app for months, their push token may become invalid. Monitor delivery rates and clean stale tokens. Don't count push-enabled users who haven't opened the app in 90+ days.
 4. **Web push has low opt-in** — browser push permission prompts are aggressively blocked by users (5-15% opt-in). Don't rely on web push as a primary channel. Use it as a supplement to email.
 5. **Rich push requires separate assets** — iOS and Android handle rich push differently (different image sizes, aspect ratios, and action button limits). Test rich push on both platforms before launching.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

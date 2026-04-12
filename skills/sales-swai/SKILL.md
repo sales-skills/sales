@@ -12,6 +12,9 @@ Helps the user with SWAI.ai platform questions — from AI campaign setup and la
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of SWAI do you need help with?**
@@ -168,6 +171,8 @@ Based on the user's specific question:
 - **Landing page builder was recently rebuilt.** If the user references third-party landing page issues or old workflows, note that SWAI now generates pages natively with full customization.
 - **No public API documented.** As of research, SWAI does not have public API documentation. Users needing programmatic access should contact SWAI support.
 - **Integrations are limited compared to mature platforms.** SWAI integrates with Google, Facebook, Cal.com, and Rewardful — but doesn't have native CRM connectors (Salesforce, HubSpot) or Zapier. Users needing complex integrations may need to combine SWAI with other tools.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

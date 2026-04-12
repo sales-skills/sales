@@ -13,6 +13,9 @@ Help the user with Perform[cb] platform questions — from Outcome Engine campai
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What's your role with Perform[cb]?**
@@ -177,6 +180,8 @@ Based on the user's role and question, provide step-by-step guidance.
 4. **API docs require login** — the full API reference at login.performcb.com is behind authentication. You must have an active account to access complete endpoint documentation.
 5. **Lead rating affects your effective payout** — if a marketer uses value-based payouts, your actual earnings per lead depend on the quality score your leads receive, not just the listed payout rate.
 6. **$50 minimum payout** — earnings below $50 roll over to the next payment cycle. Factor this into your testing budget.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related Skills
 

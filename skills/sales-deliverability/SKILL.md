@@ -12,6 +12,9 @@ Help the user set up, diagnose, and optimize email deliverability — from domai
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What's your situation?**
@@ -170,6 +173,8 @@ If your domain reputation is damaged:
 - **Don't send from your primary domain.** Use a dedicated outbound domain (e.g., `outbound.yourcompany.com` or `yourcompanymail.com`). If your outbound domain gets blacklisted, your primary domain (and all company email) is protected.
 - **Don't ignore bounces.** A bounce rate above 3% signals to email providers that you're sending to bad addresses. This damages reputation quickly. Pause the campaign, clean the list, and re-verify before resuming.
 - **Don't use purchased or scraped lists.** These lists have high bounce rates, spam traps, and unengaged recipients. They will destroy your sender reputation within days. Always build lists from legitimate data providers and verify emails before sending.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

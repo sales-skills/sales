@@ -13,6 +13,9 @@ Help the user with SendGrid (Twilio) platform questions — from transactional e
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of SendGrid do you need help with?**
@@ -271,6 +274,8 @@ Based on the user's specific question:
 7. **Shared IP reputation can tank your deliverability with no warning.** On free/Essentials plans, you share IPs with other senders. If bad actors on the same pool trigger Spamhaus blocklists or Microsoft blocks, your email gets caught too — even with 99% sender score and perfect authentication. SendGrid's official position is that "blocklists are a natural part of sending through shared IP Pools." If you're seeing unexplained deliverability drops, check your IP against blocklists (mxtoolbox.com) and consider upgrading to a dedicated IP (Pro plan).
 8. **The Node.js SDK doesn't pool HTTP connections — bulk sends cause socket exhaustion.** If you fire many `sgMail.send()` calls concurrently, you'll hit `EMFILE` errors (file descriptor limit). The SDK creates a new connection per request. Use sequential sending (`for...of` with `await`), a concurrency limiter (`p-limit` set to 2-10), or personalizations (up to 1000 recipients per single request) to reduce connection count.
 9. **Sending all messages in a single SDK array call can delay delivery by hours.** When you pass an array to `sgMail.send()`, SendGrid queues them server-side. For time-sensitive sends, use personalizations (same content, different recipients in one request) or send individual calls with concurrency control rather than one massive batch.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

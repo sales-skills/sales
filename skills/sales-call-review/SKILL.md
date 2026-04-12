@@ -12,6 +12,9 @@ Help the user review a sales call — score it against best practices, identify 
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What type of call was this?**
@@ -203,6 +206,8 @@ If a follow-up call was booked, draft a proposed agenda:
 - **Don't apply MEDDPICC scoring to a first discovery call.** MEDDPICC elements like Paper Process and Competition are rarely uncovered in a first meeting. Score only the elements that were reasonable to address at this deal stage.
 - **Don't ignore talk-to-listen ratio.** This is one of the most objective and actionable metrics. If the user provides a transcript, estimate the ratio. If they describe the call, ask about it directly.
 - **Don't treat the scorecard as a final verdict.** A single call is a snapshot. Frame scores as "on this call" not "this rep is a 2/5 at discovery." Context matters — a rough call with a hostile prospect is different from a rough call with a warm lead.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Examples
 

@@ -14,6 +14,9 @@ Helps the user submit to, optimize listings on, and get the most from DevHunt �
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -159,6 +162,8 @@ DevHunt fits into **Phase 1 — Instant listings** since there's no editorial qu
 - **$49 featured details are sparse.** The exact benefits of the $49 featured placement aren't well documented. Inquire before paying.
 - **Open source means transparent.** The platform's code is public. This builds trust but also means limitations are visible.
 - **Weekly rotation means timing matters.** Products compete within their launch week. Launching during a quiet week gets more visibility than launching alongside many popular tools.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

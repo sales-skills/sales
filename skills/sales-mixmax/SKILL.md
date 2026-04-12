@@ -12,6 +12,9 @@ Help the user with Mixmax platform questions — from sequences and email tracki
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Mixmax do you need help with?**
@@ -206,6 +209,8 @@ Based on the user's specific question:
 - **The Contacts API is deprecated.** Don't recommend building integrations against the `/contacts` endpoints. Use Salesforce or HubSpot as the contact source of truth instead. The contacts endpoints may be removed in a future API version.
 - **API rate limits are undocumented.** Mixmax does not publish official rate limits. The API is described as "optimized for lightweight, real-time interactions" — it is NOT suitable for bulk exports or high-volume sync. Recommend building with conservative backoff and small batch sizes.
 - **One-click meetings require the recipient's email client to render rich HTML.** If the recipient uses a plain-text email client or has images disabled, one-click meeting proposals won't render correctly. They'll fall back to a scheduling link, but the one-click experience is lost.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

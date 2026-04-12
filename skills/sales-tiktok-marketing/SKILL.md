@@ -13,6 +13,9 @@ Helps the user plan and execute TikTok marketing — from organic growth and con
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -207,6 +210,8 @@ Based on the user's specific question:
 - **Business vs Creator account tradeoff.** Business accounts get ads and analytics but lose access to some trending sounds and effects. Many brands run a Creator account for organic and a separate Business account for ads.
 - **Don't overproduce content.** Polished, studio-quality content typically underperforms native, raw, phone-shot content on TikTok. UGC-style beats brand-style by 2-3x on engagement.
 - **Vanity metrics mislead.** High view counts and follower growth don't equal business results. Track downstream metrics (website visits, add-to-carts, purchases, app installs) alongside TikTok metrics.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

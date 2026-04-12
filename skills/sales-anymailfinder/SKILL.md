@@ -13,6 +13,9 @@ Help the user with Anymail Finder platform questions — from Email Finder (by p
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Anymail Finder do you need help with?**
@@ -235,6 +238,8 @@ Based on the user's specific question:
 8. **Chrome Extension requires an active login to anymailfinder.com in the same browser.** The extension will not work if you are logged out of the Anymail Finder website. If the extension stops finding emails, check that your session has not expired. Credits are deducted from your account the same as API usage.
 
 9. **Credit accumulation is capped at 2x your plan size.** Unused credits roll over month to month, but only up to twice your monthly allocation. For example, the Standard plan (1,000 credits/mo) can accumulate a maximum of 2,000 credits. Any credits beyond the cap are forfeited. If you consistently under-use your plan, consider downgrading rather than assuming credits will bank indefinitely.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

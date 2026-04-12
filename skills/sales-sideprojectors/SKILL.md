@@ -12,6 +12,9 @@ Helps the user with SideProjectors platform questions — from listing a side pr
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -193,6 +196,8 @@ If you're listing to showcase (not sell):
 - **Premium features exist but pricing is opaque.** Enhanced visibility, priority support, and advanced analytics are available as premium features, but pricing isn't publicly listed. Contact hello@sideprojectors.com for current rates before assuming it's entirely free.
 - **Editorial review has no guaranteed timeline.** Submissions are reviewed by the team, but there's no documented SLA. Could be hours, could be days.
 - **Free means no support infrastructure.** No dispute resolution, no refund mechanism, no transaction guarantees. You're on your own for the transaction itself.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

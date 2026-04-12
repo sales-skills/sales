@@ -13,6 +13,9 @@ Help the user with ZoomInfo platform questions — SalesOS (prospecting, enrichm
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **Which ZoomInfo product are you working with?**
@@ -255,6 +258,8 @@ Based on the user's goal, provide step-by-step instructions:
 4. **Copilot is Elite-only** — AI features (next-best-action, deal predictions, auto-research) require the Elite plan (~$39,995/yr). Don't recommend Copilot features to users who may be on Professional or Advanced plans.
 
 5. **WebSights identifies companies, not individuals** — IP-to-company matching reveals the organization, not the specific person. Users sometimes expect individual visitor identification. Pair WebSights with Contact Search to find the right people at identified companies.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

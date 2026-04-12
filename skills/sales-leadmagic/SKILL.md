@@ -13,6 +13,9 @@ Help the user with LeadMagic platform questions — from email/mobile finding an
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of LeadMagic do you need help with?**
@@ -194,6 +197,8 @@ When answering, always:
 4. **Field naming is inconsistent — mix of snake_case and camelCase.** Different endpoints return fields in different conventions. When parsing responses programmatically, don't assume consistent naming. Check the OpenAPI spec or test each endpoint.
 
 5. **Rate limit on Profile Search is 300 req/min.** Most endpoints don't document rate limits publicly, but Profile Search is capped at 300 requests per minute. For bulk enrichment, throttle accordingly or use the Employee Finder endpoint for discovery.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

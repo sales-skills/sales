@@ -13,6 +13,9 @@ Helps with everything related to using Indie Hackers — the largest community o
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What are you trying to do on Indie Hackers?**
@@ -166,6 +169,8 @@ Based on the user's situation:
 - **No public API.** You can't programmatically post or pull data from IH. Third-party scrapers exist (Apify, Browse AI) but violate ToS.
 - **Advertising pricing isn't public.** Contact partnerships@indiehackers.com for packages. The audience (165K+ entrepreneurs) is highly targeted but niche.
 - **IH is indie again.** After being owned by Stripe (2017-2023), Courtland and Channing Allen bought it back. The platform may evolve faster now but with fewer resources.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

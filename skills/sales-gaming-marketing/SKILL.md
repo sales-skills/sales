@@ -13,6 +13,9 @@ Helps the user plan and execute influencer marketing campaigns specifically for 
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -211,6 +214,8 @@ Based on the user's specific question:
 - **Steam algorithm amplifies external traffic.** Steam's discovery algorithm rewards games that drive traffic from external sources. Influencer campaigns can trigger a virtuous cycle where external traffic → Steam algorithm boost → organic discovery.
 - **Nano creator volume beats single macro creator.** For indie games, 50 nano creators with game keys ($0 cost) often generate more total coverage and wishlists than a single $5K macro creator. Cast wide at the nano tier.
 - **Keymailer and Woovit are free for key distribution.** Don't pay for nano-tier outreach. Use game key platforms where creators actively opt in to receive games in your genre.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

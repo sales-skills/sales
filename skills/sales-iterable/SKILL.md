@@ -13,6 +13,9 @@ Help the user with Iterable platform questions — from Studio journey creation 
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area do you need help with?**
@@ -238,6 +241,8 @@ As of March 2026 — verify current pricing with Iterable sales:
 3. **API rate limits vary by endpoint and are per-project.** Bulk track events is 10 req/s, exports are 4 req/min. Multiple API consumers on the same project share the per-project rate limit. Implement exponential backoff for 429 responses.
 4. **Smart Ingest syncs are not real-time.** The fastest Smart Ingest sync interval is 15 minutes. For real-time data, use the REST API (`/api/users/update`, `/api/events/track`) instead. Smart Ingest is best for periodic warehouse syncs, not event streaming.
 5. **In-app messages require SDK integration.** Unlike email or push, in-app messages, Mobile Inbox, and Embedded Messages require the Iterable SDK installed in your app. They won't work if you're only using the REST API for server-side messaging.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

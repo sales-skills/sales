@@ -12,6 +12,9 @@ Helps the user with Modash platform questions — from creator discovery and aud
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -198,6 +201,8 @@ Based on the user's specific question:
 - **Non-opted-in creators may not respond.** Unlike marketplace platforms where creators sign up to be contacted, Modash lists all public profiles. Some creators aren't expecting brand outreach and response rates may be lower than opt-in platforms.
 - **API pricing is separate from platform.** The Discovery API starts at $16,200/yr and the Raw API at $10,000/yr — these are on top of your platform subscription. Budget accordingly if you need programmatic access.
 - **Usage-based pricing can surprise.** Each plan has base limits for searches, tracked creators, and emails. Monitor your usage to avoid unexpected overage charges, especially during large discovery campaigns.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

@@ -13,6 +13,9 @@ Helps the user submit to, optimize listings on, and get the most from StartupBas
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -169,6 +172,8 @@ StartupBase fits into **Phase 3 — Free editorial queues** in a multi-directory
 - **First-time submissions only.** If your product was previously featured on StartupBase, you cannot resubmit it. This differs from platforms like Uneed that allow relaunches.
 - **Premium pricing isn't public.** The paid featured option exists but pricing isn't listed. Contact support for a quote.
 - **Newsletter signup required on your site.** StartupBase requires your website to have a newsletter signup mechanism. Products without one may be rejected.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

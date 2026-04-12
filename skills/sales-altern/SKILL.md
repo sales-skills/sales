@@ -14,6 +14,9 @@ Helps with everything related to using Altern — a curated directory of 10,000+
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What are you trying to do on Altern?**
@@ -165,6 +168,8 @@ Based on the user's situation:
 - **AI-only directory.** Non-AI products won't be accepted. If your tool has AI features but isn't primarily AI, emphasize the AI angle in your submission.
 - **Traffic is modest.** ~5-28K monthly visits depending on the source. Don't expect a traffic spike — Altern's value is the dofollow backlink, alternatives pages, and newsletter exposure.
 - **Alternatives pages are algorithmic.** You can't choose which alternatives pages you appear on — it's based on your category and the editorial team's curation.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

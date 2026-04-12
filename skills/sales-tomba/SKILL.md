@@ -13,6 +13,9 @@ Help the user with Tomba.io platform questions — from domain search and email 
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Tomba do you need help with?**
@@ -237,6 +240,8 @@ Based on the user's specific question, provide:
 - **Don't waste credits on unfiltered domain searches.** A domain search on a large company can return thousands of results. Use department, seniority, and country filters to narrow to decision-makers you'll actually contact. Each search costs credits regardless of how many results you use.
 - **Don't forget about webhook callbacks for bulk jobs.** Bulk operations are asynchronous — the API returns immediately but processing continues in background. Use the `webhook_url` parameter to get notified when done instead of polling. Polling wastes API calls and may hit rate limits.
 - **Don't assume all plans include the same features.** Webhooks require Pro plan or above. Full domain search result downloads are plan-gated. Check your plan's limits before building workflows that depend on these features.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

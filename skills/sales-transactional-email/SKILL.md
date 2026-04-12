@@ -12,6 +12,9 @@ Help the user with transactional/triggered email — from provider selection and
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What type of transactional email do you need help with?**
@@ -233,6 +236,8 @@ Ask the user:
 3. **SMTP is not real-time** — SMTP queues add latency. For time-sensitive emails (2FA codes, password resets), use the REST API for faster delivery.
 4. **Webhooks can fail silently** — if your webhook endpoint is down, you'll miss delivery/bounce events. Implement webhook logging and alerting.
 5. **Template rendering varies by client** — Outlook uses Word's rendering engine. Always test templates in Litmus or Email on Acid, especially for layout-heavy designs.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

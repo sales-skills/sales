@@ -12,6 +12,9 @@ Help the user design and manage loyalty programs — from strategy and structure
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -183,6 +186,8 @@ Ask the user:
 3. **Don't forget expiration communication** — if points expire, you must warn members before expiration (30 days, 7 days, 1 day). Surprise expiration creates angry customers.
 4. **Don't discount your way to losses** — if your effective discount rate exceeds your margin, the program loses money. Model the economics before launch (typical target: 5-10% effective discount).
 5. **Don't neglect non-purchase engagement** — the best loyalty programs reward reviews, referrals, social engagement, and account actions — not just purchases. This keeps members engaged between purchases.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

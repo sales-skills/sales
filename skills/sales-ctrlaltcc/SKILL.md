@@ -12,6 +12,9 @@ Helps the user with CtrlAlt.cc platform questions — from submitting a startup 
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -172,6 +175,8 @@ CtrlAlt.cc works best as one platform in a broader launch. Use `/sales-launch-di
 - **WordPress/Elementor stack.** The platform is functional but not as polished or feature-rich as purpose-built launch platforms. Limited analytics for makers.
 - **Newsletter reach unknown.** "Product of the Week" exists but subscriber count is not documented. The email distribution value is unverified.
 - **No support email.** Only contact channels are X (@nerddoingsocial) and Instagram (@ctrlaltcc). Response times may vary.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

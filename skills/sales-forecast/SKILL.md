@@ -12,6 +12,9 @@ Help the user build and validate a revenue forecast — from category modeling t
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **Scope:**
@@ -165,6 +168,8 @@ If there's a gap between the forecast and quota, build a plan to close it:
 - **Don't forget to account for slipped deals from last quarter.** Deals that pushed from last quarter inflate current-quarter pipeline but often have lower close probability (they already missed one deadline). Flag these and weight them more conservatively.
 - **Don't ignore seasonality.** Q4 and fiscal year-end typically see higher close rates due to budget pressure. Q1 often sees longer cycles as budgets reset. Ask about the company's fiscal year when it matters.
 - **Don't present a single forecast number without a range.** Always give worst/most likely/best case scenarios. A single number creates false precision and sets the user up for a bad forecast call.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Examples
 

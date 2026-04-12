@@ -12,6 +12,9 @@ Helps the user with MicroLaunch platform questions — from preparing a product 
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -192,6 +195,8 @@ Unlike Product Hunt, MicroLaunch rewards sustained engagement over a month:
 - **Engagement is key, not just submitting.** Products that "submit and forget" sink on the leaderboard. The month-long window rewards founders who actively engage with the community.
 - **Pricing has changed before.** The current $39/mo Pro price (with LAUNCH20 code) may revert to $49. Check microlaunch.net/premium for current rates.
 - **Don't treat it as your only launch channel.** MicroLaunch works best as part of a multi-platform launch strategy (Product Hunt, BetaList, Indie Hackers, Hacker News). Use it for the sustained 30-day window and backlinks, not as a standalone channel.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

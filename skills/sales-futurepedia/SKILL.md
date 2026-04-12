@@ -13,6 +13,9 @@ Helps with everything related to using Futurepedia — the largest independent A
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What are you trying to do on Futurepedia?**
@@ -189,6 +192,8 @@ In a multi-directory launch, Futurepedia fits in **Phase 2 (paid fast-track)** �
 - **Traffic estimates vary.** The ~2M/mo figure comes from multiple sources but actual referral traffic to your listing will be a fraction of total site visits.
 - **YouTube coverage is not guaranteed.** Enterprise packages include YouTube sponsorship options, but Verified listings don't guarantee video coverage on the YouTube network.
 - **Education platform is separate.** Futurepedia's 29 courses and AI Boot Camp are a separate offering — your tool listing doesn't automatically get featured in educational content.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

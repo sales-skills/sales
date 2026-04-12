@@ -12,6 +12,9 @@ Help the user plan, execute, and optimize webinars as a sales channel — live s
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What type of webinar are you planning?**
@@ -307,6 +310,8 @@ Always provide this day-by-day sequence proactively. The follow-up is where 40�
 - **Selling too early loses the audience.** If you pitch before delivering genuine value, attendees leave. The teach-then-pitch structure works because people who received value feel reciprocity and trust. Aim for at least 30 minutes of real content before any selling.
 - **"Just-in-time" evergreen scheduling inflates vanity metrics.** Platforms like Demio and eWebinar report high attendance rates for on-demand sessions, but these attendees may be less engaged than those who committed to a scheduled time. Track conversion rate, not just attendance.
 - **Platform lock-in is real.** Your webinar registration list, replay analytics, and automation workflows live inside your chosen platform. Before committing, verify that the platform can export registrant data and integrates with your email/CRM stack. Switching platforms mid-funnel is painful.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

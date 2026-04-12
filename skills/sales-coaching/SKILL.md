@@ -12,6 +12,9 @@ Help the user build coaching programs, onboard new reps, run role-plays, design 
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need?**
@@ -178,6 +181,8 @@ Ask the user:
 - **Don't skip the manager enablement.** Most coaching programs fail because managers aren't trained to coach. Build a "coaching the coaches" program before rolling out rep coaching at scale.
 - **Don't make role-plays optional.** Reps avoid practice because it's uncomfortable. The best teams make role-play a required, scheduled activity — not a suggestion. Bi-weekly minimum.
 - **Don't measure coaching by completion metrics alone.** 100% lesson completion doesn't mean reps are ready. Measure coaching impact by performance outcomes (ramp time, quota attainment, deal velocity) not just activity metrics.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

@@ -13,6 +13,9 @@ Helps the user with Attio CRM questions — from custom data model design and de
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -196,6 +199,8 @@ For full API reference, see `references/attio-api-reference.md`.
 - **No built-in formula fields.** Can't create calculated fields natively. Use automations or external tools for computed values.
 - **Advanced reporting is limited.** Bar, line, pie, and funnel charts cover basics, but don't expect Salesforce-level reporting. For advanced analytics, export data to a BI tool.
 - **Customer support can be inconsistent.** Multiple review sites note varying support quality. Enterprise plan gets priority support.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

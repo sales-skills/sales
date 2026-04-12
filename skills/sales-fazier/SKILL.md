@@ -13,6 +13,9 @@ Helps the user submit to, optimize listings on, and get the most from Fazier —
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -177,6 +180,8 @@ Fazier fits into **Phase 2 — Paid fast-track** if you use Lite ($19) or Premiu
 - **Lite tier backlink is conditional.** "High-authority backlink for top 3 daily products" — not guaranteed for all Lite submissions. Only Premium ($39) guarantees the backlink.
 - **Pricing shows crossed-out "original" prices.** Lite was "$29" now "$19", Premium was "$59" now "$39", Super was "$79" now "$99" (wait — Super went UP?). Pricing display may be marketing-driven. Focus on current prices.
 - **Small community means less voting activity.** Daily launches may have fewer votes and less engagement than larger platforms. This can be an advantage (less competition) or disadvantage (less social proof).
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

@@ -12,6 +12,9 @@ Help the user with Groove.cm platform questions — all-in-one business platform
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **Which Groove module do you need help with?**
@@ -220,6 +223,8 @@ When helping the user, follow this pattern:
 - **Free plan has real limitations.** The free tier limits contacts (500), email sends (1,000–15,000/mo), pages (25), and domains (1). Don't recommend workflows that exceed free plan limits without checking the user's plan.
 - **GrooveMail is opt-in email marketing, not cold outbound.** Don't confuse GrooveMail with cold email tools like Mailshake or Lemlist. GrooveMail is for emailing subscribers who opted in. Using it for cold outbound will tank deliverability and violate terms.
 - **Module names changed over time.** Groove.cm was originally "GrooveFunnels" and module names have shifted (GrooveKart → GrooveStore, etc.). Users may reference old names. Map them to current names.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

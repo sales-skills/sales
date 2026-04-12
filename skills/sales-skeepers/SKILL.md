@@ -13,6 +13,9 @@ Helps the user configure and optimize Skeepers — Europe's #1 UGC platform cove
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **Which Skeepers module?**
@@ -190,6 +193,8 @@ Based on the user's module and goal, provide:
 - **API migration deadline** — legacy Product Reviews API deprecated June 2026. If you're on the old API, migrate to the Published API immediately.
 - **Feedback Management pricing separate** — Feedback Management (NPS/CSAT) starts at ~15K EUR/year, separate from Verified Reviews pricing.
 - **Review syndication requires retail partner agreements** — syndication pushes your reviews to retailers, but retailers must accept them. This is a business relationship, not just a technical integration.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

@@ -13,6 +13,9 @@ Help the user with ActiveCampaign platform questions — from Automations and Em
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of ActiveCampaign do you need help with?**
@@ -301,6 +304,8 @@ Based on the user's specific question:
 3. **All contacts count toward billing (Nov 2025 change) — unsubscribed, bounced, and unconfirmed contacts all count for new users.** This is a significant change from the previous model. Clean your lists aggressively by archiving or deleting contacts who have unsubscribed, bounced repeatedly, or never confirmed. Failing to clean lists means you pay for contacts you cannot email.
 4. **Transactional email is a SEPARATE Postmark add-on — not included in any plan.** Do not confuse marketing emails (sent via ActiveCampaign automations/campaigns) with transactional emails (order confirmations, password resets, etc.). Transactional email requires a separate Postmark subscription. If a user needs transactional email, direct them to the Postmark add-on or `/sales-postmark`.
 5. **API rate limit is only 5 req/sec — significantly lower than competitors (Klaviyo, Mailgun, etc.).** Batch operations carefully and implement retry logic with exponential backoff for HTTP 429 responses. For bulk imports or syncs, use ActiveCampaign's bulk import tools in the UI rather than hitting the API one contact at a time. Custom rate limits are available on request for Enterprise accounts.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

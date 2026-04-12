@@ -13,6 +13,9 @@ Helps the user submit to, optimize listings on, and get the most from TinyLaunch
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -183,6 +186,8 @@ TinyLaunch fits into **Phase 2 — Paid fast-track** at $39 for a guaranteed DR6
 - **Organic traffic is very modest.** ~87/mo per LaunchDirectories (likely undercounted but still small). The real value is the high-DR backlink and newsletter reach, not referral traffic.
 - **Premium placement is between 3rd and 4th.** The $39 premium doesn't guarantee Top 3 ranking — it places you between 3rd and 4th with a guaranteed backlink regardless of votes.
 - **Submission service is a separate business.** The $179/$279 directory submission service is offered by TinyLaunch but submits to other directories, not TinyLaunch itself.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

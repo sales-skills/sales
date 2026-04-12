@@ -13,6 +13,9 @@ Helps the user submit to, evaluate, and get the most from LaunchDay — a curate
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -154,6 +157,8 @@ LaunchDay is fundamentally different from traditional startup directories — it
 - **Video interview is mandatory.** If you're camera-shy or time-constrained, factor in the 30-minute commitment. The video becomes a public podcast episode.
 - **Limited availability.** 1-2 events per month, max 20 products. Rejection is possible even after paying (payment is only processed if selected).
 - **Event-based, not always-on.** Your featuring lasts 24 hours. After that, you're in the archive — not on the homepage.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

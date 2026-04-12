@@ -13,6 +13,9 @@ Help the user with Yesware platform questions — from email tracking and campai
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Yesware do you need help with?**
@@ -175,6 +178,8 @@ Based on the user's specific question:
 - **Campaign recipient limits are strict and plan-gated.** Free = 10 recipients/month, Pro = 20/month. Users on lower plans hit this wall fast. Unlimited recipients require Premium ($35/mo) or Enterprise ($65/mo). Always surface these limits when discussing campaigns.
 - **Yesware is inbox-native — there is no standalone web app for campaigns.** All campaign creation and management happens inside the Gmail or Outlook extension. There is no separate yesware.com dashboard for building campaigns. Users expecting a standalone UI (like Mailshake or Apollo) will be confused.
 - **Email tracking pixels are increasingly unreliable.** Apple Mail Privacy Protection (iOS 15+), Hey.com, and corporate email proxies pre-load or block tracking pixels. Open rates from these recipients are either inflated (Apple pre-loads all images) or zero (blocked). Advise users to treat open tracking as directional, not definitive, and rely more on click and reply metrics.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

@@ -12,6 +12,9 @@ Help the user with Prospeo platform questions — from person/company enrichment
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Prospeo do you need help with?**
@@ -228,6 +231,8 @@ Based on the user's specific question:
 - **Don't use deprecated endpoints.** The old Email Finder, Mobile Finder, Email Verifier, Domain Search, and Social URL Enrichment endpoints were removed March 1, 2026. Use the new Enrich Person/Company endpoints instead.
 - **Don't ignore the lifetime dedup.** Prospeo doesn't charge for re-enriching the same record. If you need updated data on someone you've already enriched, re-run the enrichment for free. But note this is per-account, not per-team-member.
 - **Don't search by company name alone.** Company name matching is fuzzy and can return wrong results. Always use website/domain or LinkedIn URL as the company identifier when possible.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

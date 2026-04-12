@@ -12,6 +12,9 @@ Helps the user monitor and improve what AI models (ChatGPT, Claude, Perplexity, 
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -225,6 +228,8 @@ Provide specific, step-by-step recommendations. Include prompt templates where r
 - **Reddit presence matters more than you think.** Reddit is a retrieval source for ChatGPT, Perplexity, and Google AI Overviews. Genuine Reddit presence (not astroturfing) can directly influence what AI models say about your brand.
 - **Do not expect click-through.** Most AI mentions do not include links. The value of AI visibility is brand awareness and consideration, not direct traffic. Measure accordingly.
 - **Accuracy of AI responses about your brand is a real risk.** LLMs can hallucinate facts, attribute wrong features, or confuse your brand with a competitor. Regular audits catch errors before customers see them.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

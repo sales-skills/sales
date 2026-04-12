@@ -12,6 +12,9 @@ Help the user with Smartlead platform questions — from campaign setup and Smar
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Smartlead do you need help with?**
@@ -153,6 +156,8 @@ Based on the user's specific question:
 - **Don't use SmartAgents for simple merge-field personalization.** SmartAgents are for research-grade personalization — finding company news, analyzing LinkedIn profiles, generating custom talking points. For simple {{first_name}} and {{company}} merge fields, just use standard campaign variables. SmartAgents add cost and latency for no benefit on simple personalization.
 - **Don't assume Salesforce integration is native.** Smartlead connects to Salesforce via OutboundSync, a paid third-party connector. It's not built-in like the HubSpot integration. Users need an OutboundSync subscription or can use Zapier as an alternative.
 - **Don't skip warmup.** Ultra Premium Warmup must run 2-3 weeks on new mailboxes before they're added to campaign rotation. Sending cold emails from unwarmmed mailboxes will land in spam. This applies even if the domain is established — new mailboxes need their own warmup.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

@@ -12,6 +12,9 @@ Helps the user plan and execute influencer marketing programs across platforms �
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -280,6 +283,8 @@ Based on the user's specific question:
 - **Gifting ≠ guaranteed content.** No-strings gifting has a 30-50% post rate. If you need guaranteed posts, use paid partnerships or contracted gifting with clear deliverables.
 - **Platform databases overlap.** Modash, influData, and Creator.co all index public profiles from the same social platforms. The differentiation is in analytics depth, workflow tools, and integrations — not the raw creator database.
 - **API costs add up fast.** Both Modash and influData charge separately for API access. If you only need discovery + management, use the platform UI rather than paying for API access on top.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

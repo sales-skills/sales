@@ -14,6 +14,9 @@ Helps the user submit to, optimize listings on, and get the most from Resource.f
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -178,6 +181,8 @@ Pair with:
 - **Social login required.** You must sign in via Google or GitHub — no email/password option.
 - **Gamification is limited.** Despite "gamified platform" branding, the community features are upvoting and bookmarking — there's no leaderboard, points system, or competition mechanic.
 - **Pimjo runs multiple products.** Resource.fyi is one of 14+ products from Pimjo (TailGrids, TailAdmin, Lineicons, etc.). The editorial team splits attention across products.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

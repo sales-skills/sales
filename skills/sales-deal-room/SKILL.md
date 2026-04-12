@@ -21,6 +21,9 @@ Help the user architect a Qwilr deal room — a multi-page digital sales room fo
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What type of deal is this?**
@@ -184,6 +187,8 @@ For full webhook and CRM automation setup, use `/sales-qwilr-automation`.
 - **Don't skip the mutual action plan.** Claude often builds deal rooms with great content but no shared timeline. The MAP is what turns a deal room from a content dump into a collaboration tool. Always include one.
 - **Don't forget the executive summary page.** Even in a deal room with detailed sub-pages, the hub page needs a concise "why this matters" section. Executives won't click into sub-pages — they'll read the hub and decide if this is worth their time.
 - **Don't treat the deal room as "set and forget."** A good deal room is updated throughout the sales cycle — latest updates section, MAP status changes, new materials added. Mention this to the user.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

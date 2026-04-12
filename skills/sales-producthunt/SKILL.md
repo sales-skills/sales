@@ -14,6 +14,9 @@ Helps with everything related to launching, promoting, and succeeding on Product
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **Where are you in the Product Hunt process?**
@@ -173,6 +176,8 @@ Based on the user's situation, provide specific recommendations:
 - **Conversion rates are modest.** Typical indie launches see ~3% visitor-to-signup conversion. Don't expect thousands of users from a PH launch alone.
 - **6-month relaunch restriction.** You must wait 6 months and have a genuinely major update. Gaming this gets called out by the community.
 - **Pro/Super Pro pricing may change.** Verify current pricing at producthunt.com before purchasing.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

@@ -13,6 +13,9 @@ Helps the user set up and get the most out of Heepsy — influencer discovery, a
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with in Heepsy?**
@@ -196,6 +199,8 @@ Based on the user's specific question:
 - **No public API.** There is no documented API for programmatic access. All work must happen through the web UI.
 - **Minimum follower thresholds.** Heepsy's database focuses on influencers with 5,000+ followers. If you need nano-influencers under 5K, you'll need to supplement with manual discovery or other tools.
 - **Marketplace response depends on your brand appeal.** Publishing a campaign doesn't guarantee creator applications. Competitive compensation, clear briefs, and appealing products get more applicants.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

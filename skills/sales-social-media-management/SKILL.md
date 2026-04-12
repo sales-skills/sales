@@ -12,6 +12,9 @@ Helps the user plan and execute social media management — from choosing the ri
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -186,6 +189,8 @@ Based on the user's specific question:
 - **Network API changes break features.** Instagram, X, and TikTok regularly change their APIs. Features that work today (scheduling Reels, auto-publishing Stories) may break tomorrow. Choose tools with a track record of fast API adaptation.
 - **Analytics don't aggregate perfectly.** Each network defines "engagement" and "impressions" differently. Cross-network comparison charts in any tool are approximations, not exact comparisons. Focus on trends within networks, not absolute cross-network numbers.
 - **Approval workflows slow publishing.** They're essential for brand safety but can kill timeliness. Set up fast-track paths for time-sensitive content (trending topics, breaking news) alongside standard approval flows.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

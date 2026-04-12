@@ -12,6 +12,9 @@ Help the user inspect an individual deal — score its health, identify risks, m
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **Deal basics:**
@@ -152,6 +155,8 @@ Actions should be specific, not generic. Instead of "build executive relationshi
 - **Don't confuse decision criteria with decision process.** Criteria = *what* they're evaluating (features, price, integrations). Process = *how* they'll decide (who approves, what steps, what timeline). Claude often conflates these — keep them separate in the MEDDPICC extraction.
 - **Don't generate generic "follow up with the prospect" action items.** Every action must be specific: who, what, by when, and why. "Follow up" is not an action plan — "Ask Sarah to intro you to CFO by Friday so you can confirm budget before the board meeting" is.
 - **Don't catastrophize a deal based on one missing MEDDPICC element.** Not every deal needs all 8 elements fully addressed. Prioritize based on deal stage and size.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Examples
 

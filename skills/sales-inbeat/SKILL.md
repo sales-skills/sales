@@ -14,6 +14,9 @@ Helps the user evaluate and work with inBeat — the creative growth agency offe
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -235,6 +238,8 @@ Based on the user's specific question:
 - **"From $1K/month" is for basic managed services.** Full campaign services with strategy, creative, and multi-channel paid media start at $20K+. Don't expect full-service at the $1K/month tier.
 - **G2 reviews reflect the old SaaS product.** Many of the 584 G2 reviews are from the influencer discovery SaaS product that was shut down. Agency service reviews may differ.
 - **Compensation model for creators varies.** G2 reviews from creators note that not all collaborations are paid — some are gifting-only. If you're a creator evaluating inBeat, clarify compensation terms upfront.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

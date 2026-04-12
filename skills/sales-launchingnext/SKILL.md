@@ -12,6 +12,9 @@ Helps the user with LaunchingNext platform questions — from submitting a start
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -160,6 +163,8 @@ LaunchingNext works best as one listing in a broader directory submission strate
 - **No community engagement mechanics.** Unlike Product Hunt (upvotes, comments) or MicroLaunch (leaderboard, scores), LaunchingNext is a static directory. There's no way to climb rankings through engagement.
 - **No API.** Everything is manual submission through the web form. No programmatic access to listings or analytics.
 - **Newsletter selection is editorial.** Being listed doesn't mean you'll be featured in the weekly email. The editorial team selects which startups to highlight.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

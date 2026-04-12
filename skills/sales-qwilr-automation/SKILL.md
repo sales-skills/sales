@@ -19,6 +19,9 @@ For the complete API reference — endpoints, curl examples, token mapping, quot
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you want to automate?**
@@ -113,6 +116,8 @@ Three common patterns (detailed implementation in `references/qwilr-api-referenc
 - **Don't assume CRM field names without checking.** Salesforce custom fields end in `__c`, HubSpot uses internal property names that differ from display names, and Pipedrive uses custom field keys. Always tell the user to verify their actual field names/IDs before building the mapping.
 - **Don't skip testing with sandbox/test data.** Claude tends to generate API code that goes straight to production. Always recommend creating test pages with `isPublished: false` first, using test deals in the CRM, and verifying token substitutions render correctly before going live.
 - **Don't hardcode API tokens in scripts.** Use environment variables (`$QWILR_TOKEN`) for authentication. Claude sometimes generates examples with placeholder tokens inline — make sure the user knows to use env vars or a secrets manager.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

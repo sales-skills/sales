@@ -13,6 +13,9 @@ Help the user with LoyaltyLion platform questions — from points/tiers/rewards 
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of LoyaltyLion do you need help with?**
@@ -211,6 +214,8 @@ Based on the user's question, provide step-by-step guidance. Always:
 6. **ReCharge limitations** — LoyaltyLion can generate ReCharge coupons, but you can't reward customers for ongoing subscription loyalty (month-over-month). Workaround: use the API to credit points via webhooks on subscription renewals.
 7. **Free plan is very basic** — the Shopify App Store free tier is a trial/evaluation tool, not a production-ready loyalty program. Most meaningful features require Classic ($199/mo).
 8. **Receipt upload is omnichannel, not automatic** — customers manually upload receipts for in-store or third-party purchases. Receipts require manual or automated approval.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

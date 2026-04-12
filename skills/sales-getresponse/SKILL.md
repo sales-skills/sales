@@ -13,6 +13,9 @@ Help the user with GetResponse platform questions — from email campaigns and a
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area do you need help with?**
@@ -267,6 +270,8 @@ As of March 2026 — verify current pricing:
 3. **Contact scoring requires Marketer plan.** Contact scoring is not available on Free or Starter. If a user on Starter asks about lead scoring, recommend upgrading or using tag-based manual scoring as a workaround.
 4. **Pricing is based on peak subscriber count.** GetResponse bills based on the highest contact count during the billing period, not the average. A temporary spike (e.g., importing a large list for cleaning) can push you into a higher tier for the entire month. Clean lists before importing.
 5. **Transactional email is MAX-only.** Unlike Brevo or SendGrid, GetResponse's transactional email (order confirmations, password resets) is only available on the MAX/Enterprise plan. Users on Starter/Marketer/Creator who need transactional email must use a separate provider.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

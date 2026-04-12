@@ -12,6 +12,9 @@ Help the user map the full buying committee at a target account — identify who
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **Which account are you targeting?** (Company name, size, industry)
@@ -186,6 +189,8 @@ Set up Apollo alerts for the account to catch these changes.
 - **Don't treat titles as org chart.** A "Director" at a 50-person startup and a "Director" at a Fortune 500 are completely different levels of authority. Always factor in company size before mapping titles to committee roles.
 - **Don't over-thread small accounts.** A 200-person company doesn't have a 7-person buying committee. Adapt the framework to company size — 2-3 contacts for SMB, 5-8 for mid-market, 8-12 for enterprise. Over-threading a small account feels like overkill and can backfire.
 - **Don't assume the org chart is stable.** People change roles, teams reorg, companies restructure. Check job tenure and recent title changes in Apollo before building your map. A map based on 6-month-old data may be wrong.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Examples
 

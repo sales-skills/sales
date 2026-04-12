@@ -12,6 +12,9 @@ Help the user with Enrich.so platform questions — from Reverse Email Lookup an
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Enrich.so do you need help with?**
@@ -275,6 +278,8 @@ Based on the user's specific question:
 3. **LinkedIn profile enrichment depends on LinkedIn URL format — use the canonical profile URL.** Pass the full `https://www.linkedin.com/in/username` format. Shortened URLs, Sales Navigator URLs, or URLs with query parameters may not resolve correctly. Strip tracking parameters before calling the API.
 4. **IP to Company accuracy varies — shared IPs, VPNs, and cloud providers will not resolve to a specific company.** The endpoint works best with corporate IP ranges and ISP-to-company mapping for remote workers, but visitors using VPNs, shared office spaces, or cloud-based browsing will return inaccurate or no results. Expect a match rate below 100% and validate high-priority matches.
 5. **Zapier integration is limited to specific triggers/actions (reverse email lookup, IP to company) — for other endpoints, use the REST API directly or a custom Zapier webhook step.** Not all Enrich.so endpoints have native Zapier triggers/actions. For endpoints like Similar Companies, Employee Search, or Bulk Enrichment, you will need to use Zapier's webhook action or connect via n8n/Make with HTTP request nodes.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

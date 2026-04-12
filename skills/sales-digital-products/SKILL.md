@@ -12,6 +12,9 @@ Help the user sell digital products — ebooks, templates, courses, downloads, s
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What type of digital product?**
@@ -222,6 +225,8 @@ Course at $497 (with payment plan):
 4. **Price anchoring works both ways** — if you launch at $19, it's very hard to raise to $99 later with the same audience. Launch at a higher price and discount strategically rather than starting low.
 
 5. **Tax compliance is real** — selling digital products internationally triggers VAT/GST obligations in the EU, UK, Australia, etc. Use a merchant of record (Lemon Squeezy, Paddle) or handle it yourself. Don't ignore this.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

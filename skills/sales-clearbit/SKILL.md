@@ -15,6 +15,9 @@ Help the user with Clearbit platform questions — Person and Company Enrichment
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 **What area of Clearbit do you need help with?**
 - a) Person Enrichment — look up a person by email
 - b) Company Enrichment — look up a company by domain
@@ -236,6 +239,8 @@ For HubSpot users, Clearbit is integrated as **Breeze Intelligence**:
 - **Reveal identifies companies, not people**: The Reveal API returns company data from IP addresses, not individual visitors. You still need Prospector or another tool to find the specific contact at that company.
 - **SDK deprecation**: The official Ruby, Node.js, Python, and Go SDKs are all deprecated. Clearbit recommends direct HTTP requests. If your code uses these SDKs, plan migration to direct API calls.
 - **202 responses require webhooks**: Standard (non-streaming) enrichment endpoints return 202 if the person/company isn't in Clearbit's cache. You must configure a webhook URL to receive async results, or use the streaming endpoints which hold the connection open.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

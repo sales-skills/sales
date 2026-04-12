@@ -13,6 +13,9 @@ Helps with everything related to using LaunchCaster — a Web3 project discovery
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What are you trying to do on LaunchCaster?**
@@ -159,6 +162,8 @@ If the user doesn't have a Farcaster account:
 - **Small but engaged community.** 9,000 builders is much smaller than Product Hunt's millions. Set expectations accordingly — this is a niche community play, not a mass-market launch.
 - **No editorial queue.** Launches are instant (via cast), but visibility depends entirely on community engagement. There's no curation team featuring your project.
 - **Backlink value uncertain.** DR/DA for launchcaster.xyz is unconfirmed. Don't rely on this for SEO — the value is community discovery.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

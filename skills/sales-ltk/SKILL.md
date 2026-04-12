@@ -13,6 +13,9 @@ Help the user with LTK (formerly rewardStyle / LIKEtoKNOW.it) platform questions
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of LTK do you need help with?**
@@ -171,6 +174,8 @@ Based on the user's question, provide step-by-step guidance. Always:
 5. **Creator discovery depends on plan tier.** Launch plan gets partial database access; Pro and Enterprise get full database with audience demographics. Discovery quality is plan-gated.
 6. **Attribution lives inside LTK.** All click, sale, and order data flows through LTK's attribution system. If you want to compare LTK performance against other channels, you'll need to export or cross-reference manually.
 7. **Shopify integration requires VIP access.** Deep Shopify integration isn't available on standard Connect plans — requires VIP tier or Enterprise.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

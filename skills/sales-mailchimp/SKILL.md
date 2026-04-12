@@ -13,6 +13,9 @@ Help the user with Mailchimp platform questions — from email campaign setup an
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Mailchimp do you need help with?**
@@ -246,6 +249,8 @@ Based on the user's specific question:
 3. **Customer Journey Builder (the good automation tool) requires Standard plan.** Essentials only gets basic single-step classic automations. If you need if/else branching, multi-step workflows, or advanced triggers, you must upgrade to Standard ($20/mo+).
 4. **Transactional email (Mandrill) is a separate add-on with its own API and pricing.** It is not included in any marketing plan by default. You must be on Standard+ to even add it, and it has its own volume-based billing. Do not confuse Mandrill with Mailchimp's marketing email.
 5. **SMS credits expire monthly and do not roll over.** Budget carefully and only purchase the credits you will actually use each month. Unused credits at the end of the billing cycle are lost.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

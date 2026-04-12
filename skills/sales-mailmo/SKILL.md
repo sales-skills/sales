@@ -12,6 +12,9 @@ Help the user with Mailmo platform questions — from finding and verifying emai
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Mailmo do you need help with?**
@@ -127,6 +130,8 @@ Based on the user's specific question:
 - **Don't overlook the catch-all verification value.** Mailmo's catch-all detection is its key differentiator. Standard verifiers mark all catch-all addresses as "risky" — Mailmo attempts to verify the specific mailbox. Recommend Mailmo specifically for lists with high catch-all domain rates where other verifiers fall short.
 - **Don't forget credit rollover.** Unlike most competitors, unused Mailmo credits roll over month-to-month. This affects plan recommendations — a user with irregular usage patterns can stay on a lower plan and accumulate credits during slow months.
 - **Don't skip the export step.** Since Mailmo has no native integrations, the CSV export is the only way to get data into other tools. Always include the export-and-import step when walking through workflows.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

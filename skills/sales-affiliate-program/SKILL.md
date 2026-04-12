@@ -12,6 +12,9 @@ You are an expert in designing, launching, and optimizing affiliate and referral
 
 ## Step 1: Gather Context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Before recommending anything, collect these details from the user:
 
 - **Product type**: Digital (course, membership, SaaS) or physical product
@@ -309,6 +312,8 @@ Create a structured onboarding experience:
 3. **Ignoring affiliate quality**: Auto-approving all affiliates leads to brand damage, coupon sites cannibalizing organic sales, and misleading promotions. Always review applications.
 4. **Neglecting affiliate communication**: Affiliates who do not hear from you stop promoting. A quarterly email is the bare minimum; monthly is recommended to keep your program top-of-mind.
 5. **No terms of service**: Without clear TOS covering prohibited promotion methods (spam, false claims, brand bidding), you have no recourse when affiliates misbehave and potentially expose you to legal liability.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related Skills
 

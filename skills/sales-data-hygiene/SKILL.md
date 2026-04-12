@@ -12,6 +12,9 @@ Help the user clean, deduplicate, normalize, and maintain CRM data quality. This
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What's the main data problem?**
@@ -279,6 +282,8 @@ Attio's flexible data model makes hygiene both easier (custom attributes, no rig
 4. **Don't delete — archive** — instead of deleting stale records, move them to an archive status. Deleted records lose history; archived records can be reactivated if the contact returns.
 
 5. **GDPR and compliance** — data hygiene must respect opt-out and consent records. Never re-enrich a contact who has opted out. Check compliance status before any bulk enrichment operation.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

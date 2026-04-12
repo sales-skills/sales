@@ -12,6 +12,9 @@ Help the user plan and execute retargeting campaigns — website visitor retarge
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What's your retargeting goal?**
@@ -253,6 +256,8 @@ Reddit supports website visitor retargeting and engagement-based remarketing:
 5. **Retargeting cannibalizes organic conversions** — some retargeted users would have converted anyway. Run incrementality tests (holdout groups) to measure true lift. Typical true lift is 40-60% of reported retargeting conversions.
 
 6. **Cookie deprecation** — third-party cookies are being phased out. Shift toward first-party data (email lists, logged-in users, server-side tracking) and contextual targeting. Platforms with strong first-party identity graphs (Meta, Google) will maintain better targeting.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

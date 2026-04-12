@@ -12,6 +12,9 @@ Help the user with Snov.io platform questions — from email finder and verifica
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Snov.io do you need help with?**
@@ -239,6 +242,8 @@ Based on the user's specific question:
 3. **V1 vs V2 API endpoints** — Snov.io has both V1 and V2 API endpoints. Some features are only available on V2. Check which version supports the endpoint you need before building integrations.
 4. **Credit costs vary by action** — email finds, verifications, and LinkedIn enrichments each consume different credit amounts. A domain search with many results can burn through credits quickly. Always check your balance via the Account endpoint and use email count checks before bulk domain searches.
 5. **Warmup slots are limited on lower plans** — Starter plan includes only 3 warmup slots. If you have more than 3 sending mailboxes on Starter, upgrade to Pro S or higher for unlimited warmup. Running campaigns from un-warmed mailboxes damages sender reputation.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

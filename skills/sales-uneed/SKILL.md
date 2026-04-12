@@ -13,6 +13,9 @@ Helps the user submit to, optimize listings on, and get the most from Uneed — 
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -183,6 +186,8 @@ Uneed fits into **Phase 1 — Instant listings** if you use Skip the Line ($29.9
 - **Ad spots are frequently sold out.** Premium ($197/mo) and Main ($297/mo) ad spots are listed as sold out. If you want ad placement, you may need to join a waitlist.
 - **Early bird Pro pricing may not last.** $89/yr is limited to 69 spots — the regular price is $120/yr.
 - **Newsletter sponsorship is one-shot.** $147 gets you one newsletter issue, not recurring placement.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

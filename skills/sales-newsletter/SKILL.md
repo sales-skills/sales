@@ -12,6 +12,9 @@ Help the user monetize their newsletter — paid subscriptions, sponsorships, ad
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What's your current newsletter situation?**
@@ -189,6 +192,8 @@ Paid recommendations:
 4. **Paid recommendations can hurt trust** — recommending low-quality newsletters for money erodes subscriber trust. Vet every recommendation as if you're personally endorsing it.
 
 5. **Annual plans reduce churn significantly** — monthly subscribers churn at 5–8%/mo; annual subscribers effectively churn at 1–2%/mo. Push annual plans with meaningful discounts.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

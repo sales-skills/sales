@@ -13,6 +13,9 @@ Helps the user with Later platform questions — from scheduling and visual cont
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **Which Later product are you using?**
@@ -221,6 +224,8 @@ Based on the user's specific question:
 - **Notification-based posting for some formats.** Instagram Stories, certain carousel types, and some TikTok formats may require you to complete publishing manually via a push notification rather than auto-publishing.
 - **Later Influence is separately priced.** It's an enterprise product — not included in Later Social plans. Contact sales for pricing.
 - **Billing complaints are common.** Later has a 1.3/5 on Trustpilot driven by billing issues — unexpected renewals, charges after cancellation, strict no-refund policy. Review your subscription settings carefully and document any cancellation attempts.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

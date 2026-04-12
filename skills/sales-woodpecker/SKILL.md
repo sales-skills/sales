@@ -12,6 +12,9 @@ Help the user with Woodpecker.co platform questions — from cold email campaign
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Woodpecker do you need help with?**
@@ -192,6 +195,8 @@ Based on the user's specific question:
 3. **Woodpecker prices by "contacted prospects" not by user/seat** — every new person added to a campaign counts against your monthly limit, even if they don't receive all steps. Recontacting the same prospect in a different campaign counts again.
 4. **The agency panel is per active client (EUR 27/client/mo)** — costs scale linearly with client count. Compare with Smartlead's flat agency pricing if managing many clients.
 5. **Woodpecker's API has a strict 1-concurrent-request limit with a queue of only 6** — high-volume API integrations need careful throttling and retry logic. Requests beyond 6 queued return HTTP 429 immediately (15-second timeout per queued request).
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

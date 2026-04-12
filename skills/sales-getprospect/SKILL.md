@@ -13,6 +13,9 @@ Help the user with GetProspect platform questions — from Email Finder and B2B 
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of GetProspect do you need help with?**
@@ -241,6 +244,8 @@ Based on the user's specific question:
 8. **Domain blacklisting in the CRM prevents finding contacts at blacklisted domains, not just emailing them.** If you add a domain to the blacklist (e.g., to exclude competitors or existing customers), GetProspect will exclude contacts at that domain from search results and list building, not just from email sequences. Use this intentionally — it is a broad exclusion, not just a suppression list for sending.
 
 9. **LinkedIn Email Finder Extension requires an active LinkedIn session — it does not work with LinkedIn's API.** The Chrome extension scrapes data from your LinkedIn browser session. LinkedIn may rate-limit or restrict your account if you export too aggressively. Use conservative export volumes (under 100 profiles per day), avoid running the extension continuously, and be aware that LinkedIn's terms of service may restrict automated data extraction.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

@@ -12,6 +12,9 @@ Help the user with OpenWeb Ninja platform questions — from Website Contacts Sc
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of OpenWeb Ninja do you need help with?**
@@ -229,6 +232,8 @@ Based on the user's specific question:
 8. **Email Search returns publicly indexed emails only — these are not verified.** The Email Search API discovers email addresses that are publicly available on the web. These emails are not verified for deliverability, may be outdated, and could include role-based addresses (info@, support@). Always run discovered emails through a separate verification service before using them for outreach. Combine with Website Contacts Scraper for more comprehensive coverage.
 
 9. **Response times vary significantly by endpoint — plan your integration accordingly.** Website Contacts Scraper takes 0.5-3 seconds per request, Email Search takes 1-2 seconds, but Web Unblocker (with JS rendering) and Local Business Data (with full detail fetches) can take longer. For high-volume pipelines, implement async processing and queuing rather than synchronous request chains. Timeout settings should be generous (10+ seconds) to account for variability.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

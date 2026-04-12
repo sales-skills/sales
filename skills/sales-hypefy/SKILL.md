@@ -12,6 +12,9 @@ Helps the user with Hypefy platform questions — from AI-powered campaign setup
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -226,6 +229,8 @@ Based on the user's specific question:
 - **Performance data scope unclear.** The dashboard tracks reach, engagement, and impact — but sales attribution (promo codes, affiliate links, direct revenue tracking) isn't explicitly documented. Clarify with Hypefy what attribution methods are available.
 - **Content review adds time.** The approval-before-publishing workflow is great for quality control but adds latency to campaign execution. Plan extra time between creator content submission and go-live dates.
 - **"90% less management time" claim is for the full workflow.** Individual steps (especially content review and payment setup for international creators) may still require manual attention.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

@@ -12,6 +12,9 @@ Helps the user with Retention.com questions — from identity resolution setup a
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -183,6 +186,8 @@ Calculate whether Retention.com pays for itself:
 - **Not usable for EU/UK traffic.** GDPR requires explicit consent. Retention.com's identity resolution only works for US visitors and is only legally safe under US law.
 - **API is extremely limited.** 5 requests/day, primarily for suppression uploads. All real operations happen through integrations or the dashboard.
 - **Same founder as RB2B.** Adam Robinson runs both. If you're B2B, RB2B is the right product. Retention.com is specifically for B2C ecommerce/DTC.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

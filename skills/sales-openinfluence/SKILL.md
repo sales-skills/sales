@@ -13,6 +13,9 @@ Helps users evaluate and get the most out of Open Influence — a hybrid influen
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -156,6 +159,8 @@ Based on the user's question, provide specific next steps. For common scenarios:
 - **Hybrid model can be confusing** — the SaaS pricing page suggests a self-serve product, but the company primarily operates as an agency. Set expectations accordingly.
 - **Database size not publicly stated** — unlike competitors who advertise profile counts (Modash 350M+, HypeAuditor 223M+), Open Influence doesn't publish their database size
 - **Post-campaign reporting lacks audience demographic insights** (per reviews) — you get performance metrics but may not see who actually engaged
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

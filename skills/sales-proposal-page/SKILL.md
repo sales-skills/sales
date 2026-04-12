@@ -11,6 +11,9 @@ Help the user write and structure a Qwilr proposal page — from section plannin
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What are you proposing?** (product/service, scope, price range)
@@ -102,6 +105,8 @@ Key points:
 - **Don't skip the CTA.** Every proposal needs a clear call to action using Qwilr's Accept block. Don't end with "let us know your thoughts" — end with "Accept this proposal" or "Book your kickoff call."
 - **Don't make the proposal too long.** Web proposals are not PDFs. Buyers skim. A strong Qwilr proposal is 5-8 sections. If it's longer, consider moving detailed content to a deal room (`/sales-deal-room`) instead.
 - **Don't forget `{{token}}` placeholders.** If the proposal might be auto-generated via API later, use `{{company_name}}`, `{{contact_first_name}}`, etc. throughout — not hardcoded values.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

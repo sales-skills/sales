@@ -14,6 +14,9 @@ Helps the user set up and get the most out of Cloutboost — the gaming-focused 
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -192,6 +195,8 @@ Based on the user's specific question:
 - **Retargeting claims are self-reported.** The "3x higher CTR" claim for influencer content retargeting is from Cloutboost's marketing. Benchmark against your own performance data.
 - **Pricing is annual for Portal.** No monthly billing option for any Portal plan. The Indie plan at $279/yr is the lowest commitment.
 - **Content review is plan-gated.** Campaign management features (including content review/approval) have campaign limits per plan — Indie has none, Studio allows 10, Scale allows 50.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

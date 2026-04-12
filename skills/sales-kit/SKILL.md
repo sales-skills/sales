@@ -12,6 +12,9 @@ Help the user with Kit (formerly ConvertKit) platform questions — from email c
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Kit do you need help with?**
@@ -221,6 +224,8 @@ Based on the user's question, provide step-by-step instructions with:
 4. **Commerce requires Stripe** — Kit Commerce (digital products, paid newsletters) requires a connected Stripe account. PayPal is supported for some features but Stripe is mandatory for Commerce. Don't suggest setting up Commerce without confirming Stripe is connected.
 
 5. **Engagement scoring is Pro-only** — subscriber engagement scoring and deliverability reporting are only available on the Pro plan ($66/mo). Don't reference these features for Creator-plan users.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

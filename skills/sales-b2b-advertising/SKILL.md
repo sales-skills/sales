@@ -12,6 +12,9 @@ Help the user plan and execute account-based B2B advertising campaigns — displ
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What's your advertising goal?**
@@ -317,6 +320,8 @@ Reddit Ads offers B2B advertising through community-level targeting — reach pr
 4. **Intent signals lag by 1-2 weeks** — intent data from platforms like ZoomInfo, Bombora, or 6sense is aggregated weekly. Don't expect real-time intent triggering for ad campaigns.
 
 5. **Sales-marketing misalignment kills ABM ads** — if SDRs don't know which accounts are seeing ads, they can't reference campaigns or time outreach. Share the target account list and campaign messaging with sales before launch.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

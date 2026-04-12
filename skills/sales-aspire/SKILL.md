@@ -12,6 +12,9 @@ Helps the user with Aspire (formerly AspireIQ) platform questions — from influ
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -178,6 +181,8 @@ Based on the user's specific question:
 - **Instagram lookalike search was removed.** You can no longer find creators with similar audiences to your top performers via lookalike search on Instagram. Use keyword search, competitor monitoring, or image recognition AI as alternatives.
 - **Post tracking relies on creator tagging.** Aspire requires creators to submit content via briefs or tag the brand. If they tag incorrectly or forget, you have to manually find their posts.
 - **PayPal payments are USD-only.** International creators get hit with currency conversion fees on their agreed rates. Factor this into compensation discussions with non-US creators.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

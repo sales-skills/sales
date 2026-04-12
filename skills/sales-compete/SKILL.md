@@ -12,6 +12,9 @@ Help the user find competitor customers, identify those ready to switch, and bui
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **Which competitor are you targeting?**
@@ -185,6 +188,8 @@ Design signal-specific outreach strategies:
 - **Don't assume technographic data is real-time.** Tech installs in Apollo and similar tools can be 3-6 months stale. A company may have already switched away from the competitor, or the install may be a free tier/trial they never actually use. Always validate with additional signals.
 - **Don't target the entire installed base.** Most competitor users are happy — or at least not unhappy enough to switch. Blasting 10,000 competitor customers with "switch to us" messages wastes effort and damages your brand. Focus on those with displacement signals.
 - **Don't forget switching costs.** The prospect isn't just evaluating your product vs. the competitor — they're evaluating your product vs. the competitor PLUS the pain of migrating. Address migration support, onboarding help, and data transfer upfront or the prospect won't engage.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Examples
 

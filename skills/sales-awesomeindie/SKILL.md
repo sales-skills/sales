@@ -14,6 +14,9 @@ Helps the user submit to, optimize listings on, and get the most from Awesome In
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -139,6 +142,8 @@ Route to `/sales-launch-directory` for the full sequencing strategy. Awesome Ind
 - **No paid fast-track.** Unlike Open Launch ($12) or OpenHunts ($9.90), there's no way to skip the queue. You wait for editorial review.
 - **Queue length unknown.** No published data on how long the editorial queue takes. Could be days or weeks.
 - **JS-rendered site.** The Awesome Indie website is heavily JavaScript-rendered (Next.js), which means some SEO tools may not correctly read your backlink. Use Google Search Console to verify indexing.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

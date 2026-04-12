@@ -13,6 +13,9 @@ Help the user with Braze platform questions — from Canvas Flow journey orchest
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Braze do you need help with?**
@@ -266,6 +269,8 @@ Based on the user's area, provide:
 3. **MAU-based pricing can spike unexpectedly**: Braze charges by Monthly Active Users, not contacts. If you run a reactivation campaign that wakes up dormant users, your MAU count (and bill) will increase. Warn users about this when designing win-back campaigns.
 4. **Liquid vs Handlebars**: Braze uses Liquid templating (like Shopify), NOT Handlebars (like SendGrid/Postmark). Syntax is `{{${first_name}}}` not `{{first_name}}`. The double-dollar-sign wrapping is Braze-specific Liquid.
 5. **Connected Content rate limits**: Connected Content API calls happen at send time. If you send to 1M users and each message calls an external API, that's 1M API calls to your server. Implement caching (`{% connected_content ... :cache_max_age 300 %}`) and ensure your API can handle the load.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

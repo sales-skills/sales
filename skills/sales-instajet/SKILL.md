@@ -13,6 +13,9 @@ Helps the user set up and run Instagram Stories influencer campaigns through Ins
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -159,6 +162,8 @@ Based on the user's specific situation, provide:
 - **Pricing is plan-based, not per-creator** — unlike Collabstr where you pay per creator, InstaJet uses tiered plans starting at $550. This can be expensive for testing with just one or two creators.
 - **Cryptocurrency payments** — while supported, crypto payment processing may take longer than card payments.
 - **Dubai-based entity** — InstaJet Technologies FZCO is registered in Dubai. Check if your procurement team has specific requirements for international vendor payments.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

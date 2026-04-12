@@ -12,6 +12,9 @@ Help the user organize, distribute, measure, and govern sales collateral — fro
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need to do?**
@@ -193,6 +196,8 @@ Tie content usage to pipeline and revenue metrics:
 - **Don't skip the audit before building.** Most teams have 60%+ unused content. Building a new library on top of stale content makes findability worse, not better.
 - **Don't create battle cards longer than 2 pages.** Reps need quick-reference cards they can scan in 30 seconds before a call. Long documents don't get used.
 - **Don't forget to measure content effectiveness, not just usage.** A battle card used 100 times that doesn't improve win rates needs reworking. Track content's correlation with deal outcomes, not just downloads.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

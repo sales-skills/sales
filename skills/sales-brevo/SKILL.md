@@ -13,6 +13,9 @@ Help the user with Brevo platform questions — from email/SMS/WhatsApp campaign
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Brevo do you need help with?**
@@ -249,6 +252,8 @@ Based on the user's area, provide:
 3. **Free plan daily limit**: 300 emails/day on the free plan — this is a daily cap, not monthly. Users hitting this limit need Starter plan ($25/mo for 20K emails/mo).
 4. **WhatsApp template approval delay**: WhatsApp campaigns require Meta-approved templates. Approval takes 24-48 hours. Don't tell users they can send WhatsApp immediately.
 5. **Automation ≠ campaigns**: In Brevo, "Campaign" = single send, "Automation/Journey" = multi-step workflow. Don't confuse these — users asking about "drip sequences" want Automation, not Campaigns.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

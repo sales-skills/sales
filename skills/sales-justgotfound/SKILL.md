@@ -13,6 +13,9 @@ Helps the user submit to, optimize listings on, and get the most from JustGotFou
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -147,6 +150,8 @@ JustGotFound fits into **Phase 1 — Instant listings** as a free, no-queue subm
 - **No editorial curation.** Unlike curated directories (CtrlAlt.cc, LaunchingNext, Awesome Indie), JustGotFound has no editorial review. This means lower barrier to entry but also less quality signal for being listed.
 - **Paid promotion is expensive relative to value.** $60/week for featured placement on a DR23 platform compares poorly to $12 for a guaranteed DR65 backlink on Open Launch.
 - **Earnings program details unclear.** The platform mentions a content monetization/earnings program, but specifics on payouts and requirements are not documented.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

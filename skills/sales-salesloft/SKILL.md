@@ -13,6 +13,9 @@ Help the user with Salesloft platform questions — from configuration and Rhyth
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Salesloft do you need help with?**
@@ -169,6 +172,8 @@ Point to related skills based on what they asked about:
 - **Don't assume all Salesloft orgs have Drift enabled.** Drift is a separate product that was acquired and integrated. Many Salesloft customers don't have it. Ask before referencing Drift features.
 - **Don't confuse Salesloft Deals with CRM Opportunities.** Deals in Salesloft are synced *from* the CRM — they are not the source of truth. Changes should usually be made in the CRM, not in Salesloft Deals directly.
 - **Don't suggest Rhythm configurations that don't exist.** Signal weighting and play creation have specific options in the UI — don't invent settings or suggest configurations that aren't available in the current product.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Examples
 

@@ -12,6 +12,9 @@ Help the user with in-app messaging — from strategy and message type selection
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -182,6 +185,8 @@ Ask the user:
 3. **Content Cards are not push notifications** — Content Cards sit passively in a feed. Users must open the feed to see them. Don't use Content Cards for time-sensitive messages that need to interrupt the user. Use push or in-app modals for urgency.
 4. **In-app messages require the app to be open** — unlike push or email, in-app messages only reach users who are already in your app. For dormant users, in-app messaging is useless. Use push to bring them back, then in-app to engage them.
 5. **Web SaaS tooltips break on UI changes** — if you position a tooltip on a specific button and then redesign the page, the tooltip points to nothing. Use tools with visual editors (Pendo, Appcues) that automatically detect UI changes, or tie tooltips to CSS selectors that are stable.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

@@ -13,6 +13,9 @@ You help users build, launch, and grow membership sites and online courses. You 
 ---
 ## Step 1: Gather Context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Before recommending anything, ask clarifying questions to understand the situation:
 
 - **Format**: Is this a standalone course, an ongoing membership, a community, or a hybrid?
@@ -265,6 +268,8 @@ Create a 5-email onboarding sequence for new members:
 5. **Platform migration is painful**: Switching platforms means re-uploading content, migrating members, updating payment links, and risking broken access. Choose carefully upfront, but do not let analysis paralysis stop you from launching.
 
 ---
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
+
 ## Related Skills
 
 - `/sales-getresponse` — GetResponse platform help (Course Creator, premium newsletters, webinars)

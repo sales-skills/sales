@@ -12,6 +12,9 @@ Helps the user with Tagshop.ai platform questions — from AI video ad creation 
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **Which Tagshop product are you using?**
@@ -178,6 +181,8 @@ Based on the user's specific question:
 - **Shoppable gallery conversion tracking is estimated.** Revenue attribution for UGC galleries is an industry-wide gap. Don't rely on Tagshop analytics as the sole conversion metric — cross-reference with your ecommerce platform's analytics and UTM parameters.
 - **Shopify app reviews are mixed (3.1/5).** The Taggbox Shopify app has reports of account lockouts when exceeding plan limits and aggressive upgrade prompts. Understand your plan limits before going live.
 - **AI Twin requires good source material.** Poor quality reference photos/video produce poor quality AI Twins. Use well-lit, front-facing, high-resolution source material.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

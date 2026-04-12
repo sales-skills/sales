@@ -12,6 +12,9 @@ Help the user with SMS marketing strategy — from opt-in collection and complia
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -260,6 +263,8 @@ SMS is lowest-value for:
 3. **Carrier filtering is real.** US carriers (T-Mobile, AT&T, Verizon) actively filter marketing SMS. Avoid URL shorteners (bit.ly is flagged), ALL CAPS, excessive punctuation, and spammy language. Use your platform's built-in link shortener instead.
 4. **SMS unsubscribes are final and expensive.** Unlike email where users might re-subscribe, SMS unsubscribes are permanent. Each lost subscriber cost you $2-$5+ to acquire. Quality over quantity — send fewer, better messages.
 5. **International SMS costs vary wildly.** US: ~$0.01-$0.02/message. UK: ~$0.04. Australia: ~$0.06. Some countries: $0.10+. Always check per-country rates before launching international SMS campaigns.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

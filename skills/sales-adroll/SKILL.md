@@ -13,6 +13,9 @@ Help the user with AdRoll platform questions — from retargeting pixel setup an
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of AdRoll do you need help with?**
@@ -168,6 +171,8 @@ Key capabilities:
 6. **Email retargeting is not email marketing** — AdRoll email sends are retargeting-focused (triggered by website behavior), not broadcast email campaigns. For full email marketing, use a dedicated ESP and route to `/sales-email-marketing`.
 
 7. **Attribution overlap with other ad platforms** — if you're running Google Ads, Meta Ads, and AdRoll simultaneously, each platform will claim credit for overlapping conversions. Use a third-party attribution tool or compare incrementally.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

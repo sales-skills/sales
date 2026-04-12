@@ -13,6 +13,9 @@ Help the user with Closum platform questions — from email and SMS campaigns th
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What channel or area of Closum do you need help with?**
@@ -228,6 +231,8 @@ Based on the user's specific question:
 3. **Data retention varies dramatically by plan.** Zero and Growth plans retain data for only 30 days. Advanced extends to 180 days. If you need historical reporting beyond these windows, export data regularly or upgrade your plan.
 4. **The API is sparsely documented.** The official docs at developers.closum.com redirect to a Postman collection. The full endpoint list is not publicly captured, and rate limits are unknown. Expect to explore the Postman collection and GitHub repo (github.com/Closum/closum-api) for endpoint discovery.
 5. **Landing pages are not available on Zero or Growth plans.** You need the Advanced plan (15 pages included) or the landing page add-on (EUR 15/mo for 4 pages). If you're building lead capture funnels, factor this into your plan choice.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

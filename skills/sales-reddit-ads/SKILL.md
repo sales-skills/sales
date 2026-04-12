@@ -12,6 +12,9 @@ Help the user with Reddit Ads platform questions — from campaign setup and sub
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Reddit Ads do you need help with?**
@@ -233,6 +236,8 @@ Reddit ads work best as part of a broader funnel:
 6. **Conversation placement ads are 15-30% cheaper** — ads placed within comment threads cost less than feed placements and reach engaged users. Test conversation placement alongside feed placement in separate ad groups.
 
 7. **Max Campaigns use AI targeting** — if you enable Max Campaigns, Reddit controls targeting and creative optimization. Good for beginners but you lose granular subreddit control. Don't use Max if you need precise audience control.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related Skills
 

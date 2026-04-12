@@ -13,6 +13,9 @@ Help the user with Seamless.AI platform questions — from contact/company searc
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Seamless.AI do you need help with?**
@@ -206,6 +209,8 @@ Based on the user's specific question:
 - **Don't skip CRM integration setup.** Seamless.AI's value multiplies when connected to your CRM. Without it, you're exporting CSVs manually. Set up Salesforce/HubSpot integration before building lists.
 - **Don't use Seamless.AI's Engagement Hub for complex sequences.** The built-in emailing and calling tools are basic. For multi-step, multi-channel cadences, push contacts to Salesloft, Outreach, or another dedicated engagement tool.
 - **Don't confuse annual contract terms.** Paid plans auto-renew for another 12 months unless you cancel 60+ days before renewal. This catches many users off guard.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

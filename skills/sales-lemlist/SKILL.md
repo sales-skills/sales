@@ -12,6 +12,9 @@ Help the user with Lemlist platform questions — from multichannel sequence set
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Lemlist do you need help with?**
@@ -175,6 +178,8 @@ Based on the user's specific question:
 - **Don't assume LinkedIn steps are available.** LinkedIn automation requires the Multichannel Expert plan ($99/user/month). The Email Pro plan ($69/user/month) is email-only. Ask about the user's plan before building multichannel sequences with LinkedIn steps.
 - **Don't skip Lemwarm setup.** Lemwarm is free with every seat — there's no reason not to enable it. New accounts without Lemwarm warmup will land in spam. Enable it immediately on every connected email account with at least 30 emails/day warmup volume.
 - **Don't ignore LinkedIn daily limits.** Lemlist automates LinkedIn actions but LinkedIn still enforces daily limits. Exceeding ~20-30 connection requests/day or ~50-80 profile visits/day risks LinkedIn account restrictions. Claude tends to suggest aggressive LinkedIn step volumes that exceed safe limits.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

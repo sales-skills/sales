@@ -12,6 +12,9 @@ Help the user with SendPulse platform questions — email marketing, Automation 
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **Which SendPulse feature are you working with?**
@@ -331,6 +334,8 @@ See `/sales-sendpulse/references/sendpulse-api-reference.md` for the full API re
 4. **SMS pricing is per-message, not included in plan** — email plans don't include SMS credits. SMS is billed separately per message, with rates varying by country. Budget separately for SMS campaigns.
 
 5. **Course builder payments depend on external gateways** — SendPulse doesn't process payments directly; you must connect Stripe, PayPal, or MercadoPago. If none of these work in the user's region, course monetization may be limited.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

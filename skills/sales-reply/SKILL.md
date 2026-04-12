@@ -13,6 +13,9 @@ Help the user with Reply.io platform questions — from multichannel sequence se
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Reply.io do you need help with?**
@@ -189,6 +192,8 @@ Based on the user's specific question:
 - **Calls/SMS is also a paid add-on ($29/account).** Plan your multichannel sequence budget accordingly — a "full multichannel" setup with LinkedIn + Calls/SMS costs $89 + $69 + $29 = $187/user/mo.
 - **Jason AI SDR is a separate plan tier ($139/user/mo), not a feature add-on.** You cannot add Jason AI to the Email Volume or Multichannel plans. It's its own plan with different capabilities.
 - **V3 API is in beta.** Most integrations and documentation still reference V1/V2 endpoints. Check which API version your integration targets before building — V3 endpoints may change without notice.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

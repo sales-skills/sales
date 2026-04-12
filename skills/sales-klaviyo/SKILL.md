@@ -13,6 +13,9 @@ Help the user with Klaviyo platform questions — from Flows and Campaigns throu
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Klaviyo do you need help with?**
@@ -298,6 +301,8 @@ Based on the user's specific question:
 3. **Flow webhooks are NOT the same as system webhooks — flow webhooks fire as a flow action step, system webhooks (Advanced KDP) fire on any event.** Most accounts only have access to flow webhooks (a POST action within a flow step). System webhooks that fire on email events (received, clicked, spam), review events, and consent events with HMAC-SHA256 signing are an Advanced KDP feature. Don't confuse the two when planning integrations.
 4. **SMS requires separate compliance setup (TCPA/10DLC in US, carrier registration) — don't assume SMS is ready to use just because you're on the Email + SMS plan.** You must register your brand, verify your phone number, configure quiet hours, and comply with carrier requirements before sending SMS. This registration process can take days to weeks depending on carrier approval timelines.
 5. **Predictive analytics require sufficient data (typically 500+ orders and 180+ days of history) — new stores won't see predictions immediately.** Features like predicted CLV, churn risk, next order date, and gender prediction need a meaningful volume of historical order data before Klaviyo's models produce results. If you just launched your store or recently migrated to Klaviyo, expect to wait until you accumulate enough data.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

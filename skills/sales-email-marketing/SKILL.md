@@ -12,6 +12,9 @@ Help the user plan, build, and optimize email marketing campaigns for subscriber
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What's the goal?**
@@ -169,6 +172,8 @@ Perform these maintenance tasks regularly:
 3. **More emails is not always the problem when people unsubscribe.** Irrelevant emails cause more unsubscribes than high frequency. A daily email that's consistently valuable retains better than a weekly email that misses the mark. Segment and send relevant content rather than just reducing frequency.
 4. **Automations without exit conditions create embarrassing moments.** If someone buys your product and then receives a sales email for that same product the next day, you've broken trust. Every automated sequence needs exit rules: remove/suppress when the desired action is taken.
 5. **Importing a purchased or scraped list into your email marketing platform will get you banned.** Every major platform (Mailchimp, ActiveCampaign, ConvertKit, Klaviyo, GrooveMail) requires opt-in consent. Importing cold contacts results in high bounces, spam complaints, and account suspension. Use /sales-cadence for cold outbound instead.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

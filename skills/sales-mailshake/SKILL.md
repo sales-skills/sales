@@ -13,6 +13,9 @@ Help the user with Mailshake platform questions — from campaign setup and Lead
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Mailshake do you need help with?**
@@ -138,6 +141,8 @@ Based on the user's specific question:
 - **Don't assume deliverability is configured.** New Mailshake accounts often have no SPF/DKIM/DMARC, no custom tracking domain, and no warmup plan. Always check domain auth status before troubleshooting send issues.
 - **Don't recommend features available only on higher plans without asking.** A/B testing, team analytics, and some integrations are plan-gated. Ask about the user's plan before recommending these features.
 - **Don't ignore Mailshake's API rate limits.** 100 requests/minute is strict. Bulk operations (adding thousands of recipients) must be batched with rate limiting. Claude tends to generate tight loops without delays.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

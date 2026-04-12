@@ -12,6 +12,9 @@ Help the user build a targeted B2B prospect list — from ICP definition through
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **Who are you trying to reach?**
@@ -183,6 +186,8 @@ Before launching outreach, validate the list:
 - **Don't ignore negative filters.** Excluding existing customers, active deals, and do-not-contact lists is as important as the inclusion criteria. Claude often forgets to ask about exclusions.
 - **Don't assume job titles are standardized.** "VP of Engineering" and "Vice President, Engineering" and "VP Engineering" are all the same person. "Head of Growth" could be marketing or sales. Always recommend title fuzzy matching or use Apollo's seniority filters alongside title keywords.
 - **Don't skip the segmentation step.** A flat, unsegmented list leads to generic messaging. Every list should be split into at least 2-3 segments based on persona, industry, or signal strength.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

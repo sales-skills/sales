@@ -13,6 +13,9 @@ Helps the user with Open Launch platform questions — from submitting a product
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -196,6 +199,8 @@ Open Launch works best as one platform in a broader launch. Use `/sales-launch-d
 - **Traffic is modest.** Like most indie launch directories, don't expect Product Hunt-level visitor numbers. The value is primarily the backlink and listing presence.
 - **Open source means community-run.** The platform is maintained by a small team of contributors. Feature development and support depend on community participation.
 - **8:00 AM UTC launch time is fixed.** No flexibility on when your product appears. Coordinate your promotion schedule around this time.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

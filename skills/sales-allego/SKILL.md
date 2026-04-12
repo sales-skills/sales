@@ -12,6 +12,9 @@ Help the user with Allego platform questions — from Modern Learning and AI rol
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Allego do you need help with?**
@@ -176,6 +179,8 @@ Based on the user's specific question:
 - **Content findability depends on thorough tagging.** Allego's AI content recommendations only work well when content is properly tagged with metadata (persona, deal stage, product line). Without tags, reps fall back to manual search — and the search function is noted as a weakness.
 - **Video player is basic compared to YouTube.** Users report limitations in video playback — no thumbnails when scrubbing, limited format support. Set expectations if the user is planning a video-heavy training program.
 - **Don't confuse Allego with Seismic.** Both are revenue enablement platforms competing in the same Gartner Magic Quadrant. Allego is stronger in video-based learning and AI role-play. Seismic is stronger in LiveDocs (dynamic document generation) and has a more mature API. If the user asks about LiveDocs or document generation, they likely need `/sales-seismic`.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

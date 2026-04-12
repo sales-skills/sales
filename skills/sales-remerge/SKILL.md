@@ -13,6 +13,9 @@ Help the user with Remerge — the demand-side platform (DSP) for programmatic i
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with in Remerge?**
@@ -218,6 +221,8 @@ Based on the user's specific question, provide step-by-step guidance. Adapt the 
 6. **Managed service means less direct control** — Remerge emphasizes managed service. If you need full self-serve control (bid adjustments, real-time creative changes), clarify this during onboarding.
 
 7. **Help center is client-restricted** — full API docs and setup guides at help.remerge.io require an active account. Public documentation is limited to partner integration pages (Braze, AppsFlyer, Branch).
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

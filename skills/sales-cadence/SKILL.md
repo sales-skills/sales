@@ -12,6 +12,9 @@ Help the user design a complete outbound cadence for Salesloft, Mailshake, Smart
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What's the campaign goal?**
@@ -165,6 +168,8 @@ Provide a benchmarks table:
 - **Don't write generic "just checking in" follow-ups.** Every touch must add new value or a new angle. If you catch yourself writing "I wanted to follow up on my last email," rewrite it with a new hook.
 - **Don't ignore timezone for call steps.** Phone calls placed outside business hours are wasted touches. If you know the prospect's timezone, note the best call windows (typically 8-10am and 4-6pm local time).
 - **Don't generate a cadence without confirming channel availability first.** If the user didn't specify channels, ask — don't assume they have LinkedIn Sales Navigator or a phone dialer.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Examples
 

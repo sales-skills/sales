@@ -13,6 +13,9 @@ Helps the user submit to, optimize listings on, and get the most from LaunchVibe
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -150,6 +153,8 @@ Pair with:
 - **XP system details are sparse.** The exact XP values for each action, streak multiplier mechanics, and how XP affects ranking are not publicly documented. Treat it as "more engagement = more visibility."
 - **No paid fast-track options.** Unlike most directories, LaunchVibe doesn't offer paid featured listings or queue skipping. Visibility is earned through engagement.
 - **Limited categories.** LaunchVibe appears to accept all product types (pre-launch, launch, post-launch) but doesn't have the granular category structure of larger directories.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

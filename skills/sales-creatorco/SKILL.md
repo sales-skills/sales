@@ -12,6 +12,9 @@ Helps the user with Creator.co platform questions — from AI-powered creator ma
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -199,6 +202,8 @@ Based on the user's specific question:
 - **Login and dashboard issues reported.** G2 and Trustpilot reviewers mention occasional login failures and campaigns not loading. If campaigns won't display, try clearing cache, switching browsers, or contacting support.
 - **Pricing has changed frequently.** Older reviews cite different prices ($460, $995, etc.). Always check creator.co/pricing for current rates.
 - **No public API.** If you need programmatic access to campaign data or creator info, Creator.co doesn't offer it. Consider exporting reports manually or using their pre-built integrations.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

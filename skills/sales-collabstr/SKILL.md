@@ -13,6 +13,9 @@ Helps the user set up and get the most out of Collabstr — the influencer and U
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -157,6 +160,8 @@ Based on the user's specific question:
 - **Regional coverage gaps.** Some users report limited creator availability outside the US. Check creator availability in your target market before committing.
 - **Some creators may underdeliver.** Trustpilot reviews mention cases of paid influencers delivering zero clicks. Always review a creator's portfolio and past work carefully. Start with a small test order before committing to larger campaigns.
 - **UI can feel slow.** G2 reviewers note the portal can be laggy. Not a dealbreaker but worth knowing.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

@@ -13,6 +13,9 @@ Help the user with Omnisend platform questions — from email/SMS campaign setup
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Omnisend do you need help with?**
@@ -172,6 +175,8 @@ Based on the user's specific question:
 - **Segment-based audience filters can silently block automations.** If a workflow uses a segment-based audience filter, there's a race condition: it can take 1-2 minutes for a contact to be added to a segment, but the automation trigger fires immediately. The contact isn't in the segment yet → exits the workflow. Use contact property filters instead of segment filters for time-sensitive triggers, or add a short delay before the filter check.
 - **Template customization has real limits.** G2's top complaint about Omnisend is limited design control. If the user needs pixel-perfect layouts or highly custom visual elements, set expectations early — Omnisend trades deep design flexibility for ease of use. For advanced designs, suggest coding custom HTML templates or using a dedicated email design tool and importing.
 - **Reporting is shallower than Klaviyo.** Users migrating from Klaviyo frequently miss the depth of analytics — custom reporting, data visualization, cohort analysis. If the user needs advanced reporting, recommend exporting data to Google Sheets/Looker or using the API to build custom dashboards.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

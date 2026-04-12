@@ -12,6 +12,9 @@ Help the user grow their email list or newsletter audience — lead magnets, con
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **Where are you now?**
@@ -180,6 +183,8 @@ For platform-specific audience growth features (Kit, Beehiiv, SparkLoop, Mailchi
 4. **Paid recommendations have quality variance** — not all $2 subscribers are equal. Track 30-day retention of recommendation-sourced subscribers. Drop sources where >50% unsubscribe within 30 days.
 
 5. **Social followers ≠ email subscribers** — converting social to email is slow (typically 0.5–2% of followers opt in). Don't count on social alone for list growth.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

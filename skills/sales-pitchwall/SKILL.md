@@ -13,6 +13,9 @@ Helps the user submit to, optimize for, and understand the value of PitchWall �
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -150,6 +153,8 @@ If timing matters and your product is AI-focused, the Premium tier ($99) gets 1-
 - **Premium pricing is high for the DR.** At $99, PitchWall's Premium tier is more expensive than most directory paid options (Open Launch $12, Fazier $39, TinyLaunch $39) and the DR is comparable or lower. The value proposition is newsletter exposure, not backlink strength.
 - **Manual review for all tiers.** Even Premium submissions go through manual review. There's no guaranteed acceptance — the team checks for legitimacy and relevance.
 - **Advertising metrics are self-reported.** Performance estimates (120-200 clicks for newsletter sponsor, 200-600 for dedicated newsletter) come from PitchWall's own advertising page. Independent verification of these numbers is not available.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

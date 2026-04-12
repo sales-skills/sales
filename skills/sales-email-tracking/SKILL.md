@@ -12,6 +12,9 @@ Help the user set up, interpret, and act on email tracking data — from underst
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What's your tracking goal?**
@@ -151,6 +154,8 @@ Design your follow-up cadence around tracking signals rather than fixed time del
 - **Don't ignore bot clicks.** Microsoft Defender and corporate security tools pre-click all links, inflating click data. Look for multiple rapid clicks from the same IP within seconds — that's a bot, not a human.
 - **Don't over-track.** Tracking every single email (including internal and personal) creates noise and potential privacy issues. Most tools let you disable tracking per-email or per-recipient — use this for non-prospect correspondence.
 - **Don't rely on tracking instead of asking.** Tracking tells you someone opened an email — it doesn't tell you what they thought. The best follow-up is a reply asking a question, not "I saw you opened my email."
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

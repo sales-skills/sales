@@ -13,6 +13,9 @@ Build, structure, and optimize sales funnels across any platform. This skill cov
 ---
 ## Step 1: Lead with Structure, Then Refine
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 **If the user's request already provides enough context to identify the funnel type, skip directly to the relevant funnel structure and start filling it in. Lead with your best-effort answer using reasonable assumptions (stated explicitly), then ask only the most critical 1-2 clarifying questions at the end.**
 
 ### Common Funnel Structures (Always Provide the Relevant Template)
@@ -228,6 +231,8 @@ Follow this framework for every test:
 5. **Do not conflate funnel structure with email sequences.** The funnel is the page flow. Post-funnel email nurture and abandoned-cart recovery are separate concerns — point users to /sales-email-marketing for those.
 
 ---
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
+
 ## Related Skills
 
 - `/sales-groove` — Groove.cm-specific page building, checkout, and membership setup

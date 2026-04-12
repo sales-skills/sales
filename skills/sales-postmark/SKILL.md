@@ -13,6 +13,9 @@ Help the user with Postmark (ActiveCampaign) platform questions — from transac
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Postmark do you need help with?**
@@ -267,6 +270,8 @@ Based on the user's specific question:
 3. **Transactional and broadcast streams have separate suppression lists but share a single bill.** While Message Streams isolate sending reputation, suppressions are per-stream — an address suppressed in your broadcast stream can still receive transactional email, and vice versa. This is intentional (a user unsubscribing from your newsletter should still get password resets) but can surprise teams expecting a single global suppression list.
 4. **Postmark has a sender vetting process — you cannot send immediately at high volume.** New accounts go through an approval process. Postmark reviews your use case and may ask about your sending patterns, audience, and content. This vetting is why their shared IP reputation is so high, but it means you cannot sign up and blast 100K emails on day one. Plan for 1-2 business days of approval time for new accounts.
 5. **The DMARC monitoring API is completely separate from the main Postmark API.** The DMARC service lives at `dmarc.postmarkapp.com` with its own authentication tokens and endpoints. Do not try to use your Postmark server or account token for DMARC API calls — they are different systems with different credentials, even though both are Postmark products.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

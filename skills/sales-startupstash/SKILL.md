@@ -13,6 +13,9 @@ Helps the user submit to, optimize for, and understand the value of Startup Stas
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -140,6 +143,8 @@ In a multi-directory launch, Startup Stash fits in **Phase 3 (free editorial que
 - **Manual management only.** Listings can't be synced with other platforms. Changes must be made manually through the Startup Stash interface.
 - **Removal unclear.** There is no documented way to remove a business listing from the site once published.
 - **Post-acquisition maintenance.** Startup Stash was acquired in 2017. The level of active curation and maintenance may vary compared to founder-led directories.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

@@ -13,6 +13,9 @@ Helps the user configure and get the most from Sprout Social — publishing, eng
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -211,6 +214,8 @@ Based on the user's specific question:
 - **Profile limits on Standard.** Standard plan includes only 5 social profiles. If you manage more, you need Professional (unlimited).
 - **Influencer Marketing and Employee Advocacy are separate add-ons.** Neither is included in base plans. Both require separate contracts on top of per-seat pricing.
 - **Mobile app has limitations.** Many users report the mobile experience is less capable than desktop — limited scheduling, slower load times, and some features unavailable. Don't rely on mobile for complex workflows.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

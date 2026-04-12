@@ -13,6 +13,9 @@ Helps the user submit to, optimize listings on, and get the most from SaaSHunt.a
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -181,6 +184,8 @@ The template-based submission takes slightly longer than typical form-based dire
 - **Pro pricing may vary.** The ₹3,999/mo and ₹9,999/mo figures are from research — verify current pricing and what's included before committing.
 - **Review timeline unclear.** No published SLA for how long editorial review takes. Could be days or weeks.
 - **Newer platform.** SaaSHunt.ai is relatively new with limited reviews and community discussion. The platform and its features may evolve.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

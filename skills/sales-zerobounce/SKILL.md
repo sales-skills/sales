@@ -15,6 +15,9 @@ ZeroBounce is an email validation and deliverability platform with 99.6% accurac
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of ZeroBounce do you need help with?**
@@ -250,6 +253,8 @@ Based on the user's specific question, provide step-by-step instructions:
 - **Don't forget about regional API endpoints.** ZeroBounce offers US and EU regional endpoints in addition to the default. If you have data residency requirements (GDPR), use the EU endpoint (`api-eu.zerobounce.net`). If latency matters, use the regional endpoint closest to your infrastructure. The default endpoint works globally but may not satisfy compliance requirements.
 - **Don't ignore the 80K/hour rate limit on credit endpoints.** At 80,000 requests per hour, you can process ~22 emails per second via real-time validation. For large lists, use bulk upload (`POST /v2/sendfile`) instead of hammering the real-time endpoint — bulk is async and handles scale better. Use batch validation (`POST /v2/validatebatch` for up to 200 at a time) as a middle ground.
 - **Don't warm up and campaign simultaneously from the same account.** Email warmup builds reputation through controlled engagement patterns. Sending live campaigns during warmup disrupts these patterns and can hurt rather than help. Finish warmup first (2-4 weeks), then transition to live sending gradually.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

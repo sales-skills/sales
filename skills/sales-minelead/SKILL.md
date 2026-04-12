@@ -13,6 +13,9 @@ Help the user with Minelead platform questions — from Company Email Search and
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Minelead do you need help with?**
@@ -225,6 +228,8 @@ Based on the user's specific question:
 6. **HubSpot, Zoho CRM, and Google Sheets integrations may require a Pro plan or higher — Free and Starter plans have limited integration access.** Verify your plan includes the integrations you need before building workflows that depend on them. Zapier connectivity may also require a paid Minelead plan for certain triggers/actions.
 
 7. **The Free plan is throttled and limited to 25 credits/month — expect slower response times and rate limiting.** The Free tier is suitable for evaluation only. API calls may be rate-limited more aggressively than paid plans. If you are building an integration, test on a paid plan to get realistic performance characteristics.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

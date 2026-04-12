@@ -11,6 +11,9 @@ Help the user read Qwilr engagement signals and turn them into concrete next ste
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What are the analytics showing?**
@@ -139,6 +142,8 @@ For full automation setup (CRM sync, Slack notifications, etc.), use `/sales-qwi
 - **Don't recommend aggressive follow-up on automated CRM views.** Some CRMs and email tools auto-preview links, generating false "viewed" signals. If a view happens within seconds of sending with zero time on page, it's likely automated.
 - **Don't tell the prospect you can see their views.** Saying "I noticed you looked at the pricing 3 times" is creepy and breaks trust. Reference engagement signals *indirectly* — "I wanted to see if you had questions about the pricing options."
 - **Don't ignore time-of-day context.** A prospect reviewing a proposal at 10pm on a Sunday suggests they're doing personal due diligence, possibly building a case. A 30-second view during business hours is likely a quick skim between meetings.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

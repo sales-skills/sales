@@ -12,6 +12,9 @@ Helps the user plan and execute media relations programs — from choosing the r
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -221,6 +224,8 @@ Based on the user's specific question:
 - **69% of PR pros now use AI for pitching.** AI-generated pitches are common, and journalists can tell. Use AI for research and draft structure, but personalize the actual pitch yourself. Mass-generated pitches get ignored.
 - **"PR tool" ≠ "social listening tool."** Meltwater combines both, but most PR tools (Cision, Muck Rack, Prowly) focus on journalist outreach and coverage tracking, not social listening. If you need both, evaluate them separately.
 - **Source requests (HARO-style) are changing.** Connectively (formerly HARO) is the main platform where journalists request sources. Response competition is fierce — speed and relevance are everything.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

@@ -12,6 +12,9 @@ Help the user with BrandJet AI platform questions — from multi-channel outreac
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of BrandJet do you need help with?**
@@ -153,6 +156,8 @@ Based on the user's specific question:
 - **Additional social accounts cost extra.** Only 1 social account is included on Starter. Each additional account is $17-20/month. Budget for this if you plan multi-platform monitoring.
 - **Artemis MCP is new.** Documentation may be limited and features may change. Start with simple workflows before attempting complex multi-step automations.
 - **The feature set is large.** New users can feel overwhelmed. Start with one module (outreach or monitoring) and expand once comfortable. Don't try to configure everything at once.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

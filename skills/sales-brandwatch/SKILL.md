@@ -13,6 +13,9 @@ Helps the user configure and use Brandwatch — from setting up monitoring queri
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **Which Brandwatch module do you need help with?**
@@ -199,6 +202,8 @@ Based on the user's specific question:
 - **Onboarding support varies.** Multiple users report that sales handoff to customer success is inconsistent. Escalate early if your account manager is unresponsive — ask for a technical implementation specialist.
 - **Consumer Intelligence and Social Management are separate products.** They can be purchased independently. Features that span both (e.g., social inbox with listening data) require both subscriptions. Clarify exactly which modules are included in your contract.
 - **Channels disconnect.** Social network connections can break periodically (common across all social management tools). Check channel health weekly, especially after social platform API updates. Reconnect promptly to avoid gaps in data.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

@@ -13,6 +13,9 @@ Help the user with Meltwater platform questions — from Explore searches and so
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Meltwater do you need help with?**
@@ -202,6 +205,8 @@ Based on the user's specific question:
 - **Sentiment accuracy is imperfect.** Auto-detected sentiment is ~70-80% accurate. For critical reporting, manually review and correct sentiment on key mentions. Sarcasm, irony, and non-English content are common failure modes.
 - **Boolean learning curve.** Effective monitoring requires well-crafted Boolean queries. Start with Meltwater's Boolean templates and refine — poorly constructed searches return noisy, irrelevant results (top user complaint).
 - **Zapier integration is beta.** The Zapier connector has limited triggers and actions compared to native API integration. For production workflows, use the API directly.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

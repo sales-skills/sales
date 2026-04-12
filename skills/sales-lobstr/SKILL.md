@@ -13,6 +13,9 @@ Help the user with Lobstr.io platform questions — from configuring ready-made 
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Lobstr.io do you need help with?**
@@ -262,6 +265,8 @@ Based on the user's specific question:
 5. **The /results endpoint has a strict 2 requests/second rate limit — much tighter than other endpoints.** When fetching large result sets, implement proper rate limiting and backoff in your client code. Batch your result retrieval and avoid tight polling loops. The /squids and /runs endpoints are more generous at 120 requests/minute.
 6. **HubSpot, Slack, Zapier, and Airtable integrations are listed as "coming soon" — they are not yet available.** If you need to connect Lobstr to these tools today, use the Make integration as a bridge or build a custom integration using Lobstr's webhook and API capabilities.
 7. **Data retention is 7 days on Free and up to 28 days on paid plans — export or retrieve results promptly.** Results are automatically deleted after the retention period. Set up auto-export to Google Sheets or S3, or retrieve results via API as soon as runs complete. Do not rely on the Lobstr dashboard as a long-term data store.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

@@ -13,6 +13,9 @@ Helps the user evaluate and work with House of Marketers (HoM) — the TikTok-fo
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -180,6 +183,8 @@ Based on the user's specific question:
 - **No public API or dashboard access.** Reporting is delivered by HoM's team, not through a self-serve dashboard. Ask about reporting frequency and format during briefing.
 - **Creator network is pre-established.** The 50K+ network is curated but may not include niche micro-creators in very specific verticals. Discuss creator sourcing for niche categories upfront.
 - **Enterprise pricing varies widely.** $20K to $5M+ is a huge range. Get a detailed scope and deliverables before committing to avoid mismatched expectations.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

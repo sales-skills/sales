@@ -15,6 +15,9 @@ SafetyMails is a Brazil-founded email verification platform with 8,000+ customer
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of SafetyMails do you need help with?**
@@ -184,6 +187,8 @@ Based on the user's specific question, provide step-by-step instructions:
 - **Don't expect a full REST API reference.** SafetyMails documentation at docs.safetymails.com is help-center style (guides, FAQs, how-tos), not a formal REST API reference with endpoint schemas. The primary programmatic interface is the JavaScript embed for form validation. For bulk verification, use the web panel or integrations rather than trying to build custom REST calls.
 - **Don't send to Catch-All addresses without monitoring.** Catch-All/Accept-All domains accept all emails at the SMTP level — SafetyMails cannot confirm individual mailbox existence. Including these in campaigns is a judgment call: they may be fine, or they may bounce. Monitor bounce rates closely if you include them.
 - **Don't ignore spamtrap results.** If SafetyMails flags addresses in your list as spamtraps, take it seriously. Even a single spamtrap hit can get your sending domain blocklisted. A high spamtrap rate in your list likely means the list was purchased, scraped, or hasn't been cleaned in a very long time — consider the source.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

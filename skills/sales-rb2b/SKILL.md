@@ -14,6 +14,9 @@ Help the user with RB2B platform questions — Person-Level Website Visitor ID, 
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 **What area of RB2B do you need help with?**
 - a) Person-Level ID — identify individual visitors by name, email, LinkedIn
 - b) Company-Level ID — identify companies visiting your site
@@ -206,6 +209,8 @@ RB2B offers a **separate API product** at api.rb2b.com with credit-based pricing
 - **API is a separate product**: The Identity Resolution API at api.rb2b.com has its own credit-based pricing, completely separate from the pixel product pricing. Don't confuse pixel plan limits with API credits.
 - **Match rates vary significantly**: The 35-45% person-level match rate is for Pro+ plans with sufficient US traffic. Lower plans and sites with more international/mobile/VPN traffic will see much lower rates. Set expectations accordingly.
 - **Pixel requires JavaScript**: The RB2B pixel is a JavaScript snippet. It won't work on server-rendered pages that don't execute client-side JS, email tracking pixels, or native mobile apps. For those use cases, use the API product instead.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

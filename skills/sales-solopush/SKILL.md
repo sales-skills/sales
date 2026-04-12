@@ -12,6 +12,9 @@ Helps the user with SoloPush platform questions — from submitting a product an
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -157,6 +160,8 @@ SoloPush's solo maker focus makes it good for personal brand building:
 - **Creator prefers anonymity.** The founder is not prominently featured on the site. Support options may be limited to social channels (@solopushcom on X/Twitter).
 - **No editorial curation means variable quality.** Like ProductBurst, instant listing means your product competes with everything from polished SaaS to rough concepts.
 - **Backlink type disputed.** One source (Awesome Directories) lists nofollow, while others (LaunchDirectories) list dofollow. Verify by inspecting the actual link on your listing after submission.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

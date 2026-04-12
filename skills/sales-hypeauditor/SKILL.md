@@ -13,6 +13,9 @@ Helps the user with HypeAuditor platform questions — from influencer discovery
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -172,6 +175,8 @@ For API integration questions, refer to the detailed [HypeAuditor API Reference]
 - **Ecommerce integrations vary in depth.** Shopify has the deepest integration (product sync, gifting, sales attribution). WooCommerce and Magento are more limited — verify which features you need before relying on them.
 - **Gmail sync is one-way.** Gmail integration syncs email communication into My Network IRM but may not support all email workflows. Verify the sync direction and limitations for your use case.
 - **Pricing increases over time.** Multiple reviewers report annual price increases. Lock in pricing with longer-term contracts if budget predictability matters.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

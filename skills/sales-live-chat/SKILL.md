@@ -12,6 +12,9 @@ Help the user with live chat and chatbot — from tool selection and widget setu
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -214,6 +217,8 @@ SWAI.ai includes an AI-powered chat widget as part of its Autonomous Revenue OS:
 3. **Don't forget offline hours** — if no agents are online and no chatbot is configured, visitors see a dead chat widget. Always have an offline message or email capture form.
 4. **Don't ignore mobile** — chat widgets can obscure content on mobile. Test the experience on small screens and consider hiding or minimizing the widget on mobile.
 5. **Don't skip CRM integration** — chat leads that don't get pushed to CRM get forgotten. Always connect chat to your lead management system.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

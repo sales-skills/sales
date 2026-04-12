@@ -12,6 +12,9 @@ Helps the user with OpenHunts platform questions — from submitting a product a
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -189,6 +192,8 @@ OpenHunts works best as one platform in a broader launch:
 - **No public API.** Everything is manual through the web interface.
 - **No SEO Growth/article option.** Unlike Firsto ($149) and Open Launch ($59), OpenHunts doesn't offer editorial review articles for additional SEO value.
 - **Small platform.** ~11K monthly visitors is modest. Don't expect significant direct traffic — the value is the backlink and category discovery.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

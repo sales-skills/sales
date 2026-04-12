@@ -13,6 +13,9 @@ Helps the user collect, display, moderate, and syndicate product reviews across 
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -143,6 +146,8 @@ All major review platforms support JSON-LD structured data. Key requirements:
 - **Photo review quality varies** — expect ~5-15% of reviews to include photos without incentives. Incentivizing can increase this to 30%+.
 - **Syndication ≠ automatic retail acceptance** — having syndication capability doesn't mean retailers will accept your reviews. It's a business negotiation.
 - **Migration between platforms risks losing reviews** — most platforms support CSV import/export, but formatting varies. Test with a small batch first.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 

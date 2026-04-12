@@ -12,6 +12,9 @@ Help the user build chatbot flows for sales, support, and marketing — across W
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 **What channel are you building for?**
 - a) WhatsApp Business
 - b) Telegram
@@ -241,6 +244,8 @@ HubSpot's chatbot builder (included in free CRM):
 - **Template approval takes time** — WhatsApp message templates require Meta review (hours to days). Don't wait until launch day to submit templates.
 - **Bot-to-human handoff state** — most platforms pause the bot during human chat but don't always resume correctly. Test the full cycle: bot → human → bot resumes.
 - **Multi-channel subscriber identity** — a user on WhatsApp and Telegram is often two separate contacts in the platform. Merging/deduplication requires matching by phone or email.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

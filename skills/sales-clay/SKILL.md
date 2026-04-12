@@ -13,6 +13,9 @@ Help the user with Clay platform questions — from waterfall enrichment and Cla
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What area of Clay do you need help with?**
@@ -200,6 +203,8 @@ When answering, always:
 4. **Claygent results vary with prompt quality.** AI research agents are powerful but sensitive to instruction quality. Vague prompts produce inconsistent results. Always write specific, structured instructions and test on 5-10 rows before scaling.
 
 5. **Data credit costs vary by provider — not all enrichments cost the same.** A Hunter email lookup might cost 1 credit while a ZoomInfo enrichment costs 10+. The waterfall order matters for cost optimization, not just coverage.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Step 5 — Related skills
 

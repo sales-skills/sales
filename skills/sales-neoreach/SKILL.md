@@ -14,6 +14,9 @@ Helps users configure and get the most out of NeoReach — enterprise influencer
 
 ## Step 1 — Gather context
 
+
+If `references/learnings.md` exists, read it first for accumulated knowledge.
+
 Ask the user:
 
 1. **What do you need help with?**
@@ -161,6 +164,8 @@ Based on the user's specific question:
 - **Limited micro-influencer coverage.** NeoReach's 3M+ database skews toward larger creators. If your strategy focuses on nano/micro-influencers (under 50K followers), platforms like Heepsy (11M+ profiles) or Modash (350M+ profiles) may surface more options.
 - **Managed services minimum is $25K+.** The managed campaign option is not available for smaller budgets. For sub-$25K managed influencer campaigns, consider Famesters or House of Marketers.
 - **IMV metric is proprietary.** NeoReach's Influencer Media Value calculation is internal — you can't replicate or verify the methodology independently. Useful for internal reporting but may not satisfy external audit requirements.
+
+- **Self-improving**: If you discover something not covered here, append it to `references/learnings.md` with today's date.
 
 ## Related skills
 
