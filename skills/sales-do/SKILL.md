@@ -1,6 +1,6 @@
 ---
 name: sales-do
-description: "Routes any sales, marketing, or GTM objective to the right specialized skill. Covers 127 first-party skills and 53 third-party skills across prospecting, outbound, deals, proposals, forecasting, deliverability, enrichment, intent signals, content, coaching, CRO, SEO, social listening, social media management, employee advocacy, media relations, customer reviews, data hygiene, B2B advertising, retargeting, chatbots, and platform help for Attio, Apollo, Salesloft, Mailshake, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter, Tomba, Prospeo, Mailmo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, Brevo, Braze, Iterable, GetResponse, Seismic, Allego, Groove, Kit (ConvertKit), Omnisend, ZoomInfo, SendPulse, Clearbit, RB2B, Retention.com, 6sense, Clay, LeadMagic, AdRoll, SWAI, Tagshop, influData, Creator.co, Hypefy, LTK, Influencity, Meltwater, Brandwatch, Sprout Social, Skeepers, Heepsy, CreatorIQ, Afluencer, Collabstr, Cloutboost, House of Marketers, LoyaltyLion, MicroLaunch, LaunchingNext, SideProjectors, ProductBurst, SoloPush, CtrlAlt.cc, Open Launch, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, Reddit Ads, Semrush, BrandJet, Indie Hackers, Altern, Lobsters, StartupBase, Startup Stash, PitchWall, Futurepedia, LaunchCaster, BetaList, SaaSHunt, Resource.fyi, LaunchVibe, and Qwilr. Use when you have a sales or marketing question and are not sure which skill to use. Do NOT use to solve problems directly — this skill only routes."
+description: "Routes any sales, marketing, or GTM objective to the right specialized skill. Covers 128 first-party skills and 53 third-party skills across prospecting, outbound, deals, proposals, forecasting, deliverability, enrichment, intent signals, content, coaching, CRO, SEO, social listening, social media management, employee advocacy, media relations, customer reviews, data hygiene, B2B advertising, retargeting, chatbots, and platform help for Attio, Apollo, Salesloft, Mailshake, Lemlist, Smartlead, Yesware, Mixmax, Reply.io, Woodpecker, Hunter, Tomba, Prospeo, Mailmo, Seamless.AI, SafetyMails, Closum, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, Brevo, Braze, Iterable, GetResponse, Seismic, Allego, Groove, Kit (ConvertKit), Omnisend, ZoomInfo, SendPulse, Clearbit, RB2B, Retention.com, 6sense, Clay, LeadMagic, AdRoll, SWAI, Tagshop, influData, Creator.co, Hypefy, LTK, Influencity, Meltwater, Brandwatch, Sprout Social, Skeepers, Heepsy, CreatorIQ, Afluencer, Collabstr, Cloutboost, House of Marketers, Famesters, LoyaltyLion, MicroLaunch, LaunchingNext, SideProjectors, ProductBurst, SoloPush, CtrlAlt.cc, Open Launch, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, Reddit Ads, Semrush, BrandJet, Indie Hackers, Altern, Lobsters, StartupBase, Startup Stash, PitchWall, Futurepedia, LaunchCaster, BetaList, SaaSHunt, Resource.fyi, LaunchVibe, and Qwilr. Use when you have a sales or marketing question and are not sure which skill to use. Do NOT use to solve problems directly — this skill only routes."
 version: 1.0.0
 tags: [sales, router, skill-discovery]
 ---
@@ -441,6 +441,12 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 |---|---|
 | `/sales-houseofmarketers` | User asks about House of Marketers agency, House of Marketers TikTok campaigns, House of Marketers pricing, House of Marketers influencer services, House of Marketers paid ads management, House of Marketers content creation, House of Marketers strategy consulting, HoM TikTok campaign, or House of Marketers vs other TikTok agencies |
 
+### Famesters & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-famesters` | User asks about Famesters agency, Famesters influencer marketing, Famesters gaming campaigns, Famesters fintech campaigns, Famesters iGaming campaigns, Famesters app marketing, Famesters pricing, Famesters vs Cloutboost, Famesters vs House of Marketers, Famesters campaign workflow, BuzzGuru analytics, Famesters measurement and reporting, or Famesters agency evaluation |
+
 ### TikTok Marketing Strategy
 
 | Skill | Route when... |
@@ -451,13 +457,13 @@ Review the user's objective and match it to the best skill(s) from the catalog b
 
 | Skill | Route when... |
 |---|---|
-| `/sales-gaming-marketing` | User asks about gaming influencer marketing strategy, finding gaming creators or streamers, planning a game launch influencer campaign, budgeting for gaming influencer marketing, choosing a gaming influencer agency (Cloutboost vs Keymailer vs Lurkit vs GameInfluencer), gaming-specific creator outreach, Twitch streamer partnerships, YouTube Let's Play sponsorships, game key gifting programs, measuring gaming influencer ROI (wishlists, installs, concurrent players), or game launch campaign sequencing |
+| `/sales-gaming-marketing` | User asks about gaming influencer marketing strategy, finding gaming creators or streamers, planning a game launch influencer campaign, budgeting for gaming influencer marketing, choosing a gaming influencer agency (Cloutboost vs Famesters vs Keymailer vs Lurkit vs GameInfluencer), gaming-specific creator outreach, Twitch streamer partnerships, YouTube Let's Play sponsorships, game key gifting programs, measuring gaming influencer ROI (wishlists, installs, concurrent players), or game launch campaign sequencing |
 
 ### Influencer Marketing Strategy
 
 | Skill | Route when... |
 |---|---|
-| `/sales-influencer-marketing` | User asks about influencer marketing strategy across platforms, choosing an influencer platform (Modash vs influData vs Creator.co vs Hypefy vs LTK vs Influencity vs Meltwater vs Skeepers vs Heepsy vs CreatorIQ vs Afluencer vs Collabstr vs Cloutboost vs House of Marketers), influencer discovery workflow, creator vetting framework, influencer outreach templates, influencer campaign ROI measurement, product gifting programs, influencer affiliate programs, or creator rate benchmarks |
+| `/sales-influencer-marketing` | User asks about influencer marketing strategy across platforms, choosing an influencer platform (Modash vs influData vs Creator.co vs Hypefy vs LTK vs Influencity vs Meltwater vs Skeepers vs Heepsy vs CreatorIQ vs Afluencer vs Collabstr vs Cloutboost vs House of Marketers vs Famesters), influencer discovery workflow, creator vetting framework, influencer outreach templates, influencer campaign ROI measurement, product gifting programs, influencer affiliate programs, or creator rate benchmarks |
 
 ### MicroLaunch & Platform
 

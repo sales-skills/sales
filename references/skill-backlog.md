@@ -30,3 +30,4 @@ Problem spaces discovered during platform research that don't have dedicated ski
 | Gaming livestream ad formats (pre-roll, overlay, mid-roll, sponsored segments) | Research — ad tech for streaming platforms, different from influencer partnerships | sales-cloutboost | 2026-04-11 |
 | TikTok Shop setup and optimization (product listings, live shopping, affiliate commission structure) | Upstream research — growing ecommerce channel, distinct from general TikTok marketing | sales-houseofmarketers | 2026-04-12 |
 | TikTok algorithm analytics tools (performance debugging, trend detection, competitive analysis) | Upstream research — platform-specific tooling gap | sales-houseofmarketers | 2026-04-12 |
+| iGaming influencer regulatory compliance (gambling ad rules, financial promotion guidelines per jurisdiction) | Research — niche but critical for iGaming vertical, no existing skill | sales-famesters | 2026-04-12 |

@@ -1,6 +1,6 @@
 ---
 name: sales-gaming-marketing
-description: "Gaming influencer marketing strategy — finding gaming creators, streamer partnerships, game launch influencer campaigns, budget allocation for gaming, measuring gaming influencer ROI, and platform comparison. Covers creator discovery for gaming (YouTube, Twitch, TikTok, Kick), streamer outreach and negotiation, game key and early access gifting, launch timing and campaign sequencing, gaming-specific metrics (wishlists, installs, concurrent players, Steam traffic), content formats (Let's Play, first impressions, sponsored streams, gameplay trailers), and gaming influencer pricing. Use when planning a gaming influencer campaign, finding streamers for a game launch, budgeting for gaming creator partnerships, choosing between gaming influencer agencies, or measuring gaming campaign performance. Do NOT use for Cloutboost-specific config (use /sales-cloutboost), general influencer marketing strategy (use /sales-influencer-marketing), or non-gaming influencer campaigns (use /sales-influencer-marketing)."
+description: "Gaming influencer marketing strategy — finding gaming creators, streamer partnerships, game launch influencer campaigns, budget allocation for gaming, measuring gaming influencer ROI, and platform comparison. Covers creator discovery for gaming (YouTube, Twitch, TikTok, Kick), streamer outreach and negotiation, game key and early access gifting, launch timing and campaign sequencing, gaming-specific metrics (wishlists, installs, concurrent players, Steam traffic), content formats (Let's Play, first impressions, sponsored streams, gameplay trailers), and gaming influencer pricing. Use when planning a gaming influencer campaign, finding streamers for a game launch, budgeting for gaming creator partnerships, choosing between gaming influencer agencies, or measuring gaming campaign performance. Do NOT use for Cloutboost-specific config (use /sales-cloutboost), Famesters-specific config (use /sales-famesters), general influencer marketing strategy (use /sales-influencer-marketing), or non-gaming influencer campaigns (use /sales-influencer-marketing)."
 argument-hint: "[describe your gaming marketing question — e.g., 'how do I find Twitch streamers for my indie horror game' or 'what budget do I need for a Steam launch influencer campaign']"
 license: MIT
 version: 1.0.0
@@ -53,6 +53,7 @@ Ask the user:
 
 If the request maps to a specialized skill, route:
 - Cloutboost platform setup/config → `/sales-cloutboost`
+- Famesters agency services → `/sales-famesters`
 - General influencer marketing strategy (not gaming-specific) → `/sales-influencer-marketing`
 - Retargeting influencer content for paid ads → `/sales-retargeting`
 - PR and media relations for game launches → `/sales-media-relations`
@@ -214,6 +215,7 @@ Based on the user's specific question:
 ## Related skills
 
 - `/sales-cloutboost` — Cloutboost platform help — Portal discovery, campaign management, retargeting, PR
+- `/sales-famesters` — Famesters platform help — full-cycle influencer agency (gaming, fintech, iGaming, apps), BuzzGuru analytics
 - `/sales-influencer-marketing` — Influencer marketing strategy across platforms — platform comparison, creator vetting, ROI measurement
 - `/sales-retargeting` — Retargeting strategy — repurpose influencer content for paid ads
 - `/sales-media-relations` — Media relations strategy — gaming press outreach, press kits, coverage tracking

@@ -1,6 +1,6 @@
 # Sales Skills
 
-**AI-powered sales copilot — 148 skills for prospecting, outbound, deals, proposals, and GTM. One install, one router.**
+**AI-powered sales copilot — 149 skills for prospecting, outbound, deals, proposals, and GTM. One install, one router.**
 
 [![Skills](https://img.shields.io/badge/skills-149-blue)](https://skills.sh/sales-skills/sales)
 [![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
@@ -47,11 +47,11 @@ npx skills add sales-skills/sales -a claude-code --copy -y
 - You want to build a prospect list but don't know whether to use Apollo, Clay, ZoomInfo, or Seamless
 - You're spending more time figuring out _which_ tool to use than actually doing the work
 
-One router skill (`/sales-do`) understands all 130 skills and matches you to the right one based on what you're trying to accomplish.
+One router skill (`/sales-do`) understands all 131 skills and matches you to the right one based on what you're trying to accomplish.
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 108 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for 109 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -282,7 +282,7 @@ Router recommends a 5-skill sequence:
 </details>
 
 <details>
-<summary><strong>Influencer Marketing</strong> (17 skills)</summary>
+<summary><strong>Influencer Marketing</strong> (18 skills)</summary>
 
 | Skill | What it does |
 |---|---|
@@ -300,6 +300,7 @@ Router recommends a 5-skill sequence:
 | `/sales-collabstr` | Collabstr — influencer and UGC creator marketplace, vetted creators, escrow payments, campaign posting |
 | `/sales-cloutboost` | Cloutboost — gaming influencer marketing platform (1.5M+ creators), Portal discovery, campaign management, retargeting, PR |
 | `/sales-houseofmarketers` | House of Marketers — TikTok-focused agency (50K+ creators), influencer campaigns, paid ads, content creation, strategy |
+| `/sales-famesters` | Famesters — full-cycle influencer agency (gaming, fintech, iGaming, apps), 1000+ brands, BuzzGuru analytics |
 | `/sales-tiktok-marketing` | TikTok marketing strategy — organic growth, paid ads, content creation, influencer strategy, algorithm, metrics |
 | `/sales-gaming-marketing` | Gaming influencer marketing strategy — streamer partnerships, game launch campaigns, budget allocation, ROI |
 | `/sales-influencer-marketing` | Influencer marketing strategy — platform comparison, creator discovery, vetting, campaign tracking |
@@ -307,11 +308,12 @@ Router recommends a 5-skill sequence:
 </details>
 
 <details>
-<summary><strong>Gaming Marketing</strong> (2 skills)</summary>
+<summary><strong>Gaming Marketing</strong> (3 skills)</summary>
 
 | Skill | What it does |
 |---|---|
 | `/sales-cloutboost` | Cloutboost — gaming influencer marketing platform (1.5M+ creators), Portal discovery, campaign management, retargeting, PR |
+| `/sales-famesters` | Famesters — full-cycle influencer agency (gaming, fintech, iGaming, apps), 1000+ brands, BuzzGuru analytics |
 | `/sales-gaming-marketing` | Gaming influencer marketing strategy — streamer partnerships, game launch campaigns, budget allocation, ROI |
 
 </details>
