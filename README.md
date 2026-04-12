@@ -1,9 +1,9 @@
 # Sales Skills
 
-**AI-powered sales copilot — 150 skills for prospecting, outbound, deals, proposals, and GTM. One install, one router.**
+**AI-powered sales copilot — hundreds of skills for prospecting, outbound, deals, proposals, and GTM. One install, one router.**
 
-[![Skills](https://img.shields.io/badge/skills-150-blue)](https://skills.sh/sales-skills/sales)
-[![Platforms](https://img.shields.io/badge/platforms-50%2B-green)](https://skills.sh/sales-skills/sales)
+[![Skills](https://img.shields.io/badge/skills-hundreds-blue)](https://skills.sh/sales-skills/sales)
+[![Platforms](https://img.shields.io/badge/platforms-dozens-green)](https://skills.sh/sales-skills/sales)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![Install](https://img.shields.io/badge/install-npx%20skills%20add%20sales--skills%2Fsales-black)](https://skills.sh/sales-skills/sales)
 
@@ -25,7 +25,7 @@
 npx skills add sales-skills/sales --skills sales-do
 ```
 
-Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill (117 first-party + 53 third-party skills).
+Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill.
 
 Want every skill at once?
 
@@ -47,11 +47,11 @@ npx skills add sales-skills/sales -a claude-code --copy -y
 - You want to build a prospect list but don't know whether to use Apollo, Clay, ZoomInfo, or Seamless
 - You're spending more time figuring out _which_ tool to use than actually doing the work
 
-One router skill (`/sales-do`) understands all 131 skills and matches you to the right one based on what you're trying to accomplish.
+One router skill (`/sales-do`) understands all available sales, markteing, ad network, influencer, crm and gtm skills and matches you to the right one based on what you're trying to accomplish.
 
 ## What is `sales-do`?
 
-`/sales-do` is a router skill — the single entry point for 109 skills in this repo + 53 third-party skills. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
+`/sales-do` is a router skill — the single entry point for hundreds of skills in this repo. Describe your objective in plain language and it matches you to the right specialized skill with a ready-to-use prompt. You don't need to memorize which skill does what.
 
 ```
 /sales-do write a cold outbound sequence for CFOs at mid-market fintech companies
@@ -282,7 +282,7 @@ Router recommends a 5-skill sequence:
 </details>
 
 <details>
-<summary><strong>Influencer Marketing</strong> (19 skills)</summary>
+<summary><strong>Influencer Marketing</strong> (20 skills)</summary>
 
 | Skill | What it does |
 |---|---|
@@ -302,6 +302,7 @@ Router recommends a 5-skill sequence:
 | `/sales-houseofmarketers` | House of Marketers — TikTok-focused agency (50K+ creators), influencer campaigns, paid ads, content creation, strategy |
 | `/sales-neoreach` | NeoReach — enterprise influencer marketing (3M+ creators), AI discovery, fraud detection, IMV analytics, REST API, managed services |
 | `/sales-famesters` | Famesters — full-cycle influencer agency (gaming, fintech, iGaming, apps), 1000+ brands, BuzzGuru analytics |
+| `/sales-inbeat` | inBeat — creative growth agency (influencer, UGC, paid media, performance creative), free marketing toolkit (calculators, ad mockups) |
 | `/sales-tiktok-marketing` | TikTok marketing strategy — organic growth, paid ads, content creation, influencer strategy, algorithm, metrics |
 | `/sales-gaming-marketing` | Gaming influencer marketing strategy — streamer partnerships, game launch campaigns, budget allocation, ROI |
 | `/sales-influencer-marketing` | Influencer marketing strategy — platform comparison, creator discovery, vetting, campaign tracking |

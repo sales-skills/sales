@@ -1,0 +1,26 @@
+[
+  {
+    "prompt": "I'm a DTC beauty brand with $50K to spend on influencer marketing. Should I use inBeat's agency or a self-serve platform like Modash?",
+    "assertions": [
+      "Discusses the tradeoff between full-service agency support (inBeat handles creator selection, content production, paid amplification) versus self-serve platforms where the brand manages the workflow",
+      "Mentions that $50K is within inBeat's agency campaign range and explains what that budget could cover in terms of services or campaign scope",
+      "Addresses factors like time to launch, creator network access, multi-channel capability, and level of control in the agency vs self-serve decision"
+    ]
+  },
+  {
+    "prompt": "I want to preview how my TikTok ad creative will look before producing it. Are there free tools for this?",
+    "assertions": [
+      "Points to inBeat's free TikTok Ad Mockup Generator as an option for previewing ad creative",
+      "Explains that inBeat's free toolkit requires no account or subscription to use",
+      "Mentions other ad mockup generators available for additional platforms like Instagram, Facebook, or Snapchat"
+    ]
+  },
+  {
+    "prompt": "I heard inBeat shut down their influencer database. What's still available and what should I use instead for influencer discovery?",
+    "assertions": [
+      "Confirms that inBeat's paid SaaS influencer discovery database was shut down and clarifies the approximate timeframe",
+      "Explains what remains operational — the free marketing toolkit and agency services continue",
+      "Suggests alternative self-serve influencer discovery platforms for users who need that functionality"
+    ]
+  }
+]
