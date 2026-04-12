@@ -1,0 +1,30 @@
+[
+  {
+    "prompt": "I'm evaluating influencer marketing platforms for our Fortune 500 brand. We do $500M in revenue and want to run 20+ influencer campaigns per year. Is NeoReach right for us?",
+    "assertions": [
+      "Mentions NeoReach's enterprise positioning and that it targets Fortune 500 and large brands",
+      "Covers the key platform capabilities including discovery with millions of indexed profiles, fraud detection, campaign management, and analytics with the proprietary IMV metric",
+      "Addresses the managed services option as an alternative to self-serve SaaS for running campaigns",
+      "Mentions the API with hundreds of data points available for enterprise integrations",
+      "Notes the enterprise pricing range and that it requires a custom contract or sales conversation"
+    ]
+  },
+  {
+    "prompt": "How do I detect fake influencer followers using NeoReach before signing a deal with a creator?",
+    "assertions": [
+      "Explains NeoReach's fraud detection capabilities including fake follower analysis and engagement authenticity checks",
+      "Recommends a vetting workflow that goes from quick scan to deeper analysis using NeoReach's tools",
+      "Mentions specific red flags to look for such as sudden follower spikes, unusually high engagement rates, or audience location mismatches",
+      "Notes that NeoReach provides continuous monitoring rather than just point-in-time fraud checks"
+    ]
+  },
+  {
+    "prompt": "I want to integrate NeoReach data into our internal marketing dashboard via their API. What should I expect?",
+    "assertions": [
+      "Explains that NeoReach offers a REST API returning JSON data with hundreds of custom data points",
+      "Notes that API documentation is not publicly available and requires an enterprise contract to access",
+      "Mentions key API capabilities like sponsorship pricing data, audience matching, competitor spend analysis, and fraud detection",
+      "Recommends contacting NeoReach sales and requesting documentation or sandbox access before committing"
+    ]
+  }
+]
