@@ -241,6 +241,7 @@ Router recommends a 5-skill sequence:
 | `/sales-adroll` | AdRoll — retargeting, display/social/CTV campaigns, dynamic retargeting, RollWorks ABM, attribution |
 | `/sales-remerge` | Remerge — in-app retargeting DSP, audience segmentation, incrementality measurement, MMP integrations, Reporting API |
 | `/sales-adwake` | Adwake — managed mobile app UA, branding, in-app retargeting, Playback Rewards loyalty, Entravision |
+| `/sales-zoomd` | Zoomd — mobile UA across 600+ sources, mobile DSP, CGC creator content, Albert.ai AI optimization |
 | `/sales-reddit-ads` | Reddit Ads — subreddit targeting, 12 ad formats, Reddit Pixel, CAPI, Lead Gen Ads, Business Manager |
 
 </details>

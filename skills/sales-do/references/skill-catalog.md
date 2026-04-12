@@ -772,13 +772,14 @@
 |---|---|
 | `/sales-reddit-ads` | Reddit Ads platform help — campaign setup, subreddit targeting, ad formats (Image, Video, Carousel, Conversation, Product, Free-Form, AMA, Takeover, Interactive, Max), Reddit Pixel, Conversions API (CAPI), Lead Gen Ads, Business Manager, bidding strategy, audience building, conversion tracking. Route when the user asks about Reddit Ads setup, config, features, or troubleshooting. Route when they mention Reddit Ads Manager, Reddit Pixel, Reddit CAPI, Reddit subreddit targeting, Reddit Lead Gen Ads, Reddit ad formats, Reddit Business Manager, or Reddit advertising. |
 
-### AdRoll, Remerge & Retargeting Platforms
+### AdRoll, Remerge, Zoomd & Retargeting Platforms
 
 | Skill | Route when... |
 |---|---|
 | `/sales-adroll` | General AdRoll/RollWorks questions — retargeting pixel setup, campaign management, audience building, dynamic retargeting, ecommerce integration (Shopify/BigCommerce/WooCommerce), RollWorks ABM, NextRoll API, cross-channel ads (display, social, CTV, DOOH), email retargeting, reporting/attribution |
 | `/sales-remerge` | Remerge platform questions — in-app retargeting DSP, mobile app re-engagement campaigns, audience segmentation from MMP events, incrementality measurement, Reporting API, Event Tracking API, MMP integration (AppsFlyer/Adjust/Branch), Braze webhook, deep linking, dynamic product ads for mobile apps, comparing mobile DSPs (Remerge vs Adikteev vs Liftoff) |
 | `/sales-adwake` | Adwake platform questions — managed-service mobile app user acquisition, CPI/CPA optimization, app install campaigns, mobile branding campaigns, in-app retargeting, Playback Rewards loyalty, cross-platform campaign management, Entravision mobile advertising, comparing managed vs self-serve mobile DSPs, gaming/travel/fintech/retail app marketing |
+| `/sales-zoomd` | Zoomd platform questions — mobile user acquisition across 600+ media sources, mobile DSP with real-time bidding across 30+ exchanges, creator-generated content (CGC), Albert.ai autonomous AI campaign optimization, Digital 360 full-funnel performance marketing, multi-channel UA management from unified dashboard, comparing Zoomd with Remerge/Adwake/Liftoff, gaming/fintech/ecommerce/entertainment app marketing |
 
 ### Prospecting, Enrichment & Signals
 

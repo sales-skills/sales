@@ -146,6 +146,7 @@ Otherwise, answer directly from the strategy knowledge below.
 - `/sales-sproutsocial` — Sprout Social platform help — includes Influencer Marketing module (Tagger acquisition)
 - `/sales-tagshop` — UGC video ads and shoppable galleries for ecommerce
 - `/sales-affiliate-program` — Affiliate and referral program design (strategy, not platform-specific)
+- `/sales-zoomd` — Zoomd platform help — mobile UA with integrated CGC creator content production
 - `/sales-retargeting` — Retargeting campaign audiences from influencer content
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 

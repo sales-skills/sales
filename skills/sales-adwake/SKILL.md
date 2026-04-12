@@ -95,6 +95,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 
 ## Related skills
 
+- `/sales-zoomd` — Zoomd platform help — mobile UA across 600+ sources, mobile DSP, CGC creator content, Albert.ai AI optimization
 - `/sales-remerge` — Remerge platform help — in-app retargeting DSP with self-serve programmatic buying, incrementality measurement
 - `/sales-retargeting` — Retargeting strategy across all platforms (web + app) — audience segmentation, creative, attribution
 - `/sales-b2b-advertising` — Account-based B2B advertising — ABM ads, display, LinkedIn Ads

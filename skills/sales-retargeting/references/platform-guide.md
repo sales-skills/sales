@@ -141,6 +141,15 @@ Reddit supports website visitor retargeting and engagement-based remarketing:
 - **Best for**: Game publishers and studios who ran influencer campaigns and want to convert awareness into installs/purchases through paid retargeting of engaged viewers.
 - **Limitation**: Gaming-only. No ecommerce or general retargeting capabilities. Performance claims are self-reported — benchmark against your own data.
 
+### In Zoomd (Mobile in-app retargeting via DSP)
+- **Mobile DSP retargeting**: Zoomd's DSP enables in-app retargeting alongside user acquisition campaigns — retarget lapsed users across 600+ media sources and 30+ ad exchanges from a single dashboard.
+- **MMP-based segmentation**: Uses event streams from AppsFlyer, Adjust, Branch, and Kochava to build audience segments based on in-app behavior.
+- **Unified UA + retargeting**: Unlike retargeting-only DSPs (Remerge), Zoomd combines user acquisition with retargeting in one platform — run new install campaigns and re-engagement simultaneously.
+- **Albert.ai optimization**: Albert.ai can optimize retargeting budget allocation across channels alongside UA spend for holistic cross-channel optimization.
+- **CGC content for retargeting**: Creator-generated content from Zoomd's micro-creator network can be used as retargeting creative — fresh, authentic video ads.
+- **Best for**: Mobile app businesses already using Zoomd for UA who want to add retargeting without a separate platform. Best when managing both acquisition and re-engagement from one dashboard.
+- **Limitation**: No public API for programmatic audience management. Pricing is not publicly disclosed. Less specialized in retargeting measurement than Remerge (no built-in incrementality testing).
+
 ### In Retention.com (Identity resolution retargeting)
 - **Anonymous → known**: Retention.com identifies anonymous visitors using third-party data, converting them to email/SMS contacts for retargeting without opt-in.
 - **Reclaim product**: Captures abandonment events (cart, checkout, browse) that ESPs miss because the visitor was anonymous. Pushes identified contacts to Klaviyo, Mailchimp, etc. for abandonment flows.
