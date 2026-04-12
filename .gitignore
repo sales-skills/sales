@@ -8,3 +8,4 @@ eval-scripts/
 agents/
 memory/
 scripts/
+.agents/
