@@ -1,6 +1,8 @@
 # Skill Backlog
 
-Problem spaces discovered during platform research that don't have dedicated skills yet.
+## Problem spaces
+
+Problems discovered during platform research that don't have dedicated skills yet.
 
 | Problem | Source | Discovered during | Date |
 |---------|--------|-------------------|------|
@@ -31,3 +33,19 @@ Problem spaces discovered during platform research that don't have dedicated ski
 | TikTok Shop setup and optimization (product listings, live shopping, affiliate commission structure) | Upstream research — growing ecommerce channel, distinct from general TikTok marketing | sales-houseofmarketers | 2026-04-12 |
 | TikTok algorithm analytics tools (performance debugging, trend detection, competitive analysis) | Upstream research — platform-specific tooling gap | sales-houseofmarketers | 2026-04-12 |
 | iGaming influencer regulatory compliance (gambling ad rules, financial promotion guidelines per jurisdiction) | Research — niche but critical for iGaming vertical, no existing skill | sales-famesters | 2026-04-12 |
+| Link-in-bio strategy (Linktree vs Later Linkin.bio vs Shorby vs Stan Store — tool comparison, shoppable pages, click tracking) | Review sites, comparison articles — medium frequency | sales-later | 2026-04-12 |
+| Social media content repurposing (one video → all platform formats, aspect ratio adaptation, caption localization) | Comparison articles, G2 reviews — medium frequency | sales-later | 2026-04-12 |
+
+## Platforms to add
+
+Specific platforms, tools, or websites discovered during research that should get their own `/add-platform` run. These are concrete products with URLs — not abstract problem spaces.
+
+| Platform | URL | Why | Discovered during | Date |
+|----------|-----|-----|-------------------|------|
+| Buffer | https://buffer.com | Top Later competitor, frequently compared in scheduling tool reviews | sales-later | 2026-04-12 |
+| Hootsuite | https://hootsuite.com | Major Later competitor, enterprise social media management | sales-later | 2026-04-12 |
+| Agorapulse | https://agorapulse.com | Frequently recommended Later alternative for teams needing unified inbox | sales-later | 2026-04-12 |
+| Planable | https://planable.io | Content approval competitor, best for approval-heavy teams | sales-later | 2026-04-12 |
+| Linktree | https://linktr.ee | Link-in-bio market leader, direct Linkin.bio competitor | sales-later | 2026-04-12 |
+| Pallyy | https://pallyy.com | Budget Later alternative with strong link-in-bio and scheduling | sales-later | 2026-04-12 |
+| SocialBee | https://socialbee.com | Later alternative with content recycling feature Later lacks | sales-later | 2026-04-12 |

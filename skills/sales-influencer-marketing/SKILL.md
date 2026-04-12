@@ -68,6 +68,7 @@ If the request maps to a platform-specific skill, route:
 - Famesters agency services → `/sales-famesters`
 - TikTok marketing strategy (organic, paid, content) → `/sales-tiktok-marketing`
 - Gaming influencer marketing strategy → `/sales-gaming-marketing`
+- Later Influence setup, config, or features → `/sales-later`
 - Sprout Social influencer features → `/sales-sproutsocial`
 - Affiliate program design (not influencer-specific) → `/sales-affiliate-program`
 - UGC galleries / shoppable content → `/sales-tagshop`
@@ -293,6 +294,7 @@ Based on the user's specific question:
 - `/sales-famesters` — Famesters platform help — full-cycle influencer agency (gaming, fintech, iGaming, apps), BuzzGuru analytics
 - `/sales-tiktok-marketing` — TikTok marketing strategy — organic growth, paid ads, content creation, influencer strategy, algorithm
 - `/sales-gaming-marketing` — Gaming influencer marketing strategy — streamer partnerships, game launch campaigns, budget allocation
+- `/sales-later` — Later platform help — includes Later Influence (influencer discovery, campaigns, content review, Reporting API)
 - `/sales-sproutsocial` — Sprout Social platform help — includes Influencer Marketing module (Tagger acquisition)
 - `/sales-tagshop` — UGC video ads and shoppable galleries for ecommerce
 - `/sales-affiliate-program` — Affiliate and referral program design (strategy, not platform-specific)

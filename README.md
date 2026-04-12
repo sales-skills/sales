@@ -33,7 +33,7 @@ Want every skill at once?
 npx skills add sales-skills/sales -a
 ```
 
-Every skill for claude code, copy instead of symlink, no confirmttion
+Every skill for Claude Code, copy instead of symlink, no confirmation:
 
 ```bash
 npx skills add sales-skills/sales -a claude-code --copy -y
@@ -47,7 +47,7 @@ npx skills add sales-skills/sales -a claude-code --copy -y
 - You want to build a prospect list but don't know whether to use Apollo, Clay, ZoomInfo, or Seamless
 - You're spending more time figuring out _which_ tool to use than actually doing the work
 
-One router skill (`/sales-do`) understands all available sales, markteing, ad network, influencer, crm and gtm skills and matches you to the right one based on what you're trying to accomplish.
+One router skill (`/sales-do`) understands all available sales, marketing, ad network, influencer, CRM, and GTM skills and matches you to the right one based on what you're trying to accomplish.
 
 ## What is `sales-do`?
 
@@ -136,7 +136,7 @@ Router recommends a 5-skill sequence:
 
 
 <details>
-<summary><strong>Qwilr & Proposals</strong> (5 skills)</summary>
+<summary><strong>Qwilr & Proposals</strong></summary>
 
 | Skill | What it does |
 |---|---|
@@ -149,7 +149,7 @@ Router recommends a 5-skill sequence:
 </details>
 
 <details>
-<summary><strong>Salesloft</strong> (5 skills)</summary>
+<summary><strong>Salesloft</strong></summary>
 
 | Skill | What it does |
 |---|---|
@@ -162,7 +162,7 @@ Router recommends a 5-skill sequence:
 </details>
 
 <details>
-<summary><strong>Outreach & Sequence Platforms</strong> (10 platforms)</summary>
+<summary><strong>Outreach & Sequence Platforms</strong></summary>
 
 | Skill | What it does |
 |---|---|
@@ -180,7 +180,7 @@ Router recommends a 5-skill sequence:
 </details>
 
 <details>
-<summary><strong>Email Finder & Verification</strong> (12 platforms)</summary>
+<summary><strong>Email Finder & Verification</strong></summary>
 
 | Skill | What it does |
 |---|---|
@@ -200,7 +200,7 @@ Router recommends a 5-skill sequence:
 </details>
 
 <details>
-<summary><strong>Data, Intelligence & Enrichment</strong> (10 platforms)</summary>
+<summary><strong>Data, Intelligence & Enrichment</strong></summary>
 
 | Skill | What it does |
 |---|---|
@@ -218,7 +218,7 @@ Router recommends a 5-skill sequence:
 </details>
 
 <details>
-<summary><strong>CRM & Marketing Automation</strong> (16 platforms)</summary>
+<summary><strong>CRM & Marketing Automation</strong></summary>
 
 | Skill | What it does |
 |---|---|
@@ -243,7 +243,7 @@ Router recommends a 5-skill sequence:
 </details>
 
 <details>
-<summary><strong>Transactional Email</strong> (3 platforms)</summary>
+<summary><strong>Transactional Email</strong></summary>
 
 | Skill | What it does |
 |---|---|
@@ -254,7 +254,7 @@ Router recommends a 5-skill sequence:
 </details>
 
 <details>
-<summary><strong>Sales Enablement Platforms</strong> (3 platforms)</summary>
+<summary><strong>Sales Enablement Platforms</strong></summary>
 
 | Skill | What it does |
 |---|---|
@@ -265,13 +265,14 @@ Router recommends a 5-skill sequence:
 </details>
 
 <details>
-<summary><strong>Media Intelligence & PR</strong> (6 skills)</summary>
+<summary><strong>Media Intelligence & PR</strong></summary>
 
 | Skill | What it does |
 |---|---|
 | `/sales-meltwater` | Meltwater — media intelligence, social listening, media relations, influencer marketing, Mira AI, API |
 | `/sales-brandwatch` | Brandwatch — Consumer Intelligence (100M+ sources), Social Media Management, Influence, 6 REST APIs |
 | `/sales-brandjet` | BrandJet AI — multi-channel outreach, brand monitoring, AI visibility monitoring, Artemis MCP, unified inbox |
+| `/sales-later` | Later — social media scheduling, visual planner, Linkin.bio, analytics, Later Influence (influencer campaigns, Reporting API) |
 | `/sales-sproutsocial` | Sprout Social — Publishing, Smart Inbox, Analytics, Social Listening, Influencer Marketing, Employee Advocacy, API |
 | `/sales-social-media-management` | Social media management strategy — publishing, scheduling, engagement, analytics, tool comparison |
 | `/sales-employee-advocacy` | Employee advocacy strategy — content curation, gamification, compliance, tool comparison |
@@ -282,7 +283,7 @@ Router recommends a 5-skill sequence:
 </details>
 
 <details>
-<summary><strong>Influencer Marketing</strong> (20 skills)</summary>
+<summary><strong>Influencer Marketing</strong></summary>
 
 | Skill | What it does |
 |---|---|
@@ -310,7 +311,7 @@ Router recommends a 5-skill sequence:
 </details>
 
 <details>
-<summary><strong>Gaming Marketing</strong> (3 skills)</summary>
+<summary><strong>Gaming Marketing</strong></summary>
 
 | Skill | What it does |
 |---|---|
@@ -321,7 +322,7 @@ Router recommends a 5-skill sequence:
 </details>
 
 <details>
-<summary><strong>Customer Reviews & UGC</strong> (1 skill)</summary>
+<summary><strong>Customer Reviews & UGC</strong></summary>
 
 | Skill | What it does |
 |---|---|
@@ -330,7 +331,7 @@ Router recommends a 5-skill sequence:
 </details>
 
 <details>
-<summary><strong>Launch Directories</strong> (28 platforms)</summary>
+<summary><strong>Launch Directories</strong></summary>
 
 | Skill | What it does |
 |---|---|
@@ -371,17 +372,25 @@ Router recommends a 5-skill sequence:
 </details>
 
 <details>
-<summary><strong>SEO & Visibility</strong> (2 platforms)</summary>
+<summary><strong>SEO & Visibility</strong></summary>
 
 | Skill | What it does |
 |---|---|
 | `/sales-semrush` | Semrush — leading SEO platform (27B keywords, 43T backlinks), AI Visibility Toolkit, MCP server, API |
+
+</details>
+
+<details>
+<summary><strong>Loyalty</strong></summary>
+
+| Skill | What it does |
+|---|---|
 | `/sales-loyaltylion` | LoyaltyLion — points, tiers, rewards, referrals, AI recommendations, Klaviyo Events, Shopify POS, API |
 
 </details>
 
 <details>
-<summary><strong>Funnels, Email Marketing & Digital Sales</strong> (21 skills)</summary>
+<summary><strong>Funnels, Email Marketing & Digital Sales</strong></summary>
 
 | Skill | What it does |
 |---|---|
@@ -410,7 +419,7 @@ Router recommends a 5-skill sequence:
 </details>
 
 <details>
-<summary><strong>Prospecting, Enrichment & Signals</strong> (6 skills)</summary>
+<summary><strong>Prospecting, Enrichment & Signals</strong></summary>
 
 | Skill | What it does |
 |---|---|
@@ -424,7 +433,7 @@ Router recommends a 5-skill sequence:
 </details>
 
 <details>
-<summary><strong>Cross-Platform & Strategy</strong> (7 skills)</summary>
+<summary><strong>Cross-Platform & Strategy</strong></summary>
 
 | Skill | What it does |
 |---|---|
