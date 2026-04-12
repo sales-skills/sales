@@ -1,6 +1,6 @@
 ---
 name: sales-retargeting
-description: "Retargeting and remarketing strategy — website visitor retargeting, cart abandonment recovery, dynamic product ads, cross-channel retargeting, audience segmentation, frequency capping, attribution, pixel setup. Use when planning a retargeting strategy, recovering abandoned carts with ads, building retargeting audiences, choosing a retargeting platform, or measuring retargeting ROI. Do NOT use for AdRoll-specific config (use /sales-adroll), email marketing (use /sales-email-marketing), B2B account-based advertising (use /sales-b2b-advertising), or general paid ads strategy (use /paid-ads)."
+description: "Retargeting and remarketing strategy — website visitor retargeting, cart abandonment recovery, dynamic product ads, cross-channel retargeting, audience segmentation, frequency capping, attribution, pixel setup, in-app retargeting. Use when planning a retargeting strategy, recovering abandoned carts with ads, building retargeting audiences, choosing a retargeting platform, or measuring retargeting ROI. Do NOT use for AdRoll-specific config (use /sales-adroll), Remerge-specific config (use /sales-remerge), email marketing (use /sales-email-marketing), B2B account-based advertising (use /sales-b2b-advertising), or general paid ads strategy (use /paid-ads)."
 argument-hint: "[describe your retargeting question or goal]"
 license: MIT
 version: 1.0.0
@@ -181,6 +181,16 @@ Reddit supports website visitor retargeting and engagement-based remarketing:
 
 **Best for**: Brands with Reddit-savvy audiences (tech, gaming, finance, SaaS). Pair with Meta/Google retargeting for cross-channel coverage. Not a replacement for Meta DPA at scale but a strong complementary channel.
 
+### In Remerge (Mobile in-app retargeting DSP)
+- **In-app retargeting**: Remerge is a DSP built specifically for retargeting users inside other mobile apps (not on the web). It serves ads within publisher apps to re-engage lapsed users, recover abandoned carts, and retain active users.
+- **MMP-based segmentation**: Instead of website pixels, Remerge uses event streams from MMPs (AppsFlyer, Adjust, Branch) to build real-time audience segments based on in-app behavior — purchases, cart adds, level completions, session starts.
+- **Dynamic product ads**: Auto-generated ads using product catalog data with deep links to specific in-app pages (product detail, cart, last-played level).
+- **Incrementality measurement**: Remerge's core differentiator — randomized control trials comparing test groups (see ads) vs control groups (don't). Typical finding: 40-60% of attributed conversions are truly incremental.
+- **Privacy-compliant**: GDPR data processor, ATT-aware (iOS), adapting to Android Privacy Sandbox. Partnered with Verve Group for on-device bidding.
+- **Best for**: Mobile app businesses (gaming, e-commerce, delivery, finance) that need to re-engage lapsed users or retain active ones through in-app ads. Not for web retargeting.
+- **Pricing**: Custom, managed-service-first. CPA/CPC/CPE/CPS/ROAS models. Not publicly listed.
+- **Limitation**: Managed service model means less direct self-serve control. iOS retargeting scale is limited by ATT (20-35% IDFA opt-in rate). Help center restricted to clients.
+
 ### In Cloutboost (Gaming influencer content retargeting)
 - **Influencer content → paid ads**: Cloutboost's retargeting service repurposes gaming influencer content (YouTube videos, Twitch streams, TikTok clips) into paid ad formats. Targets users who engaged with the original influencer content.
 - **Gaming-specific**: Exclusively focused on gaming audiences. Retargets users who watched, liked, or commented on gaming influencer content about your game.
@@ -258,6 +268,7 @@ Reddit supports website visitor retargeting and engagement-based remarketing:
 - `/sales-reddit-ads` — Reddit Ads platform help (subreddit targeting, website retargeting, engagement audiences)
 - `/sales-cloutboost` — Cloutboost platform help — gaming influencer retargeting, Portal discovery, campaign management
 - `/sales-gaming-marketing` — Gaming influencer marketing strategy — streamer partnerships, game launch campaigns
+- `/sales-remerge` — Remerge platform help — in-app retargeting DSP, audience segmentation, incrementality measurement, MMP integrations
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

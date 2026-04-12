@@ -37,6 +37,8 @@ Problems discovered during platform research that don't have dedicated skills ye
 | Social media content repurposing (one video → all platform formats, aspect ratio adaptation, caption localization) | Comparison articles, G2 reviews — medium frequency | sales-later | 2026-04-12 |
 | Influencer algorithm accuracy/relevance (AI matching returns irrelevant creators across platforms) | G2/Capterra reviews of Aspire, GRIN, CreatorIQ — medium frequency | sales-aspire | 2026-04-12 |
 | Influencer content-to-paid-ads pipeline (UGC → Spark Ads / Meta whitelisting workflow, rights management) | Industry articles, platform feature comparisons — growing importance | sales-aspire | 2026-04-12 |
+| Mobile app retention strategy (push, in-app messaging, re-engagement coordination, day-1 churn prevention) | Industry research — 74% of app users churn on day 1, retargeting alone isn't enough | sales-remerge | 2026-04-12 |
+| Mobile app marketing strategy (UA + retargeting + re-engagement coordination, budget allocation across channels) | Business of Apps, Singular guides — medium frequency | sales-remerge | 2026-04-12 |
 | Visual social listening (AI image/video recognition for logo detection in visual content) | YouScan differentiator, Talkwalker capability — growing importance as visual content dominates | sales-brandwatch | 2026-04-12 |
 | Reddit-specific monitoring strategy (post-GummySearch shutdown, dedicated Reddit intelligence tools) | GummySearch shutdown Dec 2025, Threadlytics emerging, Reddit official API partner programs | sales-brandwatch | 2026-04-12 |
 | Instagram Stories-specific influencer campaign optimization (Stories-only formats, swipe-up CTR, story sequencing) | InstaJet Stories-only focus, Stories tracking gap in industry — medium frequency | sales-instajet | 2026-04-12 |
@@ -89,3 +91,6 @@ Specific platforms, tools, or websites discovered during research that should ge
 | CrakRevenue | https://www.crakrevenue.com | Top CPA network, 14+ years, strong in dating/gaming verticals | sales-performcb | 2026-04-12 |
 | CPAlead | https://cpalead.com | Beginner-friendly CPA network, instant approval, content locking | sales-performcb | 2026-04-12 |
 | Everflow | https://www.everflow.io | Partner marketing platform with advanced tracking and fraud detection | sales-performcb | 2026-04-12 |
+| Adikteev | https://www.adikteev.com | Top Remerge competitor, app re-engagement + churn prediction DSP | sales-remerge | 2026-04-12 |
+| Liftoff | https://liftoff.ai | Major mobile DSP competitor (UA + retargeting), merged with Vungle | sales-remerge | 2026-04-12 |
+| Dataseat | https://dataseat.com | Privacy-first mobile DSP, ID-less advertising, SKAdNetwork specialist | sales-remerge | 2026-04-12 |

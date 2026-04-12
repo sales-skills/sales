@@ -238,6 +238,7 @@ Router recommends a 5-skill sequence:
 | `/sales-kit` | Kit (ConvertKit) — Visual Automations, Sequences, Broadcasts, landing pages, Commerce, API |
 | `/sales-swai` | SWAI.ai — Autonomous Revenue OS, AI-driven campaigns, landing page builder, CRM, AI assistants |
 | `/sales-adroll` | AdRoll — retargeting, display/social/CTV campaigns, dynamic retargeting, RollWorks ABM, attribution |
+| `/sales-remerge` | Remerge — in-app retargeting DSP, audience segmentation, incrementality measurement, MMP integrations, Reporting API |
 | `/sales-reddit-ads` | Reddit Ads — subreddit targeting, 12 ad formats, Reddit Pixel, CAPI, Lead Gen Ads, Business Manager |
 
 </details>
