@@ -136,6 +136,7 @@ Create a 5-email onboarding sequence for new members:
 - `/sales-groove` — Groove.cm platform-specific guidance (GrooveMember, GrooveSell, GroovePages)
 - `/sales-kit` — Kit platform help (paid newsletters, Commerce, Creator Recommendations)
 - `/sales-sendpulse` — SendPulse platform help (EDU courses, Automation 360, email, chatbots)
+- `/sales-ghost` — Ghost platform help (publishing, newsletters, memberships, Stripe, Mailgun, API, migration)
 - `/sales-newsletter` — Newsletter monetization (paid subscriptions, sponsorships, premium tiers)
 - `/sales-digital-products` — Selling digital products (ebooks, templates, courses)
 - `/sales-checkout` — Payment pages, order bumps, upsells, and checkout optimization

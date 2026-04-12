@@ -124,3 +124,32 @@ Detailed per-platform audience growth features — opt-in forms, landing pages, 
 - **Compliance**: CAN-SPAM compliant (implicit consent model), NOT GDPR compliant. Only use for US traffic.
 - **Pricing**: From $300/mo a la carte, $500/mo bundled. Annual contracts required.
 - **Best for**: Ecommerce/DTC brands with 50K+ monthly US visitors who want to grow their email list beyond opt-in forms. Pair with a strong deliverability strategy.
+
+### In Ghost
+
+Ghost has built-in member signup and management — no external tools needed for basic list building.
+
+**Signup methods**:
+- **Portal**: Customizable signup/login widget that appears on your site. Configure via Ghost Admin → Settings → Membership → Customize Portal
+- **Embedded forms**: Generate signup forms to embed on external sites or landing pages
+- **Content gating**: Use paid-only posts as lead magnets — readers must sign up to access
+- **Social accounts**: Members sign in via email magic link (no passwords)
+
+**Growth features**:
+- **Offers**: Create discount codes for paid tiers — shareable unique URLs for promotion campaigns
+- **Recommendations**: Recommend other Ghost publications (and get recommended back) — Ghost's built-in cross-promotion network
+- **Newsletter visibility**: Choose which newsletters appear on the signup portal
+- **Custom landing pages**: Build with Ghost pages (full CMS) instead of needing a separate tool
+
+**Referral programs**:
+- Ghost has no built-in referral/reward system
+- Workaround: Use SparkLoop or Viral Loops via Zapier integration (requires Publisher plan)
+- Alternative: Use Ghost's Recommendations feature for organic cross-promotion
+
+**Limitations**:
+- No pop-ups or exit-intent forms natively — use third-party tools (OptinMonster, Sumo) via code injection
+- No A/B testing on signup forms
+- No progressive profiling or multi-step forms
+- Recommendations are Ghost-to-Ghost only — can't cross-promote non-Ghost newsletters
+
+**Best for**: Content creators who want signup built into their publishing platform. If you need advanced list building (pop-ups, A/B testing, paid recommendations), pair Ghost with SparkLoop or use Kit/Beehiiv alongside.

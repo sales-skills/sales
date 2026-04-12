@@ -233,6 +233,12 @@
 |---|---|
 | `/sales-snov` | General Snov.io questions — email finder, email verifier (98% accuracy), multichannel campaigns (email + LinkedIn), LinkedIn automation ($69/mo add-on), sales CRM, email warmup, deliverability check, email tracker, AI email writer, prospect management, REST API (33+ endpoints, OAuth 2.0), 5,000+ integrations | Route when the user asks about Snov.io setup, config, features, or troubleshooting. Route when they mention Snov.io campaigns, Snov.io email finder, Snov.io verifier, Snov.io warmup, Snov.io LinkedIn, Snov.io CRM, Snov.io API, or Snov.io drip campaigns. |
 
+### Ghost & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-ghost` | Ghost platform help — publishing, newsletters, memberships, Stripe subscriptions, themes, Mailgun email delivery, Content API, Admin API, migration. Route when the user asks about Ghost setup, config, features, or troubleshooting. Route when they mention Ghost newsletters, Ghost memberships, Ghost Stripe, Ghost Mailgun, Ghost themes, Ghost API, Ghost migration, Ghost(Pro), or Ghost self-hosting. |
+
 ### MailerLite & Platform
 
 | Skill | Route when... |

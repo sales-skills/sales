@@ -324,6 +324,43 @@ MailerLite is an affordable, easy-to-use email marketing platform targeting solo
 - **Key terminology**: "Groups" = lists, "Segments" = dynamic filters, "Automation" = workflow, "Forms" = signup forms.
 - **MailerLite's strength**: Best for solopreneurs and small businesses that want an affordable all-in-one (email + landing pages + digital products + paid newsletters) without the complexity of ActiveCampaign or the cost of Mailchimp. Overkill limitation: automation is basic compared to mid-market tools.
 
+### In Ghost
+
+Ghost has built-in email newsletter functionality tightly integrated with its publishing platform. Unlike traditional ESPs, Ghost sends emails as part of the content publishing workflow — you write a post and optionally send it as an email to your subscribers.
+
+**Email campaigns**:
+- Every post can be sent as an email newsletter at publish time
+- Email-only posts: send to inbox without creating a web page
+- Audience segmentation: by newsletter subscription, free/paid status, labels, or specific tier
+- Multiple newsletters (Publisher plan: 3, Business: 10) — subscribers choose which to receive
+- Customizable email template: header image, colors, typography, footer
+
+**Automation**:
+- Ghost has minimal automation compared to traditional ESPs
+- Welcome emails for free and paid member signups (configurable)
+- No drip sequences, conditional logic, or event-triggered automations natively
+- Workaround: Use Zapier to trigger external email tools (Mailchimp, ActiveCampaign) based on Ghost member events
+
+**Segmentation**:
+- By newsletter subscription (which newsletters they opted into)
+- By access level: free, paid, comped, specific tier
+- By labels (custom tags you assign to members)
+- No behavioral segmentation (no "opened last 3 emails" or "clicked link X")
+
+**Analytics**:
+- Per-newsletter: open rate, click rate, positive/negative feedback reactions
+- Open rates are approximate due to email client pixel blocking (Apple Mail Privacy Protection)
+- Click tracking is more reliable than open tracking
+- No A/B testing for subject lines or content
+
+**Key differences from traditional ESPs**:
+- Ghost is publishing-first, email-second — you publish content that happens to also send as email
+- No drag-and-drop email builder — your email template matches your Ghost theme/newsletter settings
+- No automation workflows — Ghost handles email as a broadcast tool, not a marketing automation platform
+- If you need sequences, conditional workflows, or advanced automation, pair Ghost with an ESP via Zapier
+
+**Best for**: Publishers and bloggers who want a unified publishing + email experience without managing a separate ESP. Not ideal for marketers who need advanced automation, A/B testing, or complex segmentation.
+
 ### In Retention.com
 
 Retention.com is not an ESP — it's an identity resolution layer that feeds identified contacts INTO your ESP (Klaviyo, Mailchimp, Omnisend, etc.) for email marketing:

@@ -129,10 +129,10 @@ Ask the user:
 - **Pricing**: Free plan available, paid plans from $49/mo
 
 ### In Ghost
-- **Paid memberships**: Built-in Stripe integration, tiered access (free/paid/premium)
-- **Pricing**: Self-hosted = free (just hosting costs), Ghost(Pro) from $9/mo
-- **Strengths**: Full website + newsletter in one, no transaction fees (self-hosted), complete ownership
-- **Limitations**: More technical to set up, smaller ecosystem
+- **Paid memberships**: Built-in Stripe integration, tiered access (free/paid/premium), 0% Ghost fee
+- **Pricing**: Self-hosted = free (+ hosting + Mailgun costs), Ghost(Pro) from $15/mo but paid subs require Publisher plan ($29/mo)
+- **Strengths**: Full website + newsletter in one, no transaction fees, complete data ownership, native email delivery on Ghost(Pro)
+- **Limitations**: Mailgun-only for self-hosted email, no digest newsletters (one email per post), Starter plan can't accept payments
 
 ### In Paved
 - **Marketplace**: List your newsletter for curated sponsor bookings — Paved handles invoices, contracts, and payouts. Requires 5,000+ subscribers and ESP integration for verified badge.
@@ -221,6 +221,7 @@ Paid recommendations:
 - `/sales-mailerlite` — MailerLite platform help (paid newsletters, digital products)
 - `/sales-kit` — Kit platform help (Kit-specific setup and configuration)
 - `/sales-mailchimp` — Mailchimp platform help
+- `/sales-ghost` — Ghost platform help (publishing, newsletters, memberships, Stripe, Mailgun, API, migration)
 - `/sales-content` — Sales content management (creating compelling content)
 - `/sales-checkout` — Checkout optimization (payment flows, upsells)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

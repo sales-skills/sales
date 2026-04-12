@@ -142,3 +142,38 @@ Kit (formerly ConvertKit) offers a lightweight membership model through paid new
 - **Circle**: Community platform that pairs well with a separate course tool. Strong for discussion-based memberships.
 - **WordPress + LearnDash/MemberPress**: Maximum flexibility and ownership. LearnDash for courses, MemberPress for membership gating. Requires more technical setup but avoids platform lock-in and monthly platform fees.
 - **Patreon**: Creator-focused subscription platform. Best for ongoing content creators (podcasters, writers, artists) rather than structured courses. Easy to launch but limited course/curriculum features.
+
+## Ghost
+
+### Overview
+Ghost is an open-source publishing platform with built-in membership and paid subscription features via Stripe. Unlike dedicated course/membership platforms (Kajabi, Teachable), Ghost is publishing-first — memberships gate access to written content and newsletters, not structured courses.
+
+### Key capabilities
+- **Tiered memberships**: Free + up to 10 paid tiers (Business plan) with monthly and/or yearly pricing
+- **Content gating**: Per-post visibility controls — public, members-only, paid-only, or specific-tier-only
+- **Stripe integration**: Native, 0% Ghost fee (just Stripe ~2.9% + $0.30)
+- **Portal**: Customizable signup/login widget for your site
+- **Offers**: Discount codes with unique URLs for promotions and launches
+- **Complimentary subscriptions**: Grant free access to paid tiers for specific members
+- **Member management**: Labels, activity history, email preferences, subscription status
+
+### What Ghost does NOT do for memberships
+- No structured courses (modules, lessons, progress tracking, certificates)
+- No community forums or discussion features built-in (use Discourse, Circle, or Discord via integration)
+- No drip content scheduling per member (content is time-based, not member-journey-based)
+- No course completion tracking or badges
+- No built-in upsell/order-bump flows
+
+### Pricing
+- Self-hosted: Free (open source) — you pay hosting + Mailgun
+- Ghost(Pro) Starter ($15/mo): Free members only, no paid subscriptions
+- Ghost(Pro) Publisher ($29/mo): Paid subscriptions, 1 premium tier
+- Ghost(Pro) Business ($199/mo): Up to 10 premium tiers, 10K members
+
+### Best for
+Publishers and newsletter creators who want to monetize written content with simple free/paid tiers. Not a replacement for Kajabi, Teachable, or Thinkific if you need structured courses, video hosting, or community.
+
+### Integration with other membership tools
+- Use Ghost for content + newsletter + payments, pair with Circle or Discord for community
+- Use Zapier to sync Ghost members to external course platforms or CRM
+- Ghost Admin API allows programmatic member management for custom workflows

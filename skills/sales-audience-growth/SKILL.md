@@ -128,7 +128,7 @@ Ask the user:
 
 ## Step 3 — Platform-specific guidance
 
-For platform-specific audience growth features (Kit, Beehiiv, SparkLoop, Mailchimp, Substack, Omnisend, ActiveCampaign, GetResponse, ZoomInfo FormComplete, Clearbit, SendPulse, AdRoll, etc.), see references/platforms.md.
+For platform-specific audience growth features (Kit, Beehiiv, SparkLoop, Mailchimp, Substack, Omnisend, ActiveCampaign, GetResponse, Ghost, ZoomInfo FormComplete, Clearbit, SendPulse, AdRoll, etc.), see references/platforms.md.
 
 ## Step 4 — Actionable guidance
 
@@ -201,6 +201,7 @@ For platform-specific audience growth features (Kit, Beehiiv, SparkLoop, Mailchi
 - `/sales-clearbit` — Clearbit platform help (form shortening, enrichment, Autocomplete API)
 - `/sales-zoominfo` — ZoomInfo platform help (FormComplete, WebSights)
 - `/sales-adroll` — AdRoll platform help (retargeting for list growth, lookalike audiences, ecommerce integration)
+- `/sales-ghost` — Ghost platform help (publishing, newsletters, memberships, Stripe, Mailgun, API, migration)
 - `/sales-retargeting` — Retargeting strategy (using ads to drive visitors back to signup pages)
 - `/sales-b2b-advertising` — account-based advertising (WebSights feeds retargeting audiences)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
