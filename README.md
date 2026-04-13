@@ -420,6 +420,7 @@ Router recommends a 5-skill sequence:
 | `/sales-performcb` | Perform[cb] — #1 CPA network, Outcome Engine AI optimization, PerformSHIELD fraud detection, Partner API |
 | `/sales-fansrevenue` | FansRevenue — creator monetization through affiliate brand promotion, MyEroLink, Creator Academy, CrakRevenue network |
 | `/sales-webinar` | Webinar-based selling — live and evergreen strategy, presentation, follow-up |
+| `/sales-podia` | Podia — courses, downloads, memberships, coaching, webinars, email, communities, affiliates |
 | `/sales-membership` | Membership sites and online courses — structure, pricing, retention |
 | `/sales-checkout` | Checkout optimization — upsells, order bumps, payment plans, cart abandonment |
 | `/sales-meeting-scheduler` | Schedule sales meetings — booking pages, round-robin, Calendly/Chili Piper |

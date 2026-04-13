@@ -100,6 +100,7 @@ MailerLite supports selling digital products directly within its platform:
 - `/sales-mailerlite` — MailerLite platform help (digital product sales, paid newsletters)
 - `/sales-kit` — Kit platform help (Kit Commerce setup)
 - `/sales-groove` — Groove.cm platform help (GrooveSell, GroovePages)
+- `/sales-podia` — Podia platform help (courses, downloads, memberships, coaching, email)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples
