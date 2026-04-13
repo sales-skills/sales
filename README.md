@@ -426,6 +426,7 @@ Router recommends a 5-skill sequence:
 | `/sales-webinar` | Webinar-based selling — live and evergreen strategy, presentation, follow-up |
 | `/sales-podia` | Podia — courses, downloads, memberships, coaching, webinars, email, communities, affiliates |
 | `/sales-payhip` | Payhip — digital downloads, courses, memberships, coaching, store builder, affiliates, API |
+| `/sales-gumroad` | Gumroad — digital products, subscriptions, license keys, Discover marketplace, email broadcasts, affiliates, API |
 | `/sales-lemonsqueezy` | Lemon Squeezy — payments, subscriptions, tax compliance (MoR), license keys, checkout, email, affiliates, API |
 | `/sales-membership` | Membership sites and online courses — structure, pricing, retention |
 | `/sales-checkout` | Checkout optimization — upsells, order bumps, payment plans, cart abandonment |

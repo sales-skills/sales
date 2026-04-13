@@ -145,6 +145,7 @@ Create a 5-email onboarding sequence for new members:
 - `/sales-funnel` — Sales funnel strategy and funnel building
 - `/sales-podia` — Podia platform help (courses, downloads, memberships, coaching, email)
 - `/sales-payhip` — Payhip platform help (courses, memberships, coaching, digital downloads)
+- `/sales-gumroad` — Gumroad platform help (subscriptions, digital products, license keys, Discover marketplace)
 - `/sales-lemonsqueezy` — Lemon Squeezy platform help (subscription billing, license keys, tax compliance as MoR)
 - `/sales-do` — Route to any sales skill by describing what you need
 
@@ -213,4 +214,5 @@ Create a 5-email onboarding sequence for new members:
 - **Community is the core value**: Skool or Mighty Networks.
 - **Maximum control and ownership**: WordPress + LearnDash + MemberPress.
 - **Just starting out, budget-conscious**: Thinkific (has a free plan) or Teachable (affordable starter plan).
+- **Gumroad**: Simplest option — zero monthly fee, 10% + $0.50 per sale. Supports monthly/quarterly/biannual/yearly subscriptions with content access tied to subscription. No course builder or drip content — delivers files/pages directly. Best for simple recurring access to a content library, not structured courses. Tax handled as MoR since Jan 2025.
 - **Do not overthink it**: Pick a platform, launch, and migrate later if needed. Launching beats optimizing.

@@ -8,6 +8,7 @@ Detailed per-platform email marketing configuration — automation builders, seg
 - [In ActiveCampaign](#in-activecampaign)
 - [In Mailchimp](#in-mailchimp)
 - [In Kit (formerly ConvertKit)](#in-kit-formerly-convertkit)
+- [In Gumroad](#in-gumroad)
 - [In Closum](#in-closum)
 - [In SendGrid (Marketing Campaigns)](#in-sendgrid-marketing-campaigns)
 - [In Postmark (Broadcast Message Streams)](#in-postmark-broadcast-message-streams)
@@ -459,4 +460,37 @@ Payhip includes basic built-in email marketing for creators selling digital prod
 - No email analytics beyond basic open rates
 
 **Best for**: Creators who need post-purchase email delivery and ESP subscriber sync as part of their product platform. Use Payhip for product sales and connect to a dedicated ESP (Kit, ActiveCampaign, Mailchimp) for serious email marketing campaigns and automation.
+
+---
+
+## In Gumroad
+
+Gumroad has basic built-in email broadcasts for communicating with buyers and followers.
+
+**What you can do**
+- Send email broadcasts to all buyers and/or followers
+- Segment by product purchased (email all buyers of a specific product)
+- Import/export email lists (CSV)
+- Collect emails from pay-what-you-want products priced at $0 (lead magnet strategy)
+
+**What you cannot do**
+- No automation sequences (drip campaigns, welcome series, abandoned cart)
+- No visual workflow builder
+- No A/B testing for subject lines or content
+- No advanced segmentation (behavior, tags, custom fields)
+- No email templates or drag-and-drop editor
+- No detailed analytics beyond basic open/click rates
+
+**Connecting to a dedicated ESP**
+- **Zapier**: Use "New Sale" trigger to add buyers to Kit, Mailchimp, ActiveCampaign, MailerLite, etc.
+- **Webhooks (Ping)**: Configure at Settings → Advanced → Ping. On each sale, Gumroad POSTs buyer email and product details to your endpoint. Use this to trigger ESP sequences in real-time.
+- **Manual export**: Download your customer/follower list as CSV and import into your ESP.
+
+**Limitations**
+- Broadcasts only — no automation, no sequences, no triggered emails
+- No audience tagging or behavioral segmentation
+- No email deliverability controls (no dedicated IP, no SPF/DKIM configuration)
+- Email lists are tied to your Gumroad account — if you leave Gumroad, export first
+
+**Best for**: Simple product announcements and update broadcasts. For anything beyond basic email blasts — launch sequences, welcome series, abandoned cart recovery, audience nurturing — connect Gumroad to a dedicated ESP via Zapier or Ping webhooks. For platform-specific Gumroad help, use `/sales-gumroad`.
 

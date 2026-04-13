@@ -71,6 +71,19 @@ MailerLite supports selling digital products directly within its platform:
 - **Limitations**: No order bumps, no upsell/downsell flows, no cart/checkout page customization. For complex digital product sales with bundles and upsells, use Gumroad, Lemon Squeezy, or Kit Commerce and connect to MailerLite for email follow-up.
 - **Best for**: Solopreneurs and creators already using MailerLite who want to sell 1-3 simple digital products (ebooks, templates) without adding another platform.
 
+### In Gumroad
+Gumroad is the simplest platform for selling digital products — zero monthly fees, upload and price in minutes:
+- **Pricing**: 10% + $0.50 per sale (no monthly fee). Discover marketplace sales cost 30%. No volume discounts.
+- **Product types**: Digital downloads, courses, memberships, software (with license keys), bundles, physical products.
+- **Pay-what-you-want**: Set a minimum (including $0) and let buyers choose their price. Good for building an audience.
+- **Gumroad Discover**: Built-in marketplace for organic traffic — but requires at least one sale before your product appears. Don't rely on it as your only traffic source.
+- **Tax handling**: Full Merchant of Record since Jan 2025 — Gumroad handles all VAT/GST/sales tax globally.
+- **PayPal removed**: Since Oct 2024, buyers can only pay via credit/debit card. This may reduce conversions for audiences that prefer PayPal.
+- **Fee impact on low-priced products**: A $5 product loses ~20% to Gumroad fees (before payment processing). Bundle products or price at $25+ to reduce the effective rate.
+- **Email broadcasts**: Basic — good for product announcements, but no automation or sequences. Use a dedicated ESP for marketing campaigns.
+- **Best for**: First-time creators, side projects, quick product launches, software license key distribution. Move to Payhip or Lemon Squeezy when revenue exceeds ~$3K/month and fees become painful.
+- For platform-specific setup, use `/sales-gumroad`.
+
 *You no longer need the platform guide details — focus on the user's specific situation.*
 
 ## Step 4 — Actionable guidance
@@ -102,6 +115,7 @@ MailerLite supports selling digital products directly within its platform:
 - `/sales-groove` — Groove.cm platform help (GrooveSell, GroovePages)
 - `/sales-podia` — Podia platform help (courses, downloads, memberships, coaching, email)
 - `/sales-payhip` — Payhip platform help (digital downloads, courses, memberships, coaching, store builder, API)
+- `/sales-gumroad` — Gumroad platform help (digital products, license keys, Discover marketplace, API, webhooks)
 - `/sales-lemonsqueezy` — Lemon Squeezy platform help (payments, subscriptions, license keys, tax compliance as merchant of record)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
