@@ -124,6 +124,7 @@ Body: Create urgency. Optionally add a small incentive (bonus or 10% discount). 
 - `/sales-kit` — Kit platform help (Kit Commerce for digital products and subscriptions)
 - `/sales-digital-products` — Digital product sales strategy (pricing, platform selection, launch)
 - `/sales-payhip` — Payhip platform help (embedded checkout, cross-selling, coupons)
+- `/sales-lemonsqueezy` — Lemon Squeezy platform help (hosted/overlay/embedded checkout, subscriptions, tax as MoR)
 - `/sales-do` — Route any sales question to the right skill.
 
 ## Examples

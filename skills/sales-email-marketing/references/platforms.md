@@ -402,6 +402,34 @@ Buttondown is a minimal, developer-friendly newsletter platform with Markdown-na
 
 **Best for**: Developers and technical writers who want Markdown, API access, and no tracking by default. Not ideal for visual-heavy marketing campaigns or complex multi-step automations.
 
+### In Lemon Squeezy
+
+Lemon Squeezy includes built-in email marketing for merchants selling digital products, subscriptions, and software. For full platform help, use `/sales-lemonsqueezy`.
+
+**Email capabilities**
+- Newsletter sending to customers and subscribers
+- Automatic customer segmentation by product and purchase status
+- Subscriber collection via purchases and signup forms
+- Real-time subscriber profiles and performance tracking
+- Free up to 500 subscribers, then tiered pricing ($10/mo for 1K, scales to $2,500/mo for 500K)
+
+**ESP integrations**
+- **ConvertKit (Kit)**: Native integration — auto-add customers as subscribers
+- **Mailchimp**: Native integration — auto-add customers as subscribers
+- **Zapier**: Triggers for new orders, subscriptions, license keys, refunds — connect to any ESP
+
+**Webhooks**: `order_created`, `subscription_created`, `subscription_payment_success`, and other events — use for triggering email sequences in external ESPs.
+
+**Limitations**
+- No automation builder or drip sequences
+- No visual workflow builder
+- No A/B testing
+- No advanced segmentation (behavioral, engagement-based)
+- No drag-and-drop email editor
+- Newsletter-only — no triggered/transactional email management
+
+**Best for**: Creators and indie developers already using Lemon Squeezy for payments who want to send basic product updates and newsletters without adding another platform. For serious email marketing with automation and segmentation, connect to a dedicated ESP (Kit, Mailchimp, ActiveCampaign, Klaviyo) via Lemon Squeezy's native integrations or Zapier.
+
 ### In Payhip
 
 Payhip includes basic built-in email marketing for creators selling digital products, courses, and memberships. For full platform help, use `/sales-payhip`.

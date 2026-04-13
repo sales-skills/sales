@@ -124,6 +124,7 @@ Create a structured onboarding experience:
 - `/sales-fansrevenue` — FansRevenue platform help — creator monetization through affiliate brand promotion, CrakRevenue network
 - `/sales-grin` — GRIN platform help — includes Affiliate Hub with bulk link creation, discount codes, automated payouts
 - `/sales-payhip` — Payhip platform help — built-in per-product affiliate program for digital products, courses, memberships
+- `/sales-lemonsqueezy` — Lemon Squeezy platform help — built-in affiliate management with percentage or flat-rate commissions
 - `/sales-do` — Route to the right skill when you are unsure where to start
 
 ## Examples
