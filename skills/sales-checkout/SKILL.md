@@ -126,6 +126,7 @@ Body: Create urgency. Optionally add a small incentive (bonus or 10% discount). 
 - `/sales-gumroad` — Gumroad platform help (digital product checkout, license keys, Discover marketplace)
 - `/sales-payhip` — Payhip platform help (embedded checkout, cross-selling, coupons)
 - `/sales-lemonsqueezy` — Lemon Squeezy platform help (hosted/overlay/embedded checkout, subscriptions, tax as MoR)
+- `/sales-vwo` — VWO platform help (A/B test checkout pages, heatmaps, session recordings, form analytics)
 - `/sales-do` — Route any sales question to the right skill.
 
 ## Examples

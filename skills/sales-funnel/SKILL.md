@@ -128,7 +128,7 @@ Use these as baselines — not guarantees. Benchmarks assume warm-to-lukewarm tr
 ---
 ## Step 3: Platform-Specific Guidance
 
-For platform-specific funnel building guidance (Groove.cm, ClickFunnels, GoHighLevel, Kartra, WordPress, Closum, Mailchimp, GetResponse, Kit, SendPulse, etc.), see references/platforms.md.
+For platform-specific funnel building guidance (Groove.cm, ClickFunnels, GoHighLevel, Kartra, WordPress, Closum, Mailchimp, GetResponse, Kit, SendPulse, VWO, etc.), see references/platforms.md.
 
 ---
 ## Step 4: Actionable Guidance
@@ -248,6 +248,7 @@ Follow this framework for every test:
 - `/sales-sendpulse` — SendPulse platform help (landing pages, email, SMS, chatbots, Automation 360)
 - `/sales-audience-growth` — Growing an email list (lead magnets, cross-promotion, referral programs)
 - `/sales-digital-products` — Selling digital products (platform selection, pricing, launch)
+- `/sales-vwo` — VWO platform help (A/B testing, heatmaps, session recordings, personalization, feature flags)
 - `/sales-do` — Route to any sales skill by describing what you need
 
 ---

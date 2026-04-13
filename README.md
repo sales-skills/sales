@@ -262,6 +262,15 @@ Router recommends a 5-skill sequence:
 </details>
 
 <details>
+<summary><strong>CRO & Experimentation</strong></summary>
+
+| Skill | What it does |
+|---|---|
+| `/sales-vwo` | VWO — A/B testing, multivariate tests, heatmaps, session recordings, personalization, feature flags, SDKs, REST API |
+
+</details>
+
+<details>
 <summary><strong>Sales Enablement Platforms</strong></summary>
 
 | Skill | What it does |

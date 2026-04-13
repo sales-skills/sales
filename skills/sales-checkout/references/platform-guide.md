@@ -162,6 +162,17 @@ Payhip provides a simple checkout flow for digital downloads, courses, membershi
 - **What it does NOT have**: No order bumps, no post-purchase upsell pages, no downsell flows, no cart abandonment recovery, no A/B testing for checkout. If you need these, use ThriveCart, SamCart, or GrooveSell.
 - **Best for**: Creators who want embedded checkout on their existing site with minimal friction and low fees. Not suitable for complex multi-step checkout optimization.
 
+### In VWO
+
+VWO (Visual Website Optimizer) is not a checkout platform — it's an experimentation tool that tests and optimizes checkout pages. For full platform help, use `/sales-vwo`.
+
+- **Checkout A/B testing**: Use VWO Testing to run A/B tests on checkout pages — headline, trust badges, form field order, CTA copy, price presentation, payment plan display. Visual editor works for simple changes; code editor for dynamic/SPA checkouts.
+- **Heatmaps on checkout**: VWO Insights click maps and scroll maps reveal where buyers hesitate, what they click that isn't clickable, and whether they scroll to the payment button. Session recordings filtered to checkout bouncers show individual frustration patterns.
+- **Form analytics**: VWO's form analytics tracks field-level drop-off — see exactly which checkout field causes abandonment (phone number? billing address? coupon code input?).
+- **Gradual rollout of new checkout**: Use VWO Feature Experimentation to roll out a redesigned checkout to 10% → 25% → 50% → 100% of users with real-time monitoring.
+- **Statistical note**: Checkout tests need high traffic because conversion rates are typically 2-5%. At 3% checkout conversion, you need ~3,300 visitors per variation to reach 100 conversions.
+- **Best for**: Optimizing an existing checkout by testing changes against the current version. Pair with your checkout platform (Shopify, WooCommerce, ThriveCart, etc.) — VWO tests the experience, the platform handles payment processing.
+
 ### Other Platforms (Brief Notes)
 
 - **Gumroad**: Simplest setup. Good for creators selling digital products. 10% flat fee. Limited funnel features.

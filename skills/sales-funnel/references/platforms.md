@@ -14,6 +14,7 @@ Detailed per-platform funnel setup — page builders, checkout integration, A/B 
 - [In GetResponse](#in-getresponse)
 - [In Kit](#in-kit)
 - [In SendPulse](#in-sendpulse)
+- [In VWO](#in-vwo)
 - [In Other Tools](#in-other-tools)
 
 ## In Groove.cm (Detailed)
@@ -151,6 +152,20 @@ MailerLite offers landing pages and basic funnel capabilities as part of its ema
 - **E-commerce integration**: Shopify/WooCommerce connection enables abandoned cart and post-purchase funnel automation.
 - **Limitations**: MailerLite is NOT a full funnel builder. No multi-step funnel flows, no upsell/downsell pages, no order bumps, no A/B testing on landing pages (only on emails). For multi-step funnels with checkout, use ClickFunnels, Groove.cm, or GoHighLevel and connect to MailerLite for email follow-up.
 - **Best for**: Simple lead capture funnels (landing page → email sequence) and digital product sales where MailerLite is already the email tool. For anything beyond opt-in capture and basic product sales, use a dedicated funnel builder and integrate.
+
+## In VWO
+
+VWO (Visual Website Optimizer) is primarily an A/B testing and experimentation platform — it doesn't build funnels, but it tests and optimizes every step of them. For full platform help, use `/sales-vwo`.
+
+- **A/B testing on funnel pages**: Use VWO Testing to run A/B, multivariate, or split URL tests on any funnel page. Visual editor for simple text/image changes, code editor for complex modifications.
+- **What to test**: Follow the funnel A/B testing priority order (headline → CTA → hero image → social proof → price presentation → page length). VWO's visual editor makes headline and CTA tests fast to set up.
+- **Heatmaps + session recordings**: Use VWO Insights to understand where visitors drop off. Click maps show engagement hotspots, scroll maps reveal if visitors reach the CTA, session recordings show individual user journeys through the funnel.
+- **Personalization**: VWO Personalize can show different funnel content to different visitor segments (returning vs new, geo-location, traffic source, device type). Test personalized vs default with built-in A/B testing.
+- **Feature flags for checkout**: Use VWO Feature Experimentation to gradually roll out new checkout flows or pricing page redesigns to a percentage of users before going site-wide.
+- **Statistical guidance**: VWO uses Bayesian statistics. Wait for 95%+ probability to be best and at least 100 conversions per variation. Run for a minimum of 7 days to capture weekday/weekend variation.
+- **SmartCode placement**: VWO's JavaScript snippet must be in `<head>` loaded synchronously to avoid flash of original content (FOOC). This applies to every funnel page being tested.
+- **Pricing note**: A/B testing starts on the Growth plan (~$198-$314/mo). Personalization and advanced features require Pro or Enterprise. MTU quota exhaustion stops all tests mid-month.
+- **Best for**: Optimizing existing funnel pages through systematic testing. Pair VWO with a funnel builder (ClickFunnels, Groove, GoHighLevel) — VWO tests what you've built, it doesn't build the funnel.
 
 ## In Other Tools
 

@@ -963,6 +963,12 @@
 | `/nanobanana` | AI image generation/editing — product mockups, marketing visuals, creative assets |
 | `/baoyu-slide-deck` | Transform content into presentation decks — slide outlines, images, audience targeting, style options |
 
+### VWO & Experimentation
+
+| Skill | Route when... |
+|---|---|
+| `/sales-vwo` | VWO platform help — A/B testing setup, multivariate tests, split URL tests, visual editor issues, heatmaps, session recordings, form analytics, surveys, website personalization rules, feature flags, server-side experimentation, VWO SDKs (Node.js, Python, Java, PHP, Ruby, Go, .NET, React, Flutter, Android, iOS), VWO REST API, VWO SmartCode, VWO Insights, VWO Personalize, VWO FME, OpenFeature providers, VWO MCP Server, MTU quota, VWO pricing, VWO vs Optimizely vs AB Tasty, or VWO + AB Tasty merger questions | Route when the user asks about VWO setup, config, features, or troubleshooting. Route when they mention VWO Testing, VWO Insights, VWO Personalize, VWO Feature Experimentation, VWO FME, VWO Web Rollouts, VWO SmartCode, VWO visual editor, VWO heatmaps, VWO session recordings, VWO API, or Wingify. |
+
 ### SEO & Domains (via resciencelab/opc-skills)
 
 | Skill | Route when... |
