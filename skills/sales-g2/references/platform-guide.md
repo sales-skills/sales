@@ -176,19 +176,29 @@ For full API reference, see `references/g2-api-reference.md`.
 | Renewal (just renewed) | Within 1 week of renewal | 25-35% |
 | NPS 9-10 response | Immediately after NPS survey | 40-50% |
 
-### G2 vs Capterra vs TrustRadius
-| Factor | G2 | Capterra | TrustRadius |
-|---|---|---|---|
-| **Scale** | 3M+ reviews, 180K+ products | Large catalog, Gartner-owned | 470K+ in-depth reviews |
-| **Buyer audience** | Mid-market + enterprise | SMB discovery (top of funnel) | Enterprise (deep evaluations) |
-| **Review depth** | Medium-length, verified | Shorter, volume-driven | Long-form, analyst-grade |
-| **Free value** | High (Grid, badges, profile) | Free listing, paid PPC visibility | Free, subscription add-ons |
-| **Paid model** | Subscription ($299/mo+) | PPC (pay per click) | Subscription |
-| **Intent data** | Yes (G2-only activity) | No native intent | Yes (TrustRadius-only) |
-| **Best for** | B2B SaaS wanting Grid/badge social proof | SMB lead gen via PPC placement | Enterprise buyers needing detailed proof |
-| **Audience overlap** | ~20% overlap with TrustRadius | Different audience than G2 | ~20% overlap with G2 |
+### G2 acquisition of Capterra, Software Advice, and GetApp (Jan 2026)
 
-**Recommendation**: Most B2B SaaS should be on G2 (free) + Capterra (free listing). Add TrustRadius if selling enterprise. Being on all three nearly doubles your addressable research audience.
+> **Major industry shift**: On January 29, 2026, G2 announced the acquisition of Capterra, Software Advice, and GetApp from Gartner. The deal closed February 5, 2026. This creates the dominant B2B software discovery platform:
+> - 6M+ combined verified reviews
+> - 200M+ annual software buyers globally
+> - 10,000+ software vendors served
+> - 2,000+ software and service categories
+> - Up to 3x more Buyer Intent signals from the combined data set
+> - New pay-per-lead offering converting intent into sales-ready leads
+>
+> **What this means for vendors**: Capterra, Software Advice, and GetApp will continue operating but are now part of the G2 family. Vendors should expect unified intent data and potentially consolidated vendor portals over time. The competitive landscape now has G2 (with Capterra/SA/GetApp) vs TrustRadius vs Gartner Peer Insights as the main players.
+
+### G2 vs TrustRadius (post-acquisition landscape)
+| Factor | G2 (+ Capterra/SA/GetApp) | TrustRadius |
+|---|---|---|
+| **Scale** | 6M+ reviews, combined | 470K+ in-depth reviews |
+| **Buyer audience** | SMB through enterprise (full funnel) | Enterprise (deep evaluations) |
+| **Review depth** | Varies — G2 medium, Capterra shorter | Long-form, analyst-grade |
+| **Free value** | High (Grid, badges, multiple profiles) | Free, subscription add-ons |
+| **Intent data** | Yes — 3x more signals post-acquisition | Yes (TrustRadius-only activity) |
+| **Best for** | Full-funnel B2B software discovery | Enterprise buyers needing detailed proof |
+
+**Recommendation**: Claim your G2 profile (free) — with the acquisition, G2 now covers most of the buyer journey. Add TrustRadius if selling enterprise where deep-dive reviews matter. The competitive dynamics between G2-owned properties (Capterra, Software Advice, GetApp) may evolve — monitor for vendor portal consolidation.
 
 ### Reddit-G2 Integration (launched Oct 2025)
 - G2-listed companies can activate Reddit Pro accounts pre-filled with verified profile data

@@ -72,7 +72,8 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - **Reviews older than 3 months lose credibility** — 85% of buyers consider them irrelevant. You need a continuous review engine, not a one-time campaign.
 - **Free plan gets you 80% of the value** — Grid placement, badges, and search visibility don't require a paid plan. Paid plans add intent data, review management, and profile visitor analytics.
 - **Starter plan price doubles in year 2** — $299/mo year 1 becomes $599/mo year 2. Budget accordingly.
-- **G2 intent data only covers G2 activity** — it doesn't track research on TrustRadius, Capterra, or the broader web. Layer with Bombora or 6sense for full-funnel intent.
+- **G2 acquired Capterra, Software Advice, and GetApp in Feb 2026** — the combined platform promises 3x more intent signals. Monitor for vendor portal consolidation and pricing changes.
+- **G2 intent data only covers G2 activity** — though the Capterra acquisition may expand this. Layer with Bombora or 6sense for full-funnel intent until coverage consolidates.
 - **Review incentives must be equal** — G2 allows gift cards for all reviewers, but you cannot selectively incentivize positive reviews or gate review requests to satisfied customers only.
 - **Review verification is strict** — G2 requires screenshots, company info, and usage proof. Expect 10-20% of submitted reviews to be rejected or flagged.
 - **Category ranking depends on review recency and volume** — not just average rating. A product with 50 fresh reviews can outrank one with 200 stale ones.
