@@ -691,6 +691,12 @@
 |---|---|
 | `/sales-semrush` | User asks about Semrush platform, Semrush keyword research, Semrush site audit, Semrush rank tracking, Semrush backlink analysis, Semrush API, Semrush Position Tracking, Keyword Magic Tool, Semrush Content Marketing Toolkit, Semrush AI Visibility, Semrush Local SEO, Semrush Listing Management, Semrush Advertising Research, Semrush pricing, Semrush Pro vs Guru vs Business, Semrush One, Semrush MCP, semrush.com, Semrush vs Ahrefs, or Semrush SEO workflow |
 
+### Yoast & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-yoast` | User asks about Yoast SEO plugin, Yoast readability score, Yoast SEO score, Yoast Premium vs free, Yoast schema output, Yoast REST API, Yoast for Shopify, Yoast for WooCommerce, Yoast redirect manager, Yoast internal linking, Yoast AI meta descriptions, Yoast llms.txt, Yoast update broke my site, Yoast slow performance, yoast.com, Yoast vs Rank Math, or Yoast SEO configuration. NOT for general SEO strategy without Yoast context — route to `/sales-semrush` or `/seo-audit` |
+
 ### Groove.cm & Platform
 
 | Skill | Route when... |

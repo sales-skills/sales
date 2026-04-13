@@ -397,6 +397,7 @@ Router recommends a 5-skill sequence:
 | Skill | What it does |
 |---|---|
 | `/sales-semrush` | Semrush — leading SEO platform (27B keywords, 43T backlinks), AI Visibility Toolkit, MCP server, API |
+| `/sales-yoast` | Yoast SEO — WordPress/Shopify SEO plugin (13M+ installs), content analysis, readability, schema, REST API, AI meta, llms.txt |
 
 </details>
 
