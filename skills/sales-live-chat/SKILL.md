@@ -1,6 +1,6 @@
 ---
 name: sales-live-chat
-description: "Live chat and chatbot for sales and support — widget setup, routing, chatbot flows, agent management, visitor tracking, chat-to-lead conversion, proactive messaging. Covers strategy and implementation across Brevo Conversations, Drift (Salesloft), Intercom, HubSpot, Crisp, LiveChat, Zendesk, Tidio, Freshdesk, and ZoomInfo Chat. Use when chat widget not converting visitors, chatbot giving wrong answers or dead-ending, chats going to the wrong agent, not sure which live chat tool to pick, or visitors leaving before an agent responds. Do NOT use for email sequences (use /sales-cadence), email marketing (use /sales-email-marketing), or meeting scheduling (use /sales-meeting-scheduler). For platform-specific help, use /sales-brevo, /sales-salesloft, or /sales-swai."
+description: "Live chat and chatbot for sales and support — widget setup, routing, chatbot flows, agent management, visitor tracking, chat-to-lead conversion, proactive messaging. Covers strategy and implementation across Brevo Conversations, Drift (Salesloft), Intercom, HubSpot, Crisp, LiveChat, Zendesk, Tidio, Freshdesk, ZoomInfo Chat, and Qualified. Use when chat widget not converting visitors, chatbot giving wrong answers or dead-ending, chats going to the wrong agent, not sure which live chat tool to pick, or visitors leaving before an agent responds. Do NOT use for email sequences (use /sales-cadence), email marketing (use /sales-email-marketing), or meeting scheduling (use /sales-meeting-scheduler). For platform-specific help, use /sales-brevo, /sales-salesloft, or /sales-swai."
 argument-hint: "[describe your live chat or chatbot question or goal]"
 license: MIT
 version: 1.0.0
@@ -91,6 +91,7 @@ Live chat converts best when:
 
 ## Related skills
 
+- `/sales-qualified` — Qualified platform help (Piper AI SDR, Signals, Salesforce-native routing)
 - `/sales-zoominfo` — ZoomInfo platform help (Chat, WebSights visitor identification)
 - `/sales-getresponse` — GetResponse platform help (built-in live chat widget)
 - `/sales-brevo` — Brevo platform help (Conversations live chat setup)

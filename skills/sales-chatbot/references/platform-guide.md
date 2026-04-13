@@ -162,6 +162,21 @@ HubSpot's chatbot builder (included in free CRM):
 - **Knowledge base** — AI answers from your help articles (Service Hub Pro+)
 - **Channels**: website, Facebook Messenger
 
+### In Qualified
+
+Qualified's Piper AI SDR Agent acts as an autonomous chatbot for enterprise B2B:
+
+- **AI-driven conversations** — Piper uses AI (not rule-based flows) to engage, qualify, and route visitors. No visual flow builder — the AI handles conversation logic based on training data and Salesforce context.
+- **Salesforce-native** — every conversation is enriched with Salesforce data (account, contact, opportunity history). Piper personalizes greetings based on who the visitor is in Salesforce.
+- **Multi-modal** — text chat, voice, and video conversations from the same widget.
+- **Qualification** — Piper scores visitors based on Salesforce data + conversation responses. Routes hot leads to human reps, nurtures others.
+- **Meeting booking** — Piper Meetings books demos directly from chat based on rep calendar availability.
+- **Signals integration** — Qualified Signals (buyer intent data) informs how aggressively Piper engages a visitor.
+- **Limitations**: Salesforce required. Enterprise pricing ($42K-$100K+/yr). Inbound only. Piper's brand voice needs 2-4 weeks of training to move beyond generic responses.
+- **Best for**: Enterprise B2B with Salesforce CRM, complex routing needs, high website traffic.
+
+> For full Qualified platform setup, use `/sales-qualified`.
+
 ## Building your first bot (step-by-step)
 
 1. **Define the goal** — one bot, one job (don't try to do everything in one flow)

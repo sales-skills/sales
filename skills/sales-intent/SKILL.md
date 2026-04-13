@@ -118,6 +118,7 @@ Use Apollo Workflows (Professional+ plan) to automate:
 
 ## Related skills
 
+- `/sales-qualified` — Qualified platform help (Signals buyer intent, Piper AI SDR for acting on intent)
 - `/sales-prospect-list` — Build the prospect list to layer signals on top of
 - `/sales-enrich` — Enrich signal-triggered contacts with verified contact info
 - `/sales-cadence` — Design signal-specific outbound sequences

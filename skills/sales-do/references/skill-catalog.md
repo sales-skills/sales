@@ -335,6 +335,12 @@
 |---|---|
 | `/sales-aisdr` | AiSDR platform help — AI-powered SDR setup, AiSDR campaign configuration, AiSDR email warmup, AiSDR HubSpot integration, AiSDR prospect targeting, AiSDR pricing and message credits, AiSDR reply rate optimization, comparing AiSDR to other AI SDR tools (Artisan, 11x, Salesforge, Coldreach), AiSDR AI Strategist context, AiSDR Calendly meeting booking, AiSDR LinkedIn outreach | Route when the user asks about AiSDR setup, config, features, or troubleshooting. Route when they mention AiSDR campaigns, AiSDR warmup, AiSDR AI Strategist, AiSDR HubSpot sync, AiSDR credits, or AiSDR pricing. |
 
+### Qualified & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-qualified` | Qualified platform help — Piper AI SDR Agent, Piper Conversations (chat/voice/video), Piper Email, Piper Meetings, Piper Offers, Piper for Slack, Qualified Signals (buyer intent), visitor segments, routing and alerts, Salesforce integration, Salesforce AppExchange, Qualified implementation, Qualified reporting API | Route when the user asks about Qualified setup, config, features, or troubleshooting. Route when they mention Qualified, Piper AI SDR, Piper Conversations, Piper Meetings, Piper Email, Qualified Signals, Qualified routing, Qualified Salesforce integration, or agentic marketing. |
+
 ### BrandJet & Platform
 
 | Skill | Route when... |

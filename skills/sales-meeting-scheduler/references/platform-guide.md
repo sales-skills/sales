@@ -168,6 +168,17 @@ Use these to gauge how your scheduling is performing:
 - **API access**: `GET /meetingtypes` to list meeting types, `GET /meetinginvites` to list invitations, `POST /meetings/summaries/search` for meeting summaries
 - **Gotcha**: Mixmax scheduling is Gmail/Google Calendar only — no Outlook/Microsoft 365 calendar support. If your team is on Microsoft, use Calendly or Chili Piper instead
 
+### In Qualified (Piper Meetings)
+
+- **Chat-to-meeting**: Piper AI SDR qualifies website visitors in real-time chat and books meetings directly in the conversation flow — no redirect to a separate booking page
+- **Calendar integration**: Syncs with Google Calendar and Microsoft Outlook/Office 365 for rep availability
+- **Salesforce routing**: Books meetings with the correct rep based on Salesforce account ownership, territory, or round-robin
+- **Real-time**: Piper checks rep availability live during the conversation and offers available times immediately
+- **24/7 booking**: Piper handles meeting booking when reps are offline — visitors never hit a dead-end
+- **Best for**: Enterprise B2B teams on Salesforce who want meetings booked from inbound chat conversations without a separate scheduling tool
+- **Limitation**: Salesforce required. No standalone booking page (meetings are booked through Piper conversations). Enterprise pricing ($42K-$100K+/yr).
+- **Platform skill**: `/sales-qualified`
+
 ### In SavvyCal
 
 - **Personalized scheduling** — recipients overlay their own calendar to find mutual availability

@@ -90,6 +90,7 @@ Based on the user's context, provide:
 
 ## Related skills
 
+- `/sales-qualified` — Qualified platform help (Piper Meetings instant booking from chat)
 - `/sales-yesware` — Yesware platform help including Meeting Scheduler setup
 - `/sales-cadence` — Design outbound cadences that drive meeting bookings
 - `/sales-lead-routing` — Lead routing rules (complementary to meeting round-robin)

@@ -190,6 +190,7 @@ What happens when the assigned rep can't respond in time:
 
 ## Related skills
 
+- `/sales-qualified` — Qualified platform help (Salesforce-native real-time lead routing from website chat)
 - `/sales-lead-score` — Design the scoring model that feeds score-based routing
 - `/sales-enrich` — Enrich leads with company/title data needed for routing rules
 - `/sales-prospect-list` — Build prospect lists with pre-segmented territories

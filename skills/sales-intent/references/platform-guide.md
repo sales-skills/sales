@@ -163,6 +163,17 @@ RollWorks (AdRoll's B2B arm) provides account-level intent and engagement signal
 - **API-first**: All signal endpoints are REST APIs — automate signal detection in pipelines via api.leadmagic.io.
 - **Best for**: Teams wanting programmatic access to job change and hiring signals without a full intent platform.
 
+### In Qualified (Signals)
+
+- **First-party website intent**: Qualified tracks which companies visit your website, what pages they view, time on site, and return visit frequency. Segments visitors using Salesforce account data (industry, revenue, tier, existing opportunity).
+- **Third-party intent via Bombora**: Qualified integrates with Bombora for topic-level research intent data — know which accounts are researching your category across 5,000+ sources.
+- **Account-level scoring**: Combines first-party engagement + third-party intent + Salesforce data into an account-level priority score with trend detection (increasing vs decreasing engagement).
+- **Real-time alerts**: When a high-intent target account visits your website, Qualified sends instant alerts via Slack, Microsoft Teams, Chrome browser notifications, Gmail, and mobile.
+- **Piper AI SDR**: Qualified doesn't just detect intent — Piper acts on it in real time. When a high-intent account visits, Piper engages them with a personalized conversation using Salesforce context, qualifies them, and books a meeting.
+- **Best for**: Enterprise B2B on Salesforce who want website intent + third-party intent in one platform with an AI agent that acts on signals in real time.
+- **Limitation**: Salesforce required. Enterprise pricing ($42K-$100K+/yr). No outbound signal-to-sequence automation — Qualified handles inbound only.
+- **Platform skill**: `/sales-qualified`
+
 ## Automated Signal-to-Sequence Routing
 
 Set up rules to automatically route signals into outreach:

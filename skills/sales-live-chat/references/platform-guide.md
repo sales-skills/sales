@@ -19,14 +19,14 @@
 
 ## Tool Selection Framework
 
-| Factor | Brevo | Drift | Intercom | HubSpot | Crisp | LiveChat |
-|---|---|---|---|---|---|---|
-| **Best for** | All-in-one marketing + chat | Enterprise sales chat | Product-led growth | HubSpot ecosystem | SMB budget | Support-focused |
-| **Pricing** | Included in Brevo plans | $$$ (enterprise) | $$$  | Free (basic) to $$$ | Free to $$ | $$ |
-| **Chatbot** | Basic automation | AI + playbooks | AI + custom bots | Basic to advanced | Basic bot | Basic bot |
-| **CRM integration** | Built-in CRM | Salesforce, HubSpot | Own CRM | Native | Zapier | Zapier, native |
-| **AI features** | Aura AI agent | AI chatbot, Bionic | Fin AI agent | AI assistant | AI bot | AI assist |
-| **Meeting booking** | No native | Yes | Yes | Yes (HubSpot meetings) | No native | No native |
+| Factor | Brevo | Drift | Intercom | HubSpot | Crisp | LiveChat | Qualified |
+|---|---|---|---|---|---|---|---|
+| **Best for** | All-in-one marketing + chat | Enterprise sales chat | Product-led growth | HubSpot ecosystem | SMB budget | Support-focused | Enterprise Salesforce |
+| **Pricing** | Included in Brevo plans | $$$ (enterprise) | $$$  | Free (basic) to $$$ | Free to $$ | $$ | $$$$ ($42K-$100K+/yr) |
+| **Chatbot** | Basic automation | AI + playbooks | AI + custom bots | Basic to advanced | Basic bot | Basic bot | Piper AI SDR |
+| **CRM integration** | Built-in CRM | Salesforce, HubSpot | Own CRM | Native | Zapier | Zapier, native | Salesforce only (native) |
+| **AI features** | Aura AI agent | AI chatbot, Bionic | Fin AI agent | AI assistant | AI bot | AI assist | Piper AI SDR (chat/voice/video) |
+| **Meeting booking** | No native | Yes | Yes | Yes (HubSpot meetings) | No native | No native | Yes (Piper Meetings) |
 
 ## Platform-Specific Reference
 
@@ -120,6 +120,21 @@ SWAI.ai includes an AI-powered chat widget as part of its Autonomous Revenue OS:
 - **Limitation**: Website-only chat (no WhatsApp, Messenger, or other channels). No visual chatbot flow builder. Less agent management features than dedicated tools (Intercom, Drift, LiveChat).
 - **Best for**: Teams using SWAI for marketing automation who want an intelligent website chat without adding a separate tool.
 - **Platform skill**: `/sales-swai`
+
+### In Qualified
+
+Qualified is an enterprise agentic marketing platform built natively on Salesforce:
+
+- **Piper AI SDR Agent**: AI-powered conversations that qualify visitors in real time using text, voice, and video. Piper works 24/7 and uses Salesforce CRM data to personalize every interaction.
+- **Salesforce-native routing**: Matches visitors to existing Salesforce accounts and routes to the account owner. Territory-based and round-robin fallback routing built on Salesforce data.
+- **Real-time alerts**: Slack, Teams, Chrome, Gmail, and mobile notifications when high-value visitors arrive.
+- **Meeting booking**: Piper Meetings books demos directly from chat based on rep calendar availability (Google Calendar, Outlook).
+- **Signals (buyer intent)**: First-party website engagement + third-party intent via Bombora for account-level scoring and prioritization.
+- **Visitor identification**: Enriches anonymous visitors using Clearbit and ZoomInfo integrations. Segments visitors using Salesforce account data (tier, industry, revenue, opportunity status).
+- **Advantage**: Deepest Salesforce integration in the category — built by ex-Salesforce team. AI SDR (not just chatbot) that qualifies, routes, books, and follows up.
+- **Limitation**: Salesforce required (no HubSpot/Pipedrive). Enterprise pricing ($42K-$100K+/yr). Inbound only — no outbound sequences.
+- **Best for**: Enterprise B2B SaaS with Salesforce CRM, high inbound traffic, complex routing needs.
+- **Platform skill**: `/sales-qualified`
 
 ### In LiveChat / Zendesk / Tidio / Freshdesk
 - **LiveChat**: Support-focused with ticketing integration. Good for support teams.
