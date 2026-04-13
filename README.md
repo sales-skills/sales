@@ -385,6 +385,7 @@ Router recommends a 5-skill sequence:
 | `/sales-resourcefyi` | Resource.fyi — curated tools directory (2,519+ resources), free submission |
 | `/sales-launchvibe` | LaunchVibe — instant free submission (DR10 dofollow), XP gamification |
 | `/sales-startupbase` | StartupBase — community-driven directory (DR39 dofollow), Spark newsletter |
+| `/sales-getmorebacklinks` | GetMoreBacklinks — managed directory submission service ($87-$247), 50-200 directories, DR 30+ guarantee |
 | `/sales-launch-directory` | Launch directory strategy — coordinates submissions across 22+ platforms, sequencing, backlink stacking |
 
 </details>

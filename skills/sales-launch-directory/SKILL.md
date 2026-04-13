@@ -91,6 +91,8 @@ If the request maps to a single platform, route:
 - Landing page optimization → `/sales-checkout`
 - Audience growth strategy → `/sales-audience-growth`
 
+- Managed directory submission service → `/sales-getmorebacklinks`
+
 Otherwise, answer directly from the directory knowledge below.
 
 ## Step 3 — Directory reference
@@ -148,6 +150,7 @@ Otherwise, answer directly from the directory knowledge below.
 - `/sales-saashunt` — SaaSHunt platform help (AI-powered B2B SaaS directory, DR49 dofollow, free template-based submission)
 - `/sales-resourcefyi` — Resource.fyi platform help (curated dev/designer tools directory, 2,519+ resources, 25+ categories, community upvoting)
 - `/sales-launchvibe` — LaunchVibe platform help (daily launches, XP gamification, DR10 dofollow, 1,000+ founders)
+- `/sales-getmorebacklinks` — GetMoreBacklinks managed directory submission service ($87-$247, 50-200 directories submitted for you)
 - `/sales-funnel` — Build and optimize sales funnels for conversion
 - `/sales-audience-growth` — Grow your email list and subscriber base
 - `/sales-checkout` — Optimize landing pages and checkout for conversion

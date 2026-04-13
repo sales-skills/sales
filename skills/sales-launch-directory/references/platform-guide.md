@@ -198,6 +198,20 @@ For each directory submission, track:
 - **Traffic**: Monitor referral traffic from each directory in Google Analytics
 - **Conversions**: Track signups/purchases by referral source
 
+## Managed submission services
+
+If you don't have time to submit to directories yourself, managed services handle the process for a fee:
+
+| Service | Price | Submissions | Model | Skill |
+|---|---|---|---|---|
+| GetMoreBacklinks | $87-$247 (one-time) | 50-200 directories | Done-for-you, 14 working day delivery, DR 30+ guarantee in 45 days | `/sales-getmorebacklinks` |
+| AutoSaaSLaunch | Varies | 250+ directories | Instant submissions, unlimited, lifetime access | No skill yet |
+| StartupSubmit | Varies | 250+ directories | Automated + manual curation | No skill yet |
+
+**When managed services make sense**: You want bulk mid/low-tier directory coverage fast and don't care about optimizing individual listings. **When to DIY**: You want control over listing quality on high-DR directories where presentation matters (Product Hunt, BetaList, Indie Hackers).
+
+**Recommended hybrid**: DIY the top 10-15 high-DR directories (Phase 1-4 above), then use a managed service for the long tail.
+
 ## Common mistakes
 
 1. **Launching on Product Hunt first.** PH is highest-stakes — use smaller directories to refine your listing first.

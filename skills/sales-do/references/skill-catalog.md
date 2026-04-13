@@ -666,11 +666,17 @@
 |---|---|
 | `/sales-indiehackers` | User asks about Indie Hackers platform, posting on Indie Hackers, Indie Hackers engagement strategy, Indie Hackers product page, Indie Hackers groups, IH+ premium, Indie Hackers advertising, Show IH, Ask IH, indiehackers.com, Courtland Allen, Channing Allen, Indie Hackers vs Product Hunt, building in public on IH, Indie Hackers backlink, or Indie Hackers community |
 
+### GetMoreBacklinks & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-getmorebacklinks` | User asks about GetMoreBacklinks platform, managed directory submission service, paying someone to submit to directories, GetMoreBacklinks plans or pricing, GetMoreBacklinks $87/$127/$187/$247, done-for-you backlink building, directory submission service worth it, outsourcing directory submissions, GetMoreBacklinks results or DR improvement, GetMoreBacklinks vs doing it yourself. NOT for DIY directory strategy — route to `/sales-launch-directory`. NOT for SEO audits — route to `/sales-semrush`. |
+
 ### Startup Directory Launch Strategy
 
 | Skill | Route when... |
 |---|---|
-| `/sales-launch-directory` | User asks about launching across multiple startup directories, which directories to submit to, startup directory strategy, backlink stacking from directories, directory submission sequence, comparing launch platforms, multi-directory launch plan, or maximizing backlinks from directories. NOT for a single specific platform — route to that platform's skill instead |
+| `/sales-launch-directory` | User asks about launching across multiple startup directories, which directories to submit to, startup directory strategy, backlink stacking from directories, directory submission sequence, comparing launch platforms, multi-directory launch plan, or maximizing backlinks from directories. NOT for a single specific platform — route to that platform's skill instead. NOT for managed submission services — route to `/sales-getmorebacklinks` |
 | `/sales-futurepedia` | User asks about Futurepedia platform, Futurepedia listing, Futurepedia verified badge, Futurepedia submission, Futurepedia pricing, Futurepedia YouTube network, Futurepedia courses, or futurepedia.io. NOT for multi-directory strategy — route to `/sales-launch-directory` instead |
 
 ### Semrush & Platform
