@@ -349,6 +349,16 @@ Router recommends a 5-skill sequence:
 </details>
 
 <details>
+<summary><strong>Customer Experience & Feedback</strong></summary>
+
+| Skill | What it does |
+|---|---|
+| `/sales-medallia` | Medallia — Experience Cloud, NPS/CSAT/CES surveys, DXA, contact center intelligence, employee listening, REST + GraphQL APIs |
+| `/sales-customer-feedback` | Customer feedback, NPS, CSAT, VoC strategy — survey design, response rates, closed-loop feedback, tool comparison |
+
+</details>
+
+<details>
 <summary><strong>Customer Reviews & UGC</strong></summary>
 
 | Skill | What it does |

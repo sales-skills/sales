@@ -377,6 +377,18 @@
 |---|---|
 | `/sales-g2` | G2 platform questions — G2 review collection (campaigns, incentives, timing, managed services), G2 profile optimization (category ranking, screenshots, completion), G2 Buyer Intent data (setup, ROI, converting to pipeline, connecting to CRM), G2 badges (Users Love Us, Grid, Leader), G2 pricing (Free vs Starter vs Professional vs Enterprise, is it worth it), G2 Clicks (PPC advertising), G2 API (products, reviews, categories, intent endpoints), G2 vs Capterra vs TrustRadius comparison, G2 content licensing (reports, voice-of-customer), G2 Market Intelligence, G2-to-Salesforce or G2-to-HubSpot integration, Reddit-G2 integration | Route when user asks about G2 setup, config, review strategy, buyer intent, pricing, badges, or troubleshooting. Route when they mention G2 reviews, G2 profile, G2 intent, G2 badge, G2 Grid, or G2 category ranking. |
 
+### Medallia & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-medallia` | User asks about Medallia platform — Experience Cloud, NPS/CSAT/CES survey setup, digital experience analytics (DXA session replay, heatmaps), contact center intelligence (conversational analytics, agent coaching, quality management), employee experience (pulse surveys, listening), experience orchestration, Frontline-Ready AI (Smart Response, Themes with GenAI, Root Cause Assist), Medallia REST or GraphQL API, Medallia Salesforce integration, Medallia pricing (EDR model), Medallia vs Qualtrics comparison, dashboard configuration, survey response rates, Medallia admin, Mindful callback, or Medallia Market Research |
+
+### Customer Feedback Strategy
+
+| Skill | Route when... |
+|---|---|
+| `/sales-customer-feedback` | User asks about customer feedback strategy, NPS program design, CSAT benchmarking, CES measurement, Voice of Customer (VoC) program, survey design best practices, improving survey response rates, closed-loop feedback workflows, choosing a feedback tool (Medallia vs Qualtrics vs SurveyMonkey vs Typeform vs Delighted vs AskNicely vs CustomerGauge vs Zonka), CX metrics comparison (NPS vs CSAT vs CES), proving CX ROI, survey fatigue management, text analytics for feedback, or customer experience measurement strategy. Do NOT route here for product review collection (that's `/sales-customer-reviews`) or Medallia-specific config (that's `/sales-medallia`). |
+
 ### Customer Reviews Strategy
 
 | Skill | Route when... |

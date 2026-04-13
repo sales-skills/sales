@@ -158,6 +158,7 @@ All major review platforms support JSON-LD structured data. Key requirements:
 - `/sales-skeepers` — Skeepers platform help (Verified Reviews, Influencer Marketing, Feedback Management). Install: `npx skills add sales-skills/sales --skills sales-skeepers`
 - `/sales-influencer-marketing` — Influencer marketing strategy (gifted reviews bridge both). Install: `npx skills add sales-skills/sales --skills sales-influencer-marketing`
 - `/sales-checkout` — Checkout optimization (review widgets on product pages affect conversion). Install: `npx skills add sales-skills/sales --skills sales-checkout`
+- `/sales-customer-feedback` — Customer feedback, NPS, CSAT, VoC strategy (different from product reviews — surveys are private satisfaction measurement, not public reviews). Install: `npx skills add sales-skills/sales --skills sales-customer-feedback`
 - `/sales-email-marketing` — Email marketing (review request emails are a key touchpoint). Install: `npx skills add sales-skills/sales --skills sales-email-marketing`
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
