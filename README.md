@@ -320,6 +320,7 @@ Router recommends a 5-skill sequence:
 | `/sales-upfluence` | Upfluence — influencer and affiliate marketing for ecommerce (12M+ profiles), Live Capture (find influential customers), Jaice AI, commission-free affiliate tracking, Shopify/WooCommerce/BigCommerce, creator payments |
 | `/sales-grin` | GRIN platform help — creator management, discovery, gifting, affiliate hub, social listening, Gia AI |
 | `/sales-trendhero` | trendHERO — Instagram influencer analytics (95M+ profiles), Account Quality Score (AQS) fake follower detection, Ads Database (10M+ posts), audience overlap, REST API |
+| `/sales-plutoba` | PlutoBa — AI influencer vetting (TikTok, Instagram, YouTube), 7-dimension PlutoBa Score, fake follower detection, brand safety, rate benchmarks, AI outreach |
 | `/sales-tiktok-marketing` | TikTok marketing strategy — organic growth, paid ads, content creation, influencer strategy, algorithm, metrics |
 | `/sales-gaming-marketing` | Gaming influencer marketing strategy — streamer partnerships, game launch campaigns, budget allocation, ROI |
 | `/sales-influencer-marketing` | Influencer marketing strategy — platform comparison, creator discovery, vetting, campaign tracking |
