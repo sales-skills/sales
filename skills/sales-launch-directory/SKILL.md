@@ -79,6 +79,7 @@ If the request maps to a single platform, route:
 - PitchWall-specific questions → `/sales-pitchwall`
 - Futurepedia-specific questions → `/sales-futurepedia`
 - TAAFT-specific questions → `/sales-theresanaiforthat`
+- TopAI.tools-specific questions → `/sales-topai`
 - BetaList-specific questions → `/sales-betalist`
 - LaunchCaster-specific questions → `/sales-launchcaster`
 - SaaSHunt-specific questions → `/sales-saashunt`
@@ -140,6 +141,7 @@ Otherwise, answer directly from the directory knowledge below.
 - `/sales-startupstash` — Startup Stash platform help (largest curated tool directory, DR65 nofollow, 10K+ tools, 200+ categories)
 - `/sales-pitchwall` — PitchWall platform help (AI product discovery, DR60, 65K+ products, 45K+ newsletter subscribers)
 - `/sales-theresanaiforthat` — TAAFT platform help (#1 AI directory, 42,000+ tools, 3-4M visits/mo, DR76 dofollow, $347 listing, $300 first-launch PPC bonus)
+- `/sales-topai` — TopAI.tools platform help (curated AI directory, 2,700+ tools, ~1-1.9M visits/mo, $39 Fast Track, $229 Boosted)
 - `/sales-futurepedia` — Futurepedia platform help (largest AI directory, 5,700+ tools, ~2M visits/mo, $497 Verified, YouTube 2M+ subs)
 - `/sales-betalist` — BetaList platform help (pre-launch directory, DR67 dofollow, 15K+ startups, $129 Priority skip)
 - `/sales-launchcaster` — LaunchCaster platform help (Web3 project discovery on Farcaster, free, wallet-connected voting)

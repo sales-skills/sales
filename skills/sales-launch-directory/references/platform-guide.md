@@ -38,6 +38,7 @@
 | LaunchVibe | DR10 dofollow | Free | None | None — instant | Daily launches + XP gamification + streaks (1,000+ founders) | `/sales-launchvibe` |
 
 | TAAFT | DR76 dofollow | $347 | None (free monthly X thread) | Manual review (1-2 days) | #1 AI directory (42K+ tools, 3-4M visits/mo, 1M+ newsletter subs), task-based discovery, $300 PPC bonus for first-launch | `/sales-theresanaiforthat` |
+| TopAI.tools | AS48 (Semrush), type unconfirmed | Free (48hr review) | $39 Fast Track / $229 Boosted | 48 hours (free), 24-48hr (paid) | Curated AI directory (2,700+ tools, ~1-1.9M visits/mo, 120+ categories), AI-powered search, permanent listings | `/sales-topai` |
 
 ## Third-party platforms (no skill — general guidance)
 
@@ -81,6 +82,7 @@ All first-party + key third-party directories sorted by backlink strength:
 | 25 | JustGotFound | DR23 | Yes | Yes |
 | 26 | PitchWall | DR60 | Disputed | Yes (30+ day queue) / $99 |
 | 27 | Altern | Unconfirmed | Yes | Yes (AI tools only) |
+| 29 | TopAI.tools | AS48 (Semrush) | Unconfirmed | Yes (48hr review) / $39 Fast Track |
 | 29 | TAAFT | DR76 | Yes | No ($347, free monthly thread) |
 | 30 | Futurepedia | High (est.) | Yes | No ($497 Verified minimum) |
 | 30 | LaunchCaster | Unconfirmed | Unconfirmed | Yes (Web3 only, Farcaster required) |

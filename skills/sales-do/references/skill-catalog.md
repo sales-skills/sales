@@ -624,6 +624,12 @@
 |---|---|
 | `/sales-theresanaiforthat` | User asks about There's an AI for That, TAAFT, submitting to TAAFT, theresanaiforthat.com, TAAFT listing, TAAFT $347, TAAFT Featured ads, TAAFT PPC, TAAFT highlighted listing, TAAFT newsletter, TAAFT first-launch bonus, TAAFT $300 bonus, TAAFT vs Futurepedia, TAAFT vs Altern, TAAFT API, TAAFT ChatGPT plugin, TAAFT backlink, TAAFT DR76, Andrei imakecoolsites, AI tool directory #1, or TAAFT submission |
 
+### TopAI.tools & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-topai` | User asks about TopAI.tools platform, submitting to TopAI.tools, topai.tools, TopAI.tools listing, TopAI.tools Fast Track, TopAI.tools $39, TopAI.tools Boosted, TopAI.tools $229, TopAI.tools featured listing, TopAI.tools categories, TopAI.tools AI directory, TopAI.tools vs TAAFT, TopAI.tools vs other directories, TopAI.tools backlink, TopAI.tools submission, or TopAI.tools review time |
+
 ### BetaList & Platform
 
 | Skill | Route when... |
