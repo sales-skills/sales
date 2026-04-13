@@ -27,7 +27,7 @@ npx skills add sales-skills/sales --skills sales-do
 
 Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill.
 
-Want every skill at once?
+Want every skill at once?  You probably don't, there are hundreds, so it may overwhelm your context.  But if you want them all anyway...
 
 ```bash
 npx skills add sales-skills/sales -a
@@ -39,7 +39,7 @@ Every skill for Claude Code, copy instead of symlink, no confirmation:
 npx skills add sales-skills/sales -a claude-code --copy -y
 ```
 
-## Why?
+## Why sales-do skill?
 
 - You're copy-pasting the same cold email structure for every campaign
 - You can't remember which tool does email validation vs enrichment vs deliverability
@@ -353,6 +353,7 @@ Router recommends a 5-skill sequence:
 
 | Skill | What it does |
 |---|---|
+| `/sales-g2` | G2 — B2B software review marketplace, review campaigns, Buyer Intent data, badges/reports, profile optimization, API |
 | `/sales-trustpilot` | Trustpilot — TrustBox widgets, TrustScore, review invitations, Google Seller Ratings, ecommerce plugins, API |
 | `/sales-customer-reviews` | Product review collection, display, moderation, syndication — Judge.me, Loox, Okendo, Yotpo, Bazaarvoice |
 

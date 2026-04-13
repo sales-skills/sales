@@ -371,11 +371,17 @@
 |---|---|
 | `/sales-trustpilot` | General Trustpilot questions — TrustBox widgets (embedding, styling, not showing), TrustScore (calculation, dropping), Service Reviews (replying, tagging, flagging), Product Reviews (SKU-level, add-on), Review Invitations (email automation, API, templates, timing), Google Seller Ratings (qualification, setup), ecommerce plugins (Shopify, WooCommerce, Magento, PrestaShop), Trustpilot API (OAuth, endpoints, Python SDK), pricing (Free/Starter/Plus/Premium/Enterprise), review disputes and moderation, Trustpilot vs alternatives for service businesses | Route when the user asks about Trustpilot setup, config, features, or troubleshooting. Route when they mention TrustBox, TrustScore, Trustpilot API, Trustpilot widget, Trustpilot invitation, Trustpilot pricing, or Trustpilot reviews on their website. |
 
+### G2 & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-g2` | G2 platform questions — G2 review collection (campaigns, incentives, timing, managed services), G2 profile optimization (category ranking, screenshots, completion), G2 Buyer Intent data (setup, ROI, converting to pipeline, connecting to CRM), G2 badges (Users Love Us, Grid, Leader), G2 pricing (Free vs Starter vs Professional vs Enterprise, is it worth it), G2 Clicks (PPC advertising), G2 API (products, reviews, categories, intent endpoints), G2 vs Capterra vs TrustRadius comparison, G2 content licensing (reports, voice-of-customer), G2 Market Intelligence, G2-to-Salesforce or G2-to-HubSpot integration, Reddit-G2 integration | Route when user asks about G2 setup, config, review strategy, buyer intent, pricing, badges, or troubleshooting. Route when they mention G2 reviews, G2 profile, G2 intent, G2 badge, G2 Grid, or G2 category ranking. |
+
 ### Customer Reviews Strategy
 
 | Skill | Route when... |
 |---|---|
-| `/sales-customer-reviews` | User asks about product review collection strategy, choosing a review app for Shopify or ecommerce (Judge.me vs Loox vs Okendo vs Stamped vs Yotpo vs Skeepers vs Bazaarvoice vs PowerReviews vs Trustpilot), setting up post-purchase review requests, photo/video review collection, review display widgets, Google Rich Snippets for reviews, review syndication to retail partners, review moderation, migrating between review platforms, or improving review collection rates |
+| `/sales-customer-reviews` | User asks about product review collection strategy, choosing a review app for Shopify or ecommerce (Judge.me vs Loox vs Okendo vs Stamped vs Yotpo vs Skeepers vs Bazaarvoice vs PowerReviews vs Trustpilot vs G2), setting up post-purchase review requests, photo/video review collection, review display widgets, Google Rich Snippets for reviews, review syndication to retail partners, review moderation, migrating between review platforms, or improving review collection rates |
 
 ### Sprout Social & Platform
 

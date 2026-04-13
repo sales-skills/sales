@@ -49,6 +49,7 @@ Help the user choose based on their constraints:
 | **Bazaarvoice** | Enterprise retail syndication | Enterprise pricing | Yes | Industry-leading | Yes |
 | **PowerReviews** | Retail brands / CPG | Enterprise pricing | Yes | Strong retail network | Yes |
 | **Trustpilot** | Service businesses / B2B | Free plan + paid | Limited | No | Yes (own domain) |
+| **G2** | B2B software (SaaS) | Free + $299/mo+ | No | No | No (G2 badges instead) |
 
 **Decision framework:**
 - **Just starting / low budget**: Judge.me (free plan is exceptionally generous) or Loox (if visual reviews matter)
@@ -56,6 +57,7 @@ Help the user choose based on their constraints:
 - **Mid-market needing loyalty + reviews**: Yotpo (combined platform)
 - **Enterprise needing syndication**: Bazaarvoice or PowerReviews (retail network) or Skeepers (UGC + influencer + reviews combined)
 - **Service business**: Trustpilot (brand reputation focus)
+- **B2B SaaS**: G2 (buyer intent signals, Grid placement, category-specific credibility)
 
 ## Step 3 — Review collection strategy
 
@@ -152,6 +154,7 @@ All major review platforms support JSON-LD structured data. Key requirements:
 ## Related skills
 
 - `/sales-trustpilot` — Trustpilot platform help (TrustBox widgets, TrustScore, Invitation API, Google Seller Ratings). Install: `npx skills add sales-skills/sales --skills sales-trustpilot`
+- `/sales-g2` — G2 platform help (B2B software reviews, buyer intent data, badges, profile optimization). Install: `npx skills add sales-skills/sales --skills sales-g2`
 - `/sales-skeepers` — Skeepers platform help (Verified Reviews, Influencer Marketing, Feedback Management). Install: `npx skills add sales-skills/sales --skills sales-skeepers`
 - `/sales-influencer-marketing` — Influencer marketing strategy (gifted reviews bridge both). Install: `npx skills add sales-skills/sales --skills sales-influencer-marketing`
 - `/sales-checkout` — Checkout optimization (review widgets on product pages affect conversion). Install: `npx skills add sales-skills/sales --skills sales-checkout`
