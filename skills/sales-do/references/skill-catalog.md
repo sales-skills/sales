@@ -365,6 +365,12 @@
 |---|---|
 | `/sales-skeepers` | User asks about Skeepers platform, Skeepers Verified Reviews (review collection, display, moderation, syndication), Skeepers Feedback Management (NPS, CSAT surveys), Skeepers Influencer Marketing (micro/nano creator campaigns, gifting), Skeepers Brand Communities (customer advocates), Skeepers Shoppable Content, Skeepers Gifted Reviews, Skeepers API, Skeepers Shopify/Magento/VTEX integration, Skeepers widget configuration, or Skeepers pricing |
 
+### Trustpilot & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-trustpilot` | General Trustpilot questions — TrustBox widgets (embedding, styling, not showing), TrustScore (calculation, dropping), Service Reviews (replying, tagging, flagging), Product Reviews (SKU-level, add-on), Review Invitations (email automation, API, templates, timing), Google Seller Ratings (qualification, setup), ecommerce plugins (Shopify, WooCommerce, Magento, PrestaShop), Trustpilot API (OAuth, endpoints, Python SDK), pricing (Free/Starter/Plus/Premium/Enterprise), review disputes and moderation, Trustpilot vs alternatives for service businesses | Route when the user asks about Trustpilot setup, config, features, or troubleshooting. Route when they mention TrustBox, TrustScore, Trustpilot API, Trustpilot widget, Trustpilot invitation, Trustpilot pricing, or Trustpilot reviews on their website. |
+
 ### Customer Reviews Strategy
 
 | Skill | Route when... |

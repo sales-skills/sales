@@ -353,6 +353,7 @@ Router recommends a 5-skill sequence:
 
 | Skill | What it does |
 |---|---|
+| `/sales-trustpilot` | Trustpilot — TrustBox widgets, TrustScore, review invitations, Google Seller Ratings, ecommerce plugins, API |
 | `/sales-customer-reviews` | Product review collection, display, moderation, syndication — Judge.me, Loox, Okendo, Yotpo, Bazaarvoice |
 
 </details>

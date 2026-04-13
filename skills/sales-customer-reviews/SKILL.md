@@ -151,6 +151,7 @@ All major review platforms support JSON-LD structured data. Key requirements:
 
 ## Related skills
 
+- `/sales-trustpilot` — Trustpilot platform help (TrustBox widgets, TrustScore, Invitation API, Google Seller Ratings). Install: `npx skills add sales-skills/sales --skills sales-trustpilot`
 - `/sales-skeepers` — Skeepers platform help (Verified Reviews, Influencer Marketing, Feedback Management). Install: `npx skills add sales-skills/sales --skills sales-skeepers`
 - `/sales-influencer-marketing` — Influencer marketing strategy (gifted reviews bridge both). Install: `npx skills add sales-skills/sales --skills sales-influencer-marketing`
 - `/sales-checkout` — Checkout optimization (review widgets on product pages affect conversion). Install: `npx skills add sales-skills/sales --skills sales-checkout`
