@@ -160,6 +160,15 @@ Ask the user:
 - **Limitations**: No built-in referral system (use SparkLoop). No discovery network (unlike Substack or Beehiiv). Basic automation compared to Kit or Beehiiv. No built-in ad network or boost marketplace.
 - **Setup**: Account > Billing > Stripe integration > Create subscription product > Set price > Create gated content with subscriber groups
 
+### In SparkLoop
+- **Paid recommendations**: Earn $2–$7+ per confirmed subscriber by recommending other newsletters. Post-opt-in placement and in-email widgets. SparkLoop takes 20% commission + 3.5% fees.
+- **Free recommendations**: Unpaid cross-promotion with matched newsletters — no cost, drives mutual growth.
+- **Referral program** ($2K/year add-on): Subscriber reward system — readers share a referral link and earn rewards at milestones. Automated digital and physical reward fulfillment. Free for Kit Creator Pro users.
+- **Partner program** ($2K/month min): Get other newsletters to recommend yours. Set engagement criteria so you only pay for engaged subscribers.
+- **Upscribe widget**: Post-opt-in recommendation widget with auto-pilot mode. Full API for custom implementations.
+- **Integrations**: Works with 25+ ESPs (Kit, Mailchimp, ActiveCampaign, HubSpot, Klaviyo, MailerLite, Brevo, etc.). Does NOT work with Ghost, Substack, or Flodesk.
+- **Best for**: Newsletter operators on any supported ESP who want to monetize via recommendations and/or grow via referral programs. Strongest option for cross-ESP recommendation networks.
+
 ### In Mailchimp
 - **No native paid newsletter**: Use Stripe + Zapier to manage paid subscribers via tags/groups
 - **Sponsorships**: Use content blocks and templates for consistent sponsor placement
@@ -217,6 +226,7 @@ Paid recommendations:
 
 ## Related skills
 
+- `/sales-sparkloop` — SparkLoop platform help (referral programs, paid recommendations, partner programs, cross-promotion)
 - `/sales-paved` — Paved platform help (newsletter sponsorship marketplace, Ad Network, Booker, Radar)
 - `/sales-email-marketing` — Email marketing strategy (sending campaigns, automation, segmentation)
 - `/sales-audience-growth` — Growing your subscriber list (lead magnets, cross-promotion, referrals)

@@ -413,6 +413,7 @@ Router recommends a 5-skill sequence:
 | `/sales-email-marketing` | Opt-in email marketing — broadcasts, nurture sequences, automation, segmentation |
 | `/sales-newsletter` | Newsletter monetization — paid subscriptions, sponsorships, ad sales, premium tiers |
 | `/sales-paved` | Paved — newsletter sponsorship marketplace, Ad Network, Booker direct-deal management, Radar lead enrichment |
+| `/sales-sparkloop` | SparkLoop — newsletter referral programs, paid recommendations, partner programs, cross-promotion, Upscribe widget, API |
 | `/sales-audience-growth` | Grow an email list or newsletter audience — lead magnets, cross-promotion, referral programs |
 | `/sales-digital-products` | Sell digital products — ebooks, templates, courses, downloads, pricing strategy |
 | `/sales-affiliate-program` | Design and manage affiliate programs — commissions, recruitment, tracking, payouts |

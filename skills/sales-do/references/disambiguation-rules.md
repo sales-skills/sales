@@ -25,6 +25,7 @@ Some requests are ambiguous. Apply these rules:
 - **"forecast" / "what will we close"** → `/sales-forecast` for revenue forecasting, `/sales-pipeline` for general pipeline management.
 - **"pipeline"** → `/sales-pipeline` for portfolio management, `/sales-forecast` for forecasting/coverage, `/sales-deal-inspect` for individual deal deep-dives.
 - **"MEDDPICC" / "BANT" / "deal methodology"** → `/sales-deal-inspect` for assessing a deal, `/sales-discovery` for prepping discovery questions.
+- **"SparkLoop" / "referral program" / "newsletter referral" / "paid recommendations" / "Upscribe"** → `/sales-sparkloop` for SparkLoop-specific setup, config, troubleshooting, or API. `/sales-audience-growth` for general referral/growth strategy across tools. `/sales-newsletter` for newsletter monetization strategy (paid subscriptions, sponsorships, recommendations as a revenue model). `/sales-affiliate-program` for general affiliate/referral program design.
 - **"Research"** → If about a specific account or contact → `/sales-research`. If about market positioning or competitive landscape → `/sales-positioning`. If about what users are asking for → `/requesthunt`. If about what's trending → `/producthunt` or `/reddit`.
 - **"Help with my pitch"** → If preparing for a specific meeting → `/sales-demo`. If refining messaging in general → `/sales-positioning`.
 - **"Prep for a call"** → If it's a discovery/qualification call → `/sales-discovery`. If it's a demo or presentation → `/sales-demo`. If it's a negotiation → `/sales-objection`.

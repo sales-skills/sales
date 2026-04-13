@@ -35,9 +35,12 @@ Detailed per-platform audience growth features — opt-in forms, landing pages, 
 - **Recommendations**: Suggest other newsletters after opt-in (free mutual promotion)
 
 ### In SparkLoop
-- **Upscribe**: Referral program tool that integrates with Kit, Mailchimp, Beehiiv, and others
-- **Partner Network**: Paid recommendations marketplace — get paid newsletters to recommend yours
-- **Pricing**: From $99/mo or per-subscriber pricing
+- **Referral programs** ($2K/year): Subscriber reward system — readers share a unique referral link and earn rewards at milestone counts. Automated digital/physical reward fulfillment. 2-click ESP integration with 25+ platforms. Anti-fraud detection built in. Free for Kit Creator Pro users.
+- **Paid recommendations** (free): Earn $2–$7+ per confirmed subscriber by recommending other newsletters. Post-opt-in and in-email placement. SparkLoop takes 20% + 3.5% fees. Earnings depend heavily on subscriber geography (US/UK/CA earn most).
+- **Partner programs** ($2K/month min): Get other newsletters to recommend yours. Set engagement criteria (e.g., must open within 30 days) to ensure quality. Access to thousands of vetted publishers.
+- **Free recommendations** (free): Unpaid cross-promotion with matched newsletters. Claims 2-3x faster growth when paired with 3 similar newsletters.
+- **Upscribe widget**: Post-opt-in recommendation widget with auto-pilot mode. Full API for custom implementations.
+- **Not supported**: Ghost, Substack, Flodesk (lack necessary API access)
 
 ### In Mailchimp
 - **Landing pages**: Built-in landing page builder (all plans)
