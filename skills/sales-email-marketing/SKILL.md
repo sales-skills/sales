@@ -205,6 +205,7 @@ Perform these maintenance tasks regularly:
 - **/sales-deliverability** — SPF, DKIM, DMARC, domain warm-up, and inbox placement
 - **/sales-funnel** — Funnel strategy and page design (landing pages that feed your email list)
 - **/sales-checkout** — Checkout optimization and post-purchase flows
+- **/sales-payhip** — Payhip platform help (built-in email, native ESP connections, webhooks)
 - **/sales-do** — Route to any sales skill by describing what you need
 
 ## Examples

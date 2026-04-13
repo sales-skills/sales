@@ -198,6 +198,20 @@ Perform[cb] is the #1-ranked CPA affiliate network worldwide (mThink Blue Book, 
 - Network takes a margin (typically 20-30% of your total spend)
 - Trade-off: higher cost per acquisition but zero affiliate management overhead
 
+### In Payhip
+
+Payhip includes a built-in affiliate program for creators selling digital products, courses, and memberships. For full platform help, use `/sales-payhip`.
+
+- **Per-product affiliate setup**: Enable/disable affiliates per product (not store-wide by default). Set commission rate individually for each product.
+- **Commission model**: Percentage-based commissions on each sale. Creator sets the rate per product.
+- **Affiliate tracking**: Unique referral links per affiliate. Dashboard for affiliates to track clicks, sales, and earnings.
+- **Payouts**: Via PayPal. Managed by the creator.
+- **Recruitment**: Share affiliate signup link. No built-in affiliate marketplace or discovery.
+- **Limitations**: No tiered commissions, no multi-level affiliate structures, no cookie duration configuration (uses default), no automated affiliate recruitment tools.
+- **Best for**: Creators who want a simple, zero-cost affiliate program included with their product platform. Not suitable for complex affiliate programs with tiered payouts, multi-level structures, or large affiliate networks — use PartnerStack, Refersion, or ShareASale instead.
+
+**Payhip's own partner program** (for referring sellers to Payhip): 50% lifetime commission, 30-day cookie, $50 minimum payout via PayPal, monthly on 13th. Sign up at payhip.com/partner-program.
+
 ### Other Platforms (Brief)
 
 - **LTK**: Creator commerce platform with built-in commission/affiliate model. 300K+ creators, 40M+ monthly shoppers on LTK App. Brands set commission rates (10% min, 15%+ recommended), creators earn on sales through LTK links. Free Brand Platform for discovery and gifting; Connect plans ($99-999+/mo) for structured campaigns. Best for DTC/ecommerce brands wanting influencer-driven affiliate sales. See `/sales-ltk` for full platform help.

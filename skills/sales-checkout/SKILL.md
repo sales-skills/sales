@@ -123,6 +123,7 @@ Body: Create urgency. Optionally add a small incentive (bonus or 10% discount). 
 - `/sales-membership` — Delivering digital products and courses after purchase, including access provisioning.
 - `/sales-kit` — Kit platform help (Kit Commerce for digital products and subscriptions)
 - `/sales-digital-products` — Digital product sales strategy (pricing, platform selection, launch)
+- `/sales-payhip` — Payhip platform help (embedded checkout, cross-selling, coupons)
 - `/sales-do` — Route any sales question to the right skill.
 
 ## Examples

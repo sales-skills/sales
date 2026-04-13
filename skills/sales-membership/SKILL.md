@@ -144,6 +144,7 @@ Create a 5-email onboarding sequence for new members:
 - `/sales-webinar` — Webinar-based selling and live launch events
 - `/sales-funnel` — Sales funnel strategy and funnel building
 - `/sales-podia` — Podia platform help (courses, downloads, memberships, coaching, email)
+- `/sales-payhip` — Payhip platform help (courses, memberships, coaching, digital downloads)
 - `/sales-do` — Route to any sales skill by describing what you need
 
 ---

@@ -177,3 +177,35 @@ Publishers and newsletter creators who want to monetize written content with sim
 - Use Ghost for content + newsletter + payments, pair with Circle or Discord for community
 - Use Zapier to sync Ghost members to external course platforms or CRM
 - Ghost Admin API allows programmatic member management for custom workflows
+
+### In Payhip
+
+Payhip supports both memberships (recurring subscriptions) and one-time courses. For full platform help, use `/sales-payhip`.
+
+**Memberships**
+- Recurring subscription billing (monthly, annual, or custom intervals)
+- Tiered membership levels with content gating per tier
+- Cancel/pause functionality for subscribers
+- Webhooks for subscription.created and subscription.deleted events
+
+**Courses**
+- Video lessons with text, quizzes, assignments, and downloadable files per lesson
+- Drip course scheduling (release lessons over time)
+- Student progress tracking and completion certificates
+- Multimedia support (video, audio, text, downloads)
+
+**Coaching**
+- 1:1 coaching session scheduling with Zoom and Calendly integration
+- Set session duration, price, and availability
+
+**Pricing**
+- Free plan (5% fee), Plus ($29/mo, 2%), Pro ($99/mo, 0%) — all features on all plans
+- Stripe + PayPal processing fees on top
+
+**Best for**: Creators selling courses, memberships, and coaching as part of a broader digital product business, who want all product types in one platform with low fees. Not as feature-rich for pure course creation as Kajabi or Teachable (simpler quiz builder, basic analytics), but unbeatable on pricing structure.
+
+**Limitations**
+- No built-in community forum or discussion features
+- Basic analytics (no heat maps, A/B testing, or advanced course engagement metrics)
+- No order bumps or upsell flows in checkout
+- Limited store customization options

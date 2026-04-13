@@ -90,10 +90,16 @@
 - **Limitations**: Higher per-transaction fee than Gumroad Pro at volume
 
 ### In Payhip
-- **Product types**: Digital downloads, courses, memberships, coaching
-- **Pricing**: Free plan (5% fee), Plus ($29/mo, 2%), Pro ($99/mo, 0%)
-- **Strengths**: Low fees on paid plans, built-in affiliate system, EU VAT handling
-- **Limitations**: Less known brand, basic design, smaller community
+- **Product types**: Digital downloads, courses, memberships, coaching, physical products
+- **Pricing**: Free plan (5% fee), Plus ($29/mo, 2%), Pro ($99/mo, 0%) — no feature gating, all features on all plans
+- **Delivery**: Instant hosted download links, configurable download limits, PDF stamping
+- **Courses**: Video lessons, quizzes, assignments, drip scheduling, completion certificates
+- **Marketing**: Built-in affiliate program (per-product commissions), coupons (API-managed), cross-selling, referral program, customer reviews
+- **Integrations**: Stripe + PayPal payments, native ESP connections (ActiveCampaign, AWeber, Campaign Monitor, Kit, Drip), Zapier (3 triggers), webhooks (4 events), website embedding
+- **Tax**: Automatic EU/UK VAT handling — does NOT handle US sales tax or other global taxes
+- **Strengths**: Lowest fees at volume (Pro = 0%), instant payouts, all features on free plan, built-in affiliate + course + membership in one platform
+- **Limitations**: Basic store design (limited themes), no order bumps/upsells, limited API (coupons + license keys only), no marketplace/discovery, US sales tax not handled
+- **Best for**: Creators who want an all-in-one platform (products + courses + memberships + coaching) with the lowest possible fees at scale. Especially strong for UK/EU sellers who benefit from automatic VAT handling. See `/sales-payhip` for full platform help.
 
 ### In Podia
 - **Product types**: Courses, digital downloads, webinars, community, coaching

@@ -148,6 +148,20 @@ Kit (formerly ConvertKit) includes a built-in Commerce feature for selling digit
 - **Best for**: Creators selling ebooks, templates, or paid newsletter subscriptions who already use Kit for email. Not suitable for complex checkout flows with upsells, bumps, or multi-product carts.
 - **Limitation**: If you need order bumps, upsells, or complex checkout flows, use ThriveCart, SamCart, or GrooveSell and connect to Kit via Zapier for email automation.
 
+### In Payhip
+
+Payhip provides a simple checkout flow for digital downloads, courses, memberships, coaching, and physical products. For full platform help, use `/sales-payhip`.
+
+- **Checkout flow**: Single-page checkout with product summary, Stripe/PayPal payment. Clean and minimal.
+- **Embedding**: Product embed widgets, checkout overlay (popup on your site), Buy Now buttons. Customers can purchase without leaving your website.
+- **Cross-selling**: Promote related products at checkout with a discount incentive. Not a true order bump (checkbox add-on) — it's a recommendation.
+- **Coupons**: Percentage or fixed-amount discounts with start/end dates, usage limits, minimum purchase amounts. Managed via API or dashboard.
+- **Payment processing**: Stripe + PayPal. Instant payouts (paid immediately on transaction, unlike Gumroad weekly or Lemon Squeezy twice-monthly).
+- **Subscription billing**: Recurring payments for memberships with cancel/pause.
+- **Tax handling**: Automatic EU/UK VAT. Does NOT handle US sales tax.
+- **What it does NOT have**: No order bumps, no post-purchase upsell pages, no downsell flows, no cart abandonment recovery, no A/B testing for checkout. If you need these, use ThriveCart, SamCart, or GrooveSell.
+- **Best for**: Creators who want embedded checkout on their existing site with minimal friction and low fees. Not suitable for complex multi-step checkout optimization.
+
 ### Other Platforms (Brief Notes)
 
 - **Gumroad**: Simplest setup. Good for creators selling digital products. 10% flat fee. Limited funnel features.

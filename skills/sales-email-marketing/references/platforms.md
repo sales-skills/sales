@@ -402,3 +402,33 @@ Buttondown is a minimal, developer-friendly newsletter platform with Markdown-na
 
 **Best for**: Developers and technical writers who want Markdown, API access, and no tracking by default. Not ideal for visual-heavy marketing campaigns or complex multi-step automations.
 
+### In Payhip
+
+Payhip includes basic built-in email marketing for creators selling digital products, courses, and memberships. For full platform help, use `/sales-payhip`.
+
+**Built-in email capabilities**
+- Mailing list management — collect subscribers via purchases and opt-in
+- Send broadcasts/updates to existing customers
+- GDPR consent handling for EU subscribers (automatic checkbox)
+
+**Native ESP integrations** (subscribers pushed every 10 minutes):
+- ActiveCampaign
+- AWeber
+- Campaign Monitor
+- Kit (ConvertKit)
+- Drip
+- Elastic Email
+- Other ESPs via Zapier
+
+**Zapier triggers**: New Sale, Sale Refund, New Membership Subscription — use these to trigger email sequences in any ESP.
+
+**Webhooks**: `paid`, `refunded`, `subscription.created`, `subscription.deleted` events — use for custom email automation via webhook receivers.
+
+**Limitations**
+- Built-in email is basic broadcasts only — no automation builder, no visual workflows, no A/B testing, no segmentation beyond product-based lists
+- ESP sync runs every 10 minutes (not real-time) — for faster sync, use webhooks + Zapier
+- No built-in email templates or drag-and-drop editor
+- No email analytics beyond basic open rates
+
+**Best for**: Creators who need post-purchase email delivery and ESP subscriber sync as part of their product platform. Use Payhip for product sales and connect to a dedicated ESP (Kit, ActiveCampaign, Mailchimp) for serious email marketing campaigns and automation.
+
