@@ -1,6 +1,6 @@
 ---
 name: sales-launch-directory
-description: "Startup directory launch strategy — coordinates submissions across multiple product launch and discovery platforms for maximum visibility, backlinks, and early users. Covers platform selection (Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, BetaList, Hacker News, Indie Hackers, Altern, StartupBase, Startup Stash, PitchWall, Futurepedia, LaunchCaster, SaaSHunt, Resource.fyi, LaunchVibe), launch sequencing (instant-list first, editorial-review last), backlink stacking (DA/DR comparison across directories), listing optimization, timing strategy, and multi-platform coordination. Use when not sure which directories are worth submitting to, launch didn't get traction, want more backlinks but don't know where to start, or overwhelmed by how many directories exist. Do NOT use for a single specific platform (use the platform skill instead). Do NOT use for paid advertising (use /sales-b2b-advertising)."
+description: "Startup directory launch strategy — coordinates submissions across multiple product launch and discovery platforms for maximum visibility, backlinks, and early users. Covers platform selection (Open Launch, CtrlAlt.cc, ProductBurst, SoloPush, MicroLaunch, LaunchingNext, SideProjectors, Huzzler, Firsto, OpenHunts, Awesome Indie, LaunchDay, Super Launch, JustGotFound, Tiny Startups, DevHunt, TinyLaunch, Uneed, Fazier, Peerlist, Product Hunt, BetaList, Hacker News, Indie Hackers, Altern, StartupBase, Startup Stash, PitchWall, Futurepedia, TAAFT, LaunchCaster, SaaSHunt, Resource.fyi, LaunchVibe), launch sequencing (instant-list first, editorial-review last), backlink stacking (DA/DR comparison across directories), listing optimization, timing strategy, and multi-platform coordination. Use when not sure which directories are worth submitting to, launch didn't get traction, want more backlinks but don't know where to start, or overwhelmed by how many directories exist. Do NOT use for a single specific platform (use the platform skill instead). Do NOT use for paid advertising (use /sales-b2b-advertising)."
 argument-hint: "[describe your product and what you want from directory submissions]"
 license: MIT
 version: 1.0.0
@@ -78,6 +78,7 @@ If the request maps to a single platform, route:
 - Startup Stash-specific questions → `/sales-startupstash`
 - PitchWall-specific questions → `/sales-pitchwall`
 - Futurepedia-specific questions → `/sales-futurepedia`
+- TAAFT-specific questions → `/sales-theresanaiforthat`
 - BetaList-specific questions → `/sales-betalist`
 - LaunchCaster-specific questions → `/sales-launchcaster`
 - SaaSHunt-specific questions → `/sales-saashunt`
@@ -138,6 +139,7 @@ Otherwise, answer directly from the directory knowledge below.
 - `/sales-startupbase` — StartupBase platform help (community startup directory, DR39 dofollow, 2-3 month queue, tech startups only)
 - `/sales-startupstash` — Startup Stash platform help (largest curated tool directory, DR65 nofollow, 10K+ tools, 200+ categories)
 - `/sales-pitchwall` — PitchWall platform help (AI product discovery, DR60, 65K+ products, 45K+ newsletter subscribers)
+- `/sales-theresanaiforthat` — TAAFT platform help (#1 AI directory, 42,000+ tools, 3-4M visits/mo, DR76 dofollow, $347 listing, $300 first-launch PPC bonus)
 - `/sales-futurepedia` — Futurepedia platform help (largest AI directory, 5,700+ tools, ~2M visits/mo, $497 Verified, YouTube 2M+ subs)
 - `/sales-betalist` — BetaList platform help (pre-launch directory, DR67 dofollow, 15K+ startups, $129 Priority skip)
 - `/sales-launchcaster` — LaunchCaster platform help (Web3 project discovery on Farcaster, free, wallet-connected voting)

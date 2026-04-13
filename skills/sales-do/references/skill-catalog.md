@@ -618,6 +618,12 @@
 | `/sales-pitchwall` | User asks about PitchWall platform, submitting to PitchWall, pitchwall.co, PitchWall listing, PitchWall backlink, PitchWall Premium, PitchWall advertising, PitchWall newsletter sponsorship, PitchWall Spotlight Ad, PitchWall dedicated newsletter, PitchWall AI directory, PitchWall vs other directories, Sebastian Zontek, or PitchWall submission |
 | `/sales-futurepedia` | User asks about Futurepedia platform, submitting to Futurepedia, futurepedia.io, Futurepedia listing, Futurepedia verified badge, Futurepedia $497, Futurepedia YouTube network, Futurepedia courses, Futurepedia enterprise sponsorship, Futurepedia vs other AI directories, Vivek Varma Futurepedia, or Futurepedia pricing |
 
+### TAAFT & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-theresanaiforthat` | User asks about There's an AI for That, TAAFT, submitting to TAAFT, theresanaiforthat.com, TAAFT listing, TAAFT $347, TAAFT Featured ads, TAAFT PPC, TAAFT highlighted listing, TAAFT newsletter, TAAFT first-launch bonus, TAAFT $300 bonus, TAAFT vs Futurepedia, TAAFT vs Altern, TAAFT API, TAAFT ChatGPT plugin, TAAFT backlink, TAAFT DR76, Andrei imakecoolsites, AI tool directory #1, or TAAFT submission |
+
 ### BetaList & Platform
 
 | Skill | Route when... |

@@ -37,6 +37,8 @@
 | Resource.fyi | Unconfirmed | Free | None | Editorial review (no SLA) | Curated dev/designer/marketer tools directory (2,519+ resources, 25+ categories, upvoting) | `/sales-resourcefyi` |
 | LaunchVibe | DR10 dofollow | Free | None | None — instant | Daily launches + XP gamification + streaks (1,000+ founders) | `/sales-launchvibe` |
 
+| TAAFT | DR76 dofollow | $347 | None (free monthly X thread) | Manual review (1-2 days) | #1 AI directory (42K+ tools, 3-4M visits/mo, 1M+ newsletter subs), task-based discovery, $300 PPC bonus for first-launch | `/sales-theresanaiforthat` |
+
 ## Third-party platforms (no skill — general guidance)
 
 | Platform | Backlink | Cost | Model | Notes |
@@ -79,7 +81,8 @@ All first-party + key third-party directories sorted by backlink strength:
 | 25 | JustGotFound | DR23 | Yes | Yes |
 | 26 | PitchWall | DR60 | Disputed | Yes (30+ day queue) / $99 |
 | 27 | Altern | Unconfirmed | Yes | Yes (AI tools only) |
-| 29 | Futurepedia | High (est.) | Yes | No ($497 Verified minimum) |
+| 29 | TAAFT | DR76 | Yes | No ($347, free monthly thread) |
+| 30 | Futurepedia | High (est.) | Yes | No ($497 Verified minimum) |
 | 30 | LaunchCaster | Unconfirmed | Unconfirmed | Yes (Web3 only, Farcaster required) |
 | 31 | Resource.fyi | Unconfirmed | Likely dofollow | Yes (dev/designer tools) |
 | 32 | LaunchVibe | DR10 | Yes | Yes (instant, XP gamification) |

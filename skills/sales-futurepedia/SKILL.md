@@ -114,6 +114,7 @@ In a multi-directory launch, Futurepedia fits in **Phase 2 (paid fast-track)** �
 
 - `/sales-launch-directory` — Coordinates multi-directory launches across 29+ platforms. Install:
   `npx skills add sales-skills/sales --skills sales-launch-directory`
+- `/sales-theresanaiforthat` — TAAFT platform help (#1 AI directory, 42,000+ tools, 3-4M visits/mo, DR76 dofollow)
 - `/sales-altern` — Altern platform help (AI-only directory, 10K+ tools, dofollow backlinks, free tier)
 - `/sales-pitchwall` — PitchWall platform help (AI product discovery, DR60, 45K+ newsletter subs, free tier)
 - `/sales-producthunt` — Product Hunt platform help (DR91 dofollow, largest launch platform)

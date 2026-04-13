@@ -49,7 +49,8 @@ If the request maps to another skill, route:
 - Multi-directory launch planning → `/sales-launch-directory`
 - Product Hunt launch → `/sales-producthunt`
 - Futurepedia-specific questions → `/sales-futurepedia`
-- Other AI directories (TAAFT, Toolify) → `/sales-launch-directory` for comparison
+- TAAFT-specific questions → `/sales-theresanaiforthat`
+- Other AI directories (Toolify) → `/sales-launch-directory` for comparison
 - SEO strategy → `/sales-semrush`
 - Landing page optimization → `/sales-checkout`
 
@@ -117,7 +118,7 @@ Featured listings include homepage display (at least 1 week) and a dedicated pag
 | Backlink | Dofollow | Dofollow | Dofollow | Varies |
 | Curation | Editorial | Community + editorial | Editorial + reviews | Algorithm + community |
 | Newsletter | Weekly (AI tools + agents) | Yes | Yes (+ YouTube) | Yes |
-| Submission | Free + featured tiers | Free + featured ($99-$499) | Paid only ($497+ Verified) | Free |
+| Submission | Free + featured tiers | $347 (free monthly thread) | Paid only ($497+ Verified) | Free |
 | Best for | Developer/AI agent tools | Broad AI discovery | Business use cases | Trending tools |
 
 ### Pricing
@@ -175,6 +176,7 @@ Based on the user's situation:
 
 - `/sales-launch-directory` — Coordinate launches across 20+ directories including Altern. Install:
   `npx skills add sales-skills/sales --skills sales-launch-directory`
+- `/sales-theresanaiforthat` — TAAFT platform help (#1 AI directory, 42,000+ tools, 3-4M visits/mo, DR76 dofollow)
 - `/sales-producthunt` — Product Hunt platform help (largest launch platform, DR91 dofollow)
 - `/sales-peerlist` — Peerlist platform help (weekly Launchpad, 203K+ users)
 - `/sales-indiehackers` — Indie Hackers platform help (founder community, 165K+ entrepreneurs)

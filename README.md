@@ -368,6 +368,7 @@ Router recommends a 5-skill sequence:
 | `/sales-launchingnext` | LaunchingNext — curated directory (DR51 dofollow, 45K+ startups), $149 Express |
 | `/sales-pitchwall` | PitchWall — AI product directory (DR60, 65K+ products), free/$99 Premium |
 | `/sales-futurepedia` | Futurepedia — largest AI tools directory (5,700+ tools, ~2M visits/mo), $247/$497 |
+| `/sales-theresanaiforthat` | TAAFT — #1 AI tools directory (42,000+ tools, 3-4M visits/mo, DR76 dofollow), $347 listing, $300 first-launch PPC bonus |
 | `/sales-startupstash` | Startup Stash — curated tool directory (10K+ tools, DR65 nofollow) |
 | `/sales-productburst` | ProductBurst — daily/weekly rankings (DR46 dofollow), no gatekeepers |
 | `/sales-solopush` | SoloPush — indie maker launches (DR46-47 dofollow), free instant listing |
