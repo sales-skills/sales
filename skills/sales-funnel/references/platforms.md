@@ -167,7 +167,21 @@ VWO (Visual Website Optimizer) is primarily an A/B testing and experimentation p
 - **Pricing note**: A/B testing starts on the Growth plan (~$198-$314/mo). Personalization and advanced features require Pro or Enterprise. MTU quota exhaustion stops all tests mid-month.
 - **Best for**: Optimizing existing funnel pages through systematic testing. Pair VWO with a funnel builder (ClickFunnels, Groove, GoHighLevel) — VWO tests what you've built, it doesn't build the funnel.
 
+## In Leadpages
+
+Leadpages is a landing page builder focused on lead capture and simple sales pages — not a full multi-step funnel builder. For full platform help, use `/sales-leadpages`.
+
+- **Landing pages**: Drag-and-drop builder with 250+ templates. Grid-based layout (elements snap to positions, not freeform). Templates filterable by conversion rate — start with proven performers.
+- **Leadmeter**: Real-time conversion scoring — analyzes your page and suggests specific improvements before publishing. Always run this before going live.
+- **Pop-ups & alert bars**: Exit-intent, timed, scroll-triggered, click-triggered pop-ups. Alert bars for site-wide promotions. Deploy on any website via JavaScript embed code — not limited to Leadpages-hosted pages.
+- **A/B testing**: Split test landing page variants with traffic distribution control. **Pro plan only ($99/mo)** — not available on Standard ($49/mo). This is the biggest plan-gated feature.
+- **Payments**: Stripe checkout embedded in landing pages for one-time or recurring payments. Not a full checkout system — no order bumps, upsells, or cart. For those, use ThriveCart or SamCart and redirect from Leadpages.
+- **AI features**: AI headline and copy generation, AI image creation, Leadmeter AI conversion recommendations.
+- **Integrations**: 90+ native integrations (Mailchimp, ActiveCampaign, Klaviyo, HubSpot, Stripe, Zapier). WordPress plugin publishes Leadpages pages to your WordPress domain.
+- **Plan limits**: Standard plan ($49/mo) caps at 5 landing pages and 1 custom domain. Pro ($99/mo) removes page limits and adds A/B testing and 3 domains.
+- **Best for**: Simple lead capture funnels (landing page → email sequence) and standalone sales pages for solopreneurs and small businesses. Not ideal for multi-step funnels with upsells/downsells — use ClickFunnels, Groove.cm, or GoHighLevel for those. Stronger than Mailchimp/Kit for landing page design, but less flexible than Unbounce or Instapage for custom layouts.
+
 ## In Other Tools
 
-- **Unbounce / Leadpages**: Best for standalone landing pages and opt-in pages rather than full multi-step funnels. Use Unbounce Smart Traffic for AI-driven A/B testing. Connect to a separate checkout tool (ThriveCart, Stripe) and email tool.
+- **Unbounce**: Best for standalone landing pages with freeform element placement and AI-driven Smart Traffic for A/B testing. More design flexibility than Leadpages but higher starting price ($99/mo). Connect to a separate checkout tool (ThriveCart, Stripe) and email tool.
 - **Systeme.io**: Budget-friendly all-in-one. Supports funnels, email, courses, and checkout. Limited design flexibility but fast to launch.

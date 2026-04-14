@@ -13,6 +13,7 @@ Detailed per-platform audience growth features — opt-in forms, landing pages, 
 - [In ActiveCampaign](#in-activecampaign)
 - [In GetResponse](#in-getresponse)
 - [In ZoomInfo (FormComplete)](#in-zoominfo-formcomplete)
+- [In Leadpages](#in-leadpages)
 - [In Retention.com](#in-retentioncom)
 - [In Clearbit](#in-clearbit)
 - [In SendPulse](#in-sendpulse)
@@ -118,6 +119,23 @@ Detailed per-platform audience growth features — opt-in forms, landing pages, 
 - **No built-in referral system** — use SparkLoop or a custom solution.
 - **iPad subscribe app**: Offline subscriber collection at events, trade shows, and retail. Syncs when reconnected to internet.
 - **Best for**: Small businesses and solopreneurs using MailerLite for email who want native signup forms and landing pages without a separate tool. 10 free landing pages is generous for getting started.
+
+### In Leadpages
+
+Leadpages offers landing pages and pop-ups as lead capture tools. For full platform help, use `/sales-leadpages`.
+
+- **Landing pages**: 250+ templates optimized for lead capture. Grid-based drag-and-drop builder. Templates filterable by conversion rate — pick the highest performers and customize.
+- **Pop-ups**: Exit-intent, timed, scroll-triggered, and click-triggered. Deploy on any website via JavaScript embed code — not limited to Leadpages-hosted pages.
+- **Alert bars**: Persistent top/bottom notification bars for promotions, announcements, or email capture. Deploy site-wide.
+- **Leadmeter**: Conversion scoring tool that analyzes your page and suggests specific improvements. Run before publishing every page.
+- **Lead enrichment**: Auto-appends firmographic data (industry, company size, location) to form submissions. Useful for segmenting without extra form fields.
+- **Form optimization**: Keep forms to email-only for highest conversion. Lead enrichment fills in the rest behind the scenes.
+- **A/B testing**: Split test landing page variants to optimize opt-in rates. **Pro plan only ($99/mo)** — Standard plan cannot A/B test.
+- **WordPress plugin**: Publish Leadpages pop-ups and landing pages directly on your WordPress site.
+- **No built-in referral system** — use SparkLoop or custom solution.
+- **No cross-promotion network** — unlike Kit Creator Recommendations or Beehiiv Boosts.
+- **Plan limits**: Standard ($49/mo) caps at 5 landing pages. Pro ($99/mo) is unlimited.
+- **Best for**: Small businesses and solopreneurs who need standalone lead capture pages with pop-ups. Stronger visual builder than email platforms (Mailchimp, Kit) but no freeform layout like Unbounce.
 
 ### In Retention.com
 - **Identity resolution for list growth**: Identifies anonymous website visitors using third-party licensed data and adds them to your email/SMS lists automatically — no opt-in form required

@@ -751,6 +751,12 @@
 |---|---|
 | `/sales-groove` | General Groove.cm questions — GroovePages, GrooveFunnels, GrooveSell, GrooveMail, GrooveAffiliate, GrooveMember, GrooveVideo, GrooveWebinar, GrooveBlog, GrooveKart, GrooveProof config and setup |
 
+### Leadpages & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-leadpages` | General Leadpages questions — landing page builder, templates, pop-ups, alert bars, A/B testing, Leadmeter conversion scoring, lead enrichment, Stripe payments, AI content, WordPress plugin, Standard vs Pro plan, integrations | Route when the user asks about Leadpages setup, config, features, or troubleshooting. Route when they mention Leadpages templates, Leadpages pop-ups, Leadpages alert bars, Leadpages A/B testing, Leadmeter, Leadpages pricing, Leadpages WordPress, or Leadpages integrations. |
+
 ### Brevo & Platform
 
 | Skill | Route when... |
