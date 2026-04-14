@@ -353,6 +353,7 @@ Router recommends a 5-skill sequence:
 
 | Skill | What it does |
 |---|---|
+| `/sales-qualtrics` | Qualtrics XM — CX/EX surveys, Strategy & Research, Experience Agents AI, dashboards, XM Directory, REST API v3, MCP servers |
 | `/sales-medallia` | Medallia — Experience Cloud, NPS/CSAT/CES surveys, DXA, contact center intelligence, employee listening, REST + GraphQL APIs |
 | `/sales-customer-feedback` | Customer feedback, NPS, CSAT, VoC strategy — survey design, response rates, closed-loop feedback, tool comparison |
 

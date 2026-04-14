@@ -383,6 +383,12 @@
 |---|---|
 | `/sales-medallia` | User asks about Medallia platform — Experience Cloud, NPS/CSAT/CES survey setup, digital experience analytics (DXA session replay, heatmaps), contact center intelligence (conversational analytics, agent coaching, quality management), employee experience (pulse surveys, listening), experience orchestration, Frontline-Ready AI (Smart Response, Themes with GenAI, Root Cause Assist), Medallia REST or GraphQL API, Medallia Salesforce integration, Medallia pricing (EDR model), Medallia vs Qualtrics comparison, dashboard configuration, survey response rates, Medallia admin, Mindful callback, or Medallia Market Research |
 
+### Qualtrics & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-qualtrics` | User asks about Qualtrics platform — XM suite, CX surveys (NPS/CSAT/CES), Employee Experience (EX pulse surveys, 360-degree, lifecycle), Strategy & Research (conjoint, MaxDiff, concept testing), Experience Agents AI, XM Directory (contacts, distribution, segments), Qualtrics dashboards (widgets, filters, data sources), Qualtrics REST API v3, Qualtrics Salesforce integration, Qualtrics SAP integration, Qualtrics pricing (Free vs Strategic Research vs Enterprise), Qualtrics vs Medallia comparison, survey response rates in Qualtrics, data export from Qualtrics, Qualtrics MCP servers, or Qualtrics admin (roles, permissions, brand setup) |
+
 ### Birdeye & Platform
 
 | Skill | Route when... |

@@ -46,7 +46,8 @@ If the request maps to a specialized skill, route:
 - NPS/CSAT strategy across tools → `/sales-customer-feedback {your question}`
 - Product review collection (Trustpilot, G2, etc.) → `/sales-customer-reviews {your question}`
 - Tool integration architecture → `/sales-integration {your question}`
-- Medallia vs Qualtrics comparison → answer directly using platform knowledge
+- Qualtrics platform questions → `/sales-qualtrics {your question}`
+- Medallia vs Qualtrics comparison → answer directly using platform knowledge (also see `/sales-qualtrics` for Qualtrics-specific detail)
 
 Otherwise, answer directly from platform knowledge using the reference below.
 
@@ -86,6 +87,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 ## Related skills
 
 - `/sales-customer-feedback` — Customer feedback, NPS, CSAT, VoC strategy across all tools — survey design, response rates, closed-loop feedback, benchmarking. Install: `npx skills add sales-skills/sales --skills sales-customer-feedback`
+- `/sales-qualtrics` — Qualtrics XM platform help (CX/EX surveys, dashboards, API, Experience Agents) — the main enterprise alternative to Medallia. Install: `npx skills add sales-skills/sales --skills sales-qualtrics`
 - `/sales-customer-reviews` — Product review collection and syndication (Trustpilot, G2, Judge.me, etc.) — different from customer feedback surveys. Install: `npx skills add sales-skills/sales --skills sales-customer-reviews`
 - `/sales-integration` — Connecting Medallia to CRM, data warehouse, and analytics tools
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
