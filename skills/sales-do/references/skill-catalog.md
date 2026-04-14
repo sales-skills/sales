@@ -443,6 +443,12 @@
 |---|---|
 | `/sales-tealium` | General Tealium questions — enterprise Customer Data Platform (CDP), Real-Time CDP, Composable CDP, iQ Tag Management (utag.js), EventStream API Hub, AudienceStream CDP, 1300+ connectors, identity resolution (Visitor Switching), consent management, Connector Marketplace, CloudStream, AIStream, Predictive ML, V3 API (Collect HTTP API, Visitor Profile API, Visitor Privacy API), mobile SDKs (iOS Swift, Android Kotlin, React Native, Flutter). Route when the user asks about Tealium setup, config, features, or troubleshooting. Route when they mention Tealium tags, Tealium connectors, Tealium audiences, Tealium EventStream, Tealium AudienceStream, Tealium iQ, utag.js, Tealium API, Tealium identity resolution, Tealium visitor profiles, or tealium.com. |
 
+### RudderStack & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-rudderstack` | General RudderStack questions — warehouse-native CDP, Event Streams (SDK/API event collection and routing), Reverse ETL (warehouse → business tools sync), Transformations (JavaScript/Python en-route transforms), Profiles (identity resolution, customer 360), 200+ destinations, open-source deployment, HTTP API, migration from Segment. Route when the user asks about RudderStack setup, config, features, or troubleshooting. Route when they mention RudderStack SDKs, RudderStack events, RudderStack Reverse ETL, RudderStack transformations, RudderStack profiles, RudderStack API, rudderstack.com, or "warehouse-native CDP". |
+
 ### CDP Strategy
 
 | Skill | Route when... |

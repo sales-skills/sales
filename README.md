@@ -255,6 +255,7 @@ Router recommends a 5-skill sequence:
 | `/sales-treasuredata` | Treasure Data — enterprise AI-native CDP, profile unification, identity resolution, 400+ connectors, AI Marketing Cloud, Audience Studio, TD API |
 | `/sales-tealium` | Tealium — enterprise CDP, Real-Time/Composable/Hybrid CDP, iQ Tag Management, EventStream, AudienceStream, 1300+ connectors, V3 API |
 | `/sales-contentstack` | Contentstack — enterprise headless CMS, Content Management/Delivery APIs, GraphQL, Launch hosting, Automate workflows, Personalize, Brand Kit AI, Marketplace |
+| `/sales-rudderstack` | RudderStack — warehouse-native CDP, Event Streams, Reverse ETL, Transformations, Profiles, 200+ destinations, open-source, HTTP API |
 | `/sales-cdp` | CDP comparison and selection strategy — Tealium, BlueConic, Segment, Treasure Data, mParticle, composable vs bundled |
 
 </details>
