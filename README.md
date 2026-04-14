@@ -484,6 +484,7 @@ Router recommends a 5-skill sequence:
 | `/sales-b2b-advertising` | Account-based B2B advertising — display ads, retargeting, ABM, ad-to-pipeline attribution |
 | `/sales-retargeting` | Retargeting — visitor retargeting, cart abandonment, dynamic ads, cross-channel |
 | `/sales-push-notification` | Push notifications — opt-in optimization, rich push, segmentation, timing, deep linking |
+| `/sales-pendo` | Pendo — product analytics, in-app guides, session replay, NPS/CSAT surveys, feature adoption, API |
 | `/sales-in-app-messaging` | In-app messages — onboarding, feature announcements, surveys, promotions, triggers |
 | `/sales-chatbot` | Chatbot marketing — chatbot flows, multichannel messaging, lead qualification, human handoff |
 

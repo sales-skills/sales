@@ -407,6 +407,12 @@
 |---|---|
 | `/sales-customer-feedback` | User asks about customer feedback strategy, NPS program design, CSAT benchmarking, CES measurement, Voice of Customer (VoC) program, survey design best practices, improving survey response rates, closed-loop feedback workflows, choosing a feedback tool (Medallia vs Qualtrics vs SurveyMonkey vs Typeform vs Delighted vs AskNicely vs CustomerGauge vs Zonka vs Birdeye), CX metrics comparison (NPS vs CSAT vs CES), proving CX ROI, survey fatigue management, text analytics for feedback, or customer experience measurement strategy. Do NOT route here for product review collection (that's `/sales-customer-reviews`) or Medallia-specific config (that's `/sales-medallia`). |
 
+### Pendo & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-pendo` | Pendo platform help — product analytics (funnels, paths, retention, feature adoption), in-app guides (tooltips, modals, walkthroughs, Resource Center), session replay, NPS/CSAT/PMF surveys, Leo AI, Predict (churn/upsell), Orchestrate, Data Sync, Aggregation API, install script setup, page/feature tagging, visitor/account metadata, HubSpot/Salesforce integrations. Route when the user asks about Pendo setup, config, features, or troubleshooting. Route when they mention Pendo analytics, Pendo guides, Pendo session replay, Pendo NPS, Pendo API, Pendo tagging, Pendo aggregation, Pendo Leo, or Pendo vs Appcues/WalkMe/Userpilot. |
+
 ### SurveyMonkey & Platform
 
 | Skill | Route when... |

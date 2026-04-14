@@ -49,6 +49,7 @@ If the request maps to a platform-specific skill, route:
 - Qualtrics platform questions → `/sales-qualtrics {your question}`
 - Medallia platform questions → `/sales-medallia {your question}`
 - Skeepers Feedback Management → `/sales-skeepers {your question}`
+- Pendo NPS/CSAT/PMF surveys → `/sales-pendo {your question}`
 - Vitally NPS/surveys (within a Customer Success platform) → `/sales-vitally {your question}`
 - ChurnZero NPS/CSAT/CES surveys → `/sales-churnzero {your question}`
 - In-app NPS/CSAT surveys → `/sales-in-app-messaging {your question}`
@@ -162,6 +163,7 @@ Focus on the user's specific situation: program design, survey design, tool setu
 - `/sales-churnzero` — ChurnZero platform help: Health Scores, Surveys (NPS/CSAT/CES), Plays, Journeys, API. Install: `npx skills add sales-skills/sales --skills sales-churnzero`
 - `/sales-customer-success` — Customer success strategy: health scores, churn prevention, onboarding, expansion, CS platform comparison. Install: `npx skills add sales-skills/sales --skills sales-customer-success`
 - `/sales-customer-reviews` — Product review collection strategy (different from feedback surveys — reviews are public, surveys are private). Install: `npx skills add sales-skills/sales --skills sales-customer-reviews`
+- `/sales-pendo` — Pendo platform help (in-app NPS/CSAT/PMF surveys, product analytics, guides). Install: `npx skills add sales-skills/sales --skills sales-pendo`
 - `/sales-in-app-messaging` — In-app NPS/CSAT surveys as part of in-app messaging strategy. Install: `npx skills add sales-skills/sales --skills sales-in-app-messaging`
 - `/sales-typeform` — Typeform platform help — conversational forms, surveys, quizzes, API, Embed SDK. Install: `npx skills add sales-skills/sales --skills sales-typeform`
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

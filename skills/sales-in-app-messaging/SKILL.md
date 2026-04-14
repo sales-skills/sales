@@ -190,6 +190,7 @@ Ask the user:
 
 ## Related skills
 
+- `/sales-pendo` — Pendo platform help (analytics, guides, session replay, NPS, API). Install: `npx skills add sales-skills/sales --skills sales-pendo`
 - `/sales-iterable` — Iterable platform help (in-app messages, Mobile Inbox, Embedded Messages, Studio journeys)
 - `/sales-braze` — Braze platform help (in-app messages, Content Cards, Canvas integration)
 - `/sales-customerio` — Customer.io platform help (in-app in Journeys)
