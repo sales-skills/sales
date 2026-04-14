@@ -901,6 +901,13 @@
 | `/sales-account-map` | Map the buying committee at a target account — stakeholders, roles, entry points, multi-threading |
 | `/sales-lead-score` | Design a lead scoring model — dimensions, weights, MQL/SQL thresholds, implementation, tuning |
 
+### Customer Success
+
+| Skill | Route when... |
+|---|---|
+| `/sales-vitally` | Vitally platform help — Health Scores, Playbooks, Projects, Automation, AI copilot, NPS surveys, REST API, Salesforce/HubSpot integration. Route when the user asks about Vitally setup, config, features, or troubleshooting. Route when they mention Vitally health scores, Vitally playbooks, Vitally projects, Vitally AI, Vitally API, Vitally automation, Vitally Hubs, Vitally blueprints, or vitally.io. |
+| `/sales-customer-success` | Customer success strategy — building health scores, reducing churn, customer onboarding post-sale, expansion revenue, CS playbooks, choosing a CS platform (Vitally vs Gainsight vs ChurnZero vs Totango), NRR/GRR metrics, QBR structure, scaling a CS team. Route when the user asks about customer success strategy, health score methodology, churn prevention, customer onboarding, expansion plays, CS metrics, CS platform comparison, or building a CS function. NOT for NPS/CSAT survey design methodology (→ `/sales-customer-feedback`). NOT for ecommerce visitor identity resolution (→ `/sales-retention`). |
+
 ### Cross-Platform
 
 | Skill | Route when... |

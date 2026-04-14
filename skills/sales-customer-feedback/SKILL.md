@@ -48,6 +48,7 @@ If the request maps to a platform-specific skill, route:
 - Qualtrics platform questions → `/sales-qualtrics {your question}`
 - Medallia platform questions → `/sales-medallia {your question}`
 - Skeepers Feedback Management → `/sales-skeepers {your question}`
+- Vitally NPS/surveys (within a Customer Success platform) → `/sales-vitally {your question}`
 - In-app NPS/CSAT surveys → `/sales-in-app-messaging {your question}`
 - Product review collection (public reviews) → `/sales-customer-reviews {your question}`
 - Email survey delivery optimization → `/sales-email-marketing {your question}`
@@ -155,6 +156,8 @@ Focus on the user's specific situation: program design, survey design, tool setu
 - `/sales-medallia` — Medallia platform help (Experience Cloud, DXA, contact center, APIs). Install: `npx skills add sales-skills/sales --skills sales-medallia`
 - `/sales-skeepers` — Skeepers platform help (Feedback Management module for NPS/CSAT). Install: `npx skills add sales-skills/sales --skills sales-skeepers`
 - `/sales-birdeye` — Birdeye platform help (surveys + reviews + messaging for multi-location businesses). Install: `npx skills add sales-skills/sales --skills sales-birdeye`
+- `/sales-vitally` — Vitally platform help: Health Scores, NPS, Playbooks, Projects, API. Install: `npx skills add sales-skills/sales --skills sales-vitally`
+- `/sales-customer-success` — Customer success strategy: health scores, churn prevention, onboarding, expansion, CS platform comparison. Install: `npx skills add sales-skills/sales --skills sales-customer-success`
 - `/sales-customer-reviews` — Product review collection strategy (different from feedback surveys — reviews are public, surveys are private). Install: `npx skills add sales-skills/sales --skills sales-customer-reviews`
 - `/sales-in-app-messaging` — In-app NPS/CSAT surveys as part of in-app messaging strategy. Install: `npx skills add sales-skills/sales --skills sales-in-app-messaging`
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
