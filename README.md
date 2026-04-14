@@ -253,6 +253,7 @@ Router recommends a 5-skill sequence:
 | `/sales-typeform` | Typeform — conversational forms, surveys, quizzes, video forms, Workflow Builder, Embed SDK, Create/Responses/Webhooks API |
 | `/sales-blueconic` | BlueConic — Customer Data Platform (CDP), profile unification, segmentation, audience activation, Jebbit Experiences, MCP server, REST API v2 |
 | `/sales-treasuredata` | Treasure Data — enterprise AI-native CDP, profile unification, identity resolution, 400+ connectors, AI Marketing Cloud, Audience Studio, TD API |
+| `/sales-contentstack` | Contentstack — enterprise headless CMS, Content Management/Delivery APIs, GraphQL, Launch hosting, Automate workflows, Personalize, Brand Kit AI, Marketplace |
 
 </details>
 

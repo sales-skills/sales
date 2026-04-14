@@ -1058,6 +1058,12 @@
 | `/nanobanana` | AI image generation/editing — product mockups, marketing visuals, creative assets |
 | `/baoyu-slide-deck` | Transform content into presentation decks — slide outlines, images, audience targeting, style options |
 
+### Contentstack & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-contentstack` | General Contentstack questions — headless CMS, content types, entries, assets, Content Management API, Content Delivery API, GraphQL, Launch hosting, Automate workflows, Personalize, Brand Kit AI, Knowledge Vault, Marketplace apps, SDKs, branches, taxonomies, webhooks, localization, migration | Route when the user asks about Contentstack setup, config, features, or troubleshooting. Route when they mention Contentstack CMA, Contentstack CDA, Contentstack Launch, Contentstack Automate, Contentstack Personalize, Contentstack API, Contentstack SDK, or headless CMS migration. |
+
 ### VWO & Experimentation
 
 | Skill | Route when... |

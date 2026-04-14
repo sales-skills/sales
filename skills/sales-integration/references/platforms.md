@@ -439,6 +439,25 @@ Platform-specific webhook configurations, API integrations, and native connector
 | App SDK | Native | Embed TypeScript React apps within Attio UI with server functions and API access. |
 | SDKs | Official | Node.js, TypeScript, Python, PHP, .NET, Java. |
 
+### Contentstack webhooks & API
+
+| Integration | Type | Details |
+|---|---|---|
+| REST API (CMA) | Native | Full CRUD for content types, entries, assets, workflows, branches, taxonomies. API Key + Authtoken/Management Token/OAuth auth. 10 read/write req/s per org. |
+| REST API (CDA) | Native | Read-only content delivery via CDN. API Key + Delivery Token auth. 100 origin req/s per org (CDN-cached not limited). |
+| GraphQL CDA | Native | Custom queries, nested resources in single request. Same auth as CDA. |
+| Webhooks | Native | Entry/asset CRUD, publish/unpublish, workflow stage changes. Configurable channels (HTTP, Slack), retry with backoff. |
+| Automate | Native | Visual automation builder — trigger on Contentstack events, connect to Salesforce, Slack, Jira, custom endpoints. API for managing automations. |
+| Marketplace | Native | Pre-built apps: Shopify, commercetools, Algolia, Smartling, Bynder, Cloudinary, Netlify, Vercel. One-click install. |
+| Zapier/Make | Available | Basic triggers and actions for content operations. |
+| SDKs | Official | Delivery: JS, TS, Python, Java, .NET, PHP, Ruby, iOS, Android, Dart. Management: JS, Python, Java, .NET. App SDK (TS). |
+| OpenAPI | Official | CDA + CMA OpenAPI specs at github.com/contentstack/contentstack-openapi. |
+| Personalize | Native | Audiences, experiences, A/B tests, edge SDK. Separate API at personalize-api.contentstack.com. |
+| Launch | Native | Frontend hosting + deployment API. Git or file upload deployments. |
+| **Rate limits** | — | CMA: 10 req/s read + write, 1 req/s bulk. CDA origin: 100 req/s. All other APIs: 10 req/s. Per-organization. |
+| **Regions** | — | AWS NA/EU/AU, Azure NA/EU, GCP NA/EU — each has its own base URL. |
+| **Full reference** | — | See `/sales-contentstack` → `references/contentstack-api-reference.md` |
+
 ### Qwilr webhooks
 - **Full reference**: See `/sales-qwilr-automation` for Qwilr-specific webhook events and CRM integrations
 
