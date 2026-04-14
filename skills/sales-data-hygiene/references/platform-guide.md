@@ -216,3 +216,24 @@ Treasure Data approaches data hygiene from a CDP perspective — unifying messy 
 - Audit source priority order quarterly — data source quality changes over time.
 
 **Best for**: Enterprise B2C companies with 400+ data sources that need centralized identity resolution across channels. Requires SQL knowledge for advanced transformations. Implementation takes 8-12 weeks with professional services ($30K-$100K+).
+
+### In Tealium (CDP)
+
+Tealium approaches data hygiene through real-time identity resolution in AudienceStream CDP, unifying profiles from 1,300+ sources.
+
+**Identity resolution as dedup**:
+- Visitor Switching merges profiles when a shared identifier (email, customer ID, phone) matches across devices/channels.
+- Profile merge rules are configurable — deterministic matching (email, login ID) is safer than probabilistic (device fingerprints, cookies).
+- Test merge rules in QA environment before production — bad rules create false merges that blend distinct customers.
+
+**Data quality at ingestion**:
+- EventStream connectors can validate and transform data before it reaches AudienceStream profiles.
+- The Collect HTTP API is case-sensitive for all field names — mismatched casing silently drops data or creates duplicate attributes.
+- Event-based pricing means dirty data (duplicate events, bot traffic) inflates costs. Filter at the source.
+
+**Ongoing maintenance**:
+- Monitor profile count growth — overly loose identity rules create too many profiles (inflating event-based pricing).
+- Use AudienceStream enrichments to flag data quality issues (e.g., badge for "missing email", metric for "days since last event").
+- Connector error rates surface data quality problems downstream — if a connector consistently fails, the source data may be malformed.
+
+**Best for**: Enterprise organizations with 1,300+ integration touchpoints needing centralized real-time identity resolution. Marketer-friendly AudienceStream UI for non-technical teams. Implementation takes 4-12 weeks with professional services.

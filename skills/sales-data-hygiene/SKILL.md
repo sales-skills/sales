@@ -98,6 +98,8 @@ Ask the user:
 
 - `/sales-attio` — Attio platform help (AI-native CRM with custom objects)
 - `/sales-blueconic` — BlueConic CDP — profile unification, identity resolution, audience activation
+- `/sales-tealium` — Tealium CDP — Real-Time CDP, identity resolution, 1300+ connectors
+- `/sales-cdp` — CDP comparison and selection strategy across platforms
 - `/sales-clay` — Clay platform help
 - `/sales-zoominfo` — ZoomInfo platform help (for OperationsOS-specific setup)
 - `/sales-clearbit` — Clearbit platform help (enrichment, reveal, prospector)

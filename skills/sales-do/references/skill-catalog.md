@@ -437,6 +437,18 @@
 |---|---|
 | `/sales-treasuredata` | General Treasure Data questions — enterprise AI-native Customer Data Platform (CDP), profile unification, identity resolution, audience segmentation, Audience Studio, journey orchestration, 400+ connectors, Integration Hub, AI Marketing Cloud (Engagement, Personalization, Creative, Paid Media, Service AI Suites), Marketing Super Agent, Agent Hub, Treasure Code, Treasure Workflows, TD API, Audience API, Postback API, Profiles API, Presto/Trino SQL queries, regional endpoints (US/EU/JP/KR), client SDKs (Python, Ruby, Java, Node.js, Go, iOS, Android, React Native). Route when the user asks about Treasure Data setup, config, features, or troubleshooting. Route when they mention Treasure Data profiles, TD segments, TD connectors, TD API, TD workflows, TD identity resolution, Treasure Data CDP, TD Audience Studio, TD postback, or treasuredata.com. |
 
+### Tealium & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-tealium` | General Tealium questions — enterprise Customer Data Platform (CDP), Real-Time CDP, Composable CDP, iQ Tag Management (utag.js), EventStream API Hub, AudienceStream CDP, 1300+ connectors, identity resolution (Visitor Switching), consent management, Connector Marketplace, CloudStream, AIStream, Predictive ML, V3 API (Collect HTTP API, Visitor Profile API, Visitor Privacy API), mobile SDKs (iOS Swift, Android Kotlin, React Native, Flutter). Route when the user asks about Tealium setup, config, features, or troubleshooting. Route when they mention Tealium tags, Tealium connectors, Tealium audiences, Tealium EventStream, Tealium AudienceStream, Tealium iQ, utag.js, Tealium API, Tealium identity resolution, Tealium visitor profiles, or tealium.com. |
+
+### CDP Strategy
+
+| Skill | Route when... |
+|---|---|
+| `/sales-cdp` | User asks about choosing between CDPs, comparing Tealium vs Segment vs BlueConic vs mParticle vs Treasure Data, evaluating whether they need a CDP, planning a CDP implementation, composable vs traditional CDP, customer data scattered across tools, profiles not unifying, real-time audience activation strategy, CDP pricing comparison, or reverse ETL vs full CDP. Route when user mentions "CDP", "customer data platform", "data unification", "composable CDP", or compares multiple CDPs. |
+
 ### Customer Reviews Strategy
 
 | Skill | Route when... |

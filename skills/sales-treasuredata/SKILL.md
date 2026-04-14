@@ -81,6 +81,8 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 
 ## Related skills
 
+- `/sales-cdp` — CDP comparison and selection strategy across Tealium, Segment, BlueConic, mParticle, Treasure Data
+- `/sales-tealium` — Tealium CDP — Real-Time CDP, identity resolution, 1300+ connectors
 - `/sales-blueconic` — BlueConic CDP — profile unification, segmentation, audience activation (mid-market alternative)
 - `/sales-data-hygiene` — CRM data quality, deduplication, normalization
 - `/sales-retargeting` — Retargeting and remarketing strategy across ad platforms
