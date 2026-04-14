@@ -1,6 +1,6 @@
 ---
 name: sales-cdp
-description: "CDP comparison, selection, and implementation strategy — Customer Data Platform evaluation across Tealium, BlueConic, Segment, Treasure Data, mParticle, RudderStack, Hightouch, Amperity. Use when choosing between CDPs, evaluating whether you need a CDP, customer data is scattered across dozens of tools, profiles aren't unifying across channels, you need real-time audience activation, comparing composable vs bundled CDP approaches, or planning a CDP implementation. Do NOT use for platform-specific CDP setup (use /sales-tealium, /sales-blueconic, /sales-treasuredata, or /sales-rudderstack) or CRM data cleanup without a CDP (use /sales-data-hygiene)."
+description: "CDP comparison, selection, and implementation strategy — Customer Data Platform evaluation across Tealium, BlueConic, Segment, Treasure Data, mParticle, RudderStack, Hightouch, Amperity. Use when choosing between CDPs, evaluating whether you need a CDP, customer data is scattered across dozens of tools, profiles aren't unifying across channels, you need real-time audience activation, comparing composable vs bundled CDP approaches, or planning a CDP implementation. Do NOT use for platform-specific CDP setup (use /sales-tealium, /sales-blueconic, /sales-treasuredata, /sales-rudderstack, or /sales-mparticle) or CRM data cleanup without a CDP (use /sales-data-hygiene)."
 argument-hint: "[describe your CDP question or selection criteria]"
 license: MIT
 version: 1.0.0
@@ -52,6 +52,7 @@ Skip-ahead rule: if the user's prompt already contains enough context, skip to S
 | BlueConic-specific setup or config | `/sales-blueconic {user's question}` |
 | Treasure Data-specific setup or config | `/sales-treasuredata {user's question}` |
 | RudderStack-specific setup or config | `/sales-rudderstack {user's question}` |
+| mParticle-specific setup or config | `/sales-mparticle {user's question}` |
 | CRM data dedup without a CDP | `/sales-data-hygiene {user's question}` |
 | Email marketing strategy | `/sales-email-marketing {user's question}` |
 | Retargeting ad strategy | `/sales-retargeting {user's question}` |
@@ -101,6 +102,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-blueconic` — BlueConic CDP — profile unification, segmentation, audience activation, Jebbit Experiences
 - `/sales-treasuredata` — Treasure Data enterprise CDP — AI Marketing Cloud, 400+ connectors, SQL-based
 - `/sales-rudderstack` — RudderStack platform help — warehouse-native CDP, Event Streams, Reverse ETL, open-source
+- `/sales-mparticle` — mParticle platform help — hybrid CDP, real-time event streaming, identity resolution, 300+ integrations
 - `/sales-data-hygiene` — CRM data quality — clean your data before feeding it to a CDP
 - `/sales-retargeting` — Retargeting strategy — activate CDP audiences to ad platforms
 - `/sales-integration` — Tool integration — connecting CDP to CRM, email, ad platforms

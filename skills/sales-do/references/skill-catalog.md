@@ -449,6 +449,12 @@
 |---|---|
 | `/sales-rudderstack` | General RudderStack questions — warehouse-native CDP, Event Streams (SDK/API event collection and routing), Reverse ETL (warehouse → business tools sync), Transformations (JavaScript/Python en-route transforms), Profiles (identity resolution, customer 360), 200+ destinations, open-source deployment, HTTP API, migration from Segment. Route when the user asks about RudderStack setup, config, features, or troubleshooting. Route when they mention RudderStack SDKs, RudderStack events, RudderStack Reverse ETL, RudderStack transformations, RudderStack profiles, RudderStack API, rudderstack.com, or "warehouse-native CDP". |
 
+### mParticle & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-mparticle` | General mParticle questions — hybrid Customer Data Platform (CDP), real-time event streaming, identity resolution (IDSync), audience segmentation and activation, 300+ integrations, Composable Audiences (Snowflake/Databricks/BigQuery), AI/Cortex predictions, Data Plans (schema validation), Events API, Platform API, Profile API, Data Planning API, DSR API, mobile SDKs (iOS, Android, React Native, Flutter, Roku), server SDKs (Python, Node.js, Java, Ruby, Go, .NET), Smartype. Route when the user asks about mParticle setup, config, features, or troubleshooting. Route when they mention mParticle events, mParticle identity, mParticle audiences, mParticle connections, mParticle SDK, mParticle API, mParticle data plan, mParticle profiles, mParticle IDSync, mParticle Cortex, mparticle.com, or "mParticle by Rokt". |
+
 ### CDP Strategy
 
 | Skill | Route when... |

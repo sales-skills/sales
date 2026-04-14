@@ -256,6 +256,7 @@ Router recommends a 5-skill sequence:
 | `/sales-tealium` | Tealium — enterprise CDP, Real-Time/Composable/Hybrid CDP, iQ Tag Management, EventStream, AudienceStream, 1300+ connectors, V3 API |
 | `/sales-contentstack` | Contentstack — enterprise headless CMS, Content Management/Delivery APIs, GraphQL, Launch hosting, Automate workflows, Personalize, Brand Kit AI, Marketplace |
 | `/sales-rudderstack` | RudderStack — warehouse-native CDP, Event Streams, Reverse ETL, Transformations, Profiles, 200+ destinations, open-source, HTTP API |
+| `/sales-mparticle` | mParticle — hybrid CDP, real-time event streaming, identity resolution (IDSync), audience activation, 300+ integrations, Composable Audiences, AI/Cortex, Data Plans, 7 APIs |
 | `/sales-cdp` | CDP comparison and selection strategy — Tealium, BlueConic, Segment, Treasure Data, mParticle, composable vs bundled |
 
 </details>
