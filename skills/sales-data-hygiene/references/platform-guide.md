@@ -194,3 +194,25 @@ Attio's flexible data model makes hygiene both easier (custom attributes, no rig
 - Schedule periodic enrichment re-runs via API for stale records
 
 **Best for**: Teams under 50 using Attio as primary CRM. For enterprise-scale hygiene with advanced dedup rules, ZoomInfo OperationsOS or DemandTools are more powerful.
+
+### In Treasure Data (CDP)
+
+Treasure Data approaches data hygiene from a CDP perspective — unifying messy data from 400+ sources into clean, deduplicated customer profiles.
+
+**Identity resolution as dedup**:
+- Parent table defines the unified profile schema. Child tables (website events, CRM, POS, email) feed into it.
+- Identity resolution rules match records across sources: deterministic (email, phone, customer ID) and probabilistic (device IDs, cookies).
+- Source priority order resolves conflicts — if CRM says "John" and email says "Jonathan", the higher-priority source wins.
+- Test unification in QA sandbox before production — bad identity rules create false merges that are hard to undo.
+
+**Data quality at ingestion**:
+- Schema-flexible ingestion means bad data gets in easily. Define validation rules in Treasure Workflows to catch issues before they reach the parent table.
+- Postback API is case-sensitive — column names must match the target table schema exactly (including casing). Mismatched casing silently drops data.
+- Monitor profile count growth — overly loose identity rules create too many profiles (inflating "No Compute" pricing costs).
+
+**Ongoing maintenance**:
+- Schedule re-unification jobs to pick up new identity signals as more data arrives.
+- Use Treasure Workflows (DAGs) to orchestrate: ingest → validate → unify → segment. Don't manage individual job schedules.
+- Audit source priority order quarterly — data source quality changes over time.
+
+**Best for**: Enterprise B2C companies with 400+ data sources that need centralized identity resolution across channels. Requires SQL knowledge for advanced transformations. Implementation takes 8-12 weeks with professional services ($30K-$100K+).

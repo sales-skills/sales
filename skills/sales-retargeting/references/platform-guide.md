@@ -178,3 +178,22 @@ Reddit supports website visitor retargeting and engagement-based remarketing:
 | Ecommerce ($1-10M rev) | Meta DPA + Google remarketing + AdRoll + email | $2,000-10,000/mo |
 | B2B SaaS | LinkedIn retargeting + Google RLSA + display | $3,000-10,000/mo |
 | Local business | Google RLSA + Meta retargeting | $500-2,000/mo |
+
+### In Treasure Data (CDP audience activation)
+
+Treasure Data isn't a retargeting platform — it's the data layer that feeds retargeting platforms with unified, high-quality audiences.
+
+**Audience activation for retargeting:**
+- Build audience segments in Audience Studio (no-code) or via SQL queries against unified profiles.
+- Activate segments to ad platforms via native connectors: Facebook Custom Audiences, Google Ads, Google DV360, LinkedIn, TikTok, Pinterest, Snapchat, The Trade Desk, Amazon DSP, Criteo.
+- Set sync frequency: one-time, daily, or weekly. Monitor match rates — match rates depend on identifier quality (hashed email > phone > device ID).
+
+**Why CDP-powered retargeting outperforms:**
+- Unified profiles merge website visits + purchases + email engagement + in-store data. Retargeting audiences built from CDP profiles are richer than pixel-only audiences.
+- Suppress recent purchasers across ALL channels at once — no more showing ads to someone who just bought in-store.
+- Build lookalike audiences from your highest-value customers (not just recent visitors) by leveraging purchase history and LTV data.
+
+**Limitations:**
+- Treasure Data is the data layer, not the ad platform — you still need Google/Meta/etc. for actual ad delivery.
+- Enterprise pricing ($100K+/year) makes this overkill for simple pixel-based retargeting. Best when you have fragmented customer data across many channels.
+- Audience sync is batch-based (not real-time) — there's a delay between segment qualification and ad platform activation.

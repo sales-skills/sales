@@ -250,3 +250,17 @@ Before building anything custom, check if a native integration exists between yo
 | ZoomInfo → Outreach | Native | Push contacts to sequences from ZoomInfo |
 | ZoomInfo → Slack | Native | Intent alerts, Scoops notifications |
 | ZoomInfo → Zapier | Connector | Trigger on new contacts/companies, enrich records |
+| Treasure Data → Salesforce | Native | Audience activation, contact sync, CRM enrichment |
+| Treasure Data → HubSpot | Native | Contact sync, audience activation |
+| Treasure Data → Google Ads | Native | Audience segment activation for retargeting |
+| Treasure Data → Meta/Facebook | Native | Custom Audiences activation from CDP segments |
+| Treasure Data → Snowflake | Native (bi-directional) | Data warehouse sync, composable CDP architecture |
+| Treasure Data → Databricks | Native (bi-directional) | Data warehouse sync, composable CDP |
+| Treasure Data → Amazon Redshift | Native | Data warehouse import/export |
+| Treasure Data → Google BigQuery | Native | Data warehouse import/export |
+| Treasure Data → Braze | Native | Audience activation for engagement campaigns |
+| Treasure Data → Klaviyo | Native | Audience sync for email/SMS marketing |
+| Treasure Data → Shopify | Native | E-commerce customer and order data ingestion |
+| Treasure Data → Amazon S3 | Native | Cloud storage import/export |
+| Treasure Data → Segment | Native | CDP-to-CDP data routing |
+| Treasure Data → Any (API) | API | TD API (REST) — databases, jobs, queries, connectors. TD1 API key auth. 400+ pre-built connectors |

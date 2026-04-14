@@ -431,6 +431,12 @@
 |---|---|
 | `/sales-blueconic` | General BlueConic questions — Customer Data Platform (CDP), real-time profile unification, segmentation, audience activation, Connections (100+ integrations), Jebbit Experiences (quizzes, AI Shopping Assistant), AI Workbench, Growth Plays, dialogues/personalization, consent management, REST API v2 (OAuth 2.0), JavaScript front-end API, Event API, MCP server, mobile SDKs (Android, iOS, React Native, Flutter, Roku). Route when the user asks about BlueConic setup, config, features, or troubleshooting. Route when they mention BlueConic profiles, BlueConic segments, BlueConic connections, BlueConic dialogues, BlueConic API, BlueConic MCP, BlueConic Jebbit, BlueConic Experiences, BlueConic personalization, BlueConic CDP, or BlueConic consent. |
 
+### Treasure Data & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-treasuredata` | General Treasure Data questions — enterprise AI-native Customer Data Platform (CDP), profile unification, identity resolution, audience segmentation, Audience Studio, journey orchestration, 400+ connectors, Integration Hub, AI Marketing Cloud (Engagement, Personalization, Creative, Paid Media, Service AI Suites), Marketing Super Agent, Agent Hub, Treasure Code, Treasure Workflows, TD API, Audience API, Postback API, Profiles API, Presto/Trino SQL queries, regional endpoints (US/EU/JP/KR), client SDKs (Python, Ruby, Java, Node.js, Go, iOS, Android, React Native). Route when the user asks about Treasure Data setup, config, features, or troubleshooting. Route when they mention Treasure Data profiles, TD segments, TD connectors, TD API, TD workflows, TD identity resolution, Treasure Data CDP, TD Audience Studio, TD postback, or treasuredata.com. |
+
 ### Customer Reviews Strategy
 
 | Skill | Route when... |

@@ -203,6 +203,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-leadmagic` — LeadMagic (REST API, MCP, Clay/Zapier/Make/n8n)
 - `/sales-zoominfo` — ZoomInfo (SalesOS, MarketingOS, OperationsOS)
 - `/sales-blueconic` — BlueConic CDP — 100+ connections for importing/exporting customer data
+- `/sales-treasuredata` — Treasure Data CDP — 400+ connectors, enterprise data unification and audience activation
 - `/sales-data-hygiene` — CRM data quality and enrichment automation
 - `/sales-do` — Router — matches any sales objective to the right skill
 

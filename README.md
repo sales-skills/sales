@@ -252,6 +252,7 @@ Router recommends a 5-skill sequence:
 | `/sales-jotform` | Jotform — form builder, payment forms, e-signatures, approval workflows, tables, PDF editor, app builder, REST API, MCP server |
 | `/sales-typeform` | Typeform — conversational forms, surveys, quizzes, video forms, Workflow Builder, Embed SDK, Create/Responses/Webhooks API |
 | `/sales-blueconic` | BlueConic — Customer Data Platform (CDP), profile unification, segmentation, audience activation, Jebbit Experiences, MCP server, REST API v2 |
+| `/sales-treasuredata` | Treasure Data — enterprise AI-native CDP, profile unification, identity resolution, 400+ connectors, AI Marketing Cloud, Audience Studio, TD API |
 
 </details>
 
