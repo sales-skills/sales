@@ -44,6 +44,7 @@ Ask the user:
 ## Step 2 — Route or answer directly
 
 If the request maps to a platform-specific skill, route:
+- SurveyMonkey platform questions → `/sales-surveymonkey {your question}`
 - Qualtrics platform questions → `/sales-qualtrics {your question}`
 - Medallia platform questions → `/sales-medallia {your question}`
 - Skeepers Feedback Management → `/sales-skeepers {your question}`
@@ -149,6 +150,7 @@ Focus on the user's specific situation: program design, survey design, tool setu
 
 ## Related skills
 
+- `/sales-surveymonkey` — SurveyMonkey platform help (survey creation, collectors, analytics, API). Install: `npx skills add sales-skills/sales --skills sales-surveymonkey`
 - `/sales-qualtrics` — Qualtrics XM platform help (CX/EX surveys, dashboards, API, Experience Agents). Install: `npx skills add sales-skills/sales --skills sales-qualtrics`
 - `/sales-medallia` — Medallia platform help (Experience Cloud, DXA, contact center, APIs). Install: `npx skills add sales-skills/sales --skills sales-medallia`
 - `/sales-skeepers` — Skeepers platform help (Feedback Management module for NPS/CSAT). Install: `npx skills add sales-skills/sales --skills sales-skeepers`

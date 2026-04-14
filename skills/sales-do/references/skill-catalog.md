@@ -407,6 +407,12 @@
 |---|---|
 | `/sales-customer-feedback` | User asks about customer feedback strategy, NPS program design, CSAT benchmarking, CES measurement, Voice of Customer (VoC) program, survey design best practices, improving survey response rates, closed-loop feedback workflows, choosing a feedback tool (Medallia vs Qualtrics vs SurveyMonkey vs Typeform vs Delighted vs AskNicely vs CustomerGauge vs Zonka vs Birdeye), CX metrics comparison (NPS vs CSAT vs CES), proving CX ROI, survey fatigue management, text analytics for feedback, or customer experience measurement strategy. Do NOT route here for product review collection (that's `/sales-customer-reviews`) or Medallia-specific config (that's `/sales-medallia`). |
 
+### SurveyMonkey & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-surveymonkey` | User asks about SurveyMonkey platform — survey creation, question types, skip logic, advanced branching, email/SMS/web collectors, response analytics, cross-tabulation, text analysis, API integration, webhooks, pricing/plan comparison, SurveyMonkey Audience, data export, team collaboration. Route here for SurveyMonkey-specific questions. Do NOT route here for general NPS/CSAT/VoC strategy (that's `/sales-customer-feedback`) or enterprise XM platforms (that's `/sales-qualtrics` or `/sales-medallia`). |
+
 ### Customer Reviews Strategy
 
 | Skill | Route when... |
