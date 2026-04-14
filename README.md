@@ -357,6 +357,7 @@ Router recommends a 5-skill sequence:
 | `/sales-medallia` | Medallia — Experience Cloud, NPS/CSAT/CES surveys, DXA, contact center intelligence, employee listening, REST + GraphQL APIs |
 | `/sales-surveymonkey` | SurveyMonkey — survey creation, skip logic, email/SMS/web collectors, analytics, cross-tabulation, Audience panel, REST API v3 |
 | `/sales-vitally` | Vitally — AI-powered CS platform, Health Scores, Playbooks, Projects, Automation, AI copilot, NPS, REST API |
+| `/sales-planhat` | Planhat — Agentic Customer Platform, Health Scores, Revenue Management, CRM Sync, Automation, MCP Server, REST API |
 | `/sales-customer-success` | Customer success strategy — health scores, churn prevention, onboarding, expansion, CS platform comparison |
 | `/sales-customer-feedback` | Customer feedback, NPS, CSAT, VoC strategy — survey design, response rates, closed-loop feedback, tool comparison |
 
