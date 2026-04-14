@@ -98,6 +98,7 @@ Live chat converts best when:
 - `/sales-salesloft` — Salesloft/Drift platform help (enterprise sales chat)
 - `/sales-sendpulse` — SendPulse platform help (live chat, unified inbox, bot-to-human handoff)
 - `/sales-swai` — SWAI platform help (AI chat widget, autonomous lead qualification, Cal.com scheduling)
+- `/sales-birdeye` — Birdeye platform help (webchat + messaging for multi-location businesses)
 - `/sales-chatbot` — Chatbot design and automation
 - `/sales-meeting-scheduler` — Book meetings from chat conversations
 - `/sales-lead-routing` — Route chat-qualified leads to the right rep

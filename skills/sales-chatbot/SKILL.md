@@ -73,6 +73,7 @@ Based on the user's channel and bot type, provide:
 - `/sales-qualified` — Qualified platform help (Piper AI SDR conversations, Salesforce-native chatbot)
 - `/sales-sendpulse` — SendPulse platform help (chatbots across 7 channels, visual flow builder, Automation 360)
 - `/sales-swai` — SWAI platform help (AI chat widget, autonomous lead qualification, Cal.com scheduling)
+- `/sales-birdeye` — Birdeye platform help (webchat chatbot for multi-location businesses, appointment scheduling)
 - `/sales-live-chat` — Live chat widget setup and optimization (non-bot focused)
 - `/sales-sms-marketing` — SMS campaigns and automation (non-conversational)
 - `/sales-cadence` — Multi-channel outbound sequences (email, call, social — structured outreach vs. conversational)

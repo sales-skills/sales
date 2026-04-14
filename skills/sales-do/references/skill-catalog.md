@@ -383,17 +383,29 @@
 |---|---|
 | `/sales-medallia` | User asks about Medallia platform — Experience Cloud, NPS/CSAT/CES survey setup, digital experience analytics (DXA session replay, heatmaps), contact center intelligence (conversational analytics, agent coaching, quality management), employee experience (pulse surveys, listening), experience orchestration, Frontline-Ready AI (Smart Response, Themes with GenAI, Root Cause Assist), Medallia REST or GraphQL API, Medallia Salesforce integration, Medallia pricing (EDR model), Medallia vs Qualtrics comparison, dashboard configuration, survey response rates, Medallia admin, Mindful callback, or Medallia Market Research |
 
+### Birdeye & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-birdeye` | User asks about Birdeye platform — reviews, listings, social media, messaging, webchat, surveys, referrals, payments, BirdAI, API, integrations (Dentrix, Open Dental, Salesforce, HubSpot), multi-location management, or Birdeye pricing/plans. Route when they mention Birdeye setup, config, features, troubleshooting, Birdeye vs Podium, Birdeye vs Yext, or Birdeye webchat/chatbot. |
+
+### Online Reputation Management Strategy
+
+| Skill | Route when... |
+|---|---|
+| `/sales-online-reputation` | User asks about online reputation management strategy, getting more Google reviews, responding to negative reviews, Google reviews disappeared, business listings showing wrong info, Google Business Profile optimization, choosing a reputation management tool (Birdeye vs Podium vs Yext vs Reputation.com vs BrightLocal vs NiceJob), multi-location reputation management, star rating dropping, fake reviews, reputation crisis response, or NAP consistency across directories. Do NOT route here for ecommerce product review apps (→ `/sales-customer-reviews`) or B2B software reviews (→ `/sales-g2`). |
+
 ### Customer Feedback Strategy
 
 | Skill | Route when... |
 |---|---|
-| `/sales-customer-feedback` | User asks about customer feedback strategy, NPS program design, CSAT benchmarking, CES measurement, Voice of Customer (VoC) program, survey design best practices, improving survey response rates, closed-loop feedback workflows, choosing a feedback tool (Medallia vs Qualtrics vs SurveyMonkey vs Typeform vs Delighted vs AskNicely vs CustomerGauge vs Zonka), CX metrics comparison (NPS vs CSAT vs CES), proving CX ROI, survey fatigue management, text analytics for feedback, or customer experience measurement strategy. Do NOT route here for product review collection (that's `/sales-customer-reviews`) or Medallia-specific config (that's `/sales-medallia`). |
+| `/sales-customer-feedback` | User asks about customer feedback strategy, NPS program design, CSAT benchmarking, CES measurement, Voice of Customer (VoC) program, survey design best practices, improving survey response rates, closed-loop feedback workflows, choosing a feedback tool (Medallia vs Qualtrics vs SurveyMonkey vs Typeform vs Delighted vs AskNicely vs CustomerGauge vs Zonka vs Birdeye), CX metrics comparison (NPS vs CSAT vs CES), proving CX ROI, survey fatigue management, text analytics for feedback, or customer experience measurement strategy. Do NOT route here for product review collection (that's `/sales-customer-reviews`) or Medallia-specific config (that's `/sales-medallia`). |
 
 ### Customer Reviews Strategy
 
 | Skill | Route when... |
 |---|---|
-| `/sales-customer-reviews` | User asks about product review collection strategy, choosing a review app for Shopify or ecommerce (Judge.me vs Loox vs Okendo vs Stamped vs Yotpo vs Skeepers vs Bazaarvoice vs PowerReviews vs Trustpilot vs G2), setting up post-purchase review requests, photo/video review collection, review display widgets, Google Rich Snippets for reviews, review syndication to retail partners, review moderation, migrating between review platforms, or improving review collection rates |
+| `/sales-customer-reviews` | User asks about product review collection strategy, choosing a review app for Shopify or ecommerce (Judge.me vs Loox vs Okendo vs Stamped vs Yotpo vs Skeepers vs Bazaarvoice vs PowerReviews vs Trustpilot vs G2 vs Birdeye), setting up post-purchase review requests, photo/video review collection, review display widgets, Google Rich Snippets for reviews, review syndication to retail partners, review moderation, migrating between review platforms, or improving review collection rates |
 
 ### Sprout Social & Platform
 

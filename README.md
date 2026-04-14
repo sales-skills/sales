@@ -365,6 +365,8 @@ Router recommends a 5-skill sequence:
 |---|---|
 | `/sales-g2` | G2 — B2B software review marketplace, review campaigns, Buyer Intent data, badges/reports, profile optimization, API |
 | `/sales-trustpilot` | Trustpilot — TrustBox widgets, TrustScore, review invitations, Google Seller Ratings, ecommerce plugins, API |
+| `/sales-birdeye` | Birdeye — reviews, listings, social, messaging, surveys, referrals, payments, BirdAI for multi-location |
+| `/sales-online-reputation` | Online reputation management strategy — review generation, response, listings, Google Business Profile, crisis response |
 | `/sales-customer-reviews` | Product review collection, display, moderation, syndication — Judge.me, Loox, Okendo, Yotpo, Bazaarvoice |
 
 </details>

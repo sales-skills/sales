@@ -82,6 +82,7 @@ Otherwise, answer directly using the strategy guidance below.
 | **AskNicely** | Frontline team NPS | Custom | Frontline coaching + NPS in one |
 | **CustomerGauge** | B2B account experience | Custom | Account-level NPS, revenue attribution |
 | **Zonka Feedback** | Mid-market, multi-channel | From $49/mo | Strong offline/kiosk + digital |
+| **Birdeye** | Multi-location service businesses | ~$299/mo/location | Integrated with reviews + messaging, healthcare PMS connectors |
 | **Skeepers** | Ecommerce (reviews + feedback) | From ~3K EUR/mo | Combined reviews + NPS/CSAT in one platform |
 
 **Decision framework**:
@@ -89,6 +90,7 @@ Otherwise, answer directly using the strategy guidance below.
 - **Growing B2C**: Delighted or Zonka — focused CX metrics without enterprise complexity
 - **B2B account health**: CustomerGauge — ties NPS to revenue by account
 - **Enterprise program**: Medallia or Qualtrics — full VoC platforms with action management
+- **Multi-location service business**: Birdeye — surveys integrated with reviews, messaging, and listings in one platform
 - **Already using reviews platform**: Skeepers — adds NPS/CSAT to existing review collection
 
 ### Response rate optimization
@@ -148,6 +150,7 @@ Focus on the user's specific situation: program design, survey design, tool setu
 
 - `/sales-medallia` — Medallia platform help (Experience Cloud, DXA, contact center, APIs). Install: `npx skills add sales-skills/sales --skills sales-medallia`
 - `/sales-skeepers` — Skeepers platform help (Feedback Management module for NPS/CSAT). Install: `npx skills add sales-skills/sales --skills sales-skeepers`
+- `/sales-birdeye` — Birdeye platform help (surveys + reviews + messaging for multi-location businesses). Install: `npx skills add sales-skills/sales --skills sales-birdeye`
 - `/sales-customer-reviews` — Product review collection strategy (different from feedback surveys — reviews are public, surveys are private). Install: `npx skills add sales-skills/sales --skills sales-customer-reviews`
 - `/sales-in-app-messaging` — In-app NPS/CSAT surveys as part of in-app messaging strategy. Install: `npx skills add sales-skills/sales --skills sales-in-app-messaging`
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
