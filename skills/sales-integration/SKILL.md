@@ -202,6 +202,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-clay` — Clay (waterfall enrichment, CRM sync, webhooks)
 - `/sales-leadmagic` — LeadMagic (REST API, MCP, Clay/Zapier/Make/n8n)
 - `/sales-zoominfo` — ZoomInfo (SalesOS, MarketingOS, OperationsOS)
+- `/sales-blueconic` — BlueConic CDP — 100+ connections for importing/exporting customer data
 - `/sales-data-hygiene` — CRM data quality and enrichment automation
 - `/sales-do` — Router — matches any sales objective to the right skill
 

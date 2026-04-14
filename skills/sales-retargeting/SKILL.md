@@ -107,6 +107,7 @@ Retargeting serves ads to people who have already interacted with your brand —
 - `/sales-audience-growth` — Growing your email/subscriber list (retargeting as a list-growth tactic)
 - `/sales-klaviyo` — Klaviyo platform help (email/SMS retargeting flows for ecommerce)
 - `/sales-omnisend` — Omnisend platform help (email/SMS retargeting for ecommerce)
+- `/sales-blueconic` — BlueConic CDP — build retargeting audiences from unified profiles, activate segments to ad platforms
 - `/sales-reddit-ads` — Reddit Ads platform help (subreddit targeting, website retargeting, engagement audiences)
 - `/sales-cloutboost` — Cloutboost platform help — gaming influencer retargeting, Portal discovery, campaign management
 - `/sales-gaming-marketing` — Gaming influencer marketing strategy — streamer partnerships, game launch campaigns

@@ -425,6 +425,12 @@
 |---|---|
 | `/sales-typeform` | General Typeform questions — conversational form builder, surveys, quizzes, video forms, Workflow Builder, Embed SDK, logic jumps, hidden fields, Create/Responses/Webhooks API. Route when the user asks about Typeform setup, config, features, or troubleshooting. Route when they mention Typeform forms, Typeform surveys, Typeform quizzes, Typeform API, Typeform webhooks, Typeform embedding, Typeform response limits, Typeform Workflow Builder, or typeform.com. |
 
+### BlueConic & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-blueconic` | General BlueConic questions — Customer Data Platform (CDP), real-time profile unification, segmentation, audience activation, Connections (100+ integrations), Jebbit Experiences (quizzes, AI Shopping Assistant), AI Workbench, Growth Plays, dialogues/personalization, consent management, REST API v2 (OAuth 2.0), JavaScript front-end API, Event API, MCP server, mobile SDKs (Android, iOS, React Native, Flutter, Roku). Route when the user asks about BlueConic setup, config, features, or troubleshooting. Route when they mention BlueConic profiles, BlueConic segments, BlueConic connections, BlueConic dialogues, BlueConic API, BlueConic MCP, BlueConic Jebbit, BlueConic Experiences, BlueConic personalization, BlueConic CDP, or BlueConic consent. |
+
 ### Customer Reviews Strategy
 
 | Skill | Route when... |

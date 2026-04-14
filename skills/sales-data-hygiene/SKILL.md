@@ -97,6 +97,7 @@ Ask the user:
 ## Related skills
 
 - `/sales-attio` — Attio platform help (AI-native CRM with custom objects)
+- `/sales-blueconic` — BlueConic CDP — profile unification, identity resolution, audience activation
 - `/sales-clay` — Clay platform help
 - `/sales-zoominfo` — ZoomInfo platform help (for OperationsOS-specific setup)
 - `/sales-clearbit` — Clearbit platform help (enrichment, reveal, prospector)
