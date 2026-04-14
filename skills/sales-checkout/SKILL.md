@@ -20,7 +20,9 @@ Before making recommendations, understand the situation. Ask the user for any mi
 - **Product type**: Digital product, course, SaaS, physical product, coaching/service, membership?
 - **Price point**: What is the main offer price? Are there multiple tiers?
 - **Current conversion rate**: What percentage of visitors who reach checkout actually complete the purchase? (Industry benchmarks: 30-50% for warm traffic landing on a checkout page; 1-3% for cold traffic on a full sales page with embedded checkout.)
-- **Checkout tool**: Which platform are they using? (GrooveSell, ThriveCart, SamCart, Stripe Checkout, Paddle, Gumroad, Shopify Checkout, WooCommerce, Lemon Squeezy, PayKickstart, or another.)
+- **Checkout tool**: Which platform are they using? (GrooveSell, ThriveCart, SamCart, Stripe Checkout, Paddle, Gumroad, Shopify Checkout, WooCommerce, Lemon Squeezy, PayKickstart, Jotform, or another.)
+
+For platform-specific checkout guidance (Jotform, etc.), see `references/platforms.md`.
 - **Payment processors**: Stripe, PayPal, Authorize.net, or others? Are both credit card and PayPal enabled?
 - **Existing upsells/order bumps**: Do they already have any post-purchase offers or order bumps configured?
 - **Traffic source**: Where does checkout traffic come from — ads, organic, email, webinar, sales page?
@@ -127,6 +129,7 @@ Body: Create urgency. Optionally add a small incentive (bonus or 10% discount). 
 - `/sales-payhip` — Payhip platform help (embedded checkout, cross-selling, coupons)
 - `/sales-lemonsqueezy` — Lemon Squeezy platform help (hosted/overlay/embedded checkout, subscriptions, tax as MoR)
 - `/sales-vwo` — VWO platform help (A/B test checkout pages, heatmaps, session recordings, form analytics)
+- `/sales-jotform` — Jotform platform help (payment forms, order forms, donation collection — simpler than dedicated checkout tools)
 - `/sales-do` — Route any sales question to the right skill.
 
 ## Examples

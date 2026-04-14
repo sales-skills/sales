@@ -16,6 +16,7 @@ Detailed per-platform funnel setup — page builders, checkout integration, A/B 
 - [In SendPulse](#in-sendpulse)
 - [In VWO](#in-vwo)
 - [In Unbounce](#in-unbounce)
+- [In Jotform](#in-jotform)
 - [In Other Tools](#in-other-tools)
 
 ## In Groove.cm (Detailed)
@@ -198,6 +199,20 @@ Unbounce is a dedicated landing page builder and CRO platform focused on convers
 - **Integrations**: Native (Salesforce, HubSpot, Mailchimp, Marketo), 60+ Zapier in-app, 900+ via Zapier, webhooks, REST API.
 - **Limitations**: NOT a full funnel builder — no multi-step funnel flows, no upsell/downsell pages, no checkout/order forms, no order bumps. For multi-step funnels, use ClickFunnels, Groove.cm, or GoHighLevel and send traffic to Unbounce landing pages for specific conversion steps.
 - **Best for**: PPC marketers and agencies running Google/Meta ads who want the highest conversion rates on standalone landing pages. Smart Traffic is the standout feature for high-traffic campaigns. More powerful than Leadpages (AI optimization, freeform layout) but significantly more expensive ($99 vs $49 starting). Connect to a separate email tool and checkout tool.
+
+## In Jotform
+
+Jotform is primarily a form builder, not a full funnel builder — but it's commonly used for the lead capture and payment collection steps of a funnel. For full platform help, use `/sales-jotform`.
+
+- **Landing page forms**: Embed Jotform forms on any landing page via iframe, lightbox, or popup. Use conditional logic to show/hide fields based on user selections — creates a guided, conversational experience.
+- **Multi-page forms**: Create multi-step forms with a progress bar — useful for application funnels, qualification funnels, and event registration flows. Each page can have its own conditional logic.
+- **Payment collection**: Add Stripe, PayPal, or Square directly to forms for registration fees, product orders, or donations. One gateway per form.
+- **Lead capture → email**: Connect form submissions to Mailchimp, ActiveCampaign, HubSpot, or other ESPs via native integrations or Zapier. Form submissions auto-add contacts to email lists and trigger nurture sequences.
+- **Approval funnels**: For application-style funnels (job applications, vendor onboarding, scholarship requests), use Jotform Workflows to add approval chains with conditional routing.
+- **PDF generation**: Auto-generate confirmation documents, receipts, or agreements from form submissions using Jotform PDF Editor.
+- **Kiosk mode**: Jotform Apps supports kiosk mode for in-person funnels — event check-in, on-site registration, trade show lead capture.
+- **Limitations**: No multi-step funnel page builder (no sales page → checkout → upsell → thank-you flow), no A/B testing on forms, no upsell/downsell pages, no countdown timers or urgency elements. For full funnel flows, use ClickFunnels, Groove.cm, or GoHighLevel and embed Jotform for the form/payment step.
+- **Best for**: Lead capture forms embedded in existing funnels, event registration with payment, application/qualification funnels with approval workflows, and donation collection. Pair with a dedicated funnel builder for the page flow and use Jotform for the data collection step.
 
 ## In Other Tools
 

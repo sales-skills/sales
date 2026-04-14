@@ -48,6 +48,7 @@ Platform-specific webhook configurations, API integrations, and native connector
 - [Clay webhooks, API & integrations](#clay-webhooks-api-integrations)
 - [LeadMagic API & integrations](#leadmagic-api-integrations)
 - [Qwilr webhooks](#qwilr-webhooks)
+- [Jotform webhooks & API](#jotform-webhooks-api)
 
 ### Mailshake webhooks
 - **Setup**: API endpoint `/push/create` with `targetUrl` and `event`
@@ -440,3 +441,17 @@ Platform-specific webhook configurations, API integrations, and native connector
 
 ### Qwilr webhooks
 - **Full reference**: See `/sales-qwilr-automation` for Qwilr-specific webhook events and CRM integrations
+
+### Jotform webhooks & API
+- **Webhook setup**: Form Builder → Settings → Integrations → WebHooks. Enter endpoint URL.
+- **Trigger**: Every browser-submitted form submission. **Does NOT fire on API-created submissions.**
+- **Payload**: `application/x-www-form-urlencoded` with `formID`, `submissionID`, `rawRequest` (JSON string), `pretty` (human-readable), plus individual form fields.
+- **Timeout**: 30 seconds — process async if your handler is slow.
+- **API**: REST at `api.jotform.com` (EU: `eu-api.jotform.com`, HIPAA: `hipaa-api.jotform.com`). API key auth via header (`APIKEY: {key}`) or query param.
+- **Key endpoints**: `GET /form/{id}/submissions`, `POST /form/{id}/submissions`, `POST /form/{id}/webhooks`, `GET /user/forms`.
+- **SDKs**: Python, Node.js, PHP, Java, Go, C#, Ruby, Scala, Android, iOS.
+- **MCP Server**: `jotform/mcp-server` on GitHub.
+- **Native integrations**: Salesforce, HubSpot, Mailchimp, ActiveCampaign, Google Sheets, Slack, Airtable, Zapier (3,000+ apps), Make.
+- **Gotcha**: API-created submissions bypass webhooks entirely. Workaround: poll `/form/{id}/submissions` with date filters, or use Zapier "New Submission" trigger (which polls the API).
+- **Rate limits (daily)**: Free 1K, Bronze 10K, Silver 50K, Gold 100K, Enterprise 1M.
+- **Full reference**: See `/sales-jotform` → `references/jotform-api-reference.md`

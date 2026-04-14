@@ -249,6 +249,7 @@ Router recommends a 5-skill sequence:
 | `/sales-adwake` | Adwake — managed mobile app UA, branding, in-app retargeting, Playback Rewards loyalty, Entravision |
 | `/sales-zoomd` | Zoomd — mobile UA across 600+ sources, mobile DSP, CGC creator content, Albert.ai AI optimization |
 | `/sales-reddit-ads` | Reddit Ads — subreddit targeting, 12 ad formats, Reddit Pixel, CAPI, Lead Gen Ads, Business Manager |
+| `/sales-jotform` | Jotform — form builder, payment forms, e-signatures, approval workflows, tables, PDF editor, app builder, REST API, MCP server |
 
 </details>
 

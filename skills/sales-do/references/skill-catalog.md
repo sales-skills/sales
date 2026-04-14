@@ -413,6 +413,12 @@
 |---|---|
 | `/sales-surveymonkey` | User asks about SurveyMonkey platform — survey creation, question types, skip logic, advanced branching, email/SMS/web collectors, response analytics, cross-tabulation, text analysis, API integration, webhooks, pricing/plan comparison, SurveyMonkey Audience, data export, team collaboration. Route here for SurveyMonkey-specific questions. Do NOT route here for general NPS/CSAT/VoC strategy (that's `/sales-customer-feedback`) or enterprise XM platforms (that's `/sales-qualtrics` or `/sales-medallia`). |
 
+### Jotform & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-jotform` | General Jotform questions — form builder, payment forms (Stripe, PayPal, Square), conditional logic, approval workflows, e-signatures (Jotform Sign), Tables, PDF Editor, App Builder, Report Builder, AI Form Builder, webhooks, REST API, MCP server. Route when the user asks about Jotform setup, config, features, or troubleshooting. Route when they mention Jotform forms, Jotform payments, Jotform workflows, Jotform conditional logic, Jotform Sign, Jotform Tables, Jotform API, Jotform webhooks, Jotform apps, or Jotform PDF. |
+
 ### Customer Reviews Strategy
 
 | Skill | Route when... |
