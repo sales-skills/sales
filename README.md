@@ -356,6 +356,7 @@ Router recommends a 5-skill sequence:
 | `/sales-qualtrics` | Qualtrics XM — CX/EX surveys, Strategy & Research, Experience Agents AI, dashboards, XM Directory, REST API v3, MCP servers |
 | `/sales-medallia` | Medallia — Experience Cloud, NPS/CSAT/CES surveys, DXA, contact center intelligence, employee listening, REST + GraphQL APIs |
 | `/sales-surveymonkey` | SurveyMonkey — survey creation, skip logic, email/SMS/web collectors, analytics, cross-tabulation, Audience panel, REST API v3 |
+| `/sales-gainsight` | Gainsight — CS health scores, CTAs, playbooks, success plans, Journey Orchestrator, PX in-app engagement, Staircase AI, Skilljar, REST API |
 | `/sales-vitally` | Vitally — AI-powered CS platform, Health Scores, Playbooks, Projects, Automation, AI copilot, NPS, REST API |
 | `/sales-planhat` | Planhat — Agentic Customer Platform, Health Scores, Revenue Management, CRM Sync, Automation, MCP Server, REST API |
 | `/sales-churnzero` | ChurnZero — Health Scores, Plays & Automation, Journeys, Renewal Hub, In-App WalkThroughs, Surveys, AI Agents, OData v4 API |
