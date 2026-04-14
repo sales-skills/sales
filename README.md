@@ -231,6 +231,7 @@ Router recommends a 5-skill sequence:
 | `/sales-ghost` | Ghost — open-source publishing, native newsletters, paid memberships via Stripe, Content API, Admin API, themes, migration |
 | `/sales-buttondown` | Buttondown — simple newsletter publishing, paid subscriptions via Stripe, Markdown editor, automations, REST API, CLI, custom domains |
 | `/sales-mailerlite` | MailerLite — email campaigns, automation, landing pages, signup forms, e-commerce, digital products, paid newsletters, API |
+| `/sales-unbounce` | Unbounce — landing page builder, Smart Traffic AI, Smart Copy AI, A/B testing, DTR, popups, sticky bars, AMP pages, REST API |
 | `/sales-leadpages` | Leadpages — landing page builder, pop-ups, alert bars, A/B testing, Leadmeter, lead enrichment, Stripe payments |
 | `/sales-groove` | Groove.cm — GroovePages, GrooveFunnels, GrooveSell, GrooveMail, GrooveAffiliate, GrooveMember, GrooveWebinar |
 | `/sales-brevo` | Brevo — email/SMS/WhatsApp campaigns, marketing automation, Sales CRM, Conversations, Loyalty, Aura AI |

@@ -15,6 +15,7 @@ Detailed per-platform funnel setup — page builders, checkout integration, A/B 
 - [In Kit](#in-kit)
 - [In SendPulse](#in-sendpulse)
 - [In VWO](#in-vwo)
+- [In Unbounce](#in-unbounce)
 - [In Other Tools](#in-other-tools)
 
 ## In Groove.cm (Detailed)
@@ -181,7 +182,23 @@ Leadpages is a landing page builder focused on lead capture and simple sales pag
 - **Plan limits**: Standard plan ($49/mo) caps at 5 landing pages and 1 custom domain. Pro ($99/mo) removes page limits and adds A/B testing and 3 domains.
 - **Best for**: Simple lead capture funnels (landing page → email sequence) and standalone sales pages for solopreneurs and small businesses. Not ideal for multi-step funnels with upsells/downsells — use ClickFunnels, Groove.cm, or GoHighLevel for those. Stronger than Mailchimp/Kit for landing page design, but less flexible than Unbounce or Instapage for custom layouts.
 
+## In Unbounce
+
+Unbounce is a dedicated landing page builder and CRO platform focused on conversion optimization. For full platform help, use `/sales-unbounce`.
+
+- **Landing pages**: Drag-and-drop Smart Builder with 100+ industry-specific templates. AI-suggested layouts based on industry and goal. Classic Builder available for pixel-level control. Custom CSS/JS injection for advanced customization.
+- **Smart Traffic (AI optimization)**: Automatically routes each visitor to the page variant most likely to convert them. Analyzes location, device, browser, timezone, OS. Average 30% conversion lift. Starts optimizing after ~50 visits. **Requires Optimize plan ($249+/mo)**.
+- **A/B testing**: Create page variants and split traffic between them. Statistical conversion reporting. **Requires Experiment plan ($149+/mo)**.
+- **Dynamic Text Replacement (DTR)**: Swap landing page text based on URL parameters — match PPC ad copy to landing page headlines automatically. **Requires Experiment plan**.
+- **Popups & sticky bars**: 50+ templates, trigger by exit-intent, scroll, click, or delay. Deploy on any website via JS embed. Available on all plans.
+- **AMP pages**: Mobile-optimized pages that load in ~0.5 seconds (85% faster). Ideal for speed-critical PPC campaigns.
+- **Smart Copy**: AI copywriting for headlines, CTAs, descriptions. 45+ templates. Built into builder + standalone Chrome extension. Available on all plans.
+- **Page speed caveat**: Average 2.8-second load time — slower than competitors. Compress images to WebP, defer scripts, use AMP for speed-critical campaigns.
+- **Plan limits**: Build ($99/mo) — unlimited pages, no A/B testing or DTR. Experiment ($149/mo) — adds A/B testing, DTR, 30K visitors. Optimize ($249/mo) — adds Smart Traffic, 50K visitors. Visitor caps with 30% overage penalties.
+- **Integrations**: Native (Salesforce, HubSpot, Mailchimp, Marketo), 60+ Zapier in-app, 900+ via Zapier, webhooks, REST API.
+- **Limitations**: NOT a full funnel builder — no multi-step funnel flows, no upsell/downsell pages, no checkout/order forms, no order bumps. For multi-step funnels, use ClickFunnels, Groove.cm, or GoHighLevel and send traffic to Unbounce landing pages for specific conversion steps.
+- **Best for**: PPC marketers and agencies running Google/Meta ads who want the highest conversion rates on standalone landing pages. Smart Traffic is the standout feature for high-traffic campaigns. More powerful than Leadpages (AI optimization, freeform layout) but significantly more expensive ($99 vs $49 starting). Connect to a separate email tool and checkout tool.
+
 ## In Other Tools
 
-- **Unbounce**: Best for standalone landing pages with freeform element placement and AI-driven Smart Traffic for A/B testing. More design flexibility than Leadpages but higher starting price ($99/mo). Connect to a separate checkout tool (ThriveCart, Stripe) and email tool.
 - **Systeme.io**: Budget-friendly all-in-one. Supports funnels, email, courses, and checkout. Limited design flexibility but fast to launch.

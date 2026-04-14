@@ -751,6 +751,12 @@
 |---|---|
 | `/sales-groove` | General Groove.cm questions — GroovePages, GrooveFunnels, GrooveSell, GrooveMail, GrooveAffiliate, GrooveMember, GrooveVideo, GrooveWebinar, GrooveBlog, GrooveKart, GrooveProof config and setup |
 
+### Unbounce & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-unbounce` | General Unbounce questions — landing page builder (Smart Builder, Classic Builder), Smart Traffic AI optimization, Smart Copy AI copywriting, A/B testing, Dynamic Text Replacement (DTR), popups, sticky bars, AMP pages, REST API v0.4, Build vs Experiment vs Optimize plan, integrations (Salesforce, HubSpot, Mailchimp, Zapier), page speed optimization | Route when the user asks about Unbounce setup, config, features, or troubleshooting. Route when they mention Unbounce Smart Traffic, Unbounce Smart Copy, Unbounce A/B testing, Unbounce DTR, Unbounce popups, Unbounce sticky bars, Unbounce AMP, Unbounce pricing, Unbounce API, or Unbounce page speed. |
+
 ### Leadpages & Platform
 
 | Skill | Route when... |

@@ -128,7 +128,7 @@ Ask the user:
 
 ## Step 3 — Platform-specific guidance
 
-For platform-specific audience growth features (Kit, Beehiiv, SparkLoop, Mailchimp, Substack, Omnisend, ActiveCampaign, GetResponse, Leadpages, Ghost, ZoomInfo FormComplete, Clearbit, SendPulse, AdRoll, etc.), see references/platforms.md.
+For platform-specific audience growth features (Kit, Beehiiv, SparkLoop, Mailchimp, Substack, Omnisend, ActiveCampaign, GetResponse, Unbounce, Leadpages, Ghost, ZoomInfo FormComplete, Clearbit, SendPulse, AdRoll, etc.), see references/platforms.md.
 
 ## Step 4 — Actionable guidance
 
@@ -197,6 +197,7 @@ For platform-specific audience growth features (Kit, Beehiiv, SparkLoop, Mailchi
 - `/sales-getresponse` — GetResponse platform help
 - `/sales-activecampaign` — ActiveCampaign platform help
 - `/sales-omnisend` — Omnisend platform help (popups, forms, Wheel of Fortune for ecommerce)
+- `/sales-unbounce` — Unbounce platform help (landing pages, Smart Traffic AI, popups, sticky bars, A/B testing, DTR)
 - `/sales-leadpages` — Leadpages platform help (landing pages, pop-ups, alert bars, Leadmeter, A/B testing)
 - `/sales-sendpulse` — SendPulse platform help (pop-ups, subscription forms, multi-channel follow-up)
 - `/sales-clearbit` — Clearbit platform help (form shortening, enrichment, Autocomplete API)

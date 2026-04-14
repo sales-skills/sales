@@ -120,6 +120,22 @@ Detailed per-platform audience growth features — opt-in forms, landing pages, 
 - **iPad subscribe app**: Offline subscriber collection at events, trade shows, and retail. Syncs when reconnected to internet.
 - **Best for**: Small businesses and solopreneurs using MailerLite for email who want native signup forms and landing pages without a separate tool. 10 free landing pages is generous for getting started.
 
+### In Unbounce
+
+Unbounce offers landing pages and popups as lead capture tools with AI-powered optimization. For full platform help, use `/sales-unbounce`.
+
+- **Landing pages**: 100+ industry-specific templates. Smart Builder with AI layout suggestions. Freeform element placement (more flexible than grid-based builders like Leadpages). Custom CSS/JS for advanced customization.
+- **Popups & sticky bars**: 50+ templates. Triggers: exit-intent, scroll depth, timed delay, click. Deploy on any website via JS embed code. Frequency controls and URL/device targeting.
+- **Smart Traffic (AI optimization)**: Routes visitors to the page variant most likely to convert them. Average 30% lift. **Requires Optimize plan ($249+/mo)**.
+- **A/B testing**: Split test landing page variants. **Requires Experiment plan ($149+/mo)**.
+- **Dynamic Text Replacement**: Match landing page headlines to PPC ad copy via URL parameters — improves relevance and opt-in rates for paid traffic.
+- **AMP pages**: Load in ~0.5 seconds — 85% faster than standard pages. Ideal for mobile PPC campaigns.
+- **Smart Copy**: AI-generated headlines and CTAs. Available on all plans.
+- **No built-in referral system** — use SparkLoop or custom solution.
+- **No cross-promotion network** — unlike Kit Creator Recommendations or Beehiiv Boosts.
+- **Plan limits**: Build ($99/mo) — no A/B testing. Experiment ($149/mo) — A/B testing + DTR. Optimize ($249/mo) — Smart Traffic AI. Visitor caps with 30% overage penalties.
+- **Best for**: PPC marketers and agencies who want maximum conversion rates on lead capture pages. Smart Traffic is the differentiator — it optimizes beyond what manual A/B testing can do. More design flexibility and AI power than Leadpages, but 2x the starting price.
+
 ### In Leadpages
 
 Leadpages offers landing pages and pop-ups as lead capture tools. For full platform help, use `/sales-leadpages`.
