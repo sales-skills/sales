@@ -56,7 +56,7 @@ These three skills (including this one) are not problem-solvers — they operate
 |---|---|
 | `/sales-do` | User is already here. Only re-invoke if a prior skill sent the user back for re-routing. |
 | `/sales-third-party` | User asks "what skills are available", "show me all skills", "install marketing skills", "browse skills", "what third-party skills exist", or wants to discover/install skills from third-party repos (marketing, research, creative, SEO). This is a full browsable catalog with install commands — hand off when the user wants to explore, not when you already know which skill to recommend. |
-| `/sales-request-skill` | User says "there should be a skill for this", "can we build a skill", "I want to contribute", or no existing skill covers their need. This skill either **builds the skill** (creates files, commits, opens a PR to `sales-skills/sales`) or **files a GitHub issue** requesting it. It delegates to `/skill-creator` when available. Always hand off here — don't just say "that doesn't exist" and stop. |
+| `/sales-request-skill` | User says "there should be a skill for this", "can we build a skill", "I want to contribute", "share my learnings", "contribute learnings", "push learnings upstream", or no existing skill covers their need. This skill either **builds the skill** (creates files, commits, opens a PR), **files a GitHub issue** requesting it, or **shares learnings** discovered during skill usage back to the repo. It delegates to `/skill-creator` when available. Always hand off here — don't just say "that doesn't exist" and stop. |
 
 ### Fallthrough
 

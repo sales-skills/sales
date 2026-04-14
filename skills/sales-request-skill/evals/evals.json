@@ -1,0 +1,36 @@
+{
+  "skill_name": "sales-request-skill",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I want to share my learnings back to the community",
+      "expected_output": "Routes to Path C, explains the scanning process for installed skills' learnings files, mentions PII scrubbing, and describes opening GitHub issues for review",
+      "assertions": [
+        {"name": "detects_path_c", "description": "Identifies this as a learnings-sharing request (Path C), not a skill build or request"},
+        {"name": "mentions_scanning", "description": "Describes scanning installed skills for learnings in references/learnings.md files"},
+        {"name": "mentions_pii_scrubbing", "description": "Explains that personal details like company names, emails, and IDs will be scrubbed before sharing"},
+        {"name": "mentions_github_issue", "description": "Describes opening a GitHub issue for each skill with shareable learnings"}
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "I've been using Apollo and found some gotchas. How do I contribute those back?",
+      "expected_output": "Routes to Path C for learnings sharing, focuses on the Apollo skill specifically, emphasizes user review of scrubbed content before submission",
+      "assertions": [
+        {"name": "routes_to_path_c", "description": "Recognizes this as a learnings contribution request and routes to Path C"},
+        {"name": "skill_specific_context", "description": "Acknowledges the Apollo-specific context and explains scanning will look at the Apollo skill's learnings"},
+        {"name": "user_review_emphasis", "description": "Emphasizes that the user reviews and confirms scrubbed learnings before any issue is submitted"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "There should be a skill for managing trade show logistics",
+      "expected_output": "Routes to Path A or B (build or request), confirms the gap, and offers to create or file an issue — does NOT route to Path C",
+      "assertions": [
+        {"name": "correct_path_routing", "description": "Routes to Path A (build) or Path B (request), not Path C (learnings)"},
+        {"name": "confirms_gap", "description": "Verifies no existing skill covers trade show logistics and summarizes the missing capability"},
+        {"name": "actionable_output", "description": "Offers concrete next steps — either building the skill or filing a GitHub issue"}
+      ]
+    }
+  ]
+}

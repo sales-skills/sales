@@ -202,5 +202,6 @@ These are not about sales problems — they're about the skill system itself. Ro
 
 - **"what skills are available" / "show me all skills" / "browse skills" / "install skills" / "what third-party skills exist" / "marketing skills" / "SEO skills" / "list all skills" / "what can you do"** → `/sales-third-party` — the full browsable catalog with install commands. Don't try to list skills yourself; hand off.
 - **"build a skill" / "create a skill" / "contribute a skill" / "request a skill" / "there should be a skill for" / "missing skill" / "no skill for" / "I want to contribute" / "can we add a skill"** → `/sales-request-skill` — builds the skill or files a GitHub issue. Always hand off here; don't just say "that doesn't exist" and stop.
+- **"share learnings" / "contribute learnings" / "push learnings" / "share what I learned" / "submit learnings"** → `/sales-request-skill` Path C — scans installed skills for discoveries, scrubs PII, and opens GitHub issues for review.
 
 If still ambiguous after applying these rules, ask another clarifying question with multiple-choice options.

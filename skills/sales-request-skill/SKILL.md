@@ -1,6 +1,6 @@
 ---
 name: sales-request-skill
-description: "Requests or contribute a new sales/marketing/GTM skill that doesn't exist yet. Use when no existing skill covers the user's need — helps them build the skill and submit a PR, or file an issue requesting it. Also use when the user says 'there should be a skill for this', 'can we make a skill', 'I want to contribute a skill', or 'none of the sales skills cover my use case'."
+description: "Requests or contribute a new sales/marketing/GTM skill that doesn't exist yet, or share learnings discovered during skill usage back to the community. Use when no existing skill covers the user's need — helps them build the skill and submit a PR, or file an issue requesting it. Also use when the user says 'there should be a skill for this', 'can we make a skill', 'I want to contribute a skill', 'none of the sales skills cover my use case', 'share my learnings', 'contribute learnings', 'share what I learned', or 'push learnings upstream'."
 argument-hint: "[describe the missing capability]"
 version: 1.0.0
 tags: [sales, meta, skill-request]
@@ -12,6 +12,7 @@ The user needs a sales, marketing, or GTM capability that doesn't have a skill y
 **This skill always ends with a concrete action on GitHub:**
 - **Path A (Build)**: Create the skill files, commit, push, and open a **pull request** to `sales-skills/sales`
 - **Path B (Request)**: File a **GitHub issue** on `sales-skills/sales` describing what's needed
+- **Path C (Share Learnings)**: Scan local learnings, scrub PII, and open a **GitHub issue** for each skill with shareable discoveries
 
 Do not stop at "here's what the PR/issue would look like" — actually create it using `gh pr create` or `gh issue create`.
 
@@ -35,6 +36,7 @@ Ask the user:
 > Would you like to:
 > 1. **Build the skill** — I'll help you create it with proper structure and prepare a PR
 > 2. **Request the skill** — I'll file a GitHub issue so the maintainers know it's needed
+> 3. **Share learnings** — I'll scan your installed skills for discoveries, scrub personal details, and share them back to the repo
 
 ## Path A: Build the skill
 
@@ -189,6 +191,104 @@ EOF
 ```
 
 Return the issue URL to the user when done.
+
+## Path C: Share learnings
+
+Learnings accumulate in `references/learnings.md` files inside each installed skill as users discover API quirks, pricing changes, workarounds, and gotchas. This path scans those files, scrubs PII, and opens GitHub issues so individual discoveries can improve the skills for everyone.
+
+### Step C1 — Scan installed skills
+
+Find all learnings files:
+
+```bash
+find ~/.claude/skills/*/references/learnings.md 2>/dev/null
+```
+
+Read each file. Skip:
+- Empty stubs (files with no content beyond the initial template)
+- Entries already marked as shared (`<!-- shared:YYYY-MM-DD -->`) or declined (`<!-- declined:YYYY-MM-DD -->`)
+
+If the user mentioned a specific skill or platform (e.g., "I found some Apollo gotchas"), acknowledge it and note that the scan will surface that skill's learnings alongside any others found.
+
+If no unshared learnings are found across any installed skill, tell the user:
+
+> No unshared learnings found. Learnings accumulate automatically as you use skills — when you discover API quirks, workarounds, or gotchas, they get appended to each skill's `references/learnings.md`. Come back after you've used some skills for a while.
+
+Stop here if nothing is found.
+
+### Step C2 — Present and classify
+
+For each skill that has unshared learnings, present a table:
+
+| # | Learning | Generalizable? | Reason |
+|---|----------|---------------|--------|
+| 1 | ... | Yes/No | ... |
+
+**Generalizable** (share these):
+- API quirks, undocumented behavior, or endpoint changes
+- Pricing changes or limits not reflected in docs
+- Workarounds for platform bugs
+- Configuration gotchas or non-obvious defaults
+- Integration issues between tools
+- Rate limits, throttling, or quota details
+
+**Not generalizable** (skip these):
+- Company names, team structures, internal workflows
+- Personal preferences or org-specific custom fields
+- Internal tool configurations specific to one organization
+- Account-specific negotiated pricing or contracts
+
+Ask the user to confirm or override the classifications before proceeding.
+
+### Step C3 — Scrub PII
+
+For each generalizable learning, find and replace personally identifiable information:
+
+| Find | Replace with |
+|------|-------------|
+| Company or domain names | `[Company]`, `[domain]` |
+| People names | `[Name]` |
+| Email addresses | `[email]` |
+| GitHub/social handles | `[handle]` |
+| Account, API, or workspace IDs | `[account-id]` |
+| Internal URLs or IP addresses | `[internal-url]` |
+| Negotiated or non-public pricing | Remove entirely (keep only publicly documented pricing) |
+| Customer names | `[customer]` |
+| Specific team names | `[team]` (keep generic ones like "Sales", "Marketing", "Engineering") |
+
+Show before/after for each scrubbed learning and ask the user to confirm the scrubbed versions look correct before proceeding.
+
+### Step C4 — Open GitHub issue for review
+
+Create one issue per skill (focused, independently mergeable). Do not auto-submit — open the pre-filled issue in the browser for user review.
+
+For each skill with shareable learnings, build a GitHub issue URL:
+
+- **Title**: `Learnings: sales-{skill-name}`
+- **Labels**: `learnings`
+- **Body**: list each scrubbed learning in copy-paste-ready format, plus context about the skill version and submission method
+
+URL-encode the title, body, and labels into a GitHub new-issue URL:
+```
+https://github.com/sales-skills/sales/issues/new?title=...&body=...&labels=learnings
+```
+
+Open each URL in the browser:
+
+```python
+import subprocess
+subprocess.run(['open', '-na', 'Google Chrome', '--args', '--profile-directory=Profile 6', url])
+```
+
+Never auto-submit via `gh issue create` for learnings — the user must review the scrubbed content before it goes public.
+
+### Step C5 — Mark as processed
+
+After the user confirms they've submitted the issue(s), mark every learning that was reviewed:
+- **Shared**: append `<!-- shared:YYYY-MM-DD -->` to learnings the user submitted
+- **Declined**: append `<!-- declined:YYYY-MM-DD -->` to learnings the user classified as not generalizable or chose not to share
+
+This prevents re-prompting the same learnings on future runs.
 
 ## Quality checklist
 
