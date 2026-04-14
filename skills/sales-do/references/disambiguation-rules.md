@@ -198,6 +198,11 @@ Some requests are ambiguous. Apply these rules:
 
 ### Meta-skills — system-level requests
 
+- **"ChurnZero" / "ChurnScore" / "ChurnZero plays" / "ChurnZero journeys" / "ChurnZero WalkThroughs" / "ChurnZero API" / "ChurnZero renewal" / "ChurnZero AI agents" / "churnzero.com"** → `/sales-churnzero` (platform help). If asking about customer success strategy across tools → `/sales-customer-success`. If asking about NPS/CSAT survey methodology → `/sales-customer-feedback`. If asking about in-app messaging strategy → `/sales-in-app-messaging`. If asking about connecting ChurnZero to other tools → `/sales-integration`.
+- **"Vitally" / "Vitally health scores" / "Vitally playbooks" / "Vitally projects" / "Vitally AI" / "Vitally API" / "vitally.io"** → `/sales-vitally` (platform help). If asking about customer success strategy across tools → `/sales-customer-success`. If asking about NPS/CSAT survey methodology → `/sales-customer-feedback`.
+- **"Planhat" / "Planhat health scores" / "Planhat automation" / "Planhat API" / "Planhat MCP" / "planhat.com"** → `/sales-planhat` (platform help). If asking about customer success strategy across tools → `/sales-customer-success`. If asking about NPS/CSAT survey methodology → `/sales-customer-feedback`.
+- **"customer success" / "CS platform" / "health score" / "churn prevention" / "customer onboarding post-sale" / "expansion revenue" / "NRR" / "GRR" / "QBR" / "net revenue retention"** → `/sales-customer-success` for strategy across tools. If they mention ChurnZero → `/sales-churnzero`. If they mention Vitally → `/sales-vitally`. If they mention Planhat → `/sales-planhat`. NOT `/sales-customer-feedback` (which is NPS/CSAT survey design, not CS strategy).
+
 These are not about sales problems — they're about the skill system itself. Route here before checking any other category.
 
 - **"what skills are available" / "show me all skills" / "browse skills" / "install skills" / "what third-party skills exist" / "marketing skills" / "SEO skills" / "list all skills" / "what can you do"** → `/sales-third-party` — the full browsable catalog with install commands. Don't try to list skills yourself; hand off.

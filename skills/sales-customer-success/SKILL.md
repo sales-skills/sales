@@ -46,6 +46,7 @@ Ask the user:
 If the request maps to a platform-specific skill, route:
 - Vitally platform questions → `/sales-vitally {your question}`
 - Planhat platform questions → `/sales-planhat {your question}`
+- ChurnZero platform questions → `/sales-churnzero {your question}`
 - NPS/CSAT/CES survey methodology → `/sales-customer-feedback {your question}`
 - Ecommerce visitor identity/retention → `/sales-retention {your question}`
 - In-app messaging for onboarding → `/sales-in-app-messaging {your question}`
@@ -170,6 +171,7 @@ Focus on the user's specific situation. If you discover a tip not covered in `re
 
 - `/sales-vitally` — Vitally platform help: Health Scores, Playbooks, Projects, API, integrations. Install: `npx skills add sales-skills/sales --skills sales-vitally`
 - `/sales-planhat` — Planhat platform help: Health Scores, Revenue Management, CRM Sync, Automation, MCP Server, API. Install: `npx skills add sales-skills/sales --skills sales-planhat`
+- `/sales-churnzero` — ChurnZero platform help: Health Scores, Plays, Journeys, Renewal Hub, In-App WalkThroughs, Surveys, AI Agents, API. Install: `npx skills add sales-skills/sales --skills sales-churnzero`
 - `/sales-customer-feedback` — NPS, CSAT, CES, VoC program design — survey methodology, response rates, closed-loop feedback. Install: `npx skills add sales-skills/sales --skills sales-customer-feedback`
 - `/sales-in-app-messaging` — In-app messages for onboarding tours, feature announcements, NPS surveys. Install: `npx skills add sales-skills/sales --skills sales-in-app-messaging`
 - `/sales-coaching` — Sales-to-CS handoff, coaching frameworks, onboarding reps. Install: `npx skills add sales-skills/sales --skills sales-coaching`
