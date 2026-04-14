@@ -250,6 +250,7 @@ Router recommends a 5-skill sequence:
 | `/sales-zoomd` | Zoomd — mobile UA across 600+ sources, mobile DSP, CGC creator content, Albert.ai AI optimization |
 | `/sales-reddit-ads` | Reddit Ads — subreddit targeting, 12 ad formats, Reddit Pixel, CAPI, Lead Gen Ads, Business Manager |
 | `/sales-jotform` | Jotform — form builder, payment forms, e-signatures, approval workflows, tables, PDF editor, app builder, REST API, MCP server |
+| `/sales-typeform` | Typeform — conversational forms, surveys, quizzes, video forms, Workflow Builder, Embed SDK, Create/Responses/Webhooks API |
 
 </details>
 

@@ -214,6 +214,19 @@ Jotform is primarily a form builder, not a full funnel builder — but it's comm
 - **Limitations**: No multi-step funnel page builder (no sales page → checkout → upsell → thank-you flow), no A/B testing on forms, no upsell/downsell pages, no countdown timers or urgency elements. For full funnel flows, use ClickFunnels, Groove.cm, or GoHighLevel and embed Jotform for the form/payment step.
 - **Best for**: Lead capture forms embedded in existing funnels, event registration with payment, application/qualification funnels with approval workflows, and donation collection. Pair with a dedicated funnel builder for the page flow and use Jotform for the data collection step.
 
+## In Typeform
+
+Typeform is a conversational form and survey builder — not a full funnel builder, but its one-question-at-a-time UX makes it effective for the lead capture and qualification steps of funnels. For full platform help, use `/sales-typeform`.
+
+- **Lead magnet funnels**: Embed a Typeform on your landing page using the Embed SDK (`@typeform/embed`). The conversational format drives higher completion rates than traditional multi-field forms. Pass UTM parameters via hidden fields to track which campaign each lead came from.
+- **Quiz funnels**: Typeform's quiz builder with score-based outcomes is ideal for "What type of X are you?" lead magnets. Gate the results behind email capture, then segment subscribers by quiz outcome. Connect to Mailchimp, Klaviyo, or ActiveCampaign to trigger different nurture sequences per segment.
+- **Application funnels**: Use logic jumps to create branching qualification flows — route high-value prospects to a booking page and disqualify poor fits early. Embed as a popup or slider to keep users on your landing page.
+- **Payment collection**: Stripe integration collects payments directly in the form — useful for registration fees, event tickets, or simple product purchases. Supports fixed and calculated amounts.
+- **Lead capture → CRM**: Native integrations with HubSpot, Salesforce, Pipedrive, or webhook to any CRM. Hidden fields carry tracking data (UTM, referrer) into CRM records automatically.
+- **Response piping**: Insert previous answers into later questions for a personalized, conversational feel — "Thanks, {name}! Based on your interest in {topic}, here's one more question..."
+- **Limitations**: No multi-step funnel page builder (no sales page → checkout → upsell → thank-you flow), no A/B testing on forms natively (use VWO or Unbounce for page-level testing), response limits shared across all forms (100/mo on Basic plan — burns fast with multiple funnels), no countdown timers or urgency elements. For full funnel flows, use ClickFunnels, Groove.cm, or GoHighLevel and embed Typeform for the form step.
+- **Best for**: High-converting lead capture forms, quiz funnels for segmentation, application/qualification flows with branching logic, and any form where completion rate matters more than volume.
+
 ## In Other Tools
 
 - **Systeme.io**: Budget-friendly all-in-one. Supports funnels, email, courses, and checkout. Limited design flexibility but fast to launch.

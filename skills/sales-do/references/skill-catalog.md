@@ -419,6 +419,12 @@
 |---|---|
 | `/sales-jotform` | General Jotform questions — form builder, payment forms (Stripe, PayPal, Square), conditional logic, approval workflows, e-signatures (Jotform Sign), Tables, PDF Editor, App Builder, Report Builder, AI Form Builder, webhooks, REST API, MCP server. Route when the user asks about Jotform setup, config, features, or troubleshooting. Route when they mention Jotform forms, Jotform payments, Jotform workflows, Jotform conditional logic, Jotform Sign, Jotform Tables, Jotform API, Jotform webhooks, Jotform apps, or Jotform PDF. |
 
+### Typeform & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-typeform` | General Typeform questions — conversational form builder, surveys, quizzes, video forms, Workflow Builder, Embed SDK, logic jumps, hidden fields, Create/Responses/Webhooks API. Route when the user asks about Typeform setup, config, features, or troubleshooting. Route when they mention Typeform forms, Typeform surveys, Typeform quizzes, Typeform API, Typeform webhooks, Typeform embedding, Typeform response limits, Typeform Workflow Builder, or typeform.com. |
+
 ### Customer Reviews Strategy
 
 | Skill | Route when... |

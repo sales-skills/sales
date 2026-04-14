@@ -44,6 +44,7 @@ Ask the user:
 ## Step 2 — Route or answer directly
 
 If the request maps to a platform-specific skill, route:
+- Typeform platform questions → `/sales-typeform {your question}`
 - SurveyMonkey platform questions → `/sales-surveymonkey {your question}`
 - Qualtrics platform questions → `/sales-qualtrics {your question}`
 - Medallia platform questions → `/sales-medallia {your question}`
@@ -162,6 +163,7 @@ Focus on the user's specific situation: program design, survey design, tool setu
 - `/sales-customer-success` — Customer success strategy: health scores, churn prevention, onboarding, expansion, CS platform comparison. Install: `npx skills add sales-skills/sales --skills sales-customer-success`
 - `/sales-customer-reviews` — Product review collection strategy (different from feedback surveys — reviews are public, surveys are private). Install: `npx skills add sales-skills/sales --skills sales-customer-reviews`
 - `/sales-in-app-messaging` — In-app NPS/CSAT surveys as part of in-app messaging strategy. Install: `npx skills add sales-skills/sales --skills sales-in-app-messaging`
+- `/sales-typeform` — Typeform platform help — conversational forms, surveys, quizzes, API, Embed SDK. Install: `npx skills add sales-skills/sales --skills sales-typeform`
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 
 ## Examples

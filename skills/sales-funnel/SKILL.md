@@ -128,7 +128,7 @@ Use these as baselines — not guarantees. Benchmarks assume warm-to-lukewarm tr
 ---
 ## Step 3: Platform-Specific Guidance
 
-For platform-specific funnel building guidance (Groove.cm, ClickFunnels, GoHighLevel, Kartra, WordPress, Closum, Mailchimp, GetResponse, Kit, SendPulse, VWO, Leadpages, Unbounce, Jotform, etc.), see references/platforms.md.
+For platform-specific funnel building guidance (Groove.cm, ClickFunnels, GoHighLevel, Kartra, WordPress, Closum, Mailchimp, GetResponse, Kit, SendPulse, VWO, Leadpages, Unbounce, Jotform, Typeform, etc.), see references/platforms.md.
 
 ---
 ## Step 4: Actionable Guidance
@@ -252,6 +252,7 @@ Follow this framework for every test:
 - `/sales-digital-products` — Selling digital products (platform selection, pricing, launch)
 - `/sales-vwo` — VWO platform help (A/B testing, heatmaps, session recordings, personalization, feature flags)
 - `/sales-jotform` — Jotform platform help (forms, payment collection, approval workflows — for the data capture step of funnels)
+- `/sales-typeform` — Typeform platform help (conversational forms, quizzes, surveys — high-completion lead capture for funnels)
 - `/sales-do` — Route to any sales skill by describing what you need
 
 ---
