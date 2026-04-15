@@ -50,6 +50,7 @@ If the request maps to a platform-specific skill, route:
 - Medallia platform questions → `/sales-medallia {your question}`
 - Skeepers Feedback Management → `/sales-skeepers {your question}`
 - Pendo NPS/CSAT/PMF surveys → `/sales-pendo {your question}`
+- Whatfix in-app NPS/usability surveys → `/sales-whatfix {your question}`
 - Vitally NPS/surveys (within a Customer Success platform) → `/sales-vitally {your question}`
 - ChurnZero NPS/CSAT/CES surveys → `/sales-churnzero {your question}`
 - In-app NPS/CSAT surveys → `/sales-in-app-messaging {your question}`

@@ -52,6 +52,7 @@ If the request maps to a platform-specific skill, route:
 - NPS/CSAT/CES survey methodology → `/sales-customer-feedback {your question}`
 - Ecommerce visitor identity/retention → `/sales-retention {your question}`
 - In-app messaging for onboarding → `/sales-in-app-messaging {your question}`
+- Enterprise digital adoption (Whatfix) → `/sales-whatfix {your question}`
 - CRM data quality for CS → `/sales-data-hygiene {your question}`
 
 Otherwise, answer directly using the strategy guidance below.

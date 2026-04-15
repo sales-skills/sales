@@ -407,6 +407,12 @@
 |---|---|
 | `/sales-customer-feedback` | User asks about customer feedback strategy, NPS program design, CSAT benchmarking, CES measurement, Voice of Customer (VoC) program, survey design best practices, improving survey response rates, closed-loop feedback workflows, choosing a feedback tool (Medallia vs Qualtrics vs SurveyMonkey vs Typeform vs Delighted vs AskNicely vs CustomerGauge vs Zonka vs Birdeye), CX metrics comparison (NPS vs CSAT vs CES), proving CX ROI, survey fatigue management, text analytics for feedback, or customer experience measurement strategy. Do NOT route here for product review collection (that's `/sales-customer-reviews`) or Medallia-specific config (that's `/sales-medallia`). |
 
+### Whatfix & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-whatfix` | Whatfix platform help — Digital Adoption Platform (DAP), in-app Flows, Smart Tips, Beacons, Task Lists, Self Help widget, Product Analytics (funnels, Sankey charts, cohorts), Mirror sandbox training, NPS/custom surveys, Integration Hub (Salesforce, Oracle, SAP, Workday, Azure AD). Route when the user asks about Whatfix setup, config, features, or troubleshooting. Route when they mention Whatfix flows, Whatfix Smart Tips, Whatfix Self Help, Whatfix Product Analytics, Whatfix Mirror, Whatfix surveys, Whatfix Integration Hub, Whatfix API, Whatfix segmentation, digital adoption platform, or Whatfix vs WalkMe/Pendo. |
+
 ### Pendo & Platform
 
 | Skill | Route when... |
@@ -935,7 +941,7 @@
 | `/sales-loyalty` | Customer loyalty programs — points, tiers, rewards, VIP programs, retention mechanics, program design, member engagement, ROI measurement. Tool selection (Brevo Loyalty, Smile.io, LoyaltyLion, Yotpo, Stamp.me) |
 | `/sales-sms-marketing` | SMS marketing strategy — opt-in collection, compliance (TCPA/GDPR), campaign types, SMS automation, two-way messaging, platform selection (Omnisend, Klaviyo, Attentive, Postscript, Brevo). Route when the user asks about SMS marketing, text message campaigns, SMS opt-in, SMS compliance, TCPA, SMS automation, or choosing an SMS platform. NOT cold SMS outreach — this is opt-in marketing SMS. |
 | `/sales-push-notification` | Mobile and web push notification strategy — opt-in optimization (push primers), rich push, segmentation, timing, frequency capping, deep linking, A/B testing, analytics. Tool selection (Braze, OneSignal, Airship, Firebase/FCM, Customer.io, Klaviyo, Iterable, MoEngage) |
-| `/sales-in-app-messaging` | In-app messages and content cards — onboarding flows, feature announcements, surveys, promotions, persistent content feeds. Trigger design, message types (modal, slideup, fullscreen, tooltip, carousel, content card), analytics. Tool selection (Braze, Iterable, Intercom, Pendo, Appcues, Customer.io, MoEngage) |
+| `/sales-in-app-messaging` | In-app messages and content cards — onboarding flows, feature announcements, surveys, promotions, persistent content feeds, enterprise digital adoption. Trigger design, message types (modal, slideup, fullscreen, tooltip, carousel, content card), analytics. Tool selection (Braze, Iterable, Intercom, Pendo, Appcues, Customer.io, MoEngage, Whatfix) |
 | `/sales-chatbot` | Chatbot marketing and conversational automation — building chatbot flows, multichannel messaging (WhatsApp, Telegram, Facebook, Instagram, Viber, live chat), lead qualification bots, FAQ bots, handoff to human agents. Tool selection (SendPulse, ManyChat, Tidio, Intercom, Drift, HubSpot) |
 | `/sales-retargeting` | Retargeting and remarketing strategy — website visitor retargeting, cart abandonment recovery with ads, dynamic product ads, cross-channel retargeting, audience segmentation, frequency capping, attribution, pixel setup. Route when the user asks about retargeting visitors, remarketing campaigns, cart recovery via ads, dynamic retargeting, choosing a retargeting platform, or measuring retargeting ROI. NOT B2B account-based advertising (→ `/sales-b2b-advertising`). NOT email cart abandonment flows (→ `/sales-email-marketing`). NOT general paid ads (→ `/paid-ads`). |
 

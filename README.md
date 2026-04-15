@@ -485,7 +485,8 @@ Router recommends a 5-skill sequence:
 | `/sales-retargeting` | Retargeting — visitor retargeting, cart abandonment, dynamic ads, cross-channel |
 | `/sales-push-notification` | Push notifications — opt-in optimization, rich push, segmentation, timing, deep linking |
 | `/sales-pendo` | Pendo — product analytics, in-app guides, session replay, NPS/CSAT surveys, feature adoption, API |
-| `/sales-in-app-messaging` | In-app messages — onboarding, feature announcements, surveys, promotions, triggers |
+| `/sales-whatfix` | Whatfix — enterprise Digital Adoption Platform (DAP), in-app Flows, Smart Tips, Product Analytics, Mirror sandbox, Integration Hub |
+| `/sales-in-app-messaging` | In-app messages — onboarding, feature announcements, surveys, promotions, triggers, digital adoption |
 | `/sales-chatbot` | Chatbot marketing — chatbot flows, multichannel messaging, lead qualification, human handoff |
 
 </details>

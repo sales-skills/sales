@@ -1,6 +1,6 @@
 ---
 name: sales-in-app-messaging
-description: "In-app messages and content cards — onboarding, feature announcements, surveys, promotions, persistent content feeds. Covers strategy, design, triggering, and analytics across Braze, Iterable, Intercom, Pendo, Appcues, Customer.io, MoEngage, and Leanplum. Use when users aren't completing onboarding, in-app messages have low engagement, not sure which in-app messaging tool to pick, feature announcements go unnoticed, or unsure whether to use in-app messages vs push vs email for a use case. Do NOT use for push notifications (use /sales-push-notification), email marketing (use /sales-email-marketing), live chat widgets (use /sales-live-chat), or cold outbound (use /sales-cadence). For Braze-specific help, use /sales-braze."
+description: "In-app messages and content cards — onboarding, feature announcements, surveys, promotions, persistent content feeds. Covers strategy, design, triggering, and analytics across Braze, Iterable, Intercom, Pendo, Appcues, Customer.io, MoEngage, Whatfix, and Leanplum. Use when users aren't completing onboarding, in-app messages have low engagement, not sure which in-app messaging tool to pick, feature announcements go unnoticed, employees aren't adopting enterprise software, or unsure whether to use in-app messages vs push vs email for a use case. Do NOT use for push notifications (use /sales-push-notification), email marketing (use /sales-email-marketing), live chat widgets (use /sales-live-chat), or cold outbound (use /sales-cadence). For Braze-specific help, use /sales-braze."
 argument-hint: "[describe your in-app messaging question or goal]"
 license: MIT
 version: 1.0.0
@@ -8,7 +8,7 @@ tags: [sales, messaging, in-app, onboarding, product-led]
 ---
 # In-App Messages & Content Cards
 
-Help the user with in-app messaging — from strategy and message type selection through trigger design, content cards, onboarding flows, and analytics. This skill is tool-agnostic but includes platform-specific guidance for Braze, Iterable, Intercom, Pendo, Appcues, Customer.io, MoEngage, and Leanplum.
+Help the user with in-app messaging — from strategy and message type selection through trigger design, content cards, onboarding flows, and analytics. This skill is tool-agnostic but includes platform-specific guidance for Braze, Iterable, Intercom, Pendo, Appcues, Customer.io, MoEngage, Whatfix, and Leanplum.
 
 ## Step 1 — Gather context
 
@@ -44,8 +44,9 @@ Ask the user:
    - E) Appcues
    - F) Customer.io
    - G) MoEngage
-   - H) Not decided yet
-   - I) Other
+   - H) Whatfix
+   - I) Not decided yet
+   - J) Other
 
 **If the user's request already provides most of this context, skip directly to the relevant step.** Lead with your best-effort answer using reasonable assumptions (stated explicitly), then ask only the most critical 1-2 clarifying questions at the end.
 
@@ -152,6 +153,19 @@ Ask the user:
 - **Smart Triggers**: AI-driven triggering based on user behavior patterns
 - **Strength**: Strong in APAC markets. Good AI-driven in-app timing and targeting.
 
+### In Whatfix
+- **Flows**: Step-by-step interactive walkthroughs with branching logic. Flow Standby pauses/resumes if user navigates away. Supports audio, video, and image annotations.
+- **Smart Tips**: Field-level tooltips triggered on click or hover — contextual help for form fields and UI elements. Reduces errors during high-stakes data entry.
+- **Beacons**: Animated pulsating icons for feature discovery — non-blocking.
+- **Task Lists**: Sequential checklists grouping multiple Flows into onboarding programs. Dependency support (complete Step 1 to unlock Step 2).
+- **Self Help**: In-app knowledge hub aggregating Whatfix content + external sources (Confluence, ServiceNow). AI-powered search and summarization.
+- **Segmentation**: Tag-based (role, page, auto, custom) — less intuitive than rules-based but flexible.
+- **Product Analytics**: Sankey charts, funnels, cohort reporting — separate product, not built into DAP by default.
+- **Mirror**: Sandbox replicas for training — practice workflows without affecting live data.
+- **Strength**: Best for enterprise employee adoption of 3rd-party apps (Salesforce, SAP, Workday). Unique combination of guidance + analytics + sandbox training. Designed for IT/L&D teams deploying complex enterprise software, not product teams building their own apps.
+- **Limitation**: Enterprise pricing (~$24K+/year). Per-application licensing. Steep learning curve. Tag-based segmentation less intuitive than Pendo/Appcues. CSS knowledge needed for advanced customization.
+- **Platform skill**: `/sales-whatfix`
+
 ## Step 4 — Actionable guidance
 
 ### Implementation checklist
@@ -190,6 +204,7 @@ Ask the user:
 
 ## Related skills
 
+- `/sales-whatfix` — Whatfix platform help (enterprise DAP, Flows, Smart Tips, Product Analytics, Mirror sandbox). Install: `npx skills add sales-skills/sales --skills sales-whatfix`
 - `/sales-pendo` — Pendo platform help (analytics, guides, session replay, NPS, API). Install: `npx skills add sales-skills/sales --skills sales-pendo`
 - `/sales-iterable` — Iterable platform help (in-app messages, Mobile Inbox, Embedded Messages, Studio journeys)
 - `/sales-braze` — Braze platform help (in-app messages, Content Cards, Canvas integration)
