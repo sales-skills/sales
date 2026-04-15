@@ -219,3 +219,17 @@ Buttondown is a minimal newsletter platform focused on simplicity, privacy, and 
 - No referral rewards/milestones (unlike Kit Pro or Beehiiv)
 
 **Best for**: Developers and technical writers who prefer API-driven signups, Markdown editing, and minimal tooling. Pair with SparkLoop for referral programs or Paved for sponsor-driven growth.
+
+### In Customers.ai
+
+Customers.ai uses identity resolution (X-Ray pixel) to grow ecommerce email lists by identifying anonymous Shopify visitors and syncing them directly to Klaviyo. For full platform help, use `/sales-customersai`.
+
+- **X-Ray Pixel**: JavaScript pixel identifies 60-70% of anonymous site visitors (vs Klaviyo's native 15-20%). Matched visitors are synced as Klaviyo profiles with behavioral data.
+- **How it differs from opt-in forms**: Visitors don't fill out a form or subscribe — they're identified from browsing activity and added to your Klaviyo list automatically. This means higher volume but lower engagement than opted-in subscribers.
+- **Alfred AI suppression**: AI agent scores visitor intent daily and auto-suppresses low-intent profiles in Klaviyo, keeping your active profile count (and ESP bill) manageable.
+- **Engagement caveat**: Identified visitors engage at lower rates than organic subscribers (they didn't ask to hear from you). Segment them separately — lower email frequency, higher-value offers, faster sunsetting of non-engagers.
+- **Deliverability risk**: Higher spam complaint rates than organic lists. Use Customers.ai's Inboxer deliverability suite and consider a separate sending subdomain for identified contacts.
+- **Compliance**: Implicit consent model (CAN-SPAM compliant, not GDPR compliant). US visitors only.
+- **Pricing**: Starts at $600/mo for 3,000 resolutions. Economics require $500K+ GMV and meaningful traffic.
+- **Requirements**: Shopify + Klaviyo only. No other ecommerce platforms or ESPs supported.
+- **Best for**: Established Shopify brands ($500K+ GMV) with 50K+ monthly US visitors who want to grow their Klaviyo list beyond what opt-in forms capture. Not a replacement for opt-in forms — a supplement for high-traffic stores.

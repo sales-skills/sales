@@ -210,6 +210,7 @@ Router recommends a 5-skill sequence:
 | `/sales-clearbit` | Clearbit (HubSpot) — Person/Company Enrichment, Reveal (IP-to-company), Prospector, Breeze Intelligence, API |
 | `/sales-rb2b` | RB2B — Person-Level Website Visitor ID (US), Company-Level ID (global), Hot Pages, Identity Resolution API |
 | `/sales-retention` | Retention.com — ecommerce identity resolution, anonymous visitor → email/SMS, abandonment recovery |
+| `/sales-customersai` | Customers.ai — X-Ray identity resolution for Shopify + Klaviyo, Alfred AI intent scoring, Inboxer deliverability, ad retargeting recovery |
 | `/sales-6sense` | 6sense — Signalverse Intent Data (1T+ signals), Predictive Analytics, Sales Intelligence, AI Email Agents |
 | `/sales-clay` | Clay — Waterfall Enrichment (150+ providers), Claygent AI agents, Sculptor, Signals, CRM Sync |
 | `/sales-leadmagic` | LeadMagic — Email Finder, Mobile Finder, Company Search, Job Change Detector, MCP Server, CLI |

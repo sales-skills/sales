@@ -130,6 +130,7 @@ Use Apollo Workflows (Professional+ plan) to automate:
 - `/sales-seamless` — Seamless.AI platform help (Buyer Intent, Job Changes, Pitch Intelligence, Autopilot)
 - `/sales-clearbit` — Clearbit platform help (Reveal for visitor identification, Enrichment, Prospector)
 - `/sales-rb2b` — RB2B platform help (person-level visitor identification, Hot Pages, Identity Resolution API)
+- `/sales-customersai` — Customers.ai platform help (B2C ecommerce identity resolution for Shopify + Klaviyo, X-Ray pixel, Alfred AI intent scoring)
 - `/sales-6sense` — 6sense platform help (Signalverse intent data, predictive scoring, Sales Intelligence, AI Email Agents, advertising, orchestration)
 - `/sales-g2` — G2 platform help (B2B software reviews, G2 Buyer Intent data, badges, profile optimization)
 - `/sales-zoominfo` — ZoomInfo platform help (SalesOS, intent topics, Scoops)

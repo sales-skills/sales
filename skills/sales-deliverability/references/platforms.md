@@ -431,3 +431,17 @@ Detailed per-platform deliverability configuration — sending limits, warmup, d
 - **Double opt-in**: Available and recommended for new subscribers to reduce spam complaints and improve list quality.
 - **Best for**: Newsletter senders who prioritize clean, text-forward emails with Markdown. The privacy-first approach (no tracking by default) means fewer spam triggers from tracking pixels.
 
+## In Customers.ai (Inboxer)
+
+Customers.ai includes the Inboxer deliverability suite specifically designed to manage deliverability challenges from identity-resolved contacts. For full platform help, use `/sales-customersai`.
+
+- **Deliverability Booster Script**: JavaScript that optimizes email rendering and engagement signals to improve inbox placement.
+- **List Validation**: Cleans identified contacts before they enter Klaviyo flows — removes invalid/risky addresses that could damage sender reputation.
+- **Inbox Warming**: Warms new domains/IPs for brands setting up dedicated sending infrastructure for identified contacts.
+- **Monitoring**: Tracks inbox placement rates and flags deliverability issues early.
+- **Alfred AI suppression**: AI agent auto-suppresses low-intent identified visitors in Klaviyo, reducing the volume of contacts who are likely to generate spam complaints.
+- **Positioning as optimization, not rescue**: Inboxer prevents deliverability problems from identified contacts — it cannot fix severely damaged sender reputation from previous tools.
+- **Why it matters**: Identity-resolved contacts didn't opt in. Even with Customers.ai's higher accuracy (65-85%), some identified contacts will generate spam complaints. Inboxer's validation + Alfred's suppression reduces this risk.
+- **Recommended setup**: Use a separate sending subdomain for identified contacts. Start with high-intent segments only (cart abandoners, repeat visitors). Sunset non-engagers after 2-3 sends.
+- **Klaviyo-specific**: Inboxer works within the Klaviyo ecosystem only — monitors and optimizes deliverability for Klaviyo-sent emails.
+

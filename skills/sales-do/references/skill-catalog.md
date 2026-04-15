@@ -900,6 +900,7 @@
 | Skill | Route when... |
 |---|---|
 | `/sales-retention` | Retention.com questions — ecommerce identity resolution, Grow (email list growth from anonymous visitors), Reclaim (abandonment flow recovery), tracking pixel setup, Shopify integration, deliverability management with identified contacts, compliance (CCPA, implicit consent), Retention.com API, Retention.com vs RB2B vs Customers.ai vs Opensend. Route when the user mentions Retention.com, GetEmails, ecommerce identity resolution, or B2C visitor identification. |
+| `/sales-customersai` | Customers.ai questions — X-Ray identity resolution pixel for Shopify + Klaviyo, Alfred AI intent scoring, Inboxer deliverability suite, ad retargeting audience recovery (Meta/Google/TikTok), Consumer Data Enrichment API. Route when the user mentions Customers.ai, CustomersAI, X-Ray pixel, Alfred AI agent, Inboxer, or wants B2C ecommerce visitor identification specifically for Shopify + Klaviyo. Also route "Customers.ai vs Retention.com" or "visitor ID tool for Klaviyo" queries. |
 
 ### 6sense & Platform
 

@@ -106,6 +106,7 @@ Otherwise, answer directly using the reference below.
 - `/sales-lead-score` — Score leads using RB2B visitor data + other signals
 - `/sales-integration` — Connect RB2B to CRM, Slack, and other tools
 - `/sales-clearbit` — Clearbit/Breeze Intelligence (competitor for company-level visitor ID via Reveal)
+- `/sales-customersai` — Customers.ai platform help (B2C ecommerce visitor ID for Shopify + Klaviyo — different market than RB2B's B2B focus)
 - `/sales-cadence` — Design outbound sequences for RB2B-identified visitors
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
 

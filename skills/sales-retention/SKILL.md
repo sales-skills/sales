@@ -112,6 +112,7 @@ Calculate whether Retention.com pays for itself:
 ## Related skills
 
 - `/sales-rb2b` — RB2B platform help (B2B person-level visitor identification — same founder)
+- `/sales-customersai` — Customers.ai platform help (competitor — Shopify + Klaviyo identity resolution with Inboxer deliverability suite and Alfred AI intent scoring)
 - `/sales-audience-growth` — Email list growth strategy across tools
 - `/sales-email-marketing` — Email marketing strategy for opt-in subscribers
 - `/sales-retargeting` — Retargeting and remarketing strategy across channels

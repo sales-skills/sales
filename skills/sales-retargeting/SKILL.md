@@ -99,6 +99,7 @@ Retargeting serves ads to people who have already interacted with your brand —
 ## Related skills
 
 - `/sales-retention` — Retention.com platform help (ecommerce identity resolution, abandonment recovery)
+- `/sales-customersai` — Customers.ai platform help (ad retargeting audience recovery via X-Ray identity resolution for Meta, Google, TikTok)
 - `/sales-adroll` — AdRoll platform help (retargeting pixel, campaigns, audiences, RollWorks ABM, NextRoll API)
 - `/sales-b2b-advertising` — Account-based B2B advertising (ABM ads, not consumer retargeting)
 - `/sales-email-marketing` — Email marketing strategy (email retargeting flows are covered here for strategy, platform skills for setup)
