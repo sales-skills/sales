@@ -1,6 +1,6 @@
 ---
 name: sales-do
-description: "Routes any sales, marketing, or GTM objective to the right specialized skill. Covers prospecting, outbound cadences, deals, proposals, forecasting, deliverability, enrichment, intent signals, content, coaching, CRO, SEO, launch directories, newsletters, email marketing, SMS, chatbots, influencer marketing, social media, employee advocacy, media relations, reviews, data hygiene, B2B advertising, retargeting, affiliate programs, loyalty, digital products, memberships, webinars, checkout optimization, and platform-specific help for 100+ tools. Use when you have a sales or marketing question and are not sure which skill to use. Do NOT use to solve problems directly — this skill only routes."
+description: "Routes any sales, marketing, or GTM objective to the right specialized skill. Covers prospecting, outbound cadences, deals, proposals, forecasting, deliverability, enrichment, intent signals, content, coaching, CRO, SEO, launch directories, newsletters, email marketing, SMS, chatbots, influencer marketing, social media, employee advocacy, media relations, reviews, data hygiene, B2B advertising, retargeting, affiliate programs, loyalty, digital products, memberships, webinars, checkout optimization, and platform-specific help across sales and marketing tools. Use when you have a sales or marketing question and are not sure which skill to use. Do NOT use to solve problems directly — this skill only routes."
 version: 1.0.0
 tags: [sales, router, skill-discovery]
 ---
@@ -18,11 +18,23 @@ ls ~/.claude/skills/ 2>/dev/null || echo "Could not detect installed skills"
 
 Keep the result in mind for Step 4 — you'll use it to decide whether to show install hints.
 
-## Step 2 — Understand the problem
+## Step 2 — Check meta-skills first
 
-**Always ask clarifying questions before routing** — even if `$ARGUMENTS` are provided. The goal is to fully understand the user's situation so you can route precisely and generate a high-quality prompt.
+Before anything else, check if this is a **meta-skill request**. If so, route immediately and stop — do not ask questions, do not read the catalog, do not list skills.
 
-Ask as many questions as you need to understand:
+| Skill | Route when... |
+|---|---|
+| `/sales-do` | User is already here. Only re-invoke if a prior skill sent the user back for re-routing. |
+| `/sales-third-party` | User asks "what skills are available", "show me all skills", "install marketing skills", "browse skills", "what third-party skills exist", or wants to discover/install skills from third-party repos (marketing, research, creative, SEO). This is a full browsable catalog with install commands — hand off when the user wants to explore, not when you already know which skill to recommend. |
+| `/sales-request-skill` | User says "there should be a skill for this", "can we build a skill", "I want to contribute", "share my learnings", "contribute learnings", "push learnings upstream", or no existing skill covers their need. This skill either **builds the skill** (creates files, commits, opens a PR), **files a GitHub issue** requesting it, or **shares learnings** discovered during skill usage back to the repo. It delegates to `/skill-creator` when available. Always hand off here — don't just say "that doesn't exist" and stop. |
+
+**If a meta-skill matches, your entire response is a hand-off message.** Tell the user to run the meta-skill. Do NOT read `references/skill-catalog.md`. Do NOT list or enumerate skills yourself. Stop processing here.
+
+## Step 3 — Understand the problem
+
+Ask clarifying questions before routing. The goal is to fully understand the user's situation so you can route precisely and generate a high-quality prompt.
+
+Gather context about:
 - **What** they're trying to accomplish (the objective)
 - **Who** the target audience or customer is (persona, segment, industry, company size)
 - **Where** they are in the process (sales cycle stage, existing assets, what's been tried)
@@ -36,31 +48,19 @@ Use **multiple-choice options** where possible to make answering fast. For examp
 > - C) Build a nurture sequence for inbound leads
 > - D) Something else — describe it
 
-You can ask questions in batches (2-4 at a time). Keep going until you have enough context to:
-1. Confidently match to the right skill(s)
-2. Generate a detailed, context-rich prompt
+You can ask questions in batches (2-4 at a time). Keep going until you have enough context to confidently match to the right skill(s) and generate a detailed, context-rich prompt.
 
-Don't rush this step. A great prompt depends on great context.
+### Route to catalog
 
-## Step 3 — Match to a skill
+If this is a meta-skill request (browsing, discovering, or listing available skills), you should have already handed off in Step 2. Do NOT read the catalog file — return to Step 2 and hand off to `/sales-third-party`.
 
 **Read `references/skill-catalog.md`** for the complete routing catalog organized by category.
 
-Scan the catalog to find the best skill match for the user's objective. If the match is ambiguous, **read `references/disambiguation-rules.md`** for detailed routing rules that resolve common conflicts.
-
-### Meta-skills — route here for system-level requests
-
-These three skills (including this one) are not problem-solvers — they operate on the skill system itself:
-
-| Skill | Route when... |
-|---|---|
-| `/sales-do` | User is already here. Only re-invoke if a prior skill sent the user back for re-routing. |
-| `/sales-third-party` | User asks "what skills are available", "show me all skills", "install marketing skills", "browse skills", "what third-party skills exist", or wants to discover/install skills from third-party repos (marketing, research, creative, SEO). This is a full browsable catalog with install commands — hand off when the user wants to explore, not when you already know which skill to recommend. |
-| `/sales-request-skill` | User says "there should be a skill for this", "can we build a skill", "I want to contribute", "share my learnings", "contribute learnings", "push learnings upstream", or no existing skill covers their need. This skill either **builds the skill** (creates files, commits, opens a PR), **files a GitHub issue** requesting it, or **shares learnings** discovered during skill usage back to the repo. It delegates to `/skill-creator` when available. Always hand off here — don't just say "that doesn't exist" and stop. |
+Scan the catalog to find the best skill match for the user's objective. If the match is ambiguous, **read `references/disambiguation-rules.md`** for detailed routing rules that resolve common conflicts. If `references/learnings.md` exists, read it for accumulated routing corrections.
 
 ### Fallthrough
 
-If no existing skill is an adequate match for the user's objective, hand off: "No existing skill covers this — run: `/sales-request-skill {describe the missing capability}`". Explain that this capability doesn't exist as a skill yet and offer to help them either build it or request it.
+If no existing skill is an adequate match for the user's objective, **clearly state that no existing skill covers this need**, then hand off to `/sales-request-skill`. Say something like: "No existing skill covers podcast guest booking — run: `/sales-request-skill podcast guest booking skill`". Explain that this capability doesn't exist as a skill yet and offer to help them either build it or request it. Do NOT ask clarifying questions instead of falling through — if the topic is clear but unmatched, fall through immediately.
 
 ## Step 4 — Recommend and generate
 
@@ -121,3 +121,7 @@ Generate a verbose, context-rich prompt for **every skill** in the sequence — 
 For sequences of 3+ skills, suggest saving the full set of prompts to a temporary file so the user can return to them later:
 
 > **Tip:** This is a multi-step sequence. Want me to save all these prompts to a file so you can come back to them? Just say "save prompts" and I'll write them to a temp file you can reference as you work through each step.
+
+## Related skills
+- `/sales-third-party` — Browse and install skills from all repos
+- `/sales-request-skill` — Build a new skill or request one that doesn't exist

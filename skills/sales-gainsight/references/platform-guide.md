@@ -120,6 +120,16 @@ Gainsight is the #1 Gartner Magic Quadrant Leader for Customer Success Managemen
 - Single data model across CS, PX, Staircase, Skilljar, Communities
 - Cross-product workflows: PX usage data → CS health scores → CTA triggers
 - Atlas AI Agents: Autonomous agents that execute CS workflows
+- Gainsight Benchmarks: Compare your post-sales performance metrics against anonymized peer data
+
+### 2026 product updates
+
+- **Advanced Programs redesign** — New drag-and-drop editor with inline action outcomes and conditional wait branching (replaces older Program Experience)
+- **Data Designer overhaul** — New Program Experience (Data Designer) for building audience criteria; note: participant removal during testing still requires workarounds (clone program, delete test version)
+- **Customer Goals** — Goal-setting feature for structuring implementation, adoption, QBR, and expansion objectives per account
+- **Gainsight Benchmarks** — New benchmarking tool to compare post-sales metrics against anonymized peer cohorts
+- **Atlas AI Agents** — Autonomous agents for CS workflows (scheduling, prep, follow-up)
+- **Copilot enhancements** — AI Cheat Sheet integration, auto-generated account summaries
 
 ## Pricing and limits
 

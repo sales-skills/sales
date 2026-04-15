@@ -1,6 +1,6 @@
 <!-- Source: https://support.gainsight.com/gainsight_nxt/API_and_Developer_Docs -->
-<!-- Fetched: 2026-04-14 -->
-<!-- Note: Bulk API and Task/Playbook API pages returned 503 during fetch. PX API (Apiary) is JS-rendered. -->
+<!-- Fetched: 2026-04-14, updated 2026-04-15 with Bulk Export, Timeline, and Success Plan APIs -->
+<!-- Note: PX API (Apiary) is JS-rendered — refer to docs directly. -->
 
 # Gainsight REST API Reference
 
@@ -24,6 +24,8 @@ Contact your Gainsight Admin to obtain an access key for your tenant.
 | Asynchronous (Bulk) | 10 calls/hour | 100/day |
 | User Management | 100 requests/hour | 1,000/day |
 | Success Plan | 5,000 calls/min | 50,000/day |
+| Timeline (single) | 200 calls/min | — |
+| Timeline (bulk) | 12 calls/hour | — |
 
 Fixed window rate limiting applies. Exceeding limits returns HTTP 429.
 
@@ -38,6 +40,8 @@ API base URLs vary by object type:
 | Custom Object | `https://customobjectapi.gainsightcloud.com/v1/data/objects/` |
 | CTA | `https://<customer-domain>/v2/cockpit/` |
 | Success Plan | `https://<customer-domain>/v2/successPlan/` |
+| Bulk Export | `https://<customer-domain>/v3/exports/data/bulk/` |
+| Timeline | `https://<customer-domain>/v1/ant/es/` |
 | User Management | `https://<customer-domain>/v1/users/services` |
 
 ## Response Format
@@ -426,16 +430,123 @@ Used in Insert/Update operations to resolve references:
 - `multiMatchOption`: FIRSTMATCH (use first result) or MARKASERROR (fail if multiple)
 - `onNoMatch`: NULLABLE (set null), DEFAULTVALUE (use default), ERROR (fail)
 
-## Bulk API
+## Bulk API (Export)
 
-The Bulk API supports asynchronous CSV-based data loading for operations exceeding the 50-record synchronous limit.
+The Bulk Export API enables fetching large datasets from custom, standard, and system objects asynchronously. Rate limit: 10 calls/hour, 100/day.
+
+### Submit Bulk Export Job
+
+**POST** `https://<customer-domain>/v3/exports/data/bulk/{objectName}`
+
+Headers: `authentication: <Access Key>` (note: uses `authentication` not `accesskey`)
+
+```json
+{
+  "select": ["Name", "Csm", "Csm__gr.name", "Billing_State__gc"],
+  "where": {
+    "conditions": [
+      {
+        "name": "Name",
+        "alias": "A",
+        "value": ["Gainsight"],
+        "operator": "CONTAINS"
+      }
+    ],
+    "expression": "A"
+  },
+  "orderBy": {"Name": "asc"},
+  "limit": 100000,
+  "offset": 0
+}
+```
+
+Default limit: 1,000,000 records.
+
+**Supported operators by data type:**
+- String/GSID/Email: equals, not equals, greater/less than, starts with, contains, does not contain, ends with, null checks
+- Boolean: equals, not equals
+- Date/DateTime: equals, not equals, greater/less than, between, null checks
+- Number: equals, not equals, comparison operators, in, not in, null checks
+- Dropdown: equals, not equals, includes, excludes, text operations
+- Multi-Select: includes, excludes, null checks
+- Currency/Percentage: equals, not equals, comparison operators, null checks
+
+### Check Bulk Job Status
+
+**GET** `https://<customer-domain>/{statusURL}`
+
+Returns `jobStatus`: IN_PROGRESS, COMPLETED, FAILED, SUBMITTED, NOT_STARTED, ABORTED.
+
+On completion, response includes `totalRecords` and `chunkDetails` array with `chunkURL`, `offset`, and `limit` per chunk (default 20,000 records per chunk).
+
+### Fetch Chunk Data
+
+**GET** `https://<customer-domain>/{chunkURL}`
+
+Returns CSV with headers and data rows.
+
+**Error codes:** GSOBJ_ESS_9104 (no select field), GSOBJ_ESS_9150 (malformed query)
+
+## Bulk API (Import)
+
+CSV-based asynchronous data loading for operations exceeding the 50-record synchronous limit.
 
 - Rate limit: 10 calls/hour, 100/day
 - Accepts CSV file uploads
 - Returns job status ID for tracking
 - Processing is asynchronous — poll status endpoint
 
-*Note: Bulk API documentation page returned 503 during fetch. Refer to https://support.gainsight.com/gainsight_nxt/API_and_Developer_Docs/Bulk_API/Gainsight_Bulk_REST_APIs for complete docs.*
+## Timeline API
+
+Manages timeline activities (calls, meetings, emails, notes, milestones) for companies and relationships.
+
+### Create Single Activity
+
+**POST** `v1/ant/es/activity`
+
+Required fields: Author, Subject, Notes, ContextName, plus company/relationship identifiers.
+
+### Bulk Create Activities
+
+**POST** `/v1/ant/es/activity/bulk`
+
+Max payload: 80MB. Returns job ID for status tracking.
+
+Rate limits: Single operations 200 calls/min, bulk 12 calls/hour.
+
+### Check Bulk Job Status
+
+**GET** `v1/ant/es/job/status/<job_id>`
+
+States: COMPLETED, IN_PROGRESS, SUBMITTED, FAILED, NOT_STARTED, ABORTED.
+
+### Update Single Activity
+
+**PUT** `v1/ant/es/activity?identifier=<identifier>`
+
+Identifier types: externalid, activityid, or gsid.
+
+### Bulk Update Activities
+
+**PUT** `v1/ant/es/activity/bulk?identifier=<identifier>`
+
+### Delete Activity
+
+**DELETE** `v1/ant/es/activity`
+
+Removes activities by activityId.
+
+### Fetch Deleted Activities
+
+**POST** `v1/ant/es/activity/deleted`
+
+Retrieves deleted activities within ISO 8601 timestamp ranges.
+
+### Read Activities
+
+**POST** `<gainsight-domain>/v1/data/objects/query/activity_timeline`
+
+Standard query syntax with filtering and ordering.
 
 ## Gainsight PX API
 

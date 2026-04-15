@@ -1115,6 +1115,19 @@
 | `/build-links` | Link acquisition campaigns — prospect scoring, outreach strategy, link building at scale |
 | `/domain-hunter` | Finding domain names, availability checks, price comparison across registrars |
 
+### Brandwatch & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-brandwatch` | Brandwatch platform help — Consumer Intelligence (social listening, Boolean queries, sentiment, audience research), Social Media Management (formerly Falcon.io — content calendar, publishing, engagement), Influencer Marketing (Influence module — discovery, campaigns), Search Intelligence (Trajaan — GenAI monitoring), 6 REST APIs (Analysis, Consumer Research, Data Upload, Measure, Publish, Engage). Route when the user asks about Brandwatch setup, config, features, troubleshooting, or API calls. |
+
+### Meta & System Skills
+
+| Skill | Route when... |
+|---|---|
+| `/sales-request-skill` | User wants to build a new skill, request one that doesn't exist, contribute learnings, or no existing skill covers their need. Builds the skill, files a GitHub issue, or shares learnings upstream. |
+| `/sales-third-party` | User wants to browse, discover, or install third-party skills from any repo. Full browsable catalog with descriptions and install commands. Route when user asks "what skills are available" or wants to explore. |
+
 ### Utilities (via resciencelab/opc-skills)
 
 | Skill | Route when... |
