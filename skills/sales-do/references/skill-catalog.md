@@ -40,10 +40,11 @@
 | `/sales-deal-inspect` | Inspecting deal health, MEDDPICC assessment, stakeholder mapping, deal risk analysis, deal review prep |
 | `/sales-forecast` | Revenue forecasting, pipeline coverage, commit validation, gap analysis, forecast call prep |
 
-### Attio & Platform
+### CRM Selection & Attio
 
 | Skill | Route when... |
 |---|---|
+| `/sales-crm-selection` | CRM comparison and selection — choosing a first CRM, outgrowing spreadsheets, Attio vs HubSpot vs Salesforce vs Folk vs Pipedrive vs Close vs Zoho, when to switch CRMs, CRM migration planning, "which CRM for my startup", evaluating free tiers, deciding if Salesforce is worth it yet. NOT for platform-specific CRM setup (→ `/sales-attio`). NOT for CRM data cleanup (→ `/sales-data-hygiene`). |
 | `/sales-attio` | Attio CRM questions — custom objects, data model, deal pipelines, automations, email sequences, AI features, API, pricing, migration from HubSpot/Salesforce/spreadsheets |
 
 ### Apollo.io & Platform

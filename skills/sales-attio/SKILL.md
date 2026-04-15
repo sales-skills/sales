@@ -120,6 +120,7 @@ Otherwise, answer directly from platform knowledge below.
 - `/sales-lead-score` — Lead scoring model design
 - `/sales-deal-inspect` — Deal health inspection and pipeline analysis
 - `/sales-forecast` — Revenue forecasting
+- `/sales-crm-selection` — CRM comparison and selection — choosing between Attio, HubSpot, Salesforce, Folk, Pipedrive, and others
 - `/sales-enrich` — Contact and company enrichment
 - `/sales-cadence` — Multi-channel outbound sequences
 - `/sales-integration` — Connect sales tools with webhooks, APIs, and iPaaS
