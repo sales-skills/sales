@@ -230,6 +230,7 @@ Router recommends a 5-skill sequence:
 | `/sales-salesforce` | Salesforce — Sales/Service/Marketing/Commerce Cloud, Data Cloud, Agentforce AI, Flows, Apex, AppExchange, REST API |
 | `/sales-attio` | Attio — AI-native CRM with custom objects, deal pipelines, email sequences, automations, AI agents, API |
 | `/sales-tableau` | Tableau — visual analytics, dashboards, Tableau Cloud/Server/Desktop, Prep, Pulse AI, Embedding API, REST API v3.28, MCP server |
+| `/sales-mulesoft` | MuleSoft — Anypoint Platform, API-led connectivity, DataWeave, CloudHub, 450+ connectors, Composer, RPA, API Manager, Flex Gateway |
 | `/sales-activecampaign` | ActiveCampaign — marketing automation (900+ recipes), email marketing, CRM, multi-channel, 900+ integrations |
 | `/sales-mailchimp` | Mailchimp — email campaigns, Customer Journey Builder, SMS, audience management, Mandrill, 300+ integrations |
 | `/sales-closum` | Closum — omnichannel marketing automation: email, SMS, WhatsApp, Telegram, Web Push, AI assistant |

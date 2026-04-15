@@ -205,6 +205,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 - `/sales-zoominfo` — ZoomInfo (SalesOS, MarketingOS, OperationsOS)
 - `/sales-blueconic` — BlueConic CDP — 100+ connections for importing/exporting customer data
 - `/sales-treasuredata` — Treasure Data CDP — 400+ connectors, enterprise data unification and audience activation
+- `/sales-mulesoft` — MuleSoft platform help — enterprise iPaaS, API-led connectivity, 450+ connectors
 - `/sales-data-hygiene` — CRM data quality and enrichment automation
 - `/sales-do` — Router — matches any sales objective to the right skill
 
