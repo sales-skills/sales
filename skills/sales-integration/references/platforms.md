@@ -474,3 +474,19 @@ Platform-specific webhook configurations, API integrations, and native connector
 - **Gotcha**: API-created submissions bypass webhooks entirely. Workaround: poll `/form/{id}/submissions` with date filters, or use Zapier "New Submission" trigger (which polls the API).
 - **Rate limits (daily)**: Free 1K, Bronze 10K, Silver 50K, Gold 100K, Enterprise 1M.
 - **Full reference**: See `/sales-jotform` → `references/jotform-api-reference.md`
+
+### Boomi integrations
+
+| Integration | Type | Details |
+|---|---|---|
+| Platform API | REST | `https://api.boomi.com/api/rest/v1/{accountID}`. HTTP Basic auth (API token or username/password). XML default, JSON via headers. 10 req/sec rate limit. OpenAPI 3.0 spec available. |
+| 1000+ connectors | Native | SAP, Salesforce, ServiceNow, Oracle NetSuite, Workday, AWS, Snowflake, Stripe, Slack, Microsoft 365, Google Workspace, Shopify, HubSpot, and many more. |
+| Boomi Marketplace | Native | Pre-built recipes (integration patterns), accelerators (industry bundles), and AI agents. |
+| Connector SDK | Custom | Java-based SDK for building custom connectors. HTTP Client connector for any REST API without a dedicated connector. |
+| Event Streams | Native | Publish/subscribe messaging for real-time event-driven integrations. AMQP, MQTT, Kafka-compatible. |
+| B2B/EDI | Native | Trading partner management, X12, EDIFACT, HL7, HIPAA, AS2/SFTP document exchange. |
+| Data Hub | Native | Master data management — golden records, fuzzy match dedup, data quality rules, real-time sync to connected systems. |
+| Zapier | Via HTTP | No native Zapier connector. Use Boomi's HTTP Server connector to receive Zapier webhooks, or HTTP Client to call Zapier webhook URLs. |
+| Make | Via HTTP | Same pattern as Zapier — HTTP Server/Client connectors for bidirectional communication. |
+| MCP | Native | Model Context Protocol support for AI agent integration with Boomi processes. |
+| **Full reference** | — | See `/sales-boomi` → `references/boomi-api-reference.md` |
