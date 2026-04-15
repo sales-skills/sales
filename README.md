@@ -227,6 +227,7 @@ Router recommends a 5-skill sequence:
 |---|---|
 | `/sales-crm-selection` | CRM comparison and selection — Attio vs HubSpot vs Salesforce vs Folk vs Pipedrive vs Close vs Zoho vs spreadsheets |
 | `/sales-hubspot` | HubSpot — Smart CRM, Marketing/Sales/Service/Content/Data Hubs, Breeze AI, workflows, sequences, 2,000+ integrations, API |
+| `/sales-salesforce` | Salesforce — Sales/Service/Marketing/Commerce Cloud, Data Cloud, Agentforce AI, Flows, Apex, AppExchange, REST API |
 | `/sales-attio` | Attio — AI-native CRM with custom objects, deal pipelines, email sequences, automations, AI agents, API |
 | `/sales-activecampaign` | ActiveCampaign — marketing automation (900+ recipes), email marketing, CRM, multi-channel, 900+ integrations |
 | `/sales-mailchimp` | Mailchimp — email campaigns, Customer Journey Builder, SMS, audience management, Mandrill, 300+ integrations |

@@ -44,8 +44,9 @@
 
 | Skill | Route when... |
 |---|---|
-| `/sales-crm-selection` | CRM comparison and selection — choosing a first CRM, outgrowing spreadsheets, Attio vs HubSpot vs Salesforce vs Folk vs Pipedrive vs Close vs Zoho, when to switch CRMs, CRM migration planning, "which CRM for my startup", evaluating free tiers, deciding if Salesforce is worth it yet. NOT for platform-specific CRM setup (→ `/sales-attio`, `/sales-hubspot`). NOT for CRM data cleanup (→ `/sales-data-hygiene`). |
+| `/sales-crm-selection` | CRM comparison and selection — choosing a first CRM, outgrowing spreadsheets, Attio vs HubSpot vs Salesforce vs Folk vs Pipedrive vs Close vs Zoho, when to switch CRMs, CRM migration planning, "which CRM for my startup", evaluating free tiers, deciding if Salesforce is worth it yet. NOT for platform-specific CRM setup (→ `/sales-attio`, `/sales-hubspot`, `/sales-salesforce`). NOT for CRM data cleanup (→ `/sales-data-hygiene`). |
 | `/sales-hubspot` | HubSpot platform questions — Smart CRM, Marketing Hub, Sales Hub, Service Hub, Content Hub, Data Hub, Commerce Hub, Breeze AI, deal pipelines, email sequences, workflow automations, lead scoring, marketing campaigns, forms, landing pages, live chat, chatbots, reporting, API, pricing tiers, HubSpot for Startups |
+| `/sales-salesforce` | Salesforce platform questions — Sales Cloud, Service Cloud, Marketing Cloud, Commerce Cloud, Data Cloud, Agentforce AI, Flows, Apex, Lightning, custom objects, SOQL, AppExchange, lead assignment rules, opportunity pipeline, forecasting, territory management, sandboxes, REST API, pricing editions (Starter/Pro/Enterprise/Unlimited), migration to/from Salesforce |
 | `/sales-attio` | Attio CRM questions — custom objects, data model, deal pipelines, automations, email sequences, AI features, API, pricing, migration from HubSpot/Salesforce/spreadsheets |
 
 ### Apollo.io & Platform
