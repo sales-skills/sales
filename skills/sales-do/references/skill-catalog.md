@@ -48,6 +48,7 @@
 | `/sales-hubspot` | HubSpot platform questions — Smart CRM, Marketing Hub, Sales Hub, Service Hub, Content Hub, Data Hub, Commerce Hub, Breeze AI, deal pipelines, email sequences, workflow automations, lead scoring, marketing campaigns, forms, landing pages, live chat, chatbots, reporting, API, pricing tiers, HubSpot for Startups |
 | `/sales-salesforce` | Salesforce platform questions — Sales Cloud, Service Cloud, Marketing Cloud, Commerce Cloud, Data Cloud, Agentforce AI, Flows, Apex, Lightning, custom objects, SOQL, AppExchange, lead assignment rules, opportunity pipeline, forecasting, territory management, sandboxes, REST API, pricing editions (Starter/Pro/Enterprise/Unlimited), migration to/from Salesforce |
 | `/sales-attio` | Attio CRM questions — custom objects, data model, deal pipelines, automations, email sequences, AI features, API, pricing, migration from HubSpot/Salesforce/spreadsheets |
+| `/sales-tableau` | Tableau platform questions — Tableau Desktop, Tableau Cloud, Tableau Server, Tableau Prep, Tableau Pulse, Tableau+ agentic analytics, dashboard building, data visualization, LOD expressions, calculated fields, Performance Recorder, data connectors (Salesforce, Snowflake, BigQuery), extract optimization, Embedding API v3, REST API v3.28, Python TSC library, tabcmd, MCP server, Creator/Explorer/Viewer licensing, Tableau Bridge |
 
 ### Apollo.io & Platform
 
