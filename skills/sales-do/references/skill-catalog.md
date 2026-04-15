@@ -245,6 +245,12 @@
 |---|---|
 | `/sales-mailerlite` | MailerLite platform help — email campaigns, automation workflows, landing pages, signup forms, websites, e-commerce, digital products, paid newsletters, transactional email, email verification, API. Route when the user asks about MailerLite setup, config, features, or troubleshooting. Route when they mention MailerLite campaigns, MailerLite automation, MailerLite landing pages, MailerLite forms, MailerLite e-commerce, MailerLite digital products, MailerLite paid newsletters, MailerLite API, or MailerLite account issues. |
 
+### Beehiiv & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-beehiiv` | Beehiiv platform help — newsletter publishing, audience growth (Boosts, referral program, recommendations), monetization (Ad Network, paid subscriptions, sponsorship storefront, digital products), email automations, website builder, API, webhooks. Route when the user asks about beehiiv setup, config, features, or troubleshooting. Route when they mention beehiiv ad network, beehiiv Boosts, beehiiv referral program, beehiiv paid subscriptions, beehiiv automations, beehiiv API, beehiiv webhooks, beehiiv website builder, beehiiv pricing, beehiiv migration, beehiiv deliverability, beehiiv shared IPs, or beehiiv vs Substack/Kit/Ghost. |
+
 ### Buttondown & Platform
 
 | Skill | Route when... |
@@ -929,6 +935,7 @@
 | `/sales-paved` | Paved platform help — newsletter sponsorship marketplace, programmatic Ad Network, Booker direct-deal management, Radar lead enrichment, ESP monetization integrations. Route when the user asks about Paved, newsletter sponsorship marketplaces, selling ads in newsletters via Paved, or finding newsletter sponsors through a marketplace. |
 | `/sales-sparkloop` | SparkLoop platform help — newsletter referral programs, paid recommendations, partner programs, cross-promotion, Upscribe widget, subscriber rewards, API. Route when the user asks about SparkLoop setup, referral tracking, paid recommendation earnings, partner program budget, Upscribe widget, or integrating SparkLoop with their ESP. |
 | `/sales-audience-growth` | Growing an email list or newsletter audience — lead magnets, content upgrades, cross-promotion, referral programs, social-to-email, opt-in optimization |
+| `/sales-beehiiv` | Beehiiv platform help — newsletter publishing, growth tools (Boosts, referrals), monetization (ad network, paid subs), API |
 | `/sales-digital-products` | Selling digital products — ebooks, templates, courses, downloads, pricing strategy, platform selection, launch playbooks |
 | `/sales-affiliate-program` | Affiliate/referral program design — commission structures, affiliate recruitment, tracking, payouts |
 | `/sales-performcb` | Perform[cb] platform help — Outcome Engine, PerformSHIELD fraud detection, CPA/CPS/CPL/CPC campaigns, Partner API, reporting, lead rating, MMP integrations. Route when the user asks about Perform[cb] setup, campaigns, PerformSHIELD, Partner API, or CPA network configuration. |

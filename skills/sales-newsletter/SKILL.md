@@ -122,11 +122,14 @@ Ask the user:
 - **Limitations**: Limited design control, no automation, 10% fee is high at scale
 
 ### In Beehiiv
-- **Paid subscriptions**: Premium tier with paywall toggle per post
-- **Ad network**: Beehiiv Ad Network matches sponsors automatically
-- **Boosts**: Earn $1–$3 per subscriber from other newsletters (like Kit's paid recommendations)
-- **Referral program**: Built-in subscriber referral system with rewards
-- **Pricing**: Free plan available, paid plans from $49/mo
+- **Paid subscriptions**: Premium tiers with paywall toggle per post. 0% beehiiv take rate — only Stripe fees (~2.9% + $0.30). Requires Scale plan ($43/mo).
+- **Ad Network**: Beehiiv's native ad network matches sponsors to your newsletter automatically. You approve/reject each ad. Revenue depends on list size, niche, and engagement. Requires Scale plan.
+- **Boosts**: Earn $1–$3 per subscriber from other newsletters promoting yours (and vice versa). Like Kit's paid recommendations but beehiiv-native. Requires Scale plan.
+- **Referral program**: Built-in milestone-based system (like Morning Brew's). Subscribers share a referral link, earn rewards at milestone tiers. Requires Scale plan.
+- **Sponsorship storefront**: Self-serve sponsor booking page for direct deals. Requires Max plan ($96/mo).
+- **Digital products**: Sell digital downloads directly. Requires Scale plan.
+- **Pricing advantage**: 0% platform fee (vs Substack's 10%, Kit's 0.6%). At scale, this saves thousands.
+- **Setup**: Settings > Payments > Connect Stripe > Configure premium tiers > Toggle paywall in posts
 
 ### In Ghost
 - **Paid memberships**: Built-in Stripe integration, tiered access (free/paid/premium), 0% Ghost fee
@@ -236,6 +239,7 @@ Paid recommendations:
 - `/sales-mailchimp` — Mailchimp platform help
 - `/sales-buttondown` — Buttondown platform help (newsletter publishing, paid subscriptions, Markdown, API, CLI)
 - `/sales-ghost` — Ghost platform help (publishing, newsletters, memberships, Stripe, Mailgun, API, migration)
+- `/sales-beehiiv` — Beehiiv platform help (publishing, growth, monetization, ad network, API)
 - `/sales-content` — Sales content management (creating compelling content)
 - `/sales-checkout` — Checkout optimization (payment flows, upsells)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`

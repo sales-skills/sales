@@ -30,10 +30,14 @@ Detailed per-platform audience growth features — opt-in forms, landing pages, 
 - **Double opt-in**: Enabled by default — good for deliverability but reduces conversion 10–20%
 
 ### In Beehiiv
-- **Boosts**: Marketplace where other newsletters promote yours for $1–$3/subscriber
-- **Referral program**: Built-in milestone-based referral system (like Morning Brew's)
-- **Landing pages**: Built-in, optimized for newsletter sign-up
-- **Recommendations**: Suggest other newsletters after opt-in (free mutual promotion)
+- **Boosts**: Marketplace where other newsletters promote yours for $1–$3/subscriber. You set a budget and target criteria. Requires Scale plan ($43/mo).
+- **Referral program**: Built-in milestone-based system — subscribers share a unique link and earn rewards (exclusive content, merch, premium access) at milestone counts. Highly customizable. Requires Scale plan.
+- **Recommendations**: Suggest other newsletters after opt-in (free mutual promotion). Available on all plans including free.
+- **Landing pages**: Built-in landing pages optimized for newsletter signup. Custom domains on all plans.
+- **Subscribe forms and pop-ups**: Embeddable forms for any website. Custom design options.
+- **Magic links**: Passwordless subscriber verification — reduces friction vs password-based signup.
+- **AI website designer**: Generate a full website with signup forms via AI prompt.
+- **Best for**: Newsletter operators who want growth built into the platform (Boosts + referrals + recommendations in one place). Strongest native growth toolset of any newsletter platform.
 
 ### In SparkLoop
 - **Referral programs** ($2K/year): Subscriber reward system — readers share a unique referral link and earn rewards at milestone counts. Automated digital/physical reward fulfillment. 2-click ESP integration with 25+ platforms. Anti-fraud detection built in. Free for Kit Creator Pro users.

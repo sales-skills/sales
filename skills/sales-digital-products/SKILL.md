@@ -113,6 +113,7 @@ Gumroad is the simplest platform for selling digital products — zero monthly f
 - `/sales-mailerlite` — MailerLite platform help (digital product sales, paid newsletters)
 - `/sales-kit` — Kit platform help (Kit Commerce setup)
 - `/sales-groove` — Groove.cm platform help (GrooveSell, GroovePages)
+- `/sales-beehiiv` — Beehiiv platform help (digital products, paid subscriptions, newsletter monetization)
 - `/sales-podia` — Podia platform help (courses, downloads, memberships, coaching, email)
 - `/sales-payhip` — Payhip platform help (digital downloads, courses, memberships, coaching, store builder, API)
 - `/sales-gumroad` — Gumroad platform help (digital products, license keys, Discover marketplace, API, webhooks)

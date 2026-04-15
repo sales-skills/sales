@@ -229,6 +229,7 @@ Router recommends a 5-skill sequence:
 | `/sales-mailchimp` | Mailchimp — email campaigns, Customer Journey Builder, SMS, audience management, Mandrill, 300+ integrations |
 | `/sales-closum` | Closum — omnichannel marketing automation: email, SMS, WhatsApp, Telegram, Web Push, AI assistant |
 | `/sales-ghost` | Ghost — open-source publishing, native newsletters, paid memberships via Stripe, Content API, Admin API, themes, migration |
+| `/sales-beehiiv` | Beehiiv — newsletter publishing, Boosts, Ad Network, referral programs, paid subscriptions, digital products, API |
 | `/sales-buttondown` | Buttondown — simple newsletter publishing, paid subscriptions via Stripe, Markdown editor, automations, REST API, CLI, custom domains |
 | `/sales-mailerlite` | MailerLite — email campaigns, automation, landing pages, signup forms, e-commerce, digital products, paid newsletters, API |
 | `/sales-unbounce` | Unbounce — landing page builder, Smart Traffic AI, Smart Copy AI, A/B testing, DTR, popups, sticky bars, AMP pages, REST API |

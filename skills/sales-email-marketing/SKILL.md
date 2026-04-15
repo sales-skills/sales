@@ -183,6 +183,7 @@ Perform these maintenance tasks regularly:
 - **/sales-brevo** — Brevo platform help (email, SMS, WhatsApp, push, automation, CRM)
 - **/sales-buttondown** — Buttondown platform help (newsletter publishing, paid subscriptions, Markdown, API, CLI)
 - **/sales-ghost** — Ghost platform help (publishing, newsletters, memberships, Stripe, Mailgun, API, migration)
+- **/sales-beehiiv** — Beehiiv platform help (publishing, growth, monetization, ad network, API)
 - **/sales-transactional-email** — Transactional/triggered email delivery (order confirmations, password resets — not marketing)
 - **/sales-groove** — Groove.cm platform-specific guidance (GrooveMail, GroovePages, GrooveSell, GrooveFunnels)
 - **/sales-closum** — Closum platform help (omnichannel email, SMS, WhatsApp, Telegram, Web Push)

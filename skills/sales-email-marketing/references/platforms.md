@@ -24,6 +24,7 @@ Detailed per-platform email marketing configuration — automation builders, seg
 - [In AdRoll](#in-adroll)
 - [In Retention.com](#in-retentioncom)
 - [In Buttondown](#in-buttondown)
+- [In Beehiiv](#in-beehiiv)
 
 ### In Groove.cm (GrooveMail)
 
@@ -493,4 +494,39 @@ Gumroad has basic built-in email broadcasts for communicating with buyers and fo
 - Email lists are tied to your Gumroad account — if you leave Gumroad, export first
 
 **Best for**: Simple product announcements and update broadcasts. For anything beyond basic email blasts — launch sequences, welcome series, abandoned cart recovery, audience nurturing — connect Gumroad to a dedicated ESP via Zapier or Ping webhooks. For platform-specific Gumroad help, use `/sales-gumroad`.
+
+### In Beehiiv
+
+Beehiiv is a newsletter-first platform with email marketing capabilities built around publishing. For full platform help, use `/sales-beehiiv`.
+
+**Broadcasts**
+- Compose with drag-and-drop editor or HTML. Schedule sends with timezone support.
+- AI-powered writing assistant for content generation.
+- A/B testing on subject lines and content.
+- Content tags for organization.
+
+**Automations (Scale plan+)**
+- Triggered email flows based on subscriber events (new subscriber, survey response, segment entry).
+- 30-day lookback limitation — automations can't trigger based on events older than 30 days.
+- Simpler than Kit or ActiveCampaign automation builders — adequate for welcome sequences and basic flows, limited for complex multi-branch journeys.
+
+**Segmentation**
+- Segments based on tags, engagement, custom fields, UTM parameters, subscription tier (free/premium).
+- Surveys and polls for collecting subscriber data (Scale plan+).
+- Verified clicks to filter bot engagement from segment criteria.
+
+**Analytics**
+- Campaign analytics: opens, clicks, unsubscribes (all plans).
+- Subscriber engagement metrics and growth tracking.
+- Advanced website analytics (Scale plan+).
+- A/B testing results.
+
+**API-first**
+- REST API v2 at `https://api.beehiiv.com/v2` — available on all plans.
+- Manage subscriptions, query posts, retrieve segments and automations programmatically.
+- Post creation endpoint in beta (Enterprise only).
+- TypeScript SDK available.
+- Webhooks for real-time events (Scale plan+).
+
+**Best for**: Newsletter operators who want publishing + growth + monetization in one platform. Email marketing features are adequate for newsletter workflows but less powerful than dedicated ESPs (Kit, ActiveCampaign, Klaviyo) for complex automation and advanced segmentation.
 

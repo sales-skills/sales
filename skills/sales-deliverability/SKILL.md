@@ -223,6 +223,7 @@ If your domain reputation is damaged:
 - `/sales-leadmagic` — LeadMagic platform help (email validation, catch-all detection, API-first verification)
 - `/sales-zoominfo` — ZoomInfo platform help (Engage email configuration)
 - `/sales-brandjet` — BrandJet AI platform help — multi-channel outreach, brand intelligence, AI monitoring
+- `/sales-beehiiv` — Beehiiv platform help (shared IP deliverability, custom domains, engagement metrics)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
 ## Examples
