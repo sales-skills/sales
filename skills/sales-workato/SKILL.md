@@ -99,6 +99,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 
 - `/sales-mulesoft` — MuleSoft platform help — Anypoint Platform, API-led connectivity, 450+ connectors (direct competitor)
 - `/sales-boomi` — Boomi platform help — enterprise iPaaS, 1000+ connectors, API Management, Data Hub MDM (direct competitor)
+- `/sales-celigo` — Celigo platform help — mid-market iPaaS, 1000+ connectors, AI error management, NetSuite depth (direct competitor)
 - `/sales-integration` — Connecting sales tools — webhooks, Zapier/Make, native integrations, CRM sync
 - `/sales-salesforce` — Salesforce platform help — common Workato integration target
 - `/sales-hubspot` — HubSpot platform help — common Workato integration target

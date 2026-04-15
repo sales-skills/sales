@@ -49,6 +49,7 @@ Platform-specific webhook configurations, API integrations, and native connector
 - [LeadMagic API & integrations](#leadmagic-api-integrations)
 - [Qwilr webhooks](#qwilr-webhooks)
 - [Jotform webhooks & API](#jotform-webhooks-api)
+- [Celigo integrations](#celigo-integrations)
 
 ### Mailshake webhooks
 - **Setup**: API endpoint `/push/create` with `targetUrl` and `event`
@@ -490,3 +491,18 @@ Platform-specific webhook configurations, API integrations, and native connector
 | Make | Via HTTP | Same pattern as Zapier — HTTP Server/Client connectors for bidirectional communication. |
 | MCP | Native | Model Context Protocol support for AI agent integration with Boomi processes. |
 | **Full reference** | — | See `/sales-boomi` → `references/boomi-api-reference.md` |
+
+### Celigo integrations
+
+| Integration | Type | Details |
+|---|---|---|
+| integrator.io API | REST | `https://api.integrator.io/v1/` (NA), `https://api.eu.integrator.io/v1/` (EU). Bearer token auth. Leaky bucket rate limit (~1.08M req/hr). Resources: Connection, Export, Import, Flow, Integration, State, Job. |
+| 1000+ connectors | Native | Salesforce, NetSuite, SAP, Dynamics 365, Shopify, Amazon, Walmart, Snowflake, Acumatica, HubSpot, and more. |
+| Integration Marketplace | Native | Pre-built Integration Apps (fully managed bundles), Integration Templates (customizable workflows), Universal Connectors (any REST/SOAP API). |
+| NetSuite (flagship) | Native | Deepest NetSuite integration of any iPaaS. Pre-built Integration Apps for Shopify-NetSuite, Salesforce-NetSuite. RESTlet proxying via custom headers. |
+| API Management (APIM) | Native | Build, publish, and secure APIs. API plans, applications, subscriptions via APIM console. |
+| B2B/EDI | Native | Trading partner management, X12, EDIFACT document exchange. |
+| Embedded/OEM | Native | White-label integration solutions for embedding in SaaS products. |
+| Zapier | Via HTTP | No native Zapier connector. Use webhooks or REST API for bidirectional communication. |
+| Make | Via HTTP | Same pattern as Zapier — webhooks or REST API for bidirectional communication. |
+| **Full reference** | — | See `/sales-celigo` → `references/celigo-api-reference.md` |
