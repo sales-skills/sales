@@ -195,13 +195,17 @@ The Workato Developer API is organized around these core resources:
 2. **Network Tracing**: Connector-level debugging for authentication and connectivity issues.
 3. **Step-by-step testing**: Use the recipe tester to run one step at a time. Skip steps to isolate failures.
 4. **Error handling patterns**:
-   - Monitor → On Error: Catch errors from specific steps and handle gracefully.
-   - Retry on error: Configure automatic retry with configurable delay.
+   - Monitor → On Error: Catch errors from specific steps and handle gracefully. Configure up to 3 retries with 1-10 second intervals. Use optional "Retry IF" toggle for conditional retries.
+   - On Error datapills: `error[type]`, `error[message]`, `error[retry_count]`, `error[uuid]`, `error[line_number]`, `error[adapter]`, `error[action]`, `error[inner_message]`.
+   - Structured error fields: `error_type_id` (stable identifier, e.g., `err.http.response.client_error.not_found`), `error_id` (unique instance), `http_response` (status code, headers, body).
+   - Stop Job step: End recipe early on critical errors — use within conditional branches with error datapills for context.
    - Dead letter pattern: Log failed records to a Data Table for manual review.
+   - Custom error alerts: Use "Email by Workato" action within On Error blocks with error datapills + Recipe URL + Job URL properties.
 5. **Common error types**:
    - Design-time errors: Caught before recipe starts — fix mapping/configuration.
    - Runtime errors: Occur during execution — check job logs for HTTP status codes.
    - Timeout errors: Long-running actions exceeding limits — break into smaller batches.
+   - **Note**: API recipe Handle Errors steps do NOT trigger on API request timeouts — this is a known limitation.
 
 ### Workato vs competitors decision framework
 
