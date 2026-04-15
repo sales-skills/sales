@@ -159,6 +159,7 @@ Design your follow-up cadence around tracking signals rather than fixed time del
 
 ## Related skills
 
+- `/sales-hubspot` — HubSpot platform help (email tracking, document tracking, Sales Hub sequences)
 - `/sales-yesware` — Yesware platform help including email tracking setup
 - `/sales-cadence` — Design outbound cadences that leverage tracking signals for follow-up timing
 - `/sales-intent` — Broader buying signals beyond email (website visits, content downloads, intent data)

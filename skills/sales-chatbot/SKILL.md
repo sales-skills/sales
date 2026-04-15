@@ -70,6 +70,7 @@ Based on the user's channel and bot type, provide:
 
 ## Step 5 — Related skills
 
+- `/sales-hubspot` — HubSpot platform help (chatbot builder, Conversations inbox, live chat)
 - `/sales-qualified` — Qualified platform help (Piper AI SDR conversations, Salesforce-native chatbot)
 - `/sales-sendpulse` — SendPulse platform help (chatbots across 7 channels, visual flow builder, Automation 360)
 - `/sales-swai` — SWAI platform help (AI chat widget, autonomous lead qualification, Cal.com scheduling)

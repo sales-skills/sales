@@ -173,6 +173,7 @@ Before building any bidirectional sync, decide which tool is the source of truth
 
 ## Related skills
 
+- `/sales-hubspot` — HubSpot platform help (2,000+ marketplace apps, API, Data Hub sync, webhooks)
 - `/sales-qwilr-automation` — Qwilr CRM integrations, API, and webhooks
 - `/sales-mailshake` — Mailshake platform help (API, webhooks)
 - `/sales-apollo` — Apollo platform help (CRM sync, API)

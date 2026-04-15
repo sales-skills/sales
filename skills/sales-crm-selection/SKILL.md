@@ -50,6 +50,7 @@ Ask the user:
 | Problem domain | Route to |
 |---|---|
 | Attio-specific setup, config, API, or troubleshooting | `/sales-attio {user's question}` |
+| HubSpot-specific setup, config, workflows, API, or pricing | `/sales-hubspot {user's question}` |
 | CRM data cleanup, deduplication, record matching | `/sales-data-hygiene {user's question}` |
 | Building outbound sequences across platforms | `/sales-cadence {user's question}` |
 | Contact enrichment for CRM records | `/sales-enrich {user's question}` |
@@ -116,6 +117,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 
 ## Related skills
 
+- `/sales-hubspot` — HubSpot platform help — Smart CRM, Marketing/Sales/Service Hubs, workflows, sequences, API
 - `/sales-attio` — Attio platform help — custom objects, deal pipelines, automations, email sequences, AI, API
 - `/sales-data-hygiene` — CRM data quality — deduplication, record matching, enrichment automation
 - `/sales-enrich` — Contact enrichment — emails, phones, company data, bulk enrichment

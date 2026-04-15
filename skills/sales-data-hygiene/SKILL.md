@@ -96,6 +96,7 @@ Ask the user:
 
 ## Related skills
 
+- `/sales-hubspot` — HubSpot platform help (Data Hub data sync, data quality automation, deduplication)
 - `/sales-attio` — Attio platform help (AI-native CRM with custom objects)
 - `/sales-blueconic` — BlueConic CDP — profile unification, identity resolution, audience activation
 - `/sales-tealium` — Tealium CDP — Real-Time CDP, identity resolution, 1300+ connectors

@@ -40,11 +40,12 @@
 | `/sales-deal-inspect` | Inspecting deal health, MEDDPICC assessment, stakeholder mapping, deal risk analysis, deal review prep |
 | `/sales-forecast` | Revenue forecasting, pipeline coverage, commit validation, gap analysis, forecast call prep |
 
-### CRM Selection & Attio
+### CRM Selection & Platforms
 
 | Skill | Route when... |
 |---|---|
-| `/sales-crm-selection` | CRM comparison and selection — choosing a first CRM, outgrowing spreadsheets, Attio vs HubSpot vs Salesforce vs Folk vs Pipedrive vs Close vs Zoho, when to switch CRMs, CRM migration planning, "which CRM for my startup", evaluating free tiers, deciding if Salesforce is worth it yet. NOT for platform-specific CRM setup (→ `/sales-attio`). NOT for CRM data cleanup (→ `/sales-data-hygiene`). |
+| `/sales-crm-selection` | CRM comparison and selection — choosing a first CRM, outgrowing spreadsheets, Attio vs HubSpot vs Salesforce vs Folk vs Pipedrive vs Close vs Zoho, when to switch CRMs, CRM migration planning, "which CRM for my startup", evaluating free tiers, deciding if Salesforce is worth it yet. NOT for platform-specific CRM setup (→ `/sales-attio`, `/sales-hubspot`). NOT for CRM data cleanup (→ `/sales-data-hygiene`). |
+| `/sales-hubspot` | HubSpot platform questions — Smart CRM, Marketing Hub, Sales Hub, Service Hub, Content Hub, Data Hub, Commerce Hub, Breeze AI, deal pipelines, email sequences, workflow automations, lead scoring, marketing campaigns, forms, landing pages, live chat, chatbots, reporting, API, pricing tiers, HubSpot for Startups |
 | `/sales-attio` | Attio CRM questions — custom objects, data model, deal pipelines, automations, email sequences, AI features, API, pricing, migration from HubSpot/Salesforce/spreadsheets |
 
 ### Apollo.io & Platform

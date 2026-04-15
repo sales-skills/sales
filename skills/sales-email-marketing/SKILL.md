@@ -177,6 +177,7 @@ Perform these maintenance tasks regularly:
 
 ## Related skills
 
+- **/sales-hubspot** — HubSpot platform help (Marketing Hub email campaigns, forms, landing pages, workflow automation, CRM)
 - **/sales-getresponse** — GetResponse platform help (autoresponders, marketing automation, conversion funnels, webinars, course creator)
 - **/sales-iterable** — Iterable platform help (Studio journeys, Campaigns, Handlebars templating, Brand Affinity, Smart Ingest, cross-channel)
 - **/sales-braze** — Braze platform help (Canvas Flow, Campaigns, Liquid templating, BrazeAI, Content Cards, cross-channel)

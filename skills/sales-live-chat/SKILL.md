@@ -91,6 +91,7 @@ Live chat converts best when:
 
 ## Related skills
 
+- `/sales-hubspot` — HubSpot platform help (live chat, Conversations inbox, chatbot builder)
 - `/sales-qualified` — Qualified platform help (Piper AI SDR, Signals, Salesforce-native routing)
 - `/sales-zoominfo` — ZoomInfo platform help (Chat, WebSights visitor identification)
 - `/sales-getresponse` — GetResponse platform help (built-in live chat widget)
