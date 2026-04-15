@@ -419,6 +419,12 @@
 |---|---|
 | `/sales-pendo` | Pendo platform help — product analytics (funnels, paths, retention, feature adoption), in-app guides (tooltips, modals, walkthroughs, Resource Center), session replay, NPS/CSAT/PMF surveys, Leo AI, Predict (churn/upsell), Orchestrate, Data Sync, Aggregation API, install script setup, page/feature tagging, visitor/account metadata, HubSpot/Salesforce integrations. Route when the user asks about Pendo setup, config, features, or troubleshooting. Route when they mention Pendo analytics, Pendo guides, Pendo session replay, Pendo NPS, Pendo API, Pendo tagging, Pendo aggregation, Pendo Leo, or Pendo vs Appcues/WalkMe/Userpilot. |
 
+### Chameleon & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-chameleon` | Chameleon platform help — product tours, tooltips, microsurveys (NPS/CSAT/PMF), launchers, HelpBar (AI search), banners, checklists, interactive demos (AI), A/B testing (Growth+), Copilot AI, Ranger AI optimization, automations, REST API (17 resources), JS SDK, webhooks, Segment/HubSpot/Salesforce integrations. Route when the user asks about Chameleon setup, config, features, or troubleshooting. Route when they mention Chameleon tours, Chameleon tooltips, Chameleon microsurveys, Chameleon launchers, Chameleon HelpBar, Chameleon API, Chameleon Copilot, Chameleon Ranger, chmln.identify, or Chameleon vs Pendo/Appcues/Whatfix. |
+
 ### SurveyMonkey & Platform
 
 | Skill | Route when... |
@@ -941,7 +947,7 @@
 | `/sales-loyalty` | Customer loyalty programs — points, tiers, rewards, VIP programs, retention mechanics, program design, member engagement, ROI measurement. Tool selection (Brevo Loyalty, Smile.io, LoyaltyLion, Yotpo, Stamp.me) |
 | `/sales-sms-marketing` | SMS marketing strategy — opt-in collection, compliance (TCPA/GDPR), campaign types, SMS automation, two-way messaging, platform selection (Omnisend, Klaviyo, Attentive, Postscript, Brevo). Route when the user asks about SMS marketing, text message campaigns, SMS opt-in, SMS compliance, TCPA, SMS automation, or choosing an SMS platform. NOT cold SMS outreach — this is opt-in marketing SMS. |
 | `/sales-push-notification` | Mobile and web push notification strategy — opt-in optimization (push primers), rich push, segmentation, timing, frequency capping, deep linking, A/B testing, analytics. Tool selection (Braze, OneSignal, Airship, Firebase/FCM, Customer.io, Klaviyo, Iterable, MoEngage) |
-| `/sales-in-app-messaging` | In-app messages and content cards — onboarding flows, feature announcements, surveys, promotions, persistent content feeds, enterprise digital adoption. Trigger design, message types (modal, slideup, fullscreen, tooltip, carousel, content card), analytics. Tool selection (Braze, Iterable, Intercom, Pendo, Appcues, Customer.io, MoEngage, Whatfix) |
+| `/sales-in-app-messaging` | In-app messages and content cards — onboarding flows, feature announcements, surveys, promotions, persistent content feeds, enterprise digital adoption. Trigger design, message types (modal, slideup, fullscreen, tooltip, carousel, content card), analytics. Tool selection (Braze, Iterable, Intercom, Pendo, Appcues, Customer.io, MoEngage, Whatfix, Chameleon) |
 | `/sales-chatbot` | Chatbot marketing and conversational automation — building chatbot flows, multichannel messaging (WhatsApp, Telegram, Facebook, Instagram, Viber, live chat), lead qualification bots, FAQ bots, handoff to human agents. Tool selection (SendPulse, ManyChat, Tidio, Intercom, Drift, HubSpot) |
 | `/sales-retargeting` | Retargeting and remarketing strategy — website visitor retargeting, cart abandonment recovery with ads, dynamic product ads, cross-channel retargeting, audience segmentation, frequency capping, attribution, pixel setup. Route when the user asks about retargeting visitors, remarketing campaigns, cart recovery via ads, dynamic retargeting, choosing a retargeting platform, or measuring retargeting ROI. NOT B2B account-based advertising (→ `/sales-b2b-advertising`). NOT email cart abandonment flows (→ `/sales-email-marketing`). NOT general paid ads (→ `/paid-ads`). |
 
