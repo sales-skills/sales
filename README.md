@@ -234,6 +234,7 @@ Router recommends a 5-skill sequence:
 | `/sales-boomi` | Boomi — enterprise iPaaS, 1000+ connectors, API Management, Data Hub MDM, Flow low-code, Event Streams, B2B/EDI, AgentStudio AI agents |
 | `/sales-workato` | Workato — enterprise iPaaS, 1200+ connectors, recipe automation, API Management, MCP Gateway, Agent Studio (Genies), Data Tables, Event Streams, Embedded iPaaS |
 | `/sales-celigo` | Celigo — mid-market iPaaS, 1000+ connectors, AI error management, endpoint+flow pricing, NetSuite depth, API Management, B2B/EDI, Embedded iPaaS, Celigo Ora AI |
+| `/sales-snaplogic` | SnapLogic — enterprise iPaaS, 1000+ Snap connectors, AgentCreator AI agents, SnapGPT pipeline copilot, API Management 3.0, ETL/ELT, Ultra Pipelines |
 | `/sales-activecampaign` | ActiveCampaign — marketing automation (900+ recipes), email marketing, CRM, multi-channel, 900+ integrations |
 | `/sales-mailchimp` | Mailchimp — email campaigns, Customer Journey Builder, SMS, audience management, Mandrill, 300+ integrations |
 | `/sales-closum` | Closum — omnichannel marketing automation: email, SMS, WhatsApp, Telegram, Web Push, AI assistant |

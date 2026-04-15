@@ -56,6 +56,7 @@ Ask the user:
 | MuleSoft-specific questions | `/sales-mulesoft {question}` |
 | Workato-specific questions | `/sales-workato {question}` |
 | Boomi-specific questions | `/sales-boomi {question}` |
+| SnapLogic-specific questions | `/sales-snaplogic {question}` |
 | CRM data quality / deduplication | `/sales-data-hygiene {question}` |
 | Flow design and optimization | Answer directly — read platform guide |
 | Error management and debugging | Answer directly — read platform guide |
@@ -101,6 +102,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-workato` — Workato platform help — enterprise iPaaS, 1200+ connectors (direct competitor)
 - `/sales-boomi` — Boomi platform help — enterprise iPaaS, 1000+ connectors, Data Hub MDM (direct competitor)
 - `/sales-mulesoft` — MuleSoft platform help — Anypoint Platform, API-led connectivity, 450+ connectors (direct competitor)
+- `/sales-snaplogic` — SnapLogic platform help — enterprise iPaaS, 1000+ Snaps, AgentCreator AI agents, API Management 3.0 (direct competitor)
 - `/sales-integration` — Connecting sales tools — webhooks, Zapier/Make, native integrations, CRM sync
 - `/sales-salesforce` — Salesforce platform help — common Celigo integration target
 - `/sales-data-hygiene` — CRM data quality — deduplication, record matching, enrichment automation

@@ -55,6 +55,7 @@ Ask the user:
 | Simple no-code Zapier/Make automations | `/sales-integration {question}` |
 | MuleSoft-specific questions | `/sales-mulesoft {question}` |
 | Boomi-specific questions | `/sales-boomi {question}` |
+| SnapLogic-specific questions | `/sales-snaplogic {question}` |
 | CRM data quality / deduplication | `/sales-data-hygiene {question}` |
 | Recipe design and optimization | Answer directly — read platform guide |
 | API management and MCP Gateway | Answer directly — read platform guide |
@@ -100,6 +101,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-mulesoft` — MuleSoft platform help — Anypoint Platform, API-led connectivity, 450+ connectors (direct competitor)
 - `/sales-boomi` — Boomi platform help — enterprise iPaaS, 1000+ connectors, API Management, Data Hub MDM (direct competitor)
 - `/sales-celigo` — Celigo platform help — mid-market iPaaS, 1000+ connectors, AI error management, NetSuite depth (direct competitor)
+- `/sales-snaplogic` — SnapLogic platform help — enterprise iPaaS, 1000+ Snaps, AgentCreator AI agents, API Management 3.0 (direct competitor)
 - `/sales-integration` — Connecting sales tools — webhooks, Zapier/Make, native integrations, CRM sync
 - `/sales-salesforce` — Salesforce platform help — common Workato integration target
 - `/sales-hubspot` — HubSpot platform help — common Workato integration target

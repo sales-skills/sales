@@ -54,6 +54,9 @@ Ask the user:
 | CRM comparison — Salesforce vs HubSpot vs others | `/sales-crm-selection {question}` |
 | Salesforce-specific config (Flows, Apex, SOQL) | `/sales-salesforce {question}` |
 | Simple no-code Zapier/Make automations | `/sales-integration {question}` |
+| SnapLogic-specific questions | `/sales-snaplogic {question}` |
+| Workato-specific questions | `/sales-workato {question}` |
+| Boomi-specific questions | `/sales-boomi {question}` |
 | API design best practices (REST, versioning) | Answer directly — this is core MuleSoft |
 | DataWeave transformation help | Answer directly — read platform guide |
 | CloudHub deployment or performance | Answer directly — read platform guide |
@@ -99,6 +102,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-workato` — Workato platform help — enterprise iPaaS, 1200+ connectors, recipe automation, MCP Gateway (direct competitor)
 - `/sales-boomi` — Boomi platform help — enterprise iPaaS, 1000+ connectors, API Management, Data Hub MDM (direct competitor)
 - `/sales-celigo` — Celigo platform help — mid-market iPaaS, 1000+ connectors, AI error management, NetSuite depth (direct competitor)
+- `/sales-snaplogic` — SnapLogic platform help — enterprise iPaaS, 1000+ Snaps, AgentCreator AI agents, API Management 3.0 (direct competitor)
 - `/sales-integration` — Connecting sales tools — webhooks, Zapier/Make, native integrations, CRM sync
 - `/sales-hubspot` — HubSpot platform help — common MuleSoft integration target
 - `/sales-crm-selection` — CRM comparison and selection — choosing the right CRM to integrate with

@@ -506,3 +506,20 @@ Platform-specific webhook configurations, API integrations, and native connector
 | Zapier | Via HTTP | No native Zapier connector. Use webhooks or REST API for bidirectional communication. |
 | Make | Via HTTP | Same pattern as Zapier — webhooks or REST API for bidirectional communication. |
 | **Full reference** | — | See `/sales-celigo` → `references/celigo-api-reference.md` |
+
+### SnapLogic integrations
+
+| Integration | Type | Details |
+|---|---|---|
+| Public APIs | REST | `https://{pod}.snaplogic.com/api/1/rest/...`. Basic auth or JWT (Okta/Entra ID). 12 API categories: Activity, APIM, Asset, Asset Catalog, Log, Runtime, Pipeline, Task, Project, Snaplex, Snap Statistics, User/Group. JSON responses. |
+| 1000+ Snaps | Native | Salesforce, SAP, Oracle, Workday, ServiceNow, NetSuite, Snowflake, BigQuery, Redshift, Kafka, AWS, Azure, Google Cloud, and many more. Core Snaps included; Premium Snap Packs (Tier 1 ~$45K, Tier 2 ~$15K) for enterprise apps. |
+| REST Snap | Universal | Connect to any REST API without a dedicated Snap Pack. Equivalent to Workato's HTTP connector or Boomi's HTTP Client. |
+| Snap Developer Kit | Custom | Java-based SDK for building custom Snaps. Publish to your Org or share. |
+| AgentCreator | Native | AI agent builder — agents invoke SnapLogic pipelines as tools. LLM Snap Packs (OpenAI, Bedrock, Azure OpenAI, Gemini) + Vector DB Snap Packs (Pinecone, MongoDB). |
+| API Management 3.0 | Native | Full-lifecycle API management — Policy Studio, Developer Hub, OAS 3.x generation, AI agent governance. Pipeline-as-API pattern. |
+| Ultra Pipelines | Native | Streaming execution mode for high-throughput real-time event processing (Kafka, AMQP, CDC). |
+| Git integration | Native | GitHub, GitHub Enterprise, GitLab, Bitbucket. Branch, checkout, pull, tag, status operations. CI/CD via Project APIs. |
+| Zapier | Via HTTP | No native Zapier connector. Use REST Snap to receive Zapier webhooks or call Zapier webhook URLs. |
+| Make | Via HTTP | Same pattern as Zapier — REST Snap for bidirectional communication. |
+| MCP | Native | AgentCreator supports Model Context Protocol for AI agent integration with SnapLogic pipelines. |
+| **Full reference** | — | See `/sales-snaplogic` → `references/snaplogic-api-reference.md` |
