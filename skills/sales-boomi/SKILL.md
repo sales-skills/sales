@@ -95,6 +95,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 ## Related skills
 
 - `/sales-mulesoft` — MuleSoft platform help — Anypoint Platform, API-led connectivity, 450+ connectors (direct competitor)
+- `/sales-workato` — Workato platform help — enterprise iPaaS, 1200+ connectors, recipe automation, MCP Gateway (direct competitor)
 - `/sales-integration` — Connecting sales tools — webhooks, Zapier/Make, native integrations, CRM sync
 - `/sales-salesforce` — Salesforce platform help — common Boomi integration target
 - `/sales-hubspot` — HubSpot platform help — common Boomi integration target

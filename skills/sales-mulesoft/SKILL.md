@@ -96,6 +96,8 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 ## Related skills
 
 - `/sales-salesforce` — Salesforce platform help — MuleSoft's parent company, CRM integration target
+- `/sales-workato` — Workato platform help — enterprise iPaaS, 1200+ connectors, recipe automation, MCP Gateway (direct competitor)
+- `/sales-boomi` — Boomi platform help — enterprise iPaaS, 1000+ connectors, API Management, Data Hub MDM (direct competitor)
 - `/sales-integration` — Connecting sales tools — webhooks, Zapier/Make, native integrations, CRM sync
 - `/sales-hubspot` — HubSpot platform help — common MuleSoft integration target
 - `/sales-crm-selection` — CRM comparison and selection — choosing the right CRM to integrate with
