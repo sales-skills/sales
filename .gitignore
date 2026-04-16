@@ -1,11 +1,30 @@
 evals-output/
 node_modules/
 drafts/
-.claude/
 **/evals/
 _internal/
 eval-scripts/
 agents/
 memory/
 scripts/
+
+# AI/coding-tool and IDE directories — never commit
 .agents/
+.claude/
+.cursor/
+.windsurf/
+.continue/
+.aider*
+.codeium/
+.vscode/
+.idea/
+.zed/
+.fleet/
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.#*
+\#*\#
