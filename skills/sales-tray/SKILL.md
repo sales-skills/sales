@@ -111,6 +111,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-celigo` — Celigo platform help — mid-market iPaaS, 1000+ connectors, NetSuite depth (direct competitor)
 - `/sales-snaplogic` — SnapLogic platform help — enterprise iPaaS, 1000+ Snaps, AgentCreator (direct competitor)
 - `/sales-jitterbit` — Jitterbit platform help — Harmony iPaaS, 400+ connectors, API Manager (direct competitor)
+- `/sales-informatica` — Informatica IDMC platform help — enterprise iPaaS + data management, CDI/CAI, MDM, Data Catalog (direct competitor, data-management-first)
 - `/sales-integration` — Connecting sales tools — webhooks, Zapier/Make, native integrations, CRM sync
 - `/sales-salesforce` — Salesforce platform help — common Tray integration target
 - `/sales-hubspot` — HubSpot platform help — common Tray integration target

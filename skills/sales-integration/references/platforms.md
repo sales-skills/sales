@@ -52,6 +52,7 @@ Platform-specific webhook configurations, API integrations, and native connector
 - [Celigo integrations](#celigo-integrations)
 - [Jitterbit integrations](#jitterbit-integrations)
 - [Tray integrations](#tray-integrations)
+- [Informatica IDMC integrations](#informatica-idmc-integrations)
 
 ### Mailshake webhooks
 - **Setup**: API endpoint `/push/create` with `targetUrl` and `event`
@@ -560,3 +561,25 @@ Platform-specific webhook configurations, API integrations, and native connector
 | Make | Via HTTP | Same pattern as Zapier — HTTP Client connector or workflow trigger URL. |
 | Rate limits | — | 30 req/sec, 1800 req/min across Embedded/Connectivity APIs. Burst 50/sec. Call Connector endpoint: concurrency-limited to 1000 active requests (not rate-limited). Event delivery (Trigger API) is not rate-limited. |
 | **Full reference** | — | See `/sales-tray` → `references/tray-api-reference.md` |
+
+### Informatica IDMC integrations
+
+| Integration | Type | Details |
+|---|---|---|
+| Platform REST API v3 | REST | Pod-specific base URL returned from `POST https://dm-{region}.informaticacloud.com/saas/public/core/v3/login` (regions: `dm-us`, `dm-em`, `dm-ap`). Response returns `baseApiUrl` per product — use that for all subsequent calls. Auth header: `INFA-SESSION-ID: <sessionId>`. JSON only. |
+| Platform REST API v2 | REST | Older API — XML or JSON, uses `icSessionId` header. Prefer v3 unless the resource only exists in v2. v1 is deprecated. |
+| Hundreds of connectors | Native | Salesforce, Workday, NetSuite, ServiceNow, SAP (ECC, S/4HANA, HANA), Oracle, Microsoft Dynamics, Snowflake, Databricks, Redshift, BigQuery, Azure Synapse, S3, ADLS, GCS, Kafka, Kinesis, Marketo, HubSpot, and more. |
+| REST V2 connector | Universal | Spec-driven — import Swagger 2.0 or OpenAPI 3.0.x into a REST V2 Connection and IDMC auto-generates the operations. Supports OAuth 2.0 (Authorization Code, Client Credentials), Basic, API Key, JWT. |
+| Service Connectors (CAI) | Custom | Community-contributed connectors for Application Integration. Shared via `github.com/InformaticaCloudApplicationIntegration/Service-Connectors` — Swagger/WSDL interfaces plus downloadable ZIP definitions. |
+| Informatica Connector Toolkit | Custom | Java SDK for deep custom connector development. |
+| Secure Agent | Runtime | Customer-managed runtime for on-prem / behind-firewall sources. Outbound HTTPS to IDMC POD hostnames (e.g., `*.dm-us.informaticacloud.com`). Logs at `~/infaagent/apps/agentcore/logs/infaagent.log`. |
+| CDI Elastic (advanced clusters) | Runtime | Informatica-managed serverless Spark clusters for large-scale ETL. Pay for cluster lifetime in IPUs. |
+| Source control | Native | Git integration via v3 `/sourcecontrol` — GitHub, GitLab, Bitbucket, Azure DevOps. Dev → test → prod migration via commit/pull across orgs. |
+| Object migration | Native | v3 `/export` and `/import` resources for moving projects/assets between orgs. |
+| Metering API | REST | v3 `/metering` — download IPU consumption data for usage monitoring and cost optimization. |
+| SCIM | Native | v3 `/scim` for user provisioning from identity providers. |
+| JWT auth | Native | Register IdPs via v3 `/identityProviders` for JWT-based programmatic auth. |
+| Zapier | Via HTTP | No native Zapier connector. Use REST V2 connector to call Zapier webhook URLs from CDI/CAI, or expose a CAI process with a REST Start as a webhook endpoint that Zapier calls. |
+| Make | Via HTTP | Same pattern as Zapier — REST V2 connector or CAI REST Start process. |
+| Rate limits | — | No publicly documented per-second rate limit. Implement exponential backoff on 429/5xx. Cache session IDs — don't call `/login` on every request. |
+| **Full reference** | — | See `/sales-informatica` → `references/informatica-api-reference.md` |
