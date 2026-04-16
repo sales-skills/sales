@@ -19,21 +19,21 @@
 - [Skills Catalog](#skills-catalog)
 - [Usage Examples](#usage-examples)
 
-## Quick Start
+## Quick Start and Best Practice for 999% of users
 
 ```bash
-npx skills add sales-skills/sales --skill sales-do -a claude-code -y
+npx skills add sales-skills/sales --skill sales-do
 ```
 
 Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill.
 
-Want every skill at once?  You probably don't, there are hundreds, so it may overwhelm your context.  But if you want them all anyway...
+Want every skill at once?  You probably don't, there are hundreds, so it may overwhelm your context.  But if you want to sort throught them manually anyway...
 
 ```bash
-npx skills add sales-skills/sales --all
+npx skills add sales-skills/sales
 ```
 
-Every skill for Claude Code, copy instead of symlink, no confirmation:
+YOLO Every skill for Claude Code, copy instead of symlink, no confirmation:
 
 ```bash
 npx skills add sales-skills/sales --skill '*' -a claude-code --copy -y
