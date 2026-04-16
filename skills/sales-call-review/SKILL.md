@@ -190,6 +190,7 @@ If a follow-up call was booked, draft a proposed agenda:
 
 ## Related skills
 
+- `/sales-note-taker` — Picking an AI note-taker (Fathom, Fireflies, Avoma, Gong, etc.) or wiring its API into CRM/warehouse for transcripts and summaries
 - `/sales-salesloft` — Salesloft Conversations settings, coaching playlists, recording configuration
 - `/sales-discovery` — Prep for the next discovery call with better questions
 - `/sales-deal-inspect` — Assess overall deal health beyond just the call
