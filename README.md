@@ -158,6 +158,7 @@ Router recommends a 5-skill sequence:
 | `/sales-call-review` | Review sales calls, extract coaching insights, score against MEDDPICC/SPIN |
 | `/sales-note-taker` | AI meeting note-taker / conversation-intelligence selection & API integration (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai) |
 | `/sales-fathom` | Fathom platform help — REST API, webhooks, OAuth, SDKs, MCP, transcript/summary export, CRM sync, pricing tiers |
+| `/sales-fireflies` | Fireflies.ai platform help — GraphQL API, Webhooks V1 + V2, HMAC verification, AskFred AI, Real-time API, MCP, rate limits per tier, bot auto-join control |
 | `/sales-deal-inspect` | Inspect deal health, map stakeholders, identify risks, recommend next actions |
 | `/sales-forecast` | Build and validate revenue forecasts with pipeline coverage and gap analysis |
 

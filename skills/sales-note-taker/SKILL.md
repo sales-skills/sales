@@ -136,7 +136,7 @@ If you discover a gotcha, rate-limit ceiling, auth quirk, or vendor-specific pay
 ## Related skills
 
 - `/sales-fathom` — Fathom platform help (REST API, webhook HMAC, OAuth, SDKs, MCP, pricing tiers)
-- `/sales-fireflies` — Fireflies.ai platform help *(coming soon — in backlog)*
+- `/sales-fireflies` — Fireflies.ai platform help (GraphQL API, Webhooks V1 + V2, HMAC, AskFred, Real-time, MCP, rate limits per tier)
 - `/sales-avoma` — Avoma platform help *(coming soon — in backlog)*
 - `/sales-gong` — Gong platform help *(coming soon — in backlog)*
 - `/sales-otter` — Otter.ai platform help *(coming soon — in backlog)*

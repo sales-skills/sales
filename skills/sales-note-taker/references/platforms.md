@@ -55,35 +55,37 @@ For deep platform coverage (API endpoints, HMAC webhook verification, OAuth flow
 
 ## Fireflies.ai
 
-**Positioning**: Strong AI note-taker with a GraphQL API and surprisingly deep conversation search. Popular at SMB/mid-market for teams that want to query their transcript history with natural language.
+For deep platform coverage (GraphQL queries/mutations, Webhooks V1 vs V2, HMAC verification, rate limits per tier, AskFred AI, Real-time API, MCP server, bot auto-join control), use `/sales-fireflies`.
 
-**Pricing (2026-04)**: Free (limited meetings), Pro $10/seat, Business $19/seat, Enterprise custom.
+**Positioning**: Strong AI note-taker with a GraphQL API, built-in AskFred AI assistant for conversation search, and a bot (Fred) that joins Zoom/Meet/Teams. Popular at SMB/mid-market for teams that want to query their transcript history in natural language and have a developer-friendly API.
+
+**Pricing (2026-04)**: Free, Pro $18/mo ($10/seat annual), Business $29/mo ($19/seat annual, CRM sync + video + team analytics), Enterprise $39/seat (SSO, SCIM, HIPAA, Super Admin role, private storage). Unlimited storage from Business tier up.
 
 **API**:
-- Docs: `https://docs.fireflies.ai/graphql-api/`
-- Type: GraphQL
+- Docs: `https://docs.fireflies.ai` (llms.txt index at `/llms.txt`)
+- Type: GraphQL (single endpoint)
 - Endpoint: `https://api.fireflies.ai/graphql`
-- Auth: `Authorization: Bearer YOUR_API_KEY_HERE`, `Content-Type: application/json`
-- Key queries/mutations:
-  - `transcripts(...)` — list meetings with filtering (date range, participants, keywords)
-  - `transcript(id: ...)` — full transcript for a meeting
-  - `setUserWebhook` — subscribe to webhook events
-  - Users, teams, AI filters, topics
+- Auth: `Authorization: Bearer YOUR_API_KEY` + `Content-Type: application/json`. API keys are user-scoped (see only meetings the user recorded or was shared). Multi-tenant = each tenant provides own key; Enterprise Super Admin key sees all team meetings.
+- Key queries: `transcripts(...)` (list + filters), `transcript(id)`, `users`, `user_groups`, `active_meetings`, `analytics`, `apps`, `bites`, `channels`, `contacts`, `askfred_thread(s)`
+- Key mutations: `uploadAudio`, `createUploadUrl`+`confirmUpload` (two-step), `addToLive`, `deleteTranscript`, `shareMeeting`, `updateMeetingTitle/Privacy/State/Channel`, `createBite`, `setUserRole`, `createAskfredThread`/`continueAskfredThread`
 
 **Webhooks**:
-- Configured at `https://app.firefiles.ai/settings` → Developer settings
-- Events include: `Transcription completed` (primary) — fires when meeting has been processed and transcript is ready
-- Payload: `meetingId`, `eventType`, optional `clientReferenceId`
-- Fires only for meeting **owners** (referred to as `organizer_email` in API)
-- Security: `x-hub-signature` header with SHA-256 HMAC — always verify before trusting payload
+- Two systems coexist. **V1** (legacy, still supported): dashboard → Developer Settings, single event `Transcription completed`, payload `{meetingId, eventType, clientReferenceId}`. **V2** (current): dashboard → Integrations → API → Webhook, granular events `meeting.transcribed` + `meeting.summarized`, payload `{event, timestamp, meeting_id, client_reference_id}`.
+- Both use `X-Hub-Signature: sha256=<hex>` HMAC-SHA256 with a dashboard-configured signing secret. Always timing-safe-compare.
+- V2 delivery SLA: endpoint must return 2xx within **10 seconds**.
+- Fires **only for meeting owners** (`organizer_email`). Team-wide webhooks require **Enterprise + Super Admin role**.
 
-**Rate limits**: GraphQL complexity limits — batch multiple fields per query up to the limit, but don't request full transcript + audio URL for 100 meetings in one query. Split into transcript-fetch vs metadata-fetch pipelines.
+**Rate limits**:
+- Free / Pro: **50 requests per day** (not per minute — easy to hit during a backfill)
+- Business / Enterprise: **60 requests per minute**
+- Add to Live: 3 per 20 min. Share Meeting: 10/hr, 50 emails per request.
+- Upload: 200MB audio all tiers; 100MB video Free, 1.5GB video paid.
 
-**Integrations**: Salesforce, HubSpot (Business+), Slack, Zoom, Meet, Teams, Webex; Zapier, Make for the long tail.
+**Integrations**: Salesforce, HubSpot (Business+), Slack, Zoom, Meet, Teams, Webex, Aircall, RingCentral, Asana, Trello, Notion, Greenhouse, Lever; Zapier (200+), Make, n8n (community node `n8n-nodes-fireflies`). Native MCP server for Claude/ChatGPT/Devin.
 
 **Selection notes**:
-- **Pick Fireflies when**: The team wants conversation search across their history, you prefer GraphQL for fine-grained data fetching, and you want a mid-range price point
-- **Avoid Fireflies when**: You need enterprise revenue intelligence (→ Gong), the team is non-technical and won't use GraphQL tooling (REST vendors are simpler to integrate)
+- **Pick Fireflies when**: The team wants conversation search across history (AskFred is genuinely useful), you prefer GraphQL for exact-field fetching, you want built-in Real-time streaming events, and mid-range pricing fits
+- **Avoid Fireflies when**: You need enterprise revenue intelligence with deal risk scoring (→ Gong), Free/Pro's 50 req/day cap will choke a backfill and you can't justify Business, or end users have flagged Fred's auto-join behavior as a deal-breaker with IT/security
 
 ---
 
