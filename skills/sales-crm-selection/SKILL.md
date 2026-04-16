@@ -116,6 +116,17 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 
 5. **Switching CRMs is painful but not as painful as staying on the wrong one.** The real cost isn't data migration — it's retraining workflows and losing historical context. Export notes and activity history, not just contact records.
 
+## Before recommending a specific platform skill
+
+This skill covers a strategy domain across many platforms. **Before pointing the user to any specific platform skill** (any `/sales-{platform}` listed in `## Related skills`, e.g., `/sales-mailshake`, `/sales-klaviyo`, `/sales-apollo`), read that platform skill's actual `SKILL.md` first. The 1-line description in `## Related skills` is enough to *identify* a candidate — it's not enough to *commit* to it or to write a prompt that invokes it well.
+
+**How to read it:**
+- If `~/.claude/skills/{skill-name}/SKILL.md` exists locally, `Read` it.
+- For `sales-*` skills, `WebFetch` directly from this repo: `https://raw.githubusercontent.com/sales-skills/sales/main/skills/{skill-name}/SKILL.md` — e.g., for `sales-mailshake`: `https://raw.githubusercontent.com/sales-skills/sales/main/skills/sales-mailshake/SKILL.md`.
+- For non-`sales-*` skills (third-party), look up `{org}/{repo}` in `~/.claude/skills/sales-do/references/skill-sources.md` if installed and fetch the same `skills/{skill-name}/SKILL.md` path under that repo.
+
+**After reading,** ground your recommendation in something concrete from the SKILL.md (its scope, a sub-flow, its `argument-hint` shape, or a "Do NOT use for..." negative trigger). Align any generated invocation with the platform skill's `argument-hint`. If the platform skill turns out not to fit the user's situation, swap to another or handle the question here directly rather than recommending a poor fit.
+
 ## Related skills
 
 - `/sales-hubspot` — HubSpot platform help — Smart CRM, Marketing/Sales/Service Hubs, workflows, sequences, API
