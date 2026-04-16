@@ -12,8 +12,9 @@ Per-marketplace detail for selling or buying a side project. Use to match deal s
 | [Microns.io](#micronsio) | $200-$500K | 0% commission | Curated | Facilitated | 30 days typical | Curated micro-acquisitions, profitable bootstrapped |
 | [Indiemaker](#indiemaker) | $1K-$250K | 3% pre-revenue / 6.5% revenue | Basic | Yes | Weeks-months | Bootstrapped founders, no listing fees |
 | [IndieExit](#indieexit) | Micro startups | Free listing | Basic | Recommended external | Weeks-months | Indie hackers, profitable small businesses |
+| [TrustMRR](#trustmrr) | $5K-$500K | Free directory; $29/$199/$499 boost tiers; 3%+escrow (combined 3.70-5.60% tiered) | **Live API revenue verification (hourly)** | Built-in (Escrow.com) | Weeks-months | Verified-revenue indie/bootstrapped SaaS, APA-only deals |
 | [Acquire.com](#acquirecom) | $10K-$5M+ | $25-$100/mo listing + 6-8% closing; buyers $390-$780/yr | NDA + verified funds | Built-in | 3-6 months | Curated SaaS, serious buyers |
-| [Flippa](#flippa) | $500-$10M+ | 5% success + listing fees | Partial | Built-in | 30-120 days | Broad marketplace, SaaS + ecom + content |
+| [Flippa](#flippa) | $500-$10M+ | 3-10% success (tiered) + $29-$699 listing | Auto-verified above $50K | Built-in (FlippaPay/Escrow.com) | 30-120 days | Broad marketplace, SaaS + ecom + content |
 | [Empire Flippers](#empire-flippers) | $50K-$10M+ | 2-15% success fee (tiered) | Verified | Built-in | 60-180 days | Curated, vetted listings, profitable businesses |
 | [FE International](#fe-international) | $500K-$50M+ | Broker commission (10-15%) | Fully vetted | Advisor-managed | 3-9 months | Full-service M&A for profitable SaaS/content |
 
@@ -152,6 +153,43 @@ Per-marketplace detail for selling or buying a side project. Use to match deal s
 
 ---
 
+## TrustMRR
+
+**What it is**: Verified-revenue startup database + acquisition marketplace launched October 2025 by Marc Lou. "The $1.2B marketplace of verified startup revenues." Unique differentiator: every listing has live API revenue verification (hourly-updated) through one of 8 supported payment providers.
+
+**Fees** (current, April 2026):
+- **Directory listing**: Free (no fee to list a verified-revenue startup)
+- **Marketplace boost tiers** (one-time, permanent): Starter $29 / Growth $199 (5x visibility + newsletter) / Scale $499 (20x + pinned 30 days + buyer matching)
+- **Transaction fee**: 3% marketplace fee + Escrow.com fees, split 50/50 buyer/seller. Combined tiered: 5.60% (≤$5K) → 3.70% ($10M+)
+- **Buyer alerts subscription**: $199/year (optional — filter/AI match alerts)
+
+**Supported payment providers** (required for verification): Stripe, LemonSqueezy, Polar, Paddle, DodoPayment, RevenueCat, Superwall, Creem.
+
+**Buyer quality**: Audience is mostly indie hackers + bootstrapped founders from Marc Lou's ecosystem + X following. Buyer alerts subscription ($199/yr) filters for serious buyers. Offers are AI-filtered for quality.
+
+**Escrow**: Built-in via Escrow.com integration. Requires signed APA with verifiable asset details (domain URLs, repo links).
+
+**Deal structure constraint**: **APA-only, single lump-sum payments.** No earnouts, installments, seller financing, or structured payments. This is a significant constraint at $200K+ where earnouts are common.
+
+**Supported currencies for APA**: USD, EUR, CAD, AUD, GBP.
+
+**Best for**:
+- Indie/bootstrapped SaaS with verified revenue on a supported provider
+- Sellers who want pre-verified revenue to skip screenshot-based DD
+- Deals $5K-$500K with clean single-payment structures
+- Sellers wanting low-friction DIY listing with no broker
+- Buyers who trust live-API revenue more than OAuth snapshots
+
+**Avoid if**:
+- Deal requires earnouts, installments, or seller financing (go Acquire.com)
+- Revenue comes from unsupported processor (Square, Braintree, manual) — can't list
+- You want full NDA privacy (stealth mode hides identity but revenue stays visible)
+- Your asset is non-SaaS (content sites, ecom, apps) — TrustMRR's audience is SaaS-heavy
+
+**Deep dive**: `/sales-trustmrr`
+
+---
+
 ## Acquire.com
 
 **What it is**: Formerly MicroAcquire (rebranded March 2023). Largest curated SaaS marketplace. $500M+ total deal volume, 2,000+ completed acquisitions, 500K+ registered buyers with $2B+ in verified funds.
@@ -189,26 +227,31 @@ Per-marketplace detail for selling or buying a side project. Use to match deal s
 
 ## Flippa
 
-**What it is**: Long-established open marketplace (since 2009) for websites, apps, SaaS, domains, content sites, ecom. SaaS transactions surged 73.5% in 2025.
+**What it is**: Long-established open marketplace (since 2009) for websites, apps, SaaS, domains, content sites, ecom. 39,805+ businesses sold to date; SaaS transactions surged 73.5% in 2025.
 
-**Fees**:
-- Success fee: 5% of final sale
-- Listing fees: $49+ for basic, higher for featured placement
-- Premium services (valuation, listing support): optional paid add-ons
+**Fees** (2025):
+- **Listing fees** (upfront, non-refundable): Entry $29 (<$10K), Standard $59-$99, Premium $299-$599, Ultimate $499-$699
+- **Success fees** (tiered): 10% <$50K, 9% $50K-$100K, 8% $100K-$250K, 7% $250K-$1M, 5% $1M-$5M, 4% $5M-$10M, 3% >$10M
+- **Optional add-ons**: NDA $199, Legal templates $199, M&A analyst report $499, Private listing $599
+- **Brokered service**: $999 (9-month term, $100K+ listings, non-refundable; success fee still applies)
+- **Buyer Premium**: $49/mo (optional)
 
-**Buyer quality**: Broad audience — serious investors + casual browsers. Partial verification.
+**Buyer quality**: Broad audience — serious investors + casual browsers. Auto-verification for listings **above $50K** (OAuth-connected Stripe/GA/Shopify/Amazon). Self-reported data below $50K.
 
-**Escrow**: Built-in (Flippa Escrow powered by Escrow.com).
+**Escrow**: Built-in via FlippaPay / Escrow.com (transaction fees 0.89%-3.25%).
 
 **Best for**:
-- Broad exposure across asset types (SaaS, content, ecom, apps)
+- Broad exposure across asset types (SaaS, content, ecom, apps, domains, social)
 - Mid-range deals $5K-$10M+
 - Sellers comfortable with an open, browsable marketplace
 - Auction-style sales (time-bound bidding)
 
 **Avoid if**:
-- You need strict NDA privacy (listings are public)
+- You need strict NDA privacy (listings are public unless you pay $599 for Private)
 - You don't want to pay listing fees upfront
+- Your asset is <$50K and you can't get OAuth-verified (buyers heavily discount)
+
+**Deep dive**: `/sales-flippa`
 
 ---
 
@@ -289,6 +332,7 @@ Per-marketplace detail for selling or buying a side project. Use to match deal s
 - Little Exits: https://littleexits.com
 - Indiemaker: https://indiemaker.com
 - IndieExit: https://indieexit.com
+- TrustMRR: https://trustmrr.com
 - Empire Flippers: https://empireflippers.com
 - FE International: https://feinternational.com
 

@@ -89,6 +89,8 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 ## Related skills
 
 - `/sales-side-project-valuation` — Side project valuation strategy — pricing, revenue multiples, deal structuring, and comparing Acquire.com against Flippa, Empire Flippers, FE International, SideProjectors, 1Kprojects, Microns, Little Exits
+- `/sales-flippa` — Flippa platform help (open marketplace for SaaS + content + ecom + domains, tiered listing packages $29-$699, 3-10% success fees)
+- `/sales-trustmrr` — TrustMRR platform help (verified-revenue marketplace with live payment-provider API verification, APA-only lump-sum deals, $29-$499 boost tiers)
 - `/sales-sideprojectors` — SideProjectors platform help (free listing, no commission, co-founder matching, DR69 backlink)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
   `npx skills add sales-skills/sales --skills sales-do`
@@ -119,7 +121,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 **Skill does**:
 1. Corrects — since April 17, 2024, Acquire.com charges sellers (it was free before)
 2. Breaks down current fees: monthly listing fee ($25/$50/$100) plus closing commission (8%/7%/6%) sliding by asking price band
-3. Compares against Flippa (fixed 5-15% success fee) and Empire Flippers (tiered 2-15%)
+3. Compares against Flippa (tiered success fee 3-10% plus $29-$699 upfront listing fee) and Empire Flippers (tiered 2-15%)
 4. Notes that Escrow.com and Customer Success are still included at no extra cost
 **Result**: Correct fee understanding with a like-for-like comparison
 

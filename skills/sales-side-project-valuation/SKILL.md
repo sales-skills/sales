@@ -1,6 +1,6 @@
 ---
 name: sales-side-project-valuation
-description: "Side project valuation strategy — pricing, revenue multiples, what buyers look for, deal structuring, and marketplace selection for selling or buying a side project. Use when pricing a side project you want to sell, evaluating a project you want to buy, deciding between Acquire.com/Flippa/SideProjectors/1Kprojects/Microns/Little Exits, structuring earnouts or seller financing, preparing a listing, running due diligence, or comparing revenue multiples for micro-SaaS. Do NOT use for early-stage fundraising (different problem — equity not acquisition), ongoing operations (use /sales-digital-products or /sales-funnel), or platform-specific help on SideProjectors (use /sales-sideprojectors)."
+description: "Side project valuation strategy — pricing, revenue multiples, what buyers look for, deal structuring, and marketplace selection for selling or buying a side project. Use when pricing a side project you want to sell, evaluating a project you want to buy, deciding between Acquire.com/Flippa/TrustMRR/SideProjectors/1Kprojects/Microns/Little Exits, structuring earnouts or seller financing, preparing a listing, running due diligence, or comparing revenue multiples for micro-SaaS. Do NOT use for early-stage fundraising (different problem — equity not acquisition), ongoing operations (use /sales-digital-products or /sales-funnel), or platform-specific help on SideProjectors (use /sales-sideprojectors)."
 argument-hint: "[describe your side project sale, purchase, or valuation question]"
 license: MIT
 version: 1.0.0
@@ -142,8 +142,8 @@ You no longer need the platform reference — focus on the user's specific situa
 |---|---|
 | Under $1,000 | 1Kprojects, SideProjectors, Little Exits, Indiemaker |
 | $1,000-$5,000 | SideProjectors, Microns, Little Exits, Indiemaker |
-| $5,000-$50,000 | Microns, Acquire.com, Indiemaker, Flippa |
-| $50,000-$500,000 | Acquire.com, Flippa, Empire Flippers |
+| $5,000-$50,000 | Microns, Acquire.com, Indiemaker, Flippa, TrustMRR (if verified-revenue provider) |
+| $50,000-$500,000 | Acquire.com, Flippa, Empire Flippers, TrustMRR (lump-sum only) |
 | $500,000+ | Empire Flippers, FE International, broker-assisted |
 
 Read `references/platforms.md` for per-marketplace detail (fees, buyer verification, escrow, typical timeline).
@@ -197,6 +197,8 @@ This skill covers a strategy domain across many marketplaces. **Before pointing 
 ## Related skills
 
 - `/sales-acquire` — Acquire.com platform help (curated SaaS marketplace, 500K+ verified buyers, NDA-gated listings, Escrow.com integration)
+- `/sales-flippa` — Flippa platform help (largest open marketplace, tiered listing packages $29-$699, 3-10% success fees, auto-verification above $50K)
+- `/sales-trustmrr` — TrustMRR platform help (verified-revenue marketplace with live Stripe/LemonSqueezy/Polar/Paddle/etc. API verification, APA-only lump-sum deals, $29-$499 boost tiers)
 - `/sales-sideprojectors` — SideProjectors platform help (free peer-to-peer, DR69 backlink, no escrow)
 - `/sales-digital-products` — Sell digital products (ebooks, templates, SaaS downloads) instead of selling the project itself
 - `/sales-launch-directory` — Launch across startup directories (relevant before selling — buyers discover projects through PH, BetaList, etc.)

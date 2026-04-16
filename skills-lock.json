@@ -91,6 +91,11 @@
       "sourceType": "github",
       "computedHash": "4883b70a412f3adb90f8d1b89735f19db5c67b24462f8157f512678a81eb6049"
     },
+    "sales-do": {
+      "source": "sales-skills/sales",
+      "sourceType": "github",
+      "computedHash": "ce716c8340337558351abd6eb942ffa41a9c8ddf8cef3cfd3883868422ea550b"
+    },
     "social-card-gen": {
       "source": "brianrwagner/ai-marketing-skills",
       "sourceType": "github",
