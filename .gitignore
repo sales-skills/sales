@@ -9,13 +9,57 @@ memory/
 scripts/
 
 # AI/coding-tool and IDE directories — never commit
+# Universal (npx skills) output directory
 .agents/
+
+# Claude / Anthropic
 .claude/
-.cursor/
-.windsurf/
-.continue/
-.aider*
+
+# AI coding agents — each writes its own dot-dir
+.adal/
+.amp/
+.antigravity/
+.augment/
+.bob/
+.cline/
+.clinerules
+.codebuddy/
 .codeium/
+.codex/
+.commandcode/
+.continue/
+.cortex/
+.crush/
+.cursor/
+.deep-agents/
+.factory/
+.firebender/
+.gemini/
+.goose/
+.iflow/
+.junie/
+.kilocode/
+.kimi/
+.kiro/
+.kode/
+.mcpjam/
+.mux/
+.neovate/
+.openhands/
+.opencode/
+.pi/
+.pochi/
+.qoder/
+.qwen/
+.roo/
+.trae/
+.vibe/
+.warp/
+.windsurf/
+.zencoder/
+.aider*
+
+# IDEs
 .vscode/
 .idea/
 .zed/
