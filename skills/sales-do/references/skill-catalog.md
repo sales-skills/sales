@@ -38,6 +38,7 @@
 | `/sales-cadence` | Building/optimizing a multi-channel outbound cadence/sequence, touchpoint timing, A/B testing |
 | `/sales-call-review` | Reviewing a sales call, coaching feedback, call scoring, transcript analysis, extracting action items |
 | `/sales-note-taker` | Picking or integrating an AI meeting note-taker / conversation-intelligence platform — Fathom vs Fireflies vs Avoma vs Gong vs Otter vs Fellow vs Grain vs Sembly vs Read.ai selection, backend API integration for transcripts/summaries/action items, webhook vs polling, CRM sync patterns, data warehouse pipelines, rate-limit design, normalizing transcript formats across vendors |
+| `/sales-fathom` | Fathom platform help — REST API endpoints, webhook HMAC verification, OAuth 2.0 flow, TypeScript/Python SDKs, MCP server for Claude/ChatGPT, transcript/summary/action-item export, HubSpot/Salesforce CRM sync, pricing tiers (Free/Premium/Team/Business), 60-req/min rate limits, bot-free capture, Google Meet bot security flag |
 | `/sales-deal-inspect` | Inspecting deal health, MEDDPICC assessment, stakeholder mapping, deal risk analysis, deal review prep |
 | `/sales-forecast` | Revenue forecasting, pipeline coverage, commit validation, gap analysis, forecast call prep |
 

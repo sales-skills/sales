@@ -18,34 +18,38 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 
 ## Fathom
 
-**Positioning**: Free-tier leader for AI note-taking. Individual reps and small teams lean on Fathom because the free plan has unlimited recordings and a decent AI summary. Business tier ($20/seat) adds CRM sync.
+For deep platform coverage (API endpoints, HMAC webhook verification, OAuth flow, SDK usage, MCP setup, pricing gates), use `/sales-fathom`.
 
-**Pricing (2026-04)**: Free (unlimited recordings), Premium $16/mo, Team $14/user/mo, Business $20/user/mo.
+**Positioning**: Free-tier leader for AI note-taking. Individual reps and small teams lean on Fathom because the free plan has unlimited recordings and a decent AI summary. Business tier adds CRM sync.
+
+**Pricing (2026-04)**: Free, Premium $20/mo ($16 annual), Team $19/user/mo ($15 annual, 2-user min), Business $34/user/mo ($25 annual, 2-user min). Team/Business cap at max 3 CRM users per domain. CRM sync is Business-only.
 
 **API**:
-- Docs: `https://developers.fathom.ai/quickstart` (primary) and `https://api-docs.fathom.global/`
-- Auth: API key in header; keys are user-scoped and see meetings the user recorded or that were shared to their Team
-- OAuth flow available — required if building a multi-tenant app (OAuth apps can't use `include_transcript` / `include_summary` query params, must fetch transcript via `/recordings/{recording_id}/transcript`)
+- Docs: `https://developers.fathom.ai` (OpenAPI spec at `/api-reference/openapi.yaml`)
+- Base URL: `https://api.fathom.ai/external/v1/`
+- Auth: API key via `X-Api-Key` header (user-scoped — sees only meetings the user recorded or that were shared to their Team), or OAuth 2.0 Bearer token for multi-tenant apps
 - Key endpoints:
-  - `GET /recordings` — list meetings
-  - `GET /recordings/{recording_id}` — meeting metadata
-  - `GET /recordings/{recording_id}/transcript` — full transcript (markdown)
-  - `GET /recordings/{recording_id}/summary` — AI summary
-  - `GET /recordings/{recording_id}/action-items` — action items with assignees + completion status
-  - Webhook management via API
+  - `GET /meetings` — list meetings with filters (`calendar_invitees_domains[]`, `recorded_by[]`, `teams[]`, `created_after/before`, `include_transcript`, `include_summary`, `include_action_items`, `include_crm_matches`, `cursor`)
+  - `GET /recordings/{recording_id}/transcript` — fetch transcript (supports async mode via `destination_url`)
+  - `GET /recordings/{recording_id}/summary` — fetch AI summary (supports async mode)
+  - `GET /teams`, `GET /team_members` — list teams / members
+  - `POST /webhooks`, `DELETE /webhooks/{id}` — manage webhooks
+- OAuth apps must fetch transcript/summary per recording (inline `include_transcript`/`include_summary` is disabled for OAuth)
 
 **Webhooks**:
-- Configurable parameters: `include_transcript`, `include_summary`, `include_action_items`, `include_crm_matches`, `triggered_for` (array of recording types that trigger)
-- Events: recording-level completion; CRM match notifications
-- Exported transcript format: markdown with metadata (date, duration, participants, Fathom link), AI summary, action items (with assignees + completion), full transcript (speaker labels + timestamps)
+- Create via `POST /webhooks` with `destination_url`, `triggered_for` (one or more of `my_recordings`, `shared_external_recordings`, `my_shared_with_team_recordings`, `shared_team_recordings`), and at least one of `include_transcript`, `include_crm_matches`, `include_summary`, `include_action_items`
+- Signature: Svix-style HMAC-SHA256 with three headers (`webhook-id`, `webhook-timestamp`, `webhook-signature`). Secret starts with `whsec_` — strip and base64-decode. Signed content: `${id}.${timestamp}.${raw_body}`
+- Payload shape: same as `Meeting` object from the list endpoint, with requested fields populated
 
-**Rate limits**: Published per-key — check current docs. Use cursor-based pagination for list endpoints.
+**Rate limits**: 60 requests/minute per-user (not per-key — multiple keys don't raise it). Headers: `RateLimit-Limit`, `RateLimit-Remaining`, `RateLimit-Reset`.
 
-**Integrations**: HubSpot, Salesforce, Slack, Linear, Notion (native); Zapier, Make for everything else.
+**SDKs**: Official TypeScript (`fathom-typescript`) and Python (`fathom-python`) SDKs. MCP server for Claude Desktop, Claude Code, and ChatGPT.
+
+**Integrations**: Zoom/Meet/Teams, Slack, Gmail, Asana, Notion, Salesforce, HubSpot (Business+), Zapier, Make, n8n. MCP: Claude, ChatGPT.
 
 **Selection notes**:
-- **Pick Fathom when**: Budget is tight, the team wants a free tier for most reps, HubSpot/Salesforce sync is "good enough" rather than deep, and you don't need MEDDPICC-style scorecards
-- **Avoid Fathom when**: You need deep deal intelligence (→ Gong), methodology-based scorecards (→ Avoma), or HIPAA compliance without checking current SOC/HIPAA posture
+- **Pick Fathom when**: Budget is tight, the team wants a free tier for most reps, HubSpot/Salesforce sync is "good enough" rather than deep, you need a solid public API with webhooks + OAuth, and you don't need MEDDPICC-style scorecards (though AI Scorecards are available on Team+)
+- **Avoid Fathom when**: You need deep deal intelligence (→ Gong), methodology-based scorecards at enterprise depth (→ Avoma), Google Meet bot capture is blocked by your customer's IT security, or you need >60 calls/minute for bulk ops
 
 ---
 

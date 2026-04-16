@@ -157,6 +157,7 @@ Router recommends a 5-skill sequence:
 | `/sales-cadence` | Design multi-channel outbound cadences with timing, A/B testing, and content |
 | `/sales-call-review` | Review sales calls, extract coaching insights, score against MEDDPICC/SPIN |
 | `/sales-note-taker` | AI meeting note-taker / conversation-intelligence selection & API integration (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai) |
+| `/sales-fathom` | Fathom platform help — REST API, webhooks, OAuth, SDKs, MCP, transcript/summary export, CRM sync, pricing tiers |
 | `/sales-deal-inspect` | Inspect deal health, map stakeholders, identify risks, recommend next actions |
 | `/sales-forecast` | Build and validate revenue forecasts with pipeline coverage and gap analysis |
 
