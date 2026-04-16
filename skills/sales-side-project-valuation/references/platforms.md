@@ -12,7 +12,7 @@ Per-marketplace detail for selling or buying a side project. Use to match deal s
 | [Microns.io](#micronsio) | $200-$500K | 0% commission | Curated | Facilitated | 30 days typical | Curated micro-acquisitions, profitable bootstrapped |
 | [Indiemaker](#indiemaker) | $1K-$250K | 3% pre-revenue / 6.5% revenue | Basic | Yes | Weeks-months | Bootstrapped founders, no listing fees |
 | [IndieExit](#indieexit) | Micro startups | Free listing | Basic | Recommended external | Weeks-months | Indie hackers, profitable small businesses |
-| [Acquire.com](#acquirecom) | $10K-$5M+ | Free for sellers; buyers $390+/yr | NDA + verified funds | Built-in | 30-90 days | Curated SaaS, serious buyers |
+| [Acquire.com](#acquirecom) | $10K-$5M+ | $25-$100/mo listing + 6-8% closing; buyers $390-$780/yr | NDA + verified funds | Built-in | 3-6 months | Curated SaaS, serious buyers |
 | [Flippa](#flippa) | $500-$10M+ | 5% success + listing fees | Partial | Built-in | 30-120 days | Broad marketplace, SaaS + ecom + content |
 | [Empire Flippers](#empire-flippers) | $50K-$10M+ | 2-15% success fee (tiered) | Verified | Built-in | 60-180 days | Curated, vetted listings, profitable businesses |
 | [FE International](#fe-international) | $500K-$50M+ | Broker commission (10-15%) | Fully vetted | Advisor-managed | 3-9 months | Full-service M&A for profitable SaaS/content |
@@ -154,27 +154,36 @@ Per-marketplace detail for selling or buying a side project. Use to match deal s
 
 ## Acquire.com
 
-**What it is**: Formerly MicroAcquire. Largest curated SaaS marketplace. $500M+ total deal volume, 2,000+ completed acquisitions, 500K+ registered buyers with $2B+ in verified funds.
+**What it is**: Formerly MicroAcquire (rebranded March 2023). Largest curated SaaS marketplace. $500M+ total deal volume, 2,000+ completed acquisitions, 500K+ registered buyers with $2B+ in verified funds.
 
-**Fees**:
-- Sellers: Free to list
-- Buyers: Basic (free), Premium ($390/yr), Platinum (custom enterprise)
-- Closing fees: Vary by service tier (self-serve vs advisory)
+**Fees** (current, since April 17, 2024):
+- Sellers — monthly listing fee + closing commission scaled by asking price:
+  - <$100K asking: $25/mo + 8% closing
+  - $100K–$500K asking: $50/mo + 7% closing
+  - $500K+ asking: $100/mo + 6% closing
+- Buyers: Basic (free), Premium ($390/yr, listings up to $250K TTM), Platinum ($780/yr, all listing sizes + priority)
+- Escrow.com and Customer Success Manager are included at no extra cost
 
 **Buyer quality**: Highest in the curated micro-acquisition space. NDA-gated listings — buyers verify funds and sign NDA before seeing business details.
 
-**Escrow**: Built-in via Escrow.com integration.
+**Escrow**: Built-in via Escrow.com integration (free to both parties).
+
+**Timeline**: 3-6 months listing-to-close typical. LOI-to-close: 30-90 days. NDA-to-LOI conversion 5-15%.
 
 **Best for**:
-- SaaS businesses $10K-$5M+ in deal size
+- SaaS businesses $100K-$5M deal size (sweet spot $250K-$1M)
 - Sellers who want buyer verification and NDA protection
-- Startups with Stripe revenue (plugs in directly for verification)
-- Sellers willing to invest in a quality listing
+- SaaS with Stripe revenue for clean buyer verification
+- Sellers who value free APA templates and a Customer Success Manager
 
 **Avoid if**:
 - Deal is under $10K (curation likely rejects)
 - Non-SaaS (content, ecom) — Flippa or Empire Flippers often better
-- You want an open, browsable listing
+- You want an open, browsable listing (Acquire.com is NDA-gated)
+
+**Common misconception**: Acquire.com was free for sellers before April 17, 2024. Anything written before then about "free to list" is out of date.
+
+**Deep dive**: `/sales-acquire`
 
 ---
 

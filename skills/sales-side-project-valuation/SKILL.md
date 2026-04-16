@@ -196,6 +196,7 @@ This skill covers a strategy domain across many marketplaces. **Before pointing 
 
 ## Related skills
 
+- `/sales-acquire` — Acquire.com platform help (curated SaaS marketplace, 500K+ verified buyers, NDA-gated listings, Escrow.com integration)
 - `/sales-sideprojectors` — SideProjectors platform help (free peer-to-peer, DR69 backlink, no escrow)
 - `/sales-digital-products` — Sell digital products (ebooks, templates, SaaS downloads) instead of selling the project itself
 - `/sales-launch-directory` — Launch across startup directories (relevant before selling — buyers discover projects through PH, BetaList, etc.)

@@ -423,6 +423,7 @@ Router recommends a 5-skill sequence:
 | `/sales-tinystartups` | Tiny Startups — curated directory (DR50 dofollow), 17,500+ newsletter subscribers |
 | `/sales-superlaunch` | Super Launch — 7 days on front page, DR59 paid dofollow, $49/mo advertising |
 | `/sales-sideprojectors` | SideProjectors — project marketplace (DR69 dofollow), 24,600+ listings |
+| `/sales-acquire` | Acquire.com — curated SaaS marketplace (formerly MicroAcquire), 500K+ verified buyers, $500M+ closed deals, NDA-gated listings, Escrow.com integration |
 | `/sales-side-project-valuation` | Side project valuation & sale strategy — pricing, revenue multiples, deal structuring, marketplace selection (Acquire.com, Flippa, 1Kprojects, Microns, Empire Flippers) |
 | `/sales-launchingnext` | LaunchingNext — curated directory (DR51 dofollow, 45K+ startups), $149 Express |
 | `/sales-pitchwall` | PitchWall — AI product directory (DR60, 65K+ products), free/$99 Premium |
