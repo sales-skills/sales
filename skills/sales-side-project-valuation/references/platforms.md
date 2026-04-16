@@ -19,6 +19,7 @@ Per-marketplace detail for selling or buying a side project. Use to match deal s
 | [FE International](#fe-international) | $500K-$50M+ | Broker commission (10-15%) | Fully vetted | Advisor-managed | 3-9 months | Full-service M&A for profitable SaaS/content |
 | [Ecomswap](#ecomswap) | $200K-$20M net profit | Not publicly disclosed (implied 8-12% success fee) | 50K+ pre-qualified buyers, proof of funds | Broker-managed ("secure escrow") | 8-16 weeks engagement-to-close | Boutique M&A for profitable Shopify/FBA/DTC/newsletter/content exits |
 | [StartuPage](#startupage) | Any (acquisition is 1 of 4 opportunity types) | Plan-gated: Free / Starter $5/mo / Growth $9/mo / Lifetime $179; no per-deal fees documented | Live API revenue verification (Stripe, Lemon Squeezy, Polar, RevenueCat, Dodo) | None — peer-to-peer messaging + external escrow | Weeks-months | Cross-posting an acquisition alongside a dedicated marketplace; founder-ecosystem audience |
+| [Arrfounder](#arrfounder) | **Not a marketplace — discovery/research tool only** | Free listing; sponsor-card ads for monetization | Social proof (Twitter/X bio + AI extraction — no payment-provider API) | N/A (no transactions) | N/A | Comp-checking peers at your revenue tier before pricing; passive discoverability for founders who tweet revenue |
 
 ---
 
@@ -369,6 +370,34 @@ Per-marketplace detail for selling or buying a side project. Use to match deal s
 **Key differentiator**: Acquisition sits inside a broader founder ecosystem, so the same profile that signals "verified traction" to investors and recruits also signals it to acquirers. Best as a secondary listing, not a primary one.
 
 **Deep dive**: `/sales-startupage`
+
+---
+
+## Arrfounder
+
+**What it is**: Founder-revenue directory founded 2024 by `@Folyd` (behind Geddle). Auto-extracts MRR/ARR and products from Twitter/X bios via AI, ranks 1000+ founders on sortable leaderboards (ARR / followers / products / recently added). **Not a marketplace** — there is no buy/sell flow, no listings for sale, no escrow. Listed here because buyers/sellers often treat it as a comp-check resource and because founder research commonly starts here.
+
+**Fees**: Free to be listed. Submission via Airtable form, 24-48h manual approval. Sponsor cards exist as the monetization path (pricing not public — DM `@Folyd`).
+
+**Revenue verification**: Social proof only — the platform reads your public Twitter/X bio and uses AI to extract a structured revenue figure. There is no Stripe / Lemon Squeezy / Polar API integration. That makes it **unsuitable as a standalone verification for an acquisition** — due-diligence-grade verification comes from TrustMRR, StartuPage, or direct provider screenshare.
+
+**Buyer quality**: N/A — no buyers on Arrfounder because there are no listings. The audience is peer founders, investors scanning top-of-funnel, and press/analysts.
+
+**Escrow**: N/A.
+
+**Best for** (in the side-project-sale workflow):
+- **Comp research before pricing** — filter to your ARR tier, browse 10-30 peer founders, cross-reference their public building-in-public threads for multiples, growth stories, and sold/listed signals
+- **Passive discoverability** for a founder already actively building in public on Twitter/X — a curated leaderboard presence adds a trust signal alongside a marketplace listing
+- **Acquirer-side prospect research** — scanning $1M-$10M+ ARR tiers for potential targets before making outreach
+
+**Avoid if**:
+- You need to actually list a project for sale — Arrfounder has no listing flow, go to Acquire.com / Flippa / TrustMRR / Empire Flippers instead
+- You need provable revenue for an acquirer's DD — social proof isn't enough; layer TrustMRR or StartuPage on top
+- You don't have an active Twitter/X presence — the platform reads the bio as its only data source
+
+**Key differentiator**: Arrfounder is the most **community-oriented** of the verified-revenue surfaces (TrustMRR = transaction layer, StartuPage = founder ecosystem, Arrfounder = discovery leaderboard). Free to list, zero-setup if your bio is already formatted. Complements the others rather than replacing them.
+
+**Deep dive**: `/sales-arrfounder`
 
 ---
 

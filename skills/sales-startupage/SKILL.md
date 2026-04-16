@@ -82,6 +82,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 ## Related skills
 
 - `/sales-trustmrr` — TrustMRR platform help (Marc Lou's verified-MRR marketplace, APA-only lump-sum escrow, similar Stripe/LemonSqueezy/Polar/Paddle verification angle)
+- `/sales-arrfounder` — Arrfounder platform help (social-proof founder directory pulling MRR/ARR from Twitter/X bios — lighter-weight alternative without payment-provider integration, useful in parallel with StartuPage for extra discoverability)
 - `/sales-side-project-valuation` — Cross-marketplace valuation strategy when selling a project listed on StartuPage's acquisition track (TrustMRR vs Acquire.com vs Flippa vs Empire Flippers)
 - `/sales-peerlist` — Peerlist platform help (tech-builder profile platform, weekly Launchpad — overlap on "professional profile for founders/builders")
 - `/sales-indiehackers` — Indie Hackers platform help (unverified self-reported revenue community that StartuPage positions against)
