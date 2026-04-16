@@ -17,6 +17,7 @@ Per-marketplace detail for selling or buying a side project. Use to match deal s
 | [Flippa](#flippa) | $500-$10M+ | 3-10% success (tiered) + $29-$699 listing | Auto-verified above $50K | Built-in (FlippaPay/Escrow.com) | 30-120 days | Broad marketplace, SaaS + ecom + content |
 | [Empire Flippers](#empire-flippers) | $50K-$10M+ | 2-15% success fee (tiered) | Verified | Built-in | 60-180 days | Curated, vetted listings, profitable businesses |
 | [FE International](#fe-international) | $500K-$50M+ | Broker commission (10-15%) | Fully vetted | Advisor-managed | 3-9 months | Full-service M&A for profitable SaaS/content |
+| [Ecomswap](#ecomswap) | $200K-$20M net profit | Not publicly disclosed (implied 8-12% success fee) | 50K+ pre-qualified buyers, proof of funds | Broker-managed ("secure escrow") | 8-16 weeks engagement-to-close | Boutique M&A for profitable Shopify/FBA/DTC/newsletter/content exits |
 
 ---
 
@@ -301,6 +302,47 @@ Per-marketplace detail for selling or buying a side project. Use to match deal s
 
 ---
 
+## Ecomswap
+
+**What it is**: Boutique sell-side M&A advisory for profitable ecommerce founders. Founded by Eliott Bucher and Jad Kiwan. Positions itself between investment banks and open marketplaces. 100+ deals closed.
+
+**Fees**: **Not publicly disclosed.** Own blog cites competitors (Empire Flippers 15%/8%/2.5% tiered, FE International 10-15%) and positions Ecomswap as "in the middle" — implying an 8-12% success-fee model, likely with a retainer component. Always get the engagement letter in writing.
+
+**Minimum floor**: $200K net profit TTM, 1.5+ years operating history, positive cash flow.
+
+**Deal range**: $200K-$20M (sub-$5M EBITDA sweet spot).
+
+**Asset types**: Shopify (primary), Amazon FBA, DTC ecom, SaaS, Newsletter, Content sites, Monetized YouTube. WooCommerce/BigCommerce not explicitly named — ask before engaging.
+
+**Valuation base**: SDE (Seller's Discretionary Earnings), not EBITDA. SDE-friendly for founder-operated businesses.
+
+**Buyer quality**: 50K+ pre-qualified investors, $2B+ aggregate verified capital, proof-of-funds required to join. Gated "Apply to Join" network.
+
+**Escrow**: Broker-managed ("secure escrow and seamless handover" — specific provider not publicly named, likely Escrow.com).
+
+**Process**: Free confidential valuation → engagement → private buyer sourcing (30-day advertised window) → LOI → DD → APA/close. Private/curated listings only — no public marketplace page.
+
+**Advertised stats**: 93% close rate (on deals that reach LOI), <2 months average time-to-exit. These are marketing figures, not independently verified.
+
+**Best for**:
+- Profitable Shopify, Amazon FBA, DTC ecom businesses $200K-$5M SDE
+- Sellers who want high-touch advisory + confidentiality
+- Founder-operators where SDE-based valuation is advantageous
+- Sellers worried about customer/competitor discovery via open listings
+
+**Avoid if**:
+- Below $200K net profit (use Acquire.com, Microns, or Flippa)
+- Deal size $5M+ EBITDA (FE International may be better for EBITDA-based advisory)
+- You want transparent public fees (Empire Flippers is more productized)
+- You want broad market signal (Flippa publishes listings openly)
+- You need to move fast without engaging a broker (Acquire.com self-serve is faster)
+
+**Key differentiator**: Boutique concierge advisory focused on ecommerce, SDE-first valuation, private buyer matching. No affiliate/referral program exists.
+
+**Deep dive**: `/sales-ecomswap`
+
+---
+
 ## Decision tree
 
 **Deal size determines marketplace fit more than anything else.**
@@ -309,7 +351,9 @@ Per-marketplace detail for selling or buying a side project. Use to match deal s
 2. **$1K-$5K** → Little Exits, Indiemaker, or SideProjectors
 3. **$5K-$50K** → Microns, Acquire.com (if $10K+), or Indiemaker
 4. **$50K-$500K** → Acquire.com, Empire Flippers, or Flippa
-5. **$500K+** → Empire Flippers or FE International (advisor)
+5. **$500K+** → Empire Flippers or FE International (advisor); Ecomswap for ecommerce/DTC/FBA at $200K+ net profit
+
+**For profitable ecommerce exits specifically** (Shopify, Amazon FBA, DTC): Ecomswap is a boutique ecom-specialist alternative to Empire Flippers' productized model and FE International's EBITDA-focused SaaS-heavy approach.
 
 **Cross-listing strategy**: List on 2-3 marketplaces that match your deal size. Don't cross-list on 6+ — managing inquiries gets unwieldy.
 
@@ -335,5 +379,6 @@ Per-marketplace detail for selling or buying a side project. Use to match deal s
 - TrustMRR: https://trustmrr.com
 - Empire Flippers: https://empireflippers.com
 - FE International: https://feinternational.com
+- Ecomswap: https://ecomswap.io
 
 *Pricing, fees, and policies change — verify against live marketplace pages before committing.*

@@ -426,7 +426,8 @@ Router recommends a 5-skill sequence:
 | `/sales-acquire` | Acquire.com — curated SaaS marketplace (formerly MicroAcquire), 500K+ verified buyers, $500M+ closed deals, NDA-gated listings, Escrow.com integration |
 | `/sales-flippa` | Flippa — largest open marketplace since 2009 (SaaS, ecom, content, apps, domains), 39,805+ sold, tiered listing packages $29-$699, 3-10% success fees, auto-verification above $50K |
 | `/sales-trustmrr` | TrustMRR — verified-revenue startup marketplace by Marc Lou, live Stripe/LemonSqueezy/Polar/Paddle/RevenueCat/Superwall/Creem/DodoPayment API verification (hourly), APA-only single-lump-sum deals via Escrow.com, Starter $29 / Growth $199 / Scale $499 boost tiers, 3% marketplace fee + escrow, public REST API |
-| `/sales-side-project-valuation` | Side project valuation & sale strategy — pricing, revenue multiples, deal structuring, marketplace selection (Acquire.com, Flippa, TrustMRR, 1Kprojects, Microns, Empire Flippers) |
+| `/sales-ecomswap` | Ecomswap — boutique sell-side M&A advisory for profitable Shopify/FBA/DTC/SaaS/newsletter/content exits, $200K net-profit floor, SDE-based profit multiples, 50K+ pre-qualified buyer network with $2B+ capital, curated private listings, advertised 93% close rate / <2 month time-to-exit |
+| `/sales-side-project-valuation` | Side project valuation & sale strategy — pricing, revenue multiples, deal structuring, marketplace selection (Acquire.com, Flippa, TrustMRR, Ecomswap, 1Kprojects, Microns, Empire Flippers) |
 | `/sales-launchingnext` | LaunchingNext — curated directory (DR51 dofollow, 45K+ startups), $149 Express |
 | `/sales-pitchwall` | PitchWall — AI product directory (DR60, 65K+ products), free/$99 Premium |
 | `/sales-futurepedia` | Futurepedia — largest AI tools directory (5,700+ tools, ~2M visits/mo), $247/$497 |

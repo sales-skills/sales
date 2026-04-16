@@ -145,6 +145,7 @@ You no longer need the platform reference — focus on the user's specific situa
 | $5,000-$50,000 | Microns, Acquire.com, Indiemaker, Flippa, TrustMRR (if verified-revenue provider) |
 | $50,000-$500,000 | Acquire.com, Flippa, Empire Flippers, TrustMRR (lump-sum only) |
 | $500,000+ | Empire Flippers, FE International, broker-assisted |
+| $200K–$20M net profit (ecom/DTC/FBA/newsletter) | Ecomswap (boutique ecom-specialist advisory), Quiet Light, Empire Flippers |
 
 Read `references/platforms.md` for per-marketplace detail (fees, buyer verification, escrow, typical timeline).
 
@@ -200,6 +201,7 @@ This skill covers a strategy domain across many marketplaces. **Before pointing 
 - `/sales-flippa` — Flippa platform help (largest open marketplace, tiered listing packages $29-$699, 3-10% success fees, auto-verification above $50K)
 - `/sales-trustmrr` — TrustMRR platform help (verified-revenue marketplace with live Stripe/LemonSqueezy/Polar/Paddle/etc. API verification, APA-only lump-sum deals, $29-$499 boost tiers)
 - `/sales-sideprojectors` — SideProjectors platform help (free peer-to-peer, DR69 backlink, no escrow)
+- `/sales-ecomswap` — Ecomswap platform help (boutique sell-side M&A advisory for profitable Shopify/FBA/DTC/newsletter/content exits, $200K+ net-profit floor, SDE-based valuation, curated private buyer sourcing)
 - `/sales-digital-products` — Sell digital products (ebooks, templates, SaaS downloads) instead of selling the project itself
 - `/sales-launch-directory` — Launch across startup directories (relevant before selling — buyers discover projects through PH, BetaList, etc.)
 - `/sales-audience-growth` — Grow an email list or user base (audience is itself a valuation driver)
