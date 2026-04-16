@@ -238,6 +238,7 @@ Router recommends a 5-skill sequence:
 | `/sales-jitterbit` | Jitterbit — AI-infused Harmony iPaaS, 400+ connectors, Integration Studio + Design Studio, API Manager, App Builder, EDI/B2B, cloud/private/hybrid agents |
 | `/sales-tray` | Tray.ai — enterprise iPaaS, 700+ connectors, Intelligent iPaaS, Merlin Agent Builder (OpenAI/Claude/Gemini/Llama, MCP), Tray Embedded (white-label for SaaS), Enterprise Core governance, GraphQL API, Connector Development Kit |
 | `/sales-informatica` | Informatica IDMC — enterprise iPaaS + data management, Cloud Data Integration (CDI), Cloud Application Integration (CAI), API Center, Data Catalog, Data Quality, MDM, B2B Gateway, CLAIRE AI, IPU consumption pricing, REST API v2/v3 |
+| `/sales-tibco` | TIBCO Cloud Integration — enterprise iPaaS with four pillars: Connect (TIBCO Scribe no-code), Develop (TIBCO Flogo event-driven), Integrate (TIBCO BusinessWorks hybrid), Automate (Cloud Live Apps citizen developer), plus TIBCO Cloud API Management, app-instance subscription tiers, regional APIs (AWS US/EU/AU, Azure US) |
 | `/sales-activecampaign` | ActiveCampaign — marketing automation (900+ recipes), email marketing, CRM, multi-channel, 900+ integrations |
 | `/sales-mailchimp` | Mailchimp — email campaigns, Customer Journey Builder, SMS, audience management, Mandrill, 300+ integrations |
 | `/sales-closum` | Closum — omnichannel marketing automation: email, SMS, WhatsApp, Telegram, Web Push, AI assistant |

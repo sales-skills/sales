@@ -18,7 +18,7 @@ If `references/learnings.md` exists, read it first for accumulated knowledge.
 Ask the user:
 
 1. **What are you connecting?**
-   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Omnisend, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, LeadMagic, ZoomInfo, Clearbit, RB2B, 6sense, Brevo, Braze, Iterable, GetResponse, SendPulse, Clay, HubSpot, Salesforce, Qwilr, RudderStack, Boomi, Workato, Celigo, SnapLogic, Jitterbit, Tray, Informatica, other
+   - Source tool (where the event happens): Mailshake, Apollo, Salesloft, Smartlead, Lemlist, Yesware, Groove.cm, Mixmax, Reply.io, Woodpecker, Hunter.io, Seismic, Tomba, Prospeo, Seamless.AI, SafetyMails, Closum, Omnisend, Mailchimp, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Outscraper, Enrich.so, Minelead, Lobstr.io, GetProspect, Skrapp, OpenWeb Ninja, Anymail Finder, ZeroBounce, Snov.io, LeadMagic, ZoomInfo, Clearbit, RB2B, 6sense, Brevo, Braze, Iterable, GetResponse, SendPulse, Clay, HubSpot, Salesforce, Qwilr, RudderStack, Boomi, Workato, Celigo, SnapLogic, Jitterbit, Tray, Informatica, TIBCO, other
    - Destination tool (where the action should happen): Salesforce, HubSpot, Slack, Pipedrive, other
    - Is this one-way or bidirectional?
 
@@ -224,6 +224,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-jitterbit` — Jitterbit platform help — Harmony iPaaS, 400+ connectors, API Manager, App Builder, EDI, hybrid agents
 - `/sales-tray` — Tray.ai platform help — enterprise iPaaS, 700+ connectors, Merlin Agent Builder, Tray Embedded, GraphQL API, Connector Development Kit
 - `/sales-informatica` — Informatica IDMC platform help — enterprise iPaaS + data management, CDI/CAI, API Center, MDM, Data Catalog, IPU pricing, REST API v2/v3
+- `/sales-tibco` — TIBCO Cloud Integration platform help — enterprise iPaaS with Scribe (Connect), Flogo (Develop), BusinessWorks (Integrate), Live Apps (Automate), hybrid agents, Cloud API Management
 - `/sales-data-hygiene` — CRM data quality and enrichment automation
 - `/sales-do` — Router — matches any sales objective to the right skill
 
