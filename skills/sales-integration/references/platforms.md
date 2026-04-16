@@ -50,6 +50,7 @@ Platform-specific webhook configurations, API integrations, and native connector
 - [Qwilr webhooks](#qwilr-webhooks)
 - [Jotform webhooks & API](#jotform-webhooks-api)
 - [Celigo integrations](#celigo-integrations)
+- [Jitterbit integrations](#jitterbit-integrations)
 
 ### Mailshake webhooks
 - **Setup**: API endpoint `/push/create` with `targetUrl` and `event`
@@ -523,3 +524,21 @@ Platform-specific webhook configurations, API integrations, and native connector
 | Make | Via HTTP | Same pattern as Zapier — REST Snap for bidirectional communication. |
 | MCP | Native | AgentCreator supports Model Context Protocol for AI agent integration with SnapLogic pipelines. |
 | **Full reference** | — | See `/sales-snaplogic` → `references/snaplogic-api-reference.md` |
+
+### Jitterbit integrations
+
+| Integration | Type | Details |
+|---|---|---|
+| Harmony Management API | REST | `https://na-east.jitterbit.com/jitterbit-cloud-restful-service` (NA), `https://emea-west.jitterbit.com/jitterbit-cloud-restful-service` (EMEA), `https://apac-east.jitterbit.com/jitterbit-cloud-restful-service` (APAC). Session-token login via `PUT /user/login` (email/password/deviceId). Tokens expire ~15 min. OpenAPI 3.0 spec on SwaggerHub. |
+| 400+ connectors | Native | Salesforce, NetSuite, SAP (ECC, S/4HANA), Oracle EBS, Microsoft Dynamics 365, Workday, ADP, Shopify, BigCommerce, Magento, ServiceNow, Snowflake, Slack, Microsoft 365, and more. |
+| Connector Marketplace | Native | 400+ templates, recipes, and pre-built projects. Industry accelerators and reference patterns. |
+| Connector Builder | Low-code | Visual connector design for common REST patterns. |
+| Connector SDK | Custom | Java-based SDK for deep custom connector development. HTTP/SOAP/Database/FTP/SFTP technology connectors always available. |
+| API Manager | Native | Custom APIs, OData APIs, Proxy APIs. Security Profiles (Anonymous, Basic, OAuth 2.0, API Key), Trusted IP Groups, API Groups, Developer Portal, rate limiting. |
+| App Builder | Low-code | No-code app development layered on Harmony — forms, tables, business logic. |
+| EDI / B2B | Native | Trading partner management, X12, EDIFACT, HL7, AS2/SFTP. |
+| Agent groups | Native | Cloud (Jitterbit-managed), Private (on-prem), Hybrid (cloud gateway + private agents). All outbound HTTPS only — no inbound ports. |
+| Zapier | Via HTTP | No native Zapier connector. Use HTTP/REST connector to send to Zapier webhook URLs, or expose an API Manager endpoint that Zapier calls. |
+| Make | Via HTTP | Same pattern as Zapier — HTTP/REST connector or API Manager endpoint. |
+| MCP | Native | Harmony Agent Management supports Model Context Protocol for AI agent integration. |
+| **Full reference** | — | See `/sales-jitterbit` → `references/jitterbit-api-reference.md` |
