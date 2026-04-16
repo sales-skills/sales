@@ -236,6 +236,7 @@ Router recommends a 5-skill sequence:
 | `/sales-celigo` | Celigo — mid-market iPaaS, 1000+ connectors, AI error management, endpoint+flow pricing, NetSuite depth, API Management, B2B/EDI, Embedded iPaaS, Celigo Ora AI |
 | `/sales-snaplogic` | SnapLogic — enterprise iPaaS, 1000+ Snap connectors, AgentCreator AI agents, SnapGPT pipeline copilot, API Management 3.0, ETL/ELT, Ultra Pipelines |
 | `/sales-jitterbit` | Jitterbit — AI-infused Harmony iPaaS, 400+ connectors, Integration Studio + Design Studio, API Manager, App Builder, EDI/B2B, cloud/private/hybrid agents |
+| `/sales-tray` | Tray.ai — enterprise iPaaS, 700+ connectors, Intelligent iPaaS, Merlin Agent Builder (OpenAI/Claude/Gemini/Llama, MCP), Tray Embedded (white-label for SaaS), Enterprise Core governance, GraphQL API, Connector Development Kit |
 | `/sales-activecampaign` | ActiveCampaign — marketing automation (900+ recipes), email marketing, CRM, multi-channel, 900+ integrations |
 | `/sales-mailchimp` | Mailchimp — email campaigns, Customer Journey Builder, SMS, audience management, Mandrill, 300+ integrations |
 | `/sales-closum` | Closum — omnichannel marketing automation: email, SMS, WhatsApp, Telegram, Web Push, AI assistant |

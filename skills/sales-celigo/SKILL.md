@@ -103,6 +103,8 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-boomi` — Boomi platform help — enterprise iPaaS, 1000+ connectors, Data Hub MDM (direct competitor)
 - `/sales-mulesoft` — MuleSoft platform help — Anypoint Platform, API-led connectivity, 450+ connectors (direct competitor)
 - `/sales-snaplogic` — SnapLogic platform help — enterprise iPaaS, 1000+ Snaps, AgentCreator AI agents, API Management 3.0 (direct competitor)
+- `/sales-jitterbit` — Jitterbit platform help — Harmony iPaaS, 400+ connectors, API Manager, App Builder (direct competitor)
+- `/sales-tray` — Tray.ai platform help — enterprise iPaaS, 700+ connectors, Merlin Agent Builder, Tray Embedded (direct competitor)
 - `/sales-integration` — Connecting sales tools — webhooks, Zapier/Make, native integrations, CRM sync
 - `/sales-salesforce` — Salesforce platform help — common Celigo integration target
 - `/sales-data-hygiene` — CRM data quality — deduplication, record matching, enrichment automation

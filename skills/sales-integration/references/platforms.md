@@ -51,6 +51,7 @@ Platform-specific webhook configurations, API integrations, and native connector
 - [Jotform webhooks & API](#jotform-webhooks-api)
 - [Celigo integrations](#celigo-integrations)
 - [Jitterbit integrations](#jitterbit-integrations)
+- [Tray integrations](#tray-integrations)
 
 ### Mailshake webhooks
 - **Setup**: API endpoint `/push/create` with `targetUrl` and `event`
@@ -542,3 +543,20 @@ Platform-specific webhook configurations, API integrations, and native connector
 | Make | Via HTTP | Same pattern as Zapier — HTTP/REST connector or API Manager endpoint. |
 | MCP | Native | Harmony Agent Management supports Model Context Protocol for AI agent integration. |
 | **Full reference** | — | See `/sales-jitterbit` → `references/jitterbit-api-reference.md` |
+
+### Tray integrations
+
+| Integration | Type | Details |
+|---|---|---|
+| GraphQL Embedded API | GraphQL | `https://tray.io/graphql` (US), `https://eu1.tray.io/graphql` (EU), `https://ap1.tray.io/graphql` (APAC). Bearer token auth. **Backend-only** — CORS blocks browser calls. Two token types: Master Token (org-wide) and User Token (per-end-user). |
+| 700+ connectors | Native | Salesforce, HubSpot, NetSuite, SAP, Oracle, Workday, ServiceNow, Slack, Google Workspace, Microsoft 365, Marketo, Segment, Zendesk, Outreach, Stripe, Customer.io, Jotform, and many more. |
+| HTTP Client connector | Universal | Connect to any REST API without a dedicated connector. |
+| GraphQL connector | Universal | Call external GraphQL APIs from within workflows. |
+| Connector Development Kit (CDK) | Custom | `falafel` Node.js framework (`github.com/trayio/falafel`). Build and publish custom connectors to your org. |
+| Tray Embedded | OEM | White-label iPaaS for SaaS vendors. Solutions (reusable workflow templates) + Solution Instances (per-end-user copies) + Configuration Wizard for end-user auth. Whitelabel OAuth redirects via `{org}.integration-authentication.com/oauth2/token`. |
+| Merlin Agent Builder | Native | AI agents with OpenAI/Claude/Gemini/Llama support. Agents invoke Tray workflows as tools. MCP support via `mcp-remote` repo. |
+| API Management | Native | Rate limiting, throttling, request governance. Expose workflows as callable APIs. |
+| Zapier | Via HTTP | No native Zapier connector. Use HTTP Client connector to call Zapier webhook URLs, or expose a workflow trigger URL that Zapier calls. |
+| Make | Via HTTP | Same pattern as Zapier — HTTP Client connector or workflow trigger URL. |
+| Rate limits | — | 30 req/sec, 1800 req/min across Embedded/Connectivity APIs. Burst 50/sec. Call Connector endpoint: concurrency-limited to 1000 active requests (not rate-limited). Event delivery (Trigger API) is not rate-limited. |
+| **Full reference** | — | See `/sales-tray` → `references/tray-api-reference.md` |
