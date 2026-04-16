@@ -91,6 +91,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-acquire` — Acquire.com platform help (curated SaaS marketplace, NDA-gated listings, supports earnouts)
 - `/sales-flippa` — Flippa platform help (largest open marketplace, broader asset types, auction format)
 - `/sales-sideprojectors` — SideProjectors platform help (free peer-to-peer showcase for non-revenue projects)
+- `/sales-startupage` — StartuPage platform help (founder-ecosystem with verified MRR leaderboard + 4-track Opportunities marketplace where acquisition is one of four post types)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
   `npx skills add sales-skills/sales --skill sales-do`
 

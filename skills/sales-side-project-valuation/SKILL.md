@@ -202,6 +202,7 @@ This skill covers a strategy domain across many marketplaces. **Before pointing 
 - `/sales-trustmrr` — TrustMRR platform help (verified-revenue marketplace with live Stripe/LemonSqueezy/Polar/Paddle/etc. API verification, APA-only lump-sum deals, $29-$499 boost tiers)
 - `/sales-sideprojectors` — SideProjectors platform help (free peer-to-peer, DR69 backlink, no escrow)
 - `/sales-ecomswap` — Ecomswap platform help (boutique sell-side M&A advisory for profitable Shopify/FBA/DTC/newsletter/content exits, $200K+ net-profit floor, SDE-based valuation, curated private buyer sourcing)
+- `/sales-startupage` — StartuPage platform help (founder-ecosystem platform where acquisition is 1 of 4 opportunity types; verified MRR via Stripe/LemonSqueezy/Polar/RevenueCat/Dodo; best as a secondary listing for cross-posting rather than primary marketplace)
 - `/sales-digital-products` — Sell digital products (ebooks, templates, SaaS downloads) instead of selling the project itself
 - `/sales-launch-directory` — Launch across startup directories (relevant before selling — buyers discover projects through PH, BetaList, etc.)
 - `/sales-audience-growth` — Grow an email list or user base (audience is itself a valuation driver)

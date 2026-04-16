@@ -18,6 +18,7 @@ Per-marketplace detail for selling or buying a side project. Use to match deal s
 | [Empire Flippers](#empire-flippers) | $50K-$10M+ | 2-15% success fee (tiered) | Verified | Built-in | 60-180 days | Curated, vetted listings, profitable businesses |
 | [FE International](#fe-international) | $500K-$50M+ | Broker commission (10-15%) | Fully vetted | Advisor-managed | 3-9 months | Full-service M&A for profitable SaaS/content |
 | [Ecomswap](#ecomswap) | $200K-$20M net profit | Not publicly disclosed (implied 8-12% success fee) | 50K+ pre-qualified buyers, proof of funds | Broker-managed ("secure escrow") | 8-16 weeks engagement-to-close | Boutique M&A for profitable Shopify/FBA/DTC/newsletter/content exits |
+| [StartuPage](#startupage) | Any (acquisition is 1 of 4 opportunity types) | Plan-gated: Free / Starter $5/mo / Growth $9/mo / Lifetime $179; no per-deal fees documented | Live API revenue verification (Stripe, Lemon Squeezy, Polar, RevenueCat, Dodo) | None — peer-to-peer messaging + external escrow | Weeks-months | Cross-posting an acquisition alongside a dedicated marketplace; founder-ecosystem audience |
 
 ---
 
@@ -343,6 +344,34 @@ Per-marketplace detail for selling or buying a side project. Use to match deal s
 
 ---
 
+## StartuPage
+
+**What it is**: Founder-ecosystem platform where acquisition is 1 of 4 opportunity types (alongside hiring, fundraising, and co-founder matching). Not a dedicated acquisition marketplace — the selling track shares surface area with the rest of the founder profile. Founded 2024.
+
+**Fees**: Plan-gated rather than per-deal. Free / Starter $5/mo annual / Growth $9/mo annual / Lifetime Pass $179 one-time. No marketplace success fee documented. Opportunity posts metered monthly (Starter 1/mo, Growth 3/mo).
+
+**Revenue verification**: Live API verification via Stripe, Lemon Squeezy, Polar, RevenueCat, or Dodo Payments — hourly sync. Overlaps heavily with TrustMRR's verification model, though StartuPage doesn't publish cryptographic proof.
+
+**Buyer quality**: Founder/builder audience — not acquirer-specialized. Fewer serious buyers-with-capital than Acquire.com or Empire Flippers. Better suited for peer-to-peer indie deals where "founder knows founder" trust matters.
+
+**Escrow**: None built in. Direct messaging only — arrange Escrow.com externally.
+
+**Best for**:
+- Cross-posting an acquisition alongside a dedicated marketplace (TrustMRR, Acquire.com, Flippa)
+- Exposure to the founder-ecosystem audience already on your profile for recruiting/fundraising
+- Any deal size that benefits from verified-revenue credibility
+
+**Avoid if**:
+- You need buyer verification / proof of funds (StartuPage doesn't gate)
+- You need escrow integration (use TrustMRR, Acquire.com, or Flippa)
+- You're relying on one marketplace — StartuPage's acquisition volume is lower than acquisition-specialized platforms
+
+**Key differentiator**: Acquisition sits inside a broader founder ecosystem, so the same profile that signals "verified traction" to investors and recruits also signals it to acquirers. Best as a secondary listing, not a primary one.
+
+**Deep dive**: `/sales-startupage`
+
+---
+
 ## Decision tree
 
 **Deal size determines marketplace fit more than anything else.**
@@ -380,5 +409,6 @@ Per-marketplace detail for selling or buying a side project. Use to match deal s
 - Empire Flippers: https://empireflippers.com
 - FE International: https://feinternational.com
 - Ecomswap: https://ecomswap.io
+- StartuPage: https://startupa.ge
 
 *Pricing, fees, and policies change — verify against live marketplace pages before committing.*
