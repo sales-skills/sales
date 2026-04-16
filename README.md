@@ -22,7 +22,7 @@
 ## Quick Start
 
 ```bash
-npx skills add sales-skills/sales --skill sales-do -y
+npx skills add sales-skills/sales --skill sales-do -a claude-code -y
 ```
 
 Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill.
