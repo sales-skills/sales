@@ -79,6 +79,7 @@ Provide guidance based on the user's goal (selling, buying, co-founder search, s
 
 ## Related skills
 
+- `/sales-side-project-valuation` — Side project valuation strategy — pricing, revenue multiples, deal structuring, and comparing SideProjectors against Acquire.com, Flippa, 1Kprojects, Microns, Empire Flippers
 - `/sales-launch-directory` — Launch strategy across multiple startup directories
 - `/sales-ctrlaltcc` — CtrlAlt.cc platform help (curated tool directory)
 - `/sales-microlaunch` — MicroLaunch platform help (30-day leaderboard, deals marketplace)

@@ -621,7 +621,8 @@
 
 | Skill | Route when... |
 |---|---|
-| `/sales-sideprojectors` | User asks about SideProjectors platform, selling a side project, buying a side project, finding a co-founder on SideProjectors, showcasing a project, SideProjectors backlink, side project marketplace, side project valuation, selling an abandoned project, or peer-to-peer project sale |
+| `/sales-sideprojectors` | User asks about SideProjectors platform specifically, SideProjectors backlink, SideProjectors co-founder matching, SideProjectors showcase listing, or SideProjectors-specific buy/sell flow. NOT for general valuation, pricing, or comparing marketplaces — route to `/sales-side-project-valuation` |
+| `/sales-side-project-valuation` | User asks about pricing a side project for sale, valuing a project they want to buy, revenue multiples for side projects or micro-SaaS, comparing marketplaces (Acquire.com vs Flippa vs SideProjectors vs 1Kprojects vs Microns vs Little Exits vs Empire Flippers vs FE International), what buyers look for, due diligence checklists, deal structuring (cash vs earnout vs seller financing), asset purchase agreements for indie projects, or post-sale transfer. NOT for a specific platform (SideProjectors) — route to `/sales-sideprojectors`. NOT for running/growing the project itself — route to `/sales-digital-products` or `/sales-funnel` |
 
 ### ProductBurst & Platform
 
