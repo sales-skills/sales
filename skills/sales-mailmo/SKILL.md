@@ -145,7 +145,7 @@ Based on the user's specific question:
 - `/sales-mailshake` — Mailshake platform help (for sending after finding emails with Mailmo)
 - `/sales-lemlist` — Lemlist platform help (for sending after finding emails with Mailmo)
 - `/sales-smartlead` — Smartlead platform help (for sending after finding emails with Mailmo)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

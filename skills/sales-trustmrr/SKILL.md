@@ -92,7 +92,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-flippa` — Flippa platform help (largest open marketplace, broader asset types, auction format)
 - `/sales-sideprojectors` — SideProjectors platform help (free peer-to-peer showcase for non-revenue projects)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
-  `npx skills add sales-skills/sales --skills sales-do`
+  `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

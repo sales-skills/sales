@@ -99,13 +99,13 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 
 ## Related skills
 
-- `/sales-birdeye` — Birdeye platform help (reviews, listings, messaging, surveys for multi-location). Install: `npx skills add sales-skills/sales --skills sales-birdeye`
-- `/sales-trustpilot` — Trustpilot platform help (TrustBox widgets, TrustScore, Google Seller Ratings). Install: `npx skills add sales-skills/sales --skills sales-trustpilot`
-- `/sales-g2` — G2 platform help (B2B software reviews, buyer intent data). Install: `npx skills add sales-skills/sales --skills sales-g2`
-- `/sales-customer-reviews` — Product review collection strategy for ecommerce. Install: `npx skills add sales-skills/sales --skills sales-customer-reviews`
-- `/sales-customer-feedback` — Customer feedback, NPS, CSAT strategy. Install: `npx skills add sales-skills/sales --skills sales-customer-feedback`
-- `/sales-social-listening` — Social listening and brand monitoring. Install: `npx skills add sales-skills/sales --skills sales-social-listening`
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-birdeye` — Birdeye platform help (reviews, listings, messaging, surveys for multi-location). Install: `npx skills add sales-skills/sales --skill sales-birdeye`
+- `/sales-trustpilot` — Trustpilot platform help (TrustBox widgets, TrustScore, Google Seller Ratings). Install: `npx skills add sales-skills/sales --skill sales-trustpilot`
+- `/sales-g2` — G2 platform help (B2B software reviews, buyer intent data). Install: `npx skills add sales-skills/sales --skill sales-g2`
+- `/sales-customer-reviews` — Product review collection strategy for ecommerce. Install: `npx skills add sales-skills/sales --skill sales-customer-reviews`
+- `/sales-customer-feedback` — Customer feedback, NPS, CSAT strategy. Install: `npx skills add sales-skills/sales --skill sales-customer-feedback`
+- `/sales-social-listening` — Social listening and brand monitoring. Install: `npx skills add sales-skills/sales --skill sales-social-listening`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

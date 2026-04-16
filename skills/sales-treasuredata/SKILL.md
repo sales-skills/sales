@@ -90,7 +90,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-enrich` — Contact and company enrichment across providers
 - `/sales-intent` — Buying intent signals and prioritization
 - `/sales-lead-score` — Lead scoring models across platforms
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

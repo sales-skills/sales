@@ -100,7 +100,7 @@ Otherwise, answer directly from platform knowledge using the reference below.
 - `/sales-funnel` — Landing page and funnel strategy
 - `/sales-lead-score` — Lead scoring models (Brevo has contact scoring on Professional plan+)
 - `/sales-checkout` — Checkout optimization (Brevo e-commerce features)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

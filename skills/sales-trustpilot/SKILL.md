@@ -77,10 +77,10 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 
 ## Related skills
 
-- `/sales-customer-reviews` — Review collection strategy across all platforms (Judge.me, Yotpo, Okendo, etc.). Install: `npx skills add sales-skills/sales --skills sales-customer-reviews`
-- `/sales-outscraper` — Scrape Trustpilot reviews (and Google, Yelp, G2) for analysis. Install: `npx skills add sales-skills/sales --skills sales-outscraper`
-- `/sales-checkout` — Checkout and product page optimization with review widgets. Install: `npx skills add sales-skills/sales --skills sales-checkout`
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-customer-reviews` — Review collection strategy across all platforms (Judge.me, Yotpo, Okendo, etc.). Install: `npx skills add sales-skills/sales --skill sales-customer-reviews`
+- `/sales-outscraper` — Scrape Trustpilot reviews (and Google, Yelp, G2) for analysis. Install: `npx skills add sales-skills/sales --skill sales-outscraper`
+- `/sales-checkout` — Checkout and product page optimization with review widgets. Install: `npx skills add sales-skills/sales --skill sales-checkout`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

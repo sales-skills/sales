@@ -183,15 +183,15 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 
 ## Related skills
 
-- `/sales-vitally` — Vitally platform help: Health Scores, Playbooks, Projects, API, integrations. Install: `npx skills add sales-skills/sales --skills sales-vitally`
-- `/sales-planhat` — Planhat platform help: Health Scores, Revenue Management, CRM Sync, Automation, MCP Server, API. Install: `npx skills add sales-skills/sales --skills sales-planhat`
-- `/sales-churnzero` — ChurnZero platform help: Health Scores, Plays, Journeys, Renewal Hub, In-App WalkThroughs, Surveys, AI Agents, API. Install: `npx skills add sales-skills/sales --skills sales-churnzero`
-- `/sales-gainsight` — Gainsight platform help: CS health scores, CTAs, playbooks, success plans, Journey Orchestrator, PX, Staircase AI, Skilljar, API. Install: `npx skills add sales-skills/sales --skills sales-gainsight`
-- `/sales-customer-feedback` — NPS, CSAT, CES, VoC program design — survey methodology, response rates, closed-loop feedback. Install: `npx skills add sales-skills/sales --skills sales-customer-feedback`
-- `/sales-in-app-messaging` — In-app messages for onboarding tours, feature announcements, NPS surveys. Install: `npx skills add sales-skills/sales --skills sales-in-app-messaging`
-- `/sales-totango` — Totango platform help: SuccessBLOCs, SuccessPlays, Health Scores, Customer Data Hub, Unison AI, Catalyst, API. Install: `npx skills add sales-skills/sales --skills sales-totango`
-- `/sales-coaching` — Sales-to-CS handoff, coaching frameworks, onboarding reps. Install: `npx skills add sales-skills/sales --skills sales-coaching`
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-vitally` — Vitally platform help: Health Scores, Playbooks, Projects, API, integrations. Install: `npx skills add sales-skills/sales --skill sales-vitally`
+- `/sales-planhat` — Planhat platform help: Health Scores, Revenue Management, CRM Sync, Automation, MCP Server, API. Install: `npx skills add sales-skills/sales --skill sales-planhat`
+- `/sales-churnzero` — ChurnZero platform help: Health Scores, Plays, Journeys, Renewal Hub, In-App WalkThroughs, Surveys, AI Agents, API. Install: `npx skills add sales-skills/sales --skill sales-churnzero`
+- `/sales-gainsight` — Gainsight platform help: CS health scores, CTAs, playbooks, success plans, Journey Orchestrator, PX, Staircase AI, Skilljar, API. Install: `npx skills add sales-skills/sales --skill sales-gainsight`
+- `/sales-customer-feedback` — NPS, CSAT, CES, VoC program design — survey methodology, response rates, closed-loop feedback. Install: `npx skills add sales-skills/sales --skill sales-customer-feedback`
+- `/sales-in-app-messaging` — In-app messages for onboarding tours, feature announcements, NPS surveys. Install: `npx skills add sales-skills/sales --skill sales-in-app-messaging`
+- `/sales-totango` — Totango platform help: SuccessBLOCs, SuccessPlays, Health Scores, Customer Data Hub, Unison AI, Catalyst, API. Install: `npx skills add sales-skills/sales --skill sales-totango`
+- `/sales-coaching` — Sales-to-CS handoff, coaching frameworks, onboarding reps. Install: `npx skills add sales-skills/sales --skill sales-coaching`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

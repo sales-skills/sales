@@ -194,4 +194,4 @@ Recommend supporting assets to create alongside templates:
 - `/sales-proposal-analytics` — Track which templates get the best engagement
 - `/sales-deal-room` — Design multi-page deal rooms (may need their own templates)
 - `/sales-content` — General sales enablement content creation
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`

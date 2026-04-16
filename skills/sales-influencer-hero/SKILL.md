@@ -178,7 +178,7 @@ Based on the user's specific question, provide:
 - `/sales-hypeauditor` — HypeAuditor platform help — fraud detection, analytics, Discovery API
 - `/sales-creatoriq` — CreatorIQ platform help — enterprise influencer OS
 - `/sales-deliverability` — Email deliverability for outreach campaigns
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

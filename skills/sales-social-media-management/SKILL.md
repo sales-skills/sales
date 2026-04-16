@@ -114,7 +114,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-social-listening` — Social listening strategy — monitoring, sentiment, crisis detection, tool comparison
 - `/sales-employee-advocacy` — Employee advocacy programs — content curation, gamification, compliance
 - `/sales-influencer-marketing` — Influencer marketing strategy — discovery, vetting, campaigns, ROI
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

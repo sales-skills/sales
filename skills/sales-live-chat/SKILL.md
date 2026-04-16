@@ -116,7 +116,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-lead-routing` — Route chat-qualified leads to the right rep
 - `/sales-lead-score` — Score chat leads based on qualification data
 - `/sales-integration` — Connect chat tools with CRM and other systems
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

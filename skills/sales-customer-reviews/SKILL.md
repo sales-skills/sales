@@ -166,16 +166,16 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 
 ## Related skills
 
-- `/sales-trustpilot` — Trustpilot platform help (TrustBox widgets, TrustScore, Invitation API, Google Seller Ratings). Install: `npx skills add sales-skills/sales --skills sales-trustpilot`
-- `/sales-g2` — G2 platform help (B2B software reviews, buyer intent data, badges, profile optimization). Install: `npx skills add sales-skills/sales --skills sales-g2`
-- `/sales-skeepers` — Skeepers platform help (Verified Reviews, Influencer Marketing, Feedback Management). Install: `npx skills add sales-skills/sales --skills sales-skeepers`
-- `/sales-influencer-marketing` — Influencer marketing strategy (gifted reviews bridge both). Install: `npx skills add sales-skills/sales --skills sales-influencer-marketing`
-- `/sales-checkout` — Checkout optimization (review widgets on product pages affect conversion). Install: `npx skills add sales-skills/sales --skills sales-checkout`
-- `/sales-birdeye` — Birdeye platform help (reviews, listings, messaging, surveys for multi-location businesses). Install: `npx skills add sales-skills/sales --skills sales-birdeye`
-- `/sales-online-reputation` — Online reputation management strategy (monitoring, responding, review generation, listings, crisis response). Install: `npx skills add sales-skills/sales --skills sales-online-reputation`
-- `/sales-customer-feedback` — Customer feedback, NPS, CSAT, VoC strategy (different from product reviews — surveys are private satisfaction measurement, not public reviews). Install: `npx skills add sales-skills/sales --skills sales-customer-feedback`
-- `/sales-email-marketing` — Email marketing (review request emails are a key touchpoint). Install: `npx skills add sales-skills/sales --skills sales-email-marketing`
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-trustpilot` — Trustpilot platform help (TrustBox widgets, TrustScore, Invitation API, Google Seller Ratings). Install: `npx skills add sales-skills/sales --skill sales-trustpilot`
+- `/sales-g2` — G2 platform help (B2B software reviews, buyer intent data, badges, profile optimization). Install: `npx skills add sales-skills/sales --skill sales-g2`
+- `/sales-skeepers` — Skeepers platform help (Verified Reviews, Influencer Marketing, Feedback Management). Install: `npx skills add sales-skills/sales --skill sales-skeepers`
+- `/sales-influencer-marketing` — Influencer marketing strategy (gifted reviews bridge both). Install: `npx skills add sales-skills/sales --skill sales-influencer-marketing`
+- `/sales-checkout` — Checkout optimization (review widgets on product pages affect conversion). Install: `npx skills add sales-skills/sales --skill sales-checkout`
+- `/sales-birdeye` — Birdeye platform help (reviews, listings, messaging, surveys for multi-location businesses). Install: `npx skills add sales-skills/sales --skill sales-birdeye`
+- `/sales-online-reputation` — Online reputation management strategy (monitoring, responding, review generation, listings, crisis response). Install: `npx skills add sales-skills/sales --skill sales-online-reputation`
+- `/sales-customer-feedback` — Customer feedback, NPS, CSAT, VoC strategy (different from product reviews — surveys are private satisfaction measurement, not public reviews). Install: `npx skills add sales-skills/sales --skill sales-customer-feedback`
+- `/sales-email-marketing` — Email marketing (review request emails are a key touchpoint). Install: `npx skills add sales-skills/sales --skill sales-email-marketing`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

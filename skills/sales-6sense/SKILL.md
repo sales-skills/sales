@@ -91,7 +91,7 @@ Otherwise, answer directly using the reference below.
 - `/sales-zoominfo` — ZoomInfo platform help (primary competitor for enrichment + intent)
 - `/sales-clearbit` — Clearbit platform help (enrichment + Reveal visitor ID)
 - `/sales-rb2b` — RB2B platform help (person-level visitor ID — complements 6sense company-level ID)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

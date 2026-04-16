@@ -118,7 +118,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-retargeting` — Retargeting strategy — activate CDP audiences to ad platforms
 - `/sales-integration` — Tool integration — connecting CDP to CRM, email, ad platforms
 - `/sales-enrich` — Contact enrichment — augment CDP profiles with third-party data
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

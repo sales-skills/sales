@@ -93,7 +93,7 @@ Provide guidance based on the user's goal (selling, buying, co-founder search, s
 - `/sales-digital-products` — Sell digital products (ebooks, templates, SaaS)
 - `/sales-checkout` — Optimize landing pages and checkout for conversion
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
-  `npx skills add sales-skills/sales --skills sales-do`
+  `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

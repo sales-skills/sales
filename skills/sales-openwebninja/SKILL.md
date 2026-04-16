@@ -127,7 +127,7 @@ Based on the user's specific question:
 - `/sales-lobstr` — Lobstr platform help (web scraping and data extraction)
 - `/sales-outscraper` — Outscraper platform help (Google Maps scraping and business data)
 - `/sales-apollo` — Apollo platform help (B2B database and sales engagement)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

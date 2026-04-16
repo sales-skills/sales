@@ -81,7 +81,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-affiliate-program` — Affiliate and referral program design (strategy, commission structures, recruitment)
 - `/sales-influencer-marketing` — Influencer marketing strategy from a brand's perspective (discovery, vetting, campaigns)
 - `/sales-performcb` — Perform[cb] CPA network — campaigns, fraud detection, Partner API
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

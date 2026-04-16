@@ -76,10 +76,10 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 
 ## Related skills
 
-- `/sales-customer-success` — Customer success strategy: health scores, churn prevention, onboarding, expansion, playbook design, CS platform comparison. Install: `npx skills add sales-skills/sales --skills sales-customer-success`
-- `/sales-customer-feedback` — NPS, CSAT, CES, VoC program design — survey methodology, response rates, closed-loop feedback. Install: `npx skills add sales-skills/sales --skills sales-customer-feedback`
-- `/sales-integration` — Connect Vitally to CRM, billing, and analytics tools via native integrations, Zapier, or API. Install: `npx skills add sales-skills/sales --skills sales-integration`
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-customer-success` — Customer success strategy: health scores, churn prevention, onboarding, expansion, playbook design, CS platform comparison. Install: `npx skills add sales-skills/sales --skill sales-customer-success`
+- `/sales-customer-feedback` — NPS, CSAT, CES, VoC program design — survey methodology, response rates, closed-loop feedback. Install: `npx skills add sales-skills/sales --skill sales-customer-feedback`
+- `/sales-integration` — Connect Vitally to CRM, billing, and analytics tools via native integrations, Zapier, or API. Install: `npx skills add sales-skills/sales --skill sales-integration`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

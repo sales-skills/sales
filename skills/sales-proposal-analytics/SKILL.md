@@ -151,4 +151,4 @@ For full automation setup (CRM sync, Slack notifications, etc.), use `/sales-qwi
 - `/sales-qwilr-automation` — Set up automated CRM sync and webhook workflows
 - `/sales-follow-up` — General follow-up strategies (non-Qwilr-specific)
 - `/sales-deal-room` — For complex deals that need a multi-page deal room
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`

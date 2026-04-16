@@ -103,7 +103,7 @@ Based on the user's specific question:
 - `/sales-influencer-marketing` — Influencer marketing strategy — discovery, vetting, campaign tracking, ROI
 - `/sales-employee-advocacy` — Employee advocacy strategy — tool selection, content curation, gamification, compliance
 - `/sales-integration` — Connect Sprout Social to CRM, helpdesk, BI tools
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

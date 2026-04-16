@@ -178,7 +178,7 @@ DevHunt fits into **Phase 1 — Instant listings** since there's no editorial qu
 - `/sales-tinystartups` — Tiny Startups platform help (curated directory + newsletter, DR50 dofollow)
 - `/sales-producthunt` — Product Hunt platform help (largest launch platform, DR91 dofollow, 5M+ visits/mo)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
-  `npx skills add sales-skills/sales --skills sales-do`
+  `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

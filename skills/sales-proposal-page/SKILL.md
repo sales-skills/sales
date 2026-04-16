@@ -126,4 +126,4 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-deal-room` — For complex multi-stakeholder deals that need multiple pages
 - `/sales-proposal-template` — Design reusable templates for your whole team
 - `/sales-proposal` — For general (non-Qwilr) proposal strategy and pricing
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`

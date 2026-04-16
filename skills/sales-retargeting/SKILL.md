@@ -126,7 +126,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-remerge` — Remerge platform help — in-app retargeting DSP, audience segmentation, incrementality measurement, MMP integrations
 - `/sales-adwake` — Adwake platform help — managed mobile app UA, branding, in-app retargeting (Entravision)
 - `/sales-zoomd` — Zoomd platform help — mobile UA across 600+ sources, mobile DSP, CGC, Albert.ai AI optimization
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

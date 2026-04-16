@@ -111,7 +111,7 @@ Otherwise, answer directly using the reference below.
 - `/sales-audience-growth` — Form optimization and conversion (form shortening)
 - `/sales-integration` — Connect Clearbit to CRM, marketing automation, and other tools
 - `/sales-zoominfo` — ZoomInfo platform (primary competitor for enterprise enrichment)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

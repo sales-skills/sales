@@ -198,10 +198,10 @@ Based on the user's module and goal, provide:
 
 ## Related skills
 
-- `/sales-customer-reviews` — Review collection strategy across all platforms (Skeepers, Yotpo, Judge.me, Bazaarvoice, Loox, Okendo). Install: `npx skills add sales-skills/sales --skills sales-customer-reviews`
-- `/sales-influencer-marketing` — Influencer marketing strategy across platforms. Install: `npx skills add sales-skills/sales --skills sales-influencer-marketing`
-- `/sales-loyalty` — Loyalty programs and customer advocacy. Install: `npx skills add sales-skills/sales --skills sales-loyalty`
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-customer-reviews` — Review collection strategy across all platforms (Skeepers, Yotpo, Judge.me, Bazaarvoice, Loox, Okendo). Install: `npx skills add sales-skills/sales --skill sales-customer-reviews`
+- `/sales-influencer-marketing` — Influencer marketing strategy across platforms. Install: `npx skills add sales-skills/sales --skill sales-influencer-marketing`
+- `/sales-loyalty` — Loyalty programs and customer advocacy. Install: `npx skills add sales-skills/sales --skill sales-loyalty`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

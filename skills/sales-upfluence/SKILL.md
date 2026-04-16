@@ -98,7 +98,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-aspire` — Aspire platform help — word-of-mouth commerce, product seeding, UGC
 - `/sales-creatoriq` — CreatorIQ platform help — enterprise influencer OS
 - `/sales-integration` — Tool integration architecture (webhooks, Zapier, API pipelines)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

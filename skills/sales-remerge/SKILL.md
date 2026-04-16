@@ -103,7 +103,7 @@ Based on the user's specific question, provide step-by-step guidance. Adapt the 
 - `/sales-push-notification` — Push notification strategy — alternative re-engagement channel for mobile apps
 - `/sales-in-app-messaging` — In-app messaging strategy — another re-engagement channel alongside retargeting
 - `/sales-integration` — Connect Remerge to other tools via webhooks, MMPs, and API
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

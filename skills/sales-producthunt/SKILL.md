@@ -182,7 +182,7 @@ Based on the user's situation, provide specific recommendations:
 ## Related skills
 
 - `/sales-launch-directory` — Coordinate launches across 20+ directories, with PH as the capstone. Install:
-  `npx skills add sales-skills/sales --skills sales-launch-directory`
+  `npx skills add sales-skills/sales --skill sales-launch-directory`
 - `/sales-fazier` — Fazier platform help (DR81 dofollow, highest from any first-party directory)
 - `/sales-uneed` — Uneed platform help (DR74 dofollow, daily voting competitions)
 - `/sales-peerlist` — Peerlist platform help (weekly Launchpad, 203K+ users)
@@ -191,7 +191,7 @@ Based on the user's situation, provide specific recommendations:
 - `/sales-email-marketing` — Email your supporter list on launch day
 - `/sales-checkout` — Optimize your landing page for PH traffic conversion
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
-  `npx skills add sales-skills/sales --skills sales-do`
+  `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

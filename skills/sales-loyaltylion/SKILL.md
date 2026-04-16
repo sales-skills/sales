@@ -96,7 +96,7 @@ Based on the user's question, provide step-by-step guidance. Always:
 - `/sales-email-marketing` — Email marketing strategy across platforms
 - `/sales-integration` — Connect LoyaltyLion with other tools via API, webhooks, Zapier
 - `/sales-checkout` — Checkout optimization with loyalty display
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

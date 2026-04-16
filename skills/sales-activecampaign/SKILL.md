@@ -135,7 +135,7 @@ Based on the user's specific question:
 - `/sales-customerio` — Customer.io platform help (primary competitor for behavior-driven automation)
 - `/sales-mailchimp` — Mailchimp platform help (primary competitor for email marketing)
 - `/sales-postmark` — Postmark platform help (powers ActiveCampaign's transactional email)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

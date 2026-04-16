@@ -98,7 +98,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-6sense` — 6sense platform help (integrates with Qualified for ABM intent data)
 - `/sales-zoominfo` — ZoomInfo platform help (visitor identification, Chat)
 - `/sales-integration` — Connect Qualified with other tools via webhooks, Zapier, native integrations
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

@@ -100,7 +100,7 @@ Based on the user's specific question:
 - `/sales-hypefy` — Hypefy platform help — zero-subscription, pay-per-campaign influencer marketing
 - `/sales-influencity` — Influencity platform help — 200M+ creators, IRM, Social Hub, Monitoring
 - `/sales-skeepers` — Skeepers platform help — UGC + reviews + influencer in one platform
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

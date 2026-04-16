@@ -112,7 +112,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-influencer-marketing` — Influencer marketing strategy across platforms — platform comparison, creator vetting, ROI measurement
 - `/sales-retargeting` — Retargeting strategy — repurpose influencer content for paid ads
 - `/sales-media-relations` — Media relations strategy — gaming press outreach, press kits, coverage tracking
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

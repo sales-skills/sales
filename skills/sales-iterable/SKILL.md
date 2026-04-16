@@ -122,7 +122,7 @@ Otherwise, answer directly with Iterable-specific guidance below.
 - `/sales-braze` — Braze platform help (primary competitor — for Braze-specific questions)
 - `/sales-customerio` — Customer.io platform help (another cross-channel platform)
 - `/sales-klaviyo` — Klaviyo platform help (e-commerce-focused engagement)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

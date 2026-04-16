@@ -99,7 +99,7 @@ Based on the user's specific question:
 - `/sales-influencer-marketing` — Influencer marketing strategy across platforms — platform comparison, creator discovery, vetting, ROI measurement
 - `/sales-retargeting` — Retargeting strategy — visitor retargeting, cart abandonment, dynamic ads, cross-channel
 - `/sales-media-relations` — Media relations strategy — journalist databases, PR pitching, coverage tracking
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

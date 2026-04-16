@@ -98,7 +98,7 @@ Based on the user's specific question:
 - `/sales-integration` — Connect Seamless.AI to other tools
 - `/sales-compete` — Competitive displacement campaigns
 - `/sales-account-map` — Map buying committees at target accounts
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

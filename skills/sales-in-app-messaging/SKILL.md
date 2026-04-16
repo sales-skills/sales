@@ -147,16 +147,16 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 
 ## Related skills
 
-- `/sales-chameleon` — Chameleon platform help (product tours, tooltips, microsurveys, launchers, HelpBar, A/B testing, AI). Install: `npx skills add sales-skills/sales --skills sales-chameleon`
-- `/sales-whatfix` — Whatfix platform help (enterprise DAP, Flows, Smart Tips, Product Analytics, Mirror sandbox). Install: `npx skills add sales-skills/sales --skills sales-whatfix`
-- `/sales-pendo` — Pendo platform help (analytics, guides, session replay, NPS, API). Install: `npx skills add sales-skills/sales --skills sales-pendo`
+- `/sales-chameleon` — Chameleon platform help (product tours, tooltips, microsurveys, launchers, HelpBar, A/B testing, AI). Install: `npx skills add sales-skills/sales --skill sales-chameleon`
+- `/sales-whatfix` — Whatfix platform help (enterprise DAP, Flows, Smart Tips, Product Analytics, Mirror sandbox). Install: `npx skills add sales-skills/sales --skill sales-whatfix`
+- `/sales-pendo` — Pendo platform help (analytics, guides, session replay, NPS, API). Install: `npx skills add sales-skills/sales --skill sales-pendo`
 - `/sales-iterable` — Iterable platform help (in-app messages, Mobile Inbox, Embedded Messages, Studio journeys)
 - `/sales-braze` — Braze platform help (in-app messages, Content Cards, Canvas integration)
 - `/sales-customerio` — Customer.io platform help (in-app in Journeys)
 - `/sales-push-notification` — Push notification strategy (complementary channel)
 - `/sales-email-marketing` — Email marketing strategy (coordinate with in-app)
 - `/sales-live-chat` — Live chat and chatbot (Intercom combines both)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

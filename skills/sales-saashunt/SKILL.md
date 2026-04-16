@@ -197,7 +197,7 @@ The template-based submission takes slightly longer than typical form-based dire
 - `/sales-fazier` — Fazier platform help (DR81 dofollow, free with badge)
 - `/sales-producthunt` — Product Hunt platform help (largest launch platform, DR91 dofollow)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
-  `npx skills add sales-skills/sales --skills sales-do`
+  `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

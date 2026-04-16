@@ -147,7 +147,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-email-marketing` — Email marketing strategy (coordinate push + email cadence)
 - `/sales-sms-marketing` — SMS marketing strategy (coordinate push + SMS cadence)
 - `/sales-live-chat` — Live chat and chatbot (another engagement channel)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

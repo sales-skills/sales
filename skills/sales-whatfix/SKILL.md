@@ -89,11 +89,11 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 
 ## Related skills
 
-- `/sales-in-app-messaging` — In-app messaging strategy across platforms (Whatfix, Pendo, Appcues, Braze). Install: `npx skills add sales-skills/sales --skills sales-in-app-messaging`
-- `/sales-pendo` — Pendo platform help (product analytics, guides, session replay, NPS, API). Install: `npx skills add sales-skills/sales --skills sales-pendo`
-- `/sales-customer-feedback` — NPS, CSAT, VoC strategy and platform comparison. Install: `npx skills add sales-skills/sales --skills sales-customer-feedback`
-- `/sales-customer-success` — Customer success strategy: health scores, churn prevention, onboarding. Install: `npx skills add sales-skills/sales --skills sales-customer-success`
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-in-app-messaging` — In-app messaging strategy across platforms (Whatfix, Pendo, Appcues, Braze). Install: `npx skills add sales-skills/sales --skill sales-in-app-messaging`
+- `/sales-pendo` — Pendo platform help (product analytics, guides, session replay, NPS, API). Install: `npx skills add sales-skills/sales --skill sales-pendo`
+- `/sales-customer-feedback` — NPS, CSAT, VoC strategy and platform comparison. Install: `npx skills add sales-skills/sales --skill sales-customer-feedback`
+- `/sales-customer-success` — Customer success strategy: health scores, churn prevention, onboarding. Install: `npx skills add sales-skills/sales --skill sales-customer-success`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

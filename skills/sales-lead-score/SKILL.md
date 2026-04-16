@@ -290,7 +290,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-6sense` — 6sense platform help (AI-driven predictive scoring, 6QA qualification, Signalverse intent for behavioral scoring)
 - `/sales-getresponse` — GetResponse platform help (contact scoring, automation-triggered scoring, engagement-based scoring)
 - `/sales-clay` — Clay platform help (enrichment waterfall for scoring, Claygent for custom signals, Sculptor for scoring logic)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

@@ -188,7 +188,7 @@ Based on the user's role and question, provide step-by-step guidance.
 - `/sales-affiliate-program` — Design affiliate programs, commission structures, recruitment strategies, and payout optimization
 - `/sales-retargeting` — Retargeting strategy for driving users back after initial exposure
 - `/sales-integration` — Connect Perform[cb] with your CRM, analytics, or automation tools
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

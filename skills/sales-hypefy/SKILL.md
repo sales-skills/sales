@@ -101,7 +101,7 @@ Based on the user's specific question:
 - `/sales-creatorco` — Creator.co platform help — London AI agent, UGC rights, affiliate tracking
 - `/sales-affiliate-program` — Affiliate and referral program design (strategy, not platform-specific)
 - `/sales-retargeting` — Retargeting campaign audiences from influencer content
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

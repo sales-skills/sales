@@ -167,19 +167,19 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 
 ## Related skills
 
-- `/sales-surveymonkey` — SurveyMonkey platform help (survey creation, collectors, analytics, API). Install: `npx skills add sales-skills/sales --skills sales-surveymonkey`
-- `/sales-qualtrics` — Qualtrics XM platform help (CX/EX surveys, dashboards, API, Experience Agents). Install: `npx skills add sales-skills/sales --skills sales-qualtrics`
-- `/sales-medallia` — Medallia platform help (Experience Cloud, DXA, contact center, APIs). Install: `npx skills add sales-skills/sales --skills sales-medallia`
-- `/sales-skeepers` — Skeepers platform help (Feedback Management module for NPS/CSAT). Install: `npx skills add sales-skills/sales --skills sales-skeepers`
-- `/sales-birdeye` — Birdeye platform help (surveys + reviews + messaging for multi-location businesses). Install: `npx skills add sales-skills/sales --skills sales-birdeye`
-- `/sales-vitally` — Vitally platform help: Health Scores, NPS, Playbooks, Projects, API. Install: `npx skills add sales-skills/sales --skills sales-vitally`
-- `/sales-churnzero` — ChurnZero platform help: Health Scores, Surveys (NPS/CSAT/CES), Plays, Journeys, API. Install: `npx skills add sales-skills/sales --skills sales-churnzero`
-- `/sales-customer-success` — Customer success strategy: health scores, churn prevention, onboarding, expansion, CS platform comparison. Install: `npx skills add sales-skills/sales --skills sales-customer-success`
-- `/sales-customer-reviews` — Product review collection strategy (different from feedback surveys — reviews are public, surveys are private). Install: `npx skills add sales-skills/sales --skills sales-customer-reviews`
-- `/sales-pendo` — Pendo platform help (in-app NPS/CSAT/PMF surveys, product analytics, guides). Install: `npx skills add sales-skills/sales --skills sales-pendo`
-- `/sales-in-app-messaging` — In-app NPS/CSAT surveys as part of in-app messaging strategy. Install: `npx skills add sales-skills/sales --skills sales-in-app-messaging`
-- `/sales-typeform` — Typeform platform help — conversational forms, surveys, quizzes, API, Embed SDK. Install: `npx skills add sales-skills/sales --skills sales-typeform`
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-surveymonkey` — SurveyMonkey platform help (survey creation, collectors, analytics, API). Install: `npx skills add sales-skills/sales --skill sales-surveymonkey`
+- `/sales-qualtrics` — Qualtrics XM platform help (CX/EX surveys, dashboards, API, Experience Agents). Install: `npx skills add sales-skills/sales --skill sales-qualtrics`
+- `/sales-medallia` — Medallia platform help (Experience Cloud, DXA, contact center, APIs). Install: `npx skills add sales-skills/sales --skill sales-medallia`
+- `/sales-skeepers` — Skeepers platform help (Feedback Management module for NPS/CSAT). Install: `npx skills add sales-skills/sales --skill sales-skeepers`
+- `/sales-birdeye` — Birdeye platform help (surveys + reviews + messaging for multi-location businesses). Install: `npx skills add sales-skills/sales --skill sales-birdeye`
+- `/sales-vitally` — Vitally platform help: Health Scores, NPS, Playbooks, Projects, API. Install: `npx skills add sales-skills/sales --skill sales-vitally`
+- `/sales-churnzero` — ChurnZero platform help: Health Scores, Surveys (NPS/CSAT/CES), Plays, Journeys, API. Install: `npx skills add sales-skills/sales --skill sales-churnzero`
+- `/sales-customer-success` — Customer success strategy: health scores, churn prevention, onboarding, expansion, CS platform comparison. Install: `npx skills add sales-skills/sales --skill sales-customer-success`
+- `/sales-customer-reviews` — Product review collection strategy (different from feedback surveys — reviews are public, surveys are private). Install: `npx skills add sales-skills/sales --skill sales-customer-reviews`
+- `/sales-pendo` — Pendo platform help (in-app NPS/CSAT/PMF surveys, product analytics, guides). Install: `npx skills add sales-skills/sales --skill sales-pendo`
+- `/sales-in-app-messaging` — In-app NPS/CSAT surveys as part of in-app messaging strategy. Install: `npx skills add sales-skills/sales --skill sales-in-app-messaging`
+- `/sales-typeform` — Typeform platform help — conversational forms, surveys, quizzes, API, Embed SDK. Install: `npx skills add sales-skills/sales --skill sales-typeform`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

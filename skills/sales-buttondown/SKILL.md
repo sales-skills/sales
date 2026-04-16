@@ -94,7 +94,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-mailerlite` — MailerLite platform help — affordable newsletter alternative
 - `/sales-digital-products` — Selling digital products alongside your newsletter
 - `/sales-integration` — Connect Buttondown to CRM and other tools via API, Zapier, webhooks
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

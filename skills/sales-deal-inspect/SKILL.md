@@ -146,7 +146,7 @@ Actions should be specific, not generic. Instead of "build executive relationshi
 - `/sales-discovery` — Prep discovery questions to fill MEDDPICC gaps
 - `/sales-call-review` — Review the latest call on this deal for coaching insights
 - `/sales-close` — Closing strategies and mutual action plans
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Gotchas
 

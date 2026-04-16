@@ -208,7 +208,7 @@ This skill covers a strategy domain across many marketplaces. **Before pointing 
 - `/sales-newsletter` — Newsletter monetization (newsletters sell as assets too — separate valuation playbook)
 - `/sales-funnel` — Build sales funnels for the ongoing product (not selling the project itself)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
-  `npx skills add sales-skills/sales --skills sales-do`
+  `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

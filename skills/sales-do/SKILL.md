@@ -233,10 +233,10 @@ Check the installed skills list from Step 2. **Only show install commands for sk
 Install commands are constructible from `references/skill-sources.md` — the same registry you used in Step 3.5 to fetch uninstalled SKILL.md files. For each uninstalled recommendation, render:
 
 ```
-npx skills add {org}/{repo} --skills {skill-name}
+npx skills add {org}/{repo} --skill {skill-name}
 ```
 
-For example, an uninstalled `sales-braze` resolves to the default → `npx skills add sales-skills/sales --skills sales-braze`. An uninstalled `cold-email` resolves to the `coreyhaines31/marketingskills` override → `npx skills add coreyhaines31/marketingskills --skills cold-email`.
+For example, an uninstalled `sales-braze` resolves to the default → `npx skills add sales-skills/sales --skill sales-braze`. An uninstalled `cold-email` resolves to the `coreyhaines31/marketingskills` override → `npx skills add coreyhaines31/marketingskills --skill cold-email`.
 
 To browse all available third-party skills with descriptions and install commands, tell the user to run `/sales-third-party`.
 

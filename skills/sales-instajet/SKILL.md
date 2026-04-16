@@ -172,7 +172,7 @@ Based on the user's specific situation, provide:
 - `/sales-afluencer` — Afluencer micro-influencer marketplace — Collab listings, Shopify integration
 - `/sales-hypeauditor` — HypeAuditor AI-powered influencer analytics — fraud detection, audience analysis
 - `/sales-aspire` — Aspire word-of-mouth commerce — product seeding, affiliate tracking, UGC
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

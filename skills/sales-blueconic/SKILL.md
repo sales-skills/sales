@@ -107,7 +107,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-customerio` — Customer.io platform help (Journeys, Data Pipelines — often compared to BlueConic)
 - `/sales-braze` — Braze platform help (Canvas Flow, Braze Data Platform — CDP-adjacent)
 - `/sales-klaviyo` — Klaviyo platform help (Klaviyo Data Platform — CDP-adjacent for ecommerce)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

@@ -106,7 +106,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-lead-score` — Lead scoring model design — dimensions, weights, MQL/SQL thresholds
 - `/sales-lead-routing` — Lead routing and assignment — round-robin, territory, score-based
 - `/sales-forecast` — Revenue forecasting — pipeline coverage, commit validation
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

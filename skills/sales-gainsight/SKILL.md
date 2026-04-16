@@ -83,14 +83,14 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 
 ## Related skills
 
-- `/sales-customer-success` — Customer success strategy: health scores, churn prevention, onboarding, expansion, playbook design, CS platform comparison. Install: `npx skills add sales-skills/sales --skills sales-customer-success`
-- `/sales-customer-feedback` — NPS, CSAT, CES, VoC program design — survey methodology, response rates, closed-loop feedback. Install: `npx skills add sales-skills/sales --skills sales-customer-feedback`
-- `/sales-vitally` — Vitally platform help: Health Scores, Playbooks, Projects, API. Install: `npx skills add sales-skills/sales --skills sales-vitally`
-- `/sales-churnzero` — ChurnZero platform help: ChurnScores, Plays, Journeys, API. Install: `npx skills add sales-skills/sales --skills sales-churnzero`
-- `/sales-totango` — Totango platform help: SuccessBLOCs, SuccessPlays, Health Scores, API. Install: `npx skills add sales-skills/sales --skills sales-totango`
-- `/sales-planhat` — Planhat platform help: Health Scores, Agentic Automation, API. Install: `npx skills add sales-skills/sales --skills sales-planhat`
-- `/sales-integration` — Connect Gainsight to CRM, billing, and analytics tools. Install: `npx skills add sales-skills/sales --skills sales-integration`
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-customer-success` — Customer success strategy: health scores, churn prevention, onboarding, expansion, playbook design, CS platform comparison. Install: `npx skills add sales-skills/sales --skill sales-customer-success`
+- `/sales-customer-feedback` — NPS, CSAT, CES, VoC program design — survey methodology, response rates, closed-loop feedback. Install: `npx skills add sales-skills/sales --skill sales-customer-feedback`
+- `/sales-vitally` — Vitally platform help: Health Scores, Playbooks, Projects, API. Install: `npx skills add sales-skills/sales --skill sales-vitally`
+- `/sales-churnzero` — ChurnZero platform help: ChurnScores, Plays, Journeys, API. Install: `npx skills add sales-skills/sales --skill sales-churnzero`
+- `/sales-totango` — Totango platform help: SuccessBLOCs, SuccessPlays, Health Scores, API. Install: `npx skills add sales-skills/sales --skill sales-totango`
+- `/sales-planhat` — Planhat platform help: Health Scores, Agentic Automation, API. Install: `npx skills add sales-skills/sales --skill sales-planhat`
+- `/sales-integration` — Connect Gainsight to CRM, billing, and analytics tools. Install: `npx skills add sales-skills/sales --skill sales-integration`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

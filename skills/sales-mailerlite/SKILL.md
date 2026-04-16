@@ -101,7 +101,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-digital-products` — Selling digital products (ebooks, templates, courses)
 - `/sales-transactional-email` — Transactional email (provider comparison, API setup)
 - `/sales-kit` — Kit platform help (MailerLite alternative for creators)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

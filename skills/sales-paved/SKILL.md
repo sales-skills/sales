@@ -88,7 +88,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-email-marketing` — Email marketing strategy (campaigns, automation, segmentation)
 - `/sales-b2b-advertising` — Account-based B2B advertising (if you're an advertiser targeting business audiences via newsletters)
 - `/sales-deliverability` — Email deliverability (SPF, DKIM, DMARC — affects your newsletter engagement metrics that sponsors see)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

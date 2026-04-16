@@ -93,7 +93,7 @@ Based on the user's specific question:
 - `/sales-call-review` — Sales call coaching and review
 - `/sales-email-tracking` — Content engagement tracking
 - `/sales-integration` — Connecting Seismic to CRM and other tools
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

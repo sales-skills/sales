@@ -155,7 +155,7 @@ hand off: "This is a launch directory strategy question — run: `/sales-launch-
 - `/sales-firsto` — Firsto platform help (fair launch platform, sustained SEO discovery)
 - `/sales-producthunt` — Product Hunt platform help (largest launch platform, DR91 dofollow, 5M+ visits/mo)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
-  `npx skills add sales-skills/sales --skills sales-do`
+  `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

@@ -132,7 +132,7 @@ Based on the user's specific question:
 - `/sales-deliverability` — Email deliverability and verification strategy (SPF/DKIM/DMARC, warmup, inbox placement)
 - `/sales-prospect-list` — Prospect list building strategy and best practices
 - `/sales-integration` — Connect Enrich.so to CRM, automation tools, or other platforms
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

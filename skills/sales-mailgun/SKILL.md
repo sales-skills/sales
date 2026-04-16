@@ -132,7 +132,7 @@ Based on the user's specific question:
 - `/sales-sendgrid` — SendGrid platform help — primary Mailgun competitor
 - `/sales-postmark` — Postmark platform help — primary Mailgun competitor
 - `/sales-customerio` — Customer.io platform help — uses Mailgun-like APIs for transactional
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

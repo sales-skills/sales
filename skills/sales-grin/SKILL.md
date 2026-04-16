@@ -88,11 +88,11 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 
 ## Related skills
 
-- `/sales-influencer-marketing` — Influencer marketing strategy across 25+ platforms — discovery, vetting, campaign tracking, ROI. Install: `npx skills add sales-skills/sales --skills sales-influencer-marketing`
-- `/sales-affiliate-program` — Affiliate and referral program design. Install: `npx skills add sales-skills/sales --skills sales-affiliate-program`
-- `/sales-social-listening` — Social listening and brand monitoring strategy. Install: `npx skills add sales-skills/sales --skills sales-social-listening`
-- `/sales-deliverability` — Email deliverability for outreach campaigns. Install: `npx skills add sales-skills/sales --skills sales-deliverability`
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-influencer-marketing` — Influencer marketing strategy across 25+ platforms — discovery, vetting, campaign tracking, ROI. Install: `npx skills add sales-skills/sales --skill sales-influencer-marketing`
+- `/sales-affiliate-program` — Affiliate and referral program design. Install: `npx skills add sales-skills/sales --skill sales-affiliate-program`
+- `/sales-social-listening` — Social listening and brand monitoring strategy. Install: `npx skills add sales-skills/sales --skill sales-social-listening`
+- `/sales-deliverability` — Email deliverability for outreach campaigns. Install: `npx skills add sales-skills/sales --skill sales-deliverability`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

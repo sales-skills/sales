@@ -133,7 +133,7 @@ Based on the user's specific question:
 - `/sales-integration` — Connect Lobstr to CRM, automation, or other tools
 - `/sales-deliverability` — Email deliverability and verification strategy for scraped contact data
 - `/sales-outscraper` — Similar scraping and data extraction platform — compare capabilities and choose the right tool
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

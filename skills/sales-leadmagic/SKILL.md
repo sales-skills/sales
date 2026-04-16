@@ -209,7 +209,7 @@ When answering, always:
 - `/sales-deliverability` — Email deliverability (for validation strategy beyond LeadMagic)
 - `/sales-integration` — Connecting tools with webhooks, Zapier, APIs
 - `/sales-clay` — Clay platform help (LeadMagic is a native Clay provider for waterfall enrichment)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

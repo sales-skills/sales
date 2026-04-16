@@ -171,7 +171,7 @@ Based on the user's question, provide specific next steps. For common scenarios:
 - `/sales-hypeauditor` — HypeAuditor — AI-powered fraud detection and influencer analytics (223M+ profiles)
 - `/sales-modash` — Modash — Shopify-focused influencer marketing (350M+ profiles, lowest entry price)
 - `/sales-retargeting` — Paid media strategy for amplifying content
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

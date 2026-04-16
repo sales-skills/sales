@@ -170,7 +170,7 @@ LaunchDay is fundamentally different from traditional startup directories — it
 - `/sales-huzzler` — Huzzler platform help (founder community, weekly Launch Arena)
 - `/sales-producthunt` — Product Hunt platform help (largest launch platform, DR91 dofollow, 5M+ visits/mo)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
-  `npx skills add sales-skills/sales --skills sales-do`
+  `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

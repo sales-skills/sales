@@ -169,7 +169,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-plutoba` — PlutoBa platform help — AI influencer vetting, fake follower detection, brand safety scoring, rate benchmarks
 - `/sales-zoomd` — Zoomd platform help — mobile UA with integrated CGC creator content production
 - `/sales-retargeting` — Retargeting campaign audiences from influencer content
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

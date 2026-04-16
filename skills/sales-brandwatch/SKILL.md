@@ -93,7 +93,7 @@ Based on the user's specific question:
 - `/sales-media-relations` — Media relations and PR strategy across tools
 - `/sales-ai-visibility` — AI visibility monitoring — track brand mentions in ChatGPT, Claude, Perplexity, Gemini
 - `/sales-integration` — Connect Brandwatch to CRM, BI tools, and other platforms via API/Zapier/Make
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

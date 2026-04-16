@@ -139,7 +139,7 @@ Based on the user's specific question:
 - `/sales-enrich` — Cross-platform datan enrichment strategy (combine Outscraper with other enrichment tools)
 - `/sales-deliverability` — Email deliverability and verification strategy (beyond Outscraper's email validation)
 - `/sales-integration` — Connect Outscraper to CRM, automation, or other tools
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

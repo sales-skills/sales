@@ -128,7 +128,7 @@ Reddit ads work best as part of a broader funnel:
 - `/sales-intent` — Buying signals and account prioritization (Reddit engagement as a signal)
 - `/sales-integration` — Connecting Reddit Ads to CRM, email platforms, and other tools via Zapier/API
 - `/sales-adroll` — AdRoll platform help (cross-channel retargeting including Reddit traffic)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

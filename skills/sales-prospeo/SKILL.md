@@ -89,7 +89,7 @@ Based on the user's specific question:
 - `/sales-intent` — Layer buying signals on enriched contacts to prioritize outreach
 - `/sales-cadence` — Design outbound sequences for enriched contacts
 - `/sales-integration` — Connect Prospeo to other tools via API, Zapier, Make, n8n
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

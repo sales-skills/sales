@@ -194,7 +194,7 @@ Pair with:
 - `/sales-startupstash` — Startup Stash platform help (largest curated tool directory, DR65 nofollow)
 - `/sales-fazier` — Fazier platform help (DR81 dofollow, free with badge)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
-  `npx skills add sales-skills/sales --skills sales-do`
+  `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

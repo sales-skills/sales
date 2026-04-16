@@ -98,7 +98,7 @@ Based on the user's specific question:
 - `/sales-apollo` — Apollo.io platform help (if using Apollo instead of Reply.io)
 - `/sales-salesloft` — Salesloft platform help (if using Salesloft instead of Reply.io)
 - `/sales-mailshake` — Mailshake platform help (if using Mailshake instead of Reply.io)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

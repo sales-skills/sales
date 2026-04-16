@@ -105,7 +105,7 @@ Based on the user's specific question:
 - `/sales-houseofmarketers` — House of Marketers — TikTok-focused agency comparison
 - `/sales-famesters` — Famesters — full-cycle influencer agency (gaming, fintech, apps)
 - `/sales-social-media-management` — Social media management strategy
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

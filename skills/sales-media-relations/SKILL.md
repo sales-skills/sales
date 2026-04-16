@@ -109,7 +109,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-cadence` — Outbound sequence design (adaptable to PR outreach cadences)
 - `/sales-cloutboost` — Cloutboost platform help — gaming PR, influencer discovery, campaign management
 - `/sales-gaming-marketing` — Gaming influencer marketing strategy — streamer partnerships, game launch campaigns
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

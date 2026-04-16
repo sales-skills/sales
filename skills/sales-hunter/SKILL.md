@@ -190,7 +190,7 @@ Based on the user's specific question:
 - `/sales-lemlist` — Lemlist platform help (if using Lemlist for sending)
 - `/sales-tomba` — Tomba platform help (alternative email finder/verifier)
 - `/sales-prospeo` — Prospeo platform help (alternative enrichment/verification)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

@@ -165,7 +165,7 @@ For campaign optimization:
 - `/sales-meeting-scheduler` — Schedule sales meetings with routing, round-robin, and CRM sync
 - `/sales-lead-score` — Design and tune lead scoring models
 - `/sales-coaching` — Sales coaching, onboarding, and rep enablement
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

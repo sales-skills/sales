@@ -126,7 +126,7 @@ Otherwise, answer directly from platform knowledge below.
 - `/sales-cadence` — Multi-channel outbound sequences
 - `/sales-integration` — Connect sales tools with webhooks, APIs, and iPaaS
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
-  `npx skills add sales-skills/sales --skills sales-do`
+  `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

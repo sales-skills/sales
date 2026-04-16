@@ -108,7 +108,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-hypeauditor` — HypeAuditor — AI-powered fraud detection and influencer analytics (223M+ profiles)
 - `/sales-tiktok-marketing` — TikTok marketing strategy — organic growth, paid ads, content creation, algorithm
 - `/sales-gaming-marketing` — Gaming influencer marketing strategy — streamer partnerships, game launch campaigns
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

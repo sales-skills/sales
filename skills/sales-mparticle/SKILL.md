@@ -109,7 +109,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-integration` — Tool integration — connecting mParticle to CRM, email, ad platforms
 - `/sales-enrich` — Contact enrichment — augment mParticle profiles with third-party data
 - `/sales-retargeting` — Retargeting strategy — activate mParticle audiences to ad platforms
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

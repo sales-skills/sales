@@ -84,11 +84,11 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 
 ## Related skills
 
-- `/sales-customer-feedback` — Customer feedback, NPS, CSAT, VoC strategy across all tools — survey design, response rates, closed-loop feedback, tool comparison. Install: `npx skills add sales-skills/sales --skills sales-customer-feedback`
-- `/sales-qualtrics` — Qualtrics XM platform help — the enterprise alternative to SurveyMonkey for CX/EX surveys. Install: `npx skills add sales-skills/sales --skills sales-qualtrics`
-- `/sales-medallia` — Medallia platform help — enterprise experience management with DXA and action management. Install: `npx skills add sales-skills/sales --skills sales-medallia`
+- `/sales-customer-feedback` — Customer feedback, NPS, CSAT, VoC strategy across all tools — survey design, response rates, closed-loop feedback, tool comparison. Install: `npx skills add sales-skills/sales --skill sales-customer-feedback`
+- `/sales-qualtrics` — Qualtrics XM platform help — the enterprise alternative to SurveyMonkey for CX/EX surveys. Install: `npx skills add sales-skills/sales --skill sales-qualtrics`
+- `/sales-medallia` — Medallia platform help — enterprise experience management with DXA and action management. Install: `npx skills add sales-skills/sales --skill sales-medallia`
 - `/sales-integration` — Connecting SurveyMonkey to CRM, data warehouse, and analytics tools
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

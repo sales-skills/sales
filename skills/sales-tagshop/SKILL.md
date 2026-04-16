@@ -190,7 +190,7 @@ Based on the user's specific question:
 - `/sales-checkout` — Optimize the product pages your shoppable galleries link to
 - `/sales-content` — Sales content management and governance
 - `/sales-integration` — Connect Tagshop with other tools
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

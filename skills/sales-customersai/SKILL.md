@@ -97,7 +97,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-retargeting` — Retargeting and remarketing strategy across channels
 - `/sales-deliverability` — Email deliverability strategy (critical with identity-resolved contacts)
 - `/sales-enrich` — Contact enrichment strategy across tools
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

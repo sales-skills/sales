@@ -118,7 +118,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-brandjet` — BrandJet AI platform help — outreach, brand intelligence, AI monitoring
 - `/sales-grin` — GRIN platform help — includes social listening with hashtag monitoring and brand mention alerts
 - `/sales-ai-visibility` — AI visibility monitoring — track what LLMs say about your brand
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

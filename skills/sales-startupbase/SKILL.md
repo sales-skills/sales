@@ -185,7 +185,7 @@ StartupBase fits into **Phase 3 — Free editorial queues** in a multi-directory
 - `/sales-fazier` — Fazier platform help (DR81 dofollow, free with badge)
 - `/sales-producthunt` — Product Hunt platform help (largest launch platform, DR91 dofollow)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
-  `npx skills add sales-skills/sales --skills sales-do`
+  `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

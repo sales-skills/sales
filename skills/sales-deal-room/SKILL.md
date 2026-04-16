@@ -198,4 +198,4 @@ For full webhook and CRM automation setup, use `/sales-qwilr-automation`.
 - `/sales-proposal-template` — Create reusable deal room templates
 - `/sales-close` — Closing strategies and mutual action plan tactics
 - `/sales-seismic` — Seismic platform help including Digital Sales Rooms and content management
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`

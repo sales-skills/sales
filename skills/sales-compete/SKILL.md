@@ -191,7 +191,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-intent` — Interpret buying signals beyond competitive displacement
 - `/sales-positioning` — Develop competitive messaging frameworks
 - `/sales-leadmagic` — LeadMagic competitive ad intelligence, technographics, and company enrichment
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Gotchas
 

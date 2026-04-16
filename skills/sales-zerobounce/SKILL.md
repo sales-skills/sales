@@ -125,7 +125,7 @@ Based on the user's specific question, provide step-by-step instructions:
 - `/sales-enrich` — Enrichment strategy across tools (waterfall enrichment, CRM hygiene, credit optimization)
 - `/sales-prospect-list` — Build targeted prospect lists with ICP definition and segmentation
 - `/sales-integration` — Connect ZeroBounce to CRM and other tools via Zapier or direct integrations
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

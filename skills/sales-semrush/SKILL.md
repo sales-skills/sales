@@ -99,18 +99,18 @@ Based on the user's situation, provide specific Semrush workflows:
 ## Related skills
 
 - `/seo-audit` — General SEO audit strategy (third-party). Install:
-  `npx skills add resciencelab/opc-skills --skills seo-audit`
+  `npx skills add resciencelab/opc-skills --skill seo-audit`
 - `/ai-seo` — AI search optimization strategy (third-party). Install:
-  `npx skills add resciencelab/opc-skills --skills ai-seo`
+  `npx skills add resciencelab/opc-skills --skill ai-seo`
 - `/build-links` — Link building campaigns and outreach (third-party). Install:
-  `npx skills add calm-north/seojuice-skills --skills build-links`
+  `npx skills add calm-north/seojuice-skills --skill build-links`
 - `/backlink-analyzer` — Backlink profile analysis (third-party). Install:
-  `npx skills add aaron-he-zhu/seo-geo-claude-skills --skills backlink-analyzer`
+  `npx skills add aaron-he-zhu/seo-geo-claude-skills --skill backlink-analyzer`
 - `/page-cro` — Landing page conversion optimization (third-party)
 - `/programmatic-seo` — Generate SEO pages at scale (third-party)
 - `/sales-content` — Sales content management (Seismic, Allego, Highspot)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
-  `npx skills add sales-skills/sales --skills sales-do`
+  `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

@@ -190,7 +190,7 @@ For API integration questions, refer to the detailed [HypeAuditor API Reference]
 - `/sales-neoreach` — NeoReach platform help — enterprise influencer marketing, fraud detection, REST API
 - `/sales-tiktok-marketing` — TikTok marketing strategy — organic, paid, content, influencer
 - `/sales-gaming-marketing` — Gaming influencer marketing strategy — streamers, game launches
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

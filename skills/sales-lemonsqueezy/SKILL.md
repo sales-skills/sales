@@ -94,7 +94,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-deliverability` — Email deliverability (SPF, DKIM, DMARC, warmup)
 - `/sales-payhip` — Payhip platform help (similar creator commerce platform)
 - `/sales-kit` — Kit platform help (creator-first email + commerce)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

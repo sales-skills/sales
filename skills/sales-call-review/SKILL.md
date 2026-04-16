@@ -197,7 +197,7 @@ If a follow-up call was booked, draft a proposed agenda:
 - `/sales-cadence` — Optimize outbound cadences based on call learnings
 - `/sales-seismic` — Seismic platform help including Meeting Intelligence and content management
 - `/sales-zoominfo` — ZoomInfo platform help (Chorus conversation intelligence, Momentum deal insights)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Gotchas
 

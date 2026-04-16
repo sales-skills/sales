@@ -163,7 +163,7 @@ JustGotFound fits into **Phase 1 — Instant listings** as a free, no-queue subm
 - `/sales-microlaunch` — MicroLaunch platform help (30-day leaderboard, deals marketplace, DR59)
 - `/sales-producthunt` — Product Hunt platform help (largest launch platform, DR91 dofollow, 5M+ visits/mo)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
-  `npx skills add sales-skills/sales --skills sales-do`
+  `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

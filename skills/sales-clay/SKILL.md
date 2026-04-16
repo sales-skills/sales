@@ -100,7 +100,7 @@ When answering, always:
 - `/sales-b2b-advertising` — B2B advertising strategy (for ad strategy beyond Clay's Ad Sync)
 - `/sales-data-hygiene` — CRM data hygiene (for data quality strategy using Clay's CRM sync)
 - `/sales-integration` — Connecting tools with webhooks, Zapier, APIs
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

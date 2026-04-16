@@ -201,7 +201,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-allego` — Allego platform help (for Modern Learning, AI Role-Play, and Conversation Intelligence)
 - `/sales-call-review` — Review specific sales calls and extract coaching insights
 - `/sales-content` — Sales content for training and enablement programs
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

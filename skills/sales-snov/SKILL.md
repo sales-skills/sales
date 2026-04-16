@@ -85,7 +85,7 @@ Otherwise, answer directly from platform knowledge using the reference below.
 - `/sales-prospect-list` — Build prospect lists to import into Snov.io
 - `/sales-email-tracking` — Email tracking strategy and best practices
 - `/sales-integration` — Connect Snov.io to other tools via webhooks, Zapier, Make, or API
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

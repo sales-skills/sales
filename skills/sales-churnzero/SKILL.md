@@ -80,13 +80,13 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 
 ## Related skills
 
-- `/sales-customer-success` — Customer success strategy: health scores, churn prevention, onboarding, expansion, playbook design, CS platform comparison. Install: `npx skills add sales-skills/sales --skills sales-customer-success`
-- `/sales-vitally` — Vitally platform help: Health Scores, Playbooks, Projects, API — alternative CS platform. Install: `npx skills add sales-skills/sales --skills sales-vitally`
-- `/sales-planhat` — Planhat platform help: Health Scores, Revenue Management, CRM Sync, Automation, MCP Server, API. Install: `npx skills add sales-skills/sales --skills sales-planhat`
-- `/sales-customer-feedback` — NPS, CSAT, CES, VoC program design — survey methodology, response rates, closed-loop feedback. Install: `npx skills add sales-skills/sales --skills sales-customer-feedback`
-- `/sales-in-app-messaging` — In-app messages for onboarding tours, feature announcements, NPS surveys. Install: `npx skills add sales-skills/sales --skills sales-in-app-messaging`
-- `/sales-integration` — Connect ChurnZero to CRM, billing, and analytics tools via native integrations, Zapier, or API. Install: `npx skills add sales-skills/sales --skills sales-integration`
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-customer-success` — Customer success strategy: health scores, churn prevention, onboarding, expansion, playbook design, CS platform comparison. Install: `npx skills add sales-skills/sales --skill sales-customer-success`
+- `/sales-vitally` — Vitally platform help: Health Scores, Playbooks, Projects, API — alternative CS platform. Install: `npx skills add sales-skills/sales --skill sales-vitally`
+- `/sales-planhat` — Planhat platform help: Health Scores, Revenue Management, CRM Sync, Automation, MCP Server, API. Install: `npx skills add sales-skills/sales --skill sales-planhat`
+- `/sales-customer-feedback` — NPS, CSAT, CES, VoC program design — survey methodology, response rates, closed-loop feedback. Install: `npx skills add sales-skills/sales --skill sales-customer-feedback`
+- `/sales-in-app-messaging` — In-app messages for onboarding tours, feature announcements, NPS surveys. Install: `npx skills add sales-skills/sales --skill sales-in-app-messaging`
+- `/sales-integration` — Connect ChurnZero to CRM, billing, and analytics tools via native integrations, Zapier, or API. Install: `npx skills add sales-skills/sales --skill sales-integration`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

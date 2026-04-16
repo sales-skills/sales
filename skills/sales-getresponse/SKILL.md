@@ -126,7 +126,7 @@ Otherwise, answer directly with GetResponse-specific guidance below.
 - `/sales-transactional-email` — Transactional email delivery (provider comparison)
 - `/sales-integration` — Connect GetResponse to CRM, e-commerce, and other tools
 - `/sales-checkout` — Checkout optimization (for GetResponse sales funnels)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

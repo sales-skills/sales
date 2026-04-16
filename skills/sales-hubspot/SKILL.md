@@ -108,7 +108,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-chatbot` — Chatbot marketing and conversational flows
 - `/sales-funnel` — Sales funnel optimization
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
-  `npx skills add sales-skills/sales --skills sales-do`
+  `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

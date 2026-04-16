@@ -190,7 +190,7 @@ Based on the user's specific question:
 - `/sales-deal-room` — Multi-stakeholder deal room strategy
 - `/sales-call-review` — Sales call coaching and review
 - `/sales-integration` — Connecting Allego to CRM and other tools
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

@@ -153,7 +153,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-mailerlite` — MailerLite platform help (email campaigns, automation, transactional email, API)
 - `/sales-email-marketing` — Opt-in marketing email strategy (not transactional)
 - `/sales-integration` — Connect email tools with CRM and other systems
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

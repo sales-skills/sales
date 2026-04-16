@@ -219,7 +219,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-beehiiv` — Beehiiv platform help (publishing, growth, monetization, ad network, API)
 - `/sales-retargeting` — Retargeting strategy (using ads to drive visitors back to signup pages)
 - `/sales-b2b-advertising` — account-based advertising (WebSights feeds retargeting audiences)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

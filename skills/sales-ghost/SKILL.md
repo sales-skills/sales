@@ -88,7 +88,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-integration` — Connecting Ghost to CRM and other tools via Zapier, Make, or API
 - `/sales-kit` — Kit platform help (alternative newsletter platform)
 - `/sales-mailerlite` — MailerLite platform help (alternative newsletter/email platform)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

@@ -94,7 +94,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-paved` — Paved platform help (newsletter sponsorship marketplace)
 - `/sales-buttondown` — Buttondown platform help
 - `/sales-ghost` — Ghost platform help
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

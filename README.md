@@ -22,7 +22,7 @@
 ## Quick Start
 
 ```bash
-npx skills add sales-skills/sales --skills sales-do
+npx skills add sales-skills/sales --skill sales-do -y
 ```
 
 Not sure which skill you need? Just run `/sales-do` and describe what you're trying to accomplish — it routes you to the right skill.
@@ -30,13 +30,13 @@ Not sure which skill you need? Just run `/sales-do` and describe what you're try
 Want every skill at once?  You probably don't, there are hundreds, so it may overwhelm your context.  But if you want them all anyway...
 
 ```bash
-npx skills add sales-skills/sales -a
+npx skills add sales-skills/sales --all
 ```
 
 Every skill for Claude Code, copy instead of symlink, no confirmation:
 
 ```bash
-npx skills add sales-skills/sales -a claude-code --copy -y
+npx skills add sales-skills/sales --skill '*' -a claude-code --copy -y
 ```
 
 ## Why sales-do skill?
@@ -545,7 +545,7 @@ Router recommends a 5-skill sequence:
 <summary><strong>Marketing & GTM</strong> (33 skills from <code>coreyhaines31/marketingskills</code>)</summary>
 
 > Install all: `npx skills add coreyhaines31/marketingskills`
-> Install one: `npx skills add coreyhaines31/marketingskills --skills <skill-name>`
+> Install one: `npx skills add coreyhaines31/marketingskills --skill <skill-name>`
 
 **SEO & Content**
 
@@ -619,7 +619,7 @@ Router recommends a 5-skill sequence:
 <summary><strong>Research & Data</strong> (14 skills from <code>resciencelab/opc-skills</code>)</summary>
 
 > Install all: `npx skills add resciencelab/opc-skills`
-> Install one: `npx skills add resciencelab/opc-skills --skills <skill-name>`
+> Install one: `npx skills add resciencelab/opc-skills --skill <skill-name>`
 
 **Research**
 

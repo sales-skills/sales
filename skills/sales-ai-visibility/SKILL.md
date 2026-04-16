@@ -109,8 +109,8 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-social-listening` — Social listening and brand monitoring strategy
 - `/sales-semrush` — Semrush platform help — SEO, AI Visibility Toolkit
 - `/sales-meltwater` — Meltwater platform help — media intelligence
-- `/sales-yoast` — Yoast SEO platform help — llms.txt generation (Shopify), Schema Aggregation for AI. Install: `npx skills add sales-skills/sales --skills sales-yoast`
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-yoast` — Yoast SEO platform help — llms.txt generation (Shopify), Schema Aggregation for AI. Install: `npx skills add sales-skills/sales --skill sales-yoast`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

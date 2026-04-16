@@ -150,7 +150,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-adroll` — AdRoll platform help (RollWorks site visitor identification, account scoring, HubSpot integration)
 - `/sales-b2b-advertising` — account-based advertising driven by intent signals
 - `/sales-retargeting` — Retargeting strategy (website visitor retargeting as a signal-driven channel)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

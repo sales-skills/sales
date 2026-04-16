@@ -195,7 +195,7 @@ Based on the user's specific question:
 - `/sales-retargeting` — Retargeting campaign audiences from influencer content
 - `/sales-tiktok-marketing` — TikTok marketing strategy — organic growth, paid ads, influencer strategy
 - `/sales-gaming-marketing` — Gaming influencer marketing strategy
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

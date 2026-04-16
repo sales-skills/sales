@@ -186,7 +186,7 @@ Based on the user's question, provide step-by-step guidance. Always:
 - `/sales-hypefy` — Hypefy platform help (AI-powered influencer campaigns)
 - `/sales-infludata` — influData platform help (influencer audience analytics)
 - `/sales-retargeting` — Retargeting with creator content
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

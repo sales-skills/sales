@@ -95,7 +95,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-aspire` — Aspire platform help — word-of-mouth commerce, product seeding, affiliate tracking
 - `/sales-tiktok-marketing` — TikTok marketing strategy — organic, paid, influencer
 - `/sales-gaming-marketing` — Gaming influencer marketing strategy
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

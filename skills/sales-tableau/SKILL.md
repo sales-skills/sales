@@ -96,7 +96,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-mulesoft` — MuleSoft integration platform — connect data sources to Tableau via API-led connectivity
 - `/sales-forecast` — Revenue forecasting methodology — Tableau visualizes forecasts but this skill builds them
 - `/sales-integration` — Connect Tableau to CRMs, data warehouses, and other tools
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

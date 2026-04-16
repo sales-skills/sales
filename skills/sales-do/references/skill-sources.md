@@ -15,7 +15,7 @@ https://raw.githubusercontent.com/{org}/{repo}/{branch}/skills/{skill}/SKILL.md
 To install:
 
 ```
-npx skills add {org}/{repo} --skills {skill}
+npx skills add {org}/{repo} --skill {skill}
 ```
 
 ## Default

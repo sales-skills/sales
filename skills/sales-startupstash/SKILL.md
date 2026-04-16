@@ -149,13 +149,13 @@ In a multi-directory launch, Startup Stash fits in **Phase 3 (free editorial que
 ## Related skills
 
 - `/sales-launch-directory` — Coordinates multi-directory launches across 27+ platforms. Install:
-  `npx skills add sales-skills/sales --skills sales-launch-directory`
+  `npx skills add sales-skills/sales --skill sales-launch-directory`
 - `/sales-sideprojectors` — SideProjectors platform help (DR69 dofollow, buy/sell marketplace)
 - `/sales-uneed` — Uneed platform help (DR74 dofollow, daily voting, 64K+ makers)
 - `/sales-fazier` — Fazier platform help (DR81 dofollow, highest DR free backlink)
 - `/sales-producthunt` — Product Hunt platform help (DR91 dofollow, largest launch platform)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
-  `npx skills add sales-skills/sales --skills sales-do`
+  `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

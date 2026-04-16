@@ -172,7 +172,7 @@ If the user doesn't have a Farcaster account:
 - `/sales-devhunt` — DevHunt platform help (developer tool launches, GitHub auth voting)
 - `/sales-audience-growth` — Grow your email list and subscriber base
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
-  `npx skills add sales-skills/sales --skills sales-do`
+  `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

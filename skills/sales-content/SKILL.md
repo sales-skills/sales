@@ -119,7 +119,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-coaching` — Sales coaching and training (content for onboarding and enablement programs)
 - `/sales-compete` — Competitive displacement campaigns (battle cards and competitive content)
 - `/sales-proposal-page` — Proposal page design (Qwilr proposals)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

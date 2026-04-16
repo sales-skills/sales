@@ -79,13 +79,13 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 
 ## Related skills
 
-- `/sales-customer-success` — Customer success strategy: health scores, churn prevention, onboarding, expansion, playbook design, CS platform comparison. Install: `npx skills add sales-skills/sales --skills sales-customer-success`
-- `/sales-churnzero` — ChurnZero platform help: alternative CS platform with in-app engagement and OData API. Install: `npx skills add sales-skills/sales --skills sales-churnzero`
-- `/sales-vitally` — Vitally platform help: alternative CS platform with fast setup and AI copilot. Install: `npx skills add sales-skills/sales --skills sales-vitally`
-- `/sales-planhat` — Planhat platform help: alternative CS platform with strong data modeling and MCP server. Install: `npx skills add sales-skills/sales --skills sales-planhat`
-- `/sales-customer-feedback` — NPS, CSAT, CES, VoC program design. Install: `npx skills add sales-skills/sales --skills sales-customer-feedback`
-- `/sales-integration` — Connect Totango to CRM, billing, and analytics tools. Install: `npx skills add sales-skills/sales --skills sales-integration`
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-customer-success` — Customer success strategy: health scores, churn prevention, onboarding, expansion, playbook design, CS platform comparison. Install: `npx skills add sales-skills/sales --skill sales-customer-success`
+- `/sales-churnzero` — ChurnZero platform help: alternative CS platform with in-app engagement and OData API. Install: `npx skills add sales-skills/sales --skill sales-churnzero`
+- `/sales-vitally` — Vitally platform help: alternative CS platform with fast setup and AI copilot. Install: `npx skills add sales-skills/sales --skill sales-vitally`
+- `/sales-planhat` — Planhat platform help: alternative CS platform with strong data modeling and MCP server. Install: `npx skills add sales-skills/sales --skill sales-planhat`
+- `/sales-customer-feedback` — NPS, CSAT, CES, VoC program design. Install: `npx skills add sales-skills/sales --skill sales-customer-feedback`
+- `/sales-integration` — Connect Totango to CRM, billing, and analytics tools. Install: `npx skills add sales-skills/sales --skill sales-integration`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

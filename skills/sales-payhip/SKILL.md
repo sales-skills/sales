@@ -88,7 +88,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-affiliate-program` — Affiliate program design (commissions, recruitment, tracking)
 - `/sales-email-marketing` — Email marketing strategy (nurture sequences, automation, segmentation)
 - `/sales-podia` — Podia platform help (courses, downloads, memberships, coaching, email)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

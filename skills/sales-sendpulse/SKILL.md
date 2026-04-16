@@ -140,7 +140,7 @@ If the question is SendPulse-specific, answer directly using the reference below
 - `/sales-transactional-email` — transactional email delivery strategy
 - `/sales-deliverability` — email deliverability, SPF/DKIM/DMARC
 - `/sales-integration` — connecting SendPulse to other tools
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

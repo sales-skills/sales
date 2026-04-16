@@ -184,7 +184,7 @@ Key capabilities:
 - `/sales-deliverability` — Email deliverability (if AdRoll email retargeting has delivery issues)
 - `/sales-funnel` — Funnel strategy (AdRoll fits into retargeting stage of funnel)
 - `/sales-checkout` — Checkout optimization (reducing cart abandonment that feeds retargeting)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

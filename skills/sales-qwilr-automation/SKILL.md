@@ -125,4 +125,4 @@ Three common patterns (detailed implementation in `references/qwilr-api-referenc
 - `/sales-proposal-analytics` — Interpret engagement signals and decide follow-up actions
 - `/sales-proposal-template` — Design reusable templates for API auto-population
 - `/sales-deal-room` — For complex multi-page deal rooms
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`

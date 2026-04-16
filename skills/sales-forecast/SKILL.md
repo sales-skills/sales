@@ -170,7 +170,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-pipeline` — Portfolio-level pipeline management and deal prioritization
 - `/sales-cadence` — Build outbound cadences for gap-plan pipeline generation
 - `/sales-close` — Closing strategies for commit deals
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Gotchas
 

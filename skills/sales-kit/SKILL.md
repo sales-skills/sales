@@ -134,7 +134,7 @@ Based on the user's question, provide step-by-step instructions with:
 - `/sales-membership` — Membership and course strategy
 - `/sales-integration` — Connect Kit to CRM and other tools
 - `/sales-lead-score` — Lead scoring models (engagement scoring strategy)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

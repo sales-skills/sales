@@ -101,7 +101,7 @@ Based on the user's specific question:
 - `/sales-cloutboost` — Cloutboost platform help — gaming-only influencer platform (1.5M+ creators), Portal discovery, retargeting
 - `/sales-houseofmarketers` — House of Marketers platform help — TikTok-focused agency, 50K+ creators, paid ads, content creation
 - `/sales-retargeting` — Retargeting strategy — visitor retargeting, dynamic ads, cross-channel
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

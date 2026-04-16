@@ -89,7 +89,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-email-marketing` — Email marketing after form-based lead capture.
 - `/sales-lead-score` — Lead scoring models using form submission data as behavioral signals.
 - `/sales-lead-routing` — Route form submissions to the right sales rep or team.
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

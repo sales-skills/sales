@@ -135,7 +135,7 @@ Based on the user's specific question:
 - `/sales-email-tracking` — Email open and click tracking strategy
 - `/sales-integration` — Connect SendGrid to other tools via Zapier, Make, or API
 - `/sales-funnel` — Funnel strategy and conversion optimization
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

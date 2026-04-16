@@ -83,9 +83,9 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 
 ## Related skills
 
-- `/sales-semrush` — Semrush SEO platform (keyword research, site audits, rank tracking, backlink analysis). Install: `npx skills add sales-skills/sales --skills sales-semrush`
-- `/sales-ai-visibility` — AI visibility monitoring (track what ChatGPT, Perplexity, Gemini say about your brand). Install: `npx skills add sales-skills/sales --skills sales-ai-visibility`
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-semrush` — Semrush SEO platform (keyword research, site audits, rank tracking, backlink analysis). Install: `npx skills add sales-skills/sales --skill sales-semrush`
+- `/sales-ai-visibility` — AI visibility monitoring (track what ChatGPT, Perplexity, Gemini say about your brand). Install: `npx skills add sales-skills/sales --skill sales-ai-visibility`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

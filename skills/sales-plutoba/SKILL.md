@@ -97,7 +97,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-modash` — Modash platform help — Shopify-focused discovery, gifting, payments, API
 - `/sales-creatoriq` — CreatorIQ platform help — enterprise influencer OS, SafeIQ, ExchangeIQ API
 - `/sales-trendhero` — trendHERO platform help — Instagram analytics, AQS fake follower detection
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

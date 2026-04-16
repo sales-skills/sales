@@ -87,7 +87,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-funnel` — Sales funnel strategy, A/B testing priorities, conversion benchmarks, funnel structure
 - `/sales-checkout` — Checkout page optimization, order bumps, cart abandonment recovery
 - `/sales-integration` — Connecting VWO to CRM, analytics, and data warehouse tools
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

@@ -120,7 +120,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-lead-score` — lead scoring models (depend on clean data)
 - `/sales-integration` — connecting data tools to CRM
 - `/sales-prospect-list` — building prospect lists (data quality at the source)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

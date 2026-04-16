@@ -96,7 +96,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-trustmrr` — TrustMRR platform help (verified-revenue marketplace with live payment-provider API verification, APA-only lump-sum deals)
 - `/sales-sideprojectors` — SideProjectors platform help (free showcase, no commission, pre-revenue and abandoned projects)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
-  `npx skills add sales-skills/sales --skills sales-do`
+  `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

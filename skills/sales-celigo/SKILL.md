@@ -109,7 +109,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-integration` — Connecting sales tools — webhooks, Zapier/Make, native integrations, CRM sync
 - `/sales-salesforce` — Salesforce platform help — common Celigo integration target
 - `/sales-data-hygiene` — CRM data quality — deduplication, record matching, enrichment automation
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

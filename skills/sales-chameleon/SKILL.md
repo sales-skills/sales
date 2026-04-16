@@ -88,12 +88,12 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 
 ## Related skills
 
-- `/sales-in-app-messaging` — In-app messaging strategy across all platforms (Braze, Pendo, Appcues, Whatfix, Chameleon). Install: `npx skills add sales-skills/sales --skills sales-in-app-messaging`
-- `/sales-pendo` — Pendo platform help (product analytics, guides, session replay, NPS). Install: `npx skills add sales-skills/sales --skills sales-pendo`
-- `/sales-whatfix` — Whatfix platform help (enterprise DAP, Flows, Smart Tips, Mirror sandbox). Install: `npx skills add sales-skills/sales --skills sales-whatfix`
-- `/sales-customer-feedback` — Customer feedback, NPS, CSAT, VoC strategy. Install: `npx skills add sales-skills/sales --skills sales-customer-feedback`
-- `/sales-integration` — Connect sales tools with webhooks, Zapier, native integrations. Install: `npx skills add sales-skills/sales --skills sales-integration`
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-in-app-messaging` — In-app messaging strategy across all platforms (Braze, Pendo, Appcues, Whatfix, Chameleon). Install: `npx skills add sales-skills/sales --skill sales-in-app-messaging`
+- `/sales-pendo` — Pendo platform help (product analytics, guides, session replay, NPS). Install: `npx skills add sales-skills/sales --skill sales-pendo`
+- `/sales-whatfix` — Whatfix platform help (enterprise DAP, Flows, Smart Tips, Mirror sandbox). Install: `npx skills add sales-skills/sales --skill sales-whatfix`
+- `/sales-customer-feedback` — Customer feedback, NPS, CSAT, VoC strategy. Install: `npx skills add sales-skills/sales --skill sales-customer-feedback`
+- `/sales-integration` — Connect sales tools with webhooks, Zapier, native integrations. Install: `npx skills add sales-skills/sales --skill sales-integration`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

@@ -103,7 +103,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-push-notification` — Push notification strategy — alternative re-engagement channel for mobile apps
 - `/sales-in-app-messaging` — In-app messaging strategy — another re-engagement channel alongside retargeting
 - `/sales-loyalty` — Loyalty program strategy — relevant to Adwake's Playback Rewards
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

@@ -76,7 +76,7 @@ For full cadence strategy — including messaging arc, multi-channel touch patte
 - `/sales-prospect-list` — Build the prospect list to add to your sequences
 - `/sales-enrich` — Verify and enrich contact data before sequencing
 - `/sales-salesloft` — If using Salesloft for sequences instead of Apollo
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

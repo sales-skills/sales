@@ -93,7 +93,7 @@ Based on the user's specific question:
 - `/sales-meeting-scheduler` — Meeting scheduling strategy and best practices (platform-agnostic)
 - `/sales-email-tracking` — Email tracking strategy and best practices (platform-agnostic)
 - `/sales-integration` — Connect Mixmax to other tools via Zapier, webhooks, or native integrations
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

@@ -93,7 +93,7 @@ Based on the user's specific question:
 - `/sales-media-relations` — Cross-platform media relations, journalist outreach, and PR strategy
 - `/sales-influencer-marketing` — Influencer marketing strategy across platforms
 - `/sales-integration` — Connecting Meltwater to CRM, BI tools, and automation platforms
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

@@ -175,7 +175,7 @@ Based on the user's specific question:
 - `/sales-hypefy` — Hypefy platform help — zero-subscription, AI campaign automation
 - `/sales-creatorco` — Creator.co platform help — AI-automated matching, UGC rights
 - `/sales-affiliate-program` — Affiliate and referral program design (strategy, not platform-specific)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

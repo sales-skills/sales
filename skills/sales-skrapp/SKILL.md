@@ -145,7 +145,7 @@ Based on the user's specific question:
 - `/sales-enrichso` — Enrich.so platform help (B2B datan enrichment API with LinkedIn and company data)
 - `/sales-getprospect` — GetProspect platform help (similar B2B email finder and lead database)
 - `/sales-minelead` — Minelead platform help (similar email finder, verifier, and lead generation)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

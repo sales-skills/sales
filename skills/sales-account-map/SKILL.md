@@ -182,7 +182,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-enrich` — Enrich all committee members with verified contact info
 - `/sales-intent` — Check for buying signals at the account level
 - `/sales-zoominfo` — ZoomInfo platform help (org charts, Scoops, Engage)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ### Ongoing committee monitoring
 

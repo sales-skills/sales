@@ -96,7 +96,7 @@ Based on the user's specific question:
 - `/sales-integration` — Connect Omnisend to other tools via webhooks, Zapier, or API
 - `/sales-klaviyo` — Klaviyo platform help (if using Klaviyo instead of Omnisend)
 - `/sales-mailchimp` — Mailchimp platform help (if using Mailchimp instead of Omnisend)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

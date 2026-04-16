@@ -116,7 +116,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-gaming-marketing` — Gaming influencer marketing strategy — streamer partnerships, game launch campaigns
 - `/sales-retargeting` — Retargeting strategy — repurpose TikTok content for paid ads across channels
 - `/sales-social-media-management` — Social media management strategy — publishing, scheduling, cross-platform
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

@@ -94,7 +94,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-integration` — Connecting tools via webhooks, Zapier, API pipelines
 - `/sales-payhip` — Payhip platform help (lower fees, PayPal support, similar features)
 - `/sales-lemonsqueezy` — Lemon Squeezy platform help (5% fee, MoR, license keys)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

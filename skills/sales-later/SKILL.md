@@ -100,7 +100,7 @@ Based on the user's specific question:
 - `/sales-sproutsocial` — Sprout Social platform help — Publishing, Smart Inbox, Analytics, Listening
 - `/sales-social-listening` — Social listening strategy — brand monitoring, sentiment analysis
 - `/sales-employee-advocacy` — Employee advocacy programs
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

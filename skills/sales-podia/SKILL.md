@@ -99,7 +99,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-audience-growth` — Growing your email list (lead magnets, referrals)
 - `/sales-kit` — Kit platform help (alternative for email-first creators)
 - `/sales-groove` — Groove.cm platform help (alternative all-in-one)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

@@ -80,14 +80,14 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 
 ## Related skills
 
-- `/sales-customer-reviews` — Product review collection strategy across ecommerce platforms (Judge.me, Yotpo, Okendo, etc.). Install: `npx skills add sales-skills/sales --skills sales-customer-reviews`
-- `/sales-trustpilot` — Trustpilot platform help (TrustBox widgets, TrustScore, Google Seller Ratings). Install: `npx skills add sales-skills/sales --skills sales-trustpilot`
-- `/sales-intent` — Interpret buying signals and prioritize accounts for outreach. Install: `npx skills add sales-skills/sales --skills sales-intent`
-- `/sales-6sense` — 6sense platform help (Signalverse intent data, predictive scoring). Install: `npx skills add sales-skills/sales --skills sales-6sense`
-- `/sales-enrich` — Enrich G2 intent signals with verified contact info. Install: `npx skills add sales-skills/sales --skills sales-enrich`
-- `/sales-compete` — Run competitive displacement using G2 comparison data. Install: `npx skills add sales-skills/sales --skills sales-compete`
-- `/sales-launch-directory` — Launch directory strategy (G2 is one of the directories). Install: `npx skills add sales-skills/sales --skills sales-launch-directory`
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-customer-reviews` — Product review collection strategy across ecommerce platforms (Judge.me, Yotpo, Okendo, etc.). Install: `npx skills add sales-skills/sales --skill sales-customer-reviews`
+- `/sales-trustpilot` — Trustpilot platform help (TrustBox widgets, TrustScore, Google Seller Ratings). Install: `npx skills add sales-skills/sales --skill sales-trustpilot`
+- `/sales-intent` — Interpret buying signals and prioritize accounts for outreach. Install: `npx skills add sales-skills/sales --skill sales-intent`
+- `/sales-6sense` — 6sense platform help (Signalverse intent data, predictive scoring). Install: `npx skills add sales-skills/sales --skill sales-6sense`
+- `/sales-enrich` — Enrich G2 intent signals with verified contact info. Install: `npx skills add sales-skills/sales --skill sales-enrich`
+- `/sales-compete` — Run competitive displacement using G2 comparison data. Install: `npx skills add sales-skills/sales --skill sales-compete`
+- `/sales-launch-directory` — Launch directory strategy (G2 is one of the directories). Install: `npx skills add sales-skills/sales --skill sales-launch-directory`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

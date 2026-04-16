@@ -86,11 +86,11 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 
 ## Related skills
 
-- `/sales-customer-feedback` — Customer feedback, NPS, CSAT, VoC strategy across all tools — survey design, response rates, closed-loop feedback, benchmarking. Install: `npx skills add sales-skills/sales --skills sales-customer-feedback`
-- `/sales-qualtrics` — Qualtrics XM platform help (CX/EX surveys, dashboards, API, Experience Agents) — the main enterprise alternative to Medallia. Install: `npx skills add sales-skills/sales --skills sales-qualtrics`
-- `/sales-customer-reviews` — Product review collection and syndication (Trustpilot, G2, Judge.me, etc.) — different from customer feedback surveys. Install: `npx skills add sales-skills/sales --skills sales-customer-reviews`
+- `/sales-customer-feedback` — Customer feedback, NPS, CSAT, VoC strategy across all tools — survey design, response rates, closed-loop feedback, benchmarking. Install: `npx skills add sales-skills/sales --skill sales-customer-feedback`
+- `/sales-qualtrics` — Qualtrics XM platform help (CX/EX surveys, dashboards, API, Experience Agents) — the main enterprise alternative to Medallia. Install: `npx skills add sales-skills/sales --skill sales-qualtrics`
+- `/sales-customer-reviews` — Product review collection and syndication (Trustpilot, G2, Judge.me, etc.) — different from customer feedback surveys. Install: `npx skills add sales-skills/sales --skill sales-customer-reviews`
 - `/sales-integration` — Connecting Medallia to CRM, data warehouse, and analytics tools
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

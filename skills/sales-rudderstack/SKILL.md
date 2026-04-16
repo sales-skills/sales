@@ -97,7 +97,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-integration` — Connect sales tools with webhooks, Zapier/Make, APIs
 - `/sales-data-hygiene` — CRM data quality, deduplication, enrichment automation
 - `/sales-retargeting` — Retargeting strategy — activate CDP audiences to ad platforms
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

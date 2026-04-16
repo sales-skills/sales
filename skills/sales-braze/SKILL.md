@@ -132,7 +132,7 @@ Based on the user's area, provide:
 - `/sales-live-chat` — Live chat and chatbot strategy
 - `/sales-loyalty` — Customer loyalty program design
 - `/sales-lead-score` — Lead/engagement scoring models
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

@@ -86,13 +86,13 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 
 ## Related skills
 
-- `/sales-customer-feedback` — Survey strategy, NPS/CSAT/CES, response rate optimization, VoC program design, tool comparison. Install: `npx skills add sales-skills/sales --skills sales-customer-feedback`
-- `/sales-funnel` — Full funnel strategy — Typeform forms are the data capture step. Install: `npx skills add sales-skills/sales --skills sales-funnel`
-- `/sales-jotform` — Jotform platform help — alternative form builder with payment forms, approval workflows, API. Install: `npx skills add sales-skills/sales --skills sales-jotform`
-- `/sales-integration` — Connect Typeform to CRM, email, or other tools via webhooks, Zapier/Make, or API. Install: `npx skills add sales-skills/sales --skills sales-integration`
-- `/sales-surveymonkey` — SurveyMonkey platform help — alternative survey tool with analytics, collectors, API. Install: `npx skills add sales-skills/sales --skills sales-surveymonkey`
-- `/sales-qualtrics` — Qualtrics XM platform help — enterprise survey/experience management. Install: `npx skills add sales-skills/sales --skills sales-qualtrics`
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-customer-feedback` — Survey strategy, NPS/CSAT/CES, response rate optimization, VoC program design, tool comparison. Install: `npx skills add sales-skills/sales --skill sales-customer-feedback`
+- `/sales-funnel` — Full funnel strategy — Typeform forms are the data capture step. Install: `npx skills add sales-skills/sales --skill sales-funnel`
+- `/sales-jotform` — Jotform platform help — alternative form builder with payment forms, approval workflows, API. Install: `npx skills add sales-skills/sales --skill sales-jotform`
+- `/sales-integration` — Connect Typeform to CRM, email, or other tools via webhooks, Zapier/Make, or API. Install: `npx skills add sales-skills/sales --skill sales-integration`
+- `/sales-surveymonkey` — SurveyMonkey platform help — alternative survey tool with analytics, collectors, API. Install: `npx skills add sales-skills/sales --skill sales-surveymonkey`
+- `/sales-qualtrics` — Qualtrics XM platform help — enterprise survey/experience management. Install: `npx skills add sales-skills/sales --skill sales-qualtrics`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

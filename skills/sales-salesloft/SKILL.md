@@ -117,7 +117,7 @@ For detailed API documentation including endpoints, rate limits, webhooks, and a
 If you want Claude to interact with Salesloft directly (list people, get cadences, create records), install the Membrane Salesloft skill:
 
 ```bash
-npx skills add membranedev/application-skills --skills salesloft
+npx skills add membranedev/application-skills --skill salesloft
 ```
 
 This gives Claude hands-on API access through pre-built actions with authentication and error handling built in. Use it when you need to:
@@ -163,7 +163,7 @@ Point to related skills based on what they asked about:
 - `/sales-forecast` — Build and validate revenue forecasts
 - `/sales-outreach` — General outreach message writing (not Salesloft-specific)
 - `/sales-pipeline` — Portfolio-level pipeline management and deal prioritization
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Gotchas
 

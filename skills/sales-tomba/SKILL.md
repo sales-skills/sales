@@ -124,7 +124,7 @@ Based on the user's specific question, provide:
 - `/sales-intent` — Interpret buying signals and prioritize accounts (use Tomba's tech detection as a signal)
 - `/sales-integration` — Connect Tomba to CRM and other tools via Zapier, Make, or API
 - `/sales-cadence` — Design outbound sequences for contacts found in Tomba
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

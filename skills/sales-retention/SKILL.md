@@ -120,7 +120,7 @@ Calculate whether Retention.com pays for itself:
 - `/sales-klaviyo` — Klaviyo platform help (most common ESP pairing with Retention.com)
 - `/sales-omnisend` — Omnisend platform help (alternative ESP for ecommerce)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
-  `npx skills add sales-skills/sales --skills sales-do`
+  `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

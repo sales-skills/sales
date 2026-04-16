@@ -183,7 +183,7 @@ LaunchingNext works best as one listing in a broader directory submission strate
 - `/sales-checkout` — Optimize landing pages and checkout for conversion
 - `/sales-email-marketing` — Email marketing to nurture leads from your launch
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
-  `npx skills add sales-skills/sales --skills sales-do`
+  `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

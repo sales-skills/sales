@@ -24,7 +24,7 @@ npx skills add coreyhaines31/marketingskills
 ### Install one
 
 ```bash
-npx skills add coreyhaines31/marketingskills --skills <skill-name>
+npx skills add coreyhaines31/marketingskills --skill <skill-name>
 ```
 
 ### SEO & Content
@@ -104,7 +104,7 @@ npx skills add resciencelab/opc-skills
 ### Install one
 
 ```bash
-npx skills add resciencelab/opc-skills --skills <skill-name>
+npx skills add resciencelab/opc-skills --skill <skill-name>
 ```
 
 ### Research
@@ -149,7 +149,7 @@ npx skills add resciencelab/opc-skills --skills <skill-name>
 | `/backlink-analyzer` | Analyze backlink profiles with toxic link detection and competitor benchmarking |
 
 ```bash
-npx skills add aaron-he-zhu/seo-geo-claude-skills --skills backlink-analyzer
+npx skills add aaron-he-zhu/seo-geo-claude-skills --skill backlink-analyzer
 ```
 
 ### Presentations
@@ -161,7 +161,7 @@ npx skills add aaron-he-zhu/seo-geo-claude-skills --skills backlink-analyzer
 | `/baoyu-slide-deck` | Transform content into professional presentation decks with customizable styles |
 
 ```bash
-npx skills add jimliu/baoyu-skills --skills baoyu-slide-deck
+npx skills add jimliu/baoyu-skills --skill baoyu-slide-deck
 ```
 
 ### Marketing & Standardization
@@ -175,7 +175,7 @@ npx skills add jimliu/baoyu-skills --skills baoyu-slide-deck
 | `/skill-standardization` | Validate and standardize SKILL.md files against the Agent Skills spec |
 
 ```bash
-npx skills add supercent-io/skills-template --skills <skill-name>
+npx skills add supercent-io/skills-template --skill <skill-name>
 ```
 
 ### Competitive Analysis
@@ -187,7 +187,7 @@ npx skills add supercent-io/skills-template --skills <skill-name>
 | `/competitive-landscape` | Analyze competitive dynamics with Porter's Five Forces, Blue Ocean Strategy, and positioning maps |
 
 ```bash
-npx skills add wshobson/agents --skills competitive-landscape
+npx skills add wshobson/agents --skill competitive-landscape
 ```
 
 ### Link Building
@@ -199,7 +199,7 @@ npx skills add wshobson/agents --skills competitive-landscape
 | `/build-links` | Design link acquisition campaigns with prospect scoring and outreach strategy |
 
 ```bash
-npx skills add calm-north/seojuice-skills --skills build-links
+npx skills add calm-north/seojuice-skills --skill build-links
 ```
 
 ### Skill Development
@@ -211,7 +211,7 @@ npx skills add calm-north/seojuice-skills --skills build-links
 | `/skill-creator` | Scaffold new skills with validated directory structure, frontmatter, and progressive disclosure |
 
 ```bash
-npx skills add starchild-ai-agent/official-skills --skills skill-creator
+npx skills add starchild-ai-agent/official-skills --skill skill-creator
 ```
 
 ### Lead Generation
@@ -223,7 +223,7 @@ npx skills add starchild-ai-agent/official-skills --skills skill-creator
 | `/apify-lead-generation` | Multi-platform lead scraping from Google Maps, social media, websites, and search engines |
 
 ```bash
-npx skills add apify/agent-skills --skills apify-lead-generation
+npx skills add apify/agent-skills --skill apify-lead-generation
 ```
 
 ### Launch & Growth
@@ -235,9 +235,9 @@ npx skills add apify/agent-skills --skills apify-lead-generation
 | `/product-hunt-launch` | Optimize Product Hunt launches with research, gallery strategy, and timing guidance |
 
 ```bash
-npx skills add inferen-sh/skills --skills product-hunt-launch
+npx skills add inferen-sh/skills --skill product-hunt-launch
 ```
 
 ## Related skills
 
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`

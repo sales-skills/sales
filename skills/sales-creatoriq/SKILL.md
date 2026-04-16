@@ -187,7 +187,7 @@ Based on the user's specific question:
 - `/sales-meltwater` — Meltwater platform help — media intelligence + influencer marketing
 - `/sales-skeepers` — Skeepers platform help — UGC suite, pre-vetted micro/nano creators
 - `/sales-heepsy` — Heepsy platform help — affordable influencer discovery (11M+ profiles)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

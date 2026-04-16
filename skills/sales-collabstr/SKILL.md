@@ -172,7 +172,7 @@ Based on the user's specific question:
 - `/sales-modash` — Modash platform help — largest database (350M+), Shopify-first workflow, auto-detection
 - `/sales-creatorco` — Creator.co platform help — AI-automated matching, UGC rights
 - `/sales-creatoriq` — CreatorIQ platform help — enterprise influencer OS, Creator Graph, SafeIQ
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

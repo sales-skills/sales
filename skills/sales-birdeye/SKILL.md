@@ -79,13 +79,13 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 
 ## Related skills
 
-- `/sales-online-reputation` — Online reputation management strategy across all tools (monitoring, responding, review generation, listings, Google Business Profile). Install: `npx skills add sales-skills/sales --skills sales-online-reputation`
-- `/sales-customer-reviews` — Product review collection strategy for ecommerce (Judge.me, Yotpo, Trustpilot, G2). Install: `npx skills add sales-skills/sales --skills sales-customer-reviews`
-- `/sales-customer-feedback` — Customer feedback, NPS, CSAT, VoC strategy across tools. Install: `npx skills add sales-skills/sales --skills sales-customer-feedback`
-- `/sales-live-chat` — Live chat and chatbot strategy across tools. Install: `npx skills add sales-skills/sales --skills sales-live-chat`
-- `/sales-sms-marketing` — SMS marketing strategy across tools. Install: `npx skills add sales-skills/sales --skills sales-sms-marketing`
-- `/sales-social-media-management` — Social media management strategy across tools. Install: `npx skills add sales-skills/sales --skills sales-social-media-management`
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-online-reputation` — Online reputation management strategy across all tools (monitoring, responding, review generation, listings, Google Business Profile). Install: `npx skills add sales-skills/sales --skill sales-online-reputation`
+- `/sales-customer-reviews` — Product review collection strategy for ecommerce (Judge.me, Yotpo, Trustpilot, G2). Install: `npx skills add sales-skills/sales --skill sales-customer-reviews`
+- `/sales-customer-feedback` — Customer feedback, NPS, CSAT, VoC strategy across tools. Install: `npx skills add sales-skills/sales --skill sales-customer-feedback`
+- `/sales-live-chat` — Live chat and chatbot strategy across tools. Install: `npx skills add sales-skills/sales --skill sales-live-chat`
+- `/sales-sms-marketing` — SMS marketing strategy across tools. Install: `npx skills add sales-skills/sales --skill sales-sms-marketing`
+- `/sales-social-media-management` — Social media management strategy across tools. Install: `npx skills add sales-skills/sales --skill sales-social-media-management`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

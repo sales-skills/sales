@@ -175,14 +175,14 @@ Based on the user's situation:
 ## Related skills
 
 - `/sales-launch-directory` — Coordinate launches across 20+ directories including Altern. Install:
-  `npx skills add sales-skills/sales --skills sales-launch-directory`
+  `npx skills add sales-skills/sales --skill sales-launch-directory`
 - `/sales-theresanaiforthat` — TAAFT platform help (#1 AI directory, 42,000+ tools, 3-4M visits/mo, DR76 dofollow)
 - `/sales-producthunt` — Product Hunt platform help (largest launch platform, DR91 dofollow)
 - `/sales-peerlist` — Peerlist platform help (weekly Launchpad, 203K+ users)
 - `/sales-indiehackers` — Indie Hackers platform help (founder community, 165K+ entrepreneurs)
 - `/sales-semrush` — SEO and online visibility platform (keyword research, backlink analysis)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
-  `npx skills add sales-skills/sales --skills sales-do`
+  `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

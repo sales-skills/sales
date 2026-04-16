@@ -120,7 +120,7 @@ Uneed fits into **Phase 1 — Instant listings** if you use Skip the Line ($29.9
 - `/sales-solopush` — SoloPush platform help (no-pressure indie maker community, DR46)
 - `/sales-producthunt` — Product Hunt platform help (largest launch platform, DR91 dofollow, 5M+ visits/mo)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
-  `npx skills add sales-skills/sales --skills sales-do`
+  `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

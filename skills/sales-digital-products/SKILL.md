@@ -129,7 +129,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-payhip` — Payhip platform help (digital downloads, courses, memberships, coaching, store builder, API)
 - `/sales-gumroad` — Gumroad platform help (digital products, license keys, Discover marketplace, API, webhooks)
 - `/sales-lemonsqueezy` — Lemon Squeezy platform help (payments, subscriptions, license keys, tax compliance as merchant of record)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

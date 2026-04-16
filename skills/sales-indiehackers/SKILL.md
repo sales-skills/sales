@@ -175,14 +175,14 @@ Based on the user's situation:
 ## Related skills
 
 - `/sales-launch-directory` — Coordinate launches across 20+ directories including Indie Hackers. Install:
-  `npx skills add sales-skills/sales --skills sales-launch-directory`
+  `npx skills add sales-skills/sales --skill sales-launch-directory`
 - `/sales-producthunt` — Product Hunt platform help (largest launch platform, DR91 dofollow)
 - `/sales-peerlist` — Peerlist platform help (weekly Launchpad, 203K+ users)
 - `/sales-audience-growth` — Grow your email list and subscriber base
 - `/sales-newsletter` — Newsletter monetization strategy
 - `/sales-email-marketing` — Email marketing to your subscriber list
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
-  `npx skills add sales-skills/sales --skills sales-do`
+  `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

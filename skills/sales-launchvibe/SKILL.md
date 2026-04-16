@@ -165,7 +165,7 @@ Pair with:
 - `/sales-justgotfound` — JustGotFound platform help (community-curated PH alternative, DR23 dofollow)
 - `/sales-producthunt` — Product Hunt platform help (largest launch platform, DR91 dofollow)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
-  `npx skills add sales-skills/sales --skills sales-do`
+  `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

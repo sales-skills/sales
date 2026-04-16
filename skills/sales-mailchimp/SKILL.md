@@ -128,7 +128,7 @@ Based on the user's specific question:
 - `/sales-funnel` — Funnel strategy and conversion optimization
 - `/sales-integration` — Connect Mailchimp to other tools via Zapier, Make, or API
 - `/sales-checkout` — Checkout and payment page optimization (pairs with Mailchimp e-commerce integrations)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

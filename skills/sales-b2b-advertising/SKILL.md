@@ -122,7 +122,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-adroll` — AdRoll platform help (RollWorks ABM, display retargeting, ecommerce integration)
 - `/sales-reddit-ads` — Reddit Ads platform help (subreddit targeting, community-based B2B ads, Lead Gen Ads)
 - `/sales-retargeting` — Retargeting strategy across all platforms (consumer and B2B)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

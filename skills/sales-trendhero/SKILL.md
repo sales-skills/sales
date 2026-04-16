@@ -192,7 +192,7 @@ For API integration questions, refer to the detailed [trendHERO API Reference](r
 - `/sales-infludata` — influData platform help — AI creator search, audience analysis, social listening
 - `/sales-tiktok-marketing` — TikTok marketing strategy — organic growth, paid ads, content creation, influencer strategy
 - `/sales-gaming-marketing` — Gaming influencer marketing strategy — streamers, game launches
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

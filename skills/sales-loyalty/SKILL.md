@@ -209,7 +209,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-email-marketing` — Email communication for loyalty program members
 - `/sales-checkout` — Checkout optimization (loyalty display at checkout)
 - `/sales-integration` — Connect loyalty tools with e-commerce and CRM
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

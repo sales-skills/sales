@@ -166,7 +166,7 @@ Based on the user's specific question:
 - `/sales-social-listening` — Social listening strategy across platforms
 - `/sales-enrich` — Enrich contacts with emails/phones before importing
 - `/sales-ai-visibility` — AI visibility monitoring across LLMs (platform-agnostic strategy)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

@@ -142,7 +142,7 @@ Based on the user's specific question:
 - `/sales-getprospect` — GetProspect platform help (similar email finder and lead generation)
 - `/sales-minelead` — Minelead platform help (similar email finder, verifier, and lead generation)
 - `/sales-skrapp` — Skrapp platform help (similar email finder with LinkedIn integration)
-- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skills sales-do`
+- `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 

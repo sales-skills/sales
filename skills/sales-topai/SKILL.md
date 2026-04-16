@@ -96,7 +96,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 ## Related skills
 
 - `/sales-launch-directory` — Coordinate launches across 30+ directories including TopAI.tools. Install:
-  `npx skills add sales-skills/sales --skills sales-launch-directory`
+  `npx skills add sales-skills/sales --skill sales-launch-directory`
 - `/sales-theresanaiforthat` — TAAFT (#1 AI directory, 42,000+ tools, 3-4M visits/mo, DR76 dofollow, $347)
 - `/sales-futurepedia` — Futurepedia (5,700+ tools, ~2M visits/mo, $497 Verified, YouTube 2M+ subs)
 - `/sales-altern` — Altern AI directory (10,000+ tools, free + featured tiers, dofollow backlinks)
@@ -104,7 +104,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-producthunt` — Product Hunt (DR91 dofollow, 5M+ visits/mo)
 - `/sales-semrush` — SEO and online visibility platform (keyword research, backlink analysis)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
-  `npx skills add sales-skills/sales --skills sales-do`
+  `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
 
