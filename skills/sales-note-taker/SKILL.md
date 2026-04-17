@@ -143,6 +143,7 @@ If you discover a gotcha, rate-limit ceiling, auth quirk, or vendor-specific pay
 - `/sales-otter` — Otter.ai platform help (OtterPilot, live transcription, AI Chat, Zapier automation, CRM sync, pricing tiers)
 - `/sales-fellow` — Fellow platform help (REST API, bot-based/bot-free recording, CRM sync, templates, pricing tiers)
 - `/sales-grain` — Grain platform help (REST API, MCP Server for Claude/Cursor, video clips, Zapier automation, CRM sync, pricing tiers)
+- `/sales-sembly` — Sembly platform help (agentic meeting intelligence, AI-generated deliverables, webhook automations, 10 native CRM connectors, pricing tiers)
 - `/sales-salesloft` — Salesloft Conversations (bolt-on conversation intelligence inside Salesloft)
 - `/sales-zoominfo` — ZoomInfo Chorus (bolt-on conversation intelligence inside ZoomInfo)
 - `/sales-seismic` — Seismic Meeting Intelligence (bolt-on inside Seismic)

@@ -13,7 +13,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Otter.ai | Transcription | Yes | $17-30/mo | REST (Enterprise beta) | Yes (Workspace) | Thin | General meetings, non-sales |
 | Fellow | Meeting management | Yes (5 lifetime) | $7-15/user | REST | Yes (Zapier) | Medium (Business+) | Manager 1:1s, leadership meetings |
 | Grain | AI meeting recorder | Yes (20 meetings) | $15-39/seat | REST (Business+) | Yes (Zapier) | Medium (Business+) | GTM teams, clip sharing, MCP |
-| Sembly | AI meeting assistant | Yes | $10-20/seat | Webhook-first | Yes | Medium | Task automation, agent workflows |
+| Sembly | Agentic meeting intelligence | No (trial only) | $17-39/user | Webhook-first | Yes | Medium (10 CRMs) | Professional services, deliverables, task automation |
 | Read.ai | Meeting AI | Yes | $15-30/seat | Webhook-first | Yes | Medium | Engagement/sentiment analytics |
 
 ## Fathom
@@ -276,22 +276,34 @@ For deep platform coverage (API endpoints, MCP Server setup, pricing gates, Zapi
 
 ## Sembly
 
-**Positioning**: AI meeting assistant with a stronger focus on task automation and smart agents — auto-creates tasks, routes them, and can run workflow agents on meeting content.
+For deep platform coverage (pricing gates, automation setup, AI credit system, CRM connectors, troubleshooting), use `/sales-sembly`.
 
-**Pricing (2026-04)**: Free, Professional $10/seat, Team $20/seat, Enterprise custom.
+**Positioning**: "Agentic augmentation platform" for professional services — goes beyond passive note-taking with AI that auto-generates client deliverables (proposals, briefs, pitch decks, investment memos), auto-detects tasks with owners/deadlines, and supports multi-meeting AI chat via Semblian assistant. Targets consulting, legal, HR, VC, and client-facing teams. SOC 2 Type II, GDPR, HIPAA (MAX+). 48-language transcription.
+
+**Pricing (2026-04)**: Basic $17/mo ($10 annual, 1 user), Pro $29/user/mo ($20 annual, up to 40 users), MAX $39/user/mo ($30 annual, 3-500 users, min 3), Enterprise custom. Annual saves 30%. No free tier — Basic free trial only (limited, no credit card).
 
 **API**:
+- **No traditional REST/GraphQL API.** Integration is webhook-first (outbound automations).
 - Outbound Automations via HTTPS POST to configurable endpoint with configurable field names
-- Docs: `https://helpdesk.sembly.ai/hc/en-us/articles/17664440116369-Guide-to-Outbound-Personal-and-Workspace-Automations-in-Sembly-for-API-Integrators-and-Custom-Adapter-Developers`
-- Webhook-first architecture — meeting notes, transcripts, AI tasks pushed out via webhooks organized by speaker, timestamp, metadata
+- Data types: Transcription, Meeting Notes, Tasks — filtered by team, keywords, conversation type
+- Docs: `helpdesk.sembly.ai` (article on custom adapter development — returns 403 via WebFetch)
+- Zapier triggers: New Meeting Notes, New Tasks, New Transcription
 
-**Webhooks**: Primary integration path.
+**Webhooks**: Primary integration path. Configure in My Automations → Custom tab.
 
-**Integrations**: Zapier (official), n8n (official), Slack, CRMs via webhook.
+**Integrations**: 50+ native — 10 CRMs (Salesforce, HubSpot, Zoho, Pipedrive, Freshsales, Attio, Capsule, Close, TeamLeader, Copper), 13 PM tools (Monday, Asana, Jira, Trello, ClickUp, etc.), Slack, Teams, Confluence, Google Drive/Dropbox/OneDrive/SharePoint, Zapier, n8n (official). MCP access (Pro+).
+
+**Known issues (from G2/Capterra reviews)**:
+- Long meetings (>3hr) get fragmented into separate segments — no merge feature
+- Calendar integration silently disconnects — bot misses meetings
+- Speaker recognition degrades with 5+ participants
+- AI credits consumed by Semblian chat (5 docs/insights on Pro, 40 on MAX)
+- No DOCX/Word export for summaries/tasks
+- No inbound API for programmatic queries
 
 **Selection notes**:
-- **Pick Sembly when**: You want AI to auto-create tasks from meetings and pipe them into your stack, and you prefer webhook-first integration
-- **Avoid Sembly when**: You need deep native CRM field mapping (→ Avoma) or revenue intelligence (→ Gong)
+- **Pick Sembly when**: Professional services team wants AI-generated client deliverables (proposals, briefs) from meetings, task automation with owners/deadlines, and webhook-first integration to existing tools. Strong if you need 48-language support, HIPAA compliance (MAX), or in-person recording.
+- **Avoid Sembly when**: You need sales-specific features like methodology scorecards or deal intelligence (→ Gong/Avoma), a traditional REST/GraphQL API for custom integrations (→ Fireflies/Fathom), or unlimited AI chat without credit limits
 
 ---
 
