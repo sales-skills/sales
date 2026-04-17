@@ -21,6 +21,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Colibri | Real-time transcription + Sales Copilot | Yes (5 hrs/mo) | $16/mo | None | None | Thin (Salesforce Scale only) | Real-time live coaching during calls, legal transcription |
 | Cluely | Real-time AI coaching overlay | Yes (limited) | $20/mo | None | None | Medium (via Merge.dev, Team+) | Real-time AI prompts during calls, knowledge base RAG, pre-call briefs |
 | Jamy.ai | AI meeting assistant + translation | Yes (300 min/mo) | $14.99/mo | REST (partial) | Yes (Zapier/Make) | Thin (HubSpot only) | Multilingual teams needing real-time translation in 100+ languages |
+| Wave | Mobile-first AI note-taker | Yes (30 min/mo) | $11.67/mo | REST | Yes (HMAC-SHA256) | None (export only) | In-person recording, phone calls, cross-device sync, semantic search |
 
 ## Fathom
 
@@ -555,6 +556,52 @@ For deep platform coverage (API setup, translation configuration, calendar auto-
 **Selection notes**:
 - **Pick Jamy when**: Real-time translation is essential for multilingual teams, you need cross-language search across meeting history, budget is moderate ($15-30/mo), and HubSpot is your CRM
 - **Avoid Jamy when**: CRM depth matters beyond HubSpot (Salesforce/Pipedrive not yet available), you need a mature API with documented endpoints (→ Fireflies/Fathom), social proof and reliability matter (limited reviews, known bot issues), or you don't need translation (Fathom's free tier is more generous)
+
+---
+
+## Wave
+
+For deep platform coverage (REST API, webhook HMAC verification, recording methods, MCP server, Voice ID, semantic search), use `/sales-wave`.
+
+**Positioning**: Mobile-first AI note-taker built for in-person meetings, phone calls, and cross-device recording. Four capture methods: mobile mic, desktop system audio (no bot), meeting bot (Zoom/Meet/Teams), and Chrome extension. Semantic search (Wave Assistant) across entire recording history is the standout feature. No native CRM sync — relies on API, Zapier, or manual export.
+
+**Pricing (2026-04)**: Free (30 min/mo), Pro $11.67/mo annual (unlimited), Teams $7.50/user/mo (min 5, shared workspace + admin).
+
+**API**:
+- Docs: `https://api.wave.co/` (OpenAPI spec at `/v1/openapi.json`)
+- Base URL: `https://api.wave.co/v1/`
+- Auth: Bearer token (`wave_api_...`) created at `app.wave.co/settings/integrations/api`. Expires after 1 year.
+- Scopes: `sessions:read/write/delete/search`, `transcripts:read`, `media:read`, `account:read`, `webhooks:manage`
+- Key endpoints:
+  - `GET /v1/sessions` — list with cursor pagination, filter by type/date
+  - `GET /v1/sessions/{id}` — metadata, summary, notes
+  - `GET /v1/sessions/{id}/transcript` — full transcript with speaker segments
+  - `GET /v1/sessions/{id}/media` — signed audio/video URLs (1-hour expiry)
+  - `POST /v1/sessions/search` — semantic vector similarity search
+  - `POST /v1/sessions/bulk` — export up to 50 sessions at once
+  - `GET /v1/account` — profile, subscription, session count
+- MCP server: `mcp.wave.co` (Claude Desktop, Claude Code, ChatGPT)
+
+**Webhooks**:
+- Create via `POST /v1/webhooks` (max 5 per user, secret returned once)
+- Events: `session.completed`, `session.updated`, `session.deleted`
+- Signature: HMAC-SHA256 with three headers (`X-Wave-Webhook-Id`, `X-Wave-Webhook-Timestamp`, `X-Wave-Webhook-Signature`). Formula: `HMAC-SHA256(secret, "{webhookId}.{timestamp}.{body}")`
+
+**Rate limits**: 60 req/min, 1,000/day per token. Headers: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Reset`.
+
+**Integrations**: Zoom/Meet/Teams (bot). Notion, Google Docs, OneNote, Evernote (export). PDF/DOCX export. Zapier. MCP server (Claude/ChatGPT). No native CRM connectors — use API or Zapier for CRM sync.
+
+**Known issues (from App Store/Product Hunt reviews)**:
+- Incoming phone calls kill active recordings on mobile — no resume/append
+- App gets stuck on "saving recording" or transcription step
+- Incomplete recordings (records only first few minutes of long calls)
+- Background noise misinterpreted as speech (fan → "thank you thank you thank you")
+- Export formatting degrades when copy-pasting to OneNote
+- Account setup passkey loop for some email providers
+
+**Selection notes**:
+- **Pick Wave when**: In-person meetings and phone calls are your primary use case (not just virtual meetings), you need cross-device sync (phone + desktop + watch), semantic search across recording history is valuable, and you don't need native CRM integration
+- **Avoid Wave when**: Native CRM sync is required (→ Fathom Business, Fireflies Business, Avoma), you need deep sales coaching features (→ Gong, Avoma), your team is >10 people and needs admin controls beyond shared workspace, or you need a generous free tier (30 min/mo is very limited → Fathom free is unlimited)
 
 ---
 
