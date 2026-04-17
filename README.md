@@ -160,6 +160,7 @@ Router recommends a 5-skill sequence:
 | `/sales-fathom` | Fathom platform help — REST API, webhooks, OAuth, SDKs, MCP, transcript/summary export, CRM sync, pricing tiers |
 | `/sales-fireflies` | Fireflies.ai platform help — GraphQL API, Webhooks V1 + V2, HMAC verification, AskFred AI, Real-time API, MCP, rate limits per tier, bot auto-join control |
 | `/sales-avoma` | Avoma platform help — REST API, webhooks, MEDDIC/BANT/SPICED scorecards, Conversation + Revenue Intelligence, Lead Router, CRM sync, pricing tiers |
+| `/sales-gong` | Gong platform help — Revenue AI OS, call recording, Smart Trackers, coaching scorecards, REST API, webhook automation, Forecast, Engage, MCP |
 | `/sales-deal-inspect` | Inspect deal health, map stakeholders, identify risks, recommend next actions |
 | `/sales-forecast` | Build and validate revenue forecasts with pipeline coverage and gap analysis |
 

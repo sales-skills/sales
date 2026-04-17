@@ -199,6 +199,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 
 - `/sales-seismic` — Seismic platform help (for Seismic Learning, Role-Play Agent, and coaching features)
 - `/sales-allego` — Allego platform help (for Modern Learning, AI Role-Play, and Conversation Intelligence)
+- `/sales-gong` — Gong platform help (coaching scorecards, deal boards, Smart Trackers, conversation analytics)
 - `/sales-call-review` — Review specific sales calls and extract coaching insights
 - `/sales-note-taker` — Picking an AI note-taker (Fathom, Fireflies, Avoma, Gong, etc.) or wiring its API to feed your coaching program
 - `/sales-content` — Sales content for training and enablement programs

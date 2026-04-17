@@ -126,37 +126,59 @@ For deep platform coverage (API authentication, webhook events, scorecard setup,
 
 ## Gong
 
-**Positioning**: Revenue intelligence leader — the deepest conversation analytics, deal risk detection, and coaching analytics in the category. Enterprise-priced.
+For deep platform coverage (all modules, API endpoints, webhook automation, Smart Tracker tuning, coaching scorecards, pricing breakdown, known issues), use `/sales-gong`.
 
-**Pricing (2026-04)**: From ~$1,200-$1,600/user/year (annual contract, Sales+-class tiers). No public self-serve.
+**Positioning**: Revenue intelligence leader — the deepest conversation analytics, deal risk detection, coaching analytics, and deal intelligence in the category. Enterprise-priced. Trusted by 5,000+ customers. Also includes Gong Forecast (revenue forecasting, widely considered weak — ~40% of customers stack Clari), Gong Engage (sales engagement, known stability issues), Gong Enable (enablement), and Gong Agents (AI automation).
+
+**Pricing (2026-04)**: ~$1,600/user/year list (negotiated: $1,000-$1,349 at scale). Mandatory platform fee: $5K-$50K/year regardless of team size. Onboarding: $7,500+. Add-ons: Forecast ~$700/user/yr, Engage ~$800/user/yr. Fully loaded: $2,400-$3,000/user/yr + platform fees. Annual/multi-year contracts with 5-10% renewal uplift. No public self-serve pricing.
 
 **API**:
 - Docs: `https://help.gong.io/docs/what-the-gong-api-provides`
 - Type: REST
-- Rate limits: **3 req/sec, 10k/day, ~1k/hr per API key** — design for this early
+- Base URL: `https://api.gong.io/v2/`
+- Auth: Basic Auth (`access_key:access_key_secret` base64-encoded) or OAuth 2.0 (required for multi-tenant)
+- Scopes: `api:users:read`, `api:calls:read`, `api:flows:read`, etc.
+- Rate limits: **3 req/sec, ~1k/hr, 10k/day per API key** — design for this early
 - Rate-limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Reset`
 - 429 responses include `Retry-After` header
 - Key endpoints:
-  - `GET /v2/calls` — list calls (filter by date, users, deal, etc.)
-  - `GET /v2/calls/{id}` — call metadata
+  - `GET /v2/calls` — list calls (filter by date, users, deal)
+  - `GET /v2/calls/{id}` — call metadata (participants, topics, trackers, scorecards)
   - `POST /v2/calls/{id}/transcript` — **POST**, not GET — returns full transcript with monologues
-  - `/v2/users`, `/v2/deals`, `/v2/engagements` — richer CRM/deal context
+  - `GET /v2/users`, `GET /v2/users/{id}/stats` — user data and activity stats
+  - `GET/POST /v2/crm/object`, `GET/POST /v2/crm/map-fields` — CRM integration
+  - `GET/POST/PUT /v2/flows` — Engage flow management (requires `api:flows:read`)
 
 **Webhooks**:
 - Enable via Automations tab in Developer Hub
-- Extensive event catalog (calls, deals, engagements)
-- Configure endpoint + authentication
+- Payload: JSON with `callData` (full call data — metadata, CRM context, parties, tracked content, interaction stats, collaboration comments) and `isTest` flag
+- Authentication: Signed JWT header — verify digital signature with public key from Developer Hub
+- Events: Call processed, deal updated, engagement events (push external events into Gong timeline)
+- Payload schema matches API response schema
 
-**Integrations**: Deep Salesforce, Dynamics, HubSpot; Slack; Zoom, Teams, Webex, Dialpad, lots of dialers.
+**Integrations**: Deep Salesforce (tasks, bi-directional deal sync), HubSpot (meetings, bi-directional), Dynamics 365; Slack; Zoom, Teams, Webex, Google Meet, Dialpad, RingCentral, Aircall, 50+ dialers. MCP support announced (2026). Gong Collective marketplace (230+ partners).
+
+**Known issues (from 600+ G2/Capterra reviews)**:
+- Smart Trackers: high false-positive rates (87 mentions), need 50-100 examples per tracker, context-blind
+- Call search: unintuitive filtering, hard to find specific calls (154 mentions)
+- Transcription accuracy: degrades with accents, non-native English, technical jargon (84 mentions)
+- No bulk data export via UI — must use API (requires dev resources)
+- Gong Forecast widely considered weak — ~40% of customers also buy Clari
+- Gong Engage: slow, buggy, high admin burden
+- Support quality declined 2024-2025 — outsourced onboarding, slow ticket resolution
+- Mandatory bundling on new contracts — CI-only pricing increasingly hard to get
+- CRM sync is one-way for many fields — doesn't auto-populate methodology fields or custom objects
 
 **Selection notes**:
-- **Pick Gong when**: You're enterprise, revenue intelligence is a strategic investment, and coaching/deal analytics ROI justifies $1k+/user/yr
-- **Avoid Gong when**: Budget is a primary constraint or the team is under ~20 reps (overkill)
+- **Pick Gong when**: You're enterprise (50+ reps), revenue intelligence is a strategic investment, coaching/deal analytics ROI justifies $1k+/user/yr, and you need the deepest conversation analytics in the category
+- **Avoid Gong when**: Budget is a primary constraint, team is under ~20 reps (overkill and negative ROI), you primarily need forecasting (→ Clari) or sales engagement (→ Salesloft/Outreach), or you need a quick-start tool without 3-6 month implementation
 
 **API gotchas**:
 - Transcript endpoint is **POST**, unlike most vendors — common first-integration bug
-- 3 req/sec is aggressive — queue/batch every outbound call
+- 3 req/sec is aggressive — queue/batch every outbound call, target 2/sec for headroom
 - Backfilling history burns daily quota fast — paginate nightly, not all at once
+- No bulk export endpoint — must iterate through calls individually
+- OAuth required for multi-tenant apps; Basic Auth for single-org only
 
 ---
 

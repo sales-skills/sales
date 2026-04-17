@@ -165,6 +165,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 
 ## Related skills
 
+- `/sales-gong` — Gong platform help (Gong Forecast module — widely considered weak, ~40% of customers stack Clari)
 - `/sales-salesloft` — Salesloft Forecast module for submission workflows and AI-assisted predictions
 - `/sales-deal-inspect` — Deep-dive on individual deals in your forecast
 - `/sales-pipeline` — Portfolio-level pipeline management and deal prioritization
