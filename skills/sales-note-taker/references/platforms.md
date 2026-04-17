@@ -16,6 +16,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Sembly | Agentic meeting intelligence | No (trial only) | $17-39/user | Webhook-first | Yes | Medium (10 CRMs) | Professional services, deliverables, task automation |
 | Read.ai | Meeting AI | Yes | $15-30/seat | Webhook-first | Yes | Medium | Engagement/sentiment analytics |
 | MeetGeek | AI meeting assistant | Yes (3 hrs/mo) | $9.99/mo | REST | Yes | Medium (7 CRMs) | Teams wanting customizable templates, analytics, affordable pricing |
+| Jamie | Bot-free AI note-taker | Yes (10 meetings) | €21/mo | REST | Yes (Plus+) | Medium (3 CRMs, Pro+) | Privacy-first EU teams, in-person meetings, bot-free recording |
 
 ## Fathom
 
@@ -374,6 +375,49 @@ For deep platform coverage (recording modes, summary templates, conversation ana
 **Selection notes**:
 - **Pick MeetGeek when**: Team wants customizable summary templates per meeting type, 7 native CRM connectors at an affordable price point ($9.99/user), conversation analytics with 100+ KPIs, both bot and no-bot recording options, or MCP integration for AI workflows
 - **Avoid MeetGeek when**: Free plan is important (Fathom's free tier is more generous), multilingual accuracy matters (test first), you need methodology scorecards (→ Avoma/Gong), or MS Teams admin restricts guest access (→ use no-bot recording)
+
+---
+
+## Jamie
+
+For deep platform coverage (API endpoints, webhook setup, MCP server, CRM sync, pricing gates), use `/sales-jamie`.
+
+**Positioning**: Privacy-first, bot-free AI meeting note-taker. Records via the user's device (desktop/mobile) rather than joining calls as a bot. EU-based with GDPR, ISO 27001. Audio deleted after transcription. Works for online and in-person meetings.
+
+**Pricing (2026-04)**: Free €0 (10 meetings/mo, 30 min), Plus €21/mo annual (20 meetings, 2 hr), Pro €39/mo annual (unlimited, 3 hr), Team €33/seat/mo annual (2+ seats), Enterprise custom (10+ seats, SSO). CRM sync and API are Pro+.
+
+**API**:
+- Docs: `docs.meetjamie.ai` (JS-rendered — use llms-full.txt for structured info)
+- Auth: `x-api-key: jk_...` header (personal keys for `/v1/me/`, workspace keys for `/v1/workspace/`)
+- Key endpoints:
+  - `GET /v1/me/meetings` or `/v1/workspace/meetings` — list, fetch, search, delete meetings
+  - Meeting detail: summaries (Markdown/HTML), transcripts, participants, tasks, tags, calendar events
+  - Tasks API: filter action items by completion, date, assignee, meeting
+  - Tags API: list tags (personal keys only)
+- Rate limits: 100 req/min per user or workspace
+
+**Webhooks**:
+- Event: `meeting.completed` — fires when meeting is fully processed
+- Auth: API Key in custom header or HMAC-SHA256 via `x-jamie-signature`
+- Requirements: Plus+ plan, HTTPS endpoint
+- Delivery: 30s timeout, 5 retries with exponential backoff
+- Limitations: URL and events immutable after creation — delete and recreate to change
+
+**MCP**: Community-built `vicampuzano-jamie-mcp` (npm). Requires Pro+ and `JAMIE_API_KEY` env var. Connects to Claude, ChatGPT, Cursor.
+
+**Integrations**: HubSpot, Salesforce, Attio (CRM, Pro+), Notion, Google Docs, OneNote (notes), Asana (tasks, Pro+), Make.com (webhooks), Google Calendar, Outlook.
+
+**Limitations**:
+- No video recording — audio only
+- No Android app (Mac, Windows, iOS only)
+- No native Zapier integration — webhooks go through Make.com or custom endpoints
+- Free tier very limited (10 meetings, 30 min cap)
+- No sales coaching or methodology scorecards
+- No multi-meeting intelligence dashboard (Ask Jamie chat covers cross-meeting queries)
+
+**Selection notes**:
+- **Pick Jamie when**: Privacy is paramount (EU residency, audio deleted, ISO 27001), bot-free recording is non-negotiable, you need in-person meeting recording, team is EU-based and GDPR is critical, or you want a simple MCP integration for AI workflows
+- **Avoid Jamie when**: You need video recording (→ tl;dv, Fireflies, Grain), you want sales coaching/scorecards (→ Avoma, Gong), you need a generous free tier (→ Fathom), you need native Zapier (→ Fireflies, Otter, Fellow), or your team includes Android users
 
 ---
 

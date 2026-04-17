@@ -156,7 +156,7 @@ Router recommends a 5-skill sequence:
 | `/sales-salesloft` | Salesloft platform help — config, Rhythm, Conversations, Drift, integrations |
 | `/sales-cadence` | Design multi-channel outbound cadences with timing, A/B testing, and content |
 | `/sales-call-review` | Review sales calls, extract coaching insights, score against MEDDPICC/SPIN |
-| `/sales-note-taker` | AI meeting note-taker / conversation-intelligence selection & API integration (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek) |
+| `/sales-note-taker` | AI meeting note-taker / conversation-intelligence selection & API integration (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie) |
 | `/sales-fathom` | Fathom platform help — REST API, webhooks, OAuth, SDKs, MCP, transcript/summary export, CRM sync, pricing tiers |
 | `/sales-fireflies` | Fireflies.ai platform help — GraphQL API, Webhooks V1 + V2, HMAC verification, AskFred AI, Real-time API, MCP, rate limits per tier, bot auto-join control |
 | `/sales-avoma` | Avoma platform help — REST API, webhooks, MEDDIC/BANT/SPICED scorecards, Conversation + Revenue Intelligence, Lead Router, CRM sync, pricing tiers |
@@ -167,6 +167,7 @@ Router recommends a 5-skill sequence:
 | `/sales-sembly` | Sembly platform help — agentic meeting intelligence, AI-generated deliverables, webhook automations, 10 native CRM connectors, Zapier/n8n, MCP, pricing tiers |
 | `/sales-read-ai` | Read.ai platform help — meeting intelligence with engagement/sentiment analytics, Search Copilot, REST API + MCP Server, webhook automations, CRM sync, pricing tiers |
 | `/sales-meetgeek` | MeetGeek platform help — bot + no-bot recording, customizable AI summary templates, REST API with regional endpoints, MCP Server, 7 CRM connectors, conversation analytics, pricing tiers |
+| `/sales-jamie` | Jamie platform help — bot-free AI note-taker, REST API with personal/workspace keys, webhook automations, CRM sync to HubSpot/Salesforce/Attio, MCP server, EU privacy-first, pricing tiers |
 | `/sales-deal-inspect` | Inspect deal health, map stakeholders, identify risks, recommend next actions |
 | `/sales-forecast` | Build and validate revenue forecasts with pipeline coverage and gap analysis |
 
