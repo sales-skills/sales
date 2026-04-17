@@ -139,7 +139,7 @@ If you discover a gotcha, rate-limit ceiling, auth quirk, or vendor-specific pay
 - `/sales-fireflies` — Fireflies.ai platform help (GraphQL API, Webhooks V1 + V2, HMAC, AskFred, Real-time, MCP, rate limits per tier)
 - `/sales-avoma` — Avoma platform help (REST API, webhooks, MEDDIC/BANT scorecards, Lead Router, pricing tiers)
 - `/sales-gong` — Gong platform help (Revenue AI OS — call recording, Smart Trackers, coaching scorecards, deal boards, REST API, webhook automation, Forecast, Engage, MCP)
-- `/sales-otter` — Otter.ai platform help *(coming soon — in backlog)*
+- `/sales-otter` — Otter.ai platform help (OtterPilot, live transcription, AI Chat, Zapier automation, CRM sync, pricing tiers)
 - `/sales-salesloft` — Salesloft Conversations (bolt-on conversation intelligence inside Salesloft)
 - `/sales-zoominfo` — ZoomInfo Chorus (bolt-on conversation intelligence inside ZoomInfo)
 - `/sales-seismic` — Seismic Meeting Intelligence (bolt-on inside Seismic)

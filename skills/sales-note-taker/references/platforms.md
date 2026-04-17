@@ -184,25 +184,38 @@ For deep platform coverage (all modules, API endpoints, webhook automation, Smar
 
 ## Otter.ai
 
-**Positioning**: Broad-market transcription (not sales-first). Solid free tier, good for general meetings. Sales CRM depth is limited.
+For deep platform coverage (OtterPilot setup, transcription accuracy tuning, AI Chat, Zapier automation, CRM sync, pricing tiers, Enterprise API/webhooks, MCP Server, privacy considerations), use `/sales-otter`.
 
-**Pricing (2026-04)**: Free (limited), Pro $17/mo, Business $30/user/mo, Enterprise custom.
+**Positioning**: Broad-market AI transcription and note-taking (not sales-first). Strongest for live transcription and real-time captioning. OtterPilot bot auto-joins Zoom/Meet/Teams. Solid free tier for general meetings. Sales CRM depth is limited vs dedicated tools. G2 4.4/5 (460+ reviews).
+
+**Pricing (2026-04)**: Free (300 min/mo, 25 conversations, 20 AI Chat queries), Pro $16.99/mo ($8.33 annual, 1,200 min/mo, 90 min/meeting), Business $30/mo ($19.99 annual, unlimited min, 4hr/meeting, 3 concurrent), Enterprise custom (API/Webhooks, SSO/SCIM, HIPAA add-on, Sales Notetaker). Student/teacher 20% off Pro.
 
 **API**:
 - **Public API is Enterprise-only and in beta** — contact Otter account manager to enable
-- Official docs are not publicly indexed for non-Enterprise
-- Unofficial community APIs exist on GitHub but are not production-grade
-- Export formats available in UI/Zapier: TXT, DOCX, PDF, SRT (for video captions), MP3 (audio)
+- Auth: API key (workspace-scoped), ~500 req/min
+- Official docs not publicly indexed — provided after Enterprise API access granted
+- Workspace Webhooks for Enterprise Admins: `https://help.otter.ai/hc/en-us/articles/35634832371735-Workspace-Webhooks`
+- Export formats via UI/Zapier: TXT, DOCX, PDF, SRT (captions), MP3 (audio)
+- Unofficial community APIs on GitHub (Python, Node.js) — not production-grade
+- Recall.ai offers a third-party unified API for Otter integration as an alternative
 
-**Webhooks**:
-- Workspace Webhooks available to Workspace Admins on Enterprise
-- Docs: `https://help.otter.ai/hc/en-us/articles/35634832371735-Workspace-Webhooks`
+**MCP Server**: Announced — connects AI models (Claude, ChatGPT) to Otter data. Details at help center.
 
-**Integrations**: Salesforce, HubSpot, Slack, Zoom, Meet, Teams; Zapier (broad coverage — often the best path for non-Enterprise).
+**Integrations**: Deep — Zoom, Meet, Teams, Slack, Zoom Phone, Dialpad, RingCentral, JustCall, HubSpot, Salesforce, Dynamics, Zoho, Salesloft, Outreach, Monday.com, Google Drive, Dropbox, S3, OneDrive, SharePoint, Egnyte, Snowflake, Asana, ClickUp, Notion, Airtable, Jira, Google Docs, Zapier (8,000+ apps, Pro+), Chrome extension, desktop + mobile apps.
+
+**Key modules**: OtterPilot (auto-join bot), live transcription, AI summaries, AI Chat (natural language meeting queries, capped per plan), action item extraction, Channels (team organization), Sales Notetaker (Enterprise — auto-push to CRM).
+
+**Known issues (from G2/Capterra/review analysis)**:
+- Transcription accuracy: 93-95% in ideal conditions, drops to 70% with noise/accents/crosstalk (55+ negative G2 mentions)
+- Speaker diarization: degrades with 3+ speakers — "Unknown Speaker" segments common in larger meetings
+- Action item detection: often generic or misses real next steps — manual review recommended
+- Language support: only 4 languages as of 2026
+- Minute caps: Free (300/mo) and Pro (1,200/mo) feel restrictive for active teams
+- Class action lawsuit (2026) around recording consent practices
 
 **Selection notes**:
-- **Pick Otter when**: Use case is general meetings (not sales-specific), budget is tight, or the team already uses OtterPilot
-- **Avoid Otter when**: You need a production API on anything below Enterprise, or CRM depth matters
+- **Pick Otter when**: Use case is general meetings (not sales-specific), live transcription is critical, budget is tight, team already uses OtterPilot, or you need broad integration coverage via Zapier
+- **Avoid Otter when**: You need a production API on anything below Enterprise, CRM depth matters for sales intelligence, you need methodology scorecards or coaching analytics (→ Gong/Avoma), or multi-language support is required
 
 ---
 
