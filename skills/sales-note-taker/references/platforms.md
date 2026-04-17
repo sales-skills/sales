@@ -309,19 +309,27 @@ For deep platform coverage (pricing gates, automation setup, AI credit system, C
 
 ## Read.ai
 
-**Positioning**: Meeting AI with engagement and sentiment analytics layered on top of transcripts. Surfaces who's engaged, who's disengaged, and trends over time.
+For deep platform coverage (API endpoints, MCP server setup, webhook configuration, engagement analytics, Search Copilot, pricing tiers, auto-join troubleshooting), use `/sales-read-ai`.
 
-**Pricing (2026-04)**: Free, Pro $15/seat, Enterprise $30/seat+.
+**Positioning**: Meeting AI with engagement/sentiment analytics + Search Copilot (unified search across meetings, emails, chats, CRMs) + Ada digital twin. Differentiator is analytics depth — attention heatmaps, speaker talk ratios, sentiment analysis, meeting quality scores — not just transcription. SOC 2 Type 2, GDPR, HIPAA (Enterprise+). 20+ languages.
 
-**API**: Webhook-first. Integration via Read's official webhooks feature — meeting reports and summaries pushed out to any webhook-receiving app.
+**Pricing (2026-04)**: Free (5 meetings/mo, 1-hour max), Pro $19.75/mo ($15 annual — unlimited meetings, 4-hour max, premium integrations), Enterprise $29.75/mo ($22.50 annual — video playback + highlights), Enterprise+ $39.75/mo ($29.75 annual — HIPAA, SSO/SAML, 8-hour max, 10+ seat min). Education: $5/mo with .edu. Volume: 10% (100+), 15% (500+), 20% (1000+).
 
-**Webhooks**: Primary integration path. Docs at `https://www.read.ai/integrations` and `https://www.read.ai/post/read-integration-webhooks`.
+**API**:
+- REST API (open beta): Base URL `https://api.read.ai/`, OAuth auth. Endpoints for listing sessions and retrieving transcripts. GA planned with static API keys, additional endpoints.
+- MCP Server: `https://api.read.ai/mcp/`, Streamable HTTP, OAuth auth. Compatible with Claude Code, Cursor, VS Code, ChatGPT. Tools: list sessions, retrieve transcripts/summaries.
 
-**Integrations**: Webhook-native → works with any project management, CRM, workspace, wiki, database, marketing, or HR tool that accepts webhooks.
+**Webhooks**:
+- Setup: Read dashboard → Integrations → Webhooks (Pro+ required)
+- Events: `meeting_end`, `manual`
+- Payload: `session_id`, `trigger`, `chapter_summaries`, `transcript` (speaker + timestamp ms + text), action items, key questions
+- Security: HMAC signature in `X-Read-Signature` header
+
+**Integrations**: Zoom, Google Meet, Teams, Webex (recording). Salesforce, HubSpot (CRM sync, Pro+). Notion, Confluence (reports), Asana, Jira, Linear (action items). Slack, Teams (summaries). Google Docs, OneNote (live notes). Gmail, Outlook (email insights). Google Drive, OneDrive (Search Copilot). Zapier (8,000+ apps), webhooks. n8n.
 
 **Selection notes**:
-- **Pick Read.ai when**: Engagement and sentiment analytics matter (e.g., you want to see team engagement trends across all meetings)
-- **Avoid Read.ai when**: You need transcript-level analytics rather than meeting-level engagement scores
+- **Pick Read.ai when**: Engagement and sentiment analytics matter (e.g., you want to see team engagement trends, attention patterns, and meeting quality over time), you want a unified search copilot across meetings + email + chat, or you need MCP integration for AI-powered meeting queries
+- **Avoid Read.ai when**: Bot auto-joining meetings is unacceptable for your org or clients (universities have banned it), you need video playback without paying Enterprise pricing, you need a mature public API (still in beta with limited endpoints), or you need deep coaching scorecards (→ Avoma, Gong)
 
 ---
 

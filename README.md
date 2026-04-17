@@ -165,6 +165,7 @@ Router recommends a 5-skill sequence:
 | `/sales-fellow` | Fellow platform help — AI meeting assistant, REST API, bot-based/bot-free recording, CRM sync, templates, pricing tiers |
 | `/sales-grain` | Grain platform help — AI meeting recorder, REST API, MCP Server for Claude/Cursor, video clips, Zapier automation, CRM sync, pricing tiers |
 | `/sales-sembly` | Sembly platform help — agentic meeting intelligence, AI-generated deliverables, webhook automations, 10 native CRM connectors, Zapier/n8n, MCP, pricing tiers |
+| `/sales-read-ai` | Read.ai platform help — meeting intelligence with engagement/sentiment analytics, Search Copilot, REST API + MCP Server, webhook automations, CRM sync, pricing tiers |
 | `/sales-deal-inspect` | Inspect deal health, map stakeholders, identify risks, recommend next actions |
 | `/sales-forecast` | Build and validate revenue forecasts with pipeline coverage and gap analysis |
 

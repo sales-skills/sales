@@ -74,7 +74,7 @@ Rank these in order for the user's context:
 1. **Budget per seat** — Fathom (free tier + $16-$20/mo) < Fireflies ($10-$19) < Otter ($17-$30) < Avoma ($19-$79) < Gong ($1,200-$1,600/user/yr). Free tier only exists on Fathom, Fireflies, Otter, Read.ai.
 2. **CRM depth** — Gong and Avoma have the deepest native CRM field-mapping and deal intelligence; Fathom Business, Fireflies Business, Fellow Business ($15/seat, HubSpot/Salesforce) are solid; Otter is thinnest.
 3. **Coaching/QA features** — Gong > Avoma > Salesloft Conversations / Chorus > Fathom/Fireflies (basic scorecards only).
-4. **API completeness** — Gong (richest, webhooks + REST) > Fireflies (GraphQL + webhooks) > Avoma (REST + webhooks) > Fathom (REST + webhooks) > Grain (REST, Business+) > Sembly/Read.ai (webhooks-first). Otter is Enterprise-only API (beta).
+4. **API completeness** — Gong (richest, webhooks + REST) > Fireflies (GraphQL + webhooks) > Avoma (REST + webhooks) > Fathom (REST + webhooks) > Grain (REST, Business+) > Sembly (webhooks-first) > Read.ai (REST beta + MCP + webhooks). Otter is Enterprise-only API (beta).
 5. **Compliance** — Gong, Avoma, Fireflies Business, Fathom Business all have SOC 2 + GDPR. For HIPAA/regulated industries, short-list drops to Gong, Avoma, Fireflies Enterprise.
 
 **Quick picks:**
@@ -144,6 +144,7 @@ If you discover a gotcha, rate-limit ceiling, auth quirk, or vendor-specific pay
 - `/sales-fellow` — Fellow platform help (REST API, bot-based/bot-free recording, CRM sync, templates, pricing tiers)
 - `/sales-grain` — Grain platform help (REST API, MCP Server for Claude/Cursor, video clips, Zapier automation, CRM sync, pricing tiers)
 - `/sales-sembly` — Sembly platform help (agentic meeting intelligence, AI-generated deliverables, webhook automations, 10 native CRM connectors, pricing tiers)
+- `/sales-read-ai` — Read.ai platform help (engagement/sentiment analytics, Search Copilot, REST API + MCP Server, webhook automations, CRM sync, pricing tiers)
 - `/sales-salesloft` — Salesloft Conversations (bolt-on conversation intelligence inside Salesloft)
 - `/sales-zoominfo` — ZoomInfo Chorus (bolt-on conversation intelligence inside ZoomInfo)
 - `/sales-seismic` — Seismic Meeting Intelligence (bolt-on inside Seismic)
