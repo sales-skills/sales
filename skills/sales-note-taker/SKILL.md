@@ -1,6 +1,6 @@
 ---
 name: sales-note-taker
-description: "Sales meeting note-taker and conversation-intelligence strategy — platform selection (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie, Krisp, Colibri, Cluely, Jamy, Wave, tl;dv, Claap) plus backend API integration for auto-downloading transcripts, summaries, action items, and recordings into CRM, data warehouse, Slack, or internal tools. Use when choosing an AI note-taker for a sales team, comparing Fathom vs Fireflies pricing or features, deciding between webhook and polling for transcript ingestion, wiring meeting transcripts into HubSpot or Salesforce, building a call-intelligence data pipeline, normalizing transcript formats across multiple vendors, or debugging rate limits and auth flows in note-taker APIs. Do NOT use for reviewing a single call for coaching (use /sales-call-review) or building a coaching program (use /sales-coaching)."
+description: "Sales meeting note-taker and conversation-intelligence strategy — platform selection (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie, Krisp, Colibri, Cluely, Jamy, Wave, tl;dv, Claap, Tactiq) plus backend API integration for auto-downloading transcripts, summaries, action items, and recordings into CRM, data warehouse, Slack, or internal tools. Use when choosing an AI note-taker for a sales team, comparing Fathom vs Fireflies pricing or features, deciding between webhook and polling for transcript ingestion, wiring meeting transcripts into HubSpot or Salesforce, building a call-intelligence data pipeline, normalizing transcript formats across multiple vendors, or debugging rate limits and auth flows in note-taker APIs. Do NOT use for reviewing a single call for coaching (use /sales-call-review) or building a coaching program (use /sales-coaching)."
 argument-hint: "[describe your note-taker selection or API integration question]"
 license: MIT
 version: 1.0.0
@@ -71,7 +71,7 @@ You no longer need the platform reference — focus on the user's specific situa
 
 Rank these in order for the user's context:
 
-1. **Budget per seat** — Fathom (free tier + $16-$20/mo) < MeetGeek (free tier + $9.99-$17) < Fireflies ($10-$19) < Otter ($17-$30) < tl;dv (free tier + $18-$98/mo) < Avoma ($19-$79) < Claap ($24-$48/user/mo) < Gong ($1,200-$1,600/user/yr). Free tier only exists on Fathom, Fireflies, Otter, Read.ai, MeetGeek, tl;dv, Claap (very limited).
+1. **Budget per seat** — Tactiq (free tier + $8-$12/mo) < Fathom (free tier + $16-$20/mo) < MeetGeek (free tier + $9.99-$17) < Fireflies ($10-$19) < Otter ($17-$30) < tl;dv (free tier + $18-$98/mo) < Avoma ($19-$79) < Claap ($24-$48/user/mo) < Gong ($1,200-$1,600/user/yr). Free tier only exists on Fathom, Fireflies, Otter, Read.ai, MeetGeek, tl;dv, Claap (very limited), Tactiq (very limited — 10 transcripts/mo).
 2. **CRM depth** — Gong and Avoma have the deepest native CRM field-mapping and deal intelligence; Fathom Business, Fireflies Business, Fellow Business ($15/seat, HubSpot/Salesforce) are solid; Otter is thinnest.
 3. **Coaching/QA features** — Gong > Avoma > tl;dv Business (MEDDIC/BANT/SPIN playbooks, aggregated insights) > Salesloft Conversations / Chorus > Fathom/Fireflies (basic scorecards only).
 4. **API completeness** — Gong (richest, webhooks + REST) > Fireflies (GraphQL + webhooks) > Avoma (REST + webhooks) > Fathom (REST + webhooks) > Wave (REST + webhooks + MCP + semantic search, 60/min + 1K/day) > MeetGeek (REST + webhooks + MCP, all plans) > Jamie (REST + webhooks + MCP, Pro+) > Grain (REST, Business+) > Sembly (webhooks-first) > Read.ai (REST beta + MCP + webhooks) > tl;dv (REST v1alpha1 + webhooks + MCP, Pro+) > Jamy (REST partial, 2 endpoints + webhooks). Otter is Enterprise-only API (beta).
@@ -93,6 +93,7 @@ Rank these in order for the user's context:
 - Multilingual team needing real-time translation in 100+ languages + cross-language search → Jamy
 - In-person meetings, phone calls, cross-device recording, semantic search across history → Wave
 - Free unlimited recordings + sales coaching with playbook monitoring (MEDDIC/BANT/SPIN) → tl;dv
+- Zero-setup Chrome extension, bot-free, Google Meet-first, no API needed → Tactiq
 
 ### Integration patterns (if goal = API integration)
 
@@ -163,6 +164,7 @@ If you discover a gotcha, rate-limit ceiling, auth quirk, or vendor-specific pay
 - `/sales-wave` — Wave platform help (mobile-first AI note-taker, REST API with semantic search and webhooks, MCP server, Voice ID, 76-language transcription, pricing tiers)
 - `/sales-tldv` — tl;dv platform help (AI note-taker with unlimited free recordings, REST API v1alpha1, sales coaching with MEDDIC/BANT/SPIN playbooks, CRM sync, MCP server, pricing tiers)
 - `/sales-claap` — Claap platform help (AI sales call assistant with no-bot recording, REST API + OAuth, CRM auto-enrichment, deal scoring, MCP connector, pricing tiers)
+- `/sales-tactiq` — Tactiq platform help (Chrome extension bot-free note-taker, Zapier automation, native HubSpot/Salesforce/Pipedrive CRM sync, AI credits, pricing tiers)
 - `/sales-salesloft` — Salesloft Conversations (bolt-on conversation intelligence inside Salesloft)
 - `/sales-zoominfo` — ZoomInfo Chorus (bolt-on conversation intelligence inside ZoomInfo)
 - `/sales-seismic` — Seismic Meeting Intelligence (bolt-on inside Seismic)

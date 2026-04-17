@@ -24,6 +24,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Wave | Mobile-first AI note-taker | Yes (30 min/mo) | $11.67/mo | REST | Yes (HMAC-SHA256) | None (export only) | In-person recording, phone calls, cross-device sync, semantic search |
 | tl;dv | AI note-taker + sales coaching | Yes (limited) | $18-29/mo | REST (v1alpha1) | Yes (2 triggers) | Deep (Business+) | Free unlimited recordings, sales coaching with playbooks, aggregated insights |
 | Claap | AI sales call assistant | Yes (limited) | $24/user/mo | REST + OAuth | Yes (HMAC) | Deep (Business+) | Sales teams wanting CRM auto-enrichment, deal scoring, lemlist ecosystem |
+| Tactiq | Chrome extension note-taker | Yes (10 transcripts/mo) | $8/mo | None (Zapier only) | None | Medium (native HubSpot/Salesforce/Pipedrive) | Zero-setup bot-free transcription, Google Meet-first teams |
 
 ## Fathom
 
@@ -685,6 +686,32 @@ For deep platform coverage (API endpoints, webhook verification, CRM enrichment 
 **Selection notes**:
 - **Pick Claap when**: You want CRM auto-enrichment without Gong pricing, you're already in the lemlist ecosystem, you want bot-free recording with deal scoring, or you need SPICED/MEDDIC/BANT methodology scoring on a mid-market budget
 - **Avoid Claap when**: You need a generous free tier (→ Fathom, tl;dv), you need reliable screen recording (Chrome extension is buggy), you need a mature production API (→ Gong, Fireflies, Fathom), you need bot-free with better privacy controls (→ Jamie, Granola), or budget is tight (→ Fathom $16-25/mo, Fireflies $10-19/mo)
+
+---
+
+## Tactiq
+
+For deep platform coverage (Chrome extension setup, AI credit management, Zapier workflows, native CRM integrations, transcription accuracy troubleshooting, plan comparison), use `/sales-tactiq`.
+
+**Positioning**: Zero-setup, bot-free Chrome extension for live meeting transcription. No bot joins the call — the extension captures audio directly from the browser. Simplest onboarding in the category (install extension → join meeting → transcript appears), but weakest on accuracy and API/developer features.
+
+**Pricing (2026-04)**: Free (10 transcripts/mo, 5 AI credits), Pro $8/mo annual ($12 monthly, unlimited transcripts, 10 AI credits), Team $16.67/mo annual ($20 monthly, unlimited AI), Business $29.16/mo annual ($40 monthly, SSO, AI agents), Enterprise custom.
+
+**API**: **None documented.** No public REST or GraphQL API. All automation routes through native integrations (HubSpot, Salesforce, Pipedrive, Slack, Notion, Linear, Confluence) or Zapier ("Transcription completed" trigger). No webhooks. No MCP server (Zapier MCP wrapper only). This is the biggest gap vs every other platform in this comparison.
+
+**Integrations**: Google Meet/Zoom/Teams (browser-based), HubSpot, Salesforce, Pipedrive (native CRM), Slack, Notion, Linear, Confluence, Google Drive, OneDrive, Quip, Google Calendar. Zapier for broader automation (7,000+ apps).
+
+**Known issues (from G2/Capterra/TrustPilot reviews)**:
+- Transcription accuracy is polarizing — ranges from "good enough" to "barely 1% accurate" depending on accent, microphone quality, and language
+- No auto-language detection — must manually set language before each meeting; mid-call language switches produce gibberish
+- No video/audio recording — text-only, can't verify transcript against original
+- Chrome extension requires broad permissions ("read and change all data on all websites")
+- AI credits on Free (5/mo) and Pro (10/mo) run out quickly — Team is the real entry point for AI features
+- TrustPilot rating: 2.6/5 (limited reviews)
+
+**Selection notes**:
+- **Pick Tactiq when**: You want the absolute simplest setup (install Chrome extension and go), your team primarily uses Google Meet, you don't need video playback or API access, IT prohibits bots joining calls but allows browser extensions, and you're OK with Zapier-level automation
+- **Avoid Tactiq when**: Transcription accuracy is critical (→ Otter, Fireflies), you need a production API (→ Fathom, Fireflies, Gong), you need video recording/playback (→ Fathom, Fireflies, tl;dv), your team uses Zoom desktop app (extension may not capture audio), or you need a generous free tier (→ Fathom unlimited free, tl;dv unlimited recordings)
 
 ---
 
