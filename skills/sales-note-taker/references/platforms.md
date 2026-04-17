@@ -15,6 +15,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Grain | AI meeting recorder | Yes (20 meetings) | $15-39/seat | REST (Business+) | Yes (Zapier) | Medium (Business+) | GTM teams, clip sharing, MCP |
 | Sembly | Agentic meeting intelligence | No (trial only) | $17-39/user | Webhook-first | Yes | Medium (10 CRMs) | Professional services, deliverables, task automation |
 | Read.ai | Meeting AI | Yes | $15-30/seat | Webhook-first | Yes | Medium | Engagement/sentiment analytics |
+| MeetGeek | AI meeting assistant | Yes (3 hrs/mo) | $9.99/mo | REST | Yes | Medium (7 CRMs) | Teams wanting customizable templates, analytics, affordable pricing |
 
 ## Fathom
 
@@ -330,6 +331,49 @@ For deep platform coverage (API endpoints, MCP server setup, webhook configurati
 **Selection notes**:
 - **Pick Read.ai when**: Engagement and sentiment analytics matter (e.g., you want to see team engagement trends, attention patterns, and meeting quality over time), you want a unified search copilot across meetings + email + chat, or you need MCP integration for AI-powered meeting queries
 - **Avoid Read.ai when**: Bot auto-joining meetings is unacceptable for your org or clients (universities have banned it), you need video playback without paying Enterprise pricing, you need a mature public API (still in beta with limited endpoints), or you need deep coaching scorecards (→ Avoma, Gong)
+
+---
+
+## MeetGeek
+
+For deep platform coverage (recording modes, summary templates, conversation analytics, API endpoints, MCP Server, CRM connectors, pricing tiers, bot troubleshooting), use `/sales-meetgeek`.
+
+**Positioning**: Team-focused AI meeting assistant with customizable summary templates by meeting type, conversation analytics (100+ KPIs), and both bot and no-bot recording. Affordable pricing ($9.99/user Pro) with 7 native CRM connectors. Voice agents on Business+. MCP Server for Claude/Cursor. 50K+ teams, 4.7★ (1,000+ reviews).
+
+**Pricing (2026-04)**: Basic (free, 3 hrs/mo, 3-month transcript storage), Pro $9.99/mo ($119.88/yr annual, 20 hrs/mo, 1-year storage), Business $17/mo ($204/yr, unlimited transcription, HD video, team spaces), Enterprise custom (SSO/SCIM, on-premise storage). Extra hours $0.50/hr on Pro. 40% annual discount.
+
+**API**:
+- Docs: `https://docs.meetgeek.ai` (JS-rendered Mintlify)
+- Type: REST
+- Regional endpoints: `https://api.meetgeek.ai` (EU default), `https://api-eu.meetgeek.ai`, `https://api-us.meetgeek.ai`
+- Auth: Bearer token (`Authorization: Bearer YOUR_API_KEY`). Keys are region-specific — generate separate keys per region.
+- Key endpoints:
+  - `GET /v1/meetings` — list meetings (paginated)
+  - `GET /v1/meetings/{id}` — meeting details
+  - `GET /v1/meetings/{id}/transcript` — transcript
+  - `GET /v1/meetings/{id}/highlights` — highlights
+  - `GET /v1/meetings/{id}/summary` — AI summary
+  - `POST /v1/meetings/{id}/download` — temporary recording download URL
+  - `POST /v1/upload` — upload recording
+  - `GET /v1/teams`, `GET /v1/teams/{id}/meetings` — team data
+
+**Webhooks**: Subscribe to meeting analysis completion events. Configure webhook URL at Integrations → Public API Card.
+
+**MCP Server**: Official server at `github.com/meetgeekai/meetgeek-mcp-server` (23★). Cloud MCP (no local install) and Local MCP (self-hosted with API key). Works with Claude, ChatGPT, Cursor. Tools: list meetings, retrieve transcripts/summaries, search history. Free on all plans.
+
+**Integrations**: Zoom/Meet/Teams/Webex/Discord (video), 7 CRMs (HubSpot, Salesforce, Pipedrive, Affinity, Attio, Zoho, Close), Asana/Jira/Monday/Notion/ClickUp/Trello (PM), Slack, Google Drive, Greenhouse (ATS), RingCentral/Aircall (dialers), Zapier/Make/n8n (Pro+). n8n official community node.
+
+**Known issues (from G2/Capterra/review analysis)**:
+- Transcription accuracy: 95%+ in English, degrades significantly in non-English despite 100+ language claim
+- Bot reliability: can arrive 1-2 min late, misses initial context. Google Meet requires host admission.
+- MS Teams: bot joins as unauthenticated guest — blocked if Guest Access is restricted in Teams admin
+- Free plan caps: 3 hrs/mo is very limiting (competitors like Fathom offer unlimited free recordings)
+- Video recording: Business+ only — Free/Pro are audio-only
+- Dashboard complexity: analytics-heavy interface has a learning curve
+
+**Selection notes**:
+- **Pick MeetGeek when**: Team wants customizable summary templates per meeting type, 7 native CRM connectors at an affordable price point ($9.99/user), conversation analytics with 100+ KPIs, both bot and no-bot recording options, or MCP integration for AI workflows
+- **Avoid MeetGeek when**: Free plan is important (Fathom's free tier is more generous), multilingual accuracy matters (test first), you need methodology scorecards (→ Avoma/Gong), or MS Teams admin restricts guest access (→ use no-bot recording)
 
 ---
 

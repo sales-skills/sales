@@ -1,6 +1,6 @@
 ---
 name: sales-note-taker
-description: "Sales meeting note-taker and conversation-intelligence strategy — platform selection (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai) plus backend API integration for auto-downloading transcripts, summaries, action items, and recordings into CRM, data warehouse, Slack, or internal tools. Use when choosing an AI note-taker for a sales team, comparing Fathom vs Fireflies pricing or features, deciding between webhook and polling for transcript ingestion, wiring meeting transcripts into HubSpot or Salesforce, building a call-intelligence data pipeline, normalizing transcript formats across multiple vendors, or debugging rate limits and auth flows in note-taker APIs. Do NOT use for reviewing a single call for coaching (use /sales-call-review) or building a coaching program (use /sales-coaching)."
+description: "Sales meeting note-taker and conversation-intelligence strategy — platform selection (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek) plus backend API integration for auto-downloading transcripts, summaries, action items, and recordings into CRM, data warehouse, Slack, or internal tools. Use when choosing an AI note-taker for a sales team, comparing Fathom vs Fireflies pricing or features, deciding between webhook and polling for transcript ingestion, wiring meeting transcripts into HubSpot or Salesforce, building a call-intelligence data pipeline, normalizing transcript formats across multiple vendors, or debugging rate limits and auth flows in note-taker APIs. Do NOT use for reviewing a single call for coaching (use /sales-call-review) or building a coaching program (use /sales-coaching)."
 argument-hint: "[describe your note-taker selection or API integration question]"
 license: MIT
 version: 1.0.0
@@ -71,10 +71,10 @@ You no longer need the platform reference — focus on the user's specific situa
 
 Rank these in order for the user's context:
 
-1. **Budget per seat** — Fathom (free tier + $16-$20/mo) < Fireflies ($10-$19) < Otter ($17-$30) < Avoma ($19-$79) < Gong ($1,200-$1,600/user/yr). Free tier only exists on Fathom, Fireflies, Otter, Read.ai.
+1. **Budget per seat** — Fathom (free tier + $16-$20/mo) < MeetGeek (free tier + $9.99-$17) < Fireflies ($10-$19) < Otter ($17-$30) < Avoma ($19-$79) < Gong ($1,200-$1,600/user/yr). Free tier only exists on Fathom, Fireflies, Otter, Read.ai, MeetGeek.
 2. **CRM depth** — Gong and Avoma have the deepest native CRM field-mapping and deal intelligence; Fathom Business, Fireflies Business, Fellow Business ($15/seat, HubSpot/Salesforce) are solid; Otter is thinnest.
 3. **Coaching/QA features** — Gong > Avoma > Salesloft Conversations / Chorus > Fathom/Fireflies (basic scorecards only).
-4. **API completeness** — Gong (richest, webhooks + REST) > Fireflies (GraphQL + webhooks) > Avoma (REST + webhooks) > Fathom (REST + webhooks) > Grain (REST, Business+) > Sembly (webhooks-first) > Read.ai (REST beta + MCP + webhooks). Otter is Enterprise-only API (beta).
+4. **API completeness** — Gong (richest, webhooks + REST) > Fireflies (GraphQL + webhooks) > Avoma (REST + webhooks) > Fathom (REST + webhooks) > MeetGeek (REST + webhooks + MCP, all plans) > Grain (REST, Business+) > Sembly (webhooks-first) > Read.ai (REST beta + MCP + webhooks). Otter is Enterprise-only API (beta).
 5. **Compliance** — Gong, Avoma, Fireflies Business, Fathom Business all have SOC 2 + GDPR. For HIPAA/regulated industries, short-list drops to Gong, Avoma, Fireflies Enterprise.
 
 **Quick picks:**
@@ -83,6 +83,7 @@ Rank these in order for the user's context:
 - Mid-market sales org wanting methodology + coaching → Avoma
 - Enterprise revenue intelligence, high budget → Gong
 - Non-sales general meeting transcription → Otter or Fellow
+- Mid-size team wanting customizable templates + analytics + affordable CRM sync → MeetGeek
 - GTM team wanting shareable call clips + MCP AI workflows → Grain
 
 ### Integration patterns (if goal = API integration)
@@ -105,7 +106,7 @@ Rank these in order for the user's context:
 
 **Auth patterns:**
 
-- **API key in header** — Fireflies, Fathom, Sembly, Read.ai (simplest; rotate per-user or per-workspace)
+- **API key in header** — Fireflies, Fathom, Sembly, Read.ai, MeetGeek (simplest; rotate per-user or per-workspace)
 - **OAuth 2.0** — Avoma, Gong (required for multi-tenant apps)
 - **Workspace-scoped keys** — Otter (Enterprise only)
 
@@ -145,6 +146,7 @@ If you discover a gotcha, rate-limit ceiling, auth quirk, or vendor-specific pay
 - `/sales-grain` — Grain platform help (REST API, MCP Server for Claude/Cursor, video clips, Zapier automation, CRM sync, pricing tiers)
 - `/sales-sembly` — Sembly platform help (agentic meeting intelligence, AI-generated deliverables, webhook automations, 10 native CRM connectors, pricing tiers)
 - `/sales-read-ai` — Read.ai platform help (engagement/sentiment analytics, Search Copilot, REST API + MCP Server, webhook automations, CRM sync, pricing tiers)
+- `/sales-meetgeek` — MeetGeek platform help (bot + no-bot recording, customizable templates, REST API with regional endpoints, MCP Server, 7 CRM connectors, conversation analytics)
 - `/sales-salesloft` — Salesloft Conversations (bolt-on conversation intelligence inside Salesloft)
 - `/sales-zoominfo` — ZoomInfo Chorus (bolt-on conversation intelligence inside ZoomInfo)
 - `/sales-seismic` — Seismic Meeting Intelligence (bolt-on inside Seismic)
