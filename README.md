@@ -156,7 +156,7 @@ Router recommends a 5-skill sequence:
 | `/sales-salesloft` | Salesloft platform help — config, Rhythm, Conversations, Drift, integrations |
 | `/sales-cadence` | Design multi-channel outbound cadences with timing, A/B testing, and content |
 | `/sales-call-review` | Review sales calls, extract coaching insights, score against MEDDPICC/SPIN |
-| `/sales-note-taker` | AI meeting note-taker / conversation-intelligence selection & API integration (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie, Jamy, Wave, tl;dv) |
+| `/sales-note-taker` | AI meeting note-taker / conversation-intelligence selection & API integration (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie, Jamy, Wave, tl;dv, Claap) |
 | `/sales-fathom` | Fathom platform help — REST API, webhooks, OAuth, SDKs, MCP, transcript/summary export, CRM sync, pricing tiers |
 | `/sales-fireflies` | Fireflies.ai platform help — GraphQL API, Webhooks V1 + V2, HMAC verification, AskFred AI, Real-time API, MCP, rate limits per tier, bot auto-join control |
 | `/sales-avoma` | Avoma platform help — REST API, webhooks, MEDDIC/BANT/SPICED scorecards, Conversation + Revenue Intelligence, Lead Router, CRM sync, pricing tiers |
@@ -174,6 +174,7 @@ Router recommends a 5-skill sequence:
 | `/sales-jamy` | Jamy.ai platform help — AI meeting assistant with real-time translation (100+ languages), cross-language search, HubSpot CRM sync, API/webhooks, pricing tiers |
 | `/sales-tldv` | tl;dv platform help — AI meeting note-taker with unlimited free recordings, REST API v1alpha1, sales coaching (MEDDIC/BANT/SPIN), CRM sync, MCP server, pricing tiers |
 | `/sales-wave` | Wave platform help — mobile-first AI note-taker, REST API with semantic search and webhooks, MCP server, Voice ID, 76-language transcription, pricing tiers |
+| `/sales-claap` | Claap platform help — AI sales call assistant with no-bot recording, REST API + OAuth, CRM auto-enrichment, deal scoring (SPICED/MEDDIC/BANT), MCP connector, pricing tiers |
 | `/sales-deal-inspect` | Inspect deal health, map stakeholders, identify risks, recommend next actions |
 | `/sales-forecast` | Build and validate revenue forecasts with pipeline coverage and gap analysis |
 

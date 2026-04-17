@@ -23,6 +23,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Jamy.ai | AI meeting assistant + translation | Yes (300 min/mo) | $14.99/mo | REST (partial) | Yes (Zapier/Make) | Thin (HubSpot only) | Multilingual teams needing real-time translation in 100+ languages |
 | Wave | Mobile-first AI note-taker | Yes (30 min/mo) | $11.67/mo | REST | Yes (HMAC-SHA256) | None (export only) | In-person recording, phone calls, cross-device sync, semantic search |
 | tl;dv | AI note-taker + sales coaching | Yes (limited) | $18-29/mo | REST (v1alpha1) | Yes (2 triggers) | Deep (Business+) | Free unlimited recordings, sales coaching with playbooks, aggregated insights |
+| Claap | AI sales call assistant | Yes (limited) | $24/user/mo | REST + OAuth | Yes (HMAC) | Deep (Business+) | Sales teams wanting CRM auto-enrichment, deal scoring, lemlist ecosystem |
 
 ## Fathom
 
@@ -650,6 +651,40 @@ For deep platform coverage (API endpoints, webhook triggers, CRM setup, coaching
 **Selection notes**:
 - **Pick tl;dv when**: You want unlimited free recordings for the team and can live with limited AI summaries on free, you need sales coaching with playbook monitoring (MEDDIC/BANT/SPIN) on Business, you want aggregated insights across multiple meetings, or you need a generous free tier for casual users alongside paid seats for power users
 - **Avoid tl;dv when**: You need truly unlimited free AI summaries (→ Fathom free tier), you need deep deal intelligence (→ Gong), you need a stable production API (tl;dv is v1alpha1 → Fathom/Fireflies/Gong have mature APIs), you need bot-free recording (→ Jamie, Krisp, Granola), or you need native CRM on a budget (Business at $59-98/mo is steep → Fathom Business at $25/mo)
+
+---
+
+## Claap
+
+For deep platform coverage (API endpoints, webhook verification, CRM enrichment setup, pricing gates, MCP connector), use `/sales-claap`.
+
+**Category**: AI sales call & pipeline assistant
+**API**: REST at `api.claap.io` (OpenAPI 3.1.0). Auth via `X-Claap-Key` header (`cla_xxxxx`). Endpoints: list/get/create/delete recordings, transcripts, workspace info, webhooks, OAuth 2.0. API requires paid plan — free returns 401.
+**Webhooks**: `recording_added` event fires when recording is transcribed + analyzed. Headers: `X-Claap-Webhook-Id`, `X-Claap-Webhook-Secret`. Must respond 200 within 5s. Retries: immediately → 1 min → 5 min → abandoned.
+**CRM**: HubSpot, Salesforce, Attio, Pipedrive (Business+ for auto-enrichment).
+**Recording**: Bot-free (Chrome extension) + bot recorder. Zoom, Meet, Teams, phone, in-person. 99+ languages.
+**AI features**: AI Agent (summaries, follow-ups), AI Analyst (deal scoring — SPICED/MEDDIC/BANT, win/loss, objections), AI Coach (scorecards, skill gaps). All Business+ only.
+
+**Pricing** (annual):
+| Plan | Price | Minutes | CRM enrichment | API | Coaching |
+|---|---|---|---|---|---|
+| Basic (Free) | $0 | 300 total | No | No (401) | No |
+| Pro | $24/user/mo | 1,000/mo | No | Yes | No |
+| Business | $48/user/mo | Unlimited | Yes | Yes | Yes |
+| Enterprise | Custom | Unlimited | Yes | Yes | Yes + SSO/SCIM |
+
+**Known issues (from G2/reviews)**:
+- Chrome extension crashes mid-recording — check dashboard, recording may have uploaded
+- AI summaries focus on one speaker, ignoring others in multi-person calls
+- Video processing very slow for long calls (15+ min for 1h+ calls)
+- Free plan too limited to evaluate (10 videos, 300 min, no AI features)
+- Bot-free recording raises privacy/GDPR concerns — participants may not know they're being recorded
+- No Notion auto-push (manual copy-paste), no automatic language detection
+- Support described as slow
+
+**Selection notes**:
+- **Pick Claap when**: You want CRM auto-enrichment without Gong pricing, you're already in the lemlist ecosystem, you want bot-free recording with deal scoring, or you need SPICED/MEDDIC/BANT methodology scoring on a mid-market budget
+- **Avoid Claap when**: You need a generous free tier (→ Fathom, tl;dv), you need reliable screen recording (Chrome extension is buggy), you need a mature production API (→ Gong, Fireflies, Fathom), you need bot-free with better privacy controls (→ Jamie, Granola), or budget is tight (→ Fathom $16-25/mo, Fireflies $10-19/mo)
 
 ---
 
