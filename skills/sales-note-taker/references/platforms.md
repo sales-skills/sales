@@ -27,6 +27,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Tactiq | Chrome extension note-taker | Yes (10 transcripts/mo) | $8/mo | None (Zapier only) | None | Medium (native HubSpot/Salesforce/Pipedrive) | Zero-setup bot-free transcription, Google Meet-first teams |
 | Granola | Bot-free AI notepad | Yes (limited history) | $14/user/mo | REST (Business+) | None | Medium (HubSpot/Attio/Affinity, Business+) | Bot-free, AI-enhanced notes, VCs/product teams, privacy-sensitive contexts |
 | Hedy | Real-time AI meeting coach | Yes (5 hrs/mo) | $12.99/mo | REST (Pro) | Yes (HMAC) | None (via Zapier/n8n) | Real-time coaching during calls, cross-session intelligence, Apple Watch |
+| Bluedot | Bot-free AI note-taker | No (5 lifetime) | $14/mo | None (webhooks only) | Yes (Svix) | Medium (HubSpot/Salesforce, Business+) | Bot-free video recording, Chrome-first teams, screen recording |
 
 ## Fathom
 
@@ -815,6 +816,46 @@ For deep platform coverage (hardware specs, API endpoints, app framework, webhoo
 **Selection notes**:
 - **Pick Omi when**: You need the lowest-price wearable recorder ($89), you want a fully open-source stack (hardware + software + firmware), you're a developer who wants to build custom apps/integrations, you need all-day in-person recording plus desktop online meeting capture, or privacy is paramount and you want to audit the full codebase
 - **Avoid Omi when**: You need polished, reliable enterprise-grade transcription (→ Plaud, Gong, Fireflies), you need native CRM connectors (→ Fathom, Fireflies, Gong, Avoma), you need compliance certs like SOC 2 or HIPAA (→ Gong, Avoma, Fireflies Enterprise), you need accurate speaker diarization (→ Fathom, Fireflies, Gong), or you need a mature production API with webhooks and HMAC signing (→ Fathom, Fireflies, Gong)
+
+---
+
+## Bluedot
+
+**Category**: Bot-free AI note-taker with video recording
+**API**: No public REST API. Integration is webhook-only via Svix infrastructure.
+**Webhooks**: Fires once after summary + transcript are generated. User-level by default; workspace-level on request (contact support). Svix-powered — endpoint receives POST with meeting content. Custom JavaScript transforms available to reshape payload before delivery. Failed deliveries can be manually replayed from dashboard. Calendar integration populates attendee email addresses in webhook payloads.
+- User-level webhook: only receives events for the user who configured it
+- Workspace-level webhook: receives events for all users (priority rule: if a user has their own webhook, the workspace-wide one is ignored for that user)
+**MCP**: None documented.
+**CRM**: Salesforce + HubSpot native sync (Business plan only, $32/mo). Also: Pipedrive, Copper, Zoho. Auto-populates deal records with meeting links and AI-powered notes.
+**Recording**: Bot-free via Chrome extension, desktop apps (Mac/Windows), mobile apps (iOS/Android). Records video + audio (unique among bot-free tools). Screen recording with webcam overlay. No bot joins calls. No calendar access required. In-person recording via mobile app.
+**AI features**: Custom meeting templates with AI prompts, AI chat across up to 10 meetings simultaneously, Meeting Insights (talk ratio, monologues, question count), automated follow-up email generation in your tone, file import (MP4/MP3/M4A), 100+ language transcription, speaker identification, filler word removal.
+
+**Pricing**:
+| Plan | Monthly | Annual | Key features |
+|---|---|---|---|
+| Free | $0 | - | 5 meetings lifetime, 1hr max, Zapier/Make/Slack/Notion |
+| Basic | $14/mo | $18/mo | Unlimited audio-only, 1hr max, public webhooks |
+| Pro | $20/mo | $25/mo | + Video recording, unlimited duration, custom templates, imports |
+| Business | $32/mo | $39/mo | + HubSpot/Salesforce, unlimited imports, unlimited free members |
+| Unlimited | Custom | - | + SSO, SCIM, all features |
+
+> *Best-effort from research — verify on vendor site before quoting.*
+
+**Known issues (from reviews and comparison articles)**:
+- Desktop app drops/crashes after ~1 hour of continuous recording
+- Mobile app sometimes captures only first 30 seconds of a conversation
+- Chrome extension breaks in managed IT environments where extensions are restricted
+- No custom vocabulary — accuracy drops with technical jargon, acronyms, industry terms
+- No offline processing — requires cloud for all transcription and note generation
+- SOC 2 certification still pending (GDPR + CCPA compliant, 256-bit AES encryption)
+- Free plan is effectively a trial (5 lifetime meetings), not a sustainable free tier
+- Transcription accuracy degrades with multiple simultaneous speakers and strong accents
+- No Firefox or Safari support — Chrome/desktop app only
+
+**Selection notes**:
+- **Pick Bluedot when**: You need bot-free recording with video (unique combo), you want screen recording with webcam overlay, your team is Chrome-first, you need in-person + virtual meeting recording, you want Meeting Insights analytics (talk ratio, monologues), you need automated follow-up emails, or you want CRM auto-sync to HubSpot/Salesforce on Business plan
+- **Avoid Bluedot when**: You need a public REST API for custom integrations (→ Fathom, Fireflies, Gong), you need SOC 2 compliance (→ Gong, Avoma, Fireflies), you need a generous free tier (→ Fathom unlimited free, tl;dv unlimited free), you're on Firefox/Safari (→ Jamie, Granola, Omi), you need custom vocabulary for technical terms (→ Fireflies, Gong), or you need production-grade webhook signing/HMAC verification (→ Fathom, Fireflies, Wave)
 
 ---
 
