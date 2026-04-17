@@ -1,6 +1,6 @@
 ---
 name: sales-note-taker
-description: "Sales meeting note-taker and conversation-intelligence strategy — platform selection (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie) plus backend API integration for auto-downloading transcripts, summaries, action items, and recordings into CRM, data warehouse, Slack, or internal tools. Use when choosing an AI note-taker for a sales team, comparing Fathom vs Fireflies pricing or features, deciding between webhook and polling for transcript ingestion, wiring meeting transcripts into HubSpot or Salesforce, building a call-intelligence data pipeline, normalizing transcript formats across multiple vendors, or debugging rate limits and auth flows in note-taker APIs. Do NOT use for reviewing a single call for coaching (use /sales-call-review) or building a coaching program (use /sales-coaching)."
+description: "Sales meeting note-taker and conversation-intelligence strategy — platform selection (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie, Krisp) plus backend API integration for auto-downloading transcripts, summaries, action items, and recordings into CRM, data warehouse, Slack, or internal tools. Use when choosing an AI note-taker for a sales team, comparing Fathom vs Fireflies pricing or features, deciding between webhook and polling for transcript ingestion, wiring meeting transcripts into HubSpot or Salesforce, building a call-intelligence data pipeline, normalizing transcript formats across multiple vendors, or debugging rate limits and auth flows in note-taker APIs. Do NOT use for reviewing a single call for coaching (use /sales-call-review) or building a coaching program (use /sales-coaching)."
 argument-hint: "[describe your note-taker selection or API integration question]"
 license: MIT
 version: 1.0.0
@@ -86,6 +86,7 @@ Rank these in order for the user's context:
 - Mid-size team wanting customizable templates + analytics + affordable CRM sync → MeetGeek
 - GTM team wanting shareable call clips + MCP AI workflows → Grain
 - Privacy-first EU team, in-person meetings, or bot-free non-negotiable → Jamie
+- Noisy environments where call quality is the primary pain + AI notes as a bonus → Krisp
 
 ### Integration patterns (if goal = API integration)
 
@@ -149,6 +150,7 @@ If you discover a gotcha, rate-limit ceiling, auth quirk, or vendor-specific pay
 - `/sales-read-ai` — Read.ai platform help (engagement/sentiment analytics, Search Copilot, REST API + MCP Server, webhook automations, CRM sync, pricing tiers)
 - `/sales-meetgeek` — MeetGeek platform help (bot + no-bot recording, customizable templates, REST API with regional endpoints, MCP Server, 7 CRM connectors, conversation analytics)
 - `/sales-jamie` — Jamie platform help (bot-free AI note-taker, REST API with personal/workspace keys, webhook automations, CRM sync to HubSpot/Salesforce/Attio, MCP server, EU privacy-first)
+- `/sales-krisp` — Krisp platform help (noise cancellation + AI meeting notes, accent conversion, Voice AI SDK, webhook integrations, Call Center AI, pricing tiers)
 - `/sales-salesloft` — Salesloft Conversations (bolt-on conversation intelligence inside Salesloft)
 - `/sales-zoominfo` — ZoomInfo Chorus (bolt-on conversation intelligence inside ZoomInfo)
 - `/sales-seismic` — Seismic Meeting Intelligence (bolt-on inside Seismic)

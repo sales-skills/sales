@@ -17,6 +17,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Read.ai | Meeting AI | Yes | $15-30/seat | Webhook-first | Yes | Medium | Engagement/sentiment analytics |
 | MeetGeek | AI meeting assistant | Yes (3 hrs/mo) | $9.99/mo | REST | Yes | Medium (7 CRMs) | Teams wanting customizable templates, analytics, affordable pricing |
 | Jamie | Bot-free AI note-taker | Yes (10 meetings) | €21/mo | REST | Yes (Plus+) | Medium (3 CRMs, Pro+) | Privacy-first EU teams, in-person meetings, bot-free recording |
+| Krisp | Voice AI + note-taker | No (7-day trial) | $8/mo | Webhooks | Yes (Advanced+) | Medium (HubSpot Core+, SF Advanced+) | Noisy environments, noise cancellation + AI notes, SDK developers |
 
 ## Fathom
 
@@ -419,6 +420,50 @@ For deep platform coverage (API endpoints, webhook setup, MCP server, CRM sync, 
 **Selection notes**:
 - **Pick Jamie when**: Privacy is paramount (EU residency, audio deleted, ISO 27001), bot-free recording is non-negotiable, you need in-person meeting recording, team is EU-based and GDPR is critical, or you want a simple MCP integration for AI workflows
 - **Avoid Jamie when**: You need video recording (→ tl;dv, Fireflies, Grain), you want sales coaching/scorecards (→ Avoma, Gong), you need a generous free tier (→ Fathom), you need native Zapier (→ Fireflies, Otter, Fellow), or your team includes Android users
+
+---
+
+## Krisp
+
+For deep platform coverage (noise cancellation setup, AI meeting notes, accent conversion, Voice AI SDK, webhook integration, Call Center AI, pricing gates, troubleshooting), use `/sales-krisp`.
+
+**Positioning**: Noise-cancellation-first AI meeting assistant. Started as the leading noise/echo removal tool, expanded into AI transcription, summaries, accent conversion, and call center AI. Bot-free recording (desktop/mobile app captures audio locally). Unique angle: noise cancellation can reduce transcription errors by up to 39%. Also offers a Voice AI SDK for developers embedding noise cancellation into their own apps. SOC 2, GDPR, HIPAA (Enterprise), PCI-DSS.
+
+**Pricing (2026-04)**: Free 7-day trial (all features), Core $16/mo ($8 annual), Advanced $30/mo ($15 annual), Enterprise custom. Call Center AI from $10/agent/mo (40 seat min). Voice AI SDK custom pricing.
+
+**API**:
+- **No traditional REST API for meetings.** Integration is webhook-first (Advanced+ plans).
+- Webhooks: configure destination URL + trigger events (transcript created, notes generated, outline generated)
+- Webhook payload: event type, meeting metadata (ID, title, start/end time, duration, link), generated content (transcript, notes, outline), event ID
+- Auth: custom headers configured during setup (no documented HMAC signing)
+- **Voice AI SDK**: JS (WASM), desktop, mobile, server SDKs at sdk-docs.krisp.ai. API key auth via sdk.krisp.ai. Models: VIVA (voice isolation), NC (noise cancellation), AC (accent conversion), BVC (background voice cancellation), turn-taking.
+- **Platform API**: Team management via Postman workspace (Enterprise, details limited)
+- **Speech-to-Text API**: Announced, likely part of SDK offering
+
+**Webhooks**:
+- Setup: Settings → Integrations → Webhook → Connect
+- Events: transcript created, notes generated, outline generated
+- Payload includes meeting metadata + generated content
+- Custom request headers supported (e.g., Authorization)
+
+**Rate limits**: Not publicly documented for webhook API. SDK usage tracked via sdk.krisp.ai dashboard.
+
+**Integrations**: Zoom, Google Meet, Teams, Webex, Discord, WeChat, Slack Huddles (conferencing). HubSpot (Core+), Salesforce (Advanced+), Pipedrive, Affinity (CRM). Slack, Loom (productivity). Zapier (Core+). Google Calendar, Outlook. Chrome extension, mobile apps.
+
+**Known issues (from G2/Capterra/review analysis)**:
+- Free tier removed — used to have 60 min/day free, now 7-day trial only
+- Transcription accuracy inconsistent — degrades with accents, non-English (only 16 languages vs competitors' 100+)
+- Missing recordings — some meetings record but transcriptions vanish
+- App crashes and high CPU usage — real-time neural net processing is resource-intensive
+- Calendar doesn't distinguish meetings from tasks — records everything
+- Customer support complaints — slow responses, some reports of rude emails
+- Accent conversion limited to 4 English accents only
+- 60% price increase reported by some users (2025-2026)
+- Noise cancellation may not work with Bluetooth / 3.5mm headphones (USB required)
+
+**Selection notes**:
+- **Pick Krisp when**: Background noise is the primary pain point, you want noise cancellation + AI notes in one tool, bot-free recording matters, you need accent conversion for BPO/call center agents, or you're building with the Voice AI SDK
+- **Avoid Krisp when**: You need a generous free tier (→ Fathom), deep coaching/methodology scorecards (→ Gong/Avoma), 100+ language transcription (→ Fireflies), a mature REST API for custom integrations (→ Fireflies/Fathom/MeetGeek), or your team is on a tight budget and noise isn't the main issue
 
 ---
 

@@ -168,6 +168,7 @@ Router recommends a 5-skill sequence:
 | `/sales-read-ai` | Read.ai platform help — meeting intelligence with engagement/sentiment analytics, Search Copilot, REST API + MCP Server, webhook automations, CRM sync, pricing tiers |
 | `/sales-meetgeek` | MeetGeek platform help — bot + no-bot recording, customizable AI summary templates, REST API with regional endpoints, MCP Server, 7 CRM connectors, conversation analytics, pricing tiers |
 | `/sales-jamie` | Jamie platform help — bot-free AI note-taker, REST API with personal/workspace keys, webhook automations, CRM sync to HubSpot/Salesforce/Attio, MCP server, EU privacy-first, pricing tiers |
+| `/sales-krisp` | Krisp platform help — noise cancellation + AI meeting notes, accent conversion, Voice AI SDK, webhook integrations, Call Center AI, CRM sync, pricing tiers |
 | `/sales-deal-inspect` | Inspect deal health, map stakeholders, identify risks, recommend next actions |
 | `/sales-forecast` | Build and validate revenue forecasts with pipeline coverage and gap analysis |
 
