@@ -25,6 +25,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | tl;dv | AI note-taker + sales coaching | Yes (limited) | $18-29/mo | REST (v1alpha1) | Yes (2 triggers) | Deep (Business+) | Free unlimited recordings, sales coaching with playbooks, aggregated insights |
 | Claap | AI sales call assistant | Yes (limited) | $24/user/mo | REST + OAuth | Yes (HMAC) | Deep (Business+) | Sales teams wanting CRM auto-enrichment, deal scoring, lemlist ecosystem |
 | Tactiq | Chrome extension note-taker | Yes (10 transcripts/mo) | $8/mo | None (Zapier only) | None | Medium (native HubSpot/Salesforce/Pipedrive) | Zero-setup bot-free transcription, Google Meet-first teams |
+| Granola | Bot-free AI notepad | Yes (limited history) | $14/user/mo | REST (Business+) | None | Medium (HubSpot/Attio/Affinity, Business+) | Bot-free, AI-enhanced notes, VCs/product teams, privacy-sensitive contexts |
 
 ## Fathom
 
@@ -712,6 +713,41 @@ For deep platform coverage (Chrome extension setup, AI credit management, Zapier
 **Selection notes**:
 - **Pick Tactiq when**: You want the absolute simplest setup (install Chrome extension and go), your team primarily uses Google Meet, you don't need video playback or API access, IT prohibits bots joining calls but allows browser extensions, and you're OK with Zapier-level automation
 - **Avoid Tactiq when**: Transcription accuracy is critical (→ Otter, Fireflies), you need a production API (→ Fathom, Fireflies, Gong), you need video recording/playback (→ Fathom, Fireflies, tl;dv), your team uses Zoom desktop app (extension may not capture audio), or you need a generous free tier (→ Fathom unlimited free, tl;dv unlimited recordings)
+
+---
+
+## Granola
+
+For deep platform coverage (API endpoints, CRM setup, privacy settings, troubleshooting, Zapier workflows), use `/sales-granola`.
+
+**Category**: Bot-free AI notepad
+**API**: REST at `https://public-api.granola.ai/v1`. Auth via Bearer token (`grn_` prefix, created in desktop app). Endpoints: `GET /notes` (list, paginate with cursor, filter by `created_after`), `GET /notes/{id}` (include `transcript`). Read-only — no write endpoints. Rate limits: 25 burst / 5 req/sec sustained. Only returns notes with completed AI summary.
+**Webhooks**: None documented. Poll-based integration only. Use Zapier for event-driven automation.
+**CRM**: HubSpot (Business+, manual one-click push per note), Attio (Business+), Affinity (Business+). No native Salesforce — use Zapier bridge.
+**Recording**: Bot-free (local audio capture). Mac, Windows, iOS. No Android, no web. Zoom, Google Meet, Teams, Webex, Slack huddles. iOS for phone calls and in-person.
+**AI features**: Note enhancement (combines your notes + transcript), AI chat (within and across meetings), customizable templates, action item extraction, follow-up email drafting.
+
+**Pricing** (monthly):
+| Plan | Price | History | Integrations | API | SSO |
+|---|---|---|---|---|---|
+| Basic (Free) | $0 | Limited | None | No | No |
+| Business | $14/user/mo | Unlimited | HubSpot, Attio, Affinity, Slack, Notion, Zapier, MCP | Personal API | No |
+| Enterprise | $35/user/mo | Unlimited | All Business + admin controls | Enterprise API | Yes (50+ users) |
+
+**Known issues (from reviews/articles)**:
+- Notes are shareable by default — every note gets a public link unless sharing is restricted
+- AI model training opt-in by default on Free/Business — must manually disable in Settings → Privacy
+- No speaker identification in transcripts (macOS: mic vs speaker only; iOS: Speaker A/B labels)
+- No audio playback — audio is discarded after transcription, can't verify accuracy
+- Silent recording failures — blank notes with no error when OS audio pipeline breaks
+- No Android app, no web version — Mac + Windows + iOS only
+- HubSpot sync is manual per note (one-click, not automatic)
+- Transcript accuracy drops with accents, non-English, and mid-call language switches
+- Custom vocabulary doesn't work with multi-language transcripts
+
+**Selection notes**:
+- **Pick Granola when**: You need bot-free recording for sensitive contexts (VCs, board meetings, client calls where bots create friction), you prefer an AI-enhanced notepad over raw transcription, your team is on Mac/Windows + iOS, or you want a simple HubSpot integration without Gong pricing
+- **Avoid Granola when**: You need speaker identification or diarization (→ Fireflies, Gong, Avoma), you need audio/video playback (→ Fathom, Fireflies, tl;dv), you need Salesforce native integration (→ Fathom, Fireflies, Gong), you need a mature production API with webhooks (→ Fathom, Fireflies, Gong), you need Android support (→ Fellow, Otter), or you need coaching/methodology features (→ Avoma, tl;dv, Gong)
 
 ---
 

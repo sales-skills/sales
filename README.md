@@ -176,6 +176,7 @@ Router recommends a 5-skill sequence:
 | `/sales-wave` | Wave platform help — mobile-first AI note-taker, REST API with semantic search and webhooks, MCP server, Voice ID, 76-language transcription, pricing tiers |
 | `/sales-claap` | Claap platform help — AI sales call assistant with no-bot recording, REST API + OAuth, CRM auto-enrichment, deal scoring (SPICED/MEDDIC/BANT), MCP connector, pricing tiers |
 | `/sales-tactiq` | Tactiq platform help — Chrome extension bot-free AI note-taker, live transcription (60+ languages), AI Workflows, Zapier automation, native HubSpot/Salesforce/Pipedrive CRM sync, pricing tiers |
+| `/sales-granola` | Granola platform help — bot-free AI notepad for meetings, REST API, MCP integration (beta), HubSpot/Attio/Affinity CRM sync, Zapier automation, pricing tiers |
 | `/sales-deal-inspect` | Inspect deal health, map stakeholders, identify risks, recommend next actions |
 | `/sales-forecast` | Build and validate revenue forecasts with pipeline coverage and gap analysis |
 
