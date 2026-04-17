@@ -11,7 +11,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Avoma | Meeting lifecycle | No | $19/seat | REST | Yes | Deep | Mid-market sales + CS, methodology |
 | Gong | Revenue intelligence | No | ~$1,200-1,600/user/yr | REST | Yes (extensive) | Deep | Enterprise sales + coaching |
 | Otter.ai | Transcription | Yes | $17-30/mo | REST (Enterprise beta) | Yes (Workspace) | Thin | General meetings, non-sales |
-| Fellow | Meeting management | Yes | $11-15/user | REST | Yes | Medium | Manager 1:1s, leadership meetings |
+| Fellow | Meeting management | Yes (5 lifetime) | $7-15/user | REST | Yes (Zapier) | Medium (Business+) | Manager 1:1s, leadership meetings |
 | Grain | AI meeting recorder | Yes | $19-39/seat | REST | Yes | Medium | GTM teams, clip sharing |
 | Sembly | AI meeting assistant | Yes | $10-20/seat | Webhook-first | Yes | Medium | Task automation, agent workflows |
 | Read.ai | Meeting AI | Yes | $15-30/seat | Webhook-first | Yes | Medium | Engagement/sentiment analytics |
@@ -221,19 +221,30 @@ For deep platform coverage (OtterPilot setup, transcription accuracy tuning, AI 
 
 ## Fellow
 
-**Positioning**: Meeting management + note-taking for managers and leadership teams. 1:1 agendas, action items, feedback — not primarily sales.
+**Positioning**: AI meeting assistant + note-taker focused on meeting management for managers and teams. NYT Wirecutter top pick. Structured agendas, 500+ templates, 1:1 workflows, collaborative notes alongside AI transcription. SOC 2 Type II, HIPAA, GDPR compliant. Not primarily sales-focused.
 
-**Pricing (2026-04)**: Free (limited), Pro $11/user/mo, Business $15/user/mo, Enterprise custom.
+**Pricing (2026-04)**: Free ($0, 5 AI notes + 5 AI recordings lifetime), Team ($7/user/mo annual, 10 AI notes/recordings per user/month), Business ($15/user/mo annual, unlimited AI, CRM sync), Enterprise ($25/user/mo annual, analytics, redaction, provisioning). Startup discounts up to 25% off first year.
 
-**API**: REST API for transcripts, agendas, action items. Documented but lower volume of community-discoverable detail than Fathom/Fireflies.
+**API**: REST API (Team+ plan). Docs at `developers.fellow.ai/reference`. Auth via API key (`Authorization` header), user-scoped (no workspace-wide key). Returns JSON — transcripts, speaker timestamps, agendas, action items, metadata. 90-day audit logs. Rate limits undocumented. No OAuth (API key only).
 
-**Webhooks**: Yes, at Business+ tier.
+**Webhooks**: Zapier triggers for agendas, AI notes, transcripts (Team+). Some triggers require manual kickoff. n8n official node exists.
 
-**Integrations**: Slack, Google Calendar, Outlook, Jira, Asana, Zoom, Meet, Teams, HubSpot, Salesforce (Business+).
+**Recording modes**: Both bot-based (visible in meeting, video playback) and bot-free (local recording via desktop app, no bot in participant list). Bot-free has no automated disclosure for external participants.
+
+**Integrations**: 50+ native — Zoom, Google Meet, MS Teams, Slack huddles, Salesforce, HubSpot (Business+), Jira, Asana, Linear, Monday, Notion, Confluence, Glean, GitHub. 8,000+ via Zapier. n8n official node. Third-party MCP server (liba2k/fellow-mcp).
+
+**Key gotchas**:
+- Free plan is effectively a trial (lifetime caps, not monthly)
+- AI action items hallucinate — creates false items from questions, misses actual commitments
+- Bot-free recording has no automated participant disclosure (compliance risk)
+- Transcript export is in a separate menu from AI notes export
+- API keys are user-scoped only — no workspace-wide admin key
+- Zapier triggers can require manual kickoff
 
 **Selection notes**:
-- **Pick Fellow when**: You want 1:1 templates, structured agendas, and manager workflows alongside AI notes
-- **Avoid Fellow when**: Sales conversation intelligence is the primary need (pick Gong/Avoma/Fathom instead)
+- **Pick Fellow when**: You want 1:1 templates, structured agendas, and manager workflows alongside AI notes. Good for CS, leadership, and cross-functional meetings. Strong security posture.
+- **Avoid Fellow when**: Sales conversation intelligence is the primary need — no methodology scorecards, deal boards, or pipeline intelligence (pick Gong/Avoma/Fathom instead)
+- **Platform skill**: `/sales-fellow` for Fellow-specific configuration, API, CRM sync, troubleshooting
 
 ---
 

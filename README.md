@@ -162,6 +162,7 @@ Router recommends a 5-skill sequence:
 | `/sales-avoma` | Avoma platform help — REST API, webhooks, MEDDIC/BANT/SPICED scorecards, Conversation + Revenue Intelligence, Lead Router, CRM sync, pricing tiers |
 | `/sales-gong` | Gong platform help — Revenue AI OS, call recording, Smart Trackers, coaching scorecards, REST API, webhook automation, Forecast, Engage, MCP |
 | `/sales-otter` | Otter.ai platform help — OtterPilot, live transcription, AI Chat, Zapier automation, CRM sync, pricing tiers |
+| `/sales-fellow` | Fellow platform help — AI meeting assistant, REST API, bot-based/bot-free recording, CRM sync, templates, pricing tiers |
 | `/sales-deal-inspect` | Inspect deal health, map stakeholders, identify risks, recommend next actions |
 | `/sales-forecast` | Build and validate revenue forecasts with pipeline coverage and gap analysis |
 
