@@ -19,6 +19,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Jamie | Bot-free AI note-taker | Yes (10 meetings) | €21/mo | REST | Yes (Plus+) | Medium (3 CRMs, Pro+) | Privacy-first EU teams, in-person meetings, bot-free recording |
 | Krisp | Voice AI + note-taker | No (7-day trial) | $8/mo | Webhooks | Yes (Advanced+) | Medium (HubSpot Core+, SF Advanced+) | Noisy environments, noise cancellation + AI notes, SDK developers |
 | Colibri | Real-time transcription + Sales Copilot | Yes (5 hrs/mo) | $16/mo | None | None | Thin (Salesforce Scale only) | Real-time live coaching during calls, legal transcription |
+| Cluely | Real-time AI coaching overlay | Yes (limited) | $20/mo | None | None | Medium (via Merge.dev, Team+) | Real-time AI prompts during calls, knowledge base RAG, pre-call briefs |
 
 ## Fathom
 
@@ -495,6 +496,35 @@ For deep platform coverage (Sales Copilot setup, cue card configuration, convers
 **Selection notes**:
 - **Pick Colibri when**: Real-time live transcription is critical (text appears as people speak), you want Sales Copilot with live coaching cue cards during calls, conversation analytics for team coaching, legal deposition transcription, or you're already on Zoom and want a native app
 - **Avoid Colibri when**: CRM integration matters (no HubSpot, Salesforce is $70/mo only), you need an API or webhooks for custom integrations (→ Fireflies/Fathom/MeetGeek), you want bot-free recording (Colibri uses Chrome extension or Zoom app), or budget is tight and you need more than raw transcription on lower plans
+
+---
+
+## Cluely
+
+For deep platform coverage (Live Insights setup, Knowledge Base RAG, pre-call briefs, CRM integration via Merge.dev, coaching analytics, pricing gates, security considerations), use `/sales-cluely`.
+
+**Positioning**: Real-time AI meeting assistant with a live coaching overlay — AI-generated answers, suggestions, and coaching during calls (not after). Unique features: pre-call briefs with participant research, Knowledge Base with 1M token RAG context window for company docs, and "undetectability" mode that hides the overlay from screen sharing. Desktop app only (Mac + Windows). Controversial security history (83K user data breach in 2025). 0 G2 reviews, ~2.1 stars on Trustpilot.
+
+**Pricing (2026-04)**: Free (limited AI + notes, 3 file uploads), Pro $20/mo (unlimited AI + notes + files), Pro + Undetectability $75/mo (hidden from screen share), Team ~$99/seat/yr (shared playbooks, admin dashboards, SSO, CRM/ATS integration).
+
+**API**:
+- **No public API.** api.cluely.com exists but DNS doesn't resolve. No REST, no webhooks, no Zapier.
+- CRM/ATS integration via Merge.dev only (Team/Enterprise plan).
+- Docs at docs.cluely.com (llms.txt available).
+
+**Integrations**: Zoom, Google Meet, Teams, Webex, Slack (conferencing). HubSpot, Salesforce, Pipedrive, Zoho (CRM via Merge.dev, Team+). Greenhouse, Lever, Workday, BambooHR (ATS via Merge.dev, Team+). Google Calendar only (no Outlook).
+
+**Known issues (from Trustpilot/review articles)**:
+- 2025 data breach — 83K users' data exposed via credentials in public GitHub repo
+- Billing complaints — instant charges with no confirmation dialog on upgrade
+- Transcription accuracy — speaker attribution errors, 5-10 second delay on suggestions
+- AI suggestions often feel generic without Knowledge Base content loaded
+- Google Calendar only — no Outlook/Office 365 support
+- Overlay can freeze requiring full app restart
+
+**Selection notes**:
+- **Pick Cluely when**: You want real-time AI coaching during calls (not just post-call notes), you need a knowledge base with RAG retrieval for company battlecards during live conversations, pre-call meeting prep with participant research, or you're evaluating real-time copilots specifically
+- **Avoid Cluely when**: Security is a top concern (data breach history), you need a public API or webhooks for custom integrations (→ Fireflies/Fathom/MeetGeek), you use Outlook for calendar (no support), you want post-call coaching analytics depth (→ Gong/Avoma), or the $75/mo undetectability premium is unjustified for your use case
 
 ---
 
