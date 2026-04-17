@@ -91,28 +91,36 @@ For deep platform coverage (GraphQL queries/mutations, Webhooks V1 vs V2, HMAC v
 
 ## Avoma
 
-**Positioning**: End-to-end meeting lifecycle — prep, notes, coaching scorecards, and deal intelligence. Built for sales and customer success teams that want methodology adherence baked into every call.
+For deep platform coverage (API authentication, webhook events, scorecard setup, Lead Router, pricing tiers, known reliability issues, troubleshooting), use `/sales-avoma`.
 
-**Pricing (2026-04)**: Startup $19/recorder seat/mo, Organization $29/recorder seat/mo, Enterprise $39/recorder seat/mo (plus non-recorder seats which are cheaper).
+**Positioning**: End-to-end meeting lifecycle — scheduling, prep, AI notes, coaching scorecards, and deal intelligence. Built for mid-market sales and CS teams that want methodology adherence (MEDDIC/BANT/SPICED) baked into every call. Also includes a built-in Scheduler and Lead Router module.
+
+**Pricing (2026-04)**: Startup $19/seat (annual), Organization $24/seat, Enterprise $39/seat. Add-ons: Conversation Intelligence $29/seat, Revenue Intelligence $29/seat, Lead Router $19/seat. Bundle discounts: 10% for 2, 15% for all 3. Free viewer seats available. Fully-loaded Enterprise seat with all add-ons: ~$104/mo.
 
 **API**:
-- Docs: `https://dev.avoma.com/` and `https://help.avoma.com/api-documentation`
+- Docs: `https://dev.avoma.com/` (JS-rendered) and `https://help.avoma.com/api-documentation`
 - Type: REST
-- Auth: `Authorization` header with combined `CLIENT_KEY:CLIENT_SECRET`
-- Key endpoints: recordings, transcripts, notes, insights, meetings, users
-- Webhook setup documented in dev.avoma.com
+- Auth: `CLIENT_KEY:CLIENT_SECRET` combined string in HTTP Authorization header
+- Key endpoints: meetings, recordings, transcriptions, notes, scorecards
+- Max 5 API keys per organization (admin-only creation)
+- **API access requires Organization plan or above** — Startup plan has no API
 
 **Webhooks**:
 - Events: new note generated, new meeting scheduled, meeting rescheduled, meeting cancelled (with reason)
 - Prefer webhooks over polling for volume
 
-**Rate limits**: Standard REST pagination; specific per-key limits in the dev portal. Conservative approach: queue outbound calls.
+**Rate limits**: 60 requests/minute per API key.
 
-**Integrations**: Deep Salesforce and HubSpot field-mapping (auto-updates CRM fields based on meeting content), Slack, Zoom/Meet/Teams.
+**Integrations**: Salesforce, HubSpot, Pipedrive, Zendesk Sell, Zoho, Copper (CRM), Zoom/Meet/Teams/GoToMeeting/BlueJeans (video), ZoomPhone/Salesloft/Aircall/RingCentral/Kixie/Groove/Outreach/Koncert (dialers), Slack, ClickUp, Zapier.
+
+**Known issues (from G2/review analysis)**:
+- Bot reliability: 73% of reviewers report failures — late joins (48%), mid-call drops (31%), no-shows (27%). Teams is worst (79% failure rate).
+- Transcription accuracy drops with accents, technical terms, multi-speaker overlap.
+- CRM sync can delay 60+ minutes.
 
 **Selection notes**:
-- **Pick Avoma when**: You want AI scorecards tied to a sales methodology (MEDDPICC, BANT, etc.), automatic CRM field updates, and a single platform covering both sales and CS workflows
-- **Avoid Avoma when**: You're enterprise and need Gong-level revenue intelligence, or you're solo/SMB and the price doesn't fit
+- **Pick Avoma when**: You want AI scorecards tied to a sales methodology (MEDDPICC, BANT, SPICED), automatic CRM field updates, built-in scheduling + lead routing, and a single platform covering both sales and CS workflows
+- **Avoid Avoma when**: You're enterprise and need Gong-level revenue intelligence, you're solo/SMB on a tight budget (base + add-ons adds up fast), or Teams is your primary video platform (worst bot reliability)
 
 ---
 
