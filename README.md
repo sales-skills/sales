@@ -156,7 +156,7 @@ Router recommends a 5-skill sequence:
 | `/sales-salesloft` | Salesloft platform help — config, Rhythm, Conversations, Drift, integrations |
 | `/sales-cadence` | Design multi-channel outbound cadences with timing, A/B testing, and content |
 | `/sales-call-review` | Review sales calls, extract coaching insights, score against MEDDPICC/SPIN |
-| `/sales-note-taker` | AI meeting note-taker / conversation-intelligence selection & API integration (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie) |
+| `/sales-note-taker` | AI meeting note-taker / conversation-intelligence selection & API integration (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie, Jamy) |
 | `/sales-fathom` | Fathom platform help — REST API, webhooks, OAuth, SDKs, MCP, transcript/summary export, CRM sync, pricing tiers |
 | `/sales-fireflies` | Fireflies.ai platform help — GraphQL API, Webhooks V1 + V2, HMAC verification, AskFred AI, Real-time API, MCP, rate limits per tier, bot auto-join control |
 | `/sales-avoma` | Avoma platform help — REST API, webhooks, MEDDIC/BANT/SPICED scorecards, Conversation + Revenue Intelligence, Lead Router, CRM sync, pricing tiers |
@@ -171,6 +171,7 @@ Router recommends a 5-skill sequence:
 | `/sales-krisp` | Krisp platform help — noise cancellation + AI meeting notes, accent conversion, Voice AI SDK, webhook integrations, Call Center AI, CRM sync, pricing tiers |
 | `/sales-colibri` | Colibri.ai platform help — real-time transcription, AI summaries, Sales Copilot with live guidance, conversation analytics, legal transcription, pricing tiers |
 | `/sales-cluely` | Cluely platform help — real-time AI coaching overlay, pre-call briefs, knowledge base RAG, CRM sync via Merge.dev, coaching analytics, pricing tiers |
+| `/sales-jamy` | Jamy.ai platform help — AI meeting assistant with real-time translation (100+ languages), cross-language search, HubSpot CRM sync, API/webhooks, pricing tiers |
 | `/sales-deal-inspect` | Inspect deal health, map stakeholders, identify risks, recommend next actions |
 | `/sales-forecast` | Build and validate revenue forecasts with pipeline coverage and gap analysis |
 

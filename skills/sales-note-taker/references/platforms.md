@@ -20,6 +20,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Krisp | Voice AI + note-taker | No (7-day trial) | $8/mo | Webhooks | Yes (Advanced+) | Medium (HubSpot Core+, SF Advanced+) | Noisy environments, noise cancellation + AI notes, SDK developers |
 | Colibri | Real-time transcription + Sales Copilot | Yes (5 hrs/mo) | $16/mo | None | None | Thin (Salesforce Scale only) | Real-time live coaching during calls, legal transcription |
 | Cluely | Real-time AI coaching overlay | Yes (limited) | $20/mo | None | None | Medium (via Merge.dev, Team+) | Real-time AI prompts during calls, knowledge base RAG, pre-call briefs |
+| Jamy.ai | AI meeting assistant + translation | Yes (300 min/mo) | $14.99/mo | REST (partial) | Yes (Zapier/Make) | Thin (HubSpot only) | Multilingual teams needing real-time translation in 100+ languages |
 
 ## Fathom
 
@@ -525,6 +526,35 @@ For deep platform coverage (Live Insights setup, Knowledge Base RAG, pre-call br
 **Selection notes**:
 - **Pick Cluely when**: You want real-time AI coaching during calls (not just post-call notes), you need a knowledge base with RAG retrieval for company battlecards during live conversations, pre-call meeting prep with participant research, or you're evaluating real-time copilots specifically
 - **Avoid Cluely when**: Security is a top concern (data breach history), you need a public API or webhooks for custom integrations (→ Fireflies/Fathom/MeetGeek), you use Outlook for calendar (no support), you want post-call coaching analytics depth (→ Gong/Avoma), or the $75/mo undetectability premium is unjustified for your use case
+
+---
+
+## Jamy.ai
+
+For deep platform coverage (API setup, translation configuration, calendar auto-join troubleshooting, HubSpot CRM sync, pricing tiers), use `/sales-jamy`.
+
+**Positioning**: AI meeting assistant with real-time translation as the key differentiator. Records, transcribes, summarizes, and translates meetings in 100+ languages with cross-language search. Targets multilingual global teams. SOC 2 Type II certified. Only 29 AppSumo reviews (3.3/5) — limited social proof.
+
+**Pricing (2026-04)**: Starter free (300 min/mo transcription, 60 min/mo translation, 60-day storage, 60-min max), Pro $14.99/mo (unlimited transcription, 300 min/mo translation, unlimited storage), Global Business $29.99/mo (unlimited everything, 4-hr max translated meetings). Per user/month.
+
+**API**:
+- Docs: `https://docs.jamy.ai/` (JS-rendered — can't scrape)
+- Auth: API key from `https://app.jamy.ai/settings/apikeys` (OWNER role required)
+- Known endpoints: Create Report (generate report from uploaded recording), Answer Question (query reports)
+- Webhooks supported for Zapier/Make automation
+- Rate limits: not publicly documented
+
+**Integrations**: Zoom/Meet/Teams (native). HubSpot (CRM — only native CRM today). Salesforce, Pipedrive, Close.com listed as "Coming Soon." Slack, Notion, Trello, Monday.com, Gmail, Outlook. API + webhooks for Zapier/Make.
+
+**Known issues (from AppSumo reviews)**:
+- Calendar integration breaks silently — bot stops joining meetings (most reported issue)
+- AppSumo-onboarded users report worse auto-join reliability vs direct signups
+- Chrome extension unreliable
+- "Premium feature" upgrade prompts appear unexpectedly while exploring
+
+**Selection notes**:
+- **Pick Jamy when**: Real-time translation is essential for multilingual teams, you need cross-language search across meeting history, budget is moderate ($15-30/mo), and HubSpot is your CRM
+- **Avoid Jamy when**: CRM depth matters beyond HubSpot (Salesforce/Pipedrive not yet available), you need a mature API with documented endpoints (→ Fireflies/Fathom), social proof and reliability matter (limited reviews, known bot issues), or you don't need translation (Fathom's free tier is more generous)
 
 ---
 
