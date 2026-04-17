@@ -12,7 +12,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Gong | Revenue intelligence | No | ~$1,200-1,600/user/yr | REST | Yes (extensive) | Deep | Enterprise sales + coaching |
 | Otter.ai | Transcription | Yes | $17-30/mo | REST (Enterprise beta) | Yes (Workspace) | Thin | General meetings, non-sales |
 | Fellow | Meeting management | Yes (5 lifetime) | $7-15/user | REST | Yes (Zapier) | Medium (Business+) | Manager 1:1s, leadership meetings |
-| Grain | AI meeting recorder | Yes | $19-39/seat | REST | Yes | Medium | GTM teams, clip sharing |
+| Grain | AI meeting recorder | Yes (20 meetings) | $15-39/seat | REST (Business+) | Yes (Zapier) | Medium (Business+) | GTM teams, clip sharing, MCP |
 | Sembly | AI meeting assistant | Yes | $10-20/seat | Webhook-first | Yes | Medium | Task automation, agent workflows |
 | Read.ai | Meeting AI | Yes | $15-30/seat | Webhook-first | Yes | Medium | Engagement/sentiment analytics |
 
@@ -250,19 +250,27 @@ For deep platform coverage (OtterPilot setup, transcription accuracy tuning, AI 
 
 ## Grain
 
-**Positioning**: AI meeting recorder focused on GTM teams. Strong on clip sharing — snip a 30-second moment, share to Slack or paste into docs. Good for revenue teams who want to syndicate customer quotes.
+For deep platform coverage (API endpoints, MCP Server setup, pricing gates, Zapier automation, bot troubleshooting), use `/sales-grain`.
 
-**Pricing (2026-04)**: Free, Starter $19/seat, Business $39/seat, Enterprise custom.
+**Positioning**: AI meeting recorder focused on GTM teams. Strong on clip sharing — snip a 30-second moment, share to Slack or paste into docs. Good for revenue teams who want to syndicate customer quotes. Official MCP Server with built-in SPICED/MEDDICC and Voice of Customer prompts.
 
-**API**: REST for transcripts, highlights, clips, recordings. Webhook-first design.
+**Pricing (2026-04)**: Free (20 meetings), Starter $15-19/seat (unlimited recordings, Slack/Zapier/Productboard), Business $29-39/seat (CRM sync, coaching, API, trackers, deal board), Enterprise custom (SSO, full API, dedicated CS). MCP Server free on all plans.
 
-**Webhooks**: Yes — recordings, highlights, transcripts.
+**API**:
+- REST API at `api.grain.com`, Bearer token auth (`GRAIN_API_TOKEN`)
+- Docs: `developers.grain.com` (Notion-hosted)
+- Key endpoints: workspace recordings list (paginated), transcript retrieval (`transcript_format=json`), tags, action items, video uploads (Business+)
+- Business plan required (since Dec 2025); Enterprise for full access
+- Rate limits: not formally published — official examples use 1 req/sec
+- MCP Server: `https://api.grain.com/_/mcp` — works with Claude, ChatGPT, Cursor, Windsurf
 
-**Integrations**: Salesforce, HubSpot, Slack, Zoom, Meet, Teams, Notion, Productboard, Linear.
+**Webhooks**: Yes — recordings, highlights, transcripts. Zapier triggers (Starter+) rebuilt March 2026 with workspace-level connections and enhanced filtering.
+
+**Integrations**: Zoom, Google Meet, Teams, Webex, Slack Huddles, Slack (Starter+), Productboard (Starter+), Zapier (Starter+), HubSpot (Business+), Salesforce (Business+), Aircall (Business+), MCP Server (all plans).
 
 **Selection notes**:
-- **Pick Grain when**: GTM/product teams want to share specific call moments internally, CRM sync is a nice-to-have rather than the primary value
-- **Avoid Grain when**: You need methodology scorecards (→ Avoma) or enterprise-grade deal intelligence (→ Gong)
+- **Pick Grain when**: GTM/product teams want to share specific call moments internally, CRM sync is a nice-to-have rather than the primary value, or you want MCP-powered AI workflows with meeting data in Claude/Cursor
+- **Avoid Grain when**: You need methodology scorecards (→ Avoma), enterprise-grade deal intelligence (→ Gong), or structured CRM field-level enrichment (Grain's CRM sync is activity-level only)
 
 ---
 
