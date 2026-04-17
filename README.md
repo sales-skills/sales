@@ -180,6 +180,7 @@ Router recommends a 5-skill sequence:
 | `/sales-granola` | Granola platform help — bot-free AI notepad for meetings, REST API, MCP integration (beta), HubSpot/Attio/Affinity CRM sync, Zapier automation, pricing tiers |
 | `/sales-omi` | Omi AI platform help — open-source AI wearable necklace ($89), Developer API, app marketplace with webhook integrations, in-person + online capture, pricing tiers |
 | `/sales-bluedot` | Bluedot platform help — bot-free AI note-taker with video recording, Chrome extension + desktop/mobile apps, Svix webhooks, HubSpot/Salesforce CRM sync, screen recording, pricing tiers |
+| `/sales-lindy` | Lindy platform help — no-code AI agent builder for email triage, meeting notes, calendar management, custom workflow automation, chatbots, AI phone agents, 4,000+ integrations, credit-based pricing tiers |
 | `/sales-deal-inspect` | Inspect deal health, map stakeholders, identify risks, recommend next actions |
 | `/sales-forecast` | Build and validate revenue forecasts with pipeline coverage and gap analysis |
 

@@ -28,6 +28,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Granola | Bot-free AI notepad | Yes (limited history) | $14/user/mo | REST (Business+) | None | Medium (HubSpot/Attio/Affinity, Business+) | Bot-free, AI-enhanced notes, VCs/product teams, privacy-sensitive contexts |
 | Hedy | Real-time AI meeting coach | Yes (5 hrs/mo) | $12.99/mo | REST (Pro) | Yes (HMAC) | None (via Zapier/n8n) | Real-time coaching during calls, cross-session intelligence, Apple Watch |
 | Bluedot | Bot-free AI note-taker | No (5 lifetime) | $14/mo | None (webhooks only) | Yes (Svix) | Medium (HubSpot/Salesforce, Business+) | Bot-free video recording, Chrome-first teams, screen recording |
+| Lindy | AI agent builder (notes are one module) | Yes (free trial) | $49.99/mo | None | Inbound only | Indirect (via workflow) | All-in-one AI assistant (email + meetings + calendar + workflows) |
 
 ## Fathom
 
@@ -856,6 +857,46 @@ For deep platform coverage (hardware specs, API endpoints, app framework, webhoo
 **Selection notes**:
 - **Pick Bluedot when**: You need bot-free recording with video (unique combo), you want screen recording with webcam overlay, your team is Chrome-first, you need in-person + virtual meeting recording, you want Meeting Insights analytics (talk ratio, monologues), you need automated follow-up emails, or you want CRM auto-sync to HubSpot/Salesforce on Business plan
 - **Avoid Bluedot when**: You need a public REST API for custom integrations (→ Fathom, Fireflies, Gong), you need SOC 2 compliance (→ Gong, Avoma, Fireflies), you need a generous free tier (→ Fathom unlimited free, tl;dv unlimited free), you're on Firefox/Safari (→ Jamie, Granola, Omi), you need custom vocabulary for technical terms (→ Fireflies, Gong), or you need production-grade webhook signing/HMAC verification (→ Fathom, Fireflies, Wave)
+
+---
+
+## Lindy
+
+For deep platform coverage (all modules, workflow builder, credit system, integrations, pricing), use `/sales-lindy`.
+
+**Positioning**: AI agent builder where meeting notes are one module among email triage, calendar management, and custom AI workflows. Positioned as an "AI employee" — handles meetings alongside everything else. Not a dedicated note-taker, but convenient if you want a single tool for email + meetings + calendar.
+
+**Pricing (2026-04)**: Plus $49.99/mo (2 inboxes), Pro $99.99/mo (3 inboxes, computer use), Max $199.99/mo (5 inboxes), Enterprise custom (SSO, SCIM, HIPAA). Credit-based usage — simple tasks 1-3 credits, AI-intensive tasks 10+ credits. 7-day free trial on all plans.
+
+**Meeting notes capabilities**:
+- Auto-join recording for Zoom, Google Meet, Microsoft Teams
+- Real-time transcription and AI summaries
+- Action item extraction
+- Post-meeting follow-up drafts
+- Pre-meeting prep briefings (participant research, context)
+
+**API**: No public developer API. Cannot programmatically fetch transcripts, trigger recordings, or build integrations on top of Lindy. The HTTP Fetch action lets Lindy call external APIs within workflows, but not the reverse.
+
+**Webhooks**: Inbound webhooks can trigger Lindy workflows. No outbound webhooks for meeting events (no `transcription.completed` or `meeting.ended` events).
+
+**CRM sync**: Indirect — through workflow automation (connect Lindy to HubSpot/Salesforce via built-in integrations). No native field-mapping like Fathom Business or Gong.
+
+**Integrations**: 4,000+ via Pipedream Connect (Gmail, Outlook, Slack, HubSpot, Salesforce, Notion, Asana, etc.). Custom API calls via HTTP Fetch action.
+
+**Compliance**: SOC 2 Type II, HIPAA, GDPR, PIPEDA. AES-256 encryption. Enterprise BAA available.
+
+**Known issues (from reviews)**:
+- Credit consumption is unpredictable — meeting recording + AI summary + follow-up drafts can use 10+ credits per meeting
+- Complex multi-step workflows (meeting → summarize → update CRM → send follow-up) produce errors more often than simple flows
+- No transcript search or conversation analytics — meeting notes are AI summaries, not searchable transcript archives
+- No coaching features (talk ratios, filler words, methodology scorecards)
+- Trustpilot rating is 2.4 stars (billing/cancellation complaints dominate)
+- G2 rating is 4.9 stars (170 reviews, mostly positive on ease of use)
+- Pricing structure may differ between marketing page and actual signup (reports of A/B testing)
+
+**Selection notes**:
+- **Pick Lindy when**: You want a single AI assistant for email + meetings + calendar, you value natural language task delegation via iMessage/Slack, you're already building custom AI workflows in Lindy, you want meeting prep briefings alongside note-taking, or you prefer a generalist tool over multiple specialized ones
+- **Avoid Lindy when**: You need a dedicated note-taker with deep CRM field-mapping (→ Fathom, Gong, Avoma), you need conversation analytics and coaching (→ Gong, tl;dv, Avoma), you need a public API to build transcript pipelines (→ Fathom, Fireflies, Gong), you need predictable pricing without credit anxiety (→ Fathom free tier, tl;dv free tier), you need transcript search across hundreds of meetings (→ Fireflies, Gong), or you need production-grade webhooks for meeting events (→ Fathom, Fireflies, Sembly)
 
 ---
 

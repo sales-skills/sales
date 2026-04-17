@@ -92,6 +92,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-email-marketing` — Opt-in email marketing (broadcasts, automations, newsletters)
 - `/sales-integration` — Connect chatbot platforms to CRM, helpdesk, and other tools
 - `/sales-audience-growth` — Grow your subscriber base (pop-ups, lead magnets, opt-in forms — feed contacts into bot flows)
+- `/sales-lindy` — Lindy platform help (AI agent builder with custom chatbot creation and knowledge base RAG)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples

@@ -107,6 +107,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-lead-routing` — Lead routing rules (complementary to meeting round-robin)
 - `/sales-integration` — Connect scheduling tools to CRM and other sales tools
 - `/sales-mixmax` — Mixmax platform help (for Mixmax-specific setup)
+- `/sales-lindy` — Lindy platform help (AI agent builder with natural language scheduling via iMessage/Slack)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
 ## Examples
