@@ -26,6 +26,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Claap | AI sales call assistant | Yes (limited) | $24/user/mo | REST + OAuth | Yes (HMAC) | Deep (Business+) | Sales teams wanting CRM auto-enrichment, deal scoring, lemlist ecosystem |
 | Tactiq | Chrome extension note-taker | Yes (10 transcripts/mo) | $8/mo | None (Zapier only) | None | Medium (native HubSpot/Salesforce/Pipedrive) | Zero-setup bot-free transcription, Google Meet-first teams |
 | Granola | Bot-free AI notepad | Yes (limited history) | $14/user/mo | REST (Business+) | None | Medium (HubSpot/Attio/Affinity, Business+) | Bot-free, AI-enhanced notes, VCs/product teams, privacy-sensitive contexts |
+| Hedy | Real-time AI meeting coach | Yes (5 hrs/mo) | $12.99/mo | REST (Pro) | Yes (HMAC) | None (via Zapier/n8n) | Real-time coaching during calls, cross-session intelligence, Apple Watch |
 
 ## Fathom
 
@@ -748,6 +749,40 @@ For deep platform coverage (API endpoints, CRM setup, privacy settings, troubles
 **Selection notes**:
 - **Pick Granola when**: You need bot-free recording for sensitive contexts (VCs, board meetings, client calls where bots create friction), you prefer an AI-enhanced notepad over raw transcription, your team is on Mac/Windows + iOS, or you want a simple HubSpot integration without Gong pricing
 - **Avoid Granola when**: You need speaker identification or diarization (→ Fireflies, Gong, Avoma), you need audio/video playback (→ Fathom, Fireflies, tl;dv), you need Salesforce native integration (→ Fathom, Fireflies, Gong), you need a mature production API with webhooks (→ Fathom, Fireflies, Gong), you need Android support (→ Fellow, Otter), or you need coaching/methodology features (→ Avoma, tl;dv, Gong)
+
+---
+
+## Hedy
+
+For deep platform coverage (API endpoints, webhook setup, MCP server, coaching configuration, troubleshooting), use `/sales-hedy`.
+
+**Category**: Real-time AI meeting coach
+**API**: REST at `https://api.hedy.bot/v1`. Auth via Bearer token (API key from Settings → API Access). Endpoints: sessions, highlights, topics (CRUD), todos, session contexts (CRUD), webhooks (CRUD), `/me` (user info). Rate limit: 200 req/min. Pro-only.
+**Webhooks**: 5 events — `session.created`, `session.ended`, `session.exported`, `highlight.created`, `todo.exported`. Signed with HMAC-SHA256 via `X-Hedy-Signature`. Max 10 per account. Retry: 5xx up to 2 retries, 429 once, 4xx not retried. Pro-only + cloud sync required.
+**MCP**: `https://api.hedy.bot/mcp`, OAuth 2.1 with PKCE, 18 tools across 5 categories (sessions, highlights, tasks, topics, contexts). Claude/ChatGPT/Cursor compatible. Pro-only.
+**CRM**: No native connectors. CRM integration via Zapier, n8n (`n8n-nodes-hedy` verified node), ActivePieces, viaSocket, Pabbly Connect, or custom API.
+**Recording**: Bot-free (on-device audio processing). Mac, Windows, iOS, Android, Web (view-only), Apple Watch (companion display). No meeting bot joins calls. Phone call recording works on speaker only (headphone limitation).
+**AI features**: Real-time coaching suggestions, cross-session intelligence, smart summaries, action items, highlights with AI insights, prep notes, session contexts (custom coaching instructions), YouTube import & analysis.
+
+**Pricing** (monthly):
+| Plan | Price | Hours | Coaching | API/Webhooks/MCP | Cloud Sync |
+|---|---|---|---|---|---|
+| Free | $0 | 5 hrs/mo | 30 min/session | No | Basic |
+| Pro | $12.99/mo ($99.99/yr) | Unlimited | Unlimited | Yes | Full |
+| Lifetime | $299 one-time | Unlimited | Unlimited | Yes | Full |
+
+**Known issues (from AppSumo reviews/questions)**:
+- iOS mic cutouts mid-meeting — background audio restrictions can interrupt recording, resulting in partial transcripts
+- Intel Mac freezing on launch — known Hedy 3.x issue, fix available in v3.0.7+
+- Phone call recording can't capture both sides through headphones (OS restriction)
+- Non-English transcript inaccuracy (Italian, Swiss German, Thai reported)
+- Web app is view-only — cannot record, only review transcripts and query AI
+- Cloud sync failures between devices — verify same account, sync enabled, connectivity
+- macOS Jabra speaker/mic compatibility unverified (users report headsets work)
+
+**Selection notes**:
+- **Pick Hedy when**: You want AI coaching DURING meetings (not just notes after), you need cross-session intelligence that learns from past conversations, you want Apple Watch coaching for in-person meetings, privacy-first on-device processing matters, or you want a single tool that works across all meeting platforms and in-person conversations
+- **Avoid Hedy when**: You need native CRM connectors without automation middleware (→ Fathom, Fireflies, Gong), you need deep sales methodology scoring (MEDDIC/BANT/SPIN) (→ Avoma, tl;dv, Gong), you need team analytics and call scoring (→ Gong, Avoma), you need a mature production API with full endpoint documentation (→ Fathom, Fireflies, Gong), or you need video recording/playback (→ Fathom, Fireflies, tl;dv)
 
 ---
 

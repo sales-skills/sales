@@ -1,6 +1,6 @@
 ---
 name: sales-note-taker
-description: "Sales meeting note-taker and conversation-intelligence strategy — platform selection (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie, Krisp, Colibri, Cluely, Jamy, Wave, tl;dv, Claap, Tactiq, Granola) plus backend API integration for auto-downloading transcripts, summaries, action items, and recordings into CRM, data warehouse, Slack, or internal tools. Use when choosing an AI note-taker for a sales team, comparing Fathom vs Fireflies pricing or features, deciding between webhook and polling for transcript ingestion, wiring meeting transcripts into HubSpot or Salesforce, building a call-intelligence data pipeline, normalizing transcript formats across multiple vendors, or debugging rate limits and auth flows in note-taker APIs. Do NOT use for reviewing a single call for coaching (use /sales-call-review) or building a coaching program (use /sales-coaching)."
+description: "Sales meeting note-taker and conversation-intelligence strategy — platform selection (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie, Krisp, Colibri, Cluely, Jamy, Wave, tl;dv, Claap, Tactiq, Granola, Hedy) plus backend API integration for auto-downloading transcripts, summaries, action items, and recordings into CRM, data warehouse, Slack, or internal tools. Use when choosing an AI note-taker for a sales team, comparing Fathom vs Fireflies pricing or features, deciding between webhook and polling for transcript ingestion, wiring meeting transcripts into HubSpot or Salesforce, building a call-intelligence data pipeline, normalizing transcript formats across multiple vendors, or debugging rate limits and auth flows in note-taker APIs. Do NOT use for reviewing a single call for coaching (use /sales-call-review) or building a coaching program (use /sales-coaching)."
 argument-hint: "[describe your note-taker selection or API integration question]"
 license: MIT
 version: 1.0.0
@@ -86,6 +86,7 @@ Rank these in order for the user's context:
 - Mid-market team wanting CRM auto-enrichment + deal scoring without Gong prices, especially in the lemlist ecosystem → Claap
 - Mid-size team wanting customizable templates + analytics + affordable CRM sync → MeetGeek
 - GTM team wanting shareable call clips + MCP AI workflows → Grain
+- Real-time AI coaching during calls + cross-session intelligence + Apple Watch → Hedy
 - Privacy-first EU team, in-person meetings, or bot-free non-negotiable → Jamie
 - Noisy environments where call quality is the primary pain + AI notes as a bonus → Krisp
 - Real-time live transcription during calls + Sales Copilot with cue cards and objection handling → Colibri
@@ -166,6 +167,7 @@ If you discover a gotcha, rate-limit ceiling, auth quirk, or vendor-specific pay
 - `/sales-tldv` — tl;dv platform help (AI note-taker with unlimited free recordings, REST API v1alpha1, sales coaching with MEDDIC/BANT/SPIN playbooks, CRM sync, MCP server, pricing tiers)
 - `/sales-claap` — Claap platform help (AI sales call assistant with no-bot recording, REST API + OAuth, CRM auto-enrichment, deal scoring, MCP connector, pricing tiers)
 - `/sales-tactiq` — Tactiq platform help (Chrome extension bot-free note-taker, Zapier automation, native HubSpot/Salesforce/Pipedrive CRM sync, AI credits, pricing tiers)
+- `/sales-hedy` — Hedy AI platform help (real-time AI meeting coach, REST API, webhooks, MCP server, Zapier/n8n automation, pricing tiers)
 - `/sales-granola` — Granola platform help (bot-free AI notepad, REST API, MCP beta, HubSpot/Attio/Affinity CRM sync, Zapier automation, pricing tiers)
 - `/sales-salesloft` — Salesloft Conversations (bolt-on conversation intelligence inside Salesloft)
 - `/sales-zoominfo` — ZoomInfo Chorus (bolt-on conversation intelligence inside ZoomInfo)
