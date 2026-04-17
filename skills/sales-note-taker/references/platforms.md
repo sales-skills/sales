@@ -22,6 +22,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Cluely | Real-time AI coaching overlay | Yes (limited) | $20/mo | None | None | Medium (via Merge.dev, Team+) | Real-time AI prompts during calls, knowledge base RAG, pre-call briefs |
 | Jamy.ai | AI meeting assistant + translation | Yes (300 min/mo) | $14.99/mo | REST (partial) | Yes (Zapier/Make) | Thin (HubSpot only) | Multilingual teams needing real-time translation in 100+ languages |
 | Wave | Mobile-first AI note-taker | Yes (30 min/mo) | $11.67/mo | REST | Yes (HMAC-SHA256) | None (export only) | In-person recording, phone calls, cross-device sync, semantic search |
+| tl;dv | AI note-taker + sales coaching | Yes (limited) | $18-29/mo | REST (v1alpha1) | Yes (2 triggers) | Deep (Business+) | Free unlimited recordings, sales coaching with playbooks, aggregated insights |
 
 ## Fathom
 
@@ -602,6 +603,53 @@ For deep platform coverage (REST API, webhook HMAC verification, recording metho
 **Selection notes**:
 - **Pick Wave when**: In-person meetings and phone calls are your primary use case (not just virtual meetings), you need cross-device sync (phone + desktop + watch), semantic search across recording history is valuable, and you don't need native CRM integration
 - **Avoid Wave when**: Native CRM sync is required (→ Fathom Business, Fireflies Business, Avoma), you need deep sales coaching features (→ Gong, Avoma), your team is >10 people and needs admin controls beyond shared workspace, or you need a generous free tier (30 min/mo is very limited → Fathom free is unlimited)
+
+---
+
+## tl;dv
+
+For deep platform coverage (API endpoints, webhook triggers, CRM setup, coaching playbooks, MCP server), use `/sales-tldv`.
+
+**Positioning**: Free-tier leader for unlimited recordings (but only 10 lifetime AI summaries on free). Sales coaching and aggregated insights on Business plan. 2M+ users. Strong Zoom/Meet/Teams support.
+
+**Pricing (2026-04)**: Free (unlimited recordings, 10 lifetime AI summaries, deleted after 3 months, 40/week cap), Pro $29/mo ($18 annual), Business $98/mo ($59 annual), Enterprise custom. 40% annual discount.
+
+**API**:
+- Docs: `https://doc.tldv.io/index.html`
+- Base URL: `https://pasta.tldv.io`
+- Version: v1alpha1 (alpha — expect breaking changes)
+- Auth: API key via `x-api-key` header (Pro+ only)
+- Key endpoints:
+  - `POST /v1alpha1/meetings/import` — import external recording
+  - `GET /v1alpha1/meetings` — list meetings with pagination (`page`, `pages`, `total`, `pageSize`, `results[]`)
+  - `GET /v1alpha1/meetings/{meetingId}` — meeting detail with organizer, invitees, duration
+  - `GET /v1alpha1/meetings/{meetingId}/download` — 302 redirect to signed URL (6-hour TTL)
+  - `GET /v1alpha1/meetings/{meetingId}/transcript` — full transcript with speaker, text, timestamps
+  - `GET /v1alpha1/meetings/{meetingId}/notes` — structured notes, markdown content, topics
+  - `GET /v1alpha1/health` — health check
+
+**Webhooks**:
+- Triggers: `MeetingReady` (meeting finishes processing), `TranscriptReady` (transcript generated)
+- Scope levels: User, Team, Organization
+- No HMAC signing documented (alpha API)
+
+**Rate limits**: Not publicly documented (alpha API). Design conservatively.
+
+**Integrations**: Zoom/Meet/Teams (bot). HubSpot, Salesforce, Pipedrive (Business+ native; Pro via Zapier). Slack, Notion, Google Docs. Zapier (5,000+ apps). Make (community module). MCP server (`github.com/tldv-public/tldv-mcp-server`).
+
+**Known issues (from G2/reviews)**:
+- Bot joins uninvited calls — check auto-join settings in dashboard
+- Video library lacks sorting by date/name — search is unreliable
+- Free plan "unlimited" is misleading — 10 lifetime AI summaries, 3-month deletion, 40/week cap
+- Transcription accuracy drops with multiple speakers, accents, or cross-talk (~85-90%)
+- No custom vocabulary for specialized industries — manual correction required
+- HubSpot/Slack integrations reported as broken or limited by some users
+- 3-hour recording limit on all plans
+- Customer support hard to reach
+
+**Selection notes**:
+- **Pick tl;dv when**: You want unlimited free recordings for the team and can live with limited AI summaries on free, you need sales coaching with playbook monitoring (MEDDIC/BANT/SPIN) on Business, you want aggregated insights across multiple meetings, or you need a generous free tier for casual users alongside paid seats for power users
+- **Avoid tl;dv when**: You need truly unlimited free AI summaries (→ Fathom free tier), you need deep deal intelligence (→ Gong), you need a stable production API (tl;dv is v1alpha1 → Fathom/Fireflies/Gong have mature APIs), you need bot-free recording (→ Jamie, Krisp, Granola), or you need native CRM on a budget (Business at $59-98/mo is steep → Fathom Business at $25/mo)
 
 ---
 
