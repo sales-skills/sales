@@ -413,7 +413,8 @@ For deep platform coverage (API endpoints, webhook setup, MCP server, CRM sync, 
 - No native Zapier integration — webhooks go through Make.com or custom endpoints
 - Free tier very limited (10 meetings, 30 min cap)
 - No sales coaching or methodology scorecards
-- No multi-meeting intelligence dashboard (Ask Jamie chat covers cross-meeting queries)
+- Processing delays (5-10 min for summaries) and ~80% reliability reported by users — not ideal for high-stakes calls without a backup
+- Speaker identification inconsistent in large meetings (7-8+ people) — participants can be left out entirely
 
 **Selection notes**:
 - **Pick Jamie when**: Privacy is paramount (EU residency, audio deleted, ISO 27001), bot-free recording is non-negotiable, you need in-person meeting recording, team is EU-based and GDPR is critical, or you want a simple MCP integration for AI workflows

@@ -68,14 +68,16 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 
 > *Best-effort from research — review these, especially items about plan-gated features and integration gotchas that may be outdated.*
 
-- **No video recording.** Jamie captures audio only. If you need to review visual cues (slide shares, demos), pair with a screen recorder or choose a video-capable note-taker.
-- **No Android app.** Desktop (Mac/Windows) and iOS only. Android users must rely on desktop recording.
+- **Processing delays.** Summaries can take 5-10 minutes even for short meetings. Users report summaries getting stuck in "processing" — if this happens, check for app updates or restart Jamie.
+- **Lost/failed recordings.** Multiple users report entire meetings lost, especially during app upgrades. Never update Jamie mid-meeting. For high-stakes calls, keep a backup recorder.
+- **Speaker identification is inconsistent.** Mislabeling, duplicating, and phantom speaker tags are common. In large meetings (7-8+ people), entire participants may be left out. Manually correct speakers in early meetings to train speaker memory.
+- **No video recording.** Audio only. If you need to review slide shares or demos, pair with a screen recorder or choose a video-capable note-taker.
+- **No Android app.** Desktop (Mac/Windows) and iOS only.
 - **Free tier is very limited.** 10 meetings/month with a 30-minute cap. Most competitors offer more generous free tiers (Fathom: unlimited free recordings).
-- **No native Zapier integration.** Automation goes through Make.com or custom webhooks. If your stack is Zapier-centric, this adds friction.
+- **No native Zapier integration.** Automation goes through Make.com or custom webhooks.
 - **CRM sync is Pro+ only.** Free and Plus plans can't push notes to HubSpot/Salesforce/Attio.
-- **Webhook endpoint URL can't be updated.** You must delete and recreate the webhook if the URL changes. Events selected at creation are also immutable.
-- **Regenerating webhook signing secret invalidates immediately.** Update your receiving endpoint's secret before regenerating in Jamie, or webhooks will fail verification.
-- **Audio deleted after transcription.** Jamie deletes raw audio once the transcript is generated. You can't go back to re-process or re-listen to a meeting.
+- **Webhook endpoint URL can't be updated.** Delete and recreate if the URL changes. Events are also immutable after creation.
+- **Audio deleted after transcription.** You can't re-listen to or re-process a meeting.
 
 ## Related skills
 
@@ -116,17 +118,17 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 
 ## Troubleshooting
 
-### Jamie not recording meetings
-**Symptom**: Jamie app is open but no meeting transcript appears after a call
-**Cause**: Calendar not connected, recording consent not configured, or Jamie not set to auto-record
-**Solution**: Check Settings → Calendar to verify Google Calendar or Outlook is connected. Ensure auto-record is enabled for the meeting type. For in-person meetings, manually start recording in the Jamie app. If on a virtual call, verify Jamie's audio capture has microphone permissions in your OS settings.
+### Meeting summary stuck in processing or lost entirely
+**Symptom**: Meeting ends but summary never appears, stays in "processing" indefinitely, or disappears
+**Cause**: App update during recording, network interruption, or processing pipeline failure. Users report ~80% reliability — critical meetings can be missed.
+**Solution**: Never update Jamie during an active meeting. If stuck: restart the Jamie app, check for pending updates, and verify internet connectivity. For high-stakes meetings, run a backup recorder (screen recording or a second tool). If a summary is lost, there's no recovery — Jamie deletes audio after transcription.
+
+### Speaker mislabeled or missing in large meetings
+**Symptom**: Speakers labeled as "Speaker 2" instead of names, phantom speaker tags appear, or participants entirely missing from transcript (common in 7-8+ person meetings)
+**Cause**: Bot-free recording relies on device microphone quality. Remote participants with poor audio, crosstalk, or similar voices cause diarization failures. Speaker memory needs multiple meetings to learn voices.
+**Solution**: Manually correct speaker labels in the first 3-5 meetings with each person to train speaker memory. Use custom words for uncommon names. For large meetings, ensure good microphone quality (headset > laptop mic). Accept that large-group diarization will be imperfect — consider Gong or Fireflies for 8+ person calls.
 
 ### Webhook not firing after meeting ends
 **Symptom**: Webhook endpoint never receives `meeting.completed` event
 **Cause**: Webhook requires Plus+ plan, endpoint must be HTTPS, or webhook was created with wrong event
-**Solution**: Verify plan is Plus or higher. Check webhook URL is HTTPS (HTTP is rejected). In Jamie Settings → Integrations → Webhooks, confirm the webhook shows `meeting.completed` as the selected event. Test with a short meeting. Check delivery logs — Jamie retries up to 5 times with exponential backoff.
-
-### CRM notes not syncing to HubSpot/Salesforce
-**Symptom**: Meeting completes but no notes appear in CRM contact or deal record
-**Cause**: CRM sync is Pro+ only, calendar attendee emails must match CRM contacts, or integration disconnected
-**Solution**: Verify Pro/Team/Enterprise plan. Check that meeting participants' email addresses match existing contacts in your CRM. Reconnect the CRM integration in Jamie Settings → Integrations. For HubSpot, Jamie matches on attendee email → HubSpot contact email. For Salesforce, it attaches notes to matching Lead/Contact records.
+**Solution**: Verify plan is Plus or higher. Check webhook URL is HTTPS (HTTP is rejected). In Jamie Settings → Integrations → Webhooks, confirm the webhook shows `meeting.completed` as the selected event. Test with a short meeting. Check delivery logs — Jamie retries up to 5 times with exponential backoff. Note: processing delays (5-10 min) mean the webhook fires later than expected — don't assume failure until 15 minutes have passed.
