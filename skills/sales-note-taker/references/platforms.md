@@ -18,6 +18,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | MeetGeek | AI meeting assistant | Yes (3 hrs/mo) | $9.99/mo | REST | Yes | Medium (7 CRMs) | Teams wanting customizable templates, analytics, affordable pricing |
 | Jamie | Bot-free AI note-taker | Yes (10 meetings) | €21/mo | REST | Yes (Plus+) | Medium (3 CRMs, Pro+) | Privacy-first EU teams, in-person meetings, bot-free recording |
 | Krisp | Voice AI + note-taker | No (7-day trial) | $8/mo | Webhooks | Yes (Advanced+) | Medium (HubSpot Core+, SF Advanced+) | Noisy environments, noise cancellation + AI notes, SDK developers |
+| Colibri | Real-time transcription + Sales Copilot | Yes (5 hrs/mo) | $16/mo | None | None | Thin (Salesforce Scale only) | Real-time live coaching during calls, legal transcription |
 
 ## Fathom
 
@@ -464,6 +465,36 @@ For deep platform coverage (noise cancellation setup, AI meeting notes, accent c
 **Selection notes**:
 - **Pick Krisp when**: Background noise is the primary pain point, you want noise cancellation + AI notes in one tool, bot-free recording matters, you need accent conversion for BPO/call center agents, or you're building with the Voice AI SDK
 - **Avoid Krisp when**: You need a generous free tier (→ Fathom), deep coaching/methodology scorecards (→ Gong/Avoma), 100+ language transcription (→ Fireflies), a mature REST API for custom integrations (→ Fireflies/Fathom/MeetGeek), or your team is on a tight budget and noise isn't the main issue
+
+---
+
+## Colibri
+
+For deep platform coverage (Sales Copilot setup, cue card configuration, conversation analytics, legal transcription, pricing gates, troubleshooting), use `/sales-colibri`.
+
+**Positioning**: Real-time meeting transcription and conversation intelligence with a unique Sales Copilot — live AI guidance during calls with cue cards, objection handling tips, monologue alerts, and sentiment analysis. Also offers a Legal vertical for deposition transcription with professional transcriptionist review. Works via Chrome extension or native Zoom app. No public API or webhooks.
+
+**Pricing (2026-04)**: Free (5 hrs/mo, 40-min max), Starter $20/mo ($16 annual, 20 hrs/mo, 90-min max), Pro $50/mo ($40 annual, unlimited, AI summaries, Slack), Growth $60/mo ($50 annual, Sales Copilot, analytics), Scale $80/mo ($70 annual, Salesforce, custom language model, phone calls, unlimited recording length). Annual saves 15-20%.
+
+**API**:
+- **No public API.** No REST, no GraphQL, no webhooks, no developer integration path.
+- Transcript export is copy/paste only — no programmatic access.
+- This is Colibri's biggest weakness vs competitors.
+
+**Integrations**: Zoom (native app), Google Meet/Teams/Webex/RingCentral/BlueJeans/GoToMeeting/UberConference (Chrome extension), Slack (Pro+), Salesforce (Scale only, $70/mo). No HubSpot, no Zapier, no Make/n8n, no webhooks.
+
+**Known issues (from G2/Capterra/review analysis)**:
+- No API or webhooks — cannot build custom integrations or data pipelines
+- Salesforce is Scale-only ($70/mo) — 4-5x the price of competitors with CRM sync on lower tiers
+- No HubSpot integration at any tier — the most popular SMB CRM has no integration path
+- AI summaries require Pro ($40/mo) — Free and Starter only get raw transcription
+- Sales Copilot requires Growth ($50/mo) — not available on lower tiers
+- Free plan caps at 5 hrs/mo and 40-minute recordings — very limited
+- English-only transcription on Free plan
+
+**Selection notes**:
+- **Pick Colibri when**: Real-time live transcription is critical (text appears as people speak), you want Sales Copilot with live coaching cue cards during calls, conversation analytics for team coaching, legal deposition transcription, or you're already on Zoom and want a native app
+- **Avoid Colibri when**: CRM integration matters (no HubSpot, Salesforce is $70/mo only), you need an API or webhooks for custom integrations (→ Fireflies/Fathom/MeetGeek), you want bot-free recording (Colibri uses Chrome extension or Zoom app), or budget is tight and you need more than raw transcription on lower plans
 
 ---
 
