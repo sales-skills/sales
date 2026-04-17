@@ -786,6 +786,38 @@ For deep platform coverage (API endpoints, webhook setup, MCP server, coaching c
 
 ---
 
+## Omi
+
+For deep platform coverage (hardware specs, API endpoints, app framework, webhook setup, troubleshooting), use `/sales-omi`.
+
+**Category**: Open-source AI wearable + meeting notes
+**API**: REST at `https://api.omi.me/v1/dev`. Auth via Bearer token (`omi_dev_` prefix, from Settings → Developer → Create Key). Endpoints: memories (CRUD + batch up to 25), action items (CRUD + batch up to 50), conversations (CRUD + from-segments), API keys (CRUD). Rate limit: 100 req/min, 10K/day.
+**Webhooks**: Via App Framework — memory triggers (conversation saved), real-time transcript (live audio processing), chat tools (user-invoked custom functions), audio streaming (raw audio bytes). No HMAC signing documented. Built through the mobile app, not API.
+**MCP**: None documented.
+**CRM**: No native connectors. CRM sync requires custom webhook integration app, Zapier marketplace app, or direct API integration.
+**Recording**: Hardware wearable necklace (BLE 5.3 + Wi-Fi 6). Records in-person + online (via desktop app). No bot joins calls. All-day capture. Dev Kit 2: ~14hr battery, improved MEMS microphone.
+**AI features**: Memories (AI-generated insights), action items (auto-detected tasks), conversation transcription with speaker diarization (accuracy varies), AI chat (query conversation history).
+
+**Pricing**:
+| Plan | Price | Cloud Minutes | Notes |
+|---|---|---|---|
+| Basic (free) | $0 (device $89) | 1,200/mo | All features unlocked, recordings continue locally after cap |
+| Unlimited | $19/mo ($199/yr) | Unlimited | Only difference: cloud listening cap removed |
+
+**Known issues (from user reviews and GitHub)**:
+- Bluetooth disconnect spam — "Your Omi Disconnected" is the #1 complaint, improved in Dev Kit 2
+- Battery indicator unreliable — readings swing between random percentages
+- Background audio not filtered — records TV, music, other conversations alongside wearer
+- Transcription accuracy — speaker diarization misidentifies speakers, especially in 1:1 meetings
+- No native task app integrations (Google Tasks, Todoist) — to-do list has a sync bug that reverts completed tasks
+- AI chat described as "just about useless" by multiple reviewers
+
+**Selection notes**:
+- **Pick Omi when**: You need the lowest-price wearable recorder ($89), you want a fully open-source stack (hardware + software + firmware), you're a developer who wants to build custom apps/integrations, you need all-day in-person recording plus desktop online meeting capture, or privacy is paramount and you want to audit the full codebase
+- **Avoid Omi when**: You need polished, reliable enterprise-grade transcription (→ Plaud, Gong, Fireflies), you need native CRM connectors (→ Fathom, Fireflies, Gong, Avoma), you need compliance certs like SOC 2 or HIPAA (→ Gong, Avoma, Fireflies Enterprise), you need accurate speaker diarization (→ Fathom, Fireflies, Gong), or you need a mature production API with webhooks and HMAC signing (→ Fathom, Fireflies, Gong)
+
+---
+
 ## Bolt-on conversation intelligence (inside other platforms)
 
 These aren't standalone note-takers — they're modules within existing sales tools. Only relevant if you already use the parent platform.
