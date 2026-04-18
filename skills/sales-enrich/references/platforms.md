@@ -28,6 +28,7 @@ Detailed per-platform enrichment workflows, API endpoints, credit economics, and
 - [In Clay (Waterfall Enrichment)](#in-clay-waterfall-enrichment)
 - [In LeadMagic](#in-leadmagic)
 - [In Attio](#in-attio)
+- [In Nooks (Waterfall Enrichment)](#in-nooks-waterfall-enrichment)
 
 ### In Apollo.io
 
@@ -416,4 +417,14 @@ Detailed per-platform enrichment workflows, API endpoints, credit economics, and
 - Integrations: sync enriched contacts to HubSpot or Attio CRM for downstream use
 - No public API for enrichment — all enrichment happens within the BrandJet platform
 - Starter plan: 1,000 verified leads/mo; Pro plan: 10,000 verified leads/mo — monthly credit model, plan usage carefully
+
+### In Nooks (Waterfall Enrichment)
+
+- **Waterfall enrichment**: Cascades across 9 data providers to find verified contact data: Apollo, Cognism, ContactOut, Datagma, Forager, LeadIQ, PDL (People Data Labs), Prospeo, ZoomInfo
+- **Automatic number verification**: Validates phone numbers before they enter the dial queue, reducing bad-number waste and improving connect rates
+- **Catch-all detection**: Identifies and flags catch-all email domains, prioritizes verified email addresses for outreach
+- **Enrichment is built into the dialing workflow**: Prospects are enriched as they're added to call lists — no separate enrichment step needed
+- **No standalone enrichment API**: Enrichment happens within the Nooks platform, not via a public API. You can't use Nooks as an enrichment provider for external tools
+- **Coverage focus**: Optimized for finding direct mobile numbers (the primary channel for parallel dialing). Email enrichment is secondary
+- **Best for**: Teams using Nooks for dialing who want enrichment bundled into the workflow. For standalone enrichment across tools, use Clay waterfall or dedicated enrichment providers
 

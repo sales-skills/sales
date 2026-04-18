@@ -221,6 +221,7 @@ Router recommends a 5-skill sequence:
 | `/sales-snov` | Snov.io — AI-powered sales automation, email finder, multichannel campaigns, LinkedIn automation, Sales CRM |
 | `/sales-aisdr` | AiSDR — AI-powered SDR, autonomous cold email + LinkedIn outreach, 700M+ contacts, email warmup, HubSpot integration |
 | `/sales-qualified` | Qualified — Piper AI SDR Agent, agentic marketing, real-time website chat, Signals buyer intent, Salesforce-native routing |
+| `/sales-nooks` | Nooks — AI-native parallel dialer workspace, multi-channel sequencing, AI coaching (scorecards, roleplay, battlecards, virtual salesfloor), waterfall enrichment (9 providers), ~$5K/user/yr |
 
 </details>
 

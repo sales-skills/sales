@@ -22,6 +22,7 @@ Detailed per-platform cadence setup — campaign types, channel support, A/B tes
 - [In 6sense (AI Email Agents)](#in-6sense-ai-email-agents)
 - [In Clay (Email Sequencer)](#in-clay-email-sequencer)
 - [In AiSDR](#in-aisdr)
+- [In Nooks](#in-nooks)
 
 ## In Mailshake
 - Mailshake campaigns = cadences — a campaign has an initial message plus follow-ups
@@ -242,3 +243,15 @@ Detailed per-platform cadence setup — campaign types, channel support, A/B tes
 - Email personalization: merge fields from Salesforce data, but no AI-generated copy (unlike AiSDR or Amplemarket)
 - No A/B testing documented for cadence steps — test manually by running parallel cadences
 - Best for: Salesforce-native teams wanting cadences, dialer, and coaching in one tool without stitching together Salesloft + Gong. Trade-off: less mature cadence builder than Salesloft Rhythm or Outreach, no multi-CRM support
+
+## In Nooks
+
+- **AI Sequencing module**: Multi-channel sequences combining calls, emails, SMS, and LinkedIn social touches in a unified workspace
+- **Dynamic personalization**: AI auto-researches prospects and drafts hyper-personalized messages using real-time buyer signals (CRM data, job changes, funding events, competitor usage)
+- **Signal-based triggers**: Sequences automatically adjust based on account activity — engagement signals can skip, delay, or accelerate sequence steps
+- **Agentic optimization**: AI continuously optimizes send times, channel mix, and messaging based on performance data across the team
+- **Call-first cadence pattern**: Nooks is built around the dialer, so sequences typically lead with calls (parallel or power dial) followed by email/SMS/social touches
+- **CRM sync**: Activities auto-log to Salesforce, HubSpot, or Pipedrive. Call outcomes, recordings, and notes flow back to CRM contact records
+- **SEP integration**: Pulls call tasks from Outreach, Salesloft, or Apollo sequences into the Nooks dialer, then logs results back
+- **No standalone email warmup**: Nooks focuses on phone-first outbound. For email warmup, use a dedicated tool (Smartlead, Lemlist, etc.)
+- **Best for**: SDR teams running high-volume outbound where cold calling is the primary channel. The parallel dialer is the core — sequencing wraps around it. Teams that are email-first should consider Outreach, Salesloft, or Apollo instead

@@ -15,6 +15,7 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - [Enthu.AI](#in-enthuai)
 - [Demodesk](#in-demodesk)
 - [Balto](#in-balto)
+- [Nooks](#in-nooks)
 - [Manual / Spreadsheet](#manual--spreadsheet-approach)
 
 ### In Seismic Learning (formerly Lessonly)
@@ -124,6 +125,18 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - **Continuous learning**: Reinforcement learning improves coaching accuracy with every conversation — the more data, the better the guidance.
 - **Enterprise scale**: Designed for 100+ agent contact centers. Fortune 500 customers (United Airlines, Brinks Home, Snap Finance, Intuit). ISO 42001/ISO 27701/PCI-DSS.
 - **Best practice**: Use Cresta for large contact centers (100+ agents) where you need the full stack — real-time coaching during conversations, automated QA, and AI virtual agents on one platform. Cresta has the broadest scope of any contact center AI tool but takes 3-6 months to implement vs Balto's 45-60 days. For faster deployment or smaller teams, consider Balto (real-time guidance + QA) or Enthu.AI (affordable QA automation).
+
+### In Nooks
+
+- **AI call scoring**: Scores 100% of calls using custom scorecards. Define rubrics for opening, discovery questions, objection handling, next steps, compliance — AI evaluates every call automatically.
+- **Peer benchmarking**: Compare individual rep scores against team averages. Identify top performers and reps who need coaching on specific skills.
+- **AI roleplay**: Generates targeted practice scenarios based on real call patterns and upcoming prospect profiles. Reps practice against AI before live calls.
+- **Live battlecards**: Competitive intelligence surfaces in real-time during calls when prospects mention competitors. Reps get counter-positioning and talk tracks instantly.
+- **Virtual salesfloor**: Remote team collaboration space. Managers can shadow live calls, whisper-coach reps (rep hears manager, prospect doesn't), and build a calling culture. Real-time leaderboards for gamification.
+- **Call recording & transcription**: Every call is automatically recorded and transcribed for async review.
+- **Coaching cadence**: Use the auto-scored calls to prioritize 1:1 coaching — focus on reps with low scores in specific categories rather than random call pulls.
+- **Ramp time**: AI coaching features require 2-3 weeks of call data before scoring becomes accurate. Don't evaluate AI scores during the first few weeks.
+- **Best for**: SDR teams using Nooks for dialing who want built-in coaching without adding a separate tool like Gong or Allego. The coaching is phone-call-focused — no demo/meeting coaching capabilities.
 
 ### Manual / Spreadsheet approach
 

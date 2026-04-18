@@ -34,6 +34,7 @@ Detailed per-platform list-building workflows, search filters, import/export pro
 - [Building lists from Clay](#building-lists-from-clay)
 - [Building lists from LeadMagic](#building-lists-from-leadmagic)
 - [Prospecting with AiSDR](#prospecting-with-aisdr)
+- [Building prospect lists in Nooks](#building-prospect-lists-in-nooks)
 
 ### In Apollo.io
 
@@ -319,4 +320,16 @@ Save the search as a dynamic list — new matches will appear automatically.
 - **Jobs Finder**: Search job listings to identify companies with active hiring signals — a proxy for growth and budget.
 - **API-first approach**: All endpoints are REST APIs — pipe results directly into CRM, outbound tools, or Clay for further enrichment.
 - **Best for**: GTM engineers building automated prospecting pipelines via API. Combine with Clay waterfall for maximum coverage.
+
+### Building prospect lists in Nooks
+
+- **Signals & Intelligence module**: 100+ pre-built buyer signals from CRM data, call transcripts, web-based intent, hiring activity, funding events, and competitor usage
+- **Dynamic prospect lists**: Auto-updating lists based on signal combinations — e.g., "companies hiring SDRs + using competitor CRM + raised Series B in last 6 months"
+- **Custom signal builder**: Create proprietary signals from your data sources to define ICP criteria
+- **AI lead prioritization**: Ranks prospects by conversion likelihood based on signal strength, so reps work the highest-potential prospects first
+- **Account research automation**: AI researches accounts 24/7, surfacing relevant context (recent news, tech stack, org structure) before calls
+- **Waterfall enrichment built in**: Once prospects are on a list, Nooks enriches across 9 providers (Apollo, Cognism, ContactOut, Datagma, Forager, LeadIQ, PDL, Prospeo, ZoomInfo) to find verified mobiles and emails
+- **Import sources**: Pull prospects from CRM (Salesforce, HubSpot, Pipedrive), CSV upload, or SEP (Outreach, Salesloft, Apollo)
+- **No standalone prospecting database**: Nooks doesn't have its own contact database like Apollo or ZoomInfo. It enriches contacts you bring in or find via signal-based triggers
+- **Best for**: Teams already using Nooks for dialing who want signal-driven list building integrated with the dialer. For cold prospecting from scratch (finding new contacts at new companies), use Apollo, ZoomInfo, or Seamless.AI first, then import into Nooks
 
