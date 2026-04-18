@@ -222,6 +222,7 @@ Router recommends a 5-skill sequence:
 | `/sales-aisdr` | AiSDR — AI-powered SDR, autonomous cold email + LinkedIn outreach, 700M+ contacts, email warmup, HubSpot integration |
 | `/sales-qualified` | Qualified — Piper AI SDR Agent, agentic marketing, real-time website chat, Signals buyer intent, Salesforce-native routing |
 | `/sales-nooks` | Nooks — AI-native parallel dialer workspace, multi-channel sequencing, AI coaching (scorecards, roleplay, battlecards, virtual salesfloor), waterfall enrichment (9 providers), ~$5K/user/yr |
+| `/sales-orum` | Orum — AI parallel dialer (up to 10 lines), AI Coaching Suite (scorecards, roleplay, coaching portals), virtual salesfloor, spam detection/number rotation, Salesforce/HubSpot/Outreach/Salesloft/Gong/Apollo integrations, Launch $250/user/mo / Ascend $400-500+/user/mo |
 
 </details>
 

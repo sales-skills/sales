@@ -16,6 +16,7 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - [Demodesk](#in-demodesk)
 - [Balto](#in-balto)
 - [Nooks](#in-nooks)
+- [Orum](#in-orum)
 - [Manual / Spreadsheet](#manual--spreadsheet-approach)
 
 ### In Seismic Learning (formerly Lessonly)
@@ -137,6 +138,18 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - **Coaching cadence**: Use the auto-scored calls to prioritize 1:1 coaching — focus on reps with low scores in specific categories rather than random call pulls.
 - **Ramp time**: AI coaching features require 2-3 weeks of call data before scoring becomes accurate. Don't evaluate AI scores during the first few weeks.
 - **Best for**: SDR teams using Nooks for dialing who want built-in coaching without adding a separate tool like Gong or Allego. The coaching is phone-call-focused — no demo/meeting coaching capabilities.
+
+### In Orum
+
+- **AI Coaching Suite** (Ascend tier only): Automated analysis of call recordings at scale. Trained on 1 billion+ real sales calls.
+- **AI Scorecards**: Custom rubrics for opening, discovery questions, objection handling, closing. AI evaluates every call automatically.
+- **Coaching Portals**: Personalized dashboards for each rep with actionable coaching insights and performance trends.
+- **AI Roleplay**: Practice scenarios generated from real call patterns. Reps practice against AI before live calls.
+- **Live listen**: Managers can shadow live calls and whisper-coach reps in real time without the prospect hearing.
+- **Call Library**: Searchable library of call recordings with customizable playlists and tagging for coaching review.
+- **Virtual Salesfloor**: Real-time leaderboards and team visibility. Replicates in-office calling floor energy for remote teams.
+- **Ramp time**: AI coaching features need 2-3 weeks of call data before scoring is useful. Don't evaluate AI scores during initial deployment.
+- **Best for**: SDR teams on Orum Ascend tier who want built-in coaching alongside their dialing. Phone-call-focused — no demo/meeting coaching. Teams on Launch tier don't get coaching features — use a separate tool like Gong or Allego.
 
 ### Manual / Spreadsheet approach
 

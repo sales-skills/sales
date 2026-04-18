@@ -23,6 +23,7 @@ Detailed per-platform cadence setup — campaign types, channel support, A/B tes
 - [In Clay (Email Sequencer)](#in-clay-email-sequencer)
 - [In AiSDR](#in-aisdr)
 - [In Nooks](#in-nooks)
+- [In Orum](#in-orum)
 
 ## In Mailshake
 - Mailshake campaigns = cadences — a campaign has an initial message plus follow-ups
@@ -255,3 +256,14 @@ Detailed per-platform cadence setup — campaign types, channel support, A/B tes
 - **SEP integration**: Pulls call tasks from Outreach, Salesloft, or Apollo sequences into the Nooks dialer, then logs results back
 - **No standalone email warmup**: Nooks focuses on phone-first outbound. For email warmup, use a dedicated tool (Smartlead, Lemlist, etc.)
 - **Best for**: SDR teams running high-volume outbound where cold calling is the primary channel. The parallel dialer is the core — sequencing wraps around it. Teams that are email-first should consider Outreach, Salesloft, or Apollo instead
+
+## In Orum
+
+- **Phone-only dialer**: Orum is a dedicated calling platform — no email sequencing, SMS, or LinkedIn automation. All multi-channel cadence steps must be handled by a separate SEP (Outreach, Salesloft, Apollo)
+- **SEP integration**: Pulls call tasks from Outreach, Salesloft, or Apollo sequences. Call outcomes, recordings, and notes sync back automatically
+- **Parallel dialing**: Up to 5 lines (Launch) or 10 lines (Ascend). AI detects live answers, auto-skips voicemails and phone trees
+- **Power dialing**: Single-line mode for high-value prospects where connection quality matters more than volume
+- **CRM sync**: Activities auto-log to Salesforce or HubSpot — outcome, duration, recording, notes
+- **Voicemail sequencing**: Automated voicemail follow-up sequences (Ascend tier only)
+- **No email warmup or deliverability**: Orum handles phone only. For email warmup, use your SEP or a dedicated tool
+- **Best for**: Teams that already have Outreach/Salesloft for email sequences and want a dedicated, best-in-class dialing layer. Not suited for teams wanting a single tool for all channels — consider Nooks instead
