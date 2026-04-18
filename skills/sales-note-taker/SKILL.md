@@ -59,7 +59,18 @@ Otherwise, answer directly below.
 
 ## Step 3 — Platform reference
 
-For platform-by-platform detail — API type, auth, transcript/recording endpoints, webhook triggers, rate limits, pricing, and when to pick each — read `references/platforms.md`.
+**Start with `references/platforms.md`** for the quick comparison table across all platforms.
+
+Then read the detailed file matching the user's segment:
+
+| Segment | File | When to read |
+|---|---|---|
+| SMB / budget | `references/platforms-smb.md` | Budget < $50/user/mo, small teams, free-tier shoppers |
+| Mid-market / sales | `references/platforms-midmarket.md` | Sales-focused teams, methodology scorecards, coaching, CRM enrichment |
+| Enterprise / revenue | `references/platforms-enterprise.md` | $1K+/user/yr budget, revenue intelligence, bolt-on CI |
+| Field / in-person | `references/platforms-field.md` | In-person sales, field reps, mobile recording |
+
+For comparison questions spanning segments (e.g., "Fathom vs Gong"), read both relevant files.
 
 Answer using only the relevant section(s) — don't dump the full reference.
 
