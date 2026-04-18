@@ -38,6 +38,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | VoiceToNotes | Personal voice-to-text | Yes (10/day, 300 min/mo) | $1/mo | None (Pro Annual only, undocumented) | None | None | Ultra-cheap personal voice notes, HIPAA compliance, OCR |
 | Outdoo | AI roleplay + coaching + revenue intelligence | Yes (limited) | ~$660-1,200/user/yr | REST (Enterprise only) | None documented | Deep (11 CRMs, auto-fill) | Closed-loop coaching: AI roleplay + real-call scoring + CRM auto-fill, mid-market Gong alternative |
 | Jiminny | Conversation + revenue intelligence | No (14-day trial) | $83/mo (Recording) | REST (partial) | None documented | Deep (8 CRMs native) | Coaching-focused conversation intelligence, mid-market, no platform fee |
+| Enthu.AI | Contact center QA + coaching | No (free trial) | ~$15-69/user/mo | Not published | Not published | Medium (HubSpot/Pipedrive/Bullhorn/Close) | Contact center QA auto-scoring on 100% of calls, compliance, affordable |
 
 ## Fathom
 
@@ -1176,6 +1177,40 @@ For deep platform coverage (modules, pricing, CRM integration, API, dialer conne
 **Selection notes**:
 - **Pick Jiminny when**: Budget matters vs Gong ($83/mo vs $133/mo + platform fee), you need coaching-focused conversation intelligence without deep analytics, your CRM is Bullhorn/Close/Copper/Dynamics (Gong doesn't support these natively), you want call/email/video capture in one platform, or your team uses a supported dialer and wants seamless recording
 - **Avoid Jiminny when**: You need the deepest analytics and deal intelligence ecosystem (→ Gong), you need a rich API with webhooks for event-driven pipelines (→ Gong, Fireflies, Fathom), you need a free tier (→ Fathom, Fireflies, Otter), you need transparent self-serve pricing (→ Fathom, Fireflies), or transcription accuracy with accents is critical
+
+---
+
+## Enthu.AI
+
+For deep platform coverage (modules, pricing, QA scorecard setup, dialer integrations, compliance monitoring), use `/sales-enthu`.
+
+**Positioning**: Lightweight AI-powered call QA and coaching for small-to-mid contact centers. Scores 100% of calls against custom QA scorecards (not sampling). Fast setup (hours not months), no minimum agent commitments. Positioned as an affordable alternative to Gong and CallMiner for contact center QA.
+
+**Pricing (2026-04)**: Not transparently published. Review sites report $15/mo (SoftwareSuggest), $59/user/mo (SourceForge), $69/user/mo (Zonka article). Custom pricing based on agent count and call volume. Free trial available. No minimum commitments.
+
+**API**:
+- Not publicly documented
+- Enthu mentions "secure APIs and pre-built connectors" but no published REST/GraphQL docs
+- GetApp lists "API not available" (may be outdated)
+- Custom integrations built during onboarding at no extra charge
+
+**Integrations**:
+- Dialers: Aircall, RingCentral, Freshcaller, Twilio, GoToConnect, Dialpad
+- CRM: HubSpot, Pipedrive, Bullhorn, Close
+- Meetings: Zoom, Webex
+- Custom telephony integrations available on request
+
+**Key features**:
+- Auto QA scoring on 100% of calls with custom scorecards
+- Agent coaching with auto-flagged coaching moments
+- Sentiment analysis and keyword tracking
+- Compliance monitoring with PII auto-redaction
+- Multi-language transcription
+- Real-time alerts for threshold violations
+
+**Selection notes**:
+- **Pick Enthu.AI when**: You need affordable QA auto-scoring for a contact center, fast setup without enterprise implementation, no minimum agent count, compliance-heavy environment (PII redaction, disclosure checking), or evaluating alongside Gong/CallMiner
+- **Avoid Enthu.AI when**: You need revenue intelligence and deal analytics (→ Gong), you need a documented API for custom integrations (→ Gong, Fireflies, Fathom), you need a free tier (→ Fathom, Fireflies), you need deep coaching programs with role-plays (→ Outdoo, Allego), or your team >200 agents and needs enterprise-grade reporting (→ NICE, CallMiner)
 
 ---
 

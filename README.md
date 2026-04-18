@@ -191,6 +191,7 @@ Router recommends a 5-skill sequence:
 | `/sales-voicetonotes` | VoiceToNotes platform help — ultra-cheap AI voice-to-text ($1/mo unlimited), HIPAA/SOC 2 compliance, real-time transcription, AI summaries, grammar correction, OCR, web + iOS + Android, no integrations |
 | `/sales-outdoo` | Outdoo (formerly MeetRecord) platform help — AI roleplay coaching, conversation intelligence, revenue intelligence, CRM automation with MEDDIC/SPIN/BANT, 120+ integrations, Open API (Enterprise), mid-market Gong alternative |
 | `/sales-jiminny` | Jiminny platform help — conversation intelligence, revenue intelligence, AI notetaker, sales coaching, automatic CRM logging, 8 native CRM integrations, partial REST API, mid-market Gong alternative |
+| `/sales-enthu` | Enthu.AI platform help — contact center conversation intelligence with auto QA scorecards on 100% of calls, agent coaching, compliance monitoring, sentiment analysis, Aircall/RingCentral/HubSpot/Pipedrive integrations, affordable Gong/CallMiner alternative |
 | `/sales-craft` | Craft platform help — AI growth engine for home services with real-time in-appointment field coaching, 24/7 AI call center, revenue recovery agents, ServiceTitan/Salesforce/HubSpot/Jobber/AccuLynx/Housecall Pro integrations |
 | `/sales-deal-inspect` | Inspect deal health, map stakeholders, identify risks, recommend next actions |
 | `/sales-forecast` | Build and validate revenue forecasts with pipeline coverage and gap analysis |

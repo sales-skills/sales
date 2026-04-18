@@ -204,6 +204,14 @@ If a follow-up call was booked, draft a proposed agenda:
 - **Pipeline context** — Revenue intelligence surfaces which deals are at risk, letting managers prioritize which call reviews will have the most impact on pipeline.
 - **Note**: Jiminny's call scoring is more coaching-focused and accessible than Gong's deep analytics. Better for mid-market teams wanting structured coaching without Gong-level pricing.
 
+### In Enthu.AI
+- **100% auto-QA scoring** — Enthu scores every call against your custom QA scorecard (not sampling). Supervisors see calls ranked by priority with coaching moments flagged.
+- **Custom scorecards** — Define evaluation criteria specific to your team: required disclosures, tone, script adherence, issue resolution, compliance. Mix binary and scaled criteria.
+- **Sentiment analysis** — Tracks sentiment shifts during calls, identifies at-risk customer interactions and escalation-worthy moments.
+- **Keyword tracking** — Monitor specific phrases, competitor mentions, and compliance language across all calls.
+- **Compliance monitoring** — Auto-redacts PII from transcripts, checks script adherence, flags compliance violations.
+- **Note**: Enthu.AI is best for contact center QA at small-to-mid scale — fast setup (hours not months), no minimums, affordable ($15-69/user/mo). Lacks Gong's deal intelligence and revenue forecasting. Stronger on QA automation than coaching depth.
+
 ## Related skills
 
 - `/sales-jiminny` — Jiminny platform help (coaching-focused conversation intelligence, revenue intelligence, 8 CRM integrations)
@@ -218,6 +226,7 @@ If a follow-up call was booked, draft a proposed agenda:
 - `/sales-zoominfo` — ZoomInfo platform help (Chorus conversation intelligence, Momentum deal insights)
 - `/sales-salesask` — Sales Ask platform help (field + call center AI coaching, Coach Dean active feedback, home services vertical)
 - `/sales-outdoo` — Outdoo platform help (AI roleplay coaching, conversation intelligence, revenue intelligence, CRM automation, mid-market Gong alternative)
+- `/sales-enthu` — Enthu.AI platform help (contact center QA with auto-scoring, agent coaching, compliance monitoring, affordable Gong alternative)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Gotchas

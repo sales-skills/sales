@@ -177,6 +177,15 @@ Ask the user:
 - **CRM auto-logging**: Call notes and coaching data sync to Salesforce/HubSpot/Pipedrive/Zoho/Close/Bullhorn/Copper/Dynamics automatically, so reps spend time selling not logging.
 - **Best practice**: Use Jiminny when you want conversation intelligence + coaching in one tool at mid-market pricing (no Gong platform fee). Jiminny is stronger in coaching accessibility than deep analytics.
 
+### In Enthu.AI
+
+- **Auto QA scoring**: Enthu scores 100% of calls against custom QA scorecards — no sampling. Supervisors see calls ranked by coaching priority.
+- **Coaching moments**: AI flags specific call segments that need coaching attention, linked to scorecard criteria that scored low.
+- **Agent self-review**: Agents can see their own scored calls and coaching insights, building self-awareness before manager coaching sessions.
+- **Sentiment and keyword tracking**: Automated sentiment analysis and keyword detection across all calls — useful for coaching on tone, compliance language, and competitor handling.
+- **Fast setup**: Go live in hours, not weeks. No minimum agent commitments. Pricing starts at ~$15-69/user/mo.
+- **Best practice**: Use Enthu.AI when you need automated QA scoring for a contact center without the budget or implementation timeline for Gong or CallMiner. Strongest for compliance-heavy teams (PII redaction, disclosure checking). Lighter on structured coaching programs than Seismic Learning or Allego.
+
 ### Manual / Spreadsheet approach
 
 - **Google Docs**: Create onboarding checklists and coaching templates. Works for <10 reps.
@@ -227,6 +236,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-craft` — Craft platform help (real-time in-appointment AI coaching, 24/7 AI call center, revenue recovery agents, home services)
 - `/sales-outdoo` — Outdoo platform help (AI roleplay coaching, conversation intelligence, revenue intelligence, CRM automation, mid-market Gong alternative)
 - `/sales-jiminny` — Jiminny platform help (coaching-focused conversation intelligence, revenue intelligence, 8 CRM integrations, mid-market Gong alternative)
+- `/sales-enthu` — Enthu.AI platform help (contact center QA with auto-scoring, agent coaching, compliance monitoring, affordable Gong alternative)
 - `/sales-call-review` — Review specific sales calls and extract coaching insights
 - `/sales-note-taker` — Picking an AI note-taker (Fathom, Fireflies, Avoma, Gong, etc.) or wiring its API to feed your coaching program
 - `/sales-content` — Sales content for training and enablement programs
