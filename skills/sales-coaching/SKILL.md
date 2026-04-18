@@ -257,6 +257,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-jiminny` — Jiminny platform help (coaching-focused conversation intelligence, revenue intelligence, 8 CRM integrations, mid-market Gong alternative)
 - `/sales-enthu` — Enthu.AI platform help (contact center QA with auto-scoring, agent coaching, compliance monitoring, affordable Gong alternative)
 - `/sales-demodesk` — Demodesk platform help (AI coaching scorecards, conversation intelligence, autonomous AI agents, GDPR-native)
+- `/sales-clari-copilot` — Clari Copilot platform help (real-time battlecards, live coaching during calls, coaching scorecards, gametapes, enterprise CI)
 - `/sales-revenue-io` — Revenue.io platform help (Salesforce-native, Moments real-time in-call coaching, AI scoring with 400+ criteria, Revenue Intelligence dashboards)
 - `/sales-call-review` — Review specific sales calls and extract coaching insights
 - `/sales-note-taker` — Picking an AI note-taker (Fathom, Fireflies, Avoma, Gong, etc.) or wiring its API to feed your coaching program

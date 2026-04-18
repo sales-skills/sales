@@ -40,6 +40,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Jiminny | Conversation + revenue intelligence | No (14-day trial) | $83/mo (Recording) | REST (partial) | None documented | Deep (8 CRMs native) | Coaching-focused conversation intelligence, mid-market, no platform fee |
 | Enthu.AI | Contact center QA + coaching | No (free trial) | ~$15-69/user/mo | Not published | Not published | Medium (HubSpot/Pipedrive/Bullhorn/Close) | Contact center QA auto-scoring on 100% of calls, compliance, affordable |
 | Demodesk | AI sales meeting platform + coaching + agents | Yes (14-day trial) | €49/user/mo | REST (V2) | Yes (13 events) | Deep (Salesforce/HubSpot/Pipedrive) | AI-first conversation intelligence with autonomous agents, GDPR-native EU teams |
+| Clari Copilot | Revenue CI + live coaching | No (30-day trial) | ~$60/user/mo | REST (Core API, Enterprise) | None documented | Deep (Salesforce/HubSpot/Pipedrive) | Enterprise CI tightly integrated with Clari revenue forecasting, real-time battlecards |
 
 ## Fathom
 
@@ -1254,6 +1255,30 @@ For deep platform coverage (modules, pricing, QA scorecard setup, dialer integra
 ## Bolt-on conversation intelligence (inside other platforms)
 
 These aren't standalone note-takers — they're modules within existing sales tools. Only relevant if you already use the parent platform.
+
+## Clari Copilot
+
+For deep platform coverage (API endpoints, pricing tiers, battlecard config, coaching scorecards, CRM sync), use `/sales-clari-copilot`.
+
+**Positioning**: Enterprise conversation intelligence embedded within Clari's revenue orchestration platform. Best for teams already using or considering Clari Core for forecasting. Acquired Salesloft in late 2025 — platform consolidating sales engagement + CI + forecasting.
+
+**Pricing (2026-04)**: Growth ~$60/user/mo, Accelerator ~$90/user/mo, Enterprise ~$110/user/mo. No free tier (30-day trial). Implementation $15K-75K. API access Enterprise-only.
+
+**API**: Clari Core API at `api.clari.com/v4` — forecast export, data ingestion, audit events, opportunity retrieval. API key auth via `apikey` header, 100 req/sec. Copilot-specific API at `api-doc.copilot.clari.com` (Enterprise-only, JS-rendered docs, described as "primitive but functional").
+
+**CRM**: Salesforce (deepest — native bi-directional), HubSpot (call recording links in contact records), Pipedrive (basic).
+
+**Key differentiators**: Real-time battlecards during calls (not just post-call), direct integration with Clari's forecasting engine (call signals feed deal scores), "Ask Clari" conversational AI trained on org's call data, Smart Deal Summaries saving ~30 min per review.
+
+**Limitations**: 15-language transcription only (vs Gong 70+, Notta 58), steep learning curve, bot joining delays reported, CRM sync requires clean pre-existing data.
+
+**When to pick**: You already use Clari Core for forecasting and want CI in the same platform. You want real-time battlecards during calls. Budget is $60-110/user/mo and you're willing to invest in implementation.
+
+**When NOT to pick**: Budget under $60/user/mo, team < 15 reps, need 30+ languages, want a simple plug-and-play tool, or you're not using/planning Clari Core.
+
+---
+
+## Bolt-on conversation intelligence (not standalone)
 
 - **Revenue.io Conversation Intelligence** — inside Revenue.io (Orchestrate tier); covered by `/sales-revenue-io`
 - **Salesloft Conversations** — inside Salesloft; covered by `/sales-salesloft`
