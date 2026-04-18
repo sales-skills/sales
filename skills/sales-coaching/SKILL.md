@@ -186,6 +186,16 @@ Ask the user:
 - **Fast setup**: Go live in hours, not weeks. No minimum agent commitments. Pricing starts at ~$15-69/user/mo.
 - **Best practice**: Use Enthu.AI when you need automated QA scoring for a contact center without the budget or implementation timeline for Gong or CallMiner. Strongest for compliance-heavy teams (PII redaction, disclosure checking). Lighter on structured coaching programs than Seismic Learning or Allego.
 
+### In Demodesk
+
+- **Custom AI scorecards**: Create coaching scorecards with BANT, MEDDIC, SPIN templates or build custom criteria. AI auto-scores every call on a 1-5 scale per question.
+- **Performance dashboards**: Track team improvement over time with aggregated coaching metrics — identify patterns in what separates top performers.
+- **Deal risk detection**: AI Analyst surfaces deals at risk from conversation signals, helping managers focus coaching on the most impactful deals.
+- **Speaker analytics**: Talk-to-listen ratio, engagement scores, and words-per-minute metrics for data-driven coaching conversations.
+- **AI-drafted follow-ups**: Follow-up emails auto-drafted from call content — useful for coaching reps on post-meeting execution.
+- **Pipeline-informed coaching**: "Ask AI Analyst" lets managers query pipeline data in natural language to identify coaching opportunities.
+- **Best practice**: Use Demodesk when you want AI coaching scorecards + autonomous deal management (AI Crew) in one platform. Stronger than Gong on autonomous action (agents rescue stalled deals automatically) but lighter on coaching program structure than Seismic Learning or Allego. GDPR-native (EU data centers only).
+
 ### Manual / Spreadsheet approach
 
 - **Google Docs**: Create onboarding checklists and coaching templates. Works for <10 reps.
@@ -237,6 +247,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-outdoo` — Outdoo platform help (AI roleplay coaching, conversation intelligence, revenue intelligence, CRM automation, mid-market Gong alternative)
 - `/sales-jiminny` — Jiminny platform help (coaching-focused conversation intelligence, revenue intelligence, 8 CRM integrations, mid-market Gong alternative)
 - `/sales-enthu` — Enthu.AI platform help (contact center QA with auto-scoring, agent coaching, compliance monitoring, affordable Gong alternative)
+- `/sales-demodesk` — Demodesk platform help (AI coaching scorecards, conversation intelligence, autonomous AI agents, GDPR-native)
 - `/sales-call-review` — Review specific sales calls and extract coaching insights
 - `/sales-note-taker` — Picking an AI note-taker (Fathom, Fireflies, Avoma, Gong, etc.) or wiring its API to feed your coaching program
 - `/sales-content` — Sales content for training and enablement programs

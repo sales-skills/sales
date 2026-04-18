@@ -39,6 +39,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Outdoo | AI roleplay + coaching + revenue intelligence | Yes (limited) | ~$660-1,200/user/yr | REST (Enterprise only) | None documented | Deep (11 CRMs, auto-fill) | Closed-loop coaching: AI roleplay + real-call scoring + CRM auto-fill, mid-market Gong alternative |
 | Jiminny | Conversation + revenue intelligence | No (14-day trial) | $83/mo (Recording) | REST (partial) | None documented | Deep (8 CRMs native) | Coaching-focused conversation intelligence, mid-market, no platform fee |
 | Enthu.AI | Contact center QA + coaching | No (free trial) | ~$15-69/user/mo | Not published | Not published | Medium (HubSpot/Pipedrive/Bullhorn/Close) | Contact center QA auto-scoring on 100% of calls, compliance, affordable |
+| Demodesk | AI sales meeting platform + coaching + agents | Yes (14-day trial) | €49/user/mo | REST (V2) | Yes (13 events) | Deep (Salesforce/HubSpot/Pipedrive) | AI-first conversation intelligence with autonomous agents, GDPR-native EU teams |
 
 ## Fathom
 
@@ -1211,6 +1212,42 @@ For deep platform coverage (modules, pricing, QA scorecard setup, dialer integra
 **Selection notes**:
 - **Pick Enthu.AI when**: You need affordable QA auto-scoring for a contact center, fast setup without enterprise implementation, no minimum agent count, compliance-heavy environment (PII redaction, disclosure checking), or evaluating alongside Gong/CallMiner
 - **Avoid Enthu.AI when**: You need revenue intelligence and deal analytics (→ Gong), you need a documented API for custom integrations (→ Gong, Fireflies, Fathom), you need a free tier (→ Fathom, Fireflies), you need deep coaching programs with role-plays (→ Outdoo, Allego), or your team >200 agents and needs enterprise-grade reporting (→ NICE, CallMiner)
+
+---
+
+## Demodesk
+
+**Category**: AI sales meeting platform — conversation intelligence + coaching + CRM automation + autonomous agents
+**Pricing**: €49/user/mo (annual) / €59/mo (monthly), Enterprise custom, AI Crew add-on €299-999/mo, free viewer seats
+**Free tier**: 14-day trial only
+**API**: REST V2 (`https://demodesk.com/api/v2/`), `api-key` header auth, 120 req/min global
+**Webhooks**: 13 events (demo lifecycle + recording events), requires email to support@demodesk.com for activation
+**CRM**: Salesforce, HubSpot, Pipedrive (native — auto-create events, field updates, scheduling buttons, duplicate prevention)
+**Conferencing**: Zoom, Microsoft Teams, Google Meet, Webex
+**Dialers**: Aircall, RingCentral
+**Languages**: 98 languages (auto-detected)
+**Compliance**: GDPR-native (EU data centers only, Azure Frankfurt), ISO 27001:2022
+**Mobile**: iOS/Android app for offline/in-person meeting capture
+
+**Key features**:
+- AI Assistant: recording, transcription, summaries, follow-up email drafting, CRM auto-update
+- AI Coach: custom scorecards (BANT, MEDDIC, SPIN), 1-5 scoring, performance dashboards, deal risk detection
+- AI Analyst: pipeline insights, "Ask AI Analyst" natural-language queries
+- AI CRM Concierge: zero-setup CRM field detection with human-in-the-loop verification (99-100% accuracy)
+- AI Crew (add-on): autonomous agents for stalled deal rescue, automated follow-ups, triggered by custom logic
+- Speaker analytics: talk-to-listen ratio, engagement, words-per-minute
+
+**API endpoints** (V2 — recommended):
+- `GET /recordings` — list with Ransack-style filters, cursor pagination
+- `GET /recordings/{token}` — detail with participants, engagement scores
+- `GET /recordings/{token}/transcript` — plaintext or JSON with speaker timestamps
+- `POST /transcripts/batch` — batch up to 100 recording tokens
+- `GET /recordings/{token}/summaries` — AI-generated summaries with prompt metadata
+- `GET /recordings/{token}/scorecards` — coaching scorecards with scores and comments
+
+**Selection notes**:
+- **Pick Demodesk when**: You need conversation intelligence + autonomous AI agents that act on insights, your team is EU-based and needs GDPR-native hosting, you want zero-setup CRM updates with human verification, you need coaching scorecards + pipeline analytics in one tool without Gong's platform fee, or you want 98-language transcription
+- **Avoid Demodesk when**: You need a free tier for individual use (→ Fathom, Fireflies), you need bot-free recording without silent capture (→ Granola, Jamie), you need field sales / in-person coaching (→ Rilla, Siro), you need self-service webhook setup (Demodesk requires emailing support), or your team is budget-constrained below €49/user/mo (→ Fathom, MeetGeek)
 
 ---
 
