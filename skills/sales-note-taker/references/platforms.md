@@ -30,6 +30,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Bluedot | Bot-free AI note-taker | No (5 lifetime) | $14/mo | None (webhooks only) | Yes (Svix) | Medium (HubSpot/Salesforce, Business+) | Bot-free video recording, Chrome-first teams, screen recording |
 | Notta | AI meeting transcription (58 languages) | Yes (120 min/mo) | $13.99/mo | None (Zapier only) | None (Zapier only) | Medium (5 CRMs, Business+) | Multilingual global teams, 58-language transcription |
 | Lindy | AI agent builder (notes are one module) | Yes (free trial) | $49.99/mo | None | Inbound only | Indirect (via workflow) | All-in-one AI assistant (email + meetings + calendar + workflows) |
+| Rilla | Field sales AI coaching | No | ~$199-349/rep/mo | None (via Merge) | Yes (Merge) | Medium (5 CRMs via Merge) | In-person field sales coaching, virtual ridealongs, home services |
 
 ## Fathom
 
@@ -936,6 +937,35 @@ For deep platform coverage (all modules, workflow builder, credit system, integr
 **Selection notes**:
 - **Pick Lindy when**: You want a single AI assistant for email + meetings + calendar, you value natural language task delegation via iMessage/Slack, you're already building custom AI workflows in Lindy, you want meeting prep briefings alongside note-taking, or you prefer a generalist tool over multiple specialized ones
 - **Avoid Lindy when**: You need a dedicated note-taker with deep CRM field-mapping (→ Fathom, Gong, Avoma), you need conversation analytics and coaching (→ Gong, tl;dv, Avoma), you need a public API to build transcript pipelines (→ Fathom, Fireflies, Gong), you need predictable pricing without credit anxiety (→ Fathom free tier, tl;dv free tier), you need transcript search across hundreds of meetings (→ Fireflies, Gong), or you need production-grade webhooks for meeting events (→ Fathom, Fireflies, Sembly)
+
+---
+
+## Rilla
+
+For deep platform coverage (setup, CRM integration via Merge, scorecard customization, recording best practices, field sales competitor comparison), use `/sales-rilla`.
+
+**Positioning**: The only conversation intelligence tool built specifically for outside/field sales. Records in-person customer conversations via mobile app and provides AI coaching through virtual ridealongs. Dominant in home services (HVAC, plumbing, roofing, solar, windows, dental, senior living).
+
+**Pricing (2026-04)**: Not publicly listed. Estimated ~$199-349/rep/month (~$4,000+/user/year). Annual contract required, 5-user minimum. Implementation fee $1,500-$5,000.
+
+**API**: No public API documentation. CRM integrations built through Merge's CRM Unified API (Salesforce, HubSpot, Zoho, Pipedrive, Microsoft Dynamics). Webhooks fire on CRM appointment field changes via Merge. Custom integrations require contacting Rilla.
+
+**Webhooks**: Via Merge — fires when appointment fields change in CRM (date, status, etc.). Real-time notification to Rilla with appointment context.
+
+**Integrations**: Salesforce, HubSpot, Zoho, Pipedrive, Dynamics (via Merge), ServiceTitan, SPOTIO. No Zapier/Make/n8n connectors.
+
+**Known issues (from G2/Capterra reviews)**:
+- Transcription accuracy degrades in noisy environments (basements, construction sites, outdoor)
+- Speaker mix-ups when multiple people talk simultaneously
+- Processing time 15-30+ minutes after recording (not real-time)
+- Battery drain from sustained mobile recording
+- No phone call recording — in-person only
+- Annual contract lock-in with reported billing issues after cancellation
+- No public API — can't build custom transcript pipelines
+
+**Selection notes**:
+- **Pick Rilla when**: Your sales team does in-person presentations (home services, field sales), you need to replace physical ridealongs with scalable AI coaching, you want CRM sync for field appointment context, and your budget supports $4K+/user/year
+- **Avoid Rilla when**: Your team sells over phone/video (→ Fathom, Fireflies, Gong), you need real-time coaching during the appointment (→ Craft), you need a public API for transcript pipelines (→ Fathom, Fireflies, Gong), you want month-to-month pricing (→ most alternatives), or your team has <5 reps (minimum license requirement)
 
 ---
 

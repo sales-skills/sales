@@ -182,6 +182,7 @@ Router recommends a 5-skill sequence:
 | `/sales-bluedot` | Bluedot platform help — bot-free AI note-taker with video recording, Chrome extension + desktop/mobile apps, Svix webhooks, HubSpot/Salesforce CRM sync, screen recording, pricing tiers |
 | `/sales-notta` | Notta platform help — AI meeting transcription in 58 languages, Notta Bot, Notta Brain cross-meeting AI, Zapier automation, CRM sync to Salesforce/HubSpot/Zoho/Freshsales/Salesflare, pricing tiers |
 | `/sales-lindy` | Lindy platform help — no-code AI agent builder for email triage, meeting notes, calendar management, custom workflow automation, chatbots, AI phone agents, 4,000+ integrations, credit-based pricing tiers |
+| `/sales-rilla` | Rilla platform help — AI coaching for in-person/field sales, virtual ridealongs, mobile recording, CRM sync via Merge, ServiceTitan/SPOTIO integrations, pricing tiers |
 | `/sales-deal-inspect` | Inspect deal health, map stakeholders, identify risks, recommend next actions |
 | `/sales-forecast` | Build and validate revenue forecasts with pipeline coverage and gap analysis |
 
