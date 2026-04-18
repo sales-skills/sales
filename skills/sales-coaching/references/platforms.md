@@ -114,6 +114,17 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - **Agent ramp acceleration**: New agents get real-time guidance from day one, reducing ramp time by up to 50% (per Balto case studies). The AI surface what top performers do differently and coaches newer agents to match.
 - **Best practice**: Use Balto for high-volume contact centers (50+ agents) where real-time intervention during calls is more valuable than post-call coaching. Balto is strongest for compliance-heavy industries (financial services, insurance, healthcare, telecom). For post-call coaching programs and structured learning paths, pair Balto with Seismic Learning or Allego — Balto coaches during calls, they coach between calls.
 
+### In Cresta
+
+- **Real-time agent coaching**: Cresta's Agent Assist delivers Behavioral Guidance prompts during live conversations — learned from top-performer patterns, not static scripts. Works across voice and chat channels.
+- **Knowledge Agent**: Proactively surfaces cited answers from connected knowledge sources (Salesforce, Google Drive, SharePoint, Zendesk, Bloomfire, Shelf) via a persistent browser sidebar. Agents get answers without tab-switching.
+- **Automated QA on 100% of conversations**: Quality Management scores every conversation against custom criteria. Supervisors see calls ranked by coaching priority — no more 2% random sampling.
+- **AI Analyst**: Natural-language querying of conversation data — managers can ask "which agents struggle with upselling" and get data-driven answers.
+- **Coach module**: Identifies skill gaps per agent from conversation data, tracks improvement over time, surfaces specific coaching opportunities.
+- **Continuous learning**: Reinforcement learning improves coaching accuracy with every conversation — the more data, the better the guidance.
+- **Enterprise scale**: Designed for 100+ agent contact centers. Fortune 500 customers (United Airlines, Brinks Home, Snap Finance, Intuit). ISO 42001/ISO 27701/PCI-DSS.
+- **Best practice**: Use Cresta for large contact centers (100+ agents) where you need the full stack — real-time coaching during conversations, automated QA, and AI virtual agents on one platform. Cresta has the broadest scope of any contact center AI tool but takes 3-6 months to implement vs Balto's 45-60 days. For faster deployment or smaller teams, consider Balto (real-time guidance + QA) or Enthu.AI (affordable QA automation).
+
 ### Manual / Spreadsheet approach
 
 - **Google Docs**: Create onboarding checklists and coaching templates. Works for <10 reps.

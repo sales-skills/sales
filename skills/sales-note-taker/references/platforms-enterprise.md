@@ -88,6 +88,30 @@ For deep platform coverage (API endpoints, pricing tiers, battlecard config, coa
 
 ---
 
+## Cresta
+
+For deep platform coverage (all modules, pricing, integrations, implementation planning), use `/sales-cresta`.
+
+**Positioning**: Enterprise contact center AI platform — the broadest scope in the category, combining real-time agent coaching, AI virtual agents, and conversation intelligence/QA on one platform. Targets Fortune 500 with 100+ agent contact centers. Forrester Wave Leader for Conversation Intelligence Solutions for Contact Centers, Q2 2025.
+
+**Pricing (2026-04)**: $60K-$150K/yr, custom quotes. AWS Marketplace: $150K/yr for 125K chats or 100K calls + $1.20/chat, $1.50/call overages. Annual contracts. Smaller deployments reportedly start around $60K/yr.
+
+**API**: Developer portal at developers.cresta.com. SDK/API exists for CCaaS integration but no public endpoint documentation — docs behind auth/demo request. REST + webhooks reported.
+
+**CRM**: Salesforce, ServiceNow, Pega, Dynamics 365, HubSpot, Zendesk, Pipedrive, Oracle, Intercom, Zoho.
+
+**CCaaS integrations**: Five9, Amazon Connect, NICE CXone, Genesys, Avaya, LivePerson, Twilio, Cisco, SIPREC.
+
+**Key differentiators**: AI virtual agents (not just coaching — can handle conversations autonomously), Knowledge Agent (proactive cited answers from connected knowledge bases during calls), Agent Operations Center (unified monitoring of human + AI agents), Automation Discovery (identifies which conversations to automate). Broadest contact center AI scope — competitors focus on subsets (Balto = real-time guidance, Gong = post-call analytics).
+
+**Limitations**: 3-6 month implementation (vs Balto 45-60 days), no public API docs, opaque pricing, transcription accuracy varies with accents, backend integration requires engineering resources, vendor lock-in risk.
+
+**When to pick**: You're Fortune 500 / 100+ agent contact center, want the full AI stack (virtual agents + real-time coaching + QA + analytics), have budget for $60K-$150K/yr + 3-6 month implementation, and value unified platform over best-of-breed.
+
+**When NOT to pick**: Budget under $60K/yr, team under 100 agents, need fast deployment (→ Balto), primarily need post-call sales analytics (→ Gong), or want transparent pricing and public API docs.
+
+---
+
 ## Bolt-on conversation intelligence (not standalone)
 
 - **Revenue.io Conversation Intelligence** — inside Revenue.io (Orchestrate tier); covered by `/sales-revenue-io`

@@ -118,7 +118,7 @@ Ask the user:
 
 ## Step 3 — Platform-specific guidance
 
-For platform-specific coaching guidance (Seismic Learning, Allego, Gong/Chorus, MindTickle, SalesHood, Outdoo, Jiminny, Revenue.io, Enthu.AI, Demodesk, Balto, Manual/Spreadsheet), see references/platforms.md.
+For platform-specific coaching guidance (Seismic Learning, Allego, Gong/Chorus, MindTickle, SalesHood, Outdoo, Jiminny, Revenue.io, Enthu.AI, Demodesk, Balto, Cresta, Manual/Spreadsheet), see references/platforms.md.
 
 ## Step 4 — Measuring coaching impact
 
@@ -170,6 +170,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-revenue-io` — Revenue.io platform help (Salesforce-native, Moments real-time in-call coaching, AI scoring with 400+ criteria, Revenue Intelligence dashboards)
 - `/sales-salesken` — Salesken platform help (AI conversation intelligence, real-time in-call coaching, QA automation on 100% of calls, multilingual transcription, APAC focus)
 - `/sales-balto` — Balto platform help (real-time AI coaching for contact centers, automated QA, compliance monitoring)
+- `/sales-cresta` — Cresta platform help (enterprise contact center AI — real-time agent assist, AI virtual agents, conversation intelligence, automated QA)
 - `/sales-call-review` — Review specific sales calls and extract coaching insights
 - `/sales-note-taker` — Picking an AI note-taker (Fathom, Fireflies, Avoma, Gong, etc.) or wiring its API to feed your coaching program
 - `/sales-content` — Sales content for training and enablement programs
