@@ -167,6 +167,16 @@ Ask the user:
 - **LMS integration**: 40+ LMS connectors (SCORM) on Enterprise — Docebo, TalentLMS, Cornerstone, Absorb, Moodle.
 - **Best practice**: Use Outdoo when you want practice (roleplay) AND real-call coaching in one tool without paying Gong prices. The closed-loop between roleplay and real calls is Outdoo's key differentiator.
 
+### In Jiminny
+
+- **Coaching insights from calls**: Jiminny's AI analyzes recorded calls and surfaces actionable coaching points — what went well, what needs improvement, and patterns across the team.
+- **Call scoring**: Configurable scoring criteria let managers rate calls against methodology frameworks. Track improvement over time per rep.
+- **Performance tracking**: Team-wide dashboards show call scoring trends, coaching session completion, and skill development trajectories.
+- **Competitive intelligence**: Real-time visibility into competitor mentions during deals — useful for coaching reps on competitive positioning.
+- **Pipeline-informed coaching**: Revenue intelligence shows which deals are at risk, enabling managers to coach on the most impactful deals.
+- **CRM auto-logging**: Call notes and coaching data sync to Salesforce/HubSpot/Pipedrive/Zoho/Close/Bullhorn/Copper/Dynamics automatically, so reps spend time selling not logging.
+- **Best practice**: Use Jiminny when you want conversation intelligence + coaching in one tool at mid-market pricing (no Gong platform fee). Jiminny is stronger in coaching accessibility than deep analytics.
+
 ### Manual / Spreadsheet approach
 
 - **Google Docs**: Create onboarding checklists and coaching templates. Works for <10 reps.
@@ -216,6 +226,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-salesask` — Sales Ask platform help (field + call center AI coaching, Coach Dean active feedback, home services vertical)
 - `/sales-craft` — Craft platform help (real-time in-appointment AI coaching, 24/7 AI call center, revenue recovery agents, home services)
 - `/sales-outdoo` — Outdoo platform help (AI roleplay coaching, conversation intelligence, revenue intelligence, CRM automation, mid-market Gong alternative)
+- `/sales-jiminny` — Jiminny platform help (coaching-focused conversation intelligence, revenue intelligence, 8 CRM integrations, mid-market Gong alternative)
 - `/sales-call-review` — Review specific sales calls and extract coaching insights
 - `/sales-note-taker` — Picking an AI note-taker (Fathom, Fireflies, Avoma, Gong, etc.) or wiring its API to feed your coaching program
 - `/sales-content` — Sales content for training and enablement programs

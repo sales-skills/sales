@@ -196,8 +196,17 @@ If a follow-up call was booked, draft a proposed agenda:
 - **CRM auto-fill** — Key call data (methodology fields, action items, next steps) auto-populates CRM fields via AI Docs (Premium+).
 - **Integration**: Connects with Gong, Clari, Chorus, Fireflies, and Avoma for additional conversation intelligence data alongside Outdoo's own recording.
 
+### In Jiminny
+- **Call recording & transcription** — Jiminny records phone calls, video meetings, and emails with AI-powered transcription in 60+ languages. AI summaries and action items generated automatically.
+- **Coaching-focused scoring** — Configurable call scoring criteria for structured review. Managers see per-rep trends over time.
+- **Competitive intelligence** — Real-time tracking of competitor mentions across all recorded conversations. Useful for coaching reps on competitive differentiation.
+- **CRM auto-logging** — Call summaries, scores, and action items sync to Salesforce, HubSpot, Zoho, Pipedrive, Close, Bullhorn, Copper, or Microsoft Dynamics automatically.
+- **Pipeline context** — Revenue intelligence surfaces which deals are at risk, letting managers prioritize which call reviews will have the most impact on pipeline.
+- **Note**: Jiminny's call scoring is more coaching-focused and accessible than Gong's deep analytics. Better for mid-market teams wanting structured coaching without Gong-level pricing.
+
 ## Related skills
 
+- `/sales-jiminny` — Jiminny platform help (coaching-focused conversation intelligence, revenue intelligence, 8 CRM integrations)
 - `/sales-gong` — Gong platform help (Smart Trackers, coaching scorecards, deal boards, transcript API)
 - `/sales-note-taker` — Picking an AI note-taker (Fathom, Fireflies, Avoma, Gong, etc.) or wiring its API into CRM/warehouse for transcripts and summaries
 - `/sales-salesloft` — Salesloft Conversations settings, coaching playlists, recording configuration

@@ -37,6 +37,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Supernormal | AI agent for agencies | Yes (15 credits/mo) | $10-18/mo | None (Zapier only) | None | Medium (HubSpot/Salesforce/Pipedrive) | Agencies wanting AI-generated deliverables (decks, briefs, emails) from meetings |
 | VoiceToNotes | Personal voice-to-text | Yes (10/day, 300 min/mo) | $1/mo | None (Pro Annual only, undocumented) | None | None | Ultra-cheap personal voice notes, HIPAA compliance, OCR |
 | Outdoo | AI roleplay + coaching + revenue intelligence | Yes (limited) | ~$660-1,200/user/yr | REST (Enterprise only) | None documented | Deep (11 CRMs, auto-fill) | Closed-loop coaching: AI roleplay + real-call scoring + CRM auto-fill, mid-market Gong alternative |
+| Jiminny | Conversation + revenue intelligence | No (14-day trial) | $83/mo (Recording) | REST (partial) | None documented | Deep (8 CRMs native) | Coaching-focused conversation intelligence, mid-market, no platform fee |
 
 ## Fathom
 
@@ -1143,6 +1144,38 @@ For deep platform coverage (AI roleplays, coaching programs, revenue intelligenc
 **Selection notes**:
 - **Pick Outdoo when**: AI roleplay practice is a priority alongside conversation intelligence, budget matters vs Gong ($660-1,200 vs $1,600+/user/yr + $10K platform fee), you want closed-loop coaching connecting practice to real-call performance, your team needs LMS integration (40+ SCORM connectors on Enterprise), or you want hiring assessments via roleplay simulation
 - **Avoid Outdoo when**: You need the deepest conversation analytics ecosystem (→ Gong), you need transparent published pricing (→ Fathom, Fireflies), you need self-service CRM integration (→ Fathom, Fireflies, Avoma), you need standalone note-taking without coaching/roleplay (→ Fathom, Otter, Fireflies), or non-English transcription accuracy is critical (→ Jamy, Notta)
+
+---
+
+## Jiminny
+
+For deep platform coverage (modules, pricing, CRM integration, API, dialer connections, coaching setup), use `/sales-jiminny`.
+
+**Positioning**: Coaching-focused conversation intelligence for mid-market sales teams. More accessible than Gong — no $5K-50K platform fee, wider native CRM support (8 CRMs vs Gong's one-at-a-time). Less deep analytics and smaller ecosystem than Gong. Captures phone calls, video meetings, and emails.
+
+**Pricing (2026-04)**: Recording Seat from $83/mo, Insights Seat (view/listen only) from $42/mo, Listener Seat (playback only) $0/mo. 12-month minimum contract. One-time setup fee (no recurring platform fee). 14-day free trial.
+
+**API**:
+- Type: Partial REST API, JSON format
+- Auth: API key (admin/owner-generated via Organization Settings → General → API Key)
+- Rate limits: 30 req/min (`getActivities`), 120 req/min (all other endpoints)
+- Data: activity metadata (title, host, participants, duration), playback stats, coaching frameworks, transcriptions, CRM data
+- Download links for recordings expire after 24 hours
+- Swagger docs at `jiminny.github.io/customer-api-docs/` (JS-rendered, requires browser)
+- No webhook events documented — polling-based integration
+
+**Integrations**:
+- CRM: Salesforce, HubSpot, Zoho, Pipedrive, Close, Bullhorn, Copper, Microsoft Dynamics
+- Dialers: 8x8, Aircall, Apollo, Bloobirds, Close, Cloudcall, Cloudtalk, Connect and Sell, Dialpad, Five9, RingCentral
+- Video: Google Meet, Microsoft Teams
+- Sales tools: Amazon Connect, Outreach, Salesloft, Planhat
+- 60+ language transcription
+
+**Security**: SOC 2 Type II, GDPR, CCPA, HIPAA, 256-bit AES, AWS-hosted, SAML2 SSO, 2FA, 99.9% uptime
+
+**Selection notes**:
+- **Pick Jiminny when**: Budget matters vs Gong ($83/mo vs $133/mo + platform fee), you need coaching-focused conversation intelligence without deep analytics, your CRM is Bullhorn/Close/Copper/Dynamics (Gong doesn't support these natively), you want call/email/video capture in one platform, or your team uses a supported dialer and wants seamless recording
+- **Avoid Jiminny when**: You need the deepest analytics and deal intelligence ecosystem (→ Gong), you need a rich API with webhooks for event-driven pipelines (→ Gong, Fireflies, Fathom), you need a free tier (→ Fathom, Fireflies, Otter), you need transparent self-serve pricing (→ Fathom, Fireflies), or transcription accuracy with accents is critical
 
 ---
 

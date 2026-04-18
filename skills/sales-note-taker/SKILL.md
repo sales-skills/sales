@@ -1,6 +1,6 @@
 ---
 name: sales-note-taker
-description: "Sales meeting note-taker and conversation-intelligence strategy — platform selection (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie, Krisp, Colibri, Cluely, Jamy, Wave, tl;dv, Claap, Tactiq, Granola, Hedy, Omi, Bluedot, Lindy, Notta, Rilla, Siro, Sonnet, Supernormal, VoiceToNotes, Outdoo) plus backend API integration for auto-downloading transcripts, summaries, action items, and recordings into CRM, data warehouse, Slack, or internal tools. Use when choosing an AI note-taker for a sales team, comparing Fathom vs Fireflies pricing or features, deciding between webhook and polling for transcript ingestion, wiring meeting transcripts into HubSpot or Salesforce, building a call-intelligence data pipeline, normalizing transcript formats across multiple vendors, choosing a field sales conversation intelligence tool (Rilla, Siro, Sales Ask), or debugging rate limits and auth flows in note-taker APIs. Do NOT use for reviewing a single call for coaching (use /sales-call-review) or building a coaching program (use /sales-coaching)."
+description: "Sales meeting note-taker and conversation-intelligence strategy — platform selection (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie, Krisp, Colibri, Cluely, Jamy, Wave, tl;dv, Claap, Tactiq, Granola, Hedy, Omi, Bluedot, Lindy, Notta, Rilla, Siro, Sonnet, Supernormal, VoiceToNotes, Outdoo, Jiminny) plus backend API integration for auto-downloading transcripts, summaries, action items, and recordings into CRM, data warehouse, Slack, or internal tools. Use when choosing an AI note-taker for a sales team, comparing Fathom vs Fireflies pricing or features, deciding between webhook and polling for transcript ingestion, wiring meeting transcripts into HubSpot or Salesforce, building a call-intelligence data pipeline, normalizing transcript formats across multiple vendors, choosing a field sales conversation intelligence tool (Rilla, Siro, Sales Ask), or debugging rate limits and auth flows in note-taker APIs. Do NOT use for reviewing a single call for coaching (use /sales-call-review) or building a coaching program (use /sales-coaching)."
 argument-hint: "[describe your note-taker selection or API integration question]"
 license: MIT
 version: 1.0.0
@@ -106,6 +106,7 @@ Rank these in order for the user's context:
 - Agency wanting AI-generated deliverables (pitch decks, briefs, emails) from client meetings, bot-free → Supernormal
 - Ultra-cheap personal voice notes with HIPAA compliance, no meeting bot needed → VoiceToNotes
 - Mid-market team wanting AI roleplay + real-call scoring + CRM auto-fill without Gong pricing → Outdoo
+- Mid-market team wanting coaching-focused conversation intelligence with wide CRM support (8 CRMs) without Gong pricing → Jiminny
 
 ### Integration patterns (if goal = API integration)
 
@@ -189,6 +190,7 @@ If you discover a gotcha, rate-limit ceiling, auth quirk, or vendor-specific pay
 - `/sales-supernormal` — Supernormal platform help (AI agent for agencies, bot-free recording, AI-generated deliverables from meetings, HubSpot/Salesforce/Pipedrive CRM sync, credit-based pricing)
 - `/sales-voicetonotes` — VoiceToNotes platform help (ultra-cheap personal voice-to-text, HIPAA compliance, AI summaries/grammar/OCR, web + iOS + Android, no integrations)
 - `/sales-outdoo` — Outdoo platform help (AI roleplay coaching, conversation intelligence, revenue intelligence, CRM automation, Open API, mid-market Gong alternative)
+- `/sales-jiminny` — Jiminny platform help (conversation intelligence, revenue intelligence, coaching, 8 native CRM integrations, partial REST API, mid-market Gong alternative)
 - `/sales-salesloft` — Salesloft Conversations (bolt-on conversation intelligence inside Salesloft)
 - `/sales-zoominfo` — ZoomInfo Chorus (bolt-on conversation intelligence inside ZoomInfo)
 - `/sales-seismic` — Seismic Meeting Intelligence (bolt-on inside Seismic)
