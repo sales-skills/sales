@@ -31,6 +31,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Notta | AI meeting transcription (58 languages) | Yes (120 min/mo) | $13.99/mo | None (Zapier only) | None (Zapier only) | Medium (5 CRMs, Business+) | Multilingual global teams, 58-language transcription |
 | Lindy | AI agent builder (notes are one module) | Yes (free trial) | $49.99/mo | None | Inbound only | Indirect (via workflow) | All-in-one AI assistant (email + meetings + calendar + workflows) |
 | Rilla | Field sales AI coaching | No | ~$199-349/rep/mo | None (via Merge) | Yes (Merge) | Medium (5 CRMs via Merge) | In-person field sales coaching, virtual ridealongs, home services |
+| Siro | Field sales AI coaching | No | ~$200-350/rep/mo | REST + OAuth | Yes (Svix) | Medium (6 CRMs via Merge) | In-person field sales coaching, Halftime real-time coaching, multi-industry (auto, home services, telecom, political) |
 
 ## Fathom
 
@@ -966,6 +967,34 @@ For deep platform coverage (setup, CRM integration via Merge, scorecard customiz
 **Selection notes**:
 - **Pick Rilla when**: Your sales team does in-person presentations (home services, field sales), you need to replace physical ridealongs with scalable AI coaching, you want CRM sync for field appointment context, and your budget supports $4K+/user/year
 - **Avoid Rilla when**: Your team sells over phone/video (→ Fathom, Fireflies, Gong), you need real-time coaching during the appointment (→ Craft), you need a public API for transcript pipelines (→ Fathom, Fireflies, Gong), you want month-to-month pricing (→ most alternatives), or your team has <5 reps (minimum license requirement)
+
+---
+
+## Siro
+
+For deep platform coverage (API endpoints, OAuth setup, webhook verification, Halftime coaching, CRM integration via Merge, scorecard customization), use `/sales-siro`.
+
+**Positioning**: AI field sales coaching platform covering auto dealerships, home improvement, home services, home builders, telecom, political canvassing, and medical devices. Records in-person conversations via mobile app with offline capability, provides real-time "Halftime" mid-call coaching, and auto-captures CRM data. Broader industry coverage than Rilla but with less home-services-specific depth.
+
+**Pricing (2026-04)**: Not publicly listed. Estimated ~$200-350/rep/month (~$3,000+/user/year). Annual contract required, 5-10 user minimum. Setup fee $2,000-$5,000. Renewal price increases of ~15% reported.
+
+**API**: REST API with two base URLs — `functions.siro.ai/api-externalApi/v1` (sync engagements/opportunities) and `api.siro.ai` (recordings, entity extractions, summaries). Auth via Organization Bearer Token or OAuth Access Token (16-hour lifespan). See `sales-siro/references/siro-api-reference.md` for full endpoint reference.
+
+**Webhooks**: Svix-based signing (`svix-id`, `svix-timestamp`, `svix-signature`). Two events: `integrations.recordingProcessed` and `integrations.recordingLinked`. Payload includes CRM context (engagement, opportunity, account external IDs).
+
+**Integrations**: Salesforce, HubSpot, Zoho, Pipedrive, Dynamics, SugarCRM (via Merge), ServiceTitan, SalesRabbit, SPOTIO, Leap SalesPro, i360 Lightning, FieldRoutes, CompanyCam. No Zapier/Make/n8n connectors.
+
+**Known issues (from G2/Capterra/comparison reviews)**:
+- Coaching prompts are generic/horizontal — not tailored to specific verticals (HVAC, roofing, solar)
+- No call center coverage — only in-person field sales
+- Battery drain from sustained mobile recording
+- Opaque pricing with annual lock-in and reported 15% renewal hikes
+- Support is email-only (24-48hr) on non-Enterprise plans
+- Deep linking requires matching external IDs between CRM and Siro
+
+**Selection notes**:
+- **Pick Siro when**: Your field team spans multiple industries (not just home services), you want real-time mid-call coaching (Halftime), you need a public REST API for custom integrations, or your team records in low/no-connectivity environments
+- **Avoid Siro when**: You need home-services-specific coaching depth (→ Rilla), you need call center + field coverage (→ Craft), you want transparent pricing and month-to-month contracts (→ SalesAsk), you want phone/video call recording (→ Fathom, Fireflies, Gong), or your team has <5 reps
 
 ---
 
