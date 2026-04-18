@@ -33,6 +33,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Rilla | Field sales AI coaching | No | ~$199-349/rep/mo | None (via Merge) | Yes (Merge) | Medium (5 CRMs via Merge) | In-person field sales coaching, virtual ridealongs, home services |
 | Siro | Field sales AI coaching | No | ~$200-350/rep/mo | REST + OAuth | Yes (Svix) | Medium (6 CRMs via Merge) | In-person field sales coaching, Halftime real-time coaching, multi-industry (auto, home services, telecom, political) |
 | Sales Ask | Field sales AI coaching | No | ~$42-208/user/mo | None (partner-only) | None | Medium (ServiceTitan/Jobber/Housecall Pro/Salesforce/Lasso) | Home services field + call center coaching, active AI feedback, native trade CRM integrations |
+| Supernormal | AI agent for agencies | Yes (15 credits/mo) | $10-18/mo | None (Zapier only) | None | Medium (HubSpot/Salesforce/Pipedrive) | Agencies wanting AI-generated deliverables (decks, briefs, emails) from meetings |
 
 ## Fathom
 
@@ -1023,6 +1024,39 @@ For deep platform coverage (Coach Dean coaching, CRM integration, virtual rideal
 **Selection notes**:
 - **Pick Sales Ask when**: Your team is in home services (HVAC, roofing, plumbing, remodeling), you use ServiceTitan/Jobber/Housecall Pro, you want both call center and field coaching in one tool, you want active AI coaching (not passive dashboards), or you want lower pricing than Rilla/Siro with flexible monthly plans
 - **Avoid Sales Ask when**: Your team isn't in home services (→ Siro for multi-industry, Gong for enterprise B2B), you need a public API for custom integrations (→ Siro), you want live in-ear coaching during appointments (→ Craft), or you need enterprise compliance certifications beyond SOC 2 (→ Gong)
+
+---
+
+## Supernormal
+
+For deep platform coverage (AI Agents, credit system, bot-free setup, deliverable workflows), use `/sales-supernormal`.
+
+**Positioning**: AI agent for agencies — pivoted from pure meeting note-taker to a platform that turns meeting context into client deliverables (pitch decks, project briefs, follow-up emails, spreadsheets, mood boards). Bot-free desktop app capture. 700K+ users.
+
+**Pricing (2026-04, mid-transition)**: Free (15 credits/mo, 5 daily cap), Pro ($10/mo annual / $18 monthly, 50 credits/mo, rollover), Business ($19/mo annual / $29 monthly, GPT-4, SSO, audit logs). 20% annual discount.
+
+**API**: No public API. No developer portal. MCP mentioned on website but not documented. Automation via Zapier only.
+
+**Integrations**: Slack (primary), HubSpot, Salesforce, Pipedrive, Asana, Notion, Airtable, ClickUp, Linear, Workable. Zapier for everything else.
+
+**Unique features**:
+- AI Agents generate client deliverables (presentations, briefs, emails, spreadsheets, images) from meeting context + uploaded files
+- Norma AI assistant for real-time meeting insights
+- Voice Agents that actively participate in meetings
+- Custom vocabulary (paid plans)
+- 60+ language transcription
+
+**Key gotchas**:
+- No public API — can't build custom integrations beyond Zapier
+- Credits consumed by both meeting captures AND AI Agent tasks
+- GPT-4 is Business-only ($19-29/mo); Starter/Pro use GPT 3.5-Turbo
+- Bot auto-join can surprise external meeting participants — recommend desktop app instead
+- Transcripts are not editable
+- Pricing structure appears to be mid-transition — verify directly
+
+**Selection notes**:
+- **Pick Supernormal when**: You're an agency that needs AI-generated client deliverables from meetings, you want bot-free recording for client calls, you need broad deliverable types (decks, mood boards, spreadsheets)
+- **Avoid Supernormal when**: You need API access for custom integrations (→ Fireflies, Fathom, Gong), you need deep CRM field-mapping (→ Gong, Avoma), you need sales coaching/methodology (→ tl;dv, Avoma, Gong), or you need enterprise compliance beyond SOC 2 (→ Gong)
 
 ---
 
