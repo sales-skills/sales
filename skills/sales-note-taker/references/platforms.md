@@ -32,6 +32,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Lindy | AI agent builder (notes are one module) | Yes (free trial) | $49.99/mo | None | Inbound only | Indirect (via workflow) | All-in-one AI assistant (email + meetings + calendar + workflows) |
 | Rilla | Field sales AI coaching | No | ~$199-349/rep/mo | None (via Merge) | Yes (Merge) | Medium (5 CRMs via Merge) | In-person field sales coaching, virtual ridealongs, home services |
 | Siro | Field sales AI coaching | No | ~$200-350/rep/mo | REST + OAuth | Yes (Svix) | Medium (6 CRMs via Merge) | In-person field sales coaching, Halftime real-time coaching, multi-industry (auto, home services, telecom, political) |
+| Sales Ask | Field sales AI coaching | No | ~$42-208/user/mo | None (partner-only) | None | Medium (ServiceTitan/Jobber/Housecall Pro/Salesforce/Lasso) | Home services field + call center coaching, active AI feedback, native trade CRM integrations |
 
 ## Fathom
 
@@ -995,6 +996,33 @@ For deep platform coverage (API endpoints, OAuth setup, webhook verification, Ha
 **Selection notes**:
 - **Pick Siro when**: Your field team spans multiple industries (not just home services), you want real-time mid-call coaching (Halftime), you need a public REST API for custom integrations, or your team records in low/no-connectivity environments
 - **Avoid Siro when**: You need home-services-specific coaching depth (→ Rilla), you need call center + field coverage (→ Craft), you want transparent pricing and month-to-month contracts (→ SalesAsk), you want phone/video call recording (→ Fathom, Fireflies, Gong), or your team has <5 reps
+
+---
+
+## Sales Ask
+
+For deep platform coverage (Coach Dean coaching, CRM integration, virtual ridealongs, roleplay, white-label program), use `/sales-salesask`.
+
+**Positioning**: AI-powered sales coaching platform purpose-built for home services and trades businesses (HVAC, roofing, plumbing, remodeling, dental). Uses "Coach Dean" AI agent that reviews 100% of conversations and texts reps immediate, specific feedback. Covers both call center (CSR/phone) and field (in-home) sales — unlike Rilla and Siro which are field-only. Native integrations with trade-specific CRMs.
+
+**Pricing (2026-04)**: Not publicly listed. Team pricing estimated ~$1,500-$5,000/month (~$42-208/user/month). Flexible monthly plans, no rigid seat minimums. Claims ~40% less than Rilla. Always get a custom quote.
+
+**API**: No public API documentation. Partner/reseller API access gated behind partner program. Custom integrations require contacting Sales Ask.
+
+**Webhooks**: None documented publicly.
+
+**Integrations**: ServiceTitan, Jobber, Housecall Pro (native, deep — recordings link to revenue tickets), Salesforce, Lasso. No Merge middleware — direct integrations.
+
+**Known issues (from comparison articles and vendor claims — limited independent reviews)**:
+- Pricing not transparent — must request a quote
+- No public API — can't build custom integrations without partner access
+- Home services vertical only — not suitable for auto, telecom, political, medical devices
+- "Real-time" coaching is between-appointment text feedback, not in-ear live prompts during conversations (Craft does that)
+- Limited independent reviews — no G2 listing found as of 2026-04
+
+**Selection notes**:
+- **Pick Sales Ask when**: Your team is in home services (HVAC, roofing, plumbing, remodeling), you use ServiceTitan/Jobber/Housecall Pro, you want both call center and field coaching in one tool, you want active AI coaching (not passive dashboards), or you want lower pricing than Rilla/Siro with flexible monthly plans
+- **Avoid Sales Ask when**: Your team isn't in home services (→ Siro for multi-industry, Gong for enterprise B2B), you need a public API for custom integrations (→ Siro), you want live in-ear coaching during appointments (→ Craft), or you need enterprise compliance certifications beyond SOC 2 (→ Gong)
 
 ---
 

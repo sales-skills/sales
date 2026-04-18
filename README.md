@@ -184,6 +184,7 @@ Router recommends a 5-skill sequence:
 | `/sales-lindy` | Lindy platform help — no-code AI agent builder for email triage, meeting notes, calendar management, custom workflow automation, chatbots, AI phone agents, 4,000+ integrations, credit-based pricing tiers |
 | `/sales-rilla` | Rilla platform help — AI coaching for in-person/field sales, virtual ridealongs, mobile recording, CRM sync via Merge, ServiceTitan/SPOTIO integrations, pricing tiers |
 | `/sales-siro` | Siro platform help — AI field sales coaching, Halftime real-time mid-call coaching, mobile recording with offline mode, REST API + Svix webhooks, CRM sync via Merge, ServiceTitan/SalesRabbit/SPOTIO/FieldRoutes integrations, pricing tiers |
+| `/sales-salesask` | Sales Ask (Coach Dean) platform help — AI coaching for in-home/field + call center sales in home services, active text feedback to reps, Process Adherence Scoring, virtual ridealongs, AI roleplay, ServiceTitan/Jobber/Housecall Pro/Salesforce integrations, white-label program |
 | `/sales-deal-inspect` | Inspect deal health, map stakeholders, identify risks, recommend next actions |
 | `/sales-forecast` | Build and validate revenue forecasts with pipeline coverage and gap analysis |
 

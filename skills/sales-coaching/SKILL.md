@@ -202,6 +202,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-gong` — Gong platform help (coaching scorecards, deal boards, Smart Trackers, conversation analytics)
 - `/sales-rilla` — Rilla platform help (field sales AI coaching, virtual ridealongs, home services focus)
 - `/sales-siro` — Siro platform help (field sales AI coaching, Halftime real-time coaching, multi-industry)
+- `/sales-salesask` — Sales Ask platform help (field + call center AI coaching, Coach Dean active feedback, home services vertical)
 - `/sales-call-review` — Review specific sales calls and extract coaching insights
 - `/sales-note-taker` — Picking an AI note-taker (Fathom, Fireflies, Avoma, Gong, etc.) or wiring its API to feed your coaching program
 - `/sales-content` — Sales content for training and enablement programs

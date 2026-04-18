@@ -81,6 +81,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 
 ## Related skills
 
+- `/sales-salesask` — Sales Ask platform help — direct competitor for home services field + call center AI coaching with active Coach Dean feedback. Install: `npx skills add sales-skills/sales --skill sales-salesask -a claude-code -y`
 - `/sales-siro` — Siro platform help — direct competitor for field sales AI coaching with Halftime real-time coaching. Install: `npx skills add sales-skills/sales --skill sales-siro -a claude-code -y`
 - `/sales-note-taker` — Choosing an AI note-taker for virtual/video meetings (Fathom, Fireflies, Gong, etc.) and building transcript API pipelines. Install: `npx skills add sales-skills/sales --skill sales-note-taker -a claude-code -y`
 - `/sales-coaching` — Building coaching programs, onboarding, role-plays, certifications

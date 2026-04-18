@@ -1,6 +1,6 @@
 ---
 name: sales-note-taker
-description: "Sales meeting note-taker and conversation-intelligence strategy — platform selection (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie, Krisp, Colibri, Cluely, Jamy, Wave, tl;dv, Claap, Tactiq, Granola, Hedy, Omi, Bluedot, Lindy, Notta, Rilla, Siro) plus backend API integration for auto-downloading transcripts, summaries, action items, and recordings into CRM, data warehouse, Slack, or internal tools. Use when choosing an AI note-taker for a sales team, comparing Fathom vs Fireflies pricing or features, deciding between webhook and polling for transcript ingestion, wiring meeting transcripts into HubSpot or Salesforce, building a call-intelligence data pipeline, normalizing transcript formats across multiple vendors, choosing a field sales conversation intelligence tool, or debugging rate limits and auth flows in note-taker APIs. Do NOT use for reviewing a single call for coaching (use /sales-call-review) or building a coaching program (use /sales-coaching)."
+description: "Sales meeting note-taker and conversation-intelligence strategy — platform selection (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie, Krisp, Colibri, Cluely, Jamy, Wave, tl;dv, Claap, Tactiq, Granola, Hedy, Omi, Bluedot, Lindy, Notta, Rilla, Siro) plus backend API integration for auto-downloading transcripts, summaries, action items, and recordings into CRM, data warehouse, Slack, or internal tools. Use when choosing an AI note-taker for a sales team, comparing Fathom vs Fireflies pricing or features, deciding between webhook and polling for transcript ingestion, wiring meeting transcripts into HubSpot or Salesforce, building a call-intelligence data pipeline, normalizing transcript formats across multiple vendors, choosing a field sales conversation intelligence tool (Rilla, Siro, Sales Ask), or debugging rate limits and auth flows in note-taker APIs. Do NOT use for reviewing a single call for coaching (use /sales-call-review) or building a coaching program (use /sales-coaching)."
 argument-hint: "[describe your note-taker selection or API integration question]"
 license: MIT
 version: 1.0.0
@@ -101,6 +101,7 @@ Rank these in order for the user's context:
 - Multilingual global team needing 58-language transcription + cross-meeting AI intelligence (Notta Brain) → Notta
 - All-in-one AI assistant that handles email + meetings + calendar + custom workflows in a single tool → Lindy
 - In-person field sales coaching with virtual ridealongs, home services industry → Rilla
+- Home services field + call center coaching with active AI feedback, ServiceTitan/Jobber/Housecall Pro → Sales Ask
 
 ### Integration patterns (if goal = API integration)
 
@@ -179,6 +180,7 @@ If you discover a gotcha, rate-limit ceiling, auth quirk, or vendor-specific pay
 - `/sales-notta` — Notta platform help (AI meeting transcription in 58 languages, Notta Bot, Notta Brain cross-meeting AI, Zapier automation, CRM sync to Salesforce/HubSpot/Zoho/Freshsales/Salesflare)
 - `/sales-lindy` — Lindy platform help (no-code AI agent builder — meeting notes are one module alongside email triage, calendar management, custom workflows, chatbots, AI phone agents)
 - `/sales-rilla` — Rilla platform help (AI coaching for in-person/field sales, virtual ridealongs, mobile recording, CRM sync via Merge, home services focus)
+- `/sales-salesask` — Sales Ask platform help (AI coaching for in-home + call center sales, Coach Dean active feedback, ServiceTitan/Jobber/Housecall Pro, home services focus)
 - `/sales-salesloft` — Salesloft Conversations (bolt-on conversation intelligence inside Salesloft)
 - `/sales-zoominfo` — ZoomInfo Chorus (bolt-on conversation intelligence inside ZoomInfo)
 - `/sales-seismic` — Seismic Meeting Intelligence (bolt-on inside Seismic)
