@@ -221,6 +221,15 @@ If a follow-up call was booked, draft a proposed agenda:
 - **Compliance monitoring** — Auto-redacts PII from transcripts, checks script adherence, flags compliance violations.
 - **Note**: Enthu.AI is best for contact center QA at small-to-mid scale — fast setup (hours not months), no minimums, affordable ($15-69/user/mo). Lacks Gong's deal intelligence and revenue forecasting. Stronger on QA automation than coaching depth.
 
+### In Balto
+
+- **100% automated QA**: Balto scores every call against custom QA criteria in real-time — not post-call sampling. Supervisors see compliance adherence, script following, and coaching moments as they happen.
+- **Real-time alerts**: Unlike post-call review tools, Balto alerts supervisors to at-risk calls while they're still in progress — enabling live intervention rather than after-the-fact coaching.
+- **Call summaries**: Automatic AI-generated call summaries synced to Salesforce, HubSpot, or Dynamics 365. Includes key topics, compliance checks, and action items.
+- **Coaching-ready insights**: Balto surfaces which agents need coaching, pulls the relevant call segments, and links them to specific guidance adherence data. Managers can prep coaching sessions without manually reviewing recordings.
+- **Compliance audit trail**: Immutable, time-stamped logs of every compliance event — useful for regulated industries (financial services, insurance, healthcare) where call review has audit implications.
+- **Note**: Balto's strength is real-time QA and in-call intervention, not post-call transcript analysis. For detailed post-call transcript review with MEDDPICC/SPIN scoring, use this skill's framework with transcripts. Balto complements post-call review by catching issues during the call that post-call review would find too late.
+
 ## Related skills
 
 - `/sales-jiminny` — Jiminny platform help (coaching-focused conversation intelligence, revenue intelligence, 8 CRM integrations)
@@ -237,6 +246,9 @@ If a follow-up call was booked, draft a proposed agenda:
 - `/sales-outdoo` — Outdoo platform help (AI roleplay coaching, conversation intelligence, revenue intelligence, CRM automation, mid-market Gong alternative)
 - `/sales-enthu` — Enthu.AI platform help (contact center QA with auto-scoring, agent coaching, compliance monitoring, affordable Gong alternative)
 - `/sales-revenue-io` — Revenue.io platform help (Salesforce-native conversation intelligence, AI scoring with 400+ criteria, Orchestrate tier)
+- `/sales-balto` — Balto platform help (real-time AI coaching for contact centers, automated QA, compliance monitoring)
+- `/sales-salesken` — Salesken platform help (real-time in-call coaching, QA automation, revenue intelligence, multilingual transcription)
+- `/sales-clari-copilot` — Clari Copilot platform help (real-time battlecards, live coaching, AI call summaries, deal intelligence)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Gotchas
