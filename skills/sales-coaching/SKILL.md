@@ -156,6 +156,17 @@ Ask the user:
 - **Huddles**: Team coaching sessions with structured agendas.
 - **Playbooks**: Step-by-step guides with embedded learning.
 
+### In Outdoo (formerly MeetRecord)
+
+- **AI Roleplays**: Custom voice-based roleplay scenarios with AI buyer personas, gatekeeper simulation, multi-persona roleplays, and video AI avatars (Premium+). Instant scoring against configurable rubrics.
+- **Closed-loop coaching**: Real call recordings feed AI scoring → skill gaps identified → targeted roleplay scenarios generated → performance monitored over time. This connects practice to actual call performance.
+- **Courses & micro-learning**: Structured learning paths with gamified elements (leaderboards, achievements). Available on Premium+.
+- **Readiness scoring**: Sales readiness scores per rep — use as a gate before allowing new hires to make live calls.
+- **Hiring assessments**: Roleplay-based candidate evaluation with standardized scoring rubrics.
+- **CRM integration**: Auto-fills CRM fields using MEDDIC/SPIN/BANT methodology extraction from calls (Premium+). Works with Salesforce, HubSpot, and 9 other CRMs.
+- **LMS integration**: 40+ LMS connectors (SCORM) on Enterprise — Docebo, TalentLMS, Cornerstone, Absorb, Moodle.
+- **Best practice**: Use Outdoo when you want practice (roleplay) AND real-call coaching in one tool without paying Gong prices. The closed-loop between roleplay and real calls is Outdoo's key differentiator.
+
 ### Manual / Spreadsheet approach
 
 - **Google Docs**: Create onboarding checklists and coaching templates. Works for <10 reps.
@@ -204,6 +215,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-siro` — Siro platform help (field sales AI coaching, Halftime real-time coaching, multi-industry)
 - `/sales-salesask` — Sales Ask platform help (field + call center AI coaching, Coach Dean active feedback, home services vertical)
 - `/sales-craft` — Craft platform help (real-time in-appointment AI coaching, 24/7 AI call center, revenue recovery agents, home services)
+- `/sales-outdoo` — Outdoo platform help (AI roleplay coaching, conversation intelligence, revenue intelligence, CRM automation, mid-market Gong alternative)
 - `/sales-call-review` — Review specific sales calls and extract coaching insights
 - `/sales-note-taker` — Picking an AI note-taker (Fathom, Fireflies, Avoma, Gong, etc.) or wiring its API to feed your coaching program
 - `/sales-content` — Sales content for training and enablement programs

@@ -188,6 +188,14 @@ If a follow-up call was booked, draft a proposed agenda:
 - **Momentum** — ZoomInfo's deal intelligence layer uses Chorus data + CRM data + engagement signals to predict deal outcomes and flag risks
 - **Integration with ZoomInfo data** — Chorus enriches call participants with ZoomInfo contact data, showing title, seniority, and buying role during playback
 
+### In Outdoo (formerly MeetRecord)
+- **Conversation Intelligence** — Outdoo records and transcribes calls with AI scoring on discovery, qualification, and negotiation. Intent trackers detect topics automatically. Transcripts split by intent and speaker (unique to Outdoo).
+- **Buyer Intelligence** — Personality-based buyer profiles, sentiment recognition, risk appetite assessment, negotiation guidance generated from the call.
+- **AI-based call scoring** — Rubric-based scoring against methodology criteria (MEDDIC, SPIN, BANT). Performance monitoring tracks rep improvement over time.
+- **Closed-loop coaching** — Real call insights feed directly into AI Roleplay scenarios, so reps practice their specific weaknesses identified from call reviews.
+- **CRM auto-fill** — Key call data (methodology fields, action items, next steps) auto-populates CRM fields via AI Docs (Premium+).
+- **Integration**: Connects with Gong, Clari, Chorus, Fireflies, and Avoma for additional conversation intelligence data alongside Outdoo's own recording.
+
 ## Related skills
 
 - `/sales-gong` — Gong platform help (Smart Trackers, coaching scorecards, deal boards, transcript API)
@@ -200,6 +208,7 @@ If a follow-up call was booked, draft a proposed agenda:
 - `/sales-seismic` — Seismic platform help including Meeting Intelligence and content management
 - `/sales-zoominfo` — ZoomInfo platform help (Chorus conversation intelligence, Momentum deal insights)
 - `/sales-salesask` — Sales Ask platform help (field + call center AI coaching, Coach Dean active feedback, home services vertical)
+- `/sales-outdoo` — Outdoo platform help (AI roleplay coaching, conversation intelligence, revenue intelligence, CRM automation, mid-market Gong alternative)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Gotchas

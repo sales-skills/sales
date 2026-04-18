@@ -36,6 +36,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Sonnet | Bot-free AI note-taker + CRM | Yes (5 rec/mo) | $25/mo | None | None | Medium (HubSpot/Salesforce auto-update) | Bot-free CRM auto-update, domain templates (sales/legal/medical/recruiting) |
 | Supernormal | AI agent for agencies | Yes (15 credits/mo) | $10-18/mo | None (Zapier only) | None | Medium (HubSpot/Salesforce/Pipedrive) | Agencies wanting AI-generated deliverables (decks, briefs, emails) from meetings |
 | VoiceToNotes | Personal voice-to-text | Yes (10/day, 300 min/mo) | $1/mo | None (Pro Annual only, undocumented) | None | None | Ultra-cheap personal voice notes, HIPAA compliance, OCR |
+| Outdoo | AI roleplay + coaching + revenue intelligence | Yes (limited) | ~$660-1,200/user/yr | REST (Enterprise only) | None documented | Deep (11 CRMs, auto-fill) | Closed-loop coaching: AI roleplay + real-call scoring + CRM auto-fill, mid-market Gong alternative |
 
 ## Fathom
 
@@ -1116,6 +1117,32 @@ For deep platform coverage (pricing tiers, AI features, OCR, export options, Chr
 **Selection notes**:
 - **Pick VoiceToNotes when**: Budget is the primary concern, you need HIPAA-compliant voice transcription for personal use, you want the simplest possible voice-to-text without meeting bots, or you need OCR alongside voice notes
 - **Avoid VoiceToNotes when**: You need CRM integration (→ Fathom, Fireflies, Gong), you need Zapier/automation (→ Fireflies, Tactiq, Notta), you need team collaboration features (→ Otter, Fireflies), you need meeting bot recording (→ Fathom, Fireflies, Avoma), or you need reliable long-session recording (Chrome extension issues)
+
+---
+
+## Outdoo
+
+For deep platform coverage (AI roleplays, coaching programs, revenue intelligence, CRM automation, API integration), use `/sales-outdoo`.
+
+**Positioning**: Closed-loop AI coaching and revenue intelligence platform (formerly MeetRecord). Combines AI roleplay practice, real-call scoring, and CRM automation. Positioned as mid-market Gong alternative — no platform fee, AI roleplay (Gong lacks this), 120+ integrations. G2 4.6/5 (125+ reviews).
+
+**Pricing (2026-04)**: Free (basic roleplays + limited call recording), Premium (custom — courses, gamified learning, 15+ call integrations), Enterprise (custom — SSO, Developer APIs, MCP Server, private cloud). Budget ~$660-1,200/user/year. No platform fee (vs Gong's $10K).
+
+**API**: REST API at `openapi.outdoo.ai/api/v1/`. JWT Bearer token auth. Enterprise-only. Endpoints: conversations (list, get, transcript, create), buyers, users, stats, scorecards, trackers, initiatives, workspaces. Max page size 20. Full OpenAPI spec at `openapi.outdoo.ai/openapi.json`.
+
+**Integrations**: 120+ — Salesforce (AppExchange managed package), HubSpot (marketplace), Zoho, Pipedrive, Close, Dynamics 365, Attio, HighLevel, Monday, Keap, LeadSquared, FollowUpBoss. Meeting: Zoom, Teams, Google Meet. Dialers: Aircall, Dialpad, RingCentral, CallRail, Outplay, Salesloft Dialer, Outreach Dialer. CI: Gong, Clari, Chorus, Fireflies, Avoma. LMS: Docebo, TalentLMS, Cornerstone, Absorb, Moodle. Data: Snowflake. Other: Slack, Zapier.
+
+**Key gotchas**:
+- API and MCP Server are Enterprise-only
+- CRM integration not self-service — typically needs CSM help to configure
+- Non-English transcription (especially Portuguese) has accuracy issues
+- Speaker identification can misattribute — manual reassignment available
+- Pricing is fully custom/opaque — no published per-seat rates
+- SOC 2, HIPAA, ISO 27001 certified
+
+**Selection notes**:
+- **Pick Outdoo when**: AI roleplay practice is a priority alongside conversation intelligence, budget matters vs Gong ($660-1,200 vs $1,600+/user/yr + $10K platform fee), you want closed-loop coaching connecting practice to real-call performance, your team needs LMS integration (40+ SCORM connectors on Enterprise), or you want hiring assessments via roleplay simulation
+- **Avoid Outdoo when**: You need the deepest conversation analytics ecosystem (→ Gong), you need transparent published pricing (→ Fathom, Fireflies), you need self-service CRM integration (→ Fathom, Fireflies, Avoma), you need standalone note-taking without coaching/roleplay (→ Fathom, Otter, Fireflies), or non-English transcription accuracy is critical (→ Jamy, Notta)
 
 ---
 
