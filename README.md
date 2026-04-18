@@ -156,7 +156,7 @@ Router recommends a 5-skill sequence:
 | `/sales-salesloft` | Salesloft platform help — config, Rhythm, Conversations, Drift, integrations |
 | `/sales-cadence` | Design multi-channel outbound cadences with timing, A/B testing, and content |
 | `/sales-call-review` | Review sales calls, extract coaching insights, score against MEDDPICC/SPIN |
-| `/sales-note-taker` | AI meeting note-taker / conversation-intelligence selection & API integration (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie, Jamy, Wave, tl;dv, Claap) |
+| `/sales-note-taker` | AI meeting note-taker / conversation-intelligence selection & API integration (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie, Jamy, Wave, tl;dv, Claap, Sonnet) |
 | `/sales-fathom` | Fathom platform help — REST API, webhooks, OAuth, SDKs, MCP, transcript/summary export, CRM sync, pricing tiers |
 | `/sales-fireflies` | Fireflies.ai platform help — GraphQL API, Webhooks V1 + V2, HMAC verification, AskFred AI, Real-time API, MCP, rate limits per tier, bot auto-join control |
 | `/sales-avoma` | Avoma platform help — REST API, webhooks, MEDDIC/BANT/SPICED scorecards, Conversation + Revenue Intelligence, Lead Router, CRM sync, pricing tiers |
@@ -186,6 +186,7 @@ Router recommends a 5-skill sequence:
 | `/sales-rilla` | Rilla platform help — AI coaching for in-person/field sales, virtual ridealongs, mobile recording, CRM sync via Merge, ServiceTitan/SPOTIO integrations, pricing tiers |
 | `/sales-siro` | Siro platform help — AI field sales coaching, Halftime real-time mid-call coaching, mobile recording with offline mode, REST API + Svix webhooks, CRM sync via Merge, ServiceTitan/SalesRabbit/SPOTIO/FieldRoutes integrations, pricing tiers |
 | `/sales-salesask` | Sales Ask (Coach Dean) platform help — AI coaching for in-home/field + call center sales in home services, active text feedback to reps, Process Adherence Scoring, virtual ridealongs, AI roleplay, ServiceTitan/Jobber/Housecall Pro/Salesforce integrations, white-label program |
+| `/sales-sonnet` | Sonnet AI platform help — bot-free meeting recording with auto-CRM update (HubSpot/Salesforce), domain templates (sales/legal/medical/recruiting), concept maps, relationship tracker, macOS-only |
 | `/sales-supernormal` | Supernormal platform help — AI agent for agencies, bot-free meeting capture, AI-generated deliverables (pitch decks, briefs, emails) from meetings, HubSpot/Salesforce CRM sync, credit-based pricing |
 | `/sales-craft` | Craft platform help — AI growth engine for home services with real-time in-appointment field coaching, 24/7 AI call center, revenue recovery agents, ServiceTitan/Salesforce/HubSpot/Jobber/AccuLynx/Housecall Pro integrations |
 | `/sales-deal-inspect` | Inspect deal health, map stakeholders, identify risks, recommend next actions |

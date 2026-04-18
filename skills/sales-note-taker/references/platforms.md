@@ -33,6 +33,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Rilla | Field sales AI coaching | No | ~$199-349/rep/mo | None (via Merge) | Yes (Merge) | Medium (5 CRMs via Merge) | In-person field sales coaching, virtual ridealongs, home services |
 | Siro | Field sales AI coaching | No | ~$200-350/rep/mo | REST + OAuth | Yes (Svix) | Medium (6 CRMs via Merge) | In-person field sales coaching, Halftime real-time coaching, multi-industry (auto, home services, telecom, political) |
 | Sales Ask | Field sales AI coaching | No | ~$42-208/user/mo | None (partner-only) | None | Medium (ServiceTitan/Jobber/Housecall Pro/Salesforce/Lasso) | Home services field + call center coaching, active AI feedback, native trade CRM integrations |
+| Sonnet | Bot-free AI note-taker + CRM | Yes (5 rec/mo) | $25/mo | None | None | Medium (HubSpot/Salesforce auto-update) | Bot-free CRM auto-update, domain templates (sales/legal/medical/recruiting) |
 | Supernormal | AI agent for agencies | Yes (15 credits/mo) | $10-18/mo | None (Zapier only) | None | Medium (HubSpot/Salesforce/Pipedrive) | Agencies wanting AI-generated deliverables (decks, briefs, emails) from meetings |
 
 ## Fathom
@@ -1024,6 +1025,39 @@ For deep platform coverage (Coach Dean coaching, CRM integration, virtual rideal
 **Selection notes**:
 - **Pick Sales Ask when**: Your team is in home services (HVAC, roofing, plumbing, remodeling), you use ServiceTitan/Jobber/Housecall Pro, you want both call center and field coaching in one tool, you want active AI coaching (not passive dashboards), or you want lower pricing than Rilla/Siro with flexible monthly plans
 - **Avoid Sales Ask when**: Your team isn't in home services (→ Siro for multi-industry, Gong for enterprise B2B), you need a public API for custom integrations (→ Siro), you want live in-ear coaching during appointments (→ Craft), or you need enterprise compliance certifications beyond SOC 2 (→ Gong)
+
+---
+
+## Sonnet
+
+For deep platform coverage (CRM auto-update, templates, relationship tracker, pricing tiers), use `/sales-sonnet`.
+
+**Positioning**: Bot-free AI meeting assistant focused on auto-CRM updates. Records device audio (no bot), generates structured notes with domain templates (sales, legal, medical, recruiting), and auto-updates HubSpot/Salesforce from conversation data. YC S22, 7 employees, San Francisco. Backed by Techstars, NVIDIA Inception. macOS only (Windows beta).
+
+**Pricing (2026-04)**: Free (5 rec/mo, 30-min limit, 2-month storage, 3 AI insights/call), Plus $25/mo ($15 annual, 40 rec/mo, 90-min, 6-month storage), Pro $35/mo ($20 annual, 100 rec/mo, unlimited storage, priority support), Enterprise custom (team features, custom integrations, white glove).
+
+**API**: No public API. No webhooks. No developer portal. No MCP. No Zapier or Make integration documented. Custom integrations are not possible — CRM sync is native-only.
+
+**Integrations**: Zoom, Google Meet, Teams, Discord, Slack. CRM: HubSpot, Salesforce (auto-update). Calendar: Google Calendar.
+
+**Unique features**:
+- Auto-CRM update from conversations — logs summaries, action items, follow-up tasks without manual entry
+- Domain-specific note templates (sales, legal, medical, recruiting)
+- Concept maps and table-format note output
+- Relationship tracker that builds participant profiles across meetings
+- Pre-meeting participant context from prior conversations
+
+**Key gotchas**:
+- macOS only — Windows in beta, no Linux or web-only
+- No live transcription — post-call processing only
+- ~10 languages (English, Spanish, French, German + ~6 others)
+- No public API or webhooks — zero custom integration capability
+- Free tier very limited (5 recordings, 30 min, 2-month storage)
+- YC status "Inactive" — verify product viability before committing
+
+**Selection notes**:
+- **Pick Sonnet when**: You're a macOS sales team that wants auto-CRM update (HubSpot/Salesforce) from calls without any manual logging, domain-specific templates are valuable (legal, medical, recruiting), bot-free recording is non-negotiable
+- **Avoid Sonnet when**: You need API access (→ Fathom, Fireflies, Gong), Windows/Linux support (→ Jamie, Granola, Fathom), 20+ languages (→ Jamy, Notta, Fireflies), live transcription (→ Otter, Colibri, Tactiq), enterprise compliance (→ Gong, Avoma), budget-friendly plans (→ Fathom free, Tactiq $8/mo)
 
 ---
 
