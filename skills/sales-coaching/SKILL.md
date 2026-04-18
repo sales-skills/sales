@@ -203,6 +203,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-rilla` — Rilla platform help (field sales AI coaching, virtual ridealongs, home services focus)
 - `/sales-siro` — Siro platform help (field sales AI coaching, Halftime real-time coaching, multi-industry)
 - `/sales-salesask` — Sales Ask platform help (field + call center AI coaching, Coach Dean active feedback, home services vertical)
+- `/sales-craft` — Craft platform help (real-time in-appointment AI coaching, 24/7 AI call center, revenue recovery agents, home services)
 - `/sales-call-review` — Review specific sales calls and extract coaching insights
 - `/sales-note-taker` — Picking an AI note-taker (Fathom, Fireflies, Avoma, Gong, etc.) or wiring its API to feed your coaching program
 - `/sales-content` — Sales content for training and enablement programs

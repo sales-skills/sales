@@ -85,6 +85,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 
 - `/sales-rilla` — Rilla platform help — direct competitor for field sales AI coaching, post-appointment analysis. Install: `npx skills add sales-skills/sales --skill sales-rilla -a claude-code -y`
 - `/sales-siro` — Siro platform help — field sales AI coaching with Halftime real-time coaching. Install: `npx skills add sales-skills/sales --skill sales-siro -a claude-code -y`
+- `/sales-craft` — Craft platform help — real-time in-appointment AI coaching + 24/7 AI call center + revenue recovery (the only tool that coaches live during the appointment). Install: `npx skills add sales-skills/sales --skill sales-craft -a claude-code -y`
 - `/sales-note-taker` — Choosing an AI note-taker for virtual/video meetings (Fathom, Fireflies, Gong, etc.) and building transcript API pipelines. Install: `npx skills add sales-skills/sales --skill sales-note-taker -a claude-code -y`
 - `/sales-coaching` — Building coaching programs, onboarding, role-plays, certifications
 - `/sales-call-review` — Reviewing a specific call recording for coaching feedback
