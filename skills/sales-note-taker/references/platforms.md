@@ -28,6 +28,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Granola | Bot-free AI notepad | Yes (limited history) | $14/user/mo | REST (Business+) | None | Medium (HubSpot/Attio/Affinity, Business+) | Bot-free, AI-enhanced notes, VCs/product teams, privacy-sensitive contexts |
 | Hedy | Real-time AI meeting coach | Yes (5 hrs/mo) | $12.99/mo | REST (Pro) | Yes (HMAC) | None (via Zapier/n8n) | Real-time coaching during calls, cross-session intelligence, Apple Watch |
 | Bluedot | Bot-free AI note-taker | No (5 lifetime) | $14/mo | None (webhooks only) | Yes (Svix) | Medium (HubSpot/Salesforce, Business+) | Bot-free video recording, Chrome-first teams, screen recording |
+| Notta | AI meeting transcription (58 languages) | Yes (120 min/mo) | $13.99/mo | None (Zapier only) | None (Zapier only) | Medium (5 CRMs, Business+) | Multilingual global teams, 58-language transcription |
 | Lindy | AI agent builder (notes are one module) | Yes (free trial) | $49.99/mo | None | Inbound only | Indirect (via workflow) | All-in-one AI assistant (email + meetings + calendar + workflows) |
 
 ## Fathom
@@ -857,6 +858,44 @@ For deep platform coverage (hardware specs, API endpoints, app framework, webhoo
 **Selection notes**:
 - **Pick Bluedot when**: You need bot-free recording with video (unique combo), you want screen recording with webcam overlay, your team is Chrome-first, you need in-person + virtual meeting recording, you want Meeting Insights analytics (talk ratio, monologues), you need automated follow-up emails, or you want CRM auto-sync to HubSpot/Salesforce on Business plan
 - **Avoid Bluedot when**: You need a public REST API for custom integrations (→ Fathom, Fireflies, Gong), you need SOC 2 compliance (→ Gong, Avoma, Fireflies), you need a generous free tier (→ Fathom unlimited free, tl;dv unlimited free), you're on Firefox/Safari (→ Jamie, Granola, Omi), you need custom vocabulary for technical terms (→ Fireflies, Gong), or you need production-grade webhook signing/HMAC verification (→ Fathom, Fireflies, Wave)
+
+---
+
+## Notta
+
+For deep platform coverage (modules, pricing, Zapier automation, CRM sync, Notta Brain), use `/sales-notta`.
+
+**Positioning**: AI meeting transcription platform with best-in-class language support (58 languages, up to 98% claimed accuracy). Key differentiator is multilingual capability — ideal for global/EMEA teams. Notta Brain adds cross-meeting AI agent for querying across all meeting data. No public API — Zapier is the only automation path.
+
+**Pricing (2026-04)**: Free (120 min/mo, 3-min live limit), Pro $13.99/mo ($8.25 annual), Business $44-203/mo (up to 20 seats, CRM sync, video recording), Enterprise custom (SSO, audit logs, AI training opt-out). Annual plans ~30% cheaper, do not auto-renew.
+
+**API**: None. No public REST API, no GraphQL, no developer portal. All programmatic access goes through Zapier.
+
+**Zapier integration**:
+- Triggers: New AI Notes generated, New recording shared publicly, New recording transcribed
+- Actions: Upload audio/video for transcription, Generate AI summary from transcription
+- No Make/n8n/native webhook support
+
+**CRM sync (Business+ only)**:
+- Salesforce — sync to Log a Call or Tasks, associate with Deal or Contact
+- HubSpot — sync call summaries to Contacts & Deals
+- Zoho CRM, Freshsales, Salesflare
+
+**Integrations**: Zoom, Google Meet, Teams, Webex (bot auto-join), Google Calendar, Outlook, Slack, Google Drive/Docs, OneDrive, Notion.
+
+**Compliance**: SOC 2 Type II, ISO 27001, GDPR, CCPA, APPI. AES-256 at rest, TLS 1.2/1.3 in transit. **Warning**: Free/Pro/Business data used for AI training — Enterprise opt-out only.
+
+**Known issues (from reviews)**:
+- Free trial auto-charges credit card — cancellation process not obvious, many reports of unexpected charges
+- Transcription sometimes lacks punctuation, has random capitalizations
+- Chrome extension unreliable — stops working after one session, requires reinstall
+- Language must be pre-selected — no auto-detection, mid-call language switches produce gibberish
+- Customer support widely reported as unresponsive
+- Trustpilot rating: 2.3 stars (billing complaints dominate)
+
+**Selection notes**:
+- **Pick Notta when**: Your team operates across multiple languages (58 supported), you need Zoom/Meet/Teams/Webex auto-join with multilingual transcription, you want cross-meeting AI intelligence (Notta Brain), you don't need a public API and Zapier automation is sufficient, or you need affordable per-seat pricing for global teams
+- **Avoid Notta when**: You need a public API for custom integrations (→ Fathom, Fireflies, Gong), you need deep coaching/methodology features (→ Gong, Avoma, tl;dv), you need bot-free recording (→ Jamie, Granola, Bluedot, Tactiq), you handle sensitive data and can't accept AI training on your conversations (→ Enterprise only, or pick Jamie/Fathom), you need reliable Chrome extension (→ Tactiq, Bluedot), or customer support responsiveness matters to you
 
 ---
 

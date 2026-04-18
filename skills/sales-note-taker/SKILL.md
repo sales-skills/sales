@@ -1,6 +1,6 @@
 ---
 name: sales-note-taker
-description: "Sales meeting note-taker and conversation-intelligence strategy — platform selection (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie, Krisp, Colibri, Cluely, Jamy, Wave, tl;dv, Claap, Tactiq, Granola, Hedy, Omi, Bluedot, Lindy) plus backend API integration for auto-downloading transcripts, summaries, action items, and recordings into CRM, data warehouse, Slack, or internal tools. Use when choosing an AI note-taker for a sales team, comparing Fathom vs Fireflies pricing or features, deciding between webhook and polling for transcript ingestion, wiring meeting transcripts into HubSpot or Salesforce, building a call-intelligence data pipeline, normalizing transcript formats across multiple vendors, or debugging rate limits and auth flows in note-taker APIs. Do NOT use for reviewing a single call for coaching (use /sales-call-review) or building a coaching program (use /sales-coaching)."
+description: "Sales meeting note-taker and conversation-intelligence strategy — platform selection (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie, Krisp, Colibri, Cluely, Jamy, Wave, tl;dv, Claap, Tactiq, Granola, Hedy, Omi, Bluedot, Lindy, Notta) plus backend API integration for auto-downloading transcripts, summaries, action items, and recordings into CRM, data warehouse, Slack, or internal tools. Use when choosing an AI note-taker for a sales team, comparing Fathom vs Fireflies pricing or features, deciding between webhook and polling for transcript ingestion, wiring meeting transcripts into HubSpot or Salesforce, building a call-intelligence data pipeline, normalizing transcript formats across multiple vendors, or debugging rate limits and auth flows in note-taker APIs. Do NOT use for reviewing a single call for coaching (use /sales-call-review) or building a coaching program (use /sales-coaching)."
 argument-hint: "[describe your note-taker selection or API integration question]"
 license: MIT
 version: 1.0.0
@@ -98,6 +98,7 @@ Rank these in order for the user's context:
 - Bot-free AI notepad for VCs/product teams, privacy-sensitive contexts, HubSpot CRM → Granola
 - Open-source wearable for all-day in-person capture, developer extensibility, lowest price ($89) → Omi
 - Bot-free video recording with screen capture, Chrome-first teams, CRM auto-sync on Business plan → Bluedot
+- Multilingual global team needing 58-language transcription + cross-meeting AI intelligence (Notta Brain) → Notta
 - All-in-one AI assistant that handles email + meetings + calendar + custom workflows in a single tool → Lindy
 
 ### Integration patterns (if goal = API integration)
@@ -174,6 +175,7 @@ If you discover a gotcha, rate-limit ceiling, auth quirk, or vendor-specific pay
 - `/sales-granola` — Granola platform help (bot-free AI notepad, REST API, MCP beta, HubSpot/Attio/Affinity CRM sync, Zapier automation, pricing tiers)
 - `/sales-omi` — Omi AI platform help (open-source AI wearable necklace, Developer API, app marketplace with webhook integrations, in-person + online capture, pricing tiers)
 - `/sales-bluedot` — Bluedot platform help (bot-free AI note-taker with video recording, Chrome extension + desktop/mobile apps, Svix webhooks, HubSpot/Salesforce CRM sync, screen recording, pricing tiers)
+- `/sales-notta` — Notta platform help (AI meeting transcription in 58 languages, Notta Bot, Notta Brain cross-meeting AI, Zapier automation, CRM sync to Salesforce/HubSpot/Zoho/Freshsales/Salesflare)
 - `/sales-lindy` — Lindy platform help (no-code AI agent builder — meeting notes are one module alongside email triage, calendar management, custom workflows, chatbots, AI phone agents)
 - `/sales-salesloft` — Salesloft Conversations (bolt-on conversation intelligence inside Salesloft)
 - `/sales-zoominfo` — ZoomInfo Chorus (bolt-on conversation intelligence inside ZoomInfo)
