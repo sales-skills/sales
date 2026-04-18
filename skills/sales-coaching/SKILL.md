@@ -177,6 +177,15 @@ Ask the user:
 - **CRM auto-logging**: Call notes and coaching data sync to Salesforce/HubSpot/Pipedrive/Zoho/Close/Bullhorn/Copper/Dynamics automatically, so reps spend time selling not logging.
 - **Best practice**: Use Jiminny when you want conversation intelligence + coaching in one tool at mid-market pricing (no Gong platform fee). Jiminny is stronger in coaching accessibility than deep analytics.
 
+### In Revenue.io
+
+- **Moments real-time coaching**: Revenue.io's Moments feature delivers live in-call coaching prompts — objection handling, compliance alerts, talk tracks — triggered by keywords, phrases, or deal stage. This is coaching during the call, not after.
+- **AI call scoring (Orchestrate tier)**: 400+ scoring criteria automatically score every call. Managers see team-wide scoring trends without manual review.
+- **Manager listen-in**: Managers can join live calls silently to coach in real-time or review after.
+- **Revenue Intelligence dashboards**: Hundreds of pre-built reports surface coaching opportunities — reps with declining scores, deals at risk, activity gaps.
+- **Salesforce-native**: All coaching data lives in Salesforce — no separate coaching tool to manage. Scoring data is available for Salesforce reports and dashboards.
+- **Best practice**: Use Revenue.io for coaching when your team already uses it for dialing and engagement. The real-time Moments coaching is Revenue.io's key differentiator vs post-call-only tools like Gong. Start with 3-5 Moments triggers and expand based on rep feedback — too many triggers cause notification fatigue.
+
 ### In Enthu.AI
 
 - **Auto QA scoring**: Enthu scores 100% of calls against custom QA scorecards — no sampling. Supervisors see calls ranked by coaching priority.
@@ -248,6 +257,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-jiminny` — Jiminny platform help (coaching-focused conversation intelligence, revenue intelligence, 8 CRM integrations, mid-market Gong alternative)
 - `/sales-enthu` — Enthu.AI platform help (contact center QA with auto-scoring, agent coaching, compliance monitoring, affordable Gong alternative)
 - `/sales-demodesk` — Demodesk platform help (AI coaching scorecards, conversation intelligence, autonomous AI agents, GDPR-native)
+- `/sales-revenue-io` — Revenue.io platform help (Salesforce-native, Moments real-time in-call coaching, AI scoring with 400+ criteria, Revenue Intelligence dashboards)
 - `/sales-call-review` — Review specific sales calls and extract coaching insights
 - `/sales-note-taker` — Picking an AI note-taker (Fathom, Fireflies, Avoma, Gong, etc.) or wiring its API to feed your coaching program
 - `/sales-content` — Sales content for training and enablement programs

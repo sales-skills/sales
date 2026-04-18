@@ -228,3 +228,17 @@ Detailed per-platform cadence setup — campaign types, channel support, A/B tes
 - Meeting booking: Calendly integration — prospects can self-schedule directly from email
 - Credits: 1,200 AI messages/mo (Explore $900/mo), 4,500 (Grow $2,500/mo). Each AI-generated touchpoint consumes one credit
 - Best for: teams wanting fully autonomous outbound without building and managing sequences manually. Trade-off: less control over exact message content and timing vs traditional sequence tools
+
+## In Revenue.io (Guided Selling)
+
+- Revenue.io's cadence module is called **Guided Selling** — available on Engage tier and above
+- Salesforce-native: cadences run inside Salesforce, not a separate system. Entry/exit criteria use standard or custom Salesforce fields
+- Channels: email, phone (via RingDNA dialer), SMS, LinkedIn (tracked manually)
+- Dynamic Lead Prioritization: AI surfaces highest-value prospects to work first — no manual list reordering
+- Quick Actions: one-click task execution from the cadence view
+- Opportunity playbooks: stage-specific cadences that trigger based on deal progression
+- Re-engagement sequences: automated sequences for leads that went cold
+- Task management caveat: Guided Selling creates its own tasks separate from native Salesforce tasks. Pick one system and suppress the other — running both confuses reps
+- Email personalization: merge fields from Salesforce data, but no AI-generated copy (unlike AiSDR or Amplemarket)
+- No A/B testing documented for cadence steps — test manually by running parallel cadences
+- Best for: Salesforce-native teams wanting cadences, dialer, and coaching in one tool without stitching together Salesloft + Gong. Trade-off: less mature cadence builder than Salesloft Rhythm or Outreach, no multi-CRM support

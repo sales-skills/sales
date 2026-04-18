@@ -193,6 +193,7 @@ Router recommends a 5-skill sequence:
 | `/sales-jiminny` | Jiminny platform help — conversation intelligence, revenue intelligence, AI notetaker, sales coaching, automatic CRM logging, 8 native CRM integrations, partial REST API, mid-market Gong alternative |
 | `/sales-enthu` | Enthu.AI platform help — contact center conversation intelligence with auto QA scorecards on 100% of calls, agent coaching, compliance monitoring, sentiment analysis, Aircall/RingCentral/HubSpot/Pipedrive integrations, affordable Gong/CallMiner alternative |
 | `/sales-demodesk` | Demodesk platform help — AI-powered sales meeting platform with conversation intelligence, coaching scorecards, CRM auto-update, autonomous AI Crew agents, REST API V2, 98-language transcription, GDPR-native EU data centers |
+| `/sales-revenue-io` | Revenue.io platform help — Salesforce-native revenue orchestration with RingDNA dialer, Guided Selling cadences, Moments real-time coaching, conversation intelligence, Revenue Intelligence dashboards, custom pricing ~$59K/yr |
 | `/sales-craft` | Craft platform help — AI growth engine for home services with real-time in-appointment field coaching, 24/7 AI call center, revenue recovery agents, ServiceTitan/Salesforce/HubSpot/Jobber/AccuLynx/Housecall Pro integrations |
 | `/sales-deal-inspect` | Inspect deal health, map stakeholders, identify risks, recommend next actions |
 | `/sales-forecast` | Build and validate revenue forecasts with pipeline coverage and gap analysis |

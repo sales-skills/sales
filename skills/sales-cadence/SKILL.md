@@ -170,6 +170,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-call-review` — Review calls from your cadence to improve scripts
 - `/sales-email-tracking` — Email engagement tracking — open/click/attachment signals for follow-up timing
 - `/sales-brandjet` — BrandJet AI platform help — multi-channel outreach, brand intelligence, AI monitoring
+- `/sales-revenue-io` — Revenue.io platform help (Salesforce-native Guided Selling cadences, RingDNA dialer, Moments coaching)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill
 
 ## Gotchas

@@ -171,6 +171,15 @@ If a follow-up call was booked, draft a proposed agenda:
 3. [New topic to advance the deal]
 4. Confirm next steps and timeline
 
+### In Revenue.io
+
+- **Conversation Intelligence (Orchestrate tier)**: Revenue.io records, transcribes, and AI-scores calls using 400+ criteria. Access call recordings and transcripts from within Salesforce — no separate tool needed.
+- **AI summaries**: Automatic call summaries with action items, topics discussed, and key moments.
+- **Scoring and review**: Managers can review AI-scored calls, filter by score range, and focus coaching on the lowest-scoring interactions. Scoring criteria are configurable.
+- **Talk/listen ratio**: Track how much each participant spoke — useful for identifying reps who talk too much and don't listen.
+- **Searchable call library**: Search across all recordings by keyword, topic, or deal — useful for finding examples of great discovery calls or objection handling.
+- **Note**: Conversation Intelligence requires the Orchestrate tier (highest). Activate and Engage tiers include call recording but not AI scoring, summaries, or the searchable library.
+
 ### In Seismic
 
 - **Meeting Intelligence**: Seismic records and transcribes sales meetings with AI-generated summaries, key moment detection, and action items. Available for Zoom, Teams, and other video platforms.
@@ -227,6 +236,7 @@ If a follow-up call was booked, draft a proposed agenda:
 - `/sales-salesask` — Sales Ask platform help (field + call center AI coaching, Coach Dean active feedback, home services vertical)
 - `/sales-outdoo` — Outdoo platform help (AI roleplay coaching, conversation intelligence, revenue intelligence, CRM automation, mid-market Gong alternative)
 - `/sales-enthu` — Enthu.AI platform help (contact center QA with auto-scoring, agent coaching, compliance monitoring, affordable Gong alternative)
+- `/sales-revenue-io` — Revenue.io platform help (Salesforce-native conversation intelligence, AI scoring with 400+ criteria, Orchestrate tier)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Gotchas

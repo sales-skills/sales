@@ -194,6 +194,7 @@ If you discover a gotcha, rate-limit ceiling, auth quirk, or vendor-specific pay
 - `/sales-jiminny` — Jiminny platform help (conversation intelligence, revenue intelligence, coaching, 8 native CRM integrations, partial REST API, mid-market Gong alternative)
 - `/sales-enthu` — Enthu.AI platform help (contact center QA with auto-scoring on 100% of calls, agent coaching, compliance monitoring, affordable Gong/CallMiner alternative)
 - `/sales-demodesk` — Demodesk platform help (AI conversation intelligence + coaching scorecards + autonomous AI agents, REST API V2, GDPR-native EU)
+- `/sales-revenue-io` — Revenue.io platform help (Salesforce-native revenue orchestration, RingDNA dialer, Moments real-time coaching, CI on Orchestrate tier, no public API)
 - `/sales-salesloft` — Salesloft Conversations (bolt-on conversation intelligence inside Salesloft)
 - `/sales-zoominfo` — ZoomInfo Chorus (bolt-on conversation intelligence inside ZoomInfo)
 - `/sales-seismic` — Seismic Meeting Intelligence (bolt-on inside Seismic)

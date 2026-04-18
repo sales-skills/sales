@@ -1255,6 +1255,7 @@ For deep platform coverage (modules, pricing, QA scorecard setup, dialer integra
 
 These aren't standalone note-takers — they're modules within existing sales tools. Only relevant if you already use the parent platform.
 
+- **Revenue.io Conversation Intelligence** — inside Revenue.io (Orchestrate tier); covered by `/sales-revenue-io`
 - **Salesloft Conversations** — inside Salesloft; covered by `/sales-salesloft`
 - **ZoomInfo Chorus** — inside ZoomInfo; covered by `/sales-zoominfo`
 - **Seismic Meeting Intelligence** — inside Seismic; covered by `/sales-seismic`
