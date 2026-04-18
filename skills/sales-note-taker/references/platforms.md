@@ -35,6 +35,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Sales Ask | Field sales AI coaching | No | ~$42-208/user/mo | None (partner-only) | None | Medium (ServiceTitan/Jobber/Housecall Pro/Salesforce/Lasso) | Home services field + call center coaching, active AI feedback, native trade CRM integrations |
 | Sonnet | Bot-free AI note-taker + CRM | Yes (5 rec/mo) | $25/mo | None | None | Medium (HubSpot/Salesforce auto-update) | Bot-free CRM auto-update, domain templates (sales/legal/medical/recruiting) |
 | Supernormal | AI agent for agencies | Yes (15 credits/mo) | $10-18/mo | None (Zapier only) | None | Medium (HubSpot/Salesforce/Pipedrive) | Agencies wanting AI-generated deliverables (decks, briefs, emails) from meetings |
+| VoiceToNotes | Personal voice-to-text | Yes (10/day, 300 min/mo) | $1/mo | None (Pro Annual only, undocumented) | None | None | Ultra-cheap personal voice notes, HIPAA compliance, OCR |
 
 ## Fathom
 
@@ -1091,6 +1092,30 @@ For deep platform coverage (AI Agents, credit system, bot-free setup, deliverabl
 **Selection notes**:
 - **Pick Supernormal when**: You're an agency that needs AI-generated client deliverables from meetings, you want bot-free recording for client calls, you need broad deliverable types (decks, mood boards, spreadsheets)
 - **Avoid Supernormal when**: You need API access for custom integrations (→ Fireflies, Fathom, Gong), you need deep CRM field-mapping (→ Gong, Avoma), you need sales coaching/methodology (→ tl;dv, Avoma, Gong), or you need enterprise compliance beyond SOC 2 (→ Gong)
+
+---
+
+## VoiceToNotes
+
+For deep platform coverage (pricing tiers, AI features, OCR, export options, Chrome extension reliability), use `/sales-voicetonotes`.
+
+**Positioning**: Ultra-affordable personal voice-to-text app with HIPAA compliance. Not a meeting bot — it's a personal voice recorder with AI enhancement (summaries, grammar, custom prompts, OCR). Wins on price ($1/mo unlimited) and healthcare compliance. Loses on integrations (zero native), team features, and Chrome extension reliability.
+
+**Pricing (2026-04)**: Free (10 notes/day, 300 min/mo, 10 AI ops/day), Pro Monthly $1/mo (unlimited), Pro Annual $10/yr (unlimited + API + bulk export), Enterprise custom.
+
+**API**: HIPAA-ready speech-to-text API claimed, but no public technical documentation. API access gated to Pro Annual and Enterprise. No endpoints, auth methods, or SDKs publicly documented.
+
+**Integrations**: None. No Zapier, no CRM connectors, no webhooks, no Make/n8n. Export only: DOCX, PDF, TXT, CSV (manual download).
+
+**Key gotchas**:
+- Chrome extension drops recordings during long sessions ("note without audio")
+- No self-service subscription cancellation
+- Pricing shown inconsistently across the site ($1/mo vs $5/mo vs $7/mo)
+- No bulk export on free or Pro Monthly
+
+**Selection notes**:
+- **Pick VoiceToNotes when**: Budget is the primary concern, you need HIPAA-compliant voice transcription for personal use, you want the simplest possible voice-to-text without meeting bots, or you need OCR alongside voice notes
+- **Avoid VoiceToNotes when**: You need CRM integration (→ Fathom, Fireflies, Gong), you need Zapier/automation (→ Fireflies, Tactiq, Notta), you need team collaboration features (→ Otter, Fireflies), you need meeting bot recording (→ Fathom, Fireflies, Avoma), or you need reliable long-session recording (Chrome extension issues)
 
 ---
 
