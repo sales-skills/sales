@@ -514,3 +514,46 @@ For deep platform coverage (modules, pricing, QA scorecard setup, dialer integra
 **Selection notes**:
 - **Pick Demodesk when**: You need conversation intelligence + autonomous AI agents that act on insights, your team is EU-based and needs GDPR-native hosting, you want zero-setup CRM updates with human verification, you need coaching scorecards + pipeline analytics in one tool without Gong's platform fee, or you want 98-language transcription
 - **Avoid Demodesk when**: You need a free tier for individual use (→ Fathom, Fireflies), you need bot-free recording without silent capture (→ Granola, Jamie), you need field sales / in-person coaching (→ Rilla, Siro), you need self-service webhook setup (Demodesk requires emailing support), or your team is budget-constrained below €49/user/mo (→ Fathom, MeetGeek)
+
+---
+
+## Salesken
+
+For deep platform coverage (all modules, CRM integration, QA setup, real-time coaching, pricing, troubleshooting), use `/sales-salesken`.
+
+**Positioning**: All-in-one AI conversation intelligence with real-time in-call coaching (not just post-call analysis). Combines Revenue Intelligence, QA automation, AI Sales Assistant, Note Taker, and Field Sales Analytics. Strong APAC/India focus with multilingual capabilities. Targets banking, insurance, healthcare, BPO, EdTech, SaaS, real estate. SOC 2 Type II, GDPR, ISO 27001.
+
+**Pricing (2026-04)**: Per-recorded-user license (~$99/mo starting) + platform fee based on total supported users. Per-module pricing available (Revenue Intelligence, QA AI, Sales Assistant, Note Taker, Field Sales). Bundle discounts on combined plans. Enterprise custom. No free tier. Integration included at no extra cost.
+
+**API**:
+- No publicly documented REST API
+- Postman collection exists (`documenter.getpostman.com/view/11429137/SztA6o8r`) but JS-rendered/inaccessible
+- Enterprise customers get API-level flexibility for CRM data flows, custom field mapping, security model integration
+- Third-party integration via ApiX-Drive
+
+**Webhooks**: Not publicly documented.
+
+**Rate limits**: Not publicly documented.
+
+**Integrations**:
+- CRM: Salesforce (Classic + Lightning, native), HubSpot (native), Zoho CRM (native), custom/legacy CRM (built by Salesken onboarding team)
+- Dialers: Most major sales dialers supported (specific list not published)
+- Sales engagement: Salesloft marketplace partner
+- Video: Most major video conferencing tools supported
+
+**Data flow to CRM**:
+- Auto-syncs: transcripts, summaries, action items, next steps, deal risk scores, buyer sentiment, QA metrics, objection handling scores, next-best-action recommendations
+- Real-time or within minutes after calls
+- Configurable field-level mapping, source-of-truth designation, role-based access, custom object support (Salesforce)
+
+**Known issues (from reviews/comparison articles)**:
+- Dashboard lag during high-volume calling blocks — performance degrades under load
+- Call dropouts during live coaching — some reps report interruptions when AI is actively prompting
+- Navigation complexity — too many features requiring multiple clicks to find insights
+- Post-call analysis depth doesn't match Gong — Salesken optimizes for real-time, Gong for post-call
+- No public API docs — enterprise-only API access, self-service integration not possible
+- Pricing is fully opaque — requires sales call for any quote
+
+**Selection notes**:
+- **Pick Salesken when**: Real-time in-call coaching is the primary requirement (not just post-call analysis), you need 100% QA scoring across all calls (banking, insurance, BPO compliance), your team is APAC-based or multilingual, you want revenue intelligence + QA + coaching in one platform without Gong pricing, or you have field sales teams needing on-site conversation capture
+- **Avoid Salesken when**: You need a public API for custom integrations (→ Gong, Fireflies, Fathom), you need transparent self-serve pricing (→ Fathom, Fireflies), you need a free tier (→ Fathom, tl;dv, Fireflies), you need the deepest post-call analytics ecosystem (→ Gong), you need methodology scorecards like MEDDIC/BANT built in (→ Avoma), or you need bot-free recording (→ Jamie, Granola, Krisp)

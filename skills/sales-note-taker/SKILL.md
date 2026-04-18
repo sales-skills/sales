@@ -1,6 +1,6 @@
 ---
 name: sales-note-taker
-description: "Sales meeting note-taker and conversation-intelligence strategy — platform selection (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie, Krisp, Colibri, Cluely, Jamy, Wave, tl;dv, Claap, Tactiq, Granola, Hedy, Omi, Bluedot, Lindy, Notta, Rilla, Siro, Sonnet, Supernormal, VoiceToNotes, Outdoo, Jiminny, Enthu.AI, Demodesk, Clari Copilot) plus backend API integration for auto-downloading transcripts, summaries, action items, and recordings into CRM, data warehouse, Slack, or internal tools. Use when choosing an AI note-taker for a sales team, comparing Fathom vs Fireflies pricing or features, deciding between webhook and polling for transcript ingestion, wiring meeting transcripts into HubSpot or Salesforce, building a call-intelligence data pipeline, normalizing transcript formats across multiple vendors, choosing a field sales conversation intelligence tool (Rilla, Siro, Sales Ask), or debugging rate limits and auth flows in note-taker APIs. Do NOT use for reviewing a single call for coaching (use /sales-call-review) or building a coaching program (use /sales-coaching)."
+description: "Sales meeting note-taker and conversation-intelligence strategy — platform selection (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie, Krisp, Colibri, Cluely, Jamy, Wave, tl;dv, Claap, Tactiq, Granola, Hedy, Omi, Bluedot, Lindy, Notta, Rilla, Siro, Sonnet, Supernormal, VoiceToNotes, Outdoo, Jiminny, Enthu.AI, Demodesk, Clari Copilot, Salesken) plus backend API integration for auto-downloading transcripts, summaries, action items, and recordings into CRM, data warehouse, Slack, or internal tools. Use when choosing an AI note-taker for a sales team, comparing Fathom vs Fireflies pricing or features, deciding between webhook and polling for transcript ingestion, wiring meeting transcripts into HubSpot or Salesforce, building a call-intelligence data pipeline, normalizing transcript formats across multiple vendors, choosing a field sales conversation intelligence tool (Rilla, Siro, Sales Ask), or debugging rate limits and auth flows in note-taker APIs. Do NOT use for reviewing a single call for coaching (use /sales-call-review) or building a coaching program (use /sales-coaching)."
 argument-hint: "[describe your note-taker selection or API integration question]"
 license: MIT
 version: 1.0.0
@@ -121,6 +121,7 @@ Rank these in order for the user's context:
 - Mid-market team wanting coaching-focused conversation intelligence with wide CRM support (8 CRMs) without Gong pricing → Jiminny
 - Small-to-mid contact center needing automated QA scoring on 100% of calls without Gong pricing → Enthu.AI
 - Enterprise team wanting conversation intelligence tightly integrated with revenue forecasting (Clari Core) → Clari Copilot
+- Real-time in-call coaching + QA automation + revenue intelligence in one platform, APAC/multilingual focus → Salesken
 
 ### Integration patterns (if goal = API integration)
 
@@ -208,6 +209,7 @@ If you discover a gotcha, rate-limit ceiling, auth quirk, or vendor-specific pay
 - `/sales-enthu` — Enthu.AI platform help (contact center QA with auto-scoring on 100% of calls, agent coaching, compliance monitoring, affordable Gong/CallMiner alternative)
 - `/sales-demodesk` — Demodesk platform help (AI conversation intelligence + coaching scorecards + autonomous AI agents, REST API V2, GDPR-native EU)
 - `/sales-clari-copilot` — Clari Copilot platform help (real-time battlecards, live coaching, coaching scorecards, gametapes, Clari Core API, enterprise pricing)
+- `/sales-salesken` — Salesken platform help (real-time in-call coaching, QA automation on 100% of calls, revenue intelligence, field sales analytics, multilingual, Salesforce/HubSpot/Zoho)
 - `/sales-revenue-io` — Revenue.io platform help (Salesforce-native revenue orchestration, RingDNA dialer, Moments real-time coaching, CI on Orchestrate tier, no public API)
 - `/sales-salesloft` — Salesloft Conversations (bolt-on conversation intelligence inside Salesloft)
 - `/sales-zoominfo` — ZoomInfo Chorus (bolt-on conversation intelligence inside ZoomInfo)

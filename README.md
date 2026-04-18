@@ -195,6 +195,7 @@ Router recommends a 5-skill sequence:
 | `/sales-demodesk` | Demodesk platform help — AI-powered sales meeting platform with conversation intelligence, coaching scorecards, CRM auto-update, autonomous AI Crew agents, REST API V2, 98-language transcription, GDPR-native EU data centers |
 | `/sales-clari-copilot` | Clari Copilot (formerly Wingman) platform help — real-time battlecards, live coaching, AI call summaries, coaching scorecards, gametapes, deal intelligence, Clari Core API, ~$60-110/user/mo |
 | `/sales-revenue-io` | Revenue.io platform help — Salesforce-native revenue orchestration with RingDNA dialer, Guided Selling cadences, Moments real-time coaching, conversation intelligence, Revenue Intelligence dashboards, custom pricing ~$59K/yr |
+| `/sales-salesken` | Salesken platform help — real-time in-call coaching, QA automation on 100% of calls, revenue intelligence, field sales analytics, multilingual, Salesforce/HubSpot/Zoho native CRM, ~$99/mo |
 | `/sales-craft` | Craft platform help — AI growth engine for home services with real-time in-appointment field coaching, 24/7 AI call center, revenue recovery agents, ServiceTitan/Salesforce/HubSpot/Jobber/AccuLynx/Housecall Pro integrations |
 | `/sales-deal-inspect` | Inspect deal health, map stakeholders, identify risks, recommend next actions |
 | `/sales-forecast` | Build and validate revenue forecasts with pipeline coverage and gap analysis |

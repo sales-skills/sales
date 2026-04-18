@@ -7,7 +7,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | File | What's in it | Platforms |
 |---|---|---|
 | `platforms-smb.md` | Budget-friendly tools under ~$50/user/mo, strong free tiers | Fathom, Fireflies, Otter, MeetGeek, Tactiq, Granola, Wave, Bluedot, Notta, Sonnet, Supernormal, VoiceToNotes, Hedy, Colibri, Jamy |
-| `platforms-midmarket.md` | Sales-focused CI with coaching, methodology, CRM enrichment | Avoma, tl;dv, Claap, Grain, Sembly, Read.ai, Fellow, Jamie, Krisp, Cluely, Lindy, Outdoo, Jiminny, Enthu.AI, Demodesk |
+| `platforms-midmarket.md` | Sales-focused CI with coaching, methodology, CRM enrichment | Avoma, tl;dv, Claap, Grain, Sembly, Read.ai, Fellow, Jamie, Krisp, Cluely, Lindy, Outdoo, Jiminny, Enthu.AI, Demodesk, Salesken |
 | `platforms-enterprise.md` | Enterprise revenue intelligence ($1K+/user/yr) + bolt-on CI | Gong, Clari Copilot, + Salesloft Conversations, Chorus, Seismic, Revenue.io |
 | `platforms-field.md` | In-person/field sales coaching and mobile recording | Rilla, Siro, Sales Ask, Omi |
 
@@ -52,4 +52,5 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Enthu.AI | Contact center QA + coaching | No (free trial) | ~$15-69/user/mo | Not published | Not published | Medium (HubSpot/Pipedrive/Bullhorn/Close) | Contact center QA auto-scoring on 100% of calls, compliance, affordable |
 | Demodesk | AI sales meeting platform + coaching + agents | Yes (14-day trial) | €49/user/mo | REST (V2) | Yes (13 events) | Deep (Salesforce/HubSpot/Pipedrive) | AI-first conversation intelligence with autonomous agents, GDPR-native EU teams |
 | Clari Copilot | Revenue CI + live coaching | No (30-day trial) | ~$60/user/mo | REST (Core API, Enterprise) | None documented | Deep (Salesforce/HubSpot/Pipedrive) | Enterprise CI tightly integrated with Clari revenue forecasting, real-time battlecards |
+| Salesken | Real-time coaching + QA + revenue intel | No | ~$99/mo | Not published (Enterprise API) | Not published | Deep (Salesforce/HubSpot/Zoho native) | Real-time in-call coaching, 100% QA scoring, APAC/multilingual, field sales |
 | Omi | Open-source AI wearable | Yes (1,200 min/mo) | $19/mo | REST | Yes (app marketplace) | None | All-day in-person capture, developer extensibility, lowest price ($89 hardware) |
