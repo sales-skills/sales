@@ -23,6 +23,7 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - [Observe.AI](#in-observeai)
 - [Talkdesk](#in-talkdesk)
 - [Genesys Cloud CX](#in-genesys-cloud-cx)
+- [Calabrio ONE](#in-calabrio-one)
 - [Manual / Spreadsheet](#manual--spreadsheet-approach)
 
 ### In Seismic Learning (formerly Lessonly)
@@ -230,6 +231,15 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - **Predictive routing for coaching insights**: CX 4's predictive routing generates data on which agents handle which interaction types best — useful for identifying coaching opportunities.
 - **Limitations**: QM is built-in but lighter than dedicated QA tools (Observe.AI, Balto, Cresta). No AI roleplay or practice simulation. AI features gated behind CX 4 ($240/user/mo) — most teams will be on CX 2-3 without agent assist. Dashboard navigation widely cited as confusing. Implementation takes months.
 - **Best practice**: Use Genesys Cloud's built-in QM when you want coaching within your CCaaS platform without adding a separate tool. For deeper automated QA (100% AI scoring, coaching moment flagging), layer Observe.AI, Balto, or Cresta on top — all three integrate natively with Genesys. Genesys has deeper WFM than Talkdesk but lighter QM than NICE CXone.
+
+### In Calabrio ONE
+
+- **Quality Management (QM)**: Calabrio ONE's QM module provides customizable evaluation scorecards with weighted criteria, auto and manual evaluation modes, screen recording alongside voice, and calibration sessions to ensure evaluator consistency. Coaching workflows link evaluation results to coaching sessions with completion tracking.
+- **Performance Management**: Agent dashboards, gamification (leaderboards, badges, goals), and coaching impact tracking that measures the effect of coaching on KPIs over time.
+- **Interaction Analytics for coaching insights**: Speech and text analytics on 100% of interactions — sentiment analysis, trending topics, automated categorization. Surfaces emerging issues and compliance violations that feed into coaching priorities.
+- **Bot Analytics**: Unified view of chatbot/voicebot and live agent conversations — identifies where bots fail and escalate, informing both bot training and agent coaching for handoff scenarios.
+- **Limitations**: Cloud version is buggy — crashes under heavy load. Support resolution takes weeks/months. Features promised by sales may not be in your purchased tier. Reporting requires running same report multiple times for cross-queue analysis. Not a CCaaS — layers on top of Amazon Connect, Genesys, NICE, Five9, Cisco, Avaya.
+- **Best practice**: Use Calabrio ONE when you need standalone WFM + QM + analytics across multiple CCaaS platforms (e.g., running both Amazon Connect and Genesys). If your CCaaS already has strong QM (NICE CXone Complete, Genesys CX 3+), evaluate whether the built-in QM meets your needs before adding Calabrio — it can create redundancy. For pure automated QA (100% AI scoring), Observe.AI or Balto may be more focused tools. Calabrio's strength is unified WFM+QM+analytics, not QA-only.
 
 ### Manual / Spreadsheet approach
 

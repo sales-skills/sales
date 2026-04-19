@@ -54,6 +54,7 @@ Skip-ahead rule: if the user's prompt already contains enough context, skip to S
 | NICE CXone-specific configuration | `/sales-nice-cxone {question}` |
 | Talkdesk-specific configuration | `/sales-talkdesk {question}` |
 | QA tool layered on top of CCaaS (Observe.AI, Balto, Cresta) | `/sales-coaching {question}` |
+| Calabrio ONE-specific WFM/QM/analytics questions | `/sales-calabrio {question}` |
 | Connecting CCaaS to CRM or other tools | `/sales-integration {question}` |
 
 If the question is about comparing or selecting CCaaS platforms, continue to Step 3.
@@ -102,6 +103,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-nice-cxone` — NICE CXone platform help
 - `/sales-talkdesk` — Talkdesk platform help
 - `/sales-coaching` — Sales coaching, QA, and agent training strategy
+- `/sales-calabrio` — Calabrio ONE — standalone WEM (WFM, QM, analytics) that layers on top of any CCaaS
 - `/sales-observe-ai` — Observe.AI — layer auto QA on top of any CCaaS
 - `/sales-balto` — Balto — real-time agent assist for contact centers
 - `/sales-cresta` — Cresta — enterprise contact center AI

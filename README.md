@@ -61,48 +61,44 @@ One router skill (`/sales-do`) understands all available sales, marketing, ad ne
 
 1. **You invoke the router** with a plain-language request (or no arguments at all).
 
-2. **The router asks clarifying questions** — it always asks, even if you provided arguments. It needs to fully understand your situation: what you're trying to do, who the audience is, where you are in the process, and any constraints. Questions use multiple-choice options to make answering fast.
+2. **The router asks clarifying questions** — it needs to understand what you're trying to do, who the audience is, where you are in the process, and any constraints. Questions use multiple-choice options to make answering fast.
 
-3. **The router detects your installed skills** — it checks `~/.claude/skills/` to see what you already have, so it only shows install commands for skills you're missing.
+3. **The router checks strategy skills first** — before looking at individual platforms, it checks whether your problem maps to a **strategy skill**. Strategy skills are cross-platform coordinators that cover an entire problem domain (e.g., `/sales-deliverability` covers email deliverability across Apollo, Mailshake, Salesloft, Smartlead, etc.). If a strategy skill matches, you get routed there — and the strategy skill handles platform-specific routing internally. There are 40+ strategy skills covering problem domains from CRM selection to influencer marketing to help desk comparison.
 
-4. **The router matches and recommends** — it picks the best skill(s) and explains why. For complex objectives it recommends a full sequence of skills (no limit on how many).
-
-5. **The router generates verbose, ready-to-use prompts** — for every recommended skill, it outputs a detailed `/skill-name` invocation packed with all the context you provided. You can copy-paste-run each prompt directly and get a great result without re-explaining anything.
+4. **The router matches and recommends** — it picks the best skill and generates a detailed, ready-to-use `/sales-*` prompt packed with all the context you provided. You can copy-paste-run it directly and get a great result without re-explaining anything. For multi-step objectives, it recommends a sequence of skills.
 
 ### What it does NOT do
 
 - It does **not** solve the problem itself — it never writes copy, audits SEO, or designs pricing. It only routes.
 - It does **not** auto-invoke the target skill — you run the generated prompts yourself, so you stay in control.
 
-### Example session
+### Example: strategy skill routing
 
 ```
-> /sales-do I need to launch our new product
+> /sales-do we need a help desk — we're a 15-person SaaS team using HubSpot,
+  budget is under $50/agent
 
-Router asks:
-  What kind of product?
-  - A) SaaS / software
-  - B) Physical product
-  - C) Service / consulting
+Router responds:
+  This is a help desk selection question — run:
 
-  Who is the target buyer?
-  - A) SMB / startup founders
-  - B) Mid-market (VP/Director level)
-  - C) Enterprise (C-suite)
-  - D) Consumer / B2C
+  /sales-helpdesk-selection We're a 15-person SaaS team using HubSpot CRM.
+  We need email + chat support with a knowledge base. Budget is under
+  $50/agent/month. Compare our options.
+```
 
-  What assets do you already have?
-  - A) Nothing yet — starting from scratch
-  - B) We have positioning/messaging docs
-  - C) We have a landing page but need the launch plan
-  ...
+The strategy skill (`/sales-helpdesk-selection`) then compares Zendesk, Freshdesk, Intercom, Help Scout, Gorgias, and others — factoring in your budget, CRM, and team size.
 
-Router recommends a 5-skill sequence:
-  1. /product-marketing-context <verbose prompt with all your context>
-  2. /launch-strategy <verbose prompt referencing step 1 output>
-  3. /copywriting <verbose prompt for launch landing page>
-  4. /email-sequence <verbose prompt for launch email campaign>
-  5. /social-content <verbose prompt for launch social posts>
+### Example: multi-skill sequence
+
+```
+> /sales-do I want to launch cold outbound — need a prospect list,
+  verify emails, warm up a domain, then run a sequence
+
+Router recommends a 4-skill sequence:
+  1. /sales-prospect-list <prompt with ICP, filters, volume>
+  2. /sales-enrich <prompt to verify/enrich the list>
+  3. /sales-deliverability <prompt for domain warmup and DNS setup>
+  4. /sales-cadence <prompt to design the outbound sequence>
 ```
 
 ## Skills Catalog
@@ -203,6 +199,7 @@ Router recommends a 5-skill sequence:
 | `/sales-zendesk` | Zendesk platform help — ticketing, Help Center, AI agents, live chat, Talk voice, Sell CRM, omnichannel messaging, Explore analytics, 1300+ Marketplace apps, REST API (15+ API families), $19-$169/agent/mo + add-ons |
 | `/sales-helpdesk-selection` | Help desk platform comparison and selection — Zendesk vs Freshdesk vs Intercom vs Help Scout vs Zoho Desk vs Front vs Hiver vs Jira Service Management vs Gorgias vs Tidio |
 | `/sales-ccaas-selection` | CCaaS platform comparison and selection — Genesys vs NICE CXone vs Talkdesk vs Five9 vs 8x8 vs Nextiva vs Amazon Connect vs Twilio Flex vs Aircall vs Dialpad |
+| `/sales-calabrio` | Calabrio ONE platform help — standalone WEM (WFM forecasting/scheduling, QM scorecards, interaction analytics, bot analytics, call recording) layered on top of any CCaaS (Amazon Connect, Genesys, NICE, Five9, Cisco, Avaya), WFM/Historical Data/HR APIs, ~$50-120/agent/mo |
 | `/sales-observe-ai` | Observe.AI platform help — enterprise contact center intelligence with 100% Auto QA, Agent Copilot real-time guidance, Coaching Copilot, VoiceAI/ChatAI virtual agents, Five9/Amazon Connect/Talkdesk/Avaya integrations, REST API, ~$100-500/user/mo |
 | `/sales-cresta` | Cresta platform help — enterprise contact center AI with real-time agent assist, AI virtual agents, conversation intelligence, automated QA, Knowledge Agent, Agent Operations Center, Five9/Amazon Connect/Genesys/NICE integrations, $60K-$150K/yr |
 | `/sales-craft` | Craft platform help — AI growth engine for home services with real-time in-appointment field coaching, 24/7 AI call center, revenue recovery agents, ServiceTitan/Salesforce/HubSpot/Jobber/AccuLynx/Housecall Pro integrations |
@@ -712,11 +709,15 @@ Router recommends a 5-skill sequence:
 ## Usage Examples
 
 ```
-# Route automatically
-/sales-do prep for a discovery call with Acme Corp
+# Route automatically — don't know which skill? Just describe the problem
+/sales-do I need to pick a CRM for my 8-person sales team
 
-# Or use skills directly
-/sales-research Acme Corp
-/sales-outreach cold email for VP Engineering at Series B startups
-/sales-objection they say they already have a solution in place
+# Use platform skills directly
+/sales-apollo my sequences aren't syncing to Salesforce
+/sales-zendesk our SLA timers are counting through weekends
+
+# Use strategy skills for cross-platform guidance
+/sales-deliverability my cold emails are landing in spam
+/sales-cadence design a 14-day outbound sequence for VP Engineering at fintech
+/sales-helpdesk-selection we're on Gmail, 200 tickets/day, need to pick a help desk
 ```

@@ -14,6 +14,7 @@ Detailed profiles for each major CCaaS platform — capabilities, pricing, stren
 - [8x8](#8x8)
 - [Aircall](#aircall)
 - [Dialpad](#dialpad)
+- [Calabrio ONE (WEM add-on)](#calabrio-one-wem-add-on)
 
 ## Pricing comparison table
 
@@ -29,6 +30,7 @@ Detailed profiles for each major CCaaS platform — capabilities, pricing, stren
 | 8x8 | X2 $28 | X4 $57 | Contact Center add-on | Included | SMB-mid, UCaaS+CCaaS combined |
 | Aircall | Essentials $30 | Professional $50 | Custom | Included | Small teams, quick setup |
 | Dialpad | Standard $27 | Pro $35 | Enterprise custom | Included | SMB, AI transcription |
+| Calabrio ONE | Standard ~$50-75 | Advanced ~$75-120 | Enterprise custom | N/A (WEM layer) | Standalone WFM/QM/analytics on top of any CCaaS |
 
 *Prices are per user/agent per month, billed annually. Actual pricing depends on negotiation, volume, and contract length.*
 
@@ -250,3 +252,32 @@ Detailed profiles for each major CCaaS platform — capabilities, pricing, stren
 | Full customization | Twilio Flex | Build exactly what you need |
 | UCaaS + CCaaS combined | Nextiva or 8x8 | One platform for internal + external comms |
 | HIPAA compliance | Genesys, NICE, Five9, Amazon Connect | All offer BAAs and HIPAA-eligible configs |
+| Standalone WEM/WFM | Calabrio ONE | Best-in-class WFM/QM/analytics that layers on top of any CCaaS |
+
+## Calabrio ONE (WEM add-on)
+
+**Positioning**: Standalone workforce engagement management suite — WFM, QM, interaction analytics, bot analytics, and call recording. Not a CCaaS itself — layers on top of Amazon Connect, Genesys, NICE, Five9, Cisco, Avaya, Mitel, or Twilio Flex. Competes with NICE WFM (embedded) and Verint.
+
+**Strengths**:
+- Unified WFM + QM + analytics in a single platform (vs buying each separately)
+- Works across multiple CCaaS platforms (not locked to one vendor)
+- AI forecasting and interaction analytics with sentiment analysis
+- Bot analytics — unified chatbot/voicebot performance alongside live agents
+- FedRAMP authorized (GovSuite variant)
+- Developer program with marketplace for integrations
+- Salesforce AppExchange connector for QM data
+
+**Limitations**:
+- Cloud version reported as buggy — crashes under heavy load, slow schedule rendering for 200+ agent views
+- Support resolution takes weeks/months for non-critical bugs
+- Features promised during sales not always available on purchased tier
+- Custom pricing (not publicly listed) — expect ~$50-120/agent/mo depending on tier
+- Implementation costs $10K-50K
+- Reporting requires running same report multiple times for cross-queue analysis
+- API documentation behind tenant-specific login (not publicly browsable)
+
+**Best for**: Organizations that want best-of-breed WFM/QM separate from their CCaaS vendor. Contact centers running multiple CCaaS platforms that need unified workforce management. Amazon Connect or Twilio Flex deployments that lack built-in WFM/QM (Calabrio fills the gap).
+
+**When NOT to choose Calabrio**: If your CCaaS already has strong WFM (NICE CXone Complete, Genesys CX 3+), adding Calabrio creates redundancy and extra cost. Evaluate whether your CCaaS's built-in WFM meets your needs before adding a standalone WEM layer.
+
+**Platform skill**: `/sales-calabrio`
