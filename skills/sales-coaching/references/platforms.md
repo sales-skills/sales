@@ -19,6 +19,7 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - [Orum](#in-orum)
 - [Momentum](#in-momentum)
 - [Trellus](#in-trellus)
+- [Oliv](#in-oliv)
 - [Manual / Spreadsheet](#manual--spreadsheet-approach)
 
 ### In Seismic Learning (formerly Lessonly)
@@ -173,6 +174,19 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - **Coaching adoption**: Start with 2-3 coaching triggers — too many causes notification fatigue. Review team coaching metrics weekly. Trellus coaching runs inside the rep's existing SEP (Salesloft, Outreach, HubSpot), so there's no separate coaching UI to learn.
 - **Limitations**: Real-time coaching cues are Business tier only — individual plans get the dialer and practice bots but not live coaching. Phone-call-focused — no demo/meeting coaching. No structured learning paths, certifications, or courses (pair with Seismic Learning or Allego for those). Chrome extension only — no mobile coaching.
 - **Best for**: SDR teams using Trellus as their dialer who want built-in coaching without adding Gong or a separate CI tool. The real-time coaching during calls is Trellus's differentiator vs Nooks and Orum (which offer post-call scoring but not live prompts). For comprehensive coaching programs, pair Trellus with a dedicated enablement platform.
+
+### In Oliv
+
+- **AI Scorecards** (Meeting Insights, $29/user/mo): Custom scoring criteria aligned to any methodology (MEDDIC, BANT, SPICED, or custom). AI auto-scores every call. View scores in coaching dashboard and smart playlists.
+- **Coaching insights**: Meeting-level performance feedback on talk patterns, interaction quality, and methodology adherence. Managers see team-wide trends without reviewing every call.
+- **Smart playlists**: Curated call collections by topic, outcome, or score — useful for building coaching libraries of best/worst examples.
+- **Live Scorecard**: Real-time tracking during calls showing sales activity gaps as they happen. Reps see live feedback, not just post-call analysis.
+- **Rolling Talk Tracks**: Adaptive conversation guidance based on the call scenario — coaching happens during the call, not after.
+- **Deal Driver Agent**: Identifies at-risk deals with specific remediation steps. Managers can focus coaching on deals that need attention rather than reviewing every opportunity.
+- **CRM Manager Agent**: Auto-populates CRM fields from conversation data. Learns team methodology from 3 calls, then auto-applies — reduces coaching burden around CRM hygiene.
+- **Coach Agent** (Coming Soon): Dedicated AI meeting evaluation with personalized coaching action plans per rep. Not yet available as of April 2026.
+- **Limitations**: No structured learning paths, certifications, or course creation (pair with Seismic Learning or Allego for those). No AI roleplay for practice (unlike Outdoo, Nooks, Orum). No public API for coaching data export. Coach Agent still in development.
+- **Best for**: Teams that want call scoring and coaching insights bundled with their meeting intelligence at mid-market pricing. The modular pricing ($29/user/mo for Meeting Insights) is significantly cheaper than Gong for coaching use cases. Best when combined with a dedicated enablement platform for structured training.
 
 ### Manual / Spreadsheet approach
 

@@ -557,3 +557,37 @@ For deep platform coverage (all modules, CRM integration, QA setup, real-time co
 **Selection notes**:
 - **Pick Salesken when**: Real-time in-call coaching is the primary requirement (not just post-call analysis), you need 100% QA scoring across all calls (banking, insurance, BPO compliance), your team is APAC-based or multilingual, you want revenue intelligence + QA + coaching in one platform without Gong pricing, or you have field sales teams needing on-site conversation capture
 - **Avoid Salesken when**: You need a public API for custom integrations (→ Gong, Fireflies, Fathom), you need transparent self-serve pricing (→ Fathom, Fireflies), you need a free tier (→ Fathom, tl;dv, Fireflies), you need the deepest post-call analytics ecosystem (→ Gong), you need methodology scorecards like MEDDIC/BANT built in (→ Avoma), or you need bot-free recording (→ Jamie, Granola, Krisp)
+
+## Oliv
+
+For deep platform coverage (agent configuration, CRM setup, scorecard configuration, migration, pricing tiers), use `/sales-oliv`.
+
+**Positioning**: AI-native revenue intelligence platform with modular agent architecture. Instead of a monolithic CI platform, Oliv deploys individual AI agents (Notetaker, Meeting Insights, Deal Insights, CRM Manager, Forecaster) that teams buy à la carte. Positioned as a 13x cheaper alternative to Gong — a team paying $19/user/mo for transcription can scale to $77/user/mo for the full stack without switching platforms.
+
+**Pricing (2026-04)**: Notetaker $19/user/mo, Meeting Insights $29/user/mo, Deal Insights $29/user/mo (all annual). Full stack $77/user/mo. CRM Manager Agent ~$19/user/mo add-on. Forecaster Agent $199/manager/mo. Viewers and collaborators free. 14-day trial, no CC. Free migration from Gong/Fireflies/Avoma/Clari/Otter/Fathom. Volume discounts available.
+
+**API**: No public API documented. All integrations through web.oliv.ai UI and native connectors.
+
+**Webhooks**: None documented.
+
+**Rate limits**: N/A (no public API).
+
+**Integrations**: Salesforce, HubSpot, Zoho, Freshworks, Copper, Close, Pipedrive, Dynamics 365 (CRM). Gong, Clari, Avoma, Chorus, Grain (CI — can use as audio sources). Highspot, Seismic, Guru, Mindtickle (enablement). Fireflies, Fathom, tl;dv, Otter, Read (alternative recorders). Apollo, Outreach, ZoomInfo, SalesIntel, Salesloft (prospecting). Zoom, Google Meet, Teams, Webex (conferencing). Slack, Teams, Google Chat (comms). 42+ total integrations.
+
+**CRM sync**:
+- Bidirectional with all 8 supported CRMs
+- CRM Manager Agent auto-populates fields from conversation context
+- Agent learns team methodology from 3 calls, then auto-applies
+- Setup: Salesforce via web.oliv.ai/salesforce/connect (package install), HubSpot via web.oliv.ai/hubspot/connect
+- Auto-syncs: transcripts, summaries, deal health scores, methodology fields, follow-up actions
+
+**Known issues (from comparison articles/reviews)**:
+- No public API — cannot build custom integrations, webhook pipelines, or data warehouse exports
+- 0 G2 reviews as of 2026-04 — very early-stage platform, limited independent validation
+- Coach module listed as "Coming Soon" — dedicated coaching agent not yet available
+- Calendar integration is a hard dependency — Oliv won't function without Gmail or Outlook calendar connected
+- Annual-only pricing — no monthly payment option
+
+**Selection notes**:
+- **Pick Oliv when**: You want Gong-level intelligence at a fraction of the cost, you prefer modular pricing (buy only what you need), you're migrating from an expensive CI stack, you want AI agents that autonomously complete work (not just dashboards), your team uses multiple CRMs or needs broad CRM support (8 CRMs), or you want an existing recorder (Gong, Fireflies, etc.) as audio source with Oliv for intelligence
+- **Avoid Oliv when**: You need a public API for custom integrations (→ Gong, Fireflies, Fathom), you need an established platform with extensive reviews and case studies (→ Gong), you need bot-free recording (→ Jamie, Granola, Krisp), you need enterprise-grade contact center features (→ Cresta, Balto), you need a free tier (→ Fathom, tl;dv), or you need a dedicated coaching module today (Coach is "Coming Soon")
