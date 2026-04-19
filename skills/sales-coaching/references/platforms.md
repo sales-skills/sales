@@ -25,6 +25,7 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - [Genesys Cloud CX](#in-genesys-cloud-cx)
 - [Calabrio ONE](#in-calabrio-one)
 - [Verint](#in-verint-da-vinci-ai-bots)
+- [MaestroQA](#in-maestroqa)
 - [Manual / Spreadsheet](#manual--spreadsheet-approach)
 
 ### In Seismic Learning (formerly Lessonly)
@@ -257,6 +258,15 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - **Setup**: Connect CCaaS via pre-built connector (8x8, Amazon Connect, Avaya, Aircall, Bright Pattern, etc.), define 3-5 binary QA criteria, calibrate AI vs manual scoring for 2-4 weeks, then enable automated coaching triggers.
 - **Limitations**: No public API — all integrations through Convin's pre-built connectors or custom integration requests (~3-day turnaround). Transcription struggles with speaker diarization (agent vs customer) on mono recordings. Dashboard occasionally delays showing new calls. AI scoring doesn't always explain why it marked criteria as "No." Steep learning curve — budget 2-4 weeks admin training. Custom pricing only (no published rates). India-based — strongest support in APAC time zones.
 - **Best practice**: Use Convin when you want QA + coaching + LMS + voicebot in one vendor, especially for B2C contact centers in APAC or with multilingual needs. If you only need QA scoring, Observe.AI or Enthu.AI may be simpler. If you need the fastest real-time prompts, Balto (<200ms) is purpose-built for that. Convin's strength is the full stack: QA feeds coaching feeds training feeds back into QA.
+
+### In MaestroQA
+
+- **What it does for coaching**: MaestroQA is a conversation data QA platform that connects QA scoring to coaching workflows. Customizable scorecards grade interactions (tickets, calls, chats) against weighted criteria. Low scores automatically trigger coaching sessions with specific low-scoring segments linked as coaching points. Coaching to-dos track follow-through.
+- **Key capabilities**: AskAI natural language querying ("which agents struggle with refund handling"), calibration tools for evaluator consistency, reverse-ETL to push coaching tasks to Slack or CRM, agent self-review dashboards, CSAT ingestion to validate QA criteria against customer satisfaction, chatbot QA for grading AI agent conversations.
+- **Integrations**: 60+ — Zendesk, Freshdesk, Salesforce, Intercom, ServiceNow, Five9, Talkdesk, Amazon Connect, NICE, Aircall, Gong, Zoom, Snowflake, BigQuery. Also Ada, Sierra, Agentforce for chatbot QA.
+- **API**: Rippit API at `app.rippit.com/api/v1` — token auth, 10 req/s. Export grading data, ingest CSAT, manage agents, query coaching sessions/to-dos. SCIM 2.0 for user provisioning.
+- **Limitations**: AI-powered analytics are add-ons (budget separately). Dashboard customization limited — export to data warehouse for advanced reporting. Steep learning curve — budget 2-4 weeks for initial scorecard and calibration setup. No real-time agent coaching during calls (use Balto or Cresta for that). API tokens expire every 90 days by default.
+- **Best practice**: Use MaestroQA when your primary need is structured QA workflows with coaching — scorecards, calibration, assignments, coaching sessions — across any helpdesk or phone system. MaestroQA is stronger on structured QA process (scorecard design, evaluator calibration, coaching workflow automation) than AI-first platforms like Observe.AI or Cresta. For real-time coaching during calls, pair MaestroQA with Balto. For enterprise AI-first contact center intelligence, consider Observe.AI or Cresta instead.
 
 ### Manual / Spreadsheet approach
 
