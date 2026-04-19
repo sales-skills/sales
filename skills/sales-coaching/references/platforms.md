@@ -250,6 +250,14 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - **Limitations**: Enterprise-only — custom pricing, "contact sales" model. Steep learning curve — budget 2-4 weeks admin training. Reporting tools outdated and can produce inconsistent data. Support resolution slow. API docs behind authenticated developer portal. Acquired Calabrio in Feb 2026 — Calabrio ONE continues as midmarket offering.
 - **Best practice**: Use Verint when you need an open, modular WEM/QA layer that connects to any ACD (BYOT architecture). If you already run NICE CXone Complete or Genesys CX 3+, evaluate whether their built-in QM meets your needs before adding Verint — it can create redundancy. Verint's strength is cross-ACD flexibility and AI bot depth, not simplicity.
 
+### In Convin
+
+- **What it does for coaching**: Convin combines 100% automated QA scoring with real-time agent coaching and an AI-powered LMS — all in one platform. The Conversation Intelligence Agent analyzes every call for compliance, process adherence, and soft skills. Real-Time Assist Agent surfaces live battlecards, compliance prompts, and next-best-action suggestions during calls. The LMS auto-assigns training modules based on QA gaps.
+- **Key capabilities**: Proprietary LLM tuned for contact center conversations (70+ languages). AI Phone Call Agent handles outbound calls autonomously (lead qualification, follow-ups, collections). Voice of Customer analytics extracts sentiment, trends, and emerging issues. Compliance monitoring for HIPAA/GDPR/CCPA/PCI.
+- **Setup**: Connect CCaaS via pre-built connector (8x8, Amazon Connect, Avaya, Aircall, Bright Pattern, etc.), define 3-5 binary QA criteria, calibrate AI vs manual scoring for 2-4 weeks, then enable automated coaching triggers.
+- **Limitations**: No public API — all integrations through Convin's pre-built connectors or custom integration requests (~3-day turnaround). Transcription struggles with speaker diarization (agent vs customer) on mono recordings. Dashboard occasionally delays showing new calls. AI scoring doesn't always explain why it marked criteria as "No." Steep learning curve — budget 2-4 weeks admin training. Custom pricing only (no published rates). India-based — strongest support in APAC time zones.
+- **Best practice**: Use Convin when you want QA + coaching + LMS + voicebot in one vendor, especially for B2C contact centers in APAC or with multilingual needs. If you only need QA scoring, Observe.AI or Enthu.AI may be simpler. If you need the fastest real-time prompts, Balto (<200ms) is purpose-built for that. Convin's strength is the full stack: QA feeds coaching feeds training feeds back into QA.
+
 ### Manual / Spreadsheet approach
 
 - **Google Docs**: Create onboarding checklists and coaching templates. Works for <10 reps.

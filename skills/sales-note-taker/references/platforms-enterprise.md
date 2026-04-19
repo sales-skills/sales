@@ -257,6 +257,24 @@ For deep platform coverage (all modules, API endpoints, pricing tiers, WFM, QM, 
 
 ---
 
+### Convin
+
+**What**: AI-powered contact center conversation intelligence platform with 100% automated QA scoring, Real-Time Assist agent coaching, AI Phone Call agent (outbound voicebot), and integrated LMS. Not a standalone meeting note-taker — this is contact center QA and coaching built on Convin's proprietary LLM. Based in Bengaluru, India. G2 rated 4.7/5.
+
+**Transcription**: Proprietary LLM with 70+ language support. Custom model tuning available per customer. Known limitation: speaker diarization (agent vs customer) struggles on mono recordings and with certain accents.
+
+**API**: No public API. All integrations through 30+ pre-built connectors (8x8, Amazon Connect, Avaya, Aircall, Bright Pattern, etc.) or custom integration requests (~3-day turnaround).
+
+**CRM sync**: Close CRM confirmed. Other CRM connectors likely available but not confirmed on accessible integration pages.
+
+**Pricing**: Custom/quote-based. No published per-agent rates. Free tier exists with limited features.
+
+**Best for CI**: B2C contact centers (50-1000+ agents) wanting QA + coaching + voicebot + LMS in one vendor, especially with APAC presence or multilingual needs. Strongest in healthcare, banking, BPO, insurance.
+
+**When NOT to pick for CI**: Don't buy Convin for sales team meeting recording — it's a contact center QA platform. Use Gong, Fathom, or Fireflies for sales CI. If you only need automated QA scoring, Observe.AI or Enthu.AI may be simpler. If you need the fastest real-time agent prompts, Balto (<200ms) is purpose-built.
+
+---
+
 ## Bolt-on conversation intelligence (not standalone)
 
 - **Revenue.io Conversation Intelligence** — inside Revenue.io (Orchestrate tier); covered by `/sales-revenue-io`
