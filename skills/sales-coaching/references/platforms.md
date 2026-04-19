@@ -268,6 +268,15 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - **Limitations**: AI-powered analytics are add-ons (budget separately). Dashboard customization limited — export to data warehouse for advanced reporting. Steep learning curve — budget 2-4 weeks for initial scorecard and calibration setup. No real-time agent coaching during calls (use Balto or Cresta for that). API tokens expire every 90 days by default.
 - **Best practice**: Use MaestroQA when your primary need is structured QA workflows with coaching — scorecards, calibration, assignments, coaching sessions — across any helpdesk or phone system. MaestroQA is stronger on structured QA process (scorecard design, evaluator calibration, coaching workflow automation) than AI-first platforms like Observe.AI or Cresta. For real-time coaching during calls, pair MaestroQA with Balto. For enterprise AI-first contact center intelligence, consider Observe.AI or Cresta instead.
 
+### In Playvox
+
+- **What it does for coaching**: Playvox (now part of NICE) combines QA scorecards with built-in Coaching & eLearning modules and gamification. Low QA scores automatically trigger coaching sessions with specific interaction segments linked as coaching points. The eLearning module lets you build training content (text, video, quizzes) and assign it automatically based on skill gaps. Agent Motivation features (leaderboards, badges, rewards, challenges) drive engagement with coaching programs.
+- **Key capabilities**: Scorecard-based QA evaluations with weighted criteria and auto-fail items, calibration sessions for evaluator consistency, coaching triggers from low scores, eLearning certification paths, gamification leaderboards and challenges, performance management KPI dashboards, dispute workflow for agent evaluation appeals.
+- **Integrations**: Zendesk, Salesforce, Intercom, ServiceNow, Freshdesk, Five9, Genesys, CloudTalk, Dialpad, Kustomer, Gladly, ADP, Workday, Slack.
+- **API**: OAuth2, REST API at developers.playvox.com. Bulk import (100 interactions/request), Custom Integrations API, Reporting API. Python wrapper on PyPI (`python-playvox`).
+- **Limitations**: QA samples only 2-5% of interactions (not 100% automated like Observe.AI or Convin). Requires separate instance per Zendesk instance. Frequent auto-logouts reported — save work often. Performance can be slow. WFM adherence reports confusing. NICE acquisition creates uncertainty about long-term product direction — gamification and eLearning may persist (NICE CXone lacks them), but QM/WFM features overlap with CXone.
+- **Best practice**: Use Playvox when you want QA + coaching + eLearning + gamification in one platform for a mid-market contact center. The gamification module is Playvox's unique differentiator — no other WEM platform offers built-in agent motivation with badges, leaderboards, and redeemable rewards. If you need 100% automated QA, pair Playvox with Observe.AI or consider MaestroQA (stronger on QA workflow) or Balto (real-time coaching).
+
 ### Manual / Spreadsheet approach
 
 - **Google Docs**: Create onboarding checklists and coaching templates. Works for <10 reps.

@@ -317,3 +317,38 @@ Detailed profiles for each major CCaaS platform — capabilities, pricing, stren
 **When NOT to choose Verint**: If your CCaaS already has strong WFM (NICE CXone Complete, Genesys CX 3+), adding Verint creates redundancy and cost. If you need simplicity and fast deployment, Calabrio ONE (Verint's midmarket offering) is better. If budget is tight, the custom enterprise pricing may not be viable.
 
 **Platform skill**: `/sales-verint`
+
+---
+
+## Playvox (WEM add-on, now part of NICE)
+
+**What it is**: Modular workforce engagement management suite — Quality Management (scorecard evaluations), Workforce Management (forecasting/scheduling/adherence), Performance Management, Coaching & eLearning, and Agent Motivation (gamification). Not a CCaaS — layers on top of existing helpdesk/CCaaS platforms. Acquired by NICE.
+
+**Key capabilities**:
+- Quality Management: Scorecard-based evaluations with sampling, calibration, coaching triggers
+- Workforce Management: AI forecasting, scheduling, real-time adherence
+- Agent Motivation: Gamification with leaderboards, badges, rewards, challenges (unique differentiator)
+- Coaching & eLearning: Built-in LMS with auto-assignment from QA scores
+
+**Pricing**: $30-90/agent/mo modular (per module). Multi-module bundles save 15-30%.
+
+**Integrations**: Zendesk, Salesforce, Intercom, ServiceNow, Freshdesk, Five9, Genesys, CloudTalk, Dialpad, Kustomer, Gladly, ADP, Workday. Separate instance per Zendesk instance.
+
+**Strengths**:
+- Gamification is unique — no other WEM platform offers built-in leaderboards, badges, and redeemable rewards
+- Built-in eLearning/LMS (most WEM tools don't include this)
+- Modular pricing — buy only the modules you need
+- Good mid-market fit for BPOs and support teams
+
+**Limitations**:
+- QA samples only 2-5% of interactions (not 100% automated)
+- Acquired by NICE — feature overlap with CXone WEM creates migration/deprecation risk
+- Frequent auto-logouts and slow performance reported
+- Requires separate instance per Zendesk instance
+- Support responsiveness inconsistent
+
+**Best for**: Mid-market contact centers (50-500 agents) that want agent engagement features (gamification, eLearning) alongside QA and WFM. BPOs that need modular WEM pricing. Teams that prioritize agent motivation and coaching workflow over 100% automated QA.
+
+**When NOT to choose Playvox**: If you're already on NICE CXone, the built-in WEM may make Playvox redundant. If you need 100% automated QA, Observe.AI or Convin are better. If you need enterprise-grade WEM, Verint is more comprehensive. If the NICE acquisition risk concerns you, evaluate Calabrio or MaestroQA instead.
+
+**Platform skill**: `/sales-playvox`

@@ -104,6 +104,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-talkdesk` — Talkdesk platform help
 - `/sales-coaching` — Sales coaching, QA, and agent training strategy
 - `/sales-calabrio` — Calabrio ONE — standalone WEM (WFM, QM, analytics) that layers on top of any CCaaS
+- `/sales-playvox` — Playvox — modular WEM with QA, WFM, gamification, eLearning (now part of NICE)
 - `/sales-observe-ai` — Observe.AI — layer auto QA on top of any CCaaS
 - `/sales-balto` — Balto — real-time agent assist for contact centers
 - `/sales-cresta` — Cresta — enterprise contact center AI
