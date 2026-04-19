@@ -221,6 +221,15 @@ If a follow-up call was booked, draft a proposed agenda:
 - **Compliance monitoring** — Auto-redacts PII from transcripts, checks script adherence, flags compliance violations.
 - **Note**: Enthu.AI is best for contact center QA at small-to-mid scale — fast setup (hours not months), no minimums, affordable ($15-69/user/mo). Lacks Gong's deal intelligence and revenue forecasting. Stronger on QA automation than coaching depth.
 
+### In NICE CXone
+
+- **Quality Management (QM)**: CXone's built-in QM module (Essential Suite+ at $135/agent/mo) provides evaluation forms for structured call review, coaching workflows triggered by low scores, and supervisor workspace for real-time call monitoring.
+- **Screen + voice recording**: Screen recording alongside voice recording gives full interaction visibility for call review — see what the agent was doing on-screen during the call, not just what they said.
+- **Interaction Analytics**: Linguistic analysis on 100% of interactions (higher tiers) — sentiment tracking, topic detection, compliance markers across all calls.
+- **AI analytics (Complete Suite)**: AI-driven sentiment analysis and trend discovery across the entire interaction library. Identify systemic issues (e.g., calls about a specific product issue trending up).
+- **Reporting limitation**: CXone's native reporting is widely cited as hard to use. For coaching analytics, consider using Data Extraction APIs to push data to external BI tools (Tableau, Power BI) for better visualization.
+- **Note**: CXone's QM is built-in but lighter than dedicated conversation intelligence tools. It handles structured evaluation and basic coaching workflows well but lacks AI-powered call scoring, methodology-based scoring (MEDDPICC/SPIN), and advanced coaching moment detection. For deeper call review analytics, layer Observe.AI, Balto, or Cresta on top of CXone.
+
 ### In Balto
 
 - **100% automated QA**: Balto scores every call against custom QA criteria in real-time — not post-call sampling. Supervisors see compliance adherence, script following, and coaching moments as they happen.
@@ -247,6 +256,7 @@ If a follow-up call was booked, draft a proposed agenda:
 - `/sales-enthu` — Enthu.AI platform help (contact center QA with auto-scoring, agent coaching, compliance monitoring, affordable Gong alternative)
 - `/sales-revenue-io` — Revenue.io platform help (Salesforce-native conversation intelligence, AI scoring with 400+ criteria, Orchestrate tier)
 - `/sales-observe-ai` — Observe.AI platform help (enterprise contact center QA, 100% auto scoring, Agent Copilot, VoiceAI/ChatAI agents)
+- `/sales-nice-cxone` — NICE CXone platform help (built-in QM with evaluation forms, screen + voice recording, Interaction Analytics)
 - `/sales-balto` — Balto platform help (real-time AI coaching for contact centers, automated QA, compliance monitoring)
 - `/sales-salesken` — Salesken platform help (real-time in-call coaching, QA automation, revenue intelligence, multilingual transcription)
 - `/sales-clari-copilot` — Clari Copilot platform help (real-time battlecards, live coaching, AI call summaries, deal intelligence)

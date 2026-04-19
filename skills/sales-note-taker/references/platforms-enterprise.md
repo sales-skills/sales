@@ -172,6 +172,38 @@ For deep platform coverage (all modules, API endpoints, pricing tiers, CCaaS int
 
 ---
 
+## NICE CXone
+
+For deep platform coverage (all modules, API endpoints, pricing tiers, WFM, QM, Salesforce integration), use `/sales-nice-cxone`.
+
+**Positioning**: Full CCaaS platform — not a standalone note-taker or conversation intelligence tool, but includes built-in recording, quality management, and interaction analytics as part of the contact center platform. Only relevant if you're evaluating CXone as your CCaaS and want to understand its recording/analytics capabilities vs buying a separate CI tool.
+
+**Pricing (2026-04)**: Six tiers from $71-$209/agent/mo. Voice recording available from Voice Agent ($94), screen recording from Essential Suite ($135), AI analytics from Complete Suite ($209). Annual contracts, 15-25% negotiable on multi-year.
+
+**Recording capabilities**:
+- Voice recording and storage (Voice Agent+ tiers)
+- Screen recording alongside voice (Essential Suite+)
+- Digital interaction recording (Digital Agent+)
+- Media Playback APIs for programmatic access to recordings
+
+**Analytics capabilities**:
+- Interaction Analytics — linguistic analysis on 100% of interactions (topic detection, sentiment, compliance)
+- AI-driven sentiment analysis and trend discovery (Complete Suite)
+- Real-Time Data APIs for custom dashboards
+- Data Extraction APIs for external BI tools
+
+**API**: 16 REST API groups including Recording APIs, Interaction Analytics APIs, and Media Playback APIs. OAuth2/Access Key/OIDC auth. Developer portal at developer.niceincontact.com.
+
+**CRM**: Deep Salesforce integration (bi-directional Data Cloud, Agent for Salesforce workspace).
+
+**Limitations**: Not a standalone CI/note-taker. No methodology-based call scoring (MEDDPICC/SPIN). No coaching moment detection or smart playlists. Reporting is widely cited as hard to use. AI Copilot can cause UI freezes. For dedicated conversation intelligence on top of CXone, layer Observe.AI, Balto, or Cresta.
+
+**When to consider**: You're building or running a CXone contact center and evaluating whether its built-in recording + QM is sufficient, or whether you need to add a dedicated CI tool on top.
+
+**When NOT to pick for CI**: Don't buy CXone just for call recording/analytics — it's a full CCaaS platform. If you need standalone conversation intelligence for a sales team, use Gong, Fireflies, Fathom, or a dedicated CI tool instead.
+
+---
+
 ## Bolt-on conversation intelligence (not standalone)
 
 - **Revenue.io Conversation Intelligence** — inside Revenue.io (Orchestrate tier); covered by `/sales-revenue-io`

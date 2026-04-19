@@ -189,6 +189,17 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - **Limitations**: No structured learning paths, certifications, or course creation (pair with Seismic Learning or Allego for those). No AI roleplay for practice (unlike Outdoo, Nooks, Orum). No public API for coaching data export. Coach Agent still in development.
 - **Best for**: Teams that want call scoring and coaching insights bundled with their meeting intelligence at mid-market pricing. The modular pricing ($29/user/mo for Meeting Insights) is significantly cheaper than Gong for coaching use cases. Best when combined with a dedicated enablement platform for structured training.
 
+### In NICE CXone
+
+- **Quality Management (QM)**: CXone's built-in QM module provides evaluation forms, coaching workflows, and supervisor workspace (Essential Suite+ at $135/agent/mo). Screen recording alongside voice recording for full agent interaction visibility.
+- **AI-assisted quality scoring**: Complete Suite ($209/agent/mo) adds AI-driven analytics, sentiment analysis, and trend discovery across all interactions.
+- **Coaching workflows**: QM evaluations trigger coaching sessions — low scores automatically generate coaching tasks for supervisors. Supervisors can annotate specific call segments for coaching review.
+- **360-degree agent KPIs**: Core Suite+ provides consolidated agent performance views combining quality scores, adherence, and interaction metrics.
+- **Copilot for live coaching**: AI Copilot delivers real-time guidance during calls — next-best-action suggestions, knowledge base surfacing, compliance prompts. **Known issue**: Copilot can cause UI freezes — test with a small group before rollout.
+- **Interaction Analytics**: Linguistic analysis on 100% of interactions — sentiment, topic detection, compliance markers. Available on higher tiers.
+- **Limitations**: QM is built-in but lighter than dedicated QA tools (Observe.AI, Balto, Cresta). No AI roleplay or practice simulation. Reporting is widely cited as hard to use — may need external BI tools for coaching analytics. Copilot is newer and less mature than Balto's real-time guidance.
+- **Best practice**: Use CXone's built-in QM when you want coaching within your CCaaS platform without adding a separate tool. For deeper automated QA (100% AI scoring, coaching moment flagging), layer Observe.AI, Balto, or Cresta on top of CXone — all three integrate natively.
+
 ### In Observe.AI
 
 - **Auto QA coaching**: Observe.AI scores 100% of calls with custom QA scorecards. Supervisors see calls ranked by coaching priority — no manual sampling required. Coaching moments are flagged automatically.
