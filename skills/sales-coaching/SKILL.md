@@ -175,6 +175,8 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-orum` — Orum platform help (AI parallel dialer with AI Coaching Suite, scorecards, roleplay, virtual salesfloor)
 - `/sales-momentum` — Momentum platform help — AI revenue orchestration with Coaching Agent for data-driven call scoring, churn signals, and executive briefs (acquired by Salesforce Feb 2026)
 - `/sales-nice-cxone` — NICE CXone platform help (built-in QM coaching, AI Copilot, Interaction Analytics, $135-209/agent/mo for coaching-relevant tiers)
+- `/sales-genesys` — Genesys Cloud CX platform help (built-in QM coaching, AI agent assist on CX 4, Interaction Analytics, $75-240/user/mo)
+- `/sales-ccaas-selection` — Comparing CCaaS platforms? The selection skill walks through Genesys vs NICE vs Talkdesk vs Five9
 - `/sales-call-review` — Review specific sales calls and extract coaching insights
 - `/sales-note-taker` — Picking an AI note-taker (Fathom, Fireflies, Avoma, Gong, etc.) or wiring its API to feed your coaching program
 - `/sales-content` — Sales content for training and enablement programs

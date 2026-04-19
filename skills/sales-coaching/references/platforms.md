@@ -22,6 +22,7 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - [Oliv](#in-oliv)
 - [Observe.AI](#in-observeai)
 - [Talkdesk](#in-talkdesk)
+- [Genesys Cloud CX](#in-genesys-cloud-cx)
 - [Manual / Spreadsheet](#manual--spreadsheet-approach)
 
 ### In Seismic Learning (formerly Lessonly)
@@ -219,6 +220,16 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - **Coaching workflows**: QM evaluations can trigger coaching sessions and tasks for supervisors. Supervisors can annotate specific call segments for coaching review.
 - **Limitations**: QM is built-in but lighter than dedicated QA tools (Observe.AI, Balto, Cresta). No AI roleplay or practice simulation. No predictive dialer. AI features are all paid add-ons — total costs typically 20-60% above base price. Support tickets average 3-4 days response time. Reporting is not intuitive — may need external BI tools.
 - **Best practice**: Use Talkdesk's built-in QM when you want coaching within your CCaaS platform without adding a separate tool. For deeper automated QA, layer Observe.AI (which integrates natively with Talkdesk), Balto, or Cresta on top. Talkdesk deploys faster than NICE CXone for mid-market teams but CXone has deeper WFM.
+
+### In Genesys Cloud CX
+
+- **Quality Management (QM)**: Genesys Cloud's built-in QM provides evaluation forms, coaching workflows, and supervisor tools. Available on CX 3 ($155/user/mo) and above. Screen recording alongside voice recording for full agent interaction visibility.
+- **Coaching workflows**: QM evaluations trigger coaching sessions — low scores automatically generate coaching tasks for supervisors. Supervisors can annotate specific call segments for coaching review.
+- **AI Agent Assist (CX 4 only)**: Real-time knowledge surfacing and next-best-action during conversations at $240/user/mo. Not available on lower tiers.
+- **Interaction Analytics**: Speech and text analytics on 100% of interactions — sentiment analysis, topic detection, keyword spotting. CX 3 gets basic analytics, CX 4 gets advanced AI analytics.
+- **Predictive routing for coaching insights**: CX 4's predictive routing generates data on which agents handle which interaction types best — useful for identifying coaching opportunities.
+- **Limitations**: QM is built-in but lighter than dedicated QA tools (Observe.AI, Balto, Cresta). No AI roleplay or practice simulation. AI features gated behind CX 4 ($240/user/mo) — most teams will be on CX 2-3 without agent assist. Dashboard navigation widely cited as confusing. Implementation takes months.
+- **Best practice**: Use Genesys Cloud's built-in QM when you want coaching within your CCaaS platform without adding a separate tool. For deeper automated QA (100% AI scoring, coaching moment flagging), layer Observe.AI, Balto, or Cresta on top — all three integrate natively with Genesys. Genesys has deeper WFM than Talkdesk but lighter QM than NICE CXone.
 
 ### Manual / Spreadsheet approach
 
