@@ -17,6 +17,7 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - [Balto](#in-balto)
 - [Nooks](#in-nooks)
 - [Orum](#in-orum)
+- [Momentum](#in-momentum)
 - [Manual / Spreadsheet](#manual--spreadsheet-approach)
 
 ### In Seismic Learning (formerly Lessonly)
@@ -150,6 +151,17 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - **Virtual Salesfloor**: Real-time leaderboards and team visibility. Replicates in-office calling floor energy for remote teams.
 - **Ramp time**: AI coaching features need 2-3 weeks of call data before scoring is useful. Don't evaluate AI scores during initial deployment.
 - **Best for**: SDR teams on Orum Ascend tier who want built-in coaching alongside their dialing. Phone-call-focused — no demo/meeting coaching. Teams on Launch tier don't get coaching features — use a separate tool like Gong or Allego.
+
+### In Momentum
+
+- **AI Coaching Agent** (Transformation tier, $99/user/mo): Data-driven coaching scores per call. AI evaluates calls against configurable criteria (MEDDIC, SPIN, Challenger, or custom methodology). Identifies skill gaps and tracks improvement over time.
+- **Call scoring**: Every call processed by Momentum gets a coaching score. Scores are surfaced in Slack Deal Rooms and can trigger coaching workflows (e.g., low-scoring call → manager notification → coaching session).
+- **MEDDIC Autopilot**: Automatically extracts MEDDIC fields from calls. Coaches can see whether reps are consistently uncovering Champion, Decision Criteria, Metrics, etc. — without reading every transcript.
+- **Executive Briefs**: AI-generated account and team performance summaries for leadership. Useful for identifying systemic coaching gaps across the team.
+- **Integration with existing CI**: Momentum layers coaching insights on top of Gong, Chorus, or its own CI add-on. If you already have Gong for deep analytics, Momentum adds the workflow automation layer (scored call → Slack notification → coaching task).
+- **SmartClips**: Auto-generated video snippets highlighting key moments (objections, competitor mentions, pricing discussions). Useful for coaching libraries and team training.
+- **Limitations**: Coaching Agent requires Transformation tier ($99/user/mo vs $69 Business). Phone-call-focused coaching — no demo simulation or role-play capabilities (unlike Allego or Seismic Learning). Salesforce-only — no HubSpot or Pipedrive. Acquired by Salesforce Feb 2026 — product roadmap may change.
+- **Best for**: Teams already using Momentum for CRM automation who want coaching without adding a separate tool. The coaching is a natural extension of the call processing pipeline — not a standalone coaching platform.
 
 ### Manual / Spreadsheet approach
 

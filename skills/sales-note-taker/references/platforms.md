@@ -55,3 +55,4 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Salesken | Real-time coaching + QA + revenue intel | No | ~$99/mo | Not published (Enterprise API) | Not published | Deep (Salesforce/HubSpot/Zoho native) | Real-time in-call coaching, 100% QA scoring, APAC/multilingual, field sales |
 | Omi | Open-source AI wearable | Yes (1,200 min/mo) | $19/mo | REST | Yes (app marketplace) | None | All-day in-person capture, developer extensibility, lowest price ($89 hardware) |
 | Cresta | Enterprise contact center AI | No | ~$60K-$150K/yr | REST (behind auth) | Yes | Deep (10+ CRMs) | Enterprise contact center (100+ agents), AI virtual agents + real-time coaching + QA |
+| Momentum | AI revenue orchestration + CI add-on | No | $69-99/user/mo + $30 CI add-on | REST (X-API-Key, 100/15min) | No | Deep (Salesforce only) | CRM automation from calls, MEDDIC Autopilot, Slack Deal Rooms, acquired by Salesforce |

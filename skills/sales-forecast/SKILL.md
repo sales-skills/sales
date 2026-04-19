@@ -152,6 +152,8 @@ If there's a gap between the forecast and quota, build a plan to close it:
 - **Gap plan target**: Gap × 1.5 (plan for more than you need, since not all levers will work)
 - **Minimum viable gap close**: At least 50% of gap plan should come from Pull-in and Accelerate (fastest to materialize)
 
+For platform-specific forecasting guidance (Momentum), see references/platforms.md.
+
 ## Before recommending a specific platform skill
 
 This skill covers a strategy domain across many platforms. **Before pointing the user to any specific platform skill** (any `/sales-{platform}` listed in `## Related skills`, e.g., `/sales-mailshake`, `/sales-klaviyo`, `/sales-apollo`), read that platform skill's actual `SKILL.md` first. The 1-line description in `## Related skills` is enough to *identify* a candidate — it's not enough to *commit* to it or to write a prompt that invokes it well.
@@ -173,6 +175,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-close` — Closing strategies for commit deals
 - `/sales-clari-copilot` — Clari Copilot platform help — conversation intelligence tightly integrated with Clari's forecasting engine, deal scoring from call signals
 - `/sales-revenue-io` — Revenue.io platform help — Revenue Intelligence dashboards and deal scoring for Salesforce-native teams
+- `/sales-momentum` — Momentum platform help — AI revenue orchestration with automated CRM updates, MEDDIC Autopilot, AI coaching, churn signals, executive briefs (acquired by Salesforce Feb 2026)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Gotchas

@@ -112,6 +112,30 @@ For deep platform coverage (all modules, pricing, integrations, implementation p
 
 ---
 
+## Momentum
+
+For deep platform coverage (all modules, pricing, integrations, workflow automation), use `/sales-momentum`.
+
+**Positioning**: AI revenue orchestration platform — sits between conversation intelligence (Gong, Chorus) and CRM (Salesforce) as an "action layer." Not primarily a note-taker — Momentum's core value is automating CRM updates, workflow triggers, and Slack routing from call data. The optional CI add-on ($30/user/mo) adds its own meeting recording/transcription capability.
+
+**Pricing (2026-04)**: Business $69/user/mo + CI add-on $30/user/mo = $99/user/mo for recording + orchestration. Transformation $99/user/mo + CI add-on = $129/user/mo. Enterprise custom. Annual contracts. Startup plan: 50% discount for <10 GTM headcount.
+
+**API**: REST API with `X-API-Key` auth. 100 requests per 15-minute window. OpenAPI spec available. API access must be enabled by Momentum support (not self-serve). Docs at docs.momentum.io.
+
+**CRM**: Salesforce only (bi-directional, real-time). No HubSpot, Pipedrive, or other CRM support.
+
+**Call sources**: Zoom, Google Meet, MS Teams, Cisco Webex (direct recording via CI add-on), or ingest from Gong, Chorus, Dialpad, Aircall, Orum, Salesloft, Outreach.
+
+**Key differentiators**: MEDDIC Autopilot (auto-extracts qualification fields to Salesforce), Slack Deal Rooms (auto-created per opportunity), AI Signals (deal risk detection from calls), SmartClips (auto-generated video snippets), Deep Research (cross-deal AI analysis, usage-based credits), Approvals (complex approval workflows in Slack).
+
+**Limitations**: Salesforce-only (no other CRM), CI add-on is separate cost, API access not self-serve, rescheduled meetings need manual steps, acquired by Salesforce Feb 2026 (product roadmap may change).
+
+**When to pick**: You're on Salesforce, want automated CRM updates from calls without manual data entry, and value workflow orchestration (Slack routing, deal rooms, approvals) as much as call analytics. Works with or without Gong — CI add-on provides recording if you don't have a separate tool.
+
+**When NOT to pick**: Not on Salesforce, need standalone conversation analytics (→ Gong), budget-constrained and primarily need transcription (→ Fathom/Fireflies), or evaluating CI tools without needing CRM automation.
+
+---
+
 ## Bolt-on conversation intelligence (not standalone)
 
 - **Revenue.io Conversation Intelligence** — inside Revenue.io (Orchestrate tier); covered by `/sales-revenue-io`

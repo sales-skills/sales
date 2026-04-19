@@ -173,6 +173,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-cresta` — Cresta platform help (enterprise contact center AI — real-time agent assist, AI virtual agents, conversation intelligence, automated QA)
 - `/sales-nooks` — Nooks platform help (AI parallel dialer with built-in call scoring, roleplay, battlecards, virtual salesfloor)
 - `/sales-orum` — Orum platform help (AI parallel dialer with AI Coaching Suite, scorecards, roleplay, virtual salesfloor)
+- `/sales-momentum` — Momentum platform help — AI revenue orchestration with Coaching Agent for data-driven call scoring, churn signals, and executive briefs (acquired by Salesforce Feb 2026)
 - `/sales-call-review` — Review specific sales calls and extract coaching insights
 - `/sales-note-taker` — Picking an AI note-taker (Fathom, Fireflies, Avoma, Gong, etc.) or wiring its API to feed your coaching program
 - `/sales-content` — Sales content for training and enablement programs

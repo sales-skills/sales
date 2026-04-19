@@ -214,6 +214,7 @@ If you discover a gotcha, rate-limit ceiling, auth quirk, or vendor-specific pay
 - `/sales-salesloft` — Salesloft Conversations (bolt-on conversation intelligence inside Salesloft)
 - `/sales-zoominfo` — ZoomInfo Chorus (bolt-on conversation intelligence inside ZoomInfo)
 - `/sales-seismic` — Seismic Meeting Intelligence (bolt-on inside Seismic)
+- `/sales-momentum` — Momentum platform help — AI revenue orchestration with optional CI add-on ($30/user/mo), automated CRM updates from calls, MEDDIC Autopilot (acquired by Salesforce Feb 2026)
 - `/sales-call-review` — Review a specific call for coaching
 - `/sales-coaching` — Build coaching programs that consume call data
 - `/sales-integration` — General CRM/tool integration patterns (Zapier, webhooks, iPaaS)

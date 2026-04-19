@@ -199,6 +199,7 @@ Router recommends a 5-skill sequence:
 | `/sales-balto` | Balto platform help — real-time AI guidance for contact centers, automated QA on 100% of calls, compliance monitoring (PCI/HIPAA), coaching, call summarization, 50+ CCaaS/softphone integrations, ~$100-150/agent/mo |
 | `/sales-cresta` | Cresta platform help — enterprise contact center AI with real-time agent assist, AI virtual agents, conversation intelligence, automated QA, Knowledge Agent, Agent Operations Center, Five9/Amazon Connect/Genesys/NICE integrations, $60K-$150K/yr |
 | `/sales-craft` | Craft platform help — AI growth engine for home services with real-time in-appointment field coaching, 24/7 AI call center, revenue recovery agents, ServiceTitan/Salesforce/HubSpot/Jobber/AccuLynx/Housecall Pro integrations |
+| `/sales-momentum` | Momentum platform help — AI revenue orchestration with automated CRM updates, Slack Deal Rooms, MEDDIC Autopilot, AI coaching, churn signals, executive briefs, $69-99/user/mo, acquired by Salesforce Feb 2026 |
 | `/sales-deal-inspect` | Inspect deal health, map stakeholders, identify risks, recommend next actions |
 | `/sales-forecast` | Build and validate revenue forecasts with pipeline coverage and gap analysis |
 
