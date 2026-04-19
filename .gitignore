@@ -65,6 +65,9 @@ scripts/
 .zed/
 .fleet/
 
+# Environment
+.envrc
+
 # OS/editor junk
 .DS_Store
 Thumbs.db
