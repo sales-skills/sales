@@ -18,6 +18,7 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - [Nooks](#in-nooks)
 - [Orum](#in-orum)
 - [Momentum](#in-momentum)
+- [Trellus](#in-trellus)
 - [Manual / Spreadsheet](#manual--spreadsheet-approach)
 
 ### In Seismic Learning (formerly Lessonly)
@@ -162,6 +163,16 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - **SmartClips**: Auto-generated video snippets highlighting key moments (objections, competitor mentions, pricing discussions). Useful for coaching libraries and team training.
 - **Limitations**: Coaching Agent requires Transformation tier ($99/user/mo vs $69 Business). Phone-call-focused coaching — no demo simulation or role-play capabilities (unlike Allego or Seismic Learning). Salesforce-only — no HubSpot or Pipedrive. Acquired by Salesforce Feb 2026 — product roadmap may change.
 - **Best for**: Teams already using Momentum for CRM automation who want coaching without adding a separate tool. The coaching is a natural extension of the call processing pipeline — not a standalone coaching platform.
+
+### In Trellus
+
+- **Real-time coaching (Business tier)**: Live in-call coaching prompts — objection handling suggestions, competitor positioning, pacing cues, and script adherence reminders delivered during active calls. Customizable talk tracks per campaign or segment.
+- **Voice agents for practice**: AI-powered practice bots simulate prospect conversations for rep training. Unlimited practice calls on Parallel tier and above. Configure custom personas, objections, and company context. AI scores interactions and provides feedback.
+- **Call analytics & scoring**: Automated QA on 100% of calls. Performance metrics tracking per rep. Gap analysis between top and bottom performers. Custom scoring criteria.
+- **Virtual salesfloor**: Remote team collaboration with live call monitoring, shadowing, leaderboards, and structured call blitz support. Builds calling culture for distributed teams.
+- **Coaching adoption**: Start with 2-3 coaching triggers — too many causes notification fatigue. Review team coaching metrics weekly. Trellus coaching runs inside the rep's existing SEP (Salesloft, Outreach, HubSpot), so there's no separate coaching UI to learn.
+- **Limitations**: Real-time coaching cues are Business tier only — individual plans get the dialer and practice bots but not live coaching. Phone-call-focused — no demo/meeting coaching. No structured learning paths, certifications, or courses (pair with Seismic Learning or Allego for those). Chrome extension only — no mobile coaching.
+- **Best for**: SDR teams using Trellus as their dialer who want built-in coaching without adding Gong or a separate CI tool. The real-time coaching during calls is Trellus's differentiator vs Nooks and Orum (which offer post-call scoring but not live prompts). For comprehensive coaching programs, pair Trellus with a dedicated enablement platform.
 
 ### Manual / Spreadsheet approach
 
