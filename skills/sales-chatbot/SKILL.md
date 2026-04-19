@@ -81,6 +81,8 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 
 ## Step 5 — Related skills
 
+- `/sales-zendesk` — Zendesk platform help (AI agents, chatbot automation, ticketing)
+- `/sales-helpdesk-selection` — Help desk platform comparison (Zendesk vs Freshdesk vs Intercom vs Help Scout)
 - `/sales-hubspot` — HubSpot platform help (chatbot builder, Conversations inbox, live chat)
 - `/sales-qualified` — Qualified platform help (Piper AI SDR conversations, Salesforce-native chatbot)
 - `/sales-sendpulse` — SendPulse platform help (chatbots across 7 channels, visual flow builder, Automation 360)

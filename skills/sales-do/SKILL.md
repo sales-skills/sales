@@ -132,6 +132,7 @@ Strategy skills are cross-platform coordinators — they cover a problem domain 
 | `/sales-side-project-valuation` | Side project valuation, pricing, deal structuring, and marketplace selection (Acquire.com, Flippa, SideProjectors, 1Kprojects, Microns, Empire Flippers) |
 | `/sales-agency-outbound` | Agency multi-client outbound (Smartlead, Reply.io, Woodpecker, Lemlist) |
 | `/sales-note-taker` | AI meeting note-taker / conversation-intelligence selection & API integration (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai) |
+| `/sales-helpdesk-selection` | Help desk platform comparison (Zendesk, Freshdesk, Intercom, Help Scout, Zoho Desk, Front, Gorgias) |
 | `/sales-ccaas-selection` | CCaaS platform comparison and selection (Genesys, NICE CXone, Talkdesk, Five9, 8x8, Nextiva, Amazon Connect, Twilio Flex) |
 
 If a strategy skill matches, hand off with the exact command: "This is a {problem domain} question — run: `/sales-{strategy-skill} {user's original question}`".

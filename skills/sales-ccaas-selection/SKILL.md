@@ -96,6 +96,8 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 
 ## Related skills
 
+- `/sales-zendesk` — Zendesk platform help (includes Contact Center add-on module)
+- `/sales-helpdesk-selection` — Help desk platform comparison (if the user needs ticketing/support, not full CCaaS)
 - `/sales-genesys` — Genesys Cloud CX platform help
 - `/sales-nice-cxone` — NICE CXone platform help
 - `/sales-talkdesk` — Talkdesk platform help
