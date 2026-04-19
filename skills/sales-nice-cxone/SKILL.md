@@ -95,6 +95,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 
 ## Related skills
 
+- `/sales-talkdesk` — Talkdesk platform help (mid-market CCaaS competitor)
 - `/sales-observe-ai` — Observe.AI platform help (enterprise QA overlay for CXone contact centers)
 - `/sales-balto` — Balto platform help (real-time AI guidance that integrates with CXone)
 - `/sales-cresta` — Cresta platform help (enterprise contact center AI with CXone integration)

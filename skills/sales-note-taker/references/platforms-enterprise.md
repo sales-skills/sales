@@ -204,6 +204,39 @@ For deep platform coverage (all modules, API endpoints, pricing tiers, WFM, QM, 
 
 ---
 
+## Talkdesk
+
+For deep platform coverage (all modules, API endpoints, pricing tiers, WFM, QM, Salesforce integration), use `/sales-talkdesk`.
+
+**Positioning**: Full CCaaS platform — not a standalone note-taker or conversation intelligence tool, but includes built-in recording, quality management, AI analytics, and virtual agents as part of the contact center platform. Only relevant if you're evaluating Talkdesk as your CCaaS and want to understand its recording/analytics capabilities vs buying a separate CI tool.
+
+**Pricing (2026-04)**: Four tiers from $85-$225/agent/mo. Voice recording on Voice Essentials+ ($105), screen recording on Elite ($165), AI analytics as paid add-on on any tier. 3-year contracts required. AI features (Autopilot, CoPilot, Navigator, Interaction Analytics) all require separate quotes — total costs typically 20-60% above base price.
+
+**Recording capabilities**:
+- Voice recording and storage (Voice Essentials+)
+- Screen recording alongside voice (Elite)
+- Digital interaction recording (Digital Essentials+)
+- Explore API for asynchronous historical report extraction (5-min delay)
+- Live API for real-time metrics via SSE streaming
+
+**Analytics capabilities**:
+- Interaction Analytics — linguistic analysis on 100% of interactions (paid add-on)
+- AI CoPilot — real-time agent guidance during calls (paid add-on)
+- Quality Management — evaluation forms, scoring, coaching workflows (Elite+)
+- Navigator — GenAI-powered routing with topic detection (paid add-on)
+
+**API**: 23 REST API specs including Live API (SSE streaming), Explore API (historical reports), Core API. OAuth 2.0 auth (Client Credentials/JWT/Auth Code). Regional base URLs: US `api.talkdeskapp.com`, EU `api.talkdeskapp.eu`, CA `api.talkdeskappca.com`. API access restricted to enterprise customers and AppConnect partners.
+
+**CRM**: Deep Salesforce integration (CTI + Service Cloud Voice BYOT, Omni-Channel routing). 60+ total integrations.
+
+**Limitations**: Not a standalone CI/note-taker. No methodology-based call scoring (MEDDPICC/SPIN). All AI features are paid add-ons. No predictive dialer. Support tickets average 3-4 days. Call quality issues reported (dropped calls, crackling audio). Reporting has steep learning curve. For dedicated QA overlay, use Observe.AI (which integrates natively with Talkdesk), Balto, or Cresta.
+
+**When to consider**: You're building or running a Talkdesk contact center and evaluating whether its built-in recording + QM is sufficient, or whether you need to add a dedicated CI tool on top. Talkdesk deploys faster than NICE CXone for mid-market teams.
+
+**When NOT to pick for CI**: Don't buy Talkdesk just for call recording/analytics — it's a full CCaaS platform. If you need standalone conversation intelligence for a sales team, use Gong, Fireflies, Fathom, or a dedicated CI tool instead.
+
+---
+
 ## Bolt-on conversation intelligence (not standalone)
 
 - **Revenue.io Conversation Intelligence** — inside Revenue.io (Orchestrate tier); covered by `/sales-revenue-io`

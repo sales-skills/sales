@@ -21,6 +21,7 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - [Trellus](#in-trellus)
 - [Oliv](#in-oliv)
 - [Observe.AI](#in-observeai)
+- [Talkdesk](#in-talkdesk)
 - [Manual / Spreadsheet](#manual--spreadsheet-approach)
 
 ### In Seismic Learning (formerly Lessonly)
@@ -209,6 +210,15 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - **Agent Copilot for real-time coaching**: Real-time guidance during live calls — prompts, checklists, next-best-action. This is coaching during the call, not after. Newer capability.
 - **Implementation note**: Expect 3-6 months for full deployment. Start with Post-interaction AI (Auto QA + Coaching Copilot) before adding real-time Agent Copilot.
 - **Best practice**: Use Observe.AI for enterprise contact centers (100+ agents) where 100% auto QA is the primary need and you want a path to real-time coaching and AI virtual agents. For faster deployment at smaller scale, consider Enthu.AI (hours setup, ~$15-69/user/mo) or Balto (45-60 days, ~$100-150/agent/mo for real-time-first coaching).
+
+### In Talkdesk
+
+- **Quality Management (QM)**: Talkdesk's built-in QM provides evaluation forms, scoring, and coaching workflows. Available on Elite ($165/agent/mo) and above. Screen recording alongside voice recording for full agent interaction visibility.
+- **CoPilot for live coaching**: AI CoPilot delivers real-time guidance during calls — next-best-action suggestions, knowledge base surfacing, compliance prompts. **Paid add-on** even on Elite — budget separately.
+- **Interaction Analytics**: Linguistic analysis on 100% of interactions — sentiment, topic detection, compliance markers. **Paid add-on** — requires separate quote.
+- **Coaching workflows**: QM evaluations can trigger coaching sessions and tasks for supervisors. Supervisors can annotate specific call segments for coaching review.
+- **Limitations**: QM is built-in but lighter than dedicated QA tools (Observe.AI, Balto, Cresta). No AI roleplay or practice simulation. No predictive dialer. AI features are all paid add-ons — total costs typically 20-60% above base price. Support tickets average 3-4 days response time. Reporting is not intuitive — may need external BI tools.
+- **Best practice**: Use Talkdesk's built-in QM when you want coaching within your CCaaS platform without adding a separate tool. For deeper automated QA, layer Observe.AI (which integrates natively with Talkdesk), Balto, or Cresta on top. Talkdesk deploys faster than NICE CXone for mid-market teams but CXone has deeper WFM.
 
 ### Manual / Spreadsheet approach
 
