@@ -9,6 +9,8 @@ tags: [sales, contact-center, wem, platform]
 
 # Calabrio ONE Platform Help
 
+> **Note**: Verint acquired Calabrio in February 2026. Calabrio ONE continues as Verint's midmarket offering. Da Vinci AI bots are being expanded to Calabrio customers. For Verint Open Platform (enterprise) questions, use `/sales-verint`.
+
 ## Step 1 — Gather context
 
 If `references/learnings.md` exists, read it first for accumulated platform knowledge.
@@ -86,6 +88,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 
 ## Related skills
 
+- `/sales-verint` — Verint Open Platform help (parent company — enterprise CX automation, Da Vinci AI bots)
 - `/sales-ccaas-selection` — Compare CCaaS platforms (Genesys, NICE, Talkdesk, Five9, etc.) to find the right contact center
 - `/sales-coaching` — Sales coaching, QA, and agent training strategy across platforms
 - `/sales-observe-ai` — Observe.AI — layer auto QA on top of any CCaaS

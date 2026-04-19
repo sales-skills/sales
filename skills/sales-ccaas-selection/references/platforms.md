@@ -281,3 +281,39 @@ Detailed profiles for each major CCaaS platform — capabilities, pricing, stren
 **When NOT to choose Calabrio**: If your CCaaS already has strong WFM (NICE CXone Complete, Genesys CX 3+), adding Calabrio creates redundancy and extra cost. Evaluate whether your CCaaS's built-in WFM meets your needs before adding a standalone WEM layer.
 
 **Platform skill**: `/sales-calabrio`
+
+---
+
+## Verint Open Platform (WEM/CX Automation)
+
+**What it is**: Enterprise CX automation platform with Da Vinci AI bots — positioned as open, modular WEM that layers on top of any CCaaS. Verint acquired Calabrio in Feb 2026, making the combined entity the leader with 40%+ global WEM market share.
+
+**Key capabilities**:
+- Da Vinci AI Bots: Quality Bot (100% automated QA), Coaching Bot (real-time agent guidance), Wrap Up Bot (AI call summaries), CX/EX Scoring Bot, TimeFlex Bot (agent self-scheduling), Exact Transcription Bot (80+ languages), Data Insights Bot, Knowledge Automation Bot, IVA
+- WFM: forecasting, scheduling, real-time adherence, intraday management
+- Quality Management: automated evaluations, scorecards, compliance monitoring
+- Speech & Text Analytics, Knowledge Automation, Financial Compliance
+
+**Pricing**: Enterprise custom — no public pricing. Estimated $100-500/user/month depending on modules.
+
+**Integrations**: 500+ adaptors across 300+ vendors. BYOT architecture — connects to any ACD (Amazon Connect, Genesys, NICE, Five9, Cisco, Avaya, Twilio Flex). Salesforce via EliteConnect. Verint Marketplace (350+ listings).
+
+**Strengths**:
+- Most extensive AI bot portfolio in the WEM space
+- Open architecture — deploy individual components without buying the full suite
+- Multi-ACD support — unified WEM across multiple CCaaS platforms simultaneously
+- AI revenue ($372M ARR) now exceeds legacy revenue — genuine AI-first company
+
+**Limitations**:
+- Steep learning curve — notoriously complex, budget 2-4 weeks admin training
+- Reporting slow and inconsistent — cross-queue analysis requires Excel workarounds
+- Support resolution takes weeks/months for non-critical bugs
+- Opaque pricing — custom contracts, features promised by sales may not be available
+- API docs behind authenticated portal (not publicly browsable like NICE or Genesys)
+- Mobile experience limited
+
+**Best for**: Large enterprises that need best-of-breed WEM separate from their CCaaS vendor. Organizations running multiple CCaaS platforms that need unified workforce management. Contact centers that want modular AI capabilities (e.g., add Quality Bot to existing NICE CXone deployment without replacing WFM).
+
+**When NOT to choose Verint**: If your CCaaS already has strong WFM (NICE CXone Complete, Genesys CX 3+), adding Verint creates redundancy and cost. If you need simplicity and fast deployment, Calabrio ONE (Verint's midmarket offering) is better. If budget is tight, the custom enterprise pricing may not be viable.
+
+**Platform skill**: `/sales-verint`

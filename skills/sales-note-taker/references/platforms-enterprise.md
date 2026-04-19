@@ -237,6 +237,26 @@ For deep platform coverage (all modules, API endpoints, pricing tiers, WFM, QM, 
 
 ---
 
+---
+
+### Verint (Da Vinci AI Bots)
+
+**What**: Enterprise CX automation platform with Exact Transcription Bot (80+ languages), Wrap Up Bot (auto call summaries), Quality Bot (100% automated QA scoring), and Coaching Bot (real-time agent guidance). Not a standalone meeting note-taker — this is contact center conversation intelligence built into Verint's WEM platform. Acquired Calabrio Feb 2026.
+
+**Transcription**: Exact Transcription Bot — market-leading accuracy per Verint, 80+ languages/dialects, customized models per customer. Speech & text analytics on top of transcripts.
+
+**API**: Developer portal with API key auth. REST APIs for interaction export, user provisioning, KPI management. Webhooks for event notification. Community REST SDK (.NET). API docs behind authenticated portal.
+
+**CRM sync**: Salesforce via EliteConnect (makes recordings searchable by Salesforce fields, playback within Salesforce). 500+ adaptors across 300 vendors.
+
+**Pricing**: Enterprise custom — no public pricing. Estimated $100-500/user/month.
+
+**Best for CI**: Large contact centers (500+ agents) that need transcription, QA scoring, and real-time coaching as an integrated suite across any CCaaS platform. Not appropriate for standalone sales meeting recording.
+
+**When NOT to pick for CI**: Don't buy Verint for sales team meeting recording — it's an enterprise contact center platform. Use Gong, Fathom, or Fireflies for sales CI. If you just need QA scoring, Observe.AI or Balto are more focused. If midmarket, use Calabrio ONE (now Verint's midmarket brand).
+
+---
+
 ## Bolt-on conversation intelligence (not standalone)
 
 - **Revenue.io Conversation Intelligence** — inside Revenue.io (Orchestrate tier); covered by `/sales-revenue-io`

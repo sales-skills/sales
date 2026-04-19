@@ -24,6 +24,7 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - [Talkdesk](#in-talkdesk)
 - [Genesys Cloud CX](#in-genesys-cloud-cx)
 - [Calabrio ONE](#in-calabrio-one)
+- [Verint](#in-verint-da-vinci-ai-bots)
 - [Manual / Spreadsheet](#manual--spreadsheet-approach)
 
 ### In Seismic Learning (formerly Lessonly)
@@ -240,6 +241,14 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - **Bot Analytics**: Unified view of chatbot/voicebot and live agent conversations — identifies where bots fail and escalate, informing both bot training and agent coaching for handoff scenarios.
 - **Limitations**: Cloud version is buggy — crashes under heavy load. Support resolution takes weeks/months. Features promised by sales may not be in your purchased tier. Reporting requires running same report multiple times for cross-queue analysis. Not a CCaaS — layers on top of Amazon Connect, Genesys, NICE, Five9, Cisco, Avaya.
 - **Best practice**: Use Calabrio ONE when you need standalone WFM + QM + analytics across multiple CCaaS platforms (e.g., running both Amazon Connect and Genesys). If your CCaaS already has strong QM (NICE CXone Complete, Genesys CX 3+), evaluate whether the built-in QM meets your needs before adding Calabrio — it can create redundancy. For pure automated QA (100% AI scoring), Observe.AI or Balto may be more focused tools. Calabrio's strength is unified WFM+QM+analytics, not QA-only.
+
+### In Verint (Da Vinci AI Bots)
+
+- **What it does for coaching**: Verint's Coaching Bot provides real-time, non-disruptive agent guidance during live calls. Next-best-action suggestions based on interaction context. Quality Bot automates QA evaluations across 100% of interactions using generative AI scoring rules. CX/EX Scoring Bot measures conversation dynamics and predicts retention drivers.
+- **Key capabilities**: Coaching Bot trained on your specific data in Verint Data Hub (gets smarter over time). Quality Bot auto-writes scoring rules for compliance, empathy, process adherence — increases supervisor capacity by ~33%. Wrap Up Bot cuts after-call work by 60 seconds per call with AI summaries. Exact Transcription Bot supports 80+ languages.
+- **Setup**: Enable bots per queue/team, configure knowledge sources in Data Hub, set trigger conditions. Quality Bot rules must be published (not draft) to execute.
+- **Limitations**: Enterprise-only — custom pricing, "contact sales" model. Steep learning curve — budget 2-4 weeks admin training. Reporting tools outdated and can produce inconsistent data. Support resolution slow. API docs behind authenticated developer portal. Acquired Calabrio in Feb 2026 — Calabrio ONE continues as midmarket offering.
+- **Best practice**: Use Verint when you need an open, modular WEM/QA layer that connects to any ACD (BYOT architecture). If you already run NICE CXone Complete or Genesys CX 3+, evaluate whether their built-in QM meets your needs before adding Verint — it can create redundancy. Verint's strength is cross-ACD flexibility and AI bot depth, not simplicity.
 
 ### Manual / Spreadsheet approach
 
