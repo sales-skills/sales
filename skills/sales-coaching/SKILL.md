@@ -8,7 +8,7 @@ tags: [sales, coaching, training, onboarding, enablement]
 ---
 # Sales Coaching & Training
 
-Help the user build coaching programs, onboard new reps, run role-plays, design certification paths, and measure coaching impact. This skill is tool-agnostic and applies to any enablement platform (Seismic Learning, Allego, MindTickle, SalesHood, Brainshark), conversation intelligence tool (Gong, Chorus), or manual approach.
+Help the user build coaching programs, onboard new reps, run role-plays, design certification paths, and measure coaching impact. This skill is tool-agnostic and applies to any enablement platform (Seismic Learning, Allego, MindTickle, SalesHood, Brainshark), conversation intelligence tool (Gong, Chorus, Observe.AI), or manual approach.
 
 ## Step 1 — Gather context
 

@@ -246,6 +246,7 @@ If a follow-up call was booked, draft a proposed agenda:
 - `/sales-outdoo` — Outdoo platform help (AI roleplay coaching, conversation intelligence, revenue intelligence, CRM automation, mid-market Gong alternative)
 - `/sales-enthu` — Enthu.AI platform help (contact center QA with auto-scoring, agent coaching, compliance monitoring, affordable Gong alternative)
 - `/sales-revenue-io` — Revenue.io platform help (Salesforce-native conversation intelligence, AI scoring with 400+ criteria, Orchestrate tier)
+- `/sales-observe-ai` — Observe.AI platform help (enterprise contact center QA, 100% auto scoring, Agent Copilot, VoiceAI/ChatAI agents)
 - `/sales-balto` — Balto platform help (real-time AI coaching for contact centers, automated QA, compliance monitoring)
 - `/sales-salesken` — Salesken platform help (real-time in-call coaching, QA automation, revenue intelligence, multilingual transcription)
 - `/sales-clari-copilot` — Clari Copilot platform help (real-time battlecards, live coaching, AI call summaries, deal intelligence)

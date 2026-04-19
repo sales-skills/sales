@@ -136,6 +136,42 @@ For deep platform coverage (all modules, pricing, integrations, workflow automat
 
 ---
 
+## Observe.AI
+
+For deep platform coverage (all modules, API endpoints, pricing tiers, CCaaS integration, QA scorecard design), use `/sales-observe-ai`.
+
+**Positioning**: Enterprise contact center intelligence platform — 100% Auto QA, real-time Agent Copilot, Coaching Copilot, and AI virtual agents (VoiceAI/ChatAI). Targets enterprise contact centers with 100-100,000 agents. 350+ customers including DoorDash, Accolade, DailyPay, Signify Health. Historically strongest in post-call QA analytics — real-time Agent Copilot is a newer capability.
+
+**Pricing (2026-04)**: No public pricing — all five tiers require "Talk to sales." Estimated $100-500/user/mo based on review sites. Tiers: VoiceAI Agents, Real-time AI, Post-interaction AI, Enterprise Advanced, Enterprise Unlimited. Annual contracts. No free tier or trial.
+
+**API**:
+- Docs: `https://api-docs.observe.ai/` (Redoc, JS-rendered — partial access)
+- Type: REST
+- Base URL: `https://api.observe.ai/v1`
+- Auth: Bearer token (issued by account admin, enterprise-gated)
+- Rate limits: Per-endpoint (exact numbers not public), 429 with exponential backoff
+- Key endpoints:
+  - `GET /v1/interactions` — list interactions with date range filtering
+  - `GET /v1/interactions/{id}/transcript` — speaker-labeled transcript
+  - `GET /v1/interactions/{id}/evaluation` — QA scores and coaching moments
+- Caveats: Transcripts not instant (minutes to hours lag), evaluations arrive later than transcripts, cursor-based pagination
+
+**Integrations**: 250+ integrations. CCaaS: Five9 (deepest), Amazon Connect, Talkdesk, Avaya, 8x8, Aircall, Twilio, UJET, 3CLogic. CRM: Salesforce. Data: S3, Amplitude. Knowledge: Confluence, Bloomfire.
+
+**Known issues (from G2/Capterra reviews)**:
+- Transcription accuracy: degrades with accents, non-native English, background noise, overtalk
+- Speaker attribution errors: agent statements misattributed to customer and vice versa
+- Call segmentation: long calls split into shorter segments, losing full context for QA
+- Complex implementation: 3-6 month deployment timeline
+- Opaque pricing: custom enterprise quotes only
+- Navigation/UX: default dates not set to most recent, not all inbound calls appear
+
+**Selection notes**:
+- **Pick Observe.AI when**: 100+ agent enterprise contact center, need 100% auto QA to replace manual sampling, want a platform that can grow from QA into real-time guidance and AI agents, budget supports $100-500/user/mo, 3-6 month implementation timeline acceptable
+- **Avoid Observe.AI when**: Team under 50 agents (→ Enthu.AI), primary need is real-time during-call coaching (→ Balto), budget under $100/user/mo, need fast deployment in weeks (→ Enthu.AI or Balto), or want transparent pricing
+
+---
+
 ## Bolt-on conversation intelligence (not standalone)
 
 - **Revenue.io Conversation Intelligence** — inside Revenue.io (Orchestrate tier); covered by `/sales-revenue-io`

@@ -20,6 +20,7 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - [Momentum](#in-momentum)
 - [Trellus](#in-trellus)
 - [Oliv](#in-oliv)
+- [Observe.AI](#in-observeai)
 - [Manual / Spreadsheet](#manual--spreadsheet-approach)
 
 ### In Seismic Learning (formerly Lessonly)
@@ -187,6 +188,16 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - **Coach Agent** (Coming Soon): Dedicated AI meeting evaluation with personalized coaching action plans per rep. Not yet available as of April 2026.
 - **Limitations**: No structured learning paths, certifications, or course creation (pair with Seismic Learning or Allego for those). No AI roleplay for practice (unlike Outdoo, Nooks, Orum). No public API for coaching data export. Coach Agent still in development.
 - **Best for**: Teams that want call scoring and coaching insights bundled with their meeting intelligence at mid-market pricing. The modular pricing ($29/user/mo for Meeting Insights) is significantly cheaper than Gong for coaching use cases. Best when combined with a dedicated enablement platform for structured training.
+
+### In Observe.AI
+
+- **Auto QA coaching**: Observe.AI scores 100% of calls with custom QA scorecards. Supervisors see calls ranked by coaching priority — no manual sampling required. Coaching moments are flagged automatically.
+- **Coaching Copilot**: Post-interaction performance management module. Tracks agent-level scoring trends over time, identifies coaching priorities from Auto QA data, and surfaces specific call segments that need coaching attention.
+- **Agent self-review**: Agents can access their own scored interactions and coaching insights, building self-awareness before supervisor coaching sessions.
+- **Compliance coaching**: Auto QA checks script adherence, required disclosures, and regulatory compliance — useful for coaching agents in regulated industries (insurance, healthcare, financial services).
+- **Agent Copilot for real-time coaching**: Real-time guidance during live calls — prompts, checklists, next-best-action. This is coaching during the call, not after. Newer capability.
+- **Implementation note**: Expect 3-6 months for full deployment. Start with Post-interaction AI (Auto QA + Coaching Copilot) before adding real-time Agent Copilot.
+- **Best practice**: Use Observe.AI for enterprise contact centers (100+ agents) where 100% auto QA is the primary need and you want a path to real-time coaching and AI virtual agents. For faster deployment at smaller scale, consider Enthu.AI (hours setup, ~$15-69/user/mo) or Balto (45-60 days, ~$100-150/agent/mo for real-time-first coaching).
 
 ### Manual / Spreadsheet approach
 
