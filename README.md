@@ -598,6 +598,7 @@ Router recommends a 4-skill sequence:
 | `/sales-positioning` | Messaging, value props, competitive differentiation |
 | `/sales-content` | Organize, distribute, and measure sales collateral — battle cards, one-pagers, case studies |
 | `/sales-coaching` | Sales coaching and training — onboarding, role-play, coaching frameworks, certifications |
+| `/sales-solidroad` | Solidroad — AI QA + training closed-loop, 100% automated scoring, AI practice simulations from quality gaps, $10-50/user/mo |
 
 </details>
 

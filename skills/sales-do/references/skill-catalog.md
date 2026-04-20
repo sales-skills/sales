@@ -1101,6 +1101,7 @@
 |---|---|
 | `/sales-content` | User asks about organizing sales content, building a content library, creating battle cards, auditing content usage, content governance, or improving content findability — across any tool |
 | `/sales-coaching` | User asks about sales coaching frameworks, onboarding new reps, role-play exercises, coaching cadences, certification paths, measuring ramp time, or building a coaching culture — across any tool |
+| `/sales-solidroad` | Solidroad platform questions — AI QA + training closed-loop, 100% automated conversation scoring, AI practice simulations generated from quality gaps, custom scorecards, SCORE methodology, Salesforce Service Cloud/Zendesk/Intercom integration, Solidroad vs Observe.AI or Balto or Cresta, $10-50/user/mo. Route when user mentions Solidroad by name, asks about combined QA+training platforms, or wants to connect automated QA findings to rep training automatically |
 
 ### Marketing & GTM (via coreyhaines31/marketingskills)
 

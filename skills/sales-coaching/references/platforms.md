@@ -28,6 +28,7 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - [MaestroQA](#in-maestroqa)
 - [Uniphore](#in-uniphore)
 - [QEval](#in-qeval)
+- [Solidroad](#in-solidroad)
 - [Manual / Spreadsheet](#manual--spreadsheet-approach)
 
 ### In Seismic Learning (formerly Lessonly)
@@ -297,6 +298,18 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - **Pricing**: Manual plan $40/user/mo (human-evaluated QA). AI plan $100/user/mo (automated 100% scoring + speech analytics). Enterprise custom pricing.
 - **Limitations**: No public API docs. 30-day deployment timeline. G2 reviewers report occasional false-low automated scores — calibrate with manual reviews monthly. Reporting dashboards require training to navigate effectively. No self-serve signup (demo required).
 - **Best practice**: Use QEval when you need affordable automated QA scoring with 100% coverage in a mid-size contact center. QEval's sweet spot is the AI plan at $100/user/mo — cheaper than Observe.AI or Cresta for pure QA scoring without needing real-time agent coaching. If you need real-time in-call coaching, pair QEval with Balto or choose a platform that bundles both (Observe.AI, Cresta). If you need enterprise-grade conversation intelligence beyond QA, look at Observe.AI, Cresta, or Uniphore.
+
+### In Solidroad
+
+- **What it does for coaching**: Solidroad combines 100% automated QA scoring with AI-powered training simulations in a closed-loop — QA surfaces skill gaps, the platform auto-generates targeted practice scenarios, agents practice, and quality scores track improvement. This is the only platform on this list that directly connects QA findings to training remediation.
+- **Automated QA**: Scores 100% of conversations (phone, chat, email, video) across 80+ languages against custom quality rubrics. Up to 90% reduction in manual review hours.
+- **AI training simulations**: Generates multi-channel practice scenarios (voice, email, chat, video) from real conversation patterns and discovered skill gaps. SCORE methodology for structured scenario-based training. Each simulation scored instantly against custom scorecards.
+- **Unified human + AI agent QA**: Applies the same rubrics to both human agents and AI agents (chatbots, virtual agents) — identifies where both fail.
+- **Key results**: Podium Corp (800K+ conversations/mo, 33% faster resolution), Tech Mahindra (50% faster onboarding), Crypto.com (3% CSAT improvement above 90%).
+- **Integrations**: Salesforce Service Cloud, Zendesk, Intercom (native connectors). Telephony: Genesys, Avaya, Cisco, Five9. No public API.
+- **Pricing**: $10-50/user/mo across tiers. 14-day free trial (Growth features). No free version.
+- **Limitations**: No public API. No real-time coaching during live calls (QA is post-interaction). AI simulations sometimes respond before the user finishes talking. Pricing tiers not fully transparent on the website.
+- **Best practice**: Use Solidroad when you want QA + training in one platform with a closed-loop between quality insights and practice remediation. Solidroad's sweet spot is BPOs and mid-large contact centers (50+ agents) that need both automated QA AND structured training. If you only need QA scoring, Observe.AI or Enthu.AI are more focused. If you need real-time in-call coaching, pair with Balto or choose Cresta. If you need AI roleplay for sales teams (not support), consider Outdoo, Nooks, or Orum instead.
 
 ### Manual / Spreadsheet approach
 
