@@ -29,6 +29,7 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - [Uniphore](#in-uniphore)
 - [QEval](#in-qeval)
 - [Solidroad](#in-solidroad)
+- [Outreach (Kaia)](#in-outreach-kaia)
 - [Manual / Spreadsheet](#manual--spreadsheet-approach)
 
 ### In Seismic Learning (formerly Lessonly)
@@ -321,6 +322,19 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - **Pricing**: Free (unlimited roleplay seats) / Pro $30/user/mo (120 min roleplay, 60 min coaching) / Annual 2 months free / Enterprise contact sales. Unlimited seats at base tier — competitors scale per-seat.
 - **Limitations**: No public API. CRM integrations not yet live. Limited named customer references (Cyera primary). No Gartner MQ placement. Founded 2023.
 - **Best practice**: Use SecondBody when you want daily voice practice as a habit for SDR/BDR/AE teams without per-seat pricing killing adoption at scale. Connect Fathom or Aircall to crowdsource real objections into roleplay scenarios. Start with streaks to build the practice habit, then add VS Mode competitions. For contact center QA (not sales roleplay), use Solidroad, Observe.AI, or Enthu.AI instead.
+
+### In Outreach (Kaia)
+
+- **What it does for coaching**: Kaia conversation intelligence records and transcribes calls, then surfaces coaching insights — talk-to-listen ratio, longest monologue, questions asked, filler words. Content Cards auto-surface battlecards/playbooks during live calls based on detected topics.
+- **Real-time coaching**: Manager can listen live and message reps during calls. Content Cards trigger automatically when keywords/topics are detected — no manager intervention needed.
+- **Post-call coaching**: AI highlights key moments, generates summaries, captures action items. Managers can bookmark moments and annotate with coaching feedback.
+- **Rep self-coaching**: Reps see their own metrics (talk ratio, questions asked) vs team benchmarks. Searchable call library for self-review.
+- **Skills heatmaps**: Visual performance dashboards showing rep strengths and gaps across coaching rubric categories.
+- **Coaching plans**: Structured improvement plans tied to specific call behaviors. Track progress over time.
+- **Integration with sequences**: Coaching insights correlate with sequence performance — identify which behaviors drive higher reply/meeting rates.
+- **Pricing**: Kaia included in Amplify Plus (~$130/user/mo) and Pro (~$160/user/mo) tiers. Not available on Core tier.
+- **Limitations**: No AI roleplay (practice simulations). No built-in LMS or lesson authoring. Coaching is observational (analyze real calls) not practice-based. Annual contracts only. If you need AI roleplay, pair with Nooks, Orum, Outdoo, or SecondBody.
+- **Best practice**: Use Outreach Kaia coaching when your team is already on Outreach for sequences and you want coaching tightly integrated with engagement data. The correlation between call behaviors and sequence outcomes is uniquely powerful. For standalone coaching/enablement without Outreach, use Gong, Allego, or Seismic instead.
 
 ### Manual / Spreadsheet approach
 

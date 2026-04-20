@@ -29,3 +29,14 @@ Forecasting capabilities and integration details for each platform that feeds in
 - **Two-way CRM integration**: Real-time bidirectional sync with Salesforce, HubSpot, Zoho, Freshworks, Copper, Close, Pipedrive, Dynamics 365. Forecast data in CRM reflects actual conversation content.
 - **Limitations**: No public API — cannot export forecast data programmatically or build custom forecast dashboards. Forecaster Agent is $199/manager/mo on top of per-rep costs. Very early-stage platform (0 G2 reviews) — limited independent validation of forecast accuracy claims. No historical forecasting benchmarks published.
 - **Best for**: Teams replacing expensive Gong + Clari stacks who want forecasting bundled with conversation intelligence at a fraction of the cost. The Forecaster Agent's instant deployment (vs 8-12 week Clari implementation) is useful for teams that need forecast visibility quickly. Multi-CRM support (8 CRMs) is an advantage over Momentum (Salesforce only).
+
+### In Outreach
+
+- **AI Forecasting** (Amplify Pro tier, ~$160/user/mo): Pipeline coverage analysis, gap-to-goal visibility, and AI-driven revenue predictions. Flexible rollup categories (commit, best case, pipeline). Manager override and submission workflows.
+- **Deal velocity tracking**: Time-in-stage metrics, engagement trend analysis, and risk signal detection feed forecast accuracy. Stalled deals get flagged before they slip.
+- **Pipeline views**: Customizable pipeline filters and rollups by team, stage, segment, or custom fields. Real-time aggregation across the org.
+- **Kaia integration**: Conversation intelligence data (sentiment, topics discussed, next steps captured) enriches deal health scores, which feed forecast confidence.
+- **CRM sync**: Bi-directional Salesforce sync means forecast data reflects actual deal state. Outreach deal data flows to Salesforce forecast views.
+- **Reduces forecast prep time**: Vendor claims ~44% reduction in forecast prep time via automated pipeline rollups and AI-generated summaries.
+- **Limitations**: Forecasting only available on Amplify Pro (~$160/user/mo) — not Core or Plus tiers. Annual contracts required. Outreach forecasting is newer than Clari/Gong Forecast — less battle-tested at enterprise scale. No standalone forecasting purchase — requires full Outreach platform.
+- **Best for**: Teams already on Outreach for sequences who want forecasting integrated with engagement and conversation data in one platform. Avoids the need to stack a separate forecasting tool (Clari, Gong Forecast) alongside Outreach. If you need best-in-class standalone forecasting, Clari remains the category leader.

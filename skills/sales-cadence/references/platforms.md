@@ -4,6 +4,7 @@ Detailed per-platform cadence setup — campaign types, channel support, A/B tes
 
 ## Table of contents
 
+- [In Outreach](#in-outreach)
 - [In Mailshake](#in-mailshake)
 - [In Lemlist](#in-lemlist)
 - [In Yesware](#in-yesware)
@@ -24,6 +25,20 @@ Detailed per-platform cadence setup — campaign types, channel support, A/B tes
 - [In AiSDR](#in-aisdr)
 - [In Nooks](#in-nooks)
 - [In Orum](#in-orum)
+
+## In Outreach
+- Outreach sequences = multi-step cadences with email, call, LinkedIn, and custom task steps on automated schedules
+- Rhythm AI: recommends daily actions and next-best-step for each prospect based on engagement signals
+- A/B testing: test subject lines, email body, and full step variants — statistical significance tracked automatically
+- Smart send windows: emails scheduled based on prospect timezone and historical engagement patterns
+- Throttling: configurable max emails/day per mailbox, min delay between sends — critical for deliverability at scale
+- Multi-mailbox sending: distribute volume across multiple connected mailboxes to protect sender reputation
+- LinkedIn steps: profile visit, connection request, InMail (requires Sales Navigator seat)
+- Task steps: auto-creates manual tasks (call, research, social touch) with due dates in rep's workflow
+- Prospect engagement signals: opens, clicks, replies, bounces — drive conditional next-step logic
+- No built-in email warmup — pair with third-party warmup tools (Instantly, Warmbox, Mailwarm)
+- Salesforce/HubSpot sync: sequence activities auto-log to CRM. Bi-directional field sync available.
+- Pricing note: sequences included in all Outreach tiers (~$100-160/user/mo, annual contracts only)
 
 ## In Mailshake
 - Mailshake campaigns = cadences — a campaign has an initial message plus follow-ups

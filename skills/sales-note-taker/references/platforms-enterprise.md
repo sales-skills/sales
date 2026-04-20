@@ -295,6 +295,7 @@ For deep platform coverage (all modules, API endpoints, pricing tiers, WFM, QM, 
 
 ## Bolt-on conversation intelligence (not standalone)
 
+- **Outreach Kaia** — inside Outreach sales engagement platform; covered by `/sales-outreach-io`
 - **Revenue.io Conversation Intelligence** — inside Revenue.io (Orchestrate tier); covered by `/sales-revenue-io`
 - **Salesloft Conversations** — inside Salesloft; covered by `/sales-salesloft`
 - **ZoomInfo Chorus** — inside ZoomInfo; covered by `/sales-zoominfo`

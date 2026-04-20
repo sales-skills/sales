@@ -173,6 +173,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-revenue-io` — Revenue.io platform help (Salesforce-native Guided Selling cadences, RingDNA dialer, Moments coaching)
 - `/sales-nooks` — Nooks platform help (AI parallel dialer, multi-channel sequencing, coaching, waterfall enrichment)
 - `/sales-orum` — Orum platform help (AI parallel dialer, coaching suite, virtual salesfloor)
+- `/sales-outreach-io` — Outreach platform help (sequences, Kaia CI, deal management, forecasting, coaching)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill
 
 ## Gotchas

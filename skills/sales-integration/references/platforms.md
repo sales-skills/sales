@@ -53,6 +53,7 @@ Platform-specific webhook configurations, API integrations, and native connector
 - [Jitterbit integrations](#jitterbit-integrations)
 - [Tray integrations](#tray-integrations)
 - [Informatica IDMC integrations](#informatica-idmc-integrations)
+- [Outreach webhooks & API](#outreach-webhooks-api)
 
 ### Mailshake webhooks
 - **Setup**: API endpoint `/push/create` with `targetUrl` and `event`
@@ -583,3 +584,22 @@ Platform-specific webhook configurations, API integrations, and native connector
 | Make | Via HTTP | Same pattern as Zapier — REST V2 connector or CAI REST Start process. |
 | Rate limits | — | No publicly documented per-second rate limit. Implement exponential backoff on 429/5xx. Cache session IDs — don't call `/login` on every request. |
 | **Full reference** | — | See `/sales-informatica` → `references/informatica-api-reference.md` |
+
+### Outreach webhooks & API
+- **API type**: REST (JSON:API 1.0 spec)
+- **Base URL**: `https://api.outreach.io/api/v2`
+- **Auth**: OAuth 2.0 (Bearer token). S2S auth also available for backend integrations.
+- **Rate limits**: 10,000 requests/hour per user. Kaia: 3 calls/sec, 6,000/day org-level.
+- **OpenAPI spec**: `https://api.outreach.io/api/v2/schema/openapi.json`
+- **Webhook setup**: `POST /webhooks` with target URL and event types
+- **Webhook events**: prospect created/updated, mailing sent/bounced/replied, sequence state changed, call completed
+- **Payload format**: JSON:API structure matching the resource type
+- **Key resources**: prospects, accounts, sequences, sequenceStates, mailings, calls, tasks, opportunities, templates, webhooks
+- **Bulk operations**: Batch API for account/prospect bulk modify, tag, assign, delete
+- **Custom objects**: Schema-managed custom objects with typed fields (boolean, currency, date, string, url, etc.)
+- **Zapier**: Native connector with triggers (prospect replied, call completed, task due) and actions (create prospect, add to sequence, update account)
+- **Salesforce sync**: Deep bi-directional — leads, contacts, accounts, opportunities, tasks. Custom field mapping. Conflict resolution configurable per field.
+- **HubSpot sync**: Bi-directional for contacts, companies, deals. Lead activity sharing.
+- **Token management**: Access tokens expire 2hr, refresh tokens 14 days. Only 1 refresh per 60 seconds.
+- **Scopes**: Resource-based (`prospects.read`, `sequences.write`, etc.). NOT additive — `.write` does not grant `.read`.
+- **Full reference**: See `/sales-outreach-io` → `references/outreach-api-reference.md`
