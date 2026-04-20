@@ -235,6 +235,7 @@ Router recommends a 4-skill sequence:
 | `/sales-qualified` | Qualified — Piper AI SDR Agent, agentic marketing, real-time website chat, Signals buyer intent, Salesforce-native routing |
 | `/sales-nooks` | Nooks — AI-native parallel dialer workspace, multi-channel sequencing, AI coaching (scorecards, roleplay, battlecards, virtual salesfloor), waterfall enrichment (9 providers), ~$5K/user/yr |
 | `/sales-outreach-io` | Outreach — sales engagement sequences, Kaia conversation intelligence, deal management, forecasting, coaching, REST API, Salesforce/HubSpot sync, ~$100-160/user/mo |
+| `/sales-amplemarket` | Amplemarket — AI-native all-in-one (Duo AI copilot, 300M+ contacts, multichannel sequences, intent signals, deliverability suite), REST API, Salesforce/HubSpot sync, Starter $600/mo |
 | `/sales-orum` | Orum — AI parallel dialer (up to 10 lines), AI Coaching Suite (scorecards, roleplay, coaching portals), virtual salesfloor, spam detection/number rotation, Salesforce/HubSpot/Outreach/Salesloft/Gong/Apollo integrations, Launch $250/user/mo / Ascend $400-500+/user/mo |
 | `/sales-trellus` | Trellus — AI parallel dialer (up to 5 lines) with real-time coaching, Chrome extension embedded in Salesloft/Outreach/HubSpot/Apollo/Salesforce, voice agents for practice roleplay, virtual salesfloor, Superhuman for LinkedIn, number health/spam remediation, Free/$34.99/mo/custom, SOC 2 Type II, YC W22 |
 

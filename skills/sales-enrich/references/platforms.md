@@ -29,6 +29,7 @@ Detailed per-platform enrichment workflows, API endpoints, credit economics, and
 - [In LeadMagic](#in-leadmagic)
 - [In Attio](#in-attio)
 - [In Nooks (Waterfall Enrichment)](#in-nooks-waterfall-enrichment)
+- [In Amplemarket](#in-amplemarket)
 
 ### In Apollo.io
 
@@ -427,4 +428,18 @@ Detailed per-platform enrichment workflows, API endpoints, credit economics, and
 - **No standalone enrichment API**: Enrichment happens within the Nooks platform, not via a public API. You can't use Nooks as an enrichment provider for external tools
 - **Coverage focus**: Optimized for finding direct mobile numbers (the primary channel for parallel dialing). Email enrichment is secondary
 - **Best for**: Teams using Nooks for dialing who want enrichment bundled into the workflow. For standalone enrichment across tools, use Clay waterfall or dedicated enrichment providers
+
+## In Amplemarket
+
+- **Searcher database**: 300M+ verified contacts with 70M+ weekly updates. Search by industry (1000+), department, job function, company size, funding stage, technologies, location
+- **Single enrichment**: `GET /people/find` — find one person by name + company or LinkedIn URL. Costs 0.5-1 email credit + 1 phone credit per reveal
+- **Batch enrichment**: `POST /people/enrichment-requests` — up to 10K contacts per request. More credit-efficient than individual lookups. Poll `GET /people/enrichment-requests/{id}` for results (check `Retry-After` header)
+- **Company enrichment**: `POST /companies/enrichment-requests` — up to 10K companies per batch. Returns name, domain, LinkedIn URL, industry, headcount, funding, technologies, locations, revenue, B2B/B2C flags
+- **Email validation**: Separate from enrichment — `POST /email-validations` validates existing emails (100K max, 15K/hour). Results: deliverable, risky, unknown, undeliverable
+- **Credit economics**: Email reveals cost 0.5-1 credit each. Phone reveals cost 1 credit each. Credits reset monthly. Phone credits are the expensive resource — only reveal phone numbers for high-priority prospects
+- **Data accuracy**: ~95% for US contacts (industry-competitive). International data accuracy is significantly lower — budget for 10-20% higher bounce rates on non-US data. Validate international contacts with the email validation endpoint before sequencing
+- **Cancel in-progress enrichment**: `PATCH /people/enrichment-requests/{id}` — useful for stopping large batch jobs if you realize the filters were wrong
+- **Rate limits**: `/people/search` is 300/min (stricter than the general 500/min limit). `/people/find` is 350/min. Plan batch operations accordingly
+- **Best for**: Teams using Amplemarket as their primary outreach platform who want enrichment built into the same workflow. No need for separate enrichment tools — data access is native. For standalone enrichment feeding external tools, the API supports it but credit costs add up at volume
+- **Platform skill**: `/sales-amplemarket`
 

@@ -25,6 +25,7 @@ Detailed per-platform cadence setup — campaign types, channel support, A/B tes
 - [In AiSDR](#in-aisdr)
 - [In Nooks](#in-nooks)
 - [In Orum](#in-orum)
+- [In Amplemarket](#in-amplemarket)
 
 ## In Outreach
 - Outreach sequences = multi-step cadences with email, call, LinkedIn, and custom task steps on automated schedules
@@ -282,3 +283,18 @@ Detailed per-platform cadence setup — campaign types, channel support, A/B tes
 - **Voicemail sequencing**: Automated voicemail follow-up sequences (Ascend tier only)
 - **No email warmup or deliverability**: Orum handles phone only. For email warmup, use your SEP or a dedicated tool
 - **Best for**: Teams that already have Outreach/Salesloft for email sequences and want a dedicated, best-in-class dialing layer. Not suited for teams wanting a single tool for all channels — consider Nooks instead
+
+## In Amplemarket
+
+- **All-in-one sequences**: Email, LinkedIn (connection requests, messages, InMail), phone tasks, and voice notes in a single cadence. No separate tools needed for different channels
+- **Duo AI personalization**: AI copilot generates personalized email copy, subject lines, and LinkedIn messages for each prospect using their profile data, intent signals, and company context
+- **Conditional branching**: If prospect opens → send follow-up. If no reply after 3 days → try LinkedIn. If bounced → validate and retry with alternative email
+- **A/B testing**: Test subject lines and email body on sequence steps. Statistical significance tracked automatically
+- **Sending controls**: Per-mailbox daily limits (recommended: 50/day starting, max 400/day), timezone-aware scheduling, mailbox rotation across 3-5 connected accounts
+- **Unibox**: Unified inbox for managing replies across all channels in one view — email, LinkedIn, calls
+- **Email warmup built in**: Deliverability Booster warms up new mailboxes automatically (2-4 week ramp). No third-party warmup tool needed
+- **Intent-triggered sequences**: Automatically add prospects to cadences when intent signals fire (job change, website visit, funding event, Custom Signal webhook)
+- **Task creation**: Phone and manual steps create tasks in the Amplemarket task queue with due dates, synced to CRM
+- **Gotchas**: Can't edit live sequence steps in-place — must clone, edit clone, and replace. Sequence editing requires many clicks. Credit consumption on lead adds (data enrichment happens at sequence entry)
+- **Best for**: Teams wanting a single all-in-one platform (data + sequences + signals + deliverability) without managing multiple tools. Not suited for teams that already have strong individual tools in each category and want best-of-breed flexibility
+- **Platform skill**: `/sales-amplemarket`

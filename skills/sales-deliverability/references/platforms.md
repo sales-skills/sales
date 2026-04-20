@@ -46,6 +46,7 @@ Detailed per-platform deliverability configuration — sending limits, warmup, d
 - [In AiSDR](#in-aisdr)
 - [In BrandJet](#in-brandjet)
 - [In Buttondown](#in-buttondown)
+- [In Amplemarket](#in-amplemarket)
 
 ### In Mailshake
 - **Sending limits**: Configure per-sender daily limits in Settings > Senders
@@ -444,4 +445,19 @@ Customers.ai includes the Inboxer deliverability suite specifically designed to 
 - **Why it matters**: Identity-resolved contacts didn't opt in. Even with Customers.ai's higher accuracy (65-85%), some identified contacts will generate spam complaints. Inboxer's validation + Alfred's suppression reduces this risk.
 - **Recommended setup**: Use a separate sending subdomain for identified contacts. Start with high-intent segments only (cart abandoners, repeat visitors). Sunset non-engagers after 2-3 sends.
 - **Klaviyo-specific**: Inboxer works within the Klaviyo ecosystem only — monitors and optimizes deliverability for Klaviyo-sent emails.
+
+## In Amplemarket
+
+- **Deliverability Booster (warmup)**: AI-driven email warmup that gradually increases sending volume over 2-4 weeks. No third-party warmup tool needed — built into the platform
+- **Domain Health Center**: Unified dashboard showing SPF/DKIM/DMARC status, open rates, bounce rates, and reputation score for all connected mailboxes and domains. Check weekly; if score drops below 80%, pause sending immediately
+- **Inbox Placement Testing**: Send test emails to seed accounts across Gmail, Outlook, Yahoo to see where messages land (inbox, spam, promotions). Run before launching high-volume campaigns
+- **Spam Checker**: Pre-send content analysis that flags spam triggers (link-heavy content, spam words, missing unsubscribe). Scores email content before it goes out
+- **Mailbox Rotation**: Automatically distributes sending volume across 3-5 connected mailboxes to protect any single sender from reputation damage
+- **Mailbox Recommendation AI**: Suggests which specific mailbox to use for each prospect based on historical deliverability data and domain reputation
+- **Sending limits**: Recommended 50/day per mailbox starting out, max 400/day. Gmail and Outlook flag accounts sending >400 in a single day as suspicious
+- **Email Validation**: Built-in validation on lead lists before sequencing. Results categorized as deliverable/risky/unknown/undeliverable. Validate via API with `/email-validations` endpoint (100K max batch, 15K/hour processing)
+- **Custom tracking domains**: Recommended for deliverability — use your own domain for open/click tracking instead of shared Amplemarket tracking domains
+- **Known issues**: Users report 20-30% bounce rates when using unvalidated data from the Searcher. International data is less accurate than US. Always validate before high-volume sends
+- **Best for**: Teams wanting deliverability management bundled with their outreach platform (no separate warmup or validation tools). Comprehensive 5-tool suite that scored 21/21 in independent deliverability comparisons
+- **Platform skill**: `/sales-amplemarket`
 

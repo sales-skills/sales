@@ -186,6 +186,18 @@ Set up rules to automatically route signals into outreach:
 | Website pricing page visit | Notify rep in Slack | Manual follow-up — don't automate, too personal |
 | Content download | Add to nurture sequence | Educational — 3-4 touches over 21 days |
 
+### In Amplemarket
+Use intent signals + Custom Signals to automate sequence entry:
+1. **Job change alerts**: Mark existing contacts as "champions" — when they move to a new company, auto-add to a warm sequence
+2. **Website visitors**: Install tracking pixel → identify companies visiting pricing/product pages → auto-add decision-makers to high-intent cadence
+3. **Funding events**: Amplemarket detects new funding rounds → auto-add companies matching your ICP to a funding-triggered sequence
+4. **Hiring signals**: Detect companies hiring for roles your product supports (e.g., "SDR Manager" = signal for sales tools)
+5. **Competitive intelligence**: Prospects evaluating competitors → high-priority sequence with competitive positioning
+6. **Custom Signals webhook**: Push any event from your product (`POST /custom_signals/{token}/entries`) → trigger sequences based on product usage, trial behavior, or CRM field changes
+- **Signal strength**: Amplemarket combines multiple signals into a composite score — higher-signal prospects get more aggressive sequences
+- **Limitation**: Custom Signals require API integration work. Website visitor identification requires tracking pixel install and works at company-level (not individual-level unless combined with enrichment). Annual contract required for full signals suite.
+- **Platform skill**: `/sales-amplemarket`
+
 ### In Apollo.io
 Use Apollo Workflows (Professional+ plan) to automate:
 1. **Trigger**: Intent topic score increases, job change detected, or contact stage changes

@@ -35,6 +35,7 @@ Detailed per-platform list-building workflows, search filters, import/export pro
 - [Building lists from LeadMagic](#building-lists-from-leadmagic)
 - [Prospecting with AiSDR](#prospecting-with-aisdr)
 - [Building prospect lists in Nooks](#building-prospect-lists-in-nooks)
+- [Building prospect lists in Amplemarket](#building-prospect-lists-in-amplemarket)
 
 ### In Apollo.io
 
@@ -332,4 +333,19 @@ Save the search as a dynamic list — new matches will appear automatically.
 - **Import sources**: Pull prospects from CRM (Salesforce, HubSpot, Pipedrive), CSV upload, or SEP (Outreach, Salesloft, Apollo)
 - **No standalone prospecting database**: Nooks doesn't have its own contact database like Apollo or ZoomInfo. It enriches contacts you bring in or find via signal-based triggers
 - **Best for**: Teams already using Nooks for dialing who want signal-driven list building integrated with the dialer. For cold prospecting from scratch (finding new contacts at new companies), use Apollo, ZoomInfo, or Seamless.AI first, then import into Nooks
+
+### Building prospect lists in Amplemarket
+
+- **Searcher database**: 300M+ B2B contacts with advanced filters — industry (1000+ options), department, job function, company size, funding stage, technologies used, location (country/state/city)
+- **Intent-driven prospecting**: Combine search filters with intent signals — find companies in your ICP that are also showing buying signals (researching your category, hiring for roles you solve, recently funded)
+- **Lead Lists via API**: `POST /lead-lists` — create lists from LinkedIn URLs, emails, or names. Add up to 10K leads per batch with `POST /lead-lists/{id}/leads`
+- **People Search API**: `POST /people/search` — programmatic search with the same filters as the UI. 300 requests/min rate limit. Returns enriched profiles with email, phone, LinkedIn, company data
+- **Dynamic lists**: Search criteria saved as dynamic lists — new matches appear automatically as Amplemarket's database updates (70M+ weekly updates)
+- **CRM import**: Pull existing contacts from Salesforce or HubSpot, then use Searcher to find similar companies (lookalike search)
+- **Exclusion management**: API supports `POST /excluded-emails` and `POST /excluded-domains` to prevent contacting competitors, customers, or opted-out contacts
+- **Sequence integration**: Lists feed directly into multichannel sequences — no export/import step needed. Enrichment happens at list creation time
+- **Credit consumption**: Each contact reveal costs 0.5-1 email credit + 1 phone credit. Large list builds consume credits quickly — use email-only reveals for initial prospecting, then phone-enrich high-priority matches
+- **Data quality notes**: US data is strongest (~95% accuracy). International coverage varies significantly — validate emails before sequencing non-US contacts
+- **Best for**: Teams using Amplemarket as their primary platform who want prospecting, enrichment, and outreach in one flow. Comparable to Apollo's database (300M+ contacts) but bundled with the full engagement suite
+- **Platform skill**: `/sales-amplemarket`
 
