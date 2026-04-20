@@ -311,6 +311,17 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - **Limitations**: No public API. No real-time coaching during live calls (QA is post-interaction). AI simulations sometimes respond before the user finishes talking. Pricing tiers not fully transparent on the website.
 - **Best practice**: Use Solidroad when you want QA + training in one platform with a closed-loop between quality insights and practice remediation. Solidroad's sweet spot is BPOs and mid-large contact centers (50+ agents) that need both automated QA AND structured training. If you only need QA scoring, Observe.AI or Enthu.AI are more focused. If you need real-time in-call coaching, pair with Balto or choose Cresta. If you need AI roleplay for sales teams (not support), consider Outdoo, Nooks, or Orum instead.
 
+### In SecondBody
+
+- **What it does for coaching**: Voice-first AI roleplay platform with daily practice habit model. Reps practice objection handling, discovery, and closing with adaptive AI that adjusts difficulty. Rory AI coach provides daily async coaching pulled from CRM data, call recordings, and company playbooks. Methodology-native scoring (SPIN, MEDDIC, Sandler).
+- **Manager tools**: Team heatmaps identify skill gaps across reps. Pre-1:1 briefings give managers targeted coaching summaries. Behavioral pattern tracking across objection handling, discovery, and closing. One manager can effectively coach 20-30 reps.
+- **Gamification**: Daily streaks (teams using them practice 3-4x more), team challenges, leaderboards, VS Mode competitions, Call Blitz 15-minute sessions.
+- **Use cases**: Onboarding (6-week ramp-to-first-deal with daily scorecards), PIPs (measurable practice thresholds), candidate screening (47 selling behaviors), certification (scenario-based with transcripts), pre-call practice (confidence scoring).
+- **Integrations**: Aircall, Fathom (objections from calls become practice scenarios), Momentum.io, Cloudtalk, TeamTailor. CRM (Salesforce/HubSpot) in development.
+- **Pricing**: Free (unlimited roleplay seats) / Pro $30/user/mo (120 min roleplay, 60 min coaching) / Annual 2 months free / Enterprise contact sales. Unlimited seats at base tier — competitors scale per-seat.
+- **Limitations**: No public API. CRM integrations not yet live. Limited named customer references (Cyera primary). No Gartner MQ placement. Founded 2023.
+- **Best practice**: Use SecondBody when you want daily voice practice as a habit for SDR/BDR/AE teams without per-seat pricing killing adoption at scale. Connect Fathom or Aircall to crowdsource real objections into roleplay scenarios. Start with streaks to build the practice habit, then add VS Mode competitions. For contact center QA (not sales roleplay), use Solidroad, Observe.AI, or Enthu.AI instead.
+
 ### Manual / Spreadsheet approach
 
 - **Google Docs**: Create onboarding checklists and coaching templates. Works for <10 reps.

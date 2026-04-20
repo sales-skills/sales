@@ -118,7 +118,7 @@ Ask the user:
 
 ## Step 3 — Platform-specific guidance
 
-For platform-specific coaching guidance (Seismic Learning, Allego, Gong/Chorus, MindTickle, SalesHood, Outdoo, Jiminny, Revenue.io, Enthu.AI, Demodesk, Balto, Cresta, Nooks, Orum, NICE CXone, Convin, MaestroQA, QEval, Solidroad, Playvox, Manual/Spreadsheet), see references/platforms.md.
+For platform-specific coaching guidance (Seismic Learning, Allego, Gong/Chorus, MindTickle, SalesHood, Outdoo, Jiminny, Revenue.io, Enthu.AI, Demodesk, Balto, Cresta, Nooks, Orum, NICE CXone, Convin, MaestroQA, QEval, Solidroad, Playvox, SecondBody, Manual/Spreadsheet), see references/platforms.md.
 
 ## Step 4 — Measuring coaching impact
 
@@ -176,6 +176,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-playvox` — Playvox platform help (modular WEM with QA scorecards, WFM, coaching/eLearning, gamification, now part of NICE)
 - `/sales-qeval` — QEval platform help (AI-powered contact center QA with 100% automated scoring, compliance monitoring, agent coaching, $40-100/user/mo)
 - `/sales-solidroad` — Solidroad platform help (AI QA + training closed-loop, 100% automated scoring, AI practice simulations from quality gaps, $10-50/user/mo)
+- `/sales-secondbody` — SecondBody platform help (voice-first AI roleplay, Rory AI coach, methodology scoring SPIN/MEDDIC/Sandler, unlimited seats at $30/user/mo Pro, daily practice habit model)
 - `/sales-uniphore` — Uniphore platform help (enterprise conversation intelligence, U-Assist real-time coaching, automated QA, CSATai, Emotion AI)
 - `/sales-nooks` — Nooks platform help (AI parallel dialer with built-in call scoring, roleplay, battlecards, virtual salesfloor)
 - `/sales-orum` — Orum platform help (AI parallel dialer with AI Coaching Suite, scorecards, roleplay, virtual salesfloor)
