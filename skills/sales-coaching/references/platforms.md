@@ -27,6 +27,7 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - [Verint](#in-verint-da-vinci-ai-bots)
 - [MaestroQA](#in-maestroqa)
 - [Uniphore](#in-uniphore)
+- [QEval](#in-qeval)
 - [Manual / Spreadsheet](#manual--spreadsheet-approach)
 
 ### In Seismic Learning (formerly Lessonly)
@@ -286,6 +287,16 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - **API**: No public API docs. X-Platform has extensible API capabilities behind enterprise auth. Request API access during contract negotiation.
 - **Limitations**: Custom enterprise pricing only (~$35/agent + integration fees). No public API documentation. ActionIQ CDP requires SQL for audience segmentation (no visual builder). G2 reviews report intermittent platform failures with no bulk recovery mechanism. Emotion AI accuracy varies by channel (voice > text). Typical deployment: 4-8 weeks.
 - **Best practice**: Use Uniphore when you need enterprise-grade conversation intelligence with real-time coaching AND predictive CSAT AND emotion detection across a large contact center (500+ agents). Uniphore's unique differentiator is combining conversation intelligence with a CDP (ActionIQ) in one architecture plus Zero Data AI for on-prem/sovereign deployment. If you only need real-time agent coaching, Balto (<200ms) is faster and cheaper. If you only need automated QA, Observe.AI or MaestroQA are more focused. If you need a broader CCaaS platform (not just an overlay), consider NICE CXone or Genesys.
+
+### In QEval
+
+- **What it does for coaching**: QEval provides automated QA scoring on 100% of customer interactions (voice, chat, email) using a classification engine trained on 138M+ conversations, achieving 94% scoring accuracy. Post-scoring, agents receive personalized coaching recommendations tied to specific interaction examples where they scored low.
+- **Key capabilities**: 100% automated interaction scoring, custom evaluation scorecards, agent-facing performance dashboards with direct feedback, coaching triggers based on QA score thresholds, calibration tools for QA team alignment, compliance monitoring with real-time alerts, VOC/sentiment analytics.
+- **Integrations**: CRM (HubSpot, Freshworks, custom), call recording systems, telephony/dialing platforms, LMS, WFM tools, SymTrain (training simulation). Connects via API, SFTP, or cloud storage.
+- **API**: Exists for integrations but no public documentation — provided during enterprise onboarding.
+- **Pricing**: Manual plan $40/user/mo (human-evaluated QA). AI plan $100/user/mo (automated 100% scoring + speech analytics). Enterprise custom pricing.
+- **Limitations**: No public API docs. 30-day deployment timeline. G2 reviewers report occasional false-low automated scores — calibrate with manual reviews monthly. Reporting dashboards require training to navigate effectively. No self-serve signup (demo required).
+- **Best practice**: Use QEval when you need affordable automated QA scoring with 100% coverage in a mid-size contact center. QEval's sweet spot is the AI plan at $100/user/mo — cheaper than Observe.AI or Cresta for pure QA scoring without needing real-time agent coaching. If you need real-time in-call coaching, pair QEval with Balto or choose a platform that bundles both (Observe.AI, Cresta). If you need enterprise-grade conversation intelligence beyond QA, look at Observe.AI, Cresta, or Uniphore.
 
 ### Manual / Spreadsheet approach
 
