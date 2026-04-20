@@ -26,6 +26,7 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - [Calabrio ONE](#in-calabrio-one)
 - [Verint](#in-verint-da-vinci-ai-bots)
 - [MaestroQA](#in-maestroqa)
+- [Uniphore](#in-uniphore)
 - [Manual / Spreadsheet](#manual--spreadsheet-approach)
 
 ### In Seismic Learning (formerly Lessonly)
@@ -276,6 +277,15 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - **API**: OAuth2, REST API at developers.playvox.com. Bulk import (100 interactions/request), Custom Integrations API, Reporting API. Python wrapper on PyPI (`python-playvox`).
 - **Limitations**: QA samples only 2-5% of interactions (not 100% automated like Observe.AI or Convin). Requires separate instance per Zendesk instance. Frequent auto-logouts reported — save work often. Performance can be slow. WFM adherence reports confusing. NICE acquisition creates uncertainty about long-term product direction — gamification and eLearning may persist (NICE CXone lacks them), but QM/WFM features overlap with CXone.
 - **Best practice**: Use Playvox when you want QA + coaching + eLearning + gamification in one platform for a mid-market contact center. The gamification module is Playvox's unique differentiator — no other WEM platform offers built-in agent motivation with badges, leaderboards, and redeemable rewards. If you need 100% automated QA, pair Playvox with Observe.AI or consider MaestroQA (stronger on QA workflow) or Balto (real-time coaching).
+
+### In Uniphore
+
+- **What it does for coaching**: Uniphore's U-Assist provides real-time agent guidance during live calls — surfacing recommended responses, compliance prompts, knowledge articles, and next-best-action suggestions. Post-call, U-Analyze generates automated QA scores on 100% of interactions with AI-powered topic detection and sentiment analysis. CSATai predicts satisfaction scores for every conversation without surveys.
+- **Key capabilities**: Real-time in-call coaching (U-Assist), 100% automated QA scoring, Emotion AI multimodal sentiment detection (voice tone + text), CSATai predictive CSAT, TethrRX dashboards for agent performance and customer effort trends, conversation insights with topic clustering, churn risk identification.
+- **Integrations**: Cisco, Avaya, Genesys Cloud CX, Amazon Connect, Five9, Twilio, tcn, Salesforce, Zendesk, Oracle. Works as an overlay on existing CCaaS — not a replacement.
+- **API**: No public API docs. X-Platform has extensible API capabilities behind enterprise auth. Request API access during contract negotiation.
+- **Limitations**: Custom enterprise pricing only (~$35/agent + integration fees). No public API documentation. ActionIQ CDP requires SQL for audience segmentation (no visual builder). G2 reviews report intermittent platform failures with no bulk recovery mechanism. Emotion AI accuracy varies by channel (voice > text). Typical deployment: 4-8 weeks.
+- **Best practice**: Use Uniphore when you need enterprise-grade conversation intelligence with real-time coaching AND predictive CSAT AND emotion detection across a large contact center (500+ agents). Uniphore's unique differentiator is combining conversation intelligence with a CDP (ActionIQ) in one architecture plus Zero Data AI for on-prem/sovereign deployment. If you only need real-time agent coaching, Balto (<200ms) is faster and cheaper. If you only need automated QA, Observe.AI or MaestroQA are more focused. If you need a broader CCaaS platform (not just an overlay), consider NICE CXone or Genesys.
 
 ### Manual / Spreadsheet approach
 

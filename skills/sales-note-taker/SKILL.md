@@ -208,6 +208,7 @@ If you discover a gotcha, rate-limit ceiling, auth quirk, or vendor-specific pay
 - `/sales-outdoo` — Outdoo platform help (AI roleplay coaching, conversation intelligence, revenue intelligence, CRM automation, Open API, mid-market Gong alternative)
 - `/sales-jiminny` — Jiminny platform help (conversation intelligence, revenue intelligence, coaching, 8 native CRM integrations, partial REST API, mid-market Gong alternative)
 - `/sales-convin` — Convin platform help (contact center AI with 100% automated QA, Real-Time Assist, AI Phone Call agent, LMS, 70+ languages, no public API)
+- `/sales-uniphore` — Uniphore platform help (enterprise Business AI Cloud — conversation intelligence, U-Assist real-time guidance, automated QA, CSATai, Emotion AI, ActionIQ CDP)
 - `/sales-observe-ai` — Observe.AI platform help (enterprise contact center intelligence, 100% Auto QA, Agent Copilot, VoiceAI/ChatAI agents, 250+ integrations)
 - `/sales-nice-cxone` — NICE CXone platform help (full CCaaS with built-in recording, QM, Interaction Analytics — evaluate whether built-in CI is sufficient or layer a dedicated tool on top)
 - `/sales-enthu` — Enthu.AI platform help (contact center QA with auto-scoring on 100% of calls, agent coaching, compliance monitoring, affordable Gong/CallMiner alternative)

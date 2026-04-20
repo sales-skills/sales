@@ -108,6 +108,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-observe-ai` — Observe.AI — layer auto QA on top of any CCaaS
 - `/sales-balto` — Balto — real-time agent assist for contact centers
 - `/sales-cresta` — Cresta — enterprise contact center AI
+- `/sales-uniphore` — Uniphore — enterprise conversation intelligence + real-time assist overlay on any CCaaS
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do -a claude-code -y`
 
 ## Examples

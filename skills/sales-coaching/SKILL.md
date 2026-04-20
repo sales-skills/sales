@@ -174,6 +174,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-convin` — Convin platform help (contact center AI with 100% automated QA, Real-Time Assist, AI Phone Call agent, LMS, 70+ languages)
 - `/sales-maestroqa` — MaestroQA platform help (conversation data QA with customizable scorecards, coaching workflows, AskAI analytics, 60+ integrations)
 - `/sales-playvox` — Playvox platform help (modular WEM with QA scorecards, WFM, coaching/eLearning, gamification, now part of NICE)
+- `/sales-uniphore` — Uniphore platform help (enterprise conversation intelligence, U-Assist real-time coaching, automated QA, CSATai, Emotion AI)
 - `/sales-nooks` — Nooks platform help (AI parallel dialer with built-in call scoring, roleplay, battlecards, virtual salesfloor)
 - `/sales-orum` — Orum platform help (AI parallel dialer with AI Coaching Suite, scorecards, roleplay, virtual salesfloor)
 - `/sales-momentum` — Momentum platform help — AI revenue orchestration with Coaching Agent for data-driven call scoring, churn signals, and executive briefs (acquired by Salesforce Feb 2026)

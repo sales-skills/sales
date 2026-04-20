@@ -14,6 +14,7 @@ Detailed profiles for each major CCaaS platform — capabilities, pricing, stren
 - [8x8](#8x8)
 - [Aircall](#aircall)
 - [Dialpad](#dialpad)
+- [Uniphore (AI overlay)](#uniphore-ai-overlay)
 - [Calabrio ONE (WEM add-on)](#calabrio-one-wem-add-on)
 
 ## Pricing comparison table
@@ -30,6 +31,7 @@ Detailed profiles for each major CCaaS platform — capabilities, pricing, stren
 | 8x8 | X2 $28 | X4 $57 | Contact Center add-on | Included | SMB-mid, UCaaS+CCaaS combined |
 | Aircall | Essentials $30 | Professional $50 | Custom | Included | Small teams, quick setup |
 | Dialpad | Standard $27 | Pro $35 | Enterprise custom | Included | SMB, AI transcription |
+| Uniphore | ~$35/agent base | Custom | Custom + integration fees | N/A (AI overlay) | Enterprise conversation intelligence + real-time assist overlay on any CCaaS |
 | Calabrio ONE | Standard ~$50-75 | Advanced ~$75-120 | Enterprise custom | N/A (WEM layer) | Standalone WFM/QM/analytics on top of any CCaaS |
 
 *Prices are per user/agent per month, billed annually. Actual pricing depends on negotiation, volume, and contract length.*
@@ -253,6 +255,33 @@ Detailed profiles for each major CCaaS platform — capabilities, pricing, stren
 | UCaaS + CCaaS combined | Nextiva or 8x8 | One platform for internal + external comms |
 | HIPAA compliance | Genesys, NICE, Five9, Amazon Connect | All offer BAAs and HIPAA-eligible configs |
 | Standalone WEM/WFM | Calabrio ONE | Best-in-class WFM/QM/analytics that layers on top of any CCaaS |
+| Enterprise conversation AI overlay | Uniphore | Conversation intelligence + real-time assist + predictive CSAT on any CCaaS |
+
+## Uniphore (AI overlay)
+
+**Positioning**: Enterprise AI platform that overlays existing CCaaS infrastructure — not a CCaaS replacement. Provides conversation intelligence (U-Analyze), real-time agent assist (U-Assist), automated QA, CSATai predictive satisfaction scoring, Emotion AI, and self-service virtual agents. Also includes ActionIQ CDP for marketing AI. Sovereign deployment (cloud, on-prem, multi-cloud) via Zero Data AI architecture.
+
+**Strengths**:
+- Conversation intelligence + real-time coaching + CDP in a single architecture (no other vendor combines all three)
+- CSATai predicts CSAT on every call — eliminates dependency on low-response surveys
+- Emotion AI uses multimodal analysis (voice tone + text), not just keyword-based sentiment
+- Zero Data AI enables on-prem and sovereign deployment for regulated industries
+- Works as an overlay on Cisco, Avaya, Genesys, Amazon Connect, Five9, Twilio, tcn — no CCaaS vendor lock-in
+- Gartner Magic Quadrant Leader 2026 for CDPs
+
+**Limitations**:
+- Custom enterprise pricing only (~$35/agent base + ~$1,500/integration fee) — no self-serve
+- No public API documentation — request access during contract negotiation
+- ActionIQ CDP requires SQL for audience segmentation (no drag-and-drop)
+- G2 reviews report intermittent platform failures with no bulk recovery mechanism
+- Typical deployment timeline: 4-8 weeks for enterprise integrations
+- Not a CCaaS — you still need a separate contact center platform underneath
+
+**Best for**: Large contact centers (500+ agents) that want enterprise-grade conversation intelligence with predictive CSAT and emotion detection layered on top of their existing CCaaS. Regulated industries that need on-prem/sovereign AI deployment. Organizations that also need a CDP for marketing (ActionIQ avoids buying a separate CDP).
+
+**When NOT to choose Uniphore**: If you need a complete CCaaS platform, buy Genesys or NICE CXone instead — Uniphore is an overlay, not a standalone contact center. If you only need real-time agent coaching, Balto is faster and cheaper. If you only need automated QA, Observe.AI or MaestroQA are more focused and easier to deploy. If you're mid-market (<200 agents), Uniphore's enterprise pricing and deployment complexity likely isn't worth it.
+
+**Platform skill**: `/sales-uniphore`
 
 ## Calabrio ONE (WEM add-on)
 

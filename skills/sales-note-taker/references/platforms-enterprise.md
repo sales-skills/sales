@@ -275,6 +275,24 @@ For deep platform coverage (all modules, API endpoints, pricing tiers, WFM, QM, 
 
 ---
 
+### Uniphore
+
+**What**: Enterprise conversation intelligence platform with real-time agent assist (U-Assist), automated QA (100% of interactions), CSATai predictive satisfaction scoring, and Emotion AI multimodal sentiment detection. Not a standalone meeting note-taker — this is contact center conversation analytics built on Uniphore's Business AI Cloud architecture. Also includes ActionIQ CDP for marketing AI. HQ: Palo Alto. Founded 2008.
+
+**Transcription**: Proprietary AI transcription across voice, chat, and email. Multi-language support. Emotion AI adds voice tone analysis on top of text NLP.
+
+**API**: No public API documentation. X-Platform has extensible API capabilities behind enterprise auth. Request API access during contract negotiation.
+
+**CRM sync**: Salesforce (AppExchange listing), Zendesk, Oracle. CCaaS integrations: Cisco, Avaya, Genesys Cloud CX, Amazon Connect, Five9, Twilio, tcn.
+
+**Pricing**: Custom enterprise — estimated ~$35/agent base + ~$1,500/integration fee + platform fee. Free trial available (1,000 calls).
+
+**Best for CI**: Large contact centers (500+ agents) needing conversation intelligence + real-time coaching + predictive CSAT + emotion detection as an integrated overlay on any CCaaS. Regulated industries needing on-prem/sovereign deployment (Zero Data AI).
+
+**When NOT to pick for CI**: Don't buy Uniphore for sales team meeting recording — it's an enterprise contact center AI platform. Use Gong, Fathom, or Fireflies for sales CI. If you only need automated QA, Observe.AI or MaestroQA are more focused. If you only need real-time agent coaching, Balto is faster (<200ms) and cheaper. If mid-market (<200 agents), the enterprise pricing and deployment complexity isn't justified.
+
+---
+
 ## Bolt-on conversation intelligence (not standalone)
 
 - **Revenue.io Conversation Intelligence** — inside Revenue.io (Orchestrate tier); covered by `/sales-revenue-io`
