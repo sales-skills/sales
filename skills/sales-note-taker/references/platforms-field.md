@@ -86,6 +86,35 @@ For deep platform coverage (Coach Dean coaching, CRM integration, virtual rideal
 
 ---
 
+## Speakwise
+
+For deep platform coverage (Notion setup, recording modes, transcription tips, pricing), use `/sales-speakwise`.
+
+**Positioning**: iOS-native AI meeting assistant purpose-built for in-person conversations. Records from the iPhone microphone with AirPods hands-free control, transcribes in 50+ languages with on-device processing, and syncs everything to Notion automatically. Targets individual professionals (sales reps, consultants, financial advisors) who need lightweight meeting documentation without desktop tools or meeting bots. Extremely affordable at $59.99/yr.
+
+**Pricing (2026-04)**: Free tier (basic features) + Premium at $59.99/yr (~$5/mo) with unlimited transcription, full AI summaries, priority Notion sync, enhanced multilingual support.
+
+**API**: None. No public API, no webhooks, no third-party integrations beyond Notion.
+
+**Webhooks**: None.
+
+**Integrations**: Notion (native — auto-creates structured pages with transcript, summary, action items), Siri Shortcuts (recording automation), AirPods (hands-free control), Apple Watch (remote control). No CRM, no Zapier/Make/n8n, no Slack.
+
+**Known issues (from App Store reviews and comparison articles)**:
+- iOS-only — no Android, web, or desktop app
+- No video call integration — cannot join Zoom, Teams, or Google Meet
+- No CRM integration — Notion is the only output destination
+- No team/collaboration features — individual use only
+- Speaker diarization degrades with 5+ participants or overlapping speech
+- Transcription accuracy drops in noisy environments despite 92%+ claim
+- On-device processing speed depends on iPhone model — older devices slower
+
+**Selection notes**:
+- **Pick Speakwise when**: You need the cheapest in-person meeting recorder ($60/yr), you're an individual professional (not a team), you use Notion as your primary workspace, you want privacy-first on-device processing, you need iOS AirPods hands-free recording, or you need 50+ language support on mobile
+- **Avoid Speakwise when**: Your team uses Android (→ Notta, Omi), you need CRM integration (→ Rilla, Siro, Fathom), you need video call recording (→ Fathom, Fireflies, Otter), you need team features or admin controls (→ any team-tier note-taker), you need an API or webhook integration (→ Fathom, Fireflies, Siro), or you need enterprise compliance certs (→ Gong, Avoma, Fireflies Enterprise)
+
+---
+
 ## Omi
 
 For deep platform coverage (hardware specs, API endpoints, app framework, webhook setup, troubleshooting), use `/sales-omi`.
