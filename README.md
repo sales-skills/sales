@@ -238,6 +238,7 @@ Router recommends a 4-skill sequence:
 | `/sales-amplemarket` | Amplemarket — AI-native all-in-one (Duo AI copilot, 300M+ contacts, multichannel sequences, intent signals, deliverability suite), REST API, Salesforce/HubSpot sync, Starter $600/mo |
 | `/sales-orum` | Orum — AI parallel dialer (up to 10 lines), AI Coaching Suite (scorecards, roleplay, coaching portals), virtual salesfloor, spam detection/number rotation, Salesforce/HubSpot/Outreach/Salesloft/Gong/Apollo integrations, Launch $250/user/mo / Ascend $400-500+/user/mo |
 | `/sales-trellus` | Trellus — AI parallel dialer (up to 5 lines) with real-time coaching, Chrome extension embedded in Salesloft/Outreach/HubSpot/Apollo/Salesforce, voice agents for practice roleplay, virtual salesfloor, Superhuman for LinkedIn, number health/spam remediation, Free/$34.99/mo/custom, SOC 2 Type II, YC W22 |
+| `/sales-sendr` | Sendr — AI-powered personalized outreach with lipsync video, dynamic landing pages, Lead Finder (479M+ contacts), Data Studio enrichment, campaign sequencing, API/webhooks, $97-249/mo |
 
 </details>
 

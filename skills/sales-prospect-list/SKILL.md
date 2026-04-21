@@ -236,6 +236,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-leadmagic` — LeadMagic platform help (Employee Finder, Role Finder, Email/Mobile Finder, Company Search, Jobs Finder — API-first prospecting)
 - `/sales-seamless` — Seamless.AI platform help (1.8B+ contacts, Buyer Intent, Job Changes, Autopilot, Chrome extension)
 - `/sales-zoominfo` — ZoomInfo platform help (Advanced Search, Saved Searches, exports)
+- `/sales-sendr` — Sendr platform help (Lead Finder 479M+ contacts, Data Studio enrichment, personality analysis)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples

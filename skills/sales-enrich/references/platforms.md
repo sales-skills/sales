@@ -30,6 +30,7 @@ Detailed per-platform enrichment workflows, API endpoints, credit economics, and
 - [In Attio](#in-attio)
 - [In Nooks (Waterfall Enrichment)](#in-nooks-waterfall-enrichment)
 - [In Amplemarket](#in-amplemarket)
+- [In Sendr (Data Studio)](#in-sendr-data-studio)
 
 ### In Apollo.io
 
@@ -442,4 +443,18 @@ Detailed per-platform enrichment workflows, API endpoints, credit economics, and
 - **Rate limits**: `/people/search` is 300/min (stricter than the general 500/min limit). `/people/find` is 350/min. Plan batch operations accordingly
 - **Best for**: Teams using Amplemarket as their primary outreach platform who want enrichment built into the same workflow. No need for separate enrichment tools — data access is native. For standalone enrichment feeding external tools, the API supports it but credit costs add up at volume
 - **Platform skill**: `/sales-amplemarket`
+
+### In Sendr (Data Studio)
+
+- **Data Studio module**: Verify and enrich contacts in Sendr's Sheets (internal spreadsheet-like data structure)
+- **Email verification**: Validate emails before building personalized pages — avoids wasting credits on invalid contacts
+- **Personality analysis**: Classifies contacts by personality type (e.g., "high green") to inform outreach tone. Unique to Sendr — most enrichment tools don't include behavioral profiling
+- **Lead Finder as enrichment source**: 479M+ B2B contacts refreshed monthly. Use Lead Finder to fill gaps in existing lists (missing emails, phone numbers)
+- **API enrichment** (Pro plan only): Add rows to Sheets via `POST /api/v1/sheet/{sheetId}/row`, then run enrichment through the UI or automation builder
+- **Credit economics**: Enrichment operations consume credits from the same pool as page generation. At Growth plan (2,500/mo), budget enrichment carefully if also generating personalized pages
+- **No waterfall enrichment**: Unlike Clay or Nooks, Sendr uses a single data source (its own 479M+ database). For comprehensive enrichment, combine Sendr Lead Finder with Clay or Apollo for waterfall coverage
+- **Bulk operations**: Data Studio supports batch cleaning and enrichment on entire Sheets. No documented API endpoint for batch enrichment — UI-based only
+- **Data accuracy**: US data is stronger than international. Validate international contacts with email verification before spending credits on personalized pages
+- **Best for**: Teams already using Sendr for outreach who want basic enrichment without a separate tool. For heavy enrichment workflows, pair with Clay or Apollo
+- **Platform skill**: `/sales-sendr`
 

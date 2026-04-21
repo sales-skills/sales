@@ -47,6 +47,7 @@ Detailed per-platform deliverability configuration — sending limits, warmup, d
 - [In BrandJet](#in-brandjet)
 - [In Buttondown](#in-buttondown)
 - [In Amplemarket](#in-amplemarket)
+- [In Sendr (content-layer, no native sending)](#in-sendr-content-layer-no-native-sending)
 
 ### In Mailshake
 - **Sending limits**: Configure per-sender daily limits in Settings > Senders
@@ -460,4 +461,16 @@ Customers.ai includes the Inboxer deliverability suite specifically designed to 
 - **Known issues**: Users report 20-30% bounce rates when using unvalidated data from the Searcher. International data is less accurate than US. Always validate before high-volume sends
 - **Best for**: Teams wanting deliverability management bundled with their outreach platform (no separate warmup or validation tools). Comprehensive 5-tool suite that scored 21/21 in independent deliverability comparisons
 - **Platform skill**: `/sales-amplemarket`
+
+### In Sendr (content-layer, no native sending)
+
+- **Sendr does NOT send emails** — it creates personalized content (lipsync video, dynamic landing pages, GIFs). You embed Sendr links and GIF previews in your existing sending tool (Apollo, Instantly, Smartlead, Lemlist)
+- **Deliverability depends on your sending tool** — all SPF/DKIM/DMARC, warmup, sending limits, and bounce handling are managed by whatever tool sends the actual emails
+- **Data validation**: Lead Finder data is refreshed monthly (479M+ contacts). Use Data Studio to verify emails before building personalized pages — don't waste credits on invalid contacts
+- **Custom tracking domain**: Sendr supports custom domains on Pro plan ($249/mo) for branded page URLs. This doesn't affect email deliverability directly (that's your sending tool's domain) but does affect link reputation in emails
+- **Link reputation**: Sendr page links in emails could trigger spam filters if the Sendr domain has low reputation. Using a custom domain (Pro plan) mitigates this
+- **GIF embedding**: Sendr GIF previews embedded in emails add weight — some email clients (especially Outlook) may clip messages with large GIFs. Keep GIF size reasonable
+- **No warmup**: Sendr has no warmup feature. Use your sending tool's warmup (Instantly, Apollo, Smartlead all have built-in warmup)
+- **Best for**: Teams using Sendr for content personalization on top of a separate sending infrastructure. Deliverability is entirely managed by the sending tool — Sendr only creates the content
+- **Platform skill**: `/sales-sendr`
 

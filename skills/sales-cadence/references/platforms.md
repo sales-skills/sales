@@ -26,6 +26,7 @@ Detailed per-platform cadence setup — campaign types, channel support, A/B tes
 - [In Nooks](#in-nooks)
 - [In Orum](#in-orum)
 - [In Amplemarket](#in-amplemarket)
+- [In Sendr](#in-sendr)
 
 ## In Outreach
 - Outreach sequences = multi-step cadences with email, call, LinkedIn, and custom task steps on automated schedules
@@ -298,3 +299,16 @@ Detailed per-platform cadence setup — campaign types, channel support, A/B tes
 - **Gotchas**: Can't edit live sequence steps in-place — must clone, edit clone, and replace. Sequence editing requires many clicks. Credit consumption on lead adds (data enrichment happens at sequence entry)
 - **Best for**: Teams wanting a single all-in-one platform (data + sequences + signals + deliverability) without managing multiple tools. Not suited for teams that already have strong individual tools in each category and want best-of-breed flexibility
 - **Platform skill**: `/sales-amplemarket`
+
+## In Sendr
+
+- **Campaign module**: Email sequencing with multi-step adaptive flows. Campaigns have DRAFT/ACTIVE/PAUSED states
+- **Personalized content engine**: Each sequence step can include a dynamic landing page with lipsync video + personalized GIF preview. The page adapts per contact (prospect's website as background, personalized audio with prospect's name)
+- **Adaptive triggers**: Sequences branch based on page visit, video view, button click signals from dynamic pages. Engagement webhooks fire when prospects interact
+- **No native email sending**: Sendr creates personalized content (pages, videos, GIFs) but does NOT send emails directly. Embed Sendr links/GIFs in your existing sending tool (Apollo, Instantly, Smartlead, Lemlist). This means Sendr cadences are content-layer, not delivery-layer
+- **Automation builder (Pro only)**: No-code builder for multi-step workflows. Zapier and Make integrations available on all plans for simpler trigger-action flows
+- **A/B testing**: Test different page templates and video approaches per campaign. No native email subject line A/B testing — that's handled by your sending tool
+- **Credit consumption per step**: Each fully personalized contact costs ~3 credits (dynamic audio + website background + page). At Growth plan (2,500/mo), budget for ~833 personalized contacts. Use text-only pages for lower-priority prospects to conserve credits
+- **Gotchas**: Credits don't roll over. No email warmup — use your sending tool's warmup. API/automation builder require Pro plan ($249/mo). No native CRM logging — engagement data flows via webhooks to your CRM
+- **Best for**: Teams that want visual personalization (video + dynamic pages) layered on top of their existing outbound stack. Not a standalone sequence tool — pair with Apollo/Instantly/Smartlead for sending
+- **Platform skill**: `/sales-sendr`

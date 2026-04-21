@@ -36,6 +36,7 @@ Detailed per-platform list-building workflows, search filters, import/export pro
 - [Prospecting with AiSDR](#prospecting-with-aisdr)
 - [Building prospect lists in Nooks](#building-prospect-lists-in-nooks)
 - [Building prospect lists in Amplemarket](#building-prospect-lists-in-amplemarket)
+- [Building prospect lists in Sendr (Lead Finder)](#building-prospect-lists-in-sendr-lead-finder)
 
 ### In Apollo.io
 
@@ -348,4 +349,17 @@ Save the search as a dynamic list — new matches will appear automatically.
 - **Data quality notes**: US data is strongest (~95% accuracy). International coverage varies significantly — validate emails before sequencing non-US contacts
 - **Best for**: Teams using Amplemarket as their primary platform who want prospecting, enrichment, and outreach in one flow. Comparable to Apollo's database (300M+ contacts) but bundled with the full engagement suite
 - **Platform skill**: `/sales-amplemarket`
+
+### Building prospect lists in Sendr (Lead Finder)
+
+- **Lead Finder module**: Access 479M+ global B2B contacts, refreshed monthly. Search by ICP criteria, intent signals, and company attributes
+- **Personality analysis**: Unique to Sendr — classifies leads by personality type during search, enabling tone-matched outreach from the start
+- **Export to Sheets**: Results save to Sendr's internal Sheets data structure. From there, enrich via Data Studio, then generate personalized pages/videos
+- **API prospecting** (Pro plan only): `GET /api/v1/sheet` to list sheets, `POST /api/v1/sheet/{sheetId}/row` to add contacts programmatically. No dedicated search API — Lead Finder is UI-based
+- **Credit consumption**: Each lead reveal from Lead Finder consumes credits. Budget carefully — at Growth plan (2,500 credits/mo), lead search + enrichment + page generation all draw from the same pool
+- **Data quality**: US data is strongest. International coverage varies — validate emails via Data Studio before spending credits on personalized video pages for non-US contacts
+- **No CRM import**: Sendr doesn't pull existing contacts from Salesforce/HubSpot for prospecting. It's a net-new lead source. Import existing contacts manually via CSV or API
+- **Integration with outreach**: Lists feed directly into Sendr's campaign module and page generation. No export step needed if using Sendr end-to-end. For external sending tools, export from Sheets or use API
+- **Best for**: Teams wanting a single tool for prospecting + personalized outreach (video + pages). For large-scale prospecting (100K+ contacts), Apollo or ZoomInfo may be more cost-effective — Sendr's credit model makes bulk prospecting expensive
+- **Platform skill**: `/sales-sendr`
 

@@ -235,6 +235,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-zoominfo` — ZoomInfo platform help (Engage email configuration)
 - `/sales-brandjet` — BrandJet AI platform help — multi-channel outreach, brand intelligence, AI monitoring
 - `/sales-beehiiv` — Beehiiv platform help (shared IP deliverability, custom domains, engagement metrics)
+- `/sales-sendr` — Sendr platform help (content-layer personalization — no native sending, relies on external tools for deliverability)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
 ## Examples
