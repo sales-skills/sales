@@ -658,6 +658,39 @@ For deep platform coverage (module selection, Salesforce API management, pricing
 - **Pick Weflow when**: Salesforce-only team wanting activity capture + CI + forecasting in one bundle at ~50% of Gong pricing, reps not updating Salesforce (server-side auto-capture requires zero behavior change), need to fix forecast accuracy by fixing CRM data quality first, mid-market team (10-100 reps) wanting self-serve deployment with 14-day trial
 - **Avoid Weflow when**: You use HubSpot or any non-Salesforce CRM, you need VoIP/SMS recording (→ Gong, Revenue.io), you need a public API for custom pipelines (→ Gong, Fireflies, Fathom), you need 1,000+ rep scale (→ Clari, Gong), you need the deepest analytics ecosystem (→ Gong), you need bot-free recording (→ Jamie, Granola, Krisp)
 
+## Noota
+
+For deep platform coverage (all modules, recruitment automation, pricing breakdown, known issues, troubleshooting), use `/sales-noota`.
+
+**Positioning**: AI meeting assistant + recruitment automation platform (Paris-based). Two product lines: **Noota 360** (productivity — meeting notes, email automation, knowledge base) and **Noota Talent** (recruitment — AI sourcing, screening agents, outreach sequences). Records online meetings (Zoom, Teams, Meet, Webex), phone calls (Aircall, Ringover), and in-person meetings via mobile. 200,000+ users across 5,000+ teams. Differentiator is the combined meeting intelligence + recruitment automation in one platform — most competitors do one or the other.
+
+**Pricing (2026-04)**: Free $0 (300 min/mo, 1-month storage), Pro $19/user/mo annual ($29 monthly, 1,000 min/mo, up to 10 seats), Business $39/user/mo annual ($49 monthly, unlimited recording/seats, Zapier & API, analytics), Hiring Agent $199/user/mo annual ($299 monthly, 500 candidates + 500 screenings/mo), Enterprise custom (50+ licenses). Annual saves up to 50%.
+
+**API**:
+- Business+ plan required — no public API documentation found
+- Auth: not publicly documented
+- Zapier integration available on Business+ (triggers: meeting completed, summary generated)
+- No documented webhooks, REST endpoints, or SDK
+- Enterprise plan offers custom integrations
+
+**Integrations**: 7 CRMs (HubSpot, Salesforce, Pipedrive, Zoho, Zendesk, Monday, Dynamics 360), 15 ATS platforms (Greenhouse, Bullhorn, SmartRecruiter, Workable, BambooHR, etc.), meeting platforms (Zoom, Teams, Meet, Webex), VoIP (Aircall, Ringover), productivity (Slack, Notion, OneNote, Gmail, Outlook, Google Drive, OneDrive), Zapier (Business+).
+
+**Known issues (from G2/Capterra reviews)**:
+- Transcription quality needs manual cleanup — numbers, percentages, and technical jargon frequently misinterpreted
+- Can only record on Zoom, Teams, Meet, Webex, Aircall, Ringover — other platforms not supported
+- Summary language detection sometimes fails — generates summaries in wrong language in multilingual teams
+- Free plan has 1-month storage retention — export before it expires
+- API/Zapier completely gated to Business+ ($39/mo) — no automation for Free/Pro users
+- Mobile interface less polished than desktop
+- Pricing considered expensive for transcription quality that still requires manual review
+- Enterprise requires 50+ license minimum
+
+**Selection notes**:
+- **Pick Noota when**: You need meeting recording + recruitment automation in one platform, you're a recruiting team/agency wanting AI candidate screening and voice agents, you need EU-compliant data handling (GDPR, ISO 27001, SOC 2 Type II, SecNumCloud), you want ~20 customizable summary templates, you need broad ATS integration (15 platforms), or you want email inbox automation alongside meeting notes
+- **Avoid Noota when**: You need a public webhook API for transcript pipelines (→ Fathom, Fireflies, Sembly), you need deep deal intelligence and CRM autofill (→ Sybill, Gong), you need conversation intelligence with coaching scorecards (→ Avoma, tl;dv, Gong), you need bot-free recording (→ Jamie, Granola, Krisp), you need real-time coaching during calls (→ Cluely, Hedy, Salesken), or you need a standalone meeting tool without the recruitment modules (→ Fathom, Fireflies, tl;dv)
+
+---
+
 ## Dialpad
 
 For deep platform coverage (all modules, API endpoints, call quality troubleshooting, pricing breakdown, known issues), use `/sales-dialpad`.

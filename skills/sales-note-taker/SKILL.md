@@ -1,6 +1,6 @@
 ---
 name: sales-note-taker
-description: "Sales meeting note-taker and conversation-intelligence strategy — platform selection (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie, Krisp, Colibri, Cluely, Jamy, Wave, tl;dv, Claap, Tactiq, Granola, Hedy, Omi, Bluedot, Lindy, Notta, Rilla, Siro, Speakwise, Sybill, Sonnet, Supernormal, VoiceToNotes, Outdoo, Jiminny, Enthu.AI, Demodesk, Clari Copilot, Salesken, Cresta, Balto, Observe.AI, Oliv, Weflow, Dialpad) plus backend API integration for auto-downloading transcripts, summaries, action items, and recordings into CRM, data warehouse, Slack, or internal tools. Use when choosing an AI note-taker for a sales team, comparing Fathom vs Fireflies pricing or features, deciding between webhook and polling for transcript ingestion, wiring meeting transcripts into HubSpot or Salesforce, building a call-intelligence data pipeline, normalizing transcript formats across multiple vendors, choosing a field sales conversation intelligence tool (Rilla, Siro, Sales Ask), choosing an iOS in-person meeting recorder (Speakwise, Omi, Notta), or debugging rate limits and auth flows in note-taker APIs. Do NOT use for reviewing a single call for coaching (use /sales-call-review) or building a coaching program (use /sales-coaching)."
+description: "Sales meeting note-taker and conversation-intelligence strategy — platform selection (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie, Krisp, Colibri, Cluely, Jamy, Wave, tl;dv, Claap, Tactiq, Granola, Hedy, Omi, Bluedot, Lindy, Notta, Rilla, Siro, Speakwise, Sybill, Sonnet, Supernormal, VoiceToNotes, Outdoo, Jiminny, Enthu.AI, Demodesk, Clari Copilot, Salesken, Cresta, Balto, Observe.AI, Oliv, Weflow, Noota, Dialpad) plus backend API integration for auto-downloading transcripts, summaries, action items, and recordings into CRM, data warehouse, Slack, or internal tools. Use when choosing an AI note-taker for a sales team, comparing Fathom vs Fireflies pricing or features, deciding between webhook and polling for transcript ingestion, wiring meeting transcripts into HubSpot or Salesforce, building a call-intelligence data pipeline, normalizing transcript formats across multiple vendors, choosing a field sales conversation intelligence tool (Rilla, Siro, Sales Ask), choosing an iOS in-person meeting recorder (Speakwise, Omi, Notta), or debugging rate limits and auth flows in note-taker APIs. Do NOT use for reviewing a single call for coaching (use /sales-call-review) or building a coaching program (use /sales-coaching)."
 argument-hint: "[describe your note-taker selection or API integration question]"
 license: MIT
 version: 1.0.0
@@ -113,6 +113,7 @@ Rank these in order for the user's context:
 - Multilingual global team needing 58-language transcription + cross-meeting AI intelligence (Notta Brain) → Notta
 - All-in-one AI assistant that handles email + meetings + calendar + custom workflows in a single tool → Lindy
 - Individual professional recording in-person meetings on iPhone, Notion-centric workflow, ultra-low budget ($60/yr) → Speakwise
+- Meeting notes + recruitment automation in one platform, EU compliance, broad ATS integration (15 platforms) → Noota
 - In-person field sales coaching with virtual ridealongs, home services industry → Rilla
 - Home services field + call center coaching with active AI feedback, ServiceTitan/Jobber/Housecall Pro → Sales Ask
 - macOS sales team wanting auto-CRM update from calls without manual logging, domain templates (legal, medical, recruiting) → Sonnet
@@ -227,6 +228,7 @@ If you discover a gotcha, rate-limit ceiling, auth quirk, or vendor-specific pay
 - `/sales-call-review` — Review a specific call for coaching
 - `/sales-coaching` — Build coaching programs that consume call data
 - `/sales-integration` — General CRM/tool integration patterns (Zapier, webhooks, iPaaS)
+- `/sales-noota` — Noota platform help (AI meeting assistant + recruitment automation, 7 CRMs, 15 ATS, voice agents, EU compliant)
 - `/sales-dialpad` — Dialpad platform help (UCaaS + CCaaS, AI Recaps, AI Coaching Hub, Python SDK, Stats API)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 

@@ -7,7 +7,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | File | What's in it | Platforms |
 |---|---|---|
 | `platforms-smb.md` | Budget-friendly tools under ~$50/user/mo, strong free tiers | Fathom, Fireflies, Otter, MeetGeek, Tactiq, Granola, Wave, Bluedot, Notta, Sonnet, Supernormal, VoiceToNotes, Hedy, Colibri, Jamy |
-| `platforms-midmarket.md` | Sales-focused CI with coaching, methodology, CRM enrichment | Avoma, tl;dv, Claap, Grain, Sembly, Read.ai, Fellow, Jamie, Krisp, Cluely, Lindy, Outdoo, Jiminny, Enthu.AI, Demodesk, Salesken, Oliv, Weflow, Dialpad |
+| `platforms-midmarket.md` | Sales-focused CI with coaching, methodology, CRM enrichment | Avoma, tl;dv, Claap, Grain, Sembly, Read.ai, Fellow, Jamie, Krisp, Cluely, Lindy, Outdoo, Jiminny, Enthu.AI, Demodesk, Salesken, Oliv, Weflow, Noota, Dialpad |
 | `platforms-enterprise.md` | Enterprise revenue intelligence ($1K+/user/yr) + bolt-on CI | Gong, Clari Copilot, + Salesloft Conversations, Chorus, Seismic, Revenue.io |
 | `platforms-field.md` | In-person/field sales coaching and mobile recording | Rilla, Siro, Sales Ask, Speakwise, Omi |
 
@@ -60,4 +60,5 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Momentum | AI revenue orchestration + CI add-on | No | $69-99/user/mo + $30 CI add-on | REST (X-API-Key, 100/15min) | No | Deep (Salesforce only) | CRM automation from calls, MEDDIC Autopilot, Slack Deal Rooms, acquired by Salesforce |
 | Oliv | AI-native revenue intelligence | No (14-day trial) | $19-77/user/mo | None | None | Deep (8 CRMs) | Modular Gong alternative — buy only the agents you need, 13x cheaper than Gong |
 | Weflow | Salesforce-native Revenue AI | Yes (100 updates) | $19-79/user/mo | None | None | Deep (Salesforce only) | Salesforce teams wanting activity capture + CI + forecasting in one bundle at ~50% of Gong |
+| Noota | AI meeting assistant + recruitment | Yes (300 min/mo) | $19/mo | REST (Business+) | Yes (Zapier) | Medium (7 CRMs: HS/SF/Pipedrive/Zoho/Zendesk/Monday/Dynamics) | Meeting notes + recruitment automation (sourcing, screening agents, voice agents), 50+ languages, EU compliant |
 | Dialpad | UCaaS + CCaaS with AI | No | $15-25/user/mo | REST + Python SDK | Yes (Event Subscriptions) | Medium (Pro+: SF/HS/Zendesk) | Unified phone/video/SMS/contact center with AI Recaps + coaching built in |
