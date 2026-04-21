@@ -176,6 +176,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-clari-copilot` — Clari Copilot platform help — conversation intelligence tightly integrated with Clari's forecasting engine, deal scoring from call signals
 - `/sales-revenue-io` — Revenue.io platform help — Revenue Intelligence dashboards and deal scoring for Salesforce-native teams
 - `/sales-momentum` — Momentum platform help — AI revenue orchestration with automated CRM updates, MEDDIC Autopilot, AI coaching, churn signals, executive briefs (acquired by Salesforce Feb 2026)
+- `/sales-modjo` — Modjo platform help — EU-native deal intelligence, Ask Modjo AI pipeline queries, CRM auto-fill for forecast accuracy, GDPR-compliant
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Gotchas

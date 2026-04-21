@@ -293,6 +293,39 @@ For deep platform coverage (all modules, API endpoints, pricing tiers, WFM, QM, 
 
 ---
 
+## Modjo
+
+For deep platform coverage (all modules, API endpoints, webhook automation, CRM auto-fill, pricing breakdown, known issues), use `/sales-modjo`.
+
+**Positioning**: EU-native revenue intelligence — the GDPR-compliant alternative to Gong. All data hosted in France (AWS Paris). 22,000+ users. Positions as 20-30% cheaper than Gong with simpler setup and all-inclusive pricing (onboarding included). AI call scoring, CRM auto-fill (claims 90% of fields), deal intelligence, conversation library, Ask Modjo AI, customizable AI agents, and MCP server.
+
+**Pricing (2026-04)**: ~€99/user/mo (~$1,300/user/yr). Listener licenses free (managers, leadership). 15-seat minimum. Annual contracts only. Onboarding: €2,000-€5,000 one-time (included in subscription). No free trial, no free plan. First-year TCO for 15 seats: ~€19,820-€22,820.
+
+**API**:
+- Docs: `https://api.modjo.ai/v1/` (Swagger/OpenAPI at `/v1/swagger.json`)
+- Type: REST
+- Base URL: `https://api.modjo.ai/v1/`
+- Auth: API key via `X-API-KEY` header (Administrator/Manager permissions)
+- Rate limits: Not publicly documented — implement exponential backoff
+- Key endpoints:
+  - `POST /v1/calls` — Upload a call (recording URL or signed URL for direct upload)
+  - `POST /v1/calls/exports` — Export call data with filters (v2 beta)
+  - `GET /v1/users` — List users (paginated, max 100/page)
+  - `POST /v1/users/bulk` — Create users
+  - `DELETE /v1/users` — Delete users
+  - `GET /v1/teams` — List teams
+- Webhooks: `call_summarized`, `call_transcript_deleted`, `call_recording_deleted` — HMAC-SHA256 signature verification
+
+**CRM sync**: Salesforce (native, bi-directional), HubSpot (native + Chrome extension), Pipedrive, Zoho, Sellsy, Microsoft Dynamics. Auto-fills CRM fields from conversation content. Notes, summaries, topics, tags logged to CRM activity records.
+
+**Integrations**: 23 phone systems (Aircall, RingCentral, Ringover, Talkdesk, Five9, CloudTalk, 3CX, etc.), 6 video (Google Meet, Teams, Zoom, Demodesk), Slack, Outreach, Salesloft.
+
+**Best for**: European sales teams (15+ reps) that need Gong-class conversation intelligence with EU data sovereignty. Teams where GDPR compliance is non-negotiable. Organizations wanting all-inclusive pricing without platform fees or onboarding surcharges.
+
+**When NOT to pick**: Don't pick Modjo if you need the deepest enterprise analytics (Gong's tracker tuning, forecasting module, and Engage sequences are more mature). Don't pick if your team is US-based with no EU data requirements — US-hosted alternatives may offer better value. Not suitable for teams under 15 reps due to minimum commitment. No free trial means you can't self-serve evaluate — require a demo.
+
+---
+
 ## Bolt-on conversation intelligence (not standalone)
 
 - **Outreach Kaia** — inside Outreach sales engagement platform; covered by `/sales-outreach-io`

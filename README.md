@@ -187,6 +187,7 @@ Router recommends a 4-skill sequence:
 | `/sales-voicetonotes` | VoiceToNotes platform help — ultra-cheap AI voice-to-text ($1/mo unlimited), HIPAA/SOC 2 compliance, real-time transcription, AI summaries, grammar correction, OCR, web + iOS + Android, no integrations |
 | `/sales-speakwise` | Speakwise platform help — iOS-native AI meeting assistant for in-person recording, on-device transcription (50+ languages), native Notion integration, AirPods hands-free, $59.99/yr |
 | `/sales-noota` | Noota platform help — AI meeting assistant + recruitment automation with transcription, voice agents, email automation, 7 CRMs, 15 ATS integrations, EU compliant |
+| `/sales-modjo` | Modjo platform help — EU-native AI revenue intelligence with call scoring, CRM auto-fill, deal intelligence, Ask Modjo AI, customizable AI agents, MCP server, GDPR-compliant EU hosting |
 | `/sales-sybill` | Sybill platform help — AI sales assistant with Magic Summaries, CRM Autofill (MEDDPICC/BANT/SPICED), Deal Workspace, Ask Sybill, follow-up automation, Buyer EQ behavioral insights |
 | `/sales-outdoo` | Outdoo (formerly MeetRecord) platform help — AI roleplay coaching, conversation intelligence, revenue intelligence, CRM automation with MEDDIC/SPIN/BANT, 120+ integrations, Open API (Enterprise), mid-market Gong alternative |
 | `/sales-jiminny` | Jiminny platform help — conversation intelligence, revenue intelligence, AI notetaker, sales coaching, automatic CRM logging, 8 native CRM integrations, partial REST API, mid-market Gong alternative |

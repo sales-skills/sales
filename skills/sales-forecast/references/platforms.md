@@ -5,6 +5,7 @@ Forecasting capabilities and integration details for each platform that feeds in
 ## Table of contents
 
 - [Sybill](#in-sybill)
+- [Modjo](#in-modjo)
 - [Momentum](#in-momentum)
 - [Oliv](#in-oliv)
 - [Weflow](#in-weflow)
@@ -17,6 +18,15 @@ Forecasting capabilities and integration details for each platform that feeds in
 - **Compound Intelligence**: Sybill's context graph connects conversations, deals, and outcomes over time. The more calls it processes, the better it identifies patterns that predict deal outcomes — useful for forecast risk signals.
 - **Limitations**: No dedicated forecasting module like Clari or Gong Forecast. Sybill improves forecast inputs (cleaner CRM data, deal health signals) rather than generating forecast numbers. API/MCP (Enterprise only) required for exporting deal intelligence to external forecasting tools. No weighted pipeline automation — forecast logic must live in CRM or external BI.
 - **Best for**: Teams wanting to improve forecast accuracy by having better CRM data quality and deal visibility. Sybill makes the data feeding your forecast more reliable — it's a forecast-enabler, not a standalone forecasting tool. Pair with CRM native forecasting or Clari for the full stack.
+
+### In Modjo
+
+- **Modjo Deals**: Pipeline visibility with deal health signals derived from conversation data. Shows which deals are progressing, stalled, or at risk based on actual call content rather than rep self-reports. Surfaces churn risk, expansion opportunities, and competitor mentions across all conversations.
+- **AI Insights for forecast accuracy**: Aggregated business signals across all calls — budget concerns, timeline shifts, competitor mentions. Managers can ask Modjo AI "Which deals mentioned budget concerns this quarter?" to identify forecast risks.
+- **CRM auto-fill for forecast data quality**: Auto-populates CRM fields from conversations (claims 90% of fields). Forecast accuracy improves because CRM data reflects what was actually discussed, not stale rep estimates. Supports Salesforce, HubSpot, Pipedrive, Zoho, Sellsy, Dynamics.
+- **Ask Modjo AI for pipeline queries**: Natural language queries — "Which Stage 3 deals haven't had a call in 2 weeks?" or "Show me deals where the champion changed." Cross-references calls, CRM data, and deal information.
+- **Limitations**: No dedicated forecasting module like Clari or Gong Forecast. Modjo improves forecast inputs (cleaner CRM data, deal health signals from conversations) rather than generating forecast roll-ups, weighted pipeline, or AI-predicted numbers. No standalone forecasting purchase. For dedicated forecasting, pair with CRM native forecasting or Clari.
+- **Best for**: Teams wanting to improve forecast accuracy through better CRM data quality and deal visibility. Modjo makes the data feeding your forecast more reliable — it's a forecast-enabler, not a standalone forecasting tool. Strongest for EU teams needing GDPR-compliant deal intelligence. Pair with Salesforce/HubSpot native forecasting or Clari for the full stack.
 
 ### In Momentum
 

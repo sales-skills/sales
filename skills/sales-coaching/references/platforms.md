@@ -31,6 +31,7 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - [QEval](#in-qeval)
 - [Solidroad](#in-solidroad)
 - [Outreach (Kaia)](#in-outreach-kaia)
+- [Modjo](#in-modjo)
 - [Weflow](#in-weflow)
 - [Manual / Spreadsheet](#manual--spreadsheet-approach)
 
@@ -347,6 +348,17 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - **Pricing**: Kaia included in Amplify Plus (~$130/user/mo) and Pro (~$160/user/mo) tiers. Not available on Core tier.
 - **Limitations**: No AI roleplay (practice simulations). No built-in LMS or lesson authoring. Coaching is observational (analyze real calls) not practice-based. Annual contracts only. If you need AI roleplay, pair with Nooks, Orum, Outdoo, or SecondBody.
 - **Best practice**: Use Outreach Kaia coaching when your team is already on Outreach for sequences and you want coaching tightly integrated with engagement data. The correlation between call behaviors and sequence outcomes is uniquely powerful. For standalone coaching/enablement without Outreach, use Gong, Allego, or Seismic instead.
+
+### In Modjo
+
+- **AI Call Scoring**: Automated call quality grading based on configurable criteria — methodology adherence, talk-to-listen ratio, question quality, and custom dimensions. Managers can review scores across the team to identify coaching priorities.
+- **Call Library with playlists**: Build curated playlists of exemplary calls for new rep onboarding or topic-specific coaching (e.g., "best objection handling" or "discovery call exemplars"). Shared across the team.
+- **Ask Modjo AI for coaching patterns**: Natural language queries across all conversations — "Which reps consistently miss budget qualification?" or "Show me calls where competitors were mentioned but not addressed." Surfaces coaching gaps from real data.
+- **AI Insights for coaching signals**: Automated detection of churn risk, competitor mentions, and objection patterns across all conversations. Managers can filter by rep to identify individual coaching needs.
+- **CRM auto-fill for coaching context**: Auto-populates CRM fields from calls — managers see what was actually discussed on calls, not what reps remember to enter. Better coaching conversations because the data is accurate.
+- **Email Follow-Up review**: AI-generated post-call emails can be reviewed as a coaching artifact — are reps capturing the right action items and next steps?
+- **Limitations**: No AI roleplay for practice. No dedicated coaching LMS, lesson authoring, or certification tracking. No real-time in-call coaching prompts. Coaching is observational (review scored calls) not practice-based. No methodology-specific scorecard templates (MEDDPICC etc.) — scoring criteria are custom. For AI roleplay, use Outdoo, SecondBody, or Solidroad. For enablement with LMS, use Allego or Seismic.
+- **Best practice**: Use Modjo for coaching when your primary coaching bottleneck is "managers don't know what's happening on calls." Modjo gives managers scored calls + deal intelligence + CRM data in one place. The coaching insight is "I can see from your last 5 calls that you're spending 80% talking and not asking discovery questions" backed by AI scoring. Pair with a dedicated coaching/roleplay platform for structured practice. Strongest for EU teams needing GDPR-compliant call recording and coaching.
 
 ### In Weflow
 

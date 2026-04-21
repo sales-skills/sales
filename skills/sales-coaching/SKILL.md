@@ -184,8 +184,9 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-nice-cxone` — NICE CXone platform help (built-in QM coaching, AI Copilot, Interaction Analytics, $135-209/agent/mo for coaching-relevant tiers)
 - `/sales-genesys` — Genesys Cloud CX platform help (built-in QM coaching, AI agent assist on CX 4, Interaction Analytics, $75-240/user/mo)
 - `/sales-ccaas-selection` — Comparing CCaaS platforms? The selection skill walks through Genesys vs NICE vs Talkdesk vs Five9
+- `/sales-modjo` — Modjo platform help (EU-native call scoring, AI coaching insights, conversation library playlists, GDPR-compliant)
 - `/sales-call-review` — Review specific sales calls and extract coaching insights
-- `/sales-note-taker` — Picking an AI note-taker (Fathom, Fireflies, Avoma, Gong, etc.) or wiring its API to feed your coaching program
+- `/sales-note-taker` — Picking an AI note-taker (Fathom, Fireflies, Avoma, Gong, Modjo, etc.) or wiring its API to feed your coaching program
 - `/sales-content` — Sales content for training and enablement programs
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
