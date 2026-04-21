@@ -657,3 +657,37 @@ For deep platform coverage (module selection, Salesforce API management, pricing
 **Selection notes**:
 - **Pick Weflow when**: Salesforce-only team wanting activity capture + CI + forecasting in one bundle at ~50% of Gong pricing, reps not updating Salesforce (server-side auto-capture requires zero behavior change), need to fix forecast accuracy by fixing CRM data quality first, mid-market team (10-100 reps) wanting self-serve deployment with 14-day trial
 - **Avoid Weflow when**: You use HubSpot or any non-Salesforce CRM, you need VoIP/SMS recording (→ Gong, Revenue.io), you need a public API for custom pipelines (→ Gong, Fireflies, Fathom), you need 1,000+ rep scale (→ Clari, Gong), you need the deepest analytics ecosystem (→ Gong), you need bot-free recording (→ Jamie, Granola, Krisp)
+
+## Dialpad
+
+For deep platform coverage (all modules, API endpoints, call quality troubleshooting, pricing breakdown, known issues), use `/sales-dialpad`.
+
+**Positioning**: AI-native unified communications platform (UCaaS + CCaaS) with built-in conversation intelligence. DialpadGPT (trained on 6B+ minutes of business conversations) powers real-time transcription, AI Recaps (post-call summaries + action items), AI Coaching Hub (sentiment analysis, scorecards, real-time coaching cards), and AI Agent (autonomous customer resolution). Not a dedicated note-taker — it's a full phone/video/SMS/contact center platform with AI features layered in. Closest comparison in this category: Revenue.io (Salesforce-native dialer + CI) or Aircall (cloud phone + integrations), not Gong or Fathom.
+
+**Pricing (2026-04)**: Standard $15/user/mo (1 user, no CRM), Pro $25/user/mo (3+ users, CRM integrations, 24/7 support), Enterprise custom (100+ users, SSO, 99.9% SLA). Contact Center module priced separately. Annual billing saves ~40%.
+
+**API**:
+- Docs: `https://developers.dialpad.com`
+- Type: REST
+- Auth: API Key (`Authorization: Bearer {key}`) or OAuth 2.0
+- OpenAPI spec: `https://dialpad.com/static/openapi/platform-v1.0.json`
+- Python SDK: `pip install dialpad` (github.com/dialpad/dialpad-python-sdk, 15 stars)
+- Key APIs: Stats (async report generation), SMS, Digital Engagement, AI Virtual Agent, Event Subscriptions, WFM
+- Stats API pattern: POST to create report → wait 15-20s → GET to retrieve CSV
+- Rate limits: Not published per-endpoint; retry on 429 with backoff
+
+**Integrations**: 70+ including Salesforce, HubSpot, Zendesk (all Pro+ only), Microsoft Teams, Google Workspace, ServiceNow, Zoho, Front, Microsoft Dynamics. Zapier connector available but described as "complicated to get working."
+
+**Known issues (from G2/Capterra/Trustpilot reviews)**:
+- Call quality degrades on Wi-Fi-to-LTE handoff — one-way audio or dropped calls (#1 complaint)
+- CRM integration requires Pro+ ($25/user/mo) — Standard has zero CRM support
+- AI transcription struggles with accents and industry jargon — use Company Dictionary
+- CRM sync (especially SMS logging) inconsistent on some connectors
+- Mobile app less reliable than desktop
+- Billing disputes after cancellation (Trustpilot)
+- Standard plan limited to 1 user/1 office — effectively a solo plan
+- Enterprise requires 100-user minimum
+
+**Selection notes**:
+- **Pick Dialpad when**: You need a unified phone + video + SMS + contact center platform with AI features built in, you want AI Recaps without adding a separate note-taker, you need a contact center with AI Agent for autonomous resolution, you want real-time coaching cards during live calls, you need 70+ integrations including Microsoft Teams embedding, or you're evaluating UCaaS + CCaaS in one vendor
+- **Avoid Dialpad when**: You need a dedicated conversation intelligence tool with deep coaching analytics (→ Gong, tl;dv, Avoma), you need CRM autofill from calls (→ Sybill, Gong), you need bot-free meeting recording (→ Jamie, Granola, Krisp), you need a public webhook API for transcript pipelines (��� Fathom, Fireflies, Sembly), you need deep deal intelligence and revenue forecasting (→ Gong, Clari Copilot, Weflow), or you already have a phone system and just need AI notes (→ Fathom, Fireflies, tl;dv)

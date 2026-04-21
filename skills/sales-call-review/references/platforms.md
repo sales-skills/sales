@@ -103,3 +103,13 @@ Detailed call review capabilities for each conversation intelligence and QA plat
 - **Deal context**: Call review data feeds into Deal Intelligence (50+ AI health signals), so managers can prioritize which call reviews will have the most pipeline impact.
 - **Salesforce-native**: All call data lives inside Salesforce — no separate tool or login needed. Works with existing Salesforce reports and dashboards.
 - **Note**: Weflow's call review is strong on CRM data extraction and deal intelligence but lighter on dedicated coaching features compared to Gong's Smart Trackers or Outreach Kaia. For deep coaching analytics, pair Weflow's transcripts with this skill's scoring framework. Weflow's differentiator is that call review data automatically improves CRM data quality and forecast accuracy — the review isn't an isolated coaching exercise, it's part of a data pipeline.
+
+### In Dialpad
+
+- **AI Recaps**: Automatic post-call summaries with action items, key topics, and sentiment. Available on all plans. Provides a quick review without re-listening.
+- **AI Transcription**: Real-time transcription powered by DialpadGPT during calls. Managers can read transcripts after the call for review. Accuracy varies with accents and background noise — use Company Dictionary for custom terms.
+- **AI Scorecard**: Automated call scoring against custom criteria. Scores calls without manual review, surfacing calls that need attention.
+- **AI Coaching Hub**: Sentiment analysis, CSAT tracking, and performance metrics. Managers can filter by sentiment to find problematic calls. Real-time coaching cards trigger during live calls.
+- **Stats API**: Pull call analytics programmatically (async POST/GET pattern). Export call records with metadata for custom review dashboards.
+- **Limitations**: Call review is part of the broader UCaaS/CCaaS platform — not a dedicated conversation intelligence tool. No methodology scorecards (MEDDIC/BANT/SPICED). No deal intelligence from calls. No CRM field auto-fill from transcripts. Transcription accuracy weaker than dedicated CI tools on accents and jargon. CRM logging requires Pro+ ($25/user/mo).
+- **Best for**: Teams already on Dialpad for phones/contact center who want built-in call review without a separate tool. Contact center managers monitoring agent quality via sentiment and scorecards. Not ideal for sales teams needing deep deal-level call analysis — use Gong, Sybill, or Avoma instead.

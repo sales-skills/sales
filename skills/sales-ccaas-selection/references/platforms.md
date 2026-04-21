@@ -381,3 +381,46 @@ Detailed profiles for each major CCaaS platform — capabilities, pricing, stren
 **When NOT to choose Playvox**: If you're already on NICE CXone, the built-in WEM may make Playvox redundant. If you need 100% automated QA, Observe.AI or Convin are better. If you need enterprise-grade WEM, Verint is more comprehensive. If the NICE acquisition risk concerns you, evaluate Calabrio or MaestroQA instead.
 
 **Platform skill**: `/sales-playvox`
+
+---
+
+## Dialpad AI Contact Center
+
+**Category**: UCaaS + CCaaS combined platform
+**Pricing**: Standard $15/user/mo (UCaaS only), Pro $25/user/mo, Enterprise custom (100+ users). Contact Center module priced separately (contact sales). Annual billing saves ~40%.
+**Target size**: Small to mid-market (Standard is 1-user solo, Pro starts at 3, Enterprise at 100+)
+
+**Key capabilities**:
+- AI Agent: Autonomous customer resolution (appointments, orders, refunds) without human intervention
+- AI Chatbot: Virtual assistant built from knowledge base sources
+- IVR: Drag-and-drop builder for call routing trees
+- ACD: Skills-based, round-robin, or longest-idle routing
+- Omnichannel: Voice, chat, SMS, email in unified queue
+- AI Coaching Hub: Real-time sentiment analysis, CSAT tracking, live coaching cards
+- AI Playbooks: Guided scripts for agent onboarding
+- AI Recaps: Post-call summaries with action items
+- Real-time transcription: Powered by DialpadGPT (6B+ minutes training data)
+- 70+ integrations: Salesforce, HubSpot, Zendesk, ServiceNow, Microsoft Teams
+
+**Strengths vs competitors**:
+- Combined UCaaS + CCaaS in one platform — no separate phone system needed
+- DialpadGPT is proprietary AI (not generic LLM) trained specifically on business conversations
+- AI Agent for autonomous resolution is a differentiator vs traditional IVR-only platforms
+- Competitive pricing for UCaaS ($15-25/user/mo) vs RingCentral ($30-45)
+- 70+ country coverage with local numbers in 50+
+
+**Weaknesses**:
+- Call quality issues on Wi-Fi-to-LTE handoff (#1 G2 complaint)
+- CRM integrations require Pro+ ($25/user/mo) — Standard has none
+- Enterprise requires 100-user minimum — smaller teams can't get SSO or SLA
+- Contact Center pricing not public — requires sales engagement
+- Standard plan is 1-user/1-office only — not viable for teams
+- Mobile app less reliable than desktop
+- Billing disputes common (Trustpilot)
+- AI transcription struggles with accents and industry jargon
+
+**Best for**: Mid-market teams (50-500 seats) wanting one vendor for both business phones and contact center with AI features built in. Teams already on Dialpad UCaaS adding contact center. Organizations that want AI Agent for deflection without building a separate bot.
+
+**When NOT to choose Dialpad**: If you need enterprise-grade contact center at 1,000+ agents (→ Genesys, NICE CXone). If you need best-in-class WFM and QA (→ NICE CXone, Verint). If call quality on mobile is critical (→ RingCentral). If you need deep CRM-native contact center (→ Salesforce Service Cloud). If you need the strongest IVR and virtual agents (→ Five9).
+
+**Platform skill**: `/sales-dialpad`

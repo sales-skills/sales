@@ -358,6 +358,16 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - **Limitations**: No dedicated coaching module (no LMS, lesson authoring, or certification tracking). No AI roleplay for practice. Coaching insights come from real call analysis, not simulated scenarios. Salesforce-only — no HubSpot or other CRM. For dedicated coaching platforms with roleplay, use Allego, Outdoo, SecondBody, or Solidroad.
 - **Best practice**: Use Weflow for coaching when your primary coaching bottleneck is that reps don't update Salesforce and managers can't see what's happening in deals. Weflow gives managers call data + deal data + CRM data in one place — the coaching insight is "I can see from your last 3 calls that you're not uncovering economic buyer" rather than "I have no idea what happened on your calls." Pair with a dedicated coaching platform for structured practice.
 
+### In Dialpad
+
+- **AI Coaching Hub**: Real-time sentiment analysis, CSAT tracking, and performance metrics dashboard. Managers see live coaching cards during agent calls — triggered by keywords, sentiment drops, or missed topics.
+- **AI Playbooks**: Accelerated agent onboarding with guided scripts and prompts. New agents get step-by-step guidance during live calls.
+- **AI Scorecard**: Automated call scoring against custom criteria. Scores calls without manual review.
+- **Real-time coaching cards**: Live suggestions during calls when specific moments are detected (competitor mention, pricing objection, sentiment shift). Similar to Balto/Cresta real-time assist but built into the phone system.
+- **Sentiment analysis**: DialpadGPT detects customer sentiment in real-time. Managers can filter dashboard by sentiment to find calls needing attention.
+- **Limitations**: Coaching features are part of the contact center module (separate pricing from UCaaS). No AI roleplay for practice. No dedicated coaching LMS or certification tracking. CRM integrations require Pro+ ($25/user/mo). For dedicated coaching with roleplay, use Allego, Outdoo, SecondBody, or Solidroad.
+- **Best practice**: Use Dialpad coaching when your team is already on Dialpad for phones/contact center and you want built-in coaching without adding a separate tool. Strongest for contact center teams where real-time coaching cards and sentiment monitoring add the most value. For sales teams needing deep methodology tracking (MEDDIC scorecards, deal intelligence), a dedicated CI tool (Gong, Sybill, Avoma) provides more depth.
+
 ### Manual / Spreadsheet approach
 
 - **Google Docs**: Create onboarding checklists and coaching templates. Works for <10 reps.

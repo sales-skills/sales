@@ -1224,6 +1224,12 @@
 |---|---|
 | `/sales-brandwatch` | Brandwatch platform help — Consumer Intelligence (social listening, Boolean queries, sentiment, audience research), Social Media Management (formerly Falcon.io — content calendar, publishing, engagement), Influencer Marketing (Influence module — discovery, campaigns), Search Intelligence (Trajaan — GenAI monitoring), 6 REST APIs (Analysis, Consumer Research, Data Upload, Measure, Publish, Engage). Route when the user asks about Brandwatch setup, config, features, troubleshooting, or API calls. |
 
+### Dialpad & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-dialpad` | Dialpad platform help — AI-native UCaaS + CCaaS with DialpadGPT, AI Recaps, AI Coaching Hub, contact center, voice, video, SMS, 70+ integrations. Route when user asks about Dialpad setup, Dialpad calls dropping or audio issues, Dialpad CRM integration with Salesforce or HubSpot not syncing, Dialpad AI transcription accuracy, Dialpad contact center IVR or call routing, Dialpad Standard vs Pro vs Enterprise pricing, Dialpad vs RingCentral or Nextiva, Dialpad Python SDK or Stats API, or Dialpad AI Agent configuration. |
+
 ### Meta & System Skills
 
 | Skill | Route when... |
