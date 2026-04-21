@@ -152,7 +152,7 @@ If there's a gap between the forecast and quota, build a plan to close it:
 - **Gap plan target**: Gap × 1.5 (plan for more than you need, since not all levers will work)
 - **Minimum viable gap close**: At least 50% of gap plan should come from Pull-in and Accelerate (fastest to materialize)
 
-For platform-specific forecasting guidance (Momentum), see references/platforms.md.
+For platform-specific forecasting guidance (Momentum, Sybill, Oliv, Outreach, Weflow), see references/platforms.md.
 
 ## Before recommending a specific platform skill
 

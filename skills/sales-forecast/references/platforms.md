@@ -4,8 +4,19 @@ Forecasting capabilities and integration details for each platform that feeds in
 
 ## Table of contents
 
+- [Sybill](#in-sybill)
 - [Momentum](#in-momentum)
 - [Oliv](#in-oliv)
+- [Weflow](#in-weflow)
+
+### In Sybill
+
+- **Deal Workspace** (Business+, $90/user/mo): Pipeline views with deal health signals, risk indicators, and activity timeline. Shows which deals are progressing, which are stalled, and which have risk signals from recent calls.
+- **Ask Sybill for pipeline queries**: Natural language queries about pipeline health — "Which deals mentioned budget concerns this quarter?" or "Which Stage 3 deals haven't had a call in 2 weeks?" Cross-references calls, emails, CRM, and Slack data (Business+).
+- **CRM Autofill for forecast accuracy** (Business+): Auto-populates CRM fields from calls using MEDDPICC/BANT/SPICED frameworks. Forecast accuracy improves because CRM data reflects what was actually discussed, not stale rep estimates.
+- **Compound Intelligence**: Sybill's context graph connects conversations, deals, and outcomes over time. The more calls it processes, the better it identifies patterns that predict deal outcomes — useful for forecast risk signals.
+- **Limitations**: No dedicated forecasting module like Clari or Gong Forecast. Sybill improves forecast inputs (cleaner CRM data, deal health signals) rather than generating forecast numbers. API/MCP (Enterprise only) required for exporting deal intelligence to external forecasting tools. No weighted pipeline automation — forecast logic must live in CRM or external BI.
+- **Best for**: Teams wanting to improve forecast accuracy by having better CRM data quality and deal visibility. Sybill makes the data feeding your forecast more reliable — it's a forecast-enabler, not a standalone forecasting tool. Pair with CRM native forecasting or Clari for the full stack.
 
 ### In Momentum
 
@@ -40,3 +51,13 @@ Forecasting capabilities and integration details for each platform that feeds in
 - **Reduces forecast prep time**: Vendor claims ~44% reduction in forecast prep time via automated pipeline rollups and AI-generated summaries.
 - **Limitations**: Forecasting only available on Amplify Pro (~$160/user/mo) — not Core or Plus tiers. Annual contracts required. Outreach forecasting is newer than Clari/Gong Forecast — less battle-tested at enterprise scale. No standalone forecasting purchase — requires full Outreach platform.
 - **Best for**: Teams already on Outreach for sequences who want forecasting integrated with engagement and conversation data in one platform. Avoids the need to stack a separate forecasting tool (Clari, Gong Forecast) alongside Outreach. If you need best-in-class standalone forecasting, Clari remains the category leader.
+
+### In Weflow
+
+- **Deal Intelligence & Forecasting** ($39/user/mo): 50+ AI-generated deal health signals, pipeline management views, automated forecast roll-ups, and AI prediction. Combines bottom-up, weighted, and AI forecasting methods. Real-time bi-directional Salesforce sync means forecast data lives in Salesforce — no separate system of record.
+- **Activity Capture feeds forecast accuracy** ($19/user/mo): Server-side auto-sync of emails, meetings, and contacts into native Salesforce objects. Eliminates the "garbage in, garbage out" cycle — forecasts improve because CRM data reflects actual activities, not stale rep estimates.
+- **Conversation Intelligence feeds deal signals** ($39/user/mo): AI extracts MEDDIC/BANT fields from calls and auto-fills Salesforce opportunity fields. Deal health signals come from actual call content, not rep self-reports.
+- **Ask Weflow AI for pipeline queries**: Natural language queries — "Which Stage 3 deals haven't had a call in 2 weeks?" or "Which deals mentioned budget concerns this quarter?" Cross-references calls, activities, and CRM data.
+- **Full bundle economics** ($79/user/mo): Activity capture + CI + forecasting. The forecasting module's accuracy depends on the data quality from the other two modules — buying all three together is the intended deployment.
+- **Limitations**: Salesforce-only (no HubSpot or Dynamics forecasting). No public API — cannot export forecast data to external BI tools programmatically (data lives in Salesforce, queryable via SOQL). Not suited for complex enterprise forecast hierarchies at 1,000+ rep scale. Newer platform — less battle-tested at enterprise scale than Clari.
+- **Best for**: Mid-market Salesforce teams (10-100 reps) where forecast inaccuracy traces back to stale CRM data. Weflow's approach is "fix the data first, then forecast" — the forecasting module is most powerful when paired with activity capture and CI. If you already have clean CRM data and need standalone forecasting, Clari or Gong Forecast may be better fits.

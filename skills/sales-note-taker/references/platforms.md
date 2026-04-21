@@ -7,7 +7,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | File | What's in it | Platforms |
 |---|---|---|
 | `platforms-smb.md` | Budget-friendly tools under ~$50/user/mo, strong free tiers | Fathom, Fireflies, Otter, MeetGeek, Tactiq, Granola, Wave, Bluedot, Notta, Sonnet, Supernormal, VoiceToNotes, Hedy, Colibri, Jamy |
-| `platforms-midmarket.md` | Sales-focused CI with coaching, methodology, CRM enrichment | Avoma, tl;dv, Claap, Grain, Sembly, Read.ai, Fellow, Jamie, Krisp, Cluely, Lindy, Outdoo, Jiminny, Enthu.AI, Demodesk, Salesken, Oliv |
+| `platforms-midmarket.md` | Sales-focused CI with coaching, methodology, CRM enrichment | Avoma, tl;dv, Claap, Grain, Sembly, Read.ai, Fellow, Jamie, Krisp, Cluely, Lindy, Outdoo, Jiminny, Enthu.AI, Demodesk, Salesken, Oliv, Weflow |
 | `platforms-enterprise.md` | Enterprise revenue intelligence ($1K+/user/yr) + bolt-on CI | Gong, Clari Copilot, + Salesloft Conversations, Chorus, Seismic, Revenue.io |
 | `platforms-field.md` | In-person/field sales coaching and mobile recording | Rilla, Siro, Sales Ask, Omi |
 
@@ -50,6 +50,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Outdoo | AI roleplay + coaching + revenue intelligence | Yes (limited) | ~$660-1,200/user/yr | REST (Enterprise only) | None documented | Deep (11 CRMs, auto-fill) | Closed-loop coaching: AI roleplay + real-call scoring + CRM auto-fill, mid-market Gong alternative |
 | Jiminny | Conversation + revenue intelligence | No (14-day trial) | $83/mo (Recording) | REST (partial) | None documented | Deep (8 CRMs native) | Coaching-focused conversation intelligence, mid-market, no platform fee |
 | Enthu.AI | Contact center QA + coaching | No (free trial) | ~$15-69/user/mo | Not published | Not published | Medium (HubSpot/Pipedrive/Bullhorn/Close) | Contact center QA auto-scoring on 100% of calls, compliance, affordable |
+| Sybill | AI sales assistant + deal execution | Yes (500 credits/wk) | $30/user/mo | REST (Enterprise only) | Yes (webhook automations) | Deep (4 CRMs: SF/HS/Zoho/Dynamics, Autofill Business+) | CRM autofill, deal workspace, Ask Sybill, follow-up automation, mid-market alternative to Gong |
 | Demodesk | AI sales meeting platform + coaching + agents | Yes (14-day trial) | €49/user/mo | REST (V2) | Yes (13 events) | Deep (Salesforce/HubSpot/Pipedrive) | AI-first conversation intelligence with autonomous agents, GDPR-native EU teams |
 | Clari Copilot | Revenue CI + live coaching | No (30-day trial) | ~$60/user/mo | REST (Core API, Enterprise) | None documented | Deep (Salesforce/HubSpot/Pipedrive) | Enterprise CI tightly integrated with Clari revenue forecasting, real-time battlecards |
 | Salesken | Real-time coaching + QA + revenue intel | No | ~$99/mo | Not published (Enterprise API) | Not published | Deep (Salesforce/HubSpot/Zoho native) | Real-time in-call coaching, 100% QA scoring, APAC/multilingual, field sales |
@@ -57,3 +58,4 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Cresta | Enterprise contact center AI | No | ~$60K-$150K/yr | REST (behind auth) | Yes | Deep (10+ CRMs) | Enterprise contact center (100+ agents), AI virtual agents + real-time coaching + QA |
 | Momentum | AI revenue orchestration + CI add-on | No | $69-99/user/mo + $30 CI add-on | REST (X-API-Key, 100/15min) | No | Deep (Salesforce only) | CRM automation from calls, MEDDIC Autopilot, Slack Deal Rooms, acquired by Salesforce |
 | Oliv | AI-native revenue intelligence | No (14-day trial) | $19-77/user/mo | None | None | Deep (8 CRMs) | Modular Gong alternative — buy only the agents you need, 13x cheaper than Gong |
+| Weflow | Salesforce-native Revenue AI | Yes (100 updates) | $19-79/user/mo | None | None | Deep (Salesforce only) | Salesforce teams wanting activity capture + CI + forecasting in one bundle at ~50% of Gong |

@@ -118,7 +118,7 @@ Ask the user:
 
 ## Step 3 — Platform-specific guidance
 
-For platform-specific coaching guidance (Seismic Learning, Allego, Gong/Chorus, MindTickle, SalesHood, Outdoo, Jiminny, Revenue.io, Enthu.AI, Demodesk, Balto, Cresta, Nooks, Orum, NICE CXone, Convin, MaestroQA, QEval, Solidroad, Playvox, SecondBody, Manual/Spreadsheet), see references/platforms.md.
+For platform-specific coaching guidance (Seismic Learning, Allego, Gong/Chorus, MindTickle, SalesHood, Outdoo, Jiminny, Revenue.io, Enthu.AI, Demodesk, Balto, Cresta, Nooks, Orum, NICE CXone, Convin, MaestroQA, QEval, Solidroad, Playvox, SecondBody, Weflow, Manual/Spreadsheet), see references/platforms.md.
 
 ## Step 4 — Measuring coaching impact
 

@@ -152,7 +152,7 @@ Router recommends a 4-skill sequence:
 | `/sales-salesloft` | Salesloft platform help — config, Rhythm, Conversations, Drift, integrations |
 | `/sales-cadence` | Design multi-channel outbound cadences with timing, A/B testing, and content |
 | `/sales-call-review` | Review sales calls, extract coaching insights, score against MEDDPICC/SPIN |
-| `/sales-note-taker` | AI meeting note-taker / conversation-intelligence selection & API integration (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie, Jamy, Wave, tl;dv, Claap, Sonnet) |
+| `/sales-note-taker` | AI meeting note-taker / conversation-intelligence selection & API integration (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie, Jamy, Wave, tl;dv, Claap, Sybill, Sonnet) |
 | `/sales-fathom` | Fathom platform help — REST API, webhooks, OAuth, SDKs, MCP, transcript/summary export, CRM sync, pricing tiers |
 | `/sales-fireflies` | Fireflies.ai platform help — GraphQL API, Webhooks V1 + V2, HMAC verification, AskFred AI, Real-time API, MCP, rate limits per tier, bot auto-join control |
 | `/sales-avoma` | Avoma platform help — REST API, webhooks, MEDDIC/BANT/SPICED scorecards, Conversation + Revenue Intelligence, Lead Router, CRM sync, pricing tiers |
@@ -185,6 +185,7 @@ Router recommends a 4-skill sequence:
 | `/sales-sonnet` | Sonnet AI platform help — bot-free meeting recording with auto-CRM update (HubSpot/Salesforce), domain templates (sales/legal/medical/recruiting), concept maps, relationship tracker, macOS-only |
 | `/sales-supernormal` | Supernormal platform help — AI agent for agencies, bot-free meeting capture, AI-generated deliverables (pitch decks, briefs, emails) from meetings, HubSpot/Salesforce CRM sync, credit-based pricing |
 | `/sales-voicetonotes` | VoiceToNotes platform help — ultra-cheap AI voice-to-text ($1/mo unlimited), HIPAA/SOC 2 compliance, real-time transcription, AI summaries, grammar correction, OCR, web + iOS + Android, no integrations |
+| `/sales-sybill` | Sybill platform help — AI sales assistant with Magic Summaries, CRM Autofill (MEDDPICC/BANT/SPICED), Deal Workspace, Ask Sybill, follow-up automation, Buyer EQ behavioral insights |
 | `/sales-outdoo` | Outdoo (formerly MeetRecord) platform help — AI roleplay coaching, conversation intelligence, revenue intelligence, CRM automation with MEDDIC/SPIN/BANT, 120+ integrations, Open API (Enterprise), mid-market Gong alternative |
 | `/sales-jiminny` | Jiminny platform help — conversation intelligence, revenue intelligence, AI notetaker, sales coaching, automatic CRM logging, 8 native CRM integrations, partial REST API, mid-market Gong alternative |
 | `/sales-enthu` | Enthu.AI platform help — contact center conversation intelligence with auto QA scorecards on 100% of calls, agent coaching, compliance monitoring, sentiment analysis, Aircall/RingCentral/HubSpot/Pipedrive integrations, affordable Gong/CallMiner alternative |
@@ -211,6 +212,7 @@ Router recommends a 4-skill sequence:
 | `/sales-craft` | Craft platform help — AI growth engine for home services with real-time in-appointment field coaching, 24/7 AI call center, revenue recovery agents, ServiceTitan/Salesforce/HubSpot/Jobber/AccuLynx/Housecall Pro integrations |
 | `/sales-momentum` | Momentum platform help — AI revenue orchestration with automated CRM updates, Slack Deal Rooms, MEDDIC Autopilot, AI coaching, churn signals, executive briefs, $69-99/user/mo, acquired by Salesforce Feb 2026 |
 | `/sales-oliv` | Oliv.ai platform help — AI-native revenue intelligence with modular agents (Notetaker, Meeting Insights, Deal Insights, CRM Manager, Forecaster), 8 CRM integrations, 42+ total integrations, $19-77/user/mo modular pricing |
+| `/sales-weflow` | Weflow platform help — Salesforce-native Revenue AI with activity capture, conversation intelligence (96+ languages), deal intelligence & forecasting, Ask Weflow AI, Chrome Extension, Mobile Copilot, $19-79/user/mo |
 | `/sales-deal-inspect` | Inspect deal health, map stakeholders, identify risks, recommend next actions |
 | `/sales-forecast` | Build and validate revenue forecasts with pipeline coverage and gap analysis |
 

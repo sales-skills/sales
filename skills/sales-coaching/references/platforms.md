@@ -4,6 +4,7 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 
 ## Table of contents
 
+- [Sybill](#in-sybill)
 - [Seismic Learning](#in-seismic-learning-formerly-lessonly)
 - [Allego](#in-allego)
 - [Gong / Chorus](#in-gong--chorus)
@@ -30,7 +31,18 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - [QEval](#in-qeval)
 - [Solidroad](#in-solidroad)
 - [Outreach (Kaia)](#in-outreach-kaia)
+- [Weflow](#in-weflow)
 - [Manual / Spreadsheet](#manual--spreadsheet-approach)
+
+### In Sybill
+
+- **Personal Coach**: Sybill's Personal Coach provides individual coaching insights and performance diagnostics for each rep. Analyzes patterns across calls — what winning reps do differently, where struggling reps lose deals.
+- **Ask Sybill for coaching queries**: Managers can query across all team calls — "Which reps are consistently missing budget discovery?" or "Show me calls where reps handled the pricing objection well." Useful for finding coaching examples and diagnosing team-wide gaps.
+- **Deal Workspace for coaching context** (Business+): Pipeline view shows deal health and activity timeline — helps managers identify which reps need coaching based on deal signals rather than random call sampling.
+- **CRM Autofill for coaching validation** (Business+): Auto-populates MEDDPICC/BANT/SPICED fields from calls. Managers can verify if reps are actually qualifying deals properly — if CRM fields are consistently empty after calls, it flags discovery gaps automatically.
+- **Outcome-based learning**: Sybill correlates call patterns with deal outcomes (won/lost/stalled). Over time, coaching recommendations become more specific — "reps who do X in discovery calls win 40% more" type insights.
+- **Note**: Sybill's coaching is deal-outcome-oriented, not interaction-scoring-oriented. It won't give you Gong-style talk-to-listen ratios or filler word counts. It tells you what your winning reps do differently and where deals stall. Best for mid-market sales managers who want coaching tied to pipeline impact, not call-by-call scoring.
+- **Pricing**: Personal Coach requires Business plan ($90/user/mo). Ask Sybill cross-team queries available on Pro+ but CRM context requires Business+.
 
 ### In Seismic Learning (formerly Lessonly)
 
@@ -335,6 +347,16 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - **Pricing**: Kaia included in Amplify Plus (~$130/user/mo) and Pro (~$160/user/mo) tiers. Not available on Core tier.
 - **Limitations**: No AI roleplay (practice simulations). No built-in LMS or lesson authoring. Coaching is observational (analyze real calls) not practice-based. Annual contracts only. If you need AI roleplay, pair with Nooks, Orum, Outdoo, or SecondBody.
 - **Best practice**: Use Outreach Kaia coaching when your team is already on Outreach for sequences and you want coaching tightly integrated with engagement data. The correlation between call behaviors and sequence outcomes is uniquely powerful. For standalone coaching/enablement without Outreach, use Gong, Allego, or Seismic instead.
+
+### In Weflow
+
+- **What it does for coaching**: Weflow's Conversation Intelligence ($39/user/mo) records, transcribes (96+ languages), and generates AI summaries with coaching-relevant data — talk-to-listen ratio, key topics, objection moments, competitor mentions. 250+ pre-built AI prompts for extracting methodology fields and coaching insights.
+- **CRM auto-fill from coaching moments**: AI extracts MEDDIC/BANT fields from calls and writes them to Salesforce. Managers can verify reps are qualifying properly without re-listening — call review data becomes CRM data automatically.
+- **Deal context for coaching prioritization**: Deal Intelligence module (50+ AI health signals) surfaces which deals are at risk. Managers prioritize coaching on calls that have the most pipeline impact, not random sampling.
+- **Ask Weflow AI for coaching patterns**: Natural language queries across all calls — "Which reps mentioned pricing before establishing value this quarter?" or "Show me calls where the prospect raised a competitor we didn't address."
+- **Mobile Copilot for field coaching**: Records in-person meetings and auto-updates Salesforce. Useful for coaching field reps who have client meetings, dinners, or on-site visits that normally go undocumented.
+- **Limitations**: No dedicated coaching module (no LMS, lesson authoring, or certification tracking). No AI roleplay for practice. Coaching insights come from real call analysis, not simulated scenarios. Salesforce-only — no HubSpot or other CRM. For dedicated coaching platforms with roleplay, use Allego, Outdoo, SecondBody, or Solidroad.
+- **Best practice**: Use Weflow for coaching when your primary coaching bottleneck is that reps don't update Salesforce and managers can't see what's happening in deals. Weflow gives managers call data + deal data + CRM data in one place — the coaching insight is "I can see from your last 3 calls that you're not uncovering economic buyer" rather than "I have no idea what happened on your calls." Pair with a dedicated coaching platform for structured practice.
 
 ### Manual / Spreadsheet approach
 

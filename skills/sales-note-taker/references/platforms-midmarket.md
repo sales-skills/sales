@@ -2,6 +2,37 @@
 
 Sales-focused conversation intelligence and meeting tools for mid-market teams. Platforms with coaching, methodology scorecards, CRM enrichment, or specialized capabilities at $15-100/user/month. For the comparison table across all categories, see `platforms.md`.
 
+## Sybill
+
+For deep platform coverage (CRM Autofill configuration, Ask Sybill, Deal Workspace, pricing tiers, behavioral insights, known issues, troubleshooting), use `/sales-sybill`.
+
+**Positioning**: AI sales assistant that combines conversation intelligence with deal execution automation. Learns how teams win deals and automates post-call workflows — CRM autofill, follow-up emails, deal prep, and pipeline intelligence. Built for mid-market sales teams that want Gong-like deal intelligence without Gong pricing, and with rep productivity (not just leadership analytics) as the primary focus.
+
+**Pricing (2026-04)**: Free $0 (500 credits/wk, 20 summaries/mo, 3mo storage), Pro $30/user/mo (unlimited summaries, no CRM), Business $90/user/mo (CRM Autofill 10 fields, Deal Workspace, unlimited credits), Enterprise custom (20+ seats, API, MCP, unlimited autofill). Annual billing saves ~34%.
+
+**API**:
+- Enterprise-only — no public API documentation available
+- Auth: not publicly documented
+- MCP (Claude/ChatGPT): Enterprise-only
+- Webhooks: available on all plans for pushing meeting insights to external tools
+
+**Integrations**: Salesforce, HubSpot, Zoho, Dynamics 365 (CRM, Business+ for autofill); Zoom/Teams/Meet/Webex (video); Outreach (dialer, Nooks/Dialpad/Aircall/RingCentral/Kixie coming soon); Gmail/Outlook/Zoho Mail (email); Slack; Zapier/Make (via webhooks).
+
+**Known issues (from G2/review analysis)**:
+- Insight generation not real-time — 5 min for summaries, 30 min for behavioral insights (Buyer EQ)
+- Behavioral insights (Buyer EQ) Zoom-only — no Teams/Meet support
+- Bot deactivation confusing — joins unwanted meetings, exclusion settings not intuitive
+- CRM Autofill completely gated to Business+ ($90/user/mo) — most requested feature on lower plans
+- API/MCP Enterprise-only — no programmatic access for Business or below
+- Login occasionally slow
+
+**Strengths vs competitors**:
+- Deeper CRM autofill than Fathom/Fireflies (MEDDPICC/BANT/SPICED framework extraction)
+- Deal Workspace + Ask Sybill for pipeline intelligence (closer to Gong's deal boards than any other mid-market tool)
+- Follow-up email drafting trained on user's writing style
+- 100+ language support for transcription
+- Outcome-based learning — recommendations improve based on won/lost deal patterns
+
 ## Avoma
 
 For deep platform coverage (API authentication, webhook events, scorecard setup, Lead Router, pricing tiers, known reliability issues, troubleshooting), use `/sales-avoma`.
@@ -591,3 +622,38 @@ For deep platform coverage (agent configuration, CRM setup, scorecard configurat
 **Selection notes**:
 - **Pick Oliv when**: You want Gong-level intelligence at a fraction of the cost, you prefer modular pricing (buy only what you need), you're migrating from an expensive CI stack, you want AI agents that autonomously complete work (not just dashboards), your team uses multiple CRMs or needs broad CRM support (8 CRMs), or you want an existing recorder (Gong, Fireflies, etc.) as audio source with Oliv for intelligence
 - **Avoid Oliv when**: You need a public API for custom integrations (→ Gong, Fireflies, Fathom), you need an established platform with extensive reviews and case studies (→ Gong), you need bot-free recording (→ Jamie, Granola, Krisp), you need enterprise-grade contact center features (→ Cresta, Balto), you need a free tier (→ Fathom, tl;dv), or you need a dedicated coaching module today (Coach is "Coming Soon")
+
+## Weflow
+
+For deep platform coverage (module selection, Salesforce API management, pricing tiers, comparison with Gong/Clari/Scratchpad), use `/sales-weflow`.
+
+**Positioning**: Salesforce-native Revenue AI platform combining activity capture, conversation intelligence, and deal intelligence/forecasting. Positioned as "Gong with better AI at 50% the price" for mid-market Salesforce teams. Bundles what competitors sell as 3 separate products (Clari + Clari Capture + Clari Copilot) into one tool starting at $19/user/mo.
+
+**Pricing (2026-04)**: Free $0 (100 SF updates, basic pipeline views), Activity Capture $19/user/mo (email/meeting/contact auto-sync), Conversation Intelligence $39/user/mo (AI notetaker, 96+ languages, CRM auto-fill), Deal Intelligence $39/user/mo (50+ AI signals, forecast roll-ups). Bundles: Activity+CI $49/user/mo (16% savings), Full Platform $79/user/mo (19% savings). Volume: 5% off 20-39 users, 40+ contact sales. Multi-year: 10% (2yr), 20% (3yr). Min 10 users for bundles. 14-day free trial.
+
+**API**: No public API. Weflow syncs bi-directionally with Salesforce using the Salesforce REST API. Data lands in native Salesforce objects (EmailMessage, Task, Event, Contact) — queryable via SOQL and Salesforce API.
+
+**Webhooks**: None — no webhook or event-based notification system.
+
+**Rate limits**: N/A (no public API). However, Weflow consumes Salesforce API calls — monitor at Setup → Company Information → API Requests. Install managed package to reduce consumption.
+
+**Integrations**: Salesforce (exclusive, bi-directional, real-time, native objects). Google Workspace, Microsoft 365 (email/calendar). Zoom, Teams, Google Meet (video conferencing). Chrome Extension. Managed Salesforce Package available.
+
+**CRM sync**:
+- Server-side auto-sync — no browser extension or user action required
+- 24-month historical backfill on activation
+- Native Salesforce objects — works with existing reports, dashboards, automations
+- AI auto-fills opportunity fields from call transcripts (MEDDIC, BANT, custom)
+
+**Known issues (from G2/review analysis)**:
+- No public API — cannot build custom integrations or data warehouse pipelines
+- Salesforce-only — no HubSpot, Dynamics, Pipedrive, or any other CRM
+- No VoIP/SMS capture — phone calls and text messages not recorded
+- New Salesforce field lag — custom fields may take time to appear in Weflow
+- No Slack integration — notifications require Salesforce workflow rules
+- Not suited for 1,000+ rep enterprise forecast hierarchies
+- Managed package recommended to avoid Salesforce API limit issues
+
+**Selection notes**:
+- **Pick Weflow when**: Salesforce-only team wanting activity capture + CI + forecasting in one bundle at ~50% of Gong pricing, reps not updating Salesforce (server-side auto-capture requires zero behavior change), need to fix forecast accuracy by fixing CRM data quality first, mid-market team (10-100 reps) wanting self-serve deployment with 14-day trial
+- **Avoid Weflow when**: You use HubSpot or any non-Salesforce CRM, you need VoIP/SMS recording (→ Gong, Revenue.io), you need a public API for custom pipelines (→ Gong, Fireflies, Fathom), you need 1,000+ rep scale (→ Clari, Gong), you need the deepest analytics ecosystem (→ Gong), you need bot-free recording (→ Jamie, Granola, Krisp)
