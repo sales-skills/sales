@@ -68,3 +68,4 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Temi | Budget AI transcription (Rev's engine) | Yes (limited trial) | $0.25/min ($15/hr) PAYG | REST | Yes (callback_url) | None | Cheapest simple English-only batch transcription, one-off jobs |
 | Winn.ai | Real-time playbook adherence + CRM auto-update | No | $69/seat/mo (Pro) | None | None | Medium (SF/HS, 25 fields Pro) | Real-time playbook enforcement, methodology tracking during calls, sales-only |
 | Verbit | Enterprise AI+human transcription + captioning | No | $29/mo (Self-Service) or ~$33K/yr (Enterprise) | REST (5 API modules) | Not documented | None | Enterprise batch/live transcription, accessibility compliance (ADA/WCAG/CVAA), education/legal/media |
+| Meetily | Open-source local-first AI note-taker | Yes (MIT, unlimited) | $10/user/mo (Pro) | Local REST only | No | None (planned) | Privacy-first self-hosted transcription, HIPAA/GDPR by architecture, open-source |

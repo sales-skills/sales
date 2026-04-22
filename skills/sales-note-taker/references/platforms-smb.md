@@ -623,3 +623,37 @@ For deep platform coverage (API endpoints, meeting bot setup, custom vocabulary,
 **Selection notes**:
 - **Pick Transkriptor when**: You need budget multilingual transcription (100+ languages) with meeting recording, you want meeting bot + batch upload in one tool, you need subtitle generation at competitive prices, or you're a student (50% discount)
 - **Avoid Transkriptor when**: You need API access without Enterprise pricing (→ Sonix Premium, Fathom, Fireflies), you need deep CRM field-mapping (→ Fathom Business, Gong), you need 99% accuracy for critical recordings (→ TranscribeMe human tier), you need English-only batch transcription at the lowest price (→ Temi $0.25/min), or you need compliance certifications (→ Sonix SOC 2/HIPAA, TranscribeMe HIPAA)
+
+## Meetily
+
+For deep platform coverage (setup, model selection, deployment, troubleshooting), use `/sales-meetily`.
+
+**Positioning**: Open-source (MIT license), privacy-first AI meeting assistant. 100% local processing — audio never leaves the device. Bot-free recording via system audio capture. 121K+ downloads, 11K+ GitHub stars. Positions as self-hosted alternative to Otter.ai, Granola, Fathom.
+
+**Pricing (2026-04)**: Community free (MIT), Pro $10/user/mo ($120/yr), Enterprise custom. 14-day free trial for Pro.
+
+**API**:
+- Local FastAPI server only — `http://localhost:5167/docs` (Swagger UI)
+- No cloud API — all processing on-device
+- Endpoints for uploading, processing audio, and retrieving transcripts/summaries
+- No authentication (local server)
+
+**Transcription models**:
+- NVIDIA Parakeet Lightning (default, 4x faster than Whisper, English-focused)
+- OpenAI Whisper via Whisper.cpp (tiny/base/small/medium/large-v3, 99+ languages)
+- Hardware acceleration: Apple Metal + CoreML, NVIDIA CUDA, AMD/Intel Vulkan
+
+**Summarization providers**: Ollama (fully local), Claude, Groq, OpenRouter, any OpenAI-compatible endpoint
+
+**Integrations**: Currently limited — LLM providers + export (Markdown/PDF/DOCX). CRM integrations (Salesforce, HubSpot), Slack, Notion, Jira planned but not shipped.
+
+**Known issues (from GitHub Issues)**:
+- Parakeet Lightning must be installed even if using another model — blocks recording without it
+- Whisper model selection can cause "processing recording" hang — switching to Parakeet resolves
+- macOS microphone permissions may not prompt — manual grant required in System Settings
+- Audio device selection not saved after switching tabs (bug in some versions)
+- System requirements: 8GB RAM minimum, 16GB recommended, GPU acceleration strongly helps
+
+**Selection notes**:
+- **Pick Meetily when**: Data sovereignty and privacy are hard requirements (HIPAA/GDPR by architecture), you want self-hosted on your own infrastructure, you need open-source with MIT license, you want fully offline transcription after initial setup, or you're a developer wanting extensibility and custom integrations
+- **Avoid Meetily when**: You need CRM integration today (→ Fathom Business, Fireflies Business), you need cloud API for external integrations (→ Fathom, Fireflies, Gong), you need zero-setup experience (→ Fathom free tier, Tactiq), you need mobile recording (→ Wave, Omi, Speakwise), or your team lacks technical comfort with desktop app installation and model configuration
