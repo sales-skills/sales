@@ -498,6 +498,46 @@ For deep platform coverage (Sales Copilot setup, cue card configuration, convers
 
 For deep platform coverage (API setup, translation configuration, calendar auto-join troubleshooting, HubSpot CRM sync, pricing tiers), use `/sales-jamy`.
 
+## Sonix
+
+For deep platform coverage (API endpoints, pricing tiers, translation/subtitle workflows, accuracy optimization), use `/sales-sonix`.
+
+**Positioning**: Upload-only AI transcription, translation, and subtitling platform. Not a live meeting note-taker — you upload audio/video files and get back transcripts in 53+ languages. Targets media producers, legal teams, researchers, podcasters, and enterprises needing batch transcription with compliance (SOC 2 Type 2, HIPAA). Claims 99% accuracy.
+
+**Pricing (2026-04)**: Standard $10/hr pay-as-you-go (single user, 10 GB storage, no API). Premium $22/seat/mo ($16.50 annual) + $5/hr (API, custom dictionary, 100 GB storage). Enterprise custom (5+ seats, SSO/SAML, audit logs, 1 TB+ storage). AI Analysis (summaries, chapters, sentiment) is $5/mo add-on on Premium, included on Enterprise. Free trial: 30 min, no credit card.
+
+**API**:
+- Docs: `https://sonix.ai/docs/api`
+- Base URL: `https://api.sonix.ai/v1`
+- Auth: Bearer token via `Authorization` header
+- Key endpoints:
+  - `POST /media` — submit media for transcription (100 MB direct upload or URL)
+  - `GET /media/{id}/transcript` — retrieve transcript (text, SRT, VTT, JSON, Avid DS)
+  - `POST /media/{id}/translations` — request translation
+  - `POST /media/{id}/summarizations` — generate summary/chapters/sentiment
+  - `POST /media/{id}/video_burn_ins` — embed subtitles into video
+  - Folder, user, and share management endpoints
+- Webhooks: Enterprise only (transcription completion, translation completion)
+- Rate limits: not publicly documented
+- SDKs: none documented
+
+**Integrations**: Video conferencing imports (Zoom, Teams, Meet, Webex, Loom — file import, not live join). Cloud storage (Dropbox, Google Drive, OneDrive, Box). CRM (Salesforce). Automation (Zapier). Media production (Adobe Premiere Pro, Final Cut Pro X, Adobe Audition, Avid Media Composer). Research/QDA (Atlas.ti, NVivo, MaxQDA). Legal (Clio, Relativity).
+
+**Known issues (from G2/Capterra/review sites)**:
+- No live/real-time transcription — upload-only, cannot join meetings
+- Speaker diarization errors — AI over-segments speakers, creating phantom labels
+- Pricing complexity — hybrid seat + per-hour model confuses new users
+- Struggles with accents and conversational speech
+- Excessive filler word transcription and punctuation errors
+- Slow uploads for large files (>100 MB)
+- No mobile app for the core transcription workflow
+
+**Selection notes**:
+- **Pick Sonix when**: You need batch transcription of uploaded files (not live meetings), multi-language translation is important, you need SRT/VTT subtitles or video burn-in, compliance matters (SOC 2, HIPAA), or you have media production workflows (Premiere Pro, Final Cut Pro integration)
+- **Avoid Sonix when**: You need live meeting recording (→ Fathom/Fireflies/Otter), you want CRM integration beyond Salesforce (→ Fireflies/Avoma), you need coaching or conversation intelligence (→ Gong/Avoma/tl;dv), or your volume is low and you want to avoid per-hour charges (→ Fathom free tier)
+
+## Jamy.ai
+
 **Positioning**: AI meeting assistant with real-time translation as the key differentiator. Records, transcribes, summarizes, and translates meetings in 100+ languages with cross-language search. Targets multilingual global teams. SOC 2 Type II certified. Only 29 AppSumo reviews (3.3/5) — limited social proof.
 
 **Pricing (2026-04)**: Starter free (300 min/mo transcription, 60 min/mo translation, 60-day storage, 60-min max), Pro $14.99/mo (unlimited transcription, 300 min/mo translation, unlimited storage), Global Business $29.99/mo (unlimited everything, 4-hr max translated meetings). Per user/month.
