@@ -657,3 +657,43 @@ For deep platform coverage (setup, model selection, deployment, troubleshooting)
 **Selection notes**:
 - **Pick Meetily when**: Data sovereignty and privacy are hard requirements (HIPAA/GDPR by architecture), you want self-hosted on your own infrastructure, you need open-source with MIT license, you want fully offline transcription after initial setup, or you're a developer wanting extensibility and custom integrations
 - **Avoid Meetily when**: You need CRM integration today (→ Fathom Business, Fireflies Business), you need cloud API for external integrations (→ Fathom, Fireflies, Gong), you need zero-setup experience (→ Fathom free tier, Tactiq), you need mobile recording (→ Wave, Omi, Speakwise), or your team lacks technical comfort with desktop app installation and model configuration
+
+---
+
+## Char
+
+For deep platform coverage (setup, STT/LLM provider selection, plugin SDK, automation hooks, CLI, privacy/telemetry, GPL licensing), use `/sales-char`.
+
+**Positioning**: Open-source, bot-free, local-first AI meeting notepad. Captures system audio without joining meetings as a participant. Stores everything as plain markdown files in a local SQLite database. Formerly known as Hyprnote (rebranded February 2026). YC S25. 8.3k GitHub stars. GPL-3.0 license.
+
+**Pricing (2026-04)**: Free (on-device transcription, BYOK, chat, templates), Lite $8/mo (cloud STT + LLM, speaker ID, integrations, cloud sync, shareable links), Pro $25/mo or $250/yr (advanced sharing controls with view tracking, team features, selective sync, Google Calendar), Team (custom).
+
+**API**:
+- **Public REST API**: "Coming soon" — not yet available
+- **CLI**: `char` command with `db templates` CRUD (list, get, upsert, delete), `completions`, `desktop` subcommands
+- **Automation hooks**: `hooks.json` at `~/Library/Application Support/hyprnote/hooks.json`. Two events: `beforeListeningStarted`, `afterListeningStopped`. Scripts receive `--resource-dir`, `--app-hyprnote`, `--app-meeting` flags. Multiple commands per event run in parallel.
+- **Plugin SDK**: Tab-based UI extensions. Register via `window.__char_plugins.register()`. React-based. 51 built-in plugins. Install path: `~/Library/Application Support/com.hyprnote.dev/plugins/`
+- **Deeplinks**: Native deep-linking support
+- **MCP**: Currently internal (support chat only), not exposed for external tools
+
+**Transcription providers**:
+- Local: Cactus engine (on-device, no API keys)
+- Cloud (10 providers, BYOK): Deepgram, AssemblyAI, Soniox, Fireworks, OpenAI (batch), Gladia, ElevenLabs, DashScope/Qwen3-ASR, Mistral/Voxtral, pyannoteAI (batch)
+- 45+ languages across providers
+
+**LLM providers**: OpenRouter (ZDR routing), BYOK (OpenAI, Anthropic, Google, Azure OpenAI, Azure AI Foundry), local (Ollama, LM Studio)
+
+**Integrations**: Zoom, Google Meet, Teams, Webex. Apple Calendar/Contacts. Obsidian (via local-rest-api plugin). HubSpot, Salesforce, Slack, Notion on roadmap (not shipped).
+
+**Known issues (from HN Launch thread + GitHub)**:
+- Speaker identification fails in group meetings — team acknowledged feature is still maturing
+- App won't open on some Mac models (M4 Pro Mini) — AudioTap API incompatibility
+- "Local-first" but ships with PostHog analytics and Sentry error tracking — opt-out exists but not surfaced
+- GPL-3.0 license concerns for corporate adoption (copyleft implications)
+- macOS only — Windows/Linux scheduled Q2 2026
+- No public API — automation limited to hooks and CLI
+- CRM integrations listed as "coming soon" — not available today
+
+**Selection notes**:
+- **Pick Char when**: Data ownership and local-first is a hard requirement, you want open-source with a large plugin ecosystem (51 plugins), you prefer markdown output over proprietary formats, you want flexibility in STT providers (10 cloud options + local), you need bot-free capture without meeting participants noticing, or you're a developer wanting to build custom plugins/hooks
+- **Avoid Char when**: You need CRM integration today (→ Fathom Business, Fireflies Business), you need a public API for external integrations (→ Fathom, Fireflies, Gong), you need reliable speaker identification in group meetings (→ Fathom, Fireflies), you need Windows/Linux support now (→ Meetily), your legal team objects to GPL-3.0 (→ Meetily with MIT license), or you need enterprise-grade QA/coaching features (→ Gong, Avoma)

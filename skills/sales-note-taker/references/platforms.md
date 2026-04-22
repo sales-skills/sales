@@ -6,7 +6,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 
 | File | What's in it | Platforms |
 |---|---|---|
-| `platforms-smb.md` | Budget-friendly tools under ~$50/user/mo, strong free tiers | Fathom, Fireflies, Otter, MeetGeek, Tactiq, Granola, Wave, Bluedot, Notta, Sonnet, Supernormal, VoiceToNotes, Hedy, Colibri, Jamy, Temi |
+| `platforms-smb.md` | Budget-friendly tools under ~$50/user/mo, strong free tiers | Fathom, Fireflies, Otter, MeetGeek, Tactiq, Granola, Wave, Bluedot, Notta, Sonnet, Supernormal, VoiceToNotes, Hedy, Colibri, Jamy, Temi, Char |
 | `platforms-midmarket.md` | Sales-focused CI with coaching, methodology, CRM enrichment | Avoma, tl;dv, Claap, Grain, Sembly, Read.ai, Fellow, Jamie, Krisp, Cluely, Lindy, Outdoo, Jiminny, Enthu.AI, Demodesk, Salesken, Oliv, Weflow, Noota, Dialpad, Winn.ai |
 | `platforms-enterprise.md` | Enterprise revenue intelligence ($1K+/user/yr) + bolt-on CI | Gong, Modjo, Clari Copilot, Verbit, + Salesloft Conversations, Chorus, Seismic, Revenue.io |
 | `platforms-field.md` | In-person/field sales coaching and mobile recording | Rilla, Siro, Sales Ask, Speakwise, Omi |
@@ -69,3 +69,4 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Winn.ai | Real-time playbook adherence + CRM auto-update | No | $69/seat/mo (Pro) | None | None | Medium (SF/HS, 25 fields Pro) | Real-time playbook enforcement, methodology tracking during calls, sales-only |
 | Verbit | Enterprise AI+human transcription + captioning | No | $29/mo (Self-Service) or ~$33K/yr (Enterprise) | REST (5 API modules) | Not documented | None | Enterprise batch/live transcription, accessibility compliance (ADA/WCAG/CVAA), education/legal/media |
 | Meetily | Open-source local-first AI note-taker | Yes (MIT, unlimited) | $10/user/mo (Pro) | Local REST only | No | None (planned) | Privacy-first self-hosted transcription, HIPAA/GDPR by architecture, open-source |
+| Char | Open-source bot-free AI notepad | Yes (GPL-3.0, BYOK) | $8/mo (Lite) | CLI only (REST coming soon) | Hooks (2 events) | None (planned) | Privacy-first local-first markdown notes, open-source, 10 cloud STT providers |
