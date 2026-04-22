@@ -326,6 +326,46 @@ For deep platform coverage (all modules, API endpoints, webhook automation, CRM 
 
 ---
 
+## Verbit
+
+For deep platform coverage (all modules, API endpoints, pricing tiers, compliance certifications, education/legal use cases), use `/sales-verbit`.
+
+**Positioning**: Enterprise AI+human transcription, captioning, and accessibility platform. Hybrid approach: proprietary Captivate ASR engine + professional human reviewers for 99%+ accuracy. Target verticals: higher education (ADA/WCAG compliance, LMS integration), legal (depositions, court proceedings), media (subtitles, dubbing), and corporate/government. Not a meeting note-taker or conversation intelligence tool — this is enterprise batch/live transcription and captioning. 2,500+ customers. Subsidiary VITAC handles broadcast captioning.
+
+**Pricing (2026-04)**: Self-Service $29/mo (20 hrs AI-only transcription, ~$1.45/hr). Enterprise custom (~$33K-$75K/yr negotiated annually). No mid-market tier between self-service and enterprise. Human review, custom ASR models, and compliance certifications require Enterprise.
+
+**API**:
+- Docs: `https://verbit.readme.io/docs/getting-started`
+- Type: REST
+- Base URL: `https://api.verbit.co/api/`
+- Auth: OAuth 2.0 Bearer JWT (24hr expiry) via `POST https://users.verbit.co/api/v1/auth`, or API key for Post-Production
+- Rate limits: Not published — implement conservative throttling
+- Five API modules:
+  - **Insights API (Gen.V)** — summaries, keywords, quizzes, chapters from transcripts
+  - **Live Booking API** — book live captioning sessions (Zoom, Teams, RTMP, WebSocket)
+  - **Post-Production API** — upload recorded audio/video for batch transcription
+  - **Caption Control API** — manage active live sessions
+  - **Search API** — build searchable indexes across transcript/caption assets
+
+**Webhooks**: Not documented in public API docs. Poll job status for completion.
+
+**Integrations**: Zoom, Microsoft Teams, Panopto, Kaltura, Brightcove, Vimeo, YouTube, JW Player; LMS: Blackboard (Anthology), Canvas; Cloud: AWS, Dropbox, Box, Google Drive; Events: Cvent; Streaming: RTMP, WebSocket, Signiant.
+
+**Compliance**: ADA, WCAG 2.0 AA, CVAA, SOC 2, ISO 27001, HIPAA (Enterprise), GDPR.
+
+**Known issues (from G2/Capterra reviews)**:
+- ASR punctuation/grammar errors: unnecessary spaces, run-on sentences, missed capitalization
+- Speaker diarization: speakers grouped or split incorrectly
+- UI/UX: clunky interface, features hard to find, steep onboarding
+- No mid-market pricing: $29/mo to ~$33K/yr with nothing between
+- Non-English accuracy: lower quality in some languages, slower turnaround
+
+**Selection notes**:
+- **Pick Verbit when**: You need human-verified transcription accuracy (99%+) for compliance (legal, education, healthcare), you process high volumes (100+ hrs/mo), you need live captioning for events/lectures with ADA compliance, or you need deep LMS integration (Blackboard, Canvas)
+- **Avoid Verbit when**: Budget is a primary constraint (→ Sonix at $10/hr or Rev AI at $0.25/min), you need a sales meeting note-taker with CRM integration (→ Fathom, Gong, Fireflies), you're mid-market with no enterprise budget (→ Sonix or TranscribeMe), or you only need AI transcription without human review (→ Sonix, Otter)
+
+---
+
 ## Bolt-on conversation intelligence (not standalone)
 
 - **Outreach Kaia** — inside Outreach sales engagement platform; covered by `/sales-outreach-io`
