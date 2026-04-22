@@ -71,3 +71,4 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Meetily | Open-source local-first AI note-taker | Yes (MIT, unlimited) | $10/user/mo (Pro) | Local REST only | No | None (planned) | Privacy-first self-hosted transcription, HIPAA/GDPR by architecture, open-source |
 | Char | Open-source bot-free AI notepad | Yes (GPL-3.0, BYOK) | $8/mo (Lite) | CLI only (REST coming soon) | Hooks (2 events) | None (planned) | Privacy-first local-first markdown notes, open-source, 10 cloud STT providers |
 | Amical | Open-source AI dictation | Yes (MIT, unlimited) | Free (no paid tier) | None | None | None | Privacy-first local dictation with context-aware formatting, open-source, Whisper STT |
+| Handy | Open-source cross-platform STT | Yes (MIT, unlimited) | Free (no paid tier) | None (CLI flags only) | None | None | Privacy-first push-to-talk dictation, Whisper + Parakeet dual-engine, cross-platform (macOS/Windows/Linux), 20k+ GitHub stars |

@@ -727,3 +727,40 @@ For deep platform coverage (Whisper model selection, Ollama/OpenRouter LLM setup
 **Selection notes**:
 - **Pick Amical when**: You want free, open-source (MIT) voice dictation with zero subscription cost, privacy-first local processing matters, you want context-aware formatting that adapts to each app automatically, you're comfortable configuring Whisper models and Ollama, or you need dictation in 100+ languages
 - **Avoid Amical when**: You need passive meeting recording (→ Meetily, Char, Fathom), you need CRM integration (→ Fathom Business, Fireflies Business), you need polished zero-setup UX (→ Wispr Flow), you need cross-device sync (→ Wispr Flow), you need an API for custom integrations (→ Fathom, Fireflies, Gong), or you need continuous transcription without push-to-talk (→ Otter, Tactiq)
+
+---
+
+## Handy
+
+For deep platform coverage (STT model selection, CLI flags, Bluetooth troubleshooting, Linux setup), use `/sales-handy`.
+
+**Positioning**: Open-source (MIT-compatible), cross-platform push-to-talk speech-to-text desktop app built with Tauri (Rust + React/TypeScript). Press a keyboard shortcut, speak, release, and Handy pastes transcribed text into the active application. Dual STT engine: Whisper (GPU-accelerated) and Parakeet V3 (CPU-only with automatic language detection). 20.4k GitHub stars, 1.7k forks. Positioned as "the most forkable STT app" — developer extensibility over polish. Free alternative to Wispr Flow ($20/mo) and Superwhisper. **Not a meeting recorder** — this is a typing replacement tool. For passive meeting transcription, use Meetily, Char, or a dedicated note-taker.
+
+**Pricing (2026-04)**: Completely free. No paid tiers, no credits, no usage caps. Open-source.
+
+**API**: None. No public API, no webhooks, no developer portal, no CRM connectors, no Zapier. CLI flags (`--toggle-transcription`, `--cancel`, `--start-hidden`) are the only external control surface.
+
+**STT models**:
+- **Whisper** (OpenAI): Small (~500 MB), Medium (~1.5 GB), Turbo (~1.5 GB), Large (~3 GB). GPU-accelerated. Known crash issues on some Windows/Linux GPU configs.
+- **Parakeet V3** (NVIDIA): CPU-optimized, ~5x real-time speed, automatic language detection. Best for laptops without dedicated GPUs.
+
+**Voice Activity Detection**: Silero VAD filters silence before STT processing — configurable sensitivity.
+
+**Install**:
+- macOS: `brew install --cask handy` (Intel + Apple Silicon)
+- Windows: `winget install cjpais.Handy` (x64, requires WebView2)
+- Linux: Download from GitHub releases (x64, requires `wtype` or `dotool` for Wayland)
+
+**Integrations**: None. Auto-pastes into any application via OS-level text insertion. No native tool integrations.
+
+**Known issues (from GitHub Issues and HN)**:
+- Bluetooth headset latency — 1-2 second delay before transcription with AirPods and other wireless audio. Developer acknowledged.
+- Whisper crashes on certain Windows/Linux GPU configs — fall back to Parakeet V3
+- macOS Tahoe beta crashes reported
+- Linux recording overlay disabled by default due to compositor focus issues
+- No custom dictionary/vocabulary support (feature request)
+- No LLM post-processing — raw STT output only, no grammar correction or formatting
+
+**Selection notes**:
+- **Pick Handy when**: You want free, open-source push-to-talk dictation, you need cross-platform support including Linux, you want Parakeet V3 CPU-only option without GPU, you're a developer wanting to fork/extend a Tauri/Rust STT app, raw transcription speed matters more than polished formatting, or you want the largest open-source STT community (20k+ stars)
+- **Avoid Handy when**: You want context-aware formatting or grammar correction (→ Amical), you need passive meeting recording (→ Meetily, Char, Fathom), you need CRM integration (→ Fathom Business, Fireflies Business), you need an API for custom integrations (→ Fathom, Fireflies, Gong), you use Bluetooth headphones primarily (known latency issue), or you need a polished zero-setup UX (→ Wispr Flow)
