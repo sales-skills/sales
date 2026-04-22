@@ -1,6 +1,6 @@
 ---
 name: sales-note-taker
-description: "Sales meeting note-taker and conversation-intelligence strategy — platform selection (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie, Krisp, Colibri, Cluely, Jamy, Wave, tl;dv, Claap, Tactiq, Granola, Hedy, Omi, Bluedot, Lindy, Notta, Rilla, Siro, Speakwise, Sybill, Sonnet, Supernormal, VoiceToNotes, Sonix, Outdoo, Jiminny, Enthu.AI, Demodesk, Clari Copilot, Salesken, Cresta, Balto, Observe.AI, Oliv, Weflow, Noota, Dialpad, Modjo, Verbit) plus backend API integration for auto-downloading transcripts into CRM, data warehouse, Slack, or internal tools. Use when choosing an AI note-taker, comparing pricing or features, deciding between webhook and polling, wiring transcripts into HubSpot or Salesforce, building a call-intelligence data pipeline, normalizing transcript formats, choosing a field sales CI tool, choosing a batch transcription tool (Sonix, TranscribeMe, Rev, Trint), or debugging rate limits and auth flows. Do NOT use for reviewing a single call for coaching (use /sales-call-review) or building a coaching program (use /sales-coaching)."
+description: "Sales meeting note-taker and conversation-intelligence strategy — platform selection (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie, Krisp, Colibri, Cluely, Jamy, Wave, tl;dv, Claap, Tactiq, Granola, Hedy, Omi, Bluedot, Lindy, Notta, Rilla, Siro, Speakwise, Sybill, Sonnet, Supernormal, VoiceToNotes, Sonix, Outdoo, Jiminny, Enthu.AI, Demodesk, Clari Copilot, Salesken, Cresta, Balto, Observe.AI, Oliv, Weflow, Noota, Dialpad, Modjo, Verbit, Temi) plus backend API integration for auto-downloading transcripts into CRM, data warehouse, Slack, or internal tools. Use when choosing an AI note-taker, comparing pricing or features, deciding between webhook and polling, wiring transcripts into HubSpot or Salesforce, building a call-intelligence data pipeline, normalizing transcript formats, choosing a field sales CI tool, choosing a batch transcription tool (Sonix, TranscribeMe, Temi, Rev, Trint), or debugging rate limits and auth flows. Do NOT use for reviewing a single call for coaching (use /sales-call-review) or building a coaching program (use /sales-coaching)."
 argument-hint: "[describe your note-taker selection or API integration question]"
 license: MIT
 version: 1.0.0
@@ -122,6 +122,7 @@ Rank these in order for the user's context:
 - Batch transcription of uploaded audio/video files, multi-language translation, SRT/VTT subtitles, SOC 2/HIPAA → Sonix
 - Human+AI hybrid transcription with 99% accuracy guarantee, HIPAA medical/legal, upload-only batch processing → TranscribeMe
 - Enterprise AI+human transcription with live captioning, ADA/WCAG accessibility compliance, education/legal verticals → Verbit
+- Budget one-off English batch transcription at $0.25/min, simplest possible API, Rev's automated engine → Temi
 - Mid-market team wanting CRM autofill + deal workspace + follow-up automation without Gong pricing → Sybill
 - Mid-market team wanting AI roleplay + real-call scoring + CRM auto-fill without Gong pricing → Outdoo
 - Mid-market team wanting coaching-focused conversation intelligence with wide CRM support (8 CRMs) without Gong pricing → Jiminny
@@ -234,6 +235,7 @@ If you discover a gotcha, rate-limit ceiling, auth quirk, or vendor-specific pay
 - `/sales-sonix` — Sonix platform help (batch AI transcription in 53+ languages, translation, SRT/VTT subtitles, video burn-in, REST API, SOC 2/HIPAA)
 - `/sales-transcribeme` — TranscribeMe platform help (human+AI hybrid transcription, 99% accuracy on human tiers, HIPAA, REST API, .NET/Node.js SDKs)
 - `/sales-verbit` — Verbit platform help (enterprise AI+human transcription, live captioning, accessibility compliance, Gen.V AI insights, REST API)
+- `/sales-temi` — Temi platform help (budget AI transcription at $0.25/min, Rev's engine, English-only, REST API, simplest batch transcription option)
 - `/sales-noota` — Noota platform help (AI meeting assistant + recruitment automation, 7 CRMs, 15 ATS, voice agents, EU compliant)
 - `/sales-dialpad` — Dialpad platform help (UCaaS + CCaaS, AI Recaps, AI Coaching Hub, Python SDK, Stats API)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`

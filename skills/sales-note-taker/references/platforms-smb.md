@@ -560,3 +560,34 @@ For deep platform coverage (API endpoints, pricing tiers, translation/subtitle w
 **Selection notes**:
 - **Pick Jamy when**: Real-time translation is essential for multilingual teams, you need cross-language search across meeting history, budget is moderate ($15-30/mo), and HubSpot is your CRM
 - **Avoid Jamy when**: CRM depth matters beyond HubSpot (Salesforce/Pipedrive not yet available), you need a mature API with documented endpoints (→ Fireflies/Fathom), social proof and reliability matter (limited reviews, known bot issues), or you don't need translation (Fathom's free tier is more generous)
+
+---
+
+## Temi
+
+**Positioning**: Budget AI transcription service owned by Rev, using Rev's automated speech recognition engine at $0.25/min. Upload-only (not a live meeting tool). English only. Simplest possible transcription: upload file, get transcript, pay per minute. No subscription tiers, no plan-gated features beyond API access. Mobile app (iOS/Android) for recording. Target audience: individuals and small teams needing cheap, quick English transcription.
+
+**Pricing (2026-04)**: $0.25/min pay-as-you-go only ($15/hr). No subscription option. Free trial with limited credits. Rounded up to nearest minute.
+
+**API**:
+- Docs: `https://www.temi.com/api/reference/v1`
+- Base URL: `https://api.temi.com/v1`
+- Auth: Bearer token — API key from Temi developer page
+- Endpoints: Submit Job (`POST /jobs`), Get Job (`GET /jobs/{id}`), List Jobs (`GET /jobs`), Delete Job (`DELETE /jobs/{id}`), Get Transcript (`GET /jobs/{id}/transcript`), Share Editor (`POST /jobs/{id}/share`), Get Account (`GET /account`)
+- Transcript formats: text/plain, application/json, application/msword, application/pdf
+- Webhooks: callback_url on job submission — POST on completion/failure
+- Rate limits: not publicly documented
+- Errors: RFC 7807 problem details format
+
+**Integrations**: Zapier (submit jobs, trigger on completion — pre-built Zaps for Gmail, Google Drive, YouTube, Google Forms). Make. Pipedream. No native CRM connectors.
+
+**Known issues (from reviews and complaints)**:
+- Accuracy drops sharply with non-American English accents (most common complaint)
+- No custom dictionary — same errors repeat on every transcription
+- Mobile app credits don't sync with web account — persistent billing issue
+- Price doubled from $0.10 to $0.25/min with no accuracy improvement
+- Some users report double charges and frozen download pages
+
+**Selection notes**:
+- **Pick Temi when**: You need a one-off cheap English transcription with zero commitment, you want the simplest possible API for a basic transcript pipeline, or you're already in the Rev ecosystem
+- **Avoid Temi when**: You need non-English transcription (→ Sonix, TranscribeMe), you need high accuracy with accents (→ Sonix with custom dictionary, TranscribeMe human tier), you transcribe regularly (Sonix is cheaper per hour at any volume), you need translation or subtitles (→ Sonix), you need compliance certifications (→ Sonix SOC 2/HIPAA, TranscribeMe HIPAA, Verbit SOC 2/HIPAA), or you need live meeting recording (→ Fathom, Fireflies, Otter)
