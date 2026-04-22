@@ -180,6 +180,7 @@ Router recommends a 4-skill sequence:
 | `/sales-sonix` | Sonix platform help — AI transcription, translation, and subtitling for uploaded audio/video (53+ languages), REST API, SRT/VTT subtitles, video burn-in, Zapier, SOC 2/HIPAA, pricing tiers |
 | `/sales-transcribeme` | TranscribeMe platform help — human+AI hybrid transcription (99% accuracy on human tiers), HIPAA compliance, REST API, Machine Express/First Draft/Standard/Verbatim tiers, translation, .NET/Node.js SDKs |
 | `/sales-temi` | Temi platform help — budget AI transcription at $0.25/min (Rev's engine), English-only batch upload, REST API, Zapier/Make automation, mobile app |
+| `/sales-transkriptor` | Transkriptor platform help — AI transcription in 100+ languages, meeting bot (Zoom/Meet/Teams), subtitles, sentiment analysis, REST API (Enterprise only), Zapier/Make, pricing tiers |
 | `/sales-verbit` | Verbit platform help — enterprise AI+human transcription, live captioning, accessibility compliance (ADA/WCAG/CVAA), Gen.V AI insights, REST API (5 modules), education/legal/media/government verticals, pricing tiers |
 | `/sales-lindy` | Lindy platform help — no-code AI agent builder for email triage, meeting notes, calendar management, custom workflow automation, chatbots, AI phone agents, 4,000+ integrations, credit-based pricing tiers |
 | `/sales-alfred` | alfred_ platform help — AI executive assistant for autonomous email triage, reply drafting, task extraction, calendar management, $24.99/month single tier |

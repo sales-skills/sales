@@ -590,4 +590,36 @@ For deep platform coverage (API endpoints, pricing tiers, translation/subtitle w
 
 **Selection notes**:
 - **Pick Temi when**: You need a one-off cheap English transcription with zero commitment, you want the simplest possible API for a basic transcript pipeline, or you're already in the Rev ecosystem
-- **Avoid Temi when**: You need non-English transcription (→ Sonix, TranscribeMe), you need high accuracy with accents (→ Sonix with custom dictionary, TranscribeMe human tier), you transcribe regularly (Sonix is cheaper per hour at any volume), you need translation or subtitles (→ Sonix), you need compliance certifications (→ Sonix SOC 2/HIPAA, TranscribeMe HIPAA, Verbit SOC 2/HIPAA), or you need live meeting recording (→ Fathom, Fireflies, Otter)
+- **Avoid Temi when**: You need non-English transcription (→ Sonix, TranscribeMe, Transkriptor), you need high accuracy with accents (→ Sonix with custom dictionary, TranscribeMe human tier), you transcribe regularly (Sonix is cheaper per hour at any volume), you need translation or subtitles (→ Sonix), you need compliance certifications (→ Sonix SOC 2/HIPAA, TranscribeMe HIPAA, Verbit SOC 2/HIPAA), or you need live meeting recording (→ Fathom, Fireflies, Otter)
+
+---
+
+## Transkriptor
+
+For deep platform coverage (API endpoints, meeting bot setup, custom vocabulary, pricing tiers, troubleshooting), use `/sales-transkriptor`.
+
+**Positioning**: Budget AI transcription platform with 100+ language support and meeting recording via bot (Zoom/Meet/Teams). Combines batch file transcription with live meeting capture, AI summaries, subtitle generation (SRT/VTT), sentiment analysis (Team plan), and a knowledge base for querying across transcripts. Target audience: content creators, students (50% education discount), and small-to-mid teams needing multilingual transcription at competitive prices. Also operates sister products Speaktor (TTS) and Eskritor (AI writing).
+
+**Pricing (2026-04)**: Lite $9.99/mo (300 min), Pro $19.99/mo or $99.99/yr (2,400 min, calendar sync, meeting bot, AI knowledge base), Team $30/seat/mo or $240/seat/yr (3,000 min/seat, sentiment analysis, speaker analytics, custom bot branding), Enterprise custom (API access, priority support). Bulk plans: 100 hrs $60/mo, 250 hrs $150/mo, 500 hrs $300/mo, 1,000 hrs $600/mo — all 50% off annually. Unused minutes do NOT roll over.
+
+**API**:
+- Docs: `https://developer.transkriptor.com/`
+- Base URL: `https://api.tor.app/developer/`
+- Auth: Bearer token — API key from account settings
+- Endpoints: Get Upload URL, Upload File, Initiate Transcription, Get Transcription Result, Export (pdf/srt/txt/docx), List Files, Get/Delete File, Recognize Speakers, Get Summary, AI Chat, Webhooks (CRUD), Custom Vocabulary (CRUD), Text to Speech, Get Folders, Get Users
+- Rate limit: 1,000 req/min
+- **Plan gate: Enterprise only** — no API access on Lite, Pro, or Team
+
+**Integrations**: Zoom/Meet/Teams (bot auto-join via calendar sync), Google Drive, Dropbox, OneDrive, SharePoint, Notion, Google Docs, OneNote, Slack, Gmail, Outlook, Trello, HubSpot/Salesforce/Zoho (listed but depth disputed in reviews). Zapier (8,000+ apps). Make (community).
+
+**Known issues (from reviews and complaints)**:
+- Auto-renewal billing surprises — most common complaint on Trustpilot, difficult cancellation
+- Non-English accuracy significantly below English (Portuguese, Bulgarian specifically called out)
+- Speaker diarization weaker than competitors for overlapping speech
+- UI and export options change without notice, breaking workflows
+- CRM integration depth disputed — verify actual field-mapping before relying on it
+- Custom vocabulary doesn't apply retroactively to already-transcribed files
+
+**Selection notes**:
+- **Pick Transkriptor when**: You need budget multilingual transcription (100+ languages) with meeting recording, you want meeting bot + batch upload in one tool, you need subtitle generation at competitive prices, or you're a student (50% discount)
+- **Avoid Transkriptor when**: You need API access without Enterprise pricing (→ Sonix Premium, Fathom, Fireflies), you need deep CRM field-mapping (→ Fathom Business, Gong), you need 99% accuracy for critical recordings (→ TranscribeMe human tier), you need English-only batch transcription at the lowest price (→ Temi $0.25/min), or you need compliance certifications (→ Sonix SOC 2/HIPAA, TranscribeMe HIPAA)
