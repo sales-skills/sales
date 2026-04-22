@@ -178,6 +178,7 @@ Router recommends a 4-skill sequence:
 | `/sales-bluedot` | Bluedot platform help — bot-free AI note-taker with video recording, Chrome extension + desktop/mobile apps, Svix webhooks, HubSpot/Salesforce CRM sync, screen recording, pricing tiers |
 | `/sales-notta` | Notta platform help — AI meeting transcription in 58 languages, Notta Bot, Notta Brain cross-meeting AI, Zapier automation, CRM sync to Salesforce/HubSpot/Zoho/Freshsales/Salesflare, pricing tiers |
 | `/sales-sonix` | Sonix platform help — AI transcription, translation, and subtitling for uploaded audio/video (53+ languages), REST API, SRT/VTT subtitles, video burn-in, Zapier, SOC 2/HIPAA, pricing tiers |
+| `/sales-transcribeme` | TranscribeMe platform help — human+AI hybrid transcription (99% accuracy on human tiers), HIPAA compliance, REST API, Machine Express/First Draft/Standard/Verbatim tiers, translation, .NET/Node.js SDKs |
 | `/sales-lindy` | Lindy platform help — no-code AI agent builder for email triage, meeting notes, calendar management, custom workflow automation, chatbots, AI phone agents, 4,000+ integrations, credit-based pricing tiers |
 | `/sales-alfred` | alfred_ platform help — AI executive assistant for autonomous email triage, reply drafting, task extraction, calendar management, $24.99/month single tier |
 | `/sales-rilla` | Rilla platform help — AI coaching for in-person/field sales, virtual ridealongs, mobile recording, CRM sync via Merge, ServiceTitan/SPOTIO integrations, pricing tiers |
