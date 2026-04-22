@@ -697,3 +697,33 @@ For deep platform coverage (setup, STT/LLM provider selection, plugin SDK, autom
 **Selection notes**:
 - **Pick Char when**: Data ownership and local-first is a hard requirement, you want open-source with a large plugin ecosystem (51 plugins), you prefer markdown output over proprietary formats, you want flexibility in STT providers (10 cloud options + local), you need bot-free capture without meeting participants noticing, or you're a developer wanting to build custom plugins/hooks
 - **Avoid Char when**: You need CRM integration today (→ Fathom Business, Fireflies Business), you need a public API for external integrations (→ Fathom, Fireflies, Gong), you need reliable speaker identification in group meetings (→ Fathom, Fireflies), you need Windows/Linux support now (→ Meetily), your legal team objects to GPL-3.0 (→ Meetily with MIT license), or you need enterprise-grade QA/coaching features (→ Gong, Avoma)
+
+---
+
+## Amical
+
+For deep platform coverage (Whisper model selection, Ollama/OpenRouter LLM setup, context-aware formatting, troubleshooting), use `/sales-amical`.
+
+**Positioning**: Open-source (MIT license), local-first AI dictation app. Push-to-talk voice-to-text — hold `fn` key, speak, release, and formatted text auto-pastes into the active application. Context-aware formatting detects the active app and adjusts tone (professional for Gmail, casual for Slack, clean for Cursor). Free alternative to Wispr Flow ($20/mo) and Superwhisper. 1.2k GitHub stars. **Not a meeting recorder** — this is a typing replacement tool. For passive meeting transcription, use Meetily, Char, or a dedicated note-taker.
+
+**Pricing (2026-04)**: Completely free. No paid tiers, no credits, no usage caps. MIT license.
+
+**API**: None. No public API, no webhooks, no developer portal, no CRM connectors, no Zapier. Local desktop app only.
+
+**STT models**: Local Whisper via whisper.cpp — Tiny (78 MB), Base (148 MB), Small (488 MB), Medium (1.5 GB), Large v3 (3.1 GB), Large v3 Turbo (1.5 GB). Download in Settings → AI Models → Speech.
+
+**LLM formatting**: Ollama (fully local) or OpenRouter (cloud, BYOK). Required for context-aware formatting — without it, you get raw Whisper transcription only.
+
+**Integrations**: Context-aware pasting into any application (Gmail, Slack, Notion, Discord, Cursor, Instagram, WhatsApp, Jira). No native tool integrations.
+
+**Known issues (from GitHub Issues)**:
+- Can't switch microphones in-app (#137) — set preferred mic as OS system default
+- Japanese/CJK text formatting produces wrong style or punctuation (#111, #88)
+- Context-aware formatting requires LLM configured (#110) — not obvious during onboarding
+- Real-time meeting transcription is planned but not shipped (#65)
+- Non-QWERTY keyboard layouts may conflict with shortcuts (#89)
+- MCP voice commands are planned but not shipped
+
+**Selection notes**:
+- **Pick Amical when**: You want free, open-source (MIT) voice dictation with zero subscription cost, privacy-first local processing matters, you want context-aware formatting that adapts to each app automatically, you're comfortable configuring Whisper models and Ollama, or you need dictation in 100+ languages
+- **Avoid Amical when**: You need passive meeting recording (→ Meetily, Char, Fathom), you need CRM integration (→ Fathom Business, Fireflies Business), you need polished zero-setup UX (→ Wispr Flow), you need cross-device sync (→ Wispr Flow), you need an API for custom integrations (→ Fathom, Fireflies, Gong), or you need continuous transcription without push-to-talk (→ Otter, Tactiq)

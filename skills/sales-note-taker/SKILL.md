@@ -1,6 +1,6 @@
 ---
 name: sales-note-taker
-description: "Sales meeting note-taker and conversation-intelligence strategy — platform selection (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie, Krisp, Colibri, Cluely, Jamy, Wave, tl;dv, Claap, Tactiq, Granola, Hedy, Omi, Bluedot, Lindy, Notta, Rilla, Siro, Speakwise, Sybill, Winn.ai, Sonnet, Supernormal, VoiceToNotes, Sonix, Outdoo, Jiminny, Enthu.AI, Demodesk, Clari Copilot, Salesken, Cresta, Balto, Observe.AI, Oliv, Weflow, Noota, Dialpad, Modjo, Verbit, Temi, Char) plus backend API integration for auto-downloading transcripts into CRM, data warehouse, Slack, or internal tools. Use when choosing an AI note-taker, comparing pricing or features, deciding between webhook and polling, wiring transcripts into HubSpot or Salesforce, building a call-intelligence data pipeline, normalizing transcript formats, choosing a field sales CI tool, choosing a real-time playbook adherence tool, choosing a batch transcription tool (Sonix, TranscribeMe, Temi, Transkriptor, Rev, Trint), choosing an open-source self-hosted meeting recorder (Meetily), choosing an open-source bot-free local-first notepad (Char), or debugging rate limits and auth flows. Do NOT use for reviewing a single call for coaching (use /sales-call-review) or building a coaching program (use /sales-coaching)."
+description: "Sales meeting note-taker and conversation-intelligence strategy — platform selection (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie, Krisp, Colibri, Cluely, Jamy, Wave, tl;dv, Claap, Tactiq, Granola, Hedy, Omi, Bluedot, Lindy, Notta, Rilla, Siro, Speakwise, Sybill, Winn.ai, Sonnet, Supernormal, VoiceToNotes, Sonix, Outdoo, Jiminny, Enthu.AI, Demodesk, Clari Copilot, Salesken, Cresta, Balto, Observe.AI, Oliv, Weflow, Noota, Dialpad, Modjo, Verbit, Temi, Char, Amical) plus backend API integration for auto-downloading transcripts into CRM, data warehouse, Slack, or internal tools. Use when choosing an AI note-taker, comparing pricing or features, deciding between webhook and polling, wiring transcripts into HubSpot or Salesforce, building a call-intelligence data pipeline, normalizing transcript formats, choosing a field sales CI tool, choosing a real-time playbook adherence tool, choosing a batch transcription tool (Sonix, TranscribeMe, Temi, Transkriptor, Rev, Trint), choosing an open-source self-hosted meeting recorder (Meetily), choosing an open-source bot-free local-first notepad (Char), choosing an open-source AI dictation tool (Amical), or debugging rate limits and auth flows. Do NOT use for reviewing a single call for coaching (use /sales-call-review) or building a coaching program (use /sales-coaching)."
 argument-hint: "[describe your note-taker selection or API integration question]"
 license: MIT
 version: 1.0.0
@@ -115,6 +115,7 @@ Rank these in order for the user's context:
 - Individual professional recording in-person meetings on iPhone, Notion-centric workflow, ultra-low budget ($60/yr) → Speakwise
 - Open-source self-hosted meeting recorder, 100% local processing, HIPAA/GDPR by architecture, developer extensibility → Meetily
 - Open-source bot-free AI notepad with markdown output, 10 STT providers, plugin SDK, local-first with optional cloud → Char
+- Open-source AI dictation with context-aware formatting, Whisper local STT, push-to-talk, free MIT license → Amical
 - Meeting notes + recruitment automation in one platform, EU compliance, broad ATS integration (15 platforms) → Noota
 - In-person field sales coaching with virtual ridealongs, home services industry → Rilla
 - Home services field + call center coaching with active AI feedback, ServiceTitan/Jobber/Housecall Pro → Sales Ask
@@ -244,6 +245,7 @@ If you discover a gotcha, rate-limit ceiling, auth quirk, or vendor-specific pay
 - `/sales-dialpad` — Dialpad platform help (UCaaS + CCaaS, AI Recaps, AI Coaching Hub, Python SDK, Stats API)
 - `/sales-meetily` — Meetily platform help (open-source local-first AI meeting assistant, Whisper/Parakeet transcription, Ollama summarization, MIT license, self-hosted)
 - `/sales-char` — Char platform help (open-source bot-free AI notepad, formerly Hyprnote, 10 cloud STT providers + local Cactus, plugin SDK, automation hooks, GPL-3.0)
+- `/sales-amical` — Amical platform help (open-source MIT AI dictation app, Whisper local STT, context-aware formatting, Ollama/OpenRouter LLM, push-to-talk voice-to-text)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
