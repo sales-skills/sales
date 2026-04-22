@@ -99,7 +99,7 @@ For each call step:
 - Duration: 60-90 seconds max
 - Structure: Say their name, show you did research, one key insight, soft CTA
 
-For platform-specific cadence implementation (Salesloft, Mailshake, Lemlist, Smartlead, Mixmax, Reply.io, Woodpecker, Hunter.io, Seamless.AI, Closum, Minelead, GetProspect, ZoomInfo, Snov.io, 6sense, Clay, BrandJet, AiSDR, Nooks, Orum, Amplemarket, Sendr), see references/platforms.md.
+For platform-specific cadence implementation (Salesloft, Mailshake, Lemlist, Smartlead, Mixmax, Reply.io, Woodpecker, Hunter.io, Seamless.AI, Closum, Minelead, GetProspect, ZoomInfo, Snov.io, 6sense, Clay, BrandJet, AiSDR, Nooks, Orum, Amplemarket, Sendr, LeadIQ), see references/platforms.md.
 
 ### Personalization framework
 - **Level 1 (Minimum)**: First name, company name, title — the bare minimum
@@ -176,6 +176,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-outreach-io` — Outreach platform help (sequences, Kaia CI, deal management, forecasting, coaching)
 - `/sales-amplemarket` — Amplemarket platform help (all-in-one: data + sequences + signals + deliverability + Duo AI)
 - `/sales-sendr` — Sendr platform help (lipsync video, dynamic pages, Lead Finder, campaign sequencing)
+- `/sales-leadiq` — LeadIQ platform help (Scribe AI outreach writer, Chrome extension prospecting, champion tracking)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill
 
 ## Gotchas

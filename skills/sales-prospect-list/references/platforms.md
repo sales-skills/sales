@@ -378,3 +378,17 @@ Save the search as a dynamic list — new matches will appear automatically.
 - **Best for**: EMEA-focused teams that prioritize phone-verified mobile data for cold calling. Diamond Data is the key differentiator — no other provider offers human-verified mobiles at scale. For US prospecting or budget-conscious teams, pair with ZoomInfo or Apollo
 - **Platform skill**: `/sales-cognism`
 
+### Building prospect lists in LeadIQ
+
+- **Chrome Extension prospecting**: Primary list-building method — browse LinkedIn profiles or Sales Navigator search results and capture contacts one by one with the sidebar overlay. One-click reveal of email and phone, then push directly to CRM or sales engagement tool
+- **AI Account Prospecting** (Enterprise only): Automatically surfaces high-fit accounts based on your ICP definition and identifies key decision-makers. Pro users are limited to manual Chrome Extension prospecting
+- **Champion Tracking for warm lists**: Build prospect lists from past champions who changed jobs. Import your closed-won contacts and LeadIQ monitors job changes — when a champion moves to a new company, you get a warm prospect without cold prospecting
+- **GraphQL API prospecting**: `flatAdvancedSearch` returns a flat list of people matching ICP criteria (job title, seniority, company size, geography, technologies, industry). `groupedAdvancedSearch` returns results organized by company. Useful for automated list refreshes
+- **Search dimensions**: Filter by job title, seniority level, role/function, company size, geography, technologies used, funding status, industry classification. Sort by name, seniority, title, or update date
+- **Export options**: Direct push to Salesforce (native managed package), HubSpot (via Workato), Salesloft, Outreach, Gong, Groove by Clari. CSV export available
+- **Credit planning for list building**: 200 Pro credits = 200 emails-only OR ~18 full contacts (email + phone). For large list builds, use email-first capture (1 credit each) then selectively reveal phones for top prospects
+- **Data quality**: Email accuracy is generally reliable. Phone number accuracy is the platform's weakest point — plan for ~30-40% invalid phone data based on G2 reviews. Cross-validate with a second provider for calling campaigns
+- **Regional coverage**: Strongest in US. EMEA coverage weaker than Cognism. APAC limited. For European prospecting, consider Cognism as primary
+- **Best for**: SDR teams building lists through LinkedIn prospecting who want one-click CRM push. Champion tracking builds warm lists no other tool can match. For bulk list building (10K+ contacts), Apollo or ZoomInfo offer better credit economics
+- **Platform skill**: `/sales-leadiq`
+

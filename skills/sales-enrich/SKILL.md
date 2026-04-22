@@ -200,6 +200,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-snov` — Snov.io (email finder, verifier, multichannel campaigns)
 - `/sales-brandjet` — BrandJet AI platform help — multi-channel outreach, brand intelligence, AI monitoring
 - `/sales-sendr` — Sendr platform help (Data Studio enrichment, Lead Finder 479M+ contacts, personality analysis)
+- `/sales-leadiq` — LeadIQ platform help (Chrome extension prospecting, champion tracking, CRM enrichment, GraphQL API)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill
 
 ## Examples

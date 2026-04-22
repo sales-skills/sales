@@ -472,3 +472,16 @@ Detailed per-platform enrichment workflows, API endpoints, credit economics, and
 - **Best for**: Teams prospecting into EMEA who need phone-verified mobile numbers for cold calling. Diamond Data connect rates are the key differentiator. For US-only teams, ZoomInfo is stronger. For budget-conscious teams, Apollo offers more features at lower cost
 - **Platform skill**: `/sales-cognism`
 
+### In LeadIQ
+
+- **Chrome Extension enrichment**: One-click contact capture from LinkedIn profiles and Sales Navigator. Reveals emails (1 credit) and phone numbers (10 credits) with direct push to Salesforce or HubSpot. Best for real-time enrichment during active prospecting sessions
+- **CRM Enrichment module**: Salesforce native managed package with bi-directional sync, field mapping, and duplicate detection via email/name/company domain matching. HubSpot connects through Workato middleware — adds setup complexity but supports custom field mapping
+- **Phone number accuracy caveat**: Phone data is LeadIQ's #1 complaint across 1,000+ G2 reviews. Mobile numbers may be personal cells, outdated, or wrong person. Cross-validate high-priority numbers through Cognism Diamond Data or ZoomInfo before cold calling
+- **Account enrichment**: 3 credits per company — returns technology stack, funding info, revenue range, employee count. Use to screen company fit before spending 10+ credits on individual contact reveals
+- **Credit economics**: Email = 1 credit, phone = 10, both = 11, account = 3. Pro plan starts at ~$200/mo for 200 credits (= ~18 full contacts). Credits don't roll over. Phone lookups are 10x more expensive than email — budget accordingly
+- **API enrichment**: GraphQL API at `api.leadiq.com/graphql`. HTTP Basic auth. searchPeople, searchCompany, flatAdvancedSearch, groupedAdvancedSearch queries. 10 req/min (free) or 60 req/min (paid). submitPersonFeedback mutation for data corrections
+- **Champion Tracking**: Monitors existing contacts for job changes — unique feature for enriching your warm pipeline. Alerts don't consume credits until you reveal updated contact info at the new company
+- **Waterfall enrichment position**: Good as a secondary source for US email data. Weak on phones compared to Cognism (EMEA) or ZoomInfo (US). Best value is the champion tracking feature — no other enrichment tool offers systematic job change monitoring at this price point
+- **Best for**: SDR teams doing high-volume LinkedIn prospecting who want one-click CRM push. Champion tracking is the key differentiator. For phone-heavy outbound, pair with a provider that has stronger phone verification
+- **Platform skill**: `/sales-leadiq`
+

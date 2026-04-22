@@ -1076,6 +1076,7 @@
 | `/sales-account-map` | Map the buying committee at a target account — stakeholders, roles, entry points, multi-threading |
 | `/sales-lead-score` | Design a lead scoring model — dimensions, weights, MQL/SQL thresholds, implementation, tuning |
 | `/sales-cognism` | Cognism platform help — B2B sales intelligence, Diamond Data phone-verified mobiles, Bombora intent signals, CRM enrichment, GDPR/DNC compliance across 13 European lists. Route when user mentions Cognism, Diamond Data, Cognism API, Cognism Chrome Extension, Sales Companion, Cognism intent, Cognism enrichment, cognism.com, or European B2B data provider with phone verification. |
+| `/sales-leadiq` | LeadIQ platform help — Chrome extension-first B2B prospecting, Scribe AI outreach writer, champion tracking (job change alerts), CRM enrichment (Salesforce native + HubSpot via Workato), Lando Agent conversational AI, GraphQL API (searchPeople, searchCompany, advancedSearch). Route when user mentions LeadIQ, LeadIQ Chrome extension, LeadIQ Scribe, LeadIQ champion tracking, LeadIQ credits, LeadIQ Salesforce sync, LeadIQ API, leadiq.com, or LinkedIn prospecting with LeadIQ. |
 
 ### Customer Success
 

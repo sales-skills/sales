@@ -312,3 +312,14 @@ Detailed per-platform cadence setup — campaign types, channel support, A/B tes
 - **Gotchas**: Credits don't roll over. No email warmup — use your sending tool's warmup. API/automation builder require Pro plan ($249/mo). No native CRM logging — engagement data flows via webhooks to your CRM
 - **Best for**: Teams that want visual personalization (video + dynamic pages) layered on top of their existing outbound stack. Not a standalone sequence tool — pair with Apollo/Instantly/Smartlead for sending
 - **Platform skill**: `/sales-sendr`
+
+## In LeadIQ (Scribe AI)
+
+- **Scribe**: AI-powered outreach writer that generates personalized cold emails based on prospect data captured from LinkedIn. Not a full sequence tool — generates individual email drafts, not multi-step cadences
+- **No native sequencing**: LeadIQ does not send emails or run multi-step sequences. Scribe generates drafts that you copy into your sending tool (Salesloft, Outreach, Apollo, etc.). Think of it as a content generator, not a cadence platform
+- **Personalization inputs**: Scribe uses prospect data (job title, company, industry, recent activity) to customize email copy. Quality improves with more context — generic inputs produce generic outputs
+- **AI quality caveat**: Users report needing 30-50% editing on Scribe output. Treat as a first draft, not a finished email. Best for high-volume personalization where writing from scratch is too slow
+- **Integration with cadence tools**: LeadIQ pushes contacts directly to Salesloft and Outreach from the Chrome Extension. The typical workflow: capture contact → generate Scribe draft → push to sequence tool → send from there
+- **Champion re-engagement cadences**: Pair champion tracking (job change alerts) with Scribe to quickly write warm re-engagement emails. Since you have prior relationship context, Scribe output is more accurate for these touches
+- **Best for**: Teams that need AI assistance writing personalized first touches at scale, used alongside a dedicated sequence tool (Salesloft, Outreach, Smartlead, etc.). Not a replacement for a cadence platform
+- **Platform skill**: `/sales-leadiq`
