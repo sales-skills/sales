@@ -118,7 +118,7 @@ Ask the user:
 
 ## Step 3 — Platform-specific guidance
 
-For platform-specific coaching guidance (Seismic Learning, Allego, Gong/Chorus, MindTickle, SalesHood, Outdoo, Jiminny, Revenue.io, Enthu.AI, Demodesk, Balto, Cresta, Nooks, Orum, NICE CXone, Convin, MaestroQA, QEval, Solidroad, Playvox, SecondBody, Weflow, Manual/Spreadsheet), see references/platforms.md.
+For platform-specific coaching guidance (Seismic Learning, Allego, Gong/Chorus, MindTickle, SalesHood, Outdoo, Jiminny, Revenue.io, Enthu.AI, Demodesk, Balto, Cresta, Nooks, Orum, NICE CXone, Convin, MaestroQA, QEval, Solidroad, Playvox, SecondBody, Weflow, Winn.ai, Dialpad, Manual/Spreadsheet), see references/platforms.md.
 
 ## Step 4 — Measuring coaching impact
 
@@ -185,6 +185,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-genesys` — Genesys Cloud CX platform help (built-in QM coaching, AI agent assist on CX 4, Interaction Analytics, $75-240/user/mo)
 - `/sales-ccaas-selection` — Comparing CCaaS platforms? The selection skill walks through Genesys vs NICE vs Talkdesk vs Five9
 - `/sales-modjo` — Modjo platform help (EU-native call scoring, AI coaching insights, conversation library playlists, GDPR-compliant)
+- `/sales-winn` — Winn.ai platform help (real-time playbook adherence tracking, automated CRM updates, live coaching Enterprise, AI battle cards)
 - `/sales-call-review` — Review specific sales calls and extract coaching insights
 - `/sales-note-taker` — Picking an AI note-taker (Fathom, Fireflies, Avoma, Gong, Modjo, etc.) or wiring its API to feed your coaching program
 - `/sales-content` — Sales content for training and enablement programs

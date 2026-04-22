@@ -724,3 +724,35 @@ For deep platform coverage (all modules, API endpoints, call quality troubleshoo
 **Selection notes**:
 - **Pick Dialpad when**: You need a unified phone + video + SMS + contact center platform with AI features built in, you want AI Recaps without adding a separate note-taker, you need a contact center with AI Agent for autonomous resolution, you want real-time coaching cards during live calls, you need 70+ integrations including Microsoft Teams embedding, or you're evaluating UCaaS + CCaaS in one vendor
 - **Avoid Dialpad when**: You need a dedicated conversation intelligence tool with deep coaching analytics (→ Gong, tl;dv, Avoma), you need CRM autofill from calls (→ Sybill, Gong), you need bot-free meeting recording (→ Jamie, Granola, Krisp), you need a public webhook API for transcript pipelines (��� Fathom, Fireflies, Sembly), you need deep deal intelligence and revenue forecasting (→ Gong, Clari Copilot, Weflow), or you already have a phone system and just need AI notes (→ Fathom, Fireflies, tl;dv)
+
+---
+
+## Winn.ai
+
+For deep platform coverage (playbook setup, CRM field mapping, real-time tracking, pricing breakdown, known issues), use `/sales-winn`.
+
+**Positioning**: Revenue Execution Platform built for real-time playbook adherence during sales calls. Unlike traditional CI tools that analyze recordings after the call, Winn.ai operates via a Chrome extension overlay that tracks talking points live, checks off methodology items as they're discussed, and auto-captures data for CRM population. Proprietary "Vibe Selling" concept. Founded 2021 (Tel Aviv). Key differentiator: real-time in-call guidance and playbook enforcement, not post-call analytics. Sales-only — does not support CS, internal meetings, or general transcription.
+
+**Pricing (2026-04)**: Pro $69/seat/mo (annual billing required, 14-day free trial), Enterprise custom (20+ seat minimum). No free tier. Pro includes unlimited meetings/playbooks, CRM auto-updates (25 fields), 35+ AI talking points, Slack updates, built-in methodology templates. Enterprise adds live coaching, live answers, AI battle cards, unlimited CRM fields, unlimited AI talking points, reporting & analytics, custom AI digests, in-meeting CRM visibility, opportunity creation, custom objects, SAML SSO (Okta), dedicated account manager.
+
+**API**:
+- No public API — no developer API, no webhooks, no SDKs
+- All integrations are pre-built connectors only (Salesforce, HubSpot, Slack)
+- No Zapier/Make support
+- No programmatic data export capability
+
+**Integrations**: Salesforce, HubSpot (CRM, auto-update fields); Zoom, Google Meet, Microsoft Teams (video, via Chrome extension); Slack (post-call notifications); Okta (SSO, Enterprise only); OpenAI (powers AI features).
+
+**Known issues (from reviews and comparison articles)**:
+- No video recording — cannot review calls later, no call library
+- Virtual meetings only — no phone call or in-person meeting support
+- CRM sync delays up to 15 minutes — not instant
+- Transcription accuracy drops with technical jargon and accents
+- Inconsistent speaker detection in multi-speaker technical calls
+- Sales-only — no CS, support, or cross-functional meeting support
+- Limited analytics on Pro (no multi-meeting insights, no keyword tracking)
+- No G2 profile — limited independent review coverage
+
+**Selection notes**:
+- **Pick Winn.ai when**: You need real-time methodology enforcement during calls (not just post-call), reps consistently miss playbook talking points and you need live tracking, you want automated CRM field population from structured methodology (MEDDIC/BANT/SPICED), you need built-in methodology templates with minimal setup, you want AI meeting prep briefs and follow-up emails alongside playbook tracking, or you're evaluating real-time coaching tools (Enterprise)
+- **Avoid Winn.ai when**: You need call recordings for coaching review (→ Gong, tl;dv, Avoma), you need a public API for custom integrations or data pipelines (→ Fathom, Fireflies, Gong), you need field/in-person sales support (→ Rilla, Siro, Omi), you need deep deal workspace and revenue intelligence (→ Gong, Sybill, Clari Copilot), you need cross-functional meeting support beyond sales (→ Fathom, Fireflies, Otter), you need a free tier or budget option under $50/mo (→ Fathom, MeetGeek, Colibri), or you need post-call coaching analytics rather than live guidance (→ Gong, Avoma, tl;dv)

@@ -7,7 +7,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | File | What's in it | Platforms |
 |---|---|---|
 | `platforms-smb.md` | Budget-friendly tools under ~$50/user/mo, strong free tiers | Fathom, Fireflies, Otter, MeetGeek, Tactiq, Granola, Wave, Bluedot, Notta, Sonnet, Supernormal, VoiceToNotes, Hedy, Colibri, Jamy, Temi |
-| `platforms-midmarket.md` | Sales-focused CI with coaching, methodology, CRM enrichment | Avoma, tl;dv, Claap, Grain, Sembly, Read.ai, Fellow, Jamie, Krisp, Cluely, Lindy, Outdoo, Jiminny, Enthu.AI, Demodesk, Salesken, Oliv, Weflow, Noota, Dialpad |
+| `platforms-midmarket.md` | Sales-focused CI with coaching, methodology, CRM enrichment | Avoma, tl;dv, Claap, Grain, Sembly, Read.ai, Fellow, Jamie, Krisp, Cluely, Lindy, Outdoo, Jiminny, Enthu.AI, Demodesk, Salesken, Oliv, Weflow, Noota, Dialpad, Winn.ai |
 | `platforms-enterprise.md` | Enterprise revenue intelligence ($1K+/user/yr) + bolt-on CI | Gong, Modjo, Clari Copilot, Verbit, + Salesloft Conversations, Chorus, Seismic, Revenue.io |
 | `platforms-field.md` | In-person/field sales coaching and mobile recording | Rilla, Siro, Sales Ask, Speakwise, Omi |
 
@@ -66,4 +66,5 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Noota | AI meeting assistant + recruitment | Yes (300 min/mo) | $19/mo | REST (Business+) | Yes (Zapier) | Medium (7 CRMs: HS/SF/Pipedrive/Zoho/Zendesk/Monday/Dynamics) | Meeting notes + recruitment automation (sourcing, screening agents, voice agents), 50+ languages, EU compliant |
 | Dialpad | UCaaS + CCaaS with AI | No | $15-25/user/mo | REST + Python SDK | Yes (Event Subscriptions) | Medium (Pro+: SF/HS/Zendesk) | Unified phone/video/SMS/contact center with AI Recaps + coaching built in |
 | Temi | Budget AI transcription (Rev's engine) | Yes (limited trial) | $0.25/min ($15/hr) PAYG | REST | Yes (callback_url) | None | Cheapest simple English-only batch transcription, one-off jobs |
+| Winn.ai | Real-time playbook adherence + CRM auto-update | No | $69/seat/mo (Pro) | None | None | Medium (SF/HS, 25 fields Pro) | Real-time playbook enforcement, methodology tracking during calls, sales-only |
 | Verbit | Enterprise AI+human transcription + captioning | No | $29/mo (Self-Service) or ~$33K/yr (Enterprise) | REST (5 API modules) | Not documented | None | Enterprise batch/live transcription, accessibility compliance (ADA/WCAG/CVAA), education/legal/media |

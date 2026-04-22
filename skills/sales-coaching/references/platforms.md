@@ -380,6 +380,15 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - **Limitations**: Coaching features are part of the contact center module (separate pricing from UCaaS). No AI roleplay for practice. No dedicated coaching LMS or certification tracking. CRM integrations require Pro+ ($25/user/mo). For dedicated coaching with roleplay, use Allego, Outdoo, SecondBody, or Solidroad.
 - **Best practice**: Use Dialpad coaching when your team is already on Dialpad for phones/contact center and you want built-in coaching without adding a separate tool. Strongest for contact center teams where real-time coaching cards and sentiment monitoring add the most value. For sales teams needing deep methodology tracking (MEDDIC scorecards, deal intelligence), a dedicated CI tool (Gong, Sybill, Avoma) provides more depth.
 
+### In Winn.ai
+
+- **Real-Time Playbook Adherence**: Live in-call tracking of which methodology talking points (MEDDIC, BANT, SPICED, Challenger, Gap Selling, Solution Selling) have been covered. Reps see a Chrome extension overlay that checks off items as they're discussed — real-time enforcement, not post-call review.
+- **Automated CRM Updates**: After calls, Winn.ai auto-populates Salesforce/HubSpot fields based on what was discussed (Pro: 25 fields, Enterprise: unlimited). Managers can verify reps are covering methodology by checking CRM data quality.
+- **Live Coaching (Enterprise only)**: Managers can see live call activity and provide real-time guidance during the call. Combined with battle cards that surface competitive intelligence when competitors are mentioned.
+- **AI Meeting Prep Briefs**: Pre-call context documents help reps prepare, reinforcing coaching around call preparation.
+- **Limitations**: No video recording — no call library for post-call review or coaching clips. Virtual meetings only — no phone/in-person support. No AI roleplay for practice. Sales-only (no CS/support). No public API for custom coaching analytics. Enterprise required for live coaching, battle cards, and reporting/analytics. For post-call coaching review, use Gong, tl;dv, or Avoma. For AI roleplay practice, use Allego, Outdoo, SecondBody, or Solidroad.
+- **Best practice**: Use Winn.ai coaching when your primary coaching bottleneck is that reps don't follow methodology consistently on live calls. The real-time overlay enforces discipline during the conversation — the coaching insight is "I can see from the playbook tracker that you covered 4/6 MEDDIC items" rather than reviewing a recording after the fact. Strongest for teams with defined methodology that reps know but don't consistently execute. Pair with a recording tool (Gong, tl;dv) if you also need post-call coaching review.
+
 ### Manual / Spreadsheet approach
 
 - **Google Docs**: Create onboarding checklists and coaching templates. Works for <10 reps.
