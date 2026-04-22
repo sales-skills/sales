@@ -283,6 +283,7 @@ Router recommends a 4-skill sequence:
 | `/sales-leadmagic` | LeadMagic — Email Finder, Mobile Finder, Company Search, Job Change Detector, MCP Server, CLI |
 | `/sales-outscraper` | Outscraper — Google Maps/Reviews scraping, email/contact extraction, multi-platform review scraping, API |
 | `/sales-lobstr` | Lobstr.io — 50+ no-code scrapers (Google Maps, LinkedIn, Twitter, YouTube), MCP Server, Python SDK |
+| `/sales-cognism` | Cognism — Diamond Data phone-verified mobiles, Bombora intent signals, CRM enrichment, Sales Companion AI, GDPR/DNC compliance, API (Search, Redeem) |
 | `/sales-zoominfo` | ZoomInfo — SalesOS, MarketingOS, OperationsOS, Copilot AI, API (search, enrich, lookup, bulk, webhooks) |
 
 </details>

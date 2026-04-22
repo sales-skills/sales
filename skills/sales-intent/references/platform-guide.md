@@ -198,6 +198,17 @@ Use intent signals + Custom Signals to automate sequence entry:
 - **Limitation**: Custom Signals require API integration work. Website visitor identification requires tracking pixel install and works at company-level (not individual-level unless combined with enrichment). Annual contract required for full signals suite.
 - **Platform skill**: `/sales-amplemarket`
 
+### In Cognism (Elevate plan)
+Use Bombora-powered intent data + hiring/funding signals to prioritize accounts:
+1. **Intent topics**: Configure 8-15 Bombora topics relevant to your product category (e.g., "sales engagement", "CRM migration", "cold email tools"). Cognism surfaces companies showing increased research activity on these topics
+2. **Hiring signals**: Companies posting jobs for roles your product supports (e.g., hiring SDRs = signal for sales tools). Filter by job title keywords in target departments
+3. **Funding events**: Companies announcing funding rounds — strong buying indicator. Combine with intent topic surge for highest-priority accounts
+4. **Job change alerts**: Track when champions or power users move to new companies — warm outreach opportunity at the new org
+5. **Composite scoring**: Layer intent + hiring + funding + job change signals to build a priority score. Accounts showing 2+ signal types should get immediate outreach
+- **Signal availability**: Intent data, hiring signals, and job change alerts require the Elevate (Diamond) plan. Grow plan only provides basic contact data without signal layers
+- **Bombora overlap**: If you already have Bombora intent data through another provider (ZoomInfo, 6sense, Demandbase), Cognism's intent is the same underlying data — avoid paying twice. Cognism's value-add is combining Bombora with Diamond Data phone-verified mobiles for EMEA outreach
+- **Platform skill**: `/sales-cognism`
+
 ### In Apollo.io
 Use Apollo Workflows (Professional+ plan) to automate:
 1. **Trigger**: Intent topic score increases, job change detected, or contact stage changes

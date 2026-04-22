@@ -8,7 +8,7 @@ tags: [sales, abm, account-based-marketing, buying-committee]
 ---
 # Map the Buying Committee
 
-Help the user map the full buying committee at a target account — identify who's involved in the purchase decision, what role each person plays, and how to multi-thread the account effectively. This skill is platform-agnostic but references Apollo.io as the primary data source for finding and enriching contacts. The same approach works with ZoomInfo, LinkedIn Sales Navigator, or any contact database.
+Help the user map the full buying committee at a target account — identify who's involved in the purchase decision, what role each person plays, and how to multi-thread the account effectively. This skill is platform-agnostic but references Apollo.io as the primary data source for finding and enriching contacts. The same approach works with ZoomInfo, Cognism, LinkedIn Sales Navigator, or any contact database.
 
 ## Step 1 — Gather context
 

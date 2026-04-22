@@ -237,3 +237,28 @@ Tealium approaches data hygiene through real-time identity resolution in Audienc
 - Connector error rates surface data quality problems downstream — if a connector consistently fails, the source data may be malformed.
 
 **Best for**: Enterprise organizations with 1,300+ integration touchpoints needing centralized real-time identity resolution. Marketer-friendly AudienceStream UI for non-technical teams. Implementation takes 4-12 weeks with professional services.
+
+### In Cognism (CRM Enrichment)
+
+Cognism approaches data hygiene through automated CRM enrichment — refreshing stale records with verified contact and company data.
+
+**Automated record refresh**:
+- Connect Salesforce (Professional+) or HubSpot (2-way sync) to Cognism for ongoing enrichment.
+- Director-level data is refreshed every 30 days — keeps job titles, companies, and phone numbers current.
+- Job change detection (Elevate plan) catches contacts who've moved companies — prevents outreach to people who've left.
+
+**Duplicate prevention**:
+- Import existing CRM contacts into Cognism to enable exclusion filters — prevents creating duplicate records when prospecting.
+- HubSpot integration imports Contacts, Companies, and Tasks for matching.
+- Set up exclusion lists for customers, competitors, and opted-out contacts.
+
+**Data decay management**:
+- B2B data decays at ~30% annually. Cognism's scheduled enrichment catches changes faster than manual audits.
+- Diamond Data phone verification (Elevate plan) adds human-verified mobile numbers — reduces the "wrong number" problem that plagues CRM phone fields.
+- Email addresses may be pattern-generated — run periodic validation through ZeroBounce or SafetyMails to catch invalid emails before they bounce.
+
+**Fair-use cap consideration**:
+- ~2,000 records/user/month under "unlimited" plans. For CRMs with 50K+ contacts, enrichment must be batched across multiple users or months.
+- Prioritize enrichment on active pipeline contacts and recently engaged leads — don't waste fair-use allocation on cold, inactive records.
+
+**Best for**: Mid-market to enterprise teams with EMEA-focused CRMs that need ongoing phone number and contact verification. Cognism's Diamond Data is uniquely valuable for keeping EMEA phone fields accurate. For US-heavy CRMs, ZoomInfo OperationsOS may be stronger.

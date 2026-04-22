@@ -363,3 +363,18 @@ Save the search as a dynamic list — new matches will appear automatically.
 - **Best for**: Teams wanting a single tool for prospecting + personalized outreach (video + pages). For large-scale prospecting (100K+ contacts), Apollo or ZoomInfo may be more cost-effective — Sendr's credit model makes bulk prospecting expensive
 - **Platform skill**: `/sales-sendr`
 
+### Building prospect lists in Cognism
+
+- **Sales Intelligence search**: Filter by job title, seniority, department, industry, company size (headcount), revenue, location (country/region/city), and technologies used. Build targeted lists matching your ICP criteria
+- **Diamond Data filtering** (Elevate plan only): Filter search results to show only contacts with phone-verified mobile numbers — ensures every contact on your list has a confirmed direct dial. Best for cold calling campaigns where connect rate matters more than list size
+- **Intent-driven prospecting** (Elevate plan only): Bombora intent signals show which companies are actively researching topics relevant to your product. Build lists of contacts at surging accounts — these are higher-conversion prospects than cold lists
+- **Hiring & funding signals**: Filter for companies posting relevant job openings or announcing funding rounds. Both are strong buying indicators that improve list quality
+- **Chrome Extension**: LinkedIn overlay showing Cognism data for any profile or company page. Prospect one-by-one from LinkedIn and export directly to CRM. Available on all plans
+- **Export options**: Export to Salesforce (as Leads or Contacts with/without Accounts, requires Professional+), HubSpot (2-way sync), Pipedrive, Dynamics 365, Outreach, Salesloft, or CSV
+- **Regional coverage**: EMEA (especially UK, DACH, France, Nordics) is Cognism's strongest region with the deepest Diamond Data coverage. US data has gaps vs ZoomInfo — for US-heavy prospecting, consider Apollo or ZoomInfo as primary. APAC coverage is limited
+- **Fair-use cap**: ~2,000 records/user/month under "unlimited" plans. For large list builds (10K+ contacts), budget across multiple users or contact Cognism about DaaS packages
+- **API prospecting**: Search API (20-100 records per request, 1,000 req/min) enables programmatic list building. Redeem API gets full contact data. Useful for automated ICP-based list refreshes
+- **DNC compliance**: Cognism checks contacts against 13 European Do Not Call lists (UK TPS/CTPS, Germany, France, Spain, Italy, etc.). Contacts are flagged but still visible — filter them out before exporting to calling campaigns
+- **Best for**: EMEA-focused teams that prioritize phone-verified mobile data for cold calling. Diamond Data is the key differentiator — no other provider offers human-verified mobiles at scale. For US prospecting or budget-conscious teams, pair with ZoomInfo or Apollo
+- **Platform skill**: `/sales-cognism`
+

@@ -458,3 +458,17 @@ Detailed per-platform enrichment workflows, API endpoints, credit economics, and
 - **Best for**: Teams already using Sendr for outreach who want basic enrichment without a separate tool. For heavy enrichment workflows, pair with Clay or Apollo
 - **Platform skill**: `/sales-sendr`
 
+### In Cognism
+
+- **CRM Enrichment module**: Automated enrichment of existing CRM records at scale — connects to Salesforce (Professional+) and HubSpot (2-way sync) to refresh stale records with verified emails, phone numbers, job titles, and company data
+- **Diamond Data phone verification** (Elevate plan only): Cognism's team manually calls mobile numbers to confirm they reach the right person. Claimed 98% accuracy, 22% connect rate. Grow plan mobiles are not phone-verified and have significantly lower connect rates
+- **Email quality caveat**: Some email addresses are pattern-generated (firstname.lastname@domain) rather than verified. Run email validation through ZeroBounce or SafetyMails before large outbound campaigns to avoid bounces
+- **API enrichment**: Search API finds contacts by filters (20-100 per request, 1,000 req/min), Redeem API returns full data based on your Entitlement. Entitlements must be configured in admin before API returns full fields
+- **Fair-use cap**: "Unlimited" plans have a fair-use cap of ~2,000 records/user/month. Plan batch enrichment around this — for higher volume, contact Cognism about DaaS packages
+- **Regional data quality**: EMEA data is industry-leading (strongest in UK, DACH, France, Nordics). US data has notable gaps vs ZoomInfo, especially mid-market. APAC is weakest — validate before use
+- **Waterfall enrichment position**: Strong as primary provider for EMEA teams. For global coverage, pair with ZoomInfo (US) or Apollo (budget-friendly global). Cognism as secondary/tertiary in a waterfall adds EMEA phone coverage that other providers miss
+- **Bombora intent enrichment** (Elevate plan only): Enrich accounts with intent topic scores showing active research behavior. 8-15 configurable topics. Combines with hiring/funding signals for composite scoring
+- **Credit economics**: Quote-based pricing — Grow ~$15-25K platform + $1.5-2.5K/user/yr, Elevate ~$2.5K+/user. Discounts of 28-52% are common — never accept first quote. Watch for auto-renewal with 10-15% annual price increases
+- **Best for**: Teams prospecting into EMEA who need phone-verified mobile numbers for cold calling. Diamond Data connect rates are the key differentiator. For US-only teams, ZoomInfo is stronger. For budget-conscious teams, Apollo offers more features at lower cost
+- **Platform skill**: `/sales-cognism`
+
