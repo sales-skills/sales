@@ -144,3 +144,41 @@ For deep platform coverage (hardware specs, API endpoints, app framework, webhoo
 **Selection notes**:
 - **Pick Omi when**: You need the lowest-price wearable recorder ($89), you want a fully open-source stack (hardware + software + firmware), you're a developer who wants to build custom apps/integrations, you need all-day in-person recording plus desktop online meeting capture, or privacy is paramount and you want to audit the full codebase
 - **Avoid Omi when**: You need polished, reliable enterprise-grade transcription (→ Plaud, Gong, Fireflies), you need native CRM connectors (→ Fathom, Fireflies, Gong, Avoma), you need compliance certs like SOC 2 or HIPAA (→ Gong, Avoma, Fireflies Enterprise), you need accurate speaker diarization (→ Fathom, Fireflies, Gong), or you need a mature production API with webhooks and HMAC signing (→ Fathom, Fireflies, Gong)
+
+---
+
+## Plaud
+
+For deep platform coverage (device comparison, VCS phone call recording, Developer API, unofficial Python client, troubleshooting), use `/sales-plaud`.
+
+**Positioning**: The world's #1 AI note-taking brand (1.5M+ users). Hardware wearable voice recorders (NotePin, NotePin S, Note, Note Pro) that capture in-person meetings and phone calls via a Vibration Conduction Sensor (VCS), then sync to cloud for AI transcription in 112 languages and structured summaries. Unlike software note-takers, Plaud devices record without apps, bots, or phone dependencies.
+
+**Pricing (2026-04)**:
+| Item | Price |
+|---|---|
+| NotePin | $127-159 |
+| NotePin S (recommended) | $179 |
+| Note | $159 |
+| Note Pro | $189 |
+| Starter plan (free) | 300 min/mo |
+| Pro plan | $99.99/yr ($17.99/mo) — 1,200 min/mo |
+| Unlimited plan | $239.99/yr ($29.99/mo) — unlimited (24hr/day cap) |
+
+**API**: Official Developer Platform at docs.plaud.ai (private beta — contact Plaud for access). Capabilities: transcription, file management, AI summary, AI workflow, device operation. Android/iOS SDKs. OpenAPI spec available. Also: unofficial `plaud-api` Python package (pip install plaud-api) — reverse-engineered, not affiliated with Plaud.
+
+**Webhooks**: None documented publicly (official API in private beta).
+
+**Integrations**: Cloud sync via app, AutoFlow email summaries, task manager integration (details vary). No documented Zapier/Make/n8n connectors. CRM integration mentioned in marketing but not detailed.
+
+**Known issues (from G2/Capterra/Reddit/Amazon reviews)**:
+- Touch controls on NotePin unreliable — accidental recordings, failure to trigger ("near impossible"), #1 complaint. NotePin S physical button fixes this.
+- Sync/connectivity failures — recordings stuck on device, "Plaud disconnected" notifications, require app restarts
+- Hardware reliability — battery issues and devices stop responding after 8-9 months (not universal but notable)
+- Proprietary charging dock — no USB-C, dependency on specific accessory
+- Customer support inconsistency — ranges from "super responsive" to "two weeks with no response"
+- Not designed for online meetings — records ambient audio only, no bot join for Zoom/Meet/Teams
+- AI summaries described as shallow by some users
+
+**Selection notes**:
+- **Pick Plaud when**: You need a polished, mature hardware recorder for in-person meetings and phone calls, you want VCS phone call recording (captures both sides without speakerphone), you need enterprise compliance (SOC 2/HIPAA/GDPR/ISO 27001), you want 112-language transcription, or you want the most established brand in the hardware recorder category
+- **Avoid Plaud when**: You primarily do online meetings (→ Fathom, Fireflies, Gong — software-based), you need a public API for transcript pipelines today (→ Fathom, Fireflies, Siro — Plaud API is in private beta), you want the cheapest hardware option (→ Omi at $89), you want open-source or developer extensibility (→ Omi), you need native CRM connectors (→ Fathom, Fireflies, Gong, Avoma), or you need real-time coaching during appointments (→ Siro Halftime, Craft)

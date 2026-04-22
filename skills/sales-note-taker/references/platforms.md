@@ -9,7 +9,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | `platforms-smb.md` | Budget-friendly tools under ~$50/user/mo, strong free tiers | Fathom, Fireflies, Otter, MeetGeek, Tactiq, Granola, Wave, Bluedot, Notta, Sonnet, Supernormal, VoiceToNotes, Hedy, Colibri, Jamy, Temi, Char |
 | `platforms-midmarket.md` | Sales-focused CI with coaching, methodology, CRM enrichment | Avoma, tl;dv, Claap, Grain, Sembly, Read.ai, Fellow, Jamie, Krisp, Cluely, Lindy, Outdoo, Jiminny, Enthu.AI, Demodesk, Salesken, Oliv, Weflow, Noota, Dialpad, Winn.ai |
 | `platforms-enterprise.md` | Enterprise revenue intelligence ($1K+/user/yr) + bolt-on CI | Gong, Modjo, Clari Copilot, Verbit, + Salesloft Conversations, Chorus, Seismic, Revenue.io |
-| `platforms-field.md` | In-person/field sales coaching and mobile recording | Rilla, Siro, Sales Ask, Speakwise, Omi |
+| `platforms-field.md` | In-person/field sales coaching and mobile recording | Rilla, Siro, Sales Ask, Speakwise, Omi, Plaud |
 
 **Read the file that matches the user's segment.** For comparison questions spanning segments, read multiple files.
 
@@ -59,6 +59,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Salesken | Real-time coaching + QA + revenue intel | No | ~$99/mo | Not published (Enterprise API) | Not published | Deep (Salesforce/HubSpot/Zoho native) | Real-time in-call coaching, 100% QA scoring, APAC/multilingual, field sales |
 | Speakwise | iOS in-person meeting recorder | Yes | $59.99/yr (~$5/mo) | None | None | None (Notion only) | iOS in-person recording, AirPods hands-free, Notion sync, cheapest option ($60/yr) |
 | Omi | Open-source AI wearable | Yes (1,200 min/mo) | $19/mo | REST | Yes (app marketplace) | None | All-day in-person capture, developer extensibility, lowest price ($89 hardware) |
+| Plaud | Hardware AI voice recorder | Yes (300 min/mo) | $99.99/yr | REST (private beta) | None (private beta) | None (undocumented) | In-person meetings + phone calls (VCS), polished hardware, 112 languages, SOC 2/HIPAA |
 | Cresta | Enterprise contact center AI | No | ~$60K-$150K/yr | REST (behind auth) | Yes | Deep (10+ CRMs) | Enterprise contact center (100+ agents), AI virtual agents + real-time coaching + QA |
 | Momentum | AI revenue orchestration + CI add-on | No | $69-99/user/mo + $30 CI add-on | REST (X-API-Key, 100/15min) | No | Deep (Salesforce only) | CRM automation from calls, MEDDIC Autopilot, Slack Deal Rooms, acquired by Salesforce |
 | Oliv | AI-native revenue intelligence | No (14-day trial) | $19-77/user/mo | None | None | Deep (8 CRMs) | Modular Gong alternative — buy only the agents you need, 13x cheaper than Gong |
