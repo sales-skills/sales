@@ -803,3 +803,40 @@ For deep platform coverage (features, pricing, recording modes, language support
 **Selection notes**:
 - **Pick Soz AI when**: You need budget unlimited mobile transcription ($9.99/mo), you transcribe YouTube videos frequently (URL paste is unique), you need 100+ language support on mobile, you're a journalist/consultant/professional doing interviews on the go, or you need quick subtitle generation
 - **Avoid Soz AI when**: You need a meeting bot for Zoom/Teams/Meet (→ Fathom, Fireflies, Otter), you need CRM integration (→ Fathom Business, Fireflies Business), you need an API for transcript pipelines (→ Fathom, Fireflies, Gong), you need team features or analytics (→ tl;dv, Avoma, Gong), you want a generous free tier (→ Fathom free unlimited, tl;dv free unlimited), or you need on-device processing (→ Speakwise, Handy)
+
+---
+
+## Shadow
+
+For deep platform coverage (setup, Autopilot, screen capture, AI Skills, export, bot-free comparison), use `/sales-shadow`.
+
+**Positioning**: The only bot-free AI meeting assistant that captures both audio and screen content. Shadow runs locally on macOS, transcribes on-device (audio never leaves your Mac), and uses SOC 2-certified cloud APIs for AI summaries, action items, and follow-up emails. Key differentiator vs other bot-free tools (Granola, Jamie, Bluedot) is screen capture — Shadow sees slides, demos, and shared content alongside the conversation.
+
+**Pricing (2026-04)**: Free $0 (unlimited recording/transcription, AI features for first 25 lifetime meetings), Plus $8/mo (unlimited AI meeting notes, Skills, and Chat). No documented team or enterprise plans — custom plans available on request.
+
+**API**:
+- No public API documented
+- No REST/GraphQL endpoints
+- No developer documentation
+- No MCP server
+- No SDK
+
+**Webhooks**:
+- Zapier webhook integration available (some features may still be in "Coming" state)
+- No native webhook system for custom integrations
+
+**Integrations**: Markdown export, Obsidian, Zapier webhook. Works with Zoom, Google Meet, Microsoft Teams, Slack Huddles, Webex, Discord. No native CRM connectors (Salesforce, HubSpot, Pipedrive — none).
+
+**Known issues (from G2/review analysis)**:
+- macOS only — no Windows, Linux, mobile, or web app
+- Free tier 25-meeting AI cap is lifetime, not monthly — easy to burn through in a week
+- Occasionally gets stuck during meetings (restart resolves)
+- Resource-intensive on older/Intel Macs (improving with updates)
+- Speaker attribution can be inaccurate
+- No native CRM connectors — data transfer requires manual copy or Zapier
+- No public API — cannot build automated pipelines
+- "Shadow AI" governance risk — runs invisibly, IT may not know it's in use
+
+**Selection notes**:
+- **Pick Shadow when**: You want bot-free recording with screen capture (unique feature), you're on macOS, you want the cheapest bot-free option ($8/mo vs Granola $14/mo or Jamie €21/mo), you want autopilot meeting detection with zero setup, or you need AI-drafted follow-up emails automatically
+- **Avoid Shadow when**: Your team uses Windows (→ Jamie), you need CRM integration (→ Fathom Business, Fireflies Business, Bluedot Business), you need a public API for pipelines (→ Fathom, Fireflies, Gong), you need team admin controls or analytics (→ tl;dv Business, Avoma, Gong), or you need HIPAA/regulated compliance (→ Fireflies Enterprise, Gong)

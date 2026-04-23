@@ -74,4 +74,5 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Char | Open-source bot-free AI notepad | Yes (GPL-3.0, BYOK) | $8/mo (Lite) | CLI only (REST coming soon) | Hooks (2 events) | None (planned) | Privacy-first local-first markdown notes, open-source, 10 cloud STT providers |
 | Amical | Open-source AI dictation | Yes (MIT, unlimited) | Free (no paid tier) | None | None | None | Privacy-first local dictation with context-aware formatting, open-source, Whisper STT |
 | Handy | Open-source cross-platform STT | Yes (MIT, unlimited) | Free (no paid tier) | None (CLI flags only) | None | None | Privacy-first push-to-talk dictation, Whisper + Parakeet dual-engine, cross-platform (macOS/Windows/Linux), 20k+ GitHub stars |
+| Shadow | Bot-free AI note-taker + screen capture | Yes (25 lifetime AI meetings) | $8/mo | None | None (Zapier webhook) | None | Bot-free audio + screen capture, macOS-only, on-device transcription, autopilot detection |
 | Soz AI | Mobile-first AI transcription | Yes (30 min) | $9.99/mo | None | None | None | Budget mobile transcription, 100+ languages, YouTube URL paste, speaker diarization (10 speakers), subtitles |

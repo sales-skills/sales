@@ -152,7 +152,7 @@ Router recommends a 4-skill sequence:
 | `/sales-salesloft` | Salesloft platform help — config, Rhythm, Conversations, Drift, integrations |
 | `/sales-cadence` | Design multi-channel outbound cadences with timing, A/B testing, and content |
 | `/sales-call-review` | Review sales calls, extract coaching insights, score against MEDDPICC/SPIN |
-| `/sales-note-taker` | AI meeting note-taker / conversation-intelligence selection & API integration (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie, Jamy, Wave, tl;dv, Claap, Sybill, Sonnet) |
+| `/sales-note-taker` | AI meeting note-taker / conversation-intelligence selection & API integration (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie, Jamy, Wave, tl;dv, Claap, Sybill, Sonnet, Shadow) |
 | `/sales-fathom` | Fathom platform help — REST API, webhooks, OAuth, SDKs, MCP, transcript/summary export, CRM sync, pricing tiers |
 | `/sales-fireflies` | Fireflies.ai platform help — GraphQL API, Webhooks V1 + V2, HMAC verification, AskFred AI, Real-time API, MCP, rate limits per tier, bot auto-join control |
 | `/sales-avoma` | Avoma platform help — REST API, webhooks, MEDDIC/BANT/SPICED scorecards, Conversation + Revenue Intelligence, Lead Router, CRM sync, pricing tiers |
@@ -208,6 +208,7 @@ Router recommends a 4-skill sequence:
 | `/sales-cirrus-insight` | Cirrus Insight platform help — Salesforce-native sales productivity with email/calendar sync, Meeting AI, Conversation Intelligence, Live Coaching, Smart Scheduler, Buyer Signals, modular per-feature pricing ($5-$20/user/mo per module) |
 | `/sales-iris-clarity` | IRIS Clarity platform help — bidirectional AI noise cancellation for calls, Web SDK + Server SDK for embedding voice isolation in VoIP apps, Talkdesk AppConnect, enterprise contact center audio quality, £6.50/seat/mo |
 | `/sales-sozai` | Soz AI platform help — mobile-first AI transcription and note-taking, 100+ languages, YouTube URL paste, speaker diarization, subtitle generation (SRT/VTT), $9.99/mo unlimited, GDPR/HIPAA |
+| `/sales-shadow` | Shadow platform help — bot-free AI meeting assistant with audio + screen capture, macOS-only, on-device transcription, Autopilot detection, AI summaries/action items/follow-up emails, $8/mo |
 | `/sales-revenue-io` | Revenue.io platform help — Salesforce-native revenue orchestration with RingDNA dialer, Guided Selling cadences, Moments real-time coaching, conversation intelligence, Revenue Intelligence dashboards, custom pricing ~$59K/yr |
 | `/sales-salesken` | Salesken platform help — real-time in-call coaching, QA automation on 100% of calls, revenue intelligence, field sales analytics, multilingual, Salesforce/HubSpot/Zoho native CRM, ~$99/mo |
 | `/sales-balto` | Balto platform help — real-time AI guidance for contact centers, automated QA on 100% of calls, compliance monitoring (PCI/HIPAA), coaching, call summarization, 50+ CCaaS/softphone integrations, ~$100-150/agent/mo |
