@@ -718,6 +718,30 @@ For deep platform coverage (module selection, credit system, pricing tiers, comp
 - **Pick Scratchpad when**: Team already has Gong for CI and wants a Salesforce productivity overlay, reps need a modern UI for daily pipeline management (sheets + Kanban), you want AI field updates without buying a full revenue platform, budget is tight ($19-49/user/mo vs Weflow $79 or Gong $100+)
 - **Avoid Scratchpad when**: You need standalone forecasting (→ Weflow, Clari, Gong Forecast), you need a public API for custom integrations (→ Gong, Fireflies, Fathom), you use HubSpot or any non-Salesforce CRM, you need VoIP/SMS recording (→ Gong, Revenue.io), you need a standalone CI platform (→ Gong, Avoma), you need bot-free recording (→ Jamie, Granola, Krisp)
 
+## Laserfocus
+
+For deep platform coverage (module selection, pricing tiers, comparison with Scratchpad/Weflow), use `/sales-laserfocus`.
+
+**Positioning**: Salesforce overlay that simplifies CRM data entry and pipeline management. Unlike Scratchpad (which bundles call recording, AI field updates, Hygiene Monitor) or Weflow (activity capture + CI + forecasting), Laserfocus is a pure UI simplification tool — Stacks, table views, bulk editing, Field Groups, and precache technology for sub-100ms interactions. YC W20, Berlin-based, 2-3 employees (YC lists status as "Inactive").
+
+**Pricing (2026-04)**: Free $0 (2 stacks, 2 view imports, 3 field groups, 3-record bulk edit), Pro $30/user/mo (unlimited everything), Team custom (Salesloft/Outreach integration, signal-based tasks, org templates, dedicated CSM). YC companies get 20% off Team for 6 months.
+
+**API**: No public API — no developer portal, no endpoints, no SDK, no webhooks.
+
+**Integrations**: Salesforce (core, exclusive, bi-directional via precache). Salesloft/Outreach (Team only). Calendar and email sync (all plans). No Slack, no Zapier, no HubSpot.
+
+**Known issues**:
+- YC "Inactive" status — evaluate longevity risk before committing
+- No collaboration features — must return to Salesforce or Slack
+- No call recording, CI, or forecasting — pure UI overlay
+- No mobile app
+- Very limited integration surface
+- security.laserfocus.io subdomain no longer resolving
+
+**Selection notes**:
+- **Pick Laserfocus when**: Team purely wants a cleaner Salesforce data entry interface, no need for call recording or CI, budget-conscious ($30 vs Scratchpad $49 Team), prefer local data caching (precache) over cloud-side sync, small team that values simplicity over feature depth
+- **Avoid Laserfocus when**: You need call recording or CI (→ Scratchpad, Gong, Fathom), you need activity capture (→ Weflow), you need forecasting (→ Weflow, Clari), you need a public API (→ Gong, Fireflies), you use HubSpot or non-Salesforce CRM, you need collaboration features, you're concerned about vendor longevity (YC "Inactive")
+
 ## Noota
 
 For deep platform coverage (all modules, recruitment automation, pricing breakdown, known issues, troubleshooting), use `/sales-noota`.

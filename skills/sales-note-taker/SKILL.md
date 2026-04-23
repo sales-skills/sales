@@ -249,6 +249,7 @@ If you discover a gotcha, rate-limit ceiling, auth quirk, or vendor-specific pay
 - `/sales-zoominfo` — ZoomInfo Chorus (bolt-on conversation intelligence inside ZoomInfo)
 - `/sales-seismic` — Seismic Meeting Intelligence (bolt-on inside Seismic)
 - `/sales-scratchpad` — Scratchpad platform help (Salesforce-native AI workspace — call recording, AI field updates, pipeline sheets, Hygiene Monitor, Gong integration)
+- `/sales-laserfocus` — Laserfocus platform help (Salesforce overlay — Stacks, table views, bulk editing, precache technology, simpler/lighter than Scratchpad, YC "Inactive")
 - `/sales-momentum` — Momentum platform help — AI revenue orchestration with optional CI add-on ($30/user/mo), automated CRM updates from calls, MEDDIC Autopilot (acquired by Salesforce Feb 2026)
 - `/sales-call-review` — Review a specific call for coaching
 - `/sales-coaching` — Build coaching programs that consume call data
