@@ -262,3 +262,30 @@ Cognism approaches data hygiene through automated CRM enrichment — refreshing 
 - Prioritize enrichment on active pipeline contacts and recently engaged leads — don't waste fair-use allocation on cold, inactive records.
 
 **Best for**: Mid-market to enterprise teams with EMEA-focused CRMs that need ongoing phone number and contact verification. Cognism's Diamond Data is uniquely valuable for keeping EMEA phone fields accurate. For US-heavy CRMs, ZoomInfo OperationsOS may be stronger.
+
+### In People.ai (Backstory)
+
+People.ai approaches data hygiene by eliminating the root cause of stale CRM data: manual rep entry. Instead of cleaning bad data after the fact, it prevents bad data from entering.
+
+**Automatic activity capture**:
+- Captures every email, call, meeting, and chat message and auto-associates with CRM contacts, accounts, and opportunities.
+- No rep action required — activities are logged server-side from Gmail/Outlook/Zoom/Teams/Slack.
+- Eliminates the "garbage in" problem: CRM data reflects actual activity, not stale rep estimates.
+- Analyzes 2 years of historical data on day one — fills in activity gaps retroactively.
+
+**Contact creation and association**:
+- Auto-creates contacts in CRM from email/meeting participants when they don't already exist.
+- Associates activities with the correct opportunity based on participant and timing signals.
+- Multi-CRM support (Salesforce, Dynamics, Oracle) — maintains data quality across CRM instances.
+
+**Pipeline data accuracy**:
+- Deal intelligence signals (engagement scoring, single-threading detection) surface data quality issues at the deal level.
+- Stakeholder mapping identifies which contacts are missing from opportunities — a form of data completeness checking.
+
+**Limitations**:
+- People.ai captures activity metadata, not call content. It won't populate methodology fields (MEDDPICC/BANT) from calls — for that, use Gong, Sybill, or Scratchpad.
+- Contact matching depends on email addresses: if CRM contacts have outdated emails, activities won't associate correctly. Run an email verification pass first.
+- Enterprise-only pricing. No free tier or self-serve. Budget $50-100+/user/month.
+- Activity processing can take 24-48 hours for call data — not real-time.
+
+**Best for**: Enterprise teams where CRM data decay is primarily caused by reps not logging activities. People.ai solves the input problem — once activities flow automatically, downstream data hygiene issues (stale deals, missing contacts, incomplete opportunity records) decrease dramatically. For CRM field enrichment (job titles, phone numbers, company data), pair with ZoomInfo or Cognism.

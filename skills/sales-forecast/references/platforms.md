@@ -10,6 +10,7 @@ Forecasting capabilities and integration details for each platform that feeds in
 - [Oliv](#in-oliv)
 - [Weflow](#in-weflow)
 - [Scratchpad](#in-scratchpad)
+- [People.ai (Backstory)](#in-people-ai-backstory)
 
 ### In Sybill
 
@@ -82,6 +83,17 @@ Forecasting capabilities and integration details for each platform that feeds in
 - **Deal & Account Agent**: AI assistant that can answer pipeline health questions by cross-referencing calls, emails, and CRM data. Useful for pre-forecast-call prep.
 - **Limitations**: No forecast roll-ups, no pipeline analytics, no deal health scoring, no AI forecast predictions, no forecast submission workflow. All forecasting logic must live in Salesforce native forecasting or a dedicated tool (Clari, Gong Forecast, Weflow). Scratchpad makes the data cleaner — it doesn't generate the forecast.
 - **Best for**: Teams whose forecast inaccuracy traces back to stale CRM data and reps not updating opportunity fields. Scratchpad fixes the data input problem. Pair with Salesforce native forecasting or Clari for the actual forecast. Also useful for teams already using Gong who want better daily pipeline views (Scratchpad Team integrates with Gong).
+
+### In People.ai (Backstory)
+
+- **Activity-backed pipeline analytics**: People.ai captures every email, call, and meeting automatically and ties activity data to CRM records. Pipeline views show real engagement levels — not rep self-reports — giving managers a more accurate picture of deal momentum and pipeline health.
+- **Deal Intelligence for forecast accuracy**: Risk flagging identifies at-risk deals based on declining engagement, single-threading, or missing stakeholders. Engagement scoring quantifies deal health based on actual activity patterns. These signals inform which deals should stay in commit vs. move to best case.
+- **Revenue forecasting**: Predictions backed by actual activity data rather than CRM-entered estimates. Win/loss pattern analysis identifies which rep behaviors and engagement patterns correlate with wins, improving forecast model calibration over time.
+- **Historical baseline**: Analyzes 2 years of prior activity on day one — immediate pipeline visibility and baseline for engagement benchmarks without waiting months to accumulate data.
+- **MCP Integration (Feb 2026)**: Query revenue data through Claude, ChatGPT, or Copilot. Example: "Which commit deals have had declining engagement this month?" or "Which accounts are single-threaded in Stage 4?" Enterprise tier required.
+- **Multi-CRM support**: Salesforce, Microsoft Dynamics, Oracle — simultaneous multi-CRM support for global teams with different CRM instances per region.
+- **Limitations**: People.ai does NOT record or transcribe calls — it captures activity metadata only. No dedicated forecast submission workflow (like Clari). No standalone weighted pipeline module — forecast roll-ups must live in CRM or a tool like Clari. Enterprise-only pricing, no free or self-serve tier. Activity data processing can take 24-48 hours for call data — not real-time.
+- **Best for**: Enterprise teams whose forecast inaccuracy traces back to reps not logging activities in CRM. People.ai fixes the data layer — once CRM data reflects actual engagement, forecasts built on that data become dramatically more reliable. Common stack: People.ai (data layer) + Clari (forecast governance) + Gong (conversation insights). If you need standalone forecasting with submission workflows, Clari is the category leader.
 
 ### In Dialpad
 

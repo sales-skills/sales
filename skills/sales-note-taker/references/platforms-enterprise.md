@@ -366,8 +366,74 @@ For deep platform coverage (all modules, API endpoints, pricing tiers, complianc
 
 ---
 
+## Cirrus Insight
+
+For deep platform coverage (all modules, API endpoints, pricing breakdown, sync troubleshooting, known issues), use `/sales-cirrus-insight`.
+
+**Positioning**: Salesforce-native sales productivity platform with bolt-on AI — not a standalone note-taker, but includes Conversation Intelligence, Meeting AI, and Live Coaching as add-on modules alongside its core email/calendar/task sync to Salesforce. Only relevant if you're already on Salesforce and want CRM sync + meeting intelligence in one vendor. Modular pricing means you buy only the features you need.
+
+**Pricing (2026-04)**: Modular per-feature per-user/mo. Conversation Intelligence modules: Meeting AI $13/user/mo, Meeting Transcription $15-$8.50/hr (volume-tiered), Live Coaching $40-$28.50/hr (volume-tiered). Core modules: Sidebar $11, Email Sync $5, Calendar Sync $11, Scheduling $7, Smart Scheduler $20, Email Blast $12, Buyer Signals $10. Annual billing saves 20%.
+
+**API**:
+- Base URL: `https://api.cirrusinsight.com`
+- Auth: org-level `key_id` (UUID) — no OAuth, no API key header
+- Only one endpoint: Calendar Scheduling views (GET calendarviews by email)
+- No transcript download API
+- Webhooks for meeting booked/rescheduled/canceled
+- Must be admin-enabled (disabled by default)
+
+**CRM**: Salesforce-native (bi-directional sync, mirrors SF configuration — page layouts, custom objects, record types, validation rules). Also supports HubSpot (secondary).
+
+**Integrations**: Gmail, Outlook/O365, Zoom, Teams, Chrome, Pardot, Marketo, DocuSign, Zapier.
+
+**Known issues (from G2/Capterra reviews)**:
+- Sync reliability: top complaint — email/calendar sync breaks, requires extension reinstall
+- Plugin stability: sidebar fails to load after browser restarts
+- Authentication: frequent disconnects requiring reauthentication
+- Email Blast: campaign function errors on large lists
+- Version downgrade: new product version removed features from legacy version
+- UI bugs: subscription-expired false positives
+- Support: not proactive, multiple outreaches needed
+
+**Selection notes**:
+- **Pick Cirrus Insight CI when**: You're already on Salesforce and want email sync + meeting intelligence from one vendor, modular pricing fits your budget, and you value Salesforce-native data mirroring
+- **Avoid Cirrus Insight CI when**: You need a dedicated note-taker with rich API (→ Fathom, Fireflies, Gong), you need transcript download for data pipelines (no API), you need standalone CI without Salesforce dependency, or sync reliability is a dealbreaker
+
+---
+
+## People.ai (now Backstory)
+
+For deep platform coverage (activity capture, deal intelligence, MCP integration, pricing, known issues), use `/sales-people-ai`.
+
+**Positioning**: Revenue intelligence / activity capture platform — automatically captures every email, call, and meeting, associates with CRM records, and provides deal intelligence and pipeline health analytics. Rebranded to Backstory on April 21, 2026. Enterprise-focused (CROs, VPs of Sales, RevOps). 100K+ daily users. Customers include NVIDIA, OpenAI, Red Hat, AMD, Zscaler.
+
+**What it captures**: Activity metadata — email sent/received, meetings held, call duration, attendees, Slack messages. Does NOT record or transcribe calls. For call recording and transcription, pair with Gong, Fathom, or another CI tool.
+
+**Pricing**: Enterprise-only, no public pricing, no free tier. Custom quotes. Market estimates: $50-100+/user/month.
+
+**API**: REST API (Python library `peopleai-api` on PyPI). API docs not publicly accessible. MCP integration (Feb 2026) exposes revenue intelligence to Claude, ChatGPT, Copilot (Enterprise tier).
+
+**CRM**: Salesforce (primary, bi-directional), Microsoft Dynamics, Oracle. Multi-CRM support across geographies.
+
+**Integrations**: Gmail, Outlook, Zoom, Teams, Slack, Salesforce AppExchange.
+
+**Known issues (from G2/Capterra reviews)**:
+- Salesforce sync delays: activity data can take 24-48 hours to process
+- Contact matching: activities associate with wrong records when CRM email data is outdated
+- Adoption: low team utilization — reps unsure how to use insights for their role
+- Reporting: limited customization, role-specific views insufficient
+- No call recording or transcription — activity metadata only
+
+**Selection notes**:
+- **Pick People.ai when**: CRM data quality is your top pain (reps don't log), you need activity-backed pipeline visibility, you run multiple CRMs (Salesforce + Dynamics), or you want to feed AI agents via MCP
+- **Avoid People.ai when**: You need call recording/transcription (→ Gong, Fathom), you need a lightweight Salesforce overlay (→ Scratchpad, Weflow), budget is a constraint (enterprise pricing only), or you're not on Salesforce/Dynamics/Oracle
+
+---
+
 ## Bolt-on conversation intelligence (not standalone)
 
+- **Cirrus Insight** — Salesforce-native sales productivity with Meeting AI, Conversation Intelligence, and Live Coaching modules; covered by `/sales-cirrus-insight`
+- **monday Notetaker** — native AI meeting recording inside monday.com work management/CRM, action items → board items; covered by `/sales-monday-notetaker`
 - **Outreach Kaia** — inside Outreach sales engagement platform; covered by `/sales-outreach-io`
 - **Revenue.io Conversation Intelligence** — inside Revenue.io (Orchestrate tier); covered by `/sales-revenue-io`
 - **Salesloft Conversations** — inside Salesloft; covered by `/sales-salesloft`

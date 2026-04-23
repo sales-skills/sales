@@ -34,6 +34,7 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - [Modjo](#in-modjo)
 - [Weflow](#in-weflow)
 - [Scratchpad](#in-scratchpad)
+- [People.ai (Backstory)](#in-people-ai-backstory)
 - [Manual / Spreadsheet](#manual--spreadsheet-approach)
 
 ### In Sybill
@@ -408,6 +409,15 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - **CRM AI**: Opportunity hygiene assistant flags stale deals, missing fields, and pipeline health — supports coaching around CRM discipline and deal qualification.
 - **Limitations**: Salesforce-only (core integration). Modular pricing adds up (Meeting AI + Live Coaching = $13/user/mo + hourly coaching fees). No methodology-based call scoring (MEDDPICC/BANT). No AI roleplay. No coaching scorecards. Limited API (no transcript export). Sync reliability is the top user complaint. For dedicated coaching scorecards, use Gong or Avoma. For AI roleplay, use Allego, Outdoo, SecondBody, or Solidroad.
 - **Best practice**: Use Cirrus Insight coaching when your team is already on Salesforce and you want meeting intelligence + coaching + CRM sync from one vendor without buying Gong. Live Coaching is hourly-billed, so it's best for targeted coaching sessions (key deals, new rep onboarding) rather than always-on use. Pair Conversation Intelligence summaries with regular 1:1 coaching reviews.
+
+### In People.ai (Backstory)
+
+- **Activity-based coaching signals**: People.ai captures all rep activity (emails, calls, meetings) automatically and ties it to deal outcomes. Managers can see which reps have low activity on high-value deals, inconsistent follow-up cadences, or declining engagement patterns — coaching conversations grounded in data, not gut feel.
+- **Rep behavior benchmarking**: Compares individual rep activity patterns against top performers. Surfaces what winning reps do differently — more multi-threaded engagement, faster follow-up, more executive contacts. Useful for identifying specific coaching areas per rep.
+- **Deal intelligence for coaching context**: Risk signals (single-threading, declining engagement, missing stakeholders) identify which deals need coaching intervention. Managers coach on specific deals where behavior change can impact outcomes, rather than reviewing random calls.
+- **Pipeline review coaching**: Activity-backed pipeline views show managers where reps are spending time vs. where they should be spending time. Enables coaching around deal prioritization and time allocation.
+- **Limitations**: People.ai does NOT record or transcribe calls — it captures activity metadata only. No coaching scorecards, no AI roleplay, no call-level coaching feedback. For call coaching, pair with Gong, Sybill, or another CI tool. People.ai provides the data layer for coaching decisions — "what to coach on" — not the coaching delivery mechanism.
+- **Best practice**: Use People.ai coaching signals for 1:1 prep and pipeline review coaching. Pull up a rep's activity dashboard before 1:1s — "I see you've only had one meeting with the economic buyer on Deal X" is more impactful than "How's Deal X going?" Pair with Gong or Sybill for call-level coaching. People.ai shows patterns across deals; CI tools show patterns within a single conversation.
 
 ### Manual / Spreadsheet approach
 
