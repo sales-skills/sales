@@ -7,7 +7,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | File | What's in it | Platforms |
 |---|---|---|
 | `platforms-smb.md` | Budget-friendly tools under ~$50/user/mo, strong free tiers | Fathom, Fireflies, Otter, MeetGeek, Tactiq, Granola, Wave, Bluedot, Notta, Sonnet, Supernormal, VoiceToNotes, Hedy, Colibri, Jamy, Temi, Char |
-| `platforms-midmarket.md` | Sales-focused CI with coaching, methodology, CRM enrichment | Avoma, tl;dv, Claap, Grain, Sembly, Read.ai, Fellow, Jamie, Krisp, Cluely, Lindy, Outdoo, Jiminny, Enthu.AI, Demodesk, Salesken, Oliv, Weflow, Noota, Dialpad, Winn.ai |
+| `platforms-midmarket.md` | Sales-focused CI with coaching, methodology, CRM enrichment | Avoma, tl;dv, Claap, Grain, Sembly, Read.ai, Fellow, Jamie, Krisp, IRIS Clarity, Cluely, Lindy, Outdoo, Jiminny, Enthu.AI, Demodesk, Salesken, Oliv, Weflow, Noota, Dialpad, Winn.ai |
 | `platforms-enterprise.md` | Enterprise revenue intelligence ($1K+/user/yr) + bolt-on CI | Gong, Modjo, Clari Copilot, Verbit, + Salesloft Conversations, Chorus, Seismic, Revenue.io |
 | `platforms-field.md` | In-person/field sales coaching and mobile recording | Rilla, Siro, Sales Ask, Speakwise, Omi, Plaud |
 
@@ -30,6 +30,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | MeetGeek | AI meeting assistant | Yes (3 hrs/mo) | $9.99/mo | REST | Yes | Medium (7 CRMs) | Teams wanting customizable templates, analytics, affordable pricing |
 | Jamie | Bot-free AI note-taker | Yes (10 meetings) | €21/mo | REST | Yes (Plus+) | Medium (3 CRMs, Pro+) | Privacy-first EU teams, in-person meetings, bot-free recording |
 | Krisp | Voice AI + note-taker | No (7-day trial) | $8/mo | Webhooks | Yes (Advanced+) | Medium (HubSpot Core+, SF Advanced+) | Noisy environments, noise cancellation + AI notes, SDK developers |
+| IRIS Clarity | Noise cancellation only | No (14-day trial) | ~$8.25/mo (£6.50) | SDK only | No | Thin (Salesforce only) | Pure noise cancellation for contact centers, SDK for embedding in VoIP apps |
 | Colibri | Real-time transcription + Sales Copilot | Yes (5 hrs/mo) | $16/mo | None | None | Thin (Salesforce Scale only) | Real-time live coaching during calls, legal transcription |
 | Cluely | Real-time AI coaching overlay | Yes (limited) | $20/mo | None | None | Medium (via Merge.dev, Team+) | Real-time AI prompts during calls, knowledge base RAG, pre-call briefs |
 | Jamy.ai | AI meeting assistant + translation | Yes (300 min/mo) | $14.99/mo | REST (partial) | Yes (Zapier/Make) | Thin (HubSpot only) | Multilingual teams needing real-time translation in 100+ languages |
@@ -73,3 +74,4 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Char | Open-source bot-free AI notepad | Yes (GPL-3.0, BYOK) | $8/mo (Lite) | CLI only (REST coming soon) | Hooks (2 events) | None (planned) | Privacy-first local-first markdown notes, open-source, 10 cloud STT providers |
 | Amical | Open-source AI dictation | Yes (MIT, unlimited) | Free (no paid tier) | None | None | None | Privacy-first local dictation with context-aware formatting, open-source, Whisper STT |
 | Handy | Open-source cross-platform STT | Yes (MIT, unlimited) | Free (no paid tier) | None (CLI flags only) | None | None | Privacy-first push-to-talk dictation, Whisper + Parakeet dual-engine, cross-platform (macOS/Windows/Linux), 20k+ GitHub stars |
+| Soz AI | Mobile-first AI transcription | Yes (30 min) | $9.99/mo | None | None | None | Budget mobile transcription, 100+ languages, YouTube URL paste, speaker diarization (10 speakers), subtitles |

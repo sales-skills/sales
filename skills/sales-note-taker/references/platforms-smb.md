@@ -764,3 +764,42 @@ For deep platform coverage (STT model selection, CLI flags, Bluetooth troublesho
 **Selection notes**:
 - **Pick Handy when**: You want free, open-source push-to-talk dictation, you need cross-platform support including Linux, you want Parakeet V3 CPU-only option without GPU, you're a developer wanting to fork/extend a Tauri/Rust STT app, raw transcription speed matters more than polished formatting, or you want the largest open-source STT community (20k+ stars)
 - **Avoid Handy when**: You want context-aware formatting or grammar correction (→ Amical), you need passive meeting recording (→ Meetily, Char, Fathom), you need CRM integration (→ Fathom Business, Fireflies Business), you need an API for custom integrations (→ Fathom, Fireflies, Gong), you use Bluetooth headphones primarily (known latency issue), or you need a polished zero-setup UX (→ Wispr Flow)
+
+## Soz AI
+
+For deep platform coverage (features, pricing, recording modes, language support, subtitle tools), use `/sales-sozai`.
+
+**Positioning**: Budget mobile-first transcription app. Strongest for individual professionals who need affordable high-volume transcription on iOS/Android with 100+ language support and YouTube URL paste. Not a meeting bot — records from the device microphone. No API, no CRM, no team features.
+
+**Pricing (2026-04)**: Free (30 min, no credit card required), Unlimited $9.99/mo. No team plans documented.
+
+**API**: None. No public API, no webhooks, no developer portal, no CRM connectors, no Zapier.
+
+**Key features**:
+- 100+ language transcription with automatic detection
+- Speaker diarization for up to 10 speakers
+- YouTube URL paste transcription (direct — no download needed)
+- AI note-taking with topic segmentation, action items, key decisions
+- Subtitle generation (SRT/VTT) with free validation tools
+- Voice translation across 50+ languages
+- Offline recording with sync when reconnected
+- LeMUR-powered AI summaries
+
+**Platforms**: iOS, Android, macOS, Chrome
+
+**Security**: AES-256 encryption, TLS 1.3, GDPR, CCPA, HIPAA compliant, 99.9% uptime SLA. Audio never used for AI training.
+
+**Integrations**: None. No Salesforce, HubSpot, Zapier, Make, Notion, or Slack. Export is manual only (transcript text, SRT/VTT subtitles).
+
+**Known limitations**:
+- No meeting bot — cannot join Zoom/Teams/Meet calls
+- No API or webhooks — no programmatic access to transcripts
+- No CRM integration — transcript data stays in the app
+- No team features — no shared workspaces, admin controls, or analytics
+- Free tier is only 30 minutes (compared to Fathom's unlimited free recordings)
+- Speaker diarization caps at 10 speakers
+- 95-99% accuracy requires optimal conditions — degrades in noisy environments
+
+**Selection notes**:
+- **Pick Soz AI when**: You need budget unlimited mobile transcription ($9.99/mo), you transcribe YouTube videos frequently (URL paste is unique), you need 100+ language support on mobile, you're a journalist/consultant/professional doing interviews on the go, or you need quick subtitle generation
+- **Avoid Soz AI when**: You need a meeting bot for Zoom/Teams/Meet (→ Fathom, Fireflies, Otter), you need CRM integration (→ Fathom Business, Fireflies Business), you need an API for transcript pipelines (→ Fathom, Fireflies, Gong), you need team features or analytics (→ tl;dv, Avoma, Gong), you want a generous free tier (→ Fathom free unlimited, tl;dv free unlimited), or you need on-device processing (→ Speakwise, Handy)

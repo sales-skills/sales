@@ -1,6 +1,6 @@
 ---
 name: sales-note-taker
-description: "Sales meeting note-taker and conversation-intelligence strategy — platform selection (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie, Krisp, Colibri, Cluely, Jamy, Wave, tl;dv, Claap, Tactiq, Granola, Hedy, Omi, Bluedot, Lindy, Notta, Rilla, Siro, Plaud, Speakwise, Sybill, Winn.ai, Sonnet, Supernormal, VoiceToNotes, Sonix, Outdoo, Jiminny, Enthu.AI, Demodesk, Clari Copilot, Salesken, Cresta, Balto, Observe.AI, Oliv, Weflow, Noota, Dialpad, Modjo, Verbit, Temi, Char, Amical, Handy) plus backend API integration for auto-downloading transcripts into CRM, data warehouse, Slack, or internal tools. Use when choosing an AI note-taker, comparing pricing or features, deciding between webhook and polling, wiring transcripts into HubSpot or Salesforce, building a call-intelligence data pipeline, normalizing transcript formats, choosing a field sales CI tool, choosing a hardware AI voice recorder for in-person meetings, choosing a real-time playbook adherence tool, choosing a batch transcription tool (Sonix, TranscribeMe, Temi, Transkriptor, Rev, Trint), choosing an open-source self-hosted meeting recorder (Meetily), choosing an open-source bot-free local-first notepad (Char), choosing an open-source AI dictation tool (Amical), choosing an open-source cross-platform STT app (Handy), or debugging rate limits and auth flows. Do NOT use for reviewing a single call for coaching (use /sales-call-review) or building a coaching program (use /sales-coaching)."
+description: "Sales meeting note-taker and conversation-intelligence strategy — platform selection (Fathom, Fireflies, Avoma, Gong, Otter, Fellow, Grain, Sembly, Read.ai, MeetGeek, Jamie, Krisp, Colibri, Cluely, Jamy, Wave, tl;dv, Claap, Tactiq, Granola, Hedy, Omi, Bluedot, Lindy, Notta, Rilla, Siro, Plaud, Speakwise, Sybill, Winn.ai, Sonnet, Supernormal, VoiceToNotes, Sonix, Outdoo, Jiminny, Enthu.AI, Demodesk, Clari Copilot, Salesken, Cresta, Balto, Observe.AI, Oliv, Weflow, Noota, Dialpad, Modjo, Verbit, Temi, Char, Amical, Handy, IRIS Clarity, Soz AI) plus backend API integration for auto-downloading transcripts into CRM, data warehouse, Slack, or internal tools. Use when choosing an AI note-taker, comparing pricing or features, deciding between webhook and polling, wiring transcripts into HubSpot or Salesforce, building a call-intelligence data pipeline, normalizing transcript formats, choosing a field sales CI tool, choosing a hardware AI voice recorder for in-person meetings, choosing a real-time playbook adherence tool, choosing a batch transcription tool (Sonix, TranscribeMe, Temi, Transkriptor, Rev, Trint), choosing an open-source self-hosted meeting recorder (Meetily), choosing an open-source bot-free local-first notepad (Char), choosing an open-source AI dictation tool (Amical), choosing an open-source cross-platform STT app (Handy), choosing a pure noise cancellation tool for call quality (IRIS Clarity), choosing a budget mobile-first transcription app with YouTube URL paste (Soz AI), or debugging rate limits and auth flows. Do NOT use for reviewing a single call for coaching (use /sales-call-review) or building a coaching program (use /sales-coaching)."
 argument-hint: "[describe your note-taker selection or API integration question]"
 license: MIT
 version: 1.0.0
@@ -101,6 +101,7 @@ Rank these in order for the user's context:
 - Real-time AI coaching during calls + cross-session intelligence + Apple Watch → Hedy
 - Privacy-first EU team, in-person meetings, or bot-free non-negotiable → Jamie
 - Noisy environments where call quality is the primary pain + AI notes as a bonus → Krisp
+- Pure noise cancellation only (no notes/transcription), contact center, or SDK embedding → IRIS Clarity
 - Real-time live transcription during calls + Sales Copilot with cue cards and objection handling → Colibri
 - Real-time AI coaching overlay with knowledge base RAG and pre-call briefs → Cluely
 - Multilingual team needing real-time translation in 100+ languages + cross-language search → Jamy
@@ -118,6 +119,7 @@ Rank these in order for the user's context:
 - Open-source AI dictation with context-aware formatting, Whisper local STT, push-to-talk, free MIT license → Amical
 - Open-source cross-platform STT with Whisper + Parakeet dual-engine, push-to-talk, 20k+ stars, free → Handy
 - Polished hardware wearable for in-person meetings + phone calls (VCS), 112 languages, SOC 2/HIPAA, 1.5M+ users → Plaud
+- Budget mobile-first transcription with 100+ languages, YouTube URL paste, subtitles, $9.99/mo unlimited → Soz AI
 - Meeting notes + recruitment automation in one platform, EU compliance, broad ATS integration (15 platforms) → Noota
 - In-person field sales coaching with virtual ridealongs, home services industry → Rilla
 - Home services field + call center coaching with active AI feedback, ServiceTitan/Jobber/Housecall Pro → Sales Ask
@@ -250,6 +252,9 @@ If you discover a gotcha, rate-limit ceiling, auth quirk, or vendor-specific pay
 - `/sales-amical` — Amical platform help (open-source MIT AI dictation app, Whisper local STT, context-aware formatting, Ollama/OpenRouter LLM, push-to-talk voice-to-text)
 - `/sales-handy` — Handy platform help (open-source cross-platform STT, Whisper + Parakeet dual-engine, push-to-talk, CLI flags, 20k+ GitHub stars)
 - `/sales-plaud` — Plaud platform help (hardware AI voice recorder, NotePin/Note/Note Pro, VCS phone call recording, Developer API, 112-language transcription, pricing tiers)
+- `/sales-iris-clarity` — IRIS Clarity platform help (bidirectional AI noise cancellation, Web SDK + Server SDK for embedding in VoIP apps, Talkdesk AppConnect, contact center audio quality)
+- `/sales-sozai` — Soz AI platform help (mobile-first AI transcription, 100+ languages, YouTube URL paste, speaker diarization, subtitle generation, $9.99/mo unlimited)
+- `/sales-cirrus-insight` — Cirrus Insight platform help (Salesforce-native Meeting AI, Conversation Intelligence, Live Coaching, modular pricing)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Examples
