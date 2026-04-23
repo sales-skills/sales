@@ -214,6 +214,8 @@ Router recommends a 4-skill sequence:
 | `/sales-memoro` | Memoro platform help — German GDPR-first AI meeting assistant with bot-free local recording, customizable Blueprints, searchable Memories, 50+ language transcription, offline mode, €0-42/mo |
 | `/sales-minuteslink` | MinutesLink platform help — budget AI meeting note-taker with bot + Chrome extension recording, shareable summary links (no recipient sign-up), Google Meet/Zoom, 50+ languages, $0-24/mo |
 | `/sales-voicenotes` | Voicenotes platform help — AI voice notes and meeting transcription with Ask AI search, Zapier automation (9 triggers), Obsidian/Notion/Readwise sync, Claude MCP, Apple Watch/WearOS, 100+ languages, $0-14.99/mo |
+| `/sales-audiopen` | AudioPen platform help — voice-to-polished-text with custom writing styles, SuperSummaries, 58/64 input/output languages, Zapier automation, one-time payment $0-159 |
+| `/sales-talknotes` | TalkNotes platform help — AI voice note app with 100+ pre-made templates (blog, email, to-do, meeting notes), Zapier automation, AI Chat, 50+ languages, ~$10-49/mo |
 | `/sales-shadow` | Shadow platform help — bot-free AI meeting assistant with audio + screen capture, macOS-only, on-device transcription, Autopilot detection, AI summaries/action items/follow-up emails, $8/mo |
 | `/sales-revenue-io` | Revenue.io platform help — Salesforce-native revenue orchestration with RingDNA dialer, Guided Selling cadences, Moments real-time coaching, conversation intelligence, Revenue Intelligence dashboards, custom pricing ~$59K/yr |
 | `/sales-salesken` | Salesken platform help — real-time in-call coaching, QA automation on 100% of calls, revenue intelligence, field sales analytics, multilingual, Salesforce/HubSpot/Zoho native CRM, ~$99/mo |

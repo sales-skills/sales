@@ -6,7 +6,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 
 | File | What's in it | Platforms |
 |---|---|---|
-| `platforms-smb.md` | Budget-friendly tools under ~$50/user/mo, strong free tiers | Fathom, Fireflies, Otter, MeetGeek, Tactiq, Granola, Wave, Bluedot, Notta, Sonnet, Supernormal, VoiceToNotes, Hedy, Colibri, Jamy, Temi, Char, HappyScribe, Voicenotes |
+| `platforms-smb.md` | Budget-friendly tools under ~$50/user/mo, strong free tiers | Fathom, Fireflies, Otter, MeetGeek, Tactiq, Granola, Wave, Bluedot, Notta, Sonnet, Supernormal, VoiceToNotes, Hedy, Colibri, Jamy, Temi, Char, HappyScribe, Voicenotes, AudioPen, TalkNotes |
 | `platforms-midmarket.md` | Sales-focused CI with coaching, methodology, CRM enrichment | Avoma, tl;dv, Claap, Grain, Sembly, Read.ai, Fellow, Jamie, Krisp, IRIS Clarity, Cluely, Lindy, Outdoo, Jiminny, Enthu.AI, Demodesk, Salesken, Oliv, Weflow, Noota, Dialpad, Winn.ai, Circleback |
 | `platforms-enterprise.md` | Enterprise revenue intelligence ($1K+/user/yr) + bolt-on CI | Gong, Modjo, Clari Copilot, Verbit, + Salesloft Conversations, Chorus, Seismic, Revenue.io |
 | `platforms-field.md` | In-person/field sales coaching and mobile recording | Rilla, Siro, Sales Ask, Speakwise, Omi, Plaud |
@@ -47,6 +47,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Siro | Field sales AI coaching | No | ~$200-350/rep/mo | REST + OAuth | Yes (Svix) | Medium (6 CRMs via Merge) | In-person field sales coaching, Halftime real-time coaching, multi-industry (auto, home services, telecom, political) |
 | Sales Ask | Field sales AI coaching | No | ~$42-208/user/mo | None (partner-only) | None | Medium (ServiceTitan/Jobber/Housecall Pro/Salesforce/Lasso) | Home services field + call center coaching, active AI feedback, native trade CRM integrations |
 | Sonnet | Bot-free AI note-taker + CRM | Yes (5 rec/mo) | $25/mo | None | None | Medium (HubSpot/Salesforce auto-update) | Bot-free CRM auto-update, domain templates (sales/legal/medical/recruiting) |
+| AudioPen | Voice-to-polished-text | Yes (10 notes, 3 min) | $33/3mo one-time | None | Yes (Prime) | None | Solo professionals, custom writing styles, one-time payment |
 | Supernormal | AI agent for agencies | Yes (15 credits/mo) | $10-18/mo | None (Zapier only) | None | Medium (HubSpot/Salesforce/Pipedrive) | Agencies wanting AI-generated deliverables (decks, briefs, emails) from meetings |
 | Sonix | AI transcription + translation + subtitles | Yes (30 min trial) | $10/hr PAYG or $22/seat/mo + $5/hr | REST (Premium+) | Yes (Enterprise) | Thin (Salesforce only) | Batch media transcription, 53-language translation, SRT/VTT subtitles, HIPAA/SOC 2 |
 | Transkriptor | AI transcription + meeting recording | Yes (~30 min/day) | $9.99/mo (Lite) | REST (Enterprise only) | Yes (Enterprise) | Shallow (HubSpot/Salesforce/Zoho listed, depth disputed) | Budget multilingual transcription (100+ languages), meeting bot, subtitles, sentiment analysis (Team) |
@@ -82,3 +83,4 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | MinutesLink | AI meeting note-taker | Yes (10 meetings/mo) | $9/mo | None | None | None (Zapier only) | Budget Google Meet/Zoom teams wanting shareable summary links, no-signup sharing |
 | Voicenotes | AI voice notes + meetings | Yes (basic) | $14.99/mo ($99.99/yr) | None (Zapier only) | Yes (custom) | None | Personal voice capture, Ask AI search, Obsidian/Notion sync, Apple Watch/WearOS, 100+ languages |
 | monday Notetaker | Bolt-on AI note-taker (monday.com) | No (Pro+ required) | Add-on on Pro ($19/seat/mo) | GraphQL (2026-04+) | No | Deep (native boards) | monday.com teams wanting action items → board items, no extra tool |
+| TalkNotes | AI voice note app (template-driven) | No (7-day trial) | ~$10/mo (Plus) | None (contact for access) | None (Zapier only) | None | Template-driven voice-to-content (100+ formats), content creators, 50+ languages |

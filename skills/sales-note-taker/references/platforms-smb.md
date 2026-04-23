@@ -1012,3 +1012,93 @@ For deep platform coverage (features, pricing, integrations, Zapier triggers, As
 **Selection notes**:
 - **Pick Voicenotes when**: You want a personal voice capture tool that lives on your phone/watch, you need "Ask AI" search across all your recordings, you want strong Zapier automation (9 triggers for routing different AI outputs), you're already using Obsidian or Notion for knowledge management, you need meeting recording but don't need coaching analytics, or your budget is under $15/mo for unlimited recordings
 - **Avoid Voicenotes when**: You need speaker diarization for multi-person meetings (→ Fireflies, Otter, Fathom), you need a public API for custom integrations (→ Fathom, Fireflies, Wave), you need CRM auto-fill or sales coaching (→ tl;dv, Avoma, Gong, Sybill), you need enterprise security certifications (→ Sonix, Fireflies Enterprise), you need reliable offline recording (→ Omi, Plaud hardware), or you need team analytics and conversation intelligence (→ Fireflies, Gong)
+
+---
+
+## AudioPen
+
+For deep platform coverage (features, pricing, custom styles, SuperSummaries, Zapier setup, comparison with Voicenotes), use `/sales-audiopen`.
+
+**Positioning**: Voice-to-polished-text tool by Louis Pereira (Nicheless Inc.). Unlike pure transcription tools, AudioPen actively rewrites and restructures spoken thoughts into clean prose matching a selected style. Available on iOS, Android, Mac, Chrome extension, and web. Unique one-time payment model (no subscription). 200,000+ active users. Not a meeting note-taker — targets solo professionals who think out loud and want polished written output.
+
+**Pricing (2026-04)**: One-time payment — Free $0 (10 notes, 3 min each), 3 Months $33 ($11/mo), 1 Year $99 ($8.25/mo), 2 Years $159 ($6.63/mo). All paid plans ("Prime") include identical features.
+
+**API**:
+- No public REST API
+- No SDKs or MCP server
+
+**Webhooks**: Custom webhook support (Prime only). Payload format and authentication not publicly documented.
+
+**Zapier** (1 trigger, Prime only):
+- New Note — fires instantly when a note is created
+- Connects to 8,000+ apps
+
+**Integrations**: Zapier (Prime only), webhooks (Prime only). No native CRM, Notion, Obsidian, or Slack integrations.
+
+**Key features**:
+- Voice recording on iOS, Android, Mac, Chrome extension, web
+- AI rewriting into polished text (not just transcription)
+- Custom writing styles — describe desired tone or upload writing samples
+- SuperSummaries — combine multiple notes into one document
+- Restyle existing notes without re-recording
+- Audio file uploads (100/4 weeks, 100MB each, Prime only)
+- 58 input languages, 64 output languages
+- 15-minute recording limit per note (Prime)
+- Text processing — restyle written content through AI
+
+**Known issues**:
+- No speaker diarization — single-speaker only
+- AI rewrites by default — new users expect verbatim transcripts and get polished rewrites instead
+- 15-minute recording cap — no way to extend for longer sessions
+- Limited custom prompt control — styles guide the rewriting but you can't inject arbitrary system prompts
+- Upload cap of 100 files per 4-week window — heavy batch users hit this
+- Zapier is the only automation path — no native integrations with any tool
+- No team features — purely a solo tool
+
+**Selection notes**:
+- **Pick AudioPen when**: You want AI to rewrite and polish your speech (not just transcribe), you value custom writing styles or need to match a specific writing voice, you prefer a one-time payment over subscription, you work solo and don't need team features, you need multilingual output (64 languages), or you want to combine multiple voice notes into unified documents (SuperSummaries)
+- **Avoid AudioPen when**: You need semantic search across notes (→ Voicenotes Ask AI), you need native Obsidian/Notion sync (→ Voicenotes), you need meeting recording with calendar auto-join (→ Voicenotes, Fathom, Fireflies), you need more Zapier triggers per output type (→ Voicenotes has 9), you need a public API (→ Fathom, Fireflies, Wave), you need CRM integration (→ Fathom Business, Sybill, tl;dv), you need speaker diarization (→ Fireflies, Otter, Fathom), or you need team collaboration (→ Voicenotes Teams, Fireflies)
+
+## TalkNotes
+
+For deep platform coverage (features, pricing, templates, Zapier setup, comparison with Voicenotes/AudioPen), use `/sales-talknotes`.
+
+**Positioning**: AI voice note app by Collin Brewer (Clutch Codeworks LLC) that converts speech into structured content using 100+ pre-made templates. Unlike pure transcription tools (Voicenotes) or rewriting tools (AudioPen), TalkNotes focuses on template-driven output — blog outlines, email drafts, to-do lists, meeting notes, lecture summaries. Available on iOS, Android, and web. 50+ languages. Content creators and professionals who want structured output immediately, not raw transcripts.
+
+**Pricing (2026-04)**: No permanent free tier — 7-day trial only. Plus ~$10/mo ($5.75/mo annual) — unlimited notes, 20-min recordings, file upload, custom styles. Pro ~$42-49/mo — shareable recorder link, 100 guest notes, 25 two-hour recordings, priority support.
+
+**API**:
+- No public REST API — contact support@talknotes.io for access
+- No SDKs or MCP server
+
+**Webhooks**: Webhook support available but payload format and authentication not publicly documented.
+
+**Zapier** (1 trigger):
+- Note Created — fires when a new note is created
+- Connects to 9,000+ apps
+
+**Integrations**: Zapier, webhooks. No native CRM, Notion, Obsidian, or Slack integrations. Export: PDF, Markdown, plain text.
+
+**Key features**:
+- 100+ pre-made note templates (blog, email, to-do, meeting notes, lecture summaries, social posts)
+- Custom note styles
+- AI Chat — ask questions about your notes (v1.6.0+)
+- AI summaries and keyword extraction
+- Background recording (continues when switching apps)
+- Siri shortcuts for hands-free recording (iOS)
+- File upload — create notes from existing audio files
+- Shareable recorder link (Pro) — collect guest recordings without app install
+- 50+ language support
+
+**Known issues**:
+- No permanent free tier — 7-day trial only, then subscription required
+- No speaker diarization — single-speaker only
+- 20-minute recording cap on Plus (2 hours on Pro, limited to 25 recordings)
+- Mobile upload reliability issues reported in App Store reviews
+- Template-driven output by default — not raw transcripts
+- No native integrations — Zapier is the only automation path
+- AI Chat is relatively new (v1.6.0) — feature depth may be limited compared to Voicenotes Ask AI
+
+**Selection notes**:
+- **Pick TalkNotes when**: You want voice memos converted into specific content formats (blog posts, emails, to-do lists) using pre-made templates, you value the widest template library (100+), you want a shareable recorder link to collect guest recordings (Pro), you need AI Chat to query your notes, or you prefer mobile-first recording with Siri integration
+- **Avoid TalkNotes when**: You need a permanent free tier (→ Voicenotes, AudioPen), you need semantic search across notes (→ Voicenotes Ask AI), you need native Obsidian/Notion sync (→ Voicenotes), you need a public API (→ Fathom, Fireflies, Wave), you need CRM integration (→ Fathom Business, Sybill, tl;dv), you need speaker diarization (→ Fireflies, Otter, Fathom), you need more Zapier triggers (→ Voicenotes has 9), or you prefer a one-time payment (→ AudioPen)
