@@ -1204,3 +1204,54 @@ For deep platform coverage (features, pricing, integrations, Obsidian/Notion syn
 **Selection notes**:
 - **Pick Cleft Notes when**: You're fully in the Apple ecosystem, you want on-device transcription for privacy and offline use, you value auto-organization with headings over raw transcripts, you want the cheapest annual plan ($29/yr), you need native Obsidian sync on macOS, you want an ADHD-friendly brain dump tool, or you need Apple Watch/CarPlay recording
 - **Avoid Cleft Notes when**: You need Android or Windows (→ Voicenotes, AudioPen, TalkNotes, Letterly), you need semantic search across notes (→ Voicenotes Ask AI), you need meeting recording with calendar auto-join (→ Voicenotes, Fathom, Fireflies), you need a public API (→ Fathom, Fireflies, Wave), you need CRM integration (→ Fathom Business, Sybill, tl;dv), you need speaker diarization (→ Fireflies, Otter, Fathom), you need team features (→ Voicenotes Teams, Fireflies), or you want AI to rewrite into a specific writing style (→ AudioPen)
+
+---
+
+## Coconote
+
+For deep platform coverage (features, pricing, study material generation, comparison with alternatives), use `/sales-coconote`.
+
+**Positioning**: AI-powered note-taking app by Quizlet Inc that records lectures and auto-generates study materials — study guides, flashcards, quizzes, and AI-narrated podcasts. The only voice note tool in this category that produces active study aids (not just transcripts or summaries). 4.8/5 on App Store (15K+ ratings). Primarily student-focused. Available on iOS, Android, web, macOS (M1+), Apple Watch, Vision Pro.
+
+**Pricing (2026-04)**: Free (basic recording, requires payment info for trial). Pro $9.99/mo or $19.99/mo, $99.99/yr or $129.99/yr. Family $189.99. 1-week free trial.
+
+**API**:
+- No public API
+- No SDKs or MCP server
+- No REST endpoints
+
+**Webhooks**: None.
+
+**Zapier**: None.
+
+**Integrations**: None. No Zapier, no webhooks, no third-party integrations. Export limited to PDF and shareable Coconote links. Copy-paste is the only way to get content into other tools.
+
+**Key features**:
+- Live lecture recording with real-time transcription
+- Auto-generated study guides from recordings
+- Flashcard generation (one set per recording)
+- Quiz generation (up to 15 questions per recording)
+- AI-narrated podcast generation from notes
+- AI chat scoped to all notes or specific folders
+- Folder organization (per course, topic)
+- Translation to 100+ languages
+- Bookmark flagging during recording
+- PDF export and shareable note links
+- Cross-platform: iOS, Android, web, macOS, Apple Watch, Vision Pro
+
+**Known issues**:
+- Free tier requires entering payment info (1-week trial, then must cancel)
+- Confusing pricing — multiple price points in App Store, yearly can appear as monthly
+- Long recordings (2-3+ hours) may fail to generate study materials
+- Only one quiz and one flashcard set generated per recording
+- No YouTube URL processing
+- No camera/image scanning for handwritten notes
+- No integrations — notes live inside Coconote ecosystem only
+- App crashes when saving recordings reported (device/OS dependent)
+- Headphones can prevent recording from starting
+- Customer support response times are slow
+- Study materials may generate in wrong language (language detection issues)
+
+**Selection notes**:
+- **Pick Coconote when**: You're a student who wants auto-generated flashcards, quizzes, and study guides from lecture recordings — no other tool in this category generates active study aids. You want folder-scoped AI chat to turn course notes into a searchable knowledge base. You need cross-platform support (iOS + Android + web).
+- **Avoid Coconote when**: You need any integrations (→ Voicenotes, Cleft Notes, Fathom, Fireflies), you need Obsidian/Notion sync (→ Voicenotes, Cleft Notes), you need a public API (→ Fathom, Fireflies, Wave), you need CRM integration (→ Fathom Business, Sybill, tl;dv), you need speaker diarization (→ Fireflies, Otter, Fathom), you need on-device/offline transcription (→ Cleft Notes), you record lectures over 2-3 hours (processing fails), or you want polished rewriting (→ AudioPen, Letterly)

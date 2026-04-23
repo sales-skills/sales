@@ -218,6 +218,7 @@ Router recommends a 4-skill sequence:
 | `/sales-talknotes` | TalkNotes platform help — AI voice note app with 100+ pre-made templates (blog, email, to-do, meeting notes), Zapier automation, AI Chat, 50+ languages, ~$10-49/mo |
 | `/sales-letterly` | Letterly platform help — AI speech-to-content with 25+ rewrite formats (social posts, emails, journals, to-do lists), 90+ languages, offline recording, Zapier/webhooks, LTD $69+ |
 | `/sales-cleftnotes` | Cleft Notes platform help — Apple-native AI voice-to-notes with on-device transcription, ADHD-friendly auto-organization, Obsidian/Notion sync, Apple Watch/CarPlay, $0-29/yr |
+| `/sales-coconote` | Coconote platform help — Quizlet's AI lecture note-taker with auto-generated study guides, flashcards, quizzes, AI podcasts, AI chat, 100+ languages, iOS/Android/web/Mac, $0-19.99/mo |
 | `/sales-shadow` | Shadow platform help — bot-free AI meeting assistant with audio + screen capture, macOS-only, on-device transcription, Autopilot detection, AI summaries/action items/follow-up emails, $8/mo |
 | `/sales-revenue-io` | Revenue.io platform help — Salesforce-native revenue orchestration with RingDNA dialer, Guided Selling cadences, Moments real-time coaching, conversation intelligence, Revenue Intelligence dashboards, custom pricing ~$59K/yr |
 | `/sales-salesken` | Salesken platform help — real-time in-call coaching, QA automation on 100% of calls, revenue intelligence, field sales analytics, multilingual, Salesforce/HubSpot/Zoho native CRM, ~$99/mo |
