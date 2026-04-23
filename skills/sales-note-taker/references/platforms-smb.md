@@ -1304,3 +1304,33 @@ For deep platform coverage (all tiers, credit system, content generation, integr
 **Selection notes**:
 - **Pick HyNote when**: You want a single app that handles meetings, lectures, files, YouTube, and web pages — broadest input format coverage in the category. You need multilingual transcription with strong accent handling. You want study material generation (flashcards, quizzes) plus content creation (podcasts, slides, infographics) from the same platform. You need HIPAA/GDPR/CCPA compliance. You want Apple Watch recording.
 - **Avoid HyNote when**: You need any API or automation (→ Fathom, Fireflies, Wave), you need Zapier/webhook integrations (→ Voicenotes, Circleback, Fathom), you need Obsidian sync (→ Voicenotes, Cleft Notes), you need deep CRM integration (→ Fathom Business, Sybill, tl;dv), you need real-time transcription on a budget (gated behind Plus at $10.83/mo), you need speaker identification on a budget (also Plus+), or you want one-time payment pricing (→ AudioPen)
+
+---
+
+## Backtrack
+
+For deep platform coverage (rolling buffer setup, audio capture troubleshooting, bot-free comparison, pricing tiers), use `/sales-backtrack`.
+
+**Positioning**: Mac menu bar app that solves the "forgot to hit record" problem with a continuously rolling audio/screen buffer. Instead of starting recording before a meeting, Backtrack lets you retroactively save the last 1-5 hours of audio with one click. Privacy-first — recordings are local until you explicitly share. No meeting bot visible to participants. Made by Yac Inc.
+
+**Pricing (2026-04)**: Free (1 hr rolling buffer, basic capture), Pro $9.99/mo (5 hr buffer, AI search, keyword highlights, enhanced sharing), Business custom pricing (team access, admin controls, extended storage). Also available via Setapp ($9.99/mo for 240+ Mac apps).
+
+**API**: None. No public API, no REST endpoints, no SDKs, no MCP server.
+
+**Webhooks**: None.
+
+**Zapier**: None.
+
+**Integrations**: Zoom, Google Meet, Microsoft Teams, Slack Huddles, in-person (via microphone). No CRM connectors, no Zapier/Make/n8n, no Slack/Notion export, no calendar integration.
+
+**Key gotchas**:
+- Mic-only capture by default — headphones mean you only record your side of a call (use speakers or enable system audio capture)
+- Transcript generation is unreliable — ~10% failure rate reported by some users
+- macOS only — no Windows, Linux, iOS, or web
+- Menu bar icon hidden by Bartender/Vanilla/Hidden Bar — check hidden section
+- Free tier buffer is 1 hour — meetings over 1 hour lose their beginning
+- Cloud upload required for AI transcription — local recording alone gets no AI features
+
+**Selection notes**:
+- **Pick Backtrack when**: You frequently forget to hit record and want a safety net, you want retroactive capture (unique in the category), you prefer a simple Mac menu bar utility over a full meeting platform, you want bot-free recording for calls and in-person meetings, or you're on Setapp already
+- **Avoid Backtrack when**: You need CRM integration (→ Fathom Business, Sybill, tl;dv), you need an API or webhooks (→ Fathom, Fireflies, Gong), you need Windows support (→ Jamie, Granola), you need reliable transcription (→ Otter, Fireflies), you need team collaboration features (→ Fireflies, Grain), or you need calendar-based auto-join (→ Fathom, Fireflies, most bot-based tools)

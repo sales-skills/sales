@@ -6,7 +6,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 
 | File | What's in it | Platforms |
 |---|---|---|
-| `platforms-smb.md` | Budget-friendly tools under ~$50/user/mo, strong free tiers | Fathom, Fireflies, Otter, MeetGeek, Tactiq, Granola, Wave, Bluedot, Notta, Sonnet, Supernormal, VoiceToNotes, Hedy, Colibri, Jamy, Temi, Char, HappyScribe, Voicenotes, AudioPen, TalkNotes, Letterly, Coconote, HyNote AI |
+| `platforms-smb.md` | Budget-friendly tools under ~$50/user/mo, strong free tiers | Fathom, Fireflies, Otter, MeetGeek, Tactiq, Granola, Wave, Bluedot, Notta, Sonnet, Supernormal, VoiceToNotes, Hedy, Colibri, Jamy, Temi, Char, HappyScribe, Voicenotes, AudioPen, TalkNotes, Letterly, Coconote, HyNote AI, Backtrack |
 | `platforms-midmarket.md` | Sales-focused CI with coaching, methodology, CRM enrichment | Avoma, tl;dv, Claap, Grain, Sembly, Read.ai, Fellow, Jamie, Krisp, IRIS Clarity, Cluely, Lindy, Outdoo, Jiminny, Enthu.AI, Demodesk, Salesken, Oliv, Weflow, Noota, Dialpad, Winn.ai, Circleback |
 | `platforms-enterprise.md` | Enterprise revenue intelligence ($1K+/user/yr) + bolt-on CI | Gong, Modjo, Clari Copilot, Verbit, + Salesloft Conversations, Chorus, Seismic, Revenue.io |
 | `platforms-field.md` | In-person/field sales coaching and mobile recording | Rilla, Siro, Sales Ask, Speakwise, Omi, Plaud |
@@ -88,3 +88,4 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Cleft Notes | AI voice-to-organized-notes (Apple) | Yes (5 min, unlimited) | $29/yr (Plus) | None | None (Zapier only) | None | Apple-native on-device transcription, ADHD-friendly auto-organization, Obsidian/Notion sync, offline recording |
 | Coconote | AI lecture → study materials (Quizlet) | Yes (basic) | $9.99/mo ($99.99/yr) | None | None | None | Student lecture capture, auto-generated flashcards/quizzes/study guides, AI chat across notes, 100+ languages |
 | HyNote AI | Full-stack AI note-taker (audio/files/YouTube/web) | Yes | $6.66/mo ($79.99/yr) | None | None | Thin (Unlimited only) | Broadest input format coverage (audio + PDF + image + YouTube + web), multilingual, flashcards/quizzes/presentations/podcasts, HIPAA/GDPR |
+| Backtrack | Retroactive Mac menu bar recorder | Yes (1 hr buffer) | $9.99/mo | None | None | None | Mac users who forget to record, retroactive capture, bot-free, in-person + video calls |
