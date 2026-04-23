@@ -963,3 +963,52 @@ For deep platform coverage (features, pricing, sharing workflow, known issues), 
 **Selection notes**:
 - **Pick MinutesLink when**: Budget under $10/mo, Google Meet or Zoom only, you need shareable meeting links for external stakeholders without requiring sign-up, simple transcription + summaries are sufficient, EU data jurisdiction matters (Estonia-based), or you need concurrent meeting capture at low cost
 - **Avoid MinutesLink when**: You need Microsoft Teams (→ Fathom, Fireflies, tl;dv), you need API/webhook automation (→ Fathom, Fireflies, Wave), you need CRM beyond Zapier (→ Fathom Business, Fireflies Business), you need coaching/methodology features (→ tl;dv, Avoma, Gong), you need mobile recording (→ Wave, Omi, Plaud), or you need unlimited recordings (→ Fathom free)
+
+## Voicenotes
+
+For deep platform coverage (features, pricing, integrations, Zapier triggers, Ask AI, meeting recording, known issues), use `/sales-voicenotes`.
+
+**Positioning**: AI voice note-taker and meeting transcription platform by the BuyMeACoffee.com team. Record thoughts on iOS, Android, web, Apple Watch, or WearOS — AI transcribes using GPT-4o and Claude 3.5 Sonnet, then generates summaries, to-dos, main points, and draft emails. "Ask AI" lets you query across all notes in natural language. Also has a meetings product with calendar auto-join and meeting reports. Strong Zapier integration (9 triggers) and native Obsidian/Notion/Readwise sync. Not primarily sales-focused — targets individuals and small teams doing idea capture, journaling, and meeting notes.
+
+**Pricing (2026-04)**: Free $0 (basic, short recordings), Individual $14.99/mo or $99.99/yr (unlimited notes + meetings, all AI features, all integrations), Teams $49/mo + $9/member/mo (unlimited users, 10,000 min/mo, shared workspace).
+
+**API**:
+- No public REST API
+- Obsidian plugin uses private token-based auth (not documented for general use)
+- Claude MCP server available for Claude Code/Desktop
+
+**Webhooks**: Custom webhook support available. Payload format and authentication not publicly documented.
+
+**Zapier** (9 triggers, primary automation path):
+- Voicenote Created / Updated / Deleted
+- Summary Created, Main Points Created, To-Do Created, Email Created, Meeting Report Created
+- Attach Zapier Tag (manual selective export)
+
+**Integrations**: Notion (native), Obsidian (official plugin), Readwise, Todoist, Things 3, Google Calendar, Microsoft Outlook, Zapier (8,000+ connected apps), Webhooks, Claude MCP, OpenClaw.
+
+**Key features**:
+- Voice recording on iOS, Android, web, Apple Watch, WearOS
+- AI transcription in 100+ languages (GPT-4o + Claude 3.5 Sonnet)
+- Ask AI — natural language Q&A across all notes
+- Related Notes — AI surfaces connected notes (cosine similarity, Claude Haiku)
+- Threads — group related notes
+- Tags — manual tagging with special "Zapier" tag for automations
+- Meeting recording with calendar integration and auto-join
+- AI outputs: summaries, main points, to-dos, emails, meeting reports
+- Auto-titling of notes
+
+**Known issues**:
+- No speaker diarization — single-speaker only, multi-person meetings have no speaker labels
+- Code-switching unreliable — mixing languages mid-recording produces inconsistent transcription
+- Upload failures — recordings may fail to sync from mobile, especially on unstable connections
+- Search is keyword-based — the search bar does text matching, not semantic search (use Ask AI instead)
+- Related Notes uses basic cosine similarity — degrades with bilingual notes
+- Offline mode unreliable — may lose recordings when reconnecting
+- No workspace separation — personal and professional notes share one space
+- Mobile tagging bugs — tags may not persist, use web as fallback
+- Cannot save Ask AI responses as notes or attach to threads
+- No auto-tagging — all tagging is manual
+
+**Selection notes**:
+- **Pick Voicenotes when**: You want a personal voice capture tool that lives on your phone/watch, you need "Ask AI" search across all your recordings, you want strong Zapier automation (9 triggers for routing different AI outputs), you're already using Obsidian or Notion for knowledge management, you need meeting recording but don't need coaching analytics, or your budget is under $15/mo for unlimited recordings
+- **Avoid Voicenotes when**: You need speaker diarization for multi-person meetings (→ Fireflies, Otter, Fathom), you need a public API for custom integrations (→ Fathom, Fireflies, Wave), you need CRM auto-fill or sales coaching (→ tl;dv, Avoma, Gong, Sybill), you need enterprise security certifications (→ Sonix, Fireflies Enterprise), you need reliable offline recording (→ Omi, Plaud hardware), or you need team analytics and conversation intelligence (→ Fireflies, Gong)

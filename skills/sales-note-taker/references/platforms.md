@@ -6,7 +6,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 
 | File | What's in it | Platforms |
 |---|---|---|
-| `platforms-smb.md` | Budget-friendly tools under ~$50/user/mo, strong free tiers | Fathom, Fireflies, Otter, MeetGeek, Tactiq, Granola, Wave, Bluedot, Notta, Sonnet, Supernormal, VoiceToNotes, Hedy, Colibri, Jamy, Temi, Char, HappyScribe |
+| `platforms-smb.md` | Budget-friendly tools under ~$50/user/mo, strong free tiers | Fathom, Fireflies, Otter, MeetGeek, Tactiq, Granola, Wave, Bluedot, Notta, Sonnet, Supernormal, VoiceToNotes, Hedy, Colibri, Jamy, Temi, Char, HappyScribe, Voicenotes |
 | `platforms-midmarket.md` | Sales-focused CI with coaching, methodology, CRM enrichment | Avoma, tl;dv, Claap, Grain, Sembly, Read.ai, Fellow, Jamie, Krisp, IRIS Clarity, Cluely, Lindy, Outdoo, Jiminny, Enthu.AI, Demodesk, Salesken, Oliv, Weflow, Noota, Dialpad, Winn.ai, Circleback |
 | `platforms-enterprise.md` | Enterprise revenue intelligence ($1K+/user/yr) + bolt-on CI | Gong, Modjo, Clari Copilot, Verbit, + Salesloft Conversations, Chorus, Seismic, Revenue.io |
 | `platforms-field.md` | In-person/field sales coaching and mobile recording | Rilla, Siro, Sales Ask, Speakwise, Omi, Plaud |
@@ -80,4 +80,5 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Memoro | GDPR-first AI meeting assistant | Yes (75 min/mo) | €9/mo | Undocumented | None | None | Bot-free local recording, German hosting, Blueprints, offline mode, 50+ languages |
 | HappyScribe | AI + human transcription + subtitles | Yes (10 min trial) | $17/mo ($8.50 annual) | REST (200 req/hr) | Yes (per-order URL) | None | Batch transcription in 120+ languages, subtitle generation, human transcription ($2/min), 15+ export formats |
 | MinutesLink | AI meeting note-taker | Yes (10 meetings/mo) | $9/mo | None | None | None (Zapier only) | Budget Google Meet/Zoom teams wanting shareable summary links, no-signup sharing |
+| Voicenotes | AI voice notes + meetings | Yes (basic) | $14.99/mo ($99.99/yr) | None (Zapier only) | Yes (custom) | None | Personal voice capture, Ask AI search, Obsidian/Notion sync, Apple Watch/WearOS, 100+ languages |
 | monday Notetaker | Bolt-on AI note-taker (monday.com) | No (Pro+ required) | Add-on on Pro ($19/seat/mo) | GraphQL (2026-04+) | No | Deep (native boards) | monday.com teams wanting action items → board items, no extra tool |
