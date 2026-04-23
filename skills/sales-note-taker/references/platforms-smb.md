@@ -886,3 +886,42 @@ For deep platform coverage (API endpoints, Orders workflow, export formats, glos
 **Selection notes**:
 - **Pick HappyScribe when**: You need batch transcription with the widest language coverage (120+ languages), you produce subtitles for video in multiple languages and need advanced subtitle editing, you need human transcription for legal/broadcast accuracy, you want extensive export formats (Premiere XML, FCP XML, STL, AVID), or you need SOC 2 + GDPR compliance for EU data residency
 - **Avoid HappyScribe when**: You need live meeting recording (→ Fathom, Fireflies, Otter), you need CRM integration (→ Fathom Business, Fireflies Business), you need HIPAA compliance (→ Sonix, Fireflies Enterprise), you need higher API rate limits for pipeline throughput (→ Sonix), or you need real-time transcription during calls (→ Colibri, Krisp)
+
+## Memoro
+
+For deep platform coverage (Blueprints, Memories, pricing, comparison), use `/sales-memoro`.
+
+**Positioning**: German GDPR-first AI meeting assistant. Records locally from the device mic — no bot joins the meeting. Key differentiators vs Jamie: cross-platform support (Linux, iOS, Android, macOS, Windows), offline mode, lower entry price (€9/mo vs €21/mo), and Mana-based flexible pricing. Key differentiator vs Fathom/Fireflies: German hosting with end-to-end encryption, no US data transfer. Targets education, healthcare, construction, and office administration verticals — broader than typical sales-focused CI tools. 2,800+ users, 4.8/5 stars.
+
+**Pricing (2026-04)**: Free €0 (180 Mana/~75 min), Plus €9/mo (600 Mana/~250 min), Pro €23/mo (1,800 Mana/~750 min), Ultra €42/mo (4,800 Mana/~2,000 min). One-time "Mana Potion" purchases available for overflow. No annual pricing documented.
+
+**API**:
+- Mentioned on website but **no public API documentation** available
+- No REST docs, no GraphQL, no webhook documentation indexed
+- Contact kontakt@memoro.ai for API access inquiries
+
+**Webhooks**: None documented.
+
+**Integrations**: No native CRM, calendar, Slack, Zapier, or Make integrations. Export only: Word, PDF, Markdown.
+
+**Key features**:
+- Transcription in 50+ languages with automatic language detection
+- AI summaries in 24 languages
+- Speaker recognition (up to 12 speakers)
+- Customizable Blueprints (templates) for different meeting types
+- Searchable Memories (knowledge base across all recordings)
+- Task and appointment detection
+- Sentiment analysis and topic detection
+- Offline recording mode
+- Cross-platform: iOS, Android, macOS, Windows, Linux, Web
+
+**Known issues**:
+- Auto-language detection defaults to device/app language — can misidentify meeting language
+- No CRM integration means manual export/paste workflow for sales teams
+- Mana-to-minutes ratio is not 1:1 (~2.4 Mana per minute) — confusing for budgeting
+- Limited third-party integrations compared to competitors
+- Smaller user base and ecosystem than established tools
+
+**Selection notes**:
+- **Pick Memoro when**: GDPR with German hosting is non-negotiable, you need bot-free recording across all platforms including Linux, you want offline mode for field recordings, your budget is under €10/mo, you're in education/healthcare/construction verticals, or you need 50+ language transcription with customizable output templates
+- **Avoid Memoro when**: You need CRM integration (→ Fathom Business, Jamie, Granola), you need API/webhook automation (→ Fathom, Fireflies, Wave), you need sales coaching or deal intelligence (→ Gong, Avoma, tl;dv), you need the cheapest possible option with unlimited recordings (→ Fathom free), or you need SOC 2/HIPAA compliance (→ Sonix, Fireflies Enterprise)
