@@ -33,6 +33,7 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - [Outreach (Kaia)](#in-outreach-kaia)
 - [Modjo](#in-modjo)
 - [Weflow](#in-weflow)
+- [Scratchpad](#in-scratchpad)
 - [Manual / Spreadsheet](#manual--spreadsheet-approach)
 
 ### In Sybill
@@ -370,6 +371,15 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - **Limitations**: No dedicated coaching module (no LMS, lesson authoring, or certification tracking). No AI roleplay for practice. Coaching insights come from real call analysis, not simulated scenarios. Salesforce-only — no HubSpot or other CRM. For dedicated coaching platforms with roleplay, use Allego, Outdoo, SecondBody, or Solidroad.
 - **Best practice**: Use Weflow for coaching when your primary coaching bottleneck is that reps don't update Salesforce and managers can't see what's happening in deals. Weflow gives managers call data + deal data + CRM data in one place — the coaching insight is "I can see from your last 3 calls that you're not uncovering economic buyer" rather than "I have no idea what happened on your calls." Pair with a dedicated coaching platform for structured practice.
 
+### In Scratchpad
+
+- **What it does for coaching**: Scratchpad's Call Recorder & Notetaker (Solo+, $19/user/mo) records, transcribes, and generates AI summaries from Zoom/Meet/Teams calls. AI Field Updates extract methodology fields (MEDDPICC/BANT/SPICED) from conversations and auto-populate Salesforce — managers can verify reps are qualifying properly by checking CRM data rather than re-listening to calls.
+- **Hygiene Monitor for coaching signals**: Tracks missing fields, stale data, and overdue tasks across the team. Surfaces which reps consistently leave methodology fields empty — a coaching signal that they're not asking the right discovery questions.
+- **Deal & Account Agent for coaching prep**: AI assistant cross-references calls, emails, and CRM data. Managers can ask "What were the key objections across [rep]'s calls this week?" to prepare for coaching 1:1s.
+- **Custom prompts for coaching frameworks**: Deal & Account Agent supports custom prompts tailored to your coaching methodology. Create prompts like "Rate this call against our discovery framework" or "Identify moments where the rep could have asked a better question."
+- **Limitations**: No dedicated coaching module (no LMS, lesson authoring, scorecards, or certification tracking). No AI roleplay for practice. No real-time in-call coaching. No coach dashboard or coaching analytics. Coaching insights come from reviewing AI-extracted CRM data and call summaries, not a structured coaching workflow. For dedicated coaching platforms, use Allego, Outdoo, SecondBody, or Solidroad. For real-time in-call coaching, use Cluely, Balto, or Cresta.
+- **Best practice**: Use Scratchpad for coaching when your primary coaching bottleneck is that reps don't update Salesforce and managers have no visibility into what's happening on calls. Scratchpad gives managers AI-populated CRM data + call summaries in a clean interface — the coaching insight is "I can see from your last 5 calls that MEDDIC fields are incomplete" rather than "I have no data on your calls." Pair with a dedicated coaching platform for structured practice and roleplay.
+
 ### In Dialpad
 
 - **AI Coaching Hub**: Real-time sentiment analysis, CSAT tracking, and performance metrics dashboard. Managers see live coaching cards during agent calls — triggered by keywords, sentiment drops, or missed topics.
@@ -388,6 +398,16 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - **AI Meeting Prep Briefs**: Pre-call context documents help reps prepare, reinforcing coaching around call preparation.
 - **Limitations**: No video recording — no call library for post-call review or coaching clips. Virtual meetings only — no phone/in-person support. No AI roleplay for practice. Sales-only (no CS/support). No public API for custom coaching analytics. Enterprise required for live coaching, battle cards, and reporting/analytics. For post-call coaching review, use Gong, tl;dv, or Avoma. For AI roleplay practice, use Allego, Outdoo, SecondBody, or Solidroad.
 - **Best practice**: Use Winn.ai coaching when your primary coaching bottleneck is that reps don't follow methodology consistently on live calls. The real-time overlay enforces discipline during the conversation — the coaching insight is "I can see from the playbook tracker that you covered 4/6 MEDDIC items" rather than reviewing a recording after the fact. Strongest for teams with defined methodology that reps know but don't consistently execute. Pair with a recording tool (Gong, tl;dv) if you also need post-call coaching review.
+
+### In Cirrus Insight
+
+- **Conversation Intelligence**: Records and transcribes sales calls, extracts key topics, action items, and coaching insights. Post-call summaries with conversation analytics for coaching review.
+- **Live Coaching ($40-$28.50/hr volume-tiered)**: Real-time call guidance during live sales conversations. Prompts reps with talking points, competitive positioning, objection handling, and next-best-action suggestions based on conversation context. Managers can monitor live calls and see AI-surfaced coaching moments.
+- **Meeting AI ($13/user/mo)**: Pre-meeting briefs with prospect intelligence — prior interactions, company data, LinkedIn activity. Supports coaching around call preparation and prospect research habits.
+- **Buyer Signals ($10/user/mo)**: Engagement tracking (email opens, clicks, attachment views, website visits). Helps coach reps on timing follow-ups based on buying signals rather than arbitrary cadences.
+- **CRM AI**: Opportunity hygiene assistant flags stale deals, missing fields, and pipeline health — supports coaching around CRM discipline and deal qualification.
+- **Limitations**: Salesforce-only (core integration). Modular pricing adds up (Meeting AI + Live Coaching = $13/user/mo + hourly coaching fees). No methodology-based call scoring (MEDDPICC/BANT). No AI roleplay. No coaching scorecards. Limited API (no transcript export). Sync reliability is the top user complaint. For dedicated coaching scorecards, use Gong or Avoma. For AI roleplay, use Allego, Outdoo, SecondBody, or Solidroad.
+- **Best practice**: Use Cirrus Insight coaching when your team is already on Salesforce and you want meeting intelligence + coaching + CRM sync from one vendor without buying Gong. Live Coaching is hourly-billed, so it's best for targeted coaching sessions (key deals, new rep onboarding) rather than always-on use. Pair Conversation Intelligence summaries with regular 1:1 coaching reviews.
 
 ### Manual / Spreadsheet approach
 

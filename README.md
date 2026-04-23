@@ -220,6 +220,8 @@ Router recommends a 4-skill sequence:
 | `/sales-cleftnotes` | Cleft Notes platform help — Apple-native AI voice-to-notes with on-device transcription, ADHD-friendly auto-organization, Obsidian/Notion sync, Apple Watch/CarPlay, $0-29/yr |
 | `/sales-coconote` | Coconote platform help — Quizlet's AI lecture note-taker with auto-generated study guides, flashcards, quizzes, AI podcasts, AI chat, 100+ languages, iOS/Android/web/Mac, $0-19.99/mo |
 | `/sales-hynote` | HyNote AI platform help — full-stack AI note-taker for audio, meetings, PDFs, YouTube, web pages with flashcards, quizzes, mind maps, presentations, podcasts, HIPAA/GDPR, $0-24.99/mo |
+| `/sales-superpowered` | Superpowered platform help — bot-free AI meeting note-taker with device-audio capture, AI Templates, auto-join from calendar, SOC-2/GDPR, 50+ languages, $0-50/mo |
+| `/sales-noted` | Noted platform help — Apple-ecosystem voice recorder + rich-text note-taker with timestamped audio linking, AI Transcribe, Intelligent Playback, Apple Pencil/Time Stroke, Apple Watch, $0-9.99/mo or $89.99 lifetime |
 | `/sales-backtrack` | Backtrack platform help — Mac menu bar retroactive recorder with rolling buffer (1-5 hrs), captures meetings you forgot to record, bot-free, AI transcription via cloud, $0-9.99/mo |
 | `/sales-shadow` | Shadow platform help — bot-free AI meeting assistant with audio + screen capture, macOS-only, on-device transcription, Autopilot detection, AI summaries/action items/follow-up emails, $8/mo |
 | `/sales-revenue-io` | Revenue.io platform help — Salesforce-native revenue orchestration with RingDNA dialer, Guided Selling cadences, Moments real-time coaching, conversation intelligence, Revenue Intelligence dashboards, custom pricing ~$59K/yr |
@@ -243,6 +245,7 @@ Router recommends a 4-skill sequence:
 | `/sales-craft` | Craft platform help — AI growth engine for home services with real-time in-appointment field coaching, 24/7 AI call center, revenue recovery agents, ServiceTitan/Salesforce/HubSpot/Jobber/AccuLynx/Housecall Pro integrations |
 | `/sales-momentum` | Momentum platform help — AI revenue orchestration with automated CRM updates, Slack Deal Rooms, MEDDIC Autopilot, AI coaching, churn signals, executive briefs, $69-99/user/mo, acquired by Salesforce Feb 2026 |
 | `/sales-oliv` | Oliv.ai platform help — AI-native revenue intelligence with modular agents (Notetaker, Meeting Insights, Deal Insights, CRM Manager, Forecaster), 8 CRM integrations, 42+ total integrations, $19-77/user/mo modular pricing |
+| `/sales-scratchpad` | Scratchpad platform help — Salesforce-native AI workspace with call recording, AI field updates, pipeline sheets, Hygiene Monitor, Deal Agent, Gong integration, $0-49/user/mo |
 | `/sales-weflow` | Weflow platform help — Salesforce-native Revenue AI with activity capture, conversation intelligence (96+ languages), deal intelligence & forecasting, Ask Weflow AI, Chrome Extension, Mobile Copilot, $19-79/user/mo |
 | `/sales-dialpad` | Dialpad platform help — AI-native UCaaS + CCaaS with DialpadGPT, AI Recaps, AI Coaching Hub, contact center, voice, video, SMS, 70+ integrations, $15-25/user/mo |
 | `/sales-deal-inspect` | Inspect deal health, map stakeholders, identify risks, recommend next actions |

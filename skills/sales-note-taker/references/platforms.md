@@ -7,7 +7,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | File | What's in it | Platforms |
 |---|---|---|
 | `platforms-smb.md` | Budget-friendly tools under ~$50/user/mo, strong free tiers | Fathom, Fireflies, Otter, MeetGeek, Tactiq, Granola, Wave, Bluedot, Notta, Sonnet, Supernormal, VoiceToNotes, Hedy, Colibri, Jamy, Temi, Char, HappyScribe, Voicenotes, AudioPen, TalkNotes, Letterly, Coconote, HyNote AI, Backtrack |
-| `platforms-midmarket.md` | Sales-focused CI with coaching, methodology, CRM enrichment | Avoma, tl;dv, Claap, Grain, Sembly, Read.ai, Fellow, Jamie, Krisp, IRIS Clarity, Cluely, Lindy, Outdoo, Jiminny, Enthu.AI, Demodesk, Salesken, Oliv, Weflow, Noota, Dialpad, Winn.ai, Circleback |
+| `platforms-midmarket.md` | Sales-focused CI with coaching, methodology, CRM enrichment | Avoma, tl;dv, Claap, Grain, Sembly, Read.ai, Fellow, Jamie, Krisp, IRIS Clarity, Cluely, Lindy, Outdoo, Jiminny, Enthu.AI, Demodesk, Salesken, Oliv, Weflow, Scratchpad, Noota, Dialpad, Winn.ai, Circleback |
 | `platforms-enterprise.md` | Enterprise revenue intelligence ($1K+/user/yr) + bolt-on CI | Gong, Modjo, Clari Copilot, Verbit, + Salesloft Conversations, Chorus, Seismic, Revenue.io |
 | `platforms-field.md` | In-person/field sales coaching and mobile recording | Rilla, Siro, Sales Ask, Speakwise, Omi, Plaud |
 
@@ -65,6 +65,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Cresta | Enterprise contact center AI | No | ~$60K-$150K/yr | REST (behind auth) | Yes | Deep (10+ CRMs) | Enterprise contact center (100+ agents), AI virtual agents + real-time coaching + QA |
 | Momentum | AI revenue orchestration + CI add-on | No | $69-99/user/mo + $30 CI add-on | REST (X-API-Key, 100/15min) | No | Deep (Salesforce only) | CRM automation from calls, MEDDIC Autopilot, Slack Deal Rooms, acquired by Salesforce |
 | Oliv | AI-native revenue intelligence | No (14-day trial) | $19-77/user/mo | None | None | Deep (8 CRMs) | Modular Gong alternative — buy only the agents you need, 13x cheaper than Gong |
+| Scratchpad | Salesforce-native AI workspace | Yes (3 views, 100 credits/mo) | $19-49/user/mo | None | None | Deep (Salesforce only) | Salesforce CRM overlay, AI field updates, pipeline sheets, Gong integration (Team+) |
 | Weflow | Salesforce-native Revenue AI | Yes (100 updates) | $19-79/user/mo | None | None | Deep (Salesforce only) | Salesforce teams wanting activity capture + CI + forecasting in one bundle at ~50% of Gong |
 | Noota | AI meeting assistant + recruitment | Yes (300 min/mo) | $19/mo | REST (Business+) | Yes (Zapier) | Medium (7 CRMs: HS/SF/Pipedrive/Zoho/Zendesk/Monday/Dynamics) | Meeting notes + recruitment automation (sourcing, screening agents, voice agents), 50+ languages, EU compliant |
 | Dialpad | UCaaS + CCaaS with AI | No | $15-25/user/mo | REST + Python SDK | Yes (Event Subscriptions) | Medium (Pro+: SF/HS/Zendesk) | Unified phone/video/SMS/contact center with AI Recaps + coaching built in |
@@ -88,4 +89,6 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Cleft Notes | AI voice-to-organized-notes (Apple) | Yes (5 min, unlimited) | $29/yr (Plus) | None | None (Zapier only) | None | Apple-native on-device transcription, ADHD-friendly auto-organization, Obsidian/Notion sync, offline recording |
 | Coconote | AI lecture → study materials (Quizlet) | Yes (basic) | $9.99/mo ($99.99/yr) | None | None | None | Student lecture capture, auto-generated flashcards/quizzes/study guides, AI chat across notes, 100+ languages |
 | HyNote AI | Full-stack AI note-taker (audio/files/YouTube/web) | Yes | $6.66/mo ($79.99/yr) | None | None | Thin (Unlimited only) | Broadest input format coverage (audio + PDF + image + YouTube + web), multilingual, flashcards/quizzes/presentations/podcasts, HIPAA/GDPR |
+| Superpowered | Bot-free AI note-taker (desktop) | Yes (1 cal, 1-mo history) | $25/mo | None | None | Medium (SF/HS, Pro only) | Bot-free device-audio capture, AI Templates, SOC-2/GDPR, Y Combinator-backed |
+| Noted | Voice recorder + timestamped note-taker (Apple) | Yes | $9.99/mo ($79.99/yr, $89.99 LTD) | None | None | None | Timestamped audio-note linking, Apple Pencil drawing, Intelligent Playback, Apple Watch, 18 languages, students/professionals |
 | Backtrack | Retroactive Mac menu bar recorder | Yes (1 hr buffer) | $9.99/mo | None | None | None | Mac users who forget to record, retroactive capture, bot-free, in-person + video calls |

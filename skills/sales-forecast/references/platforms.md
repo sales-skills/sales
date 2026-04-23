@@ -9,6 +9,7 @@ Forecasting capabilities and integration details for each platform that feeds in
 - [Momentum](#in-momentum)
 - [Oliv](#in-oliv)
 - [Weflow](#in-weflow)
+- [Scratchpad](#in-scratchpad)
 
 ### In Sybill
 
@@ -71,6 +72,16 @@ Forecasting capabilities and integration details for each platform that feeds in
 - **Full bundle economics** ($79/user/mo): Activity capture + CI + forecasting. The forecasting module's accuracy depends on the data quality from the other two modules — buying all three together is the intended deployment.
 - **Limitations**: Salesforce-only (no HubSpot or Dynamics forecasting). No public API — cannot export forecast data to external BI tools programmatically (data lives in Salesforce, queryable via SOQL). Not suited for complex enterprise forecast hierarchies at 1,000+ rep scale. Newer platform — less battle-tested at enterprise scale than Clari.
 - **Best for**: Mid-market Salesforce teams (10-100 reps) where forecast inaccuracy traces back to stale CRM data. Weflow's approach is "fix the data first, then forecast" — the forecasting module is most powerful when paired with activity capture and CI. If you already have clean CRM data and need standalone forecasting, Clari or Gong Forecast may be better fits.
+
+### In Scratchpad
+
+- **No dedicated forecasting module** — Scratchpad does NOT generate forecast roll-ups, weighted pipeline, or AI-predicted numbers. It is a Salesforce CRM overlay that improves the data feeding your forecast, not a forecasting tool itself.
+- **AI Field Updates feed forecast accuracy** ($19/user/mo Solo): Automatically extracts methodology fields (MEDDPICC, BANT, SPICED) from calls and populates Salesforce opportunity fields. Forecast accuracy improves because CRM data reflects actual call content rather than stale rep estimates.
+- **Hygiene Monitor for forecast data quality** (Solo+): Tracks missing fields, stale deals, and overdue tasks across the pipeline. Surfaces opportunities with incomplete data that would make forecasts unreliable.
+- **Sales Sheets for pipeline visibility**: Modern spreadsheet and Kanban views of pipeline data. Faster than native Salesforce for reviewing pipeline during forecast calls — but views are Salesforce data, not a separate forecast system.
+- **Deal & Account Agent**: AI assistant that can answer pipeline health questions by cross-referencing calls, emails, and CRM data. Useful for pre-forecast-call prep.
+- **Limitations**: No forecast roll-ups, no pipeline analytics, no deal health scoring, no AI forecast predictions, no forecast submission workflow. All forecasting logic must live in Salesforce native forecasting or a dedicated tool (Clari, Gong Forecast, Weflow). Scratchpad makes the data cleaner — it doesn't generate the forecast.
+- **Best for**: Teams whose forecast inaccuracy traces back to stale CRM data and reps not updating opportunity fields. Scratchpad fixes the data input problem. Pair with Salesforce native forecasting or Clari for the actual forecast. Also useful for teams already using Gong who want better daily pipeline views (Scratchpad Team integrates with Gong).
 
 ### In Dialpad
 

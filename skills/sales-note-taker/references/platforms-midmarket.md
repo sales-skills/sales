@@ -690,6 +690,34 @@ For deep platform coverage (module selection, Salesforce API management, pricing
 - **Pick Weflow when**: Salesforce-only team wanting activity capture + CI + forecasting in one bundle at ~50% of Gong pricing, reps not updating Salesforce (server-side auto-capture requires zero behavior change), need to fix forecast accuracy by fixing CRM data quality first, mid-market team (10-100 reps) wanting self-serve deployment with 14-day trial
 - **Avoid Weflow when**: You use HubSpot or any non-Salesforce CRM, you need VoIP/SMS recording (→ Gong, Revenue.io), you need a public API for custom pipelines (→ Gong, Fireflies, Fathom), you need 1,000+ rep scale (→ Clari, Gong), you need the deepest analytics ecosystem (→ Gong), you need bot-free recording (→ Jamie, Granola, Krisp)
 
+## Scratchpad
+
+For deep platform coverage (module selection, credit system, pricing tiers, comparison with Weflow/Gong/Clari), use `/sales-scratchpad`.
+
+**Positioning**: Salesforce-native AI workspace that sits between sales teams and Salesforce. Unlike standalone revenue intelligence platforms (Gong, Clari), Scratchpad is a CRM overlay — makes Salesforce easier to use with modern UI, AI field updates, and pipeline views. Complements Gong rather than replacing it (Team plan integrates with Gong). 4.9-star rating from 1,470+ G2 reviews.
+
+**Pricing (2026-04)**: Free $0 (3 views, 10 hrs/mo recording, 100 AI credits/mo), Solo $19/user/mo annual ($24 monthly, full workspace, 400 credits/mo), Team $49/user/mo annual ($62 monthly, pooled 800 credits/mo, Gong integration), Enterprise custom (unlimited credits, white-glove services). No setup fees or minimums.
+
+**API**:
+- No public API — no developer portal, no endpoints, no SDK
+- No webhooks or event-based notifications
+- All data flows through the Scratchpad UI into native Salesforce objects (queryable via SOQL/Salesforce API)
+
+**Integrations**: Salesforce (core, bi-directional), Zoom, Google Meet, Microsoft Teams, Gong (Team+), Chorus, Gmail, Outlook, Slack.
+
+**Known issues (from G2/review analysis)**:
+- Complex Salesforce workflows (opportunity creation, multi-step processes) can't be completed in Scratchpad
+- No mobile experience for pipeline management
+- AI credits opaque — consumption per action not clearly documented
+- Integration gaps with SalesLoft and other sales engagement tools
+- Opportunity management views less polished than native Salesforce for complex objects
+- Cost justification difficult — ROI harder to demonstrate vs free/cheaper alternatives
+- No VoIP/SMS capture — phone calls not recorded
+
+**Selection notes**:
+- **Pick Scratchpad when**: Team already has Gong for CI and wants a Salesforce productivity overlay, reps need a modern UI for daily pipeline management (sheets + Kanban), you want AI field updates without buying a full revenue platform, budget is tight ($19-49/user/mo vs Weflow $79 or Gong $100+)
+- **Avoid Scratchpad when**: You need standalone forecasting (→ Weflow, Clari, Gong Forecast), you need a public API for custom integrations (→ Gong, Fireflies, Fathom), you use HubSpot or any non-Salesforce CRM, you need VoIP/SMS recording (→ Gong, Revenue.io), you need a standalone CI platform (→ Gong, Avoma), you need bot-free recording (→ Jamie, Granola, Krisp)
+
 ## Noota
 
 For deep platform coverage (all modules, recruitment automation, pricing breakdown, known issues, troubleshooting), use `/sales-noota`.
