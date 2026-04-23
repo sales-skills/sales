@@ -79,4 +79,5 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Circleback | AI meeting notes + search | No (7-day trial) | $20.83/mo | Webhooks + MCP | Yes (HMAC) | Medium (HS/SF/Attio) | Cross-meeting AI search, bot + botless recording, Slack huddles, webhook automations |
 | Memoro | GDPR-first AI meeting assistant | Yes (75 min/mo) | €9/mo | Undocumented | None | None | Bot-free local recording, German hosting, Blueprints, offline mode, 50+ languages |
 | HappyScribe | AI + human transcription + subtitles | Yes (10 min trial) | $17/mo ($8.50 annual) | REST (200 req/hr) | Yes (per-order URL) | None | Batch transcription in 120+ languages, subtitle generation, human transcription ($2/min), 15+ export formats |
+| MinutesLink | AI meeting note-taker | Yes (10 meetings/mo) | $9/mo | None | None | None (Zapier only) | Budget Google Meet/Zoom teams wanting shareable summary links, no-signup sharing |
 | monday Notetaker | Bolt-on AI note-taker (monday.com) | No (Pro+ required) | Add-on on Pro ($19/seat/mo) | GraphQL (2026-04+) | No | Deep (native boards) | monday.com teams wanting action items → board items, no extra tool |

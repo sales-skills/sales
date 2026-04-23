@@ -925,3 +925,41 @@ For deep platform coverage (Blueprints, Memories, pricing, comparison), use `/sa
 **Selection notes**:
 - **Pick Memoro when**: GDPR with German hosting is non-negotiable, you need bot-free recording across all platforms including Linux, you want offline mode for field recordings, your budget is under €10/mo, you're in education/healthcare/construction verticals, or you need 50+ language transcription with customizable output templates
 - **Avoid Memoro when**: You need CRM integration (→ Fathom Business, Jamie, Granola), you need API/webhook automation (→ Fathom, Fireflies, Wave), you need sales coaching or deal intelligence (→ Gong, Avoma, tl;dv), you need the cheapest possible option with unlimited recordings (→ Fathom free), or you need SOC 2/HIPAA compliance (→ Sonix, Fireflies Enterprise)
+
+## MinutesLink
+
+For deep platform coverage (features, pricing, sharing workflow, known issues), use `/sales-minuteslink`.
+
+**Positioning**: Budget AI meeting note-taker from Pandaverse OÜ (Estonia). Records Google Meet and Zoom calls via bot auto-join or Chrome extension (bot-free). Key differentiator: shareable meeting summary links that recipients view without creating an account. 50+ language transcription, concurrent meeting capture on Pro+. Founded Sep 2023, ~50-100 employees, 4.9/5 (own site), 3.7/5 (The Business Dive).
+
+**Pricing (2026-04)**: Free $0 (10 meetings/mo, 60 min each), Pro $9/mo annual / $16.99/mo monthly (30 meetings/mo, concurrent capture), Business $24/mo annual / $29.99/mo monthly (100 meetings/mo, priority support). Meeting limits are account-wide, not per-seat.
+
+**API**:
+- No public API documented
+- `dev.minuteslink.com` domain exists but DNS not resolving
+- No REST, GraphQL, or webhook endpoints
+
+**Webhooks**: None.
+
+**Integrations**: Google Calendar (native), Google Meet (native), Zoom (native). HubSpot and Salesforce via Zapier. No Slack, Make, or n8n integration. Microsoft Teams planned but not available.
+
+**Key features**:
+- Bot auto-join or Chrome extension (bot-free) recording
+- Speaker-labeled transcripts in 50+ languages
+- AI summaries with action items
+- Meeting chat — ask AI questions about past meetings
+- Public shareable links (no sign-up for recipients)
+- Concurrent meeting capture (Pro+)
+- End-to-end encryption, GDPR/CCPA compliant
+
+**Known issues**:
+- No Microsoft Teams support (top complaint) — planned with no timeline
+- No mobile app — desktop/web only
+- AI notes are basic compared to Fathom/Fireflies — no coaching analytics, no methodology scorecards
+- No API or webhooks — CRM integration limited to Zapier
+- Monthly meeting caps are account-wide — a 4-person team on Free shares 10 meetings total
+- Subscription cancellation flow is not prominently surfaced in the UI
+
+**Selection notes**:
+- **Pick MinutesLink when**: Budget under $10/mo, Google Meet or Zoom only, you need shareable meeting links for external stakeholders without requiring sign-up, simple transcription + summaries are sufficient, EU data jurisdiction matters (Estonia-based), or you need concurrent meeting capture at low cost
+- **Avoid MinutesLink when**: You need Microsoft Teams (→ Fathom, Fireflies, tl;dv), you need API/webhook automation (→ Fathom, Fireflies, Wave), you need CRM beyond Zapier (→ Fathom Business, Fireflies Business), you need coaching/methodology features (→ tl;dv, Avoma, Gong), you need mobile recording (→ Wave, Omi, Plaud), or you need unlimited recordings (→ Fathom free)
