@@ -840,3 +840,49 @@ For deep platform coverage (setup, Autopilot, screen capture, AI Skills, export,
 **Selection notes**:
 - **Pick Shadow when**: You want bot-free recording with screen capture (unique feature), you're on macOS, you want the cheapest bot-free option ($8/mo vs Granola $14/mo or Jamie €21/mo), you want autopilot meeting detection with zero setup, or you need AI-drafted follow-up emails automatically
 - **Avoid Shadow when**: Your team uses Windows (→ Jamie), you need CRM integration (→ Fathom Business, Fireflies Business, Bluedot Business), you need a public API for pipelines (→ Fathom, Fireflies, Gong), you need team admin controls or analytics (→ tl;dv Business, Avoma, Gong), or you need HIPAA/regulated compliance (→ Fireflies Enterprise, Gong)
+
+---
+
+## HappyScribe
+
+For deep platform coverage (API endpoints, Orders workflow, export formats, glossaries, pricing tiers), use `/sales-happyscribe`.
+
+**Positioning**: Batch transcription + subtitling platform with the broadest language support (120+ languages). Offers both AI transcription (~85% accuracy) and human transcription (99% accuracy at $2.00/min). Key differentiator vs Sonix is language coverage (120+ vs 53+), advanced subtitle editor with styling/positioning, and more export formats (15+ including Premiere XML, FCP XML, STL, AVID). Not a live meeting tool — upload-only.
+
+**Pricing (2026-04)**: Free $0 (10-min one-time trial, watermarked exports), Basic $17/mo ($8.50 annual) for 120 AI min, Pro $29/mo ($19 annual) for 600 AI min + 3 seats, Business $89/mo ($59 annual) for 6,000 AI min + 5 seats + style guides. Overflow: $0.20/min. Human transcription: $2.00/min billed separately.
+
+**API**:
+- Docs: `https://dev.happyscribe.com/`
+- Base URL: `https://www.happyscribe.com/api/v1`
+- Auth: Bearer token (API key from account settings)
+- Key endpoints:
+  - `GET /uploads/new` — get signed S3 upload URL
+  - `POST /orders` — create transcription/subtitling/translation order (replaces deprecated `POST /transcriptions`)
+  - `POST /orders/<ID>/confirm` — confirm order for processing
+  - `GET /transcriptions` — list transcriptions (filter by org, folder, tags)
+  - `GET /transcriptions/<ID>` — retrieve transcription with state
+  - `POST /exports` — create export in 12+ formats (txt, docx, pdf, srt, vtt, stl, premiere, fcp, avid, maxqda, json, html)
+  - `GET /exports/<ID>` — retrieve export status and download URL
+  - `POST /orders/translation` — create translation order
+  - `GET /glossaries` — list custom glossaries
+  - `GET /style_guides` — list style guides
+  - Organization and membership management endpoints
+- Rate limit: 200 req/hour
+
+**Webhooks**:
+- Via `webhook_url` parameter on order creation — notified on completion
+- No standalone webhook management API — URL set per-order
+
+**Integrations**: YouTube, Vimeo, Google Drive (native imports). Zapier (9,000+ apps). No native CRM connectors (no HubSpot, Salesforce, Pipedrive).
+
+**Known issues (from review analysis)**:
+- AI accuracy drops significantly with accents, multiple speakers, or background noise
+- Free trial is 10 minutes total with watermarked exports — feels like bait-and-switch
+- Pricing has increased suddenly for some users — lock in annual billing
+- Browser editor can crash/refresh, losing unsaved edits
+- Translation quality regressed after AI model change — some language pairs produce gibberish
+- No HIPAA BAA documented — verify with HappyScribe for healthcare use
+
+**Selection notes**:
+- **Pick HappyScribe when**: You need batch transcription with the widest language coverage (120+ languages), you produce subtitles for video in multiple languages and need advanced subtitle editing, you need human transcription for legal/broadcast accuracy, you want extensive export formats (Premiere XML, FCP XML, STL, AVID), or you need SOC 2 + GDPR compliance for EU data residency
+- **Avoid HappyScribe when**: You need live meeting recording (→ Fathom, Fireflies, Otter), you need CRM integration (→ Fathom Business, Fireflies Business), you need HIPAA compliance (→ Sonix, Fireflies Enterprise), you need higher API rate limits for pipeline throughput (→ Sonix), or you need real-time transcription during calls (→ Colibri, Krisp)

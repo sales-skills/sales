@@ -178,6 +178,7 @@ Router recommends a 4-skill sequence:
 | `/sales-bluedot` | Bluedot platform help — bot-free AI note-taker with video recording, Chrome extension + desktop/mobile apps, Svix webhooks, HubSpot/Salesforce CRM sync, screen recording, pricing tiers |
 | `/sales-notta` | Notta platform help — AI meeting transcription in 58 languages, Notta Bot, Notta Brain cross-meeting AI, Zapier automation, CRM sync to Salesforce/HubSpot/Zoho/Freshsales/Salesflare, pricing tiers |
 | `/sales-sonix` | Sonix platform help — AI transcription, translation, and subtitling for uploaded audio/video (53+ languages), REST API, SRT/VTT subtitles, video burn-in, Zapier, SOC 2/HIPAA, pricing tiers |
+| `/sales-happyscribe` | HappyScribe platform help — batch AI + human transcription in 120+ languages, subtitle generation, translation, REST API, 15+ export formats (SRT/VTT/Premiere XML/FCP XML), SOC 2/GDPR, pricing tiers |
 | `/sales-transcribeme` | TranscribeMe platform help — human+AI hybrid transcription (99% accuracy on human tiers), HIPAA compliance, REST API, Machine Express/First Draft/Standard/Verbatim tiers, translation, .NET/Node.js SDKs |
 | `/sales-temi` | Temi platform help — budget AI transcription at $0.25/min (Rev's engine), English-only batch upload, REST API, Zapier/Make automation, mobile app |
 | `/sales-transkriptor` | Transkriptor platform help — AI transcription in 100+ languages, meeting bot (Zoom/Meet/Teams), subtitles, sentiment analysis, REST API (Enterprise only), Zapier/Make, pricing tiers |
