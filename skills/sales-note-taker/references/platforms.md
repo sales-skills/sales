@@ -6,7 +6,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 
 | File | What's in it | Platforms |
 |---|---|---|
-| `platforms-smb.md` | Budget-friendly tools under ~$50/user/mo, strong free tiers | Fathom, Fireflies, Otter, MeetGeek, Tactiq, Granola, Wave, Bluedot, Notta, Sonnet, Supernormal, VoiceToNotes, Hedy, Colibri, Jamy, Temi, Char, HappyScribe, Voicenotes, AudioPen, TalkNotes |
+| `platforms-smb.md` | Budget-friendly tools under ~$50/user/mo, strong free tiers | Fathom, Fireflies, Otter, MeetGeek, Tactiq, Granola, Wave, Bluedot, Notta, Sonnet, Supernormal, VoiceToNotes, Hedy, Colibri, Jamy, Temi, Char, HappyScribe, Voicenotes, AudioPen, TalkNotes, Letterly |
 | `platforms-midmarket.md` | Sales-focused CI with coaching, methodology, CRM enrichment | Avoma, tl;dv, Claap, Grain, Sembly, Read.ai, Fellow, Jamie, Krisp, IRIS Clarity, Cluely, Lindy, Outdoo, Jiminny, Enthu.AI, Demodesk, Salesken, Oliv, Weflow, Noota, Dialpad, Winn.ai, Circleback |
 | `platforms-enterprise.md` | Enterprise revenue intelligence ($1K+/user/yr) + bolt-on CI | Gong, Modjo, Clari Copilot, Verbit, + Salesloft Conversations, Chorus, Seismic, Revenue.io |
 | `platforms-field.md` | In-person/field sales coaching and mobile recording | Rilla, Siro, Sales Ask, Speakwise, Omi, Plaud |
@@ -84,3 +84,4 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Voicenotes | AI voice notes + meetings | Yes (basic) | $14.99/mo ($99.99/yr) | None (Zapier only) | Yes (custom) | None | Personal voice capture, Ask AI search, Obsidian/Notion sync, Apple Watch/WearOS, 100+ languages |
 | monday Notetaker | Bolt-on AI note-taker (monday.com) | No (Pro+ required) | Add-on on Pro ($19/seat/mo) | GraphQL (2026-04+) | No | Deep (native boards) | monday.com teams wanting action items → board items, no extra tool |
 | TalkNotes | AI voice note app (template-driven) | No (7-day trial) | ~$10/mo (Plus) | None (contact for access) | None (Zapier only) | None | Template-driven voice-to-content (100+ formats), content creators, 50+ languages |
+| Letterly | AI speech-to-content (25+ rewrites) | Yes (limited) | $69 LTD (1 device) | None | Yes (custom) | None | Voice-to-content with 25+ rewrite formats, 90+ languages, offline recording, content creators |

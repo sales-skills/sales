@@ -1102,3 +1102,52 @@ For deep platform coverage (features, pricing, templates, Zapier setup, comparis
 **Selection notes**:
 - **Pick TalkNotes when**: You want voice memos converted into specific content formats (blog posts, emails, to-do lists) using pre-made templates, you value the widest template library (100+), you want a shareable recorder link to collect guest recordings (Pro), you need AI Chat to query your notes, or you prefer mobile-first recording with Siri integration
 - **Avoid TalkNotes when**: You need a permanent free tier (→ Voicenotes, AudioPen), you need semantic search across notes (→ Voicenotes Ask AI), you need native Obsidian/Notion sync (→ Voicenotes), you need a public API (→ Fathom, Fireflies, Wave), you need CRM integration (→ Fathom Business, Sybill, tl;dv), you need speaker diarization (→ Fireflies, Otter, Fathom), you need more Zapier triggers (→ Voicenotes has 9), or you prefer a one-time payment (→ AudioPen)
+
+## Letterly
+
+For deep platform coverage (features, pricing, rewrite options, Zapier setup, comparison with AudioPen/Voicenotes/TalkNotes), use `/sales-letterly`.
+
+**Positioning**: AI speech-to-text app that transforms unstructured voice recordings into polished, formatted content using 25+ built-in rewrite options. Unlike pure transcription (Voicenotes), custom-style rewriting (AudioPen), or template-driven output (TalkNotes), Letterly focuses on instant content reformatting — turn a voice memo into a social post, email, to-do list, or journal entry in seconds. Available on iOS, Android, web, and macOS. 300,000+ users. Content creators, entrepreneurs, journalists, and professionals who need quick formatted output from spoken thoughts.
+
+**Pricing (2026-04)**: AppSumo LTD — Plan 1 $69 (1 device), Plan 2 $138 (2 devices), Plan 3 $207 (4 devices). All plans include unlimited recordings, 27 rewrite options, 90+ languages, 15-min recording limit. Regular subscription pricing not publicly displayed on website.
+
+**API**:
+- No public REST API
+- No SDKs or MCP server
+
+**Webhooks**: Custom webhook support available. Payload format and authentication not publicly documented.
+
+**Zapier** (primary automation path):
+- Trigger: Note Created — sends note text to connected apps
+- Connects to 8,000+ apps
+- Configured via Actions button inside each note
+- Some users report intermittent trigger reliability issues
+
+**Integrations**: Zapier, webhooks, AI tool connections (Claude, ChatGPT, Cursor, Perplexity, Gemini, Codex). No native CRM, Notion, Obsidian, or Slack integrations.
+
+**Key features**:
+- Voice recording on iOS, Android, web, macOS (Windows coming soon)
+- Screen-off recording and offline recording capability
+- Widget for one-tap recording from home screen
+- 25+ built-in rewrite options (X post, formal email, friendly message, to-do list, journal, structured text, article outline, video script, etc.)
+- Custom rewrite creation
+- Automatic language detection for 90+ languages
+- Translation into any supported language
+- Tag-based note organization
+- Cross-device cloud sync
+- Dark/light mode
+
+**Known issues**:
+- 15-minute recording limit per session — no way to extend
+- No audio file upload — must record directly in-app
+- No search feature — finding older notes is difficult as collection grows
+- Per-device licensing on LTD — adding devices requires upgrade
+- Ghost text generation — starting/stopping a recording without speech produces random text
+- AI rewrites can feel generic/repetitive for some formats
+- Mobile-first design limits desktop workflows
+- Zapier integration reported as unreliable by some users
+- No folder organization — tags only
+
+**Selection notes**:
+- **Pick Letterly when**: You want 25+ instant rewrite formats from voice (social posts, emails, journals, to-do lists), you need screen-off or offline recording, you want 90+ language auto-detection, you prefer a lifetime deal pricing model, you need AI tool connections (Claude, ChatGPT, Cursor), or you create content across many formats from voice regularly
+- **Avoid Letterly when**: You need search across notes (→ Voicenotes Ask AI), you need audio file upload (→ AudioPen, TalkNotes, Voicenotes), you need recordings longer than 15 minutes (→ TalkNotes Pro 2hr, Voicenotes unlimited), you need native Obsidian/Notion sync (→ Voicenotes), you need a public API (→ Fathom, Fireflies, Wave), you need CRM integration (→ Fathom Business, Sybill, tl;dv), you need speaker diarization (→ Fireflies, Otter, Fathom), or you need team features (→ Voicenotes Teams, Fireflies)
