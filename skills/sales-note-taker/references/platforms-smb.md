@@ -1150,4 +1150,57 @@ For deep platform coverage (features, pricing, rewrite options, Zapier setup, co
 
 **Selection notes**:
 - **Pick Letterly when**: You want 25+ instant rewrite formats from voice (social posts, emails, journals, to-do lists), you need screen-off or offline recording, you want 90+ language auto-detection, you prefer a lifetime deal pricing model, you need AI tool connections (Claude, ChatGPT, Cursor), or you create content across many formats from voice regularly
-- **Avoid Letterly when**: You need search across notes (→ Voicenotes Ask AI), you need audio file upload (→ AudioPen, TalkNotes, Voicenotes), you need recordings longer than 15 minutes (→ TalkNotes Pro 2hr, Voicenotes unlimited), you need native Obsidian/Notion sync (→ Voicenotes), you need a public API (→ Fathom, Fireflies, Wave), you need CRM integration (→ Fathom Business, Sybill, tl;dv), you need speaker diarization (→ Fireflies, Otter, Fathom), or you need team features (→ Voicenotes Teams, Fireflies)
+- **Avoid Letterly when**: You need search across notes (→ Voicenotes Ask AI), you need audio file upload (→ AudioPen, TalkNotes, Voicenotes), you need recordings longer than 15 minutes (→ TalkNotes Pro 2hr, Voicenotes unlimited), you need native Obsidian/Notion sync (→ Voicenotes, Cleft Notes), you need a public API (→ Fathom, Fireflies, Wave), you need CRM integration (→ Fathom Business, Sybill, tl;dv), you need speaker diarization (→ Fireflies, Otter, Fathom), or you need team features (→ Voicenotes Teams, Fireflies)
+
+## Cleft Notes
+
+For deep platform coverage (features, pricing, integrations, Obsidian/Notion sync, comparison with Voicenotes/AudioPen), use `/sales-cleftnotes`.
+
+**Positioning**: Apple-native AI voice-to-notes app designed for "verbal thinkers" and neurodivergent users (ADHD). Uses on-device transcription to capture speech and an AI Scribe to restructure rambling thoughts into organized notes with auto-generated headings. Available on iOS, iPadOS, macOS, Apple Watch, and CarPlay. Featured in Fast Company "25 Best New Apps." 4.7/5 stars on App Store. Privacy-first with on-device transcription. The cheapest annual voice note plan in the category at $29/yr.
+
+**Pricing (2026-04)**: Free $0 (5-min recordings, unlimited notes, markdown editor, publish online). Plus $9/mo or $29/yr — 30-min recordings, custom AI instructions, Zapier, Obsidian, Notion, attachments.
+
+**API**:
+- No public REST API
+- No SDKs or MCP server
+- OpenAPI spec referenced in docs but not publicly accessible
+
+**Webhooks**: None documented. Automation via Zapier (Plus only) or Apple Shortcuts.
+
+**Zapier** (Plus only):
+- Trigger: New note created
+- Connects to 8,000+ apps
+
+**Integrations**: Obsidian (macOS-only, Plus), Notion (one-way push, Plus), Apple Notes, Apple Shortcuts, Zapier (Plus), Craft, Reflect, Drafts, ChatGPT, Perplexity. Task manager integrations via Shortcuts/Zapier (Asana, ClickUp, Todoist, Trello, Things, TickTick, Jira, Google Tasks, Microsoft To Do).
+
+**Key features**:
+- On-device voice transcription (works offline)
+- AI Scribe auto-organizes with headings and restructures for readability
+- Custom AI instructions (Plus) — control formatting, tone, structure
+- Full visual markdown editor
+- Lock Screen widget and Action Button for one-tap capture
+- Apple Watch and CarPlay recording
+- Live transcription during recording
+- Batch processing — process multiple recordings at once
+- Append to existing notes
+- Shareable public links
+- Tags, search, filters, archive
+- File and image attachments (Plus)
+- Multi-language transcription
+- GDPR, CCPA, WCAG 2.1 AA compliant
+
+**Known issues**:
+- Apple ecosystem only — no Android, no Windows, no Linux
+- Recording failures reported after ~2 minutes in some cases, with no audio recovery
+- Garbled/nonsensical transcription output occasionally (device-dependent)
+- 5-minute free tier recording limit (30 min on Plus)
+- Obsidian sync is macOS-only — doesn't work on iOS/iPadOS
+- Notion sync is one-way (Cleft → Notion)
+- No speaker diarization — single-speaker only
+- No public API — Zapier or Apple Shortcuts are the only automation paths
+- AI auto-organizes by default — users expecting verbatim transcripts get restructured output
+- Offline notes occasionally fail to sync when reconnecting
+
+**Selection notes**:
+- **Pick Cleft Notes when**: You're fully in the Apple ecosystem, you want on-device transcription for privacy and offline use, you value auto-organization with headings over raw transcripts, you want the cheapest annual plan ($29/yr), you need native Obsidian sync on macOS, you want an ADHD-friendly brain dump tool, or you need Apple Watch/CarPlay recording
+- **Avoid Cleft Notes when**: You need Android or Windows (→ Voicenotes, AudioPen, TalkNotes, Letterly), you need semantic search across notes (→ Voicenotes Ask AI), you need meeting recording with calendar auto-join (→ Voicenotes, Fathom, Fireflies), you need a public API (→ Fathom, Fireflies, Wave), you need CRM integration (→ Fathom Business, Sybill, tl;dv), you need speaker diarization (→ Fireflies, Otter, Fathom), you need team features (→ Voicenotes Teams, Fireflies), or you want AI to rewrite into a specific writing style (→ AudioPen)
