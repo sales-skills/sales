@@ -872,3 +872,45 @@ For deep platform coverage (webhook setup, MCP server, CRM integration, plan com
 **Selection notes**:
 - **Pick Circleback when**: You need cross-meeting AI search with webhook-based automations, you want both bot-based and botless recording options, you need Slack huddle recording (Team plan), you want MCP server integration for AI-powered workflows (Claude/Cursor/Raycast), you need in-person recording via mobile alongside virtual meetings, your CRM is HubSpot/Salesforce/Attio
 - **Avoid Circleback when**: You need a free tier (→ Fathom, tl;dv, MeetGeek), you need coaching or methodology scorecards (→ tl;dv, Avoma, Gong), you need customizable note templates (→ tl;dv, Granola, MeetGeek), you need a full REST API for custom data pipelines (→ Fathom, Fireflies, Gong), you need deal intelligence or revenue forecasting (→ Gong, Clari Copilot, Sybill)
+
+---
+
+## Attention
+
+For deep platform coverage (API endpoints, MCP server, workflow builder, coaching scorecards, CRM auto-update, pricing tiers, known issues, troubleshooting), use `/sales-attention`.
+
+**Positioning**: AI-native conversation intelligence and revenue orchestration platform. Records calls across Zoom/Meet/Teams, automates CRM updates, generates coaching scorecards (MEDDIC/BANT/custom), provides real-time battlecards during live calls, and offers a no-code workflow builder. Claims more integrations (200+) than any CI competitor. Positioned below Gong on price, above most mid-market tools on features. G2 4.9 stars (~15 reviews).
+
+**Pricing (2026-04, best-effort from third-party reviews — not publicly listed)**: Starter ~$59/user/mo (call recording, transcription, basic AI coaching), Professional ~$149/user/mo (advanced coaching, custom scorecards, deeper analytics), Enterprise ~$399/user/mo (custom AI agents, advanced integrations, premium support). Free trial available, no permanent free tier.
+
+**API**:
+- Docs: `https://docs.attention.com` (OpenAPI spec at `/api-reference/openapi.json`)
+- Base URL: `https://api.attention.tech/v2`
+- Auth: Bearer token via `Authorization: Bearer API_KEY` header (Admin-scoped — manage via Settings → Organization → API Keys)
+- Key endpoints:
+  - `GET /conversations` — list conversations with filters (date, participants, teams, status, pagination)
+  - `GET /conversations/{id}` — get conversation details (transcription, participants, metadata)
+  - `POST /conversations/import` — import from external sources (Gong, Salesforce)
+  - `POST /ask_attention/v2` — query insights across all conversations
+  - `POST /createScorecardResult` — score a conversation
+  - `POST /snippets` — create shareable clip
+  - `GET /organizations/users`, `POST /organizations/users` — manage users
+  - `GET /teams`, `GET /teams/{id}/members` — team management
+  - SCIM 2.0 provisioning (Okta, Azure AD)
+- MCP server: https://github.com/highgravitas/attention-mcp (search calls, analyze deals, review scorecards via Claude/ChatGPT)
+
+**Rate limits**: 429 responses when exceeded — specific numbers not publicly documented. Contact account manager for increases.
+
+**Integrations**: Zoom/Meet/Teams (video), Salesforce/HubSpot (CRM, native 2-way sync), Gmail/Outlook (email), Slack (notifications), Aircall/Dialpad (dialer), Apollo/Clay (enrichment), Zapier (automation), Cal.com/Calendly (scheduling), Asana/ClickUp/Confluence (PM), Airtable/Box/Dropbox (storage), SCIM/SSO (provisioning). 200+ total.
+
+**Known issues (from G2/review analysis)**:
+- CRM sync can bug out intermittently — fields don't update on some calls, requires checking workflow run logs
+- Insight prompt customization limited — users want more control over AI extraction
+- AI agent features (Agent Builder) still maturing — bugs reported especially in complex automations
+- Slow insight loading on complex calls — not real-time for all features
+- Pricing hidden behind sales call — hard to evaluate without committing to a demo
+- Only ~15 G2 reviews despite 4.9 rating — limited independent review coverage
+
+**Selection notes**:
+- **Pick Attention when**: You want real-time battlecards during live calls, you need 200+ integrations out of the box, you want a no-code workflow builder for post-call automations, you need coaching scorecards with MEDDIC/BANT/custom frameworks, you want an MCP server for AI assistant integration, you're looking for a Gong alternative at a lower price point
+- **Avoid Attention when**: You need a free tier (→ Fathom, tl;dv, MeetGeek), you need deep behavioral/body language insights (→ Sybill Buyer EQ), you want transparent self-serve pricing (→ Fathom, Fireflies, tl;dv), you need a large independent review base for vendor evaluation (→ Gong, Chorus), you need a public REST API with documented rate limits (→ Fathom, Fireflies, Gong)
