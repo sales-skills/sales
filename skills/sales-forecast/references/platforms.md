@@ -11,6 +11,8 @@ Forecasting capabilities and integration details for each platform that feeds in
 - [Weflow](#in-weflow)
 - [Scratchpad](#in-scratchpad)
 - [People.ai (Backstory)](#in-people-ai-backstory)
+- [Dialpad](#in-dialpad)
+- [Veloxy](#in-veloxy)
 
 ### In Sybill
 
@@ -102,3 +104,12 @@ Forecasting capabilities and integration details for each platform that feeds in
 - **AI Scorecard**: Automated call scoring can surface quality trends that correlate with pipeline outcomes. Not a forecasting tool itself, but provides signal for forecast accuracy.
 - **Limitations**: Dialpad does NOT have a dedicated forecasting module. No pipeline analytics, deal health scoring, AI forecast predictions, or CRM-native forecast roll-ups. Analytics are limited to call activity metrics (volume, duration, outcomes), not revenue metrics (pipeline, stage progression, win rates). For revenue forecasting, use Clari, Gong Forecast, Weflow, or Salesforce native forecasting. Dialpad's analytics complement these tools by providing the call activity data layer.
 - **Best for**: Teams using Dialpad as their phone system who want to feed call activity data into a separate forecasting tool. Not a standalone forecasting solution.
+
+### In Veloxy
+
+- **Predictive Sales Intelligence**: AI analyzes and prioritizes leads and contacts based on buyer intent signals. Surfaces real-time actionable signals across desktop and mobile — helps reps focus on highest-probability prospects rather than working through lists sequentially.
+- **Pipeline management**: Dashboard views show pipeline health, deal progression, and activity metrics. Managers can track team performance and identify gaps.
+- **Activity-backed data**: Veloxy automatically logs emails, calls, and activities to Salesforce, reducing the gap between actual rep activity and CRM data. More accurate CRM data improves forecast inputs.
+- **Geolocation for pipeline visibility**: Thematic mapping visualizes opportunities by deal size, stage, or custom criteria on a map — useful for territory-based pipeline reviews and identifying geographic concentration risk.
+- **Limitations**: Veloxy does NOT have a dedicated forecasting module. No weighted pipeline, AI-predicted revenue, forecast submission workflows, or rollup views. No conversation intelligence to analyze deal sentiment from calls. Predictive intelligence prioritizes leads for reps — it doesn't predict revenue outcomes for managers. For dedicated forecasting, pair with Salesforce native forecasting or Clari.
+- **Best for**: Field sales teams whose forecast inaccuracy traces back to missing CRM data because reps don't log activities. Veloxy fixes the data input problem through automatic activity capture and email sync. Once CRM data is cleaner, forecasts built on that data become more reliable. Not a standalone forecasting tool — it's a forecast-enabler through better data hygiene.

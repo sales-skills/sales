@@ -152,7 +152,7 @@ If there's a gap between the forecast and quota, build a plan to close it:
 - **Gap plan target**: Gap × 1.5 (plan for more than you need, since not all levers will work)
 - **Minimum viable gap close**: At least 50% of gap plan should come from Pull-in and Accelerate (fastest to materialize)
 
-For platform-specific forecasting guidance (Momentum, Sybill, Oliv, Outreach, Weflow, People.ai), see references/platforms.md.
+For platform-specific forecasting guidance (Momentum, Sybill, Oliv, Outreach, Weflow, People.ai, Veloxy, Scratchpad, Dialpad), see references/platforms.md.
 
 ## Before recommending a specific platform skill
 
@@ -177,6 +177,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-revenue-io` — Revenue.io platform help — Revenue Intelligence dashboards and deal scoring for Salesforce-native teams
 - `/sales-momentum` — Momentum platform help — AI revenue orchestration with automated CRM updates, MEDDIC Autopilot, AI coaching, churn signals, executive briefs (acquired by Salesforce Feb 2026)
 - `/sales-modjo` — Modjo platform help — EU-native deal intelligence, Ask Modjo AI pipeline queries, CRM auto-fill for forecast accuracy, GDPR-compliant
+- `/sales-veloxy` — Veloxy platform help — Salesforce-native field sales with predictive intelligence and automatic activity logging for better forecast data
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Gotchas

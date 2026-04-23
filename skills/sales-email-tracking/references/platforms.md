@@ -19,6 +19,8 @@ Detailed per-platform tracking setup — tracking types, notifications, webhooks
 - [In Mailgun (Sinch)](#in-mailgun-sinch)
 - [In Klaviyo](#in-klaviyo)
 - [In ActiveCampaign](#in-activecampaign)
+- [In Veloxy](#in-veloxy)
+- [In Cirrus Insight](#in-cirrus-insight)
 
 ## In Yesware
 
@@ -172,3 +174,27 @@ Detailed per-platform tracking setup — tracking types, notifications, webhooks
 - **Webhooks**: 25+ event types via Settings > Developer > Webhooks. Events include: subscribe, unsubscribe, update, click, open, sent_mail, reply, bounce, deal_add, deal_update, task_complete, and more. Payload is form-encoded with event type and relevant IDs.
 - **No real-time desktop notifications**: ActiveCampaign doesn't push individual open/click alerts. Use webhooks to trigger Slack/email notifications, or set up automations to notify sales when contacts engage.
 - **Gotcha**: Same Apple MPP and bot-click caveats apply. ActiveCampaign's site tracking and event tracking are more reliable engagement signals than email opens. Use goal conversions in automations as the most trustworthy metric.
+
+## In Veloxy
+
+- **Tracking types**: Opens (pixel) and clicks (link wrapping) — built into Veloxy Lite ($35/user/mo). Email templates support merge fields for personalization.
+- **Drip campaigns**: Multi-touch automated email sequences with scheduled timing. Sends from your real inbox (Gmail/Outlook).
+- **Notifications**: Mobile push notifications and desktop alerts when prospects engage with tracked emails.
+- **Salesforce integration**: All email engagement data syncs bidirectionally to Salesforce — opens, clicks, and replies logged on Contact/Lead/Opportunity records. Available for Salesforce reports and dashboards.
+- **Predictive signals**: AI-powered buyer intent scoring combines email engagement with other activity data to prioritize leads. Surfaces most-engaged prospects automatically.
+- **Dashboard analytics**: Email analytics dashboard shows open rates, click rates, and engagement patterns across templates and campaigns.
+- **Limitation**: Email logging only captures emails to contacts already in Salesforce — if a prospect isn't in your CRM yet, their engagement won't sync. Create the contact first.
+- **Limitation**: No deliverability reporting — you don't know inbox placement vs spam rate.
+- **Gotcha**: Veloxy sends from your real email inbox. Gmail caps at 2,000/day, Outlook at 300/day. Drip campaigns count against these limits. For high-volume outbound, use a dedicated sending tool instead.
+- **Gotcha**: Veloxy (field sales, $25/mo) and Veloxy Lite (email-focused, $35/mo) are separate products. Email tracking and drip campaigns require Veloxy Lite specifically.
+
+## In Cirrus Insight
+
+- **Tracking types**: Opens (pixel) and clicks (link wrapping) — tracked via the Buyer Signals module ($10/user/mo). Attachment tracking shows page-by-page analytics (which slides prospects spent time on).
+- **Notifications**: Buyer Signals surfaces engagement data in the Salesforce Sidebar in real-time. Email open/click events log to Salesforce Activity records.
+- **Website tracking**: Buyer Signals tracks website visits (requires tracking pixel installation) alongside email engagement.
+- **Salesforce integration**: All engagement data syncs to Salesforce — opens, clicks, attachment views, and website visits logged on Contact/Lead/Opportunity records. Engagement data available for Salesforce reports and dashboards.
+- **Email Blast tracking**: Personalized mass emails sent via Email Blast ($12/user/mo) include tracking. Sends from your real inbox (good for deliverability). Known to error on lists over 500 — batch in groups of 100-150.
+- **Limitation**: Buyer Signals is a separate paid module ($10/user/mo) — tracking is not included with basic email sync. No dedicated analytics dashboard outside Salesforce.
+- **Limitation**: No deliverability reporting — you don't know inbox placement vs spam rate.
+- **Gotcha**: Cirrus Insight sends from your real email inbox, not a separate sending infrastructure. This means email provider sending limits apply (Gmail: 2,000/day, Outlook: 300/day for individual accounts). Good for deliverability on small sends, limiting for large campaigns.

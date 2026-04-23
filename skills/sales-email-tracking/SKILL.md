@@ -115,7 +115,7 @@ Security tools like Barracuda, Mimecast, Proofpoint, and Microsoft Defender pre-
 
 ## Step 4 — Platform-specific guidance
 
-For platform-specific tracking setup and configuration (Yesware, Salesloft, Apollo, HubSpot Sales, Mailshake, Reply.io, Woodpecker, Seismic, Mixmax, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign), see references/platforms.md.
+For platform-specific tracking setup and configuration (Yesware, Salesloft, Apollo, HubSpot Sales, Mailshake, Reply.io, Woodpecker, Seismic, Mixmax, SendGrid, Postmark, Customer.io, Mailgun, Klaviyo, ActiveCampaign, Veloxy, Cirrus Insight), see references/platforms.md.
 
 ## Step 5 — Actionable guidance
 
@@ -187,6 +187,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-activecampaign` — ActiveCampaign platform help (site tracking, event tracking, 25+ webhook types, automation analytics)
 - `/sales-snov` — Snov.io platform help (email tracker Gmail extension, campaign opens/clicks/replies tracking, sentiment analysis)
 - `/sales-klaviyo` — Klaviyo platform help (flow/campaign analytics, revenue attribution, Metrics API, benchmarks)
+- `/sales-veloxy` — Veloxy platform help (Salesforce-native field sales with email tracking, drip campaigns, predictive intelligence)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
 ## Examples

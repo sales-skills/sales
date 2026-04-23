@@ -248,6 +248,7 @@ Router recommends a 4-skill sequence:
 | `/sales-people-ai` | People.ai (now Backstory) platform help — automatic activity capture, deal intelligence, pipeline health, revenue forecasting, MCP integration, multi-CRM (Salesforce/Dynamics/Oracle), enterprise pricing |
 | `/sales-scratchpad` | Scratchpad platform help — Salesforce-native AI workspace with call recording, AI field updates, pipeline sheets, Hygiene Monitor, Deal Agent, Gong integration, $0-49/user/mo |
 | `/sales-laserfocus` | Laserfocus platform help — Salesforce overlay with Stacks, table views, bulk editing, precache technology, Field Groups, task management, $0-30/user/mo (YC W20, Inactive) |
+| `/sales-veloxy` | Veloxy platform help — Salesforce-native field sales enablement with predictive intelligence, geolocation route planning, email tracking, mobile CRM, $25-35/user/mo |
 | `/sales-weflow` | Weflow platform help — Salesforce-native Revenue AI with activity capture, conversation intelligence (96+ languages), deal intelligence & forecasting, Ask Weflow AI, Chrome Extension, Mobile Copilot, $19-79/user/mo |
 | `/sales-dialpad` | Dialpad platform help — AI-native UCaaS + CCaaS with DialpadGPT, AI Recaps, AI Coaching Hub, contact center, voice, video, SMS, 70+ integrations, $15-25/user/mo |
 | `/sales-deal-inspect` | Inspect deal health, map stakeholders, identify risks, recommend next actions |
