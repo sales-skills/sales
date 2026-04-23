@@ -1255,3 +1255,52 @@ For deep platform coverage (features, pricing, study material generation, compar
 **Selection notes**:
 - **Pick Coconote when**: You're a student who wants auto-generated flashcards, quizzes, and study guides from lecture recordings — no other tool in this category generates active study aids. You want folder-scoped AI chat to turn course notes into a searchable knowledge base. You need cross-platform support (iOS + Android + web).
 - **Avoid Coconote when**: You need any integrations (→ Voicenotes, Cleft Notes, Fathom, Fireflies), you need Obsidian/Notion sync (→ Voicenotes, Cleft Notes), you need a public API (→ Fathom, Fireflies, Wave), you need CRM integration (→ Fathom Business, Sybill, tl;dv), you need speaker diarization (→ Fireflies, Otter, Fathom), you need on-device/offline transcription (→ Cleft Notes), you record lectures over 2-3 hours (processing fails), or you want polished rewriting (→ AudioPen, Letterly)
+
+---
+
+## HyNote AI
+
+For deep platform coverage (all tiers, credit system, content generation, integrations, comparison with alternatives), use `/sales-hynote`.
+
+**Positioning**: Full-stack AI note-taker by Turing Intelligence LLC that captures audio, meetings, PDFs, images, YouTube videos, and web pages, then transforms them into structured notes, flashcards, quizzes, mind maps, presentations, and AI-narrated podcasts. Positions as privacy-focused (GDPR/CCPA/HIPAA) with superior multilingual accuracy. Cross-platform: web, iOS, Android, tablet, Apple Watch.
+
+**Pricing (2026-04)**: Free ($0). Pro $6.66/mo annual ($79.99/yr). Plus $10.83/mo annual ($129.99/yr). Unlimited $15.83/mo annual ($189.99/yr). Teams $15/seat/mo ($180/seat/yr). 7-day free trial on all paid plans. 7-day money-back guarantee.
+
+**API**:
+- No public API
+- No SDKs or MCP server
+- No REST endpoints
+
+**Webhooks**: None.
+
+**Zapier**: None.
+
+**Integrations**: Google Calendar, Google Meet, Microsoft Teams, Outlook, Zoom (auto-transcription). Google Docs and Notion export (Plus+ only). CRM integration (Unlimited only). Chrome Extension. PDF export (all plans). No Zapier, no webhooks, no Slack, no Obsidian.
+
+**Key features**:
+- Audio recording with transcription (1,200 min/mo on Pro/Plus, unlimited on Unlimited)
+- Real-time transcription (Plus+ only)
+- High-accuracy speaker identification (Plus+ only)
+- File processing: PDF, images (OCR), videos, YouTube URLs, web pages
+- AI summarization with professional templates (FAQ, resume, outline, case study, SWOT)
+- Flashcard and quiz generation from notes
+- Mind map and flowchart generation
+- AI-narrated podcast generation (uses credits)
+- Presentation slide generation (uses credits)
+- Infographic generation (uses credits)
+- Cross-device sync (web, mobile, tablet, Apple Watch)
+- Offline access for saved notes
+- High-accuracy translation (Plus+ only, live)
+
+**Credits system**: One-time credit grants (not monthly refills). Pro: 300 credits, Plus: 400, Unlimited: 600. Costs: 3-min podcast = 10 credits, 8-slide deck = 20 credits, 1 infographic = 30 credits.
+
+**Known issues**:
+- Credits are one-time, not monthly — users run out with no visible refill mechanism
+- Transcript export, real-time transcription, speaker ID, and Notion/Google Docs export all gated behind Plus+ plans
+- CRM integration only on Unlimited tier — specific CRMs not documented
+- At least one report of misleading refund process (directed to App Store for web purchase)
+- No API/webhooks/Zapier — content locked inside HyNote unless exported via PDF or Notion/GDocs (Plus+)
+
+**Selection notes**:
+- **Pick HyNote when**: You want a single app that handles meetings, lectures, files, YouTube, and web pages — broadest input format coverage in the category. You need multilingual transcription with strong accent handling. You want study material generation (flashcards, quizzes) plus content creation (podcasts, slides, infographics) from the same platform. You need HIPAA/GDPR/CCPA compliance. You want Apple Watch recording.
+- **Avoid HyNote when**: You need any API or automation (→ Fathom, Fireflies, Wave), you need Zapier/webhook integrations (→ Voicenotes, Circleback, Fathom), you need Obsidian sync (→ Voicenotes, Cleft Notes), you need deep CRM integration (→ Fathom Business, Sybill, tl;dv), you need real-time transcription on a budget (gated behind Plus at $10.83/mo), you need speaker identification on a budget (also Plus+), or you want one-time payment pricing (→ AudioPen)
