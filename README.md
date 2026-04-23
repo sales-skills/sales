@@ -179,6 +179,7 @@ Router recommends a 4-skill sequence:
 | `/sales-notta` | Notta platform help — AI meeting transcription in 58 languages, Notta Bot, Notta Brain cross-meeting AI, Zapier automation, CRM sync to Salesforce/HubSpot/Zoho/Freshsales/Salesflare, pricing tiers |
 | `/sales-sonix` | Sonix platform help — AI transcription, translation, and subtitling for uploaded audio/video (53+ languages), REST API, SRT/VTT subtitles, video burn-in, Zapier, SOC 2/HIPAA, pricing tiers |
 | `/sales-happyscribe` | HappyScribe platform help — batch AI + human transcription in 120+ languages, subtitle generation, translation, REST API, 15+ export formats (SRT/VTT/Premiere XML/FCP XML), SOC 2/GDPR, pricing tiers |
+| `/sales-circleback` | Circleback platform help — AI meeting notes with cross-meeting search, webhook automations (HMAC-SHA256), MCP server for Claude/Cursor/Raycast, bot + botless recording, Slack huddles, HubSpot/Salesforce/Attio CRM sync, pricing tiers |
 | `/sales-transcribeme` | TranscribeMe platform help — human+AI hybrid transcription (99% accuracy on human tiers), HIPAA compliance, REST API, Machine Express/First Draft/Standard/Verbatim tiers, translation, .NET/Node.js SDKs |
 | `/sales-temi` | Temi platform help — budget AI transcription at $0.25/min (Rev's engine), English-only batch upload, REST API, Zapier/Make automation, mobile app |
 | `/sales-transkriptor` | Transkriptor platform help — AI transcription in 100+ languages, meeting bot (Zoom/Meet/Teams), subtitles, sentiment analysis, REST API (Enterprise only), Zapier/Make, pricing tiers |

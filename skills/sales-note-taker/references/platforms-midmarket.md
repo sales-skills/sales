@@ -351,6 +351,38 @@ For deep platform coverage (noise cancellation setup, AI meeting notes, accent c
 
 ---
 
+## IRIS Clarity
+
+For deep platform coverage (desktop app setup, SDK integration, Talkdesk AppConnect, pricing breakdown, Krisp comparison), use `/sales-iris-clarity`.
+
+**Positioning**: Pure bidirectional AI noise cancellation — removes background noise on both sides of a call in real time. Originated from Formula 1 race communications (demonstrated removing 130 dB of noise in racing). No meeting notes, transcription, or AI summaries — noise cancellation only. Desktop app (Windows/Mac) creates a virtual audio device that any VoIP platform routes through. Also offers Web SDK (WebRTC) and Server SDK (C++/Python/Node.js) for developers embedding noise cancellation into their own platforms. Talkdesk AppConnect native integration.
+
+**Pricing (2026-04)**: Professional £9.50/seat/mo (£6.50 annual, ≈$8.25 USD), up to 100 seats, 14-day free trial. Enterprise custom (100-1,000+ seats, annual commitment, concurrent licensing, dedicated CSM).
+
+**API**:
+- **No REST API for meetings.** IRIS Clarity is noise cancellation only — no meeting data to query.
+- **Web SDK**: WebRTC Audio Worklet Processor, npm install with `IRIS_SDK_TOKEN`, 18+ config params
+- **Server SDK**: C++, Python, Node.js — batch processing, streaming, IVR noise removal
+- **Cloud deployment**: Terraform, Helm, Docker
+- **Developer portal**: developer.iris.audio (login-gated, request access)
+- **SDK docs**: sdk.iris.audio
+
+**Integrations**: Works with all VoIP platforms via virtual audio device (Zoom, Teams, Meet, Webex, RingCentral, 8x8, Vonage). Talkdesk AppConnect (native). Salesforce. Adobe Connect.
+
+**Known issues (from G2/comparison reviews)**:
+- No meeting notes or transcription — pure noise cancellation only, must pair with a separate note-taker
+- Won't cancel all noise — very loud or unusual sounds may bleed through
+- Desktop app only for end users — no mobile app, no browser extension (SDK enables browser via developer integration)
+- Enterprise required for 100+ seats — Professional plan caps at 100
+- Sparse review data — only ~14 G2 reviews, hard to validate claims at scale
+- Pricing in GBP — can confuse USD-budgeting teams
+
+**Selection notes**:
+- **Pick IRIS Clarity when**: Pure noise cancellation is the only need (no notes/transcription), you're embedding noise cancellation in your own VoIP product via SDK, you're on Talkdesk (native AppConnect), or you need concurrent licensing for a large contact center
+- **Avoid IRIS Clarity when**: You also need meeting notes or transcription (→ Krisp or a dedicated note-taker), you need accent conversion (→ Krisp), you want a mobile app (→ Krisp), or you need deep CRM integrations beyond Salesforce
+
+---
+
 ## Cluely
 
 For deep platform coverage (Live Insights setup, Knowledge Base RAG, pre-call briefs, CRM integration via Merge.dev, coaching analytics, pricing gates, security considerations), use `/sales-cluely`.
@@ -756,3 +788,35 @@ For deep platform coverage (playbook setup, CRM field mapping, real-time trackin
 **Selection notes**:
 - **Pick Winn.ai when**: You need real-time methodology enforcement during calls (not just post-call), reps consistently miss playbook talking points and you need live tracking, you want automated CRM field population from structured methodology (MEDDIC/BANT/SPICED), you need built-in methodology templates with minimal setup, you want AI meeting prep briefs and follow-up emails alongside playbook tracking, or you're evaluating real-time coaching tools (Enterprise)
 - **Avoid Winn.ai when**: You need call recordings for coaching review (→ Gong, tl;dv, Avoma), you need a public API for custom integrations or data pipelines (→ Fathom, Fireflies, Gong), you need field/in-person sales support (→ Rilla, Siro, Omi), you need deep deal workspace and revenue intelligence (→ Gong, Sybill, Clari Copilot), you need cross-functional meeting support beyond sales (→ Fathom, Fireflies, Otter), you need a free tier or budget option under $50/mo (→ Fathom, MeetGeek, Colibri), or you need post-call coaching analytics rather than live guidance (→ Gong, Avoma, tl;dv)
+
+---
+
+## Circleback
+
+For deep platform coverage (webhook setup, MCP server, CRM integration, plan comparison, known issues, troubleshooting), use `/sales-circleback`.
+
+**Positioning**: AI meeting notes platform with cross-meeting search, action item tracking, and webhook-based workflow automations. Supports Zoom, Google Meet, Microsoft Teams, Slack huddles, and in-person recording. Offers both bot-based and botless recording modes. Key differentiator: MCP server for AI tool integration (Claude, ChatGPT, Cursor, Raycast) and HMAC-signed webhook API for custom automations. No coaching or methodology features — focused on meeting capture and downstream data flow.
+
+**Pricing (2026-04)**: Individual $20.83/user/mo (annual) or $25/mo (monthly), Team $25/user/mo (annual) or $30/mo (monthly), Enterprise custom. No free tier — 7-day trial only (credit card required). Team plan adds shared meetings, Slack huddles, team automations, centralized billing, usage dashboard.
+
+**API**:
+- Webhook API: HMAC-SHA256 signed POST (`x-signature` header, `whsec_` prefix), payload includes meeting ID, notes (Markdown), action items (with assignee/status), transcript segments (speaker/text/timestamp), custom insights, recording URL (24hr expiry)
+- MCP Server: `app.circleback.ai/api/mcp` — Streamable HTTP, OAuth auth. Claude/ChatGPT/Cursor/Raycast compatible.
+- REST API: Swagger UI at `api.circleback.com` (JS-rendered, endpoints not publicly extractable)
+- CLI: agent-friendly command-line access
+- No Zapier/Make native modules — use webhook triggers
+
+**Integrations**: HubSpot, Salesforce, Attio (CRM native); Google Calendar, Gmail, Outlook (calendar/email); Linear, Notion, Monday, Zoho (productivity); Slack (notifications + huddles on Team+); Zapier/Make (via webhooks).
+
+**Known issues (from G2/review analysis)**:
+- Speaker identification unreliable with overlapping speakers or conference rooms
+- No customizable note templates — generic output only
+- Recurring meetings may need manual approval per occurrence (auto-join not fully automatic)
+- Billing/cancellation support response times slow — multiple emails needed
+- iPhone app buggy (multiple users report issues)
+- Recording URL expires after 24 hours — must download immediately for archival
+- Only 3 G2 reviews as of 2026 — limited independent review coverage
+
+**Selection notes**:
+- **Pick Circleback when**: You need cross-meeting AI search with webhook-based automations, you want both bot-based and botless recording options, you need Slack huddle recording (Team plan), you want MCP server integration for AI-powered workflows (Claude/Cursor/Raycast), you need in-person recording via mobile alongside virtual meetings, your CRM is HubSpot/Salesforce/Attio
+- **Avoid Circleback when**: You need a free tier (→ Fathom, tl;dv, MeetGeek), you need coaching or methodology scorecards (→ tl;dv, Avoma, Gong), you need customizable note templates (→ tl;dv, Granola, MeetGeek), you need a full REST API for custom data pipelines (→ Fathom, Fireflies, Gong), you need deal intelligence or revenue forecasting (→ Gong, Clari Copilot, Sybill)

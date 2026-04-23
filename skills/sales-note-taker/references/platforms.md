@@ -7,7 +7,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | File | What's in it | Platforms |
 |---|---|---|
 | `platforms-smb.md` | Budget-friendly tools under ~$50/user/mo, strong free tiers | Fathom, Fireflies, Otter, MeetGeek, Tactiq, Granola, Wave, Bluedot, Notta, Sonnet, Supernormal, VoiceToNotes, Hedy, Colibri, Jamy, Temi, Char, HappyScribe |
-| `platforms-midmarket.md` | Sales-focused CI with coaching, methodology, CRM enrichment | Avoma, tl;dv, Claap, Grain, Sembly, Read.ai, Fellow, Jamie, Krisp, IRIS Clarity, Cluely, Lindy, Outdoo, Jiminny, Enthu.AI, Demodesk, Salesken, Oliv, Weflow, Noota, Dialpad, Winn.ai |
+| `platforms-midmarket.md` | Sales-focused CI with coaching, methodology, CRM enrichment | Avoma, tl;dv, Claap, Grain, Sembly, Read.ai, Fellow, Jamie, Krisp, IRIS Clarity, Cluely, Lindy, Outdoo, Jiminny, Enthu.AI, Demodesk, Salesken, Oliv, Weflow, Noota, Dialpad, Winn.ai, Circleback |
 | `platforms-enterprise.md` | Enterprise revenue intelligence ($1K+/user/yr) + bolt-on CI | Gong, Modjo, Clari Copilot, Verbit, + Salesloft Conversations, Chorus, Seismic, Revenue.io |
 | `platforms-field.md` | In-person/field sales coaching and mobile recording | Rilla, Siro, Sales Ask, Speakwise, Omi, Plaud |
 
@@ -76,4 +76,5 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Handy | Open-source cross-platform STT | Yes (MIT, unlimited) | Free (no paid tier) | None (CLI flags only) | None | None | Privacy-first push-to-talk dictation, Whisper + Parakeet dual-engine, cross-platform (macOS/Windows/Linux), 20k+ GitHub stars |
 | Shadow | Bot-free AI note-taker + screen capture | Yes (25 lifetime AI meetings) | $8/mo | None | None (Zapier webhook) | None | Bot-free audio + screen capture, macOS-only, on-device transcription, autopilot detection |
 | Soz AI | Mobile-first AI transcription | Yes (30 min) | $9.99/mo | None | None | None | Budget mobile transcription, 100+ languages, YouTube URL paste, speaker diarization (10 speakers), subtitles |
+| Circleback | AI meeting notes + search | No (7-day trial) | $20.83/mo | Webhooks + MCP | Yes (HMAC) | Medium (HS/SF/Attio) | Cross-meeting AI search, bot + botless recording, Slack huddles, webhook automations |
 | HappyScribe | AI + human transcription + subtitles | Yes (10 min trial) | $17/mo ($8.50 annual) | REST (200 req/hr) | Yes (per-order URL) | None | Batch transcription in 120+ languages, subtitle generation, human transcription ($2/min), 15+ export formats |
