@@ -6,7 +6,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 
 | File | What's in it | Platforms |
 |---|---|---|
-| `platforms-smb.md` | Budget-friendly tools under ~$50/user/mo, strong free tiers | Fathom, Fireflies, Otter, MeetGeek, Tactiq, Granola, Wave, Bluedot, Notta, Sonnet, Supernormal, VoiceToNotes, Hedy, Colibri, Jamy, Temi, Char, HappyScribe, Voicenotes, AudioPen, TalkNotes, Letterly, Coconote, HyNote AI, Backtrack, JotMe, Audionotes |
+| `platforms-smb.md` | Budget-friendly tools under ~$50/user/mo, strong free tiers | Fathom, Fireflies, Otter, MeetGeek, Tactiq, Granola, Wave, Bluedot, Notta, Sonnet, Supernormal, VoiceToNotes, Hedy, Colibri, Jamy, Temi, Char, HappyScribe, Voicenotes, AudioPen, TalkNotes, Letterly, Coconote, HyNote AI, Backtrack, JotMe, Audionotes, Bubbles |
 | `platforms-midmarket.md` | Sales-focused CI with coaching, methodology, CRM enrichment | Avoma, tl;dv, Claap, Grain, Sembly, Read.ai, Fellow, Jamie, Krisp, IRIS Clarity, Cluely, Lindy, Outdoo, Jiminny, Enthu.AI, Demodesk, Salesken, Oliv, Weflow, Scratchpad, Laserfocus, Noota, Dialpad, Winn.ai, Circleback |
 | `platforms-enterprise.md` | Enterprise revenue intelligence ($1K+/user/yr) + bolt-on CI | Gong, Modjo, MaxIQ (EchoIQ), Clari Copilot, Verbit, + Salesloft Conversations, Chorus, Seismic, Revenue.io |
 | `platforms-field.md` | In-person/field sales coaching and mobile recording | Rilla, Siro, Sales Ask, Speakwise, Omi, Plaud |
@@ -100,3 +100,4 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Backtrack | Retroactive Mac menu bar recorder | Yes (1 hr buffer) | $9.99/mo | None | None | None | Mac users who forget to record, retroactive capture, bot-free, in-person + video calls |
 | JotMe | Real-time AI translation + meeting notes | Yes (20 min translation) | $10/mo (annual) | None | None | None (Enterprise only) | Multilingual teams needing simultaneous interpretation in 107 languages, bot-free, conferences |
 | Audionotes | Multi-format AI note-taker (voice/text/image/video/YouTube) | Yes (1 min/note) | $129.99/yr (~$10.83/mo) | None (webhook + Zapier only) | Yes (fixed JSON) | None | Multi-format capture (voice + image + video + YouTube), 100+ templates, WhatsApp Bot, Notion sync, 80+ languages |
+| Bubbles | Async video messaging + AI meeting notes | Yes (5 meetings/wk) | $12/user/mo (Teams) | None (Zapier only) | None | None | Async video collaboration + meeting recording in one tool, screen recording, SOC 2 Type II |

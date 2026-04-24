@@ -1487,3 +1487,29 @@ For deep platform coverage (webhook payload, Zapier setup, Notion sync, template
 **Selection notes**:
 - **Pick Audionotes when**: You want the broadest input format coverage (voice + text + image + video + YouTube) in one tool, WhatsApp-first capture is important, you need 100+ output templates for varied use cases (medical SOAP notes, blog posts, meeting minutes), you want simple Notion auto-sync, or you're a content creator who captures ideas across formats
 - **Avoid Audionotes when**: You need a meeting bot that joins Zoom/Meet/Teams (→ Fathom, Fireflies), you need CRM integration (→ Fathom Business, Sybill), you need a REST API (→ Fathom, Fireflies, Wave), you need speaker diarization (→ Fireflies, Otter), you need real-time collaboration (→ Grain, Fireflies), or you need HMAC-signed webhooks (→ Fathom, Circleback, Wave)
+
+## Bubbles
+
+For deep platform coverage (Zapier automation, async video workflows, plan comparison), use `/sales-bubbles`.
+
+**Positioning**: Async video messaging tool that added AI meeting note-taking. Bridges sync and async by auto-joining meetings for recording + summaries, plus screen recording for async updates. Target audience is design/product/remote teams — not sales-specific. SOC 2 Type II certified.
+
+**Pricing (2026-04)**: Free (5 meetings/week, 30-min limit, 2 channels, recordings lock after 2 weeks inactive), Pro Teams $12/user/mo annual / $15 monthly (3+ members required, unlimited recordings, customizable notetaker, branded customization), Pro Personal $18/mo annual / $22 monthly (1-2 members, auto-transitions to Pro Teams at 3 members). 14-day free trial for Pro.
+
+**API**: None. No REST API, no webhooks, no MCP server. All automation through Zapier only.
+
+**Zapier**: Connect via Settings → Integrations. "New Recording" trigger fires when meeting recording completes. Routes to Slack, Notion, Asana, Google Docs, or any of 200+ connected apps.
+
+**Integrations**: Zoom, Google Meet, Microsoft Teams (notetaker bot joins), Slack (native notifications + recording access), Google Calendar, Outlook (auto-detect meetings), Zapier (200+ outbound apps). **No CRM connectors** — no HubSpot, Salesforce, or Pipedrive.
+
+**Key gotchas**:
+- English-only — no multilingual transcription
+- Free plan transcripts are not available (summaries + action items only; full AI transcripts require Pro)
+- No editable transcripts
+- External collaborators need a Bubbles account to leave video/text comments
+- No coaching, scoring, sentiment analysis, or conversation intelligence features
+- No video clips or highlight reels — full recordings only
+
+**Selection notes**:
+- **Pick Bubbles when**: Your team prioritizes async video collaboration + meeting recording in one tool, you don't need CRM integration, you want screen recording alongside meeting notes, your team uses Zoom/Meet/Teams and wants auto-join without setup friction, or you're a design/product team that values async comments on recordings
+- **Avoid Bubbles when**: You need CRM sync (→ Fathom Business, Fireflies Business, Sybill), you need an API for custom integrations (→ Fathom, Fireflies, Wave), you need multilingual transcription (→ Notta, Jamy), you need sales coaching or conversation intelligence (→ Gong, Avoma, tl;dv), you need editable transcripts (→ Fireflies, Otter), or you need external collaborators to comment without creating an account (→ Loom Business)
