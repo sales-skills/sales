@@ -1455,3 +1455,35 @@ For deep platform coverage (live translation setup, pricing tiers, Chrome extens
 **Selection notes**:
 - **Pick JotMe when**: Your team needs simultaneous interpretation during live meetings, you work across 10+ languages regularly, you want bot-free translation that doesn't announce itself to other participants, you're running multilingual conferences or events, or you need custom vocabulary for industry-specific translation
 - **Avoid JotMe when**: You need CRM integration (→ Fathom Business, Sybill, Jamy), you need an API or webhooks (→ Fathom, Fireflies, Gong), translation is secondary to meeting notes quality (→ Notta, Jamy), you need unlimited usage on a published price (→ Fathom Free unlimited recordings), or you need team collaboration features beyond Enterprise (→ Fireflies, Grain)
+
+---
+
+## Audionotes
+
+For deep platform coverage (webhook payload, Zapier setup, Notion sync, template configuration, WhatsApp Bot, pricing gates), use `/sales-audionotes`.
+
+**Positioning**: Multi-format AI note-taker that converts voice, text, images, video files, and YouTube links into structured notes via 100+ output templates. Broader input coverage than most voice-only tools (AudioPen, Voicenotes, TalkNotes). WhatsApp Bot enables mobile-first capture. Rated 4.9+ by 200K+ users.
+
+**Pricing (2026-04)**: Free (1 min/note limit, basic features). Pro $129.99/yr (~$10.83/mo) — unlimited voice notes, file uploads (3-hr audio/video, 500 MB), YouTube video notes, image notes, mind maps, Zapier, Notion, webhooks, WhatsApp Bot, note chatting. Enterprise custom (teams of 5+, contact sales).
+
+**API**: None. No public REST API, no SDKs, no MCP server.
+
+**Webhooks**: Fixed JSON payload on new note creation — `{noteId, createdAt, noteType, title, transcript, content}`. No HMAC signature verification documented. No filtering by note type. Only post-connection notes are sent (no backfill). Pro plan required.
+
+**Zapier**: "New Note V2" trigger. Auth via API key + email. Maps same fields as webhook payload. Pro plan required.
+
+**Notion sync**: Native integration — all new + existing notes auto-sync to a Notion database template. Fields: Title, Transcript, AI Notes, Created At, Note Type, Speaker Transcript. One-way (Audionotes → Notion). Pro plan required.
+
+**Integrations**: Notion (native sync), Zapier (8,000+ apps), webhook (any endpoint), WhatsApp Bot (mobile capture). No CRM connectors. No Slack/Teams/Zoom meeting bot — Audionotes is voice memo + upload only, not a meeting joiner.
+
+**Key gotchas**:
+- Free plan is 1 minute per note — essentially unusable for real work
+- No HMAC/signature on webhooks — must implement own endpoint security
+- No CRM connectors — requires Zapier or custom webhook middleware for HubSpot/Salesforce
+- Transcription accuracy drops on domain-specific audio (medical, legal terms)
+- No speaker diarization confirmed — may be single-speaker stream despite speaker recognition mention
+- No real-time collaboration — single-user notes, shared via export/public pages only
+
+**Selection notes**:
+- **Pick Audionotes when**: You want the broadest input format coverage (voice + text + image + video + YouTube) in one tool, WhatsApp-first capture is important, you need 100+ output templates for varied use cases (medical SOAP notes, blog posts, meeting minutes), you want simple Notion auto-sync, or you're a content creator who captures ideas across formats
+- **Avoid Audionotes when**: You need a meeting bot that joins Zoom/Meet/Teams (→ Fathom, Fireflies), you need CRM integration (→ Fathom Business, Sybill), you need a REST API (→ Fathom, Fireflies, Wave), you need speaker diarization (→ Fireflies, Otter), you need real-time collaboration (→ Grain, Fireflies), or you need HMAC-signed webhooks (→ Fathom, Circleback, Wave)

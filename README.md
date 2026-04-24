@@ -225,6 +225,7 @@ Router recommends a 4-skill sequence:
 | `/sales-superpowered` | Superpowered platform help — bot-free AI meeting note-taker with device-audio capture, AI Templates, auto-join from calendar, SOC-2/GDPR, 50+ languages, $0-50/mo |
 | `/sales-noted` | Noted platform help — Apple-ecosystem voice recorder + rich-text note-taker with timestamped audio linking, AI Transcribe, Intelligent Playback, Apple Pencil/Time Stroke, Apple Watch, $0-9.99/mo or $89.99 lifetime |
 | `/sales-scribbl` | Scribbl platform help — bot-free AI meeting notes Chrome extension for Google Meet with AI Copilot chat, instant summaries/action items, 40+ languages, meeting library, $0-20/user/mo |
+| `/sales-audionotes` | Audionotes platform help — multi-format AI note-taker (voice/text/image/video/YouTube), 100+ output templates, WhatsApp Bot, webhook + Zapier + Notion sync, 80+ languages, $0-10.83/mo |
 | `/sales-jotme` | JotMe platform help — real-time AI translation + meeting intelligence, simultaneous interpretation in 107 languages, bot-free system audio capture, multilingual transcription, $0-30/mo |
 | `/sales-backtrack` | Backtrack platform help — Mac menu bar retroactive recorder with rolling buffer (1-5 hrs), captures meetings you forgot to record, bot-free, AI transcription via cloud, $0-9.99/mo |
 | `/sales-shadow` | Shadow platform help — bot-free AI meeting assistant with audio + screen capture, macOS-only, on-device transcription, Autopilot detection, AI summaries/action items/follow-up emails, $8/mo |
