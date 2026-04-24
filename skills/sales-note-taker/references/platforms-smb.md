@@ -1549,3 +1549,42 @@ For deep platform coverage (setup, plan selection, AI Assistant configuration, t
 **Selection notes**:
 - **Pick Transync AI when**: You need the lowest latency real-time translation for business meetings, you want dual-screen bilingual display, you need AI voice broadcast in the target language, your meetings are primarily bilingual (one language pair), you want bot-free system audio capture, or you're in foreign trade/cross-border business
 - **Avoid Transync AI when**: You need API integration or CRM sync (→ Fathom, Fireflies, Sybill), you need 100+ languages (→ JotMe 107 languages), you need human interpreters for enterprise events (→ KUDO, Interprefy), you need domain-specific AI voice avatars (→ Langfinity), you need conversation intelligence or sales coaching (→ Gong, Avoma, tl;dv), or you need automated transcript pipelines (→ Fireflies API, Fathom REST + MCP)
+
+## Talo
+
+For deep platform coverage (Palabra API endpoints, Python/JS/Java SDKs, voice cloning, glossary setup, streaming integration, pricing tiers), use `/sales-talo`.
+
+**Positioning**: Enterprise-grade real-time meeting translation with a single-bot architecture. Palabra.AI (parent company) acquired Talo in late 2025 and provides the underlying speech-to-speech API. Differentiated by SOC 2 + ISO 27001 compliance and developer API access — most meeting translators have no public API.
+
+**How it works**: A single AI bot joins your Zoom, Google Meet, or Microsoft Teams call. As participants speak in their native languages, the bot translates in real-time (~2-3 second latency). Each participant hears translations in their preferred language. One bot handles all languages — no need for separate bots per language pair.
+
+**Talo meeting app pricing** (best-effort 2026-04):
+- **Starter**: $33/mo ($396/yr) — 1 member, 120 min/mo, 60 languages
+- **Pro**: $100/mo ($80/mo annual) — 1 member, 400 min/mo, $0.25/extra min
+- **Team**: $500/mo ($400/mo annual) — 5 members, 400 min/mo, $0.20/extra min, SSO (coming soon)
+- **Enterprise**: Custom — unlimited members/minutes, SOC 2, dedicated support
+- 7-day free trial (no credit card)
+
+**Palabra API pricing** (separate from meeting app):
+- Pro $150/mo (150 credits), Scale $900/mo (900 credits), Business $3,500/mo, Enterprise custom
+- Credit rates: 30 credits/hr for calls/API, 150/hr for events, 80/hr for broadcasting
+
+**API surface** (via Palabra):
+- REST + WebSocket/WebRTC streaming at `api.palabra.ai`
+- Sessions, Voice Cloning, Glossaries, Blob Upload, Billing endpoints
+- Python SDK (`pip install palabra-ai`), JavaScript, Java SDKs
+- Auth: `X-Client-Id` + `X-Client-Secret` headers
+- No webhooks, no MCP server
+
+**Key gotchas**:
+- 7-8x more expensive per minute than JotMe ($0.275/min vs ~$0.045/min) — justify with compliance needs
+- Bot is visible to all participants — some orgs block meeting bots
+- API pricing is separate from the meeting app — $33/mo Starter doesn't include API access
+- Team plan "coming soon" — multi-seat requires Enterprise contact
+- No CRM integration — pair with a note-taker (Fathom, Fireflies) for CRM sync
+- No webhooks — poll or use streaming API for real-time data
+- 60 languages (not 100+) — check supported language list for rare pairs
+
+**Selection notes**:
+- **Pick Talo when**: You need SOC 2/ISO 27001 compliant meeting translation, you want a developer API (Palabra) for custom translation integration, you prefer single-bot simplicity over bot-free tools, your team is on Zoom/Meet/Teams, or you need voice cloning for natural-sounding translations
+- **Avoid Talo when**: Budget is the primary concern (→ JotMe $10/mo, Transync AI $8.99/mo), you need bot-free translation (→ Transync AI, JotMe), you need 100+ languages (→ JotMe 107), you need human interpreters for critical events (→ KUDO, Interprefy), you need domain-specific AI voice avatars (→ Langfinity), or you need CRM integration (pair with a separate note-taker)
