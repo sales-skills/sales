@@ -1307,6 +1307,66 @@ For deep platform coverage (all tiers, credit system, content generation, integr
 
 ---
 
+## Superpowered
+
+For deep platform coverage (AI Templates setup, CRM sync, auto-join troubleshooting, plan comparison), use `/sales-superpowered`.
+
+**Positioning**: Bot-free AI note-taker that captures device audio, transcribes live, and generates structured notes using customizable AI Templates. Audio deleted immediately after transcription; transcripts retained 7 days. No bot joins the call. Desktop app only (macOS/Windows). SOC-2 Type II and GDPR compliant. Y Combinator-backed, used by 15,000+ companies. Product Hunt #5 Product of the Day.
+
+**Pricing (2026-04)**: Free ($0 — 1 calendar, 1-month note history, limited AI notes), Basic $25/mo (unlimited calendars/history, Slack + Email integrations), Pro $50/mo (all Basic + Notion, Google Drive, Salesforce, HubSpot, Zapier, unlimited AI notes), Enterprise custom.
+
+**API**: None. No public API, no REST endpoints, no SDKs.
+
+**Webhooks**: None.
+
+**Zapier**: Yes (Pro plan only).
+
+**Integrations**: Zoom, Google Meet, Microsoft Teams, Webex, Around. Calendar: Google Calendar, Outlook, Apple Calendar (workaround). CRM: Salesforce, HubSpot (Pro only). Productivity: Notion, Google Drive (Pro only). Communication: Slack, Email (Basic+).
+
+**Key gotchas**:
+- Desktop only — no mobile app (iOS/Android), no Linux, no web
+- CRM integrations locked behind Pro plan ($50/mo) — significantly pricier than competitors for CRM sync
+- No public API — Zapier (Pro) is the only automation option
+- Audio deleted immediately — no re-listening, notes are the only durable artifact
+- Auto-join requires calendar connection — won't detect ad-hoc or unscheduled calls
+- Transcript retained only 7 days — if notes aren't generated or exported, data is lost
+
+**Selection notes**:
+- **Pick Superpowered when**: You want bot-free recording without any participant seeing a bot join, you need structured AI notes with customizable templates (sales, 1:1s, interviews), you want SOC-2/GDPR compliance, you value audio privacy (nothing stored), or you need multi-language support (50+ languages)
+- **Avoid Superpowered when**: You need mobile recording (→ Wave, Omi, Plaud), you need an API for data pipelines (→ Fathom, Fireflies), you want cheaper CRM sync (→ Fathom $25/mo Business, tl;dv $29/mo), you need video recording (→ Claap, tl;dv, Grain), or you need to re-listen to recordings (→ most alternatives store audio)
+
+---
+
+## Noted
+
+For deep platform coverage (timestamped recording setup, transcription troubleshooting, Apple device comparison, pricing tiers), use `/sales-noted`.
+
+**Positioning**: Combined audio recording and rich-text note-taking app for the Apple ecosystem. Core differentiator is timestamped audio-note linking — every line typed or drawn during a recording is tied to that moment, letting you tap to jump to that exact playback point. 3M+ downloads, App Store Editors' Choice. Made by Digital Workroom Ltd (UK).
+
+**Pricing (2026-04)**: Free (recording, timestamped notes, rich text, Apple Pencil, Intelligent Playback), Noted+ $9.99/mo or $79.99/yr or $89.99 lifetime (AI Transcribe, Ask AI, AI summaries, dictation, Time Stroke). Noted Assistant add-on $2.99. Family Sharing on yearly plans. 7-day free trial on yearly.
+
+**API**: None. No public API, no REST endpoints, no SDKs, no MCP server.
+
+**Webhooks**: None.
+
+**Zapier**: None.
+
+**CRM**: None. Export-only (PDF, TXT, M4A, web links). No CRM connectors.
+
+**Key features**:
+- Time-stamped audio-note linking — core differentiator
+- Intelligent Playback — ML-powered silence/noise skipping
+- AI Transcribe — 18 languages, cloud-based (Noted+ only)
+- Apple Pencil drawing with Time Stroke replay (iPad)
+- Apple Watch recording — hands-free
+- Apple Vision Pro support
+- Ask AI — search recordings for answers (Noted+ only)
+- iCloud sync across all Apple devices
+
+**Gotchas**: Transcription UI is buried in the note's options menu — common user complaint. AI features require cloud upload (no offline transcription). Apple ecosystem only (secondary Android app exists but feature parity not guaranteed). 18 languages for transcription — fewer than Voicenotes (100+) or Notta (58).
+
+---
+
 ## Backtrack
 
 For deep platform coverage (rolling buffer setup, audio capture troubleshooting, bot-free comparison, pricing tiers), use `/sales-backtrack`.
@@ -1334,3 +1394,34 @@ For deep platform coverage (rolling buffer setup, audio capture troubleshooting,
 **Selection notes**:
 - **Pick Backtrack when**: You frequently forget to hit record and want a safety net, you want retroactive capture (unique in the category), you prefer a simple Mac menu bar utility over a full meeting platform, you want bot-free recording for calls and in-person meetings, or you're on Setapp already
 - **Avoid Backtrack when**: You need CRM integration (→ Fathom Business, Sybill, tl;dv), you need an API or webhooks (→ Fathom, Fireflies, Gong), you need Windows support (→ Jamie, Granola), you need reliable transcription (→ Otter, Fireflies), you need team collaboration features (→ Fireflies, Grain), or you need calendar-based auto-join (→ Fathom, Fireflies, most bot-based tools)
+
+---
+
+## Scribbl
+
+For deep platform coverage (Chrome extension setup, AI Copilot, team library, plan selection, Google Meet limitations), use `/sales-scribbl`.
+
+**Positioning**: Bot-free AI meeting notes Chrome extension marketed as "the AI notetaker Google Workspace users actually want." Silently records Google Meet calls without a bot participant, generates instant AI summaries and action items. AI Copilot (GPT-4 chat) lets you query meeting content. Trusted by 10,000+ organizations including Google and Spotify. Currently Google Meet-only — Zoom and Teams listed as "coming soon."
+
+**Pricing (2026-04)**: Lite (Free) $0/15 meetings/mo, unlimited length, video expires after 2 months, up to 5 members. Pro $13/user/mo annual ($20 monthly), unlimited meetings, 1-year video retention, 500GB team storage, unlimited AI Chat, up to 5 members. Team custom pricing (contact sales), unlimited team size, CRM integrations, Slack, Google Drive, Zoom/Teams support, admin controls, dedicated support.
+
+**API**: None. No public API, no REST endpoints, no webhooks, no MCP server, no Zapier/Make integration.
+
+**Webhooks**: None.
+
+**Zapier**: None.
+
+**Integrations**: Google Drive, Slack, CRM — all Team plan only. Shareable meeting links (all plans). No calendar integration (extension auto-detects Meet calls).
+
+**Key gotchas**:
+- Google Meet only — Zoom and Teams "coming soon" with no public timeline
+- Chrome browser required — no desktop app, no Firefox/Safari/Arc
+- Pro plan caps teams at 5 members — 6+ requires Team plan with custom pricing
+- Free tier video recordings expire after 2 months (transcripts persist)
+- No public API — zero programmability, no custom integrations possible
+- CRM integration details vague — Team plan only, specific CRMs not publicly confirmed
+- AI Copilot is Pro+ only — free tier gets summaries and action items but not interactive chat
+
+**Selection notes**:
+- **Pick Scribbl when**: Your team is 100% on Google Meet and Chrome, you want the simplest possible bot-free setup (one extension install, no config), you want instant AI summaries without any meeting bot visible to participants, you value AI Copilot chat to query past meetings, or your free-tier needs are under 15 meetings/month
+- **Avoid Scribbl when**: You use Zoom or Teams (→ Fathom, Fireflies, tl;dv), you need CRM integration without custom pricing (→ Fathom Business $25/mo, Sybill $30/mo), you need an API or webhooks (→ Fathom, Fireflies, Gong), you need teams larger than 5 on a published price (→ Fireflies Business, tl;dv Business), or you need deep coaching/methodology features (→ Avoma, tl;dv Business, Gong)
