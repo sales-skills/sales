@@ -520,6 +520,31 @@ For deep platform coverage (all modules, AI agents, CRM sync, pipeline and forec
 
 ---
 
+## KUDO
+
+For deep platform coverage (all modules, pricing tiers, widget embedding, interpreter marketplace, comparison with Interprefy/Wordly/JotMe), use `/sales-kudo`.
+
+**Positioning**: Enterprise real-time interpretation platform — not a traditional note-taker or conversation intelligence tool, but the go-to platform for multilingual meetings and events requiring live speech translation or human interpretation. Combines AI Speech Translation (60+ languages, automated, 24/7) with a marketplace of 12,000+ professional interpreters (200+ languages including sign languages). Only relevant if you need real-time multilingual interpretation at enterprise scale — conferences, global sales kickoffs, multilingual board meetings.
+
+**Pricing (2026-04)**: Four tiers — Pro (75 hrs), ProPlus, ProPlatinum, Enterprise (1,000+ hrs). All custom-quoted, usage-based (duration + number of languages). No self-serve purchase. All languages same price regardless of rarity. Pay-as-you-go option for ad-hoc events.
+
+**API**: No public REST API. Only the Widget Auto-Floor API — uses `Window.postMessage()` for iframe ↔ host page communication. Sends `floorMute: true/false` to tell the host page when to mute floor audio as attendees select language channels. No programmatic meeting creation, transcript access, or data export.
+
+**Integrations**: Microsoft Teams (native app), Zoom (Marketplace integration), any web platform (embeddable iframe widget). Supports Webex, BlueJeans, Hopin, On24, Bizzabo, Goldcast via widget. No CRM sync. No Zapier/Make.
+
+**Compliance**: SOC 2 Type 2 (4th consecutive year), ISO/IEC 27001:2022, AWS-hosted.
+
+**Known issues (from G2 reviews)**:
+- Audio delays during interpretation — network latency between speaker, cloud, and interpreter
+- Pricing opaque for smaller/frequent meeting use cases — built for enterprise events, not daily standups
+- Learning curve for the Interpreter Console
+
+**Selection notes**:
+- **Pick KUDO when**: Enterprise-scale multilingual events (100+ attendees, 3+ languages), need human interpreters for rare languages or certified accuracy, need SOC 2/ISO 27001 compliance, hosting on any platform (widget embeds anywhere)
+- **Avoid KUDO when**: You need a meeting note-taker with transcripts and CRM sync (→ Fathom, Gong, Fireflies), you need budget-friendly daily meeting translation (→ JotMe $10/mo, Jamy $15/mo), you need transcription/analytics (KUDO provides translation, not transcription), or you need a developer API for automation
+
+---
+
 ## Bolt-on conversation intelligence (not standalone)
 
 - **CallMiner Eureka** — Enterprise omnichannel conversation analytics with 100% automated QA, compliance monitoring, and agent coaching. Not a meeting note-taker — analyzes voice, chat, email, and social interactions post-call for quality and compliance. Regulated industries (healthcare, finance, collections). No public pricing (~$102K/yr avg). Covered by `/sales-callminer`
