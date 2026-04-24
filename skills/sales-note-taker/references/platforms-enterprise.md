@@ -491,6 +491,35 @@ For deep platform coverage (integrations, coaching workflows, migration guidance
 
 ---
 
+## MaxIQ (EchoIQ)
+
+For deep platform coverage (all modules, AI agents, CRM sync, pipeline and forecasting features), use `/sales-maxiq`.
+
+**Positioning**: AI-native revenue intelligence platform — EchoIQ is the CI module inside MaxIQ's unified revenue journey platform (InspectIQ pipeline + ForecastIQ forecasting + SuccessIQ CS). First CI tool to use usage-based pricing (not per-seat). Positions as "CI that tells you what conversations mean for your number, not just what was said." Backed by Dell Technologies Capital and Intel Capital ($7.8M seed, March 2025). Customers include Snowflake, Commvault, VAST Data.
+
+**Pricing (2026-04)**: Usage-based — pay per conversation captured and intelligence delivered. No public pricing tiers. Startup Program: free for 1 year. EchoIQ freemium: 30 days or 100 hours free. No per-seat licensing — reported >95% adoption rates vs industry 60-70%.
+
+**API**: No public API documentation. Custom APIs, webhooks, and Zapier integrations available. Specific endpoints, auth methods, and rate limits not documented — request during contracting.
+
+**CRM sync**: Salesforce (bi-directional, real-time), HubSpot (bi-directional, confirm feature parity). Auto-populates opportunity notes, MEDDIC fields, next steps from calls.
+
+**Integrations**: Zoom, Microsoft Teams, Google Calendar, Gmail, Google Drive, Office 365, Slack, Zapier, webhooks.
+
+**9 AI Agents**: NoteTaker (links conversations to deals), Radar (keyword/competitor monitoring), Summarizer (meeting briefs), Coach (methodology review), Taskmaster (tasks from conversations), Watchdog (pipeline monitoring), Forecaster (real-time win likelihood), Revenue Planner (forecast aggregation), Deal Mapper (buying group mapping).
+
+**Known issues (from G2 reviews, 34 reviews)**:
+- Learning curve for teams transitioning from traditional CI tools
+- Limited self-service custom reporting and dashboarding
+- Some features listed are "in active development" — verify availability
+- No public API documentation — automation limited to Zapier/webhooks
+- SuccessIQ (CS module) not yet launched
+
+**Selection notes**:
+- **Pick MaxIQ when**: You want CI tied to pipeline and forecast (not just a call library), usage-based pricing aligns with your team structure (especially if many reps are low-call-volume), you need conversation → deal → forecast intelligence in one platform, startup program gives free evaluation year
+- **Avoid MaxIQ when**: Need mature ecosystem with hundreds of integrations (→ Gong), need public API for custom integrations, team requires battle-tested product with years of market presence, need dedicated coaching depth (→ Gong + Allego), or need contact center QA (→ Observe.AI, NICE CXone)
+
+---
+
 ## Bolt-on conversation intelligence (not standalone)
 
 - **CallMiner Eureka** — Enterprise omnichannel conversation analytics with 100% automated QA, compliance monitoring, and agent coaching. Not a meeting note-taker — analyzes voice, chat, email, and social interactions post-call for quality and compliance. Regulated industries (healthcare, finance, collections). No public pricing (~$102K/yr avg). Covered by `/sales-callminer`

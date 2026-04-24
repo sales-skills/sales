@@ -36,6 +36,7 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - [Scratchpad](#in-scratchpad)
 - [People.ai (Backstory)](#in-people-ai-backstory)
 - [CallMiner](#in-callminer)
+- [MaxIQ (EchoIQ)](#in-maxiq-echoiq)
 - [Manual / Spreadsheet](#manual--spreadsheet-approach)
 
 ### In Sybill
@@ -459,6 +460,16 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - **CRM-connected coaching data**: Scored calls auto-sync methodology adherence data to Salesforce, HubSpot, Zoho, or Pipedrive (Premium). Managers can correlate coaching scores with deal outcomes to measure coaching ROI.
 - **Limitations**: Call scoring and role play require Premium ($49/user/mo). No real-time in-call coaching — all coaching is post-call. Role Play Agent quality may not match purpose-built tools (Solidroad, SecondBody, Outdoo). No API for extracting coaching data (Enterprise-only). Gen AI Search uses add-on credits on Premium. Starter plan limited to 3 users. For real-time coaching, use Balto or Cluely. For enterprise-scale coaching analytics, use Gong.
 - **Best practice**: Use Rafiki coaching for SMB/mid-market teams (2-15 reps) wanting automated call scoring and AI role play without Gong pricing. Start with a built-in framework (MEDDIC/BANT) and customize after 20+ scored calls. Review scoring accuracy manually for the first few weeks — adjust criteria based on what the AI consistently misidentifies. Pair Role Play sessions with manager 1:1s to close the loop between practice and real-call performance.
+
+### In MaxIQ (EchoIQ)
+
+- **AI Coach agent**: EchoIQ's AI Coach reviews calls against your sales methodology, highlighting coaching gaps and areas for improvement. Auto-scores calls and surfaces patterns across the team — which reps are consistently missing budget discovery? Which methodology steps are skipped?
+- **Pre-meeting briefs for coaching prep**: AI-generated meeting briefs with deal history and context help managers prepare coaching points before calls, not just after.
+- **AI Taskmaster for coaching follow-through**: Converts coaching moments into tasks with owners and deadlines — ensures coaching actions don't get lost after review sessions.
+- **AI Radar for team-wide patterns**: Keyword and competitor monitoring across all calls surfaces team-wide coaching needs — if competitor X is mentioned in 40% of calls but reps aren't addressing differentiation, that's a coaching priority.
+- **Revenue context for coaching prioritization**: Unlike standalone CI tools that score calls in isolation, MaxIQ ties coaching insights to deal health and forecast impact. Coach reps on the calls that matter most to pipeline, not random selection.
+- **Limitations**: No public API to extract coaching data. No AI roleplay or practice scenarios (→ Solidroad, SecondBody, Rafiki). Some AI agent features are in active development — verify Coach availability. No per-call interaction scoring (talk-to-listen ratio, filler words) — coaching is methodology and deal-outcome oriented. Pricing is usage-based, not per-seat.
+- **Best practice**: Use MaxIQ coaching when your priority is connecting coaching to revenue outcomes. Start by having managers review AI Coach scoring for 10-15 calls to calibrate expectations and customize methodology criteria. Pair with AI Watchdog to identify which deals need coaching attention most urgently.
 
 ### Manual / Spreadsheet approach
 

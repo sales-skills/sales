@@ -13,6 +13,7 @@ Forecasting capabilities and integration details for each platform that feeds in
 - [People.ai (Backstory)](#in-people-ai-backstory)
 - [Dialpad](#in-dialpad)
 - [Veloxy](#in-veloxy)
+- [MaxIQ (ForecastIQ + EchoIQ)](#in-maxiq-forecastiq--echoiq)
 
 ### In Sybill
 
@@ -113,6 +114,17 @@ Forecasting capabilities and integration details for each platform that feeds in
 - **Geolocation for pipeline visibility**: Thematic mapping visualizes opportunities by deal size, stage, or custom criteria on a map — useful for territory-based pipeline reviews and identifying geographic concentration risk.
 - **Limitations**: Veloxy does NOT have a dedicated forecasting module. No weighted pipeline, AI-predicted revenue, forecast submission workflows, or rollup views. No conversation intelligence to analyze deal sentiment from calls. Predictive intelligence prioritizes leads for reps — it doesn't predict revenue outcomes for managers. For dedicated forecasting, pair with Salesforce native forecasting or Clari.
 - **Best for**: Field sales teams whose forecast inaccuracy traces back to missing CRM data because reps don't log activities. Veloxy fixes the data input problem through automatic activity capture and email sync. Once CRM data is cleaner, forecasts built on that data become more reliable. Not a standalone forecasting tool — it's a forecast-enabler through better data hygiene.
+
+### In MaxIQ (ForecastIQ + EchoIQ)
+
+- **ForecastIQ module**: Signal-based forecasting — predicts revenue from conversation signals and deal data rather than stage-based CRM assumptions. AI-driven predictions adjust in real-time as new calls happen and deal signals change.
+- **AI Forecaster agent**: Adjusts win likelihood in real-time based on call signals. Every conversation updates deal momentum, forecast accuracy, expansion potential, and renewal health automatically.
+- **AI Revenue Planner agent**: Aggregates deal signals across the pipeline into defendable forecasts. Surfaces which deals are driving the commit number and which are at risk of slipping.
+- **AI Watchdog agent**: Monitors pipeline for stalls, slippage, and single-threading risks — flags deals that should be downgraded in the forecast before they miss.
+- **InspectIQ pipeline visibility**: Real-time pipeline tracking with deal scoring and gap/risk identification. Change detection alerts when deals move or stall.
+- **CRM sync for forecast accuracy**: Bi-directional Salesforce sync means deal data in CRM reflects actual conversation content, not stale rep estimates. Auto-populates MEDDIC fields and next steps from calls.
+- **Limitations**: New platform (34 G2 reviews) — limited independent validation of forecast accuracy. No public API to export forecast data. Some features in active development. HubSpot forecast integration feature parity with Salesforce not confirmed. No standalone forecast submission workflow like Clari — forecast governance may need to live in CRM.
+- **Best for**: Teams that want conversation intelligence and forecasting in one platform instead of stacking Gong + Clari. Usage-based pricing is attractive for organizations where not all reps are forecast-relevant. Startup Program (free 1 year) allows low-risk evaluation. Strongest when Salesforce is the CRM. Pair with CRM native forecasting for formal submit/override workflows.
 
 ### In Rafiki
 

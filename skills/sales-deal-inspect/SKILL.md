@@ -147,6 +147,7 @@ Actions should be specific, not generic. Instead of "build executive relationshi
 - `/sales-call-review` — Review the latest call on this deal for coaching insights
 - `/sales-close` — Closing strategies and mutual action plans
 - `/sales-weflow` — Weflow platform help (Salesforce-native Revenue AI with deal health signals, activity capture, conversation intelligence)
+- `/sales-maxiq` — MaxIQ platform help (AI-native revenue intelligence with EchoIQ CI, InspectIQ pipeline, ForecastIQ forecasting, 9 AI agents)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 
 ## Gotchas

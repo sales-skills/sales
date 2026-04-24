@@ -13,6 +13,7 @@ Detailed call review capabilities for each conversation intelligence and QA plat
 - [NICE CXone](#in-nice-cxone)
 - [Sybill](#in-sybill)
 - [Balto](#in-balto)
+- [MaxIQ (EchoIQ)](#in-maxiq-echoiq)
 - [Weflow](#in-weflow)
 
 ### In Revenue.io
@@ -113,6 +114,16 @@ Detailed call review capabilities for each conversation intelligence and QA plat
 - **Stats API**: Pull call analytics programmatically (async POST/GET pattern). Export call records with metadata for custom review dashboards.
 - **Limitations**: Call review is part of the broader UCaaS/CCaaS platform — not a dedicated conversation intelligence tool. No methodology scorecards (MEDDIC/BANT/SPICED). No deal intelligence from calls. No CRM field auto-fill from transcripts. Transcription accuracy weaker than dedicated CI tools on accents and jargon. CRM logging requires Pro+ ($25/user/mo).
 - **Best for**: Teams already on Dialpad for phones/contact center who want built-in call review without a separate tool. Contact center managers monitoring agent quality via sentiment and scorecards. Not ideal for sales teams needing deep deal-level call analysis — use Gong, Sybill, or Avoma instead.
+
+### In MaxIQ (EchoIQ)
+
+- **AI Coach agent**: Reviews every call against your sales methodology and highlights coaching gaps, missed qualification steps, and areas for improvement. Managers can filter by scoring criteria to find calls that need attention.
+- **AI Summarizer agent**: Generates one-page briefs with decisions, risks, and next steps from every call. Quick way to review call content without re-listening — includes deal context alongside the summary.
+- **AI Radar for call patterns**: Monitors keywords, competitors, and themes across all calls. Surfaces which topics are trending (budget concerns, competitor mentions, timeline shifts) and which calls contain them.
+- **Search Copilot**: Cross-conversation search across calls, emails, and notes. Ask questions like "Which calls this quarter mentioned security concerns?" and get AI-generated answers with source links.
+- **Revenue context for review prioritization**: MaxIQ ties call review to deal health and forecast impact. AI Watchdog flags which deals have pipeline risk — managers can prioritize reviewing calls on at-risk deals rather than random sampling.
+- **CRM auto-population**: Call insights (methodology scores, objections, next steps, action items) auto-sync to Salesforce/HubSpot opportunity records. Reviewing a call's CRM impact is as simple as checking the opportunity timeline.
+- **Note**: MaxIQ's call review is methodology and revenue-outcome oriented — it doesn't provide Gong-style talk-to-listen ratios, filler word counts, or granular interaction metrics. It tells you whether the call advanced the deal and what risks it surfaced. Usage-based pricing (not per-seat). No public API to extract review data. Some AI agent features in active development — verify availability.
 
 ### In Rafiki
 
