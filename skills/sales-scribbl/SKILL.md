@@ -71,7 +71,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - **Pro plan caps teams at 5 members** — teams of 6+ must contact sales for the Team plan with custom pricing.
 - **Free tier video expires after 2 months** — transcripts and AI notes persist, but video recordings are deleted. Pro extends to 1 year.
 - **No public API** — no REST endpoints, no webhooks, no MCP. Custom integrations are not possible. CRM integration is Team-plan-only and details are vague.
-- **CRM integration details unclear** — the Team plan advertises "CRM integrations" but doesn't specify which CRMs or how deep the sync goes. Confirm with sales before assuming Salesforce/HubSpot support.
+- **HubSpot confirmed, others unclear** — the Team plan has HubSpot two-way sync (summaries, sentiment, upsell signals to contacts/deals). Salesforce and other CRMs are not confirmed — check with sales.
 - **AI Copilot requires Pro** — the GPT-4-powered chat with meeting content is unlimited on Pro but not available on Free.
 
 ## Related skills

@@ -62,7 +62,7 @@ Scribbl is a bot-free AI meeting note-taker that runs as a Chrome extension, pri
 ### Native integrations (Team plan only)
 - **Slack** — auto-share meeting summaries to channels
 - **Google Drive** — auto-save meeting notes to Google Docs
-- **CRM** — advertised but specific CRM names not confirmed (likely HubSpot/Salesforce based on category norms)
+- **CRM** — HubSpot confirmed (two-way sync: auto-pushes AI summaries, sentiment analysis, upsell opportunities to contacts/deals). Other CRMs not confirmed.
 
 ### Sharing
 - Shareable meeting links (no recipient sign-up required)
@@ -139,4 +139,4 @@ Available on Pro and Team plans only. Unlimited queries on Pro+.
 - Specific compliance certifications (SOC 2, GDPR, HIPAA) not publicly documented — confirm with sales for enterprise requirements
 
 ### Affiliate program
-30% commission for first 12 months of referred memberships. Via Wise payments. Contact: john@scribbl.co. No strict brand guidelines.
+30% commission for first 12 months of referred memberships. 180-day cookie via Rewardful. Payouts via Wise (monthly). Contact: john@scribbl.co. No strict brand guidelines.
