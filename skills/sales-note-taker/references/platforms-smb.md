@@ -1513,3 +1513,39 @@ For deep platform coverage (Zapier automation, async video workflows, plan compa
 **Selection notes**:
 - **Pick Bubbles when**: Your team prioritizes async video collaboration + meeting recording in one tool, you don't need CRM integration, you want screen recording alongside meeting notes, your team uses Zoom/Meet/Teams and wants auto-join without setup friction, or you're a design/product team that values async comments on recordings
 - **Avoid Bubbles when**: You need CRM sync (→ Fathom Business, Fireflies Business, Sybill), you need an API for custom integrations (→ Fathom, Fireflies, Wave), you need multilingual transcription (→ Notta, Jamy), you need sales coaching or conversation intelligence (→ Gong, Avoma, tl;dv), you need editable transcripts (→ Fireflies, Otter), or you need external collaborators to comment without creating an account (→ Loom Business)
+
+## Transync AI
+
+For deep platform coverage (setup, plan selection, AI Assistant configuration, troubleshooting), use `/sales-transync-ai`.
+
+**Positioning**: Real-time AI meeting translation with the lowest latency in the category (<0.5s). Dual-screen bilingual display shows original and translated speech side-by-side. AI voice broadcast outputs natural voice in the target language. Bot-free — captures system audio without joining meetings as a participant. Targets multilingual business teams, foreign trade professionals, and cross-border freelancers.
+
+**Pricing (2026-04)**: Free (40 min one-time trial), Personal Premium $8.99/mo (10 hrs/mo), Enterprise $24.99/seat/mo (40 hrs/seat/mo, org knowledge base, compliance docs). Time card top-ups: $0.70/hr, $7.99/10hr, $22.99/30hr, $69.99/100hr. Enterprise volume discounts at $1K (2%), $3K (5%), $5K (8%), $10K+ (10%) annual spend.
+
+**API**: None. No REST API, no webhooks, no SDK, no MCP server. No Zapier or Make integrations. All interaction is through the desktop/mobile/web app.
+
+**Integrations**: Zoom, Microsoft Teams, Google Meet, WhatsApp voice calls, in-person meetings — all via system audio sharing (no plugins, no bot). No CRM connectors. Transcript/note export is manual (copy/paste or download).
+
+**Key capabilities**:
+- 60+ languages, 1,770+ language pairs
+- Near-zero latency (<0.5s) — fastest in category
+- Dual-screen bilingual display with speaker identification
+- AI voice broadcast (natural voice output in target language)
+- AI meeting notes (transcription + translation + summaries)
+- AI Assistant for custom domain terminology and keywords
+- Auto language detection and speaker detection
+- Multi-platform: Windows, macOS, iOS, Android, Web
+
+**Security**: AES-128 + TLS 1.3 encryption, audio immediately deleted after processing, GDPR compliant, SOC 2 Type II + ISO 27001 in progress (not yet certified as of 2026-04).
+
+**Key gotchas**:
+- 40-minute free trial is one-time — no recurring free tier
+- No API or automation — cannot automate transcript export or CRM sync
+- System audio sharing setup varies by OS (macOS requires Screen Recording permission)
+- Accuracy degrades with heavy accents, overlapping speakers, and noisy environments
+- Enterprise SOC 2/ISO 27001 certifications still in progress
+- No CRM integration at all — meeting notes stay inside Transync AI
+
+**Selection notes**:
+- **Pick Transync AI when**: You need the lowest latency real-time translation for business meetings, you want dual-screen bilingual display, you need AI voice broadcast in the target language, your meetings are primarily bilingual (one language pair), you want bot-free system audio capture, or you're in foreign trade/cross-border business
+- **Avoid Transync AI when**: You need API integration or CRM sync (→ Fathom, Fireflies, Sybill), you need 100+ languages (→ JotMe 107 languages), you need human interpreters for enterprise events (→ KUDO, Interprefy), you need domain-specific AI voice avatars (→ Langfinity), you need conversation intelligence or sales coaching (→ Gong, Avoma, tl;dv), or you need automated transcript pipelines (→ Fireflies API, Fathom REST + MCP)
