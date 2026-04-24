@@ -84,6 +84,7 @@ If you discover a gotcha or tip not covered in `references/learnings.md`, append
 ## Related skills
 
 - `/sales-note-taker` — Compare all AI note-takers, select the right one for your team, or plan an API integration pipeline
+- `/sales-interprefy` — Interprefy platform help — enterprise RSI + AI speech translation, 80+ platform integrations, REST API
 - `/sales-jotme` — JotMe platform help — real-time AI translation for daily meetings, 107 languages, $0-30/mo
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`
 

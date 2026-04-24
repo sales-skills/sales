@@ -545,6 +545,32 @@ For deep platform coverage (all modules, pricing tiers, widget embedding, interp
 
 ---
 
+## Interprefy
+
+For deep platform coverage (all modules, pricing, API, integration methods, comparison with KUDO/Wordly/Interactio), use `/sales-interprefy`.
+
+**Positioning**: Enterprise multilingual communication platform — not a traditional note-taker or conversation intelligence tool, but the go-to platform for organizations needing Remote Simultaneous Interpretation (RSI), AI speech translation, and live captions across 80+ meeting and event platforms. Combines AI-powered speech translation (80+ languages) with a global network of 6,000+ professional interpreters (spoken + sign language). Four integration methods: Inject (into audio feed), Widget (sidebar panel), Virtual Cable (no AV changes), Agent (auto-join as participant). Only relevant if you need real-time multilingual interpretation at enterprise scale.
+
+**Pricing (2026-04)**: 100% custom-quoted. Three models: hourly rates (meetings/webinars), daily rates (5+ hour events), 12-month plans (min 10 hours bundled). Three modules: Platform (per-minute), Professional Services (hourly), Interpreters. No public dollar amounts. Claims up to 75% cost reduction vs on-site interpretation.
+
+**API**: REST API v2 (`/api/v2/`). JWT auth for management (events, sessions, users, login tokens). Static token auth for client-side (RTC sessions, booking emails). Supports event creation, session management, and login token generation. Does NOT support: interpreter booking, AI translation toggle, recording management — those are UI-only.
+
+**Integrations**: 80+ platforms — MS Teams, Zoom, Google Meet, Webex, RingCentral/BlueJeans, ON24, Livestorm, 6Connex, Bizzabo, Accelevents, Airmeet. No CRM sync. No Zapier/Make.
+
+**Compliance**: ISO 27001, end-to-end encryption, interpreter NDAs.
+
+**Known issues (from G2 reviews, knowledge base)**:
+- Widget iframe embedding requires HTML/coding skills — may need a developer
+- Audio delays during interpretation (1-3s AI, 3-7s human)
+- Bluetooth headset issues on Android mobile app
+- Integration with some event platforms not always smooth
+
+**Selection notes**:
+- **Pick Interprefy when**: Enterprise multilingual events needing flexible integration (80+ platforms), need both AI and human interpretation, ISO 27001 required, want programmatic event/session management via REST API, using less common event platforms where KUDO widget may not embed
+- **Avoid Interprefy when**: You need a meeting note-taker with transcripts and CRM sync (→ Fathom, Gong, Fireflies), you need budget-friendly daily translation (→ JotMe $10/mo, Jamy $15/mo), you need iPaaS automation like Zapier/Make (Interprefy has none), or you need webhook-driven integrations
+
+---
+
 ## Bolt-on conversation intelligence (not standalone)
 
 - **CallMiner Eureka** — Enterprise omnichannel conversation analytics with 100% automated QA, compliance monitoring, and agent coaching. Not a meeting note-taker — analyzes voice, chat, email, and social interactions post-call for quality and compliance. Regulated industries (healthcare, finance, collections). No public pricing (~$102K/yr avg). Covered by `/sales-callminer`
