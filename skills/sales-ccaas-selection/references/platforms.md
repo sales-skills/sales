@@ -463,3 +463,34 @@ Detailed profiles for each major CCaaS platform — capabilities, pricing, stren
 **When NOT to choose CallMiner**: If you need primarily real-time agent coaching during calls (→ Balto, Cresta). If you need a lighter-weight QA tool for a small team (→ Observe.AI, Enthu.AI). If you need sales-specific deal intelligence (→ Gong, Clari Copilot). If budget is under $50K/year (→ Observe.AI, MaestroQA).
 
 **Platform skill**: `/sales-callminer`
+
+---
+
+### Level AI (AI overlay — QA + real-time assist + VoC analytics)
+
+**What it does**: Contact center intelligence platform powered by Naviant semantic AI. Combines 100% automated QA (InstaScore), real-time agent assist (AgentGPT), Voice of Customer analytics (iCSAT), screen recording, and AI virtual agents. Not a CCaaS — layers on top of existing telephony.
+
+**CCaaS integrations**: Zendesk, Five9, Freshworks, Kustomer, Vonage, Twilio, Amazon Connect, UJET, Talkdesk, Genesys, LivePerson, LiveChat, Dialpad
+
+**Pricing**: Custom enterprise pricing. Estimated ~$185/agent/month.
+
+**Strengths vs alternatives**:
+- Semantic intelligence (intent-based analysis, not keyword matching) — understands meaning, not surface phrases
+- Combined real-time assist + post-call QA in one platform (vs Balto for real-time only, CallMiner for post-call only)
+- iCSAT (inferred satisfaction) — predictive satisfaction scoring without surveys
+- Modern interface responsive to feature requests
+- SOC 2 Type II, PCI, ISO 27001, GDPR, HIPAA compliant
+
+**Weaknesses**:
+- Call ingestion delayed up to 24 hours — same-day monitoring unreliable
+- InstaScore accuracy requires calibration — language barriers affect scoring
+- Sentiment analysis misclassifies neutral conversations
+- No public pricing or self-serve API docs
+- Mid-market focus may limit scalability for very large operations (5,000+ agents)
+- API exists (GraphQL) but is enterprise-gated
+
+**Best for**: Mid-market contact centers (100-1,000 agents) wanting modern AI QA + real-time assist without enterprise platform complexity. Healthcare, financial services, insurance, retail.
+
+**When NOT to choose Level AI**: If you need same-day call monitoring (ingestion delays). If primary need is real-time-only coaching (→ Balto). If you need 5,000+ agent enterprise scale (→ Observe.AI, Cresta, NICE CXone). If you need transparent pricing (→ CallMiner at $89/user/mo, Enthu.AI at $15-69/user/mo). If you need deep post-call analytics and compliance (→ CallMiner).
+
+**Platform skill**: `/sales-level-ai`

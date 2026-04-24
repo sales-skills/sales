@@ -430,6 +430,67 @@ For deep platform coverage (activity capture, deal intelligence, MCP integration
 
 ---
 
+## Level AI
+
+For deep platform coverage (all modules, API details, InstaScore QA setup, integration guides, coaching workflows, pricing breakdown, known issues), use `/sales-level-ai`.
+
+**Positioning**: Contact center intelligence platform powered by Naviant semantic AI — combines 100% auto QA (InstaScore), real-time agent assist (AgentGPT), VoC analytics (iCSAT), screen recording, and AI virtual agents. Targets mid-market to enterprise contact centers (100-1,000+ agents) in healthcare, financial services, insurance, retail. 2023 Gartner Cool Vendor.
+
+**Key differentiator**: Semantic intelligence — intent-based analysis, not keyword matching. Understands what customers mean rather than matching surface-level phrases.
+
+**Pricing**: Custom enterprise pricing. Estimated ~$185/agent/month (no public tiers).
+
+**Core modules**:
+- **InstaScore** — 100% auto QA scoring against custom scorecards with QA-GPT model
+- **AgentGPT** — real-time knowledge surfacing and next-best-action during calls
+- **VoC analytics** — iCSAT (inferred satisfaction), sentiment, intent detection, trends
+- **Agent screen recording** — desktop capture alongside call audio for coaching
+- **AI Virtual Agent** — automated voice/chat handling with escalation
+
+**CCaaS integrations**: Zendesk, Five9, Freshworks, Kustomer, Vonage, Twilio, Amazon Connect, UJET, Talkdesk, Genesys, LivePerson, LiveChat, Dialpad
+
+**CRM**: Salesforce (AppExchange listing)
+
+**API**: Exists but not publicly documented. GraphQL-based. Enterprise-gated — request spec during contract negotiation.
+
+**Known issues**:
+- Call ingestion delayed up to 24 hours — same-day monitoring unreliable
+- InstaScore accuracy requires calibration — language barriers affect scoring
+- Sentiment analysis misclassifies neutral conversations
+- No public API docs or self-serve developer access
+
+**Selection notes**:
+- **Pick Level AI when**: Mid-market contact center (100-1,000 agents), want combined QA + real-time assist in one platform, value semantic intelligence over keyword matching, industries with nuanced customer intent (healthcare, insurance, financial services)
+- **Avoid Level AI when**: Under 50 agents (→ Enthu.AI), need same-day call monitoring (ingestion delays), need 5,000+ agent enterprise scale (→ Observe.AI, Cresta, NICE CXone), need transparent pricing or self-serve API, primary need is real-time-only coaching (→ Balto)
+
+---
+
+## ExecVision (Mediafly Coach360)
+
+For deep platform coverage (integrations, coaching workflows, migration guidance), use `/sales-execvision`.
+
+**Positioning**: Coaching-first conversation intelligence — the platform is built around translating call insights into structured coaching plans, not just surfacing analytics. Acquired by Mediafly in 2022, now Coach360 inside Revenue360 suite. 59+ native integrations (38 dialers, 9 conferencing, 6 CRMs). Targets mid-market to enterprise sales teams and contact centers.
+
+**Pricing (2026-04)**: Not public — bundled in Mediafly Revenue360 suite. Historical: ~$100-185/user/month. Annual contracts, custom quotes only. No free tier. API access is enterprise-gated.
+
+**API**: Exists but not publicly documented. No public base URL, SDK, or developer portal. Request API specification during contract negotiation. Reportedly RESTful with a sandbox environment for development.
+
+**Key modules**: Call recording (multi-source ingestion), transcription, conversation intelligence (smart alerts, keyword tracking), coaching plans (AI-recommended), performance dashboards (rep self-review, team comparison), conversation library (clip sharing, playlists), scorecards, QA & compliance.
+
+**CRM integrations**: Salesforce, HubSpot, Pipedrive, Microsoft Dynamics, SAP — bidirectional sync (pull deal context, push call metadata and coaching outcomes).
+
+**Known issues**:
+- Filter UI difficult to use (top G2 complaint) — build saved presets for common queries
+- Acquired product — roadmap uncertainty, no standalone purchasing
+- No public API docs or self-serve developer access
+- No AI roleplay or methodology scoring (MEDDIC/BANT/SPICED)
+
+**Selection notes**:
+- **Pick ExecVision when**: Coaching-first use case (structured coaching plans, not just call dashboards), wide dialer/telephony footprint (38+ integrations), existing Mediafly customer, enablement/L&D team driving the buy
+- **Avoid ExecVision when**: Need deal intelligence and pipeline forecasting (→ Gong), need affordable CI for small team (→ Rafiki $19/mo, Avoma $19/mo), need public API for custom integrations, need standalone product without suite bundling, need real-time agent assist (→ Balto)
+
+---
+
 ## Bolt-on conversation intelligence (not standalone)
 
 - **CallMiner Eureka** — Enterprise omnichannel conversation analytics with 100% automated QA, compliance monitoring, and agent coaching. Not a meeting note-taker — analyzes voice, chat, email, and social interactions post-call for quality and compliance. Regulated industries (healthcare, finance, collections). No public pricing (~$102K/yr avg). Covered by `/sales-callminer`
