@@ -1425,3 +1425,33 @@ For deep platform coverage (Chrome extension setup, AI Copilot, team library, pl
 **Selection notes**:
 - **Pick Scribbl when**: Your team is 100% on Google Meet and Chrome, you want the simplest possible bot-free setup (one extension install, no config), you want instant AI summaries without any meeting bot visible to participants, you value AI Copilot chat to query past meetings, or your free-tier needs are under 15 meetings/month
 - **Avoid Scribbl when**: You use Zoom or Teams (→ Fathom, Fireflies, tl;dv), you need CRM integration without custom pricing (→ Fathom Business $25/mo, Sybill $30/mo), you need an API or webhooks (→ Fathom, Fireflies, Gong), you need teams larger than 5 on a published price (→ Fireflies Business, tl;dv Business), or you need deep coaching/methodology features (→ Avoma, tl;dv Business, Gong)
+
+---
+
+## JotMe
+
+For deep platform coverage (live translation setup, pricing tiers, Chrome extension vs desktop app, translation minute management), use `/sales-jotme`.
+
+**Positioning**: Real-time AI translation and meeting intelligence platform — the translation-first note-taker. Provides simultaneous interpretation across 107 languages with near-zero latency, bot-free system audio capture, multilingual transcription (up to 10 languages simultaneously), and AI-powered meeting summaries. Used by professionals at Toyota, Google, Netflix, Hitachi, and Mercari. Primary use case is live translation during multilingual meetings and conferences, with meeting notes as a secondary feature.
+
+**Pricing (2026-04)**: Free $0 (20 min translation, 5 AI credits, 50 min transcription). Pro $20/mo ($10 annual), 200 min translation, 20 AI credits, 500 min desktop transcription, unlimited Chrome Meet transcription. Premium $30/mo ($15 annual), 500 min translation, 50 AI credits, 2,000 min transcription, unlimited recordings. Enterprise custom pricing (unlimited everything, team billing, Slack/Google Docs/email integrations).
+
+**API**: None. No public API, no REST endpoints, no SDKs, no webhooks, no MCP server.
+
+**Webhooks**: None.
+
+**Zapier**: None.
+
+**Integrations**: Google Meet (Chrome extension), Zoom/Teams/Webex/Slack/Discord/WhatsApp/LINE/WeChat/YouTube (via desktop app system audio capture). Enterprise-only: Slack, Google Docs, email. No CRM connectors on any plan.
+
+**Key gotchas**:
+- Translation minutes and AI credits are separate pools — you can exhaust one while the other remains
+- Chrome extension is Google Meet only — all other platforms require the desktop app
+- No CRM sync on any self-serve plan — Enterprise only for Slack/Docs/email
+- Real-time transcript scrolls too fast to read — use post-meeting summaries instead
+- Enterprise pricing not published — must contact sales for unlimited usage
+- No rollover of unused minutes/credits month to month
+
+**Selection notes**:
+- **Pick JotMe when**: Your team needs simultaneous interpretation during live meetings, you work across 10+ languages regularly, you want bot-free translation that doesn't announce itself to other participants, you're running multilingual conferences or events, or you need custom vocabulary for industry-specific translation
+- **Avoid JotMe when**: You need CRM integration (→ Fathom Business, Sybill, Jamy), you need an API or webhooks (→ Fathom, Fireflies, Gong), translation is secondary to meeting notes quality (→ Notta, Jamy), you need unlimited usage on a published price (→ Fathom Free unlimited recordings), or you need team collaboration features beyond Enterprise (→ Fireflies, Grain)

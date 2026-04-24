@@ -6,7 +6,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 
 | File | What's in it | Platforms |
 |---|---|---|
-| `platforms-smb.md` | Budget-friendly tools under ~$50/user/mo, strong free tiers | Fathom, Fireflies, Otter, MeetGeek, Tactiq, Granola, Wave, Bluedot, Notta, Sonnet, Supernormal, VoiceToNotes, Hedy, Colibri, Jamy, Temi, Char, HappyScribe, Voicenotes, AudioPen, TalkNotes, Letterly, Coconote, HyNote AI, Backtrack |
+| `platforms-smb.md` | Budget-friendly tools under ~$50/user/mo, strong free tiers | Fathom, Fireflies, Otter, MeetGeek, Tactiq, Granola, Wave, Bluedot, Notta, Sonnet, Supernormal, VoiceToNotes, Hedy, Colibri, Jamy, Temi, Char, HappyScribe, Voicenotes, AudioPen, TalkNotes, Letterly, Coconote, HyNote AI, Backtrack, JotMe |
 | `platforms-midmarket.md` | Sales-focused CI with coaching, methodology, CRM enrichment | Avoma, tl;dv, Claap, Grain, Sembly, Read.ai, Fellow, Jamie, Krisp, IRIS Clarity, Cluely, Lindy, Outdoo, Jiminny, Enthu.AI, Demodesk, Salesken, Oliv, Weflow, Scratchpad, Laserfocus, Noota, Dialpad, Winn.ai, Circleback |
 | `platforms-enterprise.md` | Enterprise revenue intelligence ($1K+/user/yr) + bolt-on CI | Gong, Modjo, Clari Copilot, Verbit, + Salesloft Conversations, Chorus, Seismic, Revenue.io |
 | `platforms-field.md` | In-person/field sales coaching and mobile recording | Rilla, Siro, Sales Ask, Speakwise, Omi, Plaud |
@@ -95,3 +95,4 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Superpowered | Bot-free AI note-taker (desktop) | Yes (1 cal, 1-mo history) | $25/mo | None | None | Medium (SF/HS, Pro only) | Bot-free device-audio capture, AI Templates, SOC-2/GDPR, Y Combinator-backed |
 | Noted | Voice recorder + timestamped note-taker (Apple) | Yes | $9.99/mo ($79.99/yr, $89.99 LTD) | None | None | None | Timestamped audio-note linking, Apple Pencil drawing, Intelligent Playback, Apple Watch, 18 languages, students/professionals |
 | Backtrack | Retroactive Mac menu bar recorder | Yes (1 hr buffer) | $9.99/mo | None | None | None | Mac users who forget to record, retroactive capture, bot-free, in-person + video calls |
+| JotMe | Real-time AI translation + meeting notes | Yes (20 min translation) | $10/mo (annual) | None | None | None (Enterprise only) | Multilingual teams needing simultaneous interpretation in 107 languages, bot-free, conferences |
