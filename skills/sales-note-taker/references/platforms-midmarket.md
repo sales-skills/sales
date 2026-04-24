@@ -914,3 +914,27 @@ For deep platform coverage (API endpoints, MCP server, workflow builder, coachin
 **Selection notes**:
 - **Pick Attention when**: You want real-time battlecards during live calls, you need 200+ integrations out of the box, you want a no-code workflow builder for post-call automations, you need coaching scorecards with MEDDIC/BANT/custom frameworks, you want an MCP server for AI assistant integration, you're looking for a Gong alternative at a lower price point
 - **Avoid Attention when**: You need a free tier (→ Fathom, tl;dv, MeetGeek), you need deep behavioral/body language insights (→ Sybill Buyer EQ), you want transparent self-serve pricing (→ Fathom, Fireflies, tl;dv), you need a large independent review base for vendor evaluation (→ Gong, Chorus), you need a public REST API with documented rate limits (→ Fathom, Fireflies, Gong)
+
+## Rafiki
+
+For deep platform coverage (AI agents, call scoring frameworks, CRM sync, deal intelligence, role-play, pricing tiers, known issues, troubleshooting), use `/sales-rafiki`.
+
+**Positioning**: AI-powered conversation + revenue intelligence positioned as the most affordable Gong alternative. Claims 99% of Gong's features at 25% of the price. Squad of AI agents (Notetaking, Coaching, Follow-Up, CRM Sync, Revenue, Role Play) handles recording, scoring, CRM updates, and deal intelligence. Targets SMB and mid-market teams. G2 4.8 stars (~150 reviews), 500+ revenue teams.
+
+**Pricing (2026-04, from public pricing page)**: Free (recording + transcription + summaries), Starter $19/user/mo annual ($24 quarterly, up to 3 users, 2K min/mo transcription), Premium $49/user/mo annual ($59 quarterly, unlimited, scoring, deal dashboard), Enterprise custom (API, in-house deployment). 14-day free trial, no CC.
+
+**API**: Enterprise-only — not publicly documented. No public API for Starter or Premium plans. No webhooks documented for non-Enterprise. No MCP server.
+
+**Integrations**: Zoom/Meet/Teams (recording), Salesforce/HubSpot/Zoho/Pipedrive/Freshworks/Monday.com (CRM), Aircall/OpenPhone (dialer), Slack (notifications), Salesloft (marketplace partner), Google/Outlook Calendar (auto-detect).
+
+**Known issues (from G2/review analysis)**:
+- Starter plan's 2,000 min/mo transcription cap can surprise high-volume teams — recordings stop being transcribed mid-month
+- CRM field auto-capture (MEDDIC/BANT/SPIN) is Premium-only — Starter users only get summary sync
+- Gen AI Search and Reports use add-on credits on Premium — not fully unlimited
+- No public API or webhook support below Enterprise — limits automation options
+- Smaller review base (~150 G2 reviews) compared to Gong (5,000+) or Chorus (3,000+)
+- Role Play Agent quality varies — may not match purpose-built roleplay tools (Solidroad, SecondBody)
+
+**Selection notes**:
+- **Pick Rafiki when**: You want Gong-level features (scoring, coaching, CRM sync, deal intelligence) at $19-49/user/mo, your team is 2-15 reps, you use Salesforce/HubSpot/Zoho/Pipedrive, you don't need a public API, you want transparent self-serve pricing, you need 55+ language transcription
+- **Avoid Rafiki when**: You need a public API for custom integrations (→ Gong, Fireflies, Fathom), you need real-time in-call coaching (→ Cluely, Balto, Colibri), you need deep behavioral/body language analysis (→ Sybill), you need enterprise-scale deployment with SSO/SCIM (→ Gong), you have more than 3 users but only want to pay $19/seat (Starter caps at 3 users)

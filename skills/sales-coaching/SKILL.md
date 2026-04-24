@@ -186,6 +186,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-ccaas-selection` — Comparing CCaaS platforms? The selection skill walks through Genesys vs NICE vs Talkdesk vs Five9
 - `/sales-modjo` — Modjo platform help (EU-native call scoring, AI coaching insights, conversation library playlists, GDPR-compliant)
 - `/sales-winn` — Winn.ai platform help (real-time playbook adherence tracking, automated CRM updates, live coaching Enterprise, AI battle cards)
+- `/sales-rafiki` — Rafiki platform help (AI conversation intelligence with Smart Call Scoring MEDDIC/BANT/SPIN, Role Play Agent, CRM auto-sync, $19-49/user/mo)
 - `/sales-call-review` — Review specific sales calls and extract coaching insights
 - `/sales-note-taker` — Picking an AI note-taker (Fathom, Fireflies, Avoma, Gong, Modjo, etc.) or wiring its API to feed your coaching program
 - `/sales-content` — Sales content for training and enablement programs

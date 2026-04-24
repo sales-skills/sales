@@ -113,3 +113,12 @@ Detailed call review capabilities for each conversation intelligence and QA plat
 - **Stats API**: Pull call analytics programmatically (async POST/GET pattern). Export call records with metadata for custom review dashboards.
 - **Limitations**: Call review is part of the broader UCaaS/CCaaS platform — not a dedicated conversation intelligence tool. No methodology scorecards (MEDDIC/BANT/SPICED). No deal intelligence from calls. No CRM field auto-fill from transcripts. Transcription accuracy weaker than dedicated CI tools on accents and jargon. CRM logging requires Pro+ ($25/user/mo).
 - **Best for**: Teams already on Dialpad for phones/contact center who want built-in call review without a separate tool. Contact center managers monitoring agent quality via sentiment and scorecards. Not ideal for sales teams needing deep deal-level call analysis — use Gong, Sybill, or Avoma instead.
+
+### In Rafiki
+
+- **Smart Call Scoring**: Automated scoring against MEDDIC, BANT, SPIN, or GAP frameworks — every call gets scored without manual review. Managers can filter by score range to find calls that need attention and skip well-executed ones.
+- **Smart Call Summary**: AI-generated structured summaries with topics, objections, action items, and next steps. Quick way to review call content without re-listening.
+- **Coaching playlists**: Organize scored calls into playlists by topic (objection handling, discovery, closing). Tag specific moments with coaching notes for 1:1 review sessions.
+- **Ask Rafiki for call patterns**: Natural language search across all calls — "Which calls this week had pricing objections?" or "Show me calls where MEDDIC Metrics was missed." Surfaces patterns across multiple calls for systemic coaching.
+- **Smart Follow-Up review**: AI-generated post-call emails tagged with key moments from the meeting — reviewing the follow-up email is a quick proxy for call quality review.
+- **Note**: Rafiki's call review is strong on automated scoring and team-level patterns but lacks real-time in-call intervention (no live coaching cards or alerts during calls). Smart Call Scoring requires Premium ($49/user/mo). For real-time coaching during calls, use Balto or Cluely. For behavioral/body language analysis, use Sybill. Rafiki's strength for call review is affordable automated scoring + methodology adherence tracking at a fraction of Gong's price.
