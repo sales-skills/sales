@@ -35,6 +35,7 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - [Weflow](#in-weflow)
 - [Scratchpad](#in-scratchpad)
 - [People.ai (Backstory)](#in-people-ai-backstory)
+- [CallMiner](#in-callminer)
 - [Manual / Spreadsheet](#manual--spreadsheet-approach)
 
 ### In Sybill
@@ -418,6 +419,16 @@ Detailed coaching guidance for each enablement, conversation intelligence, and Q
 - **Pipeline review coaching**: Activity-backed pipeline views show managers where reps are spending time vs. where they should be spending time. Enables coaching around deal prioritization and time allocation.
 - **Limitations**: People.ai does NOT record or transcribe calls — it captures activity metadata only. No coaching scorecards, no AI roleplay, no call-level coaching feedback. For call coaching, pair with Gong, Sybill, or another CI tool. People.ai provides the data layer for coaching decisions — "what to coach on" — not the coaching delivery mechanism.
 - **Best practice**: Use People.ai coaching signals for 1:1 prep and pipeline review coaching. Pull up a rep's activity dashboard before 1:1s — "I see you've only had one meeting with the economic buyer on Deal X" is more impactful than "How's Deal X going?" Pair with Gong or Sybill for call-level coaching. People.ai shows patterns across deals; CI tools show patterns within a single conversation.
+
+### In CallMiner
+
+- **Automated QA scoring (Coach + Analyze)**: CallMiner's core coaching value is 100% automated QA — every interaction scored against weighted categories (compliance, empathy, resolution, script adherence). Moves QA from 2-5% manual sampling to 100% automated coverage. Managers coach on data, not guesswork.
+- **Agent scorecards**: Weighted scorecards evaluate each agent across quality criteria. Performance trends over time — see which agents are improving, which are regressing, and on which specific skills. Enables targeted coaching: "Your compliance score dropped 12% this week — let's review the three interactions that flagged."
+- **Coaching plans (Coach module)**: Assign coaching plans to agents based on scorecard results. Track completion, measure impact on scores. Structured coaching workflow: identify gap → assign training → verify improvement.
+- **RealTime alerts for live coaching**: Supervisors can receive alerts during live calls when specific categories match (compliance violations, escalation signals, coaching moments). More limited than purpose-built real-time tools (Balto, Cresta) — CallMiner's strength is post-interaction coaching.
+- **Trend analysis for team coaching**: Visualize module shows team-wide trends — which categories are failing most? Are scores improving quarter-over-quarter? Enables coaching prioritization: focus on the skill gaps that affect the most agents.
+- **Limitations**: Steep learning curve — 3-6 month ramp to build effective categories and scorecards. Not sales-deal-oriented (no pipeline intelligence, no deal health). Post-interaction focused — real-time coaching is weaker than Balto or Cresta. Enterprise pricing (~$102K/year average). No AI roleplay. No methodology-based scoring (MEDDIC/BANT/SPICED). For sales deal coaching, use Gong, Sybill, or Outdoo. For real-time agent assist, layer Balto or Cresta.
+- **Best practice**: Use CallMiner coaching for regulated contact centers where 100% QA coverage is a compliance requirement, not a nice-to-have. The platform excels at turning interaction analytics into structured coaching plans — the workflow is Analyze → identify gap → Coach plan → track improvement → repeat. Pair with a real-time tool (Balto, Cresta) if you also need live coaching during calls.
 
 ### Manual / Spreadsheet approach
 

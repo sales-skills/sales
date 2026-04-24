@@ -432,6 +432,7 @@ For deep platform coverage (activity capture, deal intelligence, MCP integration
 
 ## Bolt-on conversation intelligence (not standalone)
 
+- **CallMiner Eureka** — Enterprise omnichannel conversation analytics with 100% automated QA, compliance monitoring, and agent coaching. Not a meeting note-taker — analyzes voice, chat, email, and social interactions post-call for quality and compliance. Regulated industries (healthcare, finance, collections). No public pricing (~$102K/yr avg). Covered by `/sales-callminer`
 - **Cirrus Insight** — Salesforce-native sales productivity with Meeting AI, Conversation Intelligence, and Live Coaching modules; covered by `/sales-cirrus-insight`
 - **monday Notetaker** — native AI meeting recording inside monday.com work management/CRM, action items → board items; covered by `/sales-monday-notetaker`
 - **Outreach Kaia** — inside Outreach sales engagement platform; covered by `/sales-outreach-io`

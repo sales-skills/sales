@@ -109,6 +109,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-balto` — Balto — real-time agent assist for contact centers
 - `/sales-cresta` — Cresta — enterprise contact center AI
 - `/sales-uniphore` — Uniphore — enterprise conversation intelligence + real-time assist overlay on any CCaaS
+- `/sales-callminer` — CallMiner Eureka — enterprise conversation analytics, automated QA, compliance monitoring overlay on any CCaaS
 - `/sales-dialpad` — Dialpad platform help (UCaaS + CCaaS, AI Agent, AI Coaching Hub, DialpadGPT)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do -a claude-code -y`
 

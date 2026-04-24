@@ -16,6 +16,7 @@ Detailed profiles for each major CCaaS platform — capabilities, pricing, stren
 - [Dialpad](#dialpad)
 - [Uniphore (AI overlay)](#uniphore-ai-overlay)
 - [Calabrio ONE (WEM add-on)](#calabrio-one-wem-add-on)
+- [CallMiner Eureka (analytics overlay)](#callminer-eureka-analytics-overlay)
 
 ## Pricing comparison table
 
@@ -424,3 +425,41 @@ Detailed profiles for each major CCaaS platform — capabilities, pricing, stren
 **When NOT to choose Dialpad**: If you need enterprise-grade contact center at 1,000+ agents (→ Genesys, NICE CXone). If you need best-in-class WFM and QA (→ NICE CXone, Verint). If call quality on mobile is critical (→ RingCentral). If you need deep CRM-native contact center (→ Salesforce Service Cloud). If you need the strongest IVR and virtual agents (→ Five9).
 
 **Platform skill**: `/sales-dialpad`
+
+---
+
+## CallMiner Eureka (analytics overlay)
+
+**What it is**: Enterprise conversation analytics platform that layers on top of any CCaaS. Captures and analyzes 100% of omnichannel interactions (voice, chat, email, social, video) for automated QA, compliance monitoring, agent coaching, and CX insights. Not a CCaaS itself — it's an analytics and QA layer.
+
+**How it connects**: Pre-built connectors for Genesys, Five9, Twilio, Amazon Connect, RingCentral, Talkdesk, Cisco, Avaya, Bright Pattern, LiveVox, and Lifesize. OVTS (Open Voice Transcription Standard) allows plugging in any ASR engine (Deepgram, Google, Azure, Nuance, SpeechMatics).
+
+**Core capabilities**:
+- Analyze: Category-based interaction classification, sentiment analysis, emotion detection, topic extraction
+- Coach: Automated QA scorecards on 100% of interactions, agent coaching plans, performance tracking
+- RealTime: Live alerts and next-best-action during calls (more limited than Balto/Cresta)
+- Redact: Automatic PII/PCI masking in audio and transcripts
+- OmniAgent: AI virtual agents for automated interactions
+- LiveTranslate: Real-time multilingual translation
+
+**Pricing**: Enterprise-only, no public pricing. Two licensing models: (1) hours-analyzed annual inventory, (2) seat-based (max agents/day). Average ~$102K/year, range ~$1K-$140K depending on scale.
+
+**Strengths vs alternatives**:
+- Deepest post-call analytics and trend discovery — strongest at mining insights from large interaction volumes
+- Best compliance positioning for regulated industries (healthcare, finance, collections, insurance)
+- Omnichannel analysis (not just voice) — chat, email, social, video
+- OVTS transcription flexibility — swap ASR engines without changing analytics
+- 35+ pre-built integrations across CCaaS, CRM, WFM, and VoC platforms
+
+**Weaknesses**:
+- Steep learning curve — 3-6 month ramp to build effective categories and scorecards
+- Real-time coaching is limited vs Balto, Cresta, or Observe.AI
+- UI issues: 30-minute auto-logout, page timeouts affect all tabs
+- No public pricing — enterprise sales process required
+- Requires dedicated analyst time — not a self-service tool
+
+**Best for**: Enterprise contact centers (500+ agents) in regulated industries that need 100% QA coverage, compliance monitoring, and deep trend analytics layered on top of their existing CCaaS. Organizations where manual QA sampling is a compliance risk.
+
+**When NOT to choose CallMiner**: If you need primarily real-time agent coaching during calls (→ Balto, Cresta). If you need a lighter-weight QA tool for a small team (→ Observe.AI, Enthu.AI). If you need sales-specific deal intelligence (→ Gong, Clari Copilot). If budget is under $50K/year (→ Observe.AI, MaestroQA).
+
+**Platform skill**: `/sales-callminer`
