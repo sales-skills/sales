@@ -938,3 +938,53 @@ For deep platform coverage (AI agents, call scoring frameworks, CRM sync, deal i
 **Selection notes**:
 - **Pick Rafiki when**: You want Gong-level features (scoring, coaching, CRM sync, deal intelligence) at $19-49/user/mo, your team is 2-15 reps, you use Salesforce/HubSpot/Zoho/Pipedrive, you don't need a public API, you want transparent self-serve pricing, you need 55+ language transcription
 - **Avoid Rafiki when**: You need a public API for custom integrations (→ Gong, Fireflies, Fathom), you need real-time in-call coaching (→ Cluely, Balto, Colibri), you need deep behavioral/body language analysis (→ Sybill), you need enterprise-scale deployment with SSO/SCIM (→ Gong), you have more than 3 users but only want to pay $19/seat (Starter caps at 3 users)
+
+## Proshort
+
+For deep platform coverage (AI Roleplay, CRM auto-sync, Deal Agents, Skill Intelligence Dashboard, pricing tiers, known issues, troubleshooting), use `/sales-proshort`.
+
+**Positioning**: Enablement-first revenue intelligence platform that bridges call insights and contextual coaching. Converts call analysis into real-time coaching moments — in-call cues, AI Roleplay for onboarding, Deal Agents for automated guidance, Skill Intelligence Dashboard for rep-level performance scoring. Positioned as a Gong alternative emphasizing coaching/enablement over pure analytics. Founded 2022, $8M seed, Cupertino CA + Bangalore, 100+ revenue teams.
+
+**Pricing (2026-04, from homepage — pricing page 404)**: Professional $75/user/mo (recording, transcription, AI coaching, CRM sync, Deal Agents, Roleplay, Slack alerts), Enterprise custom (dedicated support, 99.9% SLA). No free tier. No free trial documented.
+
+**API**: No public API. No webhooks. No MCP server. All integrations are native.
+
+**Integrations**: Zoom/Meet/Teams (recording), Salesforce/HubSpot/Zoho (CRM auto-sync), Gmail/Outlook (email signal tracking), Google/Outlook Calendar (meeting detection), Slack (deal risk alerts), Gong (layer coaching on top of existing Gong CI).
+
+**Known issues (from research — limited review base)**:
+- No public API or webhooks — cannot build custom integrations or pipe data to a warehouse
+- No free tier or trial documented — requires sales conversation to evaluate
+- Pricing page returns 404 — $75/user/mo from homepage only, verify with sales
+- No G2 reviews found — limited independent social proof (rely on case studies: RateGain, Increff, Aviz Networks)
+- "TodoFusion" appears in blog post titles — CMS artifact, not a separate product
+- AI Roleplay quality depends on snippet library — thin call library produces generic scenarios
+
+**Selection notes**:
+- **Pick Proshort when**: You want coaching/enablement as the primary CI outcome (not just analytics), you need AI Roleplay for rep onboarding and practice, you want contextual in-call cues and Deal Agents, you're on Salesforce/HubSpot/Zoho and want auto-sync with 100% field fill, you want SOC 2 + ISO 27001 + GDPR + HIPAA compliance, you're looking for a Gong alternative under $100/user/mo with stronger coaching focus
+- **Avoid Proshort when**: You need a public API for custom data pipelines (→ Gong, Fireflies, Fathom), you want a free tier to trial (→ Fathom, Rafiki, tl;dv), you need transparent self-serve pricing (→ Rafiki, Fathom), you need a large independent review base (→ Gong, Chorus), you need Zapier/Make automation (→ Fireflies, tl;dv, Jamie), you need the deepest raw analytics/deal intelligence (→ Gong), you want the cheapest mid-market CI (→ Rafiki $19-49)
+
+---
+
+## Salesroom
+
+For deep platform coverage (real-time coaching setup, battle cards, buyer engagement scoring, CRM sync, competitive comparison), use `/sales-salesroom`.
+
+**Positioning**: AI-powered video conferencing platform built from scratch for sales teams. Unlike bot-based CI tools (Gong, Fathom, Fireflies) that join existing Zoom/Meet/Teams calls, Salesroom IS the meeting platform — reps send a Salesroom meeting link and conduct the entire call inside Salesroom's interface. This gives native access to real-time coaching, live buyer engagement scoring, and battle cards without any third-party bot. Closest competitor is Demodesk (also its own meeting platform). Founded by Roy Solomon (ex-Applause/Vista Equity) and Daria Danilina (ex-Dropbox/HSBC). $8.5M seed (June 2022) from Craft Ventures. Boston-based.
+
+**Pricing (2026-04)**: Free (limited), Pro $49/mo (full coaching + analytics + CRM sync), Enterprise custom (teams). Specific feature limits per plan not publicly documented.
+
+**API**: No public API. No webhooks. No MCP server. No Zapier/Make modules. All automation is through native integrations only.
+
+**Integrations**: HubSpot (marketplace OAuth app — meeting summaries, notes, engagement data to contact timeline), Salesforce (events on opportunity/lead/contact), Zoom (calendar integration), Slack (highlights + summaries), Gong (push recordings to Gong for teams using Gong as CI platform of record).
+
+**Known issues (from research — niche startup, limited review base)**:
+- Buyer adoption friction is the primary risk — prospects must join an unfamiliar video platform instead of Zoom/Teams
+- No public API, webhooks, or MCP — cannot programmatically access meeting data, transcripts, or engagement scores
+- SSL certificate on salesroom.com has been intermittently broken — doesn't affect the meeting platform but may concern evaluators
+- Small team and limited funding ($8.5M seed, 2022) — evaluate vendor risk for enterprise deployment
+- Limited integration ecosystem (HubSpot, Salesforce, Zoom, Slack, Gong only)
+- Feature limits per plan not well-documented publicly
+
+**Selection notes**:
+- **Pick Salesroom when**: You want real-time coaching and buyer engagement scoring as a native video conferencing feature (not a bolt-on), you want a simpler tech stack (one tool replaces Zoom + note-taker), your buyers are SMB/startup and won't mind a different meeting link, you want live battle cards and objection handling during calls, budget is tight compared to Gong ($49/mo vs ~$1,200/user/yr), you can tolerate a niche startup's maturity level
+- **Avoid Salesroom when**: Your buyers are enterprise and expect Zoom/Teams (adoption friction kills deals), you need API/webhook access for data pipelines (→ Gong, Fireflies, Fathom), you need a broad integration ecosystem (→ Gong, tl;dv, Fireflies), you want post-call analytics depth and revenue intelligence (→ Gong), you need proven scale and vendor stability (→ Gong, Avoma), you want real-time coaching as an overlay on existing Zoom without changing platforms (→ Cluely)
