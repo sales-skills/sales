@@ -1588,3 +1588,67 @@ For deep platform coverage (Palabra API endpoints, Python/JS/Java SDKs, voice cl
 **Selection notes**:
 - **Pick Talo when**: You need SOC 2/ISO 27001 compliant meeting translation, you want a developer API (Palabra) for custom translation integration, you prefer single-bot simplicity over bot-free tools, your team is on Zoom/Meet/Teams, or you need voice cloning for natural-sounding translations
 - **Avoid Talo when**: Budget is the primary concern (→ JotMe $10/mo, Transync AI $8.99/mo), you need bot-free translation (→ Transync AI, JotMe), you need 100+ languages (→ JotMe 107), you need human interpreters for critical events (→ KUDO, Interprefy), you need domain-specific AI voice avatars (→ Langfinity), or you need CRM integration (pair with a separate note-taker)
+
+## Rimo
+
+**Positioning**: Japanese-optimized AI meeting transcription and summarization with ISO 27001/27017 compliance and Japan-hosted data (GCP). Bot joins Zoom/Teams/Meet/Webex via calendar integration. Strongest for Japanese-first teams needing high-accuracy transcription with data residency in Japan.
+
+**Pricing** (best-effort as of 2026-04, launch pricing = 50% off):
+
+| Plan | Launch price | Regular price | AI credits | Key additions |
+|---|---|---|---|---|
+| Solo | $9/mo | $18/mo | 100/mo | Unlimited transcription, bot recording, AI summaries, AI chat |
+| Business | $15/mo | $30/mo | 1,000/mo | + Team management, shared folders, team-wide analysis |
+| Corporate | Custom (11+ seats) | Custom | Custom | + SSO (SAML/OIDC), IP restrictions, audit logging, unlimited storage |
+
+- Free trial available (no credit card)
+- Japanese pricing differs (¥1,650-6,600/mo)
+- Launch pricing locked while subscription stays active
+
+**Integration surface**: Thin — calendar (Google/Outlook), Slack/email notifications, manual CSV/Excel/PDF export. **No API, no webhooks, no Zapier/Make, no CRM connectors.** API listed as "upcoming" but undated.
+
+**Key gotchas**:
+- No API or CRM integration — meeting insights require manual export and paste into CRM
+- AI credits are consumed by summaries and AI chat — Solo's 100/mo runs out fast with heavy usage
+- iOS app only — no Android, no desktop app (web-only)
+- Bot takes 30-60 seconds to join meetings
+- English/non-Japanese accuracy is lower than Japanese
+- Dictionary changes only apply to new recordings, not retroactively
+
+**Selection notes**:
+- **Pick Rimo when**: Your team primarily speaks Japanese, you need ISO 27001/27017 compliance with Japan data residency, you want affordable Japanese-optimized transcription ($9-15/mo launch), you don't need API or CRM integration
+- **Avoid Rimo when**: You need API access (→ Fathom, Fireflies, MeetGeek), you need CRM integration (→ Fathom, Fireflies, Avoma), your team primarily speaks English (→ Fathom, Otter), you need Android mobile support (→ Otter, Fireflies), or you need real-time translation (→ JotMe, Talo, Transync AI)
+
+## Wudpecker
+
+For deep platform coverage (custom instructions setup, plan comparison, HubSpot/Notion integration, troubleshooting), use `/sales-wudpecker`.
+
+**Positioning**: AI meeting note-taker that differentiates on **custom instructions** — users tell the AI exactly what to capture, how to structure notes, and what vocabulary to use. Bot joins Zoom/Meet/Teams; desktop + phone app handles in-person recording. EU-based, GDPR compliant, AES-256 encryption, EU servers. 18,000+ users including TikTok, Salesforce, Nokia, Deliveroo.
+
+**Pricing (2026-04)**:
+
+| Plan | Price | Bot meetings/mo | Ask AI | Key additions |
+|---|---|---|---|---|
+| Free | $0 | 10 | 3 per recording | Unlimited in-person (app), custom instructions, collections, 39+ languages |
+| Plus | $19/mo ($15.20 annual) | 30 | Unlimited | + Notion/Slack/HubSpot integrations, rename bot, bot join preferences, invite to unscheduled |
+| Pro | $32/mo ($25.60 annual) | 100 | Unlimited | + Everything in Plus with higher meeting limit |
+
+- 2-week Plus trial, no credit card
+- Max meeting length: 2h 15m (all plans)
+- Single calendar per account
+- Unlimited cloud storage on all plans
+
+**Integration surface**: No API, no webhooks, no MCP server. Native integrations on Plus+: HubSpot (CRM sync), Notion (auto-export), Slack (summaries), Google Docs (export, all plans). Salesforce beta. No Zapier/Make.
+
+**Key gotchas**:
+- No API or webhooks — cannot build custom automations or pipe transcripts to a data warehouse
+- Bot is visible to all participants — can be renamed on Plus+ but still conspicuous
+- 2h 15m max meeting length is a hard limit across all plans
+- HubSpot/Notion/Slack locked to Plus+ ($19/mo)
+- Single calendar per account — can't monitor multiple calendars
+- Speaker identification accuracy varies — mix-ups in larger meetings
+- CRM sync is one-way push with fixed field mapping (no custom mapping)
+
+**Selection notes**:
+- **Pick Wudpecker when**: Custom note formatting is your top priority (MEDDIC templates, specific capture instructions), you want in-person + virtual recording in one tool, your team uses HubSpot and wants affordable CRM sync ($19/mo), you're EU-based and want GDPR compliance with EU-hosted data, or you want Ask Wudpecker AI Q&A for post-meeting insights
+- **Avoid Wudpecker when**: You need API access or webhooks (→ Fathom, Fireflies, MeetGeek), you need unlimited bot meetings (→ Fathom free tier), you need deep CRM field mapping (→ Fathom Business, Avoma), you need coaching/methodology scorecards (→ tl;dv, Avoma), you need meetings longer than 2h 15m, or you need multi-calendar support

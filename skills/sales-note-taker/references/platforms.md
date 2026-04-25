@@ -6,7 +6,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 
 | File | What's in it | Platforms |
 |---|---|---|
-| `platforms-smb.md` | Budget-friendly tools under ~$50/user/mo, strong free tiers | Fathom, Fireflies, Otter, MeetGeek, Tactiq, Granola, Wave, Bluedot, Notta, Sonnet, Supernormal, VoiceToNotes, Hedy, Colibri, Jamy, Temi, Char, HappyScribe, Voicenotes, AudioPen, TalkNotes, Letterly, Coconote, HyNote AI, Backtrack, JotMe, Audionotes, Bubbles |
+| `platforms-smb.md` | Budget-friendly tools under ~$50/user/mo, strong free tiers | Fathom, Fireflies, Otter, MeetGeek, Tactiq, Granola, Wave, Bluedot, Notta, Sonnet, Supernormal, VoiceToNotes, Hedy, Colibri, Jamy, Temi, Char, HappyScribe, Voicenotes, AudioPen, TalkNotes, Letterly, Coconote, HyNote AI, Backtrack, JotMe, Audionotes, Bubbles, Wudpecker |
 | `platforms-midmarket.md` | Sales-focused CI with coaching, methodology, CRM enrichment | Avoma, tl;dv, Claap, Grain, Sembly, Read.ai, Fellow, Jamie, Krisp, IRIS Clarity, Cluely, Lindy, Outdoo, Jiminny, Enthu.AI, Demodesk, Salesken, Oliv, Weflow, Scratchpad, Laserfocus, Noota, Dialpad, Winn.ai, Circleback |
 | `platforms-enterprise.md` | Enterprise revenue intelligence ($1K+/user/yr) + bolt-on CI | Gong, Modjo, MaxIQ (EchoIQ), Clari Copilot, Verbit, + Salesloft Conversations, Chorus, Seismic, Revenue.io |
 | `platforms-field.md` | In-person/field sales coaching and mobile recording | Rilla, Siro, Sales Ask, Speakwise, Omi, Plaud |
@@ -106,3 +106,5 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Talo | Real-time AI meeting translation (single bot) | Yes (7-day trial) | $33/mo (Starter, 120 min) | REST + WebSocket/WebRTC (Palabra API, separate pricing) | No | None | Enterprise-grade single-bot translation for Zoom/Meet/Teams, 60+ languages, SOC 2/ISO 27001, voice cloning, Python/JS/Java SDKs |
 | Audionotes | Multi-format AI note-taker (voice/text/image/video/YouTube) | Yes (1 min/note) | $129.99/yr (~$10.83/mo) | None (webhook + Zapier only) | Yes (fixed JSON) | None | Multi-format capture (voice + image + video + YouTube), 100+ templates, WhatsApp Bot, Notion sync, 80+ languages |
 | Bubbles | Async video messaging + AI meeting notes | Yes (5 meetings/wk) | $12/user/mo (Teams) | None (Zapier only) | None | None | Async video collaboration + meeting recording in one tool, screen recording, SOC 2 Type II |
+| Rimo | AI note-taker (JP-optimized) | Yes (trial) | $9/mo (launch) | None (upcoming) | None | None | Japanese-first teams needing ISO 27001/27017 compliance, Japan-hosted data |
+| Wudpecker | AI note-taker (custom instructions) | Yes (10 meetings/mo) | $19/mo (Plus) | None | None | Medium (HubSpot/Salesforce, Plus+) | Custom note templates/instructions, Ask Wudpecker AI Q&A, 39+ languages, EU/GDPR |
