@@ -571,6 +571,22 @@ For deep platform coverage (all modules, pricing, API, integration methods, comp
 
 ---
 
+## Aviso AI
+
+For deep platform coverage (all modules, forecasting types, MIKI AI agent, CRM writeback, pricing, known issues), use `/sales-aviso`.
+
+- **Positioning**: End-to-end AI revenue operating system — AI-native forecasting (100+ variables, 98%+ accuracy claim), conversation intelligence with emotion analysis, relationship intelligence (Aviso Graph), MIKI AI Chief of Staff with 30+ agentic workflows, pipeline inspection, deal acceleration, sales engagement, and customer success in one platform
+- **Best for**: Enterprise orgs with complex revenue models (splits, overlays, consumption-based, multi-CRM) who want unified forecasting + CI + deal intelligence in a single AI-first platform
+- **Pricing**: Custom enterprise only (~$1,000/user/yr, comparable to Clari). No free tier, no self-serve. Annual/multi-year contracts. Request pilot with YOUR historical data to validate accuracy claims
+- **CI capabilities**: Transcription, 6-emotion analysis (happiness, sadness, anger, surprise, fear, disgust), semantic similarity for objection detection, talk-listen ratios, patience insights, question rates. Coaching metrics per rep and per call. Ingests from Zoom, Teams, Meet, Webex, RingCentral, BlueJeans, GoTo, Moxo
+- **API surface**: No public API. No documented webhooks. No MCP server. Aviso Connect is an enterprise integration layer configured by Aviso's team (no public docs/endpoints/auth). CRM Writeback is the primary automated data flow
+- **Integrations**: 9 CRMs (Salesforce deepest, HubSpot certified, Dynamics 365, Freshworks, Oracle, SAP, Zoho, Pipedrive), Slack/Teams alerts, 6sense + LinkedIn Sales Navigator intent, Outreach + Salesloft engagement, Gainsight + Totango CS, Snowflake/Redshift/BigQuery warehouse
+- **Known issues**: Three forecast types (AI/Sales/Adjusted) cause confusion — users don't know which to trust. Dashboard customizations may revert after updates. Deal scoring lacks transparency (100+ variables but no explanation). No public API means no custom integrations without Aviso's team. Enterprise pricing only — SMB teams priced out
+- **Selection notes**: Choose Aviso over Gong when forecasting depth matters more than CI depth. Choose Aviso over Clari when you need consumption-based or splits/overlays forecasting and multi-CRM consolidation. Choose Gong over Aviso when conversation intelligence and public API are priorities. Choose Clari over Aviso when structured forecast governance and executive reporting are priorities
+- **Avoid Aviso when**: You need a public API for custom integrations (→ Gong), you're SMB/mid-market with budget constraints (→ Fathom, tl;dv, Fireflies), you primarily need CI without forecasting (→ Gong, Modjo), you need self-serve setup without implementation support
+
+---
+
 ## Bolt-on conversation intelligence (not standalone)
 
 - **CallMiner Eureka** — Enterprise omnichannel conversation analytics with 100% automated QA, compliance monitoring, and agent coaching. Not a meeting note-taker — analyzes voice, chat, email, and social interactions post-call for quality and compliance. Regulated industries (healthcare, finance, collections). No public pricing (~$102K/yr avg). Covered by `/sales-callminer`
