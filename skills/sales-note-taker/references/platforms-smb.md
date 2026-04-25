@@ -1652,3 +1652,96 @@ For deep platform coverage (custom instructions setup, plan comparison, HubSpot/
 **Selection notes**:
 - **Pick Wudpecker when**: Custom note formatting is your top priority (MEDDIC templates, specific capture instructions), you want in-person + virtual recording in one tool, your team uses HubSpot and wants affordable CRM sync ($19/mo), you're EU-based and want GDPR compliance with EU-hosted data, or you want Ask Wudpecker AI Q&A for post-meeting insights
 - **Avoid Wudpecker when**: You need API access or webhooks (→ Fathom, Fireflies, MeetGeek), you need unlimited bot meetings (→ Fathom free tier), you need deep CRM field mapping (→ Fathom Business, Avoma), you need coaching/methodology scorecards (→ tl;dv, Avoma), you need meetings longer than 2h 15m, or you need multi-calendar support
+
+## Sally AI
+
+For deep platform coverage (MCP connector setup, plan comparison, CRM integration, troubleshooting), use `/sales-sally`.
+
+**Positioning**: German-hosted GDPR-first AI meeting assistant. Bot joins Zoom/Teams/Meet/Webex, transcribes in 99+ languages, generates summaries with action items and decisions. Differentiator: tiered AI accuracy models (Bronze 90.3% → Gold 98.8%) and an MCP server for querying meetings from Claude/ChatGPT/Cursor. 50,000+ users, 1,000+ companies, 4.8/5 rating. Developed by Aliru GmbH.
+
+**Pricing (2026-04)**:
+
+| Plan | Price (annual) | Price (monthly) | Minutes/mo | AI model | Upload | Key additions |
+|---|---|---|---|---|---|---|
+| Starter | $10/mo | $14/mo | 1,200 | Bronze (90.3%) | 1 GB | MCP, custom vocab, 8,000+ integrations, 99+ languages |
+| Pro | $40/mo | $45/mo | Unlimited | Silver (94.1%) | 5 GB | + Custom meeting types, AI chat per meeting, sales analytics, objection detection, quality benchmarks |
+| Enterprise | $79/mo | $99/mo | Unlimited | Gold (98.8%) | 5 GB | + On-premise deployment, global AI chat, priority support |
+
+- 30-day free trial on all plans, no credit card required
+- Mobile app (iOS/Android) for in-person recording included on all plans
+
+**Integration surface**: MCP server (read-only, 5 tools: search_appointments, search_summaries, get_recordings, get_summary, get_transcription). Bearer token auth (`sally_pat_...`). No REST write API. No webhook subscriptions. Native CRM sync (outbound push) to HubSpot, Salesforce, Dynamics 365, Pipedrive, Zoho, Odoo, Bitrix24. iPaaS via Zapier, Make, Power Automate, n8n. Native PM sync to Asana, Monday.com, Trello, Notion, Jira, ClickUp.
+
+**Key gotchas**:
+- MCP is read-only — cannot create, update, or delete anything programmatically
+- No REST API for write operations — all automation must go through iPaaS or native integrations
+- No webhook subscriptions — cannot receive real-time event notifications
+- Accuracy gap between tiers is significant: Bronze (90.3%) struggles with technical terms, Gold (98.8%) handles jargon well
+- Custom meeting types and AI chat per meeting are Pro-only ($40/mo)
+- Global AI chat (cross-meeting search) is Enterprise-only ($79/mo)
+- On-premise deployment is Enterprise-only
+- Upload limit: 1 GB on Starter, 5 GB on Pro/Enterprise
+
+**Selection notes**:
+- **Pick Sally when**: GDPR compliance with German hosting is a requirement, you need 99+ language transcription, you want MCP integration for AI assistant workflows, you want tiered accuracy to match budget, or you need broad native CRM/PM integrations without Zapier
+- **Avoid Sally when**: You need a write API or webhooks (→ Fathom, Fireflies, Grain), you need real-time coaching during calls (→ Gong, Clari Copilot, Balto), you need conversation methodology scoring (→ Avoma, tl;dv), you need unlimited free recordings (→ Fathom), or you need deep Salesforce-native pipeline management (→ Scratchpad, Weflow)
+
+## Liznr
+
+For deep platform coverage (setup, integrations, limitations, workarounds), use `/sales-liznr`.
+
+**Positioning**: AI meeting assistant with real-time transcription and contextual intelligence from Liznr Labs (Bhopal, India). The "Lizy" AI secretary provides live contextual references during meetings — jargon simplification, keyword highlights, and action item capture. Available as Chrome extension, Edge add-on, and Microsoft Teams app. Privacy-first design (data not shared for model training). Launched May 2025, very early stage with limited public reviews. Not to be confused with "Lindy" (different platform).
+
+**Pricing (2026-04)**: Free trial (time-limited). Starting at $9/mo per SourceForge listing. Detailed tier/feature breakdown not publicly documented — contact support@liznr.ai for current pricing.
+
+**API**: None. No public REST API, GraphQL, webhooks, or MCP server.
+
+**Integrations**: Zoom/Meet/Teams (via Chrome/Edge/Teams app). Output sync to Jira, Slack, Notion, Trello. Gmail and Google Calendar for meeting detection. No CRM integration (HubSpot, Salesforce, Pipedrive — none).
+
+**Key gotchas**:
+- No API means zero programmatic access to transcripts, summaries, or action items
+- No CRM integration — sales teams needing HubSpot/Salesforce sync must use workarounds (Slack → Zapier → CRM)
+- Very early stage — fewer than 5 reviews across all platforms, expect rapid changes
+- Pricing details are opaque — $9/mo starting price but no public tier breakdown
+- No documented compliance certifications (SOC 2, HIPAA, ISO 27001) — only "industry-standard encryption"
+- No offline or in-person recording mode documented
+- Chrome extension may not work with Zoom desktop app (only web client via browser)
+
+**Selection notes**:
+- **Pick Liznr when**: You want budget meeting transcription starting at $9/mo, contextual intelligence (live jargon simplification, keyword highlights) is a differentiator for your use case, your team uses Jira/Slack/Notion for task management and doesn't need CRM sync, or you're evaluating for recruiting/legal use cases with basic transcription needs
+- **Avoid Liznr when**: You need any API access (→ Fathom, Fireflies, MeetGeek), you need CRM integration (→ Fathom Business, Fireflies Business, Avoma), you need proven compliance certifications (→ Fathom, Gong, Fireflies Enterprise), you need coaching/methodology scorecards (→ tl;dv, Avoma, Gong), you need deep meeting analytics (→ Read.ai, Grain), or you need a mature platform with substantial user base and reviews
+
+## Meeting.ai
+
+For deep platform coverage (visual mind map workflow, export options, comparison with text-based note-takers, pricing investigation), use `/sales-meeting-ai`.
+
+**Positioning**: Visual-first AI note-taker that converts meetings into mind maps. Differentiates on spatial visual output while most competitors produce text summaries. Strong multilingual transcription optimized for Southeast Asian accents. Singapore-based (BAHASALAB).
+
+**Pricing (2026-04)**: Opaque — 7-day free trial, possible free tier, no public pricing page. Check App Store/Google Play for in-app purchase prices or contact support@meeting.ai.
+
+**API**: None. No webhooks. No programmatic access.
+
+**Integrations**: None documented — no CRM, no Zapier, no Make, no Slack. Manual export only (PDF, image, text, secure link).
+
+**Meeting platforms**: Zoom, Google Meet, Teams (bot joins), in-person (device mic), audio/video file upload, Google Drive.
+
+**Key features**:
+- Visual Note Pro — auto-generated mind maps from meetings
+- AI summaries with key points, decisions, action items
+- Speaker identification with automatic detection
+- Ask AI — post-meeting Q&A on meeting content
+- Meeting statistics (duration, speaker talk time)
+- 30+ language transcription, 99% accuracy claimed
+- Cross-platform: web, iOS, Android with auto-sync
+
+**Key gotchas**:
+- No API, no webhooks, no CRM — zero automation surface
+- Pricing is not publicly documented in standard tiers
+- Mind maps are auto-generated and can't be manually restructured in-app
+- No documented compliance certifications (SOC 2, HIPAA, ISO 27001)
+- Visual mind maps can get cluttered on long meetings with many topic switches
+- Singapore data jurisdiction — check with support for data residency details
+
+**Selection notes**:
+- **Pick Meeting.ai when**: You want visual mind map output from meetings instead of just text summaries, you work in Southeast Asian markets with multilingual meetings and diverse accents, you want a simple visual-first experience without needing CRM or API integration, or you prefer spatial/visual note formats for brainstorming and workshop sessions
+- **Avoid Meeting.ai when**: You need any API or webhook access (→ Fathom, Fireflies, MeetGeek), you need CRM integration (→ Fathom Business, Fireflies Business, Avoma), you need compliance certifications (→ Fathom, Gong, Fireflies Enterprise), you need automated workflows or Zapier integration (→ Fireflies, Circleback, VoiceToNotes), you need clear upfront pricing (→ most competitors publish pricing), or you need to search across multiple meetings (→ Fireflies, Gong, Grain)
