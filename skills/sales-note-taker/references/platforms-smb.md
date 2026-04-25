@@ -1809,3 +1809,40 @@ For deep platform coverage (OneChat workspace, AI workflow automation, pricing g
 **Selection notes**:
 - **Pick KaraX when**: You want meeting transcription + multi-LLM AI chat + workflow automation in a single tool instead of 3-4 separate subscriptions, you want agentic AI that executes multi-step workflows by describing outcomes rather than building rules, you're budget-conscious and want to replace ChatGPT + Otter + Zapier for under $15/mo, or you value SOC 2/HIPAA/GDPR compliance on a startup budget
 - **Avoid KaraX when**: You need an API or webhooks for custom integrations (→ Fathom, Fireflies, Grain), you need deep conversation intelligence or sales coaching (→ Gong, Avoma, tl;dv), you need a proven platform with extensive independent reviews (→ Otter, Fathom, Fireflies), you need CRM sync under $40/mo (→ Fathom Business $25/annual, Fireflies Business $19/annual), or you need unlimited free recordings (→ Fathom free tier)
+
+---
+
+## Dicte
+
+For deep platform coverage (privacy architecture, AI SKILLs, DicteBOX, pricing tiers), use `/sales-dicte`.
+
+**Positioning**: EU privacy-first AI meeting assistant using exclusively open-source/EU AI models with post-quantum encryption (Kyber) and French-hosted servers. Unique for transcript pseudonymization before AI processing and on-premises DicteBOX hardware for regulated industries. Mobile-first (iOS/Android strongest).
+
+**Pricing (2026-04)**: Free (120 min/mo), Plus €19.99/mo (€9.92 annual), Business custom (3+ users), Enterprise custom (10+ users). 50% webapp discount on Plus, 40% on Business.
+
+**API**: Business/Enterprise only. No public API documentation. No documented endpoints, auth methods, or rate limits.
+
+**Webhooks**: Not documented.
+
+**Integrations**: Business/Enterprise only — details not public. No Zapier/Make modules. No MCP server.
+
+**Key differentiators**:
+- Open-source/EU AI models only — no data sent to US AI providers
+- Transcript pseudonymization before any model processing
+- Post-quantum encryption (Kyber) for data at rest
+- Audio deleted after processing — no centralized audio storage
+- DicteBOX on-premises hardware (Enterprise only)
+- AI SKILLs: SWOT analysis, project reports, mind maps, custom models (Business+)
+- Servers in Paris (Scaleway), French jurisdiction
+
+**Limitations**:
+- Only 5 languages (EN, FR, DE, ES, IT) vs competitors with 50-100+
+- No public API or webhook documentation
+- Mac desktop in beta
+- Conversational AI agent still "coming soon"
+- No independent reviews (G2/Capterra)
+- ~23K users — small user base
+
+**Selection notes**:
+- **Pick Dicte when**: EU data residency is mandatory, you need open-source/EU-only AI models (no US providers), you want on-premises with DicteBOX for regulated industries, you want AI analysis beyond transcription (SWOT, project reports, mind maps), or you operate in FR/DE/ES/IT/EN and want a privacy-first mobile recorder
+- **Avoid Dicte when**: You need an API or webhooks for custom integrations (→ Fathom, Fireflies, Grain), you need more than 5 languages (→ Notta 58, Jamy 100+), you need CRM sync on a budget (→ Fathom Business, Fireflies Business), you need sales coaching or methodology scorecards (→ Gong, Avoma, tl;dv), or you want a proven platform with community support and independent reviews (→ Otter, Fathom)
