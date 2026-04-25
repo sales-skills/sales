@@ -91,6 +91,7 @@ If the request maps to a single platform, route:
 - Landing page optimization → `/sales-checkout`
 - Audience growth strategy → `/sales-audience-growth`
 
+- Comparing directory submission services → `/sales-directory-submission`
 - Managed directory submission service → `/sales-getmorebacklinks`
 
 Otherwise, answer directly from the directory knowledge below.

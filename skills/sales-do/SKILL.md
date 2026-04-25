@@ -56,6 +56,7 @@ Strategy skills are cross-platform coordinators — they cover a problem domain 
 | Strategy skill | Problem domain |
 |---|---|
 | `/sales-launch-directory` | Startup directory launches (Product Hunt, BetaList, Hacker News, 30+ directories) |
+| `/sales-directory-submission` | Directory submission service comparison (GetMoreBacklinks vs ListingBott vs LaunchDirectories vs SubmitSaaS vs AutoSaaSLaunch) |
 | `/sales-cadence` | Outbound sequences (Salesloft, Mailshake, Smartlead, Lemlist, Apollo, etc.) |
 | `/sales-deliverability` | Email deliverability, inbox placement, warmup, SPF/DKIM/DMARC |
 | `/sales-email-marketing` | Opt-in email marketing (Kit, Mailchimp, ActiveCampaign, Klaviyo, Brevo, etc.) |

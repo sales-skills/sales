@@ -942,13 +942,19 @@
 
 | Skill | Route when... |
 |---|---|
-| `/sales-getmorebacklinks` | User asks about GetMoreBacklinks platform, managed directory submission service, paying someone to submit to directories, GetMoreBacklinks plans or pricing, GetMoreBacklinks $87/$127/$187/$247, done-for-you backlink building, directory submission service worth it, outsourcing directory submissions, GetMoreBacklinks results or DR improvement, GetMoreBacklinks vs doing it yourself. NOT for DIY directory strategy — route to `/sales-launch-directory`. NOT for SEO audits — route to `/sales-semrush`. |
+| `/sales-getmorebacklinks` | User asks about GetMoreBacklinks platform, GetMoreBacklinks plans or pricing, GetMoreBacklinks $87/$127/$187/$247, done-for-you backlink building via GetMoreBacklinks, GetMoreBacklinks results or DR improvement. NOT for comparing submission services — route to `/sales-directory-submission`. NOT for DIY directory strategy — route to `/sales-launch-directory`. NOT for SEO audits — route to `/sales-semrush`. |
+
+### Directory Submission Service Comparison
+
+| Skill | Route when... |
+|---|---|
+| `/sales-directory-submission` | User asks about comparing directory submission services, which submission service to use, ListingBott vs LaunchDirectories vs SubmitSaaS vs AutoSaaSLaunch vs StartupSubmit vs SubmitJuice, managed vs DIY directory submissions, is a submission service worth it, best directory submission service, or outsourcing directory submissions. NOT for a single service's features — route to `/sales-getmorebacklinks` or the platform skill. NOT for DIY strategy — route to `/sales-launch-directory`. |
 
 ### Startup Directory Launch Strategy
 
 | Skill | Route when... |
 |---|---|
-| `/sales-launch-directory` | User asks about launching across multiple startup directories, which directories to submit to, startup directory strategy, backlink stacking from directories, directory submission sequence, comparing launch platforms, multi-directory launch plan, or maximizing backlinks from directories. NOT for a single specific platform — route to that platform's skill instead. NOT for managed submission services — route to `/sales-getmorebacklinks` |
+| `/sales-launch-directory` | User asks about launching across multiple startup directories, which directories to submit to, startup directory strategy, backlink stacking from directories, directory submission sequence, comparing launch platforms, multi-directory launch plan, or maximizing backlinks from directories. NOT for a single specific platform — route to that platform's skill instead. NOT for comparing submission services — route to `/sales-directory-submission` |
 | `/sales-futurepedia` | User asks about Futurepedia platform, Futurepedia listing, Futurepedia verified badge, Futurepedia submission, Futurepedia pricing, Futurepedia YouTube network, Futurepedia courses, or futurepedia.io. NOT for multi-directory strategy — route to `/sales-launch-directory` instead |
 
 ### Semrush & Platform

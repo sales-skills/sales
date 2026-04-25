@@ -82,6 +82,8 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 
 ## Related skills
 
+- `/sales-directory-submission` — Compare directory submission services (ListingBott, LaunchDirectories, SubmitSaaS, AutoSaaSLaunch, StartupSubmit, SubmitJuice). Install:
+  `npx skills add sales-skills/sales --skill sales-directory-submission`
 - `/sales-launch-directory` — DIY directory submission strategy across 30+ platforms. Covers which directories to submit to, in what order, and how to optimize listings. Install: `npx skills add sales-skills/sales --skill sales-launch-directory`
 - `/sales-semrush` — Track your domain rating, backlinks, and keyword rankings after submissions
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install: `npx skills add sales-skills/sales --skill sales-do`

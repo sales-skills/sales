@@ -577,6 +577,7 @@ Router recommends a 4-skill sequence:
 | `/sales-launchvibe` | LaunchVibe — instant free submission (DR10 dofollow), XP gamification |
 | `/sales-startupbase` | StartupBase — community-driven directory (DR39 dofollow), Spark newsletter |
 | `/sales-getmorebacklinks` | GetMoreBacklinks — managed directory submission service ($87-$247), 50-200 directories, DR 30+ guarantee |
+| `/sales-directory-submission` | Directory submission service comparison — managed vs automated vs DIY, 7 services compared |
 | `/sales-launch-directory` | Launch directory strategy — coordinates submissions across 22+ platforms, sequencing, backlink stacking |
 
 </details>
