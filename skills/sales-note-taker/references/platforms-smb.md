@@ -1745,3 +1745,38 @@ For deep platform coverage (visual mind map workflow, export options, comparison
 **Selection notes**:
 - **Pick Meeting.ai when**: You want visual mind map output from meetings instead of just text summaries, you work in Southeast Asian markets with multilingual meetings and diverse accents, you want a simple visual-first experience without needing CRM or API integration, or you prefer spatial/visual note formats for brainstorming and workshop sessions
 - **Avoid Meeting.ai when**: You need any API or webhook access (→ Fathom, Fireflies, MeetGeek), you need CRM integration (→ Fathom Business, Fireflies Business, Avoma), you need compliance certifications (→ Fathom, Gong, Fireflies Enterprise), you need automated workflows or Zapier integration (→ Fireflies, Circleback, VoiceToNotes), you need clear upfront pricing (→ most competitors publish pricing), or you need to search across multiple meetings (→ Fireflies, Gong, Grain)
+
+---
+
+## Laxis
+
+For deep platform coverage (recording methods, voice keyboard, CRM automation, hardware ecosystem, pricing gates), use `/sales-laxis`.
+
+**Positioning**: AI meeting intelligence platform that combines bot-free meeting recording with a universal voice keyboard for dictation. Differentiators are voice keyboard with verbal/precision cleanup, 50+ report templates, hardware ecosystem (OSO AI Earbuds, Panocore360 camera), and team-wide Synergy Radar. 100K+ users across 4K+ orgs.
+
+**Pricing (2026-04)**: Basic (Free) 300 min/mo with 30-day history, Premium $15.99/mo with 2K min/mo + AI Writer + LaxisChat, Business $29.99/mo unlimited + CRM + Zapier + team admin, Enterprise custom with API + SSO + private AI. Annual saves 20%.
+
+**API**: Enterprise-only. No public documentation, no developer portal, no public endpoints. API + SSO + data residency only available on custom Enterprise contracts.
+
+**Webhooks**: None. No webhook system on any plan.
+
+**Integrations**: HubSpot + Salesforce (Business+), Slack, Gmail, Notion, Zapier 7,000+ apps (Business+). No Make, no n8n, no native iPaaS beyond Zapier.
+
+**Recording methods**:
+- Bot-free (zero-footprint) — captures audio from device, no visible bot in meeting
+- AI assistant bot — joins via calendar invite
+- File upload — process existing audio/video
+- Hardware — OSO AI Earbuds for in-person, Panocore360 for room capture
+
+**Key gotchas**:
+- Closed captions must stay on or transcription stops mid-meeting
+- Speaker ID uses names on Google Meet but generic labels (Speaker 1/2) on Zoom/Teams
+- No audio recording for Google Meet — transcription works but no playback
+- CRM sync requires Business ($29.99/mo) — not available on Premium
+- 7,000+ integrations claim goes through Zapier, not native connectors
+- Support responsiveness and AI quota tracking reported as unreliable (G2/Capterra)
+- No documented SOC 2, HIPAA, or ISO 27001
+
+**Selection notes**:
+- **Pick Laxis when**: You want bot-free meeting recording plus universal voice dictation in a single tool, you need voice keyboard with filler word cleanup across Slack/Gmail/Notion/Teams, you want 50+ structured report templates for professional meeting output, you're interested in hardware (earbuds/camera) for in-person meeting capture, or you need team-wide meeting trend analysis (Synergy Radar)
+- **Avoid Laxis when**: You need a public API or webhooks for custom integrations (→ Fathom, Fireflies, MeetGeek), you want CRM sync under $30/mo (→ Fathom Business $25/annual, Fireflies Business $19/annual), you need compliance certifications (→ Fathom, Gong, Fireflies Enterprise), you need named speaker identification on Zoom/Teams (→ Fireflies, Fathom), or you need a generous free tier (→ Fathom unlimited free recordings vs Laxis 300 min/mo)
