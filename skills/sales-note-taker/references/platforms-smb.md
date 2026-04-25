@@ -1780,3 +1780,32 @@ For deep platform coverage (recording methods, voice keyboard, CRM automation, h
 **Selection notes**:
 - **Pick Laxis when**: You want bot-free meeting recording plus universal voice dictation in a single tool, you need voice keyboard with filler word cleanup across Slack/Gmail/Notion/Teams, you want 50+ structured report templates for professional meeting output, you're interested in hardware (earbuds/camera) for in-person meeting capture, or you need team-wide meeting trend analysis (Synergy Radar)
 - **Avoid Laxis when**: You need a public API or webhooks for custom integrations (→ Fathom, Fireflies, MeetGeek), you want CRM sync under $30/mo (→ Fathom Business $25/annual, Fireflies Business $19/annual), you need compliance certifications (→ Fathom, Gong, Fireflies Enterprise), you need named speaker identification on Zoom/Teams (→ Fireflies, Fathom), or you need a generous free tier (→ Fathom unlimited free recordings vs Laxis 300 min/mo)
+
+---
+
+## KaraX.ai
+
+For deep platform coverage (OneChat workspace, AI workflow automation, pricing gates, integration details), use `/sales-karax`.
+
+**Positioning**: Agentic AI workspace that combines multi-LLM chat (Claude 4.5 Sonnet, Gemini 2.5 Flash, 4 others on paid), real-time meeting transcription, and AI workflow automation across 800+ integrations — all from a single "OneChat" interface. Replaces separate subscriptions for ChatGPT/Claude Pro + Otter.ai + Zapier at $14.99/mo. Founded 2023 by C3ALabs, NYC. NVIDIA Inception member. SOC 2 Type II, HIPAA, GDPR.
+
+**Pricing (2026-04)**: Starter (Free) 25 AI chats/day, 5 meetings at 30 min max, 4 integrations, 7-day retention. Pro $14.99/mo annual ($19.99 monthly) with 100 chats/day, 8 hrs meetings, 800+ integrations. Business $39.99/mo annual ($49.99 monthly) with 500 chats/day, 16 hrs meetings, CRM + workflow builder. Enterprise custom with unlimited, E2EE, private models.
+
+**API**: None. No public API, no developer portal, no REST/GraphQL endpoints, no webhooks on any plan.
+
+**Webhooks**: None.
+
+**Integrations**: Zoom, Google Meet, Teams (all plans). Google Drive, OneDrive, Gmail, Outlook, Notion, Linear, ClickUp, Trello, Jira, Slack (Pro+). Salesforce, HubSpot (Business+). 800+ total on Pro+. No Zapier, no Make — automation is via the platform's own agentic AI.
+
+**Key gotchas**:
+- 7-day data retention on Starter — transcripts auto-delete
+- 30-minute meeting cap on Starter
+- Only 4 integrations on Starter (800+ is Pro+)
+- CRM integration requires Business ($39.99/mo)
+- No public API or webhooks — can't build custom integration pipelines
+- Limited community presence — no G2/Capterra reviews, sparse troubleshooting resources
+- 127 reviews on their website (4.8/5) but no independent review platform presence
+
+**Selection notes**:
+- **Pick KaraX when**: You want meeting transcription + multi-LLM AI chat + workflow automation in a single tool instead of 3-4 separate subscriptions, you want agentic AI that executes multi-step workflows by describing outcomes rather than building rules, you're budget-conscious and want to replace ChatGPT + Otter + Zapier for under $15/mo, or you value SOC 2/HIPAA/GDPR compliance on a startup budget
+- **Avoid KaraX when**: You need an API or webhooks for custom integrations (→ Fathom, Fireflies, Grain), you need deep conversation intelligence or sales coaching (→ Gong, Avoma, tl;dv), you need a proven platform with extensive independent reviews (→ Otter, Fathom, Fireflies), you need CRM sync under $40/mo (→ Fathom Business $25/annual, Fireflies Business $19/annual), or you need unlimited free recordings (→ Fathom free tier)

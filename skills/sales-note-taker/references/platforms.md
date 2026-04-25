@@ -6,7 +6,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 
 | File | What's in it | Platforms |
 |---|---|---|
-| `platforms-smb.md` | Budget-friendly tools under ~$50/user/mo, strong free tiers | Fathom, Fireflies, Otter, MeetGeek, Tactiq, Granola, Wave, Bluedot, Notta, Sonnet, Supernormal, VoiceToNotes, Hedy, Colibri, Jamy, Temi, Char, HappyScribe, Voicenotes, AudioPen, TalkNotes, Letterly, Coconote, HyNote AI, Backtrack, JotMe, Audionotes, Bubbles, Wudpecker, Laxis |
+| `platforms-smb.md` | Budget-friendly tools under ~$50/user/mo, strong free tiers | Fathom, Fireflies, Otter, MeetGeek, Tactiq, Granola, Wave, Bluedot, Notta, Sonnet, Supernormal, VoiceToNotes, Hedy, Colibri, Jamy, Temi, Char, HappyScribe, Voicenotes, AudioPen, TalkNotes, Letterly, Coconote, HyNote AI, Backtrack, JotMe, Audionotes, Bubbles, Wudpecker, Laxis, KaraX.ai |
 | `platforms-midmarket.md` | Sales-focused CI with coaching, methodology, CRM enrichment | Avoma, tl;dv, Claap, Grain, Sembly, Read.ai, Fellow, Jamie, Krisp, IRIS Clarity, Cluely, Lindy, Outdoo, Jiminny, Enthu.AI, Demodesk, Salesken, Oliv, Weflow, Scratchpad, Laserfocus, Noota, Dialpad, Winn.ai, Circleback |
 | `platforms-enterprise.md` | Enterprise revenue intelligence ($1K+/user/yr) + bolt-on CI | Gong, Modjo, MaxIQ (EchoIQ), Clari Copilot, Verbit, + Salesloft Conversations, Chorus, Seismic, Revenue.io |
 | `platforms-field.md` | In-person/field sales coaching and mobile recording | Rilla, Siro, Sales Ask, Speakwise, Omi, Plaud |
@@ -114,3 +114,4 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Aviso AI | Revenue intelligence (AI-native forecasting + CI + deal intel) | No | ~$1,000/user/yr (custom) | None (Aviso Connect enterprise-managed) | None | Deep (9 CRMs) | End-to-end AI revenue OS — 100+ variable forecasting, 6-emotion CI, MIKI AI agents, relationship intelligence, enterprise-only |
 | Salesroom | AI video conferencing for sales (own platform) | Yes | $49/mo (Pro) | None | None | Medium (HubSpot/Salesforce) | Real-time coaching + buyer engagement scoring on own video platform, replaces Zoom for sales calls |
 | Laxis | AI meeting intelligence + voice keyboard | Yes (300 min/mo) | $15.99/mo | Enterprise only | None | Medium (HubSpot/Salesforce, Business+) | Bot-free recording + universal voice keyboard + hardware ecosystem (OSO earbuds), CRM sync on Business+ |
+| KaraX.ai | Agentic AI workspace + meetings | Yes (25 chats/day, 5 meetings at 30 min) | $14.99/mo | None | None | Medium (SF/HubSpot, Business+) | Multi-LLM chat + meeting transcription + agentic workflow automation in one workspace, 800+ integrations |
