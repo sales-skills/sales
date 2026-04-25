@@ -182,3 +182,31 @@ For deep platform coverage (device comparison, VCS phone call recording, Develop
 **Selection notes**:
 - **Pick Plaud when**: You need a polished, mature hardware recorder for in-person meetings and phone calls, you want VCS phone call recording (captures both sides without speakerphone), you need enterprise compliance (SOC 2/HIPAA/GDPR/ISO 27001), you want 112-language transcription, or you want the most established brand in the hardware recorder category
 - **Avoid Plaud when**: You primarily do online meetings (→ Fathom, Fireflies, Gong — software-based), you need a public API for transcript pipelines today (→ Fathom, Fireflies, Siro — Plaud API is in private beta), you want the cheapest hardware option (→ Omi at $89), you want open-source or developer extensibility (→ Omi), you need native CRM connectors (→ Fathom, Fireflies, Gong, Avoma), or you need real-time coaching during appointments (→ Siro Halftime, Craft)
+
+---
+
+## reason8
+
+For deep platform coverage (multi-device setup, recording workflow, export options, troubleshooting), use `/sales-reason8`.
+
+**Positioning**: AI meeting note-taker focused exclusively on in-person meetings. Differentiator is multi-smartphone audio capture — multiple attendees record on their own phones and reason8 fuses the audio streams into a single transcript with better speaker identification. Formerly Auroom (TechCrunch Disrupt Berlin 2017). Patent-pending multi-device approach.
+
+**Pricing (2026-04)**: Free (15 min/meeting cap) / Pro ~$18.99-19.99/user/mo (unlimited) / Enterprise custom.
+
+**API**: None. No public API, no webhooks, no MCP server.
+
+**Webhooks**: None.
+
+**Integrations**: Slack only. No CRM, no Zapier/Make/n8n, no calendar sync documented.
+
+**Known issues (from review listings and comparison articles)**:
+- English only — not suitable for multilingual teams
+- No CRM integration — manual export required
+- No API or webhooks — cannot build transcript pipelines
+- No video call integration — in-person only
+- Very limited independent reviews — hard to verify quality claims
+- Free tier 15-minute cap is impractical for business meetings
+
+**Selection notes**:
+- **Pick reason8 when**: You primarily do face-to-face meetings with multiple participants, you want to leverage multiple smartphones for better audio quality, you don't need CRM or API integration, and English-only is acceptable
+- **Avoid reason8 when**: You need CRM integration (→ Fathom, Fireflies, Siro), you need an API for transcript pipelines (→ Fathom, Fireflies, Siro, Wave), you need video call recording (→ Fathom, Fireflies, Gong), you need multilingual support (→ Plaud 112 languages, Speakwise 50+, Wave 76), you want the cheapest in-person option (→ Speakwise at $60/yr), or you want a hardware recorder that doesn't require participants to install an app (→ Plaud, Omi)

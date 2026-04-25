@@ -9,7 +9,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | `platforms-smb.md` | Budget-friendly tools under ~$50/user/mo, strong free tiers | Fathom, Fireflies, Otter, MeetGeek, Tactiq, Granola, Wave, Bluedot, Notta, Sonnet, Supernormal, VoiceToNotes, Hedy, Colibri, Jamy, Temi, Char, HappyScribe, Voicenotes, AudioPen, TalkNotes, Letterly, Coconote, HyNote AI, Backtrack, JotMe, Audionotes, Bubbles, Wudpecker, Laxis, KaraX.ai, Dicte |
 | `platforms-midmarket.md` | Sales-focused CI with coaching, methodology, CRM enrichment | Avoma, tl;dv, Claap, Grain, Sembly, Read.ai, Fellow, Jamie, Krisp, IRIS Clarity, Cluely, Lindy, Outdoo, Jiminny, Enthu.AI, Demodesk, Salesken, Oliv, Weflow, Scratchpad, Laserfocus, Noota, Dialpad, Winn.ai, Circleback |
 | `platforms-enterprise.md` | Enterprise revenue intelligence ($1K+/user/yr) + bolt-on CI | Gong, Modjo, MaxIQ (EchoIQ), Clari Copilot, Verbit, + Salesloft Conversations, Chorus, Seismic, Revenue.io |
-| `platforms-field.md` | In-person/field sales coaching and mobile recording | Rilla, Siro, Sales Ask, Speakwise, Omi, Plaud |
+| `platforms-field.md` | In-person/field sales coaching and mobile recording | Rilla, Siro, Sales Ask, Speakwise, Omi, Plaud, reason8 |
 
 **Read the file that matches the user's segment.** For comparison questions spanning segments, read multiple files.
 
@@ -116,3 +116,4 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Laxis | AI meeting intelligence + voice keyboard | Yes (300 min/mo) | $15.99/mo | Enterprise only | None | Medium (HubSpot/Salesforce, Business+) | Bot-free recording + universal voice keyboard + hardware ecosystem (OSO earbuds), CRM sync on Business+ |
 | KaraX.ai | Agentic AI workspace + meetings | Yes (25 chats/day, 5 meetings at 30 min) | $14.99/mo | None | None | Medium (SF/HubSpot, Business+) | Multi-LLM chat + meeting transcription + agentic workflow automation in one workspace, 800+ integrations |
 | Dicte | EU privacy-first AI meeting assistant | Yes (120 min/mo) | €9.92/mo (annual) | None (Business/Enterprise only, undocumented) | None | None (Business/Enterprise only) | EU data residency, post-quantum encryption, open-source/EU AI models only, DicteBOX on-premises |
+| reason8 | In-person meeting note-taker (multi-device) | Yes (15 min/meeting) | ~$19.99/mo | None | None | None | Multi-smartphone audio fusion for in-person meetings, patent-pending, speaker ID via multi-device, English only |
