@@ -1888,3 +1888,41 @@ For deep platform coverage (features, pricing, data handling, limitations, selec
 **Selection notes**:
 - **Pick NoteWave when**: You're an Apple-only user wanting a simple recording + transcription + AI summary app with study features (flashcards/quizzes), you want 100+ language support on iOS, you value privacy (audio deleted immediately), you're a student/researcher turning lectures into study materials, or you want YouTube/PDF import into the same note-taking workflow
 - **Avoid NoteWave when**: You need any integrations — CRM, Slack, Zapier, webhooks, API (→ Fathom, Fireflies, Wave), you need Android or Windows support (→ Otter, Notta, Fireflies), you need a meeting bot that auto-joins calls (→ Fathom, Fireflies, tl;dv), you need team collaboration or shared workspaces (→ Fireflies, tl;dv), you need sales coaching or deal intelligence (→ Gong, Avoma, tl;dv), or you want a generous free tier (→ Fathom unlimited free)
+
+---
+
+## MBox AI Meet
+
+For deep platform coverage (setup, pricing, limitations, workarounds for missing integrations), use `/sales-mbox-meet`.
+
+**Positioning**: Free Chrome extension for Google Meet real-time transcription and AI summaries powered by Google Gemini Pro. Privacy-first — no audio or video stored, only text. Cheapest paid option in the Chrome extension note-taker category at $4.99/mo Pro. Rebranded as "MBox AI Toolkit" on Chrome Web Store. 4.7-4.8/5 rating.
+
+**Pricing (2026-04)**: Free (basic transcription + summaries, unlimited meetings), Pro $4.99/mo (E2E encryption, advanced summaries, priority support), Enterprise custom (API access, custom analysis, dedicated support). No credit card for free tier.
+
+**API**: Enterprise-only. No public documentation, no developer portal, no documented endpoints.
+
+**Webhooks**: None.
+
+**Integrations**: None. No CRM, no Zapier/Make, no Slack, no calendar sync, no MCP server. Only output is email delivery of AI summaries.
+
+**Key features**:
+- Real-time transcription during Google Meet via Chrome extension
+- Speaker identification
+- AI-generated summaries sent to email
+- Smart action item extraction
+- Customizable summary depth
+- Multi-language transcription (specific languages not documented)
+- Gemini Pro AI model (not GPT)
+
+**Key gotchas**:
+- Google Meet only — no Zoom, Teams, or in-person support
+- Chrome browser required — no Firefox, Safari, or Arc
+- ~88% transcription accuracy — lower than Tactiq or Scribbl
+- No CRM integration on any plan
+- No public API documentation even for Enterprise
+- E2E encryption is Pro-only ($4.99/mo)
+- Zero automation surface — no webhooks, no Zapier, no MCP
+
+**Selection notes**:
+- **Pick MBox AI Meet when**: You want the cheapest possible Chrome extension note-taker ($4.99/mo Pro), you only use Google Meet and don't need other platforms, you want a privacy-first approach with no audio/video storage, you don't need CRM integration or automation, or you want E2E encryption at the lowest price point
+- **Avoid MBox AI Meet when**: You need CRM integration (→ Tactiq native HubSpot/Salesforce/Pipedrive, Fathom Business), you need Zoom or Teams support (→ Tactiq, Fathom, Fireflies), you need an API or webhooks (→ Fathom, Fireflies, MeetGeek), you need higher transcription accuracy (→ Tactiq, Scribbl), you need AI chat with meeting content (→ Scribbl AI Copilot), or you need any automation beyond email summaries (→ Fireflies, Circleback)
