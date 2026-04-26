@@ -637,6 +637,7 @@ Router recommends a 4-skill sequence:
 | `/sales-vimcal` | Vimcal — keyboard-first AI calendar, availability sharing, booking links, time zone management, Vimcal EA |
 | `/sales-savvycal` | SavvyCal — personalized scheduling with calendar overlay, ranked availability, REST API, webhooks, embeds |
 | `/sales-reclaim` | Reclaim.ai — AI calendar automation, task scheduling, focus time, habits, scheduling links, API/webhooks |
+| `/sales-motion` | Motion — AI calendar with task auto-scheduling, project management, meeting notes, docs, booking pages, REST API |
 | `/sales-email-tracking` | Email engagement tracking — open/click/attachment tracking, follow-up timing |
 | `/sales-transactional-email` | Transactional/triggered email — provider selection, API/SMTP, templates, deliverability |
 | `/sales-live-chat` | Live chat and chatbot for sales — widget setup, chatbot flows, agent routing |

@@ -47,8 +47,9 @@ Ask the user:
    - F) SavvyCal
    - G) Vimcal
    - H) Reclaim.ai
-   - I) None yet
-   - J) Other
+   - I) Motion
+   - J) None yet
+   - K) Other
 
 **If the user's request already provides most of this context, skip directly to the relevant step.** Lead with your best-effort answer using reasonable assumptions (stated explicitly), then ask only the most critical 1-2 clarifying questions at the end — don't gate your response behind gathering complete context.
 
@@ -114,6 +115,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-vimcal` — Vimcal platform help (keyboard-first calendar with drag-to-share availability and time zone management)
 - `/sales-savvycal` — SavvyCal platform help (personalized scheduling with calendar overlay, ranked availability, API, webhooks, embeds)
 - `/sales-reclaim` — Reclaim.ai platform help (AI task scheduling, focus time, habits, scheduling links with webhook support)
+- `/sales-motion` — Motion platform help (AI calendar with aggressive task auto-scheduling, project management, meeting notes)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
 ## Examples

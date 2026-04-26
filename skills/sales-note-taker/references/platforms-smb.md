@@ -1968,3 +1968,33 @@ For deep platform coverage (Zapier triggers, workspace setup, troubleshooting), 
 **Selection notes**:
 - **Pick Noty.ai when**: You want a budget Chrome extension note-taker ($10/user/mo) for Google Meet and Zoom, you value automatic action item extraction with deadlines and assignees, you want Gmail follow-up integration, you need workspaces and folders for team organization, or you're a school/nonprofit eligible for the $40/yr Education plan
 - **Avoid Noty.ai when**: You need Microsoft Teams support (→ Fathom, Fireflies, Jamie), you need a public API or webhooks (→ Fathom, Fireflies, MeetGeek), you need CRM integration (→ Tactiq, Fathom Business, Fireflies Business), you need reliable long-meeting summaries (→ Fathom, Fireflies), you need Slack integration now (→ Fathom, Fireflies, MeetGeek), or you need more than 100 hrs/month of recording (→ Fathom free unlimited, tl;dv free unlimited)
+
+## Motion (AI Meeting Notetaker)
+
+For deep platform coverage (API, task scheduling, project management, calendar), use `/sales-motion`.
+
+**Positioning**: Not a dedicated note-taker — Motion is an all-in-one AI productivity platform (calendar + tasks + projects + docs) that includes a built-in meeting notetaker. Trained on 10,000+ hours of proprietary meeting video data. The key differentiator is automatic conversion of action items into Motion tasks with proper assignment and scheduling.
+
+**Pricing (2026-04)**: Pro AI $19-49/seat/mo (includes 7,500 AI credits/mo), Business AI $29-69/seat/mo (includes 15,000 AI credits/mo). No free plan. 7-day trial. Meeting notes consume AI credits alongside other AI features.
+
+**Meeting note capabilities**:
+- Recording, full transcription, and labeled timestamps
+- AI-generated summaries with action items and follow-up emails
+- Manual notes merged with AI-generated notes
+- Action items auto-convert to Motion tasks with assignee and scheduling
+- Available on Zoom and Google Meet (via native integrations)
+
+**API**: REST API at `api.usemotion.com/v1` — tasks and projects CRUD. No direct API for meeting notes/transcripts. Auth via `X-API-Key` header. 12 req/min (individual), 120 req/min (team).
+
+**Webhooks**: None. No event push capability. Must poll task API to detect action items created from meetings.
+
+**Key gotchas**:
+- Meeting notes are bundled into the broader Motion platform — you're paying for calendar + tasks + projects + docs, not just notes
+- AI credits are shared across all AI features — heavy use of AI Chat or Docs reduces credits available for meeting notes
+- No standalone meeting notes API — transcripts and summaries are only accessible in the UI
+- No CRM auto-sync for meeting notes (HubSpot/Salesforce integration is limited to CRM data access)
+- Mobile app meeting notes experience lags behind desktop
+
+**Selection notes**:
+- **Pick Motion's notetaker when**: You already use Motion for calendar and task management, you want action items to auto-become scheduled tasks, you don't need a dedicated CI/analytics platform, and you're willing to pay for the full platform
+- **Avoid Motion's notetaker when**: You need a standalone meeting intelligence tool (→ Fathom, Fireflies, Gong), you need meeting notes API or webhooks (→ Fathom, Fireflies, MeetGeek), you need CRM auto-sync for transcripts (→ Fathom Business, Fireflies Business), you need Microsoft Teams support for notes (→ Fathom, Fireflies, Jamie), or you want a free note-taker (→ Fathom free, tl;dv free)

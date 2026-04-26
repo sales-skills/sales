@@ -214,3 +214,16 @@ Use these to gauge how your scheduling is performing:
 - **Plans**: Lite (Free, 1 link), Starter ($10/mo, 3 links), Business ($15/mo, unlimited + webhooks)
 - **Best for**: Solopreneurs and small teams who already use Reclaim for task/focus time management and want scheduling links that respect their full AI-managed schedule
 - **Platform skill**: `/sales-reclaim`
+
+### In Motion
+
+- **AI-powered booking pages** — Motion creates scheduling links that factor in all auto-scheduled tasks, calendar events, and projects when showing availability
+- **Advantage**: Booking availability automatically adjusts as Motion reschedules tasks. Unlike static tools, the availability shown reflects your true capacity, not just calendar gaps
+- **Calendar consolidation**: Connects Google Calendar, Outlook, and iCloud — all synced calendars factor into availability for booking pages
+- **Meeting Notetaker**: Built-in AI meeting notes with transcription, summaries, and automatic action item → task conversion. No separate note-taking tool needed
+- **Integrations**: Zoom, Google Meet for auto-generated meeting links. HubSpot and Salesforce for CRM data.
+- **API**: REST API at `api.usemotion.com/v1` — tasks and projects CRUD, but no calendar/booking page API. Auth via `X-API-Key` header. 12 req/min (individual), 120 req/min (team)
+- **No webhooks**: Cannot receive event notifications. Must poll API or use Zapier actions
+- **Limitation**: No round-robin routing, no routing forms, no team scheduling distribution. Booking pages are individual-only. No free plan — Pro AI starts at $19/seat/mo (annual)
+- **Best for**: Solo sellers and small teams who want calendar + task management + meeting notes + scheduling links in one tool, and are willing to give up webhook/trigger capabilities
+- **Platform skill**: `/sales-motion`
