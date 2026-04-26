@@ -1846,3 +1846,45 @@ For deep platform coverage (privacy architecture, AI SKILLs, DicteBOX, pricing t
 **Selection notes**:
 - **Pick Dicte when**: EU data residency is mandatory, you need open-source/EU-only AI models (no US providers), you want on-premises with DicteBOX for regulated industries, you want AI analysis beyond transcription (SWOT, project reports, mind maps), or you operate in FR/DE/ES/IT/EN and want a privacy-first mobile recorder
 - **Avoid Dicte when**: You need an API or webhooks for custom integrations (→ Fathom, Fireflies, Grain), you need more than 5 languages (→ Notta 58, Jamy 100+), you need CRM sync on a budget (→ Fathom Business, Fireflies Business), you need sales coaching or methodology scorecards (→ Gong, Avoma, tl;dv), or you want a proven platform with community support and independent reviews (→ Otter, Fathom)
+
+---
+
+## NoteWave
+
+For deep platform coverage (features, pricing, data handling, limitations, selection comparison), use `/sales-notewave`.
+
+**Positioning**: iOS AI note-taking app by DOTFORGE LIMITED. One-tap recording with AI transcription in 100+ languages, speaker identification, AI summaries, and unique study features (flashcards, quizzes). Also imports YouTube URLs and PDF/Word documents. Privacy-first — audio deleted immediately after processing. Apple ecosystem only (iOS 15.1+, macOS 12.0+ M1, visionOS). Launched Dec 2025.
+
+**Pricing (2026-04)**: Free (3 notes total — not per month), Premium Weekly $9.99/wk, Monthly $12.99/mo, Annual $44.99/yr or $79.99/yr. All via Apple App Store.
+
+**API**: None. No public REST API, no GraphQL, no webhook endpoints.
+
+**Webhooks**: None.
+
+**Integrations**: None. No CRM, no Zapier/Make, no Slack, no calendar sync, no MCP server. Export is manual only. Apple Sign-in required.
+
+**Key features**:
+- One-tap audio recording with AI transcription (100+ languages)
+- Speaker identification
+- AI-generated summaries and key points
+- Flashcards and quiz generation (Premium)
+- Chat with notes — ask AI questions about recordings (Premium)
+- YouTube URL → structured notes
+- PDF/Word/presentation import → structured notes
+- Full-text search across all transcripts
+- Privacy-first: audio deleted immediately after processing (Google Cloud AI)
+- Storage on Supabase (US + EU data centers)
+
+**Known issues**:
+- Free tier is only 3 notes ever — functionally a trial
+- No API, webhooks, or any integration surface — fully siloed
+- Apple ecosystem only — no Android, Windows, or web app
+- Apple Sign-in required — no email/password option
+- Pricing has 4 tiers with unclear differences between two annual plans ($44.99 vs $79.99)
+- No team features, shared workspace, or collaboration
+- No meeting bot — doesn't auto-join Zoom/Meet/Teams
+- No CRM integration — transcripts stay inside the app
+
+**Selection notes**:
+- **Pick NoteWave when**: You're an Apple-only user wanting a simple recording + transcription + AI summary app with study features (flashcards/quizzes), you want 100+ language support on iOS, you value privacy (audio deleted immediately), you're a student/researcher turning lectures into study materials, or you want YouTube/PDF import into the same note-taking workflow
+- **Avoid NoteWave when**: You need any integrations — CRM, Slack, Zapier, webhooks, API (→ Fathom, Fireflies, Wave), you need Android or Windows support (→ Otter, Notta, Fireflies), you need a meeting bot that auto-joins calls (→ Fathom, Fireflies, tl;dv), you need team collaboration or shared workspaces (→ Fireflies, tl;dv), you need sales coaching or deal intelligence (→ Gong, Avoma, tl;dv), or you want a generous free tier (→ Fathom unlimited free)
