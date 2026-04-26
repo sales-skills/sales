@@ -138,8 +138,8 @@ Since Fyxer has no API, webhooks, or Zapier support:
 | Inbox organization | Auto-labels | Split Inbox | AI bundles | Smart folders | Auto-triage |
 | AI drafting | Voice-trained | AI Write + Grammarly | Ghostwriter | No | Voice-trained |
 | Meeting notes | Built-in | No | No | No | No |
-| CRM integration | HubSpot only | Salesforce, HubSpot | No | No | No |
-| API/webhooks | None | None | None | None | None |
-| Starting price | $22.50/mo | $33/mo | $7/mo | $7/mo | $24.99/mo |
+| CRM integration | HubSpot only | SF/HubSpot/Pipedrive (Business+) | No | No | No |
+| API/webhooks | None | MCP server only (Business+) | None | None | None |
+| Starting price | $22.50/mo | $25/mo | $7/mo | $7/mo | $24.99/mo |
 | Free plan | Trial only | Trial only | Trial only | Trial only | No |
-| Calendar | Read-only | Read-only | No | No | Read/write |
+| Calendar | Read-only | Read/write | No | No | Read/write |
