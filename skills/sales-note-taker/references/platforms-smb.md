@@ -1926,3 +1926,45 @@ For deep platform coverage (setup, pricing, limitations, workarounds for missing
 **Selection notes**:
 - **Pick MBox AI Meet when**: You want the cheapest possible Chrome extension note-taker ($4.99/mo Pro), you only use Google Meet and don't need other platforms, you want a privacy-first approach with no audio/video storage, you don't need CRM integration or automation, or you want E2E encryption at the lowest price point
 - **Avoid MBox AI Meet when**: You need CRM integration (→ Tactiq native HubSpot/Salesforce/Pipedrive, Fathom Business), you need Zoom or Teams support (→ Tactiq, Fathom, Fireflies), you need an API or webhooks (→ Fathom, Fireflies, MeetGeek), you need higher transcription accuracy (→ Tactiq, Scribbl), you need AI chat with meeting content (→ Scribbl AI Copilot), or you need any automation beyond email summaries (→ Fireflies, Circleback)
+
+## Noty.ai
+
+For deep platform coverage (Zapier triggers, workspace setup, troubleshooting), use `/sales-noty`.
+
+**Positioning**: Chrome-extension AI meeting assistant powered by Google's Gemini AI. Covers Google Meet and Zoom with real-time transcription, AI summaries, and automatic action item extraction with deadlines and assignees. Gmail follow-up integration. Zapier-only automation surface. Founded 2020 by Natalie Marina, Middletown DE, 12 employees, $1.77M raised, Google for Startups Ukraine Support Fund. 100K+ users claimed. 98.6% transcription accuracy claimed. 90+ languages.
+
+**Pricing (2026-04)**: Free (limited — details unclear), Pro $10/user/mo (100 hrs/month, 3 AI credits/meeting, unlimited storage, recording, export Docs/PDF/txt, global search, custom summaries, priority support, impact tracking), Education $40/user/yr (~$3.33/mo, 90% discount for schools/nonprofits). 7-day free trial, no credit card.
+
+**API**: No public API. No developer portal. No documented endpoints.
+
+**Webhooks**: None direct. Only via Zapier instant triggers.
+
+**Integrations**: Google Meet (Chrome extension), Zoom (OAuth), Google Calendar (auto-join), Gmail (follow-ups), Google Docs (export). Zapier (3 instant triggers: Conversation Finished, Todo Items Created, Summary Created — no actions). Slack listed as "upcoming" (not available). No Make/Integromat. No MCP server. No native CRM integration.
+
+**Key features**:
+- Real-time transcription during Google Meet and Zoom via Chrome extension
+- AI-generated summaries (Gemini-powered)
+- Automatic action item extraction with assignees and deadlines
+- Live highlighting and commenting during calls
+- Smart follow-ups via Gmail from highlights
+- Workspaces and Folders for team organization
+- Global search across all meetings
+- Custom summary generation (costs AI credits)
+- Impact tracking (productivity metrics)
+- Export to Google Docs, PDF, TXT
+- 90+ language transcription
+
+**Key gotchas**:
+- Google Meet + Zoom only — no Microsoft Teams, Webex, or phone call support
+- No public API — Zapier triggers are the only programmatic interface
+- 3 AI credits per meeting on Pro — heavy users may exhaust credits
+- Summaries reportedly too short for long meetings (1-2 sentences for hour-long calls)
+- Transcripts sometimes fail to generate entirely
+- Account deletion is not self-service — requires contacting support
+- Slack integration is still "upcoming"
+- 100 hrs/month cap on Pro plan
+- No CRM integration on any plan
+
+**Selection notes**:
+- **Pick Noty.ai when**: You want a budget Chrome extension note-taker ($10/user/mo) for Google Meet and Zoom, you value automatic action item extraction with deadlines and assignees, you want Gmail follow-up integration, you need workspaces and folders for team organization, or you're a school/nonprofit eligible for the $40/yr Education plan
+- **Avoid Noty.ai when**: You need Microsoft Teams support (→ Fathom, Fireflies, Jamie), you need a public API or webhooks (→ Fathom, Fireflies, MeetGeek), you need CRM integration (→ Tactiq, Fathom Business, Fireflies Business), you need reliable long-meeting summaries (→ Fathom, Fireflies), you need Slack integration now (→ Fathom, Fireflies, MeetGeek), or you need more than 100 hrs/month of recording (→ Fathom free unlimited, tl;dv free unlimited)

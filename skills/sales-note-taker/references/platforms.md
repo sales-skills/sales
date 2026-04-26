@@ -6,7 +6,7 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 
 | File | What's in it | Platforms |
 |---|---|---|
-| `platforms-smb.md` | Budget-friendly tools under ~$50/user/mo, strong free tiers | Fathom, Fireflies, Otter, MeetGeek, Tactiq, Granola, Wave, Bluedot, Notta, Sonnet, Supernormal, VoiceToNotes, Hedy, Colibri, Jamy, Temi, Char, HappyScribe, Voicenotes, AudioPen, TalkNotes, Letterly, Coconote, HyNote AI, Backtrack, JotMe, Audionotes, Bubbles, Wudpecker, Laxis, KaraX.ai, Dicte |
+| `platforms-smb.md` | Budget-friendly tools under ~$50/user/mo, strong free tiers | Fathom, Fireflies, Otter, MeetGeek, Tactiq, Granola, Wave, Bluedot, Notta, Sonnet, Supernormal, VoiceToNotes, Hedy, Colibri, Jamy, Temi, Char, HappyScribe, Voicenotes, AudioPen, TalkNotes, Letterly, Coconote, HyNote AI, Backtrack, JotMe, Audionotes, Bubbles, Wudpecker, Laxis, KaraX.ai, Dicte, Noty.ai |
 | `platforms-midmarket.md` | Sales-focused CI with coaching, methodology, CRM enrichment | Avoma, tl;dv, Claap, Grain, Sembly, Read.ai, Fellow, Jamie, Krisp, IRIS Clarity, Cluely, Lindy, Outdoo, Jiminny, Enthu.AI, Demodesk, Salesken, Oliv, Weflow, Scratchpad, Laserfocus, Noota, Dialpad, Winn.ai, Circleback |
 | `platforms-enterprise.md` | Enterprise revenue intelligence ($1K+/user/yr) + bolt-on CI | Gong, Modjo, MaxIQ (EchoIQ), Clari Copilot, Verbit, + Salesloft Conversations, Chorus, Seismic, Revenue.io |
 | `platforms-field.md` | In-person/field sales coaching and mobile recording | Rilla, Siro, Sales Ask, Speakwise, Omi, Plaud, reason8 |
@@ -119,4 +119,5 @@ Per-platform detail for selection and backend API integration. Pricing is best-e
 | Dicte | EU privacy-first AI meeting assistant | Yes (120 min/mo) | €9.92/mo (annual) | None (Business/Enterprise only, undocumented) | None | None (Business/Enterprise only) | EU data residency, post-quantum encryption, open-source/EU AI models only, DicteBOX on-premises |
 | reason8 | In-person meeting note-taker (multi-device) | Yes (15 min/meeting) | ~$19.99/mo | None | None | None | Multi-smartphone audio fusion for in-person meetings, patent-pending, speaker ID via multi-device, English only |
 | MBox AI Meet | Chrome extension note-taker (Google Meet) | Yes (unlimited) | $4.99/mo | None (Enterprise only, undocumented) | None | None | Cheapest paid Chrome extension ($4.99/mo), Gemini Pro AI, privacy-first (no audio storage), E2E encryption (Pro) |
+| Noty.ai | Chrome extension meeting assistant | Yes (limited) | $10/user/mo | None (Zapier only) | None (Zapier only) | None | Budget Chrome extension, Google Meet + Zoom, Gemini AI, action items with deadlines, Gmail follow-ups |
 | Bliro | Bot-free AI sales assistant + CRM sync | Yes (5h/mo) | €49/mo | REST (OAuth 2.0, Unlimited+) | Yes (HMAC, Unlimited+) | Deep (SF/HS/SAP/Dynamics) | Bot-free sales teams, CRM field-level sync, coaching, GDPR/ISO 27001/SOC 2, German-hosted |
