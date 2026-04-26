@@ -103,6 +103,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 
 ## Related skills
 
+- `/sales-calcom` — Cal.com platform help (open-source scheduling with full API, webhooks, self-hosting, embeddable atoms)
 - `/sales-qualified` — Qualified platform help (Piper Meetings instant booking from chat)
 - `/sales-yesware` — Yesware platform help including Meeting Scheduler setup
 - `/sales-cadence` — Design outbound cadences that drive meeting bookings

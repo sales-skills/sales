@@ -149,12 +149,20 @@ Use these to gauge how your scheduling is performing:
 
 ### In Cal.com
 
-- **Open source** — self-host for free or use cloud-hosted version
+- **Open source** (AGPL-3.0, 40K+ GitHub stars) — self-host for free or use cloud-hosted version
 - **Event types**: One-on-one, round-robin, collective, managed events (admins control team event types)
-- **Routing forms**: Similar to Calendly — route prospects based on form answers
-- **Advantage**: Self-hosted = full data control, fully customizable, no per-seat pricing on self-hosted
-- **Plans**: Free (self-hosted), Teams ($12/user/mo cloud), Enterprise (custom)
-- **Best for**: Teams that need data sovereignty, custom branding, or want to avoid per-seat pricing at scale
+- **Routing forms**: Qualify prospects with form questions before booking, route to different event types or team members (Teams+ plan)
+- **Workflows**: Built-in automated reminders and follow-ups via email/SMS — no Zapier needed for basic reminder sequences
+- **API**: Full REST API v2 (Bearer token auth, 120 req/min) — create bookings, manage event types, query available slots programmatically
+- **Webhooks**: 15+ trigger events (BOOKING_CREATED, CANCELLED, RESCHEDULED, MEETING_STARTED/ENDED, FORM_SUBMITTED, no-show detection) with HMAC-SHA256 verification and custom payload templates
+- **Embeddable atoms**: React UI components for embedding scheduling directly in your app (Platform plan)
+- **Integrations**: Google Calendar, Outlook, Zoom, Google Meet, Teams, Salesforce (2-way sync), HubSpot (2-way sync), Stripe/PayPal payments, Zapier, Make, n8n
+- **Cal Video**: Built-in video conferencing — no Zoom dependency needed
+- **Advantage**: Self-hosted = full data control, no per-seat pricing, fully customizable. Cloud free plan includes unlimited bookings, event types, and CRM sync
+- **Plans**: Free (1 user, unlimited bookings), Teams ($12/user/mo — round-robin, routing forms, analytics), Organizations ($28/user/mo — SSO, HIPAA, SOC 2), Enterprise (custom)
+- **Gotcha**: Round-robin and routing forms require Teams plan. Self-hosted Outlook integration requires Azure AD app registration. Calendar sync doesn't instantly reflect external cancellations.
+- **Best for**: Developers and technical founders who want full API access and data control, teams that need self-hosting for compliance, or anyone who wants Calendly-level features without per-seat pricing at scale
+- **Platform skill**: `/sales-calcom`
 
 ### In Mixmax
 - **One-click meetings**: Embed available time slots directly in emails — recipients click a time to book without leaving the email
