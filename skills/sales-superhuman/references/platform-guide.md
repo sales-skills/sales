@@ -217,16 +217,16 @@ The Recent Opens Feed (Business+) shows best-effort tracking. Do not rely on it 
 
 | Feature | Superhuman | Fyxer | Shortwave | SaneBox | alfred_ |
 |---|---|---|---|---|---|
-| Primary focus | Speed + keyboard | AI drafts + meeting notes | AI Gmail client | Inbox filtering | AI exec assistant |
-| Inbox organization | Split Inbox | Auto-labels | AI bundles | Smart folders | Auto-triage |
-| AI drafting | AI Write + Grammarly | Voice-trained | Ghostwriter | No | Voice-trained |
+| Primary focus | Speed + keyboard | AI drafts + meeting notes | AI-first Gmail client | Inbox filtering | AI exec assistant |
+| Inbox organization | Split Inbox | Auto-labels | AI filters + splits + bundles | Smart folders | Auto-triage |
+| AI drafting | AI Write + Grammarly | Voice-trained | Ghostwriter (voice-learning) | No | Voice-trained |
 | Meeting notes | No | Built-in | No | No | No |
-| MCP server | Yes (Business+) | No | No | No | No |
-| CRM integration | SF/HubSpot/Pipedrive | HubSpot only | No | No | No |
-| API/webhooks | MCP only | None | None | None | None |
-| Starting price | $25/mo | $22.50/mo | $7/mo | $7/mo | $24.99/mo |
-| Free plan | Trial only | Trial only | Trial only | Trial only | No |
-| Calendar | Read/write | Read-only | No | No | Read/write |
+| MCP | Server (tools connect TO it) | No | Consumer (connects TO servers) | No | No |
+| CRM integration | SF/HubSpot/Pipedrive | HubSpot only | None native (via MCP/Tasklet) | No | No |
+| API/webhooks | MCP only | None | MCP consumer only | None | None |
+| Starting price | $25/mo | $22.50/mo | $24/mo | $7/mo | $24.99/mo |
+| Free plan | Trial only | Trial only | 14-day trial (no CC) | Trial only | No |
+| Calendar | Read/write | Read-only | Read-only (view + accept/reject) | No | Read/write |
 | Keyboard workflow | Core experience | No | Basic | No | No |
 
 ## Security & compliance

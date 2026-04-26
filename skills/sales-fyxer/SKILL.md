@@ -89,6 +89,8 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 
 - `/sales-note-taker` — Choose a dedicated AI meeting note-taker (Fathom, Fireflies, Otter, etc.). Install:
   `npx skills add sales-skills/sales --skill sales-note-taker -a claude-code`
+- `/sales-shortwave` — Shortwave AI-native Gmail client (AI filters, Ghostwriter, MCP consumer). Install:
+  `npx skills add sales-skills/sales --skill sales-shortwave -a claude-code`
 - `/sales-alfred` — alfred_ AI executive assistant (email triage, reply drafting, task extraction)
 - `/sales-lindy` — Lindy no-code AI agent builder (email, calendar, custom workflows)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
