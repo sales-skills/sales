@@ -46,8 +46,9 @@ Ask the user:
    - E) Cal.com
    - F) SavvyCal
    - G) Vimcal
-   - H) None yet
-   - I) Other
+   - H) Reclaim.ai
+   - I) None yet
+   - J) Other
 
 **If the user's request already provides most of this context, skip directly to the relevant step.** Lead with your best-effort answer using reasonable assumptions (stated explicitly), then ask only the most critical 1-2 clarifying questions at the end — don't gate your response behind gathering complete context.
 
@@ -110,6 +111,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-mixmax` — Mixmax platform help (for Mixmax-specific setup)
 - `/sales-lindy` — Lindy platform help (AI agent builder with natural language scheduling via iMessage/Slack)
 - `/sales-vimcal` — Vimcal platform help (keyboard-first calendar with drag-to-share availability and time zone management)
+- `/sales-reclaim` — Reclaim.ai platform help (AI task scheduling, focus time, habits, scheduling links with webhook support)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
 ## Examples

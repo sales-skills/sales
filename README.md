@@ -633,6 +633,7 @@ Router recommends a 4-skill sequence:
 | `/sales-checkout` | Checkout optimization — upsells, order bumps, payment plans, cart abandonment |
 | `/sales-meeting-scheduler` | Schedule sales meetings — booking pages, round-robin, Calendly/Chili Piper |
 | `/sales-vimcal` | Vimcal — keyboard-first AI calendar, availability sharing, booking links, time zone management, Vimcal EA |
+| `/sales-reclaim` | Reclaim.ai — AI calendar automation, task scheduling, focus time, habits, scheduling links, API/webhooks |
 | `/sales-email-tracking` | Email engagement tracking — open/click/attachment tracking, follow-up timing |
 | `/sales-transactional-email` | Transactional/triggered email — provider selection, API/SMTP, templates, deliverability |
 | `/sales-live-chat` | Live chat and chatbot for sales — widget setup, chatbot flows, agent routing |

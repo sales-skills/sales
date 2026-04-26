@@ -187,3 +187,14 @@ Use these to gauge how your scheduling is performing:
 - **Best for**: Relationship-focused scheduling where you want to suggest specific times rather than expose your whole calendar
 - **Plans**: Free (1 link), Basic ($12/mo), Premium ($20/mo)
 - **Best for**: Founders, AEs, and senior sellers who schedule with high-value prospects
+
+### In Reclaim.ai
+
+- **AI Scheduling Links**: Smart booking pages that factor in all connected calendars, tasks, habits, and buffer time — availability is dynamically computed, not static
+- **Advantage over traditional tools**: Availability auto-adjusts around Reclaim-managed focus time, habits, and task blocks. A 2pm slot may show as available to prospects even if you have a task scheduled there, because Reclaim can reschedule the task
+- **Webhook support**: Business plan ($15/seat/mo) and above — receive `SchedulingLink.Meeting.Created`, `Updated`, `Cancelled` events with HMAC-SHA256 verification. Useful for auto-logging bookings to CRM
+- **Custom data passthrough**: Append `data-` query params to scheduling link URLs (up to 5, max 512 bytes). These flow through to webhook payloads — useful for tracking UTM source of bookings
+- **Limitations**: Only 1 scheduling link on the free plan. Can't use custom hour blocks — only Reclaim's preset schedules (Work, Personal, Meeting Times). No built-in round-robin or routing
+- **Plans**: Lite (Free, 1 link), Starter ($10/mo, 3 links), Business ($15/mo, unlimited + webhooks)
+- **Best for**: Solopreneurs and small teams who already use Reclaim for task/focus time management and want scheduling links that respect their full AI-managed schedule
+- **Platform skill**: `/sales-reclaim`
