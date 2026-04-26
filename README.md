@@ -635,6 +635,7 @@ Router recommends a 4-skill sequence:
 | `/sales-calendly` | Calendly — market-leading scheduling links, booking pages, round-robin, routing forms, workflows, REST API v2, webhooks |
 | `/sales-calcom` | Cal.com — open-source scheduling infrastructure, REST API v2, webhooks, self-hosting, round-robin, routing forms, embeddable atoms |
 | `/sales-vimcal` | Vimcal — keyboard-first AI calendar, availability sharing, booking links, time zone management, Vimcal EA |
+| `/sales-savvycal` | SavvyCal — personalized scheduling with calendar overlay, ranked availability, REST API, webhooks, embeds |
 | `/sales-reclaim` | Reclaim.ai — AI calendar automation, task scheduling, focus time, habits, scheduling links, API/webhooks |
 | `/sales-email-tracking` | Email engagement tracking — open/click/attachment tracking, follow-up timing |
 | `/sales-transactional-email` | Transactional/triggered email — provider selection, API/SMTP, templates, deliverability |

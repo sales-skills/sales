@@ -191,12 +191,18 @@ Use these to gauge how your scheduling is performing:
 
 ### In SavvyCal
 
-- **Personalized scheduling** — recipients overlay their own calendar to find mutual availability
-- **Prioritized scheduling**: Show your preferred times first, with less-preferred times still available
+- **Personalized scheduling** — recipients overlay their own calendar to find mutual availability (signature differentiator)
+- **Ranked availability**: Show your preferred times first, with less-preferred times still bookable
 - **Links**: Reusable links, one-time links, and personalized links for specific contacts
-- **Best for**: Relationship-focused scheduling where you want to suggest specific times rather than expose your whole calendar
-- **Plans**: Free (1 link), Basic ($12/mo), Premium ($20/mo)
-- **Best for**: Founders, AEs, and senior sellers who schedule with high-value prospects
+- **Team scheduling**: Collective (all must be free), round-robin (distribute), group (many-to-one) — all on Basic plan
+- **API**: REST API at api.savvycal.com — scheduling links CRUD, events, time slots. OAuth 2.0 + Personal Access Tokens.
+- **Webhooks**: 16 event types (event.created/rescheduled/canceled, checkout events, attendee events, poll responses, workflow triggers) with HMAC-SHA256 verification
+- **Embed**: 4 modes — inline, popover, floating widget, hyperlink. JS library with `savvycal.scheduled` event listener for conversion tracking.
+- **Integrations**: Google/Outlook/iCloud/Fastmail calendars, Zoom/Meet/Teams/Whereby conferencing, HubSpot/Close CRM, Stripe payments, Zapier (8 triggers, no actions), Slack
+- **Plans**: Basic ($12/user/mo — unlimited links, teams, API, webhooks), Premium ($20/user/mo — custom domains, delegated access, paid bookings, no branding). No free plan.
+- **Limitation**: No mobile app. No routing forms. Zapier has triggers only (no actions). Calendar overlay requires recipient opt-in.
+- **Best for**: Founders, AEs, and senior sellers who schedule with high-value prospects and want the recipient to see a personalized view
+- **Platform skill**: `/sales-savvycal`
 
 ### In Reclaim.ai
 

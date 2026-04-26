@@ -112,6 +112,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-mixmax` — Mixmax platform help (for Mixmax-specific setup)
 - `/sales-lindy` — Lindy platform help (AI agent builder with natural language scheduling via iMessage/Slack)
 - `/sales-vimcal` — Vimcal platform help (keyboard-first calendar with drag-to-share availability and time zone management)
+- `/sales-savvycal` — SavvyCal platform help (personalized scheduling with calendar overlay, ranked availability, API, webhooks, embeds)
 - `/sales-reclaim` — Reclaim.ai platform help (AI task scheduling, focus time, habits, scheduling links with webhook support)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
