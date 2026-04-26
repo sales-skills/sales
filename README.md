@@ -569,6 +569,7 @@ Router recommends a 4-skill sequence:
 | `/sales-futurepedia` | Futurepedia — largest AI tools directory (5,700+ tools, ~2M visits/mo), $247/$497 |
 | `/sales-theresanaiforthat` | TAAFT — #1 AI tools directory (42,000+ tools, 3-4M visits/mo, DR76 dofollow), $347 listing, $300 first-launch PPC bonus |
 | `/sales-topai` | TopAI.tools — curated AI tools directory (2,700+ tools, ~1-1.9M visits/mo), $39 Fast Track, $229 Boosted |
+| `/sales-toolify` | Toolify.ai — largest AI tools directory by tool count (26K+ tools, 450+ categories, ~2-5M visits/mo), $49-99 listing, 6+ dofollow backlinks |
 | `/sales-startupstash` | Startup Stash — curated tool directory (10K+ tools, DR65 nofollow) |
 | `/sales-productburst` | ProductBurst — daily/weekly rankings (DR46 dofollow), no gatekeepers |
 | `/sales-solopush` | SoloPush — indie maker launches (DR46-47 dofollow), free instant listing |

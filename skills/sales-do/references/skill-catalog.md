@@ -910,6 +910,12 @@
 |---|---|
 | `/sales-topai` | User asks about TopAI.tools platform, submitting to TopAI.tools, topai.tools, TopAI.tools listing, TopAI.tools Fast Track, TopAI.tools $39, TopAI.tools Boosted, TopAI.tools $229, TopAI.tools featured listing, TopAI.tools categories, TopAI.tools AI directory, TopAI.tools vs TAAFT, TopAI.tools vs other directories, TopAI.tools backlink, TopAI.tools submission, or TopAI.tools review time |
 
+### Toolify & Platform
+
+| Skill | Route when... |
+|---|---|
+| `/sales-toolify` | User asks about Toolify.ai platform, submitting to Toolify, toolify.ai, Toolify listing, Toolify submission fee, Toolify $49, Toolify $99, Toolify dofollow backlinks, Toolify AI certification, Toolify traffic intelligence, Toolify sponsored ads, Toolify PPC, Toolify coins, Toolify update listing, Toolify vs TAAFT, Toolify vs Futurepedia, Toolify categories, Toolify AI directory, Toolify auto-scraped listing, or Toolify YC W24 |
+
 ### BetaList & Platform
 
 | Skill | Route when... |

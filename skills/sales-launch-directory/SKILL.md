@@ -80,6 +80,7 @@ If the request maps to a single platform, route:
 - Futurepedia-specific questions → `/sales-futurepedia`
 - TAAFT-specific questions → `/sales-theresanaiforthat`
 - TopAI.tools-specific questions → `/sales-topai`
+- Toolify-specific questions → `/sales-toolify`
 - BetaList-specific questions → `/sales-betalist`
 - LaunchCaster-specific questions → `/sales-launchcaster`
 - SaaSHunt-specific questions → `/sales-saashunt`
@@ -162,6 +163,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-saashunt` — SaaSHunt platform help (AI-powered B2B SaaS directory, DR49 dofollow, free template-based submission)
 - `/sales-resourcefyi` — Resource.fyi platform help (curated dev/designer tools directory, 2,519+ resources, 25+ categories, community upvoting)
 - `/sales-launchvibe` — LaunchVibe platform help (daily launches, XP gamification, DR10 dofollow, 1,000+ founders)
+- `/sales-toolify` — Toolify.ai platform help (26K+ AI tools, 450+ categories, ~2-5M visits/mo, $49-99 listing, 6+ dofollow backlinks)
 - `/sales-getmorebacklinks` — GetMoreBacklinks managed directory submission service ($87-$247, 50-200 directories submitted for you)
 - `/sales-funnel` — Build and optimize sales funnels for conversion
 - `/sales-audience-growth` — Grow your email list and subscriber base
