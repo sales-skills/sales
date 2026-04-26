@@ -643,6 +643,7 @@ Router recommends a 4-skill sequence:
 | `/sales-motion` | Motion — AI calendar with task auto-scheduling, project management, meeting notes, docs, booking pages, REST API |
 | `/sales-saner` | Saner.AI — ADHD-friendly AI personal assistant, auto-organizes notes, extracts tasks from email/docs, daily AI planner |
 | `/sales-simular` | Simular (Sai) — autonomous AI desktop agent, controls apps/browsers via GUI, Simulang scripting, cloud VM, $20-500/mo |
+| `/sales-dume` | Dume.ai — chat-first AI exec assistant, 50+ tool integrations, workflow automation, MCP server integration, $0-40/mo |
 | `/sales-email-tracking` | Email engagement tracking — open/click/attachment tracking, follow-up timing |
 | `/sales-transactional-email` | Transactional/triggered email — provider selection, API/SMTP, templates, deliverability |
 | `/sales-live-chat` | Live chat and chatbot for sales — widget setup, chatbot flows, agent routing |
