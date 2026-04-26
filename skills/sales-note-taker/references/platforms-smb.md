@@ -1998,3 +1998,29 @@ For deep platform coverage (API, task scheduling, project management, calendar),
 **Selection notes**:
 - **Pick Motion's notetaker when**: You already use Motion for calendar and task management, you want action items to auto-become scheduled tasks, you don't need a dedicated CI/analytics platform, and you're willing to pay for the full platform
 - **Avoid Motion's notetaker when**: You need a standalone meeting intelligence tool (→ Fathom, Fireflies, Gong), you need meeting notes API or webhooks (→ Fathom, Fireflies, MeetGeek), you need CRM auto-sync for transcripts (→ Fathom Business, Fireflies Business), you need Microsoft Teams support for notes (→ Fathom, Fireflies, Jamie), or you want a free note-taker (→ Fathom free, tl;dv free)
+
+---
+
+## Fyxer AI (Meeting Notetaker)
+
+For deep platform coverage (inbox organization, email drafting, setup, pricing), use `/sales-fyxer`.
+
+**Positioning**: Not a dedicated note-taker — Fyxer AI is primarily an AI email assistant (inbox organization + reply drafting) that includes a built-in meeting notetaker as a secondary feature. Notes are delivered to your inbox with auto-generated follow-up email drafts.
+
+**Pricing (2026-04)**: Starter $22.50/user/mo (annual) / $30 (monthly), Professional $37.50/user/mo (annual) / $50 (monthly), Enterprise custom. Meeting notes included on all plans. 7-14 day free trial (credit card required).
+
+**API**: None. No public API, no webhooks, no Zapier/Make integration. Entirely UI-driven.
+
+**Integrations**: Google Meet, Microsoft Teams, Zoom (separate connection required). Notes delivered via email. HubSpot sync on Professional+ only. No Salesforce or other CRM support.
+
+**Key gotchas**:
+- Meeting notes are bundled into the broader Fyxer email assistant — you're paying for inbox organization + drafting + notes, not just notes
+- No API or automation surface — cannot programmatically export transcripts or trigger downstream workflows
+- Multiple user reports of inaccurate summaries — AI confuses context between topics, attributes statements to wrong subjects
+- Follow-up email drafts may contain hallucinated commitments — always review before sending
+- No CRM auto-sync for meeting notes except HubSpot on Professional+
+- Performance issues reported — dashboard freezing, slow loading after infrastructure incidents
+
+**Selection notes**:
+- **Pick Fyxer's notetaker when**: You primarily need an AI email assistant and want meeting notes as a bonus, you don't need deep call analytics or CRM sync, you use Gmail or Outlook and want everything in one tool, and you value follow-up email drafts generated from meeting context
+- **Avoid Fyxer's notetaker when**: You need a standalone meeting intelligence tool (→ Fathom, Fireflies, Gong), you need an API or webhooks for transcript automation (→ Fathom, Fireflies, MeetGeek), you need CRM auto-sync beyond HubSpot (→ Fathom Business, Fireflies Business), you need accurate call analytics or coaching (→ Gong, Avoma), or you want a free note-taker (→ Fathom free, tl;dv free)
