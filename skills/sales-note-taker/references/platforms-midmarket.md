@@ -988,3 +988,51 @@ For deep platform coverage (real-time coaching setup, battle cards, buyer engage
 **Selection notes**:
 - **Pick Salesroom when**: You want real-time coaching and buyer engagement scoring as a native video conferencing feature (not a bolt-on), you want a simpler tech stack (one tool replaces Zoom + note-taker), your buyers are SMB/startup and won't mind a different meeting link, you want live battle cards and objection handling during calls, budget is tight compared to Gong ($49/mo vs ~$1,200/user/yr), you can tolerate a niche startup's maturity level
 - **Avoid Salesroom when**: Your buyers are enterprise and expect Zoom/Teams (adoption friction kills deals), you need API/webhook access for data pipelines (→ Gong, Fireflies, Fathom), you need a broad integration ecosystem (→ Gong, tl;dv, Fireflies), you want post-call analytics depth and revenue intelligence (→ Gong), you need proven scale and vendor stability (→ Gong, Avoma), you want real-time coaching as an overlay on existing Zoom without changing platforms (→ Cluely)
+
+## Bliro
+
+For deep platform coverage (API authentication, webhook setup, CRM field mapping, coaching module, pricing tiers, known issues, troubleshooting), use `/sales-bliro`.
+
+**Positioning**: Bot-free AI sales assistant that captures online and in-person meetings via system audio, syncs AI summaries to CRM at field level, and provides anonymous playbook-based coaching. German-built (Munich), positioned for GDPR-conscious EU sales teams that need deep CRM automation without visible meeting bots. Differentiator is the combination of bot-free recording + native CRM sync to 4 enterprise CRMs (Salesforce, HubSpot, SAP, Dynamics 365) + coaching — most bot-free competitors lack CRM depth.
+
+**Pricing (2026-04)**: Free €0/mo (5h transcription, basic features), Professional €49/mo (20h, CRM integration, coaching, analytics), Unlimited €89/mo (unlimited transcription, API + webhooks), Enterprise custom (SSO, custom AI models, priority support).
+
+**API**:
+- Docs: `help.bliro.io/en/articles/10329784-api-access` + Swagger at `api.bliro.io/docs/` (JS-rendered)
+- Type: REST
+- Auth: OAuth 2.0 client credentials (`POST https://accounts.bliro.io/oauth/token`)
+- Key endpoint: `GET /v3/calls` — list all org calls with transcript + summary
+- Scope: `org:calls:read` (org-wide, no per-user filtering yet)
+- **API access requires Unlimited plan (€89/mo)**
+
+**Webhooks**:
+- Events: call completion (transcription finalized + summary generated)
+- Payload: full `callData` object with transcript chunks, summaries, participants, timestamps
+- Security: optional HMAC-SHA256 via `Bliro-Signature` header (t=timestamp,v1=hash)
+- Setup: `app.bliro.io/orgs/settings/webhook` — deactivated by default, must activate after creation
+- TLS 1.2+ required
+- **Webhooks require Unlimited plan (€89/mo)**
+
+**Rate limits**: Not documented. OAuth tokens have `expires_in` field (typically 86400s = 24h).
+
+**Integrations**: Salesforce (Task/Event/Call on Opportunities/Accounts/Contacts), HubSpot (Activity Timeline for Deals/Accounts/Contacts), SAP, Microsoft Dynamics 365, Google Calendar, Outlook, Slack, Confluence (via webhooks), Zoom/Teams/Meet (system audio capture), Zapier/Make (via webhooks on Unlimited+).
+
+**Known issues (from G2/Sally.io review analysis)**:
+- Speaker recognition occasionally inaccurate — voice fingerprinting from system audio is less precise than per-stream bot-based diarization
+- Customer support responsiveness issues reported by some users
+- Higher pricing than competitors at the CRM integration tier (€49/mo vs Jamie at €21/mo)
+- Specialized terminology and dialects can reduce transcription accuracy
+- German-language UI by default — English available but some help center content is German-first
+- API is read-only (only `GET /v3/calls`) — no write operations, no MCP server
+
+**Strengths vs competitors**:
+- Deepest native CRM integration among bot-free tools — 4 enterprise CRMs (Salesforce, HubSpot, SAP, Dynamics 365) with field-level sync
+- Anonymous coaching module (playbook-based, no ride-alongs/recordings shared) — unique in the bot-free category
+- In-person + online meeting support via iOS app
+- Strong compliance stack: GDPR + ISO 27001 + SOC 2, data in Germany
+- Voice-based meeting prep interface (accessible as a phone contact)
+- 4.8 OMR rating, 2,000+ company customers
+
+**Selection notes**:
+- **Pick Bliro when**: Your team needs bot-free recording AND deep CRM automation (especially Salesforce or SAP), you want anonymous coaching without ride-alongs, you're EU-based and GDPR/ISO 27001 is non-negotiable, you have both online and in-person meetings, you're willing to pay €49+/mo for CRM integration
+- **Avoid Bliro when**: Budget is tight (Jamie at €21/mo or Granola at $14/mo are cheaper bot-free options), you need MCP server for AI workflow extensibility (→ Jamie, Circleback, MeetGeek), you need a public write API or rich developer surface (→ Gong, Fireflies, Fathom), speaker diarization accuracy is critical for multi-person calls (→ bot-based tools like Fireflies or Gong), you need a free tier with CRM sync (→ Fathom free + manual export)
