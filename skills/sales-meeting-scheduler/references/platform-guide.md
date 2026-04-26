@@ -121,12 +121,14 @@ Use these to gauge how your scheduling is performing:
 
 - **Market leader** for scheduling — most widely adopted, prospects are familiar with the UX
 - **Event types**: One-on-one, round-robin, collective (group scheduling), and routing forms
-- **Round-robin**: Equal distribution or optimized for availability — configure per event type
-- **Routing forms**: Qualify leads before scheduling based on form answers, then route to the right rep or meeting type
-- **Workflows**: Automated reminders, follow-ups, and notifications (email, SMS, Slack)
-- **Integrations**: Salesforce, HubSpot, Zoom, Google Meet, Teams, Slack, Stripe (for paid meetings), Zapier
-- **Plans**: Free (1 event type), Standard ($10/mo), Teams ($16/mo), Enterprise (custom)
+- **Round-robin**: Equal distribution or optimized for availability — configure per event type (Teams plan)
+- **Routing forms**: Qualify leads before scheduling based on form answers, then route to the right rep or meeting type (Teams plan)
+- **Workflows**: Automated reminders, follow-ups, and notifications (email, SMS, Slack) (Standard+)
+- **Integrations**: Salesforce (Teams+), HubSpot (Standard+), Zoom, Google Meet, Teams, Slack, Stripe, Zapier
+- **API**: REST v2 at api.calendly.com — read events, invitees, availability; webhooks for booking events (paid plans). Cannot create bookings via API.
+- **Plans**: Free (1 event type), Standard ($10/mo), Teams ($16/mo), Enterprise ($15K+/yr)
 - **Best for**: Most sales teams — strong balance of features, usability, and price
+- **Platform skill**: `/sales-calendly` — for Calendly-specific setup, API/webhook integration, and troubleshooting
 
 ### In Chili Piper
 
