@@ -45,8 +45,9 @@ Ask the user:
    - D) HubSpot Meetings
    - E) Cal.com
    - F) SavvyCal
-   - G) None yet
-   - H) Other
+   - G) Vimcal
+   - H) None yet
+   - I) Other
 
 **If the user's request already provides most of this context, skip directly to the relevant step.** Lead with your best-effort answer using reasonable assumptions (stated explicitly), then ask only the most critical 1-2 clarifying questions at the end — don't gate your response behind gathering complete context.
 
@@ -108,6 +109,7 @@ This skill covers a strategy domain across many platforms. **Before pointing the
 - `/sales-integration` — Connect scheduling tools to CRM and other sales tools
 - `/sales-mixmax` — Mixmax platform help (for Mixmax-specific setup)
 - `/sales-lindy` — Lindy platform help (AI agent builder with natural language scheduling via iMessage/Slack)
+- `/sales-vimcal` — Vimcal platform help (keyboard-first calendar with drag-to-share availability and time zone management)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.
 
 ## Examples
