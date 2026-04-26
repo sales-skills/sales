@@ -101,6 +101,8 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
   `npx skills add sales-skills/sales --skill sales-fyxer -a claude-code`
 - `/sales-shortwave` — Shortwave AI-native Gmail client (AI filters, Ghostwriter, MCP consumer). Install:
   `npx skills add sales-skills/sales --skill sales-shortwave -a claude-code`
+- `/sales-sanebox` — SaneBox server-side email filtering (smart folders, any email provider, $7/mo). Install:
+  `npx skills add sales-skills/sales --skill sales-sanebox -a claude-code`
 - `/sales-alfred` — alfred_ AI executive assistant (email triage, reply drafting, task extraction)
 - `/sales-note-taker` — Choose a dedicated AI meeting note-taker. Install:
   `npx skills add sales-skills/sales --skill sales-note-taker -a claude-code`

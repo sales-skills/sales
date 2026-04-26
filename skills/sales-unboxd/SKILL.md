@@ -82,6 +82,8 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 
 - `/sales-fyxer` ��� Fyxer AI platform help — AI email assistant with voice-trained reply drafting and meeting notes
 - `/sales-superhuman` — Superhuman platform help — fastest AI email client with keyboard workflow and MCP server
+- `/sales-sanebox` — SaneBox server-side email filtering (smart folders, any email provider, $7/mo). Install:
+  `npx skills add sales-skills/sales --skill sales-sanebox -a claude-code`
 - `/sales-alfred` — alfred_ platform help — AI executive assistant for email triage, tasks, and calendar
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:
   `npx skills add sales-skills/sales --skill sales-do -a claude-code`
