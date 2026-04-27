@@ -193,6 +193,7 @@ Router recommends a 4-skill sequence:
 | `/sales-unboxd` | Unboxd platform help — AI email secretary that extracts action items with deadlines into daily briefings, Gmail/Outlook/IMAP, $7.50-41.67/mo |
 | `/sales-sanebox` | SaneBox platform help — server-side AI email filtering with smart folders, works with any email provider, $7-36/mo |
 | `/sales-inbox-zero` | Inbox Zero platform help — open-source AI email assistant, auto-labeling, REST API + CLI, self-hostable, $18-42/mo or free |
+| `/sales-clean-email` | Clean Email platform help — cross-platform inbox cleanup with bulk actions, Auto Clean rules, True Unsubscriber, Smart Folders, any email provider, $29.99/yr |
 | `/sales-rilla` | Rilla platform help — AI coaching for in-person/field sales, virtual ridealongs, mobile recording, CRM sync via Merge, ServiceTitan/SPOTIO integrations, pricing tiers |
 | `/sales-siro` | Siro platform help — AI field sales coaching, Halftime real-time mid-call coaching, mobile recording with offline mode, REST API + Svix webhooks, CRM sync via Merge, ServiceTitan/SalesRabbit/SPOTIO/FieldRoutes integrations, pricing tiers |
 | `/sales-salesask` | Sales Ask (Coach Dean) platform help — AI coaching for in-home/field + call center sales in home services, active text feedback to reps, Process Adherence Scoring, virtual ridealongs, AI roleplay, ServiceTitan/Jobber/Housecall Pro/Salesforce integrations, white-label program |
