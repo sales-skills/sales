@@ -77,6 +77,7 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
 - `/sales-alfred` — alfred_ platform help (AI exec assistant — simpler, single-tier $24.99/mo, strong email triage)
 - `/sales-saner` — Saner.AI platform help (ADHD-friendly AI assistant — notes + tasks + daily planning)
 - `/sales-simular` — Simular (Sai) platform help (autonomous desktop agent — controls apps via GUI)
+- `/sales-inbox-zero` — Inbox Zero open-source AI email assistant (auto-labeling, rules API/CLI, self-hostable, $18/mo or free)
 - `/sales-lindy` — Lindy platform help (no-code AI agent builder — 4,000+ integrations)
 - `/sales-superhuman` — Superhuman platform help (fastest AI email client — keyboard-driven)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill.

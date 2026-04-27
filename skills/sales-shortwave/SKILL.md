@@ -98,6 +98,8 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
   `npx skills add sales-skills/sales --skill sales-fyxer -a claude-code`
 - `/sales-sanebox` — SaneBox server-side email filtering (smart folders, any email provider, $7/mo). Install:
   `npx skills add sales-skills/sales --skill sales-sanebox -a claude-code`
+- `/sales-inbox-zero` — Inbox Zero open-source AI email assistant (auto-labeling, rules API/CLI, self-hostable, $18/mo or free). Install:
+  `npx skills add sales-skills/sales --skill sales-inbox-zero -a claude-code`
 - `/sales-alfred` — alfred_ AI executive assistant (email triage, reply drafting, task extraction)
 - `/sales-note-taker` — Choose a dedicated AI meeting note-taker. Install:
   `npx skills add sales-skills/sales --skill sales-note-taker -a claude-code`

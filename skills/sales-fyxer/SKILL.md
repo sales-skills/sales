@@ -1,6 +1,6 @@
 ---
 name: sales-fyxer
-description: "Fyxer AI platform help — AI email assistant that organizes your inbox, drafts replies in your voice, and takes meeting notes with auto follow-ups ($22.50-50/user/mo). Use when setting up Fyxer for Gmail or Outlook, email drafts sound robotic or miss context, inbox labels keep miscategorizing important emails, meeting notes are inaccurate or incomplete, comparing Fyxer to Superhuman or Shortwave or SaneBox, wondering if Fyxer is worth the price for inbox automation, or troubleshooting Fyxer performance issues. Do NOT use for choosing a dedicated meeting note-taker (use /sales-note-taker). Do NOT use for general AI agent building (use /sales-lindy)."
+description: "Fyxer AI platform help — AI email assistant that organizes your inbox, drafts replies in your voice, and takes meeting notes with auto follow-ups ($22.50-50/user/mo). Use when setting up Fyxer for Gmail or Outlook, email drafts sound robotic or miss context, inbox labels keep miscategorizing important emails, meeting notes are inaccurate or incomplete, comparing Fyxer to Superhuman or Shortwave or SaneBox or Inbox Zero, wondering if Fyxer is worth the price for inbox automation, or troubleshooting Fyxer performance issues. Do NOT use for choosing a dedicated meeting note-taker (use /sales-note-taker). Do NOT use for general AI agent building (use /sales-lindy)."
 argument-hint: "[describe what you need help with in Fyxer AI]"
 license: MIT
 version: 1.0.0
@@ -93,6 +93,8 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
   `npx skills add sales-skills/sales --skill sales-shortwave -a claude-code`
 - `/sales-sanebox` — SaneBox server-side email filtering (smart folders, any email provider, $7/mo). Install:
   `npx skills add sales-skills/sales --skill sales-sanebox -a claude-code`
+- `/sales-inbox-zero` — Inbox Zero open-source AI email assistant (auto-labeling, rules API/CLI, self-hostable, $18/mo or free). Install:
+  `npx skills add sales-skills/sales --skill sales-inbox-zero -a claude-code`
 - `/sales-alfred` — alfred_ AI executive assistant (email triage, reply drafting, task extraction)
 - `/sales-lindy` — Lindy no-code AI agent builder (email, calendar, custom workflows)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:

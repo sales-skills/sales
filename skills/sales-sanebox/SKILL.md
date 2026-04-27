@@ -91,6 +91,8 @@ If you discover a gotcha, workaround, or tip not covered in `references/learning
   `npx skills add sales-skills/sales --skill sales-superhuman -a claude-code`
 - `/sales-shortwave` — Shortwave AI-native Gmail client (AI filters, Ghostwriter, MCP consumer). Install:
   `npx skills add sales-skills/sales --skill sales-shortwave -a claude-code`
+- `/sales-inbox-zero` — Inbox Zero open-source AI email assistant (auto-labeling, rules API/CLI, self-hostable, $18/mo or free). Install:
+  `npx skills add sales-skills/sales --skill sales-inbox-zero -a claude-code`
 - `/sales-unboxd` — Unboxd AI email secretary (action item extraction, daily briefings)
 - `/sales-alfred` — alfred_ AI executive assistant (email triage, reply drafting, task extraction)
 - `/sales-do` — Not sure which skill to use? The router matches any sales objective to the right skill. Install:

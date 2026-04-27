@@ -133,16 +133,17 @@ Since Fyxer has no API, webhooks, or Zapier support:
 
 ## Competitive positioning
 
-| Feature | Fyxer | Superhuman | Shortwave | SaneBox | alfred_ | Unboxd |
-|---|---|---|---|---|---|---|
-| Inbox organization | Auto-labels | Split Inbox | AI filters + splits + bundles | Smart folders | Auto-triage | AI categories (Action Items/Highlights/FYIs) |
-| AI drafting | Voice-trained | AI Write + Grammarly | Ghostwriter (voice-learning) | No | Voice-trained | No |
-| Meeting notes | Built-in | No | No | No | No | No |
-| Action item extraction | No | No | No | No | No | Yes (with deadlines) |
-| Daily briefing | No | No | No (via Tasklet) | No | No | Yes |
-| CRM integration | HubSpot only | SF/HubSpot/Pipedrive (Business+) | None native (via MCP/Tasklet) | No | No | No |
-| API/webhooks | None | MCP server only (Business+) | MCP consumer only (Business+) | None | None | None |
-| Email providers | Gmail, Outlook | Gmail, Outlook | Gmail only | Any | Gmail, Outlook | Gmail, Outlook, IMAP |
-| Starting price | $22.50/mo | $25/mo | $24/mo | $7/mo | $24.99/mo | $7.50/mo |
-| Free plan | Trial only | Trial only | 14-day trial (no CC) | Trial only | No | 7-day trial (no CC) |
-| Calendar | Read-only | Read/write | Read-only (view + accept/reject) | No | Read/write | No |
+| Feature | Fyxer | Superhuman | Shortwave | SaneBox | alfred_ | Unboxd | Inbox Zero |
+|---|---|---|---|---|---|---|---|
+| Inbox organization | Auto-labels | Split Inbox | AI filters + splits + bundles | Smart folders | Auto-triage | AI categories (Action Items/Highlights/FYIs) | AI auto-labels + plain-English rules |
+| AI drafting | Voice-trained | AI Write + Grammarly | Ghostwriter (voice-learning) | No | Voice-trained | No | Voice-trained |
+| Meeting notes | Built-in | No | No | No | No | No | No (meeting briefings only) |
+| Action item extraction | No | No | No | No | No | Yes (with deadlines) | No |
+| Daily briefing | No | No | No (via Tasklet) | No | No | Yes | No |
+| CRM integration | HubSpot only | SF/HubSpot/Pipedrive (Business+) | None native (via MCP/Tasklet) | No | No | No | No |
+| API/webhooks | None | MCP server only (Business+) | MCP consumer only (Business+) | None | None | None | REST API + CLI (all plans) |
+| Email providers | Gmail, Outlook | Gmail, Outlook | Gmail only | Any | Gmail, Outlook | Gmail, Outlook, IMAP | Gmail, Outlook |
+| Starting price | $22.50/mo | $25/mo | $24/mo | $7/mo | $24.99/mo | $7.50/mo | $18/mo (or free self-hosted) |
+| Free plan | Trial only | Trial only | 14-day trial (no CC) | Trial only | No | 7-day trial (no CC) | 7-day trial; free self-hosted |
+| Calendar | Read-only | Read/write | Read-only (view + accept/reject) | No | Read/write | No | Read-only |
+| Open source | No | No | No | No | No | No | Yes (10.6K GitHub stars) |
